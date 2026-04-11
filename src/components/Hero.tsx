@@ -19,8 +19,9 @@ function Hero() {
             Give a Piece of the <span className="text-amber">Arctic</span>
           </h1>
           <p className="text-lg md:text-xl text-white/80 mb-10 max-w-xl leading-relaxed">
-            Branded merchandise, handcrafted artisan treasures, and unforgettable Lapland experiences
-            — all in one place. Every gift tells a story from above the Arctic Circle.
+            Order authentic Lapland gifts while you're on holiday — they'll be
+            waiting at home before you. Handcrafted treasures, branded merch,
+            and Arctic experiences, all shipped directly from Finnish Lapland.
           </p>
           <div className="flex flex-col sm:flex-row items-start gap-4">
             <a

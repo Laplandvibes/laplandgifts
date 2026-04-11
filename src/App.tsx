@@ -2,6 +2,7 @@ import Logo from './components/Logo'
 import Hero from './components/Hero'
 import ProductCategories from './components/ProductCategories'
 import ProductGrid from './components/ProductGrid'
+import ValueProp from './components/ValueProp'
 import GiftGuide from './components/GiftGuide'
 import Guides from './components/Guides'
 import Newsletter from './components/Newsletter'
@@ -26,6 +27,7 @@ function App() {
       <main>
         <Hero />
         <ProductCategories />
+        <ValueProp />
         <ProductGrid />
         <GiftGuide />
         <Guides />
