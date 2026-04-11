@@ -1,4 +1,4 @@
-import { Heart, Bell } from 'lucide-react'
+import { Bell } from 'lucide-react'
 
 const products = [
   { name: 'Aurora Mug', image: '/images/prod-mug-aurora.webp', category: 'merch' },
