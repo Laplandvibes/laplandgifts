@@ -136,9 +136,8 @@ function Footer() {
             ecosystem
           </p>
           <div className="flex gap-6 text-xs text-white/30">
-            <a href="#" className="hover:text-white/60 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white/60 transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white/60 transition-colors">Returns</a>
+            <a href="/privacy" className="hover:text-white/60 transition-colors">Privacy Policy</a>
+            <a href="/unsubscribe" className="hover:text-white/60 transition-colors">Unsubscribe</a>
           </div>
         </div>
       </div>

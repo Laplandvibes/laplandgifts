@@ -1,5 +1,9 @@
 import { useState } from 'react'
 import { Mail, ArrowRight, Download, BookOpen, Map } from 'lucide-react'
+import { trackNewsletterSignup } from '../lib/analytics'
+
+const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL
+const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
 
 function Newsletter() {
   const [email, setEmail] = useState('')
@@ -11,18 +15,21 @@ function Newsletter() {
 
     setStatus('loading')
     try {
-      const res = await fetch('https://lsvnewsletter.lapeso.workers.dev/', {
+      const res = await fetch(`${SUPABASE_URL}/functions/v1/send-welcome-email`, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${SUPABASE_ANON_KEY}`,
+        },
         body: JSON.stringify({
           email,
-          source: 'laplandgifts.com',
-          tags: ['gifts', 'shopping', 'guide-craft', 'guide-travel'],
+          source: 'laplandgifts-website',
         }),
       })
       if (res.ok) {
         setStatus('success')
         setEmail('')
+        trackNewsletterSignup('laplandgifts-guides')
       } else {
         setStatus('error')
       }
