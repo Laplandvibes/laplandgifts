@@ -1,15 +1,14 @@
 import { Link } from 'react-router-dom'
-import PrivacyContent from '../../../shared/Legal/PrivacyContent'
+import TermsContent from '../../../shared/Legal/TermsContent'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
 
-export default function Privacy() {
+export default function Terms() {
   return (
     <>
-      <title>Privacy Policy | LaplandGifts</title>
-      <meta name="description" content="How LaplandGifts (Lapeso Oy) handles your data: Google Analytics 4 with Consent Mode v2, newsletter via Resend/Supabase, and affiliate tracking — all explained in plain English." />
-      <link rel="canonical" href="https://laplandgifts.com/privacy" />
-      <meta name="robots" content="index, follow" />
+      <title>Terms of Service | LaplandGifts</title>
+      <meta name="description" content="LaplandGifts terms of service — site usage, affiliate disclosure, and shopping terms." />
+      <link rel="canonical" href="https://laplandgifts.com/terms" />
 
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
@@ -19,7 +18,7 @@ export default function Privacy() {
       </header>
 
       <main className="max-w-3xl mx-auto px-4 py-16">
-        <PrivacyContent siteName="LaplandGifts" />
+        <TermsContent siteName="LaplandGifts" siteUrl="laplandgifts.com" />
       </main>
 
       <Footer />

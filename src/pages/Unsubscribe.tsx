@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Loader2, CheckCircle, AlertCircle } from 'lucide-react'
-import Logo from '../components/Logo'
-import Footer from '../components/Footer'
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
@@ -25,7 +23,7 @@ export default function Unsubscribe() {
         },
         body: JSON.stringify({ email }),
       })
-      if (!res.ok) throw new Error('Failed')
+      if (!res.ok) throw new Error('Failed to unsubscribe')
       setStatus('success')
     } catch {
       setStatus('error')
@@ -34,55 +32,76 @@ export default function Unsubscribe() {
 
   return (
     <>
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/"><Logo /></Link>
-          <Link to="/" className="text-gray hover:text-amber transition-colors font-medium text-sm">Back to Home</Link>
-        </div>
-      </header>
+      <title>Unsubscribe | LaplandGifts</title>
+      <meta name="description" content="Unsubscribe from LaplandGifts and the #LaplandVibes newsletter. We're sorry to see you go." />
+      <link rel="canonical" href="https://laplandgifts.com/unsubscribe" />
+      <meta name="robots" content="noindex, follow" />
 
-      <main className="max-w-lg mx-auto px-4 py-24 text-center">
-        <h1 className="font-heading text-4xl text-gray mb-4">Unsubscribe</h1>
-        <p className="text-gray/60 mb-8">We're sorry to see you go. Enter your email to unsubscribe from our newsletter.</p>
+      <div className="min-h-screen bg-[#0a0a1a] flex items-center justify-center px-4">
+        <div className="max-w-md w-full text-center">
+          <p className="text-3xl font-black mb-2">
+            <span className="text-pink-400">#</span>
+            <span className="text-white">LAPLAND</span>
+            <span className="text-amber-400">GIFTS</span>
+          </p>
 
-        {status === 'success' ? (
-          <div className="bg-green-50 border border-green-200 rounded-2xl p-8">
-            <CheckCircle className="w-12 h-12 text-green-500 mx-auto mb-4" />
-            <p className="text-green-800 font-medium">You've been unsubscribed.</p>
-            <p className="text-green-600 text-sm mt-2">You won't receive any more emails from us.</p>
-          </div>
-        ) : status === 'error' ? (
-          <div className="bg-red-50 border border-red-200 rounded-2xl p-8">
-            <AlertCircle className="w-12 h-12 text-red-500 mx-auto mb-4" />
-            <p className="text-red-800 font-medium">Something went wrong.</p>
-            <p className="text-red-600 text-sm mt-2">Please try again or contact info@laplandvibes.com</p>
-          </div>
-        ) : (
-          <form onSubmit={handleUnsubscribe} className="space-y-4">
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="your@email.com"
-              required
-              className="w-full px-6 py-4 rounded-full border border-gray/20 text-gray focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20"
-            />
-            <button
-              type="submit"
-              disabled={status === 'loading'}
-              className="w-full bg-gray text-white py-4 rounded-full font-medium hover:bg-gray/90 transition-colors disabled:opacity-50"
-            >
-              {status === 'loading' ? (
-                <span className="inline-flex items-center gap-2"><Loader2 className="w-4 h-4 animate-spin" /> Processing...</span>
-              ) : (
-                'Unsubscribe'
+          {status === 'success' ? (
+            <div className="mt-8">
+              <CheckCircle className="w-12 h-12 text-green-400 mx-auto mb-4" />
+              <h1 className="text-2xl font-semibold text-white mb-2">You've been unsubscribed</h1>
+              <p className="text-white/60">
+                You won't receive any more emails from us. We're sorry to see you go.
+              </p>
+              <Link
+                to="/"
+                className="inline-block mt-6 px-6 py-3 text-sm text-white/50 hover:text-white/80 transition-colors"
+              >
+                Back to home
+              </Link>
+            </div>
+          ) : (
+            <div className="mt-8">
+              <h1 className="text-2xl font-semibold text-white mb-2">Unsubscribe</h1>
+              <p className="text-white/60 mb-8">
+                Enter your email address to remove yourself from our newsletter list.
+              </p>
+
+              <form onSubmit={handleUnsubscribe} className="space-y-4">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="your@email.com"
+                  required
+                  disabled={status === 'loading'}
+                  className="w-full px-5 py-3 rounded-lg bg-white/10 text-white placeholder:text-white/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-500/50 disabled:opacity-50"
+                />
+                <button
+                  type="submit"
+                  disabled={status === 'loading'}
+                  className="w-full px-5 py-3 rounded-lg bg-white/10 text-white font-medium hover:bg-white/20 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 cursor-pointer"
+                >
+                  {status === 'loading' ? (
+                    <>
+                      <Loader2 className="w-4 h-4 animate-spin" />
+                      Unsubscribing…
+                    </>
+                  ) : (
+                    'Unsubscribe'
+                  )}
+                </button>
+              </form>
+
+              {status === 'error' && (
+                <div className="mt-4 flex items-center justify-center gap-2 text-red-400">
+                  <AlertCircle className="w-4 h-4" />
+                  <span className="text-sm">Something went wrong. Please try again or email info@laplandvibes.com</span>
+                </div>
               )}
-            </button>
-          </form>
-        )}
-      </main>
-
-      <Footer />
+            </div>
+          )}
+        </div>
+      </div>
     </>
   )
 }

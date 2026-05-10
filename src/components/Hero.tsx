@@ -2,14 +2,14 @@ import { Gift, Sparkles } from 'lucide-react'
 
 function Hero() {
   return (
-    <section className="relative overflow-hidden min-h-[90vh] flex items-center">
-      <img
-        src="/images/hero-main.webp"
-        alt="Handcrafted Lapland gift being wrapped in a workshop"
-        className="absolute inset-0 w-full h-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-night/80 via-night/50 to-transparent" />
-      <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 relative z-10">
+    <section
+      className="relative min-h-[90vh] flex items-center bg-cover bg-center"
+      style={{
+        backgroundImage:
+          "linear-gradient(to right, rgba(15,23,42,0.8) 0%, rgba(15,23,42,0.5) 50%, rgba(15,23,42,0) 100%), url('/images/hero-main.webp')",
+      }}
+    >
+      <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 relative z-10 w-full">
         <div className="max-w-2xl">
           <div className="flex items-center gap-2 mb-6">
             <Sparkles className="w-5 h-5 text-amber" />
