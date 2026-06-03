@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import CookieContent from '../../../shared/Legal/CookieContent'
+import CookieContent from '../shared/Legal/CookieContent'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
 

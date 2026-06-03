@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import PrivacyContent from '../../../shared/Legal/PrivacyContent'
+import PrivacyContent from '../shared/Legal/PrivacyContent'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
 

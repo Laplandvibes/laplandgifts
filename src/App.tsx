@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
-import CookieBanner from '../../shared/CookieBanner'
+import CookieBanner from './shared/CookieBanner'
 import Home from './pages/Home'
 import Privacy from './pages/Privacy'
 import Terms from './pages/Terms'

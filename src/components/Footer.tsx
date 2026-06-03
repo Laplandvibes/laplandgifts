@@ -1,4 +1,4 @@
-import SharedFooter from '../../../shared/Footer'
+import SharedFooter from '../shared/Footer'
 
 const FOOTER_PILLARS = [
   { name: 'Categories', href: '/#categories' },
