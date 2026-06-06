@@ -1,0 +1,110 @@
+{
+  "site": "laplandgifts",
+  "scanned_webp": 16,
+  "converted": 16,
+  "skipped_exists": 0,
+  "skipped_avif_larger": 0,
+  "errors": 0,
+  "total_webp_bytes": 815276,
+  "total_avif_bytes": 631611,
+  "saved_mb": "0.18",
+  "saved_pct": "22.5",
+  "report": [
+    {
+      "file": "public\\images\\cat-artisan-crafts.webp",
+      "webp_bytes": 45580,
+      "avif_bytes": 38611,
+      "saved_pct": "15.3"
+    },
+    {
+      "file": "public\\images\\cat-gift-experiences.webp",
+      "webp_bytes": 37962,
+      "avif_bytes": 30889,
+      "saved_pct": "18.6"
+    },
+    {
+      "file": "public\\images\\cat-pod-merch.webp",
+      "webp_bytes": 34012,
+      "avif_bytes": 29740,
+      "saved_pct": "12.6"
+    },
+    {
+      "file": "public\\images\\hero-main.webp",
+      "webp_bytes": 167020,
+      "avif_bytes": 128748,
+      "saved_pct": "22.9"
+    },
+    {
+      "file": "public\\images\\prod-antler-candle.webp",
+      "webp_bytes": 29848,
+      "avif_bytes": 21820,
+      "saved_pct": "26.9"
+    },
+    {
+      "file": "public\\images\\prod-beanie-wool.webp",
+      "webp_bytes": 55804,
+      "avif_bytes": 41530,
+      "saved_pct": "25.6"
+    },
+    {
+      "file": "public\\images\\prod-berry-jam-set.webp",
+      "webp_bytes": 38010,
+      "avif_bytes": 30084,
+      "saved_pct": "20.9"
+    },
+    {
+      "file": "public\\images\\prod-hoodie-arctic.webp",
+      "webp_bytes": 52740,
+      "avif_bytes": 32780,
+      "saved_pct": "37.8"
+    },
+    {
+      "file": "public\\images\\prod-kuksa-cup.webp",
+      "webp_bytes": 57090,
+      "avif_bytes": 42352,
+      "saved_pct": "25.8"
+    },
+    {
+      "file": "public\\images\\prod-mug-aurora.webp",
+      "webp_bytes": 37932,
+      "avif_bytes": 33765,
+      "saved_pct": "11.0"
+    },
+    {
+      "file": "public\\images\\prod-mug-reindeer.webp",
+      "webp_bytes": 37660,
+      "avif_bytes": 25290,
+      "saved_pct": "32.8"
+    },
+    {
+      "file": "public\\images\\prod-poster-landscape.webp",
+      "webp_bytes": 23050,
+      "avif_bytes": 17908,
+      "saved_pct": "22.3"
+    },
+    {
+      "file": "public\\images\\prod-puukko-knife.webp",
+      "webp_bytes": 35576,
+      "avif_bytes": 28787,
+      "saved_pct": "19.1"
+    },
+    {
+      "file": "public\\images\\prod-sami-bracelet.webp",
+      "webp_bytes": 67694,
+      "avif_bytes": 56036,
+      "saved_pct": "17.2"
+    },
+    {
+      "file": "public\\images\\prod-tshirt-aurora.webp",
+      "webp_bytes": 34394,
+      "avif_bytes": 25015,
+      "saved_pct": "27.3"
+    },
+    {
+      "file": "public\\images\\prod-wool-blanket.webp",
+      "webp_bytes": 60904,
+      "avif_bytes": 48256,
+      "saved_pct": "20.8"
+    }
+  ]
+}

@@ -2,8 +2,13 @@ import { Link } from 'react-router-dom'
 import PrivacyContent from '../shared/Legal/PrivacyContent'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
+import { useLang, useLocalePath } from '../i18n/useLang'
+import { COPY } from '../locales/copy'
 
 export default function Privacy() {
+  const lang = useLang()
+  const to = useLocalePath()
+  const t = COPY[lang].legal
   return (
     <>
       <title>Privacy Policy | LaplandGifts</title>
@@ -13,13 +18,13 @@ export default function Privacy() {
 
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <Link to="/"><Logo /></Link>
-          <Link to="/" className="text-gray hover:text-amber transition-colors font-medium text-sm">Back to Home</Link>
+          <Link to={to('/')}><Logo /></Link>
+          <Link to={to('/')} className="text-gray hover:text-amber transition-colors font-medium text-sm">{t.backHome}</Link>
         </div>
       </header>
 
       <main className="max-w-3xl mx-auto px-4 py-16">
-        <PrivacyContent siteName="LaplandGifts" />
+        <PrivacyContent siteName="LaplandGifts" lang={lang} />
       </main>
 
       <Footer />

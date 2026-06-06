@@ -1,0 +1,6 @@
+[
+  { "path": "/", "fallbackTitle": "LaplandGifts — Authentic Arctic Gifts & Handcrafted Treasures from Finnish Lapland", "fallbackDescription": "Order authentic Lapland gifts while on holiday — they'll be waiting at home before you. Handcrafted puukko knives, kuksa cups, Sami jewelry, and Arctic experiences." },
+  { "path": "/privacy", "fallbackTitle": "Privacy Policy | LaplandGifts" },
+  { "path": "/terms", "fallbackTitle": "Terms of Use | LaplandGifts" },
+  { "path": "/cookie-policy", "fallbackTitle": "Cookie Policy | LaplandGifts" }
+]
