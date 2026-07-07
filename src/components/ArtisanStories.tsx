@@ -33,7 +33,7 @@ function ArtisanStories() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="font-heading text-4xl md:text-5xl text-white mb-3">Meet the Artisans</h2>
-          <p className="text-white/50 text-lg max-w-2xl mx-auto">
+          <p className="text-white/75 text-lg max-w-2xl mx-auto">
             Behind every product is a skilled craftsperson with a story rooted in Arctic tradition
           </p>
         </div>
@@ -48,7 +48,7 @@ function ArtisanStories() {
               </div>
               <h3 className="font-heading text-2xl text-amber mb-1">{artisan.name}</h3>
               <p className="text-pink text-sm font-medium mb-1">{artisan.craft}</p>
-              <p className="text-white/40 text-sm mb-5">{artisan.location}</p>
+              <p className="text-white/75 text-sm mb-5">{artisan.location}</p>
               <div className="relative">
                 <Quote className="w-5 h-5 text-amber/30 mb-2" />
                 <p className="text-white/70 leading-relaxed">{artisan.story}</p>

@@ -86,6 +86,7 @@ function Newsletter() {
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder={t.placeholder}
+                aria-label={t.placeholder}
                 required
                 className="w-full pl-12 pr-4 py-4 rounded-full border border-gray/20 bg-white text-gray focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20 transition-colors"
               />

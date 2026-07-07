@@ -609,6 +609,18 @@ export default function CookieContent({
   lang = 'en',
 }: CookieContentProps) {
   const t = COPY[lang] ?? COPY.en;
+  // Locale-aware internal links: prefix paths with the current locale so links
+  // from /fi/cookie-policy etc. stay inside the visitor's language.
+  const LANG_PREFIX: Record<Lang, string> = {
+    en: '', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'br',
+    'zh-CN': 'cn', ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+  };
+  const lp = (path: string): string => {
+    if (lang === 'en') return path;
+    const prefix = `/${LANG_PREFIX[lang]}`;
+    if (path === '/') return prefix;
+    return `${prefix}${path.startsWith('/') ? path : `/${path}`}`;
+  };
   const consentKey = `${siteId}_cookie_consent`;
   const popupKey = `${siteId}_newsletter_popup`;
 
@@ -737,7 +749,7 @@ export default function CookieContent({
         <h1 className="font-heading font-semibold text-5xl sm:text-6xl text-snow tracking-wide leading-tight mb-2">{t.h1}</h1>
         <p className="text-snow/70 text-sm mb-10">{t.lastUpdated}</p>
 
-        <div className="space-y-8 text-snow/60 leading-relaxed">
+        <div className="space-y-8 text-snow/80 leading-relaxed">
 
           <section>
             <h2 className="font-heading font-semibold text-xl text-snow tracking-wide mb-3">{t.whatAreTitle}</h2>
@@ -820,9 +832,9 @@ export default function CookieContent({
                   {cookieTable.map((row) => (
                     <tr key={row.name} style={{ borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
                       <td className="py-2 pr-4 font-mono text-xs text-snow/70 align-top">{row.name}</td>
-                      <td className="py-2 pr-4 text-snow/60 align-top whitespace-nowrap">{row.type}</td>
-                      <td className="py-2 pr-4 text-snow/60 align-top">{row.purpose}</td>
-                      <td className="py-2 text-snow/60 align-top whitespace-nowrap">{row.duration}</td>
+                      <td className="py-2 pr-4 text-snow/80 align-top whitespace-nowrap">{row.type}</td>
+                      <td className="py-2 pr-4 text-snow/80 align-top">{row.purpose}</td>
+                      <td className="py-2 text-snow/80 align-top whitespace-nowrap">{row.duration}</td>
                     </tr>
                   ))}
                 </tbody>
@@ -844,8 +856,8 @@ export default function CookieContent({
         </div>
 
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link to="/" className="text-vibe-pink hover:text-vibe-pink/80 no-underline font-medium">{t.backToHome}</Link>
-          <Link to="/privacy" className="text-snow/75 hover:text-snow no-underline font-medium">{t.privacyLink}</Link>
+          <Link to={lp('/')} className="text-vibe-pink hover:text-vibe-pink/80 no-underline font-medium">{t.backToHome}</Link>
+          <Link to={lp('/privacy')} className="text-snow/75 hover:text-snow no-underline font-medium">{t.privacyLink}</Link>
         </div>
       </div>
     </div>

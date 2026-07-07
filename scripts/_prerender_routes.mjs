@@ -542,10 +542,22 @@ for (const route of routes) {
 
   for (const loc of LOCALE_LIST) {
     let meta = resolveRouteMeta(loc, route);
+    // Per-locale fallbacks declared directly in routes.json (fallbackTitleByLang /
+    // fallbackDescriptionByLang). For sites whose copy.ts holds only chrome/UI
+    // strings (no per-route SEO meta), this keeps a native <title>/og:title at
+    // first byte for every locale instead of falling back to English.
+    if (!meta || !meta.title) {
+      const tByLang = route.fallbackTitleByLang && route.fallbackTitleByLang[loc.lang];
+      const dByLang = route.fallbackDescriptionByLang && route.fallbackDescriptionByLang[loc.lang];
+      if (tByLang) meta = { title: tByLang, description: dByLang || (meta && meta.description) || null };
+    }
     if (!meta || !meta.title) {
       meta = { title: enMeta.title, description: meta?.description || enMeta.description };
     }
-    if (!meta.description) meta.description = enMeta.description;
+    if (!meta.description) {
+      const dByLang = route.fallbackDescriptionByLang && route.fallbackDescriptionByLang[loc.lang];
+      meta.description = dByLang || enMeta.description;
+    }
     // If the title doesn't already include site name, append it. Detect
     // pre-existing site name via case-insensitive substring of SITE_NAME or
     // a clear " | " / " — " separator with a brand-shaped word on the right.

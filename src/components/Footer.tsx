@@ -1,6 +1,7 @@
 import SharedFooter from '../shared/Footer'
 import { useLang, useLocalePath } from '../i18n/useLang'
-import { COPY, footerDict } from '../locales/copy'
+import { COPY } from '../locales/copy'
+import { footerDict } from '../locales/footerDict'
 
 export default function Footer() {
   const lang = useLang()

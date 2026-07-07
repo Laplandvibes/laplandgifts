@@ -19,8 +19,24 @@ const IMAGES = [
 
 function ProductGrid() {
   const t = COPY[useLang()].productGrid
+  // ItemList JSON-LD mirroring the rendered grid (active-locale product names).
+  // Items point to the #products section anchor — there are no per-item product
+  // pages, and prices are TBD, so no Product/Offer nodes are emitted.
+  const itemListSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: t.h2,
+    numberOfItems: t.products.length,
+    itemListElement: t.products.map((product, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: product.name,
+      url: 'https://laplandgifts.com/#products',
+    })),
+  }
   return (
     <section id="products" className="py-20 bg-gradient-to-b from-white to-white/50">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-14">
           <h2 className="font-heading text-4xl md:text-5xl text-gray mb-3">{t.h2}</h2>
@@ -40,6 +56,7 @@ function ProductGrid() {
                   <img
                     src={IMAGES[i]}
                     alt={product.name}
+                    loading="lazy"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <button

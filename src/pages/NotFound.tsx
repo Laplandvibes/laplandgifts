@@ -12,7 +12,7 @@ export default function NotFound() {
       <div className="text-center">
         <p className="font-heading text-8xl text-amber mb-4">404</p>
         <h1 className="font-heading text-3xl text-white mb-4">{t.h1}</h1>
-        <p className="text-white/50 mb-8 max-w-md mx-auto">
+        <p className="text-white/75 mb-8 max-w-md mx-auto">
           {t.body}
         </p>
         <Link

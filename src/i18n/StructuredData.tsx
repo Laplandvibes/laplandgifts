@@ -1,5 +1,7 @@
 import { useEffect } from 'react'
-import { useLang, type Lang } from './useLang'
+import { useLocation } from 'react-router-dom'
+import { useLang, stripLocale, type Lang } from './useLang'
+import { FAQ_BY_LANG } from '../components/FAQ'
 
 const BASE = 'https://laplandgifts.com'
 
@@ -26,6 +28,10 @@ const BCP47: Record<Lang, string> = {
 export default function StructuredData() {
   const lang = useLang()
   const bcp47 = BCP47[lang] ?? 'en-US'
+  const { pathname } = useLocation()
+  // FAQPage belongs only on the home document (where the visible FAQ renders),
+  // not on the legal/404 routes. Home is the locale root: '/', '/fi', '/de', …
+  const isHome = stripLocale(pathname) === '/'
   useEffect(() => {
     const nodes: Array<Record<string, unknown>> = [
       {
@@ -37,7 +43,7 @@ export default function StructuredData() {
         sameAs: [
           'https://youtube.com/@laplandvibes',
           'https://instagram.com/laplandvibesofficial',
-          'https://tiktok.com/@laplandvibesofficial',
+          'https://tiktok.com/@laplandvibes',
           'https://facebook.com/LaplandVibes',
         ],
       },
@@ -53,6 +59,19 @@ export default function StructuredData() {
         },
       },
     ]
+
+    if (isHome) {
+      const faqItems = FAQ_BY_LANG[lang] ?? FAQ_BY_LANG.en
+      nodes.push({
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: faqItems.map((f) => ({
+          '@type': 'Question',
+          name: f.q,
+          acceptedAnswer: { '@type': 'Answer', text: f.a },
+        })),
+      })
+    }
 
     const inject = (node: unknown): unknown => {
       if (Array.isArray(node)) return node.map(inject)
@@ -78,6 +97,6 @@ export default function StructuredData() {
     return () => {
       for (const el of created) el.remove()
     }
-  }, [bcp47])
+  }, [bcp47, lang, isHome])
   return null
 }

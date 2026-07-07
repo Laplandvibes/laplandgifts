@@ -27,7 +27,9 @@ export default function Hreflang() {
     const bare = stripLocale(pathname)
     const created: HTMLLinkElement[] = []
     for (const { code, prefix } of LANGS) {
-      const href = bare === '/' ? `${BASE}${prefix || '/'}` : `${BASE}${prefix}${bare}`
+      // Trailing-slash form matches the prerendered HTML and sitemap.xml
+      // (no-slash URLs 308-redirect on Cloudflare Pages).
+      const href = `${BASE}${prefix}${bare === '/' ? '' : bare}`.replace(/\/?$/, '/')
       const link = document.createElement('link')
       link.rel = 'alternate'
       link.hreflang = code
@@ -39,7 +41,8 @@ export default function Hreflang() {
     const xDefault = document.createElement('link')
     xDefault.rel = 'alternate'
     xDefault.hreflang = 'x-default'
-    xDefault.href = bare === '/' ? `${BASE}/` : `${BASE}${bare}`
+    // x-default = the page's own EN URL, trailing-slash form.
+    xDefault.href = `${BASE}${bare === '/' ? '' : bare}`.replace(/\/?$/, '/')
     xDefault.dataset.lvHreflang = '1'
     document.head.appendChild(xDefault)
     created.push(xDefault)

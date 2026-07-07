@@ -889,8 +889,20 @@ export default function PrivacyContent({
   lang = 'en',
 }: PrivacyContentProps = {}) {
   const t = COPY[lang] ?? COPY.en;
+  // Locale-aware internal links: prefix paths with the current locale so links
+  // from /fi/privacy etc. stay inside the visitor's language.
+  const LANG_PREFIX: Record<Lang, string> = {
+    en: '', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'br',
+    'zh-CN': 'cn', ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+  };
+  const lp = (path: string): string => {
+    if (lang === 'en') return path;
+    const prefix = `/${LANG_PREFIX[lang]}`;
+    if (path === '/') return prefix;
+    return `${prefix}${path.startsWith('/') ? path : `/${path}`}`;
+  };
   const email = <a href="mailto:info@laplandvibes.com" className="text-vibe-pink">info@laplandvibes.com</a>;
-  const cookieLink = <Link to="/cookie-policy" className="text-vibe-pink">{
+  const cookieLink = <Link to={lp('/cookie-policy')} className="text-vibe-pink">{
     lang === 'fi' ? 'evästekäytännöstämme'
     : lang === 'de' ? 'unserer Cookie-Richtlinie'
     : lang === 'ja' ? 'クッキーポリシー'
@@ -903,7 +915,7 @@ export default function PrivacyContent({
     : lang === 'nl' ? 'Cookiebeleid'
     : 'Cookie Policy'
   }</Link>;
-  const unsubLink = <Link to="/unsubscribe" className="text-vibe-pink">{
+  const unsubLink = <Link to={lp('/unsubscribe')} className="text-vibe-pink">{
     lang === 'fi' ? 'peruutussivulta'
     : lang === 'de' ? 'unserer Abmeldeseite'
     : lang === 'ja' ? '配信停止ページ'
@@ -922,7 +934,7 @@ export default function PrivacyContent({
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <h1 className="font-heading font-semibold text-5xl text-snow tracking-wide leading-tight mb-2">{t.h1}</h1>
         <p className="text-snow/70 text-sm mb-10">{t.lastUpdated}</p>
-        <div className="space-y-8 text-snow/60 leading-relaxed">
+        <div className="space-y-8 text-snow/80 leading-relaxed">
 
           <section>
             <h2 className="font-heading font-semibold text-xl text-snow tracking-wide mb-3">{t.s1Title}</h2>
@@ -1023,8 +1035,8 @@ export default function PrivacyContent({
 
         </div>
         <div className="mt-10 flex flex-wrap gap-4">
-          <Link to="/" className="text-vibe-pink hover:text-vibe-pink/80 no-underline font-medium">{t.backToHome}</Link>
-          <Link to="/cookie-policy" className="text-snow/75 hover:text-snow no-underline font-medium">{t.cookiePolicy}</Link>
+          <Link to={lp('/')} className="text-vibe-pink hover:text-vibe-pink/80 no-underline font-medium">{t.backToHome}</Link>
+          <Link to={lp('/cookie-policy')} className="text-snow/75 hover:text-snow no-underline font-medium">{t.cookiePolicy}</Link>
         </div>
       </div>
     </div>

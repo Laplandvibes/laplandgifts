@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 /**
  * Shared LaplandVibes ecosystem Terms of Use body.
  *
@@ -866,10 +868,22 @@ export default function TermsContent({
   lang = 'en',
 }: TermsContentProps = {}) {
   const t = COPY[lang] ?? COPY.en;
+  // Locale-aware internal links: prefix paths with the current locale so links
+  // from /fi/terms etc. stay inside the visitor's language.
+  const LANG_PREFIX: Record<Lang, string> = {
+    en: '', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'br',
+    'zh-CN': 'cn', ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+  };
+  const lp = (path: string): string => {
+    if (lang === 'en') return path;
+    const prefix = `/${LANG_PREFIX[lang]}`;
+    if (path === '/') return prefix;
+    return `${prefix}${path.startsWith('/') ? path : `/${path}`}`;
+  };
   const email = <a href="mailto:info@laplandvibes.com" className="text-vibe-pink hover:text-vibe-pink/80 underline">info@laplandvibes.com</a>;
-  const unsub = <a href="/unsubscribe" className="text-vibe-pink hover:text-vibe-pink/80 underline">/unsubscribe</a>;
+  const unsub = <Link to={lp('/unsubscribe')} className="text-vibe-pink hover:text-vibe-pink/80 underline">/unsubscribe</Link>;
   const privacy = (
-    <a href="/privacy" className="text-vibe-pink hover:text-vibe-pink/80 underline">
+    <Link to={lp('/privacy')} className="text-vibe-pink hover:text-vibe-pink/80 underline">
       {lang === 'fi' ? 'tietosuojaselosteemme'
       : lang === 'de' ? 'Datenschutzerklärung'
       : lang === 'ja' ? 'プライバシーポリシー'
@@ -881,7 +895,7 @@ export default function TermsContent({
       : lang === 'it' ? 'Informativa sulla Privacy'
       : lang === 'nl' ? 'Privacybeleid'
       : 'Privacy Policy'}
-    </a>
+    </Link>
   );
 
   return (

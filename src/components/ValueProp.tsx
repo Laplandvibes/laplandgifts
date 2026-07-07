@@ -12,7 +12,7 @@ function ValueProp() {
         <h2 className="font-heading text-3xl md:text-4xl text-white text-center mb-3">
           {t.h2}
         </h2>
-        <p className="text-white/50 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-white/75 text-center mb-12 max-w-2xl mx-auto">
           {t.sub}
         </p>
 
@@ -28,7 +28,7 @@ function ValueProp() {
                   </span>
                 </div>
                 <h3 className="font-heading text-xl text-white mb-2">{s.title}</h3>
-                <p className="text-white/50 text-sm leading-relaxed">{s.description}</p>
+                <p className="text-white/75 text-sm leading-relaxed">{s.description}</p>
               </div>
             )
           })}

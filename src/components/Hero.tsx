@@ -16,12 +16,12 @@ function Hero() {
         <div className="max-w-2xl">
           <div className="flex items-center gap-2 mb-6">
             <Sparkles className="w-5 h-5 text-amber" />
-            <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
+            <span className="text-amber font-medium uppercase tracking-widest text-sm drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">{t.kicker}</span>
           </div>
-          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl text-white leading-none mb-6">
+          <h1 className="font-heading text-5xl md:text-7xl lg:text-8xl text-white leading-none mb-6 drop-shadow-[0_3px_18px_rgba(0,0,0,0.9)]">
             {t.title} <span className="text-amber">{t.titleAccent}</span>
           </h1>
-          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-xl leading-relaxed">
+          <p className="text-lg md:text-xl text-white/80 mb-10 max-w-xl leading-relaxed drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">
             {t.lead}
           </p>
           <div className="flex flex-col sm:flex-row items-start gap-4">

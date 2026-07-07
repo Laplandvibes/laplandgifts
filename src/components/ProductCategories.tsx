@@ -27,17 +27,18 @@ function ProductCategories() {
               <img
                 src={IMAGES[i]}
                 alt={cat.name}
+                loading="lazy"
                 className="w-full aspect-[4/3] object-cover group-hover:scale-105 transition-transform duration-500"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/55 to-transparent" />
               <div className="absolute top-4 left-4">
                 <span className="bg-amber text-white text-xs font-medium px-3 py-1 rounded-full uppercase tracking-wider">
                   {cat.tag}
                 </span>
               </div>
               <div className="absolute bottom-0 left-0 right-0 p-6">
-                <h3 className="font-heading text-3xl text-white mb-2">{cat.name}</h3>
-                <p className="text-white/70 leading-relaxed text-sm">{cat.description}</p>
+                <h3 className="font-heading text-3xl text-white mb-2 [text-shadow:0_1px_8px_rgba(0,0,0,0.9)]">{cat.name}</h3>
+                <p className="text-white/70 leading-relaxed text-sm [text-shadow:0_1px_8px_rgba(0,0,0,0.9)]">{cat.description}</p>
               </div>
             </div>
           ))}

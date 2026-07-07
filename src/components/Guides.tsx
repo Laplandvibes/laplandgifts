@@ -15,7 +15,7 @@ function Guides() {
             <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
           </div>
           <h2 className="font-heading text-4xl md:text-5xl text-white mb-3">{t.h2}</h2>
-          <p className="text-white/50 text-lg max-w-2xl mx-auto">
+          <p className="text-white/75 text-lg max-w-2xl mx-auto">
             {t.sub}
           </p>
         </div>
@@ -35,18 +35,18 @@ function Guides() {
                     </div>
                     <div>
                       <h3 className="font-heading text-2xl text-white">{guide.title}</h3>
-                      <p className="text-white/40 text-sm">{t.pagesPdf(guide.pages)}</p>
+                      <p className="text-white/75 text-sm">{t.pagesPdf(guide.pages)}</p>
                     </div>
                   </div>
 
                   <p className="text-amber text-sm font-medium mb-3">{guide.subtitle}</p>
-                  <p className="text-white/60 text-sm leading-relaxed mb-6">{guide.description}</p>
+                  <p className="text-white/80 text-sm leading-relaxed mb-6">{guide.description}</p>
 
                   <div className="flex flex-wrap gap-2">
                     {guide.topics.map((topic) => (
                       <span
                         key={topic}
-                        className="text-xs px-3 py-1 rounded-full bg-white/5 text-white/50 border border-white/10"
+                        className="text-xs px-3 py-1 rounded-full bg-white/5 text-white/75 border border-white/10"
                       >
                         {topic}
                       </span>

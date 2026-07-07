@@ -39,7 +39,7 @@ export default function Unsubscribe() {
     <>
       <title>{t.title}</title>
       <meta name="description" content="Unsubscribe from LaplandGifts and the #LaplandVibes newsletter." />
-      <link rel="canonical" href="https://laplandgifts.com/unsubscribe" />
+      <link rel="canonical" href="https://laplandgifts.com/unsubscribe/" />
       <meta name="robots" content="noindex, follow" />
 
       <div className="min-h-screen bg-[#0a0a1a] flex items-center justify-center px-4">
@@ -54,10 +54,10 @@ export default function Unsubscribe() {
             <div className="mt-8">
               <CheckCircle className="w-12 h-12 text-green-400 mx-auto mb-4" />
               <h1 className="text-2xl font-semibold text-white mb-2">{t.successH1}</h1>
-              <p className="text-white/60">{t.successBody}</p>
+              <p className="text-white/80">{t.successBody}</p>
               <Link
                 to={to('/')}
-                className="inline-block mt-6 px-6 py-3 text-sm text-white/50 hover:text-white/80 transition-colors"
+                className="inline-block mt-6 px-6 py-3 text-sm text-white/75 hover:text-white/80 transition-colors"
               >
                 {t.backHome}
               </Link>
@@ -65,7 +65,7 @@ export default function Unsubscribe() {
           ) : (
             <div className="mt-8">
               <h1 className="text-2xl font-semibold text-white mb-2">{t.h1}</h1>
-              <p className="text-white/60 mb-8">{t.body}</p>
+              <p className="text-white/80 mb-8">{t.body}</p>
 
               <form onSubmit={handleUnsubscribe} className="space-y-4">
                 <input
@@ -75,7 +75,7 @@ export default function Unsubscribe() {
                   placeholder="your@email.com"
                   required
                   disabled={status === 'loading'}
-                  className="w-full px-5 py-3 rounded-lg bg-white/10 text-white placeholder:text-white/40 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-500/50 disabled:opacity-50"
+                  className="w-full px-5 py-3 rounded-lg bg-white/10 text-white placeholder:text-white/75 border border-white/20 focus:outline-none focus:ring-2 focus:ring-amber-500/50 disabled:opacity-50"
                 />
                 <button
                   type="submit"
