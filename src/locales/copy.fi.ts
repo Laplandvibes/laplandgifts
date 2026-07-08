@@ -178,9 +178,9 @@ const fi: ChromeCopy = {
     h2: 'Suunnittele loput Lapin-matkastasi',
     sub: 'Osa LaplandVibes-verkostoa, jatka tutkimista sisarsivustoillamme.',
     items: [
-      { label: 'Lapin joulu ja joulupukki', blurb: 'Joulupukin pajakylä, joulumatkat ja sesongin vinkit.', href: 'https://laplandchristmas.com' },
+      { label: 'Lapin joulu ja joulupukki', blurb: 'Joulupukin pajakylä, joulumatkat ja sesongin vinkit.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'Lapissa tehdyt tuotteet', blurb: 'Laajempi valikoima lappilaisia tuotteita ja arktista muotoilua.', href: 'https://laplandstore.fi' },
-      { label: 'Suunnittele Lapin-matkasi', blurb: 'Kohteet, sesongit ja käytännön vinkit Suomen Lappiin.', href: 'https://laplandvisit.com' },
+      { label: 'Suunnittele Lapin-matkasi', blurb: 'Kohteet, sesongit ja käytännön vinkit Suomen Lappiin.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

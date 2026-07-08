@@ -178,9 +178,9 @@ const ja: ChromeCopy = {
     h2: 'ラップランド旅行の続きを計画する',
     sub: 'LaplandVibes ネットワークの一員、姉妹サイトでさらに探検しましょう。',
     items: [
-      { label: 'ラップランドのクリスマスとサンタ', blurb: 'サンタクロース村、クリスマス旅行、シーズンのヒント。', href: 'https://laplandchristmas.com' },
+      { label: 'ラップランドのクリスマスとサンタ', blurb: 'サンタクロース村、クリスマス旅行、シーズンのヒント。', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'ラップランド製の品', blurb: 'ラップランド製品と北極デザインのより幅広い品ぞろえ。', href: 'https://laplandstore.fi' },
-      { label: 'ラップランド旅行を計画する', blurb: 'フィンランド・ラップランドの目的地、季節、実用情報。', href: 'https://laplandvisit.com' },
+      { label: 'ラップランド旅行を計画する', blurb: 'フィンランド・ラップランドの目的地、季節、実用情報。', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

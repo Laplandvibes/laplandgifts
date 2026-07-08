@@ -178,9 +178,9 @@ const en: ChromeCopy = {
     h2: 'Plan the Rest of Your Lapland Trip',
     sub: 'Part of the LaplandVibes network, keep exploring with our sister sites.',
     items: [
-      { label: 'Lapland Christmas & Santa', blurb: 'Santa Claus Village, Christmas breaks and festive season tips.', href: 'https://laplandchristmas.com' },
+      { label: 'Lapland Christmas & Santa', blurb: 'Santa Claus Village, Christmas breaks and festive season tips.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'Lapland-made products', blurb: 'A wider shop of Lapland-made goods and Arctic design.', href: 'https://laplandstore.fi' },
-      { label: 'Plan your Lapland trip', blurb: 'Destinations, seasons and practical advice for Finnish Lapland.', href: 'https://laplandvisit.com' },
+      { label: 'Plan your Lapland trip', blurb: 'Destinations, seasons and practical advice for Finnish Lapland.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

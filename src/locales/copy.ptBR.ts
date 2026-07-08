@@ -178,9 +178,9 @@ const ptBR: ChromeCopy = {
     h2: 'Planeje o resto da sua viagem à Lapônia',
     sub: 'Parte da rede LaplandVibes, continue explorando com os nossos sites parceiros.',
     items: [
-      { label: 'Natal na Lapônia e Papai Noel', blurb: 'Aldeia do Papai Noel, viagens de Natal e dicas da temporada.', href: 'https://laplandchristmas.com' },
+      { label: 'Natal na Lapônia e Papai Noel', blurb: 'Aldeia do Papai Noel, viagens de Natal e dicas da temporada.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'Produtos feitos na Lapônia', blurb: 'Uma loja mais ampla de produtos lapões e design ártico.', href: 'https://laplandstore.fi' },
-      { label: 'Planeje sua viagem à Lapônia', blurb: 'Destinos, estações e dicas práticas para a Lapônia finlandesa.', href: 'https://laplandvisit.com' },
+      { label: 'Planeje sua viagem à Lapônia', blurb: 'Destinos, estações e dicas práticas para a Lapônia finlandesa.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

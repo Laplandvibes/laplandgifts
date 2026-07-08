@@ -178,9 +178,9 @@ const de: ChromeCopy = {
     h2: 'Planen Sie den Rest Ihrer Lappland-Reise',
     sub: 'Teil des LaplandVibes-Netzwerks, erkunden Sie weiter mit unseren Schwesterseiten.',
     items: [
-      { label: 'Weihnachten in Lappland & Weihnachtsmann', blurb: 'Weihnachtsmanndorf, Weihnachtsreisen und Tipps für die Festtage.', href: 'https://laplandchristmas.com' },
+      { label: 'Weihnachten in Lappland & Weihnachtsmann', blurb: 'Weihnachtsmanndorf, Weihnachtsreisen und Tipps für die Festtage.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'In Lappland gefertigte Produkte', blurb: 'Ein größeres Sortiment lappländischer Waren und arktischen Designs.', href: 'https://laplandstore.fi' },
-      { label: 'Planen Sie Ihre Lappland-Reise', blurb: 'Reiseziele, Jahreszeiten und praktische Tipps für Finnisch-Lappland.', href: 'https://laplandvisit.com' },
+      { label: 'Planen Sie Ihre Lappland-Reise', blurb: 'Reiseziele, Jahreszeiten und praktische Tipps für Finnisch-Lappland.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

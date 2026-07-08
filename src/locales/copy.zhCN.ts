@@ -178,9 +178,9 @@ const zhCN: ChromeCopy = {
     h2: '规划您拉普兰之旅的其余行程',
     sub: 'LaplandVibes 网络的一部分，通过我们的姊妹网站继续探索。',
     items: [
-      { label: '拉普兰圣诞与圣诞老人', blurb: '圣诞老人村、圣诞假期与节庆季贴士。', href: 'https://laplandchristmas.com' },
+      { label: '拉普兰圣诞与圣诞老人', blurb: '圣诞老人村、圣诞假期与节庆季贴士。', href: 'https://laplandchristmas.com/santa-village/' },
       { label: '拉普兰制造的产品', blurb: '更丰富的拉普兰产品与北极设计选购。', href: 'https://laplandstore.fi' },
-      { label: '规划您的拉普兰之旅', blurb: '芬兰拉普兰的目的地、季节与实用建议。', href: 'https://laplandvisit.com' },
+      { label: '规划您的拉普兰之旅', blurb: '芬兰拉普兰的目的地、季节与实用建议。', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

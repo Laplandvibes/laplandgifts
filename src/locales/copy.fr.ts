@@ -179,9 +179,9 @@ const fr: ChromeCopy = {
     h2: 'Planifiez la suite de votre voyage en Laponie',
     sub: 'Membre du réseau LaplandVibes, continuez à explorer avec nos sites partenaires.',
     items: [
-      { label: 'Noël en Laponie et Père Noël', blurb: 'Village du Père Noël, séjours de Noël et conseils de saison.', href: 'https://laplandchristmas.com' },
+      { label: 'Noël en Laponie et Père Noël', blurb: 'Village du Père Noël, séjours de Noël et conseils de saison.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'Produits fabriqués en Laponie', blurb: 'Une boutique plus large de produits lapons et de design arctique.', href: 'https://laplandstore.fi' },
-      { label: 'Planifiez votre voyage en Laponie', blurb: 'Destinations, saisons et conseils pratiques pour la Laponie finlandaise.', href: 'https://laplandvisit.com' },
+      { label: 'Planifiez votre voyage en Laponie', blurb: 'Destinations, saisons et conseils pratiques pour la Laponie finlandaise.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

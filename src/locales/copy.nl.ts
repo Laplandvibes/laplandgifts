@@ -178,9 +178,9 @@ const nl: ChromeCopy = {
     h2: 'Plan de rest van uw reis door Lapland',
     sub: 'Onderdeel van het LaplandVibes-netwerk, blijf ontdekken met onze zustersites.',
     items: [
-      { label: 'Kerst in Lapland & de Kerstman', blurb: 'Kerstmandorp, kerstreizen en tips voor het feestseizoen.', href: 'https://laplandchristmas.com' },
+      { label: 'Kerst in Lapland & de Kerstman', blurb: 'Kerstmandorp, kerstreizen en tips voor het feestseizoen.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'In Lapland gemaakte producten', blurb: 'Een breder aanbod van Laplandse producten en arctisch design.', href: 'https://laplandstore.fi' },
-      { label: 'Plan uw reis door Lapland', blurb: 'Bestemmingen, seizoenen en praktische tips voor Fins Lapland.', href: 'https://laplandvisit.com' },
+      { label: 'Plan uw reis door Lapland', blurb: 'Bestemmingen, seizoenen en praktische tips voor Fins Lapland.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

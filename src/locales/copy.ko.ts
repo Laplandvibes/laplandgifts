@@ -178,9 +178,9 @@ const ko: ChromeCopy = {
     h2: '라플란드 여행의 남은 일정을 계획하세요',
     sub: 'LaplandVibes 네트워크의 일부, 자매 사이트에서 계속 둘러보세요.',
     items: [
-      { label: '라플란드 크리스마스와 산타', blurb: '산타클로스 마을, 크리스마스 여행, 시즌 팁.', href: 'https://laplandchristmas.com' },
+      { label: '라플란드 크리스마스와 산타', blurb: '산타클로스 마을, 크리스마스 여행, 시즌 팁.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: '라플란드에서 만든 제품', blurb: '라플란드 제품과 북극 디자인의 더 폭넓은 상점.', href: 'https://laplandstore.fi' },
-      { label: '라플란드 여행 계획하기', blurb: '핀란드 라플란드의 여행지, 계절, 실용 정보.', href: 'https://laplandvisit.com' },
+      { label: '라플란드 여행 계획하기', blurb: '핀란드 라플란드의 여행지, 계절, 실용 정보.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {

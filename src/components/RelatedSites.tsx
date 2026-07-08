@@ -6,6 +6,10 @@ import { COPY } from '../locales/copy'
  * Contextual sibling links into the LaplandVibes network. These are editorial
  * cross-links (not affiliate CTAs), so they use rel="noopener" only — never the
  * sponsored/nofollow rel reserved for affiliate redirects.
+ * Hrefs (in locales/copy.*.ts `related.items`) point at DEEP pages that deliver
+ * each card's promise, NOT the sibling homepage (Vesa 2026-07-08). Verified live:
+ * christmas→/santa-village/, visit→/itineraries/. laplandstore.fi stays on its
+ * homepage (that IS the wider shop).
  */
 function RelatedSites() {
   const t = COPY[useLang()].related

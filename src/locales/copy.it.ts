@@ -178,9 +178,9 @@ const it: ChromeCopy = {
     h2: 'Pianifichi il resto del Suo viaggio in Lapponia',
     sub: 'Parte del network LaplandVibes, continui a esplorare con i nostri siti gemelli.',
     items: [
-      { label: 'Natale in Lapponia e Babbo Natale', blurb: 'Villaggio di Babbo Natale, viaggi di Natale e consigli di stagione.', href: 'https://laplandchristmas.com' },
+      { label: 'Natale in Lapponia e Babbo Natale', blurb: 'Villaggio di Babbo Natale, viaggi di Natale e consigli di stagione.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'Prodotti fatti in Lapponia', blurb: 'Una selezione più ampia di prodotti lapponi e design artico.', href: 'https://laplandstore.fi' },
-      { label: 'Pianifichi il Suo viaggio in Lapponia', blurb: 'Destinazioni, stagioni e consigli pratici per la Lapponia finlandese.', href: 'https://laplandvisit.com' },
+      { label: 'Pianifichi il Suo viaggio in Lapponia', blurb: 'Destinazioni, stagioni e consigli pratici per la Lapponia finlandese.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },
   footer: {
