@@ -9,9 +9,10 @@ const nl: ChromeCopy = {
   },
   hero: {
     kicker: 'Vanuit het hart van Fins Lapland',
+    badge: 'Winkel opent binnenkort',
     title: 'Geef een stukje',
     titleAccent: 'Arctis',
-    lead: 'Bestel authentieke cadeaus uit Lapland tijdens uw vakantie, ze staan thuis op u te wachten voordat u terug bent. Handgemaakte schatten, eigen merk-artikelen en arctische ervaringen, rechtstreeks verzonden vanuit Fins Lapland.',
+    lead: 'Binnenkort bestelt u authentieke cadeaus uit Lapland tijdens uw vakantie en staan ze thuis op u te wachten voordat u terug bent. Handgemaakte schatten, eigen merk-artikelen en arctische ervaringen, rechtstreeks vanuit Fins Lapland. De eerste collectie wordt nu samengesteld.',
     ctaExplore: 'Bekijk cadeaus',
     ctaGuide: 'Cadeaugids',
   },
@@ -22,7 +23,7 @@ const nl: ChromeCopy = {
       {
         name: '#LaplandVibes Artikelen',
         tag: 'Eigen merk',
-        description: 'Mokken, t-shirts, hoodies en canvasprints met onze kenmerkende arctische ontwerpen. Print-on-demand, geen voorraad, wereldwijde verzending.',
+        description: 'Mokken, t-shirts, hoodies en canvasprints met onze kenmerkende arctische ontwerpen. Print-on-demand en wereldwijde verzending zodra de winkel opent.',
       },
       {
         name: 'Ambachtelijk werk',
@@ -38,7 +39,7 @@ const nl: ChromeCopy = {
   },
   valueProp: {
     h2: 'Bestel op vakantie. Vind ze thuis.',
-    sub: 'Geen broze souvenirs meer die in de koffer moeten. Shop tijdens uw reis, wij regelen de rest.',
+    sub: 'Geen broze souvenirs meer die in de koffer moeten. Zo werkt LaplandGifts zodra de winkel opent: shop tijdens uw reis, wij regelen de rest.',
     steps: [
       { title: 'Snuffel op vakantie', description: 'Een puukko gevonden waar u verliefd op bent? Een kuksa voor moeder? Bestel tijdens het verkennen, u hoeft niets mee te dragen.' },
       { title: 'Wij verzenden uit Lapland', description: 'Uw cadeaus worden zorgvuldig ingepakt en rechtstreeks verzonden door Finse ambachtslieden en onze EU-printpartners.' },
@@ -134,7 +135,7 @@ const nl: ChromeCopy = {
   },
   shipping: {
     h2: 'Onze beloften',
-    sub: 'Wat u mag verwachten als u bij LaplandGifts winkelt',
+    sub: 'Wat u mag verwachten zodra de LaplandGifts-winkel opent',
     items: [
       { title: 'Rechtstreeks uit Lapland', description: 'Elk product wordt verzonden vanuit Finland of via onze EU-printpartners. Geen tussenhandel, geen mysterieuze magazijnen.' },
       { title: 'Authenticiteitsgarantie', description: 'Ambachtelijke producten worden geleverd met een certificaat van oorsprong. Sami-ambacht wordt alleen via erkende verkopers ingekocht.' },
@@ -157,7 +158,7 @@ const nl: ChromeCopy = {
       },
       {
         q: 'Versturen winkels in Lapland cadeaus naar het buitenland?',
-        a: 'Veel winkels doen dat. Onze eigen #LaplandVibes-artikelen zijn print-on-demand en worden wereldwijd verzonden vanuit EU-productiepartners. Ambachtelijke stukken worden vanuit Finland verzonden; levertijd en kosten hangen af van uw land en de vervoerder. Het praktische voordeel van online bestellen tijdens uw reis is dat u geen breekbare spullen in uw bagage hoeft te proppen, ze reizen apart en staan thuis op u te wachten.',
+        a: 'Veel winkels doen dat. Onze eigen #LaplandVibes-artikelen (winkel opent binnenkort) zullen print-on-demand zijn en wereldwijd worden verzonden vanuit EU-productiepartners. Ambachtelijke stukken worden vanuit Finland verzonden; levertijd en kosten hangen af van uw land en de vervoerder. Het praktische voordeel van online bestellen tijdens uw reis is dat u geen breekbare spullen in uw bagage hoeft te proppen, ze reizen apart en staan thuis op u te wachten.',
       },
       {
         q: 'Wat neemt u mee naar huis vanuit Rovaniemi?',

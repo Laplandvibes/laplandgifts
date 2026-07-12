@@ -9,6 +9,7 @@ export interface ChromeCopy {
   }
   hero: {
     kicker: string
+    badge: string
     title: string
     titleAccent: string
     lead: string

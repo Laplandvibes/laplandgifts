@@ -14,6 +14,11 @@ function Hero() {
     >
       <div className="max-w-7xl mx-auto px-4 py-20 md:py-32 relative z-10 w-full">
         <div className="max-w-2xl">
+          {/* Rehellisyys: kauppa ei ole vielä auki — kerro se heti heron kärjessä (Vesa 2026-07-12) */}
+          <span className="inline-flex items-center gap-2 border border-amber/60 bg-black/30 text-amber text-xs font-semibold uppercase tracking-widest rounded-full px-4 py-1.5 mb-5 backdrop-blur-sm whitespace-nowrap">
+            <span className="w-2 h-2 rounded-full bg-amber animate-pulse" aria-hidden="true" />
+            {t.badge}
+          </span>
           <div className="flex items-center gap-2 mb-6">
             <Sparkles className="w-5 h-5 text-amber" />
             <span className="text-amber font-medium uppercase tracking-widest text-sm drop-shadow-[0_2px_12px_rgba(0,0,0,0.9)]">{t.kicker}</span>

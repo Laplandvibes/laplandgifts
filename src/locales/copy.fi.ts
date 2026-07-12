@@ -9,9 +9,10 @@ const fi: ChromeCopy = {
   },
   hero: {
     kicker: 'Suomen Lapin sydämestä',
+    badge: 'Kauppa avataan pian',
     title: 'Lahjoita pala',
     titleAccent: 'Arktista',
-    lead: 'Tilaa aidot Lapin lahjat lomalla, ne odottavat kotona, ennen kuin sinä ehdit perille. Käsintehtyjä aarteita, omaa mallistoa ja arktisia elämyksiä, suoraan Suomen Lapista.',
+    lead: 'Pian tilaat aidot Lapin lahjat jo lomalla, ja ne odottavat kotona ennen kuin itse ehdit perille. Käsintehtyjä aarteita, omaa mallistoa ja arktisia elämyksiä suoraan Suomen Lapista. Ensimmäistä mallistoa valikoidaan parhaillaan.',
     ctaExplore: 'Tutustu lahjoihin',
     ctaGuide: 'Lahjaopas',
   },
@@ -22,7 +23,7 @@ const fi: ChromeCopy = {
       {
         name: '#LaplandVibes-malliston tuotteet',
         tag: 'Oma merkki',
-        description: 'Mukit, t-paidat, hupparit ja taulutulosteet omilla arktisilla kuoseillamme. Print-on-demand, ei varastoa, toimitus ympäri maailman.',
+        description: 'Mukit, t-paidat, hupparit ja taulutulosteet omilla arktisilla kuoseillamme. Print-on-demand ja maailmanlaajuinen toimitus heti kaupan avauduttua.',
       },
       {
         name: 'Käsityöt',
@@ -38,7 +39,7 @@ const fi: ChromeCopy = {
   },
   valueProp: {
     h2: 'Tilaa lomalla. Vastaanota kotona.',
-    sub: 'Älä enää tunge hauraita matkamuistoja matkalaukkuun. Osta matkan aikana, me hoidamme loput.',
+    sub: 'Hauraat matkamuistot eivät enää kuulu matkalaukkuun. Näin LaplandGifts toimii kaupan avauduttua: osta matkan aikana, me hoidamme loput.',
     steps: [
       { title: 'Selaa lomalla', description: 'Löysitkö unelmiesi puukon? Kuksan äidille? Tilaa matkan aikana, sinun ei tarvitse kantaa mitään.' },
       { title: 'Lähetämme Lapista', description: 'Lahjat pakataan huolella ja lähetetään suoraan suomalaisilta käsityöläisiltä ja EU:n painopartnereilta.' },
@@ -134,7 +135,7 @@ const fi: ChromeCopy = {
   },
   shipping: {
     h2: 'Lupauksemme',
-    sub: 'Mitä voit odottaa, kun ostat LaplandGiftsistä',
+    sub: 'Mitä voit odottaa, kun LaplandGifts-kauppa avautuu',
     items: [
       { title: 'Suoraan Lapista', description: 'Jokainen tuote lähetetään Suomesta tai EU-painokumppaneiltamme. Ei välikäsiä, ei mystisiä varastoja.' },
       { title: 'Aitoustakuu', description: 'Käsityötuotteet toimitetaan alkuperätodistuksella. Saamelaiset käsityöt vain valtuutetuilta myyjiltä.' },
@@ -157,7 +158,7 @@ const fi: ChromeCopy = {
       },
       {
         q: 'Lähettävätkö Lapin kaupat lahjoja ulkomaille?',
-        a: 'Monet lähettävät. Oma #LaplandVibes-mallistomme on print-on-demand ja lähtee maailmanlaajuisesti EU:n painopartnereilta. Käsityötuotteet lähetetään Suomesta; toimitusaika ja -hinta riippuvat maasta ja kuljetusliikkeestä. Verkkotilauksen etu matkan aikana on se, ettei hauraita esineitä tarvitse ahtaa matkalaukkuun, ne matkaavat erikseen ja odottavat kotona.',
+        a: 'Monet lähettävät. Oma #LaplandVibes-mallistomme (kauppa avautuu pian) tulee olemaan print-on-demand ja lähtee maailmanlaajuisesti EU:n painopartnereilta. Käsityötuotteet lähetetään Suomesta; toimitusaika ja -hinta riippuvat maasta ja kuljetusliikkeestä. Verkkotilauksen etu matkan aikana on se, ettei hauraita esineitä tarvitse ahtaa matkalaukkuun, ne matkaavat erikseen ja odottavat kotona.',
       },
       {
         q: 'Mitä kannattaa tuoda kotiin Rovaniemeltä?',

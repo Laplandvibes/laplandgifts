@@ -9,9 +9,10 @@ const es: ChromeCopy = {
   },
   hero: {
     kicker: 'Desde el corazón de la Laponia finlandesa',
+    badge: 'La tienda abre pronto',
     title: 'Regale un trozo del',
     titleAccent: 'Ártico',
-    lead: 'Encargue regalos auténticos de Laponia mientras está de vacaciones, le estarán esperando en casa antes de que vuelva. Tesoros artesanales, productos de marca propia y experiencias árticas, enviados directamente desde la Laponia finlandesa.',
+    lead: 'Pronto podrá encargar regalos auténticos de Laponia durante sus vacaciones y encontrarlos esperándole en casa. Tesoros artesanales, productos de marca propia y experiencias árticas, directamente desde la Laponia finlandesa. La primera colección se está seleccionando ahora mismo.',
     ctaExplore: 'Ver regalos',
     ctaGuide: 'Guía de regalos',
   },
@@ -22,7 +23,7 @@ const es: ChromeCopy = {
       {
         name: 'Productos #LaplandVibes',
         tag: 'Marca propia',
-        description: 'Tazas, camisetas, sudaderas e impresiones en lienzo con nuestros diseños árticos característicos. Impresión bajo demanda, sin inventario, envío a todo el mundo.',
+        description: 'Tazas, camisetas, sudaderas e impresiones en lienzo con nuestros diseños árticos característicos. Impresión bajo demanda y envío mundial en cuanto abra la tienda.',
       },
       {
         name: 'Artesanía',
@@ -38,7 +39,7 @@ const es: ChromeCopy = {
   },
   valueProp: {
     h2: 'Encárguelos en vacaciones. Encuéntrelos en casa.',
-    sub: 'Olvídese de meter recuerdos frágiles en la maleta. Compre durante su viaje y nosotros nos encargamos del resto.',
+    sub: 'Olvídese de meter recuerdos frágiles en la maleta. Así funcionará LaplandGifts cuando abra la tienda: compre durante su viaje y nosotros nos encargamos del resto.',
     steps: [
       { title: 'Explore en vacaciones', description: '¿Le encantó un cuchillo puukko? ¿Una kuksa para su madre? Encárguelo mientras viaja, no necesita cargar con nada.' },
       { title: 'Enviamos desde Laponia', description: 'Sus regalos se embalan con cuidado y se envían directamente desde artesanos finlandeses y nuestros socios de impresión en la UE.' },
@@ -134,7 +135,7 @@ const es: ChromeCopy = {
   },
   shipping: {
     h2: 'Nuestros compromisos',
-    sub: 'Lo que puede esperar cuando compra en LaplandGifts',
+    sub: 'Lo que puede esperar cuando abra la tienda LaplandGifts',
     items: [
       { title: 'Directo desde Laponia', description: 'Cada producto se envía desde Finlandia o desde nuestros socios de impresión en la UE. Sin intermediarios, sin almacenes misteriosos.' },
       { title: 'Garantía de autenticidad', description: 'Los productos artesanales vienen con certificado de origen. La artesanía sami se obtiene solo a través de vendedores autorizados.' },
@@ -157,7 +158,7 @@ const es: ChromeCopy = {
       },
       {
         q: '¿Las tiendas de Laponia envían regalos al extranjero?',
-        a: 'Muchas sí. Nuestros propios productos #LaplandVibes son de impresión bajo demanda y se envían a todo el mundo desde socios de producción de la UE. Las piezas artesanales se envían desde Finlandia; el plazo y el coste dependen de su país y del transportista. La ventaja práctica de comprar en línea durante el viaje es que no tiene que meter artículos frágiles en el equipaje: viajan por separado y le esperan en casa.',
+        a: 'Muchas sí. Nuestros propios productos #LaplandVibes (la tienda abre pronto) serán de impresión bajo demanda y se enviarán a todo el mundo desde socios de producción de la UE. Las piezas artesanales se envían desde Finlandia; el plazo y el coste dependen de su país y del transportista. La ventaja práctica de comprar en línea durante el viaje es que no tiene que meter artículos frágiles en el equipaje: viajan por separado y le esperan en casa.',
       },
       {
         q: '¿Qué llevarse a casa desde Rovaniemi?',

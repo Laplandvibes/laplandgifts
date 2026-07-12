@@ -9,9 +9,10 @@ const fr: ChromeCopy = {
   },
   hero: {
     kicker: 'Au cœur de la Laponie finlandaise',
+    badge: 'Boutique bientôt ouverte',
     title: 'Offrez un morceau de',
     titleAccent: "l'Arctique",
-    lead: "Commandez d'authentiques cadeaux de Laponie pendant vos vacances, ils vous attendront chez vous avant votre retour. Trésors artisanaux, articles griffés et expériences arctiques, expédiés directement depuis la Laponie finlandaise.",
+    lead: "Bientôt, vous pourrez commander d'authentiques cadeaux de Laponie pendant vos vacances et les retrouver chez vous avant votre retour. Trésors artisanaux, articles griffés et expériences arctiques, directement depuis la Laponie finlandaise. La première collection est en cours de sélection.",
     ctaExplore: 'Voir les cadeaux',
     ctaGuide: 'Guide des cadeaux',
   },
@@ -22,7 +23,7 @@ const fr: ChromeCopy = {
       {
         name: 'Articles #LaplandVibes',
         tag: 'Marque maison',
-        description: 'Mugs, t-shirts, sweats à capuche et tirages sur toile aux motifs arctiques signature. Impression à la demande, zéro stock, livraison dans le monde entier.',
+        description: 'Mugs, t-shirts, sweats à capuche et tirages sur toile aux motifs arctiques signature. Impression à la demande et livraison mondiale dès l\'ouverture de la boutique.',
       },
       {
         name: 'Artisanat',
@@ -38,7 +39,7 @@ const fr: ChromeCopy = {
   },
   valueProp: {
     h2: 'Commandez en vacances. Retrouvez vos cadeaux chez vous.',
-    sub: 'Fini les souvenirs fragiles à caser dans la valise. Faites vos achats pendant votre voyage, nous nous occupons du reste.',
+    sub: 'Fini les souvenirs fragiles à caser dans la valise. Voici comment LaplandGifts fonctionnera dès l\'ouverture : achetez pendant votre voyage, nous nous occupons du reste.',
     steps: [
       { title: 'Achetez pendant le voyage', description: "Un puukko qui vous plaît ? Une kuksa pour votre mère ? Commandez pendant que vous explorez, vous n'avez rien à transporter." },
       { title: 'Expédié depuis la Laponie', description: 'Vos cadeaux sont emballés avec soin et expédiés directement par des artisans finlandais et nos partenaires d\'impression en UE.',
@@ -135,7 +136,7 @@ const fr: ChromeCopy = {
   },
   shipping: {
     h2: 'Nos engagements',
-    sub: 'Ce que vous pouvez attendre en commandant chez LaplandGifts',
+    sub: 'Ce que vous pourrez attendre à l\'ouverture de la boutique LaplandGifts',
     items: [
       { title: 'Directement de Laponie', description: "Chaque produit est expédié depuis la Finlande ou nos partenaires d'impression en UE. Aucun intermédiaire, aucun entrepôt mystère." },
       { title: "Garantie d'authenticité", description: "Les produits artisanaux sont accompagnés d'un certificat d'origine. L'artisanat sami est sourcé uniquement auprès de vendeurs autorisés." },
@@ -158,7 +159,7 @@ const fr: ChromeCopy = {
       },
       {
         q: "Les boutiques de Laponie expédient-elles des cadeaux à l'étranger ?",
-        a: "Beaucoup le font. Nos propres articles #LaplandVibes sont en impression à la demande et expédiés dans le monde entier depuis des partenaires de production de l'UE. Les pièces artisanales partent de Finlande ; le délai et le coût dépendent de votre pays et du transporteur. L'avantage pratique de commander en ligne pendant votre voyage est que vous n'avez pas à caser d'objets fragiles dans vos bagages, ils voyagent séparément et vous attendent à la maison.",
+        a: "Beaucoup le font. Nos propres articles #LaplandVibes (boutique bientôt ouverte) seront en impression à la demande, expédiés dans le monde entier depuis des partenaires de production de l'UE. Les pièces artisanales partent de Finlande ; le délai et le coût dépendent de votre pays et du transporteur. L'avantage pratique de commander en ligne pendant votre voyage est que vous n'avez pas à caser d'objets fragiles dans vos bagages, ils voyagent séparément et vous attendent à la maison.",
       },
       {
         q: 'Que rapporter de Rovaniemi ?',

@@ -9,9 +9,10 @@ const it: ChromeCopy = {
   },
   hero: {
     kicker: 'Dal cuore della Lapponia finlandese',
+    badge: 'Il negozio apre presto',
     title: 'Regala un pezzo di',
     titleAccent: 'Artico',
-    lead: "Ordini autentici regali della Lapponia mentre è in vacanza, la aspetteranno a casa prima del Suo ritorno. Tesori artigianali, articoli a marchio proprio ed esperienze artiche, spediti direttamente dalla Lapponia finlandese.",
+    lead: "Presto potrà ordinare autentici regali della Lapponia mentre è in vacanza e ritrovarli a casa prima del Suo ritorno. Tesori artigianali, articoli a marchio proprio ed esperienze artiche, direttamente dalla Lapponia finlandese. La prima collezione è in fase di selezione.",
     ctaExplore: 'Scopri i regali',
     ctaGuide: 'Guida ai regali',
   },
@@ -22,7 +23,7 @@ const it: ChromeCopy = {
       {
         name: 'Articoli #LaplandVibes',
         tag: 'Marchio proprio',
-        description: "Tazze, t-shirt, felpe e stampe su tela con i nostri disegni artici esclusivi. Stampa su richiesta, niente magazzino, spedizione in tutto il mondo.",
+        description: "Tazze, t-shirt, felpe e stampe su tela con i nostri disegni artici esclusivi. Stampa su richiesta e spedizione in tutto il mondo non appena il negozio aprirà.",
       },
       {
         name: 'Artigianato',
@@ -38,7 +39,7 @@ const it: ChromeCopy = {
   },
   valueProp: {
     h2: 'Ordini in vacanza. Li ritrovi a casa.',
-    sub: 'Basta infilare souvenir fragili in valigia. Acquisti durante il viaggio e al resto pensiamo noi.',
+    sub: 'Basta infilare souvenir fragili in valigia. Ecco come funzionerà LaplandGifts quando il negozio aprirà: acquisti durante il viaggio e al resto pensiamo noi.',
     steps: [
       { title: 'Sceglie in vacanza', description: 'Ha trovato un puukko che adora? Una kuksa per la mamma? Ordini mentre esplora, non deve portare nulla.' },
       { title: 'Spediamo dalla Lapponia', description: 'I Suoi regali vengono confezionati con cura e spediti direttamente da artigiani finlandesi e dai nostri partner di stampa nell\'UE.' },
@@ -134,7 +135,7 @@ const it: ChromeCopy = {
   },
   shipping: {
     h2: 'I nostri impegni',
-    sub: 'Cosa può aspettarsi quando acquista su LaplandGifts',
+    sub: 'Cosa può aspettarsi quando il negozio LaplandGifts aprirà',
     items: [
       { title: 'Direttamente dalla Lapponia', description: 'Ogni prodotto viene spedito dalla Finlandia o dai nostri partner di stampa nell\'UE. Niente intermediari, niente magazzini misteriosi.' },
       { title: 'Garanzia di autenticità', description: "I prodotti artigianali sono accompagnati da un certificato d'origine. L'artigianato sami è acquistato solo tramite venditori autorizzati." },
@@ -157,7 +158,7 @@ const it: ChromeCopy = {
       },
       {
         q: "I negozi della Lapponia spediscono regali all'estero?",
-        a: "Molti lo fanno. I nostri articoli #LaplandVibes sono in stampa su richiesta e vengono spediti in tutto il mondo da partner di produzione nell'UE. I pezzi artigianali partono dalla Finlandia; tempi e costi dipendono dal Suo Paese e dal corriere. Il vantaggio pratico di ordinare online durante il viaggio è che non deve incastrare oggetti fragili in valigia, viaggiano separatamente e La aspettano a casa.",
+        a: "Molti lo fanno. I nostri articoli #LaplandVibes (il negozio apre presto) saranno in stampa su richiesta, spediti in tutto il mondo da partner di produzione nell'UE. I pezzi artigianali partono dalla Finlandia; tempi e costi dipendono dal Suo Paese e dal corriere. Il vantaggio pratico di ordinare online durante il viaggio è che non deve incastrare oggetti fragili in valigia, viaggiano separatamente e La aspettano a casa.",
       },
       {
         q: 'Cosa portare a casa da Rovaniemi?',

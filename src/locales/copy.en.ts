@@ -9,9 +9,10 @@ const en: ChromeCopy = {
   },
   hero: {
     kicker: 'From the Heart of Finnish Lapland',
+    badge: 'Shop opening soon',
     title: 'Give a Piece of the',
     titleAccent: 'Arctic',
-    lead: "Order authentic Lapland gifts while you're on holiday, they'll be waiting at home before you. Handcrafted treasures, branded merch, and Arctic experiences, all shipped directly from Finnish Lapland.",
+    lead: "Soon you'll be able to order authentic Lapland gifts while you're on holiday and find them waiting at home before you. Handcrafted treasures, branded merch and Arctic experiences, shipped directly from Finnish Lapland. The first collection is being handpicked now.",
     ctaExplore: 'Explore Gifts',
     ctaGuide: 'Gift Guide',
   },
@@ -22,7 +23,7 @@ const en: ChromeCopy = {
       {
         name: '#LaplandVibes Merch',
         tag: 'Own Brand',
-        description: 'Mugs, t-shirts, hoodies, and canvas prints with our signature Arctic designs. Print-on-demand, zero inventory, shipped worldwide.',
+        description: 'Mugs, t-shirts, hoodies, and canvas prints with our signature Arctic designs. Print-on-demand and shipped worldwide once the shop opens.',
       },
       {
         name: 'Artisan Crafts',
@@ -38,7 +39,7 @@ const en: ChromeCopy = {
   },
   valueProp: {
     h2: 'Order on Holiday. Find Them at Home.',
-    sub: 'No more stuffing fragile souvenirs into your suitcase. Shop during your trip and we handle the rest.',
+    sub: 'No more stuffing fragile souvenirs into your suitcase. This is how LaplandGifts will work once the shop opens: shop during your trip and we handle the rest.',
     steps: [
       { title: 'Browse on Holiday', description: 'Found a puukko knife you love? A kuksa for mum? Order while you explore, no need to carry anything.' },
       { title: 'We Ship from Lapland', description: 'Your gifts are packed with care and shipped directly from Finnish artisans and our EU print partners.' },
@@ -134,7 +135,7 @@ const en: ChromeCopy = {
   },
   shipping: {
     h2: 'Our Promises',
-    sub: 'What you can expect when you shop with LaplandGifts',
+    sub: 'What you can expect when the LaplandGifts shop opens',
     items: [
       { title: 'Direct from Lapland', description: 'Every product ships from Finland or our EU-based print partners. No middlemen, no mystery warehouses.' },
       { title: 'Authentic Guarantee', description: 'Artisan products come with a certificate of origin. Sámi crafts sourced only through authorized sellers.' },
@@ -157,7 +158,7 @@ const en: ChromeCopy = {
       },
       {
         q: 'Do Lapland shops ship gifts internationally?',
-        a: 'Many do. Our own #LaplandVibes merchandise is print-on-demand and ships worldwide from EU production partners. Artisan pieces ship from Finland; delivery time and cost depend on your country and the courier. The practical advantage of ordering online during your trip is that you don’t have to fit fragile items into your luggage, they travel separately and are waiting when you get home.',
+        a: 'Many do. Our own #LaplandVibes merchandise (shop opening soon) will be print-on-demand, shipping worldwide from EU production partners. Artisan pieces ship from Finland; delivery time and cost depend on your country and the courier. The practical advantage of ordering online during your trip is that you don’t have to fit fragile items into your luggage, they travel separately and are waiting when you get home.',
       },
       {
         q: 'What should I bring home from Rovaniemi?',

@@ -9,9 +9,10 @@ const de: ChromeCopy = {
   },
   hero: {
     kicker: 'Aus dem Herzen Finnisch-Lapplands',
+    badge: 'Shop öffnet bald',
     title: 'Verschenken Sie ein Stück',
     titleAccent: 'Arktis',
-    lead: 'Bestellen Sie authentische Lappland-Geschenke schon im Urlaub, sie warten zu Hause, bevor Sie ankommen. Handgefertigte Schätze, eigene Marke und arktische Erlebnisse, direkt aus Finnisch-Lappland verschickt.',
+    lead: 'Bald bestellen Sie authentische Lappland-Geschenke schon im Urlaub, und sie warten zu Hause, bevor Sie ankommen. Handgefertigte Schätze, eigene Marke und arktische Erlebnisse, direkt aus Finnisch-Lappland. Die erste Kollektion wird gerade zusammengestellt.',
     ctaExplore: 'Geschenke entdecken',
     ctaGuide: 'Geschenke-Ratgeber',
   },
@@ -22,7 +23,7 @@ const de: ChromeCopy = {
       {
         name: '#LaplandVibes Merch',
         tag: 'Eigene Marke',
-        description: 'Tassen, T-Shirts, Hoodies und Leinwanddrucke mit unseren typischen arktischen Motiven. Print-on-Demand, kein Lager, weltweiter Versand.',
+        description: 'Tassen, T-Shirts, Hoodies und Leinwanddrucke mit unseren typischen arktischen Motiven. Print-on-Demand mit weltweitem Versand, sobald der Shop öffnet.',
       },
       {
         name: 'Handwerkskunst',
@@ -38,7 +39,7 @@ const de: ChromeCopy = {
   },
   valueProp: {
     h2: 'Im Urlaub bestellen. Zu Hause vorfinden.',
-    sub: 'Schluss mit zerbrechlichen Souvenirs im Koffer. Sie shoppen während der Reise, wir kümmern uns um den Rest.',
+    sub: 'Schluss mit zerbrechlichen Souvenirs im Koffer. So funktioniert LaplandGifts, sobald der Shop öffnet: Sie shoppen während der Reise, wir kümmern uns um den Rest.',
     steps: [
       { title: 'Im Urlaub stöbern', description: 'Ein Puukko-Messer entdeckt? Eine Kuksa für die Mutter? Bestellen Sie unterwegs, Sie müssen nichts tragen.' },
       { title: 'Wir versenden aus Lappland', description: 'Ihre Geschenke werden sorgfältig verpackt und direkt von finnischen Handwerkerinnen und unseren EU-Druckpartnern versendet.' },
@@ -134,7 +135,7 @@ const de: ChromeCopy = {
   },
   shipping: {
     h2: 'Unsere Versprechen',
-    sub: 'Womit Sie rechnen können, wenn Sie bei LaplandGifts einkaufen',
+    sub: 'Womit Sie rechnen können, sobald der LaplandGifts-Shop öffnet',
     items: [
       { title: 'Direkt aus Lappland', description: 'Jedes Produkt wird aus Finnland oder von unseren EU-Druckpartnern verschickt. Keine Zwischenhändler, keine mysteriösen Lager.' },
       { title: 'Echtheitsgarantie', description: 'Handwerksprodukte werden mit Herkunftszertifikat geliefert. Sámi-Handwerk ausschließlich von autorisierten Anbietern.' },
@@ -157,7 +158,7 @@ const de: ChromeCopy = {
       },
       {
         q: 'Versenden Geschäfte in Lappland Geschenke ins Ausland?',
-        a: 'Viele tun das. Unsere eigene #LaplandVibes-Kollektion ist Print-on-Demand und wird weltweit von EU-Produktionspartnern verschickt. Handwerksstücke werden aus Finnland versendet; Lieferzeit und -kosten hängen von Ihrem Land und dem Zusteller ab. Der praktische Vorteil einer Online-Bestellung während der Reise: Sie müssen zerbrechliche Stücke nicht in den Koffer packen, sie reisen separat und warten zu Hause auf Sie.',
+        a: 'Viele tun das. Unsere eigene #LaplandVibes-Kollektion (Shop öffnet bald) wird Print-on-Demand sein und weltweit von EU-Produktionspartnern verschickt. Handwerksstücke werden aus Finnland versendet; Lieferzeit und -kosten hängen von Ihrem Land und dem Zusteller ab. Der praktische Vorteil einer Online-Bestellung während der Reise: Sie müssen zerbrechliche Stücke nicht in den Koffer packen, sie reisen separat und warten zu Hause auf Sie.',
       },
       {
         q: 'Was sollte man aus Rovaniemi mitbringen?',

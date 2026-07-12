@@ -25,47 +25,47 @@ import { AD_SLOTS } from '../data/adSlots'
 const META: Record<Lang, { title: string; description: string }> = {
   en: {
     title: 'LaplandGifts — Authentic Arctic gifts & crafts from Finnish Lapland',
-    description: 'Handcrafted Lapland gifts, branded merch and Arctic experiences shipped from Finnish Lapland. Order on holiday — they arrive home before you do.',
+    description: 'Handcrafted Lapland gifts, branded merch and Arctic experiences from Finnish Lapland. Shop opening soon: join the list and browse the gift guides.',
   },
   fi: {
     title: 'LaplandGifts — Aitoja Lapin lahjoja ja käsitöitä',
-    description: 'Käsintehtyjä Lapin lahjoja, brändituotteita ja arktisia elämyksiä Suomen Lapista. Tilaa lomalla — paketti odottaa kotona ennen sinua.',
+    description: 'Käsintehtyjä Lapin lahjoja, brändituotteita ja arktisia elämyksiä Suomen Lapista. Kauppa avataan pian: liity listalle ja selaa lahjaoppaita.',
   },
   de: {
     title: 'LaplandGifts — Echte arktische Geschenke aus Finnisch-Lappland',
-    description: 'Handgefertigte Lappland-Geschenke, Markenartikel und arktische Erlebnisse aus Finnisch-Lappland. Im Urlaub bestellen — zu Hause schon vor Ihnen.',
+    description: 'Handgefertigte Lappland-Geschenke, Markenartikel und arktische Erlebnisse aus Finnisch-Lappland. Shop öffnet bald: jetzt eintragen und Geschenkideen entdecken.',
   },
   ja: {
     title: 'LaplandGifts — フィンランド・ラップランド発の本物の北極ギフト',
-    description: '手作りのラップランド・ギフト、ブランドグッズ、北極体験をフィンランド・ラップランドから発送。旅先で注文すれば、帰宅前に自宅へ届きます。',
+    description: '手作りのラップランド・ギフト、ブランドグッズ、北極体験。フィンランド・ラップランド発のショップが近日オープン。登録してギフトガイドをご覧ください。',
   },
   es: {
     title: 'LaplandGifts — Regalos y artesanía árticos de la Laponia finlandesa',
-    description: 'Regalos de Laponia hechos a mano, productos de marca y experiencias árticas enviados desde la Laponia finlandesa. Pídelos de viaje y llegan antes que tú.',
+    description: 'Regalos de Laponia hechos a mano, productos de marca y experiencias árticas de la Laponia finlandesa. La tienda abre pronto: únase a la lista y explore las guías de regalos.',
   },
   'pt-BR': {
     title: 'LaplandGifts — Presentes e artesanato árticos da Lapônia finlandesa',
-    description: 'Presentes da Lapônia feitos à mão, produtos de marca e experiências árticas enviados da Lapônia finlandesa. Peça na viagem e chegam antes de você.',
+    description: 'Presentes da Lapônia feitos à mão, produtos de marca e experiências árticas da Lapônia finlandesa. A loja abre em breve: entre na lista e veja os guias de presentes.',
   },
   'zh-CN': {
     title: 'LaplandGifts — 来自芬兰拉普兰的正宗北极礼物与手工艺品',
-    description: '手工制作的拉普兰礼物、品牌商品与北极体验，从芬兰拉普兰发货。旅途中下单，回家前就已送达。',
+    description: '手工制作的拉普兰礼物、品牌商品与北极体验，来自芬兰拉普兰。商店即将开业：加入名单，抢先浏览礼物指南。',
   },
   ko: {
     title: 'LaplandGifts — 핀란드 라플란드의 정통 북극 선물·공예품',
-    description: '핀란드 라플란드에서 발송하는 수제 라플란드 선물, 브랜드 굿즈, 북극 체험. 여행 중 주문하면 귀가 전에 집에 도착합니다.',
+    description: '핀란드 라플란드의 수제 선물, 브랜드 굿즈, 북극 체험. 숍 오픈 예정: 지금 명단에 등록하고 선물 가이드를 살펴보십시오.',
   },
   fr: {
     title: 'LaplandGifts — Cadeaux et artisanat arctiques de Laponie finlandaise',
-    description: 'Cadeaux de Laponie faits main, produits de marque et expériences arctiques expédiés de Laponie finlandaise. Commandez en vacances, ils arrivent avant vous.',
+    description: 'Cadeaux de Laponie faits main, produits de marque et expériences arctiques de Laponie finlandaise. Boutique bientôt ouverte : inscrivez-vous et découvrez les guides cadeaux.',
   },
   it: {
     title: 'LaplandGifts — Regali e artigianato artici della Lapponia finlandese',
-    description: 'Regali della Lapponia fatti a mano, prodotti di marca ed esperienze artiche spediti dalla Lapponia finlandese. Ordina in vacanza: arrivano prima di te.',
+    description: 'Regali della Lapponia fatti a mano, prodotti di marca ed esperienze artiche dalla Lapponia finlandese. Il negozio apre presto: iscriviti e sfoglia le guide regalo.',
   },
   nl: {
     title: 'LaplandGifts — Authentieke Arctische geschenken uit Fins Lapland',
-    description: 'Handgemaakte Lapland-geschenken, merchandise en Arctische belevenissen verzonden uit Fins Lapland. Bestel op vakantie — ze zijn thuis vóór u.',
+    description: 'Handgemaakte Lapland-geschenken, merchandise en Arctische belevenissen uit Fins Lapland. Winkel opent binnenkort: schrijf u in en bekijk de cadeaugidsen.',
   },
 }
 
@@ -131,11 +131,25 @@ export default function Home() {
           {/* Language switcher — one clean native dropdown on all viewports
               (was 11 inline buttons on desktop, "miten sattuu"; Vesa 2026-07-03). */}
           <div className="relative inline-flex items-center">
+            {/* Suljettu natiivinimi-select levensi headerin 468px:aan 375px-näytöllä →
+                mobiilissa suljettu valitsin näyttää lyhyen koodin, sm+ natiivin nimen. */}
             <select
               value={lang}
               onChange={(e) => switchTo(e.target.value as LangCode)}
               aria-label="Language"
-              className="appearance-none bg-transparent border border-gray/30 rounded px-2 py-1 pr-6 text-xs font-semibold uppercase text-gray"
+              className="sm:hidden appearance-none bg-transparent border border-gray/30 rounded px-2 py-1 pr-6 text-xs font-semibold uppercase text-gray"
+            >
+              {ALL_LANGS.map((l) => (
+                <option key={l.code} value={l.code}>
+                  {l.label}
+                </option>
+              ))}
+            </select>
+            <select
+              value={lang}
+              onChange={(e) => switchTo(e.target.value as LangCode)}
+              aria-label="Language"
+              className="hidden sm:block appearance-none bg-transparent border border-gray/30 rounded px-2 py-1 pr-6 text-xs font-semibold uppercase text-gray"
             >
               {ALL_LANGS.map((l) => (
                 <option key={l.code} value={l.code}>
