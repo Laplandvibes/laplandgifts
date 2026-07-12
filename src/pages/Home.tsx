@@ -1,4 +1,5 @@
 import { useLocation, useNavigate } from 'react-router-dom'
+import { ChevronDown } from 'lucide-react'
 import Logo from '../components/Logo'
 import Hero from '../components/Hero'
 import ProductCategories from '../components/ProductCategories'
@@ -12,8 +13,14 @@ import FAQ from '../components/FAQ'
 import RelatedSites from '../components/RelatedSites'
 import Footer from '../components/Footer'
 import { useLang, stripLocale, type Lang } from '../i18n/useLang'
+import AdUnit from '../../../shared/ads/AdUnit'
+import ivaloAd from '../../../shared/ads/advertisers/ivalo'
+import kultaCenterAd from '../../../shared/ads/advertisers/kultaCenter'
+import { trackAffiliateClick } from '../lib/analytics'
 import { COPY } from '../locales/copy'
 import EcosystemMenu from '../../../shared/EcosystemMenu'
+import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots'
+import { AD_SLOTS } from '../data/adSlots'
 
 const META: Record<Lang, { title: string; description: string }> = {
   en: {
@@ -123,28 +130,58 @@ export default function Home() {
           </nav>
           {/* Language switcher — one clean native dropdown on all viewports
               (was 11 inline buttons on desktop, "miten sattuu"; Vesa 2026-07-03). */}
-          <select
-            value={lang}
-            onChange={(e) => switchTo(e.target.value as LangCode)}
-            aria-label="Language"
-            className="bg-transparent border border-gray/30 rounded px-2 py-1 text-xs font-semibold uppercase text-gray"
-          >
-            {ALL_LANGS.map((l) => (
-              <option key={l.code} value={l.code}>
-                {l.native}
-              </option>
-            ))}
-          </select>
+          <div className="relative inline-flex items-center">
+            <select
+              value={lang}
+              onChange={(e) => switchTo(e.target.value as LangCode)}
+              aria-label="Language"
+              className="appearance-none bg-transparent border border-gray/30 rounded px-2 py-1 pr-6 text-xs font-semibold uppercase text-gray"
+            >
+              {ALL_LANGS.map((l) => (
+                <option key={l.code} value={l.code}>
+                  {l.native}
+                </option>
+              ))}
+            </select>
+            <ChevronDown className="w-3 h-3 absolute right-2 top-1/2 -translate-y-1/2 pointer-events-none text-gray" aria-hidden="true" />
+          </div>
         </div>
       </header>
 
       <main>
         <Hero />
+        {/* PÄÄKUMPPANI — kompakti banneri heti heron alla (LV Media, jaettu malli).
+            Sivu on vaalea → surface="light". Tyhjänä house-ad → LV Media -portaali. */}
+        <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
         <ProductCategories />
+        {/* KAKKOSPÄÄKUMPPANI + 6 kohdekohtaista premium-paikkaa — heti
+            ensimmäisen sisältöosion jälkeen (LV Media, jaettu malli). */}
+        <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
         <ValueProp />
         <ProductGrid />
+        {/* IVALO.COM ad — independent design brands, gift context (shared/ads).
+            Disclosure is footer-only on this site. */}
+        <div className="max-w-5xl mx-auto px-4 py-10">
+          <AdUnit
+            spec={ivaloAd}
+            sid="home_gifts_ivalo"
+            lang={lang}
+            variant="light"
+            onCtaClick={(specKey, sid, url) => trackAffiliateClick(specKey, `ad_unit:${sid}`, url)}
+          />
+        </div>
         <GiftGuide />
         <Guides />
+        {/* Kulta-Center ad — FI-only spec, renders only on /fi. */}
+        <div className="max-w-5xl mx-auto px-4 pb-10">
+          <AdUnit
+            spec={kultaCenterAd}
+            sid="home_gifts_kulta"
+            lang={lang}
+            variant="light"
+            onCtaClick={(specKey, sid, url) => trackAffiliateClick(specKey, `ad_unit:${sid}`, url)}
+          />
+        </div>
         <Newsletter />
         <ShippingInfo />
         <FAQ />

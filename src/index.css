@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @source "./shared/**/*.{ts,tsx}";
+/* Repo-root shared library (ads etc.) — ./shared above is the site-local copy;
+   this line covers ../../shared used by AdUnit imports. */
+@source "../../shared/**/*.{ts,tsx}";
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 
