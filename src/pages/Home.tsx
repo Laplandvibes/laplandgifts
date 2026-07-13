@@ -67,6 +67,10 @@ const META: Record<Lang, { title: string; description: string }> = {
     title: 'LaplandGifts — Authentieke Arctische geschenken uit Fins Lapland',
     description: 'Handgemaakte Lapland-geschenken, merchandise en Arctische belevenissen uit Fins Lapland. Winkel opent binnenkort: schrijf u in en bekijk de cadeaugidsen.',
   },
+  sv: {
+    title: 'LaplandGifts — äkta arktiska presenter från finska Lappland',
+    description: 'Handgjorda Lapplandspresenter, egen merch och arktiska upplevelser från finska Lappland. Butiken öppnar snart: gå med på listan och bläddra bland presentguiderna.',
+  },
 }
 
 export default function Home() {
@@ -76,10 +80,10 @@ export default function Home() {
   const navigate = useNavigate()
   const t = COPY[lang].nav
 
-  type LangCode = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl'
+  type LangCode = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl' | 'sv'
   const URL_PREFIX_OF: Record<LangCode, string> = {
     en: '', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'br', 'zh-CN': 'cn',
-    ko: 'kr', fr: 'fr', it: 'it', nl: 'nl',
+    ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv',
   }
   const ALL_LANGS: { code: LangCode; label: string; native: string }[] = [
     { code: 'en', label: 'EN', native: 'English' },
@@ -93,6 +97,7 @@ export default function Home() {
     { code: 'fr', label: 'FR', native: 'Français' },
     { code: 'it', label: 'IT', native: 'Italiano' },
     { code: 'nl', label: 'NL', native: 'Nederlands' },
+    { code: 'sv', label: 'SV', native: 'Svenska' },
   ]
 
   const switchTo = (target: LangCode) => {

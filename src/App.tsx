@@ -183,6 +183,13 @@ function App() {
         <Route path="/nl/cookie-policy" element={<CookiePolicy />} />
         <Route path="/nl/unsubscribe" element={<Unsubscribe />} />
 
+        {/* SV routes */}
+        <Route path="/sv" element={<Home />} />
+        <Route path="/sv/privacy" element={<Privacy />} />
+        <Route path="/sv/terms" element={<Terms />} />
+        <Route path="/sv/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/sv/unsubscribe" element={<Unsubscribe />} />
+
         <Route path="*" element={<NotFound />} />
       </Routes>
       </Suspense>

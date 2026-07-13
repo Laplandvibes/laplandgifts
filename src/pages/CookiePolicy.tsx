@@ -50,6 +50,10 @@ const META: Record<Lang, { title: string; description: string }> = {
     title: 'Cookiebeleid | LaplandGifts',
     description: 'Cookiebeleid van LaplandGifts — analytics-toestemming, affiliate-tracking en het beheren van uw voorkeuren.',
   },
+  sv: {
+    title: 'Cookiepolicy | LaplandGifts',
+    description: 'LaplandGifts cookiepolicy — samtycke till analys, affiliate-spårning och hur du hanterar dina inställningar.',
+  },
 }
 
 export default function CookiePolicy() {

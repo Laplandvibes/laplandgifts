@@ -50,6 +50,10 @@ const META: Record<Lang, { title: string; description: string }> = {
     title: 'Privacybeleid | LaplandGifts',
     description: 'Hoe LaplandGifts (Lapeso Oy) uw gegevens verwerkt: Google Analytics 4 met Consent Mode v2, nieuwsbrief via Resend/Supabase en affiliate-tracking — helder uitgelegd.',
   },
+  sv: {
+    title: 'Integritetspolicy | LaplandGifts',
+    description: 'Så hanterar LaplandGifts (Lapeso Oy) dina uppgifter: Google Analytics 4 med Consent Mode v2, nyhetsbrev via Resend/Supabase och affiliate-spårning — tydligt förklarat.',
+  },
 }
 
 export default function Privacy() {

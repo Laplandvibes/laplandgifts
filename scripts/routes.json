@@ -14,7 +14,8 @@
       "ko": "LaplandGifts — 핀란드 라플란드의 정통 북극 선물과 수공예품",
       "fr": "LaplandGifts — cadeaux arctiques authentiques et trésors artisanaux de Laponie finlandaise",
       "it": "LaplandGifts — autentici regali artici e tesori artigianali della Lapponia finlandese",
-      "nl": "LaplandGifts — authentieke arctische cadeaus en handgemaakte schatten uit Fins Lapland"
+      "nl": "LaplandGifts — authentieke arctische cadeaus en handgemaakte schatten uit Fins Lapland",
+      "sv": "LaplandGifts — äkta arktiska presenter och handgjorda skatter från finska Lappland"
     },
     "fallbackDescriptionByLang": {
       "en": "Handcrafted Lapland gifts, branded merch and Arctic experiences from Finnish Lapland. Shop opening soon: join the list and browse the gift guides.",
@@ -27,7 +28,8 @@
       "ko": "핀란드 라플란드의 수제 선물, 브랜드 굿즈, 북극 체험. 숍 오픈 예정: 지금 명단에 등록하고 선물 가이드를 살펴보십시오.",
       "fr": "Cadeaux de Laponie faits main, produits de marque et expériences arctiques de Laponie finlandaise. Boutique bientôt ouverte : inscrivez-vous et découvrez les guides cadeaux.",
       "it": "Regali della Lapponia fatti a mano, prodotti di marca ed esperienze artiche dalla Lapponia finlandese. Il negozio apre presto: iscriviti e sfoglia le guide regalo.",
-      "nl": "Handgemaakte Lapland-geschenken, merchandise en Arctische belevenissen uit Fins Lapland. Winkel opent binnenkort: schrijf u in en bekijk de cadeaugidsen."
+      "nl": "Handgemaakte Lapland-geschenken, merchandise en Arctische belevenissen uit Fins Lapland. Winkel opent binnenkort: schrijf u in en bekijk de cadeaugidsen.",
+      "sv": "Handgjorda Lapplandspresenter, egen merch och arktiska upplevelser från finska Lappland. Butiken öppnar snart: gå med på listan och bläddra bland presentguiderna."
     }
   },
   {
@@ -45,7 +47,8 @@
       "ko": "개인정보 처리방침 | LaplandGifts",
       "fr": "Politique de confidentialité | LaplandGifts",
       "it": "Informativa sulla privacy | LaplandGifts",
-      "nl": "Privacybeleid | LaplandGifts"
+      "nl": "Privacybeleid | LaplandGifts",
+      "sv": "Integritetspolicy | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "How LaplandGifts (Lapeso Oy) handles your data: Google Analytics 4 with Consent Mode v2, newsletter via Resend/Supabase, and affiliate tracking — all explained in plain English.",
@@ -58,7 +61,8 @@
       "ko": "LaplandGifts(Lapeso Oy)의 데이터 처리 방식: Consent Mode v2 기반 Google Analytics 4, Resend/Supabase 뉴스레터, 제휴 트래킹 — 알기 쉽게 설명합니다.",
       "fr": "Comment LaplandGifts (Lapeso Oy) traite vos données : Google Analytics 4 avec Consent Mode v2, newsletter via Resend/Supabase et suivi d'affiliation — expliqué clairement.",
       "it": "Come LaplandGifts (Lapeso Oy) tratta i tuoi dati: Google Analytics 4 con Consent Mode v2, newsletter via Resend/Supabase e tracciamento di affiliazione — spiegato con chiarezza.",
-      "nl": "Hoe LaplandGifts (Lapeso Oy) uw gegevens verwerkt: Google Analytics 4 met Consent Mode v2, nieuwsbrief via Resend/Supabase en affiliate-tracking — helder uitgelegd."
+      "nl": "Hoe LaplandGifts (Lapeso Oy) uw gegevens verwerkt: Google Analytics 4 met Consent Mode v2, nieuwsbrief via Resend/Supabase en affiliate-tracking — helder uitgelegd.",
+      "sv": "Så hanterar LaplandGifts (Lapeso Oy) dina uppgifter: Google Analytics 4 med Consent Mode v2, nyhetsbrev via Resend/Supabase och affiliate-spårning — tydligt förklarat."
     }
   },
   {
@@ -76,7 +80,8 @@
       "ko": "이용약관 | LaplandGifts",
       "fr": "Conditions d'utilisation | LaplandGifts",
       "it": "Termini di utilizzo | LaplandGifts",
-      "nl": "Gebruiksvoorwaarden | LaplandGifts"
+      "nl": "Gebruiksvoorwaarden | LaplandGifts",
+      "sv": "Användarvillkor | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "LaplandGifts terms of service — site usage, affiliate disclosure, and shopping terms.",
@@ -89,7 +94,8 @@
       "ko": "LaplandGifts 이용약관 — 사이트 이용, 제휴 고지, 쇼핑 약관 안내.",
       "fr": "Conditions d'utilisation de LaplandGifts — utilisation du site, divulgation d'affiliation et conditions d'achat.",
       "it": "Termini di servizio di LaplandGifts — utilizzo del sito, divulgazione di affiliazione e condizioni di acquisto.",
-      "nl": "Servicevoorwaarden van LaplandGifts — gebruik van de site, affiliate-vermelding en winkelvoorwaarden."
+      "nl": "Servicevoorwaarden van LaplandGifts — gebruik van de site, affiliate-vermelding en winkelvoorwaarden.",
+      "sv": "LaplandGifts användarvillkor — användning av webbplatsen, affiliate-information och köpvillkor."
     }
   },
   {
@@ -107,7 +113,8 @@
       "ko": "쿠키 정책 | LaplandGifts",
       "fr": "Politique des cookies | LaplandGifts",
       "it": "Politica sui cookie | LaplandGifts",
-      "nl": "Cookiebeleid | LaplandGifts"
+      "nl": "Cookiebeleid | LaplandGifts",
+      "sv": "Cookiepolicy | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "LaplandGifts cookie policy — analytics consent, affiliate tracking, and how to manage your preferences.",
@@ -120,7 +127,8 @@
       "ko": "LaplandGifts 쿠키 정책 — 분석 동의, 제휴 트래킹, 환경설정 관리 방법 안내.",
       "fr": "Politique relative aux cookies de LaplandGifts — consentement analytique, suivi d'affiliation et gestion de vos préférences.",
       "it": "Informativa sui cookie di LaplandGifts — consenso per le analisi, tracciamento di affiliazione e gestione delle preferenze.",
-      "nl": "Cookiebeleid van LaplandGifts — analytics-toestemming, affiliate-tracking en het beheren van uw voorkeuren."
+      "nl": "Cookiebeleid van LaplandGifts — analytics-toestemming, affiliate-tracking en het beheren van uw voorkeuren.",
+      "sv": "LaplandGifts cookiepolicy — samtycke till analys, affiliate-spårning och hur du hanterar dina inställningar."
     }
   }
 ]

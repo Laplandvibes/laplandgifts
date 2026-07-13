@@ -19,6 +19,7 @@ const BCP47: Record<Lang, string> = {
   fr: 'fr-FR',
   it: 'it-IT',
   nl: 'nl-NL',
+  sv: 'sv-SE',
 }
 
 /**

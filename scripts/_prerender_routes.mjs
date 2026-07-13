@@ -111,6 +111,7 @@ const FULL_LOCALE_LIST = [
   { lang: 'fr',    prefix: '/fr', bcp47: 'fr-FR', og: 'fr_FR', file: 'copy.fr.ts',   ident: 'fr',   jsonDir: 'fr'    },
   { lang: 'it',    prefix: '/it', bcp47: 'it-IT', og: 'it_IT', file: 'copy.it.ts',   ident: 'it',   jsonDir: 'it'    },
   { lang: 'nl',    prefix: '/nl', bcp47: 'nl-NL', og: 'nl_NL', file: 'copy.nl.ts',   ident: 'nl',   jsonDir: 'nl'    },
+  { lang: 'sv',    prefix: '/sv', bcp47: 'sv-SE', og: 'sv_SE', file: 'copy.sv.ts',   ident: 'sv',   jsonDir: 'sv'    },
 ];
 
 const LOCALE_FILTER = args.locales
@@ -457,7 +458,7 @@ function injectShell({ shell, bcp47, og, canonical, title, description, hreflang
   // Server-rendered BreadcrumbList JSON-LD (rich-result eligible), derived from the
   // canonical path. Skips the home page. Locale URL-prefix is treated as the locale root.
   try {
-    const LOC_PREFIXES = new Set(['fi', 'de', 'ja', 'es', 'br', 'cn', 'kr', 'fr', 'it', 'nl']);
+    const LOC_PREFIXES = new Set(['fi', 'de', 'ja', 'es', 'br', 'cn', 'kr', 'fr', 'it', 'nl', 'sv']);
     const u = new URL(canonical);
     const segs = u.pathname.split('/').filter(Boolean);
     const hasLoc = segs.length > 0 && LOC_PREFIXES.has(segs[0]);

@@ -50,6 +50,10 @@ const META: Record<Lang, { title: string; description: string }> = {
     title: 'Servicevoorwaarden | LaplandGifts',
     description: 'Servicevoorwaarden van LaplandGifts — gebruik van de site, affiliate-vermelding en winkelvoorwaarden.',
   },
+  sv: {
+    title: 'Användarvillkor | LaplandGifts',
+    description: 'LaplandGifts användarvillkor — användning av webbplatsen, affiliate-information och köpvillkor.',
+  },
 }
 
 export default function Terms() {

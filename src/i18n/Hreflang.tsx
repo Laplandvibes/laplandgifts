@@ -15,6 +15,7 @@ const LANGS: Array<{ code: string; prefix: string }> = [
   { code: 'fr', prefix: '/fr' },
   { code: 'it', prefix: '/it' },
   { code: 'nl', prefix: '/nl' },
+  { code: 'sv', prefix: '/sv' },
 ]
 
 /**
