@@ -39,7 +39,7 @@ export default function Unsubscribe() {
     <>
       <title>{t.title}</title>
       <meta name="description" content="Unsubscribe from LaplandGifts and the #LaplandVibes newsletter." />
-      <link rel="canonical" href="https://laplandgifts.com/unsubscribe/" />
+      <link rel="canonical" href={`https://laplandgifts.com${to('/unsubscribe')}`} />
       <meta name="robots" content="noindex, follow" />
 
       <div className="min-h-screen bg-[#0a0a1a] flex items-center justify-center px-4">

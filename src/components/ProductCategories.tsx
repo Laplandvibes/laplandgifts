@@ -18,7 +18,8 @@ function ProductCategories() {
             {t.sub}
           </p>
         </div>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        {/* md-palstat: tabletti (768) sai aiemmin mobiililadonnan — lg: aktivoitui vasta 1024. */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
           {t.items.map((cat, i) => (
             <div
               key={cat.name}

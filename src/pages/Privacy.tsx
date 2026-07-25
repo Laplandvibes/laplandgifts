@@ -65,7 +65,7 @@ export default function Privacy() {
     <>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
-      <link rel="canonical" href="https://laplandgifts.com/privacy/" />
+      <link rel="canonical" href={`https://laplandgifts.com${to('/privacy')}`} />
       <meta name="robots" content="index, follow" />
 
       <header className="bg-white shadow-sm sticky top-0 z-50">

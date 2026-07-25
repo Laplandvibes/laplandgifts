@@ -12,7 +12,7 @@ import ShippingInfo from '../components/ShippingInfo'
 import FAQ from '../components/FAQ'
 import RelatedSites from '../components/RelatedSites'
 import Footer from '../components/Footer'
-import { useLang, stripLocale, type Lang } from '../i18n/useLang'
+import { useLang, stripLocale, LANG_PREFIX, type Lang } from '../i18n/useLang'
 import AdUnit from '../../../shared/ads/AdUnit'
 import ivaloAd from '../../../shared/ads/advertisers/ivalo'
 import kultaCenterAd from '../../../shared/ads/advertisers/kultaCenter'
@@ -117,7 +117,9 @@ export default function Home() {
     <>
       <title>{meta.title}</title>
       <meta name="description" content={meta.description} />
-      <link rel="canonical" href="https://laplandgifts.com/" />
+      {/* Per-kieli-canonical: kovakoodattu juuri ylikirjoitti prerenderin oikean
+          /fi/-canonicalin ajonaikaisesti kaikilla 12 kielellä (nature-bugin sisarcase). */}
+      <link rel="canonical" href={`https://laplandgifts.com/${LANG_PREFIX[lang] ? `${LANG_PREFIX[lang]}/` : ''}`} />
       <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
 
     <div className="min-h-screen bg-white">
