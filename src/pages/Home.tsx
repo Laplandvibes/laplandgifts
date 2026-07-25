@@ -24,51 +24,51 @@ import { AD_SLOTS } from '../data/adSlots'
 
 const META: Record<Lang, { title: string; description: string }> = {
   en: {
-    title: 'LaplandGifts — Authentic Arctic gifts & crafts from Finnish Lapland',
+    title: 'LaplandGifts: Authentic Arctic gifts & crafts from Finnish Lapland',
     description: 'Handcrafted Lapland gifts, branded merch and Arctic experiences from Finnish Lapland. Shop opening soon: join the list and browse the gift guides.',
   },
   fi: {
-    title: 'LaplandGifts — Aitoja Lapin lahjoja ja käsitöitä',
+    title: 'LaplandGifts: Aitoja Lapin lahjoja ja käsitöitä',
     description: 'Käsintehtyjä Lapin lahjoja, brändituotteita ja arktisia elämyksiä Suomen Lapista. Kauppa avataan pian: liity listalle ja selaa lahjaoppaita.',
   },
   de: {
-    title: 'LaplandGifts — Echte arktische Geschenke aus Finnisch-Lappland',
+    title: 'LaplandGifts: Echte arktische Geschenke aus Finnisch-Lappland',
     description: 'Handgefertigte Lappland-Geschenke, Markenartikel und arktische Erlebnisse aus Finnisch-Lappland. Shop öffnet bald: jetzt eintragen und Geschenkideen entdecken.',
   },
   ja: {
-    title: 'LaplandGifts — フィンランド・ラップランド発の本物の北極ギフト',
+    title: 'LaplandGifts：フィンランド・ラップランド発の本物の北極ギフト',
     description: '手作りのラップランド・ギフト、ブランドグッズ、北極体験。フィンランド・ラップランド発のショップが近日オープン。登録してギフトガイドをご覧ください。',
   },
   es: {
-    title: 'LaplandGifts — Regalos y artesanía árticos de la Laponia finlandesa',
+    title: 'LaplandGifts: Regalos y artesanía árticos de la Laponia finlandesa',
     description: 'Regalos de Laponia hechos a mano, productos de marca y experiencias árticas de la Laponia finlandesa. La tienda abre pronto: únase a la lista y explore las guías de regalos.',
   },
   'pt-BR': {
-    title: 'LaplandGifts — Presentes e artesanato árticos da Lapônia finlandesa',
+    title: 'LaplandGifts: Presentes e artesanato árticos da Lapônia finlandesa',
     description: 'Presentes da Lapônia feitos à mão, produtos de marca e experiências árticas da Lapônia finlandesa. A loja abre em breve: entre na lista e veja os guias de presentes.',
   },
   'zh-CN': {
-    title: 'LaplandGifts — 来自芬兰拉普兰的正宗北极礼物与手工艺品',
+    title: 'LaplandGifts：来自芬兰拉普兰的正宗北极礼物与手工艺品',
     description: '手工制作的拉普兰礼物、品牌商品与北极体验，来自芬兰拉普兰。商店即将开业：加入名单，抢先浏览礼物指南。',
   },
   ko: {
-    title: 'LaplandGifts — 핀란드 라플란드의 정통 북극 선물·공예품',
+    title: 'LaplandGifts: 핀란드 라플란드의 정통 북극 선물·공예품',
     description: '핀란드 라플란드의 수제 선물, 브랜드 굿즈, 북극 체험. 숍 오픈 예정: 지금 명단에 등록하고 선물 가이드를 살펴보십시오.',
   },
   fr: {
-    title: 'LaplandGifts — Cadeaux et artisanat arctiques de Laponie finlandaise',
+    title: 'LaplandGifts: Cadeaux et artisanat arctiques de Laponie finlandaise',
     description: 'Cadeaux de Laponie faits main, produits de marque et expériences arctiques de Laponie finlandaise. Boutique bientôt ouverte : inscrivez-vous et découvrez les guides cadeaux.',
   },
   it: {
-    title: 'LaplandGifts — Regali e artigianato artici della Lapponia finlandese',
+    title: 'LaplandGifts: Regali e artigianato artici della Lapponia finlandese',
     description: 'Regali della Lapponia fatti a mano, prodotti di marca ed esperienze artiche dalla Lapponia finlandese. Il negozio apre presto: iscriviti e sfoglia le guide regalo.',
   },
   nl: {
-    title: 'LaplandGifts — Authentieke Arctische geschenken uit Fins Lapland',
+    title: 'LaplandGifts: Authentieke Arctische geschenken uit Fins Lapland',
     description: 'Handgemaakte Lapland-geschenken, merchandise en Arctische belevenissen uit Fins Lapland. Winkel opent binnenkort: schrijf u in en bekijk de cadeaugidsen.',
   },
   sv: {
-    title: 'LaplandGifts — äkta arktiska presenter från finska Lappland',
+    title: 'LaplandGifts: äkta arktiska presenter från finska Lappland',
     description: 'Handgjorda Lapplandspresenter, egen merch och arktiska upplevelser från finska Lappland. Butiken öppnar snart: gå med på listan och bläddra bland presentguiderna.',
   },
 }
