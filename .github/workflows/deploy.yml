@@ -1,10 +1,33 @@
 name: Deploy to Cloudflare Pages
 
+# 🔴 EI AJOSSA PUSHILLA (2026-07-26). Tämä workflow failasi JOKAISELLA pushilla
+# ~25 s kohdalla, koska se ei voi toimia tässä muodossa:
+#
+#   1. `actions/checkout` tuo vain tämän repon, mutta 7 importtia osoittaa
+#      monorepon (Laplandvibes/lv-ops) `shared/`-hakemistoon:
+#      EcosystemMenu, HomeAdSlots, NotFound, PremiumSpotGrid, ads/AdUnit,
+#      ads/advertisers/ivalo, ads/advertisers/kultaCenter
+#      → TS2307 "Cannot find module '../../../shared/NotFound'" ja siitä
+#        kaskadina TS7006 (AdUnitin propsit implicit any) → exit 2.
+#   2. Workflowista puuttuvat VITE_SUPABASE_URL / VITE_SUPABASE_PUBLISHABLE_KEY.
+#      Vaikka buildi saataisiin läpi, CI deployaisi bundlen jossa uutiskirje-
+#      tilaus on hiljaa rikki (import.meta.env → undefined).
+#
+# Vihreäksi pakottaminen olisi siis regressiopolku liveen. Operatiivinen deploy
+# tehdään wranglerilla committoidusta tilasta (git == live):
+#   cd laplandgifts && npm run build && npx wrangler pages deploy dist \
+#     --project-name=laplandgifts --branch=main
+#
+# Oikea korjaus on arkkitehtuuripäätös (Vesa): shared/ CI:hin submodulena tai
+# julkaistuna pakettina + Supabase-secretit repon settingseihin. Sama vika on
+# christmas- ja flights-repoissa. Kun se on tehty, palauta alla oleva
+# `push`-triggeri. Manuaalinen ajo onnistuu Actions-välilehdeltä.
 on:
-  push:
-    branches:
-      - main
-      - staging
+  workflow_dispatch:
+  # push:
+  #   branches:
+  #     - main
+  #     - staging
 
 jobs:
   deploy:
