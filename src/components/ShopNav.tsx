@@ -90,7 +90,10 @@ export default function ShopNav() {
       {/* Linkkirivi omalla rivillään: koko kategorialista näkyy työpöydällä
           ilman että ylärivi vieri sivusuunnassa. */}
       <nav className="hidden border-t border-line xl:block">
-        <div className="mx-auto flex max-w-7xl items-center gap-5 px-4 py-2">
+        {/* pt-8: EcosystemMenun kertaluontoinen vihjelaatikko roikkuu
+            ylärivin napin alta ja peitti ilman tätä kaksi ensimmäistä
+            kategorialinkkiä. Kaupan päänavigaatio ei saa jäädä minkään alle. */}
+        <div className="mx-auto flex max-w-7xl items-center gap-5 px-4 pb-2 pt-8">
           {links.map((l) => (
             <Link
               key={l.key}
