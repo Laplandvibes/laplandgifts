@@ -40,7 +40,7 @@ toimitettava kansainvälisesti**.
 | 1 | Suomalainen design | `/design` | Marimekko, Iittala, Arabia, Aarikka, Kalevala, Fiskars |
 | 2 | Vaatteet & asusteet | `/clothing` | villasukat, myssyt, Reima, Halti |
 | 3 | Lapin käsityöt | `/handicrafts` | puukot (Marttiini, LAURI), kuksat, saamelaistuotteet (vain Duodji-auktorisoidut) |
-| 4 | Herkut | `/treats` | lakkahillo, Fazer, salmiakki, marjat |
+| 4 | Herkut | `/treats` | lakkahillo, Fazer, salmiakki, marjat, poron/hirven kuivaliha (Riipisen Kuivaliha, Kuivalihakundi) |
 | 5 | Superfoodit & hyvinvointi | `/superfoods` | mustikka-/puolukkajauheet, pakuri/chaga, tyrni, koivunmahla, luonnonkosmetiikka |
 | 6 | LaplandVibes-merch | `/merch` | paidat, hupparit, lippikset, tuubihuivit, pipot, mukit, tarrat |
 | 7 | Elämyslahjat | `/experiences` | revontulisafarit, husky-ajelut, moottorikelkkaretket lahjaksi (GYG) |
@@ -110,32 +110,90 @@ type Product = {
 
 ## 6. Kumppanit ja affiliate-säännöt
 
-Kumppaniselvitys 31.7.2026 (web-tutkimus; ✅ = verifioitu lähteestä,
-komissiot vain jos julkisesti kerrottu — Adtraction-tasot näkyvät paneelista):
+Kumppaniselvitys 31.7.2026: web-tutkimus + **Adtraction-paneelisession
+verifiointi 31.7.** (komissiot luettu paneelista, hakemukset lähetetty):
+
+**Adtraction — hyväksytyt (trackinglinkit valmiina):**
+
+| Kumppani | Kategoria | Komissio | Huomiot |
+|---|---|---|---|
+| **Makia** | Vaatteet | 7,70 % | Feed 3015 tuotetta; kv-toimitus worldwide |
+| **Halti** | Vaatteet/ulkoilu | 7,70 % | Feed 9010 tuotetta + promokoodi; toimitus vain EU → merkintä |
+| **Suunto** | Premium-lahjat (urheilukellot) | 2,5 % | FI-ohjelma approved; myös ES/FR/IT/DE/UK-ohjelmat olemassa |
+| **Scandinavian Outdoor** | Ulkoilu, kuksat (Kupilka) | (ennestään) | Käytössä jo kalastussivustoilla |
+
+**Adtraction — hakemus lähetetty 31.7. (odottaa mainostajan hyväksyntää):**
+
+| Kumppani | Kategoria | Komissio | Huomiot |
+|---|---|---|---|
+| **Nordic Nest FI** | Design (Marimekko, Iittala) | 8,00 % | Feed + AOV 87 €; ohjelmat myös 11 muulle markkinalle |
+| **North Outdoor** | Merinoneuleet (Oulu) | 10,00 % | Feed 3328 tuotetta; worldwide DHL |
+| **Luhta** | Vaatteet | 7,70 % | Toimitus vain EU → merkintä |
+| **Finlayson** | Kodintekstiilit | 7,70 % | Feed; toimitus vain Suomeen (verifioitava) → merkintä |
+| **Smartphoto FI** | Kuvatuotteet ("Print Your Trip") | 12 % uusi / 7 % vanha asiakas | Feed 1478; konv. 16,2 % — V5:n kuvakirjaidea toteutuu affiliatena |
+| **Elämyslahjat.fi** | Elämyslahjat (FI-yleisö) | 3,85 % | Digitaalinen toimitus = ei toimitusrajaa; täydentää GYG:tä |
+| **Ruohonjuuri** | Superfoodit + luonnonkosmetiikka | 5,40 % | Paikkaa luonnonkosmetiikka-aukon (pakuri, marjajauheet, Flow/Frantsila) |
+
+**Adtraction — ei mahdollinen / ei löydy:**
+- Reima FI: 10 % mutta **hakua ei voi lähettää** ("Content channels are not
+  allowed" meidän kanavatyypille) → Reima US Awinin kautta jää vaihtoehdoksi.
+- Ei Adtractionissa: Marimekko, Iittala, Fiskars, Suomikauppa, Fazer, Moomin,
+  Varusteleka, Marttiini, Kalevala, Arctic Power Berries.
+- Ehdokkaita jatkoon (toimitusalue verifioitava ennen hakua): Lautapelit.fi
+  7,7 %, Luontaistukku.fi 10 %, Naturelle.fi 13,2 %, You Name It 10 %,
+  Coolstuff 11 %, KahviKaveri 10 %.
+
+**Muut verkostot ja suorat (web-tutkimus):**
 
 | Kumppani | Kategoria | Verkosto | Kv-toimitus | Huomiot |
 |---|---|---|---|---|
-| **Nordic Nest** | Design | ✅ Adtraction FI | ✅ 50+ maata (EU, UK, US, JP, KR, AU) | Paras Adtraction-natiivi design-kumppani; myy Marimekkoa + Iittalaa |
-| **Finnish Design Shop** | Design, puukot, korut | Awin (+FlexOffers US), ~6–8 % | ✅ 180+ maata Suomesta | Paras yksittäinen kumppani, 170+ brändiä — vaatii Awin-julkaisijatilin |
-| **Suomikauppa.fi** | Herkut (Fazer, salmiakki, Moomin) | ✅ Daisycon 7 % | ✅ Worldwide (DHL/FedEx, myös US) | Herkkukategorian ratkaisu; Fazerilla itsellään ei ohjelmaa eikä US-toimitusta |
-| **Marttiini** | Puukot | ✅ Oma ohjelma (Circlewise) 7 % | ✅ Worldwide | Rovaniemeläinen — täydellinen Lappi-tarina |
-| **Makia** | Vaatteet | ✅ Adtraction FI | ✅ Worldwide | Helsinki-streetwear |
-| **North Outdoor** | Neuleet/villa | ✅ Adtraction FI | ✅ Worldwide DHL | 100 % merino, valmistus Oulussa — villasukat/neuleet |
-| **Scandinavian Outdoor** | Ulkoilu, kuksat (Kupilka) | ✅ Adtraction FI — **LV jo kumppani** | ⚠️ ainakin DE/AT/US/AU | Nollakitka: käytössä jo kalastussivustoilla |
-| **Reima** | Lastenvaatteet | ✅ Adtraction FI (EU) + Awin (US) | ⚠️ markkinakohtaiset kaupat | Kaksi ohjelmaa eri markkinoille |
-| **Four Sigmatic** | Superfoodit (pakuri/sienikahvit) | Oma ohjelma 10 % | ✅ Virosta lähes kaikkialle + US-kauppa | Suomalaisjuurinen; haetaan suoraan |
-| **Arctic Power Berries** | Superfoodit (marjajauheet) | ✅ Oma ohjelma 5 % | ✅ Worldwide (UK:sta) | Lappilainen brändi, logistiikka UK |
-| **Moomin Shop** | Lahjat/design | ei ohjelmaa → suora linkki + UTM | ✅ Worldwide DHL Express | Vahva lahjabrändi |
-| **Varusteleka** | Puukot, retkeily | ei julkista ohjelmaa → suora yhteydenotto | ✅ Worldwide | Kumppanuus neuvoteltavissa |
-| **Duodji Shop** | Saamelaiset käsityöt | ei ohjelmaa → suora linkki + UTM | EU/US (huhtikuun 2026 selvitys — verifioitava toteutuksessa) | Ainoa auktorisoitu lähde saamelaistuotteille (§6 säännöt) |
+| **Finnish Design Shop** | Design, puukot, korut | Awin (+FlexOffers US), ~6–8 % | ✅ 180+ maata Suomesta | Paras yksittäinen kumppani, 170+ brändiä — Awin-tili avattavana |
+| **Suomikauppa.fi** | Herkut (Fazer, salmiakki, Moomin) | Daisycon 7 % | ✅ Worldwide (DHL/FedEx, myös US) | Herkkukategorian ratkaisu — Daisycon-tili avattavana |
+| **Marttiini** | Puukot | Oma ohjelma (Circlewise) 7 % | ✅ Worldwide | Rovaniemeläinen — täydellinen Lappi-tarina |
+| **Four Sigmatic** | Superfoodit | Oma ohjelma 10 % | ✅ Virosta lähes kaikkialle + US-kauppa | Haetaan suoraan |
+| **Arctic Power Berries** | Superfoodit (marjajauheet) | Oma ohjelma 5 % | ✅ Worldwide (UK:sta) | Lappilainen brändi, logistiikka UK |
+| **Moomin Shop** | Lahjat/design | suora linkki + UTM | ✅ Worldwide DHL Express | Ei ohjelmaa |
+| **Varusteleka** | Puukot, retkeily | suora yhteydenotto | ✅ Worldwide | Kumppanuus neuvoteltavissa |
+| **Duodji Shop** | Saamelaiset käsityöt | suora linkki + UTM | EU/US (verifioitava toteutuksessa) | Ainoa auktorisoitu lähde saamelaistuotteille |
+| **Kuivalihakundi** | Kuivalihat (poro-jerky) | suora yhteydenotto | ✅ EU (ilmainen >99 €); "worldwide"-väite, maalista kassalla | Ainoa kv-toimittava kuivalihakauppa; Tuusula → copy "100 % suomalainen poro", EI "lappilainen yritys" |
+| **Riipisen Riistaherkut** | Kuivalihat | suora yhteydenotto | ❌ vain Suomi | Kuusamo — EI saa esittää lappilaisena (Ruka/Kuusamo-sääntö); "osta paikan päältä" -kulma (Ruka, Tripla, S/K-kaupat) |
+| **Tenon Luonnontuote / Deliporo** | Kuivalihat (aito Lappi: Nuorgam/Ivalo) | suora yhteydenotto | ❌ vain Suomi | Aidoin Lappi-tarina; "vain Suomeen" -merkintä |
 
-**Rajaukset:** Halti, Luhta, Finlayson = EU-/FI-only-toimitus → ei kelpaa
-kv-vaatimuksella (Halti/Luhta mahdollisia EU-only-merkinnällä V2:ssa).
-Lumene on CJ-verkostossa → ristiriita CJ-exit-linjauksen (23.7.) kanssa,
-jätetään pois ilman erillistä päätöstä. Luonnonkosmetiikka jää heikoimmin
-katetuksi (Flow/Frantsila/Puhdistamo: ei ohjelmia löytynyt) — V1:ssä
-superfoods-kategoria kantaa hyvinvointikulman, kosmetiikka täydennetään kun
-kumppani löytyy. Kalevala/Aarikka katetaan FDS:n valikoiman kautta.
+**Monimarkkinahuomio:** Adtraction-ohjelmat ovat markkinakohtaisia (Nordic
+Nest ×12, Suunto ×6, Smartphoto ×4 markkinaa). V1 käyttää FI-ohjelmien
+linkkejä; toteutusvaiheessa haetaan lisämarkkinaohjelmiin sivuston
+pääkielten mukaan (de, en/UK, fr, es, it, nl, sv, kr) ja tuotedataan
+lisätään per-kieli-partner-URL, jotta saksalainen ostaja päätyy .de-kauppaan
+oikealla trackinglinkillä. Julkaisu ei odota näitä.
+
+**Lihatuotteiden vientirajoitukset** (kuivalihojen tuotesivuille ja
+/shipping-sivulle — verifioitu viranomaislähteistä 31.7.): EU-sisämarkkina ✅
+sallittu; Norja ⚠️ sallittu mutta tulli+alv; UK ❌ (4/2025 alkaen hirvieläinliha
+ml. poro kielletty henkilötuonnissa, kaupallinen vaatii EHC:n); USA ❌
+postimyynti (mutta matkustaja saa tuoda mukanaan dokumentein — "osta
+paikan päältä" -CTA); Japani ❌. Kuivalihojen "tilaa kotiin" -lupaus
+annetaan vain EU-asiakkaille.
+
+**Toimitusrajatut kumppanit (Vesa 31.7.: mukaan rajauksella, ei pois):**
+Halti ja Luhta (molemmat Adtraction FI, toimitus vain EU) otetaan mukaan
+näkyvällä **"Toimitus vain Eurooppaan"** -merkinnällä tuotekorteissa ja
+tuotesivuilla. Finlayson (Adtraction FI) toimitti selvityshetkellä vain
+Manner-Suomeen — verifioidaan toteutuksessa; jos FI-only pitää paikkansa,
+merkintä "Toimitus vain Suomeen" ja nosto Vesalle ennen tuotteiden lisäystä.
+Tätä varten kategoriasivuille tulee **toimitusmaasuodatin**: käyttäjä
+valitsee kotimaansa ja näkee vain sinne toimitettavat tuotteet (data:
+`Partner.shipsTo`). Kuivalihat (Riipisen Kuivaliha, Kuivalihakundi — kaupat
+ja mahd. ohjelmat selvityksessä): huom. lihatuotteiden vienti EU:n
+ulkopuolelle on laajalti rajoitettua (esim. US kieltää lihatuotteiden
+postituonnin) → kuivalihatuotteet saavat todennäköisesti EU-only-merkinnän;
+rajoitteet kirjataan rehellisesti tuotesivulle.
+
+**Muut rajaukset:** Lumene on CJ-verkostossa → ristiriita CJ-exit-linjauksen
+(23.7.) kanssa, jätetään pois ilman erillistä päätöstä. Luonnonkosmetiikka
+jää heikoimmin katetuksi (Flow/Frantsila/Puhdistamo: ei ohjelmia löytynyt) —
+V1:ssä superfoods-kategoria kantaa hyvinvointikulman, kosmetiikka
+täydennetään kun kumppani löytyy. Kalevala/Aarikka katetaan FDS:n
+valikoiman kautta.
 
 **Verkostotilit:** Adtraction (on jo) + uusina Awin, Daisycon, Circlewise
 + 2 in-house-hakua (Four Sigmatic, Arctic Power Berries). Tilien avaus ja
@@ -281,11 +339,13 @@ ennen kaupan julkaisua.
 
 ## 13. Vesalle jäävät tehtävät
 
-1. Adtraction-paneelista haku ohjelmiin: Nordic Nest, Makia, North Outdoor,
-   Reima (Scandinavian Outdoor on jo).
-2. Uudet julkaisijatilit: Awin (Finnish Design Shop), Daisycon
-   (Suomikauppa.fi), Circlewise (Marttiini) + in-house-haut Four Sigmatic
-   ja Arctic Power Berries.
+1. ~~Adtraction-haut~~ **TEHTY 31.7.** (agentti paneelisessiossa): hakemukset
+   lähetetty Nordic Nest FI, North Outdoor, Luhta, Finlayson, Smartphoto,
+   Elämyslahjat.fi, Ruohonjuuri; Makia+Halti+Suunto olivat jo approved.
+2. Uusien julkaisijatilien viimeistely (aloitettu 31.7.): **Awin** (kesken,
+   vaihe 2/4) ja **Daisycon** (kesken) — sitten haku ohjelmiin Finnish
+   Design Shop (Awin) ja Suomikauppa (Daisycon). Lisäksi Circlewise
+   (Marttiini) + in-house-haut Four Sigmatic ja Arctic Power Berries.
 3. Fourthwall-tilin avaus + maksutiedot (Stripe Connect -payout Suomeen
    varmistettava rekisteröityessä; varalla Spreadshop).
 4. Merch-designien ja POD-kaupan lopullinen hyväksyntä ennen julkaisua.
