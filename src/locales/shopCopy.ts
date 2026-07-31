@@ -2,6 +2,22 @@ import type { Lang } from '../i18n/useLang'
 
 export interface ShopCopy {
   nav: { shop: string; guides: string; shipping: string; allProducts: string }
+  /**
+   * Etusivun osioiden otsikot.
+   *
+   * 🔴 Nämä asuvat täällä eivätkä ChromeCopyssa, koska ChromeCopyn vastaavat
+   * rivit kuvaavat kauppaa jota ei vielä ollut: "Three Ways to Gift Lapland"
+   * (kategorioita on seitsemän), "Coming Soon" (tuotteet ovat ostettavissa) ja
+   * heron "Soon you'll be able to order" (tilata voi nyt). Kauppa on auki,
+   * joten vanhat rivit olisivat nyt väärää tietoa.
+   */
+  home: {
+    heroLead: string
+    categoriesH2: string
+    categoriesSub: string
+    featuredH2: string
+    featuredSub: string
+  }
   category: {
     /** Kategorian nimi navissa ja otsikoissa. */
     names: Record<
@@ -54,6 +70,16 @@ const fmt = (value: number, currency: string, locale: string) =>
 
 const en: ShopCopy = {
   nav: { shop: 'Shop', guides: 'Gift guides', shipping: 'Delivery', allProducts: 'All products' },
+  home: {
+    heroLead:
+      'Order authentic Lapland gifts while you are still on holiday and have them waiting when you get home. Every item ships from the Finnish or Nordic shop that makes or stocks it.',
+    categoriesH2: 'Seven ways to give Lapland',
+    categoriesSub:
+      'Design, clothing, handicrafts, treats, superfoods, our own merch and experience gifts. Each category opens the shop that actually ships the item.',
+    featuredH2: 'Picked from the catalogue',
+    featuredSub:
+      'A few products from across the categories. Every price is read from the partner shop and carries the date it was checked.',
+  },
   category: {
     names: {
       design: 'Finnish design',
@@ -114,6 +140,16 @@ const en: ShopCopy = {
 
 const fi: ShopCopy = {
   nav: { shop: 'Kauppa', guides: 'Lahjaoppaat', shipping: 'Toimitus', allProducts: 'Kaikki tuotteet' },
+  home: {
+    heroLead:
+      'Tilaa aitoja Lapin lahjoja jo lomalla ja anna niiden odottaa kotona, kun palaat. Jokainen tuote lähtee siitä suomalaisesta tai pohjoismaisesta kaupasta, joka sen valmistaa tai varastoi.',
+    categoriesH2: 'Seitsemän tapaa lahjoittaa Lappia',
+    categoriesSub:
+      'Design, vaatteet, käsityöt, herkut, superfoodit, oma merch ja elämyslahjat. Jokainen kategoria avaa sen kaupan, joka tuotteen oikeasti lähettää.',
+    featuredH2: 'Poimintoja katalogista',
+    featuredSub:
+      'Muutama tuote eri kategorioista. Jokainen hinta on luettu kumppanin kaupasta ja kantaa päivän, jona se tarkistettiin.',
+  },
   category: {
     names: {
       design: 'Suomalainen design',
