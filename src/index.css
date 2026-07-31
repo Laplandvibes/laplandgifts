@@ -61,3 +61,13 @@ h2 { line-height: 1.15; }
 /* Tuotekuvien vakiosuhde, jotta grid ei hypi latauksen aikana. */
 .product-media { aspect-ratio: 4 / 5; }
 .category-media { aspect-ratio: 3 / 2; }
+
+/* Cache-bust 2026-07-31: Cloudflaren reunavälimuistiin jäi deployn jälkeen
+   myrkyttynyt kopio /assets/index-*.css:stä. Origin-otsakkeen sisältävä
+   pyyntö (jollaisen selain tekee, koska Viten link-tagissa on crossorigin)
+   sai vastaukseksi SPA-fallbackin HTML:n, joka tallentui immutable-
+   merkinnällä vuodeksi. nosniff esti HTML:n käytön tyylitiedostona, joten
+   koko sivusto renderöityi tyylittömänä. Tämän kommentin muuttaminen antaa
+   tiedostolle uuden sisältöhashin eli uuden URL:n, jota myrkytys ei koske.
+   Jos sama toistuu: lämmitä välimuisti Origin-otsakkeella heti deployn
+   jälkeen ennen kuin yksikään selain ehtii pyytää tiedostoa. */
