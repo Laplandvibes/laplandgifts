@@ -71,3 +71,10 @@ h2 { line-height: 1.15; }
    tiedostolle uuden sisältöhashin eli uuden URL:n, jota myrkytys ei koske.
    Jos sama toistuu: lämmitä välimuisti Origin-otsakkeella heti deployn
    jälkeen ennen kuin yksikään selain ehtii pyytää tiedostoa. */
+
+:root {
+  /* Sisältöhashin pakotus: pelkkä kommentti ei riitä, minifioija poistaa sen.
+     Custom property säilyy, joten tiedosto saa uuden nimen. Nosta päivää jos
+     reunavälimuisti myrkyttyy uudelleen. */
+  --lv-build: 20260731;
+}
