@@ -26,6 +26,12 @@ export interface ShopCopy {
     related: string
     backToCategory: string
   }
+  /** Elämyslahjat tulevat GYG-katalogista, eivät PRODUCTS-listasta. */
+  experience: {
+    priceNote: (price: string, asOf: string) => string
+    duration: (value: string) => string
+    viewOnGyg: string
+  }
   shipping: {
     worldwide: string
     euOnly: string
@@ -72,6 +78,11 @@ const en: ShopCopy = {
     related: 'More from this category',
     backToCategory: 'Back to category',
   },
+  experience: {
+    priceNote: (price, asOf) => `From ${price} on GetYourGuide, price read ${asOf}`,
+    duration: (value) => `Duration ${value}`,
+    viewOnGyg: 'See availability',
+  },
   shipping: {
     worldwide: 'Ships worldwide',
     euOnly: 'Ships to Europe only',
@@ -114,6 +125,11 @@ const fi: ShopCopy = {
     checkoutNote: 'Viimeistelet ostoksen kumppanin kaupassa. Me emme käsittele maksua emmekä toimitusta.',
     related: 'Lisää tästä kategoriasta',
     backToCategory: 'Takaisin kategoriaan',
+  },
+  experience: {
+    priceNote: (price, asOf) => `Alkaen ${price} GetYourGuidessa, hinta luettu ${asOf}`,
+    duration: (value) => `Kesto ${value}`,
+    viewOnGyg: 'Katso saatavuus',
   },
   shipping: {
     worldwide: 'Toimitus maailmanlaajuisesti',

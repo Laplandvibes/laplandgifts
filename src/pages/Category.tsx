@@ -5,8 +5,10 @@ import ShopNav from '../components/ShopNav'
 // footerDictin, joten sivut käyttävät sitä (sama kuin Home.tsx).
 import Footer from '../components/Footer'
 import ProductGridSection from '../components/shop/ProductGridSection'
+import ExperienceCard from '../components/shop/ExperienceCard'
 import { categoryBySlug } from '../data/categories'
 import { productsByCategory } from '../data/products'
+import { GIFT_EXPERIENCES } from '../data/experiences'
 import { PARTNERS } from '../data/partners'
 import { shipsTo } from '../data/shipping'
 import { useShippingCountry } from '../context/ShippingCountry'
@@ -26,6 +28,11 @@ export default function Category() {
 
   const category = categoryBySlug(stripLocale(pathname).replace(/\/$/, ''))
   if (!category) return <NotFound />
+
+  // Elämykset eivät ole tuotteita: ne varataan GetYourGuidesta eikä niillä ole
+  // kumppanikauppaa tai toimitusaluetta, joten toimitusmaasuodatus ei koske
+  // niitä. Rivit tulevat verkoston verifioidusta GYG-katalogista.
+  const isExperiences = category.id === 'experiences'
 
   const all = productsByCategory(category.id)
   const visible = country
@@ -65,8 +72,18 @@ export default function Category() {
         </header>
 
         <div className="mx-auto max-w-7xl px-4 py-10 md:py-14">
-          <p className="mb-6 text-sm text-muted">{t.productCount(visible.length)}</p>
-          <ProductGridSection products={visible} lang={lang} emptyMessage={emptyMessage} />
+          <p className="mb-6 text-sm text-muted">
+            {t.productCount(isExperiences ? GIFT_EXPERIENCES.length : visible.length)}
+          </p>
+          {isExperiences ? (
+            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+              {GIFT_EXPERIENCES.map((p) => (
+                <ExperienceCard key={p.path} pick={p} lang={lang} />
+              ))}
+            </div>
+          ) : (
+            <ProductGridSection products={visible} lang={lang} emptyMessage={emptyMessage} />
+          )}
         </div>
       </main>
       <Footer />
