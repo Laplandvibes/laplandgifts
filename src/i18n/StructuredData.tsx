@@ -2,6 +2,8 @@ import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useLang, stripLocale, type Lang } from './useLang'
 import { FAQ_BY_LANG } from '../components/FAQ'
+import { productBySlug } from '../data/products'
+import { PARTNERS } from '../data/partners'
 
 const BASE = 'https://laplandgifts.com'
 
@@ -32,7 +34,11 @@ export default function StructuredData() {
   const { pathname } = useLocation()
   // FAQPage belongs only on the home document (where the visible FAQ renders),
   // not on the legal/404 routes. Home is the locale root: '/', '/fi', '/de', …
-  const isHome = stripLocale(pathname) === '/'
+  const path = stripLocale(pathname)
+  const isHome = path === '/'
+  // Home already emits an ItemList of the featured products (ProductGrid), so
+  // Product goes only on the product document. One page never carries both.
+  const productSlug = path.startsWith('/product/') ? path.slice('/product/'.length) : null
   useEffect(() => {
     const nodes: Array<Record<string, unknown>> = [
       {
@@ -74,6 +80,34 @@ export default function StructuredData() {
       })
     }
 
+    const product = productSlug ? productBySlug(productSlug) : undefined
+    if (product) {
+      const partner = PARTNERS[product.partnerId]
+      nodes.push({
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        name: lang === 'fi' ? product.name.fi : product.name.en,
+        description: lang === 'fi' ? product.description.fi : product.description.en,
+        brand: { '@type': 'Brand', name: product.brand },
+        // 🔴 Kuvaa ei liitetä: tuotesivun kuva on tunnelmakuva, ei kuva juuri
+        // tästä tuotteesta (sivu sanoo sen itse). Product.image lupaisi
+        // hakukoneelle tuotekuvan, joten kenttä jätetään pois.
+        offers: {
+          '@type': 'Offer',
+          price: String(product.priceFrom),
+          // Valuutta luetaan tuotteelta: osa katalogista hinnoittelee punnissa.
+          priceCurrency: product.currency,
+          availability: 'https://schema.org/InStock',
+          // 🔴 URL osoittaa kumppanin tuotesivulle, ei meidän. Meillä ei ole
+          // kassaa, joten oma URL olisi väärä lupaus. Tähän tulee kumppanin
+          // oma osoite eikä affiliate-redirect, joka ei ole tuotesivu.
+          url: product.partnerProductUrl,
+          seller: { '@type': 'Organization', name: partner.name },
+        },
+        // Ei aggregateRatingia: arvosteluja ei ole, eikä niitä keksitä.
+      })
+    }
+
     const inject = (node: unknown): unknown => {
       if (Array.isArray(node)) return node.map(inject)
       if (node && typeof node === 'object') {
@@ -98,6 +132,6 @@ export default function StructuredData() {
     return () => {
       for (const el of created) el.remove()
     }
-  }, [bcp47, lang, isHome])
+  }, [bcp47, lang, isHome, productSlug])
   return null
 }

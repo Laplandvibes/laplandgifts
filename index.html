@@ -5,14 +5,25 @@
     <script>
       (function () {
         try {
-          var T = {"en":"LaplandGifts: Authentic Arctic Gifts from Finnish Lapland","fi":"LaplandGifts: Aitoja arktisia lahjoja ja käsintehtyjä aarteita Suomen Lapista","de":"LaplandGifts: Authentische arktische Geschenke und Handarbeiten aus dem finnischen Lappland","ja":"LaplandGifts：フィンランド・ラップランドの本物の北極ギフトと手工芸品","es":"LaplandGifts: auténticos regalos árticos y tesoros artesanales de la Laponia finlandesa","pt-br":"LaplandGifts: presentes árticos autênticos e tesouros artesanais da Lapônia finlandesa","zh-cn":"LaplandGifts：芬兰拉普兰的正宗北极礼品与手工艺品","kr":"LaplandGifts: 핀란드 라플란드의 정통 북극 선물과 수공예품","fr":"LaplandGifts: cadeaux arctiques authentiques et trésors artisanaux de Laponie finlandaise","it":"LaplandGifts: autentici regali artici e tesori artigianali della Lapponia finlandese","nl":"LaplandGifts: authentieke arctische cadeaus en handgemaakte schatten uit Fins Lapland","sv":"LaplandGifts: äkta arktiska presenter och handgjorda skatter från finska Lappland"};
+          // 🔴 Sama taulukko on scripts/build-routes-json.mjs:n HOME-lohkossa.
+          // Root-reitillä on kaksi metalähdettä: tämä SPA-kuori ja prerenderin
+          // scripts/routes.json. Generaattori vertaa näitä ja kaatuu, jos ne
+          // eroavat, joten muuta molemmat tai älä kumpaakaan.
+          var T = {"en":"LaplandGifts: Finnish design, Lapland crafts and gifts delivered home","fi":"LaplandGifts: suomalaista designia ja Lapin käsitöitä kotiin toimitettuna","de":"LaplandGifts: finnisches Design und Geschenke aus Lappland","ja":"LaplandGifts：フィンランドのデザインとラップランドの手仕事を自宅へ","es":"LaplandGifts: diseño finlandés y artesanía de Laponia a domicilio","pt-br":"LaplandGifts: design finlandês e artesanato da Lapônia em casa","zh-cn":"LaplandGifts：芬兰设计与拉普兰手工艺，直送到家","kr":"LaplandGifts: 핀란드 디자인과 라플란드 수공예품을 집으로","fr":"LaplandGifts : design finlandais et artisanat de Laponie","it":"LaplandGifts: design finlandese e artigianato lappone","nl":"LaplandGifts: Fins design en Laplands ambacht thuisbezorgd","sv":"LaplandGifts: finsk design och lappländskt hantverk hem till dig"};
           var path = location.pathname || '/';
           var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', br: 'pt-br', cn: 'zh-cn', kr: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv' };
-          var loc = 'en';
-          for (var p in map) {
-            if (path === '/' + p || path.indexOf('/' + p + '/') === 0) { loc = map[p]; break; }
+          // 🔴 Vain kielijuuret. Aiemmin tämä osui myös alasivuihin ja
+          // ylikirjoitti prerenderin kirjoittaman sivukohtaisen <title>:n
+          // etusivun otsikolla: JavaScriptin ajava indeksoija näki 300
+          // sivulla 12 otsikkoa. Alasivuilla kuoressa on jo oikea otsikko.
+          var loc = null;
+          if (path === '/') loc = 'en';
+          else {
+            for (var p in map) {
+              if (path === '/' + p || path === '/' + p + '/') { loc = map[p]; break; }
+            }
           }
-          if (T[loc]) document.title = T[loc];
+          if (loc && T[loc]) document.title = T[loc];
         } catch (e) { /* fail silent */ }
       })();
     </script>
@@ -72,14 +83,14 @@
     <link rel="manifest" href="/site.webmanifest" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="fcaeb1ff317969b" content="eef17352895674f08513a89d315fa5f6" />
-    <title>LaplandGifts: Authentic Arctic Gifts from Finnish Lapland</title>
-    <meta name="description" content="Handcrafted puukko knives, kuksa cups, Sami jewelry and Arctic experiences from Finnish Lapland. Shop opening soon: join the list and browse the gift guides." />
+    <title>LaplandGifts: Finnish design, Lapland crafts and gifts delivered home</title>
+    <meta name="description" content="Curated Finnish design, Lapland handicrafts, treats, superfoods and experience gifts. Order from partner shops that deliver to your home country." />
     <link rel="canonical" href="https://laplandgifts.com/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="LaplandGifts: Authentic Arctic Gifts" />
-    <meta property="og:description" content="Handcrafted treasures, branded merch and Arctic experiences from Finnish Lapland. Shop opening soon." />
+    <meta property="og:title" content="LaplandGifts: Finnish design and Lapland crafts" />
+    <meta property="og:description" content="Curated Finnish gifts with international delivery, chosen for travellers heading home from Lapland." />
     <meta property="og:url" content="https://laplandgifts.com/" />
     <meta property="og:image" content="https://laplandgifts.com/og-default.jpg?v=20260626b" />
     <meta property="og:site_name" content="LaplandGifts" />
@@ -87,8 +98,8 @@
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="LaplandGifts: Authentic Arctic Gifts" />
-    <meta name="twitter:description" content="Handcrafted Lapland gifts and Arctic experiences. Shop opening soon." />
+    <meta name="twitter:title" content="LaplandGifts: Finnish design and Lapland crafts" />
+    <meta name="twitter:description" content="Curated Finnish gifts with international delivery, chosen for travellers heading home from Lapland." />
     <meta name="twitter:image" content="https://laplandgifts.com/og-default.jpg?v=20260626b" />
 
     <!-- GA4 with Consent Mode v2 — default DENIED until CookieBanner accepts -->
