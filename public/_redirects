@@ -4,7 +4,7 @@
 # HTML:n tyylitiedoston tai moduulin nimen alle pysyvästi. nosniff esti sen
 # käytön, joten sivusto renderöityi tyylittömänä tai tyhjänä. 404 ei tallennu
 # samalla tavalla, ja puuttuva asset korjaantuu seuraavalla levityksellä.
-/assets/*  /index.html  404
+/static/*  /index.html  404
 
 # SPA-fallback kaikelle muulle.
 /*  /index.html  200

@@ -12,5 +12,5 @@
 /guides/*
   Cache-Control: public, max-age=86400
 
-/assets/*
+/static/*
   Cache-Control: public, max-age=31536000, immutable
