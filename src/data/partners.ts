@@ -31,6 +31,70 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'worldwide',
     verifiedAt: '2026-07-31',
   },
+  marttiini: {
+    id: 'marttiini',
+    name: 'Marttiini',
+    network: 'direct',
+    // ePages/Vilkas-kauppa: tuotesivu on query-parametrissa (?ObjectPath=...).
+    // partnerHref enkoodaa polun kauttaviivat, ja kauppa tarjoilee silti oikean
+    // tuotteen (testattu UTM-parametreilla 31.7.2026).
+    baseUrl: 'https://www.marttiini.fi',
+    shipsTo: 'worldwide',
+    verifiedAt: '2026-07-31',
+  },
+  suomikauppa: {
+    id: 'suomikauppa',
+    name: 'Suomikauppa.fi',
+    network: 'direct',
+    baseUrl: 'https://suomikauppa.fi',
+    // Toimitusehdot 31.7.2026: "toimittaa tuotteita lähes kaikkialle maailmaan".
+    shipsTo: 'worldwide',
+    verifiedAt: '2026-07-31',
+  },
+  kuivalihakundi: {
+    id: 'kuivalihakundi',
+    name: 'Kuivalihakundi',
+    network: 'direct',
+    baseUrl: 'https://kuivalihakundi.com',
+    // Liha on eläinperäinen elintarvike: sitä ei saa postittaa EU:n ulkopuolelle.
+    shipsTo: 'eu',
+    verifiedAt: '2026-07-31',
+  },
+  arcticpowerberries: {
+    id: 'arcticpowerberries',
+    name: 'Arctic Power Berries',
+    network: 'direct',
+    baseUrl: 'https://arcticpowerberries.com',
+    // 🔴 Kaupan oletusvaluutta on GBP, ei EUR (Shopify.currency.active = "GBP",
+    // og:price:currency = GBP). Tuotteiden currency-kenttä on siksi 'GBP'.
+    shipsTo: 'worldwide',
+    verifiedAt: '2026-07-31',
+  },
+  ruohonjuuri: {
+    id: 'ruohonjuuri',
+    name: 'Ruohonjuuri',
+    network: 'direct',
+    baseUrl: 'https://www.ruohonjuuri.fi',
+    // Toimitusehdot 31.7.2026: "Suomeen ja ulkomaille EU:n vero- ja tullialueen
+    // sisälle". Ahvenanmaa, Kanarian saaret ja Norja on rajattu ulos.
+    shipsTo: 'eu',
+    verifiedAt: '2026-07-31',
+  },
+  pod: {
+    id: 'pod',
+    name: 'LaplandVibes Store',
+    network: 'pod',
+    // 🔴 KAUPPAA EI OLE VIELÄ AVATTU. Vesa luo Fourthwall-tilin, ja vasta sen
+    // jälkeen tähän tulee oikeita tuotteita. Siihen asti:
+    //   - merch-kategoria on tyhjä (ks. products.ts ja catalog.test.ts)
+    //   - shipsTo ja baseUrl ovat aiottuja arvoja, EI verifioituja
+    //   - merch-tuotteiden partnerProductUrl osoittaa kaupan juureen, ei
+    //     keksittyihin tuotesivupolkuihin
+    // Kun kauppa aukeaa: tarkista domain, toimitusalueet ja päivitä verifiedAt.
+    baseUrl: 'https://laplandvibes.fourthwall.com',
+    shipsTo: 'worldwide',
+    verifiedAt: '2026-07-31',
+  },
 }
 
 /**
