@@ -21,6 +21,10 @@
      taustojen on oltava sitä vaaleampia ja rajojen hiuksenohuita. */
   --color-sand: #FBF9F5;
   --color-sand-deep: #F3EEE6;
+  /* Korttipinta. Ei bg-white: --color-white on viileä murrettu valkoinen
+     (#F9FAFB), joka lämpimän hiekan päällä lukee kylmempänä eikä kirkkaampana
+     kuin sivu. Kortit ja navin taustat käyttävät tätä puhdasta valkoista. */
+  --color-card: #FFFFFF;
   --color-line: #E7E1D8;
   --color-muted: #6B7280;
   --color-finland: #002F6C;
