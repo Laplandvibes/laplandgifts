@@ -13,6 +13,9 @@ export interface ShopCopy {
       string
     >
     productCount: (n: number) => string
+    /** Kategoriassa ei ole yhtään tuotetta, suodattimesta riippumatta. */
+    emptyCategory: string
+    /** Kategoriassa on tuotteita, mutta yksikään ei toimita valittuun maahan. */
     emptyForCountry: string
   }
   product: {
@@ -57,6 +60,8 @@ const en: ShopCopy = {
       experiences: 'Aurora hunts, husky rides and reindeer farms, bought as a gift and booked when the recipient chooses.',
     },
     productCount: (n) => (n === 1 ? '1 product' : `${n} products`),
+    emptyCategory:
+      'We are still adding products to this category. In the meantime, browse the other categories or check the gift guides.',
     emptyForCountry: 'None of the products in this category ship to your country yet. Switch the delivery country to see everything.',
   },
   product: {
@@ -98,6 +103,8 @@ const fi: ShopCopy = {
       experiences: 'Revontuliretkiä, huskyajeluja ja porotiloja lahjaksi ostettuna, varattavaksi silloin kun saaja itse valitsee.',
     },
     productCount: (n) => (n === 1 ? '1 tuote' : `${n} tuotetta`),
+    emptyCategory:
+      'Täydennämme tätä kategoriaa parhaillaan. Selaa sillä välin muita kategorioita tai katso lahjaoppaat.',
     emptyForCountry: 'Yksikään tämän kategorian tuote ei toimita vielä valitsemaasi maahan. Vaihda toimitusmaa nähdäksesi kaikki.',
   },
   product: {
