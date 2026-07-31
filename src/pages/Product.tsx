@@ -45,19 +45,24 @@ export default function Product() {
           </Link>
 
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
-            <div className="product-media overflow-hidden rounded-2xl border border-line bg-card">
-              <picture>
-                <source srcSet={`/images/${product.image}.avif`} type="image/avif" />
-                <img
-                  src={`/images/${product.image}.webp`}
-                  alt={name}
-                  width={800}
-                  height={1000}
-                  className="h-full w-full object-cover"
-                />
-              </picture>
+            {/* Kuva ja sen merkintä ovat SAMA ruudukon solu. Erillisenä
+                lapsena merkintä varasi toisen sarakkeen ja työnsi tuotteen
+                tiedot ruudukon ulkopuolelle. */}
+            <div>
+              <div className="product-media overflow-hidden rounded-2xl border border-line bg-card">
+                <picture>
+                  <source srcSet={`/images/${product.image}.avif`} type="image/avif" />
+                  <img
+                    src={`/images/${product.image}.webp`}
+                    alt={name}
+                    width={800}
+                    height={1000}
+                    className="h-full w-full object-cover"
+                  />
+                </picture>
+              </div>
+              <p className="mt-2 text-xs text-muted">{t.product.illustrativeImage}</p>
             </div>
-            <p className="mt-2 text-xs text-muted">{t.product.illustrativeImage}</p>
 
             <div className="flex flex-col gap-5">
               <span className="text-xs font-semibold uppercase tracking-widest text-muted">
