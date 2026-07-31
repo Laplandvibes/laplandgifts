@@ -59,10 +59,10 @@ function LocalisedCookieBanner() {
  * <Routes>, wired to this site's real runtime i18n (useLang + useLocalePath +
  * SHOP_COPY[lang]). It hides itself on home and on any route not in labelMap.
  *
- * Kaupan seitsemän kategoriasivua ovat sivuston ensimmäiset oikeat
- * sisältöalisivut, joten labelMap täyttyy niistä. Lakisivut jätetään pois
- * ekosysteemisäännön mukaan, ja tuotesivut jäävät pois tarkoituksella: niiden
- * label tulisi tuotedatasta eikä navista.
+ * labelMap kattaa kaupan seitsemän kategoriasivua sekä lahjaopas- ja
+ * toimitussivun. Lakisivut jätetään pois ekosysteemisäännön mukaan, ja
+ * tuotesivut jäävät pois tarkoituksella: niiden label tulisi tuotedatasta
+ * eikä navista.
  *
  * Palette: this site has no LV deep-night/snow tokens — content renders on a
  * light bg (--color-white) under a white header, so the trail uses the body
@@ -74,9 +74,11 @@ function BreadcrumbShell() {
   const lang = useLang()
   const to = useLocalePath()
   // Looginen sisältöalisivureitti → lyhyt lokalisoitu label.
-  const labelMap: Record<string, string> = Object.fromEntries(
-    CATEGORIES.map((c) => [c.slug, SHOP_COPY[lang].category.names[c.id]])
-  )
+  const labelMap: Record<string, string> = {
+    ...Object.fromEntries(CATEGORIES.map((c) => [c.slug, SHOP_COPY[lang].category.names[c.id]])),
+    '/gift-guides': SHOP_COPY[lang].nav.guides,
+    '/shipping': SHOP_COPY[lang].nav.shipping,
+  }
   return (
     <Breadcrumbs
       lang={lang}

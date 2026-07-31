@@ -40,6 +40,12 @@ export default function ShopNav() {
           <Link to={to('/gift-guides')} className="text-sm font-medium text-gray hover:text-amber">
             {t.nav.guides}
           </Link>
+          {/* Toimitussivulle ei pääse mistään muualta: kortin toimitusmerkintä
+              kertoo alueen, mutta vientirajoitteet ja kumppanitaulukko asuvat
+              vain täällä. */}
+          <Link to={to('/shipping')} className="text-sm font-medium text-gray hover:text-amber">
+            {t.nav.shipping}
+          </Link>
         </nav>
 
         <label className="ml-auto flex items-center gap-2 lg:ml-4">
@@ -86,6 +92,13 @@ export default function ShopNav() {
             className="flex min-h-11 items-center text-base font-medium text-gray"
           >
             {t.nav.guides}
+          </Link>
+          <Link
+            to={to('/shipping')}
+            onClick={() => setOpen(false)}
+            className="flex min-h-11 items-center text-base font-medium text-gray"
+          >
+            {t.nav.shipping}
           </Link>
         </nav>
       )}

@@ -38,6 +38,14 @@ export interface ShopCopy {
     fiOnly: string
     selectorLabel: string
     title: string
+    /** Toimitussivun kumppanitaulukon sarakeotsikot. */
+    table: { shop: string; area: string; checked: string }
+    /**
+     * Elintarvikkeiden vientirajoitteet. Verifioitu viranomaislähteistä
+     * 31.7.2026 (gov.uk, aphis.usda.gov, mattilsynet.no, maff.go.jp), joten
+     * tekstiä ei muotoilla uudelleen arvaamalla.
+     */
+    foodRules: { title: string; intro: string; rows: Array<{ area: string; rule: string }> }
   }
 }
 
@@ -89,6 +97,18 @@ const en: ShopCopy = {
     fiOnly: 'Ships within Finland only',
     selectorLabel: 'Deliver to',
     title: 'Delivery',
+    table: { shop: 'Partner shop', area: 'Delivery area', checked: 'Checked' },
+    foodRules: {
+      title: 'Food and meat: what may be posted where',
+      intro: 'Berry powders, jam and chocolate travel freely. Dried reindeer and other meat does not, and the rules are set by the destination country, not by us.',
+      rows: [
+        { area: 'European Union', rule: 'Allowed. Meat products move freely between member states.' },
+        { area: 'Norway', rule: 'Allowed from the EU, but customs duty and VAT are charged on arrival.' },
+        { area: 'United Kingdom', rule: 'Not possible. Since April 2025 venison, which covers reindeer, may not be brought in from the EU.' },
+        { area: 'United States', rule: 'Not by post. A traveller may carry dried meat from Finland with origin documents, but a mailed parcel counts as a commercial import.' },
+        { area: 'Japan', rule: 'Not possible. Meat needs an official inspection certificate whatever the transport method, and postal parcels are named specifically.' },
+      ],
+    },
   },
 }
 
@@ -137,6 +157,18 @@ const fi: ShopCopy = {
     fiOnly: 'Toimitus vain Suomeen',
     selectorLabel: 'Toimitusmaa',
     title: 'Toimitus',
+    table: { shop: 'Kumppanikauppa', area: 'Toimitusalue', checked: 'Tarkistettu' },
+    foodRules: {
+      title: 'Ruoka ja liha: mitä minnekin saa postittaa',
+      intro: 'Marjajauheet, hillot ja suklaa kulkevat vapaasti. Poron kuivaliha ja muu liha eivät kulje, ja säännöt asettaa kohdemaa, emme me.',
+      rows: [
+        { area: 'Euroopan unioni', rule: 'Sallittu. Lihatuotteet liikkuvat vapaasti jäsenmaiden välillä.' },
+        { area: 'Norja', rule: 'Sallittu EU:sta, mutta tulli ja arvonlisävero peritään saapuessa.' },
+        { area: 'Britannia', rule: 'Ei onnistu. Huhtikuusta 2025 alkaen hirvieläinlihaa, johon poro kuuluu, ei saa tuoda EU:sta.' },
+        { area: 'Yhdysvallat', rule: 'Ei postitse. Matkustaja saa tuoda kuivalihaa mukanaan alkuperäasiakirjoilla, mutta postipaketti luetaan kaupalliseksi tuonniksi.' },
+        { area: 'Japani', rule: 'Ei onnistu. Liha vaatii viranomaisen tarkastustodistuksen kuljetustavasta riippumatta, ja postipaketit mainitaan erikseen.' },
+      ],
+    },
   },
 }
 
