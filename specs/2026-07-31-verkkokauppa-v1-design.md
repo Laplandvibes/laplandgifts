@@ -147,7 +147,7 @@ verifiointi 31.7.** (komissiot luettu paneelista, hakemukset lähetetty):
 
 | Kumppani | Kategoria | Verkosto | Kv-toimitus | Huomiot |
 |---|---|---|---|---|
-| **Finnish Design Shop** | Design, puukot, korut | Awin (+FlexOffers US), ~6–8 % | ✅ 180+ maata Suomesta | Paras yksittäinen kumppani, 170+ brändiä — Awin-tili avattavana |
+| **Finnish Design Shop** | Design, puukot, korut | Awin (+FlexOffers US), ~6–8 % | ✅ 180+ maata Suomesta | Paras yksittäinen kumppani, 170+ brändiä. 🔴 **Awin hylkäsi julkaisijahakemuksen 31.7.** (syy lähes varmasti: sivusto on vielä yksisivuinen) → V1 julkaistaan suorilla UTM-linkeillä, **Awin-uusintahaku kun V1 on livenä**; FlexOffers (FDS US) varareittinä |
 | **Suomikauppa.fi** | Herkut (Fazer, salmiakki, Moomin) | Daisycon 7 % | ✅ Worldwide (DHL/FedEx, myös US) | Herkkukategorian ratkaisu — Daisycon-tili avattavana |
 | **Marttiini** | Puukot | Oma ohjelma (Circlewise) 7 % | ✅ Worldwide | Rovaniemeläinen — täydellinen Lappi-tarina |
 | **Four Sigmatic** | Superfoodit | Oma ohjelma 10 % | ✅ Virosta lähes kaikkialle + US-kauppa | Haetaan suoraan |
@@ -342,10 +342,11 @@ ennen kaupan julkaisua.
 1. ~~Adtraction-haut~~ **TEHTY 31.7.** (agentti paneelisessiossa): hakemukset
    lähetetty Nordic Nest FI, North Outdoor, Luhta, Finlayson, Smartphoto,
    Elämyslahjat.fi, Ruohonjuuri; Makia+Halti+Suunto olivat jo approved.
-2. Uusien julkaisijatilien viimeistely (aloitettu 31.7.): **Awin** (kesken,
-   vaihe 2/4) ja **Daisycon** (kesken) — sitten haku ohjelmiin Finnish
-   Design Shop (Awin) ja Suomikauppa (Daisycon). Lisäksi Circlewise
-   (Marttiini) + in-house-haut Four Sigmatic ja Arctic Power Berries.
+2. Uudet julkaisijatilit (tilanne 31.7.): **Awin luotu mutta hakemus
+   HYLÄTTY** (yksisivuinen sivusto) → uusintahaku V1-julkaisun jälkeen.
+   **Daisycon** kesken — viimeistele + haku Suomikauppa-ohjelmaan. Lisäksi
+   Circlewise (Marttiini) + in-house-haut Four Sigmatic ja Arctic Power
+   Berries.
 3. Fourthwall-tilin avaus + maksutiedot (Stripe Connect -payout Suomeen
    varmistettava rekisteröityessä; varalla Spreadshop).
 4. Merch-designien ja POD-kaupan lopullinen hyväksyntä ennen julkaisua.
