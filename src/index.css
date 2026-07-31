@@ -76,5 +76,5 @@ h2 { line-height: 1.15; }
   /* Sisältöhashin pakotus: pelkkä kommentti ei riitä, minifioija poistaa sen.
      Custom property säilyy, joten tiedosto saa uuden nimen. Nosta päivää jos
      reunavälimuisti myrkyttyy uudelleen. */
-  --lv-build: 20260731;
+  --lv-build: 2026073102;
 }
