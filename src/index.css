@@ -17,6 +17,13 @@
   --color-amber: #F59E0B;
   --color-white: #F9FAFB;
   --color-night: #0F172A;
+  /* Kaupalliset pinnat: tuotekuva on sivun kirkkain elementti, joten
+     taustojen on oltava sitä vaaleampia ja rajojen hiuksenohuita. */
+  --color-sand: #FBF9F5;
+  --color-sand-deep: #F3EEE6;
+  --color-line: #E7E1D8;
+  --color-muted: #6B7280;
+  --color-finland: #002F6C;
 }
 
 body {
@@ -35,3 +42,18 @@ h1, h2, h3, h4, h5, h6 {
   from { transform: translateY(100%); }
   to { transform: translateY(0); }
 }
+
+/* Kaupallinen typografia: otsikot tiiviimmin, leipäteksti väljemmin. */
+h1, h2, h3 { letter-spacing: -0.01em; }
+h1 { line-height: 1.05; }
+h2 { line-height: 1.15; }
+
+/* Näppäimistöfokus näkyviin ilman että hiiriklikki piirtää renkaan. */
+:focus-visible {
+  outline: 2px solid var(--color-amber);
+  outline-offset: 2px;
+}
+
+/* Tuotekuvien vakiosuhde, jotta grid ei hypi latauksen aikana. */
+.product-media { aspect-ratio: 4 / 5; }
+.category-media { aspect-ratio: 3 / 2; }
