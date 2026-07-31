@@ -39,6 +39,7 @@ export interface ShopCopy {
     priceFrom: (value: number, currency: string) => string
     priceNote: (date: string, partner: string) => string
     checkoutNote: string
+    illustrativeImage: string
     related: string
     backToCategory: string
   }
@@ -109,6 +110,7 @@ const en: ShopCopy = {
     priceFrom: (value, currency) => `from ${fmt(value, currency, 'en-GB')}`,
     priceNote: (date, partner) => `Price read from ${partner} on ${date}. The shop sets the final price.`,
     checkoutNote: 'You complete the purchase in the partner shop. We do not handle your payment or delivery.',
+    illustrativeImage: 'Illustrative photo, not the exact item. See the product photos on the partner’s page.',
     related: 'More from this category',
     backToCategory: 'Back to category',
   },
@@ -179,6 +181,7 @@ const fi: ShopCopy = {
     priceFrom: (value, currency) => `alk. ${fmt(value, currency, 'fi-FI')}`,
     priceNote: (date, partner) => `Hinta luettu kumppanin ${partner} sivulta ${date}. Lopullisen hinnan määrittää kauppa.`,
     checkoutNote: 'Viimeistelet ostoksen kumppanin kaupassa. Me emme käsittele maksua emmekä toimitusta.',
+    illustrativeImage: 'Kuva on tunnelmakuva, ei kuva juuri tästä tuotteesta. Tuotteen omat kuvat ovat kumppanin sivulla.',
     related: 'Lisää tästä kategoriasta',
     backToCategory: 'Takaisin kategoriaan',
   },

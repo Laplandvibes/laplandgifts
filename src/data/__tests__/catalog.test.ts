@@ -47,7 +47,7 @@ describe('katalogin eheys', () => {
 
   // Kuvat generoidaan Task 15:ssä. Katalogi listaa jo lopulliset tiedostonimet,
   // joten tämä testi otetaan käyttöön (poistetaan .skip) kun kuvat ovat paikallaan.
-  it.skip('jokaisella tuotteella on kuvatiedosto sekä avif- että webp-muodossa', () => {
+  it('jokaisella tuotteella on kuvatiedosto sekä avif- että webp-muodossa', () => {
     const files = new Set(readdirSync('public/images'))
     for (const p of PRODUCTS) {
       expect(files.has(`${p.image}.webp`), `${p.slug}: ${p.image}.webp puuttuu`).toBe(true)

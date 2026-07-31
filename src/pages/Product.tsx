@@ -57,6 +57,7 @@ export default function Product() {
                 />
               </picture>
             </div>
+            <p className="mt-2 text-xs text-muted">{t.product.illustrativeImage}</p>
 
             <div className="flex flex-col gap-5">
               <span className="text-xs font-semibold uppercase tracking-widest text-muted">

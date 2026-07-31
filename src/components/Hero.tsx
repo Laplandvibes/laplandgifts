@@ -24,9 +24,9 @@ export default function Hero() {
   return (
     <section className="relative flex min-h-[78svh] items-center overflow-hidden">
       <picture className="absolute inset-0">
-        <source srcSet="/images/hero-main.avif" type="image/avif" />
+        <source srcSet="/images/hero-shop.avif" type="image/avif" />
         <img
-          src="/images/hero-main.webp"
+          src="/images/hero-shop.webp"
           alt=""
           width={2400}
           height={1350}
