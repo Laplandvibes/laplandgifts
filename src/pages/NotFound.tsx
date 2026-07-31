@@ -6,8 +6,10 @@ import SharedNotFound from '../../../shared/NotFound'
 // Title + robots noindex are set by SharedNotFound itself. LaplandGifts is a
 // light/cream site (body bg = --color-white) with amber as its real accent
 // (80+ amber utility usages vs 4 pink) — variant="light" + amber accentHex.
-// Site has no standalone /categories etc. pages yet (single-page "shop
-// opening soon" splash), so links point at the Home page's anchor sections.
+// Linkit osoittavat etusivun ankkuriosioihin. Kauppa sai omat kategoria-,
+// tuote-, lahjaopas- ja toimitussivunsa, joten nämä kolme linkkiä kannattaa
+// vaihtaa oikeisiin sivuihin: ankkuri vie etusivulle silloinkin, kun
+// osumaa lähinnä oleva sivu olisi kategoriasivu.
 export default function NotFound() {
   const lang = useLang()
   const to = useLocalePath()

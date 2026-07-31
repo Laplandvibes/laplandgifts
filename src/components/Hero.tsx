@@ -8,10 +8,10 @@ import { SHOP_COPY } from '../locales/shopCopy'
  * Kaupallinen hero: kuva kantaa, teksti on lyhyt ja molemmat CTA:t vievät
  * kauppaan reitittimen Linkillä, eivät ankkuriin saman sivun sisällä.
  *
- * 🔴 Vanha "shop opening soon" -badge on poistettu. Kauppa on auki, joten
- * lupaus avautumisesta olisi nyt valhe. Samasta syystä ingressi tulee
- * SHOP_COPYsta: ChromeCopyn hero.lead lupaa yhä "Soon you'll be able to order"
- * ja "the first collection is being handpicked now".
+ * 🔴 Vanha badge, joka lupasi kaupan avautuvan pian, on poistettu. Kauppa on
+ * auki, joten lupaus avautumisesta olisi nyt valhe. Samasta syystä ingressi
+ * tulee SHOP_COPYsta: ChromeCopyn hero.lead lupaa yhä, että tilata voi vasta
+ * myöhemmin ja että ensimmäistä mallistoa vasta kootaan.
  *
  * min-h käyttää svh-yksikköä: vh laskee Safarin URL-palkin mukaan ja hero
  * hyppäisi korkeutta kun palkki piiloutuu.
