@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Kumppanien alkuperäiset tuotekuvat (lataus- ja muunnostyöhakemisto).
+# Julkaistavat tiedostot ovat public/images/prod-*.webp|avif.
+raw

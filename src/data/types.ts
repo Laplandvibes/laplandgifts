@@ -64,6 +64,16 @@ export interface Product {
   priceCheckedAt: string
   /** Tiedostonimen runko ilman päätettä, esim. "prod-kuksa-cup". */
   image: string
+  /**
+   * true = kuva on kumppanin oma tuotekuva (haettu kumppanin tuotesivun
+   * og:image-tagista, joka on nimenomaan julkaisua varten tarkoitettu),
+   * false/puuttuu = AI-tunnelmakuva.
+   *
+   * Ratkaisee tuotesivun kuvamerkinnän: tunnelmakuva on merkittävä
+   * tunnelmakuvaksi, kumppanin tuotekuva saa lähdemerkinnän. Väärä arvo
+   * kertoo ostajalle väärää tietoa siitä mitä hän on ostamassa.
+   */
+  imageIsPartner?: boolean
   partnerId: string
   /** Syvälinkki kumppanin tuotesivulle. */
   partnerProductUrl: string

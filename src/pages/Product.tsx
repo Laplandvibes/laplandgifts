@@ -61,7 +61,15 @@ export default function Product() {
                   />
                 </picture>
               </div>
-              <p className="mt-2 text-xs text-muted">{t.product.illustrativeImage}</p>
+              {/* Merkintä kertoo mitä kuva ON. Kumppanin oma tuotekuva saa
+                  lähdemerkinnän, AI-tunnelmakuva varauksen. Aiemmin tässä
+                  renderöitiin aina tunnelmakuvateksti, mikä on kumppanikuvalle
+                  väärää tietoa: se on kuva juuri tästä tuotteesta. */}
+              <p className="mt-2 text-xs text-muted">
+                {product.imageIsPartner
+                  ? t.product.imageCredit(partner.name)
+                  : t.product.illustrativeImage}
+              </p>
             </div>
 
             <div className="flex flex-col gap-5">

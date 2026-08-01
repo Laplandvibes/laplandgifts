@@ -39,7 +39,10 @@ export interface ShopCopy {
     priceFrom: (value: number, currency: string) => string
     priceNote: (date: string, partner: string) => string
     checkoutNote: string
+    /** Vain AI-tunnelmakuville: kuva ei esitä juuri tätä tuotetta. */
     illustrativeImage: string
+    /** Vain kumppanin omille tuotekuville: hillitty lähdemerkintä. */
+    imageCredit: (partner: string) => string
     related: string
     backToCategory: string
   }
@@ -111,6 +114,7 @@ const en: ShopCopy = {
     priceNote: (date, partner) => `Price read from ${partner} on ${date}. The shop sets the final price.`,
     checkoutNote: 'You complete the purchase in the partner shop. We do not handle your payment or delivery.',
     illustrativeImage: 'Illustrative photo, not the exact item. See the product photos on the partner’s page.',
+    imageCredit: (partner) => `Product photo: ${partner}`,
     related: 'More from this category',
     backToCategory: 'Back to category',
   },
@@ -182,6 +186,7 @@ const fi: ShopCopy = {
     priceNote: (date, partner) => `Hinta luettu kumppanin ${partner} sivulta ${date}. Lopullisen hinnan määrittää kauppa.`,
     checkoutNote: 'Viimeistelet ostoksen kumppanin kaupassa. Me emme käsittele maksua emmekä toimitusta.',
     illustrativeImage: 'Kuva on tunnelmakuva, ei kuva juuri tästä tuotteesta. Tuotteen omat kuvat ovat kumppanin sivulla.',
+    imageCredit: (partner) => `Tuotekuva: ${partner}`,
     related: 'Lisää tästä kategoriasta',
     backToCategory: 'Takaisin kategoriaan',
   },

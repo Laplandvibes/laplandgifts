@@ -7,6 +7,13 @@ import type { Product } from './types'
  * löytyy sivulta. Hinta on kumppanin "alkaen"-hinta, ei meidän hintamme,
  * ja se renderöidään aina "alk." + päivämäärä -muodossa.
  *
+ * Kuvat ovat kumppanin omia tuotekuvia, haettu 1.8.2026 kunkin tuotesivun
+ * og:image-tagista (kuva jonka kauppa itse tarjoaa jaettavaksi). Ohjaamme
+ * ostajan kumppanin kauppaan ostamaan juuri sen tuotteen, joten kumppanin oma
+ * kuva on sekä tarkin että se, mitä affiliate-kumppani haluaa meidän näyttävän.
+ * Tämä merkitään kenttään imageIsPartner, joka ratkaisee tuotesivun
+ * kuvamerkinnän (lähdemerkintä vs. "tunnelmakuva").
+ *
  * 🔴 Kaksi kategoriaa on tarkoituksella tyhjä:
  *   - 'experiences' luetaan shared/gyg/picks.ts:stä, jotta GYG-ID:t pysyvät
  *     yhdessä verifioidussa lähteessä. Väärä GYG-ID ei 404:ää vaan tarjoilee
@@ -32,7 +39,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 24.9,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-moomin-mug',
+    image: 'prod-moomin-blue-love-mug',
+    imageIsPartner: true,
     partnerId: 'moomin',
     partnerProductUrl: 'https://shop.moomin.com/products/moomin-blue-love-mug-0-3l',
     featured: true,
@@ -52,7 +60,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 29.9,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-moomin-tumblers',
+    image: 'prod-moomin-mystical-forest-tumblers',
+    imageIsPartner: true,
     partnerId: 'moomin',
     partnerProductUrl:
       'https://shop.moomin.com/products/moomin-clear-glass-tumblers-2-pack-28cl-moomin-arabia',
@@ -73,7 +82,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 139.9,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-wool-blanket',
+    image: 'prod-moomin-mystical-forest-wool-throw',
+    imageIsPartner: true,
     partnerId: 'moomin',
     partnerProductUrl:
       'https://shop.moomin.com/products/moomin-mystical-forest-wool-throw-130x170cm',
@@ -95,7 +105,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 175,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-halti-tokoi-jacket',
+    image: 'prod-halti-tokoi-dx-jacket',
+    imageIsPartner: true,
     partnerId: 'halti',
     partnerProductUrl: 'https://halti.com/products/tokoi-dx-jacket-mens',
     featured: true,
@@ -115,7 +126,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 55,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-beanie-wool',
+    image: 'prod-makia-merino-beanie',
+    imageIsPartner: true,
     partnerId: 'makia',
     partnerProductUrl: 'https://makia.com/products/merino-cap-1',
   },
@@ -134,7 +146,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 119,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-hoodie-arctic',
+    image: 'prod-makia-aurora-hoodie',
+    imageIsPartner: true,
     partnerId: 'makia',
     partnerProductUrl: 'https://makia.com/products/aurora-hooded-sweatshirt',
   },
@@ -155,7 +168,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 120,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-leuku-knife',
+    image: 'prod-marttiini-lapinleuku-255',
+    imageIsPartner: true,
     partnerId: 'marttiini',
     partnerProductUrl:
       'https://www.marttiini.fi/epages/MarttiiniShop.sf/en_GB/?ObjectPath=/Shops/MarttiiniShop/Products/255010',
@@ -177,7 +191,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 39,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-puukko-knife',
+    image: 'prod-marttiini-napapiirin-puukko',
+    imageIsPartner: true,
     partnerId: 'marttiini',
     partnerProductUrl:
       'https://www.marttiini.fi/epages/MarttiiniShop.sf/en_GB/?ObjectPath=/Shops/MarttiiniShop/Products/121019',
@@ -198,7 +213,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 57,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-marttiini-ilves',
+    image: 'prod-marttiini-ilves-131',
+    imageIsPartner: true,
     partnerId: 'marttiini',
     partnerProductUrl:
       'https://www.marttiini.fi/epages/MarttiiniShop.sf/en_GB/?ObjectPath=/Shops/MarttiiniShop/Products/131010',
@@ -221,7 +237,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 12.99,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-reindeer-jerky',
+    image: 'prod-kuivalihakundi-poro-jerky',
+    imageIsPartner: true,
     partnerId: 'kuivalihakundi',
     partnerProductUrl:
       'https://kuivalihakundi.com/products/poro-jerky-original-2x20g-kuivaliha',
@@ -242,7 +259,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 5.02,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-salmiakki-liquorice',
+    image: 'prod-finnish-flavours-palalaku-salmiakki',
+    imageIsPartner: true,
     partnerId: 'suomikauppa',
     partnerProductUrl:
       'https://suomikauppa.fi/products/finnish-flavours-palalaku-salmiakki',
@@ -262,7 +280,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 7.29,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-berry-jam-set',
+    image: 'prod-meritalo-tyrnihillo',
+    imageIsPartner: true,
     partnerId: 'suomikauppa',
     partnerProductUrl:
       'https://suomikauppa.fi/products/meritalo-suomalainen-tyrnihillo-310g',
@@ -284,7 +303,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 14.9,
     currency: 'GBP',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-blueberry-powder',
+    image: 'prod-arctic-power-berries-blueberry-powder',
+    imageIsPartner: true,
     partnerId: 'arcticpowerberries',
     partnerProductUrl: 'https://arcticpowerberries.com/products/blueberry-70g',
     featured: true,
@@ -304,7 +324,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 12.9,
     currency: 'GBP',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-sea-buckthorn-powder',
+    image: 'prod-arctic-power-berries-sea-buckthorn-powder',
+    imageIsPartner: true,
     partnerId: 'arcticpowerberries',
     partnerProductUrl: 'https://arcticpowerberries.com/products/sea-buckthorn-70g',
   },
@@ -323,7 +344,8 @@ export const PRODUCTS: Product[] = [
     priceFrom: 36.95,
     currency: 'EUR',
     priceCheckedAt: '2026-07-31',
-    image: 'prod-chaga-powder',
+    image: 'prod-kaapa-mushrooms-pakuri-powder',
+    imageIsPartner: true,
     partnerId: 'ruohonjuuri',
     partnerProductUrl:
       'https://www.ruohonjuuri.fi/products/kaapa-mushrooms-pakuriuutejauhe-30-g-kaapa-mushrooms',
