@@ -515,6 +515,393 @@ export const PRODUCTS: Product[] = [
     },
   },
 
+  {
+    slug: 'kupilka-classic-cup-21',
+    category: 'handicrafts',
+    brand: 'Kupilka',
+    name: {
+      en: 'Kupilka 21 camp cup 2,1 dl',
+      fi: 'Kupilka 21 -juomamuki 2,1 dl',
+    },
+    description: {
+      en: 'The kuksa shape in a material you can throw in the dishwasher: half pine cellulose fibre, half thermoplastic, moulded in Finland. It holds 2.1 dl, weighs 83 grams and does not burn your fingers around a fire.',
+      fi: 'Kuksan muoto materiaalissa, jonka voi heittää tiskikoneeseen: puolet mäntysellukuitua, puolet kestomuovia, valmistettu Suomessa. Vetää 2,1 desiä, painaa 83 grammaa eikä polta sormia nuotiolla.',
+    },
+    priceFrom: 18.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-kupilka-classic-cup-21',
+    imageIsPartner: true,
+    partnerId: 'scandinavianoutdoor',
+    partnerProductUrl:
+      'https://scandinavianoutdoor.fi/kupilka/varusteet/ruokailu-ja-astiat/astiat/juomamuki-21/',
+    featured: true,
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '2.1 dl', fi: '2,1 dl' } },
+        { key: 'weight', value: { en: '83 g', fi: '83 g' } },
+        { key: 'size', value: { en: '60 x 93 x 165 mm', fi: '60 x 93 x 165 mm' } },
+        {
+          key: 'material',
+          value: {
+            en: 'Kareline natural fibre composite, 50 % pine cellulose fibre and 50 % thermoplastic, made using eco energy',
+            fi: 'Kareline-luonnonkuitukomposiitti, 50 % mäntysellukuitua ja 50 % kestomuovia, valmistettu ekoenergialla',
+          },
+        },
+        { key: 'origin', value: { en: 'Finland', fi: 'Suomi' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Rinse it on the trail like a wooden kuksa, at home it goes in the dishwasher. Not for the microwave',
+            fi: 'Pese reissulla kuin puukuksa, kotona voi laittaa astianpesukoneeseen. Ei mikroaaltouuniin',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Model number', fi: 'Mallinumero' },
+          value: { en: '3021011XX', fi: '3021011XX' },
+        },
+      ],
+      sourceUrl:
+        'https://scandinavianoutdoor.fi/kupilka/varusteet/ruokailu-ja-astiat/astiat/juomamuki-21/',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'kupilka-bowl-55',
+    category: 'handicrafts',
+    brand: 'Kupilka',
+    name: {
+      en: 'Kupilka 55 camp bowl 5,5 dl',
+      fi: 'Kupilka 55 -retkikulho 5,5 dl',
+    },
+    description: {
+      en: 'A 5.5 dl bowl with a handle solid enough to hold in one hand while the other keeps the mug. Same Finnish pine fibre composite as the cup, 184 grams, dishwasher safe.',
+      fi: '5,5 desin kulho, jonka kahvasta saa tukevan otteen yhdellä kädellä, jolloin toinen jää mukille. Sama suomalainen puukuitukomposiitti kuin mukissa, 184 grammaa, kestää konepesun.',
+    },
+    priceFrom: 21.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-kupilka-bowl-55',
+    imageIsPartner: true,
+    partnerId: 'scandinavianoutdoor',
+    partnerProductUrl:
+      'https://scandinavianoutdoor.fi/kupilka/varusteet/ruokailu-ja-astiat/astiat/kulho-55/',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '5.5 dl', fi: '5,5 dl' } },
+        { key: 'weight', value: { en: '184 g', fi: '184 g' } },
+        { key: 'size', value: { en: '54 x 154 x 223 mm', fi: '54 x 154 x 223 mm' } },
+        {
+          key: 'material',
+          value: {
+            en: 'Kareline natural fibre composite, 50 % pine cellulose fibre and 50 % thermoplastic, made using eco energy',
+            fi: 'Kareline-luonnonkuitukomposiitti, 50 % mäntysellukuitua ja 50 % kestomuovia, valmistettu ekoenergialla',
+          },
+        },
+        { key: 'origin', value: { en: 'Finland', fi: 'Suomi' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Dishwasher safe. Not for the microwave. Approved for contact with hot and cold food',
+            fi: 'Kestää konepesun. Ei mikroaaltouuniin. Hyväksytty kuumien ja kylmien ruokien kanssa',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Model number', fi: 'Mallinumero' },
+          value: { en: '3055013X', fi: '3055013X' },
+        },
+      ],
+      sourceUrl:
+        'https://scandinavianoutdoor.fi/kupilka/varusteet/ruokailu-ja-astiat/astiat/kulho-55/',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'kupilka-cutlery-set',
+    category: 'handicrafts',
+    brand: 'Kupilka',
+    name: {
+      en: 'Kupilka cutlery set',
+      fi: 'Kupilka-aterinsetti',
+    },
+    description: {
+      en: 'Spoon, knife and fork in the same Finnish wood fibre composite, 56 grams for the set. The cheapest way to take the Kupilka material home and the easiest to fit in hand luggage.',
+      fi: 'Lusikka, veitsi ja haarukka samasta suomalaisesta puukuitukomposiitista, setti painaa 56 grammaa. Halvin tapa viedä Kupilka-materiaali kotiin ja helpoin mahduttaa käsimatkatavaroihin.',
+    },
+    priceFrom: 10.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-kupilka-cutlery-set',
+    imageIsPartner: true,
+    partnerId: 'scandinavianoutdoor',
+    partnerProductUrl:
+      'https://scandinavianoutdoor.fi/kupilka/varusteet/ruokailu-ja-astiat/astiat/kupilka-aterinsetti/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: { en: 'Spoon, knife and fork', fi: 'Lusikka, veitsi ja haarukka' },
+        },
+        { key: 'weight', value: { en: '56 g', fi: '56 g' } },
+        {
+          key: 'material',
+          value: {
+            en: 'Kareline natural fibre composite, 50 % pine cellulose fibre and 50 % thermoplastic, made using eco energy',
+            fi: 'Kareline-luonnonkuitukomposiitti, 50 % mäntysellukuitua ja 50 % kestomuovia, valmistettu ekoenergialla',
+          },
+        },
+        { key: 'origin', value: { en: 'Finland', fi: 'Suomi' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Rinse on the trail like wooden cutlery, at home it goes in the dishwasher. Not for the microwave',
+            fi: 'Pese reissulla kuin puuaterimet, kotona voi laittaa astianpesukoneeseen. Ei mikroaaltouuniin',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Model number', fi: 'Mallinumero' },
+          value: { en: '3025025X', fi: '3025025X' },
+        },
+      ],
+      sourceUrl:
+        'https://scandinavianoutdoor.fi/kupilka/varusteet/ruokailu-ja-astiat/astiat/kupilka-aterinsetti/',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'lapuan-kankurit-poro-towel',
+    category: 'handicrafts',
+    brand: 'Lapuan Kankurit',
+    name: {
+      en: 'Lapuan Kankurit PORO linen towel 46 x 70 cm',
+      fi: 'Lapuan Kankurit PORO-pellavapyyhe 46 x 70 cm',
+    },
+    description: {
+      en: 'A reindeer drawn by illustrator Matti Pikkujämsä, woven in the mill in Lapua from European linen warp and organic cotton weft. Folds flat into a suitcase, and the absorbency only arrives after a few washes.',
+      fi: 'Matti Pikkujämsän piirtämä poro, kudottu Lapuan kutomossa eurooppalaisesta pellavaloimesta ja luomupuuvillakuteesta. Litistyy matkalaukkuun, ja imukyky kehittyy vasta parin pesun jälkeen.',
+    },
+    priceFrom: 19.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-lapuan-kankurit-poro-towel',
+    imageIsPartner: true,
+    partnerId: 'lapuankankurit',
+    partnerProductUrl:
+      'https://lapuankankurit.fi/shop/tea-towels/poro-linen-towel-linen-green-46-x-70-cm/',
+    featured: true,
+    details: {
+      specs: [
+        { key: 'size', value: { en: '46 x 70 cm', fi: '46 x 70 cm' } },
+        {
+          key: 'material',
+          value: {
+            en: '60 % linen, Masters of Linen, and 40 % cotton',
+            fi: '60 % pellavaa, Masters of Linen, ja 40 % puuvillaa',
+          },
+        },
+        { key: 'color', value: { en: 'Linen-green', fi: 'Pellava-vihreä' } },
+        { key: 'origin', value: { en: 'Made in Finland', fi: 'Valmistettu Suomessa' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Wash separately before use at 60 °C on a gentle cycle in plenty of water. Do not spin dry. Avoid softener and bleach. Do not tumble dry. Iron while still damp. Shrinkage approx. 5 %',
+            fi: 'Pese erikseen ennen käyttöä 60 °C hienopesulla runsaassa vedessä. Ei linkousta. Vältä huuhteluainetta ja valkaisua. Ei rumpukuivausta. Silitä kosteana. Kutistuma noin 5 %',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Designer', fi: 'Suunnittelija' },
+          value: { en: 'Matti Pikkujämsä', fi: 'Matti Pikkujämsä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Product code', fi: 'Tuotekoodi' },
+          value: { en: '20527', fi: '20527' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Certificates', fi: 'Sertifikaatit' },
+          value: { en: 'Key Flag, Masters of Linen', fi: 'Avainlippu, Masters of Linen' },
+        },
+      ],
+      sourceUrl:
+        'https://lapuankankurit.fi/shop/tea-towels/poro-linen-towel-linen-green-46-x-70-cm/',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'lapuan-kankurit-kaamos-blanket',
+    category: 'handicrafts',
+    brand: 'Lapuan Kankurit',
+    name: {
+      en: 'Lapuan Kankurit KAAMOS wool blanket 100 x 150 cm',
+      fi: 'Lapuan Kankurit KAAMOS-villahuopa 100 x 150 cm',
+    },
+    description: {
+      en: 'Kaamos is the polar night, and Hanna Galtat drew the pattern from the way daylight moves through the day. The weft yarn is Finnsheep wool the mill collects from farms within about 400 km of Lapua.',
+      fi: 'Kaamos on se pimeä kausi, ja Hanna Galtatin kuvio seuraa päivänvalon kulkua vuorokauden aikana. Kudelanka on suomenlampaan villaa, jonka kutomo kerää noin 400 kilometrin säteeltä Lapualta.',
+    },
+    priceFrom: 99.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-lapuan-kankurit-kaamos-blanket',
+    imageIsPartner: true,
+    partnerId: 'lapuankankurit',
+    partnerProductUrl:
+      'https://lapuankankurit.fi/shop/wool-blankets-cushion-covers/kaamos-wool-blanket-white-black-100-x-150-cm/',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '100 x 150 cm', fi: '100 x 150 cm' } },
+        { key: 'material', value: { en: '100 % pure new wool', fi: '100 % uutta villaa' } },
+        { key: 'color', value: { en: 'White-black', fi: 'Valkoinen-musta' } },
+        { key: 'origin', value: { en: 'Made in Finland', fi: 'Valmistettu Suomessa' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Only wash if very dirty, otherwise air it outdoors. Hand wash at max. 30 °C or dry clean. Do not scrub, stretch or wring. Do not tumble dry. Iron with a damp cloth at max. 150 °C',
+            fi: 'Pese vain jos on hyvin likainen, muuten tuuleta ulkona. Käsinpesu enintään 30 °C tai kuivapesu. Älä hankaa, venytä tai väännä. Ei rumpukuivausta. Silitä kostean liinan läpi enintään 150 °C',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Designer', fi: 'Suunnittelija' },
+          value: { en: 'Hanna Galtat', fi: 'Hanna Galtat' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Product code', fi: 'Tuotekoodi' },
+          value: { en: '102939', fi: '102939' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Certificate', fi: 'Sertifikaatti' },
+          value: { en: 'Key Flag', fi: 'Avainlippu' },
+        },
+      ],
+      sourceUrl:
+        'https://lapuankankurit.fi/shop/wool-blankets-cushion-covers/kaamos-wool-blanket-white-black-100-x-150-cm/',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'pentik-posio-mug',
+    category: 'handicrafts',
+    brand: 'Pentik',
+    name: {
+      en: 'Pentik Posio mug 0,3 l',
+      fi: 'Pentik Posio-muki 0,3 l',
+    },
+    description: {
+      en: 'Pentik fires this mug in Posio, which the company calls the northernmost ceramics factory in the world, and the whole Posio range is decorated with reindeer. Dishwasher, oven, microwave and freezer safe.',
+      fi: 'Pentik polttaa tämän mukin Posiolla, jota yritys kutsuu maailman pohjoisimmaksi keramiikkatehtaaksi, ja koko Posio-sarjan koristeena on poro. Kestää konepesun, uunin, mikron ja pakastimen.',
+    },
+    priceFrom: 37.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-pentik-posio-mug',
+    imageIsPartner: true,
+    partnerId: 'pentik',
+    partnerProductUrl: 'https://en.pentik.com/products/posio-mug-red-0-3-l',
+    featured: true,
+    badges: ['made-in-lapland'],
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '0.3 l', fi: '0,3 l' } },
+        { key: 'color', value: { en: 'Red', fi: 'Punainen' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Made in Posio, Lapland, which Pentik calls the northernmost ceramics factory in the world',
+            fi: 'Valmistettu Posiolla Lapissa, jota Pentik kutsuu maailman pohjoisimmaksi keramiikkatehtaaksi',
+          },
+        },
+        {
+          key: 'care',
+          value: {
+            en: 'Machine washable, safe in the electric oven, baking oven, microwave and freezer',
+            fi: 'Kestää konepesun sekä sähköuunin, leivinuunin, mikron ja pakastimen',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Collection', fi: 'Sarja' },
+          value: {
+            en: 'Posio. Every piece in the range is decorated with reindeer',
+            fi: 'Posio. Koko sarjan koristeena on poro',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Product code', fi: 'Tuotekoodi' },
+          value: { en: '12JAO050P41', fi: '12JAO050P41' },
+        },
+      ],
+      sourceUrl: 'https://en.pentik.com/products/posio-mug-red-0-3-l',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'pentik-tunturiretki-studio-dish',
+    category: 'handicrafts',
+    brand: 'Pentik',
+    name: {
+      en: 'Pentik Tunturiretki Winter Studio deep triangle dish 19 cm',
+      fi: 'Pentik Tunturiretki Winter Studio -kolmiovati syvä 19 cm',
+    },
+    description: {
+      en: 'Anu Pentik painted the reindeer that keep appearing between the trees on a fell walk. Studio pieces are hand painted in Posio, so no two dishes carry exactly the same brush marks.',
+      fi: 'Anu Pentik maalasi ne porot, jotka ilmestyvät puiden välistä tunturiretkellä. Studio-tuotteet maalataan käsin Posiolla, joten kahdessa vadissa ei ole täsmälleen samoja siveltimenvetoja.',
+    },
+    priceFrom: 68,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-pentik-tunturiretki-studio-dish',
+    imageIsPartner: true,
+    partnerId: 'pentik',
+    partnerProductUrl:
+      'https://en.pentik.com/products/tunturiretki-winter-triangle-dish-deep-blue-19-cm',
+    badges: ['made-in-lapland'],
+    details: {
+      specs: [
+        { key: 'size', value: { en: 'Diameter 19 cm', fi: 'Halkaisija 19 cm' } },
+        { key: 'color', value: { en: 'Blue', fi: 'Sininen' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Handmade in Posio, Lapland, designed by Anu Pentik',
+            fi: 'Käsintehty Posiolla Lapissa, suunnittelija Anu Pentik',
+          },
+        },
+        {
+          key: 'care',
+          value: {
+            en: 'Machine washable, safe in the electric oven, baking oven, microwave and freezer',
+            fi: 'Kestää konepesun sekä sähköuunin, leivinuunin, mikron ja pakastimen',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Collection', fi: 'Sarja' },
+          value: {
+            en: 'Pentik Studio, the hand painted range',
+            fi: 'Pentik Studio, käsin maalattu sarja',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Product code', fi: 'Tuotekoodi' },
+          value: { en: '12ST353TT61', fi: '12ST353TT61' },
+        },
+      ],
+      sourceUrl:
+        'https://en.pentik.com/products/tunturiretki-winter-triangle-dish-deep-blue-19-cm',
+      fetchedAt: '2026-08-01',
+    },
+  },
+
   // ── treats ────────────────────────────────────────────────────────────────
   {
     slug: 'kuivalihakundi-poro-jerky',

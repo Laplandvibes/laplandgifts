@@ -42,6 +42,44 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'worldwide',
     verifiedAt: '2026-07-31',
   },
+  scandinavianoutdoor: {
+    id: 'scandinavianoutdoor',
+    name: 'Scandinavian Outdoor',
+    network: 'direct',
+    baseUrl: 'https://scandinavianoutdoor.fi',
+    // Toimitusehdot 1.8.2026 (Asiakaspalvelu → Tilausten toimitus): "toimitamme
+    // tuotteita ympäri maailmaa", ja EU:n ulkopuolisissa tilauksissa
+    // vastaanottaja vastaa tulli- ja veromaksuista. Myös Ahvenanmaa mainitaan
+    // erikseen. 🔴 LV:llä on Adtraction-suhde tähän kauppaan, mutta meillä ei
+    // ole syvälinkkitemplatea verkoston paneelista, joten linkki menee toistaiseksi
+    // UTM-reittiä. Kun template saadaan, se lisätään tähän trackingTemplateksi.
+    shipsTo: 'worldwide',
+    verifiedAt: '2026-08-01',
+  },
+  lapuankankurit: {
+    id: 'lapuankankurit',
+    name: 'Lapuan Kankurit',
+    network: 'direct',
+    baseUrl: 'https://lapuankankurit.fi',
+    // Shipping & payment 1.8.2026: nimetty maalista (Belgia, Alankomaat, Irlanti,
+    // Britannia, Italia, Itävalta, Luxemburg, Norja, Ranska, Ruotsi, Saksa,
+    // Suomi ilman Ahvenanmaata, Sveitsi, Tanska). Ei maailmanlaajuinen.
+    shipsTo: 'eu',
+    verifiedAt: '2026-08-01',
+  },
+  pentik: {
+    id: 'pentik',
+    name: 'Pentik',
+    network: 'direct',
+    // 🔴 en.pentik.com, ei www.pentik.com. Suomenkielinen kauppa toimittaa vain
+    // Manner-Suomeen ja ohjaa EU-tilaukset nimenomaan englanninkieliseen
+    // kauppaan; EU:n ulkopuolelle tilataan sähköpostilla Kuusamon myymälästä.
+    // Linkki menee siis siihen kauppaan joka oikeasti toimittaa ostajalle.
+    baseUrl: 'https://en.pentik.com',
+    // Shipping and Payment 1.8.2026: Manner-Suomi + 26 nimettyä EU-maata.
+    shipsTo: 'eu',
+    verifiedAt: '2026-08-01',
+  },
   suomikauppa: {
     id: 'suomikauppa',
     name: 'Suomikauppa.fi',

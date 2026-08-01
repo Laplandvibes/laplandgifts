@@ -109,6 +109,46 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-kupilka-bowl-55": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-kupilka-classic-cup-21": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-kupilka-cutlery-set": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-lapuan-kankurit-kaamos-blanket": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-lapuan-kankurit-poro-towel": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-makia-aurora-hoodie": {
     "full": 800,
     "w": [
@@ -118,6 +158,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-makia-merino-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-marttiini-ilves-131": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-marttiini-lapinleuku-255": {
     "full": 800,
     "w": [
       320,
@@ -158,6 +214,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-moomin-mystical-forest-wool-throw": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-pentik-posio-mug": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-pentik-tunturiretki-studio-dish": {
     "full": 800,
     "w": [
       320,

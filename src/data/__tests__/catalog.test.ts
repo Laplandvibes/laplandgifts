@@ -73,6 +73,43 @@ describe('katalogin eheys', () => {
     }
   })
 
+  /**
+   * 🔴 Monipuolisuusportti. Ensimmäisessä versiossa käsityöt-kategoria oli kolme
+   * lähes identtistä Marttiinin puukkoa: kategoria näytti siltä että se "hyppää
+   * uudestaan samaan". Yksi kumppani tai valmistaja ei saa täyttää kategoriaa,
+   * koska silloin kauppa on kumppanin tuoteluettelo eikä kuratoitu valikoima.
+   * Raja on kolme, koska kolmella samaa merkkiä saa vielä näytettyä sarjan.
+   */
+  const MAX_PER_CATEGORY = 3
+
+  it('yksikään kumppani ei täytä kategoriaa (enintään kolme tuotetta)', () => {
+    for (const c of CATEGORY_IDS) {
+      const counts = new Map<string, number>()
+      for (const p of productsByCategory(c)) {
+        counts.set(p.partnerId, (counts.get(p.partnerId) ?? 0) + 1)
+      }
+      for (const [partnerId, n] of counts) {
+        expect(n, `${c}: ${partnerId} on ${n} tuotteella, raja ${MAX_PER_CATEGORY}`).toBeLessThanOrEqual(
+          MAX_PER_CATEGORY,
+        )
+      }
+    }
+  })
+
+  it('yksikään valmistaja ei täytä kategoriaa (enintään kolme tuotetta)', () => {
+    for (const c of CATEGORY_IDS) {
+      const counts = new Map<string, number>()
+      for (const p of productsByCategory(c)) {
+        counts.set(p.brand, (counts.get(p.brand) ?? 0) + 1)
+      }
+      for (const [brand, n] of counts) {
+        expect(n, `${c}: ${brand} on ${n} tuotteella, raja ${MAX_PER_CATEGORY}`).toBeLessThanOrEqual(
+          MAX_PER_CATEGORY,
+        )
+      }
+    }
+  })
+
   it('productBySlug löytää tuotteen ja palauttaa undefined tuntemattomalle', () => {
     expect(productBySlug(PRODUCTS[0].slug)?.slug).toBe(PRODUCTS[0].slug)
     expect(productBySlug('ei-ole-olemassa')).toBeUndefined()

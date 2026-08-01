@@ -48,7 +48,13 @@ const manifest = {}
 for (const file of fs.readdirSync(DIR).sort()) {
   if (!file.endsWith('.webp')) continue
   const base = file.replace(/\.webp$/, '')
-  if (/-\d+$/.test(base)) continue // jo variantti
+  // 🔴 Tässä oli aiemmin `if (/-\d+$/.test(base)) continue // jo variantti`.
+  // Se pudotti myös oikeat tuotekuvat, joiden slug päättyy numeroon
+  // (prod-marttiini-ilves-131, prod-kupilka-bowl-55): ne jäivät kokonaan ilman
+  // pieniä variantteja ja pois manifestista, eli mobiili latasi 800 pikselin
+  // kuvan 147 pikselin paikkaan. Erillistä varianttisuodatinta ei tarvita:
+  // alla oleva `used`-tarkistus hylkää variantit jo valmiiksi, koska ne eivät
+  // esiinny data-tiedostojen `image`-kentissä.
   if (!used.has(base)) continue
   const plan = PLAN.find((p) => p.match.test(base))
   if (!plan) continue
