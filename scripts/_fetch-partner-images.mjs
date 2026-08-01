@@ -125,6 +125,23 @@ const JOBS = [
     'https://cdn.shopify.com/s/files/1/0518/9530/4385/files/karpalo-suolakinuski-pussitee-uutuus-nordqvist-teekauppa-967.jpg?v=1761622148&width=1200',
   ],
 
+  // ── treats, erä 2026-08-01 b: Moomin Shopin elintarvikkeet ────────────────
+  // Nämä jäivät aiemmasta erästä pois, koska toimitusmallissa ei ollut tapaa
+  // sanoa "maailmanlaajuinen paitsi USA, Etelä-Amerikka ja Australia".
+  // Product.shipsExcept kertoo sen nyt, joten tuotteet ovat mukana.
+  [
+    'moomin-wild-blueberry-coffee',
+    'https://cdn.shopify.com/s/files/1/0713/7997/files/7391508253023moomintrollcoffee4.jpg?v=1759210313',
+  ],
+  [
+    'moomin-lingonberry-blueberry-dark-chocolate',
+    'https://cdn.shopify.com/s/files/1/0713/7997/files/7350079030112blueberryandlingonberrychocolatemoomintroll2.jpg?v=1745917565',
+  ],
+  [
+    'moomin-berry-picking-tea',
+    'https://cdn.shopify.com/s/files/1/0713/7997/files/f2c931d17af2683468f2985749a03979d236ee6d_37188g_Muumi_Marjaretki_20x1_75_g_RFA6413440000334.jpg?v=1756445677',
+  ],
+
   // ── superfoods, erä 2026-08-01 ────────────────────────────────────────────
   [
     'arctic-warriors-spruce-sprout-powder',

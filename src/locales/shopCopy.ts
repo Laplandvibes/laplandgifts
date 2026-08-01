@@ -114,6 +114,20 @@ export interface ShopCopy {
      * Pitkä muoto jää tuotesivulle ja toimitussivulle.
      */
     zoneShort: { worldwide: string; eu: string; fi: string }
+    /**
+     * Vyöhykemerkintä silloin kun tuotteella tai kaupalla on maapoikkeuksia.
+     *
+     * 🔴 Ostajan on tiedettävä rajaus ENNEN kuin hän klikkaa ostamaan. Pelkkä
+     * "Koko maailma" on kortissa väärä lupaus, jos kolmeen maahan ei toimiteta.
+     * Kortissa ei ole tilaa maiden nimille (kapeimmillaan 114 px tekstiä),
+     * joten kortti kertoo määrän ja tuotesivu maiden nimet.
+     */
+    exceptShort: (zone: string, count: number) => string
+    /**
+     * Tuotesivun rivi: poikkeusmaat NIMILLÄ, ei koodeina. "US" ei kerro
+     * lukijalle mitään; maan nimi kertoo heti koskeeko rajaus häntä.
+     */
+    exceptNote: (countries: string[]) => string
     selectorLabel: string
     /**
      * Valitsimen tyhjä arvo. Kun labelina lukee jo "Toimitusmaa", tyhjän
@@ -184,7 +198,7 @@ const en: ShopCopy = {
       design: 'Moomin mugs, Iittala glass, Marimekko and Aarikka wooden jewellery: the Finnish design that actually travels home. Every item ships from the Finnish or Nordic shop that sells it.',
       clothing: 'Halti shell jackets, Makia streetwear from Helsinki and North Outdoor merino knitted in its own mill in Oulu.',
       handicrafts: 'Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved.',
-      treats: 'Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam. Import rules differ by country, so check the delivery note on each card.',
+      treats: 'Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam. Import rules differ by country, so check the delivery note on each card.',
       superfoods: 'Arctic berry powders, chaga and Arctic Warriors herbal products made in Rovaniemi, from Finnish producers.',
       merch: 'Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US.',
       experiences: 'Northern lights tours, husky sledding and Santa Claus Village, bought as a gift now and booked when the recipient picks a date.',
@@ -233,6 +247,8 @@ const en: ShopCopy = {
     euOnly: 'Ships to Europe only',
     fiOnly: 'Ships within Finland only',
     zoneShort: { worldwide: 'Worldwide', eu: 'Europe only', fi: 'Finland only' },
+    exceptShort: (zone, count) => `${zone}, ${count} ${count === 1 ? 'exception' : 'exceptions'}`,
+    exceptNote: (countries) => `Not available for shipment to: ${countries.join(', ')}.`,
     selectorLabel: 'Deliver to',
     selectorAll: 'All countries',
     title: 'Delivery',
@@ -280,7 +296,7 @@ const fi: ShopCopy = {
       design: 'Muumimukeja, Iittalan lasia, Marimekkoa ja Aarikan puukoruja: sitä suomalaista designia, joka oikeasti lähtee matkaan. Jokainen tuote lähtee siitä kaupasta, joka sen myy.',
       clothing: 'Haltin kuoritakkeja, Makian helsinkiläistä streetweariä ja North Outdoorin merinoneuleita, jotka neulotaan Oulussa.',
       handicrafts: 'Marttiinin puukkoja Rovaniemeltä, Kupilkan kuksia, Lapuan Kankureiden pellavaa ja Pentikin keramiikkaa: käsityötä, joka kuluu käytössä eikä hyllyllä.',
-      treats: 'Suomalaisia herkkuja: salmiakkia, Fazerin suklaata, Nordqvistin teetä, poron kuivalihaa ja tyrnihilloa. Tuontisäännöt vaihtelevat maittain, joten tarkista toimitusmerkintä kortista.',
+      treats: 'Suomalaisia herkkuja: salmiakkia, Fazerin suklaata, Nordqvistin ja Muumien teetä, Muumi-kahvia, poron kuivalihaa ja tyrnihilloa. Tuontisäännöt vaihtelevat maittain, joten tarkista toimitusmerkintä kortista.',
       superfoods: 'Arktista marjajauhetta, pakuria ja Rovaniemellä valmistettuja Arctic Warriorsin yrttivalmisteita suomalaisilta tuottajilta.',
       merch: 'Lapland-paitoja, huppareita, lippiksiä ja tuubihuiveja omalla #LAPLANDVIBES-painatuksella, tehdään tilauksesta ja lähetetään EU:sta tai Yhdysvalloista.',
       experiences: 'Revontuliretkiä, huskysafareita ja Joulupukin Pajakylää lahjaksi ostettuna, varattavaksi silloin, kun saaja itse valitsee päivän.',
@@ -329,6 +345,13 @@ const fi: ShopCopy = {
     euOnly: 'Toimitus vain Eurooppaan',
     fiOnly: 'Toimitus vain Suomeen',
     zoneShort: { worldwide: 'Koko maailma', eu: 'Vain Eurooppa', fi: 'Vain Suomi' },
+    exceptShort: (zone, count) => `${zone}, pl. ${count} ${count === 1 ? 'maa' : 'maata'}`,
+    // 🔴 "Ei toimiteta näihin maihin:" eikä "Ei toimiteta Yhdysvaltoihin,
+    // Australiaan ja ...": kaksoispistelista pitää maiden nimet perusmuodossa,
+    // eikä jokaista nimeä tarvitse taivuttaa illatiiviin. Taivutus menisi
+    // väärin juuri niissä nimissä joita tarvitaan (Peru → Peruun, Chile →
+    // Chileen, Falklandinsaaret → Falklandinsaarille).
+    exceptNote: (countries) => `Ei toimiteta näihin maihin: ${countries.join(', ')}.`,
     selectorLabel: 'Toimitusmaa',
     selectorAll: 'Kaikki maat',
     title: 'Toimitus',

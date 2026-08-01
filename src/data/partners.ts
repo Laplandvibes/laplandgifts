@@ -28,8 +28,17 @@ export const PARTNERS: Record<string, Partner> = {
     name: 'Moomin Shop',
     network: 'direct',
     baseUrl: 'https://shop.moomin.com',
+    // Delivery charges and estimated delivery times 1.8.2026: hinnasto erittelee
+    // "USA, Canada, Australia, Hong Kong, China and the rest of the world".
+    // Kauppa on siis maailmanlaajuinen.
+    //
+    // 🔴 Kaupan ELINTARVIKKEILLA (kahvit, teet, suklaat, keksit) on oma
+    // maarajaus, joka lukee jokaisen tuotteen omalla sivulla: "This product is
+    // not available for shipment to the USA, South America or Australia."
+    // Rajaus on siksi tuotteen shipsExcept-kentässä, ei tässä: muki lähtee
+    // Yhdysvaltoihin vaikka kahvipaketti ei lähde.
     shipsTo: 'worldwide',
-    verifiedAt: '2026-07-31',
+    verifiedAt: '2026-08-01',
   },
   marttiini: {
     id: 'marttiini',
@@ -71,12 +80,20 @@ export const PARTNERS: Record<string, Partner> = {
     name: 'Aarikka',
     network: 'direct',
     baseUrl: 'https://www.aarikka.com',
-    // 🔴 Payment and Delivery 1.8.2026 luettelee noin 70 toimitusmaata kaikilta
-    // mantereilta, mutta Yhdysvallat on nimenomaisesti rajattu pois tullisyistä.
-    // Siksi tämä EI ole 'worldwide': se lupaisi toimituksen maahan, johon
-    // kauppa ei toimita. 'eu' on tosi (kaikki 27 EU-maata ovat listalla) eikä
-    // lupaa liikaa; suodatin näyttää siis kumppanin harvemmin kuin voisi.
-    shipsTo: 'eu',
+    // Payment and Delivery 1.8.2026 luettelee 72 toimitusmaata kaikilta
+    // mantereilta (mm. Australia, Brasilia, Japani, Kanada, Meksiko,
+    // Etelä-Korea, Uusi-Seelanti) ja rajaa yhden pois: "Unfortunately, we are
+    // not able to ship orders to the United States for the time being due to
+    // customs-related reasons."
+    //
+    // 🔴 Tämä oli aiemmin 'eu', koska mallissa ei ollut tapaa sanoa
+    // "maailmanlaajuinen paitsi yksi maa". Se piilotti kumppanin kaikilta
+    // EU:n ulkopuolisilta ostajilta, vaikka kauppa toimittaa heille:
+    // Britannia, Kanada, Japani, Etelä-Korea, Australia, Sveitsi ja Norja ovat
+    // kaikki toimitusmaalistalla. Nyt vyöhyke kertoo totuuden ja poikkeus
+    // hoitaa Yhdysvallat.
+    shipsTo: 'worldwide',
+    shipsExcept: ['US'],
     verifiedAt: '2026-08-01',
   },
   scandinavianoutdoor: {
@@ -98,10 +115,22 @@ export const PARTNERS: Record<string, Partner> = {
     name: 'Lapuan Kankurit',
     network: 'direct',
     baseUrl: 'https://lapuankankurit.fi',
-    // Shipping & payment 1.8.2026: nimetty maalista (Belgia, Alankomaat, Irlanti,
-    // Britannia, Italia, Itävalta, Luxemburg, Norja, Ranska, Ruotsi, Saksa,
-    // Suomi ilman Ahvenanmaata, Sveitsi, Tanska). Ei maailmanlaajuinen.
+    // Shipping & Payment 1.8.2026, sanatarkasti: "We deliver products to the
+    // following countries; Belgium, Netherlands, Ireland, Great Britain, Italy,
+    // Austria, Luxemburg, Norway, France, Sweden, Germany, Finland (not Åland),
+    // Switzerland and Denmark."
+    //
+    // 🔴 Listalla on 11 EU-maata, ei 27. Pelkkä 'eu' lupasi toimituksen
+    // espanjalaiselle, puolalaiselle ja kreikkalaiselle ostajalle, joille
+    // kauppa ei toimita lainkaan (heidät ohjataan asiakaspalveluun). Poikkeus
+    // listaa ne 16 EU-maata, jotka EIVÄT ole kaupan omalla listalla.
+    // Britannia, Norja ja Sveitsi jäävät edelleen suodattimen ulkopuolelle,
+    // koska vyöhyke on 'eu'; se on aliarvio eikä väärä lupaus.
     shipsTo: 'eu',
+    shipsExcept: [
+      'BG', 'CY', 'CZ', 'EE', 'ES', 'GR', 'HR', 'HU',
+      'LT', 'LV', 'MT', 'PL', 'PT', 'RO', 'SI', 'SK',
+    ],
     verifiedAt: '2026-08-01',
   },
   pentik: {

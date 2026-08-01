@@ -9,6 +9,8 @@ import ShippingBadge from '../components/shop/ShippingBadge'
 import ProductCard from '../components/shop/ProductCard'
 import { productBySlug, productsByCategory } from '../data/products'
 import { PARTNERS } from '../data/partners'
+import { mergeExcept } from '../data/shipping'
+import { countryNames } from '../data/countryNames'
 import { categoryById } from '../data/categories'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
@@ -34,6 +36,11 @@ export default function Product() {
   const name = pick(product.name)
   const description = pick(product.description)
   const details = product.details
+  // Kaupan ja tuotteen maarajaukset yhdessä. Tuotesivu on viimeinen paikka
+  // ennen kumppanin kauppaa, joten rajaus luetellaan tässä maiden NIMILLÄ:
+  // kortin "pl. 3 maata" kertoo että rajaus on olemassa, tämä kertoo ketä se
+  // koskee.
+  const except = mergeExcept(partner.shipsExcept, product.shipsExcept)
   const related = productsByCategory(product.category)
     .filter((p) => p.slug !== product.slug)
     .slice(0, 4)
@@ -101,8 +108,13 @@ export default function Product() {
                 <span className="font-heading text-3xl text-gray">
                   {t.product.priceFrom(product.priceFrom, product.currency)}
                 </span>
-                <ShippingBadge zone={partner.shipsTo} lang={lang} />
+                <ShippingBadge zone={partner.shipsTo} lang={lang} exceptCount={except.length} />
               </div>
+              {except.length > 0 && (
+                <p className="rounded-xl border border-amber/40 bg-amber/10 p-3 text-sm text-gray">
+                  {t.shipping.exceptNote(countryNames(except, lang))}
+                </p>
+              )}
               <p className="text-sm text-muted">
                 {t.product.priceNote(product.priceCheckedAt, partner.name)}
               </p>

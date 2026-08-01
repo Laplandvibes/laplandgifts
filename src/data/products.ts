@@ -1,4 +1,23 @@
 import type { Product } from './types'
+// 🔴 Pääte `.ts` on pakollinen. scripts/build-routes-json.mjs importoi tämän
+// tiedoston suoraan Nodella, joka purkaa tyypit muttei arvaa päätteitä:
+// pääteetön arvo-import kaataa koko buildin ERR_MODULE_NOT_FOUNDiin. Muut
+// tämän tiedoston importit ovat tyyppi-importteja, jotka häviävät käännöksessä,
+// joten ongelma ei ole näkynyt aiemmin. tsconfig sallii päätteen
+// (allowImportingTsExtensions).
+import { SOUTH_AMERICA } from './countryNames.ts'
+
+/**
+ * Moomin Shopin elintarvikkeiden maarajaus. Luettu jokaisen tuotteen omalta
+ * sivulta 1.8.2026, sanatarkasti: "This product is not available for shipment
+ * to the USA, South America or Australia." / "Tätä tuotetta ei voida toimittaa
+ * Yhdysvaltoihin, Etelä-Amerikkaan tai Australiaan."
+ *
+ * Manner puretaan maakoodeiksi, koska toimitusmaasuodatin vertaa maita eikä
+ * mantereita. Rajaus on tuotteissa eikä kumppanissa: sama kauppa lähettää mukin
+ * Yhdysvaltoihin, kahvipaketin ei.
+ */
+const MOOMIN_FOOD_EXCEPT = ['US', 'AU', ...SOUTH_AMERICA]
 
 /**
  * Kuratoitu tuotekatalogi. Jokainen rivi on avattu kumppanin sivulta ja
@@ -1841,6 +1860,162 @@ export const PRODUCTS: Product[] = [
         fi: 'Hibiskus, rooibos, karpalo- ja suolainen kinuskiaromi.',
       },
       sourceUrl: 'https://nordqvist.fi/products/karpalo-suolakinuski',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'moomin-wild-blueberry-coffee',
+    category: 'treats',
+    brand: 'Moomin',
+    name: {
+      en: 'Moomintroll Wild Blueberry coffee 250 g',
+      fi: 'Muumipeikko Villimustikka-kahvi 250 g',
+    },
+    description: {
+      en: 'Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. A peaberry is a coffee cherry that grew one bean instead of two, which the roastery says concentrates the taste. 250 grams.',
+      fi: 'Mustikalla maustettua kahvia Bergstrands Kafferosterilta, pohjana Mogianan kukkuloilla Etelä-Brasiliassa kypsyneet helmipavut. Helmipapu on kahvimarja, johon on kasvanut kahden pavun sijaan yksi, ja paahtimon mukaan maku tiivistyy siitä. 250 grammaa.',
+    },
+    priceFrom: 12.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-moomin-wild-blueberry-coffee',
+    imageIsPartner: true,
+    partnerId: 'moomin',
+    shipsExcept: MOOMIN_FOOD_EXCEPT,
+    partnerProductUrl: 'https://shop.moomin.com/products/moomintroll-coffee-wild-blueberry-250g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '250 g', fi: '250 g' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Beans from the Mogiana hills in southern Brazil, roasted by Bergstrands Kafferosteri',
+            fi: 'Pavut Mogianan kukkuloilta Etelä-Brasiliasta, paahtajana Bergstrands Kafferosteri',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Bean', fi: 'Papu' },
+          value: {
+            en: 'Peaberry, a coffee cherry with a single bean instead of two',
+            fi: 'Helmipapu, kahvimarja jossa on kahden pavun sijaan yksi',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Flavour', fi: 'Maku' },
+          value: { en: 'Wild blueberry', fi: 'Villimustikka' },
+        },
+      ],
+      // Kumppani ei julkaise kahville ainesosaluetteloa, joten kenttä puuttuu.
+      sourceUrl: 'https://shop.moomin.com/products/moomintroll-coffee-wild-blueberry-250g',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'moomin-lingonberry-blueberry-dark-chocolate',
+    category: 'treats',
+    brand: 'Moomin',
+    name: {
+      en: 'Moomintroll dark chocolate with lingonberry and blueberry 70 g',
+      fi: 'Muumipeikko-tummasuklaa, puolukka ja mustikka 70 g',
+    },
+    description: {
+      en: 'Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork. The cocoa is Criollo and Trinitario from Peru and the bar is made in Sweden.',
+      fi: 'Luomua ja 70 prosentin tummaa suklaata Kalmar Chokladfabrikilta, mukana pakastekuivattua puolukkaa ja mustikkaa, kääreessä Tove Janssonin kuvitus. Kaakao on perulaista Criolloa ja Trinitarioa, ja levy valmistetaan Ruotsissa.',
+    },
+    priceFrom: 8.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-moomin-lingonberry-blueberry-dark-chocolate',
+    imageIsPartner: true,
+    partnerId: 'moomin',
+    shipsExcept: MOOMIN_FOOD_EXCEPT,
+    partnerProductUrl:
+      'https://shop.moomin.com/products/moomintroll-dark-chocolate-with-lingonberry-blueberry-70g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '70 g', fi: '70 g' } },
+        {
+          key: 'contents',
+          value: { en: 'Dark chocolate, 70 % cocoa', fi: 'Tummaa suklaata, kaakaota 70 %' },
+        },
+        {
+          key: 'origin',
+          value: {
+            en: 'Criollo and Trinitario cocoa beans from Peru, manufactured in Sweden',
+            fi: 'Criollo- ja Trinitario-kaakaopapuja Perusta, valmistettu Ruotsissa',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Diet', fi: 'Ruokavalio' },
+          value: { en: 'Organic', fi: 'Luomu' },
+        },
+      ],
+      ingredients: {
+        en: 'Cocoa mass*, cane sugar*, cocoa butter*, blueberries*, lingonberries*. *Organic ingredient.',
+        fi: 'Kaakaomassa*, ruokosokeri*, kaakaovoi*, mustikka*, puolukka*. *Luomuainesosa.',
+      },
+      allergens: {
+        en: 'May contain traces of almonds, nuts and soya.',
+        fi: 'Saattaa sisältää jäämiä manteleista, pähkinöistä ja soijasta.',
+      },
+      sourceUrl:
+        'https://shop.moomin.com/products/moomintroll-dark-chocolate-with-lingonberry-blueberry-70g',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'moomin-berry-picking-tea',
+    category: 'treats',
+    brand: 'Moomin',
+    name: {
+      en: 'Moomin Berry Picking tea, 20 bags',
+      fi: 'Muumi Marjaretki-tee, 20 pussia',
+    },
+    description: {
+      en: 'Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. The tea is a collaboration with the Finnish Red Cross: 0.40 euro from every pack sold goes to Red Cross work with children, young people and the lonely.',
+      fi: 'Mustaa teetä vaniljan ja punaisten marjojen maulla, sekoitettu Nurmijärven tehtaalla ja merkitty Avainlipulla. Tee on yhteistyötä Suomen Punaisen Ristin kanssa: jokaisesta myydystä paketista 0,40 euroa menee Punaisen Ristin työhön lasten, nuorten ja yksinäisten parissa.',
+    },
+    priceFrom: 5.5,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-moomin-berry-picking-tea',
+    imageIsPartner: true,
+    partnerId: 'moomin',
+    shipsExcept: MOOMIN_FOOD_EXCEPT,
+    partnerProductUrl: 'https://shop.moomin.com/products/moomin-berry-picking-bagged-tea',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '20 x 1.75 g, 35 g', fi: '20 x 1,75 g, 35 g' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Made at the Nurmijärvi factory in Finland',
+            fi: 'Valmistettu Nurmijärven tehtaalla Suomessa',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Certification', fi: 'Sertifiointi' },
+          value: {
+            en: 'Rainforest Alliance certified tea, Finnish Avainlippu mark',
+            fi: 'Rainforest Alliance -sertifioitua teetä, Avainlippu-merkki',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Diet', fi: 'Ruokavalio' },
+          value: { en: 'Vegan', fi: 'Vegaaninen' },
+        },
+      ],
+      ingredients: {
+        en: 'Black tea*, flavour of red berries and vanilla. *Rainforest Alliance Certified.',
+        fi: 'Musta tee*, punaisten marjojen ja vaniljan aromi. *Rainforest Alliance -sertifioitu.',
+      },
+      // Kumppani ei ilmoita allergeeneja tälle tuotteelle, joten kenttä puuttuu.
+      sourceUrl: 'https://shop.moomin.com/products/moomin-berry-picking-bagged-tea',
       fetchedAt: '2026-08-01',
     },
   },

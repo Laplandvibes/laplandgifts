@@ -8,6 +8,7 @@ import { PARTNERS } from '../../data/partners'
 import type { Lang } from '../../i18n/useLang'
 import { useLocalePath } from '../../i18n/useLang'
 import { imgSrcSet } from '../../lib/img'
+import { mergeExcept } from '../../data/shipping'
 import { SHOP_COPY } from '../../locales/shopCopy'
 import ShippingBadge from './ShippingBadge'
 
@@ -36,6 +37,9 @@ export default function ProductCard({ product, lang }: { product: Product; lang:
   const to = useLocalePath()
   const t = SHOP_COPY[lang].product
   const partner = PARTNERS[product.partnerId]
+  // Kaupan ja tuotteen rajaukset yhdessä: sama kauppa voi lähettää mukin
+  // maailmalle mutta elintarvikkeen vain osaan maista.
+  const except = mergeExcept(partner.shipsExcept, product.shipsExcept)
   const name = lang === 'fi' ? product.name.fi : product.name.en
   return (
     <Link
@@ -87,7 +91,12 @@ export default function ProductCard({ product, lang }: { product: Product; lang:
           <span className="text-sm font-semibold text-gray sm:text-base">
             {t.priceFrom(product.priceFrom, product.currency)}
           </span>
-          <ShippingBadge zone={partner.shipsTo} lang={lang} size="sm" />
+          <ShippingBadge
+            zone={partner.shipsTo}
+            lang={lang}
+            size="sm"
+            exceptCount={except.length}
+          />
           <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-amber group-hover:underline">
             {t.viewProduct}
             <ArrowRight className="h-4 w-4 shrink-0" aria-hidden="true" />

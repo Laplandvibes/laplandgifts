@@ -309,7 +309,23 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-moomin-berry-picking-tea": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-moomin-blue-love-mug": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-moomin-lingonberry-blueberry-dark-chocolate": {
     "full": 800,
     "w": [
       320,
@@ -326,6 +342,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-moomin-mystical-forest-wool-throw": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-moomin-wild-blueberry-coffee": {
     "full": 800,
     "w": [
       320,

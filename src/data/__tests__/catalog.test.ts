@@ -4,6 +4,8 @@ import { PRODUCTS, productsByCategory, productBySlug, featuredProducts } from '.
 import { CATEGORIES } from '../categories'
 import { PARTNERS } from '../partners'
 import { CATEGORY_IDS } from '../types'
+import { COUNTRY_NAMES } from '../countryNames'
+import { mergeExcept, shipsTo } from '../shipping'
 
 describe('katalogin eheys', () => {
   it('tuoteslugit ovat uniikkeja', () => {
@@ -124,6 +126,73 @@ describe('katalogin eheys', () => {
   it('kategorioita on seitsemän ja slugit ovat uniikkeja', () => {
     expect(CATEGORIES.length).toBe(7)
     expect(new Set(CATEGORIES.map((c) => c.slug)).size).toBe(7)
+  })
+})
+
+/**
+ * Toimitusrajaukset. Poikkeuslista on lupaus toiseen suuntaan kuin vyöhyke:
+ * vyöhyke kertoo minne toimitetaan, poikkeus minne ei. Väärä koodi
+ * poikkeuslistassa ei näy virheenä missään, se vain jättää suodattimen
+ * huomiotta ja renderöi tuotesivulle paljaan koodin maan nimen sijaan.
+ */
+describe('toimitusrajaukset', () => {
+  const allExcept = [
+    ...Object.entries(PARTNERS).map(
+      ([id, p]) => [`kumppani ${id}`, p.shipsExcept] as const,
+    ),
+    ...PRODUCTS.map((p) => [`tuote ${p.slug}`, p.shipsExcept] as const),
+  ]
+
+  it('poikkeuskoodit ovat ISO-3166-1 alpha-2 -muotoisia', () => {
+    for (const [where, list] of allExcept) {
+      for (const code of list ?? []) {
+        expect(code, `${where}: ${code} ei ole alpha-2-koodi`).toMatch(/^[A-Z]{2}$/)
+      }
+    }
+  })
+
+  it('jokaiselle poikkeusmaalle on nimi molemmilla kielillä', () => {
+    for (const [where, list] of allExcept) {
+      for (const code of list ?? []) {
+        const row = COUNTRY_NAMES[code]
+        expect(row, `${where}: ${code} puuttuu maataulukosta`).toBeDefined()
+        expect(row.en.trim().length, `${where}: ${code}.en tyhjä`).toBeGreaterThan(0)
+        expect(row.fi.trim().length, `${where}: ${code}.fi tyhjä`).toBeGreaterThan(0)
+      }
+    }
+  })
+
+  it('poikkeuslista on joko puuttuva tai epätyhjä ilman kaksoiskappaleita', () => {
+    for (const [where, list] of allExcept) {
+      if (!list) continue
+      expect(list.length, `${where}: tyhjä poikkeuslista, jätä kenttä pois`).toBeGreaterThan(0)
+      expect(new Set(list).size, `${where}: kaksoiskappale poikkeuslistassa`).toBe(list.length)
+    }
+  })
+
+  it('yksikään tuote ei ole rajattu pois omasta myyntimaastaan Suomesta', () => {
+    // Suomi on kaupan ydinyleisö: matkan aikana tai sen jälkeen tilaava. Jos
+    // tuote katoaa Suomi-valinnalla, se on merkitty väärin eikä myytävissä.
+    for (const p of PRODUCTS) {
+      const partner = PARTNERS[p.partnerId]
+      const except = mergeExcept(partner.shipsExcept, p.shipsExcept)
+      expect(shipsTo(partner.shipsTo, 'FI', except), `${p.slug} ei toimita Suomeen`).toBe(true)
+    }
+  })
+
+  it('Moomin Shopin elintarvikkeet katoavat Yhdysvalloista mutta eivät Saksasta', () => {
+    const foods = PRODUCTS.filter((p) => p.partnerId === 'moomin' && p.category === 'treats')
+    expect(foods.length, 'Moomin Shopin elintarvikkeet puuttuvat katalogista').toBeGreaterThan(0)
+    for (const p of foods) {
+      const partner = PARTNERS[p.partnerId]
+      const except = mergeExcept(partner.shipsExcept, p.shipsExcept)
+      for (const blocked of ['US', 'AU', 'BR']) {
+        expect(shipsTo(partner.shipsTo, blocked, except), `${p.slug} → ${blocked}`).toBe(false)
+      }
+      for (const allowed of ['DE', 'FI', 'JP', 'CA']) {
+        expect(shipsTo(partner.shipsTo, allowed, except), `${p.slug} → ${allowed}`).toBe(true)
+      }
+    }
   })
 })
 

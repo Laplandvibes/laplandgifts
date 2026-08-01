@@ -21,6 +21,22 @@ export const CATEGORY_IDS: CategoryId[] = [
  */
 export type ShippingZone = 'worldwide' | 'eu' | 'fi'
 
+/**
+ * Maat joihin EI toimiteta, vaikka vyöhyke muuten sallisi. ISO-3166-1 alpha-2.
+ * Tuotteen lista täydentää kumppanin listaa, ei korvaa sitä: sama kauppa voi
+ * lähettää mukin maailmalle mutta elintarvikkeen vain osaan maista.
+ *
+ * 🔴 Kolme vyöhykettä yksinään on liian karkea malli. Moomin Shop toimittaa
+ * maailmanlaajuisesti, mutta sen elintarvikkeita ei saa lähettää Yhdysvaltoihin,
+ * Etelä-Amerikkaan eikä Australiaan. Ilman tätä listaa vaihtoehtoja oli kaksi ja
+ * molemmat väärin: joko 'worldwide' (lupaa toimituksen jota ei ole) tai tuotteen
+ * jättäminen kokonaan pois (valikoima kapenee syyttä). Rajaus kuuluu maihin,
+ * ei tuotteisiin.
+ *
+ * Poikkeus voittaa aina vyöhykkeen, ks. shipping.ts:n shipsTo().
+ */
+export type CountryCode = string
+
 /** Verkosto, jonka kautta klikki laskutetaan. */
 export type PartnerNetwork =
   | 'adtraction'
@@ -39,6 +55,8 @@ export interface Partner {
   /** Kumppanin kaupan origin, esim. "https://halti.com". */
   baseUrl: string
   shipsTo: ShippingZone
+  /** Maat joihin tämä kauppa ei toimita, vaikka vyöhyke sallisi. */
+  shipsExcept?: CountryCode[]
   /**
    * Affiliate-verkoston trackinglinkki, jossa `{URL}` on paikanpitäjä
    * enkoodatulle kohde-URL:lle. Otetaan verkoston paneelista, ei arvata.
@@ -110,6 +128,12 @@ export interface Product {
    */
   imageIsPartner?: boolean
   partnerId: string
+  /**
+   * Maat joihin juuri tätä tuotetta ei toimiteta, vaikka kauppa muuten
+   * toimittaisi. Täydentää kumppanin listaa, ei korvaa sitä. Arvo luetaan
+   * kumppanin tuotesivulta sanatarkasti, ei päätellä tuoteryhmästä.
+   */
+  shipsExcept?: CountryCode[]
   /** Syvälinkki kumppanin tuotesivulle. */
   partnerProductUrl: string
   featured?: boolean

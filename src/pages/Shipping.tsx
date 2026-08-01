@@ -2,6 +2,7 @@ import ShopNav from '../components/ShopNav'
 import Footer from '../components/Footer'
 import { PARTNERS } from '../data/partners'
 import { PRODUCTS } from '../data/products'
+import { countryNames } from '../data/countryNames'
 import { useLang } from '../i18n/useLang'
 import { SHOP_COPY } from '../locales/shopCopy'
 
@@ -66,7 +67,23 @@ export default function Shipping() {
                 {rows.map((p) => (
                   <tr key={p.id} className="border-b border-line last:border-0">
                     <th scope="row" className="px-3 py-4 font-medium text-gray sm:px-5">{p.name}</th>
-                    <td className="px-3 py-4 text-muted sm:px-5">{zoneLabel(p.shipsTo)}</td>
+                    {/* Kaupan omat maapoikkeukset luetellaan nimillä heti
+                        vyöhykkeen alla: taulukko on tämän sivun ainoa lupaus
+                        siitä minne kukin kauppa toimittaa, joten pelkkä
+                        "Koko maailma" olisi tässä väärä lupaus. Tuotekohtaiset
+                        rajaukset (esim. Moomin Shopin elintarvikkeet) näkyvät
+                        tuotekortissa ja tuotesivulla, koska ne eivät koske
+                        koko kaupan valikoimaa. */}
+                    <td className="px-3 py-4 text-muted sm:px-5">
+                      {p.shipsExcept?.length
+                        ? t.shipping.exceptShort(zoneLabel(p.shipsTo), p.shipsExcept.length)
+                        : zoneLabel(p.shipsTo)}
+                      {p.shipsExcept?.length ? (
+                        <span className="mt-1 block text-xs">
+                          {t.shipping.exceptNote(countryNames(p.shipsExcept, lang))}
+                        </span>
+                      ) : null}
+                    </td>
                     <td className="px-3 py-4 text-xs whitespace-nowrap text-muted sm:px-5">{p.verifiedAt}</td>
                   </tr>
                 ))}

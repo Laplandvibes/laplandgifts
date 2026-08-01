@@ -10,7 +10,7 @@ import { categoryBySlug } from '../data/categories'
 import { productsByCategory } from '../data/products'
 import { GIFT_EXPERIENCES } from '../data/experiences'
 import { PARTNERS } from '../data/partners'
-import { shipsTo } from '../data/shipping'
+import { mergeExcept, shipsTo } from '../data/shipping'
 import { useShippingCountry } from '../context/ShippingCountry'
 import { useLang, stripLocale } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
@@ -36,8 +36,15 @@ export default function Category() {
   const isExperiences = category.id === 'experiences'
 
   const all = productsByCategory(category.id)
+  // 🔴 Suodatin katsoo sekä kaupan että tuotteen maapoikkeuksia. Ilman
+  // tuotteen omaa listaa Moomin Shopin elintarvikkeet näkyisivät
+  // yhdysvaltalaiselle ostajalle, vaikka niitä ei saa lähettää sinne: kauppa
+  // on 'worldwide' mutta juuri ne tuotteet eivät ole.
   const visible = country
-    ? all.filter((p) => shipsTo(PARTNERS[p.partnerId].shipsTo, country))
+    ? all.filter((p) => {
+        const partner = PARTNERS[p.partnerId]
+        return shipsTo(partner.shipsTo, country, mergeExcept(partner.shipsExcept, p.shipsExcept))
+      })
     : all
 
   // Kaksi eri tyhjää tilaa: kategoria odottaa vielä tuotteita (merch odottaa

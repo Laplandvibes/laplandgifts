@@ -134,7 +134,7 @@
   {
     "path": "/treats",
     "fallbackTitle": "Finnish sweets and food gifts | LaplandGifts",
-    "fallbackDescription": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
+    "fallbackDescription": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
     "fallbackTitleByLang": {
       "en": "Finnish sweets and food gifts | LaplandGifts",
       "fi": "Suomalaiset herkut | LaplandGifts",
@@ -150,18 +150,18 @@
       "sv": "Finnish sweets and food gifts | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "fi": "Suomalaisia herkkuja: salmiakkia, Fazerin suklaata, Nordqvistin teetä, poron kuivalihaa ja tyrnihilloa.",
-      "de": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "ja": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "es": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "pt-BR": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "zh-CN": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "ko": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "fr": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "it": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "nl": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam.",
-      "sv": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist tea, reindeer jerky and sea buckthorn jam."
+      "en": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "fi": "Suomalaisia herkkuja: salmiakkia, Fazerin suklaata, Nordqvistin ja Muumien teetä, Muumi-kahvia, poron kuivalihaa ja tyrnihilloa.",
+      "de": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "ja": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "es": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "pt-BR": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "zh-CN": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "ko": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "fr": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "it": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "nl": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
+      "sv": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam."
     }
   },
   {
@@ -1383,6 +1383,105 @@
       "it": "Tart cranberry against salted toffee on a hibiscus and rooibos base, so it is caffeine free and still tastes of something in the evening. Delivery area shown.",
       "nl": "Tart cranberry against salted toffee on a hibiscus and rooibos base, so it is caffeine free and still tastes of something in the evening. Delivery area shown.",
       "sv": "Tart cranberry against salted toffee on a hibiscus and rooibos base, so it is caffeine free and still tastes of something in the evening. Delivery area shown."
+    }
+  },
+  {
+    "path": "/product/moomin-wild-blueberry-coffee",
+    "fallbackTitle": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+    "fallbackDescription": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+    "fallbackTitleByLang": {
+      "en": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "fi": "Moomin Muumipeikko Villimustikka-kahvi 250 g | LaplandGifts",
+      "de": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "ja": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "es": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "pt-BR": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "zh-CN": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "ko": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "fr": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "it": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "nl": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
+      "sv": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "fi": "Mustikalla maustettua kahvia Bergstrands Kafferosterilta, pohjana Mogianan kukkuloilla Etelä-Brasiliassa kypsyneet helmipavut. Toimitusalue näkyy tällä sivulla.",
+      "de": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "ja": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "es": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "pt-BR": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "zh-CN": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "ko": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "fr": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "it": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "nl": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+      "sv": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop."
+    }
+  },
+  {
+    "path": "/product/moomin-lingonberry-blueberry-dark-chocolate",
+    "fallbackTitle": "Moomintroll dark chocolate with lingonberry and blueberry.",
+    "fallbackDescription": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+    "fallbackTitleByLang": {
+      "en": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "fi": "Moomin Muumipeikko-tummasuklaa, puolukka ja mustikka 70 g",
+      "de": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "ja": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "es": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "pt-BR": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "zh-CN": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "ko": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "fr": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "it": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "nl": "Moomintroll dark chocolate with lingonberry and blueberry.",
+      "sv": "Moomintroll dark chocolate with lingonberry and blueberry."
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "fi": "Luomua ja 70 prosentin tummaa suklaata Kalmar Chokladfabrikilta, mukana pakastekuivattua puolukkaa ja mustikkaa, kääreessä Tove Janssonin kuvitus.",
+      "de": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "ja": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "es": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "pt-BR": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "zh-CN": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "ko": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "fr": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "it": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "nl": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
+      "sv": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork."
+    }
+  },
+  {
+    "path": "/product/moomin-berry-picking-tea",
+    "fallbackTitle": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+    "fallbackDescription": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+    "fallbackTitleByLang": {
+      "en": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "fi": "Moomin Muumi Marjaretki-tee, 20 pussia | LaplandGifts",
+      "de": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "ja": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "es": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "pt-BR": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "zh-CN": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "ko": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "fr": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "it": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "nl": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
+      "sv": "Moomin Berry Picking tea, 20 bags | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "fi": "Mustaa teetä vaniljan ja punaisten marjojen maulla, sekoitettu Nurmijärven tehtaalla ja merkitty Avainlipulla. Myyjänä kumppanin kauppa. Toimitusalue kerrotaan.",
+      "de": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "ja": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "es": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "pt-BR": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "zh-CN": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "ko": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "fr": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "it": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "nl": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
+      "sv": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop."
     }
   },
   {
