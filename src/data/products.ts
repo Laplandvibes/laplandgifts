@@ -1588,6 +1588,263 @@ export const PRODUCTS: Product[] = [
     },
   },
 
+  {
+    slug: 'kuivalihakundi-poro-jerky-200g',
+    category: 'treats',
+    brand: 'Kuivalihakundi',
+    name: {
+      en: 'Reindeer jerky Original 200 g',
+      fi: 'Poro-Jerky Original 200 g',
+    },
+    description: {
+      en: 'The gift sized sack of the same reindeer jerky, 200 grams. The producer says one kilo of dried meat takes three kilos of fresh, which is most of the reason a bag of it costs what it does.',
+      fi: 'Lahjakokoinen säkillinen samaa poron kuivalihaa, 200 grammaa. Valmistajan mukaan kilo kuivalihaa vaatii kolme kiloa tuoretta lihaa, mikä selittää suurimman osan hinnasta.',
+    },
+    priceFrom: 39.99,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-kuivalihakundi-poro-jerky-200g',
+    imageIsPartner: true,
+    partnerId: 'kuivalihakundi',
+    partnerProductUrl: 'https://kuivalihakundi.com/products/poro-200-g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '200 g', fi: '200 g' } },
+        {
+          key: 'contents',
+          value: {
+            en: '100 % reindeer meat, topside, oven dried and marinated',
+            fi: '100 % poronlihaa, poronpaistia, uunikuivattu ja marinoitu',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Meat used', fi: 'Lihan määrä' },
+          value: {
+            en: '1 kg of dried meat takes 3 kg of fresh meat',
+            fi: '1 kg kuivalihaa vaatii 3 kg tuoretta lihaa',
+          },
+        },
+        {
+          key: 'shelfLife',
+          value: {
+            en: 'Dates run about a year from the day the meat was dried and packed. Does not need to be kept cold, even after opening',
+            fi: 'Päiväykset menevät noin vuoden päähän siitä, kun liha on kuivattu ja pakattu. Ei tarvitse kylmäsäilytystä avattunakaan',
+          },
+        },
+      ],
+      ingredients: {
+        en: 'Reindeer topside, gluten free soy sauce, black pepper, garlic and sugar syrup.',
+        fi: 'Poronpaisti, gluteeniton soijakastike, mustapippuri, valkosipuli ja sokerisiirappi.',
+      },
+      sourceUrl: 'https://kuivalihakundi.com/products/poro-200-g',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'kuivalihakundi-beef-jerky-smoked',
+    category: 'treats',
+    brand: 'Kuivalihakundi',
+    name: {
+      en: 'Beef jerky Smoked 40 g',
+      fi: 'Beef Jerky Smoked 40 g',
+    },
+    description: {
+      en: 'Beef rather than reindeer, actually smoked rather than flavoured, 57 grams of protein per 100. The cheapest thing in this category and the one that survives a rucksack.',
+      fi: 'Nautaa poron sijaan, aidosti savustettu eikä vain savunmakuiseksi maustettu, proteiinia 57 grammaa sadassa. Tämän kategorian halvin ja se joka kestää repun pohjalla.',
+    },
+    priceFrom: 6.99,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-kuivalihakundi-beef-jerky-smoked',
+    imageIsPartner: true,
+    partnerId: 'kuivalihakundi',
+    partnerProductUrl: 'https://kuivalihakundi.com/products/beef-jerky-savu-50g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '40 g', fi: '40 g' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Beef reared and slaughtered in the EU',
+            fi: 'Naudanliha kasvatettu ja teurastettu EU:ssa',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Meat used', fi: 'Lihan määrä' },
+          value: {
+            en: '1 kg of dried meat takes 2.5 kg of fresh beef',
+            fi: '1 kg kuivalihaa vaatii 2,5 kg tuoretta naudanlihaa',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
+          value: {
+            en: 'Energy 1261 kJ / 298 kcal, fat 5.5 g of which saturates 2.4 g, carbohydrate 5.2 g of which sugars 4.4 g, protein 56.9 g, salt 5 g',
+            fi: 'Energia 1261 kJ / 298 kcal, rasva 5,5 g josta tyydyttynyttä 2,4 g, hiilihydraatit 5,2 g joista sokereita 4,4 g, proteiini 56,9 g, suola 5 g',
+          },
+        },
+      ],
+      ingredients: {
+        en: 'Beef, gluten free soy sauce (water, hydrolysed SOY protein, salt), sugar syrup, garlic, black pepper.',
+        fi: 'Naudanliha, gluteeniton soijakastike (vesi, hydrolysoitu SOIJAPROTEIINI, suola), sokerisiirappi, valkosipuli, mustapippuri.',
+      },
+      sourceUrl: 'https://kuivalihakundi.com/products/beef-jerky-savu-50g',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'fazer-geisha-chocolate-bar',
+    category: 'treats',
+    brand: 'Fazer',
+    name: {
+      en: 'Fazer Geisha hazelnut nougat chocolate bar 121 g',
+      fi: 'Fazer Geisha hasselpähkinänougat-suklaalevy 121 g',
+    },
+    description: {
+      en: 'Milk chocolate over a crisp hazelnut nougat filling, the bar most Finnish households keep in a drawer. Fazer states it is made without palm oil.',
+      fi: 'Maitosuklaata rapean hasselpähkinänougat-täytteen päällä, se levy jota useimmissa suomalaiskodeissa säilytetään laatikossa. Fazer ilmoittaa sen valmistetuksi ilman palmuöljyä.',
+    },
+    priceFrom: 4.39,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-fazer-geisha-chocolate-bar',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/fazer-geisha-suklaalevy-121g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '121 g', fi: '121 g' } },
+        {
+          key: 'contents',
+          value: {
+            en: 'Milk chocolate with at least 30 % cocoa, hazelnut nougat filling 11 % hazelnuts',
+            fi: 'Maitosuklaassa vähintään 30 % kaakaota, hasselpähkinänougat-täytteessä 11 % hasselpähkinää',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
+          value: {
+            en: 'Energy 550 kcal / 2302 kJ, fat 35 g, saturates 17 g, carbohydrate 51 g, sugars 49 g, protein 8 g, salt 0.19 g',
+            fi: 'Energia 550 kcal / 2302 kJ, rasva 35 g, tyydyttyneitä 17 g, hiilihydraatit 51 g, sokereita 49 g, proteiini 8 g, suola 0,19 g',
+          },
+        },
+      ],
+      ingredients: {
+        en: 'Sugar, MILK, cocoa butter, HAZELNUTS (11 %), cocoa mass, whole MILK powder, buttermilk powder, WHEAT flour, maize starch, emulsifier (SOY lecithin), sunflower oil, salt, flavourings.',
+        fi: 'Sokeri, MAITO, kaakaovoi, HASSELPÄHKINÄT (11 %), kaakaomassa, täysMAITOjauhe, kirnuMAITOjauhe, VEHNÄjauho, maissitärkkelys, emulgointiaine (SOIJAlesitiini), auringonkukkaöljy, suola, aromit.',
+      },
+      allergens: {
+        en: 'Contains: nuts, cereals containing gluten and products thereof, milk, hazelnut, soybeans, wheat, lactose, maize, cocoa. May contain: almonds, rye, oats, other nuts and other cereals containing gluten.',
+        fi: 'Sisältää: pähkinät, gluteenia sisältävät viljat ja niistä valmistetut tuotteet, maito, hasselpähkinä, soijapavut, vehnä, laktoosi, maissi, kaakao. Saattaa sisältää: mantelit, ruis, kaura, muut pähkinät ja muut gluteenia sisältävät viljat.',
+      },
+      sourceUrl: 'https://suomikauppa.fi/products/fazer-geisha-suklaalevy-121g',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'nordqvist-moomin-forest-berry-tea',
+    category: 'treats',
+    brand: 'Nordqvist',
+    name: {
+      en: 'Nordqvist Moomin forest berry hibiscus tea, 20 bags',
+      fi: 'Nordqvist Muumi metsämarjainen hibiskustee, 20 pussia',
+    },
+    description: {
+      en: 'Organic hibiscus with apple and forest berries, naturally caffeine free, blended at the Nordqvist factory in Nurmijärvi. Twenty bags weigh 35 grams, which is the lightest gift in this shop.',
+      fi: 'Luomuhibiskusta omenan ja metsämarjojen kanssa, luonnostaan kofeiiniton, sekoitettu Nordqvistin tehtaalla Nurmijärvellä. Kaksikymmentä pussia painaa 35 grammaa, eli tämä on kaupan kevein lahja.',
+    },
+    priceFrom: 4.55,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-nordqvist-moomin-forest-berry-tea',
+    imageIsPartner: true,
+    partnerId: 'nordqvist',
+    partnerProductUrl:
+      'https://nordqvist.fi/products/muumi-metsamarjainen-hibiskus-pussitee-uutuus',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '20 x 1.75 g, 35 g', fi: '20 x 1,75 g, 35 g' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Blended at the Nordqvist factory in Nurmijärvi, Finland',
+            fi: 'Valmistettu Nordqvistin tehtaalla Nurmijärvellä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Brewing', fi: 'Haudutus' },
+          value: {
+            en: '95 °C for 2 to 4 minutes. In cold water 5 to 10 minutes',
+            fi: '95 °C, 2-4 minuuttia. Kylmässä vedessä 5-10 minuuttia',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Diet', fi: 'Ruokavalio' },
+          value: {
+            en: 'Organic certified, vegan, gluten free, naturally caffeine free',
+            fi: 'Luomusertifioitu, vegaaninen, gluteeniton, luonnostaan kofeiiniton',
+          },
+        },
+      ],
+      ingredients: {
+        en: 'Organic hibiscus (89 %), organic apple, natural bilberry powder, natural bilberry and raspberry flavouring.',
+        fi: 'Luomuhibiskus (89 %), luomuomena, luontainen mustikkajauhe, luontainen mustikka- ja vadelma-aromi.',
+      },
+      sourceUrl: 'https://nordqvist.fi/products/muumi-metsamarjainen-hibiskus-pussitee-uutuus',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'nordqvist-cranberry-toffee-tea',
+    category: 'treats',
+    brand: 'Nordqvist',
+    name: {
+      en: 'Nordqvist cranberry and salted toffee tea, 20 bags',
+      fi: 'Nordqvist Karpalo-Suolakinuski-pussitee, 20 pussia',
+    },
+    description: {
+      en: 'Tart cranberry against salted toffee on a hibiscus and rooibos base, so it is caffeine free and still tastes of something in the evening. Nordqvist has been blending tea in Finland since 1883.',
+      fi: 'Kirpeä karpalo suolakinuskia vasten hibiskus- ja rooibospohjalla, joten se on kofeiiniton mutta maistuu illallakin joltain. Nordqvist on sekoittanut teetä Suomessa vuodesta 1883.',
+    },
+    priceFrom: 4.14,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-nordqvist-cranberry-toffee-tea',
+    imageIsPartner: true,
+    partnerId: 'nordqvist',
+    partnerProductUrl: 'https://nordqvist.fi/products/karpalo-suolakinuski',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '20 x 1.75 g, 35 g', fi: '20 x 1,75 g, 35 g' } },
+        {
+          key: 'other',
+          label: { en: 'Brewing', fi: 'Haudutus' },
+          value: { en: '95 °C for 2 to 5 minutes', fi: '95 °C, 2-5 minuuttia' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Diet and certification', fi: 'Ruokavalio ja sertifiointi' },
+          value: {
+            en: 'Vegan. Hibiscus and rooibos are Rainforest Alliance certified',
+            fi: 'Vegaaninen. Hibiskus ja rooibos ovat Rainforest Alliance -sertifioituja',
+          },
+        },
+      ],
+      ingredients: {
+        en: 'Hibiscus, rooibos, cranberry and salted toffee flavouring.',
+        fi: 'Hibiskus, rooibos, karpalo- ja suolainen kinuskiaromi.',
+      },
+      sourceUrl: 'https://nordqvist.fi/products/karpalo-suolakinuski',
+      fetchedAt: '2026-08-01',
+    },
+  },
+
   // ── superfoods ────────────────────────────────────────────────────────────
   {
     slug: 'arctic-power-berries-blueberry-powder',

@@ -102,6 +102,28 @@ const JOBS = [
     'north-outdoor-honka-jumper',
     'https://northoutdoor.com/cdn/shop/files/N11733B13_northoutdoor-merino-wool-clothing-m12_1.jpg?v=1754412687&width=1200',
   ],
+
+  // ── treats, erä 2026-08-01 ────────────────────────────────────────────────
+  [
+    'kuivalihakundi-poro-jerky-200g',
+    'https://cdn.shopify.com/s/files/1/1004/1819/1689/files/2025_5-reindeer-jerky-200g.jpg?v=1774433121&width=1200',
+  ],
+  [
+    'kuivalihakundi-beef-jerky-smoked',
+    'https://cdn.shopify.com/s/files/1/1004/1819/1689/files/2023_4-smoked-50g-vk_d6d14a87-d5bd-4cf9-9251-38558d4c0abf.jpg?v=1774433473&width=1200',
+  ],
+  [
+    'fazer-geisha-chocolate-bar',
+    'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453015562_H1N1.jpg?v=1710934050&width=1200',
+  ],
+  [
+    'nordqvist-moomin-forest-berry-tea',
+    'https://cdn.shopify.com/s/files/1/0518/9530/4385/files/Muumi_mets_marjainen_hibiskustee.png?v=1767008677&width=1200',
+  ],
+  [
+    'nordqvist-cranberry-toffee-tea',
+    'https://cdn.shopify.com/s/files/1/0518/9530/4385/files/karpalo-suolakinuski-pussitee-uutuus-nordqvist-teekauppa-967.jpg?v=1761622148&width=1200',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

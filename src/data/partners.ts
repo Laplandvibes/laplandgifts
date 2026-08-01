@@ -126,6 +126,18 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'worldwide',
     verifiedAt: '2026-07-31',
   },
+  nordqvist: {
+    id: 'nordqvist',
+    name: 'Nordqvist',
+    network: 'direct',
+    baseUrl: 'https://nordqvist.fi',
+    // 🔴 Toimituskäytäntö 1.8.2026 tuntee vain Postin kotimaan toimitustavat
+    // (noutopiste, Express yritysosoitteisiin, kotiinkuljetus) eikä mainitse
+    // ulkomaantoimituksia lainkaan. Siksi 'fi': tuote näkyy suodattimessa vain
+    // Suomeen tilaaville, tyypillisesti matkan aikana tilaaville.
+    shipsTo: 'fi',
+    verifiedAt: '2026-08-01',
+  },
   kuivalihakundi: {
     id: 'kuivalihakundi',
     name: 'Kuivalihakundi',

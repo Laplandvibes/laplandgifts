@@ -94,6 +94,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-fazer-geisha-chocolate-bar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-finnish-flavours-palalaku-salmiakki": {
     "full": 800,
     "w": [
@@ -147,6 +155,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     "w": [
       320,
       480
+    ]
+  },
+  "prod-kuivalihakundi-beef-jerky-smoked": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-kuivalihakundi-poro-jerky-200g": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
     ]
   },
   "prod-kuivalihakundi-poro-jerky": {
@@ -270,6 +294,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-moomin-mystical-forest-wool-throw": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nordqvist-cranberry-toffee-tea": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nordqvist-moomin-forest-berry-tea": {
     "full": 800,
     "w": [
       320,
