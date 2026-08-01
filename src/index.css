@@ -4,13 +4,21 @@
    this line covers ../../shared used by AdUnit imports. */
 @source "../../shared/**/*.{ts,tsx}";
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Bebas+Neue&display=swap');
+/* Fontit ladataan index.html:n <link rel="stylesheet">-tagilla eikä täältä
+   @importilla: CSS:n sisäinen @import pakottaa selaimen odottamaan ensin tämän
+   tiedoston latautumista ja vasta sitten hakemaan fonttitaulun, eli kaksi
+   peräkkäistä hidasta hyppyä ennen ensimmäistä tekstiruutua. index.html:ssä
+   sama pyyntö lähtee rinnakkain heti dokumentin ensimmäisistä tavuista.
+   Playfair Display poistui kokonaan: otsikot ovat nyt Bebas Neueta. */
 
 @theme {
-  --font-heading: 'Playfair Display', serif;
+  /* NETWORK RULE (Vesa 2026-08-01): otsikkofontti on Bebas Neue kuten muualla
+     verkostossa. Sama pino kuin --font-logo, joten navin sanamerkki ja sivun
+     otsikko ovat samaa kirjainmuotoa. */
+  --font-heading: 'Bebas Neue', 'Arial Narrow', sans-serif;
   --font-body: 'DM Sans', sans-serif;
   /* NETWORK RULE (Vesa 2026-07-24): hashtag wordmark = Bebas Neue on every
-     site, even palette variants. Site headings stay Playfair. */
+     site, even palette variants. */
   --font-logo: 'Bebas Neue', 'Arial Narrow', sans-serif;
   --color-pink: #EC4899;
   --color-gray: #1F2937;
@@ -30,16 +38,42 @@
   --color-finland: #002F6C;
 }
 
-body {
-  font-family: var(--font-body);
-  color: var(--color-gray);
-  background-color: var(--color-white);
-  margin: 0;
-}
+/**
+ * 🔴 Pohjatyylit ovat `@layer base`issa, EIVÄT kerroksettomina.
+ *
+ * Kerroksettomat säännöt voittavat CSS:n kaskadissa jokaisen kerroksen
+ * riippumatta tarkkuudesta, ja Tailwindin luokat asuvat `@layer utilities`issa.
+ * Kun `h1…h6 { font-family: var(--font-heading) }` oli kerrokseton, yksikään
+ * elementille annettu `font-body`-luokka ei tehnyt mitään: tuotekortin nimi
+ * renderöityi versaalilla Bebas Neuella vaikka luokka luki markupissa.
+ * Tämä oli aito bugi eikä tyylivalinta, ja se löytyi vasta renderöidystä
+ * DOM:ista — buildi meni läpi ja markup näytti oikealta.
+ */
+@layer base {
+  body {
+    font-family: var(--font-body);
+    color: var(--color-gray);
+    background-color: var(--color-white);
+    margin: 0;
+  }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 700;
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  /* Kaupallinen typografia. 🔴 Negatiivinen kirjainväli oli Playfairia varten.
+     Bebas Neue on jo valmiiksi kapea ja tiivis, joten miinusmerkkinen arvo
+     liimasi versaalit yhteen; positiivinen arvo avaa ne luettaviksi. Sama sääntö
+     koskee kaikkia otsikkotasoja, koska kaikki renderöityvät samalla fontilla.
+     Leipätekstifontille vaihdetut otsikot (tuotenimet, FAQ-kysymykset) kumoavat
+     tämän omalla `tracking-normal`-luokallaan. */
+  h1, h2, h3, h4, h5, h6 { letter-spacing: 0.02em; }
+  /* Bebas Neuessa ei ole alapidennyksiä, joten rivit voi ladota tiiviimmin kuin
+     sekaotsikot, mutta ei 1.0:aan asti: sulkumerkit ja pilkut leikkautuisivat. */
+  h1 { line-height: 1.05; }
+  h2 { line-height: 1.08; }
+  h3 { line-height: 1.12; }
 }
 
 @keyframes slideUp {
@@ -47,10 +81,19 @@ h1, h2, h3, h4, h5, h6 {
   to { transform: translateY(0); }
 }
 
-/* Kaupallinen typografia: otsikot tiiviimmin, leipäteksti väljemmin. */
-h1, h2, h3 { letter-spacing: -0.01em; }
-h1 { line-height: 1.05; }
-h2 { line-height: 1.15; }
+/* Jaetun verkostovalikon kertaluontoinen vinkkikupla ("Kaikki verkoston sivut
+   täältä!") roikkuu napin alapuolella. Yläpalkissa se laskeutui pääpalkin
+   päälle ja peitti logon (Vesa 2026-08-01: "koko navigaatio on aivan pielessä").
+   shared/EcosystemMenu.tsx on 29 sivuston yhteinen tiedosto eikä sitä muokata,
+   joten kupla — komponentin ainoa role="status" — piilotetaan täällä. Valikko
+   itse toimii ennallaan.
+
+   Samaan vinkkitilaan kuuluu napin ympärillä sykkivä pinkki rengas. Se
+   sammutetaan myös: rengas loppuu vasta kun vinkki kuitataan, ja kuittaus
+   tapahtuu kuplan sulkunapista, joka ei enää näy — muuten pinkki syke jäisi
+   pyörimään yläpalkkiin ikuisesti. */
+.lv-eco-compact [role="status"] { display: none; }
+.lv-eco-compact .lv-eco-ring { animation: none; box-shadow: none; }
 
 /* Näppäimistöfokus näkyviin ilman että hiiriklikki piirtää renkaan. */
 :focus-visible {
@@ -76,5 +119,5 @@ h2 { line-height: 1.15; }
   /* Sisältöhashin pakotus: pelkkä kommentti ei riitä, minifioija poistaa sen.
      Custom property säilyy, joten tiedosto saa uuden nimen. Nosta päivää jos
      reunavälimuisti myrkyttyy uudelleen. */
-  --lv-build: 2026073103;
+  --lv-build: 2026080101;
 }

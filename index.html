@@ -77,6 +77,44 @@
     <!-- /LV-SYNC-LOCALE-REDIRECT -->
 
     <meta charset="UTF-8" />
+
+    <!-- Fontit: yhteys auki heti ja tyylitiedosto rinnakkain sivun kanssa.
+         Aiemmin sama pyyntö lähti src/index.css:n @importista, jolloin selain
+         ehti ladata ensin koko sivuston CSS:n ja vasta sitten fonttitaulun ja
+         vasta sitten fontit — kolme peräkkäistä hyppyä ennen ensimmäistä
+         tekstiruutua. gstatic tarvitsee crossoriginin, koska itse fonttitiedosto
+         haetaan CORS-tilassa. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" />
+
+    <!-- Heron esilataus. 🔴 Vain kielijuurilla: prerender monistaa tämän kuoren
+         jokaiselle 336 sivulle, ja kiinteä <link rel="preload"> hakisi 87 kt:n
+         hero-kuvan myös kategoria- ja tuotesivuilla, joilla heroa ei ole. Skripti
+         ajetaan jäsennyksen aikana ennen sovelluskoodia, joten lataus alkaa yhtä
+         aikaisin kuin staattisella tagilla. Sama polkulogiikka kuin yllä
+         olevassa LV-LOCALE-TITLE-lohkossa. -->
+    <script>
+      (function () {
+        try {
+          var path = location.pathname || '/';
+          var roots = ['/', '/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl', '/sv'];
+          var isRoot = false;
+          for (var i = 0; i < roots.length; i++) {
+            if (path === roots[i] || path === roots[i] + '/') { isRoot = true; break; }
+          }
+          if (!isRoot) return;
+          var l = document.createElement('link');
+          l.rel = 'preload';
+          l.as = 'image';
+          l.type = 'image/avif';
+          l.href = '/images/hero-shop.avif';
+          l.setAttribute('fetchpriority', 'high');
+          document.head.appendChild(l);
+        } catch (e) { /* fail silent */ }
+      })();
+    </script>
+
     <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260712" />
     <link rel="alternate icon" href="/favicon.ico?v=20260712" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260712" sizes="180x180" />
