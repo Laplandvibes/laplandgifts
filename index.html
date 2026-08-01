@@ -88,12 +88,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" />
 
-    <!-- Heron esilataus. 🔴 Vain kielijuurilla: prerender monistaa tämän kuoren
-         jokaiselle 336 sivulle, ja kiinteä <link rel="preload"> hakisi 87 kt:n
-         hero-kuvan myös kategoria- ja tuotesivuilla, joilla heroa ei ole. Skripti
-         ajetaan jäsennyksen aikana ennen sovelluskoodia, joten lataus alkaa yhtä
-         aikaisin kuin staattisella tagilla. Sama polkulogiikka kuin yllä
-         olevassa LV-LOCALE-TITLE-lohkossa. -->
+    <!-- Heron esilataus, vain kielijuurilla. 🔴 Prerender monistaa tämän kuoren
+         jokaiselle 336 sivulle, joten staattisena preload-tagina tämä hakisi
+         87 kt:n hero-kuvan myös kategoria- ja tuotesivuilla, joilla heroa ei
+         ole lainkaan. Skripti ajetaan jäsennyksen aikana ennen sovelluskoodia,
+         joten lataus alkaa yhtä aikaisin kuin staattisella tagilla. Sama
+         polkulogiikka kuin yllä olevassa LV-LOCALE-TITLE-lohkossa. -->
     <script>
       (function () {
         try {
