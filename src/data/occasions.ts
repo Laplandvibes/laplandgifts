@@ -13,34 +13,55 @@ import type { Product } from './types'
  *
  * Tyhjä `slugs` on sallittu: osio renderöi silloin otsikon ja kuvauksen ilman
  * kortteja. Se on rehellisempi kuin keksitty slug, joka veisi 404:ään.
+ *
+ * 🔴 Poiminnat päivitettiin 1.8. kun katalogi kasvoi 15 tuotteesta 45:een.
+ * Vanhat listat oli valittu 15 tuotteen hyllystä, joten ne toistivat samoja
+ * tuotteita tilaisuudesta toiseen ja yrityslahjat oli kaksi Marttiinin puukkoa
+ * neljästä. Sama vika kuin kategorioissa aiemmin: valikoima näytti siltä että
+ * se hyppää uudestaan samaan. `occasions.test.ts` vahtii nyt monipuolisuuden.
  */
 export const OCCASION_PICKS: string[][] = [
-  // Joulu
+  // Joulu: kynttilä, lämmin tekstiili ja kolme herkkua, joista jokainen kestää
+  // postimatkan. Hintahaarukka 4–140 €, jotta listalla on sekä pikkupaketti
+  // että päälahja.
   [
+    'iittala-kivi-candleholder',
     'moomin-mystical-forest-wool-throw',
-    'moomin-blue-love-mug',
+    'halti-kroka-mitten',
+    'nordqvist-moomin-forest-berry-tea',
+    'moomin-lingonberry-blueberry-dark-chocolate',
     'finnish-flavours-palalaku-salmiakki',
-    'meritalo-tyrnihillo',
   ],
-  // Häät
+  // Häät: kodin esineitä, jotka kestävät vuosia. Muumi Blue Love -mukissa
+  // Niiskuneiti ja Muumipeikko halaavat, ja lasit tulevat lahjapakkauksessa.
   [
-    'moomin-mystical-forest-tumblers',
+    'iittala-aalto-vase-160',
     'moomin-blue-love-mug',
-    'moomin-mystical-forest-wool-throw',
+    'moomin-mystical-forest-tumblers',
+    'aarikka-prinsessa-candleholder',
+    'lapuan-kankurit-kaamos-blanket',
+    'pentik-tunturiretki-studio-dish',
   ],
-  // Syntymäpäivä
+  // Syntymäpäivä: viisi eri kategoriaa kuudella tuotteella, koska tässä
+  // tilaisuudessa lahjan saaja on tuntematon ja valinta tehdään mausta.
   [
+    'marimekko-unikko-mug',
     'marttiini-napapiirin-puukko',
     'makia-merino-beanie',
+    'kupilka-classic-cup-21',
     'kuivalihakundi-poro-jerky',
     'arctic-power-berries-blueberry-powder',
   ],
-  // Yrityslahjat
+  // Yrityslahjat: yksi puukko eikä kolme. Kuusi eri valmistajaa ja neljä
+  // kategoriaa, hinnat 13–175 €, jotta samasta listasta löytyy sekä
+  // messulahja että avainasiakkaan lahja.
   [
     'marttiini-lapinleuku-255',
-    'marttiini-ilves-131',
     'halti-tokoi-dx-jacket',
+    'north-outdoor-huuru-beanie',
+    'kupilka-bowl-55',
     'moomin-mystical-forest-tumblers',
+    'moomin-wild-blueberry-coffee',
   ],
 ]
 

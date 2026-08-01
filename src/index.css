@@ -36,6 +36,36 @@
   --color-line: #E7E1D8;
   --color-muted: #6B7280;
   --color-finland: #002F6C;
+
+  /* Lahjaoppaan tilaisuusvärit.
+   *
+   * 🔴 Vesa 1.8.: "tarvitaan lisää väriä, ihan eri väriteema". Lahjaopas oli
+   * neljä valkoista laatikkoa kermalla ja sama amber-ikoni jokaisessa, joten
+   * joulu ja häät näyttivät samalta. Jokainen tilaisuus saa nyt oman sävynsä,
+   * joka toistuu kortin taustassa, ikonilevyssä ja ylänauhassa.
+   *
+   * Pari on aina sama: `-soft` on taustapinta, tunnusväri on sen päällä oleva
+   * teksti. Pohja pysyy vaaleana (sivusto on vaalea variantti), eikä yksikään
+   * väri ole puhdas musta.
+   *
+   * Mitatut kontrastisuhteet (WCAG 2.1, ei arvattu):
+   *   joulu    #14532D / #DCEBE0 = 7,38:1   valkoinen ikoni levyllä 8,72:1
+   *   häät     #9D174D / #F8DFE7 = 6,27:1   valkoinen ikoni levyllä 7,55:1
+   *   synttäri #8A4B08 / #F7E6CB = 5,54:1   valkoinen ikoni levyllä 6,50:1
+   *   yritys   #0B3D6B / #DDE8F5 = 8,94:1   valkoinen ikoni levyllä 10,61:1
+   * Leipäteksti `text-gray/80` samoilla pinnoilla 6,68…6,74:1.
+   *
+   * 🔴 Syntymäpäivän sävy on tumma amber (#8A4B08) eikä token `--color-amber`
+   * (#F59E0B). Amber valkoisella on 1,9:1 eli sivuston tunnettu kontrastivika;
+   * sitä ei monisteta tänne. */
+  --color-guide-christmas: #14532D;
+  --color-guide-christmas-soft: #DCEBE0;
+  --color-guide-wedding: #9D174D;
+  --color-guide-wedding-soft: #F8DFE7;
+  --color-guide-birthday: #8A4B08;
+  --color-guide-birthday-soft: #F7E6CB;
+  --color-guide-business: #0B3D6B;
+  --color-guide-business-soft: #DDE8F5;
 }
 
 /**
