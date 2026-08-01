@@ -13,6 +13,7 @@ import { PARTNERS } from '../data/partners'
 import { shipsTo } from '../data/shipping'
 import { useShippingCountry } from '../context/ShippingCountry'
 import { useLang, stripLocale } from '../i18n/useLang'
+import { imgSrcSet } from '../lib/img'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
 
@@ -51,13 +52,17 @@ export default function Category() {
       <main className="bg-sand">
         <header className="relative overflow-hidden">
           <picture>
-            <source srcSet={`/images/${category.image}.avif`} type="image/avif" />
+            <source srcSet={imgSrcSet(category.image, 'avif')} sizes="100vw" type="image/avif" />
             {/* Kategoriasivun kuva on sivun LCP-elementti aivan kuten etusivun
                 hero: se on ruudun yläreunassa ennen mitään muuta sisältöä.
                 loading="lazy" viivästyttäisi juuri sen kuvan, jota lukija
-                odottaa, joten se ladataan korkealla prioriteetilla. */}
+                odottaa, joten se ladataan korkealla prioriteetilla. srcSet
+                antaa selaimen valita ruudun kokoiselle kaistalle sopivan
+                version 1200 pikselin sijaan. */}
             <img
               src={`/images/${category.image}.webp`}
+              srcSet={imgSrcSet(category.image, 'webp')}
+              sizes="100vw"
               alt=""
               width={1600}
               height={640}

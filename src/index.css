@@ -95,14 +95,49 @@
 .lv-eco-compact [role="status"] { display: none; }
 .lv-eco-compact .lv-eco-ring { animation: none; box-shadow: none; }
 
+/* 🔴 Verkostonapin tekstilabel takaisin näkyviin kaikilla leveyksillä.
+   shared/EcosystemMenu.tsx piilottaa sen luokalla `hidden sm:inline`, joten
+   alle 640 pikselin nappi oli pelkkä ruudukkoikoni ja nuoli: 58 × 30 pikselin
+   tunnistamaton kuvake, jonka ainoa selite oli aria-label (Vesa 1.8.:
+   "verkostovalikko näyttää mobiilissa pelkkää ikonia … eikä kerro mikä se on").
+   Jaettua tiedostoa ei muokata, joten label paljastetaan täältä ja nappi
+   nostetaan 44 pikselin kosketuskohteeksi. Valitsin osuu vain valikon
+   avausnappiin (`aria-haspopup`), ei pudotusvalikon riveihin. */
+.lv-eco-compact button[aria-haspopup] { min-height: 44px; }
+.lv-eco-compact button[aria-haspopup] > span { display: inline; }
+
+/* Mainospaikan yläotsikko ("PÄÄKUMPPANI · MAINOSPAIKKA VAPAANA") on jaetussa
+   komponentissa `truncate`-luokalla eli yhdellä rivillä ellipsillä. 320
+   pikselin ruudulla teksti tarvitsee 234 px ja saa 212 px, joten se katkesi
+   kesken sanan. Sivustokohtainen sääntö antaa sen rivittyä: mainospaikan
+   myyntiteksti ei voi olla puolikas. Jaettuun tiedostoon ei kosketa. */
+[data-lv-main-partner] .truncate,
+[data-lv-ad-slots] [data-partner-slot="house-ad"] .truncate {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+
 /* Näppäimistöfokus näkyviin ilman että hiiriklikki piirtää renkaan. */
 :focus-visible {
   outline: 2px solid var(--color-amber);
   outline-offset: 2px;
 }
 
-/* Tuotekuvien vakiosuhde, jotta grid ei hypi latauksen aikana. */
-.product-media { aspect-ratio: 4 / 5; }
+/* Tuotekuvien vakiosuhde, jotta grid ei hypi latauksen aikana.
+ *
+ * 🔴 Neliö, ei 4/5. Pystysuhde teki 358 pikselin levyisestä kortista 602
+ * pikselin korkuisen: yhdellekään mobiiliruudulle ei mahtunut kokonaista
+ * tuotetta (Vesa 1.8.). Neliö lyhentää kuvaosan 447 → 358 pikseliin, ja
+ * kortti kutistuu lisäksi kahden palstan ruudukossa.
+ *
+ * Kuva ladotaan `object-contain`illa valkoiselle: kumppanien tuotekuvat ovat
+ * studiokuvia valkoisella pohjalla ja niiden omat kuvasuhteet vaihtelevat
+ * 0,40:sta (Marttiinin puukot, 429 × 1080) 1,00:aan. `cover` rajasi näistä
+ * puukoista näkyviin vain keskiosan. `contain` näyttää tuotteen kokonaan, ja
+ * koska tausta on samaa valkoista kuin kuvassa, reunoille ei synny näkyvää
+ * palkkia. */
+.product-media { aspect-ratio: 1 / 1; }
 .category-media { aspect-ratio: 3 / 2; }
 
 /* Cache-bust 2026-07-31: Cloudflaren reunavälimuistiin jäi deployn jälkeen

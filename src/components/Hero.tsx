@@ -1,6 +1,7 @@
 import { Gift } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useLang, useLocalePath } from '../i18n/useLang'
+import { imgSrcSet } from '../lib/img'
 import { COPY } from '../locales/copy'
 import { SHOP_COPY } from '../locales/shopCopy'
 
@@ -28,13 +29,21 @@ export default function Hero() {
       {/* Heron kuva on sivun LCP-elementti: se ladataan korkealla prioriteetilla
           eikä laiskasti, ja index.html avaa sille esilatauksen jo ennen kuin
           React on käynnistynyt. */}
+      {/* 🔴 Hero on LCP-elementti, ja se latasi 2400 pikselin tiedoston 390
+          pikselin ruudulle: 85 kt siitä että kuva venytettiin 6-kertaiseksi
+          alaspäin. Nyt tarjolla on 800/1200/1600 pikselin versiot ja selain
+          valitsee ruudun leveyden × näyttötiheyden mukaan. index.html:n
+          esilataus tarjoaa saman srcSetin, muuten esilataus hakisi eri
+          tiedoston kuin <img> ja kuva ladattaisiin kahdesti. */}
       <picture className="absolute inset-0">
-        <source srcSet="/images/hero-shop.avif" type="image/avif" />
+        <source srcSet={imgSrcSet('hero-shop', 'avif')} sizes="100vw" type="image/avif" />
         <img
           src="/images/hero-shop.webp"
+          srcSet={imgSrcSet('hero-shop', 'webp')}
+          sizes="100vw"
           alt=""
           width={2400}
-          height={1350}
+          height={1340}
           loading="eager"
           fetchPriority="high"
           decoding="async"
@@ -79,17 +88,29 @@ export default function Hero() {
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
             {s.home.heroLead}
           </p>
-          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row lg:items-start">
+          {/* 🔴 Napit ovat ruudukossa, eivät flex-rivissä (Vesa 1.8.).
+              Vanha `flex … sm:flex-row` tuotti kaksi vikaa:
+                - 390 px: napit olivat luonnollisen levyisiä (231 ja 173 px) ja
+                  keskitettyjä, eli kahden eri levyisen pillerin porras.
+                - 660 px: `sm:flex-row` teki niistä vasempaan tasatun rivin
+                  (vasen reuna 16 ja 263) vaikka otsikko ja ingressi olivat yhä
+                  keskitettyjä. Napit ja teksti osoittivat eri suuntiin.
+              Ruudukossa molemmat sarakkeet ovat aina täsmälleen yhtä leveät, ja
+              säiliö noudattaa samaa tasausta kuin tekstilohko: keskitetty
+              (`mx-auto`) niin kauan kuin teksti on keskitettyä, vasemmalla
+              lg-koosta ylöspäin, jossa `lg:text-left` osuu. Yhden sarakkeen
+              ruudukko kapealla = täysleveät napit. */}
+          <div className="mx-auto mt-10 grid max-w-md gap-3 sm:max-w-xl sm:grid-cols-2 lg:mx-0">
             <Link
               to={to('/design')}
-              className="inline-flex min-h-12 items-center gap-2 rounded-full bg-amber px-8 py-4 text-lg font-medium text-white transition-colors hover:bg-amber/90"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-amber px-6 py-4 text-lg font-medium text-white transition-colors hover:bg-amber/90"
             >
-              <Gift className="h-5 w-5" aria-hidden="true" />
+              <Gift className="h-5 w-5 shrink-0" aria-hidden="true" />
               {t.ctaExplore}
             </Link>
             <Link
               to={to('/gift-guides')}
-              className="inline-flex min-h-12 items-center gap-2 rounded-full border-2 border-white/40 px-8 py-4 text-lg font-medium text-white transition-colors hover:border-amber hover:text-amber"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border-2 border-white/40 px-6 py-4 text-lg font-medium text-white transition-colors hover:border-amber hover:text-amber"
             >
               {s.nav.guides}
             </Link>

@@ -2,7 +2,11 @@ import { Link } from 'react-router-dom'
 import type { Category } from '../../data/categories'
 import type { Lang } from '../../i18n/useLang'
 import { useLocalePath } from '../../i18n/useLang'
+import { imgSrcSet } from '../../lib/img'
 import { SHOP_COPY } from '../../locales/shopCopy'
+
+/** 1 palsta < 640 px, 2 palstaa 640–1023 px, 3 palstaa 1024 px:stä ylöspäin. */
+const CATEGORY_SIZES = '(min-width: 1024px) 420px, (min-width: 640px) 46vw, 92vw'
 
 /**
  * Kategoriakortti etusivun gridiin.
@@ -22,11 +26,17 @@ export default function CategoryCard({ category, lang }: { category: Category; l
       to={to(category.slug)}
       className="group relative block overflow-hidden rounded-2xl border border-line bg-card"
     >
+      {/* srcSet + sizes: kortin kuvapaikka on 356 CSS-pikseliä mobiilissa,
+          mutta ilman vaihtoehtoja selain latasi 1200 pikselin tiedoston (91 kt
+          yhdestä kuvasta). 480 ja 800 pikselin versiot tulevat
+          scripts/build-image-variants.mjs:stä. */}
       <div className="category-media overflow-hidden bg-sand-deep">
         <picture>
-          <source srcSet={`/images/${category.image}.avif`} type="image/avif" />
+          <source srcSet={imgSrcSet(category.image, 'avif')} sizes={CATEGORY_SIZES} type="image/avif" />
           <img
             src={`/images/${category.image}.webp`}
+            srcSet={imgSrcSet(category.image, 'webp')}
+            sizes={CATEGORY_SIZES}
             alt=""
             loading="lazy"
             decoding="async"

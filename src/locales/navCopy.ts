@@ -25,6 +25,13 @@ export interface NavCopy {
   /** Hampurilaisvalikon nappi (aria-label + ruudunlukija). */
   openMenu: string
   closeMenu: string
+  /**
+   * Hampurilaisnapin NÄKYVÄ teksti. 🔴 Nappi oli pelkkä ikoni, eikä mikään
+   * kertonut että sen takana ovat kategoriat, lahjaopas ja toimitussivu — ne
+   * ovat mobiilissa saavutettavissa vain sieltä (Vesa 1.8.). Lyhyt sana, jotta
+   * logo ja nappi mahtuvat samalle riville 320 pikselissä.
+   */
+  menuLabel: string
   /** Kategorialinkkien <nav>-maamerkki. */
   shopNavLabel: string
   /** Yläpalkin toissijaisten linkkien <nav>-maamerkki. */
@@ -45,6 +52,7 @@ const en: NavCopy = {
   },
   openMenu: 'Open menu',
   closeMenu: 'Close menu',
+  menuLabel: 'Menu',
   shopNavLabel: 'Product categories',
   utilityNavLabel: 'Guides and delivery',
 }
@@ -61,6 +69,7 @@ const fi: NavCopy = {
   },
   openMenu: 'Avaa valikko',
   closeMenu: 'Sulje valikko',
+  menuLabel: 'Valikko',
   shopNavLabel: 'Tuotekategoriat',
   utilityNavLabel: 'Oppaat ja toimitus',
 }

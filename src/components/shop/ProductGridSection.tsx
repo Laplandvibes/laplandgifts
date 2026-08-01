@@ -23,8 +23,14 @@ export default function ProductGridSection({
       </p>
     )
   }
+  /* 🔴 Kaksi palstaa jo kapeimmalla ruudulla. Yhden palstan kortti oli 390
+     pikselin ruudulla 358 px leveä ja 602 px korkea, eli yhtään kokonaista
+     tuotetta ei mahtunut näkyviin kerralla ja kahden tuotteen vertailu vaati
+     rullaamista. Kahdessa palstassa kortti on ~170 px leveä ja ~330 px korkea:
+     neljä tuotetta kerralla ruudulle. Sama ratkaisu kuin verkkokaupoissa
+     yleensä. */
   return (
-    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+    <div className="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 xl:grid-cols-4">
       {products.map((p) => (
         <ProductCard key={p.slug} product={p} lang={lang} />
       ))}

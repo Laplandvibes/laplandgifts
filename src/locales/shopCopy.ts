@@ -60,6 +60,16 @@ export interface ShopCopy {
     imageCredit: (partner: string) => string
     related: string
     backToCategory: string
+    /**
+     * Tuotekortin toimintakehote.
+     *
+     * 🔴 Kortti oli pelkkä linkki ilman yhtään vihjettä siitä, että sitä voi
+     * painaa (Vesa 1.8.: "ei ole mitään tekstiä, cta painiketta tms? todella
+     * outoja"). Hover-varjo on ainoa vihje, eikä kosketusnäytöllä ole hoveria.
+     * Teksti sanoo mitä painaminen tekee — se ei sano "osta", koska ostaminen
+     * tapahtuu vasta kumppanin kaupassa tuotesivun kautta.
+     */
+    viewProduct: string
   }
   /** Elämyslahjat tulevat GYG-katalogista, eivät PRODUCTS-listasta. */
   experience: {
@@ -71,7 +81,21 @@ export interface ShopCopy {
     worldwide: string
     euOnly: string
     fiOnly: string
+    /**
+     * Sama tieto lyhyesti tuotekorttiin. 🔴 Pitkä muoto ("Toimitus
+     * maailmanlaajuisesti") ei mahdu kahden palstan kortin 114 pikselin
+     * tekstitilaan 320 pikselin ruudulla: yksin sana "maailmanlaajuisesti"
+     * on leveämpi kuin koko laatikko, joten se katkesi keskeltä sanaa.
+     * Pitkä muoto jää tuotesivulle ja toimitussivulle.
+     */
+    zoneShort: { worldwide: string; eu: string; fi: string }
     selectorLabel: string
+    /**
+     * Valitsimen tyhjä arvo. Kun labelina lukee jo "Toimitusmaa", tyhjän
+     * vaihtoehdon on kerrottava mitä valitsematta jättäminen tarkoittaa
+     * (kaikki tuotteet näkyvissä) eikä toistettava labelia.
+     */
+    selectorAll: string
     title: string
     /** Toimitussivun kumppanitaulukon sarakeotsikot. */
     table: { shop: string; area: string; checked: string }
@@ -157,6 +181,7 @@ const en: ShopCopy = {
     imageCredit: (partner) => `Product photo: ${partner}`,
     related: 'More from this category',
     backToCategory: 'Back to category',
+    viewProduct: 'View product',
   },
   experience: {
     priceNote: (price, asOf) => `From ${price} on GetYourGuide, price read ${asOf}`,
@@ -167,7 +192,9 @@ const en: ShopCopy = {
     worldwide: 'Ships worldwide',
     euOnly: 'Ships to Europe only',
     fiOnly: 'Ships within Finland only',
+    zoneShort: { worldwide: 'Worldwide', eu: 'Europe only', fi: 'Finland only' },
     selectorLabel: 'Deliver to',
+    selectorAll: 'All countries',
     title: 'Delivery',
     table: { shop: 'Partner shop', area: 'Delivery area', checked: 'Checked' },
     foodRules: {
@@ -235,6 +262,7 @@ const fi: ShopCopy = {
     imageCredit: (partner) => `Tuotekuva: ${partner}`,
     related: 'Lisää tästä kategoriasta',
     backToCategory: 'Takaisin kategoriaan',
+    viewProduct: 'Katso tuote',
   },
   experience: {
     priceNote: (price, asOf) => `Alkaen ${price} GetYourGuidessa, hinta luettu ${asOf}`,
@@ -245,7 +273,9 @@ const fi: ShopCopy = {
     worldwide: 'Toimitus maailmanlaajuisesti',
     euOnly: 'Toimitus vain Eurooppaan',
     fiOnly: 'Toimitus vain Suomeen',
+    zoneShort: { worldwide: 'Koko maailma', eu: 'Vain Eurooppa', fi: 'Vain Suomi' },
     selectorLabel: 'Toimitusmaa',
+    selectorAll: 'Kaikki maat',
     title: 'Toimitus',
     table: { shop: 'Kumppanikauppa', area: 'Toimitusalue', checked: 'Tarkistettu' },
     foodRules: {

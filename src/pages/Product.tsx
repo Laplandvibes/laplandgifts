@@ -11,8 +11,12 @@ import { productBySlug, productsByCategory } from '../data/products'
 import { PARTNERS } from '../data/partners'
 import { categoryById } from '../data/categories'
 import { useLang, useLocalePath } from '../i18n/useLang'
+import { imgSrcSet } from '../lib/img'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
+
+/** Päähakuva: täysleveä kapealla, puoli ruudukkoa lg:stä ylöspäin. */
+const PRODUCT_SIZES = '(min-width: 1024px) 500px, 92vw'
 
 export default function Product() {
   const lang = useLang()
@@ -49,15 +53,21 @@ export default function Product() {
                 lapsena merkintä varasi toisen sarakkeen ja työnsi tuotteen
                 tiedot ruudukon ulkopuolelle. */}
             <div>
-              <div className="product-media overflow-hidden rounded-2xl border border-line bg-card">
+              {/* Neliö + object-contain: sama sääntö kuin kortissa. `cover`
+                  rajasi 429 × 1080 -kuvasuhteen puukoista näkyviin vain
+                  keskiosan, eli tuotesivun päähuva ei näyttänyt tuotetta. */}
+              <div className="product-media overflow-hidden rounded-2xl border border-line bg-card p-4">
                 <picture>
-                  <source srcSet={`/images/${product.image}.avif`} type="image/avif" />
+                  <source srcSet={imgSrcSet(product.image, 'avif')} sizes={PRODUCT_SIZES} type="image/avif" />
                   <img
                     src={`/images/${product.image}.webp`}
+                    srcSet={imgSrcSet(product.image, 'webp')}
+                    sizes={PRODUCT_SIZES}
                     alt={name}
                     width={800}
-                    height={1000}
-                    className="h-full w-full object-cover"
+                    height={800}
+                    fetchPriority="high"
+                    className="h-full w-full object-contain"
                   />
                 </picture>
               </div>
@@ -102,7 +112,7 @@ export default function Product() {
           {related.length > 0 && (
             <section className="mt-16">
               <h2 className="mb-6 font-heading text-2xl text-gray">{t.product.related}</h2>
-              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+              <div className="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4">
                 {related.map((p) => (
                   <ProductCard key={p.slug} product={p} lang={lang} />
                 ))}

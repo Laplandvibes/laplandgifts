@@ -1,7 +1,24 @@
-import SharedFooter from '../shared/Footer'
+import { Suspense, lazy } from 'react'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { footerDict } from '../locales/footerDict'
+
+/**
+ * 🔴 Jaettu ekosysteemifooter ladataan laiskasti.
+ *
+ * `src/shared/Footer.tsx` on yli tuhat riviä ja kääntyy 86 kt:n (gzip 31 kt)
+ * palaseksi. Se oli jokaisen sivun moduuliriippuvuus, eli selaimen oli
+ * ladattava ja suoritettava se ENNEN kuin React ehti piirtää mitään — myös
+ * heron, joka on etusivun LCP-elementti. Footer on aina näytön alapuolella,
+ * joten sen ei tarvitse olla ensimmäisessä piirrossa.
+ *
+ * Suspensen fallback varaa korkeuden eikä ole `null`: ilman varattua tilaa
+ * footerin saapuminen olisi tuottanut asettelusiirtymän. Sisältö ei katoa
+ * hakukoneelta, koska tämä sivusto ei prerenderöi markupia lainkaan (kuori
+ * sisältää vain metat) — sekä laiska että ei-laiska footer syntyvät samalla
+ * tavalla vasta selaimessa.
+ */
+const SharedFooter = lazy(() => import('../shared/Footer'))
 
 export default function Footer() {
   const lang = useLang()
@@ -19,11 +36,13 @@ export default function Footer() {
   ]
 
   return (
-    <SharedFooter
-      pillarLinks={FOOTER_PILLARS}
-      editorialNote={t.editorialNote}
-      extraLegalLinks={FOOTER_EXTRA_LEGAL}
-      dict={footerDict(lang)}
-    />
+    <Suspense fallback={<div className="h-[36rem] bg-finland" aria-hidden="true" />}>
+      <SharedFooter
+        pillarLinks={FOOTER_PILLARS}
+        editorialNote={t.editorialNote}
+        extraLegalLinks={FOOTER_EXTRA_LEGAL}
+        dict={footerDict(lang)}
+      />
+    </Suspense>
   )
 }

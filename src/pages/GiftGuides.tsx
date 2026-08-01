@@ -36,7 +36,7 @@ export default function GiftGuides() {
                 <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{occ.name}</h2>
                 <p className="mt-2 max-w-2xl text-muted">{occ.description}</p>
                 {picks.length > 0 && (
-                  <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+                  <div className="mt-6 grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4">
                     {picks.map((p) => (
                       <ProductCard key={p.slug} product={p} lang={lang} />
                     ))}

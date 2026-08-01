@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
-import { Menu, X } from 'lucide-react'
+import { Globe, Menu, X } from 'lucide-react'
 import Logo from './Logo'
 import LangSwitcher from './LangSwitcher'
 import Breadcrumbs from '../../../shared/Breadcrumbs'
@@ -44,9 +44,23 @@ const COUNTRIES = [...EU_COUNTRIES, 'GB', 'US', 'CA', 'JP', 'KR', 'AU', 'CH', 'N
  *     navin yläpuolelle. Se katosi heti kun sivua rullasi. Nyt se tulee täältä
  *     sticky-palkin ALAPUOLELTA, ei-sticky-osana, eli sisältöalueen alusta.
  *
- * Toimitusmaavalitsin on työpöydällä apupalkissa ja mobiilissa valikkopaneelissa:
- * 375 pikselin riville mahtuu vain verkostovalikko ja kielivalitsin ilman että
- * palkki alkaa vieriä sivusuunnassa.
+ * 🔴 TOIMITUSMAAVALITSIN ON NÄKYVISSÄ JOKA LEVEYDELLÄ (Vesa 1.8.).
+ *
+ * Aiempi versio piilotti sen `hidden md:flex`illä ja jätti mobiiliin vain
+ * valikkopaneelin kopion. Mitattuna 390 ja 660 pikselissä näkyi yksi valitsin
+ * kolmesta. Toimitusmaa ei ole koriste: se suodattaa katalogin ja on ainoa syy
+ * miksi EU-rajatut kumppanit (Halti, Luhta, Finlayson, kuivalihat) voidaan
+ * ylipäätään listata — ilman sitä lukija näkee tuotteita, joita hänelle ei
+ * toimiteta. Sama koskee kielivalitsinta.
+ *
+ * Mahtuminen ratkaistiin rivityksellä eikä piilottamalla: apupalkki on
+ * `flex-wrap`, joten kapeimmilla ruuduilla valitsinpari putoaa toiselle
+ * riville. Kaksi riviä on aina parempi kuin kadonnut ydintoiminto.
+ *
+ * Lahjaopas- ja toimituslinkit ovat apupalkissa vain md+:sta ylöspäin, mutta
+ * ne asuvat myös valikkopaneelissa omana ryhmänään, ja valikkonapissa lukee
+ * nyt "Valikko" — pelkkä hampurilaisikoni ei kertonut, että sen takana on
+ * sivuja ja asetuksia.
  */
 export default function ShopNav() {
   const lang = useLang()
@@ -59,15 +73,30 @@ export default function ShopNav() {
 
   const here = stripLocale(pathname).replace(/\/$/, '') || '/'
 
-  const countrySelect = (wrapClass: string, selectClass: string) => (
-    <label className={wrapClass}>
-      <span className="sr-only">{t.shipping.selectorLabel}</span>
+  /**
+   * Toimitusmaavalitsin. `visibleLabel` näyttää tekstilabelin kentän vieressä
+   * (valikkopaneeli), muuten label on ruudunlukijalle ja maapallokuvake kertoo
+   * silmälle mistä on kyse. Kaikki kentät ovat 16 pikselin tekstiä: pienempi
+   * saa iOS Safarin zoomaamaan koko sivun kenttään kosketettaessa.
+   */
+  const countrySelect = (wrapClass: string, selectClass: string, visibleLabel = false) => (
+    <label className={`min-w-0 items-center gap-2 ${wrapClass}`}>
+      {visibleLabel ? (
+        <span className="shrink-0 text-sm font-semibold text-muted">{t.shipping.selectorLabel}</span>
+      ) : (
+        <>
+          <span className="sr-only">{t.shipping.selectorLabel}</span>
+          <Globe className="h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
+        </>
+      )}
       <select
         value={country}
         onChange={(e) => setCountry(e.target.value)}
-        className={`rounded-full border border-line bg-card text-gray ${selectClass}`}
+        className={`min-w-0 rounded-full border border-line bg-card text-gray ${selectClass}`}
       >
-        <option value="">{t.shipping.selectorLabel}</option>
+        <option value="">
+          {visibleLabel ? t.shipping.selectorAll : t.shipping.selectorLabel}
+        </option>
         {COUNTRIES.map((c) => (
           <option key={c} value={c}>{c}</option>
         ))}
@@ -111,7 +140,10 @@ export default function ShopNav() {
           Palkit eivät voi peittää toisiaan: apupalkki on virtauksessa ennen
           headeria, joten se on jo rullautunut pois kun header kiinnittyy. */}
       <div className="relative z-[60] bg-night text-white">
-        <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2 sm:gap-5">
+        {/* flex-wrap + gap-y: kapeimmilla ruuduilla (≤ ~340 px) valitsinpari
+            putoaa omalle rivilleen sen sijaan että se piilotettaisiin tai että
+            palkki alkaisi vieriä sivusuunnassa. */}
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-2 sm:gap-x-5">
           <div className="lv-eco-compact shrink-0">
             <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
           </div>
@@ -122,7 +154,7 @@ export default function ShopNav() {
                 key={s.key}
                 to={s.to}
                 aria-current={here === s.slug ? 'page' : undefined}
-                className={`text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-amber ${
+                className={`inline-flex min-h-11 items-center text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-amber ${
                   here === s.slug ? 'text-amber' : 'text-white/70'
                 }`}
               >
@@ -131,10 +163,8 @@ export default function ShopNav() {
             ))}
           </nav>
 
-          <div className="ml-auto flex items-center gap-2">
-            {/* text-sm riittää työpöydällä; mobiilissa valitsin on paneelissa,
-                jossa se on 16 px eikä iOS zoomaa siihen. */}
-            {countrySelect('hidden items-center md:flex', 'h-9 px-3 text-sm')}
+          <div className="ml-auto flex min-w-0 items-center gap-2">
+            {countrySelect('flex', 'h-11 max-w-[8.5rem] px-3 text-base md:h-9')}
             <LangSwitcher />
           </div>
         </div>
@@ -180,15 +210,23 @@ export default function ShopNav() {
             })}
           </nav>
 
+          {/* 🔴 Napissa lukee "Valikko". Pelkkä hampurilaisikoni ei kerro, että
+              sen takana ovat kategoriat, lahjaopas- ja toimitussivu — eli
+              kaikki mihin mobiilissa pääsee. Teksti tekee samalla napista
+              leveämmän kosketuskohteen kuin 44 × 44. */}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-controls="shop-menu"
+            // Näkyvä teksti on lyhyt ("Valikko"), saavutettava nimi kertoo
+            // toiminnon. Näkyvä teksti sisältyy nimeen, kuten WCAG 2.5.3
+            // edellyttää.
             aria-label={open ? n.closeMenu : n.openMenu}
-            className="ml-auto flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-line text-gray lg:hidden"
+            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-line px-4 text-sm font-semibold text-gray lg:hidden"
           >
-            {open ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
+            {n.menuLabel}
           </button>
         </div>
 
@@ -229,18 +267,26 @@ export default function ShopNav() {
                   to={s.to}
                   onClick={() => setOpen(false)}
                   aria-current={here === s.slug ? 'page' : undefined}
+                  // Sama sävy kuin kategorialinkeillä: `text-muted` sai nämä
+                  // kaksi näyttämään pois käytöstä olevilta vaikka ne ovat
+                  // mobiilin ainoa reitti lahjaopas- ja toimitussivulle.
                   className={`flex min-h-12 items-center text-base font-medium ${
-                    here === s.slug ? 'text-amber' : 'text-muted'
+                    here === s.slug ? 'text-amber' : 'text-gray'
                   }`}
                 >
                   {s.label}
                 </Link>
               ))}
             </nav>
-            {/* text-base = 16 px: pienempi koko saa iOS:n zoomaamaan kenttään. */}
+            {/* Sama valitsin kuin apupalkissa, mutta näkyvällä labelilla ja
+                täysleveänä. Kaksoiskappale on tarkoituksellinen: apupalkki ei
+                ole sticky, joten rullatulla sivulla valikkopaneeli on ainoa
+                paikka josta toimitusmaan voi vaihtaa.
+                text-base = 16 px: pienempi koko saa iOS:n zoomaamaan kenttään. */}
             {countrySelect(
-              'mx-auto flex max-w-7xl items-center border-t border-line px-4 py-3',
-              'min-h-11 w-full px-4 text-base',
+              'mx-auto flex max-w-7xl flex-wrap border-t border-line px-4 py-3',
+              'min-h-11 flex-1 px-4 text-base',
+              true,
             )}
           </div>
         )}

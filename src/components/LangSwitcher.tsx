@@ -29,8 +29,12 @@ const ALL_LANGS: { code: Lang; label: string; native: string }[] = [
  *
  * Kaksi selectiä: suljettuna natiivinimi levensi headerin yli 375 pikselin,
  * joten mobiilissa näkyy lyhyt koodi ja sm+ natiivinimi (Vesa 2026-07-03).
- * text-base kentissä olisi 16 px, mutta select ei zoomaa iOS:ssä samalla
- * tavalla kuin tekstikenttä, ja natiivinimet eivät mahtuisi.
+ *
+ * 🔴 Mobiilivalitsin on 16 pikselin tekstiä. Aiempi 12 px oli väärä oletus
+ * ("select ei zoomaa iOS:ssä"): iOS Safari zoomaa koko sivun myös selectiin
+ * kosketettaessa, jos sen fonttikoko on alle 16 px, eikä palauta zoomia. Koodi
+ * on kaksi merkkiä, joten 16 px mahtuu. sm+ pysyy pienenä, koska siellä
+ * lukee natiivinimi ja käyttö on hiirellä.
  *
  * Korkeus: mobiilissa 44 px kosketuskohteeksi, sm+ 36 px, koska valitsin asuu
  * ohuessa apupalkissa jota käytetään hiirellä.
@@ -59,7 +63,7 @@ export default function LangSwitcher() {
         value={lang}
         onChange={(e) => switchTo(e.target.value as Lang)}
         aria-label="Language"
-        className="min-h-11 appearance-none rounded-full border border-line bg-card px-3 pr-7 text-xs font-semibold uppercase text-gray sm:hidden"
+        className="min-h-11 appearance-none rounded-full border border-line bg-card px-3 pr-7 text-base font-semibold uppercase text-gray sm:hidden"
       >
         {ALL_LANGS.map((l) => (
           <option key={l.code} value={l.code}>{l.label}</option>
@@ -69,7 +73,9 @@ export default function LangSwitcher() {
         value={lang}
         onChange={(e) => switchTo(e.target.value as Lang)}
         aria-label="Language"
-        className="hidden h-9 appearance-none rounded-full border border-line bg-card px-3 pr-7 text-xs font-semibold uppercase text-gray sm:block"
+        // Myös tämä on 16 px: iPad Safari zoomaa kenttään aivan kuten puhelin,
+        // ja sm+ alkaa jo 640 pikselistä.
+        className="hidden h-9 appearance-none rounded-full border border-line bg-card px-3 pr-7 text-base font-semibold text-gray sm:block"
       >
         {ALL_LANGS.map((l) => (
           <option key={l.code} value={l.code}>{l.native}</option>

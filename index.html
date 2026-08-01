@@ -1,6 +1,21 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- 🔴 Merkistö ja viewport ovat headin ENSIMMÄISET tagit.
+         Viewport oli aiemmin vasta rivillä 122, eli kaikkien skriptilohkojen
+         jälkeen. Se rikkoi heron esilatauksen mitattavasti: esilatauslinkki
+         luodaan skriptissä ennen viewport-tagia, joten `imagesizes="100vw"`
+         laskettiin selaimen oletusleveyttä (980 px) vasten eikä puhelimen
+         390 pikseliä vasten. Selain esilatasi siis 2400 pikselin heron
+         jokaiselle puhelimelle, vaikka srcset tarjosi 800 pikselin version
+         (85 kt vs 15 kt). Todennettu Chromessa: sama sivu ilman
+         esilatausskriptiä valitsi hero-shop-800.avif:n.
+         Merkistö kuuluu samasta syystä ensimmäiseksi: ylhäällä olevissa
+         skripteissä on japanin- ja kiinankielisiä otsikoita, ja ne
+         jäsennettiin ennen kuin dokumentin merkistö oli julistettu. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- LV-LOCALE-TITLE (managed by scripts/inject_locale_titles.mjs) -->
     <script>
       (function () {
@@ -76,8 +91,6 @@
     </script>
     <!-- /LV-SYNC-LOCALE-REDIRECT -->
 
-    <meta charset="UTF-8" />
-
     <!-- Fontit: yhteys auki heti ja tyylitiedosto rinnakkain sivun kanssa.
          Aiemmin sama pyyntö lähti src/index.css:n @importista, jolloin selain
          ehti ladata ensin koko sivuston CSS:n ja vasta sitten fonttitaulun ja
@@ -108,6 +121,18 @@
           l.rel = 'preload';
           l.as = 'image';
           l.type = 'image/avif';
+          // 🔴 Esilatauksen on tarjottava SAMA srcset ja sizes kuin Hero.tsx:n
+          // <source>-tagin. Pelkkä href='/images/hero-shop.avif' esilatasi
+          // 2400 pikselin tiedoston, minkä jälkeen <img> valitsi ruudulle
+          // sopivan pienemmän version — eli kuva ladattiin kahdesti ja
+          // ensimmäinen lataus oli se raskain. Nämä leveydet tulevat
+          // scripts/build-image-variants.mjs:stä; jos ne muuttuvat, muuta
+          // molemmat.
+          l.setAttribute(
+            'imagesrcset',
+            '/images/hero-shop-800.avif 800w, /images/hero-shop-1200.avif 1200w, /images/hero-shop-1600.avif 1600w, /images/hero-shop.avif 2400w'
+          );
+          l.setAttribute('imagesizes', '100vw');
           l.href = '/images/hero-shop.avif';
           l.setAttribute('fetchpriority', 'high');
           document.head.appendChild(l);
@@ -119,7 +144,6 @@
     <link rel="alternate icon" href="/favicon.ico?v=20260712" sizes="32x32" type="image/png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260712" sizes="180x180" />
     <link rel="manifest" href="/site.webmanifest" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="fcaeb1ff317969b" content="eef17352895674f08513a89d315fa5f6" />
     <title>Finnish gifts and Lapland souvenirs | LaplandGifts</title>
     <meta name="description" content="Moomin and Arabia design, Marttiini puukko knives, Finnish sweets, Arctic berry powders and Lapland experience gifts, from the shops that ship them home." />

@@ -22,8 +22,16 @@ export default function Shipping() {
   const rows = Object.values(PARTNERS)
     .filter((p) => sellingPartnerIds.has(p.id))
     .sort((a, b) => a.name.localeCompare(b.name))
+  // 🔴 Lyhyt muoto, koska sarakkeen otsikko on jo "Toimitusalue": pitkä muoto
+  // toisti sanan "Toimitus" jokaisessa solussa ja levitti taulukon 410
+  // pikseliin, jolloin kolmas sarake jäi 320 pikselin ruudulla vierityksen
+  // taakse. Sama tieto, puolet leveydestä.
   const zoneLabel = (z: string) =>
-    z === 'worldwide' ? t.shipping.worldwide : z === 'eu' ? t.shipping.euOnly : t.shipping.fiOnly
+    z === 'worldwide'
+      ? t.shipping.zoneShort.worldwide
+      : z === 'eu'
+        ? t.shipping.zoneShort.eu
+        : t.shipping.zoneShort.fi
   return (
     <>
       <ShopNav />
@@ -32,19 +40,24 @@ export default function Shipping() {
           <h1 className="font-heading text-5xl tracking-wide text-gray md:text-7xl">{t.shipping.title}</h1>
           <p className="mt-4 text-muted">{t.product.checkoutNote}</p>
 
-          {/* Kapea näyttö vierittää taulukkoa vaakasuunnassa sen omassa
-              säiliössä, jotta sivun runko ei ala vierimään sivusuunnassa. */}
+          {/* 🔴 Taulukko mahtuu nyt 320 pikselin ruudulle: solujen vaakatäyte
+              on mobiilissa 12 px eikä 20 px. Aiemmin kolmas sarake
+              ("tarkistettu") jäi säiliön vierityksen taakse eikä mikään
+              kertonut että sitä voi vierittää — tieto oli mobiilissa
+              käytännössä piilossa. Säiliön `overflow-x-auto` jää varmistukseksi
+              pitkille kumppanien nimille, jotta sivun runko ei ala vierimään
+              sivusuunnassa. */}
           <div className="mt-10 overflow-x-auto rounded-2xl border border-line bg-card">
             <table className="w-full text-left text-sm">
               <thead>
                 <tr className="border-b border-line">
-                  <th scope="col" className="px-5 py-3 text-xs font-semibold uppercase tracking-widest text-muted">
+                  <th scope="col" className="px-3 py-3 text-[10px] font-semibold uppercase tracking-wider text-muted sm:px-5 sm:text-xs sm:tracking-widest">
                     {t.shipping.table.shop}
                   </th>
-                  <th scope="col" className="px-5 py-3 text-xs font-semibold uppercase tracking-widest text-muted">
+                  <th scope="col" className="px-3 py-3 text-[10px] font-semibold uppercase tracking-wider text-muted sm:px-5 sm:text-xs sm:tracking-widest">
                     {t.shipping.table.area}
                   </th>
-                  <th scope="col" className="px-5 py-3 text-xs font-semibold uppercase tracking-widest text-muted">
+                  <th scope="col" className="px-3 py-3 text-[10px] font-semibold uppercase tracking-wider text-muted sm:px-5 sm:text-xs sm:tracking-widest">
                     {t.shipping.table.checked}
                   </th>
                 </tr>
@@ -52,9 +65,9 @@ export default function Shipping() {
               <tbody>
                 {rows.map((p) => (
                   <tr key={p.id} className="border-b border-line last:border-0">
-                    <th scope="row" className="px-5 py-4 font-medium text-gray">{p.name}</th>
-                    <td className="px-5 py-4 text-muted">{zoneLabel(p.shipsTo)}</td>
-                    <td className="px-5 py-4 text-xs whitespace-nowrap text-muted">{p.verifiedAt}</td>
+                    <th scope="row" className="px-3 py-4 font-medium text-gray sm:px-5">{p.name}</th>
+                    <td className="px-3 py-4 text-muted sm:px-5">{zoneLabel(p.shipsTo)}</td>
+                    <td className="px-3 py-4 text-xs whitespace-nowrap text-muted sm:px-5">{p.verifiedAt}</td>
                   </tr>
                 ))}
               </tbody>
