@@ -76,7 +76,10 @@ export default function Product() {
               <span className="text-xs font-semibold uppercase tracking-widest text-muted">
                 {product.brand}
               </span>
-              <h1 className="font-heading text-4xl leading-tight text-gray md:text-5xl">{name}</h1>
+              {/* Tuotenimi leipatekstifontilla: Bebas Neue on pelkkia versaaleja, ja
+                  "MARTTIINI LAPINLEUKU 255" on kaupassa huonompi kuin sekakirjaimet.
+                  Sama ratkaisu kuin tuotekortissa. */}
+              <h1 className="font-body text-3xl font-semibold leading-tight tracking-normal text-gray md:text-4xl">{name}</h1>
               <p className="text-lg leading-relaxed text-gray/90">{description}</p>
 
               <div className="flex flex-wrap items-center gap-3">
