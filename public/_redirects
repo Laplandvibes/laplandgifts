@@ -1,10 +1,10 @@
-# Sisältöhashatut assetit EIVÄT saa pudota SPA-ohjaukseen. Ilman tätä riviä
-# reunalle vielä levittämätön asset palautti index.htmlin statuksella 200, ja
-# koska _headers merkitsee /assets/* immutableksi vuodeksi, Cloudflare tallensi
-# HTML:n tyylitiedoston tai moduulin nimen alle pysyvästi. nosniff esti sen
-# käytön, joten sivusto renderöityi tyylittömänä tai tyhjänä. 404 ei tallennu
-# samalla tavalla, ja puuttuva asset korjaantuu seuraavalla levityksellä.
-/static/*  /index.html  404
-
-# SPA-fallback kaikelle muulle.
+# 🔴 MITATTU 2026-08-01: Cloudflare Pages EI kunnioita tämän muotoista
+# 404-sääntöä assettipoluille. Testi: /static/ei-ole-olemassa-12345.js
+# palautti 200 + text/html, ei 404:ää. Aiempi kommentti tässä väitti että
+# sääntö estää välimuistin myrkytyksen. Se ei estä.
+#
+# Myrkytys torjutaan nyt _headers-tiedoston s-maxage-arvolla: selain saa
+# pitää hashatun tiedoston ikuisesti, mutta CDN:n kopio vanhenee 10
+# minuutissa, joten väärä vastaus korjaantuu itsestään sen sijaan että
+# jäisi vuodeksi.
 /*  /index.html  200

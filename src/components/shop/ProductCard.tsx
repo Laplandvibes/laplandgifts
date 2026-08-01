@@ -1,3 +1,6 @@
+// Hash-bump 2026-08-01: taman chunkin CORS-variantti oli myrkyttynyt
+// Cloudflaren reunavalimuistiin (200 + text/html). Purge-oikeutta ei ole,
+// joten ainoa keino oli vaihtaa tiedostonimi sisaltoa muuttamalla.
 import { ArrowRight } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import type { Product } from '../../data/types'

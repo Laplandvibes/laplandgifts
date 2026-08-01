@@ -13,4 +13,11 @@
   Cache-Control: public, max-age=86400
 
 /static/*
-  Cache-Control: public, max-age=31536000, immutable
+  # 🔴 EI immutable. Tiedostonimi on sisältöhash, joten selain saa pitää sen
+  # ikuisesti (max-age), mutta CDN:n kopio on vanhennuttava: jos assettia
+  # pyydetään ennen kuin se on levinnyt reunalle, SPA-fallback vastaa
+  # HTML:llä statuksella 200 ja se tallentuu tiedoston nimen alle. Kun
+  # merkintä oli immutable, väärä vastaus jäi vuodeksi eikä sitä voinut
+  # poistaa ilman purge-oikeutta: sivusto renderöityi tyhjänä tai
+  # tyylittömänä. s-maxage rajaa vahingon 10 minuuttiin.
+  Cache-Control: public, max-age=31536000, s-maxage=600
