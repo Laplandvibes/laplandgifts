@@ -19,5 +19,21 @@ export default defineConfig({
      * myrkyttyneet osoitteet. _redirects estää nyt saman toistumisen.
      */
     assetsDir: 'static',
+    rollupOptions: {
+      output: {
+        /**
+         * Kaikki assetit alihakemistoon /static/c2. Syy on operatiivinen:
+         * yksittäisiä /static-osoitteita oli myrkyttynyt Cloudflaren
+         * reunavälimuistiin (200 + text/html) vanhalla immutable-otsakkeella,
+         * eikä niitä voi purgeta ilman zone-oikeuksia eikä vanhentaa
+         * takautuvasti. Nimiavaruuden vaihto on ainoa varma pako. Uudet
+         * vastaukset tallentuvat s-maxage=600:lla, joten sama ei toistu.
+         * Jos joudut tekemään tämän uudestaan, nosta c2 -> c3.
+         */
+        chunkFileNames: 'static/c2/[name]-[hash].js',
+        entryFileNames: 'static/c2/[name]-[hash].js',
+        assetFileNames: 'static/c2/[name]-[hash][extname]',
+      },
+    },
   },
 })
