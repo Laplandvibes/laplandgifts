@@ -133,11 +133,11 @@ const fmt = (value: number, currency: string, locale: string) =>
 const en: ShopCopy = {
   nav: { shop: 'Shop', guides: 'Gift guides', shipping: 'Delivery', allProducts: 'All products' },
   home: {
-    heroKicker: 'Ordered on holiday, delivered home',
+    heroKicker: 'Shipped from Finland to your door',
     heroTitle: 'Finnish gifts and',
     heroTitleAccent: 'Lapland souvenirs',
     heroLead:
-      'Order your gifts while you are still on holiday and let them travel home without you. Each product is sold and shipped by a Finnish or Nordic shop, not by us, and the parcel goes to the country you live in.',
+      'Finnish design, Lapland handicrafts, sweets and berry powders, gathered in one place and shipped to where you live. Whether you are here on holiday or ordering from the other side of the world, each product is sold and sent by a Finnish or Nordic shop, not by us.',
     categoriesH2: 'What to buy in Lapland',
     categoriesSub:
       'Finnish design, clothing, handicrafts, sweets, berry powders, our own merch and experience gifts. Each category opens the shop that actually ships the item.',
@@ -214,11 +214,11 @@ const en: ShopCopy = {
 const fi: ShopCopy = {
   nav: { shop: 'Kauppa', guides: 'Lahjaoppaat', shipping: 'Toimitus', allProducts: 'Kaikki tuotteet' },
   home: {
-    heroKicker: 'Tilattu lomalla, toimitettu kotiin',
+    heroKicker: 'Suomesta suoraan kotiovelle',
     heroTitle: 'Lapin tuliaiset ja',
     heroTitleAccent: 'suomalaiset lahjat',
     heroLead:
-      'Tilaa tuliaiset jo lomalla ja anna niiden matkustaa kotiin ilman sinua. Jokaisen tuotteen myy ja lähettää suomalainen tai pohjoismainen kauppa, emme me, ja paketti tulee kotimaahasi.',
+      'Suomalaista designia, Lapin käsitöitä, herkkuja ja marjajauheita yhdessä paikassa, toimitettuna sinne missä asut. Olitpa täällä lomalla tai tilaamassa toiselta puolelta maailmaa, jokaisen tuotteen myy ja lähettää suomalainen tai pohjoismainen kauppa, emme me.',
     categoriesH2: 'Mitä Lapista kannattaa ostaa',
     categoriesSub:
       'Suomalaista designia, vaatteita, käsitöitä, herkkuja, marjajauheita, omaa merchiä ja elämyslahjoja. Jokainen kategoria avaa sen kaupan, joka tuotteen oikeasti lähettää.',
