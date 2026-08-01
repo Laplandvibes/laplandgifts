@@ -58,6 +58,28 @@ const JOBS = [
     'pentik-tunturiretki-studio-dish',
     'https://cdn.shopify.com/s/files/1/0419/8554/0246/files/md5-86aae2231427011919e22b2680816f5d-12ST353TT61_1.png?width=1200',
   ],
+
+  // ── design, erä 2026-08-01 ────────────────────────────────────────────────
+  [
+    'iittala-aalto-vase-160',
+    'https://www.nordicnest.com/assets/blobs/iittala-alvar-aalto-vase-savoy-clear-160-mm/999-01_1_ProductImageMain-719c949ad5.png',
+  ],
+  [
+    'iittala-kivi-candleholder',
+    'https://www.nordicnest.com/assets/blobs/iittala-kivi-candle-holder-60-mm-pine-green/636883-01_1_ProductImageMain-5b488172fb.png',
+  ],
+  [
+    'marimekko-unikko-mug',
+    'https://www.nordicnest.com/assets/blobs/marimekko-unikko-mug-25-cl-white-dark-green-beige-light-sand/666236-01_01_ProductImageMain-4e10d7c021.png',
+  ],
+  [
+    'aarikka-prinsessa-candleholder',
+    'https://cdn.shopify.com/s/files/1/1295/6161/files/B08633_Prinsessa-kynttilanjalka_U300K.jpg?width=1200',
+  ],
+  [
+    'aarikka-pore-glass-vase',
+    'https://cdn.shopify.com/s/files/1/1295/6161/files/WEB_B08706_PORE_LASIMALJAKKO_PIENI_U999.jpg?width=1200',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

@@ -173,6 +173,258 @@ export const PRODUCTS: Product[] = [
     },
   },
 
+  {
+    slug: 'iittala-aalto-vase-160',
+    category: 'design',
+    brand: 'Iittala',
+    name: {
+      en: 'Iittala Alvar Aalto vase 160 mm, clear',
+      fi: 'Iittala Alvar Aalto -maljakko 160 mm, kirkas',
+    },
+    description: {
+      en: 'Alvar Aalto drew this wave in 1936 and Iittala still mouth blows it, so the outline of every piece differs a little. The 160 mm size is the one people picture when they hear the name.',
+      fi: 'Alvar Aalto piirsi tämän aallon vuonna 1936, ja Iittala puhaltaa maljakon yhä suulla, joten jokaisen kappaleen ääriviiva on hieman erilainen. 160 millin koko on se, jonka useimmat näkevät mielessään nimen kuullessaan.',
+    },
+    priceFrom: 159,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-iittala-aalto-vase-160',
+    imageIsPartner: true,
+    partnerId: 'nordicnest',
+    partnerProductUrl:
+      'https://www.nordicnest.com/brands/iittala/aalto-vase-clear/?variantId=999-01',
+    featured: true,
+    details: {
+      specs: [
+        { key: 'size', value: { en: 'Height 16 cm, width 20.5 cm', fi: 'Korkeus 16 cm, leveys 20,5 cm' } },
+        { key: 'material', value: { en: 'Glass', fi: 'Lasi' } },
+        { key: 'color', value: { en: 'Transparent', fi: 'Kirkas' } },
+        { key: 'weight', value: { en: '1.44 kg gross', fi: '1,44 kg bruttopaino' } },
+        { key: 'care', value: { en: 'Hand wash only', fi: 'Vain käsinpesu' } },
+        {
+          key: 'other',
+          label: { en: 'Production', fi: 'Valmistustapa' },
+          value: { en: 'Mouth blown glass, asymmetric shape', fi: 'Suupuhallettu lasi, epäsymmetrinen muoto' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Designer and collection', fi: 'Suunnittelija ja sarja' },
+          value: {
+            en: 'Alvar Aalto, Iittala Alvar Aalto Collection',
+            fi: 'Alvar Aalto, Iittala Alvar Aalto Collection',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Item number and EAN', fi: 'Tuotenumero ja EAN' },
+          value: { en: '999-01, EAN 6411920004445', fi: '999-01, EAN 6411920004445' },
+        },
+      ],
+      sourceUrl: 'https://www.nordicnest.com/brands/iittala/aalto-vase-clear/?variantId=999-01',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'iittala-kivi-candleholder',
+    category: 'design',
+    brand: 'Iittala',
+    name: {
+      en: 'Iittala Kivi votive 60 mm, pine green',
+      fi: 'Iittala Kivi -kynttilälyhty 60 mm, petrolinvihreä',
+    },
+    description: {
+      en: 'A pressed glass votive by Heikki Orvola, 6 cm tall, that turns one tealight into a block of colour. It is the cheapest way to own a piece of Iittala and it survives hand luggage.',
+      fi: 'Heikki Orvolan puristelasinen kynttilälyhty, korkeus 6 cm, joka muuttaa yhden lämpökynttilän värilliseksi palikaksi. Halvin tapa omistaa pala Iittalaa, ja kestää käsimatkatavaroissa.',
+    },
+    priceFrom: 14,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-iittala-kivi-candleholder',
+    imageIsPartner: true,
+    partnerId: 'nordicnest',
+    partnerProductUrl:
+      'https://www.nordicnest.com/brands/iittala/kivi-candleholder/?variantId=636883-01',
+    details: {
+      specs: [
+        {
+          key: 'size',
+          value: { en: '6.5 x 6.5 cm, height 6 cm', fi: '6,5 x 6,5 cm, korkeus 6 cm' },
+        },
+        { key: 'material', value: { en: 'Glass', fi: 'Lasi' } },
+        { key: 'color', value: { en: 'Green', fi: 'Vihreä' } },
+        { key: 'weight', value: { en: '0.33 kg gross', fi: '0,33 kg bruttopaino' } },
+        { key: 'care', value: { en: 'Hand wash only', fi: 'Vain käsinpesu' } },
+        {
+          key: 'other',
+          label: { en: 'Designer and collection', fi: 'Suunnittelija ja sarja' },
+          value: { en: 'Heikki Orvola, Iittala Kivi', fi: 'Heikki Orvola, Iittala Kivi' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Item number and EAN', fi: 'Tuotenumero ja EAN' },
+          value: { en: '636883-01, EAN 6411923683937', fi: '636883-01, EAN 6411923683937' },
+        },
+      ],
+      sourceUrl: 'https://www.nordicnest.com/brands/iittala/kivi-candleholder/?variantId=636883-01',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'marimekko-unikko-mug',
+    category: 'design',
+    brand: 'Marimekko',
+    name: {
+      en: 'Marimekko Unikko mug 25 cl',
+      fi: 'Marimekko Unikko -muki 25 cl',
+    },
+    description: {
+      en: 'Maija Isola drew the Unikko poppy in 1964 after Marimekko had banned floral prints, and the pattern outlived the ban. This stoneware mug holds 25 cl and puts the print on a breakfast table rather than a wall.',
+      fi: 'Maija Isola piirsi Unikon vuonna 1964 sen jälkeen, kun Marimekko oli kieltänyt kukkakuosit, ja kuosi eli kiellon yli. Tämä kivitavaramuki vetää 25 senttilitraa ja tuo kuvion aamiaispöytään seinän sijaan.',
+    },
+    priceFrom: 24,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-marimekko-unikko-mug',
+    imageIsPartner: true,
+    partnerId: 'nordicnest',
+    partnerProductUrl:
+      'https://www.nordicnest.com/brands/marimekko/unikko-mug-25-dl/?variantId=666236-01',
+    featured: true,
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '25 cl', fi: '25 cl' } },
+        {
+          key: 'size',
+          value: { en: 'Diameter 8 cm, height 9.5 cm', fi: 'Halkaisija 8 cm, korkeus 9,5 cm' },
+        },
+        { key: 'material', value: { en: 'Stoneware', fi: 'Kivitavara' } },
+        {
+          key: 'color',
+          value: {
+            en: 'White, dark green, beige and light sand',
+            fi: 'Valkoinen, tummanvihreä, beige ja vaalea hiekka',
+          },
+        },
+        { key: 'weight', value: { en: '0.276 kg gross', fi: '0,276 kg bruttopaino' } },
+        {
+          key: 'other',
+          label: { en: 'Designers', fi: 'Suunnittelijat' },
+          value: {
+            en: 'Pattern by Maija Isola, mug by Sami Ruotsalainen',
+            fi: 'Kuosi Maija Isola, muki Sami Ruotsalainen',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Item number and EAN', fi: 'Tuotenumero ja EAN' },
+          value: { en: '666236-01, EAN 6411255152033', fi: '666236-01, EAN 6411255152033' },
+        },
+      ],
+      sourceUrl:
+        'https://www.nordicnest.com/brands/marimekko/unikko-mug-25-dl/?variantId=666236-01',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'aarikka-prinsessa-candleholder',
+    category: 'design',
+    brand: 'Aarikka',
+    name: {
+      en: 'Aarikka Prinsessa candleholder',
+      fi: 'Aarikka Prinsessa-kynttilänjalka',
+    },
+    description: {
+      en: 'Aarikka has been turning birch beads since the 1950s, and Prinsessa wears a wreath of them around a 5.5 cm holder that takes either a tealight or a taper. Small enough to post, distinctive enough to be recognised in Finland.',
+      fi: 'Aarikka on sorvannut koivuhelmiä 1950-luvulta asti, ja Prinsessa kantaa niistä tehtyä seppelettä 5,5 senttiä korkean jalan ympärillä. Sopii sekä lämpö- että kynttiläkynttilälle, mahtuu kirjekuoreen ja tunnistetaan Suomessa.',
+    },
+    priceFrom: 35,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-aarikka-prinsessa-candleholder',
+    imageIsPartner: true,
+    partnerId: 'aarikka',
+    partnerProductUrl:
+      'https://www.aarikka.com/products/prinsessa-candleholder-varnished-wood-and-gold',
+    details: {
+      specs: [
+        { key: 'size', value: { en: 'Height 5.5 cm, diameter 6 cm', fi: 'Korkeus 5,5 cm, halkaisija 6 cm' } },
+        { key: 'material', value: { en: 'Birch, maple, aluminium', fi: 'Koivu, vaahtera, alumiini' } },
+        { key: 'weight', value: { en: '98 g', fi: '98 g' } },
+        {
+          key: 'origin',
+          value: { en: 'Designed in Finland, made in Italy', fi: 'Suunniteltu Suomessa, valmistettu Italiassa' },
+        },
+        {
+          key: 'contents',
+          value: {
+            en: 'Candleholder with one wreath of wooden beads. Fits tealights and straight candles',
+            fi: 'Kynttilänjalka ja yksi puuhelmiseppele. Sopii lämpökynttilöille ja suorille kynttilöille',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Product code', fi: 'Tuotekoodi' },
+          value: { en: 'B08633', fi: 'B08633' },
+        },
+      ],
+      sourceUrl:
+        'https://www.aarikka.com/products/prinsessa-candleholder-varnished-wood-and-gold',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'aarikka-pore-glass-vase',
+    category: 'design',
+    brand: 'Aarikka',
+    name: {
+      en: 'Aarikka Pore glass vase 16 cm, dark green',
+      fi: 'Aarikka Pore-lasimaljakko 16 cm, tummanvihreä',
+    },
+    description: {
+      en: 'A round hand blown vase, 1.7 litres, wearing a maple bead wreath dyed by hand in Finland. Air bubbles in the glass are part of it, and the wreath comes off before washing.',
+      fi: 'Pyöreä suupuhallettu maljakko, tilavuus 1,7 litraa, kaulassaan käsin värjätty vaahterahelmiseppele Suomesta. Lasin ilmakuplat kuuluvat asiaan, ja seppele otetaan pois ennen pesua.',
+    },
+    priceFrom: 70,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-aarikka-pore-glass-vase',
+    imageIsPartner: true,
+    partnerId: 'aarikka',
+    partnerProductUrl: 'https://www.aarikka.com/products/pore-glass-vase-16-cm-dark-green',
+    details: {
+      specs: [
+        {
+          key: 'size',
+          value: { en: 'Height 16 cm, diameter 16 cm', fi: 'Korkeus 16 cm, halkaisija 16 cm' },
+        },
+        { key: 'volume', value: { en: '1.7 l', fi: '1,7 l' } },
+        { key: 'material', value: { en: 'Glass and maple', fi: 'Lasi ja vaahtera' } },
+        { key: 'color', value: { en: 'Clear and green', fi: 'Kirkas ja vihreä' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Glass made in Poland, the wooden wreath made in Finland',
+            fi: 'Lasi valmistettu Puolassa, puuseppele Suomessa',
+          },
+        },
+        {
+          key: 'care',
+          value: {
+            en: 'Wash by hand. Remove the wooden wreath before washing',
+            fi: 'Pese käsin. Irrota puuseppele ennen pesua',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Product code', fi: 'Tuotekoodi' },
+          value: { en: 'B08706', fi: 'B08706' },
+        },
+      ],
+      sourceUrl: 'https://www.aarikka.com/products/pore-glass-vase-16-cm-dark-green',
+      fetchedAt: '2026-08-01',
+    },
+  },
+
   // ── clothing ──────────────────────────────────────────────────────────────
   {
     slug: 'halti-tokoi-dx-jacket',

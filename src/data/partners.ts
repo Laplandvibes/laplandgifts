@@ -42,6 +42,31 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'worldwide',
     verifiedAt: '2026-07-31',
   },
+  nordicnest: {
+    id: 'nordicnest',
+    name: 'Nordic Nest',
+    network: 'direct',
+    // .com hinnoittelee euroissa ja renderöi hinnan palvelimella, joten hinta
+    // on luettavissa tuotesivulta. .fi on selainpuolen sovellus, jonka hintaa
+    // ei voi lukea sivulta.
+    baseUrl: 'https://www.nordicnest.com',
+    // Shipping Information 1.8.2026: "We offer worldwide shipping".
+    shipsTo: 'worldwide',
+    verifiedAt: '2026-08-01',
+  },
+  aarikka: {
+    id: 'aarikka',
+    name: 'Aarikka',
+    network: 'direct',
+    baseUrl: 'https://www.aarikka.com',
+    // 🔴 Payment and Delivery 1.8.2026 luettelee noin 70 toimitusmaata kaikilta
+    // mantereilta, mutta Yhdysvallat on nimenomaisesti rajattu pois tullisyistä.
+    // Siksi tämä EI ole 'worldwide': se lupaisi toimituksen maahan, johon
+    // kauppa ei toimita. 'eu' on tosi (kaikki 27 EU-maata ovat listalla) eikä
+    // lupaa liikaa; suodatin näyttää siis kumppanin harvemmin kuin voisi.
+    shipsTo: 'eu',
+    verifiedAt: '2026-08-01',
+  },
   scandinavianoutdoor: {
     id: 'scandinavianoutdoor',
     name: 'Scandinavian Outdoor',

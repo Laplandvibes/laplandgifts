@@ -62,6 +62,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       1600
     ]
   },
+  "prod-aarikka-pore-glass-vase": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-aarikka-prinsessa-candleholder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-arctic-power-berries-blueberry-powder": {
     "full": 800,
     "w": [
@@ -87,6 +103,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-halti-tokoi-dx-jacket": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-iittala-aalto-vase-160": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-iittala-kivi-candleholder": {
     "full": 800,
     "w": [
       320,
@@ -158,6 +190,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-makia-merino-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-marimekko-unikko-mug": {
     "full": 800,
     "w": [
       320,
