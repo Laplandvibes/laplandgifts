@@ -31,6 +31,9 @@ const ALL_LANGS: { code: Lang; label: string; native: string }[] = [
  * joten mobiilissa näkyy lyhyt koodi ja sm+ natiivinimi (Vesa 2026-07-03).
  * text-base kentissä olisi 16 px, mutta select ei zoomaa iOS:ssä samalla
  * tavalla kuin tekstikenttä, ja natiivinimet eivät mahtuisi.
+ *
+ * Korkeus: mobiilissa 44 px kosketuskohteeksi, sm+ 36 px, koska valitsin asuu
+ * ohuessa apupalkissa jota käytetään hiirellä.
  */
 export default function LangSwitcher() {
   const lang = useLang()
@@ -66,7 +69,7 @@ export default function LangSwitcher() {
         value={lang}
         onChange={(e) => switchTo(e.target.value as Lang)}
         aria-label="Language"
-        className="hidden min-h-11 appearance-none rounded-full border border-line bg-card px-3 pr-7 text-xs font-semibold uppercase text-gray sm:block"
+        className="hidden h-9 appearance-none rounded-full border border-line bg-card px-3 pr-7 text-xs font-semibold uppercase text-gray sm:block"
       >
         {ALL_LANGS.map((l) => (
           <option key={l.code} value={l.code}>{l.native}</option>

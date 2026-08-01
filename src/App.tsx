@@ -1,11 +1,8 @@
 import { BrowserRouter, useLocation } from 'react-router-dom'
 import { useEffect, useReducer, Suspense, type ReactNode } from 'react'
 import CookieBanner from './shared/CookieBanner'
-import Breadcrumbs from '../../shared/Breadcrumbs'
 import AppRoutes from './routes'
 import { ShippingCountryProvider } from './context/ShippingCountry'
-import { CATEGORIES } from './data/categories'
-import { SHOP_COPY } from './locales/shopCopy'
 import { trackPageView } from './lib/analytics'
 import LocaleAutoRedirect from './i18n/LocaleAutoRedirect'
 import Hreflang from './i18n/Hreflang'
@@ -55,41 +52,14 @@ function LocalisedCookieBanner() {
 }
 
 /**
- * Localized ecosystem breadcrumb ("murupolku"). One shell, rendered above
- * <Routes>, wired to this site's real runtime i18n (useLang + useLocalePath +
- * SHOP_COPY[lang]). It hides itself on home and on any route not in labelMap.
- *
- * labelMap kattaa kaupan seitsemän kategoriasivua sekä lahjaopas- ja
- * toimitussivun. Lakisivut jätetään pois ekosysteemisäännön mukaan, ja
- * tuotesivut jäävät pois tarkoituksella: niiden label tulisi tuotedatasta
- * eikä navista.
- *
- * Palette: this site has no LV deep-night/snow tokens — content renders on a
- * light bg (--color-white) under a white header, so the trail uses the body
- * text colour `text-gray` with `hover:text-amber` to match the nav's own links.
- * The header is `sticky top-0` (in-flow, not fixed) → no pt-16 (that would add
- * a gap below the sticky nav).
+ * 🔴 Murupolku ei asu enää täällä. Se renderöitiin <Routes>-puun YLÄPUOLELLA,
+ * eli sivun ensimmäisenä elementtinä kiinteän navin yläpuolelle, ja katosi heti
+ * kun sivua rullasi (Vesa 2026-08-01: "murupolku kulkee missä tahansa").
+ * Nyt sen renderöi `components/ShopNav.tsx` sticky-palkin alapuolelta, jolloin
+ * se on sisältöalueen ensimmäinen rivi ja rullaa pois kuten muukin sisältö.
+ * Myös labelMap (kategoriat + lahjaopas + toimitus) muutti samaan tiedostoon,
+ * jossa navilinkit jo asuvat, joten reittilista on yhdessä paikassa.
  */
-function BreadcrumbShell() {
-  const lang = useLang()
-  const to = useLocalePath()
-  // Looginen sisältöalisivureitti → lyhyt lokalisoitu label.
-  const labelMap: Record<string, string> = {
-    ...Object.fromEntries(CATEGORIES.map((c) => [c.slug, SHOP_COPY[lang].category.names[c.id]])),
-    '/gift-guides': SHOP_COPY[lang].nav.guides,
-    '/shipping': SHOP_COPY[lang].nav.shipping,
-  }
-  return (
-    <Breadcrumbs
-      lang={lang}
-      to={to}
-      labelMap={labelMap}
-      className="text-gray"
-      accentClassName="hover:text-amber hover:opacity-100"
-    />
-  )
-}
-
 function App() {
   return (
     <BrowserRouter>
@@ -105,7 +75,6 @@ function App() {
           ympärille eikä yksittäisen sivun sisään. */}
       <ShippingCountryProvider>
         <CopyGate>
-          <BreadcrumbShell />
           <Suspense fallback={<div className="min-h-screen" />}>
             <AppRoutes />
           </Suspense>
