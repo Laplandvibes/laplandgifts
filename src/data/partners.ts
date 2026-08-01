@@ -147,6 +147,18 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'eu',
     verifiedAt: '2026-07-31',
   },
+  arcticwarriors: {
+    id: 'arcticwarriors',
+    name: 'Arctic Warriors',
+    network: 'direct',
+    baseUrl: 'https://arcticwarriors.fi',
+    // Terms of order and delivery 1.8.2026: toimitusajat eritellään erikseen
+    // EU:lle (3-9 pv) ja muulle maailmalle (5 pv alkaen), ja EU:n ulkopuolisten
+    // tilausten tullimaksut ovat asiakkaan vastuulla. Kauppa toimittaa siis
+    // maailmanlaajuisesti. Tuotesivujen linkit ovat /en/product/-polussa.
+    shipsTo: 'worldwide',
+    verifiedAt: '2026-08-01',
+  },
   arcticpowerberries: {
     id: 'arcticpowerberries',
     name: 'Arctic Power Berries',

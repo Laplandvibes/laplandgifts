@@ -124,6 +124,30 @@ const JOBS = [
     'nordqvist-cranberry-toffee-tea',
     'https://cdn.shopify.com/s/files/1/0518/9530/4385/files/karpalo-suolakinuski-pussitee-uutuus-nordqvist-teekauppa-967.jpg?v=1761622148&width=1200',
   ],
+
+  // ── superfoods, erä 2026-08-01 ────────────────────────────────────────────
+  [
+    'arctic-warriors-spruce-sprout-powder',
+    'https://arcticwarriors.fi/wp-content/uploads/2023/09/AW_KUUSENKERKKAJAUHE_40_no_BG.png',
+  ],
+  [
+    'arctic-warriors-nettle-powder',
+    'https://arcticwarriors.fi/wp-content/uploads/2024/03/AW-pakkaukset-nokkonen-150g.png',
+  ],
+  [
+    'arctic-warriors-roseroot-elixir',
+    'https://arcticwarriors.fi/wp-content/uploads/2023/10/AW-pullot-ruusujuuri-nokkoseliksiiri-100ml.png',
+  ],
+  [
+    'omega7-sea-buckthorn-olive-oil',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/Omega_tyrni_oliivioljy_150ml_lippu.jpg?v=1780470364&width=1200',
+  ],
+  // 🔴 Pesosen tattarikukkahunaja jäi pois: kumppanin ainoa tuotekuva on
+  // 241 x 301 px, eli sitä ei saa 800 pikselin korttikuvaksi ilman venytystä.
+  [
+    'kaino-spruce-sprout-sparkling',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/edd12775157c79a540b46ef6ee62970b.png?v=1775047394&width=1200',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

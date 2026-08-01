@@ -94,6 +94,30 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-arctic-warriors-nettle-powder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-arctic-warriors-roseroot-elixir": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-arctic-warriors-spruce-sprout-powder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-fazer-geisha-chocolate-bar": {
     "full": 800,
     "w": [
@@ -155,6 +179,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     "w": [
       320,
       480
+    ]
+  },
+  "prod-kaino-spruce-sprout-sparkling": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
     ]
   },
   "prod-kuivalihakundi-beef-jerky-smoked": {
@@ -334,6 +366,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-north-outdoor-pyry-scarf": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-omega7-sea-buckthorn-olive-oil": {
     "full": 800,
     "w": [
       320,

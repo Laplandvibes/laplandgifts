@@ -2009,6 +2009,267 @@ export const PRODUCTS: Product[] = [
       fetchedAt: '2026-08-01',
     },
   },
+  {
+    slug: 'arctic-warriors-spruce-sprout-powder',
+    category: 'superfoods',
+    brand: 'Arctic Warriors',
+    name: {
+      en: 'Arctic Warriors spruce sprout powder 40 g',
+      fi: 'Arctic Warriors kuusenkerkkäjauhe 40 g',
+    },
+    description: {
+      en: 'Freeze dried spruce sprouts, hand picked over a two week window from organic state forests, and only every second year from the same forest. Citrus and resin in a spoonful, 382 mg of vitamin C per 100 g.',
+      fi: 'Pakastekuivattua kuusenkerkkää, käsin poimittuna noin kahden viikon aikaikkunassa valtion luomumetsistä ja samasta metsästä vain joka toinen vuosi. Sitrusta ja pihkaa lusikallisessa, C-vitamiinia 382 mg sadassa grammassa.',
+    },
+    priceFrom: 16.8,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-arctic-warriors-spruce-sprout-powder',
+    imageIsPartner: true,
+    partnerId: 'arcticwarriors',
+    partnerProductUrl: 'https://arcticwarriors.fi/en/product/spruce-sprout-powder-40-g/',
+    featured: true,
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '40 g, gross 0.046 kg', fi: '40 g, brutto 0,046 kg' } },
+        { key: 'size', value: { en: '3 x 11 x 17 cm', fi: '3 x 11 x 17 cm' } },
+        {
+          key: 'contents',
+          value: { en: 'Freeze-dried spruce sprout', fi: 'Pakastekuivattua kuusenkerkkää' },
+        },
+        { key: 'origin', value: { en: 'Finland', fi: 'Suomi' } },
+        {
+          key: 'other',
+          label: { en: 'Dosage', fi: 'Annostus' },
+          value: { en: '1 to 3 teaspoons a day', fi: '1-3 teelusikallista päivässä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
+          value: {
+            en: 'Energy 1683 kJ / 402 kcal, protein 12.1 g, carbohydrate 77.8 g, fat 4.19 g. Vitamin C 382 mg, vitamin A 970 µg, vitamin K1 332 mg, potassium 1200 mg, phosphorus 350 mg, calcium 130 mg, magnesium 120 mg, zinc 3.6 mg, iron 2 mg',
+            fi: 'Energia 1683 kJ / 402 kcal, proteiini 12,1 g, hiilihydraatit 77,8 g, rasva 4,19 g. C-vitamiini 382 mg, A-vitamiini 970 µg, K1-vitamiini 332 mg, kalium 1200 mg, fosfori 350 mg, kalsium 130 mg, magnesium 120 mg, sinkki 3,6 mg, rauta 2 mg',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Harvesting', fi: 'Keruu' },
+          value: {
+            en: 'Harvested under licence from organic forests owned by the Finnish state forest administration, every other year per forest',
+            fi: 'Kerätty luvanvaraisesti Metsähallituksen luomumetsistä, samasta metsästä joka toinen vuosi',
+          },
+        },
+      ],
+      sourceUrl: 'https://arcticwarriors.fi/en/product/spruce-sprout-powder-40-g/',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'arctic-warriors-nettle-powder',
+    category: 'superfoods',
+    brand: 'Arctic Warriors',
+    name: {
+      en: 'Arctic Warriors nettle powder 150 g',
+      fi: 'Arctic Warriors nokkosjauhe 150 g',
+    },
+    description: {
+      en: 'Nettle grown on organic farms in Lapland, freeze dried into a powder neutral enough to stir into soup or bread without arguing with the rest of the dish. 22 000 mg of calcium per 100 g.',
+      fi: 'Lapin luomutiloilla kasvatettua nokkosta, pakastekuivattuna jauheeksi, joka on sen verran neutraalia että sen voi sekoittaa keittoon tai leipään ilman että se riitelee muun ruoan kanssa. Kalsiumia 22 000 mg sadassa grammassa.',
+    },
+    priceFrom: 52,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-arctic-warriors-nettle-powder',
+    imageIsPartner: true,
+    partnerId: 'arcticwarriors',
+    partnerProductUrl: 'https://arcticwarriors.fi/en/product/nettle-powder-150-g/',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '150 g, gross 0.162 kg', fi: '150 g, brutto 0,162 kg' } },
+        { key: 'size', value: { en: '4 x 16 x 23 cm', fi: '4 x 16 x 23 cm' } },
+        { key: 'contents', value: { en: 'Freeze-dried nettle', fi: 'Pakastekuivattua nokkosta' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Finland, grown on organic farms in Lapland',
+            fi: 'Suomi, kasvatettu Lapin luomutiloilla',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Dosage', fi: 'Annostus' },
+          value: { en: '1 to 5 teaspoons a day', fi: '1-5 teelusikallista päivässä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
+          value: {
+            en: 'Energy 1484 kJ / 354 kcal, protein 23.6 g, carbohydrate 56 g, fat 3.44 g, salt under 5 mg. Vitamin A 1900 µg, calcium 22000 mg, magnesium 5300 mg, iron 68 mg',
+            fi: 'Energia 1484 kJ / 354 kcal, proteiini 23,6 g, hiilihydraatit 56 g, rasva 3,44 g, suola alle 5 mg. A-vitamiini 1900 µg, kalsium 22000 mg, magnesium 5300 mg, rauta 68 mg',
+          },
+        },
+      ],
+      sourceUrl: 'https://arcticwarriors.fi/en/product/nettle-powder-150-g/',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'arctic-warriors-roseroot-elixir',
+    category: 'superfoods',
+    brand: 'Arctic Warriors',
+    name: {
+      en: 'Arctic Warriors roseroot elixir 100 ml',
+      fi: 'Arctic Warriors ruusujuuri-nokkoseliksiiri 100 ml',
+    },
+    description: {
+      en: 'Roseroot grows on the damp creek banks and rock faces of the Lapland fells, and Arctic Warriors extracts it into vegetable glycerol with nettle. A teaspoon goes into tea, porridge or yoghurt.',
+      fi: 'Ruusujuuri kasvaa Lapin tuntureiden kosteilla puronvarsilla ja kalliopinnoilla, ja Arctic Warriors uuttaa sen kasviglyseroliin nokkosen kanssa. Teelusikallinen menee teehen, puuroon tai jogurttiin.',
+    },
+    priceFrom: 24.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-arctic-warriors-roseroot-elixir',
+    imageIsPartner: true,
+    partnerId: 'arcticwarriors',
+    partnerProductUrl: 'https://arcticwarriors.fi/en/product/roseroot-elixir-100-ml/',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '100 ml, gross 0.270 kg', fi: '100 ml, brutto 0,270 kg' } },
+        { key: 'size', value: { en: '4.5 x 4.5 x 13 cm', fi: '4,5 x 4,5 x 13 cm' } },
+        {
+          key: 'contents',
+          value: {
+            en: 'Vegetable glycerol, nettle, roseroot',
+            fi: 'Kasviglyseroli, nokkonen, ruusujuuri',
+          },
+        },
+        { key: 'origin', value: { en: 'Finland', fi: 'Suomi' } },
+        {
+          key: 'other',
+          label: { en: 'Dosage', fi: 'Annostus' },
+          value: { en: '1 to 2 teaspoons a day', fi: '1-2 teelusikallista päivässä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Diet', fi: 'Ruokavalio' },
+          value: {
+            en: 'Dairy free, gluten free, vegan. The vegetable glycerol does not affect blood sugar',
+            fi: 'Maidoton, gluteeniton, vegaaninen. Kasviglyseroli ei vaikuta verensokeriin',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Note', fi: 'Huomio' },
+          value: {
+            en: 'A food supplement does not replace a varied diet. Keep out of reach of children and do not exceed the stated dose',
+            fi: 'Ravintolisä ei korvaa monipuolista ruokavaliota. Säilytä lasten ulottumattomissa äläkä ylitä ilmoitettua annosta',
+          },
+        },
+      ],
+      sourceUrl: 'https://arcticwarriors.fi/en/product/roseroot-elixir-100-ml/',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'omega7-sea-buckthorn-olive-oil',
+    category: 'superfoods',
+    brand: 'Omega7',
+    name: {
+      en: 'Omega7 SBA24 sea buckthorn and olive oil 150 ml',
+      fi: 'Omega7 SBA24 tyrni-oliiviöljy 150 ml',
+    },
+    description: {
+      en: 'Sea buckthorn berry oil and seed oil together with olive oil, developed and made in Finland. The producer standardises the vitamin A and E levels rather than leaving them to the harvest.',
+      fi: 'Tyrnin marja- ja siemenöljyä yhdessä oliiviöljyn kanssa, kehitetty ja valmistettu Suomessa. Valmistaja vakioi A- ja E-vitamiinitasot sen sijaan että jättäisi ne sadon varaan.',
+    },
+    priceFrom: 27.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-omega7-sea-buckthorn-olive-oil',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl:
+      'https://www.ruohonjuuri.fi/products/omega7-omega7-sba24%C2%AE-tyrni-oliivioljy-150-ml',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '150 ml', fi: '150 ml' } },
+        {
+          key: 'contents',
+          value: {
+            en: 'Sea buckthorn berry oil and seed oil with olive oil, standardised vitamin A and E levels',
+            fi: 'Tyrnin marja- ja siemenöljyä oliiviöljyn kanssa, vakioidut A- ja E-vitamiinitasot',
+          },
+        },
+        {
+          key: 'origin',
+          value: { en: 'Developed and made in Finland', fi: 'Kehitetty ja valmistettu Suomessa' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Note', fi: 'Huomio' },
+          value: {
+            en: 'Follow the dose on the package and do not exceed it. A food supplement does not replace a varied diet. Keep out of reach of children',
+            fi: 'Noudata pakkauksen annostusta äläkä ylitä sitä. Ravintolisä ei korvaa monipuolista ruokavaliota. Säilytä lasten ulottumattomissa',
+          },
+        },
+      ],
+      sourceUrl:
+        'https://www.ruohonjuuri.fi/products/omega7-omega7-sba24%C2%AE-tyrni-oliivioljy-150-ml',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'kaino-spruce-sprout-sparkling',
+    category: 'superfoods',
+    brand: 'KAINO Drinks',
+    name: {
+      en: 'KAINO Drinks spruce sprout sparkling drink 0,2 l',
+      fi: 'KAINO Drinks kuusenkerkkä-kuohujuoma 0,2 l',
+    },
+    description: {
+      en: 'A non-alcoholic sparkling drink made from Finnish organic ingredients, so a toast in a cabin does not have to involve alcohol. Serve it cold, or the spruce aroma disappears under the bubbles.',
+      fi: 'Alkoholiton kuohujuoma suomalaisista luomuraaka-aineista, jotta mökillä voi nostaa maljan ilman alkoholia. Tarjoile kylmänä, muuten kuusenkerkän aromi jää kuplien alle.',
+    },
+    priceFrom: 5.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-kaino-spruce-sprout-sparkling',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl:
+      'https://www.ruohonjuuri.fi/products/kaino-drinks-kuusenkerkka-kuohujuoma-02-l',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '0.2 l', fi: '0,2 l' } },
+        {
+          key: 'contents',
+          value: {
+            en: 'Made from 100 % Finnish organic ingredients. Alcohol free',
+            fi: 'Valmistettu 100 % suomalaisista luomuraaka-aineista. Alkoholiton',
+          },
+        },
+        { key: 'origin', value: { en: 'Finland', fi: 'Suomi' } },
+        {
+          key: 'other',
+          label: { en: 'Nutrition per 100 ml', fi: 'Ravintosisältö per 100 ml' },
+          value: {
+            en: 'Energy 122.65 kJ / 29.3 kcal, fat under 0.1 g of which saturates under 0.1 g, carbohydrate 6.9 g of which sugars 6.9 g, protein under 0.1 g, salt under 0.1 g',
+            fi: 'Energia 122,65 kJ / 29,3 kcal, rasva alle 0,1 g josta tyydyttynyttä alle 0,1 g, hiilihydraatit 6,9 g joista sokereita 6,9 g, proteiini alle 0,1 g, suola alle 0,1 g',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Diet and certification', fi: 'Ruokavalio ja sertifiointi' },
+          value: {
+            en: 'Vegan. EU organic leaf',
+            fi: 'Vegaaninen. EU:n lehtimerkki (luomu)',
+          },
+        },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/kaino-drinks-kuusenkerkka-kuohujuoma-02-l',
+      fetchedAt: '2026-08-01',
+    },
+  },
 ]
 
 export function productsByCategory(id: Product['category']): Product[] {
