@@ -9,9 +9,11 @@ import { SHOP_COPY } from '../locales/shopCopy'
  * kauppaan reitittimen Linkillä, eivät ankkuriin saman sivun sisällä.
  *
  * 🔴 Vanha badge, joka lupasi kaupan avautuvan pian, on poistettu. Kauppa on
- * auki, joten lupaus avautumisesta olisi nyt valhe. Samasta syystä ingressi
- * tulee SHOP_COPYsta: ChromeCopyn hero.lead lupaa yhä, että tilata voi vasta
- * myöhemmin ja että ensimmäistä mallistoa vasta kootaan.
+ * auki, joten lupaus avautumisesta olisi nyt valhe. Samasta syystä koko
+ * tekstilohko tulee SHOP_COPYsta: ChromeCopyn hero.lead lupaa yhä, että tilata
+ * voi vasta myöhemmin, ja sen otsikko on "Give a Piece of the Arctic", joka ei
+ * vastaa yhtäkään hakutermiä (Vesa 1.8.). COPYsta luetaan enää nappien tekstit,
+ * jotka ovat käännettyinä kaikilla 12 kielellä.
  *
  * min-h käyttää svh-yksikköä: vh laskee Safarin URL-palkin mukaan ja hero
  * hyppäisi korkeutta kun palkki piiloutuu.
@@ -49,13 +51,30 @@ export default function Hero() {
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 md:py-28">
         <div className="mx-auto max-w-2xl text-center lg:mx-0 lg:text-left">
           <span className="text-sm font-medium uppercase tracking-widest text-amber">
-            {t.kicker}
+            {s.home.heroKicker}
           </span>
           {/* Bebas Neue on kapea versaalifontti: sama pistekoko näyttää
-              selvästi pienemmältä kuin Playfairilla, joten koot on nostettu
-              askeleella. tracking-wide avaa versaalit luettaviksi. */}
-          <h1 className="mt-5 font-heading text-6xl tracking-wide text-white md:text-8xl lg:text-9xl">
-            {t.title} <span className="text-amber">{t.titleAccent}</span>
+              selvästi pienemmältä kuin Playfairilla, joten koot ovat isot.
+              tracking-wide avaa versaalit luettaviksi.
+
+              🔴 Koot on mitoitettu otsikon pituuden mukaan, ei toisin päin.
+              Hakusanaotsikko on 35 merkkiä siinä missä vanha fraasi oli 26,
+              ja tekstilohko on `max-w-2xl` eli 672 px. text-9xl (128 px)
+              katkaisi uuden otsikon kolmelle riville sekä 1440 että 375
+              pikselissä. Nyt rivejä on kaksi ja katkos osuu accentin eteen.
+
+              🔴 Accent on `block`, eli rivinvaihto on pakotettu eikä jätetty
+              rivityksen päätettäväksi. Ilman sitä katkos vaelsi leveyden
+              mukaan: 640–767 pikselissä ensimmäiselle riville mahtui vielä
+              "…and Lapland", jolloin amberia jäi alariville yksi sana. Nyt
+              ylärivi on aina valkoinen ja alarivi aina amber.
+
+              🔴 Pienin koko on clamp eikä porras, koska 48 px riitti 375
+              pikselin ruudulle mutta ei 360:lle eikä 320:lle: suomen
+              "suomalaiset lahjat" katkesi kolmannelle riville yksinäiseksi
+              sanaksi. Mitattu selaimesta kymmenellä leveydellä, ei arvattu. */}
+          <h1 className="mt-5 font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl">
+            {s.home.heroTitle} <span className="block text-amber">{s.home.heroTitleAccent}</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
             {s.home.heroLead}

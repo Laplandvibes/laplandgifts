@@ -21,15 +21,20 @@ import type { Lang } from '../i18n/useLang'
  * kopio, ja generaattorin portti vahtii sitä.
  */
 export const HOME_META: Record<Lang, { title: string; description: string }> = {
+  // 🔴 en ja fi kirjoitettiin uusiksi 1.8.2026 vastaamaan heron h1:tä. Vanha
+  // englanninkielinen otsikko oli 69 merkkiä eli katkesi hakutuloksessa, eikä
+  // kummassakaan lukenut termiä jolla asiaa haetaan ("finnish gifts",
+  // "lapin tuliaiset"). Brändi siirtyi loppuun, jotta hakusana on ensin.
+  // Muut kymmenen otsikkoa ovat käännettyjä ja jäävät ennalleen.
   en: {
-    title: 'LaplandGifts: Finnish design, Lapland crafts and gifts delivered home',
+    title: 'Finnish gifts and Lapland souvenirs | LaplandGifts',
     description:
-      'Curated Finnish design, Lapland handicrafts, treats, superfoods and experience gifts. Order from partner shops that deliver to your home country.',
+      'Moomin and Arabia design, Marttiini puukko knives, Finnish sweets, Arctic berry powders and Lapland experience gifts, from the shops that ship them home.',
   },
   fi: {
-    title: 'LaplandGifts: suomalaista designia ja Lapin käsitöitä kotiin toimitettuna',
+    title: 'Lapin tuliaiset ja suomalaiset lahjat | LaplandGifts',
     description:
-      'Kuratoitua suomalaista designia, Lapin käsitöitä, herkkuja, superfoodeja ja elämyslahjoja. Tilaa kumppanikaupoista kotimaahasi toimitettuna.',
+      'Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka ne lähettävät.',
   },
   de: {
     title: 'LaplandGifts: finnisches Design und Geschenke aus Lappland',

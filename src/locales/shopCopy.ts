@@ -3,15 +3,30 @@ import type { Lang } from '../i18n/useLang'
 export interface ShopCopy {
   nav: { shop: string; guides: string; shipping: string; allProducts: string }
   /**
-   * Etusivun osioiden otsikot.
+   * Etusivun heron ja osioiden otsikot.
    *
    * 🔴 Nämä asuvat täällä eivätkä ChromeCopyssa, koska ChromeCopyn vastaavat
    * rivit kuvaavat kauppaa jota ei vielä ollut: "Three Ways to Gift Lapland"
    * (kategorioita on seitsemän), "Coming Soon" (tuotteet ovat ostettavissa) ja
    * heron "Soon you'll be able to order" (tilata voi nyt). Kauppa on auki,
    * joten vanhat rivit olisivat nyt väärää tietoa.
+   *
+   * 🔴 Heron h1 on hakusanaotsikko, ei copywriter-fraasi. Vanha "Give a Piece
+   * of the Arctic" / "Lahjoita pala Arktista" ei osu yhteenkään termiin jolla
+   * tuliaisia etsitään (Vesa 1.8.). Uusi otsikko sanoo saman kuin
+   * hakukenttään kirjoitetaan: "finnish gifts", "lapland souvenirs",
+   * "lapin tuliaiset", "suomalaiset lahjat".
+   *
+   * 🔴 `heroTitle` + `heroTitleAccent` renderöityvät Bebas Neuella eli
+   * versaalina. Yhteispituus on mitoitettu niin, että rivi katkeaa
+   * `heroTitle`n ja `heroTitleAccent`in väliin: kaksi tasapituista riviä,
+   * joista alempi on amber. Pidempi teksti katkeaa kolmelle riville ja täyttää
+   * mobiiliruudun.
    */
   home: {
+    heroKicker: string
+    heroTitle: string
+    heroTitleAccent: string
     heroLead: string
     categoriesH2: string
     categoriesSub: string
@@ -94,33 +109,36 @@ const fmt = (value: number, currency: string, locale: string) =>
 const en: ShopCopy = {
   nav: { shop: 'Shop', guides: 'Gift guides', shipping: 'Delivery', allProducts: 'All products' },
   home: {
+    heroKicker: 'Ordered on holiday, delivered home',
+    heroTitle: 'Finnish gifts and',
+    heroTitleAccent: 'Lapland souvenirs',
     heroLead:
-      'Order authentic Lapland gifts while you are still on holiday and have them waiting when you get home. Every item ships from the Finnish or Nordic shop that makes or stocks it.',
-    categoriesH2: 'Seven ways to give Lapland',
+      'Order your gifts while you are still on holiday and let them travel home without you. Each product is sold and shipped by a Finnish or Nordic shop, not by us, and the parcel goes to the country you live in.',
+    categoriesH2: 'What to buy in Lapland',
     categoriesSub:
-      'Design, clothing, handicrafts, treats, superfoods, our own merch and experience gifts. Each category opens the shop that actually ships the item.',
-    featuredH2: 'Picked from the catalogue',
+      'Finnish design, clothing, handicrafts, sweets, berry powders, our own merch and experience gifts. Each category opens the shop that actually ships the item.',
+    featuredH2: 'Gifts and souvenirs from partner shops',
     featuredSub:
       'A few products from across the categories. Every price is read from the partner shop and carries the date it was checked.',
   },
   category: {
     names: {
-      design: 'Finnish design',
-      clothing: 'Clothing and accessories',
+      design: 'Finnish design gifts',
+      clothing: 'Finnish clothing and knitwear',
       handicrafts: 'Lapland handicrafts',
-      treats: 'Treats',
-      superfoods: 'Superfoods and wellbeing',
-      merch: 'LaplandVibes merch',
-      experiences: 'Experience gifts',
+      treats: 'Finnish sweets and food gifts',
+      superfoods: 'Arctic berry powders and superfoods',
+      merch: 'Lapland T-shirts and merch',
+      experiences: 'Lapland experience gifts',
     },
     intro: {
-      design: 'Marimekko, Iittala, Arabia and the rest of the shelf Finns actually own. Every item ships from a Finnish or Nordic shop.',
-      clothing: 'Merino knitwear from Oulu, Helsinki streetwear and winter gear built for the cold you just experienced.',
-      handicrafts: 'Puukko knives, kuksa cups and Sami work from authorised sellers only.',
-      treats: 'Salmiakki, cloudberry jam, chocolate and dried reindeer. Food rules differ by country, so check the delivery note on each card.',
-      superfoods: 'Bilberry and lingonberry powders, chaga, sea buckthorn and Nordic natural cosmetics.',
-      merch: 'Our own #LAPLANDVIBES shirts, hoodies, caps and neck gaiters, printed on demand and shipped from the EU or the US.',
-      experiences: 'Aurora hunts, husky rides and reindeer farms, bought as a gift and booked when the recipient chooses.',
+      design: 'Moomin mugs, Arabia tumblers and wool throws: the Finnish design that actually travels home. Every item ships from the Finnish or Nordic shop that sells it.',
+      clothing: 'Makia streetwear from Helsinki, merino beanies and Halti shell jackets built for the cold you just walked through.',
+      handicrafts: 'Marttiini puukko knives from Rovaniemi, the Lapland handicraft that gets used rather than shelved. From authorised sellers only.',
+      treats: 'Finnish sweets and food gifts: salmiakki, reindeer jerky and sea buckthorn jam. Import rules differ by country, so check the delivery note on each card.',
+      superfoods: 'Arctic wild blueberry and sea buckthorn powders and chaga extract from Finnish producers.',
+      merch: 'Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US.',
+      experiences: 'Northern lights tours, husky sledding and Santa Claus Village, bought as a gift now and booked when the recipient picks a date.',
     },
     productCount: (n) => (n === 1 ? '1 product' : `${n} products`),
     emptyCategory:
@@ -169,33 +187,36 @@ const en: ShopCopy = {
 const fi: ShopCopy = {
   nav: { shop: 'Kauppa', guides: 'Lahjaoppaat', shipping: 'Toimitus', allProducts: 'Kaikki tuotteet' },
   home: {
+    heroKicker: 'Tilattu lomalla, toimitettu kotiin',
+    heroTitle: 'Lapin tuliaiset ja',
+    heroTitleAccent: 'suomalaiset lahjat',
     heroLead:
-      'Tilaa aitoja Lapin lahjoja jo lomalla ja anna niiden odottaa kotona, kun palaat. Jokainen tuote lähtee siitä suomalaisesta tai pohjoismaisesta kaupasta, joka sen valmistaa tai varastoi.',
-    categoriesH2: 'Seitsemän tapaa lahjoittaa Lappia',
+      'Tilaa tuliaiset jo lomalla ja anna niiden matkustaa kotiin ilman sinua. Jokaisen tuotteen myy ja lähettää suomalainen tai pohjoismainen kauppa, emme me, ja paketti tulee kotimaahasi.',
+    categoriesH2: 'Mitä Lapista kannattaa ostaa',
     categoriesSub:
-      'Design, vaatteet, käsityöt, herkut, superfoodit, oma merch ja elämyslahjat. Jokainen kategoria avaa sen kaupan, joka tuotteen oikeasti lähettää.',
-    featuredH2: 'Poimintoja katalogista',
+      'Suomalaista designia, vaatteita, käsitöitä, herkkuja, marjajauheita, omaa merchiä ja elämyslahjoja. Jokainen kategoria avaa sen kaupan, joka tuotteen oikeasti lähettää.',
+    featuredH2: 'Tuliaisia ja lahjoja kumppanikaupoista',
     featuredSub:
       'Muutama tuote eri kategorioista. Jokainen hinta on luettu kumppanin kaupasta ja kantaa päivän, jona se tarkistettiin.',
   },
   category: {
     names: {
       design: 'Suomalainen design',
-      clothing: 'Vaatteet ja asusteet',
+      clothing: 'Suomalaiset vaatteet ja neuleet',
       handicrafts: 'Lapin käsityöt',
-      treats: 'Herkut',
-      superfoods: 'Superfoodit ja hyvinvointi',
-      merch: 'LaplandVibes-merch',
-      experiences: 'Elämyslahjat',
+      treats: 'Suomalaiset herkut',
+      superfoods: 'Marjajauheet ja superfoodit',
+      merch: 'Lapland-paidat ja merch',
+      experiences: 'Lapin elämyslahjat',
     },
     intro: {
-      design: 'Marimekko, Iittala, Arabia ja loput siitä hyllystä, joka suomalaisilta oikeasti löytyy. Jokainen tuote lähtee suomalaisesta tai pohjoismaisesta kaupasta.',
-      clothing: 'Merinoneuleita Oulusta, helsinkiläistä streetwearia ja talvivaatteita siihen pakkaseen, jonka juuri koit.',
-      handicrafts: 'Puukkoja, kuksia ja saamelaista käsityötä vain auktorisoiduilta myyjiltä.',
-      treats: 'Salmiakkia, lakkahilloa, suklaata ja poron kuivalihaa. Elintarvikkeiden tuontisäännöt vaihtelevat maittain, joten tarkista toimitusmerkintä kortista.',
-      superfoods: 'Mustikka- ja puolukkajauheita, pakuria, tyrniä ja pohjoista luonnonkosmetiikkaa.',
-      merch: 'Oma #LAPLANDVIBES-mallisto: paidat, hupparit, lippikset ja tuubihuivit, painetaan tilauksesta ja lähetetään EU:sta tai Yhdysvalloista.',
-      experiences: 'Revontuliretkiä, huskyajeluja ja porotiloja lahjaksi ostettuna, varattavaksi silloin kun saaja itse valitsee.',
+      design: 'Muumimukeja, Arabian laseja ja villatorkkupeittoja: sitä suomalaista designia, joka oikeasti lähtee matkaan. Jokainen tuote lähtee siitä kaupasta, joka sen myy.',
+      clothing: 'Makian helsinkiläistä streetweariä, merinopipoja ja Haltin kuoritakkeja siihen pakkaseen, jonka juuri koit.',
+      handicrafts: 'Marttiinin puukkoja Rovaniemeltä: Lapin käsityötä, joka kuluu käytössä eikä hyllyllä. Vain auktorisoiduilta myyjiltä.',
+      treats: 'Suomalaisia herkkuja: salmiakkia, poron kuivalihaa ja tyrnihilloa. Tuontisäännöt vaihtelevat maittain, joten tarkista toimitusmerkintä kortista.',
+      superfoods: 'Arktista luonnonmustikka- ja tyrnijauhetta sekä pakuriuutetta suomalaisilta tuottajilta.',
+      merch: 'Lapland-paitoja, huppareita, lippiksiä ja tuubihuiveja omalla #LAPLANDVIBES-painatuksella, tehdään tilauksesta ja lähetetään EU:sta tai Yhdysvalloista.',
+      experiences: 'Revontuliretkiä, huskysafareita ja Joulupukin Pajakylää lahjaksi ostettuna, varattavaksi silloin, kun saaja itse valitsee päivän.',
     },
     productCount: (n) => (n === 1 ? '1 tuote' : `${n} tuotetta`),
     emptyCategory:

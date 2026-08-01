@@ -6,8 +6,9 @@ import type { CategoryId } from '../data/types'
  * vain navigaatiota ja `shopCopy` on samaan aikaan toisen työn alla.
  *
  * 🔴 Miksi kategorioilla on erikseen lyhyt navinimi: `shopCopy.category.names`
- * on sivun otsikkoteksti ("Clothing and accessories", "Superfoods and
- * wellbeing"). Seitsemän sellaista riviä vie luonnollisena leveytenä yli 1000
+ * on sivun otsikkoteksti ja samalla hakusanaotsikko ("Finnish clothing and
+ * knitwear", "Arctic berry powders and superfoods"). Seitsemän sellaista riviä
+ * vie luonnollisena leveytenä yli 1000
  * pikseliä, joten logon kanssa samalle riville ne eivät mahdu 1280 pikselin
  * näytöllä, ja vanha navi ratkaisi sen ahtaalla toisella rivillä. Navilinkki
  * tarvitsee vain kategorian pääsanan; koko nimi näkyy yhä kategoriasivun
@@ -35,7 +36,9 @@ const en: NavCopy = {
     design: 'Design',
     clothing: 'Clothing',
     handicrafts: 'Handicrafts',
-    treats: 'Treats',
+    // Kategorian koko nimi on nyt "Finnish sweets and food gifts", joten
+    // lyhyt navinimi on sen pääsana "Sweets" eikä enää vanha "Treats".
+    treats: 'Sweets',
     superfoods: 'Superfoods',
     merch: 'Merch',
     experiences: 'Experiences',
