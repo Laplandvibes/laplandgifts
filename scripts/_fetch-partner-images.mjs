@@ -80,6 +80,28 @@ const JOBS = [
     'aarikka-pore-glass-vase',
     'https://cdn.shopify.com/s/files/1/1295/6161/files/WEB_B08706_PORE_LASIMALJAKKO_PIENI_U999.jpg?width=1200',
   ],
+
+  // ── clothing, erä 2026-08-01 ──────────────────────────────────────────────
+  [
+    'halti-kroka-mitten',
+    'https://halti.com/cdn/shop/files/0840757_P99_KrokaIImitten_main.jpg?v=1765356553&width=1200',
+  ],
+  [
+    'halti-tunturit-ski-socks',
+    'https://halti.com/cdn/shop/files/0870471_G36_Tunturitskisocks_main.jpg?v=1761286168&width=1200',
+  ],
+  [
+    'north-outdoor-huuru-beanie',
+    'https://northoutdoor.com/cdn/shop/files/N34232B13_northoutdoor-merino-wool_1_ee0e51f2-e42d-401b-b7ab-1320fc18c618.png?v=1764006119&width=1200',
+  ],
+  [
+    'north-outdoor-pyry-scarf',
+    'https://northoutdoor.com/cdn/shop/files/N34507G03_northoutdoor-merino-wool-clothing_1.png?v=1754408704&width=1200',
+  ],
+  [
+    'north-outdoor-honka-jumper',
+    'https://northoutdoor.com/cdn/shop/files/N11733B13_northoutdoor-merino-wool-clothing-m12_1.jpg?v=1754412687&width=1200',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

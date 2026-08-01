@@ -102,7 +102,23 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-kroka-mitten": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-tokoi-dx-jacket": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-tunturit-ski-socks": {
     "full": 800,
     "w": [
       320,
@@ -254,6 +270,30 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-moomin-mystical-forest-wool-throw": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-north-outdoor-honka-jumper": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-north-outdoor-huuru-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-north-outdoor-pyry-scarf": {
     "full": 800,
     "w": [
       320,

@@ -609,6 +609,273 @@ export const PRODUCTS: Product[] = [
     },
   },
 
+  {
+    slug: 'halti-kroka-mitten',
+    category: 'clothing',
+    brand: 'Halti',
+    name: {
+      en: 'Halti Kroka II mitten',
+      fi: 'Halti Kroka II -lapanen',
+    },
+    description: {
+      en: 'A windproof mitten with 60 g insulation and a silicone grip palm, cut unisex. Mittens beat gloves when the wind picks up, because the fingers keep each other warm.',
+      fi: 'Tuulenpitävä lapanen, jossa on 60 gramman täyte ja silikonipito kämmenessä, unisex-leikkaus. Lapanen voittaa sormikkaan kun tuuli nousee, koska sormet lämmittävät toisiaan.',
+    },
+    priceFrom: 30,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-halti-kroka-mitten',
+    imageIsPartner: true,
+    partnerId: 'halti',
+    partnerProductUrl: 'https://halti.com/products/kroka-ii-mitten',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: 'Stormwall softshell, 50 % polyester and 50 % recycled polyester. Soft fleece 100 % polyester. Lycra knit cuffs',
+            fi: 'Stormwall-softshell, 50 % polyesteriä ja 50 % kierrätyspolyesteriä. Pehmeä fleece 100 % polyesteriä. Lycra-neuleiset resorit',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Insulation and lining', fi: 'Täyte ja vuori' },
+          value: {
+            en: 'Microtherm Dynamic 60 g, lining Active Dry soft touch knit, 100 % recycled polyester',
+            fi: 'Microtherm Dynamic 60 g, vuori Active Dry soft touch -neulos, 100 % kierrätyspolyesteriä',
+          },
+        },
+        { key: 'weight', value: { en: '0.1 kg', fi: '0,1 kg' } },
+        { key: 'size', value: { en: '06, 07, 08, 09, 10, 11, 12', fi: '06, 07, 08, 09, 10, 11, 12' } },
+        { key: 'color', value: { en: 'Black', fi: 'Musta' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Wash separately at 30 °C on a mild cycle. Do not bleach, tumble dry, iron or dry clean',
+            fi: 'Pese erikseen 30 °C miedolla ohjelmalla. Ei valkaisua, ei rumpukuivausta, ei silitystä, ei kuivapesua',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Product number', fi: 'Tuotenumero' },
+          value: { en: '084-0757', fi: '084-0757' },
+        },
+      ],
+      sourceUrl: 'https://halti.com/products/kroka-ii-mitten',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'halti-tunturit-ski-socks',
+    category: 'clothing',
+    brand: 'Halti',
+    name: {
+      en: 'Halti Tunturit ski socks',
+      fi: 'Halti Tunturit -hiihtosukat',
+    },
+    description: {
+      en: 'Knee-high merino blend socks with padding at the shin and ankle, the parts a ski boot presses on. Halti states they are made in Europe.',
+      fi: 'Polvipituiset merinosekoitesukat, joissa on pehmuste säären ja nilkan kohdalla eli siellä missä monosuu painaa. Halti ilmoittaa ne valmistetuksi Euroopassa.',
+    },
+    priceFrom: 25,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-halti-tunturit-ski-socks',
+    imageIsPartner: true,
+    partnerId: 'halti',
+    partnerProductUrl: 'https://halti.com/products/tunturit-ski-socks',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: 'Merino wool mix: 36 % polyamide, 23 % acrylic, 23 % merino wool, 16 % polypropylene, 2 % elastane',
+            fi: 'Merinovillasekoite: 36 % polyamidia, 23 % akryyliä, 23 % merinovillaa, 16 % polypropeenia, 2 % elastaania',
+          },
+        },
+        { key: 'weight', value: { en: '0.1 kg', fi: '0,1 kg' } },
+        { key: 'size', value: { en: '34-36, 37-39, 40-42, 43-45, 46-48', fi: '34-36, 37-39, 40-42, 43-45, 46-48' } },
+        {
+          key: 'color',
+          value: {
+            en: 'Sargasso Sea Blue, Lemon Pepper Beige',
+            fi: 'Sargasso Sea Blue, Lemon Pepper Beige',
+          },
+        },
+        { key: 'origin', value: { en: 'Made in Europe', fi: 'Valmistettu Euroopassa' } },
+        {
+          key: 'other',
+          label: { en: 'Features', fi: 'Ominaisuudet' },
+          value: {
+            en: 'Shin and ankle cushioning, knee-high length, reinforced heel and toe, ventilation zones in the shin and back foot',
+            fi: 'Pehmuste säärellä ja nilkassa, polvipituus, vahvistettu kantapää ja kärki, tuuletusalueet säärellä ja jalkaterän takaosassa',
+          },
+        },
+        {
+          key: 'care',
+          value: {
+            en: 'Maximum 40 °C, normal process. Do not iron, bleach, dry clean or tumble dry',
+            fi: 'Enintään 40 °C, normaali pesu. Ei silitystä, ei valkaisua, ei kuivapesua, ei rumpukuivausta',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Product number', fi: 'Tuotenumero' },
+          value: { en: '087-0471', fi: '087-0471' },
+        },
+      ],
+      sourceUrl: 'https://halti.com/products/tunturit-ski-socks',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'north-outdoor-huuru-beanie',
+    category: 'clothing',
+    brand: 'North Outdoor',
+    name: {
+      en: 'North Outdoor Huuru merino beanie',
+      fi: 'North Outdoor Huuru -merinopipo',
+    },
+    description: {
+      en: 'North Outdoor knits this rib beanie in its own knitting mill in Oulu from 100 per cent mulesing free merino, 18.5 micron. Knitted to shape rather than cut, so there is little offcut waste.',
+      fi: 'North Outdoor neuloo tämän ribbipipon omassa neulomossaan Oulussa 100-prosenttisesta mulesing-vapaasta merinovillasta, mikroni 18,5. Neulotaan suoraan muotoonsa eikä leikata, joten hukkapaloja syntyy vähän.',
+    },
+    priceFrom: 49.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-north-outdoor-huuru-beanie',
+    imageIsPartner: true,
+    partnerId: 'northoutdoor',
+    partnerProductUrl: 'https://northoutdoor.com/products/huuru-merinopipo-indigonsininen',
+    featured: true,
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '100 % merino wool, mulesing free, 18.5 micron, knit 270 g/m²',
+            fi: '100 % merinovillaa, mulesing-vapaa, mikroni 18,5, neulos 270 g/m²',
+          },
+        },
+        { key: 'size', value: { en: 'One size', fi: 'Yksi koko' } },
+        { key: 'color', value: { en: 'Indigo blue', fi: 'Indigonsininen' } },
+        { key: 'origin', value: { en: 'Made in Oulu, Finland', fi: 'Valmistettu Oulussa, Suomessa' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Air it regularly and wash only when needed. Wool detergent, gentle cycle at 30 °C with the lightest spin, inside out',
+            fi: 'Tuuleta säännöllisesti ja pese vain tarvittaessa. Villapesuaine, hienopesu 30 asteessa kevyimmällä linkouksella, nurinpäin',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Certificates', fi: 'Sertifikaatit' },
+          value: { en: 'OEKO-TEX, Woolmark', fi: 'OEKO-TEX, Woolmark' },
+        },
+      ],
+      sourceUrl: 'https://northoutdoor.com/products/huuru-merinopipo-indigonsininen',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'north-outdoor-pyry-scarf',
+    category: 'clothing',
+    brand: 'North Outdoor',
+    name: {
+      en: 'North Outdoor Pyry merino scarf',
+      fi: 'North Outdoor Pyry -merinokaulaliina',
+    },
+    description: {
+      en: 'A wide, long brioche knit scarf in 100 per cent merino, knitted in Oulu. Long enough to wrap several ways, which matters when the wind changes direction on an open fell.',
+      fi: 'Leveä ja pitkä patenttineulottu kaulaliina 100-prosenttisesta merinovillasta, neulottu Oulussa. Riittävän pitkä kiedottavaksi monella tavalla, millä on väliä kun tuuli kääntää suuntaa aukealla tunturilla.',
+    },
+    priceFrom: 79.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-north-outdoor-pyry-scarf',
+    imageIsPartner: true,
+    partnerId: 'northoutdoor',
+    partnerProductUrl: 'https://northoutdoor.com/products/pyry-merino-kaulaliina-puuronharmaa',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '100 % merino wool, 18.5 micron, 1/1 rib knit',
+            fi: '100 % merinovillaa, mikroni 18,5, 1/1 ribbineulos',
+          },
+        },
+        { key: 'size', value: { en: 'One size', fi: 'Yksi koko' } },
+        { key: 'color', value: { en: 'Porridge grey', fi: 'Puuronharmaa' } },
+        { key: 'origin', value: { en: 'Made in Oulu, Finland', fi: 'Valmistettu Oulussa, Suomessa' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Air it regularly and wash only when needed. Wool detergent, gentle cycle at 30 °C with the lightest spin, inside out',
+            fi: 'Tuuleta säännöllisesti ja pese vain tarvittaessa. Villapesuaine, hienopesu 30 asteessa kevyimmällä linkouksella, nurinpäin',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Certificates', fi: 'Sertifikaatit' },
+          value: { en: 'OEKO-TEX, Woolmark', fi: 'OEKO-TEX, Woolmark' },
+        },
+      ],
+      sourceUrl: 'https://northoutdoor.com/products/pyry-merino-kaulaliina-puuronharmaa',
+      fetchedAt: '2026-08-01',
+    },
+  },
+  {
+    slug: 'north-outdoor-honka-jumper',
+    category: 'clothing',
+    brand: 'North Outdoor',
+    name: {
+      en: "North Outdoor Honka merino jumper, men's",
+      fi: 'North Outdoor Honka -merinoneulepusero, miesten',
+    },
+    description: {
+      en: 'A thick brioche knit jumper in 100 per cent merino with a relaxed cut and a dropped shoulder line. Heavy to look at, light to wear, and knitted in the Oulu mill.',
+      fi: 'Paksu patenttineulottu villapaita 100-prosenttisesta merinovillasta, rento mitoitus ja korostettu hartialinja. Näyttää painavalta mutta on kevyt päällä, neulottu Oulun neulomossa.',
+    },
+    priceFrom: 159.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-01',
+    image: 'prod-north-outdoor-honka-jumper',
+    imageIsPartner: true,
+    partnerId: 'northoutdoor',
+    partnerProductUrl:
+      'https://northoutdoor.com/products/honka-miesten-merinoneulepusero-indigonsininen',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '100 % merino wool, mulesing free, 18.5 micron, varying rib knit',
+            fi: '100 % merinovillaa, mulesing-vapaa, mikroni 18,5, vaihteleva ribbineulos',
+          },
+        },
+        { key: 'size', value: { en: 'S, M, L, XL, 2XL, 3XL', fi: 'S, M, L, XL, 2XL, 3XL' } },
+        { key: 'color', value: { en: 'Indigo blue', fi: 'Indigonsininen' } },
+        { key: 'origin', value: { en: 'Made in Oulu, Finland', fi: 'Valmistettu Oulussa, Suomessa' } },
+        {
+          key: 'care',
+          value: {
+            en: 'Air it regularly and wash only when needed. Wool detergent, gentle cycle at 30 °C with the lightest spin, inside out',
+            fi: 'Tuuleta säännöllisesti ja pese vain tarvittaessa. Villapesuaine, hienopesu 30 asteessa kevyimmällä linkouksella, nurinpäin',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Certificates', fi: 'Sertifikaatit' },
+          value: { en: 'OEKO-TEX, Woolmark', fi: 'OEKO-TEX, Woolmark' },
+        },
+      ],
+      sourceUrl:
+        'https://northoutdoor.com/products/honka-miesten-merinoneulepusero-indigonsininen',
+      fetchedAt: '2026-08-01',
+    },
+  },
+
   // ── handicrafts ───────────────────────────────────────────────────────────
   {
     slug: 'marttiini-lapinleuku-255',

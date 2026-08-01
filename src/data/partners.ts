@@ -42,6 +42,18 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'worldwide',
     verifiedAt: '2026-07-31',
   },
+  northoutdoor: {
+    id: 'northoutdoor',
+    name: 'North Outdoor',
+    network: 'direct',
+    baseUrl: 'https://northoutdoor.com',
+    // Toimituskäytäntö 1.8.2026: "Suomeen (sis. Ahvenanmaa), Pohjoismaihin,
+    // Baltiaan sekä laajasti muualle Euroopan unioniin". Norja mainitaan
+    // esimerkkinä EU:n ulkopuolisesta kohteesta, mutta maailmanlaajuista
+    // toimitusta ei luvata.
+    shipsTo: 'eu',
+    verifiedAt: '2026-08-01',
+  },
   nordicnest: {
     id: 'nordicnest',
     name: 'Nordic Nest',
