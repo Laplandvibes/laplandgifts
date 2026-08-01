@@ -69,6 +69,25 @@ export interface ShopCopy {
   }
 }
 
+/**
+ * Kiinteät muuntokurssit euroon. Osa kumppaneista hinnoittelee muussa
+ * valuutassa (Arctic Power Berries lähettää Britanniasta ja veloittaa punnissa),
+ * ja pelkkä punta on suomalaisessa lahjakaupassa hämmentävä. Emme kuitenkaan
+ * saa esittää euroa lopullisena hintana: asiakasta veloitetaan kumppanin
+ * valuutassa. Siksi kortti näyttää kumppanin valuutan ja sen rinnalla
+ * likimääräisen euromäärän, joka on merkitty arvioksi ja päivätty.
+ * Päivitä kurssit ja päivä kun ne ovat selvästi vanhentuneet.
+ */
+export const FX_TO_EUR: Record<string, number> = { EUR: 1, GBP: 1.17, USD: 0.92 }
+export const FX_AS_OF = '2026-07-31'
+
+/** Likimääräinen euromäärä, tai null jos hinta on jo euroissa. */
+export function approxEur(value: number, currency: string): number | null {
+  if (currency === 'EUR') return null
+  const rate = FX_TO_EUR[currency]
+  return rate ? Math.round(value * rate) : null
+}
+
 const fmt = (value: number, currency: string, locale: string) =>
   new Intl.NumberFormat(locale, { style: 'currency', currency, maximumFractionDigits: 0 }).format(value)
 
@@ -110,7 +129,10 @@ const en: ShopCopy = {
   },
   product: {
     buyAt: (partner) => `Buy at ${partner}`,
-    priceFrom: (value, currency) => `from ${fmt(value, currency, 'en-GB')}`,
+    priceFrom: (value, currency) => {
+      const eur = approxEur(value, currency)
+      return eur ? `from ${fmt(value, currency, 'en-GB')} (about ${eur} €)` : `from ${fmt(value, currency, 'en-GB')}`
+    },
     priceNote: (date, partner) => `Price read from ${partner} on ${date}. The shop sets the final price.`,
     checkoutNote: 'You complete the purchase in the partner shop. We do not handle your payment or delivery.',
     illustrativeImage: 'Illustrative photo, not the exact item. See the product photos on the partner’s page.',
@@ -182,7 +204,10 @@ const fi: ShopCopy = {
   },
   product: {
     buyAt: (partner) => `Osta: ${partner}`,
-    priceFrom: (value, currency) => `alk. ${fmt(value, currency, 'fi-FI')}`,
+    priceFrom: (value, currency) => {
+      const eur = approxEur(value, currency)
+      return eur ? `alk. ${fmt(value, currency, 'fi-FI')} (noin ${eur} €)` : `alk. ${fmt(value, currency, 'fi-FI')}`
+    },
     priceNote: (date, partner) => `Hinta luettu kumppanin ${partner} sivulta ${date}. Lopullisen hinnan määrittää kauppa.`,
     checkoutNote: 'Viimeistelet ostoksen kumppanin kaupassa. Me emme käsittele maksua emmekä toimitusta.',
     illustrativeImage: 'Kuva on tunnelmakuva, ei kuva juuri tästä tuotteesta. Tuotteen omat kuvat ovat kumppanin sivulla.',
