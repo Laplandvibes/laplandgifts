@@ -70,6 +70,31 @@ export interface ShopCopy {
      * tapahtuu vasta kumppanin kaupassa tuotesivun kautta.
      */
     viewProduct: string
+    /**
+     * Tuotetieto-osio. Renderöityy vain jos tuotteella on `details`.
+     *
+     * 🔴 Vesa 1.8.: "kyllä näissä pitää olla tuotetiedot, sisältötiedot
+     * ruuissa kopioitu sivustoilta, mitä materiaalia jne". Kauppa joka ei
+     * kerro materiaalia, kokoa eikä elintarvikkeen ainesosia ei ole kauppa.
+     */
+    detailsH2: string
+    /** Vakioavainten otsikot. 'other' tuo otsikkonsa itse. */
+    specLabels: Record<
+      'material' | 'size' | 'weight' | 'volume' | 'origin' | 'contents' | 'color' | 'care' | 'shelfLife',
+      string
+    >
+    ingredientsH3: string
+    allergensH3: string
+    /**
+     * Lähdemerkintä tuotetiedoille.
+     *
+     * 🔴 Suomeksi ei "kumppanin {nimi} sivulta": appositio ei taivu
+     * postposition jälkeen luontevasti, ja brändinimen taivutus menee helposti
+     * väärin (Makia → Makian, mutta Halti → Haltin, Marttiini → Marttiinin).
+     * Kaksoispistemuoto välttää taivutuksen kokonaan ja on sama kuvamerkinnän
+     * kanssa ("Tuotekuva: Makia").
+     */
+    detailsSource: (partner: string, date: string) => string
   }
   /** Elämyslahjat tulevat GYG-katalogista, eivät PRODUCTS-listasta. */
   experience: {
@@ -182,6 +207,21 @@ const en: ShopCopy = {
     related: 'More from this category',
     backToCategory: 'Back to category',
     viewProduct: 'View product',
+    detailsH2: 'Product details',
+    specLabels: {
+      material: 'Material',
+      size: 'Size',
+      weight: 'Weight',
+      volume: 'Volume',
+      origin: 'Origin',
+      contents: 'Contents',
+      color: 'Colour',
+      care: 'Care',
+      shelfLife: 'Shelf life',
+    },
+    ingredientsH3: 'Ingredients',
+    allergensH3: 'Allergens',
+    detailsSource: (partner, date) => `Details from ${partner}, read ${date}`,
   },
   experience: {
     priceNote: (price, asOf) => `From ${price} on GetYourGuide, price read ${asOf}`,
@@ -263,6 +303,21 @@ const fi: ShopCopy = {
     related: 'Lisää tästä kategoriasta',
     backToCategory: 'Takaisin kategoriaan',
     viewProduct: 'Katso tuote',
+    detailsH2: 'Tuotetiedot',
+    specLabels: {
+      material: 'Materiaali',
+      size: 'Koko',
+      weight: 'Paino',
+      volume: 'Tilavuus',
+      origin: 'Alkuperä',
+      contents: 'Sisältö',
+      color: 'Väri',
+      care: 'Hoito-ohje',
+      shelfLife: 'Säilyvyys',
+    },
+    ingredientsH3: 'Ainesosat',
+    allergensH3: 'Allergeenit',
+    detailsSource: (partner, date) => `Tuotetiedot: ${partner}, luettu ${date}`,
   },
   experience: {
     priceNote: (price, asOf) => `Alkaen ${price} GetYourGuidessa, hinta luettu ${asOf}`,

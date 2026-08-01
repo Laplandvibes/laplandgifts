@@ -89,3 +89,117 @@ describe('katalogin eheys', () => {
     expect(new Set(CATEGORIES.map((c) => c.slug)).size).toBe(7)
   })
 })
+
+/**
+ * Tuotetiedot on luettu kumppanin sivulta, ei keksitty. Nämä testit eivät voi
+ * todistaa ettei arvoa ole keksitty, mutta ne kiinnittävät sen mikä on
+ * koneellisesti tarkistettavissa: lähde osoittaa samaan kauppaan josta ostetaan,
+ * molemmat kieliversiot ovat olemassa, eikä käännös muuta lukuja.
+ */
+describe('tuotetiedot', () => {
+  const withDetails = PRODUCTS.filter((p) => p.details)
+
+  /**
+   * Numerot arvosta vertailukelpoisessa muodossa. Suomi kirjoittaa desimaalin
+   * pilkulla ("14,2 g") ja englanti pisteellä ("14.2 g"), joten pilkku
+   * normalisoidaan pisteeksi ennen vertailua. Kaikki muu eroavuus on virhe:
+   * juuri tämä testi estää sen, että 27 cm muuttuu käännöksessä 25 cm:ksi.
+   */
+  const numbersIn = (s: string) =>
+    (s.match(/\d+(?:[.,]\d+)?/g) ?? []).map((n) => n.replace(',', '.'))
+
+  const bilingual = (p: (typeof PRODUCTS)[number]) => {
+    const d = p.details!
+    const rows: Array<[string, { en: string; fi: string }]> = d.specs.map((s, i) => [
+      `${p.slug} spec[${i}] ${s.key}`,
+      s.value,
+    ])
+    if (d.ingredients) rows.push([`${p.slug} ingredients`, d.ingredients])
+    if (d.allergens) rows.push([`${p.slug} allergens`, d.allergens])
+    return rows
+  }
+
+  it('jokaisella details-lohkolla on lähde kumppanin omassa domainissa', () => {
+    for (const p of withDetails) {
+      const partner = PARTNERS[p.partnerId]
+      const sourceHost = new URL(p.details!.sourceUrl).host
+      const productHost = new URL(p.partnerProductUrl).host
+      const base = new URL(partner.baseUrl).host.replace(/^www\./, '')
+      expect(sourceHost.endsWith(base), `${p.slug}: lähde ${sourceHost} ei ole ${base}`).toBe(true)
+      expect(
+        sourceHost,
+        `${p.slug}: lähde on eri kaupasta kuin ostolinkki`,
+      ).toBe(productHost)
+    }
+  })
+
+  it('fetchedAt on ISO-päivä', () => {
+    for (const p of withDetails) {
+      expect(p.details!.fetchedAt, p.slug).toMatch(/^\d{4}-\d{2}-\d{2}$/)
+      expect(Number.isNaN(Date.parse(p.details!.fetchedAt)), p.slug).toBe(false)
+    }
+  })
+
+  it('jokaisella tuotetietorivillä on sekä en että fi, kumpikaan ei tyhjä', () => {
+    for (const p of withDetails) {
+      expect(p.details!.specs.length, `${p.slug}: tyhjä spec-lista`).toBeGreaterThan(0)
+      for (const [where, value] of bilingual(p)) {
+        expect(value.en.trim().length, `${where}: en puuttuu`).toBeGreaterThan(0)
+        expect(value.fi.trim().length, `${where}: fi puuttuu`).toBeGreaterThan(0)
+      }
+    }
+  })
+
+  it("key 'other' vaatii labelin, muut avaimet eivät saa sitä käyttää", () => {
+    for (const p of withDetails) {
+      for (const [i, spec] of p.details!.specs.entries()) {
+        if (spec.key === 'other') {
+          expect(spec.label, `${p.slug} spec[${i}]: 'other' ilman labelia`).toBeDefined()
+          expect(spec.label!.en.trim().length, `${p.slug} spec[${i}]: label.en tyhjä`).toBeGreaterThan(0)
+          expect(spec.label!.fi.trim().length, `${p.slug} spec[${i}]: label.fi tyhjä`).toBeGreaterThan(0)
+        } else {
+          expect(spec.label, `${p.slug} spec[${i}]: ${spec.key} ei saa omaa labelia`).toBeUndefined()
+        }
+      }
+    }
+  })
+
+  it('tuotetiedoissa ei ole em-viivoja eikä kiellettyjä sanoja', () => {
+    const banned = /stunning|breathtaking|world-class|magical/i
+    for (const p of withDetails) {
+      const texts = bilingual(p).flatMap(([where, v]) => [
+        [where + ' en', v.en] as const,
+        [where + ' fi', v.fi] as const,
+      ])
+      for (const spec of p.details!.specs) {
+        if (spec.label) texts.push([`${p.slug} label en`, spec.label.en], [`${p.slug} label fi`, spec.label.fi])
+      }
+      for (const [where, text] of texts) {
+        expect(text.includes('—'), `${where}: em-viiva`).toBe(false)
+        expect(banned.test(text), `${where}: kielletty sana`).toBe(false)
+      }
+    }
+  })
+
+  it('numerot täsmäävät kieliversioiden välillä', () => {
+    for (const p of withDetails) {
+      for (const [where, value] of bilingual(p)) {
+        expect(numbersIn(value.fi), `${where}: luvut eroavat kieliversioiden välillä`).toEqual(
+          numbersIn(value.en),
+        )
+      }
+    }
+  })
+
+  it('elintarvikkeiden ainesosat ja allergeenit ovat kaksikielisiä pareja', () => {
+    // Kenttä saa puuttua (kumppani ei ilmoita), mutta ei saa olla puolikas.
+    for (const p of withDetails) {
+      for (const field of ['ingredients', 'allergens'] as const) {
+        const v = p.details![field]
+        if (!v) continue
+        expect(typeof v.en, `${p.slug}.${field}.en`).toBe('string')
+        expect(typeof v.fi, `${p.slug}.${field}.fi`).toBe('string')
+      }
+    }
+  })
+})

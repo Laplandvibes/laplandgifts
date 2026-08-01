@@ -29,8 +29,11 @@ export default function Product() {
 
   const partner = PARTNERS[product.partnerId]
   const category = categoryById(product.category)
-  const name = lang === 'fi' ? product.name.fi : product.name.en
-  const description = lang === 'fi' ? product.description.fi : product.description.en
+  /** Kaksikielinen kenttä nykyisellä kielellä. Muut kielet saavat englannin. */
+  const pick = (v: { en: string; fi: string }) => (lang === 'fi' ? v.fi : v.en)
+  const name = pick(product.name)
+  const description = pick(product.description)
+  const details = product.details
   const related = productsByCategory(product.category)
     .filter((p) => p.slug !== product.slug)
     .slice(0, 4)
@@ -106,6 +109,61 @@ export default function Product() {
 
               <BuyButton product={product} sid="gifts_product_cta" lang={lang} />
               <p className="text-sm text-muted">{t.product.checkoutNote}</p>
+
+              {/* Tuotetiedot ostonapin alla. Osio puuttuu kokonaan, jos
+                  kumppani ei julkaise tietoja: tyhjä "Tuotetiedot"-otsikko
+                  lupaisi tietoa jota ei ole.
+
+                  🔴 Määrittelylista pinoutuu mobiilissa (flex-col) ja menee
+                  kahteen palstaan vasta sm:stä ylöspäin. Kiinteä kaksipalstainen
+                  ruudukko valuttaa pitkät arvot (ainesosaluettelot) yli 390
+                  pikselin ruudulla. */}
+              {details && (
+                <section className="mt-3 border-t border-line pt-6">
+                  <h2 className="mb-4 font-heading text-2xl text-gray">{t.product.detailsH2}</h2>
+                  <dl className="text-sm">
+                    {details.specs.map((spec, i) => (
+                      <div
+                        key={`${spec.key}-${i}`}
+                        className="flex flex-col gap-1 border-b border-line py-3 sm:flex-row sm:gap-4"
+                      >
+                        <dt className="font-semibold text-gray sm:w-44 sm:shrink-0">
+                          {spec.key === 'other' && spec.label
+                            ? pick(spec.label)
+                            : t.product.specLabels[
+                                spec.key as keyof typeof t.product.specLabels
+                              ]}
+                        </dt>
+                        <dd className="min-w-0 break-words text-gray/90">{pick(spec.value)}</dd>
+                      </div>
+                    ))}
+                  </dl>
+
+                  {details.ingredients && (
+                    <div className="mt-6">
+                      <h3 className="font-semibold text-gray">{t.product.ingredientsH3}</h3>
+                      <p className="mt-1 break-words text-sm text-gray/90">
+                        {pick(details.ingredients)}
+                      </p>
+                    </div>
+                  )}
+
+                  {/* Allergeenit erottuvat muusta tekstistä: ne ovat
+                      turvallisuustieto, eivät tuotekuvausta. */}
+                  {details.allergens && (
+                    <div className="mt-4 rounded-xl border border-amber/40 bg-amber/10 p-4">
+                      <h3 className="font-semibold text-gray">{t.product.allergensH3}</h3>
+                      <p className="mt-1 break-words text-sm text-gray">
+                        {pick(details.allergens)}
+                      </p>
+                    </div>
+                  )}
+
+                  <p className="mt-4 text-xs text-muted">
+                    {t.product.detailsSource(partner.name, details.fetchedAt)}
+                  </p>
+                </section>
+              )}
             </div>
           </div>
 

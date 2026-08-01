@@ -51,6 +51,41 @@ export interface Partner {
   checkoutNote?: { en: string; fi: string }
 }
 
+/** Yksi tuotetietorivi. Arvo on poimittu kumppanin sivulta, ei keksitty. */
+export interface ProductSpec {
+  /** Vakioitu avain, jotta sama tieto renderöityy samalla otsikolla. */
+  key:
+    | 'material'
+    | 'size'
+    | 'weight'
+    | 'volume'
+    | 'origin'
+    | 'contents'
+    | 'color'
+    | 'care'
+    | 'shelfLife'
+    | 'other'
+  /** Vain kun key on 'other': oma otsikko. */
+  label?: { en: string; fi: string }
+  value: { en: string; fi: string }
+}
+
+/**
+ * Kumppanin sivulta luetut tuotetiedot. Puuttuva rivi on aina parempi kuin
+ * arvattu: jos kumppani ei kerro mittaa, painoa tai ainesosia, kenttä jätetään
+ * pois eikä päätellä. Elintarvikkeissa tämä on turvallisuusasia, ei tyyliseikka.
+ */
+export interface ProductDetails {
+  specs: ProductSpec[]
+  /** Elintarvikkeille: ainesosat sellaisina kuin kumppani ne ilmoittaa. */
+  ingredients?: { en: string; fi: string }
+  /** Elintarvikkeille: allergeenit. 🔴 Vain jos kumppani ilmoittaa ne. */
+  allergens?: { en: string; fi: string }
+  /** Mistä tiedot luettiin ja milloin. Näytetään sivulla. */
+  sourceUrl: string
+  fetchedAt: string
+}
+
 export interface Product {
   slug: string
   category: CategoryId
@@ -79,4 +114,9 @@ export interface Product {
   partnerProductUrl: string
   featured?: boolean
   badges?: Array<'bestseller' | 'sami-authorized' | 'made-in-lapland' | 'eco'>
+  /**
+   * Kumppanin tuotesivulta luetut tekniset tiedot. Puuttuu, jos kumppani ei
+   * julkaise niitä. Tuotesivu ei renderöi osiota lainkaan ilman tätä.
+   */
+  details?: ProductDetails
 }
