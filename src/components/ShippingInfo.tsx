@@ -10,7 +10,7 @@ function ShippingInfo() {
     <section id="shipping" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-14">
-          <h2 className="font-heading text-4xl md:text-5xl text-gray mb-3">{t.h2}</h2>
+          <h2 className="font-heading text-5xl md:text-6xl tracking-wide text-gray mb-3">{t.h2}</h2>
           <p className="text-gray/60 text-lg max-w-2xl mx-auto">
             {t.sub}
           </p>
@@ -26,7 +26,7 @@ function ShippingInfo() {
                 <div className="w-14 h-14 rounded-xl bg-amber/10 flex items-center justify-center mx-auto mb-5">
                   <Icon className="w-7 h-7 text-amber" />
                 </div>
-                <h3 className="font-heading text-2xl text-gray mb-2">{item.title}</h3>
+                <h3 className="font-heading text-2xl tracking-wide text-gray mb-2">{item.title}</h3>
                 <p className="text-gray/60 leading-relaxed">{item.description}</p>
               </div>
             )

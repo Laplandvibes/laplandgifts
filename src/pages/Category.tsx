@@ -52,18 +52,25 @@ export default function Category() {
         <header className="relative overflow-hidden">
           <picture>
             <source srcSet={`/images/${category.image}.avif`} type="image/avif" />
+            {/* Kategoriasivun kuva on sivun LCP-elementti aivan kuten etusivun
+                hero: se on ruudun yläreunassa ennen mitään muuta sisältöä.
+                loading="lazy" viivästyttäisi juuri sen kuvan, jota lukija
+                odottaa, joten se ladataan korkealla prioriteetilla. */}
             <img
               src={`/images/${category.image}.webp`}
               alt=""
               width={1600}
               height={640}
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="h-[38svh] min-h-64 w-full object-cover"
             />
           </picture>
           <div className="absolute inset-0 bg-night/55" aria-hidden="true" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-8">
-              <h1 className="font-heading text-4xl text-white md:text-6xl">
+              <h1 className="font-heading text-5xl tracking-wide text-white md:text-7xl">
                 {t.names[category.id]}
               </h1>
               <p className="mt-3 max-w-2xl text-white/85">{t.intro[category.id]}</p>

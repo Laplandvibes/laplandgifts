@@ -14,7 +14,7 @@ function Guides() {
             <FileText className="w-5 h-5 text-amber" />
             <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
           </div>
-          <h2 className="font-heading text-4xl md:text-5xl text-white mb-3">{t.h2}</h2>
+          <h2 className="font-heading text-5xl md:text-6xl tracking-wide text-white mb-3">{t.h2}</h2>
           <p className="text-white/75 text-lg max-w-2xl mx-auto">
             {t.sub}
           </p>
@@ -34,7 +34,7 @@ function Guides() {
                       <Icon className="w-6 h-6 text-amber" />
                     </div>
                     <div>
-                      <h3 className="font-heading text-2xl text-white">{guide.title}</h3>
+                      <h3 className="font-heading text-2xl tracking-wide text-white md:text-3xl">{guide.title}</h3>
                       <p className="text-white/75 text-sm">{t.pagesPdf(guide.pages)}</p>
                     </div>
                   </div>

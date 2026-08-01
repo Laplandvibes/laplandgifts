@@ -45,7 +45,7 @@ function Newsletter() {
     <section id="newsletter" className="py-20 bg-gradient-to-br from-amber/10 via-pink/5 to-amber/10">
       <div className="max-w-2xl mx-auto px-4 text-center">
         <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
-        <h2 className="font-heading text-4xl md:text-5xl text-gray mt-2 mb-4">
+        <h2 className="font-heading text-5xl md:text-6xl tracking-wide text-gray mt-2 mb-4">
           {t.h2}
         </h2>
         <p className="text-gray/60 text-lg mb-10 max-w-xl mx-auto leading-relaxed">

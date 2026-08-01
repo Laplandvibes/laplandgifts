@@ -40,7 +40,7 @@ export default function ProductGrid() {
       <div className="mx-auto max-w-7xl px-4">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
-            <h2 className="font-heading text-3xl text-gray md:text-5xl">{t.featuredH2}</h2>
+            <h2 className="font-heading text-4xl tracking-wide text-gray md:text-6xl">{t.featuredH2}</h2>
             <p className="mt-3 max-w-2xl text-muted">{t.featuredSub}</p>
           </div>
           <Link

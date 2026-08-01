@@ -29,7 +29,7 @@ export default function Shipping() {
       <ShopNav />
       <main className="bg-sand py-12 md:py-16">
         <div className="mx-auto max-w-4xl px-4">
-          <h1 className="font-heading text-4xl text-gray md:text-6xl">{t.shipping.title}</h1>
+          <h1 className="font-heading text-5xl tracking-wide text-gray md:text-7xl">{t.shipping.title}</h1>
           <p className="mt-4 text-muted">{t.product.checkoutNote}</p>
 
           {/* Kapea näyttö vierittää taulukkoa vaakasuunnassa sen omassa
@@ -62,7 +62,7 @@ export default function Shipping() {
           </div>
 
           <section className="mt-12">
-            <h2 className="font-heading text-2xl text-gray">{t.shipping.foodRules.title}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray">{t.shipping.foodRules.title}</h2>
             <p className="mt-2 text-muted">{t.shipping.foodRules.intro}</p>
             <dl className="mt-6 divide-y divide-line rounded-2xl border border-line bg-card">
               {t.shipping.foodRules.rows.map((r) => (

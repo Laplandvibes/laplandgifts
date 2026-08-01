@@ -21,7 +21,7 @@ function RelatedSites() {
             <Compass className="w-5 h-5 text-amber" />
             <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
           </div>
-          <h2 className="font-heading text-4xl md:text-5xl text-gray mb-3">{t.h2}</h2>
+          <h2 className="font-heading text-5xl md:text-6xl tracking-wide text-gray mb-3">{t.h2}</h2>
           <p className="text-gray/60 text-lg max-w-2xl mx-auto">{t.sub}</p>
         </div>
 
@@ -35,7 +35,7 @@ function RelatedSites() {
               className="group flex flex-col p-7 rounded-2xl bg-gradient-to-b from-amber/5 to-transparent border border-gray/10 hover:border-amber/40 transition-colors"
             >
               <div className="flex items-start justify-between gap-3 mb-2">
-                <h3 className="font-heading text-2xl text-gray group-hover:text-amber transition-colors">
+                <h3 className="font-heading text-2xl tracking-wide text-gray group-hover:text-amber transition-colors md:text-3xl">
                   {item.label}
                 </h3>
                 <ArrowUpRight className="w-5 h-5 text-amber shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />

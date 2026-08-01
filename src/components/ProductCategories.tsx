@@ -17,7 +17,7 @@ export default function ProductCategories() {
   return (
     <section id="categories" className="bg-sand py-16 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
-        <h2 className="font-heading text-3xl text-gray md:text-5xl">{t.categoriesH2}</h2>
+        <h2 className="font-heading text-4xl tracking-wide text-gray md:text-6xl">{t.categoriesH2}</h2>
         <p className="mt-3 max-w-2xl text-muted">{t.categoriesSub}</p>
         <div className="mt-10 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {CATEGORIES.map((c) => (

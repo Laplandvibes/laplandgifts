@@ -61,7 +61,7 @@ function FAQ() {
             <HelpCircle className="w-5 h-5 text-amber" />
             <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
           </div>
-          <h2 className="font-heading text-4xl md:text-5xl text-white mb-3">{t.h2}</h2>
+          <h2 className="font-heading text-5xl md:text-6xl tracking-wide text-white mb-3">{t.h2}</h2>
           <p className="text-white/75 text-lg max-w-2xl mx-auto">{t.sub}</p>
         </div>
 
@@ -72,7 +72,13 @@ function FAQ() {
               className="group bg-white/5 rounded-2xl border border-white/10 open:border-amber/30 transition-colors"
             >
               <summary className="flex items-center justify-between gap-4 cursor-pointer list-none p-6">
-                <h3 className="font-heading text-xl md:text-2xl text-white">{item.q}</h3>
+                {/* FAQ-kysymys on kokonainen kysymyslause, ei osion otsikko.
+                    Versaalilla Bebas Neuella se huutaisi ja luettavuus romahtaisi
+                    juuri siinä kohtaa, jossa lukija etsii vastausta omaan
+                    kysymykseensä, joten kysymykset ovat leipätekstifontilla. */}
+                <h3 className="font-body text-lg font-semibold tracking-normal text-white md:text-xl">
+                  {item.q}
+                </h3>
                 <Plus className="w-5 h-5 text-amber shrink-0 transition-transform duration-200 group-open:rotate-45" />
               </summary>
               <div className="px-6 pb-6 -mt-1">

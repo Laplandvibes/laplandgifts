@@ -19,7 +19,12 @@ export default function ExperienceCard({ pick, lang }: { pick: GygPick; lang: La
           <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
           {pick.place}
         </span>
-        <h3 className="font-heading text-lg leading-snug text-gray">{pick.title}</h3>
+        {/* Sama kuin ProductCardissa: retken nimi on sekakirjaiminen lause
+            ("Rovaniemi: Husky Sledge Ride"), ei osion otsikko, joten se ladotaan
+            leipätekstifontilla eikä versaalilla Bebas Neuella. */}
+        <h3 className="font-body text-lg font-semibold leading-snug tracking-normal text-gray">
+          {pick.title}
+        </h3>
         {/* Hinta on GetYourGuiden oma "alkaen"-hinta lukupäivänä, ei meidän.
             Rivi ilman hintaa renderöityy ilman hintaa, ei arvauksella. */}
         {pick.price && (

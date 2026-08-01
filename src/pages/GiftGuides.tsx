@@ -26,14 +26,14 @@ export default function GiftGuides() {
       <ShopNav />
       <main className="bg-sand py-12 md:py-16">
         <div className="mx-auto max-w-7xl px-4">
-          <h1 className="font-heading text-4xl text-gray md:text-6xl">{t.h2}</h1>
+          <h1 className="font-heading text-5xl tracking-wide text-gray md:text-7xl">{t.h2}</h1>
           <p className="mt-3 max-w-2xl text-muted">{t.sub}</p>
 
           {t.occasions.map((occ, i) => {
             const picks = productsForOccasion(i)
             return (
               <section key={occ.name} className="mt-14">
-                <h2 className="font-heading text-2xl text-gray md:text-3xl">{occ.name}</h2>
+                <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{occ.name}</h2>
                 <p className="mt-2 max-w-2xl text-muted">{occ.description}</p>
                 {picks.length > 0 && (
                   <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">

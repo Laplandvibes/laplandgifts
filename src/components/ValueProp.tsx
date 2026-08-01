@@ -9,7 +9,7 @@ function ValueProp() {
   return (
     <section className="py-16 bg-night">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="font-heading text-3xl md:text-4xl text-white text-center mb-3">
+        <h2 className="font-heading text-4xl md:text-5xl tracking-wide text-white text-center mb-3">
           {t.h2}
         </h2>
         <p className="text-white/75 text-center mb-12 max-w-2xl mx-auto">
@@ -27,7 +27,7 @@ function ValueProp() {
                     {i + 1}
                   </span>
                 </div>
-                <h3 className="font-heading text-xl text-white mb-2">{s.title}</h3>
+                <h3 className="font-heading text-2xl tracking-wide text-white mb-2">{s.title}</h3>
                 <p className="text-white/75 text-sm leading-relaxed">{s.description}</p>
               </div>
             )

@@ -23,6 +23,9 @@ export default function Hero() {
   const s = SHOP_COPY[lang]
   return (
     <section className="relative flex min-h-[78svh] items-center overflow-hidden">
+      {/* Heron kuva on sivun LCP-elementti: se ladataan korkealla prioriteetilla
+          eikä laiskasti, ja index.html avaa sille esilatauksen jo ennen kuin
+          React on käynnistynyt. */}
       <picture className="absolute inset-0">
         <source srcSet="/images/hero-shop.avif" type="image/avif" />
         <img
@@ -30,6 +33,9 @@ export default function Hero() {
           alt=""
           width={2400}
           height={1350}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
           className="h-full w-full object-cover"
         />
       </picture>
@@ -45,7 +51,10 @@ export default function Hero() {
           <span className="text-sm font-medium uppercase tracking-widest text-amber">
             {t.kicker}
           </span>
-          <h1 className="mt-5 font-heading text-5xl text-white md:text-7xl lg:text-8xl">
+          {/* Bebas Neue on kapea versaalifontti: sama pistekoko näyttää
+              selvästi pienemmältä kuin Playfairilla, joten koot on nostettu
+              askeleella. tracking-wide avaa versaalit luettaviksi. */}
+          <h1 className="mt-5 font-heading text-6xl tracking-wide text-white md:text-8xl lg:text-9xl">
             {t.title} <span className="text-amber">{t.titleAccent}</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">

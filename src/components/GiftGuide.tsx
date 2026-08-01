@@ -25,7 +25,7 @@ function GiftGuide() {
     <section id="gift-guide" className="py-20 bg-gradient-to-b from-white to-amber/5">
       <div className="max-w-7xl mx-auto px-4">
         <div className="text-center mb-14">
-          <h2 className="font-heading text-4xl md:text-5xl text-gray mb-3">{t.h2}</h2>
+          <h2 className="font-heading text-5xl md:text-6xl tracking-wide text-gray mb-3">{t.h2}</h2>
           <p className="text-gray/60 text-lg max-w-2xl mx-auto">
             {t.sub}
           </p>
@@ -43,7 +43,7 @@ function GiftGuide() {
                   <div className="w-14 h-14 rounded-xl bg-amber/10 flex items-center justify-center">
                     <Icon className="w-7 h-7 text-amber" />
                   </div>
-                  <h3 className="font-heading text-3xl text-gray">{occasion.name}</h3>
+                  <h3 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{occasion.name}</h3>
                 </div>
                 <p className="text-gray/60 mb-6 leading-relaxed">{occasion.description}</p>
                 {picks.length > 0 && (

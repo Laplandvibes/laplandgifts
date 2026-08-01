@@ -29,6 +29,7 @@ export default function CategoryCard({ category, lang }: { category: Category; l
             src={`/images/${category.image}.webp`}
             alt=""
             loading="lazy"
+            decoding="async"
             width={800}
             height={533}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -36,7 +37,7 @@ export default function CategoryCard({ category, lang }: { category: Category; l
         </picture>
       </div>
       <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-night/85 to-transparent p-5 pt-14">
-        <h3 className="font-heading text-xl text-white">{name}</h3>
+        <h3 className="font-heading text-2xl tracking-wide text-white md:text-3xl">{name}</h3>
       </div>
     </Link>
   )
