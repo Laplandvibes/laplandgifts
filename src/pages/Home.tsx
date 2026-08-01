@@ -43,14 +43,21 @@ export default function Home() {
 
       <main>
         <Hero />
-        {/* PÄÄKUMPPANI — kompakti banneri heti heron alla (LV Media, jaettu malli).
+        {/* 🔴 Tuotteet ovat sivun ensimmäinen sisältöosio (Vesa 1.8.: "kyllähän
+            tämä 'tuliaisia ja lahjoja kumppanikaupoista' pitäisi olla se millä
+            sivu alkaa?"). Aiemmin nostot olivat neljäntenä, bannerin ja
+            kategorioiden takana: verkkokaupan etusivu avautui mainoksella ja
+            hakemistolla, ja myytävä tavara näkyi vasta rullaamalla. */}
+        <ProductGrid />
+        {/* PÄÄKUMPPANI: kompakti banneri tuotenostojen jälkeen (LV Media, jaettu
+            malli). Paikka säilyy: se on myytävää inventaaria ja liidikanava,
+            joten se siirtyi tuotteiden alle eikä pois.
             Sivu on vaalea → surface="light". Tyhjänä house-ad → LV Media -portaali. */}
         <MainPartnerBanner config={AD_SLOTS} locale={lang} surface="light" />
         <ProductCategories />
-        {/* KAKKOSPÄÄKUMPPANI + 6 kohdekohtaista premium-paikkaa — heti
-            ensimmäisen sisältöosion jälkeen (LV Media, jaettu malli). */}
+        {/* KAKKOSPÄÄKUMPPANI + 6 kohdekohtaista premium-paikkaa (LV Media, jaettu
+            malli). */}
         <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
-        <ProductGrid />
         {/* IVALO.COM ad — independent design brands, gift context (shared/ads).
             Disclosure is footer-only on this site. */}
         <div className="max-w-5xl mx-auto px-4 py-10">

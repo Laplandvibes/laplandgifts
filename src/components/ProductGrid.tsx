@@ -13,15 +13,17 @@ import ProductCard from './shop/ProductCard'
  * hakukoneelle. Kauppa on auki, joten sekä kortit että rakenteinen data tulevat
  * nyt products.ts:stä.
  *
- * Kuusi nostoa mahtuu kahdelle täydelle riville kolmen palstan gridissä, joten
- * viimeinen rivi ei jää vajaaksi.
+ * 🔴 Kahdeksan nostoa, ei kuusi. Osio siirtyi 1.8. sivun kärkeen heti heron
+ * alle, ja kärjessä oleva ruudukko on koko kaupan näyteikkuna: kuudesta
+ * tuotteesta jäi neljän palstan työpöytäruudukkoon vajaa rivi (4 + 2).
+ * Kahdeksan jakautuu tasan sekä kahteen että neljään palstaan.
  */
 export default function ProductGrid() {
   const lang = useLang()
   const to = useLocalePath()
   const t = SHOP_COPY[lang].home
   const s = SHOP_COPY[lang]
-  const products = featuredProducts(6)
+  const products = featuredProducts(8)
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -50,8 +52,10 @@ export default function ProductGrid() {
             {s.nav.allProducts}
           </Link>
         </div>
-        {/* Kaksi palstaa myös kapealla — ks. ProductGridSection. */}
-        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3">
+        {/* Kaksi palstaa myös kapealla, ks. ProductGridSection. Sama porrastus
+            kuin kategoriasivun ruudukossa ja kortin `sizes`-attribuutissa:
+            2 / 3 (768 px) / 4 (1280 px). */}
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 xl:grid-cols-4">
           {products.map((p) => (
             <ProductCard key={p.slug} product={p} lang={lang} />
           ))}
