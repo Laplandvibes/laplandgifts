@@ -68,14 +68,24 @@ export const PARTNERS: Record<string, Partner> = {
   northoutdoor: {
     id: 'northoutdoor',
     name: 'North Outdoor',
-    network: 'direct',
+    // Oli `direct` (pelkkä UTM) 1.8. asti, koska Workerissa ei ollut reittiä:
+    // /go/northoutdoor palautti 400. Reitti lisätty 2.8.2026, joten kolme
+    // North Outdoor -tuotetta alkavat tuottaa komissiota. Ohjelmatunnus haettu
+    // Adtractionin link-builderista (a=1967825424) ja verifioitu tuotantoa
+    // vasten: ilman `as=`-parametria klikkiä ei attribuoida lainkaan.
+    //
+    // 🔴 Tämä ohjelma vastaa `200` + HTML-meta-refreshillä eikä 302:lla, ja
+    // kirjaa klikin `at_gd`-evästeellä. Älä siis pidä reittiä rikkinäisenä
+    // sillä perusteella että `curl -w %{redirect_url}` näyttää tyhjää.
+    network: 'adtraction',
+    workerRoute: 'northoutdoor',
     baseUrl: 'https://northoutdoor.com',
     // Toimituskäytäntö 1.8.2026: "Suomeen (sis. Ahvenanmaa), Pohjoismaihin,
     // Baltiaan sekä laajasti muualle Euroopan unioniin". Norja mainitaan
     // esimerkkinä EU:n ulkopuolisesta kohteesta, mutta maailmanlaajuista
     // toimitusta ei luvata.
     shipsTo: 'eu',
-    verifiedAt: '2026-08-01',
+    verifiedAt: '2026-08-02',
   },
   nordicnest: {
     id: 'nordicnest',
