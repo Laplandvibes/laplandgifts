@@ -30,15 +30,37 @@ const PLAN = [
   // eli kolminkertaisella näyttötiheydellä tarvitaan ~500 px. Ilman 640:tä
   // selain hyppäsi suoraan 800:aan.
   { match: /^prod-/, widths: [320, 480, 640] },
+  // 🔴 exp- PUUTTUI KOKONAAN (lisätty 2.8.2026). Elämyskuvien 480/800-variantit
+  // olivat syntyneet joskus muualla, joten kahdeksan vanhaa kuvaa näytti
+  // toimivan. Kun elämyksiä nostettiin 8:sta 24:ään, uudet 17 kuvaa jäivät
+  // ilman variantteja ja renderöityivät LIVENÄ rikkinäisinä: ExperienceCard
+  // pyytää `-480`- ja `-800`-tiedostoja, joita ei ollut. Leveydet ovat samat
+  // kuin kortin srcSetissä; jos muutat toista, muuta molemmat.
+  { match: /^exp-/, widths: [480, 800] },
 ]
 
 // Vain data-tiedostoissa oikeasti viitatut kuvat. Kansiossa on myös vanhoja
 // V1-aikaisia tiedostoja, joita mikään sivu ei renderöi; niille ei tehdä
 // variantteja, jottei repoon kerry käyttämätöntä binääriä.
 const used = new Set(['hero-shop'])
-for (const f of ['src/data/products.ts', 'src/data/categories.ts']) {
+// 🔴 experiences.ts PUUTTUI TÄSTÄ LISTASTA (lisätty 2.8.2026). Se oli
+// varsinainen syy siihen, että elämyskuvat jäivät ilman variantteja:
+// skripti ei lukenut tiedostoa lainkaan, joten kuvat eivät päätyneet
+// `used`-joukkoon eivätkä manifestiin. Kahdeksan vanhaa kuvaa näytti
+// toimivan vain siksi, että niiden variantit olivat syntyneet joskus
+// muualla. Jos lisäät uuden datatiedoston, joka viittaa kuviin, lisää se
+// tähän — muuten sen kuvat hajoavat vasta livenä.
+for (const f of ['src/data/products.ts', 'src/data/categories.ts', 'src/data/experiences.ts']) {
   const src = fs.readFileSync(f, 'utf8')
   for (const m of src.matchAll(/image:\s*'([^']+)'/g)) used.add(m[1])
+  // 🔴 Kaikki kuvaviittaukset EIVÄT ole `image:`-kenttiä. experiences.ts
+  // luettelee kuvan tuple-alkiona (`[pick(...), 'exp-aurora', 'aurora', …]`),
+  // jolloin ylempi regex ei löydä sitä lainkaan ja kuva jää ilman
+  // variantteja — livenä se näkyy rikkinäisenä, koska kortti pyytää
+  // `-480`- ja `-800`-tiedostoa. Tämä oli syy siihen, että 17 uutta
+  // elämyskuvaa hajosi tuotannossa 2.8.2026. Poimitaan siis myös paljaat
+  // merkkijonot, jotka alkavat tunnetulla kuvaetuliitteellä.
+  for (const m of src.matchAll(/'((?:exp|prod|cat|hero)-[a-z0-9-]+)'/g)) used.add(m[1])
 }
 
 let made = 0

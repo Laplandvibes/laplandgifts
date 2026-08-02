@@ -54,6 +54,167 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       800
     ]
   },
+  "exp-aurora-photo": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-aurora-telescope": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-aurora": {
+    "full": 800,
+    "w": [
+      480
+    ]
+  },
+  "exp-husky-kennel": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-husky-selfdrive": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-husky": {
+    "full": 800,
+    "w": [
+      480
+    ]
+  },
+  "exp-kids-husky-short": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-kids-snowpark": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-korouoma": {
+    "full": 800,
+    "w": [
+      480
+    ]
+  },
+  "exp-nature-park": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-nature-snowshoe": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-nature-wildlife": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-reindeer-farm": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-reindeer-forest": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-reindeer": {
+    "full": 800,
+    "w": [
+      480
+    ]
+  },
+  "exp-santa-reindeer": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-santavillage": {
+    "full": 800,
+    "w": [
+      480
+    ]
+  },
+  "exp-sauna-icehole": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-sauna-jacuzzi": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-sauna-smoke": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-snowhotel": {
+    "full": 800,
+    "w": [
+      480
+    ]
+  },
+  "exp-snowmobile-night": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-snowmobile-tundra": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-snowmobile": {
+    "full": 800,
+    "w": [
+      480
+    ]
+  },
   "hero-shop": {
     "full": 2400,
     "w": [
@@ -118,7 +279,55 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-fazer-fazerina": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-fazer-geisha-chocolate-bar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fazer-hazelnut-chocolate": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fazer-jaffa-orange": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fazer-light-milk-chocolate": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fazer-pantteri-salmiakki": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fazer-super-salmiakki": {
     "full": 800,
     "w": [
       320,
@@ -134,7 +343,55 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-heatgrid-midlayer": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-hossa-baselayer-men": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-hossa-baselayer-women": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-kroka-mitten": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-merino-socks-2pack": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-sykli-ski-gloves": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-taival-dx-jacket": {
     "full": 800,
     "w": [
       320,
@@ -151,6 +408,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-halti-tunturit-ski-socks": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halva-salmiakkiruutu": {
     "full": 800,
     "w": [
       320,
@@ -246,6 +511,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-lapuan-kankurit-poro-towel": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-leijona-tar-liquorice": {
     "full": 800,
     "w": [
       320,
@@ -373,6 +646,30 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-north-outdoor-arctic-250-balaclava": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-north-outdoor-arctic-260-zip-neck": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-north-outdoor-heavyweight-gaiter": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-north-outdoor-honka-jumper": {
     "full": 800,
     "w": [
@@ -389,7 +686,23 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-north-outdoor-kevo-gloves": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-north-outdoor-pyry-scarf": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-north-outdoor-sointu-cardigan": {
     "full": 800,
     "w": [
       320,
@@ -414,6 +727,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-pentik-tunturiretki-studio-dish": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sisu-xylitol-salmiakki": {
     "full": 800,
     "w": [
       320,
