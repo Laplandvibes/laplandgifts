@@ -11,8 +11,15 @@ export const PARTNERS: Record<string, Partner> = {
     network: 'adtraction',
     baseUrl: 'https://halti.com',
     shipsTo: 'eu',
-    trackingTemplate: 'https://to.halti.fi/t/t?a=1622204962&as=2086870803&t=2&tk=1&url={URL}',
-    verifiedAt: '2026-07-31',
+    // 🔴 Reitti on `halticom`, EI `halti`. Adtractionissa on kaksi Halti-
+    // ohjelmaa saman to.halti.fi-domainin takana: halti.fi (a=1622199573) ja
+    // halti.com (a=1622204962). Nämä tuotteet ovat halti.com-kaupassa, joten
+    // `halti`-reitti veisi klikin väärään ohjelmaan eikä kauppa hyvittäisi
+    // komissiota. Reitti lisättiin Workeriin 2.8.2026 juuri tätä varten.
+    // Mitattu: go/halticom?dest=halti.com/products/tokoi-dx-jacket-mens
+    // → to.halti.fi/t/t?a=1622204962…&epi=laplandgifts_com_…&url=…
+    workerRoute: 'halticom',
+    verifiedAt: '2026-08-02',
   },
   makia: {
     id: 'makia',
@@ -20,8 +27,15 @@ export const PARTNERS: Record<string, Partner> = {
     network: 'adtraction',
     baseUrl: 'https://makia.com',
     shipsTo: 'worldwide',
-    trackingTemplate: 'https://go.makia.com/t/t?a=1944565206&as=2086870803&t=2&tk=1&url={URL}',
-    verifiedAt: '2026-07-31',
+    // 🔴 Workerin kautta, ei raakana trackingTemplatena. Aiemmin tässä oli
+    // Adtractionin linkki suoraan lähdekoodissa. Se tuotti komission, mutta
+    // ILMAN `epi=`-alatunnistetta: verkoston raportissa klikit olivat yhtä
+    // erittelemätöntä massaa, eikä niistä nähnyt sivustoa eikä paikkaa.
+    // Workerin makia-reitissä on täsmälleen sama ohjelmatunnus (a=1944565206),
+    // joten komissio ei muutu — vain attribuutio paranee. Mitattu 2.8.2026:
+    // go/makia?sid=…&dest=… → go.makia.com/t/t?a=1944565206…&epi=…&url=…
+    workerRoute: 'makia',
+    verifiedAt: '2026-08-02',
   },
   moomin: {
     id: 'moomin',

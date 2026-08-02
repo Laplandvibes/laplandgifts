@@ -30,11 +30,30 @@ describe('partnerHref', () => {
     expect(u.searchParams.get('utm_source')).toBe('laplandvibes')
   })
 
-  it('käyttää Adtraction-trackinglinkkiä kun template on määritelty', () => {
+  it('vie Haltin halti.com-ohjelmaan, ei halti.fi-ohjelmaan', () => {
+    // 🔴 Adtractionissa on kaksi Halti-ohjelmaa saman to.halti.fi-domainin
+    // takana: `halti` = halti.fi (a=1622199573), `halticom` = halti.com
+    // (a=1622204962). Tuotteet ovat halti.com-kaupassa. Väärä reitti ei kaadu
+    // eikä näy asiakkaalle — klikki vain menee ohjelmaan jota kauppa ei hyvitä.
     const p = PARTNERS.halti
-    const href = partnerHref(p, 'https://halti.com/products/takki', 'gifts_halti_takki')
-    expect(href.startsWith('https://to.halti.fi/t/t?')).toBe(true)
-    expect(href).toContain(encodeURIComponent('https://halti.com/products/takki'))
+    const u = new URL(partnerHref(p, 'https://halti.com/products/takki', 'gifts_halti_takki'))
+    expect(u.pathname).toBe('/go/halticom')
+    expect(u.searchParams.get('dest')).toBe('https://halti.com/products/takki')
+  })
+
+  it('yksikään kumppani ei kirjoita verkoston linkkiä lähdekoodiin', () => {
+    // Verkoston sääntö (CLAUDE.md): affiliate-CTA kulkee AINA redirect-Workerin
+    // kautta. Raaka trackingTemplate tuottaa kyllä komission, mutta ilman
+    // Workerin `epi=`-alatunnistetta — jolloin Adtractionin raportissa klikit
+    // ovat erittelemätöntä massaa eikä niistä näe sivustoa eikä paikkaa.
+    // Halti ja Makia olivat tässä tilassa 2.8.2026 asti.
+    for (const [id, p] of Object.entries(PARTNERS)) {
+      expect(p.trackingTemplate, `${id} kirjoittaa verkoston linkin suoraan lähteeseen`)
+        .toBeUndefined()
+      if (p.network === 'adtraction') {
+        expect(p.workerRoute, `${id} on adtraction-kumppani ilman workerRoutea`).toBeTruthy()
+      }
+    }
   })
 
   it('reitittää Workerin kautta kun kumppanilla on workerRoute', () => {
