@@ -542,7 +542,80 @@ const fi: ShopCopy = {
  * Muut kielet kääntyvät V2:ssa. V1:ssä ne saavat englannin, mikä on sama
  * hyväksytty malli kuin tuotenimissä (validator laskee nämä enFallbackiksi).
  */
+/**
+ * 🔴 OSITTAINEN KÄÄNNÖS (2.8.2026). Kymmenen kieltä osoitti aiemmin suoraan
+ * `en`-objektiin, joten saksankielisellä tuotesivulla luki "Material / Size /
+ * Colour" ja kategoriasivun H1 oli englanniksi.
+ *
+ * Koko `ShopCopy` on 548 riviä, eli kymmenelle kielelle noin 5 000 riviä. Sen
+ * sijaan että jättäisin kaiken englanniksi kunnes koko tiedosto on käännetty,
+ * jokainen kieli saa nyt englannin POHJAKSI ja päälle ne kentät jotka
+ * lukijalle näkyvät ensimmäisenä: kategorian nimi (sivun H1) ja tuotetietojen
+ * rivien otsikot. Kääntämätön kenttä putoaa yhä englantiin, mikä on sama
+ * tilanne kuin ennen — mikään ei siis mene rikki, vaan näkyvin osa paranee.
+ *
+ * Seuraava vaihe on kääntää `home`- ja `product`-lohkojen loput tekstit.
+ */
+const names = (
+  design: string, clothing: string, handicrafts: string, treats: string,
+  superfoods: string, merch: string, experiences: string,
+) => ({ design, clothing, handicrafts, treats, superfoods, merch, experiences })
+
+const labels = (
+  material: string, size: string, weight: string, volume: string, origin: string,
+  contents: string, color: string, care: string, shelfLife: string,
+) => ({ material, size, weight, volume, origin, contents, color, care, shelfLife })
+
+const over = (
+  cat: ReturnType<typeof names>,
+  lab: ReturnType<typeof labels>,
+): ShopCopy => ({
+  ...en,
+  category: { ...en.category, names: cat },
+  product: { ...en.product, specLabels: lab },
+})
+
 export const SHOP_COPY: Record<Lang, ShopCopy> = {
-  en, fi,
-  de: en, ja: en, es: en, 'pt-BR': en, 'zh-CN': en, ko: en, fr: en, it: en, nl: en, sv: en,
+  en,
+  fi,
+  de: over(
+    names('Finnisches Design', 'Kleidung und Strick', 'Finnisches Handwerk', 'Süßes und Essgeschenke', 'Arktische Beerenpulver', 'Lappland-Shirts und Merch', 'Erlebnisgeschenke aus Lappland'),
+    labels('Material', 'Größe', 'Gewicht', 'Inhalt', 'Herkunft', 'Lieferumfang', 'Farbe', 'Pflege', 'Haltbarkeit'),
+  ),
+  sv: over(
+    names('Finsk design', 'Kläder och stickat', 'Finskt hantverk', 'Sötsaker och matgåvor', 'Arktiska bärpulver', 'Lapplandströjor och merch', 'Upplevelsepresenter från Lappland'),
+    labels('Material', 'Storlek', 'Vikt', 'Volym', 'Ursprung', 'Innehåll', 'Färg', 'Skötsel', 'Hållbarhet'),
+  ),
+  fr: over(
+    names('Design finlandais', 'Vêtements et tricots', 'Artisanat finlandais', 'Douceurs et gourmandises', 'Poudres de baies arctiques', 'T-shirts et merch de Laponie', 'Expériences à offrir en Laponie'),
+    labels('Matière', 'Taille', 'Poids', 'Volume', 'Origine', 'Contenu', 'Couleur', 'Entretien', 'Conservation'),
+  ),
+  es: over(
+    names('Diseño finlandés', 'Ropa y punto', 'Artesanía finlandesa', 'Dulces y regalos gourmet', 'Polvos de bayas árticas', 'Camisetas y merch de Laponia', 'Experiencias de Laponia para regalar'),
+    labels('Material', 'Talla', 'Peso', 'Volumen', 'Origen', 'Contenido', 'Color', 'Cuidados', 'Conservación'),
+  ),
+  it: over(
+    names('Design finlandese', 'Abbigliamento e maglieria', 'Artigianato finlandese', 'Dolci e regali gastronomici', 'Polveri di bacche artiche', 'T-shirt e merch della Lapponia', 'Esperienze in Lapponia da regalare'),
+    labels('Materiale', 'Taglia', 'Peso', 'Volume', 'Origine', 'Contenuto', 'Colore', 'Manutenzione', 'Conservazione'),
+  ),
+  nl: over(
+    names('Fins design', 'Kleding en breigoed', 'Fins ambacht', 'Lekkers en eetbare cadeaus', 'Arctische bessenpoeders', "Lapland-shirts en merch", 'Belevenissen uit Lapland cadeau'),
+    labels('Materiaal', 'Maat', 'Gewicht', 'Inhoud', 'Herkomst', 'Inbegrepen', 'Kleur', 'Onderhoud', 'Houdbaarheid'),
+  ),
+  'pt-BR': over(
+    names('Design finlandês', 'Roupas e tricô', 'Artesanato finlandês', 'Doces e presentes gastronômicos', 'Pós de frutas árticas', 'Camisetas e merch da Lapônia', 'Experiências da Lapônia para presentear'),
+    labels('Material', 'Tamanho', 'Peso', 'Volume', 'Origem', 'Conteúdo', 'Cor', 'Cuidados', 'Validade'),
+  ),
+  ja: over(
+    names('フィンランドデザイン', '衣類とニット', 'フィンランドの手仕事', 'お菓子と食の贈り物', '北極のベリーパウダー', 'ラップランドのTシャツとグッズ', 'ラップランドの体験ギフト'),
+    labels('素材', 'サイズ', '重さ', '容量', '原産地', '内容', '色', 'お手入れ', '賞味期限'),
+  ),
+  'zh-CN': over(
+    names('芬兰设计', '服装与针织', '芬兰手工艺', '甜食与美食礼品', '北极浆果粉', '拉普兰T恤与周边', '拉普兰体验礼物'),
+    labels('材质', '尺寸', '重量', '容量', '产地', '内容', '颜色', '保养', '保质期'),
+  ),
+  ko: over(
+    names('핀란드 디자인', '의류와 니트', '핀란드 수공예', '과자와 식품 선물', '북극 베리 파우더', '라플란드 티셔츠와 굿즈', '라플란드 체험 선물'),
+    labels('소재', '사이즈', '무게', '용량', '원산지', '구성', '색상', '관리법', '유통기한'),
+  ),
 }
