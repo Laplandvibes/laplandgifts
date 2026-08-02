@@ -16,6 +16,7 @@ import { useLang, useLocalePath } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
+import { productName, productDescription, specValue, specLabel } from '../locales/productCopy'
 
 /** Päähakuva: täysleveä kapealla, puoli ruudukkoa lg:stä ylöspäin. */
 const PRODUCT_SIZES = '(min-width: 1024px) 500px, 92vw'
@@ -33,8 +34,8 @@ export default function Product() {
   const category = categoryById(product.category)
   /** Kaksikielinen kenttä nykyisellä kielellä. Muut kielet saavat englannin. */
   const pick = (v: { en: string; fi: string }) => (lang === 'fi' ? v.fi : v.en)
-  const name = pick(product.name)
-  const description = pick(product.description)
+  const name = productName(product, lang)
+  const description = productDescription(product, lang)
   const details = product.details
   // Kaupan ja tuotteen maarajaukset yhdessä. Tuotesivu on viimeinen paikka
   // ennen kumppanin kauppaa, joten rajaus luetellaan tässä maiden NIMILLÄ:
@@ -141,12 +142,12 @@ export default function Product() {
                       >
                         <dt className="font-semibold text-gray sm:w-44 sm:shrink-0">
                           {spec.key === 'other' && spec.label
-                            ? pick(spec.label)
+                            ? (specLabel(product, i, lang) ?? pick(spec.label))
                             : t.product.specLabels[
                                 spec.key as keyof typeof t.product.specLabels
                               ]}
                         </dt>
-                        <dd className="min-w-0 break-words text-gray/90">{pick(spec.value)}</dd>
+                        <dd className="min-w-0 break-words text-gray/90">{specValue(product, i, lang)}</dd>
                       </div>
                     ))}
                   </dl>
