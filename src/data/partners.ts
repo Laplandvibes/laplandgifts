@@ -99,14 +99,26 @@ export const PARTNERS: Record<string, Partner> = {
   scandinavianoutdoor: {
     id: 'scandinavianoutdoor',
     name: 'Scandinavian Outdoor',
-    network: 'direct',
+    network: 'adtraction',
     baseUrl: 'https://scandinavianoutdoor.fi',
     // Toimitusehdot 1.8.2026 (Asiakaspalvelu → Tilausten toimitus): "toimitamme
     // tuotteita ympäri maailmaa", ja EU:n ulkopuolisissa tilauksissa
     // vastaanottaja vastaa tulli- ja veromaksuista. Myös Ahvenanmaa mainitaan
-    // erikseen. 🔴 LV:llä on Adtraction-suhde tähän kauppaan, mutta meillä ei
-    // ole syvälinkkitemplatea verkoston paneelista, joten linkki menee toistaiseksi
-    // UTM-reittiä. Kun template saadaan, se lisätään tähän trackingTemplateksi.
+    // erikseen.
+    //
+    // 🔴 Oli 'direct' + paljas UTM, vaikka kauppa on LV:n Adtraction-mainostaja
+    // (shared/ads/advertisers/scandinavianOutdoor.ts). Kolme Kupilka-tuotetta
+    // lähetti siis asiakkaita ilman komissiota. Meillä ei edelleenkään ole omaa
+    // trackinglinkkiä verkoston paneelista, mutta verkoston redirect-Workerilla
+    // on: reitti `go/scandinavianoutdoor` kantaa Adtractionin tunnukset
+    // (a=1119705543, as=2086870803) ja lisää `epi`-paikkamerkinnän itse.
+    //
+    // Syvälinkitys verifioitu 2.8.2026 päästä päähän:
+    //   go.laplandvibes.com/go/scandinavianoutdoor?sid=…&dest=<tuote-URL>
+    //   → 302 to.scandinavianoutdoor.fi/t/t?a=…&epi=…&url=<tuote-URL>
+    //   → Adtractionin välisivu ohjaa juuri sille tuotesivulle + at_gd-tunniste.
+    // Parametrin nimi on `dest`, ei `url`: ks. worker.js handleAdtraction.
+    workerRoute: 'scandinavianoutdoor',
     shipsTo: 'worldwide',
     verifiedAt: '2026-08-01',
   },
@@ -225,15 +237,29 @@ export const PARTNERS: Record<string, Partner> = {
   },
 }
 
+/** Verkoston redirect-Worker. Reitit: affiliate-redirect-worker/src/worker.js. */
+const WORKER_ORIGIN = 'https://go.laplandvibes.com'
+
 /**
  * Rakentaa kumppanilinkin. Kolme reittiä:
  *   1. trackingTemplate → affiliate-verkoston linkki, kohde enkoodattuna
- *   2. muuten          → kumppanin oma URL + LV:n UTM-parametrit
+ *   2. workerRoute      → verkoston redirect-Worker, joka lisää verkoston
+ *                         tunnukset ja kirjaa klikin
+ *   3. muuten           → kumppanin oma URL + LV:n UTM-parametrit
  * GYG-tuotteet EIVÄT kulje tästä: ne käyttävät shared/gyg/picks.ts:n gygHref().
  */
 export function partnerHref(partner: Partner, productUrl: string, campaign: string): string {
   if (partner.trackingTemplate) {
     return partner.trackingTemplate.replace('{URL}', encodeURIComponent(productUrl))
+  }
+  // 🔴 Kohdeparametri on `dest`, ei `url`. Worker lukee `?dest=` ja kääntää sen
+  // vasta verkostolle kelpaavaan muotoon; `?url=` menisi hiljaa ohi ja klikki
+  // päätyisi kaupan etusivulle ilman syvälinkkiä.
+  if (partner.workerRoute) {
+    return (
+      `${WORKER_ORIGIN}/go/${partner.workerRoute}` +
+      `?sid=${encodeURIComponent(campaign)}&dest=${encodeURIComponent(productUrl)}`
+    )
   }
   const url = new URL(productUrl)
   url.searchParams.set('utm_source', 'laplandvibes')

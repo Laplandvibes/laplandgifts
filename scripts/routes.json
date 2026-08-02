@@ -100,35 +100,35 @@
   },
   {
     "path": "/handicrafts",
-    "fallbackTitle": "Lapland handicrafts | LaplandGifts",
-    "fallbackDescription": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
+    "fallbackTitle": "Finnish handicrafts | LaplandGifts",
+    "fallbackDescription": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
     "fallbackTitleByLang": {
-      "en": "Lapland handicrafts | LaplandGifts",
-      "fi": "Lapin käsityöt | LaplandGifts",
-      "de": "Lapland handicrafts | LaplandGifts",
-      "ja": "Lapland handicrafts | LaplandGifts",
-      "es": "Lapland handicrafts | LaplandGifts",
-      "pt-BR": "Lapland handicrafts | LaplandGifts",
-      "zh-CN": "Lapland handicrafts | LaplandGifts",
-      "ko": "Lapland handicrafts | LaplandGifts",
-      "fr": "Lapland handicrafts | LaplandGifts",
-      "it": "Lapland handicrafts | LaplandGifts",
-      "nl": "Lapland handicrafts | LaplandGifts",
-      "sv": "Lapland handicrafts | LaplandGifts"
+      "en": "Finnish handicrafts | LaplandGifts",
+      "fi": "Suomalaiset käsityöt | LaplandGifts",
+      "de": "Finnish handicrafts | LaplandGifts",
+      "ja": "Finnish handicrafts | LaplandGifts",
+      "es": "Finnish handicrafts | LaplandGifts",
+      "pt-BR": "Finnish handicrafts | LaplandGifts",
+      "zh-CN": "Finnish handicrafts | LaplandGifts",
+      "ko": "Finnish handicrafts | LaplandGifts",
+      "fr": "Finnish handicrafts | LaplandGifts",
+      "it": "Finnish handicrafts | LaplandGifts",
+      "nl": "Finnish handicrafts | LaplandGifts",
+      "sv": "Finnish handicrafts | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "fi": "Marttiinin puukkoja Rovaniemeltä, Kupilkan kuksia, Lapuan Kankureiden pellavaa ja Pentikin keramiikkaa: käsityötä, joka kuluu käytössä eikä hyllyllä.",
-      "de": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "ja": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "es": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "pt-BR": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "zh-CN": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "ko": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "fr": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "it": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "nl": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed.",
-      "sv": "Marttiini knives from Rovaniemi, Kupilka cups, Lapuan Kankurit linen and Pentik ceramics: handicraft that gets used rather than shelved. Delivery areas listed."
+      "en": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "fi": "Marttiinin puukkoja Rovaniemeltä, Kupilkan retkiastioita, Lapuan Kankureiden pellavaa Lapualta ja Pentikin keramiikkaa Posiolta: käsityötä, joka kuluu käytössä.",
+      "de": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "ja": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "es": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "pt-BR": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "zh-CN": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "ko": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "fr": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "it": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "nl": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved.",
+      "sv": "Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen from Lapua and Pentik ceramics from Posio: handicraft that gets used, not shelved."
     }
   },
   {
@@ -200,7 +200,7 @@
   {
     "path": "/merch",
     "fallbackTitle": "Lapland T-shirts and merch | LaplandGifts",
-    "fallbackDescription": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
+    "fallbackDescription": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
     "fallbackTitleByLang": {
       "en": "Lapland T-shirts and merch | LaplandGifts",
       "fi": "Lapland-paidat ja merch | LaplandGifts",
@@ -216,18 +216,18 @@
       "sv": "Lapland T-shirts and merch | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "fi": "Lapland-paitoja, huppareita, lippiksiä ja tuubihuiveja omalla #LAPLANDVIBES-painatuksella, tehdään tilauksesta ja lähetetään EU:sta tai Yhdysvalloista.",
-      "de": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "ja": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "es": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "pt-BR": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "zh-CN": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "ko": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "fr": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "it": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "nl": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown.",
-      "sv": "Lapland T-shirts, hoodies, caps and neck gaiters with our own #LAPLANDVIBES print, made on demand and shipped from the EU or the US. Delivery areas are shown."
+      "en": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "fi": "Oma #LAPLANDVIBES-painatuksemme t-paidoissa, huppareissa ja lippiksissä. Painokauppa ei ole vielä auki, joten täältä ei voi tänään ostaa mitään.",
+      "de": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "ja": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "es": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "pt-BR": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "zh-CN": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "ko": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "fr": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "it": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "nl": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today.",
+      "sv": "Our own #LAPLANDVIBES print on T-shirts, hoodies and caps. The print shop is not open yet, so there is nothing to buy here today."
     }
   },
   {

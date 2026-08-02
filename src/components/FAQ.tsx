@@ -1,16 +1,33 @@
 import { HelpCircle, Plus, ArrowRight } from 'lucide-react'
 import { useLang, type Lang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
+import { SHOP_COPY } from '../locales/shopCopy'
 
 /**
  * Source of truth for the FAQ Q&A pairs per locale. Consumed both by the
  * visible <FAQ> section below and by StructuredData.tsx, which emits the
  * matching FAQPage JSON-LD so the rich snippet and the rendered copy never
  * drift apart.
+ *
+ * 🔴 Pohja tulee ChromeCopysta, mutta yksittäinen vastaus voidaan korvata
+ * SHOP_COPYn `faqAnswerFixes`illa. Kaksi vastausta oli vanhentunut: toinen
+ * lupasi hankintakäytännön saamelaiskäsitöille joita emme myy, toinen kertoi
+ * kaupan "avautuvan pian" vaikka se on auki. Korvaus tehdään täällä eikä
+ * kutsupaikoissa, jotta näkyvä teksti ja FAQPage-JSON-LD eivät pääse eri
+ * mieltä. Ks. `faqAnswerFixes` shopCopy.ts:ssä.
+ *
+ * 🔴 Funktio, ei vakio: aiemmin taulukko rakennettiin kerran moduulin
+ * latautuessa `Object.keys(COPY)`:sta, ja COPY täyttyy laiskasti kieli
+ * kerrallaan. Snapshot näki siis vain sattumalta ladatut kielet.
  */
-export const FAQ_BY_LANG: Record<Lang, Array<{ q: string; a: string }>> = Object.fromEntries(
-  (Object.keys(COPY) as Lang[]).map((l) => [l, COPY[l].faq.items]),
-) as Record<Lang, Array<{ q: string; a: string }>>
+export function faqItemsFor(lang: Lang): Array<{ q: string; a: string }> {
+  const base = (COPY[lang] ?? COPY.en).faq.items
+  const fixes = SHOP_COPY[lang].faqAnswerFixes
+  return base.map((item, i) => {
+    const fixed = fixes[i]
+    return fixed ? { ...item, a: fixed } : item
+  })
+}
 
 // Per-question links to the on-page sections (and sister site) that back each
 // answer (Vesa 2026-07-07: FAQ answers must point to our own supporting
@@ -53,6 +70,7 @@ function FAQ() {
   const lang = useLang()
   const t = COPY[lang].faq
   const c = COPY[lang]
+  const items = faqItemsFor(lang)
   return (
     <section id="faq" className="py-20 bg-night">
       <div className="max-w-3xl mx-auto px-4">
@@ -66,7 +84,7 @@ function FAQ() {
         </div>
 
         <div className="space-y-4">
-          {t.items.map((item, index) => (
+          {items.map((item, index) => (
             <details
               key={item.q}
               className="group bg-white/5 rounded-2xl border border-white/10 open:border-amber/30 transition-colors"

@@ -1,11 +1,21 @@
-import { Plane, Package, Home } from 'lucide-react'
+import { Search, Globe, Store } from 'lucide-react'
 import { useLang } from '../i18n/useLang'
-import { COPY } from '../locales/copy'
+import { SHOP_COPY } from '../locales/shopCopy'
 
-const ICONS = [Plane, Package, Home]
+/**
+ * 🔴 Teksti tulee SHOP_COPYsta, ei ChromeCopysta. ChromeCopyn `valueProp`
+ * kuvaa kauppaa jota meillä ei ole: "Näin LaplandGifts toimii kaupan
+ * avauduttua", "Lahjat pakataan huolella ja lähetetään suoraan suomalaisilta
+ * käsityöläisiltä", "me hoidamme loput". Me emme pakkaa emmekä lähetä mitään.
+ * Sama syy kuin heron ja kategoriaotsikoiden siirrolle.
+ *
+ * Ikonit vaihtuivat tekstin mukana: lentokone ja paketti kuvasivat kuljetusta,
+ * jota me emme hoida.
+ */
+const ICONS = [Search, Globe, Store]
 
 function ValueProp() {
-  const t = COPY[useLang()].valueProp
+  const t = SHOP_COPY[useLang()].home.valueProp
   return (
     <section className="py-16 bg-night">
       <div className="max-w-5xl mx-auto px-4">

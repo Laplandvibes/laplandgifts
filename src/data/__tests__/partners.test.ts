@@ -37,6 +37,27 @@ describe('partnerHref', () => {
     expect(href).toContain(encodeURIComponent('https://halti.com/products/takki'))
   })
 
+  it('reitittää Workerin kautta kun kumppanilla on workerRoute', () => {
+    const p = PARTNERS.scandinavianoutdoor
+    const target = 'https://scandinavianoutdoor.fi/kupilka/varusteet/juomamuki-21/'
+    const href = partnerHref(p, target, 'gifts_handicrafts_card')
+    const u = new URL(href)
+    expect(u.origin).toBe('https://go.laplandvibes.com')
+    expect(u.pathname).toBe('/go/scandinavianoutdoor')
+    expect(u.searchParams.get('sid')).toBe('gifts_handicrafts_card')
+    // 🔴 Worker lukee kohteen `dest`-parametrista. Väärä nimi ei kaadu vaan
+    // pudottaa syvälinkin hiljaa ja vie asiakkaan kaupan etusivulle.
+    expect(u.searchParams.get('dest')).toBe(target)
+  })
+
+  it('Adtraction-kumppani ei koskaan päädy paljaaseen UTM-linkkiin', () => {
+    for (const [id, p] of Object.entries(PARTNERS)) {
+      if (p.network !== 'adtraction') continue
+      const href = partnerHref(p, `${p.baseUrl}/tuote`, 'gifts_x')
+      expect(href.startsWith(p.baseUrl), `${id} meni UTM-reitille`).toBe(false)
+    }
+  })
+
   it('ei koskaan palauta raakaa partner-URLia affiliate-kumppanille', () => {
     const p = PARTNERS.halti
     const href = partnerHref(p, 'https://halti.com/x', 'gifts_x')

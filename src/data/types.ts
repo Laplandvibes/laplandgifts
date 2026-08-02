@@ -63,6 +63,20 @@ export interface Partner {
    * Puuttuu suorilta kumppaneilta (network: 'direct') → UTM-reitti.
    */
   trackingTemplate?: string
+  /**
+   * Verkoston redirect-Workerin reittitunnus, esim. 'scandinavianoutdoor'
+   * → `https://go.laplandvibes.com/go/scandinavianoutdoor`.
+   *
+   * Käytetään silloin kun kumppani on jo LV:n affiliate-mainostaja Workerissa
+   * mutta meillä ei ole omaa trackinglinkkiä verkoston paneelista. Worker
+   * lisää verkoston tunnukset ja `epi`-paikkamerkinnän itse ja kirjaa klikin
+   * D1:een, joten reitti on sekä komission että klikkiraportin kannalta
+   * parempi kuin paljas UTM-linkki.
+   *
+   * Voittaa `trackingTemplate`n vain jos templatea ei ole: suora
+   * verkostolinkki on lyhyempi ketju eikä sitä kannata reitittää uudelleen.
+   */
+  workerRoute?: string
   /** Päivä jona toimitusalue ja linkki verifioitiin kumppanin sivulta. */
   verifiedAt: string
   /** Näytetään tuotesivulla: "Osto tapahtuu kumppanin kaupassa". */

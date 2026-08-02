@@ -1,11 +1,24 @@
-import { Truck, Shield, PackageCheck, Heart } from 'lucide-react'
+import { Hand, Tag, FileText, Store } from 'lucide-react'
 import { useLang } from '../i18n/useLang'
-import { COPY } from '../locales/copy'
+import { SHOP_COPY } from '../locales/shopCopy'
 
-const ICONS = [Truck, Shield, PackageCheck, Heart]
+/**
+ * 🔴 Teksti tulee SHOP_COPYsta, ei ChromeCopysta. ChromeCopyn `shipping`-lohko
+ * oli otsikoitu "Lupauksemme" ja lupasi neljä asiaa joista yksikään ei pidä
+ * paikkaansa: alkuperätodistus käsityötuotteille, kierrätettävä lahjapakkaus,
+ * henkilökohtainen viesti kassalla ja osuus myynnistä tekijälle. Meillä ei ole
+ * kassaa, pakkaamoa eikä sopimusta tekijöiden kanssa. Osio kertoo nyt sen työn,
+ * jonka me oikeasti teemme.
+ *
+ * Osion id säilyy (`#shipping`): FAQ:n vastaukset linkittävät tänne.
+ *
+ * Ikonit vaihtuivat tekstin mukana: rekka ja paketti lupasivat kuljetusta,
+ * jota me emme hoida.
+ */
+const ICONS = [Hand, Tag, FileText, Store]
 
 function ShippingInfo() {
-  const t = COPY[useLang()].shipping
+  const t = SHOP_COPY[useLang()].home.promises
   return (
     <section id="shipping" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4">

@@ -1,7 +1,7 @@
 import { useEffect } from 'react'
 import { useLocation } from 'react-router-dom'
 import { useLang, stripLocale, type Lang } from './useLang'
-import { FAQ_BY_LANG } from '../components/FAQ'
+import { faqItemsFor } from '../components/FAQ'
 import { productBySlug } from '../data/products'
 import { PARTNERS } from '../data/partners'
 
@@ -68,7 +68,7 @@ export default function StructuredData() {
     ]
 
     if (isHome) {
-      const faqItems = FAQ_BY_LANG[lang] ?? FAQ_BY_LANG.en
+      const faqItems = faqItemsFor(lang)
       nodes.push({
         '@context': 'https://schema.org',
         '@type': 'FAQPage',
