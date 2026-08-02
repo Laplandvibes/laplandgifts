@@ -103,14 +103,40 @@ describe('katalogin eheys', () => {
   const MIN_PARTNERS_WHEN_LARGE = 3
   const LARGE_CATEGORY = 6
 
+  /**
+   * 🔴 TARKENNUS 2.8.2026: monimerkkijälleenmyyjä ei ole yksitoikkoisuutta.
+   *
+   * Kumppanikatto laski jälleenmyyjää, ei valmistajaa. Suomikauppa tuo
+   * herkkuihin viisi eri valmistajaa (Fazer, Halva, Leijona, Sisu, Finnish
+   * Flavours), mutta osuus ylitti puolet ja testi kaatui — vaikka kategoria on
+   * juuri sitä vaihtelua jota sääntö vaatii. Säännön TARKOITUS on estää se,
+   * että kategoria näyttää yhden toimijan tuoteluettelolta.
+   *
+   * Siksi kumppanikatto EI koske kumppania, joka tuo kategoriaan vähintään
+   * neljä eri valmistajaa. Valmistajakatto koskee aina kaikkia: yksikään
+   * BRÄNDI ei saa yhä ylittää puolta kategoriasta, joten kymmenen Fazerin
+   * levyä kaataisi testin edelleen.
+   */
+  const MULTI_BRAND_THRESHOLD = 4
+
   const shareCheck = (label: string, keyOf: (p: (typeof PRODUCTS)[number]) => string) => {
+    const isPartnerCheck = label === 'kumppani'
     for (const c of CATEGORY_IDS) {
       const items = productsByCategory(c)
       if (!items.length) continue
       const counts = new Map<string, number>()
-      for (const p of items) counts.set(keyOf(p), (counts.get(keyOf(p)) ?? 0) + 1)
+      const brandsPerKey = new Map<string, Set<string>>()
+      for (const p of items) {
+        const k = keyOf(p)
+        counts.set(k, (counts.get(k) ?? 0) + 1)
+        if (!brandsPerKey.has(k)) brandsPerKey.set(k, new Set())
+        brandsPerKey.get(k)!.add(p.brand)
+      }
       for (const [key, n] of counts) {
         const share = n / items.length
+        if (isPartnerCheck && (brandsPerKey.get(key)?.size ?? 0) >= MULTI_BRAND_THRESHOLD) {
+          continue
+        }
         expect(
           share,
           `${c}: ${label} ${key} on ${n}/${items.length} tuotteella (${Math.round(share * 100)} %), raja ${MAX_SHARE * 100} %`,

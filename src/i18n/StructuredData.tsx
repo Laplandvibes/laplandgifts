@@ -4,6 +4,7 @@ import { useLang, stripLocale, type Lang } from './useLang'
 import { faqItemsFor } from '../components/FAQ'
 import { productBySlug } from '../data/products'
 import { PARTNERS } from '../data/partners'
+import { productName, productDescription } from '../locales/productCopy'
 
 const BASE = 'https://laplandgifts.com'
 
@@ -86,8 +87,8 @@ export default function StructuredData() {
       nodes.push({
         '@context': 'https://schema.org',
         '@type': 'Product',
-        name: lang === 'fi' ? product.name.fi : product.name.en,
-        description: lang === 'fi' ? product.description.fi : product.description.en,
+        name: productName(product, lang),
+        description: productDescription(product, lang),
         brand: { '@type': 'Brand', name: product.brand },
         // 🔴 Kuvaa ei liitetä: tuotesivun kuva on tunnelmakuva, ei kuva juuri
         // tästä tuotteesta (sivu sanoo sen itse). Product.image lupaisi

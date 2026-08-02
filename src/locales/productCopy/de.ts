@@ -1,0 +1,855 @@
+import type { ProductCopyMap } from './index'
+
+/**
+ * Tuotteiden saksankieliset tekstit. Avain on tuotteen slug.
+ *
+ * `specs` on positionaalinen: indeksi vastaa `product.details.specs`-taulukon
+ * järjestystä lähdedatassa. `specLabels` samoin, ja siinä on arvo vain niillä
+ * riveillä joilla on oma otsikko (`key: 'other'`).
+ *
+ * Lukuja, mittayksiköitä, tuotekoodeja ja EAN-numeroita EI käännetä eikä
+ * muunneta: ne ovat kumppanin ilmoittamia arvoja. Desimaalierotin on
+ * saksalaisittain pilkku siellä missä lähdedatassakin, jotta
+ * numeroiden-täsmäävyystesti menee läpi.
+ */
+export const PRODUCT_COPY_DE: ProductCopyMap = {
+  'moomin-blue-love-mug': {
+    name: 'Mumin-Becher Blue Love 0,3 l',
+    description:
+      'Becher aus Vitroporzellan mit 0,3 Litern aus der Reihe Moomin Classics, mit Snorkfräulein und Mumintroll in Umarmung und dem Jubiläumsjahr zum 80. Geburtstag auf dem Boden. In Finnland entworfen, spülmaschinen- und mikrowellenfest, also für den täglichen Gebrauch statt für das Regal.',
+    specs: [
+      '0,3 l',
+      'Vitroporzellan',
+      'Spülmaschinenfest, backofen- und mikrowellengeeignet',
+      'Entworfen in Finnland, hergestellt in Thailand',
+      'Moomin Classics. Die Ausgabe zum 80. Jubiläum trägt die Jahreszahl auf dem Boden',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Kollektion'],
+  },
+  'moomin-mystical-forest-tumblers': {
+    name: 'Mumin-Gläser Mystical Forest 28 cl, 2er-Pack',
+    description:
+      'Zwei geprägte Gläser mit 28 cl aus der Kollektion Mystical Forest, hergestellt in der Glashütte Iittala in Finnland. Sie kommen in einer Geschenkverpackung, was Ihnen das Einwickeln von Glas im Hotelzimmer erspart.',
+    specs: [
+      '28 cl pro Glas',
+      '2 Gläser, geliefert in einer türkisen Verpackung',
+      'Geprägtes Glas',
+      'Spülmaschinenfest',
+      'Hergestellt in der Glashütte Iittala in Finnland',
+      'Mystical Forest',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Kollektion'],
+  },
+  'moomin-mystical-forest-wool-throw': {
+    name: 'Mumin-Wolldecke Mystical Forest 130x170 cm',
+    description:
+      'Decke von 130 mal 170 cm aus 100 Prozent Wolle, in Finnland für die Kollektion Mystical Forest entworfen. Nur chemische Reinigung, also eher Sofadecke als Picknickunterlage.',
+    specs: [
+      '100 % Wolle',
+      '130 x 170 cm',
+      'Blau',
+      'Chemische Reinigung, schonendes Verfahren',
+      'Entworfen in Finnland, hergestellt in Litauen',
+      'Mystical Forest',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Kollektion'],
+  },
+  'iittala-aalto-vase-160': {
+    name: 'Iittala Alvar Aalto Vase 160 mm, klar',
+    description:
+      'Alvar Aalto zeichnete diese Welle 1936, und Iittala bläst sie noch immer mit dem Mund, weshalb sich der Umriss jedes Stücks ein wenig unterscheidet. Die Größe 160 mm ist die, die man vor Augen hat, wenn der Name fällt.',
+    specs: [
+      'Höhe 16 cm, Breite 20,5 cm',
+      'Glas',
+      'Transparent',
+      '1,44 kg brutto',
+      'Nur Handwäsche',
+      'Mundgeblasenes Glas, asymmetrische Form',
+      'Alvar Aalto, Iittala Alvar Aalto Collection',
+      '999-01, EAN 6411920004445',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Herstellung',
+      'Designer und Kollektion',
+      'Artikelnummer und EAN',
+    ],
+  },
+  'iittala-kivi-candleholder': {
+    name: 'Iittala Kivi Teelichthalter 60 mm, tannengrün',
+    description:
+      'Ein gepresster Teelichthalter aus Glas von Heikki Orvola, 6 cm hoch, der aus einem Teelicht einen Farbblock macht. Es ist die günstigste Art, ein Stück Iittala zu besitzen, und er übersteht das Handgepäck.',
+    specs: [
+      '6,5 x 6,5 cm, Höhe 6 cm',
+      'Glas',
+      'Grün',
+      '0,33 kg brutto',
+      'Nur Handwäsche',
+      'Heikki Orvola, Iittala Kivi',
+      '636883-01, EAN 6411923683937',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Designer und Kollektion',
+      'Artikelnummer und EAN',
+    ],
+  },
+  'marimekko-unikko-mug': {
+    name: 'Marimekko Unikko Becher 25 cl',
+    description:
+      'Maija Isola zeichnete die Unikko-Mohnblume 1964, nachdem Marimekko Blumenmuster verboten hatte, und das Muster überlebte das Verbot. Dieser Steinzeugbecher fasst 25 cl und bringt den Druck auf den Frühstückstisch statt an die Wand.',
+    specs: [
+      '25 cl',
+      'Durchmesser 8 cm, Höhe 9,5 cm',
+      'Steinzeug',
+      'Weiß, dunkelgrün, beige und hellsand',
+      '0,276 kg brutto',
+      'Muster von Maija Isola, Becher von Sami Ruotsalainen',
+      '666236-01, EAN 6411255152033',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Designer',
+      'Artikelnummer und EAN',
+    ],
+  },
+  'aarikka-prinsessa-candleholder': {
+    name: 'Aarikka Prinsessa Kerzenhalter',
+    description:
+      'Aarikka dreht Birkenperlen seit den 1950er-Jahren, und Prinsessa trägt einen Kranz davon um einen 5,5 cm hohen Halter, der entweder ein Teelicht oder eine Stabkerze aufnimmt. Klein genug zum Verschicken, markant genug, um in Finnland erkannt zu werden.',
+    specs: [
+      'Höhe 5,5 cm, Durchmesser 6 cm',
+      'Birke, Ahorn, Aluminium',
+      '98 g',
+      'Entworfen in Finnland, hergestellt in Italien',
+      'Kerzenhalter mit einem Kranz aus Holzperlen. Passend für Teelichter und Stabkerzen',
+      'B08633',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Produktcode'],
+  },
+  'aarikka-pore-glass-vase': {
+    name: 'Aarikka Pore Glasvase 16 cm, dunkelgrün',
+    description:
+      'Eine runde, mundgeblasene Vase mit 1,7 Litern, die einen in Finnland von Hand gefärbten Ahornperlenkranz trägt. Luftblasen im Glas gehören dazu, und der Kranz wird vor dem Spülen abgenommen.',
+    specs: [
+      'Höhe 16 cm, Durchmesser 16 cm',
+      '1,7 l',
+      'Glas und Ahorn',
+      'Klar und grün',
+      'Glas hergestellt in Polen, der Holzkranz in Finnland',
+      'Von Hand spülen. Den Holzkranz vor dem Spülen abnehmen',
+      'B08706',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Produktcode',
+    ],
+  },
+  'halti-tokoi-dx-jacket': {
+    name: 'Halti Tokoi DX Wetterjacke, Herren',
+    description:
+      'Eine wetterfeste Jacke mit vollständig verklebten Nähten, leichtem Futter und verstellbarer Kapuze, weit genug geschnitten, um einen Wollpullover darunter zu tragen. Halti liefert nur innerhalb der EU.',
+    specs: [
+      'DrymaxX Sleek Twill, ein wasser- und winddichtes 2-Lagen-Gewebe mit DrymaxX-Membran. Materialanteil 50 % recyceltes Polyester und 50 % Polyester',
+      'Weiches Polyesterfutter, 100 % recyceltes Polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '0,9 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Fossil Beige, Four Leaf Clover Green, Black',
+      'Alle Nähte verklebt, verstellbare feste Kapuze, hoher Stehkragen, 2-Wege-Frontreißverschluss, Netzbelüftung, Handtaschen mit Reißverschluss, Innentasche mit Druckknopf, verstellbare Ärmelabschlüsse, Windleiste vorn, reflektierende Details',
+      'Auf links mit ähnlichen Farben waschen und zuvor die Reißverschlüsse schließen. Maximal 30 °C, schonendes Verfahren. Nicht bleichen, nicht in den Trockner, nicht bügeln, keine chemische Reinigung',
+    ],
+    specLabels: [
+      undefined,
+      'Futter',
+      'Wassersäule',
+      'Atmungsaktivität',
+      undefined,
+      undefined,
+      undefined,
+      'Ausstattung',
+      undefined,
+    ],
+  },
+  'makia-merino-beanie': {
+    name: 'Makia Merino Mütze',
+    description:
+      'Eine schlichte nordische Mütze aus Merinowolle, die Temperatur und Feuchtigkeit ausgleicht, wenn man aus einem warmen Café direkt in die Kälte tritt. Ohne faustgroßes Logo auf der Stirn.',
+    specs: [
+      '100 % Merinowolle, Patentstrick Feinheit 8, mulesingfrei',
+      'Einheitsgröße',
+      'Dark Brown',
+      'Hergestellt in Finnland, Material aus Italien',
+      'Mit ähnlichen Farben im Schonwaschgang waschen, liegend trocknen und in Form ziehen. Lüften genügt oft statt Waschen. Pilling kann mit der Zeit auftreten',
+    ],
+  },
+  'makia-aurora-hoodie': {
+    name: 'Makia Aurora Kapuzenpullover',
+    description:
+      'Ein Kapuzenpullover in normaler Passform aus 100 Prozent Biobaumwolle vom Helsinkier Label Makia. Kräftig genug, um drinnen und an milden Herbstabenden als äußere Schicht zu dienen.',
+    specs: [
+      '100 % Biobaumwolle, French Terry 370 g',
+      'S, M, L, XL, XXL',
+      'Carbon Black',
+      'Normale Passform, Kordelzug an der Kapuze, Känguru-Tasche, Rippbund an Saum und Ärmelabschluss, gewebte Etiketten aus recyceltem Polyester',
+      'Hergestellt in der Türkei, Material aus der Türkei',
+      'Auf links mit ähnlichen Farben waschen. Nicht auf den Druck bügeln. Einlaufen maximal 5 %. Feucht in Form ziehen',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Passform und Details', undefined, undefined],
+  },
+  'halti-kroka-mitten': {
+    name: 'Halti Kroka II Fäustling',
+    description:
+      'Ein winddichter Fäustling mit 60 g Isolierung und Silikongriff in der Handfläche, unisex geschnitten. Fäustlinge schlagen Handschuhe, sobald der Wind auffrischt, weil die Finger sich gegenseitig wärmen.',
+    specs: [
+      'Stormwall Softshell, 50 % Polyester und 50 % recyceltes Polyester. Weiches Fleece 100 % Polyester. Bündchen aus Lycra-Strick',
+      'Microtherm Dynamic 60 g, Futter Active Dry Soft Touch Knit, 100 % recyceltes Polyester',
+      '0,1 kg',
+      '06, 07, 08, 09, 10, 11, 12',
+      'Schwarz',
+      'Separat bei 30 °C im Schonwaschgang waschen. Nicht bleichen, nicht in den Trockner, nicht bügeln, keine chemische Reinigung',
+      '084-0757',
+    ],
+    specLabels: [
+      undefined,
+      'Isolierung und Futter',
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Artikelnummer',
+    ],
+  },
+  'halti-tunturit-ski-socks': {
+    name: 'Halti Tunturit Skisocken',
+    description:
+      'Kniehohe Socken aus Merinomischung mit Polsterung an Schienbein und Knöchel, also genau dort, wo der Skischuh drückt. Halti gibt an, dass sie in Europa hergestellt werden.',
+    specs: [
+      'Merinowollmischung: 36 % Polyamid, 23 % Acryl, 23 % Merinowolle, 16 % Polypropylen, 2 % Elasthan',
+      '0,1 kg',
+      '34-36, 37-39, 40-42, 43-45, 46-48',
+      'Sargasso Sea Blue, Lemon Pepper Beige',
+      'Hergestellt in Europa',
+      'Polsterung an Schienbein und Knöchel, kniehohe Länge, verstärkte Ferse und Spitze, Belüftungszonen an Schienbein und Fußrücken',
+      'Maximal 40 °C, normales Verfahren. Nicht bügeln, nicht bleichen, keine chemische Reinigung, nicht in den Trockner',
+      '087-0471',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Ausstattung',
+      undefined,
+      'Artikelnummer',
+    ],
+  },
+  'north-outdoor-huuru-beanie': {
+    name: 'North Outdoor Huuru Merinomütze',
+    description:
+      'North Outdoor strickt diese Rippmütze in der eigenen Strickerei in Oulu aus 100 Prozent mulesingfreier Merinowolle mit 18,5 Mikron. Sie wird in Form gestrickt statt zugeschnitten, sodass kaum Verschnitt anfällt.',
+    specs: [
+      '100 % Merinowolle, mulesingfrei, 18,5 Mikron, Strick 270 g/m²',
+      'Einheitsgröße',
+      'Indigoblau',
+      'Hergestellt in Oulu, Finnland',
+      'Regelmäßig lüften und nur bei Bedarf waschen. Wollwaschmittel, Schonwaschgang bei 30 °C mit dem niedrigsten Schleudergang, auf links',
+      'OEKO-TEX, Woolmark',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Zertifikate'],
+  },
+  'north-outdoor-pyry-scarf': {
+    name: 'North Outdoor Pyry Merinoschal',
+    description:
+      'Ein breiter, langer Schal in Patentstrick aus 100 Prozent Merinowolle, gestrickt in Oulu. Lang genug, um ihn auf mehrere Arten zu wickeln, was zählt, wenn auf offenem Fjell der Wind dreht.',
+    specs: [
+      '100 % Merinowolle, 18,5 Mikron, Rippstrick 1/1',
+      'Einheitsgröße',
+      'Haferbreigrau',
+      'Hergestellt in Oulu, Finnland',
+      'Regelmäßig lüften und nur bei Bedarf waschen. Wollwaschmittel, Schonwaschgang bei 30 °C mit dem niedrigsten Schleudergang, auf links',
+      'OEKO-TEX, Woolmark',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Zertifikate'],
+  },
+  'north-outdoor-honka-jumper': {
+    name: 'North Outdoor Honka Merinopullover, Herren',
+    description:
+      'Ein dicker Pullover in Patentstrick aus 100 Prozent Merinowolle mit lockerem Schnitt und tief angesetzter Schulter. Schwer anzusehen, leicht zu tragen, gestrickt in der Strickerei in Oulu.',
+    specs: [
+      '100 % Merinowolle, mulesingfrei, 18,5 Mikron, wechselnder Rippstrick',
+      'S, M, L, XL, 2XL, 3XL',
+      'Indigoblau',
+      'Hergestellt in Oulu, Finnland',
+      'Regelmäßig lüften und nur bei Bedarf waschen. Wollwaschmittel, Schonwaschgang bei 30 °C mit dem niedrigsten Schleudergang, auf links',
+      'OEKO-TEX, Woolmark',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Zertifikate'],
+  },
+  'marttiini-lapinleuku-255': {
+    name: 'Marttiini Lappmesser 255',
+    description:
+      'Das traditionelle Lappmesser, 27 cm lang, mit rostfreier Klinge, lackiertem Maserbirkengriff und Lederscheide. Marttiini fertigt seine Messer in Rovaniemi, und diese Ausführung des Modells hat einen Fingerschutz.',
+    specs: [
+      '16 cm',
+      'Gesamtlänge 27 cm',
+      'Klinge rostfreier Stahl, Griff lackierte Maserbirke, Scheide Leder',
+      'Messer und Lederscheide mit Druckknopfverschluss',
+      '255010',
+    ],
+    specLabels: ['Klingenlänge', undefined, undefined, undefined, 'Artikelnummer'],
+  },
+  'marttiini-napapiirin-puukko': {
+    name: 'Marttiini Polarkreis-Messer',
+    description:
+      'Ein kleines Alltagsmesser, 20 cm lang, mit Klinge aus Kohlenstoffstahl, gewachstem Birkengriff und brauner Lederscheide. Kohlenstoffstahl nimmt eine schärfere Schneide an als rostfreier Stahl, muss aber geölt werden, worauf Marttiini auf der Produktseite ebenfalls hinweist.',
+    specs: [
+      '9 cm',
+      'Gesamtlänge 20 cm',
+      'Klinge Kohlenstoffstahl, Griff gewachste Birke, Scheide braunes Leder',
+      'Die Klinge nach Gebrauch stets sorgfältig trocknen und regelmäßig mit ungesalzenem Öl einölen',
+      '121019',
+    ],
+    specLabels: ['Klingenlänge', undefined, undefined, undefined, 'Artikelnummer'],
+  },
+  'marttiini-ilves-131': {
+    name: 'Marttiini Luchs 131',
+    description:
+      'Ein 22 cm langes Messer mit rostfreier Klinge, lackiertem Maserbirkengriff und brauner Lederscheide. Marttiini gibt an, dass das Modell Luchs in den 1930er-Jahren vom Firmengründer Janne Marttiini entworfen wurde.',
+    specs: [
+      '11 cm',
+      'Gesamtlänge 22 cm',
+      'Klinge rostfreier Stahl, Griff lackierte Maserbirke, Scheide braunes Leder',
+      '131010',
+    ],
+    specLabels: ['Klingenlänge', undefined, undefined, 'Artikelnummer'],
+  },
+  'kupilka-classic-cup-21': {
+    name: 'Kupilka 21 Outdoor-Becher 2,1 dl',
+    description:
+      'Die Kuksa-Form in einem Material, das in die Spülmaschine darf: halb Kiefernzellulosefaser, halb Thermoplast, geformt in Finnland. Er fasst 2,1 dl, wiegt 83 Gramm und verbrennt am Feuer nicht die Finger.',
+    specs: [
+      '2,1 dl',
+      '83 g',
+      '60 x 93 x 165 mm',
+      'Kareline Naturfaserverbund, 50 % Kiefernzellulosefaser und 50 % Thermoplast, mit Ökostrom hergestellt',
+      'Finnland',
+      'Unterwegs wie eine hölzerne Kuksa ausspülen, zu Hause darf er in die Spülmaschine. Nicht für die Mikrowelle',
+      '3021011XX',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Modellnummer',
+    ],
+  },
+  'kupilka-bowl-55': {
+    name: 'Kupilka 55 Outdoor-Schale 5,5 dl',
+    description:
+      'Eine Schale mit 5,5 dl und einem Griff, der fest genug ist, um sie in einer Hand zu halten, während die andere den Becher hält. Derselbe finnische Kiefernfaserverbund wie beim Becher, 184 Gramm, spülmaschinenfest.',
+    specs: [
+      '5,5 dl',
+      '184 g',
+      '54 x 154 x 223 mm',
+      'Kareline Naturfaserverbund, 50 % Kiefernzellulosefaser und 50 % Thermoplast, mit Ökostrom hergestellt',
+      'Finnland',
+      'Spülmaschinenfest. Nicht für die Mikrowelle. Zugelassen für den Kontakt mit heißen und kalten Speisen',
+      '3055013X',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Modellnummer',
+    ],
+  },
+  'kupilka-cutlery-set': {
+    name: 'Kupilka Besteckset',
+    description:
+      'Löffel, Messer und Gabel aus demselben finnischen Holzfaserverbund, 56 Gramm für das Set. Die günstigste Art, das Kupilka-Material mitzunehmen, und die handgepäcktauglichste.',
+    specs: [
+      'Löffel, Messer und Gabel',
+      '56 g',
+      'Kareline Naturfaserverbund, 50 % Kiefernzellulosefaser und 50 % Thermoplast, mit Ökostrom hergestellt',
+      'Finnland',
+      'Unterwegs wie Holzbesteck ausspülen, zu Hause darf es in die Spülmaschine. Nicht für die Mikrowelle',
+      '3025025X',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Modellnummer'],
+  },
+  'lapuan-kankurit-poro-towel': {
+    name: 'Lapuan Kankurit PORO Leinenhandtuch 46 x 70 cm',
+    description:
+      'Ein Rentier, gezeichnet vom Illustrator Matti Pikkujämsä, gewebt in der Weberei in Lapua aus europäischer Leinenkette und Bio-Baumwollschuss. Es lässt sich flach in den Koffer legen, und die Saugfähigkeit stellt sich erst nach einigen Wäschen ein.',
+    specs: [
+      '46 x 70 cm',
+      '60 % Leinen, Masters of Linen, und 40 % Baumwolle',
+      'Leinen-Grün',
+      'Hergestellt in Finnland',
+      'Vor dem ersten Gebrauch separat bei 60 °C im Schonwaschgang mit viel Wasser waschen. Nicht schleudern. Weichspüler und Bleichmittel vermeiden. Nicht in den Trockner. Feucht bügeln. Einlaufen ca. 5 %',
+      'Matti Pikkujämsä',
+      '20527',
+      'Schlüsselflagge, Masters of Linen',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Designer',
+      'Produktcode',
+      'Zertifikate',
+    ],
+  },
+  'lapuan-kankurit-kaamos-blanket': {
+    name: 'Lapuan Kankurit KAAMOS Wolldecke 100 x 150 cm',
+    description:
+      'Kaamos ist die Polarnacht, und Hanna Galtat leitete das Muster daraus ab, wie sich das Tageslicht im Lauf des Tages bewegt. Das Schussgarn ist Wolle vom Finnschaf, die die Weberei von Höfen im Umkreis von etwa 400 km um Lapua bezieht.',
+    specs: [
+      '100 x 150 cm',
+      '100 % Schurwolle',
+      'Weiß-Schwarz',
+      'Hergestellt in Finnland',
+      'Nur bei starker Verschmutzung waschen, sonst im Freien lüften. Handwäsche bei max. 30 °C oder chemische Reinigung. Nicht reiben, dehnen oder auswringen. Nicht in den Trockner. Mit feuchtem Tuch bei max. 150 °C bügeln',
+      'Hanna Galtat',
+      '102939',
+      'Schlüsselflagge',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Designer',
+      'Produktcode',
+      'Zertifikat',
+    ],
+  },
+  'pentik-posio-mug': {
+    name: 'Pentik Posio Becher 0,3 l',
+    description:
+      'Pentik brennt diesen Becher in Posio, das das Unternehmen als nördlichste Keramikfabrik der Welt bezeichnet, und die gesamte Posio-Reihe ist mit Rentieren dekoriert. Geeignet für Spülmaschine, Backofen, Mikrowelle und Gefrierschrank.',
+    specs: [
+      '0,3 l',
+      'Rot',
+      'Hergestellt in Posio, Lappland, das Pentik als nördlichste Keramikfabrik der Welt bezeichnet',
+      'Spülmaschinenfest, geeignet für Elektroherd, Backofen, Mikrowelle und Gefrierschrank',
+      'Posio. Jedes Stück der Reihe ist mit Rentieren dekoriert',
+      '12JAO050P41',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Kollektion', 'Produktcode'],
+  },
+  'pentik-tunturiretki-studio-dish': {
+    name: 'Pentik Tunturiretki Winter Studio tiefe Dreiecksschale 19 cm',
+    description:
+      'Anu Pentik malte die Rentiere, die auf einer Fjellwanderung immer wieder zwischen den Bäumen auftauchen. Studio-Stücke werden in Posio von Hand bemalt, sodass keine zwei Schalen genau dieselben Pinselspuren tragen.',
+    specs: [
+      'Durchmesser 19 cm',
+      'Blau',
+      'Handgefertigt in Posio, Lappland, entworfen von Anu Pentik',
+      'Spülmaschinenfest, geeignet für Elektroherd, Backofen, Mikrowelle und Gefrierschrank',
+      'Pentik Studio, die handbemalte Reihe',
+      '12ST353TT61',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Kollektion', 'Produktcode'],
+  },
+  'kuivalihakundi-poro-jerky': {
+    name: 'Rentier-Trockenfleisch Original 2 x 20 g',
+    description:
+      'Zwei Beutel mit je 20 Gramm Rentier-Trockenfleisch aus 100 Prozent finnischem Rentier, im Ofen getrocknet und mit glutenfreier Sojasauce, schwarzem Pfeffer, Knoblauch und Zuckersirup mariniert. Fleisch darf nicht außerhalb der EU versandt werden, deshalb endet die Lieferung an der EU-Grenze.',
+    specs: [
+      '2 x 20 g',
+      'Fleisch aus Finnland',
+      'Das Datum läuft etwa ein Jahr ab dem Tag, an dem das Fleisch getrocknet und verpackt wurde. Muss auch nach dem Öffnen nicht gekühlt werden',
+      'Stark gesalzen. Glutenfrei',
+      'Energie 1514 kJ / 360 kcal, Fett 14,2 g davon gesättigte Fettsäuren 6,2 g, Kohlenhydrate 7,9 g davon Zucker 5,1 g, Eiweiß 50,2 g, Salz 9,5 g',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      'Hinweise auf dem Etikett',
+      'Nährwerte je 100 g',
+    ],
+  },
+  'finnish-flavours-palalaku-salmiakki': {
+    name: 'Finnish Flavours Premium Palalaku Salmiak 150 g',
+    description:
+      'Ein 150-Gramm-Beutel weiches Salmiaklakritz, die Sorte mit Ammoniumchlorid, die Besucher schon beim ersten Stück in zwei Lager teilt. Suomikauppa versendet Lebensmittel weit über Finnland hinaus.',
+    specs: [
+      '150 g',
+      'Energie 1316 kJ / 311 kcal, Fett 0,5 g davon gesättigte Fettsäuren 0 g, Kohlenhydrate 72 g davon Zucker 50 g, Eiweiß 4,1 g, Salz 1,7 g',
+      'Finnish Flavours, Kumitehtaankatu 5, 04260 Kerava',
+    ],
+    specLabels: [undefined, 'Nährwerte je 100 g', 'Inverkehrbringer'],
+  },
+  'meritalo-tyrnihillo': {
+    name: 'Meritalo finnische Sanddornkonfitüre 310 g',
+    description:
+      'Sanddornkonfitüre mit 37 Gramm Beeren je 100 Gramm, aus finnischem Sanddorn auf dem Familienhof Meritalo in Salo im Südwesten Finnlands gekocht, nicht in Lappland. Sanddorn ist eher herb als süß und kommt daher neben Käse weiter als auf dem Pfannkuchen.',
+    specs: [
+      '310 g',
+      'Die Beeren stammen aus Finnland. Hergestellt von einem Familienbetrieb auf dem Hof Meritalo in Salo, Südwestfinnland',
+      'Energie 781 kJ / 187 kcal, Fett 1,9 g davon gesättigte Fettsäuren 0,3 g, Kohlenhydrate 41 g davon Zucker 41 g, Eiweiß 0,3 g, Salz 0,01 g',
+      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+    ],
+    specLabels: [undefined, undefined, 'Nährwerte je 100 g', 'Inverkehrbringer'],
+  },
+  'kuivalihakundi-poro-jerky-200g': {
+    name: 'Rentier-Trockenfleisch Original 200 g',
+    description:
+      'Der Beutel in Geschenkgröße mit demselben Rentier-Trockenfleisch, 200 Gramm. Der Hersteller gibt an, dass für ein Kilo Trockenfleisch drei Kilo frisches Fleisch nötig sind, was den größten Teil des Preises erklärt.',
+    specs: [
+      '200 g',
+      '100 % Rentierfleisch, Oberschale, im Ofen getrocknet und mariniert',
+      'Für 1 kg Trockenfleisch werden 3 kg frisches Fleisch benötigt',
+      'Das Datum läuft etwa ein Jahr ab dem Tag, an dem das Fleisch getrocknet und verpackt wurde. Muss auch nach dem Öffnen nicht gekühlt werden',
+    ],
+    specLabels: [undefined, undefined, 'Fleischeinsatz', undefined],
+  },
+  'kuivalihakundi-beef-jerky-smoked': {
+    name: 'Rinder-Trockenfleisch Smoked 40 g',
+    description:
+      'Rind statt Rentier, tatsächlich geräuchert statt aromatisiert, 57 Gramm Eiweiß je 100. Das günstigste Produkt dieser Kategorie und dasjenige, das einen Rucksack übersteht.',
+    specs: [
+      '40 g',
+      'Rind aus EU-Aufzucht und -Schlachtung',
+      'Für 1 kg Trockenfleisch werden 2,5 kg frisches Rindfleisch benötigt',
+      'Energie 1261 kJ / 298 kcal, Fett 5,5 g davon gesättigte Fettsäuren 2,4 g, Kohlenhydrate 5,2 g davon Zucker 4,4 g, Eiweiß 56,9 g, Salz 5 g',
+    ],
+    specLabels: [undefined, undefined, 'Fleischeinsatz', 'Nährwerte je 100 g'],
+  },
+  'fazer-geisha-chocolate-bar': {
+    name: 'Fazer Geisha Haselnussnougat-Schokoladentafel 121 g',
+    description:
+      'Milchschokolade über einer knusprigen Haselnussnougatfüllung, die Tafel, die die meisten finnischen Haushalte in einer Schublade haben. Fazer gibt an, dass sie ohne Palmöl hergestellt wird.',
+    specs: [
+      '121 g',
+      'Milchschokolade mit mindestens 30 % Kakao, Haselnussnougatfüllung mit 11 % Haselnüssen',
+      'Energie 550 kcal / 2302 kJ, Fett 35 g, gesättigte Fettsäuren 17 g, Kohlenhydrate 51 g, Zucker 49 g, Eiweiß 8 g, Salz 0,19 g',
+    ],
+    specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
+  },
+  'nordqvist-moomin-forest-berry-tea': {
+    name: 'Nordqvist Mumin Waldbeeren-Hibiskustee, 20 Beutel',
+    description:
+      'Bio-Hibiskus mit Apfel und Waldbeeren, von Natur aus koffeinfrei, gemischt in der Nordqvist-Fabrik in Nurmijärvi. Zwanzig Beutel wiegen 35 Gramm und sind damit das leichteste Geschenk in diesem Shop.',
+    specs: [
+      '20 x 1,75 g, 35 g',
+      'Gemischt in der Nordqvist-Fabrik in Nurmijärvi, Finnland',
+      '95 °C für 2 bis 4 Minuten. In kaltem Wasser 5 bis 10 Minuten',
+      'Bio-zertifiziert, vegan, glutenfrei, von Natur aus koffeinfrei',
+    ],
+    specLabels: [undefined, undefined, 'Zubereitung', 'Ernährung'],
+  },
+  'nordqvist-cranberry-toffee-tea': {
+    name: 'Nordqvist Cranberry-Salzkaramell-Tee, 20 Beutel',
+    description:
+      'Herbe Cranberry gegen gesalzenes Karamell auf einer Basis aus Hibiskus und Rooibos, dadurch koffeinfrei und abends trotzdem mit Geschmack. Nordqvist mischt seit 1883 Tee in Finnland.',
+    specs: [
+      '20 x 1,75 g, 35 g',
+      '95 °C für 2 bis 5 Minuten',
+      'Vegan. Hibiskus und Rooibos sind Rainforest Alliance zertifiziert',
+    ],
+    specLabels: [undefined, 'Zubereitung', 'Ernährung und Zertifizierung'],
+  },
+  'moomin-wild-blueberry-coffee': {
+    name: 'Mumintroll Wild Blueberry Kaffee 250 g',
+    description:
+      'Kaffee mit Blaubeeraroma von der Rösterei Bergstrands Kafferosteri, aufgebaut auf Perlbohnen von den Hügeln der Mogiana im Süden Brasiliens. Eine Perlbohne ist eine Kaffeekirsche, in der statt zweier Bohnen nur eine gewachsen ist, was laut Rösterei den Geschmack verdichtet. 250 Gramm.',
+    specs: [
+      '250 g',
+      'Bohnen von den Mogiana-Hügeln im Süden Brasiliens, geröstet von Bergstrands Kafferosteri',
+      'Perlbohne, eine Kaffeekirsche mit einer einzelnen statt zweier Bohnen',
+      'Wilde Blaubeere',
+    ],
+    specLabels: [undefined, undefined, 'Bohne', 'Aroma'],
+  },
+  'moomin-lingonberry-blueberry-dark-chocolate': {
+    name: 'Mumintroll Zartbitterschokolade mit Preiselbeere und Blaubeere 70 g',
+    description:
+      'Zartbitterschokolade in Bio-Qualität mit 70 Prozent Kakao von Kalmar Chokladfabrik mit gefriergetrockneten Preiselbeeren und Blaubeeren, eingeschlagen in ein Motiv von Tove Jansson. Der Kakao ist Criollo und Trinitario aus Peru, die Tafel wird in Schweden hergestellt.',
+    specs: [
+      '70 g',
+      'Zartbitterschokolade, 70 % Kakao',
+      'Kakaobohnen Criollo und Trinitario aus Peru, hergestellt in Schweden',
+      'Bio',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Ernährung'],
+  },
+  'moomin-berry-picking-tea': {
+    name: 'Mumin Berry Picking Tee, 20 Beutel',
+    description:
+      'Schwarzer Tee mit Vanille- und roten Beerenaromen, gemischt in der Fabrik in Nurmijärvi in Finnland und mit der finnischen Schlüsselflagge ausgezeichnet. Der Tee entsteht in Zusammenarbeit mit dem Finnischen Roten Kreuz: 0,40 Euro pro verkaufter Packung gehen an die Arbeit des Roten Kreuzes mit Kindern, Jugendlichen und einsamen Menschen.',
+    specs: [
+      '20 x 1,75 g, 35 g',
+      'Hergestellt in der Fabrik in Nurmijärvi, Finnland',
+      'Rainforest Alliance zertifizierter Tee, finnische Schlüsselflagge',
+      'Vegan',
+    ],
+    specLabels: [undefined, undefined, 'Zertifizierung', 'Ernährung'],
+  },
+  'arctic-power-berries-blueberry-powder': {
+    name: 'Wildblaubeerpulver 70 g',
+    description:
+      'Gefriergetrocknete wilde Heidelbeere, ohne Zusätze. Der Hersteller gibt an, dass etwa 700 Gramm frische Beeren in ein Glas mit 70 Gramm gehen. Dieser Shop rechnet in Pfund Sterling ab.',
+    specs: [
+      '70 g',
+      '100 % Blaubeerpulver aus wilden nordischen Blaubeeren, auch Heidelbeeren genannt. Ohne Zusätze',
+      'Aus etwa 700 g frischen Beeren entstehen 70 g Beerenpulver',
+      'Energie 367 kcal / 1559 kJ, Eiweiß 5 g, Kohlenhydrate 54 g davon Zucker 34 g, Ballaststoffe 31 g, Fett 0,8 g, Salz 0,01 g',
+    ],
+    specLabels: [undefined, undefined, 'Beereneinsatz', 'Nährwerte je 100 g'],
+  },
+  'arctic-power-berries-sea-buckthorn-powder': {
+    name: 'Sanddornpulver 70 g',
+    description:
+      'Gefriergetrockneter nordischer Sanddorn, 70 Gramm, ohne Zusätze. Herb und leuchtend orange, sodass ein Teelöffel im Porridge weiter trägt, als man vermuten würde. Dieser Shop rechnet in Pfund Sterling ab.',
+    specs: [
+      '70 g',
+      '100 % Sanddornpulver aus nordischen Sanddornbeeren. Ohne Zusätze',
+      'Aus etwa 700 g frischen Beeren entstehen 70 g Beerenpulver',
+      'Energie 489 kcal / 2045 kJ, Eiweiß 13 g, Kohlenhydrate 24 g davon Zucker 14 g, Ballaststoffe 28 g, Fett 25 g, Salz 0,06 g',
+    ],
+    specLabels: [undefined, undefined, 'Beereneinsatz', 'Nährwerte je 100 g'],
+  },
+  'kaapa-mushrooms-pakuri-powder': {
+    name: 'Kääpä Mushrooms Chaga-Extraktpulver 30 g',
+    description:
+      'Ein Glas mit 30 Gramm Chaga-Extraktpulver von Kääpä Mushrooms, die Vitalpilze in nordischen Wäldern ernten, gedacht zum Einrühren in heiße Getränke. Ruohonjuuri liefert nur innerhalb des EU-Zoll- und Steuergebiets, und das Etikett nennt Wechselwirkungen mit Medikamenten, die man vorher lesen sollte.',
+    specs: [
+      '30 g',
+      '100 % Chaga, bio. 100 mg Beta-Glucan pro Tagesdosis',
+      'Finnland',
+      'Bio mit dem EU-Bio-Blatt. Glutenfrei, laktosefrei, milchfrei, sojafrei, zuckerfrei, koffeinfrei, ohne Zusatzstoffe, vegan, wild',
+      'Chaga darf nicht gleichzeitig mit Antibiotika, Blutverdünnern, Penicillin oder intravenöser Glukose eingenommen werden. Die auf der Packung angegebene Dosis einhalten und nicht überschreiten',
+      '6430071310212',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Ernährung', 'Warnhinweis', 'EAN'],
+  },
+  'arctic-warriors-spruce-sprout-powder': {
+    name: 'Arctic Warriors Fichtensprossenpulver 40 g',
+    description:
+      'Gefriergetrocknete Fichtensprossen, innerhalb eines Zeitfensters von zwei Wochen von Hand gepflückt, aus staatlichen Bio-Wäldern und nur jedes zweite Jahr aus demselben Wald. Zitrus und Harz in einem Löffel, 382 mg Vitamin C je 100 g.',
+    specs: [
+      '40 g, brutto 0,046 kg',
+      '3 x 11 x 17 cm',
+      'Gefriergetrocknete Fichtensprosse',
+      'Finnland',
+      '1 bis 3 Teelöffel täglich',
+      'Energie 1683 kJ / 402 kcal, Eiweiß 12,1 g, Kohlenhydrate 77,8 g, Fett 4,19 g. Vitamin C 382 mg, Vitamin A 970 µg, Vitamin K1 332 mg, Kalium 1200 mg, Phosphor 350 mg, Kalzium 130 mg, Magnesium 120 mg, Zink 3,6 mg, Eisen 2 mg',
+      'Unter Lizenz aus Bio-Wäldern der finnischen staatlichen Forstverwaltung geerntet, je Wald jedes zweite Jahr',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Dosierung',
+      'Nährwerte je 100 g',
+      'Ernte',
+    ],
+  },
+  'arctic-warriors-nettle-powder': {
+    name: 'Arctic Warriors Brennnesselpulver 150 g',
+    description:
+      'Brennnessel von Bio-Höfen in Lappland, gefriergetrocknet zu einem Pulver, das neutral genug ist, um es in Suppe oder Brot zu rühren, ohne dem übrigen Gericht zu widersprechen. 22 000 mg Kalzium je 100 g.',
+    specs: [
+      '150 g, brutto 0,162 kg',
+      '4 x 16 x 23 cm',
+      'Gefriergetrocknete Brennnessel',
+      'Finnland, angebaut auf Bio-Höfen in Lappland',
+      '1 bis 5 Teelöffel täglich',
+      'Energie 1484 kJ / 354 kcal, Eiweiß 23,6 g, Kohlenhydrate 56 g, Fett 3,44 g, Salz unter 5 mg. Vitamin A 1900 µg, Kalzium 22000 mg, Magnesium 5300 mg, Eisen 68 mg',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Dosierung', 'Nährwerte je 100 g'],
+  },
+  'arctic-warriors-roseroot-elixir': {
+    name: 'Arctic Warriors Rosenwurz-Elixier 100 ml',
+    description:
+      'Rosenwurz wächst an den feuchten Bachufern und Felswänden der lappländischen Fjells, und Arctic Warriors extrahiert sie zusammen mit Brennnessel in pflanzliches Glycerin. Ein Teelöffel kommt in Tee, Porridge oder Joghurt.',
+    specs: [
+      '100 ml, brutto 0,270 kg',
+      '4,5 x 4,5 x 13 cm',
+      'Pflanzliches Glycerin, Brennnessel, Rosenwurz',
+      'Finnland',
+      '1 bis 2 Teelöffel täglich',
+      'Milchfrei, glutenfrei, vegan. Das pflanzliche Glycerin beeinflusst den Blutzucker nicht',
+      'Ein Nahrungsergänzungsmittel ersetzt keine abwechslungsreiche Ernährung. Außerhalb der Reichweite von Kindern aufbewahren und die angegebene Dosis nicht überschreiten',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      'Dosierung',
+      'Ernährung',
+      'Hinweis',
+    ],
+  },
+  'omega7-sea-buckthorn-olive-oil': {
+    name: 'Omega7 SBA24 Sanddorn- und Olivenöl 150 ml',
+    description:
+      'Sanddornfruchtöl und -kernöl zusammen mit Olivenöl, in Finnland entwickelt und hergestellt. Der Hersteller standardisiert die Gehalte an Vitamin A und E, statt sie der Ernte zu überlassen.',
+    specs: [
+      '150 ml',
+      'Sanddornfruchtöl und -kernöl mit Olivenöl, standardisierte Gehalte an Vitamin A und E',
+      'In Finnland entwickelt und hergestellt',
+      'Die auf der Packung angegebene Dosis einhalten und nicht überschreiten. Ein Nahrungsergänzungsmittel ersetzt keine abwechslungsreiche Ernährung. Außerhalb der Reichweite von Kindern aufbewahren',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Hinweis'],
+  },
+  'kaino-spruce-sprout-sparkling': {
+    name: 'KAINO Drinks Fichtensprossen-Schaumgetränk 0,2 l',
+    description:
+      'Ein alkoholfreies Schaumgetränk aus finnischen Bio-Zutaten, damit ein Anstoßen in der Hütte nicht zwingend Alkohol bedeutet. Kalt servieren, sonst verschwindet das Fichtenaroma unter der Kohlensäure.',
+    specs: [
+      '0,2 l',
+      'Hergestellt aus 100 % finnischen Bio-Zutaten. Alkoholfrei',
+      'Finnland',
+      'Energie 122,65 kJ / 29,3 kcal, Fett unter 0,1 g davon gesättigte Fettsäuren unter 0,1 g, Kohlenhydrate 6,9 g davon Zucker 6,9 g, Eiweiß unter 0,1 g, Salz unter 0,1 g',
+      'Vegan. EU-Bio-Blatt',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      'Nährwerte je 100 ml',
+      'Ernährung und Zertifizierung',
+    ],
+  },
+  'north-outdoor-arctic-250-balaclava': {
+    name: 'North Outdoor Arctic 250 Merino-Sturmhaube',
+    description:
+      'Der wärmste Strick von North Outdoor, geformt, um unter einem Helm zu sitzen. Auf dem Schneemobil oder im Rentierschlitten dringt die Kälte zuerst an Hals und Wangen ein, und genau diese Lücke schließt diese Schicht.',
+    specs: [
+      'Merinowollstrick, Gewicht Arctic 250',
+      'Einheitsgröße',
+      'Schwarz',
+      'North Outdoor, Oulu, Finnland',
+    ],
+  },
+  'north-outdoor-kevo-gloves': {
+    name: 'North Outdoor Kevo Merinohandschuhe',
+    description:
+      'Gestrickt aus mulesingfreier Merinowolle in der eigenen Strickerei von North Outdoor in Oulu. Dünn genug, um sie an den kältesten Tagen unter einem Fäustling zu tragen und beim Fotografieren anzubehalten.',
+    specs: ['100 % Merinowolle, mulesingfrei', 'M, L, XL', 'Indigoblau', 'Gestrickt in Oulu, Finnland'],
+  },
+  'north-outdoor-heavyweight-gaiter': {
+    name: 'North Outdoor Heavyweight Merino-Schlauchschal',
+    description:
+      'Merinofleece, dick genug, um ihn über die Nase zu ziehen, während man auf die Lichter wartet. Wolle isoliert weiter, wenn der Atem darin kondensiert, und genau das ist das Problem beim Stillstehen in der Kälte.',
+    specs: ['Merinofleece', 'Einheitsgröße', 'Schwarz', 'North Outdoor, Oulu, Finnland'],
+  },
+  'north-outdoor-sointu-cardigan': {
+    name: 'North Outdoor Sointu Merino-Strickjacke',
+    description:
+      'Eine kastig geschnittene Merino-Strickjacke, die wie Hauskleidung wirkt, aber als Zwischenschicht funktioniert. Das eine Stück aus dieser Auswahl, das man nach der Safari auch zum Abendessen trägt.',
+    specs: ['100 % Merinowolle', 'XS–2XL', 'Latte', 'North Outdoor, Oulu, Finnland'],
+  },
+  'north-outdoor-arctic-260-zip-neck': {
+    name: 'North Outdoor Arctic 260 Merino-Troyer',
+    description:
+      'Ein Troyer mit hohem Kragen aus 100 Prozent Merinowolle, dick genug, um ihn drinnen allein zu tragen und draußen als Zwischenschicht zu nutzen. Der Reißverschluss ist der Punkt: Man öffnet ihn beim Gehen und schließt ihn, sobald man stehen bleibt.',
+    specs: [
+      '100 % Merinowolle',
+      'S–3XL',
+      'Granitgrau und Schwarz',
+      'North Outdoor, Oulu, Finnland',
+      'Hoher schützender Kragen, abgedeckter Reißverschluss, verlängerter Rückensaum',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Details'],
+  },
+  'halti-hossa-baselayer-men': {
+    name: 'Halti Hossa II Merino-Unterwäscheset, Herren',
+    description:
+      'Oberteil und lange Unterhose in einer Schachtel, 190 g Merino mit 20,5 Mikron. Die Schicht direkt auf der Haut entscheidet, ob der Rest der Ausrüstung funktioniert, und genau sie fehlt den meisten Besuchern bei der Ankunft.',
+    specs: [
+      '100 % Merinowolle, 190 g/m², 20,5 Mikron, Rippstrick 1x1',
+      'Langarmshirt und lange Unterhose',
+      'Auf links waschen',
+    ],
+    specLabels: [undefined, 'Inhalt des Sets', undefined],
+  },
+  'halti-hossa-baselayer-women': {
+    name: 'Halti Hossa II Merino-Unterwäscheset, Damen',
+    description:
+      'Dasselbe Set aus 190 g Merino in Damenschnitt. Wolle hält die Wärme auch dann, wenn man beim Gehen schwitzt und danach still steht und schaut, und genau so sieht ein Tag in Lappland aus.',
+    specs: [
+      '100 % Merinowolle, 190 g/m², 20,5 Mikron, Rippstrick 1x1',
+      'Langarmshirt und lange Unterhose',
+      'Auf links waschen',
+    ],
+    specLabels: [undefined, 'Inhalt des Sets', undefined],
+  },
+  'halti-heatgrid-midlayer': {
+    name: 'Halti HeatGrid Zwischenschichtjacke, Herren',
+    description:
+      'Waffelstrick, der Luft einschließt, ohne unter einer Wetterjacke aufzutragen. Das ist die Schicht zwischen Merino und Parka, und dass sie fehlt, ist der Grund, warum Leute frierend zurückkommen.',
+    specs: [
+      'Waffelstrick 95 % recyceltes Polyester / 5 % Elasthan; Jerseystrick 92 % recyceltes Polyester / 8 % Elasthan',
+      'Auf links mit ähnlichen Farben waschen, Reißverschlüsse vor dem Waschen schließen',
+    ],
+  },
+  'halti-taival-dx-jacket': {
+    name: 'Halti Taival DX 3L Wetterjacke, Herren',
+    description:
+      'Eine dreilagige Wetterjacke mit 20 000 mm Wassersäule und 30 000 g Atmungsaktivität. Diese beiden Zahlen wirken in verschiedene Richtungen: Die erste hält Schneeregen draußen, die zweite lässt den Schweiß eines Aufstiegs entweichen, statt ihn innen gefrieren zu lassen.',
+    specs: [
+      'DrymaxX Nano Knit Shell, 3-lagig. 100 % recyceltes Polyester',
+      '20 000 mm',
+      '30 000 g/m²/24 h',
+    ],
+    specLabels: [undefined, 'Wassersäule', 'Atmungsaktivität'],
+  },
+  'halti-sykli-ski-gloves': {
+    name: 'Halti Sykli Skihandschuhe',
+    description:
+      'Wasserdichter Handschuh mit 120 g Isolierung, Lederhandfläche und Schneefangbund, der beim Sturz verhindert, dass sich Schnee am Handgelenk hineinpresst. Gemacht für den Liftbetrieb in Levi oder Ylläs, nicht für den Stadtbummel.',
+    specs: [
+      'DrymaxX, dehnt sich in 4 Richtungen, wasser- und winddicht. Lederhandfläche',
+      '120 g Microtherm Dynamic',
+      '15 000 mm / 15 000 g/m²/24 h',
+    ],
+    specLabels: [undefined, 'Isolierung', 'Wassersäule und Atmungsaktivität'],
+  },
+  'halti-merino-socks-2pack': {
+    name: 'Halti Merinowollsocken, 2er-Pack',
+    description:
+      'Zwei Paar, weil das Paar von heute morgen früh noch nicht trocken ist. Merinomischung statt reiner Wolle, was wiederholte Maschinenwäsche besser übersteht.',
+    specs: [
+      '40 % Merinowolle, 40 % Acryl, 19 % Polyamid, 1 % Elasthan',
+      '2 Paar',
+      'Hergestellt in Europa',
+    ],
+    specLabels: [undefined, 'Packungsgröße', undefined],
+  },
+}

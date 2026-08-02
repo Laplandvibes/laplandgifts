@@ -2447,6 +2447,244 @@ export const PRODUCTS: Product[] = [
   },
 
   // ───────────────────────────────────────────────────────────────────────
+  // Erä 2.8.2026 — SUOMALAISET MAKEISKLASSIKOT (Vesa: "herkkuja on todella
+  // vähän"). Yhdeksän tuotetta, jotka suomalainen tunnistaa nimeltä ja jotka
+  // matkailija näkee kaupan hyllyssä: salmiakki kolmena eri muotona, Fazerin
+  // suklaalevyt, tervalakritsi ja Jaffa.
+  //
+  // Kaikki tulevat Suomikaupan kautta, joka on monimerkkijälleenmyyjä eikä
+  // yksittäinen brändi: valmistajia on viisi (Fazer, Halva, Leijona, Sisu ja
+  // Malaco). Siksi kategoria ei muutu yhden brändin luetteloksi, vaikka
+  // yhden kumppanin osuus kasvaa.
+  //
+  // 🔴 Suomikauppa on `network: 'direct'`, eli näistä EI tule komissiota.
+  // Ne ovat mukana koska tuliaiskauppa ilman suomalaisia makeisia ei ole
+  // uskottava. Herkut-kategoria tarvitsee oman affiliate-kumppanin.
+  //
+  // Hinnat, kuvat ja kuvaustekstit luettu kaupan JSON-LD:stä 2.8.2026.
+  // ───────────────────────────────────────────────────────────────────────
+  {
+    slug: 'fazer-super-salmiakki',
+    category: 'treats',
+    brand: 'Fazer',
+    name: { en: 'Fazer Super Salmiakki pastilles 80 g', fi: 'Fazer Super Salmiakki -pastillit 80 g' },
+    description: {
+      en: 'The hardest of the salmiakki classics, sold in the same tin-shaped box since the 1970s. Start a visitor on one of these and you will know within ten seconds which camp they belong to.',
+      fi: 'Kovin salmiakkiklassikoista, samannäköisessä rasiassa 1970-luvulta asti. Anna vieraalle yksi, niin tiedät kymmenessä sekunnissa kumpaan leiriin hän kuuluu.',
+    },
+    priceFrom: 2.45,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-fazer-super-salmiakki',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/fazer-super-salmiakki-80g',
+    details: {
+      specs: [{ key: 'size', value: { en: '80 g', fi: '80 g' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/fazer-super-salmiakki-80g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'fazer-pantteri-salmiakki',
+    category: 'treats',
+    brand: 'Fazer',
+    name: { en: 'Fazer Pantteri salmiakki sweets 210 g', fi: 'Fazer Pantteri -salmiakkikarkit 210 g' },
+    description: {
+      en: 'Soft menthol salmiakki that has been made for over fifty years. Milder than the pastilles, so this is the bag to bring to people who have never tried salmiakki.',
+      fi: 'Pehmeää mentolisalmiakkia, jota on valmistettu yli viisikymmentä vuotta. Pastilleja miedompi, joten tämä on se pussi jonka vie salmiakkia ennen maistamattomille.',
+    },
+    priceFrom: 4.87,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-fazer-pantteri-salmiakki',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/fazer-pantteri-salmiakki-karkkipussi-210g',
+    details: {
+      specs: [{ key: 'size', value: { en: '210 g', fi: '210 g' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/fazer-pantteri-salmiakki-karkkipussi-210g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'halva-salmiakkiruutu',
+    category: 'treats',
+    brand: 'Halva',
+    name: { en: 'Halva Salmiakkiruutu 170 g', fi: 'Halva Salmiakkiruutu 170 g' },
+    description: {
+      en: 'Halva has made this squared salmiakki since 1960 in Pitäjänmäki in Helsinki. Chewier than the Fazer versions and the one Finns argue is the original.',
+      fi: 'Halva on tehnyt tätä ruutusalmiakkia vuodesta 1960 Pitäjänmäellä Helsingissä. Sitkeämpää kuin Fazerin versiot, ja se jota suomalaiset pitävät alkuperäisenä.',
+    },
+    priceFrom: 5.55,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-halva-salmiakkiruutu',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/halva-salmiakkiruutu-170g',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '170 g', fi: '170 g' } },
+        {
+          key: 'origin',
+          value: {
+            en: 'Made in Pitäjänmäki, Helsinki, since 1960',
+            fi: 'Valmistettu Pitäjänmäellä Helsingissä vuodesta 1960',
+          },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/halva-salmiakkiruutu-170g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'sisu-xylitol-salmiakki',
+    category: 'treats',
+    brand: 'Sisu',
+    name: { en: 'Sisu Xylitol salmiakki pastilles 36 g', fi: 'Sisu Xylitol -salmiakkipastillit 36 g' },
+    description: {
+      en: 'Salmiakki sweetened with xylitol and carrying the Finnish Dental Association mark. The tin fits a coat pocket, which is why these end up in every Finnish car.',
+      fi: 'Ksylitolilla makeutettua salmiakkia, jolla on Hammaslääkäriliiton tunnus. Rasia mahtuu takin taskuun, ja siksi näitä on jokaisessa suomalaisessa autossa.',
+    },
+    priceFrom: 2.32,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-sisu-xylitol-salmiakki',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/sisu-xylitol-salmiakki-pastilleja-36g',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '36 g', fi: '36 g' } },
+        {
+          key: 'other',
+          label: { en: 'Sweetener', fi: 'Makeutus' },
+          value: {
+            en: 'Xylitol. Carries the Finnish Dental Association mark',
+            fi: 'Ksylitoli. Suomen Hammaslääkäriliiton tunnus',
+          },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/sisu-xylitol-salmiakki-pastilleja-36g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'leijona-tar-liquorice',
+    category: 'treats',
+    brand: 'Leijona',
+    name: { en: 'Leijona tar liquorice pastilles 32 g', fi: 'Leijona Tervalakritsi -pastillit 32 g' },
+    description: {
+      en: 'Liquorice flavoured with pine tar, made since 1933. Tar is a Finnish taste that goes into sweets, sauna soap and even ice cream, and this is the cheapest way to try it.',
+      fi: 'Tervalla maustettua lakritsia, valmistettu vuodesta 1933. Terva on suomalainen maku, jota laitetaan makeisiin, saippuaan ja jopa jäätelöön, ja tämä on halvin tapa kokeilla sitä.',
+    },
+    priceFrom: 1.97,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-leijona-tar-liquorice',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/tervaleijona-lakritsi-32g',
+    details: {
+      specs: [{ key: 'size', value: { en: '32 g', fi: '32 g' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/tervaleijona-lakritsi-32g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'fazer-hazelnut-chocolate',
+    category: 'treats',
+    brand: 'Fazer',
+    name: {
+      en: 'Karl Fazer whole hazelnut milk chocolate 200 g',
+      fi: 'Karl Fazer kokonainen hasselpähkinä -suklaalevy 200 g',
+    },
+    description: {
+      en: 'The blue bar with whole hazelnuts set in milk chocolate. Fazer has used the same blue wrapper since 1922, which is why it is the one Finns bring abroad.',
+      fi: 'Sininen levy, jossa on kokonaisia hasselpähkinöitä maitosuklaassa. Fazer on käyttänyt samaa sinistä kääreitä vuodesta 1922, ja siksi juuri tämä lähtee mukaan ulkomaille.',
+    },
+    priceFrom: 7.74,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-fazer-hazelnut-chocolate',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/fazer-hasselpahkinasuklaa-200g',
+    details: {
+      specs: [{ key: 'size', value: { en: '200 g', fi: '200 g' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/fazer-hasselpahkinasuklaa-200g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'fazer-light-milk-chocolate',
+    category: 'treats',
+    brand: 'Fazer',
+    name: { en: 'Karl Fazer light milk chocolate 180 g', fi: 'Karl Fazer vaalea maitosuklaa 180 g' },
+    description: {
+      en: 'A lighter, milder version of the blue bar. If the classic is too sweet for you, this is the one to take instead.',
+      fi: 'Vaaleampi ja miedompi versio sinisestä levystä. Jos klassikko on liian makea, tämä on se joka kannattaa ottaa tilalle.',
+    },
+    priceFrom: 7.74,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-fazer-light-milk-chocolate',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/karl-fazer-vaalea-maitosuklaa-180g',
+    details: {
+      specs: [{ key: 'size', value: { en: '180 g', fi: '180 g' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/karl-fazer-vaalea-maitosuklaa-180g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'fazer-fazerina',
+    category: 'treats',
+    brand: 'Fazer',
+    name: { en: 'Fazer Fazerina orange truffle bar 99 g', fi: 'Fazer Fazerina -suklaalevy 99 g' },
+    description: {
+      en: 'Orange truffle inside milk chocolate, made since 1953. Thinner than the blue bar and the one that survives a rucksack without melting into a block.',
+      fi: 'Appelsiinitryffeliä maitosuklaan sisällä, valmistettu vuodesta 1953. Ohuempi kuin sininen levy ja se joka kestää repussa sulamatta möykyksi.',
+    },
+    priceFrom: 4.82,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-fazer-fazerina',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/fazer-fazerina-suklaalevy-99-g',
+    details: {
+      specs: [{ key: 'size', value: { en: '99 g', fi: '99 g' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/fazer-fazerina-suklaalevy-99-g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'fazer-jaffa-orange',
+    category: 'treats',
+    brand: 'Fazer',
+    name: { en: 'Fazer Jaffa orange cakes 300 g', fi: 'Fazer Jaffa Appelsiini -leivoskeksit 300 g' },
+    description: {
+      en: 'Sponge base, orange marmalade and dark chocolate on top. Not a biscuit and not a cake, which is the argument Finns have about it every single time.',
+      fi: 'Leivospohja, appelsiinimarmeladi ja tumma suklaa päällä. Ei keksi eikä leivos, ja juuri siitä suomalaiset kiistelevät joka ainoa kerta.',
+    },
+    priceFrom: 7.15,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-fazer-jaffa-orange',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/fazer-jaffa-appelsiini-leivoskeksi-300g',
+    details: {
+      specs: [{ key: 'size', value: { en: '300 g', fi: '300 g' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/fazer-jaffa-appelsiini-leivoskeksi-300g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────────────────
   // Erä 2.8.2026 — TALVIVARUSTEET. Kaikki North Outdoorilta ja Haltilta,
   // eli kahdelta kumppanilta joiden Adtraction-ohjelma on hyväksytty ja
   // joiden Worker-reitti on olemassa: jokainen näistä tuottaa komission.

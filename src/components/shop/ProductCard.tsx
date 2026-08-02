@@ -11,6 +11,7 @@ import { imgSrcSet } from '../../lib/img'
 import { mergeExcept } from '../../data/shipping'
 import { SHOP_COPY } from '../../locales/shopCopy'
 import ShippingBadge from './ShippingBadge'
+import { productName } from '../../locales/productCopy'
 
 /**
  * Kuvapaikan leveys layoutin mukaan. Mitattu selaimesta: 2 palstaa < 768 px
@@ -40,7 +41,7 @@ export default function ProductCard({ product, lang }: { product: Product; lang:
   // Kaupan ja tuotteen rajaukset yhdessä: sama kauppa voi lähettää mukin
   // maailmalle mutta elintarvikkeen vain osaan maista.
   const except = mergeExcept(partner.shipsExcept, product.shipsExcept)
-  const name = lang === 'fi' ? product.name.fi : product.name.en
+  const name = productName(product, lang)
   return (
     <Link
       to={to(`/product/${product.slug}`)}

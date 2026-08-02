@@ -6,6 +6,7 @@ import { CATEGORIES } from '../data/categories'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { SHOP_COPY } from '../locales/shopCopy'
 import { NAV_COPY } from '../locales/navCopy'
+import { productName } from '../locales/productCopy'
 
 /**
  * Kaupan haku.
@@ -58,7 +59,7 @@ export default function ProductSearch({
   const index = useMemo(
     () =>
       PRODUCTS.map((p) => {
-        const name = lang === 'fi' ? p.name.fi : p.name.en
+        const name = productName(p, lang)
         const cat = CATEGORIES.find((c) => c.id === p.category)
         return {
           slug: p.slug,

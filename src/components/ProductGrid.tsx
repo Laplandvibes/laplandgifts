@@ -3,6 +3,7 @@ import { featuredProducts } from '../data/products'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { SHOP_COPY } from '../locales/shopCopy'
 import ProductCard from './shop/ProductCard'
+import { productName } from '../locales/productCopy'
 
 /**
  * Etusivun tuotenostot. Kortit ovat katalogin oikeita tuotteita ja vievät
@@ -32,7 +33,7 @@ export default function ProductGrid() {
     itemListElement: products.map((p, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      name: lang === 'fi' ? p.name.fi : p.name.en,
+      name: productName(p, lang),
       url: `https://laplandgifts.com${to(`/product/${p.slug}`)}`,
     })),
   }

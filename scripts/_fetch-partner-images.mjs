@@ -211,6 +211,44 @@ const JOBS = [
     'north-outdoor-arctic-260-zip-neck',
     'https://cdn.shopify.com/s/files/1/0619/0933/6273/files/N11507GA2_northoutdoor-merino-wool-clothing-m12_1.jpg?v=1754409413',
   ],
+  // Era 2.8.2026: suomalaiset makeisklassikot Suomikaupasta. Lahde on
+  // kaupan oma tuotekuva (JSON-LD image), hinta ja teksti samasta lahteesta.
+  [
+    'fazer-pantteri-salmiakki',
+    'https://suomikauppa.fi/cdn/shop/files/06416453051355_C1C1.jpg?v=1759735718&width=1920',
+  ],
+  [
+    'fazer-super-salmiakki',
+    'https://suomikauppa.fi/cdn/shop/products/06411401037696_C1N1.jpg?v=1678738263&width=1920',
+  ],
+  [
+    'halva-salmiakkiruutu',
+    'https://suomikauppa.fi/cdn/shop/files/06420900004795_C1N1_1d55897d-d6d6-46b3-8ca8-53b90bd41b39.jpg?v=1710934436&width=1920',
+  ],
+  [
+    'fazer-hazelnut-chocolate',
+    'https://suomikauppa.fi/cdn/shop/files/06411401015151_C1C1.jpg?v=1708161765&width=1920',
+  ],
+  [
+    'fazer-light-milk-chocolate',
+    'https://suomikauppa.fi/cdn/shop/files/06416453095045_C3C1.jpg?v=1759735890&width=1920',
+  ],
+  [
+    'fazer-fazerina',
+    'https://suomikauppa.fi/cdn/shop/files/06416453056107_C3C1.jpg?v=1758091757&width=1920',
+  ],
+  [
+    'leijona-tar-liquorice',
+    'https://suomikauppa.fi/cdn/shop/products/06420256000052_A1C1.jpg?v=1678735482&width=1920',
+  ],
+  [
+    'fazer-jaffa-orange',
+    'https://suomikauppa.fi/cdn/shop/files/06416453554641_C1L1_4a18536a-7454-4702-9e1b-75cb6198b063.jpg?v=1710932137&width=1920',
+  ],
+  [
+    'sisu-xylitol-salmiakki',
+    'https://suomikauppa.fi/cdn/shop/products/06420256001783_A1N1.jpg?v=1678735730&width=1920',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

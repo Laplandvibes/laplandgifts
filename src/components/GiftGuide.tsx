@@ -4,6 +4,7 @@ import { occasionTheme } from '../data/occasionTheme'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { SHOP_COPY } from '../locales/shopCopy'
+import { productName } from '../locales/productCopy'
 
 /**
  * Etusivun lahjaopasosio. Ehdotukset ovat katalogin oikeita tuotteita ja
@@ -68,7 +69,7 @@ function GiftGuide() {
                               className={`flex min-h-11 items-center gap-2 text-gray/80 transition-colors hover:underline ${theme.hoverText}`}
                             >
                               <span className={`w-1.5 h-1.5 rounded-full flex-shrink-0 ${theme.accent}`} aria-hidden="true" />
-                              {lang === 'fi' ? p.name.fi : p.name.en}
+                              {productName(p, lang)}
                             </Link>
                           </li>
                         ))}
