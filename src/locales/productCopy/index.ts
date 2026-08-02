@@ -40,6 +40,9 @@ import { PRODUCT_COPY_ES } from './es'
 import { PRODUCT_COPY_IT } from './it'
 import { PRODUCT_COPY_NL } from './nl'
 import { PRODUCT_COPY_PT_BR } from './ptBR'
+import { PRODUCT_COPY_JA } from './ja'
+import { PRODUCT_COPY_ZH_CN } from './zhCN'
+import { PRODUCT_COPY_KO } from './ko'
 
 /**
  * Kielet joille käännökset on tehty. Puuttuva kieli ei ole virhe: se putoaa
@@ -54,6 +57,9 @@ export const PRODUCT_COPY: Partial<Record<Lang, ProductCopyMap>> = {
   it: PRODUCT_COPY_IT,
   nl: PRODUCT_COPY_NL,
   'pt-BR': PRODUCT_COPY_PT_BR,
+  ja: PRODUCT_COPY_JA,
+  'zh-CN': PRODUCT_COPY_ZH_CN,
+  ko: PRODUCT_COPY_KO,
 }
 
 /**

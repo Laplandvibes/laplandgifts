@@ -1,0 +1,943 @@
+import type { ProductCopyMap } from './index'
+
+/**
+ * Tuotteiden kiinankieliset (yksinkertaistettu) tekstit. Rakenne ja säännöt:
+ * ks. de.ts.
+ *
+ * `specs` on positionaalinen: indeksi vastaa `product.details.specs`-taulukon
+ * järjestystä lähdedatassa. `specLabels` samoin, ja siinä on arvo vain niillä
+ * riveillä joilla on oma otsikko (`key: 'other'`).
+ *
+ * Lukuja, mittayksiköitä, tuotekoodeja ja EAN-numeroita ei käännetä eikä
+ * muunneta. Numerot kirjoitetaan puolileveinä (ASCII) eikä kiinalaisina
+ * numeromerkkeinä: 「二」 rikkoisi numeroiden-täsmäävyystestin ja on lisäksi
+ * väärin tuotetiedoissa.
+ */
+export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
+  'moomin-blue-love-mug': {
+    name: '姆明 Blue Love 马克杯 0.3 l',
+    description:
+      '姆明经典系列的 0.3 升玻璃瓷马克杯，图案是小美人鱼与姆明相拥，杯底印着 80 周年的年份。芬兰设计，可用洗碗机和微波炉，所以它经得起天天使用，不必摆在架子上。',
+    specs: [
+      '0.3 l',
+      '玻璃瓷',
+      '可用洗碗机，可入烤箱和微波炉',
+      '芬兰设计，泰国制造',
+      '姆明经典系列。80 周年纪念版杯底印有年份',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '系列'],
+  },
+  'moomin-mystical-forest-tumblers': {
+    name: '姆明 Mystical Forest 玻璃杯 28 cl，2 只装',
+    description:
+      'Mystical Forest 系列的两只 28 cl 浮雕玻璃杯，产自芬兰 Iittala 玻璃厂。附礼盒包装，省得你在酒店房间里包玻璃器皿。',
+    specs: [
+      '每只 28 cl',
+      '2 只玻璃杯，装在青绿色包装内',
+      '浮雕玻璃',
+      '可用洗碗机',
+      '产自芬兰 Iittala 玻璃厂',
+      'Mystical Forest',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '系列'],
+  },
+  'moomin-mystical-forest-wool-throw': {
+    name: '姆明 Mystical Forest 羊毛毯 130x170 cm',
+    description:
+      '130 乘 170 cm、100% 羊毛的盖毯，为 Mystical Forest 系列在芬兰设计。只能干洗，所以把它当沙发毯而不是野餐垫。',
+    specs: [
+      '100 % 羊毛',
+      '130 x 170 cm',
+      '蓝色',
+      '干洗，温和程序',
+      '芬兰设计，立陶宛制造',
+      'Mystical Forest',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '系列'],
+  },
+  'iittala-aalto-vase-160': {
+    name: 'Iittala 阿尔瓦·阿尔托花瓶 160 mm，透明',
+    description:
+      '阿尔瓦·阿尔托在 1936 年画下这道波浪，Iittala 至今仍用嘴吹制，所以每一只的轮廓都略有不同。160 mm 正是人们听到这个名字时脑中浮现的尺寸。',
+    specs: [
+      '高 16 cm，宽 20.5 cm',
+      '玻璃',
+      '透明',
+      '毛重 1.44 kg',
+      '仅可手洗',
+      '口吹玻璃，非对称造型',
+      '阿尔瓦·阿尔托，Iittala Alvar Aalto Collection',
+      '999-01, EAN 6411920004445',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      '工艺',
+      '设计师与系列',
+      '货号与 EAN',
+    ],
+  },
+  'iittala-kivi-candleholder': {
+    name: 'Iittala Kivi 烛台 60 mm，松绿色',
+    description:
+      '海基·奥尔沃拉设计的压制玻璃烛台，高 6 cm，把一支茶蜡变成一块颜色。这是拥有一件 Iittala 最便宜的方式，而且经得起手提行李。',
+    specs: [
+      '6.5 x 6.5 cm，高 6 cm',
+      '玻璃',
+      '绿色',
+      '毛重 0.33 kg',
+      '仅可手洗',
+      '海基·奥尔沃拉，Iittala Kivi',
+      '636883-01, EAN 6411923683937',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      '设计师与系列',
+      '货号与 EAN',
+    ],
+  },
+  'marimekko-unikko-mug': {
+    name: 'Marimekko Unikko 马克杯 25 cl',
+    description:
+      '玛伊娅·伊索拉在 1964 年画下 Unikko 罂粟，那时 Marimekko 刚刚禁掉花卉印花，而这个图案比禁令活得更久。这只炻器马克杯容量 25 cl，把印花放到早餐桌上而不是墙上。',
+    specs: [
+      '25 cl',
+      '直径 8 cm，高 9.5 cm',
+      '炻器',
+      '白色、深绿、米色和浅沙色',
+      '毛重 0.276 kg',
+      '图案玛伊娅·伊索拉，杯型萨米·鲁奥察莱宁',
+      '666236-01, EAN 6411255152033',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      '设计师',
+      '货号与 EAN',
+    ],
+  },
+  'aarikka-prinsessa-candleholder': {
+    name: 'Aarikka Prinsessa 烛台',
+    description:
+      'Aarikka 从 1950 年代起就在车削桦木珠，Prinsessa 把一圈木珠环在 5.5 cm 的烛台上，茶蜡和直立蜡烛都放得下。小到可以邮寄，特征鲜明到在芬兰一眼就能认出。',
+    specs: [
+      '高 5.5 cm，直径 6 cm',
+      '桦木、枫木、铝',
+      '98 g',
+      '芬兰设计，意大利制造',
+      '烛台配一圈木珠。适用于茶蜡和直立蜡烛',
+      'B08633',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '产品编码'],
+  },
+  'aarikka-pore-glass-vase': {
+    name: 'Aarikka Pore 玻璃花瓶 16 cm，深绿色',
+    description:
+      '一只圆形手工吹制花瓶，容量 1.7 升，外面套着在芬兰手工染色的枫木珠环。玻璃里的气泡是它的一部分，清洗前把木环取下。',
+    specs: [
+      '高 16 cm，直径 16 cm',
+      '1.7 l',
+      '玻璃与枫木',
+      '透明与绿色',
+      '玻璃产自波兰，木环产自芬兰',
+      '手洗。清洗前取下木环',
+      'B08706',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, undefined, '产品编码'],
+  },
+  'halti-tokoi-dx-jacket': {
+    name: 'Halti Tokoi DX 冲锋衣，男款',
+    description:
+      '全部接缝压胶的防风雨外壳，配轻薄内衬和可调帽子，版型宽松到里面能穿一件羊毛衫。Halti 只在欧盟境内配送。',
+    specs: [
+      'DrymaxX Sleek Twill，带 DrymaxX 膜的防水防风 2 层面料。材质成分为 50 % 再生涤纶和 50 % 涤纶',
+      '柔软涤纶内衬，100 % 再生涤纶',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '0.9 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Fossil Beige, Four Leaf Clover Green, Black',
+      '全部接缝压胶，可调固定帽，高立领，前身 2 向拉链，网布通风，带拉链插手袋，按扣内袋，可调袖口，前门襟挡风条，反光细节',
+      '与同色衣物反面洗涤，先拉好拉链。最高 30 °C，温和程序。不可漂白、烘干、熨烫或干洗',
+    ],
+    specLabels: [
+      undefined,
+      '内衬',
+      '防水指数',
+      '透气指数',
+      undefined,
+      undefined,
+      undefined,
+      '细节',
+      undefined,
+    ],
+  },
+  'makia-merino-beanie': {
+    name: 'Makia Merino 帽',
+    description:
+      '一顶素净的北欧美利奴羊毛帽，从温暖的咖啡馆直接走进寒气里时，它能平衡温度和湿气。前面没有拳头那么大的标志。',
+    specs: [
+      '100 % 美利奴羊毛，8 针英式罗纹，不使用剪皮法',
+      '均码',
+      'Dark Brown',
+      '芬兰制造，面料产自意大利',
+      '与同色衣物用轻柔程序洗涤，平铺晾干并整形。多数时候通风即可，不必清洗。使用中可能起球',
+    ],
+  },
+  'makia-aurora-hoodie': {
+    name: 'Makia Aurora 连帽卫衣',
+    description:
+      '赫尔辛基品牌 Makia 的 100% 有机棉常规版型连帽卫衣。厚度足以在室内和温和的秋夜当作最外层来穿。',
+    specs: [
+      '100 % 有机棉，370 g 法式毛圈布',
+      'S, M, L, XL, XXL',
+      'Carbon Black',
+      '常规版型，帽子抽绳，袋鼠口袋，下摆和袖口罗纹，再生涤纶织唛',
+      '土耳其制造，面料产自土耳其',
+      '与同色衣物反面洗涤。不要在印花上熨烫。最大缩率 5 %。趁湿整形',
+    ],
+    specLabels: [undefined, undefined, undefined, '版型与细节', undefined, undefined],
+  },
+  'halti-kroka-mitten': {
+    name: 'Halti Kroka II 连指手套',
+    description:
+      '带 60 g 填充和硅胶防滑掌心的防风连指手套，中性剪裁。风一起来，连指手套就胜过分指手套，因为手指之间互相取暖。',
+    specs: [
+      'Stormwall 软壳，50 % 涤纶和 50 % 再生涤纶。柔软抓绒 100 % 涤纶。莱卡针织袖口',
+      'Microtherm Dynamic 60 g，内衬 Active Dry 柔感针织，100 % 再生涤纶',
+      '0.1 kg',
+      '06, 07, 08, 09, 10, 11, 12',
+      '黑色',
+      '单独洗涤，30 °C 温和程序。不可漂白、烘干、熨烫或干洗',
+      '084-0757',
+    ],
+    specLabels: [
+      undefined,
+      '填充与内衬',
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      '产品编号',
+    ],
+  },
+  'halti-tunturit-ski-socks': {
+    name: 'Halti Tunturit 滑雪袜',
+    description:
+      '及膝的美利奴混纺袜，在小腿和脚踝处加了衬垫，也就是雪鞋压着的位置。Halti 标明产地为欧洲。',
+    specs: [
+      '美利奴羊毛混纺：36 % 锦纶、23 % 腈纶、23 % 美利奴羊毛、16 % 聚丙烯、2 % 氨纶',
+      '0.1 kg',
+      '34-36, 37-39, 40-42, 43-45, 46-48',
+      'Sargasso Sea Blue, Lemon Pepper Beige',
+      '欧洲制造',
+      '小腿和脚踝衬垫，及膝长度，加固后跟和脚尖，小腿与脚背设通风区',
+      '最高 40 °C，普通程序。不可熨烫、漂白、干洗或烘干',
+      '087-0471',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      '细节',
+      undefined,
+      '产品编号',
+    ],
+  },
+  'north-outdoor-huuru-beanie': {
+    name: 'North Outdoor Huuru 美利奴帽',
+    description:
+      'North Outdoor 在奥卢的自有针织厂用 100% 不使用剪皮法的美利奴、18.5 微米织成这顶罗纹帽。按形状织成而不是裁出来的，因此边角料很少。',
+    specs: [
+      '100 % 美利奴羊毛，不使用剪皮法，18.5 微米，织物 270 g/m²',
+      '均码',
+      '靛蓝色',
+      '芬兰奥卢制造',
+      '经常通风，需要时再洗。羊毛洗涤剂，30 °C 轻柔程序，最低脱水，反面洗涤',
+      'OEKO-TEX, Woolmark',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '认证'],
+  },
+  'north-outdoor-pyry-scarf': {
+    name: 'North Outdoor Pyry 美利奴围巾',
+    description:
+      '在奥卢织成的 100% 美利奴宽长英式罗纹围巾。长到可以有好几种围法，在开阔的山地上风向一变，这一点就有用了。',
+    specs: [
+      '100 % 美利奴羊毛，18.5 微米，1/1 罗纹',
+      '均码',
+      '燕麦灰',
+      '芬兰奥卢制造',
+      '经常通风，需要时再洗。羊毛洗涤剂，30 °C 轻柔程序，最低脱水，反面洗涤',
+      'OEKO-TEX, Woolmark',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '认证'],
+  },
+  'north-outdoor-honka-jumper': {
+    name: 'North Outdoor Honka 美利奴毛衣，男款',
+    description:
+      '100% 美利奴的厚身英式罗纹毛衣，宽松版型，落肩设计。看着厚重，穿着轻盈，在奥卢的针织厂织成。',
+    specs: [
+      '100 % 美利奴羊毛，不使用剪皮法，18.5 微米，变化罗纹',
+      'S, M, L, XL, 2XL, 3XL',
+      '靛蓝色',
+      '芬兰奥卢制造',
+      '经常通风，需要时再洗。羊毛洗涤剂，30 °C 轻柔程序，最低脱水，反面洗涤',
+      'OEKO-TEX, Woolmark',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '认证'],
+  },
+  'marttiini-lapinleuku-255': {
+    name: 'Marttiini 拉普刀 255',
+    description:
+      '传统的拉普刀，全长 27 cm，不锈钢刀身，上漆的卷纹桦木刀柄，皮革刀鞘。Marttiini 在罗瓦涅米制刀，这一版带有护手。',
+    specs: [
+      '16 cm',
+      '总长 27 cm',
+      '刀身不锈钢，刀柄上漆卷纹桦木，刀鞘皮革',
+      '刀具与按扣式皮鞘',
+      '255010',
+    ],
+    specLabels: ['刀身长度', undefined, undefined, undefined, '产品编号'],
+  },
+  'marttiini-napapiirin-puukko': {
+    name: 'Marttiini 北极圈刀',
+    description:
+      '全长 20 cm 的日常小刀，碳钢刀身，打蜡桦木刀柄，棕色皮鞘。碳钢比不锈钢更容易开出锋利的刃口，但需要上油，Marttiini 在产品页上也这么提醒。',
+    specs: [
+      '9 cm',
+      '总长 20 cm',
+      '刀身碳钢，刀柄打蜡桦木，刀鞘棕色皮革',
+      '每次使用后务必把刀身擦干，并定期用无盐油保养',
+      '121019',
+    ],
+    specLabels: ['刀身长度', undefined, undefined, undefined, '产品编号'],
+  },
+  'marttiini-ilves-131': {
+    name: 'Marttiini Lynx 131',
+    description:
+      '一把 22 cm 的刀，不锈钢刀身，上漆的卷纹桦木刀柄，棕色皮鞘。Marttiini 表示 Lynx 这个型号由创始人扬内·马尔蒂尼在 1930 年代绘制。',
+    specs: [
+      '11 cm',
+      '总长 22 cm',
+      '刀身不锈钢，刀柄上漆卷纹桦木，刀鞘棕色皮革',
+      '131010',
+    ],
+    specLabels: ['刀身长度', undefined, undefined, '产品编号'],
+  },
+  'kupilka-classic-cup-21': {
+    name: 'Kupilka 21 野营杯 2.1 dl',
+    description:
+      '库克萨的造型，换成可以丢进洗碗机的材料：一半松木纤维素纤维，一半热塑性塑料，在芬兰模压成型。容量 2.1 dl，重 83 克，围着火堆也不烫手。',
+    specs: [
+      '2.1 dl',
+      '83 g',
+      '60 x 93 x 165 mm',
+      'Kareline 天然纤维复合材料，50 % 松木纤维素纤维和 50 % 热塑性塑料，使用绿色能源生产',
+      '芬兰',
+      '在路上像木质库克萨一样冲洗，回家可以放进洗碗机。不可微波',
+      '3021011XX',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, undefined, '型号'],
+  },
+  'kupilka-bowl-55': {
+    name: 'Kupilka 55 野营碗 5.5 dl',
+    description:
+      '5.5 dl 的碗，把手结实到可以一只手端着，另一只手还拿着杯子。与杯子相同的芬兰松木纤维复合材料，184 克，可用洗碗机。',
+    specs: [
+      '5.5 dl',
+      '184 g',
+      '54 x 154 x 223 mm',
+      'Kareline 天然纤维复合材料，50 % 松木纤维素纤维和 50 % 热塑性塑料，使用绿色能源生产',
+      '芬兰',
+      '可用洗碗机。不可微波。已获准接触冷热食品',
+      '3055013X',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, undefined, '型号'],
+  },
+  'kupilka-cutlery-set': {
+    name: 'Kupilka 餐具套装',
+    description:
+      '勺、刀、叉，用同一种芬兰木纤维复合材料制成，整套 56 克。把 Kupilka 的材料带回家最便宜的方式，也是最容易塞进手提行李的一件。',
+    specs: [
+      '勺、刀和叉',
+      '56 g',
+      'Kareline 天然纤维复合材料，50 % 松木纤维素纤维和 50 % 热塑性塑料，使用绿色能源生产',
+      '芬兰',
+      '在路上像木质餐具一样冲洗，回家可以放进洗碗机。不可微波',
+      '3025025X',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '型号'],
+  },
+  'lapuan-kankurit-poro-towel': {
+    name: 'Lapuan Kankurit PORO 亚麻毛巾 46 x 70 cm',
+    description:
+      '插画家马蒂·皮库亚姆萨画的驯鹿，在拉普阿的织厂以欧洲亚麻作经纱、有机棉作纬纱织成。可以平整地折进行李箱，吸水性要洗过几次才出来。',
+    specs: [
+      '46 x 70 cm',
+      '60 % 亚麻（Masters of Linen）和 40 % 棉',
+      '亚麻绿',
+      '芬兰制造',
+      '首次使用前单独洗涤，60 °C 轻柔程序，用足量水。不要脱水。避免柔顺剂和漂白剂。不可烘干。趁湿熨烫。缩率约 5 %',
+      '马蒂·皮库亚姆萨',
+      '20527',
+      '芬兰钥匙旗标志，Masters of Linen',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      '设计师',
+      '产品编码',
+      '认证',
+    ],
+  },
+  'lapuan-kankurit-kaamos-blanket': {
+    name: 'Lapuan Kankurit KAAMOS 羊毛毯 100 x 150 cm',
+    description:
+      'Kaamos 指极夜，汉娜·加尔塔特从日光在一天里移动的方式中取出了这个图案。纬纱是芬兰绵羊毛，由织厂从距拉普阿约 400 km 范围内的农场收集。',
+    specs: [
+      '100 x 150 cm',
+      '100 % 纯新羊毛',
+      '白与黑',
+      '芬兰制造',
+      '很脏时才洗，平时拿到户外通风。最高 30 °C 手洗或干洗。不要揉搓、拉扯或拧绞。不可烘干。垫湿布熨烫，最高 150 °C',
+      '汉娜·加尔塔特',
+      '102939',
+      '芬兰钥匙旗标志',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      '设计师',
+      '产品编码',
+      '认证',
+    ],
+  },
+  'pentik-posio-mug': {
+    name: 'Pentik Posio 马克杯 0.3 l',
+    description:
+      'Pentik 在波西奥烧制这只马克杯，公司称那里是世界最北的陶瓷厂，整个 Posio 系列都以驯鹿为饰。可用洗碗机、烤箱、微波炉和冷冻室。',
+    specs: [
+      '0.3 l',
+      '红色',
+      '产自拉普兰的波西奥，Pentik 称之为世界最北的陶瓷厂',
+      '可用洗碗机、电烤箱、烘焙烤箱、微波炉和冷冻室',
+      'Posio。系列中的每一件都以驯鹿为饰',
+      '12JAO050P41',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '系列', '产品编码'],
+  },
+  'pentik-tunturiretki-studio-dish': {
+    name: 'Pentik Tunturiretki Winter Studio 三角深盘 19 cm',
+    description:
+      '安努·彭蒂克画的是山中徒步时不断在树间出现的驯鹿。Studio 系列在波西奥手工彩绘，因此没有两只盘子的笔触完全一样。',
+    specs: [
+      '直径 19 cm',
+      '蓝色',
+      '在拉普兰波西奥手工制作，安努·彭蒂克设计',
+      '可用洗碗机、电烤箱、烘焙烤箱、微波炉和冷冻室',
+      'Pentik Studio，手工彩绘系列',
+      '12ST353TT61',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '系列', '产品编码'],
+  },
+  'kuivalihakundi-poro-jerky': {
+    name: '驯鹿肉干 原味 2 x 20 g',
+    description:
+      '两袋各 20 克的驯鹿肉干，原料为 100% 芬兰驯鹿，烤箱烘干，用无麸质酱油、黑胡椒、大蒜和糖浆腌制。肉类不能邮寄出欧盟，因此配送止步于欧盟边境。',
+    specs: [
+      '2 x 20 g',
+      '肉来自芬兰',
+      '保质期自肉干燥并包装当日起约一年。无需冷藏，开封后也是',
+      '重盐。无麸质',
+      '能量 1514 kJ / 360 kcal，脂肪 14.2 g 其中饱和脂肪 6.2 g，碳水化合物 7.9 g 其中糖 5.1 g，蛋白质 50.2 g，盐 9.5 g',
+    ],
+    specLabels: [undefined, undefined, undefined, '标签说明', '每 100 g 营养成分'],
+  },
+  'finnish-flavours-palalaku-salmiakki': {
+    name: 'Finnish Flavours 优选 Palalaku 咸甘草糖 150 g',
+    description:
+      '150 克装的软质咸甘草糖，就是那种加了氯化铵的，第一口就把人分成两派。Suomikauppa 把食品寄到远远超出芬兰的地方。',
+    specs: [
+      '150 g',
+      '能量 1316 kJ / 311 kcal，脂肪 0.5 g 其中饱和脂肪 0 g，碳水化合物 72 g 其中糖 50 g，蛋白质 4.1 g，盐 1.7 g',
+      'Finnish Flavours, Kumitehtaankatu 5, 04260 Kerava',
+    ],
+    specLabels: [undefined, '每 100 g 营养成分', '经销商'],
+  },
+  'meritalo-tyrnihillo': {
+    name: 'Meritalo 芬兰沙棘果酱 310 g',
+    description:
+      '每 100 克含 37 克浆果的沙棘果酱，用芬兰沙棘在芬兰西南部萨洛的 Meritalo 家庭农场熬煮，而不是在拉普兰。沙棘偏酸而不甜，所以配奶酪比抹在薄饼上更耐吃。',
+    specs: [
+      '310 g',
+      '浆果为芬兰产。由家族企业在芬兰西南部萨洛的 Meritalo 自家农场制作',
+      '能量 781 kJ / 187 kcal，脂肪 1.9 g 其中饱和脂肪 0.3 g，碳水化合物 41 g 其中糖 41 g，蛋白质 0.3 g，盐 0.01 g',
+      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+    ],
+    specLabels: [undefined, undefined, '每 100 g 营养成分', '经销商'],
+  },
+  'kuivalihakundi-poro-jerky-200g': {
+    name: '驯鹿肉干 原味 200 g',
+    description:
+      '同一款驯鹿肉干的礼品装，200 克。生产者表示一公斤肉干要用三公斤鲜肉，一袋的价格大半就来自这里。',
+    specs: [
+      '200 g',
+      '100 % 驯鹿肉，后腿肉，烤箱烘干并腌制',
+      '1 kg 肉干需要 3 kg 鲜肉',
+      '保质期自肉干燥并包装当日起约一年。无需冷藏，开封后也是',
+    ],
+    specLabels: [undefined, undefined, '用肉量', undefined],
+  },
+  'kuivalihakundi-beef-jerky-smoked': {
+    name: '牛肉干 烟熏 40 g',
+    description:
+      '用牛肉而不是驯鹿肉，而且是真正熏过而不是加香料的，每 100 克含 57 克蛋白质。这一类里最便宜的一件，也是最经得起背包折腾的一件。',
+    specs: [
+      '40 g',
+      '牛只在欧盟境内饲养和屠宰',
+      '1 kg 肉干需要 2.5 kg 新鲜牛肉',
+      '能量 1261 kJ / 298 kcal，脂肪 5.5 g 其中饱和脂肪 2.4 g，碳水化合物 5.2 g 其中糖 4.4 g，蛋白质 56.9 g，盐 5 g',
+    ],
+    specLabels: [undefined, undefined, '用肉量', '每 100 g 营养成分'],
+  },
+  'fazer-geisha-chocolate-bar': {
+    name: 'Fazer Geisha 榛子牛轧糖巧克力排 121 g',
+    description:
+      '牛奶巧克力包着酥脆的榛子牛轧糖夹心，多数芬兰家庭抽屉里都有这一块。Fazer 标明不使用棕榈油。',
+    specs: [
+      '121 g',
+      '可可含量至少 30 % 的牛奶巧克力，榛子牛轧糖夹心含 11 % 榛子',
+      '能量 550 kcal / 2302 kJ，脂肪 35 g，饱和脂肪 17 g，碳水化合物 51 g，糖 49 g，蛋白质 8 g，盐 0.19 g',
+    ],
+    specLabels: [undefined, undefined, '每 100 g 营养成分'],
+  },
+  'nordqvist-moomin-forest-berry-tea': {
+    name: 'Nordqvist 姆明 森林浆果洛神花茶，20 包',
+    description:
+      '有机洛神花配苹果和森林浆果，天然不含咖啡因，在努尔米耶尔维的 Nordqvist 工厂调配。二十包重 35 克，是这家店里最轻的礼物。',
+    specs: [
+      '20 x 1.75 g，35 g',
+      '在芬兰努尔米耶尔维的 Nordqvist 工厂调配',
+      '95 °C 冲泡 2 至 4 分钟。冷泡 5 至 10 分钟',
+      '有机认证、纯素、无麸质、天然不含咖啡因',
+    ],
+    specLabels: [undefined, undefined, '冲泡', '饮食'],
+  },
+  'nordqvist-cranberry-toffee-tea': {
+    name: 'Nordqvist 蔓越莓咸太妃茶，20 包',
+    description:
+      '在洛神花与南非路易波士的基底上，用酸蔓越莓对上咸太妃，所以不含咖啡因，晚上喝也还有味道。Nordqvist 自 1883 年起在芬兰调配茶。',
+    specs: [
+      '20 x 1.75 g，35 g',
+      '95 °C 冲泡 2 至 5 分钟',
+      '纯素。洛神花和路易波士通过 Rainforest Alliance 认证',
+    ],
+    specLabels: [undefined, '冲泡', '饮食与认证'],
+  },
+  'moomin-wild-blueberry-coffee': {
+    name: '姆明 Wild Blueberry 咖啡 250 g',
+    description:
+      'Bergstrands Kafferosteri 的蓝莓风味咖啡，用巴西南部莫吉亚纳丘陵成熟的圆豆制成。圆豆是只长了一颗豆而不是两颗的咖啡果，烘焙厂说这样味道更集中。250 克。',
+    specs: [
+      '250 g',
+      '豆子来自巴西南部莫吉亚纳丘陵，由 Bergstrands Kafferosteri 烘焙',
+      '圆豆，只有一颗豆而不是两颗的咖啡果',
+      '野生蓝莓',
+    ],
+    specLabels: [undefined, undefined, '豆种', '风味'],
+  },
+  'moomin-lingonberry-blueberry-dark-chocolate': {
+    name: '姆明 越橘与蓝莓黑巧克力 70 g',
+    description:
+      'Kalmar Chokladfabrik 出品的 70% 可可有机黑巧克力，加入冻干越橘和蓝莓，外包装用的是托芙·扬松的画。可可是来自秘鲁的 Criollo 和 Trinitario，成品在瑞典制造。',
+    specs: [
+      '70 g',
+      '黑巧克力，可可 70 %',
+      '来自秘鲁的 Criollo 和 Trinitario 可可豆，在瑞典生产',
+      '有机',
+    ],
+    specLabels: [undefined, undefined, undefined, '饮食'],
+  },
+  'moomin-berry-picking-tea': {
+    name: '姆明 Berry Picking 茶，20 包',
+    description:
+      '带香草和红色浆果风味的红茶，在芬兰努尔米耶尔维工厂调配，带有芬兰钥匙旗标志。这款茶与芬兰红十字会合作：每售出一包，0.40 欧元用于红十字会面向儿童、青少年和孤独者的工作。',
+    specs: [
+      '20 x 1.75 g，35 g',
+      '在芬兰努尔米耶尔维工厂生产',
+      '通过 Rainforest Alliance 认证的茶叶，芬兰钥匙旗标志',
+      '纯素',
+    ],
+    specLabels: [undefined, undefined, '认证', '饮食'],
+  },
+  'arctic-power-berries-blueberry-powder': {
+    name: '野生蓝莓粉 70 g',
+    description:
+      '冻干的野生越橘，不添加任何东西。生产者表示，一罐 70 克大约要用 700 克鲜果。这家店以英镑计价。',
+    specs: [
+      '70 g',
+      '100 % 蓝莓粉，原料为北欧野生蓝莓（越橘）。不添加任何东西',
+      '约 700 g 鲜果制成 70 g 浆果粉',
+      '能量 367 kcal / 1559 kJ，蛋白质 5 g，碳水化合物 54 g 其中糖 34 g，膳食纤维 31 g，脂肪 0.8 g，盐 0.01 g',
+    ],
+    specLabels: [undefined, undefined, '用果量', '每 100 g 营养成分'],
+  },
+  'arctic-power-berries-sea-buckthorn-powder': {
+    name: '沙棘粉 70 g',
+    description:
+      '冻干的北欧沙棘，70 克，不添加任何东西。酸味明显，颜色是鲜亮的橙，所以一茶匙撒在麦片粥里比想象中管用。这家店以英镑计价。',
+    specs: [
+      '70 g',
+      '100 % 沙棘粉，原料为北欧沙棘果。不添加任何东西',
+      '约 700 g 鲜果制成 70 g 浆果粉',
+      '能量 489 kcal / 2045 kJ，蛋白质 13 g，碳水化合物 24 g 其中糖 14 g，膳食纤维 28 g，脂肪 25 g，盐 0.06 g',
+    ],
+    specLabels: [undefined, undefined, '用果量', '每 100 g 营养成分'],
+  },
+  'kaapa-mushrooms-pakuri-powder': {
+    name: 'Kääpä Mushrooms 桦褐孔菌提取物粉 30 g',
+    description:
+      'Kääpä Mushrooms 在北欧森林采集功能性蘑菇，这是 30 克装的桦褐孔菌提取物粉，用来冲进热饮。Ruohonjuuri 只在欧盟关税和税收区内配送，标签上列出的药物相互作用值得先读一遍。',
+    specs: [
+      '30 g',
+      '100 % 桦褐孔菌，有机。每日剂量含 100 mg β-葡聚糖',
+      '芬兰',
+      '带欧盟有机叶标的有机产品。无麸质、无乳糖、不含乳制品、无大豆、无糖、无咖啡因、无添加剂、纯素、野生',
+      '桦褐孔菌不得与抗生素、抗凝血药、青霉素或静脉注射葡萄糖同时使用。请按包装标示的剂量服用，不要超量',
+      '6430071310212',
+    ],
+    specLabels: [undefined, undefined, undefined, '饮食', '警示', 'EAN'],
+  },
+  'arctic-warriors-spruce-sprout-powder': {
+    name: 'Arctic Warriors 云杉嫩芽粉 40 g',
+    description:
+      '冻干云杉嫩芽，在有机国有林中于两周的窗口期手工采摘，同一片林子每两年才采一次。一勺里有柑橘和松脂的气味，每 100 g 含 382 mg 维生素 C。',
+    specs: [
+      '40 g，毛重 0.046 kg',
+      '3 x 11 x 17 cm',
+      '冻干云杉嫩芽',
+      '芬兰',
+      '每天 1 至 3 茶匙',
+      '能量 1683 kJ / 402 kcal，蛋白质 12.1 g，碳水化合物 77.8 g，脂肪 4.19 g。维生素 C 382 mg，维生素 A 970 µg，维生素 K1 332 mg，钾 1200 mg，磷 350 mg，钙 130 mg，镁 120 mg，锌 3.6 mg，铁 2 mg',
+      '经许可在芬兰国家林业局所属的有机林中采集，同一片林子每两年一次',
+    ],
+    specLabels: [
+      undefined,
+      undefined,
+      undefined,
+      undefined,
+      '用量',
+      '每 100 g 营养成分',
+      '采集',
+    ],
+  },
+  'arctic-warriors-nettle-powder': {
+    name: 'Arctic Warriors 荨麻粉 150 g',
+    description:
+      '在拉普兰有机农场种植的荨麻，冻干成味道足够中性的粉，拌进汤里或面包里都不会和其他材料打架。每 100 g 含 22 000 mg 钙。',
+    specs: [
+      '150 g，毛重 0.162 kg',
+      '4 x 16 x 23 cm',
+      '冻干荨麻',
+      '芬兰，在拉普兰有机农场种植',
+      '每天 1 至 5 茶匙',
+      '能量 1484 kJ / 354 kcal，蛋白质 23.6 g，碳水化合物 56 g，脂肪 3.44 g，盐低于 5 mg。维生素 A 1900 µg，钙 22000 mg，镁 5300 mg，铁 68 mg',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '用量', '每 100 g 营养成分'],
+  },
+  'arctic-warriors-roseroot-elixir': {
+    name: 'Arctic Warriors 红景天酊 100 ml',
+    description:
+      '红景天长在拉普兰山地潮湿的溪岸和岩壁上，Arctic Warriors 把它连同荨麻一起萃取进植物甘油。一茶匙可以加进茶、麦片粥或酸奶。',
+    specs: [
+      '100 ml，毛重 0.270 kg',
+      '4.5 x 4.5 x 13 cm',
+      '植物甘油、荨麻、红景天',
+      '芬兰',
+      '每天 1 至 2 茶匙',
+      '不含乳制品、无麸质、纯素。植物甘油不影响血糖',
+      '膳食补充剂不能替代多样化的饮食。请置于儿童无法取得处，不要超过标示剂量',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '用量', '饮食', '注意'],
+  },
+  'omega7-sea-buckthorn-olive-oil': {
+    name: 'Omega7 SBA24 沙棘与橄榄油 150 ml',
+    description:
+      '沙棘果油和籽油与橄榄油配在一起，在芬兰研发和生产。生产者把维生素 A 和 E 的含量标准化，而不是听凭当年的收成。',
+    specs: [
+      '150 ml',
+      '沙棘果油和籽油配橄榄油，维生素 A 和 E 含量已标准化',
+      '在芬兰研发和生产',
+      '请按包装标示的剂量服用，不要超量。膳食补充剂不能替代多样化的饮食。请置于儿童无法取得处',
+    ],
+    specLabels: [undefined, undefined, undefined, '注意'],
+  },
+  'kaino-spruce-sprout-sparkling': {
+    name: 'KAINO Drinks 云杉嫩芽气泡饮 0.2 l',
+    description:
+      '用芬兰有机原料做的无酒精气泡饮，木屋里的一杯干杯因此不必含酒精。要冰镇后再喝，否则云杉的香气会被气泡盖掉。',
+    specs: [
+      '0.2 l',
+      '以 100 % 芬兰有机原料制成。不含酒精',
+      '芬兰',
+      '能量 122.65 kJ / 29.3 kcal，脂肪低于 0.1 g 其中饱和脂肪低于 0.1 g，碳水化合物 6.9 g 其中糖 6.9 g，蛋白质低于 0.1 g，盐低于 0.1 g',
+      '纯素。欧盟有机叶标',
+    ],
+    specLabels: [undefined, undefined, undefined, '每 100 ml 营养成分', '饮食与认证'],
+  },
+  'arabia-moomin-mug-snufkin': {
+    name: 'Arabia 姆明马克杯，史力奇',
+    description:
+      'Arabia 从 1990 年起就把托芙·扬松的画印在这些马克杯上，收藏者按年份追踪那些停产的图案。史力奇就是秋天离开、春天回来的那一位。',
+    specs: ['0.3 l', '托芙·扬松'],
+    specLabels: [undefined, '原画'],
+  },
+  'arabia-moomin-mug-friendship': {
+    name: 'Arabia 姆明马克杯，Friendship',
+    description:
+      '杯上画的是妮妮，那个怕黑的隐形孩子，当有人对她好，她会慢慢重新显出身形。比那些名气大的角色更安静的一个选择。',
+    specs: ['0.3 l', '托芙·扬松'],
+    specLabels: [undefined, '原画'],
+  },
+  'arabia-moomin-figurine-moomintroll': {
+    name: 'Arabia 姆明迷你雕像，姆明',
+    description:
+      '手工制作的陶瓷小雕像，图样由图利基·皮耶蒂莱在 1990 年代绘制，附专属包装盒。小到可以装在大衣口袋里带回家。',
+    specs: ['图利基·皮耶蒂莱，1990 年代', '手工陶瓷，附专属包装盒'],
+    specLabels: ['设计', '工艺'],
+  },
+  'fiskars-moominpappa-scissors': {
+    name: 'Fiskars 姆明爸爸多用途剪刀',
+    description:
+      '橙色手柄的 Fiskars 剪刀，出现在芬兰厨房抽屉里的次数比任何其他工具都多。这一把长 21 cm，不锈钢材质，手柄上是姆明爸爸。',
+    specs: ['21 cm', '不锈钢'],
+  },
+  'rento-tar-sauna-soap': {
+    name: 'Rento 焦油桑拿皂 150 g',
+    description:
+      '松焦油在芬兰先是一种气味，其次才是一种味道，而它最该待的地方就是桑拿房。植物油基底，挂在黄麻绳上，两次使用之间能晾干。',
+    specs: ['150 g', '植物油基底皂'],
+  },
+  'rento-birch-sauna-honey': {
+    name: 'Rento 桦木桑拿蜜 150 ml',
+    description:
+      '抹在洗净的皮肤上，让它在温和的热气里停一会儿，再用温水冲掉。桑拿蜜是芬兰桑拿仪式里游客从来想不到要带回家的那一部分。',
+    specs: ['150 ml'],
+  },
+  'rento-blueberry-sauna-honey': {
+    name: 'Rento 蓝莓桑拿蜜 150 ml',
+    description:
+      '带去角质效果的版本，香气是蓝莓。用法与桦木款相同：抹在洗净的皮肤上，让热气去做事，再用温水冲掉。',
+    specs: ['150 ml'],
+  },
+  'rento-sauna-pillow': {
+    name: 'Rento Pino 桑拿枕 50 x 22 cm',
+    description:
+      '桑拿长凳上垫头颈的提花织枕。它不会塌形，而这正是桑拿枕和一条折起来的毛巾之间的全部区别。',
+    specs: ['50 x 22 cm', '黑色'],
+  },
+  'rento-linen-back-scrubber': {
+    name: 'Rento 亚麻毛圈布搓背巾 14 x 70 cm',
+    description:
+      '亚麻毛圈布，长到可以搓到自己的背。皮肤先在热气里变软，之后才清洗，芬兰人不假思索就按这个顺序来。',
+    specs: ['14 x 70 cm', '亚麻毛圈布'],
+  },
+  'rento-linen-wash-mitt': {
+    name: 'Rento 亚麻毛圈布沐浴手套 14 x 24 cm',
+    description:
+      '和搓背巾同样的亚麻毛圈布，做成掌心加厚的手套。这一节里最便宜的一件，也是人们真的每周都用的那一件。',
+    specs: ['14 x 24 cm', '亚麻毛圈布，掌心双层'],
+  },
+  'emendo-sauna-scents': {
+    name: 'Emendo 桑拿香氛：咸甘草、松脂、sisu，3 x 10 ml',
+    description:
+      '木架上的三款香氛，其中一款是咸甘草。比咸甘草加桑拿更芬兰的组合不多，而这一套把两者放进了同一把水勺。',
+    specs: ['3 x 10 ml，配木架', '咸甘草、松脂、sisu'],
+    specLabels: [undefined, '香型'],
+  },
+  'aurora-mini-kuksa': {
+    name: '迷你库克萨，带皮绳，4 cm',
+    description:
+      '4 cm 的库克萨，是给一小杯烈酒准备的而不是咖啡，配一条可挂在腰带上的皮绳。拥有这个造型最小也最便宜的方式。',
+    specs: ['直径 4 cm'],
+  },
+  'fazer-super-salmiakki': {
+    name: 'Fazer Super Salmiakki 含片 80 g',
+    description:
+      '咸甘草经典款里最硬的一种，自 1970 年代起就装在同样的罐形盒子里出售。给来访的人来一片，十秒内你就知道他属于哪一派。',
+    specs: ['80 g'],
+  },
+  'fazer-pantteri-salmiakki': {
+    name: 'Fazer Pantteri 咸甘草软糖 210 g',
+    description:
+      '带薄荷味的软质咸甘草，已经做了五十多年。比含片温和，所以这袋适合送给从没试过咸甘草的人。',
+    specs: ['210 g'],
+  },
+  'halva-salmiakkiruutu': {
+    name: 'Halva Salmiakkiruutu 170 g',
+    description:
+      'Halva 自 1960 年起在赫尔辛基的皮塔延马基做这种方块咸甘草。比 Fazer 的版本更有嚼劲，芬兰人坚持说这才是原版。',
+    specs: ['170 g', '自 1960 年起在赫尔辛基皮塔延马基生产'],
+  },
+  'sisu-xylitol-salmiakki': {
+    name: 'Sisu 木糖醇咸甘草含片 36 g',
+    description:
+      '用木糖醇增甜的咸甘草，带有芬兰牙医协会标志。铁盒装得进大衣口袋，所以芬兰人的车里几乎都有一盒。',
+    specs: ['36 g', '木糖醇。带有芬兰牙医协会标志'],
+    specLabels: [undefined, '甜味剂'],
+  },
+  'leijona-tar-liquorice': {
+    name: 'Leijona 焦油甘草含片 32 g',
+    description:
+      '用松焦油调味的甘草糖，自 1933 年起生产。焦油是一种芬兰味道，会进到糖果、桑拿皂甚至冰淇淋里，而这是最便宜的尝试方式。',
+    specs: ['32 g'],
+  },
+  'fazer-hazelnut-chocolate': {
+    name: 'Karl Fazer 整粒榛子牛奶巧克力 200 g',
+    description:
+      '牛奶巧克力里嵌着整粒榛子的那块蓝色巧克力。Fazer 自 1922 年起一直用同样的蓝色包装纸，所以芬兰人出国带的就是它。',
+    specs: ['200 g'],
+  },
+  'fazer-light-milk-chocolate': {
+    name: 'Karl Fazer 清爽牛奶巧克力 180 g',
+    description:
+      '蓝色经典款更清淡温和的版本。如果你觉得经典款太甜，就带这一块。',
+    specs: ['180 g'],
+  },
+  'fazer-fazerina': {
+    name: 'Fazer Fazerina 香橙松露巧克力排 99 g',
+    description:
+      '牛奶巧克力里包着香橙松露夹心，自 1953 年起生产。比蓝色经典款更薄，装在背包里也不会化成一整块。',
+    specs: ['99 g'],
+  },
+  'fazer-jaffa-orange': {
+    name: 'Fazer Jaffa 香橙蛋糕 300 g',
+    description:
+      '海绵蛋糕底，上面是橙子果酱和黑巧克力。既不是饼干也不是蛋糕，芬兰人每次都要为此争论一番。',
+    specs: ['300 g'],
+  },
+  'north-outdoor-arctic-250-balaclava': {
+    name: 'North Outdoor Arctic 250 美利奴头套',
+    description:
+      'North Outdoor 做过的最暖的针织物，形状是为戴在头盔下设计的。坐雪地摩托或驯鹿雪橇时，寒气最先从脖子和脸颊灌进来，这一层就是把那道缝堵上。',
+    specs: [
+      '美利奴羊毛针织，Arctic 250 克重',
+      '均码',
+      '黑色',
+      'North Outdoor，芬兰奥卢',
+    ],
+  },
+  'north-outdoor-kevo-gloves': {
+    name: 'North Outdoor Kevo 美利奴手套',
+    description:
+      '在 North Outdoor 位于奥卢的自有针织厂，用不使用剪皮法的美利奴织成。薄到最冷的日子可以戴在连指手套里，拍照时也不用摘。',
+    specs: ['100 % 美利奴羊毛，不使用剪皮法', 'M, L, XL', '靛蓝色', '在芬兰奥卢织造'],
+  },
+  'north-outdoor-heavyweight-gaiter': {
+    name: 'North Outdoor Heavyweight 美利奴围脖',
+    description:
+      '美利奴抓绒，厚到可以在等极光出现时拉过鼻梁。羊毛在呼出的水汽凝结其中时仍然保温，而在寒冷里久站，问题恰恰就在这里。',
+    specs: ['美利奴抓绒', '均码', '黑色', 'North Outdoor，芬兰奥卢'],
+  },
+  'north-outdoor-sointu-cardigan': {
+    name: 'North Outdoor Sointu 美利奴开衫',
+    description:
+      '方正版型的美利奴开衫，看着像室内衣物，用起来是中层。这一套里唯一一件你会穿去参加雪地行程后晚餐的衣服。',
+    specs: ['100 % 美利奴羊毛', 'XS–2XL', '拿铁色', 'North Outdoor，芬兰奥卢'],
+  },
+  'north-outdoor-arctic-260-zip-neck': {
+    name: 'North Outdoor Arctic 260 美利奴拉链高领衫',
+    description:
+      '100% 美利奴的高领拉链衫，厚到在室内可以单穿，在户外可以当中层。拉链才是重点：走路时拉开，停下来时拉上。',
+    specs: [
+      '100 % 美利奴羊毛',
+      'S–3XL',
+      '花岗岩灰与黑色',
+      'North Outdoor，芬兰奥卢',
+      '高护领，隐藏式拉链，后摆加长',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '细节'],
+  },
+  'halti-hossa-baselayer-men': {
+    name: 'Halti Hossa II 美利奴内层套装，男款',
+    description:
+      '上衣和长裤装在同一个盒子里，190 g 美利奴，20.5 微米。贴身的那一层决定了其余装备管不管用，而多数游客来的时候偏偏就缺这一层。',
+    specs: [
+      '100 % 美利奴羊毛，190 g/m²，20.5 微米，1x1 罗纹',
+      '长袖上衣和长裤',
+      '反面洗涤',
+    ],
+    specLabels: [undefined, '套装内容', undefined],
+  },
+  'halti-hossa-baselayer-women': {
+    name: 'Halti Hossa II 美利奴内层套装，女款',
+    description:
+      '同一套 190 g 美利奴，改为女性版型。走路时出汗，然后停下来站着看，拉普兰的一天实际上就是这样，而羊毛在这中间仍然保温。',
+    specs: [
+      '100 % 美利奴羊毛，190 g/m²，20.5 微米，1x1 罗纹',
+      '长袖上衣和长裤',
+      '反面洗涤',
+    ],
+    specLabels: [undefined, '套装内容', undefined],
+  },
+  'halti-heatgrid-midlayer': {
+    name: 'Halti HeatGrid 中层夹克，男款',
+    description:
+      '华夫格针织在外壳下能兜住空气而不增加体积。这是美利奴和大衣之间的一层，把它省掉，人就会冻着回来。',
+    specs: [
+      '内侧华夫格针织 95 % 再生涤纶 / 5 % 氨纶；平纹针织 92 % 再生涤纶 / 8 % 氨纶',
+      '与同色衣物反面洗涤，洗前拉好拉链',
+    ],
+  },
+  'halti-taival-dx-jacket': {
+    name: 'Halti Taival DX 3L 冲锋衣，男款',
+    description:
+      '三层结构外壳，防水 20 000 mm，透气 30 000 g。这两个数字管的是相反的方向：前者把雨夹雪挡在外面，后者让爬坡时的汗排出去，而不是在里面结冰。',
+    specs: [
+      'DrymaxX Nano 针织外壳，3 层。100 % 再生涤纶',
+      '20 000 mm',
+      '30 000 g/m²/24 h',
+    ],
+    specLabels: [undefined, '防水指数', '透气指数'],
+  },
+  'halti-sykli-ski-gloves': {
+    name: 'Halti Sykli 滑雪手套',
+    description:
+      '带 120 g 填充、皮革掌心和防雪袖口的防水手套，摔倒时雪不会从手腕灌进去。为莱维或于莱斯的缆车滑雪而做，不是为了在城里散步。',
+    specs: [
+      'DrymaxX，4 向弹力，防水防风。皮革掌心',
+      '120 g Microtherm Dynamic',
+      '15 000 mm / 15 000 g/m²/24 h',
+    ],
+    specLabels: [undefined, '填充', '防水与透气指数'],
+  },
+  'halti-merino-socks-2pack': {
+    name: 'Halti 美利奴羊毛袜，2 双装',
+    description:
+      '两双，因为今天穿的那双到明天早上不会干。用美利奴混纺而不是纯羊毛，更经得起反复机洗。',
+    specs: [
+      '40 % 美利奴羊毛、40 % 腈纶、19 % 锦纶、1 % 氨纶',
+      '2 双',
+      '欧洲制造',
+    ],
+    specLabels: [undefined, '包装规格', undefined],
+  },
+}
