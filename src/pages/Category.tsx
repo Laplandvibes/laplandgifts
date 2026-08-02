@@ -10,6 +10,7 @@ import { categoryBySlug } from '../data/categories'
 import { productsByCategory } from '../data/products'
 import { GIFT_EXPERIENCES, EXPERIENCE_GROUPS, experiencesByGroup } from '../data/experiences'
 import { GYG_PRICE_AS_OF } from '../../../shared/gyg/picks'
+import { groupProducts, subgroupLabel } from '../data/subgroups'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
 import { useShippingCountry } from '../context/ShippingCountry'
@@ -126,7 +127,44 @@ export default function Category() {
               </p>
             </>
           ) : (
-            <ProductGridSection products={visible} lang={lang} emptyMessage={emptyMessage} />
+            <>
+              {/* 🔴 Ryhmitelty kategorian sisällä (Vesa 2.8.: "kaikkia
+                  tuotteita on liian vähän ja ilman kategorisointia").
+                  Kahdellakymmenellä herkulla yksi ruudukko on luettelo, jossa
+                  salmiakki, suklaa, tee ja kuivaliha ovat sekaisin.
+                  Ryhmittely ei piilota mitään: kartasta puuttuva tuote päätyy
+                  nimettömään ryhmään listan loppuun, ja jos ryhmiä on vain
+                  yksi, otsikkoa ei näytetä lainkaan. */}
+              {(() => {
+                const groups = groupProducts(category.id, visible)
+                if (!visible.length || groups.length <= 1) {
+                  return (
+                    <ProductGridSection
+                      products={visible}
+                      lang={lang}
+                      emptyMessage={emptyMessage}
+                    />
+                  )
+                }
+                return groups.map((g) => {
+                  const label = subgroupLabel(g.id, lang)
+                  return (
+                    <section key={g.id} className="mb-12 last:mb-0">
+                      {label && (
+                        <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
+                          {label}
+                        </h2>
+                      )}
+                      <ProductGridSection
+                        products={g.items}
+                        lang={lang}
+                        emptyMessage={emptyMessage}
+                      />
+                    </section>
+                  )
+                })
+              })()}
+            </>
           )}
         </div>
       </main>

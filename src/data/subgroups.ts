@@ -1,0 +1,199 @@
+import type { CategoryId } from './types'
+import type { Lang } from '../i18n/useLang'
+import { PRODUCTS } from './products'
+import type { Product } from './types'
+
+/**
+ * Kategorian sisäinen ryhmittely.
+ *
+ * 🔴 Miksi (Vesa 2.8.2026: "edelleen kaikkia tuotteita on liian vähän ja ilman
+ * kategorisointia"): kategoriasivu oli yksi pitkä ruudukko. Kahdellakymmenellä
+ * herkulla se on luettelo, jossa salmiakki, suklaa, tee ja kuivaliha ovat
+ * sekaisin. Ryhmitelty sivu kertoo yhdellä silmäyksellä mitä valikoimassa on —
+ * sama muutos kuin elämyssivulla, jossa se toimi.
+ *
+ * 🔴 Miksi OMASSA tiedostossaan eikä `Product`-kenttänä: ryhmittely on
+ * esitystapa, ei tuotteen ominaisuus, ja `products.ts` on jo 3 300 riviä.
+ * Kartta slugista ryhmään pysyy yhdessä paikassa, jolloin uuden ryhmän
+ * lisääminen tai järjestyksen muuttaminen ei kosketa yhtään tuoteriviä.
+ *
+ * Tuote joka puuttuu kartasta päätyy ryhmään `other`, joka renderöityy
+ * viimeisenä ilman otsikkoa. Puuttuva rivi ei siis piilota tuotetta —
+ * `subgroups.test.ts` kuitenkin vaatii, että jokainen tuote on kartassa,
+ * jottei uusi tuote jää hiljaa loppuun.
+ */
+export type SubgroupId = string
+
+/** Ryhmien järjestys kategoriaa kohden. Määrää myös renderöintijärjestyksen. */
+export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
+  design: ['tableware', 'textiles', 'candles'],
+  clothing: ['baselayer', 'midlayer', 'outerwear', 'accessories'],
+  handicrafts: ['knives', 'wood', 'textiles', 'ceramics'],
+  treats: ['salmiakki', 'chocolate', 'savoury', 'drinks'],
+  // `drinks` on mukana myös täällä: Kainon kuusenkerkkäjuoma on superfoodi
+  // mutta muodoltaan juoma, ei jauhe eikä öljy. Sama ryhmätunnus voi esiintyä
+  // useassa kategoriassa — nimi tulee samasta taulukosta, joten se lukee
+  // molemmissa samalla tavalla.
+  superfoods: ['berry', 'herbal', 'oils', 'drinks'],
+  merch: [],
+  experiences: [],
+}
+
+/** Ryhmien nimet. Kääntämättömät kielet putoavat englantiin, kuten muuallakin. */
+const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
+  en: {
+    tableware: 'Tableware and glass',
+    textiles: 'Textiles',
+    candles: 'Candles and small objects',
+    baselayer: 'Base layers',
+    midlayer: 'Mid layers and knitwear',
+    outerwear: 'Shells and outerwear',
+    accessories: 'Hats, gloves and socks',
+    knives: 'Puukko knives',
+    wood: 'Wood and camp tableware',
+    ceramics: 'Ceramics',
+    salmiakki: 'Salmiakki and liquorice',
+    chocolate: 'Chocolate and biscuits',
+    savoury: 'Dried meat and preserves',
+    drinks: 'Tea, coffee and drinks',
+    berry: 'Berry powders',
+    herbal: 'Herbs and mushrooms',
+    oils: 'Oils and elixirs',
+  },
+  fi: {
+    tableware: 'Astiat ja lasi',
+    textiles: 'Tekstiilit',
+    candles: 'Kynttilät ja pienesineet',
+    baselayer: 'Aluskerrastot',
+    midlayer: 'Välikerrokset ja neuleet',
+    outerwear: 'Kuoritakit ja ulkovaatteet',
+    accessories: 'Päähineet, käsineet ja sukat',
+    knives: 'Puukot',
+    wood: 'Puu ja retkiastiat',
+    ceramics: 'Keramiikka',
+    salmiakki: 'Salmiakki ja lakritsi',
+    chocolate: 'Suklaa ja keksit',
+    savoury: 'Kuivaliha ja säilykkeet',
+    drinks: 'Teet, kahvit ja juomat',
+    berry: 'Marjajauheet',
+    herbal: 'Yrtit ja sienet',
+    oils: 'Öljyt ja eliksiirit',
+  },
+}
+
+/** Tuotteen slug → ryhmä. */
+const MAP: Record<string, SubgroupId> = {
+  // design
+  'moomin-blue-love-mug': 'tableware',
+  'moomin-mystical-forest-tumblers': 'tableware',
+  'iittala-aalto-vase-160': 'tableware',
+  'marimekko-unikko-mug': 'tableware',
+  'aarikka-pore-glass-vase': 'tableware',
+  'moomin-mystical-forest-wool-throw': 'textiles',
+  'iittala-kivi-candleholder': 'candles',
+  'aarikka-prinsessa-candleholder': 'candles',
+
+  // clothing
+  'halti-hossa-baselayer-men': 'baselayer',
+  'halti-hossa-baselayer-women': 'baselayer',
+  'north-outdoor-arctic-260-zip-neck': 'baselayer',
+  'north-outdoor-honka-jumper': 'midlayer',
+  'north-outdoor-sointu-cardigan': 'midlayer',
+  'halti-heatgrid-midlayer': 'midlayer',
+  'makia-aurora-hoodie': 'midlayer',
+  'halti-tokoi-dx-jacket': 'outerwear',
+  'halti-taival-dx-jacket': 'outerwear',
+  'makia-merino-beanie': 'accessories',
+  'north-outdoor-huuru-beanie': 'accessories',
+  'north-outdoor-pyry-scarf': 'accessories',
+  'north-outdoor-arctic-250-balaclava': 'accessories',
+  'north-outdoor-kevo-gloves': 'accessories',
+  'north-outdoor-heavyweight-gaiter': 'accessories',
+  'halti-kroka-mitten': 'accessories',
+  'halti-sykli-ski-gloves': 'accessories',
+  'halti-tunturit-ski-socks': 'accessories',
+  'halti-merino-socks-2pack': 'accessories',
+
+  // handicrafts
+  'marttiini-lapinleuku-255': 'knives',
+  'marttiini-napapiirin-puukko': 'knives',
+  'marttiini-ilves-131': 'knives',
+  'kupilka-classic-cup-21': 'wood',
+  'kupilka-bowl-55': 'wood',
+  'kupilka-cutlery-set': 'wood',
+  'lapuan-kankurit-poro-towel': 'textiles',
+  'lapuan-kankurit-kaamos-blanket': 'textiles',
+  'pentik-posio-mug': 'ceramics',
+  'pentik-tunturiretki-studio-dish': 'ceramics',
+
+  // treats
+  'finnish-flavours-palalaku-salmiakki': 'salmiakki',
+  'fazer-super-salmiakki': 'salmiakki',
+  'fazer-pantteri-salmiakki': 'salmiakki',
+  'halva-salmiakkiruutu': 'salmiakki',
+  'sisu-xylitol-salmiakki': 'salmiakki',
+  'leijona-tar-liquorice': 'salmiakki',
+  'fazer-geisha-chocolate-bar': 'chocolate',
+  'fazer-hazelnut-chocolate': 'chocolate',
+  'fazer-light-milk-chocolate': 'chocolate',
+  'fazer-fazerina': 'chocolate',
+  'fazer-jaffa-orange': 'chocolate',
+  'moomin-lingonberry-blueberry-dark-chocolate': 'chocolate',
+  'kuivalihakundi-poro-jerky': 'savoury',
+  'kuivalihakundi-poro-jerky-200g': 'savoury',
+  'kuivalihakundi-beef-jerky-smoked': 'savoury',
+  'meritalo-tyrnihillo': 'savoury',
+  'nordqvist-moomin-forest-berry-tea': 'drinks',
+  'nordqvist-cranberry-toffee-tea': 'drinks',
+  'moomin-berry-picking-tea': 'drinks',
+  'moomin-wild-blueberry-coffee': 'drinks',
+
+  // superfoods
+  'arctic-power-berries-blueberry-powder': 'berry',
+  'arctic-power-berries-sea-buckthorn-powder': 'berry',
+  'arctic-warriors-nettle-powder': 'herbal',
+  'arctic-warriors-spruce-sprout-powder': 'herbal',
+  'kaapa-mushrooms-pakuri-powder': 'herbal',
+  'arctic-warriors-roseroot-elixir': 'oils',
+  'omega7-sea-buckthorn-olive-oil': 'oils',
+  'kaino-spruce-sprout-sparkling': 'drinks',
+}
+
+export function subgroupOf(slug: string): SubgroupId {
+  return MAP[slug] ?? 'other'
+}
+
+export function subgroupLabel(id: SubgroupId, lang: Lang): string {
+  return LABELS[lang]?.[id] ?? LABELS.en?.[id] ?? ''
+}
+
+/**
+ * Jakaa tuotteet ryhmiin `SUBGROUP_ORDER`-järjestyksessä. Tyhjät ryhmät
+ * jätetään pois, ja kartasta puuttuvat tuotteet päätyvät nimettömään
+ * `other`-ryhmään listan loppuun — ne näkyvät, mutta ilman otsikkoa.
+ */
+export function groupProducts(
+  category: CategoryId,
+  products: Product[],
+): { id: SubgroupId; label: string; items: Product[] }[] {
+  const order = SUBGROUP_ORDER[category] ?? []
+  const buckets = new Map<SubgroupId, Product[]>()
+  for (const p of products) {
+    const g = subgroupOf(p.slug)
+    if (!buckets.has(g)) buckets.set(g, [])
+    buckets.get(g)!.push(p)
+  }
+  const out: { id: SubgroupId; label: string; items: Product[] }[] = []
+  for (const id of order) {
+    const items = buckets.get(id)
+    if (items?.length) out.push({ id, label: '', items })
+  }
+  for (const [id, items] of buckets) {
+    if (!order.includes(id) && items.length) out.push({ id, label: '', items })
+  }
+  return out
+}
+
+/** Testien käyttöön: kaikki kartassa olevat slugit. */
+export const MAPPED_SLUGS = Object.keys(MAP)
+export const ALL_PRODUCT_SLUGS = PRODUCTS.map((p) => p.slug)
