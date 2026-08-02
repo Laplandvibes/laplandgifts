@@ -20,7 +20,8 @@ import ivaloAd from '../../../shared/ads/advertisers/ivalo'
 import kultaCenterAd from '../../../shared/ads/advertisers/kultaCenter'
 import { trackAffiliateClick } from '../lib/analytics'
 import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots'
-import { AD_SLOTS } from '../data/adSlots'
+import { AD_SLOTS } from '../data/adSlots'
+import { AppPromoHero } from '../components/AppPromo';
 
 export default function Home() {
   const lang = useLang()
@@ -90,6 +91,9 @@ export default function Home() {
 
       <Footer />
     </div>
+    {/* App launch block. Bottom of the page on purpose: the site's own
+        hero is what the search result promised. */}
+    <AppPromoHero />
     </>
   )
 }

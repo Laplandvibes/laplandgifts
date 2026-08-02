@@ -1,4 +1,5 @@
 import { BrowserRouter, useLocation } from 'react-router-dom'
+import { AppPromoNudge } from './components/AppPromo'
 import { useEffect, useReducer, Suspense, type ReactNode } from 'react'
 import CookieBanner from './shared/CookieBanner'
 import AppRoutes from './routes'
@@ -81,6 +82,7 @@ function App() {
         </CopyGate>
       </ShippingCountryProvider>
       <LocalisedCookieBanner />
+    <AppPromoNudge />
     </BrowserRouter>
   )
 }
