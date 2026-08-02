@@ -17,15 +17,26 @@ import { NAV_COPY } from '../locales/navCopy'
 const COUNTRIES = [...EU_COUNTRIES, 'GB', 'US', 'CA', 'JP', 'KR', 'AU', 'CH', 'NO'].sort()
 
 /**
- * Kaupan yläosa. Kolme kerrosta, joilla on kolme eri tehtävää ja kolme eri
- * elinkaarta ruudulla:
+ * Kaupan yläosa. YKSI header, jossa on kaksi riviä samalla vaalealla pinnalla,
+ * ja sen alla murupolku:
  *
- *   1. APUPALKKI (ei sticky) — verkostovalikko, lahjaoppaat, toimitus,
- *      toimitusmaa ja kieli. Nämä ovat asioita, jotka etsitään kerran ja
- *      jätetään rauhaan, joten ne saavat rullata pois näkyvistä.
- *   2. PÄÄPALKKI (sticky) — sanamerkki ja seitsemän kategoriaa. Tämä on kaupan
- *      varsinainen navigaatio ja se seuraa mukana koko sivun.
- *   3. MURUPOLKU (ei sticky) — sisältöalueen ensimmäinen rivi.
+ *   RIVI 1 — sanamerkki, haku, toimitusmaa ja kieli.
+ *   RIVI 2 — seitsemän kategoriaa, ja oikeassa reunassa lahjaoppaat, toimitus
+ *            ja verkostovalikko pienemmällä typografialla.
+ *   MURUPOLKU (ei sticky, headerin ulkopuolella) — sisältöalueen ensimmäinen
+ *            rivi.
+ *
+ * 🔴 MIKSI YKSI PINTA (Vesa 2.8.2026: "en ymmärrä kahta headerin navibaaria").
+ *
+ * Aiemmin ylimpänä oli erillinen TUMMA apupalkki (verkosto, oppaat, toimitus,
+ * maa, kieli) ja sen alla vaalea pääpalkki. Kaksi eri taustaväriä luki kahtena
+ * eri navigaationa, vaikka ne olivat saman sivuston sama yläosa. Sisältö ei
+ * muuttunut mihinkään — se on nyt jaettu kahdelle riville yhdellä pinnalla, ja
+ * toissijaiset linkit erottuvat kategorioista pienemmällä typografialla eikä
+ * omalla väripalkilla.
+ *
+ * Sivutuote: koko header on nyt sticky. Aiemmin apupalkki ei ollut, joten
+ * kieli- ja maavalitsin katosivat heti kun sivua rullasi.
  *
  * 🔴 Miksi kokonaan uusi (Vesa 2026-08-01: "koko navigaatio on aivan pielessä
  * ja aivan hirveä", "murupolku kulkee missä tahansa"):
@@ -140,60 +151,56 @@ export default function ShopNav() {
           pääpalkki (z-50) jäi sen päälle ja söi valikon ylimmän rivin.
           Palkit eivät voi peittää toisiaan: apupalkki on virtauksessa ennen
           headeria, joten se on jo rullautunut pois kun header kiinnittyy. */}
-      <div className="relative z-[60] bg-night text-white">
-        {/* flex-wrap + gap-y: kapeimmilla ruuduilla (≤ ~340 px) valitsinpari
-            putoaa omalle rivilleen sen sijaan että se piilotettaisiin tai että
-            palkki alkaisi vieriä sivusuunnassa. */}
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-3 gap-y-2 px-4 py-2 sm:gap-x-5">
-          <div className="lv-eco-compact shrink-0">
-            <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
-          </div>
-
-          <nav aria-label={n.utilityNavLabel} className="hidden items-center gap-5 md:flex">
-            {secondary.map((s) => (
-              <Link
-                key={s.key}
-                to={s.to}
-                aria-current={here === s.slug ? 'page' : undefined}
-                className={`inline-flex min-h-11 items-center text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-amber ${
-                  here === s.slug ? 'text-amber' : 'text-white/70'
-                }`}
-              >
-                {s.label}
-              </Link>
-            ))}
-          </nav>
-
-          <div className="ml-auto flex min-w-0 items-center gap-2">
-            {countrySelect('flex', 'h-11 max-w-[8.5rem] px-3 text-base md:h-9')}
-            <LangSwitcher />
-          </div>
-        </div>
-      </div>
-
-      {/* ── 2. PÄÄPALKKI ─────────────────────────────────────────────────── */}
       <header className="sticky top-0 z-50 border-b border-line bg-card/95 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl items-center gap-6 px-4 py-3">
+        {/* ── RIVI 1: sanamerkki, haku, toimitusmaa ja kieli ─────────────── */}
+        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3">
           {/* Logo sisältää jo oman Linkin etusivulle. Ylimääräinen Link-kääre
               tuottaisi sisäkkäiset <a>-elementit, mikä on epävalidia HTML:ää. */}
           <div className="shrink-0">
             <Logo />
           </div>
 
-          {/* Haku on pääpalkissa eikä apupalkissa, koska pääpalkki on sticky:
-              tuotelistaa selatessa haku on käden ulottuvilla koko ajan.
-              Kategorianavin VASEMMALLA puolella, jotta se ei jää sivun
-              reunimmaiseksi elementiksi ja jotta se löytyy katseella samasta
-              kohdasta kuin muissakin verkkokaupoissa. Piilotettu alle lg:n,
-              jossa sama kenttä on valikkopaneelissa täysleveänä. */}
-          <div className="ml-auto hidden lg:block">
+          {/* Haku keskellä ylintä riviä, kuten verkkokaupoissa yleensä. Alle
+              lg:n sama kenttä on valikkopaneelissa täysleveänä. */}
+          <div className="hidden lg:block lg:min-w-0 lg:flex-1 lg:px-8">
             <ProductSearch />
           </div>
 
-          <nav
-            aria-label={n.shopNavLabel}
-            className="hidden items-center gap-x-6 lg:flex xl:gap-x-8"
+          {/* 🔴 Mobiilissa valitsinpari on OMA rivinsä, ei rivityksen armoilla.
+              Kun logo, molemmat valitsimet ja valikkonappi olivat samassa
+              wrapissa, 390 pikselin ruudulla syntyi kolme epätasaista riviä ja
+              sticky-header vei 153 px eli lähes viidenneksen näytöstä.
+              `order-last w-full` pakottaa valitsimet siistiksi omaksi
+              rivikseen ja jättää ylimmälle riville logon ja valikkonapin.
+              lg:stä ylöspäin pari palaa oikeaan reunaan samalle riville. */}
+          <div className="order-last flex w-full min-w-0 items-center gap-2 lg:order-none lg:ml-auto lg:w-auto">
+            {countrySelect('flex flex-1 lg:flex-none', 'h-11 w-full px-3 text-base lg:h-9 lg:max-w-[8.5rem]')}
+            <LangSwitcher />
+          </div>
+
+          {/* 🔴 Napissa lukee "Valikko". Pelkkä hampurilaisikoni ei kerro, että
+              sen takana ovat kategoriat, lahjaopas- ja toimitussivu — eli
+              kaikki mihin mobiilissa pääsee. */}
+          <button
+            type="button"
+            onClick={() => setOpen((v) => !v)}
+            aria-expanded={open}
+            aria-controls="shop-menu"
+            aria-label={open ? n.closeMenu : n.openMenu}
+            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-line px-4 text-sm font-semibold text-gray lg:hidden"
           >
+            {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
+            {n.menuLabel}
+          </button>
+        </div>
+
+        {/* ── RIVI 2: kategoriat ja toissijaiset linkit, vain lg+ ────────── */}
+        <div className="hidden border-t border-line/60 lg:block">
+          <div className="mx-auto flex max-w-7xl items-center gap-x-6 px-4">
+            <nav
+              aria-label={n.shopNavLabel}
+              className="flex items-center gap-x-6 xl:gap-x-8"
+            >
             {categories.map((c) => {
               const active = here === c.slug
               return (
@@ -219,26 +226,33 @@ export default function ShopNav() {
                 </Link>
               )
             })}
-          </nav>
+            </nav>
 
-          {/* 🔴 Napissa lukee "Valikko". Pelkkä hampurilaisikoni ei kerro, että
-              sen takana ovat kategoriat, lahjaopas- ja toimitussivu — eli
-              kaikki mihin mobiilissa pääsee. Teksti tekee samalla napista
-              leveämmän kosketuskohteen kuin 44 × 44. */}
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            aria-controls="shop-menu"
-            // Näkyvä teksti on lyhyt ("Valikko"), saavutettava nimi kertoo
-            // toiminnon. Näkyvä teksti sisältyy nimeen, kuten WCAG 2.5.3
-            // edellyttää.
-            aria-label={open ? n.closeMenu : n.openMenu}
-            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-line px-4 text-sm font-semibold text-gray lg:hidden"
-          >
-            {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
-            {n.menuLabel}
-          </button>
+            {/* Toissijaiset sivut ja verkostovalikko rivin oikeaan reunaan.
+                Ne olivat aiemmin omassa tummassa palkissaan, joka luki
+                kahtena eri navigaationa (Vesa 2.8.: "en ymmärrä kahta
+                headerin navibaaria"). Sama sisältö, yksi pinta: pienempi
+                typografia erottaa ne kategorioista ilman omaa väripalkkia. */}
+            <div className="ml-auto flex items-center gap-5">
+              <nav aria-label={n.utilityNavLabel} className="flex items-center gap-5">
+                {secondary.map((s) => (
+                  <Link
+                    key={s.key}
+                    to={s.to}
+                    aria-current={here === s.slug ? 'page' : undefined}
+                    className={`inline-flex min-h-11 items-center text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-amber ${
+                      here === s.slug ? 'text-amber' : 'text-muted'
+                    }`}
+                  >
+                    {s.label}
+                  </Link>
+                ))}
+              </nav>
+              <div className="lv-eco-compact shrink-0">
+                <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="light" />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Paneeli on sticky-headerin sisällä, joten se pysyy ruudulla myös
@@ -295,10 +309,19 @@ export default function ShopNav() {
                 </Link>
               ))}
             </nav>
-            {/* Sama valitsin kuin apupalkissa, mutta näkyvällä labelilla ja
-                täysleveänä. Kaksoiskappale on tarkoituksellinen: apupalkki ei
-                ole sticky, joten rullatulla sivulla valikkopaneeli on ainoa
-                paikka josta toimitusmaan voi vaihtaa.
+            {/* Verkostovalikko. Se asui aiemmin tummassa apupalkissa, joka on
+                nyt poistettu; työpöydällä se on kategoriarivin oikeassa
+                reunassa, mobiilissa täällä. Ilman tätä koko muu verkosto
+                katoaisi puhelimelta. */}
+            <div className="mx-auto max-w-7xl border-t border-line px-4 py-3">
+              <div className="lv-eco-compact">
+                <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="light" />
+              </div>
+            </div>
+            {/* Sama valitsin kuin ylärivillä, mutta näkyvällä labelilla ja
+                täysleveänä. Kaksoiskappale on tarkoituksellinen: kapealla
+                ruudulla ylärivin valitsin on pieni, ja tämä on se paikka josta
+                toimitusmaa oikeasti vaihdetaan.
                 text-base = 16 px: pienempi koko saa iOS:n zoomaamaan kenttään. */}
             {countrySelect(
               'mx-auto flex max-w-7xl flex-wrap border-t border-line px-4 py-3',
