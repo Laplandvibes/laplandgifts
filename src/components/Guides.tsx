@@ -1,71 +1,132 @@
-import { BookOpen, Map, ArrowDown, FileText } from 'lucide-react'
+import { ArrowRight, FileText } from 'lucide-react'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 
-const ICONS = [BookOpen, Map]
+/**
+ * Ilmaiset PDF-oppaat, jotka saa uutiskirjeen tilaajana.
+ *
+ * 🔴 Kirjoitettu uusiksi 2.8.2026 (Vesa: "oppaat osio on todella poor ja tehty
+ * kiireessä"). Mikä siinä oli vialla:
+ *
+ *   1. EI KUVIA. Kortissa oli ikonilaatikko ja tekstiä. Opas on painotuotteen
+ *      kaltainen esine, ja sellaista myydään kannella — ilman kantta kortti on
+ *      pelkkä laatikko jossa lukee "9 sivua · PDF".
+ *   2. KORTTI EI OLLUT KLIKATTAVA. Osion ainoa toiminto oli alareunan
+ *      pomppiva nuoli, jonka teksti kehotti rullaamaan alaspäin. Lukija joka
+ *      halusi oppaan luettuaan kortin joutui etsimään toiminnon muualta.
+ *   3. LUPAUS JA TOIMINTO OLIVAT ERI PAIKOISSA. Ingressissä luki "lataa heti",
+ *      mutta latausta ei ollut näkyvissä.
+ *
+ * Nyt kummallakin kortilla on oma kansi ja oma nappi, joka vie
+ * uutiskirjelomakkeeseen ja siirtää kohdistuksen sähköpostikenttään. Kohdistus
+ * on olennainen: pelkkä ankkurihyppy jättää lukijan lomakkeen viereen ilman
+ * että mikään kertoo mitä seuraavaksi pitäisi tehdä.
+ *
+ * Kannet ovat AI-generoituja (Picsart, gpt-image-2) eivätkä oppaiden oikeita
+ * sivuja: PDF:n ensimmäistä sivua ei saa kuvaksi ilman erillistä
+ * renderöintityökalua, jota tässä ympäristössä ei ole. Kuvat esittävät
+ * oppaiden aihetta eivätkä väitä olevansa kansikuvia.
+ */
+const COVERS = ['guide-craft', 'guide-itinerary']
 
 function Guides() {
-  const t = COPY[useLang()].guides
+  const lang = useLang()
+  const t = COPY[lang].guides
+  /**
+   * Napin teksti tulee uutiskirjeen omasta lähetysnapista ("Hae molemmat
+   * oppaat", "Get Both Guides"), ei `guides.cta`:sta. Syy: `guides.cta` on
+   * kirjoitettu rullausvihjeeksi ja on 41–82 merkkiä pitkä kielestä riippuen
+   * (japaniksi 82), jolloin se rivittyisi napissa kolmelle riville. Sama
+   * merkkijono on jo käännetty kaikille kielille ja tarkoittaa täsmälleen
+   * sitä mihin nappi vie, joten uutta kääntämätöntä avainta ei tarvita.
+   */
+  const buttonLabel = COPY[lang].newsletter.submit
+
+  /**
+   * Vie lomakkeeseen ja kohdistaa sähköpostikenttään. Ankkuri `href`issä on
+   * silti tallella, joten linkki toimii myös ilman JavaScriptiä ja näkyy
+   * selaimen tilarivillä.
+   */
+  const toNewsletter = (e: React.MouseEvent) => {
+    const form = document.getElementById('newsletter')
+    if (!form) return
+    e.preventDefault()
+    form.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    const field = form.querySelector<HTMLInputElement>('input[type="email"]')
+    // Kohdistus vasta rullauksen jälkeen: heti kutsuttuna selain hyppää
+    // kenttään ja tekee rullausanimaatiosta turhan.
+    if (field) window.setTimeout(() => field.focus({ preventScroll: true }), 500)
+  }
+
   return (
-    <section id="guides" className="py-20 bg-night">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="text-center mb-14">
-          <div className="flex items-center justify-center gap-2 mb-3">
-            <FileText className="w-5 h-5 text-amber" />
-            <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
+    <section id="guides" className="bg-night py-20">
+      <div className="mx-auto max-w-5xl px-4">
+        <div className="mb-14 text-center">
+          <div className="mb-3 flex items-center justify-center gap-2">
+            <FileText className="h-5 w-5 text-amber" />
+            <span className="text-sm font-medium uppercase tracking-widest text-amber">{t.kicker}</span>
           </div>
-          <h2 className="font-heading text-5xl md:text-6xl tracking-wide text-white mb-3">{t.h2}</h2>
-          <p className="text-white/75 text-lg max-w-2xl mx-auto">
-            {t.sub}
-          </p>
+          <h2 className="mb-3 font-heading text-5xl tracking-wide text-white md:text-6xl">{t.h2}</h2>
+          <p className="mx-auto max-w-2xl text-lg text-white/75">{t.sub}</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-10">
-          {t.guides.map((guide, i) => {
-            const Icon = ICONS[i]
-            return (
-              <div
-                key={guide.title}
-                className="bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10 overflow-hidden hover:border-amber/30 transition-all"
-              >
-                <div className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 rounded-xl bg-amber/20 flex items-center justify-center">
-                      <Icon className="w-6 h-6 text-amber" />
-                    </div>
-                    <div>
-                      <h3 className="font-heading text-2xl tracking-wide text-white md:text-3xl">{guide.title}</h3>
-                      <p className="text-white/75 text-sm">{t.pagesPdf(guide.pages)}</p>
-                    </div>
-                  </div>
-
-                  <p className="text-amber text-sm font-medium mb-3">{guide.subtitle}</p>
-                  <p className="text-white/80 text-sm leading-relaxed mb-6">{guide.description}</p>
-
-                  <div className="flex flex-wrap gap-2">
-                    {guide.topics.map((topic) => (
-                      <span
-                        key={topic}
-                        className="text-xs px-3 py-1 rounded-full bg-white/5 text-white/75 border border-white/10"
-                      >
-                        {topic}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+          {t.guides.map((guide, i) => (
+            <article
+              key={guide.title}
+              className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:border-amber/40"
+            >
+              {/* Kansi. 8:5 pitää kortit samankorkuisina riippumatta siitä
+                  kuinka pitkä kuvausteksti on. */}
+              <div className="aspect-[8/5] overflow-hidden bg-white/5">
+                <picture>
+                  <source type="image/avif" srcSet={`/images/${COVERS[i]}.avif`} />
+                  <img
+                    src={`/images/${COVERS[i]}.webp`}
+                    alt=""
+                    loading="lazy"
+                    decoding="async"
+                    width={800}
+                    height={500}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
+                  />
+                </picture>
               </div>
-            )
-          })}
-        </div>
 
-        <div className="text-center">
-          <a
-            href="#newsletter"
-            className="inline-flex flex-col items-center gap-2 text-amber/60 hover:text-amber transition-colors"
-          >
-            <span className="text-sm font-medium">{t.cta}</span>
-            <ArrowDown className="w-5 h-5 animate-bounce" />
-          </a>
+              <div className="flex flex-1 flex-col p-7">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-amber">
+                  {t.pagesPdf(guide.pages)}
+                </p>
+                <h3 className="font-heading text-2xl leading-tight tracking-wide text-white md:text-3xl">
+                  {guide.title}
+                </h3>
+                <p className="mb-3 mt-1 text-sm font-medium text-amber/90">{guide.subtitle}</p>
+                <p className="mb-5 text-sm leading-relaxed text-white/80">{guide.description}</p>
+
+                <div className="mb-6 flex flex-wrap gap-2">
+                  {guide.topics.map((topic) => (
+                    <span
+                      key={topic}
+                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/75"
+                    >
+                      {topic}
+                    </span>
+                  ))}
+                </div>
+
+                {/* `mt-auto` pitää napit samalla korkeudella vaikka
+                    kuvaustekstit ovat eri mittaisia. */}
+                <a
+                  href="#newsletter"
+                  onClick={toNewsletter}
+                  className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-amber px-5 py-3 text-sm font-semibold text-night transition-colors hover:bg-amber/90"
+                >
+                  {buttonLabel}
+                  <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                </a>
+              </div>
+            </article>
+          ))}
         </div>
       </div>
     </section>
