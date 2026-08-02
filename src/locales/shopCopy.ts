@@ -140,7 +140,9 @@ export interface ShopCopy {
   faqAnswerFixes: Record<number, string>
   /** Elämyslahjat tulevat GYG-katalogista, eivät PRODUCTS-listasta. */
   experience: {
-    priceNote: (price: string, asOf: string) => string
+    priceNote: (price: string) => string
+    priceAsOf: (asOf: string) => string
+    groups: Record<import('../data/experiences').ExperienceGroup, string>
     duration: (value: string) => string
     viewOnGyg: string
   }
@@ -331,7 +333,18 @@ const en: ShopCopy = {
     2: 'Many do, and that is what this site runs on: every product here is sold and posted by the Finnish or Nordic shop that makes or stocks it, never by us. Each card names that shop’s delivery area and the countries it leaves out, and food is stricter than the rest, so dried reindeer travels inside the EU but not to the UK, the United States or Japan. Ordering online during your trip means fragile items travel separately instead of in your luggage. Our own #LaplandVibes print merchandise is not on sale yet.',
   },
   experience: {
-    priceNote: (price, asOf) => `From ${price} on GetYourGuide, price read ${asOf}`,
+    priceNote: (price) => `From ${price}`,
+    priceAsOf: (asOf) => `Starting prices read on GetYourGuide ${asOf}. The exact price depends on the date you choose.`,
+    groups: {
+      aurora: 'Northern lights',
+      husky: 'Husky rides',
+      reindeer: 'Reindeer',
+      snowmobile: 'Snowmobile safaris',
+      nature: 'Nature and national parks',
+      sauna: 'Sauna and ice swimming',
+      santa: 'Santa Claus and snow',
+      kids: 'For children',
+    },
     duration: (value) => `Duration ${value}`,
     viewOnGyg: 'See availability',
   },
@@ -480,7 +493,18 @@ const fi: ShopCopy = {
     2: 'Moni lähettää, ja koko tämä sivusto perustuu siihen: jokaisen tuotteen myy ja postittaa se suomalainen tai pohjoismainen kauppa, joka sen tekee tai varastoi, emme me. Kortti kertoo kaupan toimitusalueen ja ne maat, jotka jäävät ulkopuolelle. Elintarvikkeissa säännöt ovat tiukemmat: poron kuivaliha kulkee EU:n sisällä mutta ei Britanniaan, Yhdysvaltoihin eikä Japaniin. Matkan aikana tilaamisen etu on se, että hauraat esineet matkaavat erikseen eivätkä matkalaukussa. Oma #LaplandVibes-painomallistomme ei ole vielä myynnissä.',
   },
   experience: {
-    priceNote: (price, asOf) => `Alkaen ${price} GetYourGuidessa, hinta luettu ${asOf}`,
+    priceNote: (price) => `Alkaen ${price}`,
+    priceAsOf: (asOf) => `Alkaen-hinnat luettu GetYourGuidesta ${asOf}. Lopullinen hinta riippuu valitusta päivästä.`,
+    groups: {
+      aurora: 'Revontulet',
+      husky: 'Huskyajelut',
+      reindeer: 'Porot',
+      snowmobile: 'Kelkkasafarit',
+      nature: 'Luonto ja kansallispuistot',
+      sauna: 'Sauna ja avanto',
+      santa: 'Joulupukki ja lumi',
+      kids: 'Lapsille',
+    },
     duration: (value) => `Kesto ${value}`,
     viewOnGyg: 'Katso saatavuus',
   },

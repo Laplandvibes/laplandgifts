@@ -1,5 +1,5 @@
 import { ArrowUpRight, MapPin } from 'lucide-react'
-import { gygHref, GYG_PRICE_AS_OF } from '../../../../shared/gyg/picks'
+import { gygHref } from '../../../../shared/gyg/picks'
 import type { GiftExperience } from '../../data/experiences'
 import { AFFILIATE_REL } from '../../data/partners'
 import type { Lang } from '../../i18n/useLang'
@@ -48,12 +48,12 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
             ("Rovaniemi: Husky Sledge Ride"), ei osion otsikko, joten se ladotaan
             leipätekstifontilla eikä versaalilla Bebas Neuella. */}
         <h3 className="font-body text-lg font-semibold leading-snug tracking-normal text-gray">
-          {pick.title}
+          {lang === 'fi' ? pick.name.fi : pick.name.en}
         </h3>
         {/* Hinta on GetYourGuiden oma "alkaen"-hinta lukupäivänä, ei meidän.
             Rivi ilman hintaa renderöityy ilman hintaa, ei arvauksella. */}
         {pick.price && (
-          <p className="text-sm text-muted">{t.priceNote(pick.price, GYG_PRICE_AS_OF)}</p>
+          <p className="text-sm font-semibold text-gray">{t.priceNote(pick.price)}</p>
         )}
         {pick.duration && <p className="text-sm text-muted">{t.duration(pick.duration)}</p>}
         <a

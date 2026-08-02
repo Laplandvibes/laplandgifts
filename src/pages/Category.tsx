@@ -8,7 +8,8 @@ import ProductGridSection from '../components/shop/ProductGridSection'
 import ExperienceCard from '../components/shop/ExperienceCard'
 import { categoryBySlug } from '../data/categories'
 import { productsByCategory } from '../data/products'
-import { GIFT_EXPERIENCES } from '../data/experiences'
+import { GIFT_EXPERIENCES, EXPERIENCE_GROUPS, experiencesByGroup } from '../data/experiences'
+import { GYG_PRICE_AS_OF } from '../../../shared/gyg/picks'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
 import { useShippingCountry } from '../context/ShippingCountry'
@@ -26,6 +27,7 @@ export default function Category() {
   const { pathname } = useLocation()
   const { country } = useShippingCountry()
   const t = SHOP_COPY[lang].category
+  const tx = SHOP_COPY[lang].experience
 
   const category = categoryBySlug(stripLocale(pathname).replace(/\/$/, ''))
   if (!category) return <NotFound />
@@ -95,11 +97,34 @@ export default function Category() {
             {t.productCount(isExperiences ? GIFT_EXPERIENCES.length : visible.length)}
           </p>
           {isExperiences ? (
-            <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {GIFT_EXPERIENCES.map((p) => (
-                <ExperienceCard key={p.path} pick={p} lang={lang} />
-              ))}
-            </div>
+            <>
+              {/* 🔴 Ryhmitelty, ei yhtenä listana (Vesa 2.8.: "kyllä pitää olla
+                  ihan useita kymmeniä täällä ja kategorioittain"). 24 korttia
+                  peräkkäin on luettelo; kahdeksan otsikoitua ryhmää on
+                  valikoima, josta lahjan etsijä löytää haluamansa. */}
+              {EXPERIENCE_GROUPS.map((g) => {
+                const rows = experiencesByGroup(g)
+                if (!rows.length) return null
+                return (
+                  <section key={g} className="mb-12 last:mb-0">
+                    <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
+                      {tx.groups[g]}
+                    </h2>
+                    <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                      {rows.map((p) => (
+                        <ExperienceCard key={p.path} pick={p} lang={lang} />
+                      ))}
+                    </div>
+                  </section>
+                )
+              })}
+              {/* Hinnan lukupäivä kerran sivun lopussa, ei jokaisessa kortissa.
+                  Kortissa se luki muodossa "Alkaen 198 € GetYourGuidessa,
+                  hinta luettu 2026-07-29", mikä on asiakkaalle kohinaa. */}
+              <p className="mt-10 border-t border-line pt-5 text-xs text-muted">
+                {tx.priceAsOf(GYG_PRICE_AS_OF)}
+              </p>
+            </>
           ) : (
             <ProductGridSection products={visible} lang={lang} emptyMessage={emptyMessage} />
           )}
