@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { Globe, Menu, X } from 'lucide-react'
 import Logo from './Logo'
 import LangSwitcher from './LangSwitcher'
+import ProductSearch from './ProductSearch'
 import Breadcrumbs from '../../../shared/Breadcrumbs'
 import EcosystemMenu from '../../../shared/EcosystemMenu'
 import { CATEGORIES } from '../data/categories'
@@ -179,9 +180,19 @@ export default function ShopNav() {
             <Logo />
           </div>
 
+          {/* Haku on pääpalkissa eikä apupalkissa, koska pääpalkki on sticky:
+              tuotelistaa selatessa haku on käden ulottuvilla koko ajan.
+              Kategorianavin VASEMMALLA puolella, jotta se ei jää sivun
+              reunimmaiseksi elementiksi ja jotta se löytyy katseella samasta
+              kohdasta kuin muissakin verkkokaupoissa. Piilotettu alle lg:n,
+              jossa sama kenttä on valikkopaneelissa täysleveänä. */}
+          <div className="ml-auto hidden lg:block">
+            <ProductSearch />
+          </div>
+
           <nav
             aria-label={n.shopNavLabel}
-            className="ml-auto hidden items-center gap-x-6 lg:flex xl:gap-x-8"
+            className="hidden items-center gap-x-6 lg:flex xl:gap-x-8"
           >
             {categories.map((c) => {
               const active = here === c.slug
@@ -240,6 +251,12 @@ export default function ShopNav() {
             id="shop-menu"
             className="max-h-[calc(100svh-7rem)] overflow-y-auto border-t border-line bg-card lg:hidden"
           >
+            {/* Haku on paneelin ensimmäinen elementti: mobiilissa kategorian
+                arvaaminen on työläämpää kuin työpöydällä, koska koko listaa ei
+                näe kerralla. */}
+            <div className="mx-auto max-w-7xl border-b border-line px-4 py-3">
+              <ProductSearch variant="panel" onNavigate={() => setOpen(false)} />
+            </div>
             <nav aria-label={n.shopNavLabel} className="mx-auto max-w-7xl px-4 py-2">
               {categories.map((c) => (
                 <Link
