@@ -852,4 +852,141 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Packungsgröße', undefined],
   },
+
+  // Nachtrag 2.8.2026: 21 Produkte, die nach der ersten Fassung dieser Datei in
+  // den Katalog kamen (Arabia/Fiskars, die Saunareihe von Rento und Emendo und
+  // die Süßwaren). Sie stehen hier am Ende statt an ihrer Stelle in
+  // `products.ts`, weil der Schlüssel der Slug ist und die Reihenfolge im
+  // Objekt nichts bestimmt. Nur `specs` ist positionsgebunden.
+  'arabia-moomin-mug-snufkin': {
+    name: 'Arabia Mumin-Becher, Snufkin',
+    description:
+      'Arabia druckt die Zeichnungen von Tove Jansson seit 1990 auf diese Becher, und Sammler verfolgen die eingestellten Motive nach Jahrgang. Snufkin ist der, der im Herbst geht und im Frühling zurückkommt.',
+    specs: ['0,3 l', 'Tove Jansson'],
+    specLabels: [undefined, 'Illustration'],
+  },
+  'arabia-moomin-mug-friendship': {
+    name: 'Arabia Mumin-Becher, Friendship',
+    description:
+      'Der Becher zeigt Ninny, das unsichtbare Kind, das sich vor der Dunkelheit fürchtet und langsam wieder sichtbar wird, sobald jemand freundlich zu ihr ist. Eine leisere Wahl als die bekannten Figuren.',
+    specs: ['0,3 l', 'Tove Jansson'],
+    specLabels: [undefined, 'Illustration'],
+  },
+  'arabia-moomin-figurine-moomintroll': {
+    name: 'Arabia Mumin-Minifigur, Mumintroll',
+    description:
+      'Eine handgefertigte Keramikfigur, in den 1990er Jahren von Tuulikki Pietilä entworfen und in einer eigenen Schachtel verkauft. Klein genug, um in einer Manteltasche nach Hause zu reisen.',
+    specs: ['Tuulikki Pietilä, 1990er Jahre', 'Handgefertigte Keramik, in einer eigenen Schachtel verkauft'],
+    specLabels: ['Design', 'Herstellung'],
+  },
+  'fiskars-moominpappa-scissors': {
+    name: 'Fiskars Muminpapa Universalschere',
+    description:
+      'Fiskars-Scheren mit orangefarbenem Griff liegen in mehr finnischen Küchenschubladen als jedes andere Werkzeug. Diese hier misst 21 cm, ist aus Edelstahl und trägt Muminpapa auf dem Griff.',
+    specs: ['21 cm', 'Edelstahl'],
+  },
+  'rento-tar-sauna-soap': {
+    name: 'Rento Teer-Saunaseife 150 g',
+    description:
+      'Kiefernteer ist ein finnischer Geruch, bevor er ein finnischer Geschmack ist, und er gehört in die Sauna mehr als irgendwohin sonst. Auf Pflanzenölbasis, an einer Juteschnur aufgehängt, damit sie zwischen zwei Saunagängen trocknet.',
+    specs: ['150 g', 'Seife auf Pflanzenölbasis'],
+  },
+  'rento-birch-sauna-honey': {
+    name: 'Rento Birken-Saunahonig 150 ml',
+    description:
+      'Auf die saubere Haut auftragen, in der milden Wärme einwirken lassen, warm abspülen. Saunahonig ist der Teil des finnischen Saunarituals, an den Besucher nie denken, wenn sie etwas mitnehmen.',
+    specs: ['150 ml'],
+  },
+  'rento-blueberry-sauna-honey': {
+    name: 'Rento Blaubeer-Saunahonig 150 ml',
+    description:
+      'Die Variante mit Peelingwirkung, mit Blaubeerduft. Gleiche Anwendung wie beim Birkenhonig: auf die saubere Haut, die Wärme arbeiten lassen, warm abspülen.',
+    specs: ['150 ml'],
+  },
+  'rento-sauna-pillow': {
+    name: 'Rento Pino Saunakissen 50 x 22 cm',
+    description:
+      'Ein jacquardgewebtes Kissen für Kopf und Nacken auf der Saunabank. Es behält seine Form, und genau das ist der ganze Unterschied zwischen einem Saunakissen und einem zusammengelegten Handtuch.',
+    specs: ['50 x 22 cm', 'Schwarz'],
+  },
+  'rento-linen-back-scrubber': {
+    name: 'Rento Rückenschrubber aus Leinenfrottee 14 x 70 cm',
+    description:
+      'Leinenfrottee, lang genug, um über den eigenen Rücken zu reichen. Die Haut wird erst in der Wärme weich und danach gewaschen, und in dieser Reihenfolge machen es Finnen, ohne darüber nachzudenken.',
+    specs: ['14 x 70 cm', 'Leinenfrottee'],
+  },
+  'rento-linen-wash-mitt': {
+    name: 'Rento Waschhandschuh aus Leinenfrottee 14 x 24 cm',
+    description:
+      'Dasselbe Leinenfrottee wie beim Rückenschrubber, als Handschuh mit doppelter Handfläche. Das günstigste Stück in diesem Abschnitt und das, was tatsächlich jede Woche benutzt wird.',
+    specs: ['14 x 24 cm', 'Leinenfrottee, doppelte Handfläche'],
+  },
+  'emendo-sauna-scents': {
+    name: 'Emendo Saunadüfte: Salmiak, Kiefernharz, Sisu, 3 x 10 ml',
+    description:
+      'Drei Düfte auf einem Holzständer, und einer davon ist Salmiak. Viel finnischer als Salmiak und Sauna wird es nicht, und dieses Set bringt beides in dieselbe Kelle.',
+    specs: ['3 x 10 ml auf einem Holzständer', 'Salmiak, Kiefernharz, Sisu'],
+    specLabels: [undefined, 'Düfte'],
+  },
+  'aurora-mini-kuksa': {
+    name: 'Mini-Kuksa mit Lederschlaufe, 4 cm',
+    description:
+      'Eine Kuksa von 4 cm, gedacht für einen Schnaps statt für Kaffee, mit einer Lederschlaufe für den Gürtel. Die kleinste und günstigste Art, diese Form zu besitzen.',
+    specs: ['Durchmesser 4 cm'],
+  },
+  'fazer-super-salmiakki': {
+    name: 'Fazer Super Salmiakki Pastillen 80 g',
+    description:
+      'Der härteste der Salmiak-Klassiker, seit den 1970er Jahren in derselben dosenförmigen Schachtel verkauft. Geben Sie einem Gast eine davon, und Sie wissen binnen zehn Sekunden, in welches Lager er gehört.',
+    specs: ['80 g'],
+  },
+  'fazer-pantteri-salmiakki': {
+    name: 'Fazer Pantteri Salmiakbonbons 210 g',
+    description:
+      'Weicher Mentholsalmiak, der seit über fünfzig Jahren hergestellt wird. Milder als die Pastillen, also die Tüte für Leute, die Salmiak noch nie probiert haben.',
+    specs: ['210 g'],
+  },
+  'halva-salmiakkiruutu': {
+    name: 'Halva Salmiakkiruutu 170 g',
+    description:
+      'Halva stellt diesen quadratischen Salmiak seit 1960 in Pitäjänmäki in Helsinki her. Zäher als die Fazer-Varianten und der, von dem Finnen behaupten, er sei das Original.',
+    specs: ['170 g', 'Seit 1960 in Pitäjänmäki, Helsinki, hergestellt'],
+  },
+  'sisu-xylitol-salmiakki': {
+    name: 'Sisu Xylitol Salmiakpastillen 36 g',
+    description:
+      'Salmiak, mit Xylit gesüßt und mit dem Zeichen des finnischen Zahnärzteverbands. Die Dose passt in eine Manteltasche, weshalb sie in jedem finnischen Auto liegt.',
+    specs: ['36 g', 'Xylit. Trägt das Zeichen des finnischen Zahnärzteverbands'],
+    specLabels: [undefined, 'Süßungsmittel'],
+  },
+  'leijona-tar-liquorice': {
+    name: 'Leijona Teerlakritzpastillen 32 g',
+    description:
+      'Lakritz mit Kiefernteer, seit 1933 hergestellt. Teer ist ein finnischer Geschmack, der in Süßigkeiten, Saunaseife und sogar Eis landet, und das hier ist die günstigste Art, ihn zu probieren.',
+    specs: ['32 g'],
+  },
+  'fazer-hazelnut-chocolate': {
+    name: 'Karl Fazer Vollmilchschokolade mit ganzen Haselnüssen 200 g',
+    description:
+      'Die blaue Tafel mit ganzen Haselnüssen in Milchschokolade. Fazer verwendet seit 1922 dasselbe blaue Papier, und deshalb ist sie die Tafel, die Finnen ins Ausland mitnehmen.',
+    specs: ['200 g'],
+  },
+  'fazer-light-milk-chocolate': {
+    name: 'Karl Fazer helle Milchschokolade 180 g',
+    description:
+      'Eine hellere, mildere Fassung der blauen Tafel. Wenn Ihnen die klassische zu süß ist, nehmen Sie diese.',
+    specs: ['180 g'],
+  },
+  'fazer-fazerina': {
+    name: 'Fazer Fazerina Orangentrüffeltafel 99 g',
+    description:
+      'Orangentrüffel in Milchschokolade, seit 1953 hergestellt. Dünner als die blaue Tafel und die, die einen Rucksack übersteht, ohne zu einem Klumpen zu schmelzen.',
+    specs: ['99 g'],
+  },
+  'fazer-jaffa-orange': {
+    name: 'Fazer Jaffa Orangenküchlein 300 g',
+    description:
+      'Biskuitboden, Orangenmarmelade und dunkle Schokolade obendrauf. Kein Keks und kein Kuchen, und genau darüber streiten Finnen jedes einzelne Mal.',
+    specs: ['300 g'],
+  },
 }

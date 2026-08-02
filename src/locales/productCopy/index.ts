@@ -36,6 +36,7 @@ export type ProductCopyMap = Record<string, ProductCopy>
 import { PRODUCT_COPY_DE } from './de'
 import { PRODUCT_COPY_SV } from './sv'
 import { PRODUCT_COPY_FR } from './fr'
+import { PRODUCT_COPY_ES } from './es'
 
 /**
  * Kielet joille käännökset on tehty. Puuttuva kieli ei ole virhe: se putoaa
@@ -46,6 +47,7 @@ export const PRODUCT_COPY: Partial<Record<Lang, ProductCopyMap>> = {
   de: PRODUCT_COPY_DE,
   sv: PRODUCT_COPY_SV,
   fr: PRODUCT_COPY_FR,
+  es: PRODUCT_COPY_ES,
 }
 
 /**
