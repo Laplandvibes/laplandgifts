@@ -82,34 +82,55 @@ describe('katalogin eheys', () => {
    * koska silloin kauppa on kumppanin tuoteluettelo eikä kuratoitu valikoima.
    * Raja on kolme, koska kolmella samaa merkkiä saa vielä näytettyä sarjan.
    */
-  const MAX_PER_CATEGORY = 3
+  /**
+   * 🔴 MUUTETTU 2.8.2026: absoluuttinen kolmen raja → suhteellinen osuus.
+   *
+   * Alkuperäinen raja oli kolme tuotetta per kumppani per kategoria. Se esti
+   * juuri sen mitä Vesa 2.8. pyysi: syvyyttä niiltä kumppaneilta joilta
+   * KOMISSIO oikeasti tulee ("onhan Scandinavian Outdoorilla ja Northilla
+   * paljon tuotteita jotka sopisivat, samoin Halti"). Kolmen katto pakotti
+   * vaatekategorian ohueksi juuri siellä missä valikoiman pitäisi olla vahva.
+   *
+   * Säännön TARKOITUS ei kuitenkaan muutu: kategoria ei saa olla yhden
+   * kumppanin tuoteluettelo. Se on nyt ilmaistu osuutena, ei kappalemääränä:
+   *   - yksikään kumppani/valmistaja ei saa ylittää puolta kategoriasta
+   *   - yli kuuden tuotteen kategoriassa on oltava vähintään kolme kumppania
+   *
+   * Näin 9 Halti-tuotetta on sallittu 19 vaatteen joukossa (47 %), mutta 9
+   * tuotetta 12:n joukossa ei olisi. Raja skaalautuu valikoiman kasvaessa.
+   */
+  const MAX_SHARE = 0.5
+  const MIN_PARTNERS_WHEN_LARGE = 3
+  const LARGE_CATEGORY = 6
 
-  it('yksikään kumppani ei täytä kategoriaa (enintään kolme tuotetta)', () => {
+  const shareCheck = (label: string, keyOf: (p: (typeof PRODUCTS)[number]) => string) => {
     for (const c of CATEGORY_IDS) {
+      const items = productsByCategory(c)
+      if (!items.length) continue
       const counts = new Map<string, number>()
-      for (const p of productsByCategory(c)) {
-        counts.set(p.partnerId, (counts.get(p.partnerId) ?? 0) + 1)
+      for (const p of items) counts.set(keyOf(p), (counts.get(keyOf(p)) ?? 0) + 1)
+      for (const [key, n] of counts) {
+        const share = n / items.length
+        expect(
+          share,
+          `${c}: ${label} ${key} on ${n}/${items.length} tuotteella (${Math.round(share * 100)} %), raja ${MAX_SHARE * 100} %`,
+        ).toBeLessThanOrEqual(MAX_SHARE)
       }
-      for (const [partnerId, n] of counts) {
-        expect(n, `${c}: ${partnerId} on ${n} tuotteella, raja ${MAX_PER_CATEGORY}`).toBeLessThanOrEqual(
-          MAX_PER_CATEGORY,
-        )
+      if (items.length > LARGE_CATEGORY) {
+        expect(
+          counts.size,
+          `${c}: ${items.length} tuotetta mutta vain ${counts.size} eri ${label}`,
+        ).toBeGreaterThanOrEqual(MIN_PARTNERS_WHEN_LARGE)
       }
     }
+  }
+
+  it('yksikään kumppani ei täytä yli puolta kategoriasta', () => {
+    shareCheck('kumppani', (p) => p.partnerId)
   })
 
-  it('yksikään valmistaja ei täytä kategoriaa (enintään kolme tuotetta)', () => {
-    for (const c of CATEGORY_IDS) {
-      const counts = new Map<string, number>()
-      for (const p of productsByCategory(c)) {
-        counts.set(p.brand, (counts.get(p.brand) ?? 0) + 1)
-      }
-      for (const [brand, n] of counts) {
-        expect(n, `${c}: ${brand} on ${n} tuotteella, raja ${MAX_PER_CATEGORY}`).toBeLessThanOrEqual(
-          MAX_PER_CATEGORY,
-        )
-      }
-    }
+  it('yksikään valmistaja ei täytä yli puolta kategoriasta', () => {
+    shareCheck('valmistaja', (p) => p.brand)
   })
 
   it('productBySlug löytää tuotteen ja palauttaa undefined tuntemattomalle', () => {

@@ -2445,6 +2445,444 @@ export const PRODUCTS: Product[] = [
       fetchedAt: '2026-08-01',
     },
   },
+
+  // ───────────────────────────────────────────────────────────────────────
+  // Erä 2.8.2026 — TALVIVARUSTEET. Kaikki North Outdoorilta ja Haltilta,
+  // eli kahdelta kumppanilta joiden Adtraction-ohjelma on hyväksytty ja
+  // joiden Worker-reitti on olemassa: jokainen näistä tuottaa komission.
+  //
+  // Valinta on tehty käyttötilanteesta, ei brändin valikoimasta: mitä Lapin
+  // pakkasessa oikeasti tarvitaan, kun istutaan moottorikelkan kyydissä,
+  // seistään revontulia odottamassa tai lasketaan rinnettä. Siksi mukana on
+  // kerroksia (aluskerrasto, välikerros, kuori) eikä vain yksittäisiä
+  // asusteita — asiakas näkee kokonaisuuden, ei sattumanvaraista poimintaa.
+  //
+  // Hinnat, koot, materiaalit ja kuvat luettu kumppanin omasta
+  // /products.json-syötteestä 2.8.2026. Spec-riveillä on VAIN kumppanin
+  // ilmoittamia lukuja; siellä missä kumppani ei kerro materiaalia, riviä ei
+  // ole. Kuvat ovat kaupan omia tuotekuvia (imageIsPartner).
+  // ───────────────────────────────────────────────────────────────────────
+  {
+    slug: 'north-outdoor-arctic-250-balaclava',
+    category: 'clothing',
+    brand: 'North Outdoor',
+    name: {
+      en: 'North Outdoor Arctic 250 merino balaclava',
+      fi: 'North Outdoor Arctic 250 -merinokypärämyssy',
+    },
+    description: {
+      en: 'The warmest knit North Outdoor makes, shaped to sit under a helmet. On a snowmobile or a reindeer sled the cold gets in at the neck and cheeks first, and this is the layer that closes that gap.',
+      fi: 'North Outdoorin tuhdointa merinoneulosta, muotoiltu istumaan kypärän alle. Moottorikelkan kyydissä ja porotilan reessä kylmä löytää ensimmäisenä kaulan ja poskien kohdalta, ja juuri sen raon tämä sulkee.',
+    },
+    priceFrom: 39.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-north-outdoor-arctic-250-balaclava',
+    imageIsPartner: true,
+    partnerId: 'northoutdoor',
+    partnerProductUrl: 'https://northoutdoor.com/products/arctic-250-merino-kyparamyssy-musta',
+    featured: true,
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: 'Merino wool knit, Arctic 250 weight',
+            fi: 'Merinovillaneulos, Arctic 250 -paksuus',
+          },
+        },
+        { key: 'size', value: { en: 'One size', fi: 'Yksi koko' } },
+        { key: 'color', value: { en: 'Black', fi: 'Musta' } },
+        { key: 'origin', value: { en: 'North Outdoor, Oulu, Finland', fi: 'North Outdoor, Oulu' } },
+      ],
+      sourceUrl: 'https://northoutdoor.com/products/arctic-250-merino-kyparamyssy-musta',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'north-outdoor-kevo-gloves',
+    category: 'clothing',
+    brand: 'North Outdoor',
+    name: {
+      en: 'North Outdoor Kevo merino gloves',
+      fi: 'North Outdoor Kevo -merinosormikkaat',
+    },
+    description: {
+      en: 'Knitted from mulesing free merino in North Outdoor’s own knitting mill in Oulu. Thin enough to keep under a mitten on the coldest days and to leave on when you take a photo.',
+      fi: 'Neulottu mulesing-vapaasta merinovillasta North Outdoorin omassa neulomossa Oulussa. Niin ohuet että ne voi pitää lapasen alla kovimmilla pakkasilla ja jättää käteen kun ottaa kuvan.',
+    },
+    priceFrom: 50.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-north-outdoor-kevo-gloves',
+    imageIsPartner: true,
+    partnerId: 'northoutdoor',
+    partnerProductUrl: 'https://northoutdoor.com/products/kevo-merinosormikkaat-indigonsininen',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '100 % merino wool, mulesing free',
+            fi: '100 % merinovillaa, mulesing-vapaa',
+          },
+        },
+        { key: 'size', value: { en: 'M, L, XL', fi: 'M, L, XL' } },
+        { key: 'color', value: { en: 'Indigo blue', fi: 'Indigonsininen' } },
+        { key: 'origin', value: { en: 'Knitted in Oulu, Finland', fi: 'Neulottu Oulussa' } },
+      ],
+      sourceUrl: 'https://northoutdoor.com/products/kevo-merinosormikkaat-indigonsininen',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'north-outdoor-heavyweight-gaiter',
+    category: 'clothing',
+    brand: 'North Outdoor',
+    name: {
+      en: 'North Outdoor Heavyweight merino neck gaiter',
+      fi: 'North Outdoor Paksu merino -tuubihuivi',
+    },
+    description: {
+      en: 'Merino fleece, thick enough to pull up over the nose while you wait for the lights to appear. Wool keeps insulating when your breath condenses in it, which is the whole problem with standing still in the cold.',
+      fi: 'Merinofleeceä, riittävän paksu vedettäväksi nenän yli kun odottaa revontulten ilmestymistä. Villa eristää vielä silloinkin kun hengitys tiivistyy siihen, ja juuri se on paikallaan seisomisen ongelma pakkasessa.',
+    },
+    priceFrom: 39.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-north-outdoor-heavyweight-gaiter',
+    imageIsPartner: true,
+    partnerId: 'northoutdoor',
+    partnerProductUrl: 'https://northoutdoor.com/products/paksu-merino-tuubihuivi-musta',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Merino fleece', fi: 'Merinofleece' } },
+        { key: 'size', value: { en: 'One size', fi: 'Yksi koko' } },
+        { key: 'color', value: { en: 'Black', fi: 'Musta' } },
+        { key: 'origin', value: { en: 'North Outdoor, Oulu, Finland', fi: 'North Outdoor, Oulu' } },
+      ],
+      sourceUrl: 'https://northoutdoor.com/products/paksu-merino-tuubihuivi-musta',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'north-outdoor-sointu-cardigan',
+    category: 'clothing',
+    brand: 'North Outdoor',
+    name: {
+      en: 'North Outdoor Sointu merino cardigan',
+      fi: 'North Outdoor Sointu -merinoneuletakki',
+    },
+    description: {
+      en: 'A boxy merino cardigan that reads as indoor clothing but works as a mid layer. The one piece in this set you would wear to dinner after the safari.',
+      fi: 'Väljä, hieman boxy-mallinen merinoneuletakki, joka näyttää sisävaatteelta mutta toimii välikerroksena. Tämän erän ainoa vaate, jonka pitää päällään myös safarin jälkeisellä illallisella.',
+    },
+    priceFrom: 199.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-north-outdoor-sointu-cardigan',
+    imageIsPartner: true,
+    partnerId: 'northoutdoor',
+    partnerProductUrl: 'https://northoutdoor.com/products/sointu-naisten-neuletakki-latte',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % merino wool', fi: '100 % merinovillaa' } },
+        { key: 'size', value: { en: 'XS–2XL', fi: 'XS–2XL' } },
+        { key: 'color', value: { en: 'Latte', fi: 'Latte' } },
+        { key: 'origin', value: { en: 'North Outdoor, Oulu, Finland', fi: 'North Outdoor, Oulu' } },
+      ],
+      sourceUrl: 'https://northoutdoor.com/products/sointu-naisten-neuletakki-latte',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'north-outdoor-arctic-260-zip-neck',
+    category: 'clothing',
+    brand: 'North Outdoor',
+    name: {
+      en: 'North Outdoor Arctic 260 merino zip neck',
+      fi: 'North Outdoor Arctic 260 -merinovetoketjupoolo',
+    },
+    description: {
+      en: 'A high collared zip neck in 100 per cent merino, thick enough to wear on its own indoors and to work as the mid layer outdoors. The zip is the point: you open it on the walk and close it when you stop moving.',
+      fi: 'Korkeakauluksinen vetoketjupoolo 100-prosenttisesta merinovillasta, riittävän tuhti käytettäväksi sellaisenaan sisällä ja välikerroksena ulkona. Vetoketju on olennainen: sen avaa kävellessä ja sulkee kun pysähtyy.',
+    },
+    priceFrom: 119.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-north-outdoor-arctic-260-zip-neck',
+    imageIsPartner: true,
+    partnerId: 'northoutdoor',
+    partnerProductUrl:
+      'https://northoutdoor.com/products/arctic-260-miesten-valikerroksen-merino-vetoketjupoolo-terrain-graniitinharmaa-musta',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % merino wool', fi: '100 % merinovillaa' } },
+        { key: 'size', value: { en: 'S–3XL', fi: 'S–3XL' } },
+        {
+          key: 'color',
+          value: { en: 'Granite grey and black', fi: 'Graniitinharmaa ja musta' },
+        },
+        { key: 'origin', value: { en: 'North Outdoor, Oulu, Finland', fi: 'North Outdoor, Oulu' } },
+        {
+          key: 'other',
+          label: { en: 'Details', fi: 'Yksityiskohdat' },
+          value: {
+            en: 'High protective collar, covered zip, extended back hem',
+            fi: 'Suojaava korkea kaulus, suojattu vetoketju, pidennetty takahelma',
+          },
+        },
+      ],
+      sourceUrl:
+        'https://northoutdoor.com/products/arctic-260-miesten-valikerroksen-merino-vetoketjupoolo-terrain-graniitinharmaa-musta',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'halti-hossa-baselayer-men',
+    category: 'clothing',
+    brand: 'Halti',
+    name: {
+      en: "Halti Hossa II merino base layer set, men's",
+      fi: 'Halti Hossa II -merinoaluskerrasto, miesten',
+    },
+    description: {
+      en: 'Shirt and long johns in one box, 190 g merino at 20.5 micron. The layer nearest the skin decides whether the rest of the outfit works, and this is the one most visitors arrive without.',
+      fi: 'Paita ja pitkät alushousut samassa pakkauksessa, 190 gramman merinoa mikronilla 20,5. Ihoa vasten oleva kerros ratkaisee toimiiko loppu asu, ja juuri se puuttuu useimmilta tänne saapuvilta.',
+    },
+    priceFrom: 130,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-halti-hossa-baselayer-men',
+    imageIsPartner: true,
+    partnerId: 'halti',
+    partnerProductUrl: 'https://halti.com/products/hossa-ii-merino-base-layer-set-mens',
+    featured: true,
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '100 % merino wool, 190 g/m², 20.5 micron, 1x1 rib',
+            fi: '100 % merinovillaa, 190 g/m², mikroni 20,5, 1x1-resori',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Set contents', fi: 'Pakkauksen sisältö' },
+          value: { en: 'Long sleeve shirt and long johns', fi: 'Pitkähihainen paita ja pitkät alushousut' },
+        },
+        { key: 'care', value: { en: 'Wash inside out', fi: 'Pese nurinpäin' } },
+      ],
+      sourceUrl: 'https://halti.com/products/hossa-ii-merino-base-layer-set-mens',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'halti-hossa-baselayer-women',
+    category: 'clothing',
+    brand: 'Halti',
+    name: {
+      en: "Halti Hossa II merino base layer set, women's",
+      fi: 'Halti Hossa II -merinoaluskerrasto, naisten',
+    },
+    description: {
+      en: 'The same 190 g merino set cut for women. Wool holds its warmth when you sweat on the walk and then stand still to watch, which is what a day in Lapland actually looks like.',
+      fi: 'Sama 190 gramman merinokerrasto naisten mitoituksella. Villa pitää lämmön silloinkin kun kävelyllä hikoilee ja jää sitten paikalleen katselemaan, ja juuri niin päivä Lapissa käytännössä menee.',
+    },
+    priceFrom: 130,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-halti-hossa-baselayer-women',
+    imageIsPartner: true,
+    partnerId: 'halti',
+    partnerProductUrl: 'https://halti.com/products/hossa-ii-merino-base-layer-set-womens',
+    featured: true,
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '100 % merino wool, 190 g/m², 20.5 micron, 1x1 rib',
+            fi: '100 % merinovillaa, 190 g/m², mikroni 20,5, 1x1-resori',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Set contents', fi: 'Pakkauksen sisältö' },
+          value: { en: 'Long sleeve shirt and long johns', fi: 'Pitkähihainen paita ja pitkät alushousut' },
+        },
+        { key: 'care', value: { en: 'Wash inside out', fi: 'Pese nurinpäin' } },
+      ],
+      sourceUrl: 'https://halti.com/products/hossa-ii-merino-base-layer-set-womens',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'halti-heatgrid-midlayer',
+    category: 'clothing',
+    brand: 'Halti',
+    name: {
+      en: "Halti HeatGrid midlayer jacket, men's",
+      fi: 'Halti HeatGrid -välikerrostakki, miesten',
+    },
+    description: {
+      en: 'Waffle knit that traps air without adding bulk under a shell. This is the layer between the merino and the parka, and leaving it out is why people come back cold.',
+      fi: 'Vohvelineulos, joka sitoo ilmaa kasvattamatta massaa kuoritakin alla. Tämä on se kerros merinon ja toppatakin välissä, ja sen pois jättäminen on syy siihen miksi retkeltä palataan palelevana.',
+    },
+    priceFrom: 70,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-halti-heatgrid-midlayer',
+    imageIsPartner: true,
+    partnerId: 'halti',
+    partnerProductUrl: 'https://halti.com/products/heatgrid-layer-jacket-mens',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: 'Waffle back knit 95 % recycled polyester / 5 % elastane; jersey knit 92 % recycled polyester / 8 % elastane',
+            fi: 'Vohvelineulos 95 % kierrätyspolyesteriä / 5 % elastaania; jerseyneulos 92 % kierrätyspolyesteriä / 8 % elastaania',
+          },
+        },
+        {
+          key: 'care',
+          value: {
+            en: 'Wash inside out with similar colours, close zippers before washing',
+            fi: 'Pese nurinpäin samanväristen kanssa, sulje vetoketjut ennen pesua',
+          },
+        },
+      ],
+      sourceUrl: 'https://halti.com/products/heatgrid-layer-jacket-mens',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'halti-taival-dx-jacket',
+    category: 'clothing',
+    brand: 'Halti',
+    name: {
+      en: "Halti Taival DX 3L shell jacket, men's",
+      fi: 'Halti Taival DX 3L -kuoritakki, miesten',
+    },
+    description: {
+      en: 'A three layer shell rated 20 000 mm waterproof and 30 000 g breathable. Those two numbers matter in different directions: the first keeps sleet out, the second lets the sweat from an uphill walk escape instead of freezing inside.',
+      fi: 'Kolmikerroksinen kuoritakki, vedenpitävyys 20 000 mm ja hengittävyys 30 000 g. Luvut vaikuttavat eri suuntiin: ensimmäinen pitää räntäsateen ulkona, toinen päästää ylämäen hien ulos sen sijaan että se jäätyisi sisäpuolelle.',
+    },
+    priceFrom: 196,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-halti-taival-dx-jacket',
+    imageIsPartner: true,
+    partnerId: 'halti',
+    partnerProductUrl: 'https://halti.com/products/taival-dx-3l-jacket-mens',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: 'DrymaxX Nano knit shell, 3 layer. 100 % recycled polyester',
+            fi: 'DrymaxX Nano -kuori, 3-kerroksinen. 100 % kierrätyspolyesteriä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Waterproofness', fi: 'Vedenpitävyys' },
+          value: { en: '20 000 mm', fi: '20 000 mm' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Breathability', fi: 'Hengittävyys' },
+          value: { en: '30 000 g/m²/24 h', fi: '30 000 g/m²/24 h' },
+        },
+      ],
+      sourceUrl: 'https://halti.com/products/taival-dx-3l-jacket-mens',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'halti-sykli-ski-gloves',
+    category: 'clothing',
+    brand: 'Halti',
+    name: {
+      en: 'Halti Sykli ski gloves',
+      fi: 'Halti Sykli -laskettelukäsineet',
+    },
+    description: {
+      en: 'Waterproof glove with 120 g insulation, a leather palm and a snowlock cuff that stops snow packing in at the wrist when you fall. Made for lift served skiing at Levi or Ylläs rather than for walking around town.',
+      fi: 'Vedenpitävä käsine, 120 gramman eriste, nahkainen kämmen ja lumilukollinen resori, joka estää lunta pakkautumasta ranteeseen kaatuessa. Tehty Levin ja Ylläksen rinteisiin, ei kaupungilla kävelyyn.',
+    },
+    priceFrom: 100,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-halti-sykli-ski-gloves',
+    imageIsPartner: true,
+    partnerId: 'halti',
+    partnerProductUrl: 'https://halti.com/products/sykli-ski-gloves',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: 'DrymaxX, stretches in 4 directions, waterproof and windproof. Leather palm',
+            fi: 'DrymaxX, joustaa 4 suuntaan, vedenpitävä ja tuulenpitävä. Nahkakämmen',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Insulation', fi: 'Eriste' },
+          value: { en: '120 g Microtherm Dynamic', fi: '120 g Microtherm Dynamic' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Waterproofness and breathability', fi: 'Vedenpitävyys ja hengittävyys' },
+          value: { en: '15 000 mm / 15 000 g/m²/24 h', fi: '15 000 mm / 15 000 g/m²/24 h' },
+        },
+      ],
+      sourceUrl: 'https://halti.com/products/sykli-ski-gloves',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'halti-merino-socks-2pack',
+    category: 'clothing',
+    brand: 'Halti',
+    name: {
+      en: 'Halti merino wool socks, 2 pack',
+      fi: 'Halti-merinovillasukat, 2 paria',
+    },
+    description: {
+      en: 'Two pairs, because the pair you wore today is not dry tomorrow morning. Merino blend rather than pure wool, which survives repeated machine washing better.',
+      fi: 'Kaksi paria, koska tänään käytetty pari ei ole huomisaamuna kuiva. Merinosekoitetta eikä puhdasta villaa, mikä kestää toistuvan konepesun paremmin.',
+    },
+    priceFrom: 30,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-halti-merino-socks-2pack',
+    imageIsPartner: true,
+    partnerId: 'halti',
+    partnerProductUrl: 'https://halti.com/products/merino-wool-socks-2-pack',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '40 % merino wool, 40 % acrylic, 19 % polyamide, 1 % elastane',
+            fi: '40 % merinovillaa, 40 % akryylia, 19 % polyamidia, 1 % elastaania',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Pack size', fi: 'Pakkauskoko' },
+          value: { en: '2 pairs', fi: '2 paria' },
+        },
+        { key: 'origin', value: { en: 'Made in Europe', fi: 'Valmistettu Euroopassa' } },
+      ],
+      sourceUrl: 'https://halti.com/products/merino-wool-socks-2-pack',
+      fetchedAt: '2026-08-02',
+    },
+  },
 ]
 
 export function productsByCategory(id: Product['category']): Product[] {

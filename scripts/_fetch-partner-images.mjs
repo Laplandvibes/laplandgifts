@@ -165,6 +165,52 @@ const JOBS = [
     'kaino-spruce-sprout-sparkling',
     'https://www.ruohonjuuri.fi/cdn/shop/files/edd12775157c79a540b46ef6ee62970b.png?v=1775047394&width=1200',
   ],
+  // Era 2.8.2026: North Outdoorin ja Haltin varusteet. Lahde on kummankin
+  // kaupan oma tuotegallerian paakuva (Shopify /products.json, images[0]).
+  [
+    'north-outdoor-arctic-250-balaclava',
+    'https://cdn.shopify.com/s/files/1/0619/0933/6273/files/N34109A01-ONE-SIZE_northoutdoor-merino-wool-clothing.jpg?v=1773738509',
+  ],
+  [
+    'north-outdoor-kevo-gloves',
+    'https://cdn.shopify.com/s/files/1/0619/0933/6273/files/N34307B13_northoutdoor-merino-wool_1.png?v=1754416725',
+  ],
+  [
+    'north-outdoor-heavyweight-gaiter',
+    'https://cdn.shopify.com/s/files/1/0619/0933/6273/files/N34010A01_northoutdoor-merino-wool-clothing_1.png?v=1754411624',
+  ],
+  [
+    'north-outdoor-sointu-cardigan',
+    'https://cdn.shopify.com/s/files/1/0619/0933/6273/files/N28702R16_northoutdoor-merino-wool-clothing-w12_1.jpg?v=1777023352',
+  ],
+  [
+    'halti-hossa-baselayer-men',
+    'https://cdn.shopify.com/s/files/1/0071/6197/0786/files/0880286_G34_HossaMIIMerinolayerset_main.jpg?v=1771923866',
+  ],
+  [
+    'halti-hossa-baselayer-women',
+    'https://cdn.shopify.com/s/files/1/0071/6197/0786/files/0880285_G60_Halti_Hossa_II_Merino_Base_Layer_Womens_main.png?v=1768381058',
+  ],
+  [
+    'halti-sykli-ski-gloves',
+    'https://cdn.shopify.com/s/files/1/0071/6197/0786/files/0840754_P00_SykliSkiGloves_main.jpg?v=1764847280',
+  ],
+  [
+    'halti-taival-dx-jacket',
+    'https://cdn.shopify.com/s/files/1/0071/6197/0786/files/0640882_H24_Taival_MDX3Ljacket_ai_generated_main.jpg?v=1783581362',
+  ],
+  [
+    'halti-merino-socks-2pack',
+    'https://cdn.shopify.com/s/files/1/0071/6197/0786/files/0870467_F5599_Merinostripedcrew2packsocks_main.jpg?v=1761202099',
+  ],
+  [
+    'halti-heatgrid-midlayer',
+    'https://cdn.shopify.com/s/files/1/0071/6197/0786/files/0880211_G34_HeatGrid_Mlayerjacket_ai_generated_main.jpg?v=1783581364',
+  ],
+  [
+    'north-outdoor-arctic-260-zip-neck',
+    'https://cdn.shopify.com/s/files/1/0619/0933/6273/files/N11507GA2_northoutdoor-merino-wool-clothing-m12_1.jpg?v=1754409413',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))
