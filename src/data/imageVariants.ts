@@ -239,6 +239,28 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-arabia-moomin-figurine-moomintroll": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-arabia-moomin-mug-friendship": {
+    "full": 480,
+    "w": [
+      320
+    ]
+  },
+  "prod-arabia-moomin-mug-snufkin": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-arctic-power-berries-blueberry-powder": {
     "full": 800,
     "w": [
@@ -277,6 +299,21 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320,
       480,
       640
+    ]
+  },
+  "prod-aurora-mini-kuksa": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-emendo-sauna-scents": {
+    "full": 615,
+    "w": [
+      320,
+      480
     ]
   },
   "prod-fazer-fazerina": {
@@ -341,6 +378,12 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320,
       480,
       640
+    ]
+  },
+  "prod-fiskars-moominpappa-scissors": {
+    "full": 480,
+    "w": [
+      320
     ]
   },
   "prod-halti-heatgrid-midlayer": {
@@ -728,6 +771,54 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
   },
   "prod-pentik-tunturiretki-studio-dish": {
     "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rento-birch-sauna-honey": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rento-blueberry-sauna-honey": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rento-linen-back-scrubber": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rento-linen-wash-mitt": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rento-sauna-pillow": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rento-tar-sauna-soap": {
+    "full": 700,
     "w": [
       320,
       480,

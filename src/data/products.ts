@@ -2447,6 +2447,349 @@ export const PRODUCTS: Product[] = [
   },
 
   // ───────────────────────────────────────────────────────────────────────
+  // Erä 2.8.2026 osa 2 — MUUMIDESIGN JA SAUNA.
+  //
+  // Sauna on suomalaisin lahja mitä on, eikä sitä ollut kaupassa lainkaan.
+  // Rento tekee saunatuotteet Suomessa, ja saunahunaja, terva-saippua,
+  // pellavapesin ja saunatyyny ovat esineitä joita matkailija näkee
+  // hotellinsa löylyhuoneessa ja haluaa mukaansa.
+  //
+  // 🔴 Viisi tuotetta jäi pois pelkän kuvan takia: kumppanin ainoa tuotekuva
+  // oli 162 × 480, 320 × 242 tai vastaava, eikä sitä saa 800 pikselin
+  // korttikuvaksi venyttämättä. Sama sääntö kuin Pesosen hunajalla 1.8.
+  // Puuttuva tuote on parempi kuin sumea kortti.
+  // ───────────────────────────────────────────────────────────────────────
+  {
+    slug: 'arabia-moomin-mug-snufkin',
+    category: 'design',
+    brand: 'Arabia',
+    name: { en: 'Arabia Moomin mug, Snufkin', fi: 'Arabia Muumimuki, Nuuskamuikkunen' },
+    description: {
+      en: 'Arabia has printed Tove Jansson’s drawings on these mugs since 1990, and collectors track the retired ones by year. Snufkin is the one who leaves in autumn and comes back in spring.',
+      fi: 'Arabia on painanut Tove Janssonin piirroksia näihin mukeihin vuodesta 1990, ja keräilijät seuraavat poistuneita vuosiluvun mukaan. Nuuskamuikkunen on se joka lähtee syksyllä ja palaa keväällä.',
+    },
+    priceFrom: 24.97,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-arabia-moomin-mug-snufkin',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/arabia-muumimuki-nuuskamuikkunen',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '0.3 l', fi: '0,3 l' } },
+        {
+          key: 'other',
+          label: { en: 'Artwork', fi: 'Kuvitus' },
+          value: { en: 'Tove Jansson', fi: 'Tove Jansson' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/arabia-muumimuki-nuuskamuikkunen',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'arabia-moomin-mug-friendship',
+    category: 'design',
+    brand: 'Arabia',
+    name: { en: 'Arabia Moomin mug, Friendship', fi: 'Arabia Muumimuki, Ystävyys' },
+    description: {
+      en: 'The mug shows Ninny, the invisible child who is afraid of the dark and slowly becomes visible again once someone is kind to her. A quieter choice than the well known characters.',
+      fi: 'Mukissa on Nyyti, näkymätön lapsi joka pelkää pimeää ja tulee vähitellen taas näkyväksi kun joku on hänelle ystävällinen. Hillitympi valinta kuin tunnetuimmat hahmot.',
+    },
+    priceFrom: 24.97,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-arabia-moomin-mug-friendship',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/arabia-muumi-muki-03l-ystavyys',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '0.3 l', fi: '0,3 l' } },
+        {
+          key: 'other',
+          label: { en: 'Artwork', fi: 'Kuvitus' },
+          value: { en: 'Tove Jansson', fi: 'Tove Jansson' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/arabia-muumi-muki-03l-ystavyys',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'arabia-moomin-figurine-moomintroll',
+    category: 'design',
+    brand: 'Arabia',
+    name: {
+      en: 'Arabia Moomin mini figurine, Moomintroll',
+      fi: 'Arabia Muumi-minifiguriini, Muumipeikko',
+    },
+    description: {
+      en: 'A hand made ceramic figurine drawn up by Tuulikki Pietilä in the 1990s and sold in its own box. Small enough that it travels home in a coat pocket.',
+      fi: 'Käsin valmistettu keraaminen figuriini, jonka Tuulikki Pietilä suunnitteli 1990-luvulla, myydään omassa rasiassaan. Niin pieni että se matkustaa kotiin takin taskussa.',
+    },
+    priceFrom: 31.25,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-arabia-moomin-figurine-moomintroll',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/arabia-muumi-minifiguriini-muumipeikko',
+    details: {
+      specs: [
+        {
+          key: 'other',
+          label: { en: 'Designer', fi: 'Suunnittelija' },
+          value: { en: 'Tuulikki Pietilä, 1990s', fi: 'Tuulikki Pietilä, 1990-luku' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Made', fi: 'Valmistus' },
+          value: { en: 'Hand made ceramic, sold in its own box', fi: 'Käsin valmistettu keramiikka, oma rasia' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/arabia-muumi-minifiguriini-muumipeikko',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'fiskars-moominpappa-scissors',
+    category: 'design',
+    brand: 'Fiskars',
+    name: { en: 'Fiskars Moominpappa universal scissors', fi: 'Fiskars Muumipappa-yleissakset' },
+    description: {
+      en: 'Fiskars orange handled scissors are in more Finnish kitchen drawers than any other tool. This pair is 21 cm in stainless steel with Moominpappa on the handle.',
+      fi: 'Fiskarsin oranssikahvaiset sakset ovat useammassa suomalaisessa keittiönlaatikossa kuin mikään muu työkalu. Tämä pari on 21 cm ruostumatonta terästä, kahvassa Muumipappa.',
+    },
+    priceFrom: 37.52,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-fiskars-moominpappa-scissors',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/fiskars-muumipappa-yleissakset',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '21 cm', fi: '21 cm' } },
+        { key: 'material', value: { en: 'Stainless steel', fi: 'Ruostumaton teräs' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/fiskars-muumipappa-yleissakset',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'rento-tar-sauna-soap',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: { en: 'Rento tar sauna soap 150 g', fi: 'Rento Terva-saunasaippua 150 g' },
+    description: {
+      en: 'Pine tar is a Finnish smell before it is a Finnish taste, and it belongs in a sauna more than anywhere else. Vegetable oil based, hung on a jute cord so it dries between uses.',
+      fi: 'Terva on suomalainen tuoksu ennen kuin se on suomalainen maku, ja saunaan se kuuluu enemmän kuin mihinkään muualle. Kasviöljypohjainen, ripustettu juuttinarusta niin että se kuivuu käyttöjen välillä.',
+    },
+    priceFrom: 8.66,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-rento-tar-sauna-soap',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/rento-terva-saunasaippua-150-g',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '150 g', fi: '150 g' } },
+        { key: 'material', value: { en: 'Vegetable oil based soap', fi: 'Kasviöljypohjainen saippua' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/rento-terva-saunasaippua-150-g',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'rento-birch-sauna-honey',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: { en: 'Rento birch sauna honey 150 ml', fi: 'Rento Koivu-saunahunaja 150 ml' },
+    description: {
+      en: 'Spread it on clean skin, let it sit in the soft heat, rinse warm. Sauna honey is the part of the Finnish sauna ritual that visitors never think to bring home.',
+      fi: 'Levitä puhtaalle iholle, anna imeytyä pehmeässä lämmössä, huuhtele lämpimällä. Saunahunaja on se osa suomalaista saunarituaalia jota vieras ei tule ajatelleeksi ottaa mukaan.',
+    },
+    priceFrom: 12.42,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-rento-birch-sauna-honey',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/rento-koivu-saunahunaja-150-ml',
+    details: {
+      specs: [{ key: 'volume', value: { en: '150 ml', fi: '150 ml' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/rento-koivu-saunahunaja-150-ml',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'rento-blueberry-sauna-honey',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: { en: 'Rento blueberry sauna honey 150 ml', fi: 'Rento Mustikka-saunahunaja 150 ml' },
+    description: {
+      en: 'The exfoliating version, scented with blueberry. Same use as the birch one: on clean skin, let the heat do the work, rinse warm.',
+      fi: 'Kuoriva versio, mustikan tuoksulla. Sama käyttö kuin koivussa: puhtaalle iholle, lämpö tekee työn, huuhtele lämpimällä.',
+    },
+    priceFrom: 14.43,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-rento-blueberry-sauna-honey',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/rento-saunahunaja-kuoriva-150-ml-mustikka',
+    details: {
+      specs: [{ key: 'volume', value: { en: '150 ml', fi: '150 ml' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/rento-saunahunaja-kuoriva-150-ml-mustikka',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'rento-sauna-pillow',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: { en: 'Rento Pino sauna pillow 50 x 22 cm', fi: 'Rento Pino -saunatyyny 50 x 22 cm' },
+    description: {
+      en: 'A jacquard woven pillow for the head and neck on the sauna bench. It keeps its shape, which is the whole difference between a sauna pillow and a folded towel.',
+      fi: 'Jacquard-kudottu tyyny pään ja niskan tueksi lauteille. Se säilyttää muotonsa, ja siinä on koko ero saunatyynyn ja taitellun pyyhkeen välillä.',
+    },
+    priceFrom: 19.38,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-rento-sauna-pillow',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/rento-pino-saunatyyny-50x22-cm-musta',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '50 x 22 cm', fi: '50 x 22 cm' } },
+        { key: 'color', value: { en: 'Black', fi: 'Musta' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/rento-pino-saunatyyny-50x22-cm-musta',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'rento-linen-back-scrubber',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: {
+      en: 'Rento linen terry back scrubber 14 x 70 cm',
+      fi: 'Rento pellavafrotee-selänpesin 14 x 70 cm',
+    },
+    description: {
+      en: 'Linen terry, long enough to reach across your own back. Skin softens in the heat first and is washed after, which is the order Finns follow without thinking about it.',
+      fi: 'Pellavafroteeta, riittävän pitkä yltämään oman selän yli. Iho pehmenee ensin löylyssä ja pestään vasta sitten, ja tuota järjestystä suomalainen noudattaa ajattelematta.',
+    },
+    priceFrom: 29.99,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-rento-linen-back-scrubber',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl:
+      'https://suomikauppa.fi/products/rento-selanpesin-pellavafrotee-14x70cm-musta-pellava',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '14 x 70 cm', fi: '14 x 70 cm' } },
+        { key: 'material', value: { en: 'Linen terry', fi: 'Pellavafrotee' } },
+      ],
+      sourceUrl:
+        'https://suomikauppa.fi/products/rento-selanpesin-pellavafrotee-14x70cm-musta-pellava',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'rento-linen-wash-mitt',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: {
+      en: 'Rento linen terry wash mitt 14 x 24 cm',
+      fi: 'Rento pellavafrotee-pesukinnas 14 x 24 cm',
+    },
+    description: {
+      en: 'The same linen terry as the back scrubber, in a mitt with a doubled palm. The cheapest thing in this section and the one people actually use every week.',
+      fi: 'Sama pellavafrotee kuin selänpesimessä, kintaana ja kaksinkertaisella kämmenpuolella. Tämän osion halvin tuote ja se jota oikeasti käytetään joka viikko.',
+    },
+    priceFrom: 21.96,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-rento-linen-wash-mitt',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl:
+      'https://suomikauppa.fi/products/rento-pesukinnas-pellavafrotee-14x24cm-musta-pellava',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '14 x 24 cm', fi: '14 x 24 cm' } },
+        { key: 'material', value: { en: 'Linen terry, doubled palm', fi: 'Pellavafrotee, kaksinkertainen kämmenpuoli' } },
+      ],
+      sourceUrl:
+        'https://suomikauppa.fi/products/rento-pesukinnas-pellavafrotee-14x24cm-musta-pellava',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'emendo-sauna-scents',
+    category: 'handicrafts',
+    brand: 'Emendo',
+    name: {
+      en: 'Emendo sauna scents: salmiakki, pine resin, sisu, 3 x 10 ml',
+      fi: 'Emendo saunatuoksut: salmiakki, mäntypihka ja sisu, 3 x 10 ml',
+    },
+    description: {
+      en: 'Three scents on a wooden stand, and one of them is salmiakki. Few things are more Finnish than salmiakki and sauna, and this set puts them in the same ladle.',
+      fi: 'Kolme tuoksua puutelineessä, ja yksi niistä on salmiakki. Harva asia on suomalaisempi kuin salmiakki ja sauna, ja tämä setti laittaa ne samaan kauhaan.',
+    },
+    priceFrom: 16.21,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-emendo-sauna-scents',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl:
+      'https://suomikauppa.fi/products/emendo-saunatuoksut-salmiakki-mantypihka-ja-sisu-3x10ml-puutelineella',
+    details: {
+      specs: [
+        { key: 'contents', value: { en: '3 x 10 ml on a wooden stand', fi: '3 x 10 ml puutelineessä' } },
+        {
+          key: 'other',
+          label: { en: 'Scents', fi: 'Tuoksut' },
+          value: { en: 'Salmiakki, pine resin, sisu', fi: 'Salmiakki, mäntypihka, sisu' },
+        },
+      ],
+      sourceUrl:
+        'https://suomikauppa.fi/products/emendo-saunatuoksut-salmiakki-mantypihka-ja-sisu-3x10ml-puutelineella',
+      fetchedAt: '2026-08-02',
+    },
+  },
+  {
+    slug: 'aurora-mini-kuksa',
+    category: 'handicrafts',
+    brand: 'Aurora Borealis',
+    name: { en: 'Mini kuksa with leather loop, 4 cm', fi: 'Minikuksa nahkalenkillä, 4 cm' },
+    description: {
+      en: 'A 4 cm kuksa meant for a shot rather than coffee, with a leather loop for a belt. The smallest and cheapest way to own the shape.',
+      fi: 'Neljän sentin kuksa, tarkoitettu snapsille eikä kahville, nahkalenkki vyötä varten. Pienin ja halvin tapa omistaa se muoto.',
+    },
+    priceFrom: 7.1,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-02',
+    image: 'prod-aurora-mini-kuksa',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/aurorab-minikuksa-nahkalenkilla',
+    details: {
+      specs: [{ key: 'size', value: { en: 'Diameter 4 cm', fi: 'Halkaisija 4 cm' } }],
+      sourceUrl: 'https://suomikauppa.fi/products/aurorab-minikuksa-nahkalenkilla',
+      fetchedAt: '2026-08-02',
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────────────────
   // Erä 2.8.2026 — SUOMALAISET MAKEISKLASSIKOT (Vesa: "herkkuja on todella
   // vähän"). Yhdeksän tuotetta, jotka suomalainen tunnistaa nimeltä ja jotka
   // matkailija näkee kaupan hyllyssä: salmiakki kolmena eri muotona, Fazerin

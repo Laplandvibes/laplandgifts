@@ -249,6 +249,75 @@ const JOBS = [
     'sisu-xylitol-salmiakki',
     'https://suomikauppa.fi/cdn/shop/products/06420256001783_A1N1.jpg?v=1678735730&width=1920',
   ],
+  // Era 2.8.2026 osa 2: Muumi-design ja saunatuotteet Suomikaupasta.
+  [
+    'arabia-moomin-mug-snufkin',
+    'https://suomikauppa.fi/cdn/shop/products/Moominmug0-3LSnufkingreen_1.jpg?v=1635498092&width=1920',
+  ],
+  [
+    'arabia-moomin-mug-mymble',
+    'https://suomikauppa.fi/cdn/shop/products/6411800055598.jpg?v=1635498325&width=1920',
+  ],
+  [
+    'arabia-moomin-mug-friendship',
+    'https://suomikauppa.fi/cdn/shop/products/6411801005578.jpg?v=1635501278&width=1920',
+  ],
+  [
+    'fiskars-moominpappa-scissors',
+    'https://suomikauppa.fi/cdn/shop/products/Muumipappa-akset.jpg?v=1635498594&width=1920',
+  ],
+  [
+    'fiskars-moominmamma-scissors',
+    'https://suomikauppa.fi/cdn/shop/files/6411509951528-2.jpg?v=1769147006&width=1920',
+  ],
+  [
+    'arabia-moomin-figurine-moomintroll',
+    'https://suomikauppa.fi/cdn/shop/products/6411801003338.jpg?v=1635500106&width=1920',
+  ],
+  [
+    'arabia-moomin-figurine-snorkmaiden',
+    'https://suomikauppa.fi/cdn/shop/products/6411801003321.jpg?v=1635500106&width=1920',
+  ],
+  [
+    'hackman-moomin-cutlery-set',
+    'https://suomikauppa.fi/cdn/shop/files/seikkailumuutto.jpg?v=1701429025&width=1920',
+  ],
+  [
+    'rento-tar-sauna-soap',
+    'https://suomikauppa.fi/cdn/shop/files/RentoTervasaunasaippua150g.jpg?v=1742365576&width=1920',
+  ],
+  [
+    'rento-birch-sauna-honey',
+    'https://suomikauppa.fi/cdn/shop/products/6410413175327-scaled.jpg?v=1635499682&width=1920',
+  ],
+  [
+    'rento-blueberry-sauna-honey',
+    'https://suomikauppa.fi/cdn/shop/products/6410412850454-scaled.jpg?v=1635499649&width=1920',
+  ],
+  [
+    'rento-sauna-pillow',
+    'https://suomikauppa.fi/cdn/shop/files/Rento_Pino_Saunatyyny_50x22_cm_musta.jpg?v=1766316100&width=1920',
+  ],
+  [
+    'rento-linen-back-scrubber',
+    'https://suomikauppa.fi/cdn/shop/products/6410412651440.jpg?v=1635499211&width=1920',
+  ],
+  [
+    'rento-linen-wash-mitt',
+    'https://suomikauppa.fi/cdn/shop/products/6410412651419.jpg?v=1635499211&width=1920',
+  ],
+  [
+    'emendo-sauna-scents',
+    'https://suomikauppa.fi/cdn/shop/products/emendotuoksut3puuteline.jpg?v=1663843787&width=1920',
+  ],
+  [
+    'aurora-mini-kuksa',
+    'https://suomikauppa.fi/cdn/shop/products/6410411828607-scaled.jpg?v=1635499702&width=1920',
+  ],
+  [
+    'rento-sauna-gift-box',
+    'https://suomikauppa.fi/cdn/shop/products/6410416116860_kuva1.jpg?v=1650971256&width=1920',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

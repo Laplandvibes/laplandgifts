@@ -26,9 +26,9 @@ export type SubgroupId = string
 
 /** Ryhmien järjestys kategoriaa kohden. Määrää myös renderöintijärjestyksen. */
 export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
-  design: ['tableware', 'textiles', 'candles'],
+  design: ['tableware', 'textiles', 'candles', 'objects'],
   clothing: ['baselayer', 'midlayer', 'outerwear', 'accessories'],
-  handicrafts: ['knives', 'wood', 'textiles', 'ceramics'],
+  handicrafts: ['sauna', 'knives', 'wood', 'textiles', 'ceramics'],
   treats: ['salmiakki', 'chocolate', 'savoury', 'drinks'],
   // `drinks` on mukana myös täällä: Kainon kuusenkerkkäjuoma on superfoodi
   // mutta muodoltaan juoma, ei jauhe eikä öljy. Sama ryhmätunnus voi esiintyä
@@ -44,7 +44,9 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
   en: {
     tableware: 'Tableware and glass',
     textiles: 'Textiles',
-    candles: 'Candles and small objects',
+    candles: 'Candleholders',
+    objects: 'Small objects',
+    sauna: 'Sauna',
     baselayer: 'Base layers',
     midlayer: 'Mid layers and knitwear',
     outerwear: 'Shells and outerwear',
@@ -63,7 +65,9 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
   fi: {
     tableware: 'Astiat ja lasi',
     textiles: 'Tekstiilit',
-    candles: 'Kynttilät ja pienesineet',
+    candles: 'Kynttilänjalat',
+    objects: 'Pienesineet',
+    sauna: 'Sauna',
     baselayer: 'Aluskerrastot',
     midlayer: 'Välikerrokset ja neuleet',
     outerwear: 'Kuoritakit ja ulkovaatteet',
@@ -92,6 +96,10 @@ const MAP: Record<string, SubgroupId> = {
   'moomin-mystical-forest-wool-throw': 'textiles',
   'iittala-kivi-candleholder': 'candles',
   'aarikka-prinsessa-candleholder': 'candles',
+  'arabia-moomin-mug-snufkin': 'tableware',
+  'arabia-moomin-mug-friendship': 'tableware',
+  'arabia-moomin-figurine-moomintroll': 'objects',
+  'fiskars-moominpappa-scissors': 'objects',
 
   // clothing
   'halti-hossa-baselayer-men': 'baselayer',
@@ -121,6 +129,14 @@ const MAP: Record<string, SubgroupId> = {
   'kupilka-classic-cup-21': 'wood',
   'kupilka-bowl-55': 'wood',
   'kupilka-cutlery-set': 'wood',
+  'aurora-mini-kuksa': 'wood',
+  'rento-tar-sauna-soap': 'sauna',
+  'rento-birch-sauna-honey': 'sauna',
+  'rento-blueberry-sauna-honey': 'sauna',
+  'rento-sauna-pillow': 'sauna',
+  'rento-linen-back-scrubber': 'sauna',
+  'rento-linen-wash-mitt': 'sauna',
+  'emendo-sauna-scents': 'sauna',
   'lapuan-kankurit-poro-towel': 'textiles',
   'lapuan-kankurit-kaamos-blanket': 'textiles',
   'pentik-posio-mug': 'ceramics',
