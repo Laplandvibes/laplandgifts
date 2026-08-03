@@ -120,7 +120,11 @@ export default function Product() {
                 {t.product.priceNote(product.priceCheckedAt, partner.name)}
               </p>
 
-              <BuyButton product={product} sid="gifts_product_cta" lang={lang} />
+              {/* sid kantaa tuoteslugin: vakio "gifts_product_cta" olisi yksi
+                  raportointirivi 77 tuotteelle, eikä komissiota voisi yhdistää
+                  tuotteeseen. Worker katkaisee domain+sidin 50 merkkiin —
+                  sids.test.ts vahtii ettei katkaisu sulauta kahta tuotetta. */}
+              <BuyButton product={product} sid={`p_${product.slug}`} lang={lang} />
               <p className="text-sm text-muted">{t.product.checkoutNote}</p>
 
               {/* Tuotetiedot ostonapin alla. Osio puuttuu kokonaan, jos
