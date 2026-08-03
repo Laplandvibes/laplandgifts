@@ -90,14 +90,22 @@ export const PARTNERS: Record<string, Partner> = {
   nordicnest: {
     id: 'nordicnest',
     name: 'Nordic Nest',
-    network: 'direct',
-    // .com hinnoittelee euroissa ja renderöi hinnan palvelimella, joten hinta
-    // on luettavissa tuotesivulta. .fi on selainpuolen sovellus, jonka hintaa
-    // ei voi lukea sivulta.
-    baseUrl: 'https://www.nordicnest.com',
-    // Shipping Information 1.8.2026: "We offer worldwide shipping".
-    shipsTo: 'worldwide',
-    verifiedAt: '2026-08-01',
+    // Adtraction hyväksyi Nordic Nest FI -ohjelman 3.8.2026 → komissio Workerin
+    // kautta. 🔴 Ohjelma on FI: mitattu 3.8. että .com-syvälinkki putoaa
+    // interstitiaalissa valuesportal.com-varasivulle (?fallback=true), .fi-kohde
+    // kelpaa (at_gd asettuu ja meta-refresh kantaa tuotesivulle). Siksi baseUrl
+    // ja tuote-URLit ovat nordicnest.fi — .fi on selainpuolen sovellus, joten
+    // hinnat verifioitiin renderöidystä DOMista (159/14/24 €, täsmäävät).
+    network: 'adtraction',
+    workerRoute: 'nordicnest',
+    baseUrl: 'https://www.nordicnest.fi',
+    // 🔴 Oli 'worldwide' .com-kaupan ehtojen perusteella. Ostolinkki laskeutuu
+    // nyt .fi-kauppaan, jonka tuotesivu lukee "Toimitus: Suomi: 5,90 €" —
+    // suodatin kertoo sen minkä linkitetty kauppa oikeasti lupaa (sama
+    // periaate kuin nordqvistilla). Kansainvälinen ostaja voisi vaihtaa
+    // maata kaupan headerista, mutta silloin at_gd-attribuutio katoaa.
+    shipsTo: 'fi',
+    verifiedAt: '2026-08-03',
   },
   aarikka: {
     id: 'aarikka',
@@ -237,12 +245,18 @@ export const PARTNERS: Record<string, Partner> = {
   ruohonjuuri: {
     id: 'ruohonjuuri',
     name: 'Ruohonjuuri',
-    network: 'direct',
+    // Adtraction hyväksyi Ruohonjuuri-ohjelman 3.8.2026 → komissio Workerin
+    // kautta (oli pelkkä UTM). Ketju mitattu päästä päähän 3.8.: 302 →
+    // to.ruohonjuuri.fi (a=1771797213, epi mukana) → meta-refresh täsmälleen
+    // dest-tuotesivulle + at_gd-eväste. Kontrollikoe: ilman as=-parametria
+    // evästettä ei asetu, eli attribuutio on todella linkin varassa.
+    network: 'adtraction',
+    workerRoute: 'ruohonjuuri',
     baseUrl: 'https://www.ruohonjuuri.fi',
     // Toimitusehdot 31.7.2026: "Suomeen ja ulkomaille EU:n vero- ja tullialueen
     // sisälle". Ahvenanmaa, Kanarian saaret ja Norja on rajattu ulos.
     shipsTo: 'eu',
-    verifiedAt: '2026-07-31',
+    verifiedAt: '2026-08-03',
   },
   pod: {
     id: 'pod',

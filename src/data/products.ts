@@ -206,12 +206,12 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 159,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
+    priceCheckedAt: '2026-08-03',
     image: 'prod-iittala-aalto-vase-160',
     imageIsPartner: true,
     partnerId: 'nordicnest',
     partnerProductUrl:
-      'https://www.nordicnest.com/brands/iittala/aalto-vase-clear/?variantId=999-01',
+      'https://www.nordicnest.fi/tuotemerkit/iittala/alvar-aalto-maljakko-kirkas/?variantId=999-01',
     featured: true,
     details: {
       specs: [
@@ -239,8 +239,8 @@ export const PRODUCTS: Product[] = [
           value: { en: '999-01, EAN 6411920004445', fi: '999-01, EAN 6411920004445' },
         },
       ],
-      sourceUrl: 'https://www.nordicnest.com/brands/iittala/aalto-vase-clear/?variantId=999-01',
-      fetchedAt: '2026-08-01',
+      sourceUrl: 'https://www.nordicnest.fi/tuotemerkit/iittala/alvar-aalto-maljakko-kirkas/?variantId=999-01',
+      fetchedAt: '2026-08-03',
     },
   },
   {
@@ -257,12 +257,12 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 14,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
+    priceCheckedAt: '2026-08-03',
     image: 'prod-iittala-kivi-candleholder',
     imageIsPartner: true,
     partnerId: 'nordicnest',
     partnerProductUrl:
-      'https://www.nordicnest.com/brands/iittala/kivi-candleholder/?variantId=636883-01',
+      'https://www.nordicnest.fi/tuotemerkit/iittala/kivi-kynttilalyhty/?variantId=636883-01',
     details: {
       specs: [
         {
@@ -284,8 +284,8 @@ export const PRODUCTS: Product[] = [
           value: { en: '636883-01, EAN 6411923683937', fi: '636883-01, EAN 6411923683937' },
         },
       ],
-      sourceUrl: 'https://www.nordicnest.com/brands/iittala/kivi-candleholder/?variantId=636883-01',
-      fetchedAt: '2026-08-01',
+      sourceUrl: 'https://www.nordicnest.fi/tuotemerkit/iittala/kivi-kynttilalyhty/?variantId=636883-01',
+      fetchedAt: '2026-08-03',
     },
   },
   {
@@ -302,12 +302,12 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 24,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
+    priceCheckedAt: '2026-08-03',
     image: 'prod-marimekko-unikko-mug',
     imageIsPartner: true,
     partnerId: 'nordicnest',
     partnerProductUrl:
-      'https://www.nordicnest.com/brands/marimekko/unikko-mug-25-dl/?variantId=666236-01',
+      'https://www.nordicnest.fi/tuotemerkit/marimekko/unikko-muki-2-5-dl/?variantId=666236-01',
     featured: true,
     details: {
       specs: [
@@ -340,8 +340,8 @@ export const PRODUCTS: Product[] = [
         },
       ],
       sourceUrl:
-        'https://www.nordicnest.com/brands/marimekko/unikko-mug-25-dl/?variantId=666236-01',
-      fetchedAt: '2026-08-01',
+        'https://www.nordicnest.fi/tuotemerkit/marimekko/unikko-muki-2-5-dl/?variantId=666236-01',
+      fetchedAt: '2026-08-03',
     },
   },
   {
