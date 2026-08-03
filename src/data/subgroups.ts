@@ -36,7 +36,10 @@ export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
   // molemmissa samalla tavalla.
   superfoods: ['berry', 'herbal', 'oils', 'drinks'],
   merch: [],
-  experiences: [],
+  // Kategoriasivu renderöi lahjakortit omana osionaan ennen GYG-ryhmiä, joten
+  // yhden ryhmän otsikkoa ei koskaan näytetä; rivi on olemassa jotta
+  // subgroups.test.ts:n kartta- ja nimivahdit kattavat myös nämä tuotteet.
+  experiences: ['vouchers'],
 }
 
 /** Ryhmien nimet. Kääntämättömät kielet putoavat englantiin, kuten muuallakin. */
@@ -61,6 +64,7 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     berry: 'Berry powders',
     herbal: 'Herbs and mushrooms',
     oils: 'Oils and elixirs',
+    vouchers: 'Experience gift cards',
   },
   fi: {
     tableware: 'Astiat ja lasi',
@@ -82,6 +86,7 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     berry: 'Marjajauheet',
     herbal: 'Yrtit ja sienet',
     oils: 'Öljyt ja eliksiirit',
+    vouchers: 'Elämyslahjakortit',
   },
 }
 
@@ -173,6 +178,13 @@ const MAP: Record<string, SubgroupId> = {
   'arctic-warriors-roseroot-elixir': 'oils',
   'omega7-sea-buckthorn-olive-oil': 'oils',
   'kaino-spruce-sprout-sparkling': 'drinks',
+
+  // experiences: Elämyslahjat.fi-lahjakortit
+  'husky-farm-safari-rovaniemi': 'vouchers',
+  'reindeer-safari-rovaniemi': 'vouchers',
+  'aurora-tour-kilpisjarvi': 'vouchers',
+  'glass-igloo-night-levi': 'vouchers',
+  'gold-panning-day-inari': 'vouchers',
 }
 
 export function subgroupOf(slug: string): SubgroupId {

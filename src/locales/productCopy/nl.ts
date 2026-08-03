@@ -938,4 +938,76 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Verpakkingsgrootte', undefined],
   },
+  'husky-farm-safari-rovaniemi': {
+    name: 'Bezoek aan een huskyfarm en huskysafari voor twee, Rovaniemi',
+    description:
+      'Een cadeaukaart voor een rondleiding op een echte huskyfarm bij Rovaniemi, gevolgd door een sledetocht achter de honden door het winterbos. Nu gekocht, per e-mail bezorgd, en de ontvanger kiest zelf de datum.',
+    specs: [
+      'Rondleiding op een huskyfarm en een huskysafari voor twee. De gids kan je ophalen binnen 10 km van Rovaniemi',
+      'Ongeveer 3,5 u',
+      '2 personen',
+      'Rovaniemi. De exacte locatie wordt bij het boeken bevestigd',
+      'Wintermaanden, november tot april',
+      'Engels',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Taal van de gids', 'Cadeaukaart'],
+  },
+  'reindeer-safari-rovaniemi': {
+    name: 'Rendiersafari voor twee, Rovaniemi',
+    description:
+      'Een rendiersafari in de avond op een echte boerderij bij Rovaniemi: een ronde van 2,5 km achter de rendieren, een bezoek aan de boerderij en een kleine snack. Bij heldere hemel kan het noorderlicht verschijnen, al kan niemand dat beloven.',
+    specs: [
+      'Toegang tot een rendierboerderij en een tocht van 2,5 km in een rendierslee voor twee, met een kleine snack. Ophalen binnen 10 km van Rovaniemi',
+      '2,5 tot 3 uur',
+      '2 personen',
+      'Rovaniemi. De exacte locatie wordt bij het boeken bevestigd',
+      'Wintermaanden, december tot maart. De safari vertrekt in de avond',
+      'Engels',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Taal van de gids', 'Cadeaukaart'],
+  },
+  'aurora-tour-kilpisjarvi': {
+    name: 'Noorderlichttocht per sneeuwscooter voor twee, Kilpisjärvi',
+    description:
+      'Kilpisjärvi staat bekend om zijn uitzonderlijk heldere nachthemel. Een korte rit per sneeuwscooter brengt jullie naar een plek waar je het noorderlicht in volledige natuurrust bekijkt, met warme dranken tegen de kou. Avonden van 20.00 tot 23.00, onder weersvoorbehoud.',
+    specs: [
+      'Begeleide noorderlichttocht voor twee, ongeveer 15 km per sneeuwscooter, warme dranken inbegrepen',
+      '3 uur, van 20.00 tot 23.00',
+      '2 personen',
+      'Kilpisjärvi',
+      '18 jaar om te rijden, 8 jaar in de slee',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Leeftijdsgrens', 'Cadeaukaart'],
+  },
+  'glass-igloo-night-levi': {
+    name: 'Nacht in een glazen iglo voor twee, Levi',
+    description:
+      'Een nacht voor twee in een warme glazen iglo hoog op de fjell van Levi. Het elektrisch verwarmde glas blijft helder terwijl je vanuit een gemotoriseerd tweepersoonsbed naar het noorderlicht speurt. Welkomstdrankje, badjassen en ontbijt inbegrepen, met eigen kitchenette, douche en wc.',
+    specs: [
+      'Eén nacht voor twee in een glazen iglo van Superior-klasse, welkomstdrankje, badjassen en sloffen, ontbijt. Vervoer niet inbegrepen',
+      '1 nacht, uitchecken om 11.00',
+      '2 personen',
+      'Levi, hoog op de fjell',
+      '23 m², verwarmd condensvrij glas, kitchenette, douche en wc, gemotoriseerd tweepersoonsbed',
+      'Geldig voor verblijven 27.08-10.11 en 01.04-12.04',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Iglo', 'Cadeaukaart'],
+  },
+  'gold-panning-day-inari': {
+    name: 'Goudzoekersdag voor vier, Inari',
+    description:
+      'Een dag op een werkende goudclaim in Inari voor een groep van vier: eerst de geschiedenis, dan met de hand wassen en een blik op het machinale graven. Maaltijden en vervoer vanaf het centrum van Saariselkä inbegrepen, en gevonden goud gaat mee naar huis.',
+    specs: [
+      'Een goudzoekersdag van 5 uur op een werkende claim voor vier, met begeleiding bij het wassen met de hand en een blik op machinaal graven. Maaltijden, uitrusting en vervoer van het centrum van Saariselkä naar de claim en terug inbegrepen',
+      '5 uur',
+      '4 personen',
+      'Inari',
+      'Voorjaars- en zomerseizoen',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Cadeaukaart'],
+  },
 }

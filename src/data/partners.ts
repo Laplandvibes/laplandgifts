@@ -258,6 +258,28 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'eu',
     verifiedAt: '2026-08-03',
   },
+  elamyslahjat: {
+    id: 'elamyslahjat',
+    name: 'Elämyslahjat.fi',
+    // Adtraction hyväksyi Elämyslahjat-ohjelman 3.8.2026. Ketju mitattu GETillä
+    // 3.8.: go/elamyslahjat?sid=…&dest=<tuotesivu> → 302
+    // id.elamyslahjat.fi/t/t?a=2048058240…&epi=laplandgifts_com_<sid>&url=<dest>
+    // → välisivu 302:aa täsmälleen dest-URLiin ja asettaa at_gd-evästeen.
+    // Kontrollikoe: ilman as=-parametria vastaus on 200 ilman evästettä eikä
+    // redirectiä, eli attribuutio on todella linkin varassa.
+    // 🔴 Mittaa selaimen User-Agentilla: Worker vastaa curlin oletus-UA:lle
+    // paljaalla kumppanietusivulla ilman seurantaa, aivan kuten HEAD-pyynnölle.
+    network: 'adtraction',
+    workerRoute: 'elamyslahjat',
+    baseUrl: 'https://www.elamyslahjat.fi',
+    // Myytävä tuote on lahjakortti, joka toimitetaan sähköpostitse: jokainen
+    // tuotesivu lukee 3.8.2026 "Maksuton toimitus sähköpostiin tai ilmainen
+    // toimitus Postilla, kun tilaat yli 69€:lla". Sähköpostitoimitus ei katso
+    // maata, joten vyöhyke on worldwide, vaikka itse elämys lunastetaan
+    // Lapissa ja kaupan kieli on suomi.
+    shipsTo: 'worldwide',
+    verifiedAt: '2026-08-03',
+  },
   pod: {
     id: 'pod',
     name: 'LaplandVibes Store',

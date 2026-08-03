@@ -939,4 +939,76 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Taille du lot', undefined],
   },
+  'husky-farm-safari-rovaniemi': {
+    name: 'Visite d’une ferme de huskys et safari pour deux, Rovaniemi',
+    description:
+      'Une carte cadeau pour une visite guidée d’une vraie ferme de huskys près de Rovaniemi, suivie d’une balade en traîneau derrière les chiens dans la forêt d’hiver. Achetée maintenant, livrée par e-mail, la date est choisie par la personne qui la reçoit.',
+    specs: [
+      'Visite guidée d’une ferme de huskys et safari en traîneau pour deux. Le guide peut venir vous chercher dans un rayon de 10 km autour de Rovaniemi',
+      'Environ 3,5 h',
+      '2 personnes',
+      'Rovaniemi. Le lieu exact est confirmé à la réservation',
+      'Mois d’hiver, de novembre à avril',
+      'Anglais',
+      'Valable 3 ans',
+    ],
+    specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Langue du guide', 'Carte cadeau'],
+  },
+  'reindeer-safari-rovaniemi': {
+    name: 'Safari en traîneau à rennes pour deux, Rovaniemi',
+    description:
+      'Un safari du soir dans une vraie ferme de rennes près de Rovaniemi : une boucle de 2,5 km derrière les rennes, une visite de la ferme et un petit en-cas. Par nuit claire, les aurores boréales peuvent se montrer, sans que personne ne puisse le promettre.',
+    specs: [
+      'Entrée dans une ferme de rennes et parcours de 2,5 km en traîneau tiré par des rennes pour deux, avec un petit en-cas. Prise en charge dans un rayon de 10 km autour de Rovaniemi',
+      '2,5 à 3 heures',
+      '2 personnes',
+      'Rovaniemi. Le lieu exact est confirmé à la réservation',
+      'Mois d’hiver, de décembre à mars. Le safari a lieu le soir',
+      'Anglais',
+      'Valable 3 ans',
+    ],
+    specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Langue du guide', 'Carte cadeau'],
+  },
+  'aurora-tour-kilpisjarvi': {
+    name: 'Aurores boréales en motoneige pour deux, Kilpisjärvi',
+    description:
+      'Kilpisjärvi est connu pour son ciel nocturne exceptionnellement pur. Un court trajet en motoneige vous emmène à deux vers un endroit où observer les aurores dans un calme total, avec des boissons chaudes contre le froid. Le soir de 20.00 à 23.00, sous réserve météo.',
+    specs: [
+      'Sortie guidée aux aurores boréales pour deux, environ 15 km en motoneige, boissons chaudes comprises',
+      '3 heures, de 20.00 à 23.00',
+      '2 personnes',
+      'Kilpisjärvi',
+      '18 ans pour conduire, 8 ans dans le traîneau',
+      'Valable 3 ans',
+    ],
+    specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Limite d’âge', 'Carte cadeau'],
+  },
+  'glass-igloo-night-levi': {
+    name: 'Nuit en igloo de verre pour deux, Levi',
+    description:
+      'Une nuit à deux dans un igloo de verre chauffé, haut sur le fjell de Levi. Le verre chauffé électriquement reste limpide pendant que vous guettez les aurores depuis un lit double motorisé. Boisson de bienvenue, peignoirs et petit déjeuner compris, avec kitchenette, douche et WC.',
+    specs: [
+      'Une nuit pour deux dans un igloo de verre de classe Superior, boisson de bienvenue, peignoirs et chaussons, petit déjeuner. Transport non compris',
+      '1 nuit, départ à 11.00',
+      '2 personnes',
+      'Levi, en haut du fjell',
+      '23 m², verre chauffé antibuée, kitchenette, douche et WC, lit double motorisé',
+      'Valable pour des séjours du 27.08-10.11 et du 01.04-12.04',
+    ],
+    specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Igloo', 'Carte cadeau'],
+  },
+  'gold-panning-day-inari': {
+    name: 'Journée d’orpaillage pour quatre, Inari',
+    description:
+      'Une journée sur une concession aurifère en activité à Inari pour un groupe de quatre : d’abord l’histoire, puis le lavage à la main et un aperçu de l’extraction mécanique. Repas et transport depuis le centre de Saariselkä compris, et l’or trouvé repart avec le groupe.',
+    specs: [
+      'Une journée d’orpaillage de 5 heures sur une concession en activité pour quatre, avec initiation au lavage à la main et découverte de l’extraction mécanique. Repas de la journée, matériel et transport du centre de Saariselkä à la concession et retour compris',
+      '5 heures',
+      '4 personnes',
+      'Inari',
+      'Saisons de printemps et d’été',
+      'Valable 3 ans',
+    ],
+    specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Carte cadeau'],
+  },
 }

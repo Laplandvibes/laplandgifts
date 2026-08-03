@@ -938,4 +938,76 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Formato confezione', undefined],
   },
+  'husky-farm-safari-rovaniemi': {
+    name: 'Visita a una fattoria di husky e safari per due, Rovaniemi',
+    description:
+      'Una carta regalo per una visita guidata a una vera fattoria di husky vicino a Rovaniemi, seguita da un giro in slitta trainata dai cani nel bosco invernale. Si compra ora, arriva via e-mail e chi la riceve sceglie la data.',
+    specs: [
+      'Visita guidata a una fattoria di husky e safari in slitta per due. La guida può venirvi a prendere entro 10 km da Rovaniemi',
+      'Circa 3,5 h',
+      '2 persone',
+      'Rovaniemi. Il luogo esatto viene confermato alla prenotazione',
+      'Mesi invernali, da novembre ad aprile',
+      'Inglese',
+      'Valida 3 anni',
+    ],
+    specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Stagione', 'Lingua della guida', 'Carta regalo'],
+  },
+  'reindeer-safari-rovaniemi': {
+    name: 'Safari con le renne per due, Rovaniemi',
+    description:
+      'Un safari serale in una vera fattoria di renne vicino a Rovaniemi: un anello di 2,5 km dietro le renne, una visita alla fattoria e un piccolo spuntino. Nelle notti limpide l’aurora boreale può comparire, ma nessuno può prometterlo.',
+    specs: [
+      'Ingresso a una fattoria di renne e percorso di 2,5 km in slitta trainata dalle renne per due, con piccolo spuntino. Prelievo entro 10 km da Rovaniemi',
+      'Da 2,5 a 3 ore',
+      '2 persone',
+      'Rovaniemi. Il luogo esatto viene confermato alla prenotazione',
+      'Mesi invernali, da dicembre a marzo. Il safari parte di sera',
+      'Inglese',
+      'Valida 3 anni',
+    ],
+    specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Stagione', 'Lingua della guida', 'Carta regalo'],
+  },
+  'aurora-tour-kilpisjarvi': {
+    name: 'Aurora boreale in motoslitta per due, Kilpisjärvi',
+    description:
+      'Kilpisjärvi è nota per il suo cielo notturno eccezionalmente limpido. Un breve tragitto in motoslitta porta voi due in un punto dove osservare l’aurora nella quiete totale della natura, con bevande calde contro il freddo. La sera dalle 20.00 alle 23.00, con riserva meteo.',
+    specs: [
+      'Tour guidato dell’aurora boreale per due, circa 15 km in motoslitta, bevande calde incluse',
+      '3 ore, dalle 20.00 alle 23.00',
+      '2 persone',
+      'Kilpisjärvi',
+      '18 anni per guidare, 8 anni sulla slitta',
+      'Valida 3 anni',
+    ],
+    specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Limite di età', 'Carta regalo'],
+  },
+  'glass-igloo-night-levi': {
+    name: 'Notte in igloo di vetro per due, Levi',
+    description:
+      'Una notte in due in un igloo di vetro riscaldato in alto sul monte Levi. Il vetro riscaldato elettricamente resta limpido mentre cercate l’aurora dal letto matrimoniale motorizzato. Drink di benvenuto, accappatoi e colazione inclusi, con angolo cottura, doccia e WC propri.',
+    specs: [
+      'Una notte per due in un igloo di vetro di classe Superior, drink di benvenuto, accappatoi e pantofole, colazione. Trasporto non incluso',
+      '1 notte, check-out alle 11.00',
+      '2 persone',
+      'Levi, in alto sul monte',
+      '23 m², vetro riscaldato antiappannamento, angolo cottura, doccia e WC, letto matrimoniale motorizzato',
+      'Valida per soggiorni 27.08-10.11 e 01.04-12.04',
+    ],
+    specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Igloo', 'Carta regalo'],
+  },
+  'gold-panning-day-inari': {
+    name: 'Giornata di ricerca dell’oro per quattro, Inari',
+    description:
+      'Una giornata in una concessione aurifera attiva a Inari per un gruppo di quattro: prima la storia, poi la setacciatura a mano e uno sguardo all’estrazione meccanica. Pasti e trasporto dal centro di Saariselkä inclusi, e l’oro trovato torna a casa con il gruppo.',
+    specs: [
+      'Una giornata di 5 ore di ricerca dell’oro in una concessione attiva per quattro, con guida alla setacciatura a mano e dimostrazione dell’estrazione meccanica. Pasti della giornata, attrezzatura e trasporto dal centro di Saariselkä alla concessione e ritorno inclusi',
+      '5 ore',
+      '4 persone',
+      'Inari',
+      'Stagioni di primavera ed estate',
+      'Valida 3 anni',
+    ],
+    specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Stagione', 'Carta regalo'],
+  },
 }

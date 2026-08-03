@@ -95,7 +95,12 @@ const SELECTION: Row[] = [
 
   // ── Porot ─────────────────────────────────────────────────────────────
   [pick(CHRISTMAS_PICKS, 'Reindeer Sledding'), 'exp-reindeer', 'reindeer', 'Reindeer sleigh ride under the lights', 'Poroajelu revontulien alla'],
-  [pick(ACTIVITIES_PICKS, 'Reindeer Sleigh Ride Tour in Snowy Forest'), 'exp-reindeer-forest', 'reindeer', 'Reindeer sleigh ride through snowy forest', 'Poroajelu lumisessa metsässä'],
+  // 🔴 Vaihdettu 3.8.2026: monorepon picks.ts poisti Levin poroajelun t505204
+  // (commit 8be874a, "kolme poroajelua yhdeksi") ja pick() kaatoi buildin.
+  // Tilalle HUSKY_PICKSin Levin husky+poro-yhdistelmä t503967, jota mikään
+  // muu kortti ei käytä — pororyhmän maantiede säilyy (Saariselkä/Levi/
+  // Rovaniemi). Kuva exp-reindeer-forest jää: tunnelmakuvassa on poro.
+  [pick(HUSKY_PICKS, 'Arctic Combo'), 'exp-reindeer-forest', 'reindeer', 'Husky and reindeer ride in one trip', 'Husky- ja poroajelu samalla retkellä'],
   [pick(ACTIVITIES_PICKS, 'Reindeer Experience with Sleigh Ride'), 'exp-reindeer-farm', 'reindeer', 'Reindeer farm visit and sleigh ride', 'Porotilavierailu ja rekiajelu'],
 
   // ── Moottorikelkka ────────────────────────────────────────────────────

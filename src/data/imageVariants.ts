@@ -309,6 +309,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-aurora-tour-kilpisjarvi": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-emendo-sauna-scents": {
     "full": 615,
     "w": [
@@ -386,6 +394,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320
     ]
   },
+  "prod-glass-igloo-night-levi": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-gold-panning-day-inari": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-heatgrid-midlayer": {
     "full": 800,
     "w": [
@@ -459,6 +483,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-halva-salmiakkiruutu": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-husky-farm-safari-rovaniemi": {
     "full": 800,
     "w": [
       320,
@@ -770,6 +802,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-pentik-tunturiretki-studio-dish": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-reindeer-safari-rovaniemi": {
     "full": 800,
     "w": [
       320,

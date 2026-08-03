@@ -138,8 +138,14 @@ export interface ShopCopy {
    *    print-on-demand-mallisto, ja lause luki kuin koko sivusto olisi kiinni.
    */
   faqAnswerFixes: Record<number, string>
-  /** Elämyslahjat tulevat GYG-katalogista, eivät PRODUCTS-listasta. */
+  /**
+   * Varattavat retket tulevat GYG-katalogista. Lisäksi kategoriassa on
+   * Elämyslahjat.fi:n lahjakortit tavallisina PRODUCTS-tuotteina (3.8.2026);
+   * voucherH2 ja voucherNote otsikoivat sen osion.
+   */
   experience: {
+    voucherH2: string
+    voucherNote: string
     priceNote: (price: string) => string
     priceAsOf: (asOf: string) => string
     groups: Record<import('../data/experiences').ExperienceGroup, string>
@@ -333,6 +339,9 @@ const en: ShopCopy = {
     2: 'Many do, and that is what this site runs on: every product here is sold and posted by the Finnish or Nordic shop that makes or stocks it, never by us. Each card names that shop’s delivery area and the countries it leaves out, and food is stricter than the rest, so dried reindeer travels inside the EU but not to the UK, the United States or Japan. Ordering online during your trip means fragile items travel separately instead of in your luggage. Our own #LaplandVibes print merchandise is not on sale yet.',
   },
   experience: {
+    voucherH2: 'Experience gift cards',
+    voucherNote:
+      'Bought from Elämyslahjat.fi and delivered by email. The recipient books the date, and the experience is redeemed in Lapland.',
     priceNote: (price) => `From ${price}`,
     priceAsOf: (asOf) => `Starting prices read on GetYourGuide ${asOf}. The exact price depends on the date you choose.`,
     groups: {
@@ -493,6 +502,9 @@ const fi: ShopCopy = {
     2: 'Moni lähettää, ja koko tämä sivusto perustuu siihen: jokaisen tuotteen myy ja postittaa se suomalainen tai pohjoismainen kauppa, joka sen tekee tai varastoi, emme me. Kortti kertoo kaupan toimitusalueen ja ne maat, jotka jäävät ulkopuolelle. Elintarvikkeissa säännöt ovat tiukemmat: poron kuivaliha kulkee EU:n sisällä mutta ei Britanniaan, Yhdysvaltoihin eikä Japaniin. Matkan aikana tilaamisen etu on se, että hauraat esineet matkaavat erikseen eivätkä matkalaukussa. Oma #LaplandVibes-painomallistomme ei ole vielä myynnissä.',
   },
   experience: {
+    voucherH2: 'Elämyslahjakortit',
+    voucherNote:
+      'Ostetaan Elämyslahjat.fi:stä ja toimitetaan sähköpostitse. Saaja varaa päivän itse, ja elämys lunastetaan Lapissa.',
     priceNote: (price) => `Alkaen ${price}`,
     priceAsOf: (asOf) => `Alkaen-hinnat luettu GetYourGuidesta ${asOf}. Lopullinen hinta riippuu valitusta päivästä.`,
     groups: {
@@ -685,6 +697,9 @@ const de: ShopCopy = over({
     2: 'Viele tun das, und genau darauf baut diese Seite: Jedes Produkt hier wird von dem finnischen oder nordischen Shop verkauft und verschickt, der es herstellt oder führt, nie von uns. Jede Karte nennt dessen Liefergebiet und die Länder, die ausgelassen werden. Bei Lebensmitteln sind die Regeln strenger, deshalb reist getrocknetes Rentierfleisch innerhalb der EU, aber nicht ins Vereinigte Königreich, in die Vereinigten Staaten oder nach Japan. Wenn Sie während der Reise online bestellen, reisen zerbrechliche Stücke getrennt statt im Koffer. Unser eigenes #LaplandVibes-Merch ist noch nicht im Verkauf.',
   },
   experience: {
+    voucherH2: 'Erlebnis-Geschenkkarten',
+    voucherNote:
+      'Gekauft bei Elämyslahjat.fi und per E-Mail zugestellt. Die beschenkte Person bucht das Datum, eingelöst wird das Erlebnis in Lappland.',
     priceNote: (price) => `Ab ${price}`,
     priceAsOf: (asOf) => `Startpreise am ${asOf} bei GetYourGuide abgelesen. Der genaue Preis hängt vom gewählten Datum ab.`,
     groups: {
@@ -845,6 +860,9 @@ const sv: ShopCopy = over({
     2: 'Många gör det, och hela den här sajten bygger på det: varje produkt här säljs och postas av den finska eller nordiska butik som tillverkar eller lagerhåller den, aldrig av oss. Varje kort namnger butikens leveransområde och de länder den lämnar utanför, och för livsmedel är reglerna strängare, så torkat renkött reser inom EU men inte till Storbritannien, USA eller Japan. Att beställa på nätet under resan betyder att ömtåliga saker reser för sig i stället för i bagaget. Vår egen #LaplandVibes-merch är ännu inte till salu.',
   },
   experience: {
+    voucherH2: 'Upplevelsepresentkort',
+    voucherNote:
+      'Köps från Elämyslahjat.fi och levereras per e-post. Mottagaren bokar datumet, och upplevelsen löses in i Lappland.',
     priceNote: (price) => `Från ${price}`,
     priceAsOf: (asOf) => `Startpriserna avlästa på GetYourGuide ${asOf}. Det exakta priset beror på vilket datum du väljer.`,
     groups: {
@@ -1006,6 +1024,9 @@ const fr: ShopCopy = over({
     2: 'Beaucoup le font, et c’est ce qui fait tourner ce site : chaque produit présenté ici est vendu et posté par la boutique finlandaise ou nordique qui le fabrique ou le stocke, jamais par nous. Chaque fiche nomme la zone de livraison de cette boutique et les pays qu’elle laisse de côté, et les denrées alimentaires sont plus strictes : la viande de renne séchée circule dans l’Union européenne mais pas vers le Royaume-Uni, les États-Unis ni le Japon. Commander en ligne pendant le voyage permet aux objets fragiles de voyager à part plutôt que dans la valise. Notre propre merch imprimé #LaplandVibes n’est pas encore en vente.',
   },
   experience: {
+    voucherH2: 'Cartes cadeaux expérience',
+    voucherNote:
+      'Achetées sur Elämyslahjat.fi et livrées par e-mail. La personne qui les reçoit choisit la date, et l’expérience se vit en Laponie.',
     priceNote: (price) => `À partir de ${price}`,
     priceAsOf: (asOf) => `Prix de départ relevés sur GetYourGuide le ${asOf}. Le prix exact dépend de la date choisie.`,
     groups: {
@@ -1166,6 +1187,9 @@ const es: ShopCopy = over({
     2: 'Muchas lo hacen, y en eso se basa este sitio: cada producto de aquí lo vende y lo envía la tienda finlandesa o nórdica que lo fabrica o lo tiene en stock, nunca nosotros. Cada ficha nombra la zona de entrega de esa tienda y los países que deja fuera, y con los alimentos las normas son más estrictas: la cecina de reno viaja dentro de la Unión Europea pero no al Reino Unido, Estados Unidos ni Japón. Comprar por internet durante el viaje hace que lo frágil viaje aparte en vez de en la maleta. Nuestra propia merch estampada #LaplandVibes todavía no está a la venta.',
   },
   experience: {
+    voucherH2: 'Tarjetas regalo de experiencias',
+    voucherNote:
+      'Se compran en Elämyslahjat.fi y llegan por correo electrónico. Quien la recibe reserva la fecha, y la experiencia se disfruta en Laponia.',
     priceNote: (price) => `Desde ${price}`,
     priceAsOf: (asOf) => `Precios de partida leídos en GetYourGuide el ${asOf}. El precio exacto depende de la fecha que elijas.`,
     groups: {
@@ -1326,6 +1350,9 @@ const it: ShopCopy = over({
     2: 'Molti lo fanno, ed è su questo che si regge tutto il sito: ogni prodotto qui è venduto e spedito dal negozio finlandese o nordico che lo produce o lo tiene a magazzino, mai da noi. Ogni scheda nomina la zona di consegna di quel negozio e i paesi che restano fuori, e per gli alimenti le regole sono più severe: la carne di renna essiccata viaggia dentro l’Unione europea ma non verso il Regno Unito, gli Stati Uniti o il Giappone. Ordinare online durante il viaggio significa che gli oggetti fragili viaggiano a parte invece che in valigia. Il nostro merch stampato #LaplandVibes non è ancora in vendita.',
   },
   experience: {
+    voucherH2: 'Carte regalo esperienza',
+    voucherNote:
+      'Si acquistano su Elämyslahjat.fi e arrivano via e-mail. Chi le riceve prenota la data, e l’esperienza si vive in Lapponia.',
     priceNote: (price) => `Da ${price}`,
     priceAsOf: (asOf) => `Prezzi di partenza letti su GetYourGuide il ${asOf}. Il prezzo esatto dipende dalla data scelta.`,
     groups: {
@@ -1486,6 +1513,9 @@ const nl: ShopCopy = over({
     2: 'Veel winkels doen dat, en daar draait deze site op: elk product hier wordt verkocht en verstuurd door de Finse of Noordse winkel die het maakt of op voorraad heeft, nooit door ons. Elke kaart noemt het bezorggebied van die winkel en de landen die eraf vallen, en bij levensmiddelen zijn de regels strenger: gedroogd rendiervlees reist binnen de Europese Unie, maar niet naar het Verenigd Koninkrijk, de Verenigde Staten of Japan. Online bestellen tijdens de reis betekent dat breekbare dingen apart reizen in plaats van in je koffer. Onze eigen #LaplandVibes-merch is nog niet te koop.',
   },
   experience: {
+    voucherH2: 'Belevenis-cadeaukaarten',
+    voucherNote:
+      'Gekocht bij Elämyslahjat.fi en per e-mail bezorgd. De ontvanger boekt zelf de datum, en de belevenis wordt in Lapland ingewisseld.',
     priceNote: (price) => `Vanaf ${price}`,
     priceAsOf: (asOf) => `Vanafprijzen afgelezen op GetYourGuide op ${asOf}. De exacte prijs hangt af van de datum die je kiest.`,
     groups: {
@@ -1646,6 +1676,9 @@ const ptBR: ShopCopy = over({
     2: 'Muitas enviam, e é nisso que este site se apoia: cada produto daqui é vendido e postado pela loja finlandesa ou nórdica que o fabrica ou o mantém em estoque, nunca por nós. Cada cartão nomeia a área de entrega dessa loja e os países que ficam de fora, e com alimentos as regras são mais rígidas: a carne seca de rena circula dentro da União Europeia, mas não vai para o Reino Unido, os Estados Unidos nem o Japão. Comprar pela internet durante a viagem faz com que o que é frágil viaje separado em vez de na mala. Nossa própria merch estampada #LaplandVibes ainda não está à venda.',
   },
   experience: {
+    voucherH2: 'Cartões-presente de experiências',
+    voucherNote:
+      'Comprados na Elämyslahjat.fi e entregues por e-mail. Quem recebe escolhe a data, e a experiência acontece na Lapônia.',
     priceNote: (price) => `A partir de ${price}`,
     priceAsOf: (asOf) => `Preços iniciais lidos no GetYourGuide em ${asOf}. O preço exato depende da data escolhida.`,
     groups: {
@@ -1806,6 +1839,9 @@ const ja: ShopCopy = over({
     2: '多くのショップが対応しており、このサイト自体がその上に成り立っています。ここに並ぶ商品は、それをつくるか在庫として持つフィンランドまたは北欧のショップが販売し発送するもので、当サイトが送ることはありません。各カードにはそのショップの配送地域と対象外の国名を記載しています。食品の規則はより厳しく、トナカイの干し肉は欧州連合の域内では送れますが、イギリス、アメリカ、日本へは送れません。旅行中にオンラインで注文すれば、壊れやすい品はスーツケースではなく別便で届きます。当サイトの #LaplandVibes プリント商品はまだ販売していません。',
   },
   experience: {
+    voucherH2: '体験ギフトカード',
+    voucherNote:
+      'Elämyslahjat.fi で購入し、メールで届きます。受け取った人が日程を予約し、体験はラップランドで利用します。',
     priceNote: (price) => `${price} から`,
     priceAsOf: (asOf) => `開始価格は ${asOf} に GetYourGuide で確認したものです。正確な価格は選ぶ日付によって変わります。`,
     groups: {
@@ -1966,6 +2002,9 @@ const zhCN: ShopCopy = over({
     2: '很多商店都寄，这个网站正是建立在这一点上：这里的每件商品都由制造或备货它的芬兰或北欧商店销售和寄出，从来不是我们。每张卡片都会写明那家商店的配送范围和不发货的国家。食品的规定更严格，驯鹿肉干可以在欧盟境内寄送，但不能寄往英国、美国或日本。旅行途中在网上下单，易碎的东西就会单独寄出，而不用塞进行李箱。我们自己的 #LaplandVibes 印花周边还没有开售。',
   },
   experience: {
+    voucherH2: '体验礼品卡',
+    voucherNote:
+      '在 Elämyslahjat.fi 购买，通过电子邮件送达。收礼人自行预约日期，体验在拉普兰兑换。',
     priceNote: (price) => `${price} 起`,
     priceAsOf: (asOf) => `起始价格于 ${asOf} 在 GetYourGuide 上读取。确切价格取决于你选择的日期。`,
     groups: {
@@ -2126,6 +2165,9 @@ const ko: ShopCopy = over({
     2: '많은 상점이 보내며, 이 사이트 자체가 그 위에 서 있습니다. 여기 있는 모든 상품은 그것을 만들거나 재고로 두는 핀란드 또는 북유럽 상점이 팔고 부치며, 저희가 보내는 일은 없습니다. 각 카드에는 그 상점의 배송 지역과 제외되는 나라가 적혀 있고, 식품은 규정이 더 엄격해서 말린 순록 고기는 유럽연합 안에서는 오가지만 영국이나 미국, 일본으로는 갈 수 없습니다. 여행 중에 온라인으로 주문하면 깨지기 쉬운 물건이 짐가방이 아니라 따로 이동합니다. 저희 #LaplandVibes 프린트 굿즈는 아직 판매하지 않습니다.',
   },
   experience: {
+    voucherH2: '체험 기프트 카드',
+    voucherNote:
+      'Elämyslahjat.fi에서 구매하며 이메일로 전달됩니다. 받는 사람이 날짜를 예약하고, 체험은 라플란드에서 이용합니다.',
     priceNote: (price) => `${price}부터`,
     priceAsOf: (asOf) => `시작 가격은 ${asOf}에 GetYourGuide에서 확인했습니다. 정확한 가격은 선택한 날짜에 따라 달라집니다.`,
     groups: {

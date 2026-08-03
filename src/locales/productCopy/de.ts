@@ -989,4 +989,76 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Biskuitboden, Orangenmarmelade und dunkle Schokolade obendrauf. Kein Keks und kein Kuchen, und genau darüber streiten Finnen jedes einzelne Mal.',
     specs: ['300 g'],
   },
+  'husky-farm-safari-rovaniemi': {
+    name: 'Huskyfarm-Besuch und Huskysafari für zwei, Rovaniemi',
+    description:
+      'Eine Geschenkkarte für einen geführten Besuch auf einer echten Huskyfarm bei Rovaniemi, gefolgt von einer Schlittenfahrt hinter den Hunden durch den Winterwald. Jetzt gekauft, per E-Mail zugestellt, das Datum wählt die beschenkte Person selbst.',
+    specs: [
+      'Geführter Huskyfarm-Besuch und eine Huskysafari für zwei. Der Guide kann Sie im Umkreis von 10 km um Rovaniemi abholen',
+      'Etwa 3,5 h',
+      '2 Personen',
+      'Rovaniemi. Der genaue Ort wird bei der Buchung bestätigt',
+      'Wintermonate, November bis April',
+      'Englisch',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Sprache der Führung', 'Geschenkkarte'],
+  },
+  'reindeer-safari-rovaniemi': {
+    name: 'Rentiersafari für zwei, Rovaniemi',
+    description:
+      'Eine abendliche Rentiersafari auf einer echten Farm bei Rovaniemi: eine Runde von 2,5 km hinter den Rentieren, ein Besuch auf der Farm und ein kleiner Imbiss. In klaren Nächten können sich Nordlichter zeigen, versprechen kann das niemand.',
+    specs: [
+      'Eintritt zu einer Rentierfarm und eine 2,5 km lange Fahrt im Rentierschlitten für zwei, mit kleinem Imbiss. Abholung im Umkreis von 10 km um Rovaniemi',
+      '2,5 bis 3 Stunden',
+      '2 Personen',
+      'Rovaniemi. Der genaue Ort wird bei der Buchung bestätigt',
+      'Wintermonate, Dezember bis März. Die Safari findet am Abend statt',
+      'Englisch',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Sprache der Führung', 'Geschenkkarte'],
+  },
+  'aurora-tour-kilpisjarvi': {
+    name: 'Nordlicht-Tour mit dem Schneemobil für zwei, Kilpisjärvi',
+    description:
+      'Kilpisjärvi ist für seinen außergewöhnlich klaren Nachthimmel bekannt. Eine kurze Schneemobilfahrt bringt Sie zu zweit an einen Ort, an dem sich die Nordlichter in völliger Stille beobachten lassen, mit warmen Getränken gegen die Kälte. Abends von 20.00 bis 23.00 Uhr, mit Wettervorbehalt.',
+    specs: [
+      'Geführte Nordlicht-Tour für zwei, etwa 15 km mit dem Schneemobil, warme Getränke inklusive',
+      '3 Stunden, von 20.00 bis 23.00 Uhr',
+      '2 Personen',
+      'Kilpisjärvi',
+      '18 Jahre zum Fahren, 8 Jahre im Schlitten',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Altersgrenze', 'Geschenkkarte'],
+  },
+  'glass-igloo-night-levi': {
+    name: 'Glasiglu-Nacht für zwei, Levi',
+    description:
+      'Eine Nacht zu zweit in einem warmen Glasiglu hoch am Fjell von Levi. Das elektrisch beheizte Glas bleibt klar, während Sie vom motorisierten Doppelbett aus nach Nordlichtern schauen. Begrüßungsgetränk, Bademäntel und Frühstück inklusive, mit eigener Kochnische, Dusche und WC.',
+    specs: [
+      'Eine Nacht für zwei im Glasiglu der Superior-Klasse, Begrüßungsgetränk, Bademäntel und Hausschuhe, Frühstück. Transport nicht inbegriffen',
+      '1 Nacht, Check-out um 11.00 Uhr',
+      '2 Personen',
+      'Levi, hoch am Fjell',
+      '23 m², beheiztes beschlagfreies Glas, Kochnische, Dusche und WC, motorisiertes Doppelbett',
+      'Gültig für Aufenthalte 27.08-10.11 und 01.04-12.04',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Iglu', 'Geschenkkarte'],
+  },
+  'gold-panning-day-inari': {
+    name: 'Goldgräbertag für vier, Inari',
+    description:
+      'Ein Tag auf einem aktiven Goldclaim in Inari für eine Gruppe von vier: zuerst die Geschichte, dann das Waschen von Hand und ein Blick auf den maschinellen Abbau. Mahlzeiten und Transport ab dem Zentrum von Saariselkä sind inklusive, und gefundenes Gold nimmt die Gruppe mit nach Hause.',
+    specs: [
+      'Ein Goldgräbertag von 5 Stunden auf einem aktiven Claim für vier, mit Anleitung zum Goldwaschen von Hand und Einblick in den maschinellen Abbau. Mahlzeiten, Ausrüstung und Transport vom Zentrum von Saariselkä zum Claim und zurück sind inklusive',
+      '5 Stunden',
+      '4 Personen',
+      'Inari',
+      'Frühjahrs- und Sommersaison',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Geschenkkarte'],
+  },
 }

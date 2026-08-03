@@ -318,6 +318,30 @@ const JOBS = [
     'rento-sauna-gift-box',
     'https://suomikauppa.fi/cdn/shop/products/6410416116860_kuva1.jpg?v=1650971256&width=1920',
   ],
+  // Era 2026-08-03: Elamyslahjat.fi-elamyslahjakortit. Lahde on tuotesivun
+  // og:image ILMAN query-parametreja: parametrillinen URL on 140 px:n
+  // thumbnail (?w=140&h=97&fit=crop), stripattuna sama polku antaa
+  // taysikokoisen (mitattu 2500x1407).
+  [
+    'husky-farm-safari-rovaniemi',
+    'https://cdn.elamyslahjat.fi/storage/photos/products/106217/16209.jpg',
+  ],
+  [
+    'reindeer-safari-rovaniemi',
+    'https://cdn.elamyslahjat.fi/storage/photos/products/106181/16139.jpg',
+  ],
+  [
+    'aurora-tour-kilpisjarvi',
+    'https://cdn.elamyslahjat.fi/storage/photos/products/119541/50246.jpg',
+  ],
+  [
+    'glass-igloo-night-levi',
+    'https://cdn.elamyslahjat.fi/storage/photos/products/116317/23100.jpg',
+  ],
+  [
+    'gold-panning-day-inari',
+    'https://cdn.elamyslahjat.fi/storage/photos/products/116437/23910.jpg',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

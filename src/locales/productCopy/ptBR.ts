@@ -938,4 +938,76 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Tamanho do pacote', undefined],
   },
+  'husky-farm-safari-rovaniemi': {
+    name: 'Visita a uma fazenda de huskies e safári para dois, Rovaniemi',
+    description:
+      'Um cartão-presente para uma visita guiada a uma fazenda de huskies de verdade perto de Rovaniemi, seguida de um passeio de trenó puxado pelos cães pela floresta de inverno. Comprado agora, entregue por e-mail, e quem recebe escolhe a data.',
+    specs: [
+      'Visita guiada a uma fazenda de huskies e safári de trenó para dois. O guia pode buscar em um raio de 10 km de Rovaniemi',
+      'Cerca de 3,5 h',
+      '2 pessoas',
+      'Rovaniemi. O local exato é confirmado na reserva',
+      'Meses de inverno, de novembro a abril',
+      'Inglês',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma do guia', 'Cartão-presente'],
+  },
+  'reindeer-safari-rovaniemi': {
+    name: 'Safári de renas para dois, Rovaniemi',
+    description:
+      'Um safári de renas no fim da tarde em uma fazenda de verdade perto de Rovaniemi: um percurso de 2,5 km atrás das renas, uma visita à fazenda e um pequeno lanche. Em noites limpas a aurora boreal pode aparecer, mas ninguém pode prometer.',
+    specs: [
+      'Entrada em uma fazenda de renas e percurso de 2,5 km em trenó puxado por renas para dois, com um pequeno lanche. Busca em um raio de 10 km de Rovaniemi',
+      'De 2,5 a 3 horas',
+      '2 pessoas',
+      'Rovaniemi. O local exato é confirmado na reserva',
+      'Meses de inverno, de dezembro a março. O safári sai no início da noite',
+      'Inglês',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma do guia', 'Cartão-presente'],
+  },
+  'aurora-tour-kilpisjarvi': {
+    name: 'Tour de aurora boreal de snowmobile para dois, Kilpisjärvi',
+    description:
+      'Kilpisjärvi é conhecida pelo céu noturno excepcionalmente limpo. Um trajeto curto de snowmobile leva vocês dois a um ponto onde observar a aurora em total paz, com bebidas quentes contra o frio. À noite, das 20.00 às 23.00, sujeito às condições do tempo.',
+    specs: [
+      'Tour guiado de aurora boreal para dois, cerca de 15 km de snowmobile, bebidas quentes incluídas',
+      '3 horas, das 20.00 às 23.00',
+      '2 pessoas',
+      'Kilpisjärvi',
+      '18 anos para pilotar, 8 anos no trenó',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Idade mínima', 'Cartão-presente'],
+  },
+  'glass-igloo-night-levi': {
+    name: 'Noite em iglu de vidro para dois, Levi',
+    description:
+      'Uma noite a dois em um iglu de vidro aquecido no alto do monte Levi. O vidro aquecido eletricamente fica sempre limpo enquanto vocês procuram a aurora de uma cama de casal motorizada. Drink de boas-vindas, roupões e café da manhã incluídos, com copa, chuveiro e banheiro próprios.',
+    specs: [
+      'Uma noite para dois em iglu de vidro classe Superior, drink de boas-vindas, roupões e pantufas, café da manhã. Transporte não incluído',
+      '1 noite, check-out às 11.00',
+      '2 pessoas',
+      'Levi, no alto do monte',
+      '23 m², vidro aquecido antiembaçante, copa, chuveiro e banheiro, cama de casal motorizada',
+      'Válido para estadias de 27.08-10.11 e 01.04-12.04',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Iglu', 'Cartão-presente'],
+  },
+  'gold-panning-day-inari': {
+    name: 'Dia de garimpo de ouro para quatro, Inari',
+    description:
+      'Um dia em um garimpo de ouro em atividade em Inari para um grupo de quatro: primeiro a história, depois a bateia à mão e uma olhada na extração com máquinas. Refeições e transporte do centro de Saariselkä incluídos, e o ouro encontrado vai para casa com o grupo.',
+    specs: [
+      'Um dia de garimpo de 5 horas em uma concessão ativa para quatro, com orientação de bateia à mão e demonstração da extração com máquinas. Refeições do dia, equipamento e transporte do centro de Saariselkä até o garimpo e de volta incluídos',
+      '5 horas',
+      '4 pessoas',
+      'Inari',
+      'Temporadas de primavera e verão',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Cartão-presente'],
+  },
 }

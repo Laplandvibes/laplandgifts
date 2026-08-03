@@ -33,10 +33,12 @@ const MOOMIN_FOOD_EXCEPT = ['US', 'AU', ...SOUTH_AMERICA]
  * Tämä merkitään kenttään imageIsPartner, joka ratkaisee tuotesivun
  * kuvamerkinnän (lähdemerkintä vs. "tunnelmakuva").
  *
- * 🔴 Kaksi kategoriaa on tarkoituksella tyhjä:
- *   - 'experiences' luetaan shared/gyg/picks.ts:stä, jotta GYG-ID:t pysyvät
- *     yhdessä verifioidussa lähteessä. Väärä GYG-ID ei 404:ää vaan tarjoilee
- *     hiljaa väärän maan tuotteen.
+ * 🔴 Kaksi kategoriaa poikkeaa muista:
+ *   - 'experiences' on kahta lähdettä: varattavat retket luetaan
+ *     shared/gyg/picks.ts:stä, jotta GYG-ID:t pysyvät yhdessä verifioidussa
+ *     lähteessä (väärä GYG-ID ei 404:ää vaan tarjoilee hiljaa väärän maan
+ *     tuotteen), ja Elämyslahjat.fi:n lahjakortit (erä 3.8.2026) ovat tässä
+ *     tiedostossa tavallisina tuotteina.
  *   - 'merch' odottaa Fourthwall-kaupan avaamista. Emme listaa tuotteita
  *     joita ei voi ostaa emmekä keksi tuotesivupolkuja kauppaan jota ei ole.
  * catalog.test.ts:n kategoriakattavuustesti ohittaa nämä kaksi.
@@ -3462,6 +3464,337 @@ export const PRODUCTS: Product[] = [
       ],
       sourceUrl: 'https://halti.com/products/merino-wool-socks-2-pack',
       fetchedAt: '2026-08-02',
+    },
+  },
+
+  // ── experiences: Elämyslahjat.fi-lahjakortit, erä 2026-08-03 ──────────────
+  // Lahjakortti ostetaan Elämyslahjat.fi:stä ja toimitetaan sähköpostitse;
+  // saaja varaa päivän itse ja elämys lunastetaan Lapissa. Sijainti, kesto,
+  // osallistujamäärä, sesonki ja järjestäjä on luettu tuotesivulta 3.8.2026.
+  // Brand on elämyksen JÄRJESTÄJÄ (tuotesivun "Järjestäjä"-osio), ei
+  // Elämyslahjat: kauppa on jälleenmyyjä samalla tavalla kuin Suomikauppa.
+  // 🔴 Elämyslahjatin oma /lappi/-sivu listaa kärkenään myös Kuusamon husky-,
+  // poro- ja kelkkasafarit. Ne on jätetty pois: Ruka ja Kuusamo eivät ole
+  // Lappia (verkoston sääntö), ja sijainti luetaan tuotesivun titlestä.
+  {
+    slug: 'husky-farm-safari-rovaniemi',
+    category: 'experiences',
+    brand: 'Wild About Lapland',
+    name: {
+      en: 'Husky farm visit and husky safari for two, Rovaniemi',
+      fi: 'Vierailu huskyfarmilla ja huskysafari kahdelle, Rovaniemi',
+    },
+    description: {
+      en: 'A gift card for a guided visit to a working husky farm near Rovaniemi, followed by a sleigh ride through the winter forest behind the dogs. Bought now, delivered by email, and booked for a date the recipient picks.',
+      fi: 'Lahjakortti opastetulle vierailulle aidolla huskyfarmilla Rovaniemen lähellä ja sen jatkoksi rekiajelulle talvisessa metsässä koirien vetämänä. Ostetaan nyt, toimitetaan sähköpostitse, ja saaja varaa päivän itse.',
+    },
+    priceFrom: 380,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-03',
+    image: 'prod-husky-farm-safari-rovaniemi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/husky-farmi-safari/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Guided husky farm visit and a husky safari for two. The guide can pick you up within 10 km of Rovaniemi',
+            fi: 'Opastettu vierailu huskyfarmilla ja huskysafari kahdelle. Opas voi noutaa 10 km:n säteellä Rovaniemeltä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: 'About 3.5 h', fi: 'Noin 3,5 h' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: {
+            en: 'Rovaniemi. The exact location is confirmed at booking',
+            fi: 'Rovaniemi. Tarkka sijainti varmistuu varauksen yhteydessä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: {
+            en: 'Winter months, November to April',
+            fi: 'Talvikuukausina, marras-huhtikuu',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Guidance language', fi: 'Opastuskieli' },
+          value: { en: 'English', fi: 'Englanti' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/husky-farmi-safari/',
+      fetchedAt: '2026-08-03',
+    },
+  },
+  {
+    slug: 'reindeer-safari-rovaniemi',
+    category: 'experiences',
+    brand: 'Wild About Lapland',
+    name: {
+      en: 'Reindeer safari for two, Rovaniemi',
+      fi: 'Porosafari kahdelle, Rovaniemi',
+    },
+    description: {
+      en: 'An evening reindeer safari on a real farm near Rovaniemi: a 2.5 km loop behind the reindeer, a visit to the farm and a small snack. On a clear night the northern lights may show up, though nobody can promise that.',
+      fi: 'Iltainen porosafari aidolla porofarmilla Rovaniemen lähellä: 2,5 km:n kierros porojen vetämänä, tutustuminen tilaan ja pieni eväs. Kirkkaana iltana revontulet voivat näyttäytyä, mutta sitä ei voi luvata.',
+    },
+    priceFrom: 400,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-03',
+    image: 'prod-reindeer-safari-rovaniemi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/safari-kierros-porot/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Entry to a reindeer farm and a 2.5 km ride in a reindeer-drawn sleigh for two, with a small snack. Pick-up within 10 km of Rovaniemi',
+            fi: 'Pääsy porofarmille ja 2,5 km:n kierros porojen vetämänä kahdelle, pieni eväs. Nouto 10 km:n säteellä Rovaniemeltä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: '2.5 to 3 hours', fi: '2,5-3 tuntia' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: {
+            en: 'Rovaniemi. The exact location is confirmed at booking',
+            fi: 'Rovaniemi. Tarkka sijainti varmistuu varauksen yhteydessä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: {
+            en: 'Winter months, December to March. The safari runs in the evening',
+            fi: 'Talvikuukausina, joulu-maaliskuu. Safarille lähdetään illalla',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Guidance language', fi: 'Opastuskieli' },
+          value: { en: 'English', fi: 'Englanti' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/safari-kierros-porot/',
+      fetchedAt: '2026-08-03',
+    },
+  },
+  {
+    slug: 'aurora-tour-kilpisjarvi',
+    category: 'experiences',
+    brand: 'Kilpissafarit',
+    name: {
+      en: 'Northern lights tour by snowmobile for two, Kilpisjärvi',
+      fi: 'Revontuliretki moottorikelkalla kahdelle, Kilpisjärvi',
+    },
+    description: {
+      en: 'Kilpisjärvi is known for its exceptionally clear night sky. A short snowmobile ride takes two of you to a spot where the auroras can be watched in complete natural peace, with warm drinks against the cold. Runs evenings from 20.00 to 23.00, with a weather reservation.',
+      fi: 'Kilpisjärvi tunnetaan poikkeuksellisen kirkkaasta yötaivaastaan. Lyhyt kelkkamatka vie kaksikon paikkaan, jossa revontulia voi ihailla täydessä luonnonrauhassa lämpimien juomien kera. Retki ajetaan iltaisin klo 20.00-23.00, ja siinä on säävaraus.',
+    },
+    priceFrom: 270,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-03',
+    image: 'prod-aurora-tour-kilpisjarvi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/revontulien-bongausta-2lle/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Guided northern lights tour for two, about 15 km by snowmobile, warm drinks included',
+            fi: 'Opastettu revontuliretki kahdelle, noin 15 km moottorikelkalla, lämpimät juomat',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: '3 hours, from 20.00 to 23.00', fi: '3 tuntia, klo 20.00-23.00' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: { en: 'Kilpisjärvi', fi: 'Kilpisjärvi' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Age limit', fi: 'Ikäraja' },
+          value: {
+            en: '18 years to drive, 8 years in the sled',
+            fi: 'Ajajalle 18 vuotta, reessä matkustavalle 8 vuotta',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/revontulien-bongausta-2lle/',
+      fetchedAt: '2026-08-03',
+    },
+  },
+  {
+    slug: 'glass-igloo-night-levi',
+    category: 'experiences',
+    brand: 'Golden Crown Levin Iglut',
+    name: {
+      en: 'Glass igloo night for two, Levi',
+      fi: 'Igluyö kahdelle Levillä',
+    },
+    description: {
+      en: 'A night for two in a warm glass igloo high on the Levi fell. The electrically heated glass stays clear while you look for auroras from a motorised double bed. Welcome drink, bathrobes and breakfast are included, and the igloo has its own kitchenette, shower and WC.',
+      fi: 'Yö kahdelle lämpimässä lasi-iglussa korkealla Levin tunturissa. Sähkölämmitteiset lasit pysyvät kirkkaina, kun revontulia etsii moottoroidulta parivuoteelta. Tervetulojuoma, kylpytakit ja aamiainen sisältyvät, ja iglussa on oma keittokomero, suihku ja wc.',
+    },
+    priceFrom: 400,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-03',
+    image: 'prod-glass-igloo-night-levi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/igluyo-kahdelle-levilla/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'One night for two in a Superior class glass igloo, welcome drink, bathrobes and slippers, breakfast. Transport is not included',
+            fi: 'Yö kahdelle Superior-luokan lasi-iglussa, tervetulojuoma, kylpytakit ja tossut, aamiainen. Kuljetus ei sisälly hintaan',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: '1 night, checkout at 11.00', fi: '1 yö, uloskirjautuminen klo 11.00' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: { en: 'Levi, high on the fell', fi: 'Levi, korkealla tunturissa' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Igloo', fi: 'Iglu' },
+          value: {
+            en: '23 m², heated non-fogging glass, kitchenette, shower and WC, motorised double bed',
+            fi: '23 m², lämmitetyt huurtumattomat lasit, keittokomero, suihku ja wc, moottoroitu parivuode',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: {
+            en: 'Valid for stays 27.08-10.11 and 01.04-12.04',
+            fi: 'Voimassa 27.08-10.11 ja 01.04-12.04 välisinä aikoina',
+          },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/igluyo-kahdelle-levilla/',
+      fetchedAt: '2026-08-03',
+    },
+  },
+  {
+    slug: 'gold-panning-day-inari',
+    category: 'experiences',
+    brand: 'Kultakuume.com',
+    name: {
+      en: 'Gold digging day for four, Inari',
+      fi: 'Kullankaivuupäivä neljälle, Inari',
+    },
+    description: {
+      en: 'A day at a working gold claim in Inari for a group of four: first the history, then panning by hand and a look at how machine digging works. Meals and transport from the centre of Saariselkä are included, and any gold the group finds goes home with them.',
+      fi: 'Päivä oikealla kultavaltauksella Inarissa neljän hengen porukalle: ensin kullankaivuun historiaa, sitten huuhdontaa käsin ja koneellisen kaivuun seuraamista. Ruoat ja kuljetus Saariselän keskustasta sisältyvät, ja löydetty kulta lähtee löytäjien mukaan.',
+    },
+    priceFrom: 1490,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-03',
+    image: 'prod-gold-panning-day-inari',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/kultakuume-kullankaivuumatka-4/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'A 5 hour gold digging day at a working claim for four, with guidance for panning by hand and a look at machine digging. Meals for the day, digging gear and transport from the centre of Saariselkä to the claim and back are included',
+            fi: '5 tunnin kullankaivuupäivä oikealla valtauksella neljälle, opastus käsinhuuhdontaan ja koneellisen kaivuun seuraaminen. Päivän ruoat, kaivuutarvikkeet ja kuljetus Saariselän keskustasta valtaukselle ja takaisin sisältyvät',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: '5 hours', fi: '5 tuntia' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '4 people', fi: '4 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: { en: 'Inari', fi: 'Inari' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: { en: 'Spring and summer seasons', fi: 'Kevät- ja kesäkaudella' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/kultakuume-kullankaivuumatka-4/',
+      fetchedAt: '2026-08-03',
     },
   },
 ]

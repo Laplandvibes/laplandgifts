@@ -940,4 +940,76 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Förpackningsstorlek', undefined],
   },
+  'husky-farm-safari-rovaniemi': {
+    name: 'Besök på huskyfarm och huskysafari för två, Rovaniemi',
+    description:
+      'Ett presentkort för ett guidat besök på en riktig huskyfarm nära Rovaniemi, följt av en slädtur bakom hundarna genom vinterskogen. Köps nu, levereras per e-post, och mottagaren bokar själv datumet.',
+    specs: [
+      'Guidat besök på huskyfarm och en huskysafari för två. Guiden kan hämta inom 10 km från Rovaniemi',
+      'Cirka 3,5 h',
+      '2 personer',
+      'Rovaniemi. Den exakta platsen bekräftas vid bokningen',
+      'Vintermånaderna, november till april',
+      'Engelska',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Guidningens språk', 'Presentkort'],
+  },
+  'reindeer-safari-rovaniemi': {
+    name: 'Rensafari för två, Rovaniemi',
+    description:
+      'En kvällsrensafari på en riktig gård nära Rovaniemi: en runda på 2,5 km bakom renarna, ett besök på gården och ett litet mellanmål. En klar kväll kan norrskenet visa sig, men det kan ingen lova.',
+    specs: [
+      'Entré till en rengård och en 2,5 km lång tur i rendragen släde för två, med ett litet mellanmål. Hämtning inom 10 km från Rovaniemi',
+      '2,5 till 3 timmar',
+      '2 personer',
+      'Rovaniemi. Den exakta platsen bekräftas vid bokningen',
+      'Vintermånaderna, december till mars. Safarin körs på kvällen',
+      'Engelska',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Guidningens språk', 'Presentkort'],
+  },
+  'aurora-tour-kilpisjarvi': {
+    name: 'Norrskenstur med snöskoter för två, Kilpisjärvi',
+    description:
+      'Kilpisjärvi är känt för sin ovanligt klara natthimmel. En kort skotertur tar er två till en plats där norrskenet kan ses i total naturro, med varma drycker mot kylan. Körs kvällar 20.00 till 23.00, med väderreservation.',
+    specs: [
+      'Guidad norrskenstur för två, cirka 15 km med snöskoter, varma drycker ingår',
+      '3 timmar, 20.00 till 23.00',
+      '2 personer',
+      'Kilpisjärvi',
+      '18 år för att köra, 8 år i släden',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Åldersgräns', 'Presentkort'],
+  },
+  'glass-igloo-night-levi': {
+    name: 'Natt i glasigloo för två, Levi',
+    description:
+      'En natt för två i en varm glasigloo högt uppe på Levifjället. Det elvärmda glaset håller sig klart medan ni spanar efter norrsken från en motoriserad dubbelsäng. Välkomstdryck, badrockar och frukost ingår, och igloon har egen kokvrå, dusch och wc.',
+    specs: [
+      'En natt för två i glasigloo av Superior-klass, välkomstdryck, badrockar och tofflor, frukost. Transport ingår inte',
+      '1 natt, utcheckning kl 11.00',
+      '2 personer',
+      'Levi, högt uppe på fjället',
+      '23 m², uppvärmt imfritt glas, kokvrå, dusch och wc, motoriserad dubbelsäng',
+      'Gäller vistelser 27.08-10.11 och 01.04-12.04',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Igloo', 'Presentkort'],
+  },
+  'gold-panning-day-inari': {
+    name: 'Guldgrävardag för fyra, Inari',
+    description:
+      'En dag på en aktiv guldinmutning i Inari för ett sällskap på fyra: först historien, sedan vaskning för hand och en titt på maskinell grävning. Måltider och transport från Saariselkä centrum ingår, och guldet gruppen hittar följer med hem.',
+    specs: [
+      'En guldgrävardag på 5 timmar på en aktiv inmutning för fyra, med handledning i vaskning för hand och inblick i maskinell grävning. Dagens måltider, utrustning och transport från Saariselkä centrum till inmutningen och tillbaka ingår',
+      '5 timmar',
+      '4 personer',
+      'Inari',
+      'Vår- och sommarsäsong',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Presentkort'],
+  },
 }

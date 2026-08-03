@@ -95,10 +95,23 @@ export default function Category() {
 
         <div className="mx-auto max-w-7xl px-4 py-10 md:py-14">
           <p className="mb-6 text-sm text-muted">
-            {t.productCount(isExperiences ? GIFT_EXPERIENCES.length : visible.length)}
+            {t.productCount(isExperiences ? GIFT_EXPERIENCES.length + visible.length : visible.length)}
           </p>
           {isExperiences ? (
             <>
+              {/* Elämyslahjat.fi:n lahjakortit ensin: ne ovat ostettavia
+                  tuotteita komissiolla, GYG-retket alla varataan päivälle.
+                  Toimitusmaasuodatin koskee näitäkin, mutta sähköpostitse
+                  toimitettava lahjakortti on worldwide eikä siksi katoa. */}
+              {visible.length > 0 && (
+                <section className="mb-12">
+                  <h2 className="mb-2 font-heading text-3xl tracking-wide text-gray">
+                    {tx.voucherH2}
+                  </h2>
+                  <p className="mb-5 max-w-2xl text-sm text-muted">{tx.voucherNote}</p>
+                  <ProductGridSection products={visible} lang={lang} emptyMessage={emptyMessage} />
+                </section>
+              )}
               {/* 🔴 Ryhmitelty, ei yhtenä listana (Vesa 2.8.: "kyllä pitää olla
                   ihan useita kymmeniä täällä ja kategorioittain"). 24 korttia
                   peräkkäin on luettelo; kahdeksan otsikoitua ryhmää on
