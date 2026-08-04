@@ -12,6 +12,13 @@
    Playfair Display poistui kokonaan: otsikot ovat nyt Bebas Neueta. */
 
 @theme {
+  /* LV ecosystem tokens required by shared/ components (added 2026-08-04:
+     without them Tailwind v4 silently drops e.g. bg-vibe-pink from the build). */
+  --color-vibe-pink: #EC4899;
+  --color-deep-night: #0F172A;
+  --color-snow: #F9FAFB;
+  --color-arctic-cyan: #06B6D4;
+  --color-aurora-green: #10B981;
   /* NETWORK RULE (Vesa 2026-08-01): otsikkofontti on Bebas Neue kuten muualla
      verkostossa. Sama pino kuin --font-logo, joten navin sanamerkki ja sivun
      otsikko ovat samaa kirjainmuotoa. */
