@@ -9,17 +9,30 @@ export const PARTNERS: Record<string, Partner> = {
     id: 'halti',
     name: 'Halti',
     network: 'adtraction',
-    baseUrl: 'https://halti.com',
-    shipsTo: 'eu',
-    // 🔴 Reitti on `halticom`, EI `halti`. Adtractionissa on kaksi Halti-
-    // ohjelmaa saman to.halti.fi-domainin takana: halti.fi (a=1622199573) ja
-    // halti.com (a=1622204962). Nämä tuotteet ovat halti.com-kaupassa, joten
-    // `halti`-reitti veisi klikin väärään ohjelmaan eikä kauppa hyvittäisi
-    // komissiota. Reitti lisättiin Workeriin 2.8.2026 juuri tätä varten.
-    // Mitattu: go/halticom?dest=halti.com/products/tokoi-dx-jacket-mens
-    // → to.halti.fi/t/t?a=1622204962…&epi=laplandgifts_com_…&url=…
-    workerRoute: 'halticom',
-    verifiedAt: '2026-08-02',
+    // 🔴🔴 KORJATTU 2026-08-04: tässä luki `halticom` + halti.com, ja se rikkoi
+    // kaikki yhdeksän Haltin ostonappia 2.–4.8. Kaksi erillistä virhettä:
+    //
+    // 1. `halticom`-reitin ohjelmatunnus a=1622204962 EI ole ohjelma vaan
+    //    Haltin ainoan ohjelman komissiorivin id. Adtraction vastasi siihen
+    //    sivulla "Invalid link" — ostaja ei päätynyt mihinkään.
+    // 2. Ohjelma on FI-ohjelma (programURL https://www.halti.fi). Vaikka
+    //    tunnus korjattaisiin, halti.com-syvälinkki hylätään ja klikki 302:aa
+    //    valuesportal.com/?fallback=true -varasivulle. Sama kuin nordicnest 3.8.
+    //
+    // Mitattu 4.8. GETillä + selain-UA:lla (HEAD ja curlin oletus-UA saavat
+    // Workerilta paljaan etusivun, eivät seurantalinkkiä):
+    //   go/halti?sid=…&dest=https://www.halti.fi/products/<slug>
+    //   → to.halti.fi/t/t?a=1622199573…&epi=laplandgifts_com_…&url=…
+    //   → 200 + at_gd-eväste + meta-refresh täsmälleen tuotesivulle.
+    // Kontrolli ilman as=-parametria: "Invalid link", ei evästettä.
+    baseUrl: 'https://www.halti.fi',
+    // Toimituskäytäntö luettu 4.8.2026: vain Posti, Matkahuolto ja PostNord
+    // kotimaassa, "Ahvenanmaalle toimitukset eivät ole mahdollisia" — ei
+    // yhtään ulkomaan toimitustapaa. Vyöhyke on siis fi, ei eu. (halti.com
+    // toimitti EU:hun, mutta siihen kauppaan ei ole affiliate-ohjelmaa.)
+    shipsTo: 'fi',
+    workerRoute: 'halti',
+    verifiedAt: '2026-08-04',
   },
   makia: {
     id: 'makia',

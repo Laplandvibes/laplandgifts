@@ -53,8 +53,10 @@ export const OCCASION_PICKS: string[][] = [
     'arctic-power-berries-blueberry-powder',
   ],
   // Yrityslahjat: yksi puukko eikä kolme. Kuusi eri valmistajaa ja neljä
-  // kategoriaa, hinnat 13–175 €, jotta samasta listasta löytyy sekä
-  // messulahja että avainasiakkaan lahja.
+  // kategoriaa, hinnat 13–250 €, jotta samasta listasta löytyy sekä
+  // messulahja että avainasiakkaan lahja. (Yläraja oli 175 € niin kauan kuin
+  // Tokoi DX luettiin halti.com-kaupan alennushinnalla; halti.fi:n hinta on
+  // 250 €, ks. products.ts ja partners.ts 4.8.2026.)
   [
     'marttiini-lapinleuku-255',
     'halti-tokoi-dx-jacket',

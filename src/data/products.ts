@@ -459,13 +459,13 @@ export const PRODUCTS: Product[] = [
       en: 'A weatherproof shell with every seam taped, a light lining and an adjustable hood, cut loosely enough to layer a wool jumper underneath. Halti delivers within the EU only.',
       fi: 'Kuoritakki, jonka kaikki saumat on teipattu ja jossa on kevyt vuori ja säädettävä huppu. Väljä leikkaus jättää alle tilaa villapaidalle. Halti toimittaa vain EU:n sisälle.',
     },
-    priceFrom: 175,
+    priceFrom: 250,
     currency: 'EUR',
-    priceCheckedAt: '2026-07-31',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-tokoi-dx-jacket',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/tokoi-dx-jacket-mens',
+    partnerProductUrl: 'https://www.halti.fi/products/tokoi-dx-takki-miesten',
     featured: true,
     details: {
       specs: [
@@ -519,8 +519,8 @@ export const PRODUCTS: Product[] = [
           },
         },
       ],
-      sourceUrl: 'https://halti.com/products/tokoi-dx-jacket-mens',
-      fetchedAt: '2026-08-01',
+      sourceUrl: 'https://www.halti.fi/products/tokoi-dx-takki-miesten',
+      fetchedAt: '2026-08-04',
     },
   },
   {
@@ -644,11 +644,11 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 30,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-kroka-mitten',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/kroka-ii-mitten',
+    partnerProductUrl: 'https://www.halti.fi/products/kroka-ii-rukkaset',
     details: {
       specs: [
         {
@@ -682,8 +682,8 @@ export const PRODUCTS: Product[] = [
           value: { en: '084-0757', fi: '084-0757' },
         },
       ],
-      sourceUrl: 'https://halti.com/products/kroka-ii-mitten',
-      fetchedAt: '2026-08-01',
+      sourceUrl: 'https://www.halti.fi/products/kroka-ii-rukkaset',
+      fetchedAt: '2026-08-04',
     },
   },
   {
@@ -700,11 +700,11 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 25,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-tunturit-ski-socks',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/tunturit-ski-socks',
+    partnerProductUrl: 'https://www.halti.fi/products/tunturit-laskettelusukat',
     details: {
       specs: [
         {
@@ -745,8 +745,8 @@ export const PRODUCTS: Product[] = [
           value: { en: '087-0471', fi: '087-0471' },
         },
       ],
-      sourceUrl: 'https://halti.com/products/tunturit-ski-socks',
-      fetchedAt: '2026-08-01',
+      sourceUrl: 'https://www.halti.fi/products/tunturit-laskettelusukat',
+      fetchedAt: '2026-08-04',
     },
   },
   {
@@ -3235,11 +3235,11 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 130,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-02',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-hossa-baselayer-men',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/hossa-ii-merino-base-layer-set-mens',
+    partnerProductUrl: 'https://www.halti.fi/products/hossa-ii-merino-kerrasto-miesten',
     featured: true,
     details: {
       specs: [
@@ -3257,8 +3257,8 @@ export const PRODUCTS: Product[] = [
         },
         { key: 'care', value: { en: 'Wash inside out', fi: 'Pese nurinpäin' } },
       ],
-      sourceUrl: 'https://halti.com/products/hossa-ii-merino-base-layer-set-mens',
-      fetchedAt: '2026-08-02',
+      sourceUrl: 'https://www.halti.fi/products/hossa-ii-merino-kerrasto-miesten',
+      fetchedAt: '2026-08-04',
     },
   },
   {
@@ -3275,11 +3275,11 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 130,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-02',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-hossa-baselayer-women',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/hossa-ii-merino-base-layer-set-womens',
+    partnerProductUrl: 'https://www.halti.fi/products/hossa-ii-merino-kerrasto-naisten',
     featured: true,
     details: {
       specs: [
@@ -3297,8 +3297,8 @@ export const PRODUCTS: Product[] = [
         },
         { key: 'care', value: { en: 'Wash inside out', fi: 'Pese nurinpäin' } },
       ],
-      sourceUrl: 'https://halti.com/products/hossa-ii-merino-base-layer-set-womens',
-      fetchedAt: '2026-08-02',
+      sourceUrl: 'https://www.halti.fi/products/hossa-ii-merino-kerrasto-naisten',
+      fetchedAt: '2026-08-04',
     },
   },
   {
@@ -3313,13 +3313,13 @@ export const PRODUCTS: Product[] = [
       en: 'Waffle knit that traps air without adding bulk under a shell. This is the layer between the merino and the parka, and leaving it out is why people come back cold.',
       fi: 'Vohvelineulos, joka sitoo ilmaa kasvattamatta massaa kuoritakin alla. Tämä on se kerros merinon ja toppatakin välissä, ja sen pois jättäminen on syy siihen miksi retkeltä palataan palelevana.',
     },
-    priceFrom: 70,
+    priceFrom: 100,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-02',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-heatgrid-midlayer',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/heatgrid-layer-jacket-mens',
+    partnerProductUrl: 'https://www.halti.fi/products/heatgrid-valitakki-miesten',
     details: {
       specs: [
         {
@@ -3337,8 +3337,8 @@ export const PRODUCTS: Product[] = [
           },
         },
       ],
-      sourceUrl: 'https://halti.com/products/heatgrid-layer-jacket-mens',
-      fetchedAt: '2026-08-02',
+      sourceUrl: 'https://www.halti.fi/products/heatgrid-valitakki-miesten',
+      fetchedAt: '2026-08-04',
     },
   },
   {
@@ -3353,13 +3353,13 @@ export const PRODUCTS: Product[] = [
       en: 'A three layer shell rated 20 000 mm waterproof and 30 000 g breathable. Those two numbers matter in different directions: the first keeps sleet out, the second lets the sweat from an uphill walk escape instead of freezing inside.',
       fi: 'Kolmikerroksinen kuoritakki, vedenpitävyys 20 000 mm ja hengittävyys 30 000 g. Luvut vaikuttavat eri suuntiin: ensimmäinen pitää räntäsateen ulkona, toinen päästää ylämäen hien ulos sen sijaan että se jäätyisi sisäpuolelle.',
     },
-    priceFrom: 196,
+    priceFrom: 280,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-02',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-taival-dx-jacket',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/taival-dx-3l-jacket-mens',
+    partnerProductUrl: 'https://www.halti.fi/products/taival-dx-3l-takki-miesten',
     details: {
       specs: [
         {
@@ -3380,8 +3380,8 @@ export const PRODUCTS: Product[] = [
           value: { en: '30 000 g/m²/24 h', fi: '30 000 g/m²/24 h' },
         },
       ],
-      sourceUrl: 'https://halti.com/products/taival-dx-3l-jacket-mens',
-      fetchedAt: '2026-08-02',
+      sourceUrl: 'https://www.halti.fi/products/taival-dx-3l-takki-miesten',
+      fetchedAt: '2026-08-04',
     },
   },
   {
@@ -3398,11 +3398,11 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 100,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-02',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-sykli-ski-gloves',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/sykli-ski-gloves',
+    partnerProductUrl: 'https://www.halti.fi/products/sykli-lasketteluhanskat',
     details: {
       specs: [
         {
@@ -3423,8 +3423,8 @@ export const PRODUCTS: Product[] = [
           value: { en: '15 000 mm / 15 000 g/m²/24 h', fi: '15 000 mm / 15 000 g/m²/24 h' },
         },
       ],
-      sourceUrl: 'https://halti.com/products/sykli-ski-gloves',
-      fetchedAt: '2026-08-02',
+      sourceUrl: 'https://www.halti.fi/products/sykli-lasketteluhanskat',
+      fetchedAt: '2026-08-04',
     },
   },
   {
@@ -3441,11 +3441,11 @@ export const PRODUCTS: Product[] = [
     },
     priceFrom: 30,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-02',
+    priceCheckedAt: '2026-08-04',
     image: 'prod-halti-merino-socks-2pack',
     imageIsPartner: true,
     partnerId: 'halti',
-    partnerProductUrl: 'https://halti.com/products/merino-wool-socks-2-pack',
+    partnerProductUrl: 'https://www.halti.fi/products/merinovillasukat-2-paria',
     details: {
       specs: [
         {
@@ -3462,8 +3462,8 @@ export const PRODUCTS: Product[] = [
         },
         { key: 'origin', value: { en: 'Made in Europe', fi: 'Valmistettu Euroopassa' } },
       ],
-      sourceUrl: 'https://halti.com/products/merino-wool-socks-2-pack',
-      fetchedAt: '2026-08-02',
+      sourceUrl: 'https://www.halti.fi/products/merinovillasukat-2-paria',
+      fetchedAt: '2026-08-04',
     },
   },
 

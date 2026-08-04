@@ -30,15 +30,47 @@ describe('partnerHref', () => {
     expect(u.searchParams.get('utm_source')).toBe('laplandvibes')
   })
 
-  it('vie Haltin halti.com-ohjelmaan, ei halti.fi-ohjelmaan', () => {
-    // 🔴 Adtractionissa on kaksi Halti-ohjelmaa saman to.halti.fi-domainin
-    // takana: `halti` = halti.fi (a=1622199573), `halticom` = halti.com
-    // (a=1622204962). Tuotteet ovat halti.com-kaupassa. Väärä reitti ei kaadu
-    // eikä näy asiakkaalle — klikki vain menee ohjelmaan jota kauppa ei hyvitä.
+  it('vie Haltin ainoaan ohjelmaan ja www.halti.fi-kauppaan', () => {
+    // 🔴🔴 Tässä testissä luki 2.–4.8.2026 päinvastoin: että reitin on oltava
+    // `halticom` ja kohteen halti.com. Testi meni vihreänä läpi koko ajan,
+    // vaikka jokainen Haltin ostonappi tuotannossa palautti Adtractionin
+    // sivun "Invalid link". Testi tarkisti linkin MUODON, ei sitä kelpaako
+    // se verkostolle — ja lukitsi väärän uskomuksen paikalleen.
+    //
+    // Todellisuus: Halti-ohjelmia on YKSI (adId 1622199573), ja se on
+    // FI-ohjelma, joka hyväksyy vain www.halti.fi-syvälinkkejä. Sekä väärä
+    // ohjelmatunnus että väärä kohdedomain ovat mykkiä vikoja: build menee
+    // läpi, sivu näyttää oikealta, vain ostaja ei päädy tuotteeseen.
+    //
+    // Ketjun voi mitata: node scripts/verify_adtraction_routes.mjs --live
     const p = PARTNERS.halti
-    const u = new URL(partnerHref(p, 'https://halti.com/products/takki', 'gifts_halti_takki'))
-    expect(u.pathname).toBe('/go/halticom')
-    expect(u.searchParams.get('dest')).toBe('https://halti.com/products/takki')
+    const u = new URL(
+      partnerHref(p, 'https://www.halti.fi/products/tokoi-dx-takki-miesten', 'p_halti_tokoi'),
+    )
+    expect(u.pathname).toBe('/go/halti')
+    expect(u.searchParams.get('dest')).toBe('https://www.halti.fi/products/tokoi-dx-takki-miesten')
+  })
+
+  it('yksikään kumppani ei linkitä kauppaan jota se ei itse mainosta', () => {
+    // Vahti bugille, joka ei näy mistään muualta: kumppanin baseUrl kertoo
+    // minkä kaupan hinnat ja tuotetiedot sivulla luvataan, ja affiliate-ohjelma
+    // hyvittää vain oman markkinansa domainin. Jos nämä eroavat, klikki
+    // ohjautuu verkoston varasivulle (nordicnest 3.8., halti 2.–4.8.) — 200 OK,
+    // ei virhettä lokissa, ei tuotetta ostajalle.
+    const KNOWN_SHOP_HOSTS: Record<string, string> = {
+      halti: 'www.halti.fi',
+      makia: 'makia.com',
+      northoutdoor: 'northoutdoor.com',
+      scandinavianoutdoor: 'scandinavianoutdoor.fi',
+      nordicnest: 'www.nordicnest.fi',
+      ruohonjuuri: 'www.ruohonjuuri.fi',
+      elamyslahjat: 'www.elamyslahjat.fi',
+    }
+    for (const [id, expectedHost] of Object.entries(KNOWN_SHOP_HOSTS)) {
+      const p = PARTNERS[id]
+      expect(p, `kumppani ${id} puuttuu`).toBeDefined()
+      expect(new URL(p.baseUrl).host, `${id}.baseUrl osoittaa väärään kauppaan`).toBe(expectedHost)
+    }
   })
 
   it('yksikään kumppani ei kirjoita verkoston linkkiä lähdekoodiin', () => {
