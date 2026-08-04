@@ -22,17 +22,33 @@ export default defineConfig({
     rollupOptions: {
       output: {
         /**
-         * Kaikki assetit alihakemistoon /static/c2. Syy on operatiivinen:
+         * 🔴 c2 → c3 4.8.2026. Deployn jälkeen apex renderöi tyhjää: selain oli
+         * ehtinyt pyytää /static/c2/copy.fi-*.js ennen kuin tiedosto oli
+         * levinnyt reunalle, jolloin SPA-fallback vastasi HTML:llä statuksella
+         * 200 ja se tallentui asset-URLin alle vuodeksi (max-age=31536000).
+         * Reuna toipui s-maxagen ansiosta 10 minuutissa, mutta SELAIMEN kopio
+         * ei toivu — moduulin dynaaminen import kaatuu MIME-tarkistukseen,
+         * CopyGate ei avaudu (App.tsx) ja koko sivu jää tyhjäksi. curl ja
+         * fetch(cache:'no-store') näyttävät oikean JS:n, joten vika ei näy
+         * millään palvelinpuolen mittarilla — vain selaimen välimuistista.
+         * s-maxage korjaa reunan, ei asiakasta; nimiavaruuden vaihto on ainoa
+         * tapa saada jo myrkyttynyt selain hakemaan tiedosto uudelleen.
+         *
+         * Kaikki assetit alihakemistoon /static/c3. Syy on operatiivinen:
          * yksittäisiä /static-osoitteita oli myrkyttynyt Cloudflaren
          * reunavälimuistiin (200 + text/html) vanhalla immutable-otsakkeella,
          * eikä niitä voi purgeta ilman zone-oikeuksia eikä vanhentaa
          * takautuvasti. Nimiavaruuden vaihto on ainoa varma pako. Uudet
          * vastaukset tallentuvat s-maxage=600:lla, joten sama ei toistu.
-         * Jos joudut tekemään tämän uudestaan, nosta c2 -> c3.
+         * Jos joudut tekemään tämän uudestaan, nosta c3 -> c4.
+         *
+         * 🔴 JA VÄLTÄ SYY: älä avaa apexia selaimessa deployn jälkeen ennen
+         * kuin levinneisyys on todettu deploy-URLista JA curlilla apexin
+         * asset-osoitteista. Liian aikainen selainpyyntö AIHEUTTAA tämän.
          */
-        chunkFileNames: 'static/c2/[name]-[hash].js',
-        entryFileNames: 'static/c2/[name]-[hash].js',
-        assetFileNames: 'static/c2/[name]-[hash][extname]',
+        chunkFileNames: 'static/c3/[name]-[hash].js',
+        entryFileNames: 'static/c3/[name]-[hash].js',
+        assetFileNames: 'static/c3/[name]-[hash][extname]',
       },
     },
   },
