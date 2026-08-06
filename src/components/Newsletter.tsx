@@ -57,7 +57,7 @@ function Newsletter() {
             <p className="text-gray font-medium text-lg mb-6">{t.successHeading}</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="/guides/The-Secret-Craft-Guide.pdf"
+                href="/guides/The-Secret-Craft-Guide-2026.pdf"
                 download
                 className="inline-flex items-center justify-center gap-2 bg-night text-white px-6 py-3 rounded-full font-medium hover:bg-night/90 transition-colors"
               >
@@ -66,7 +66,7 @@ function Newsletter() {
                 <Download className="w-4 h-4" />
               </a>
               <a
-                href="/guides/7-Days-of-Lapland-Magic.pdf"
+                href="/guides/7-Days-of-Lapland-Magic-2026a.pdf"
                 download
                 className="inline-flex items-center justify-center gap-2 bg-amber text-white px-6 py-3 rounded-full font-medium hover:bg-amber/90 transition-colors"
               >

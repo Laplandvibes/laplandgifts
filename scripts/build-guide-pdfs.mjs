@@ -436,8 +436,8 @@ ${dayPage(10, 13, 7, 'Souvenirs and departure', 'hero-shop', 50, `
 
 /* ────────────────────────────── renderöinti ──────────────────────────── */
 const JOBS = [
-  ['The-Secret-Craft-Guide', craft, 9],
-  ['7-Days-of-Lapland-Magic', days, 13],
+  ['The-Secret-Craft-Guide-2026', craft, 9],
+  ['7-Days-of-Lapland-Magic-2026a', days, 13],
 ]
 
 const browser = await puppeteer.launch({

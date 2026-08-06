@@ -10,7 +10,11 @@
   Cache-Control: public, max-age=31536000, immutable
 
 /guides/*
-  Cache-Control: public, max-age=86400
+  # 🔴 s-maxage 600, sama syy kuin /static/*-säännössä alla. Mitattu 6.8.2026:
+  # apex-pyyntö 5 s deployn jälkeen tallensi SPA-kuoren PDF:n nimen alle, ja
+  # ilman s-maxagea väärä vastaus olisi istunut reunalla vuorokauden (86400).
+  # Selain saa pitää PDF:n tunnin; CDN:n kopio vanhenee 10 minuutissa.
+  Cache-Control: public, max-age=3600, s-maxage=600
 
 /static/*
   # 🔴 EI immutable. Tiedostonimi on sisältöhash, joten selain saa pitää sen
