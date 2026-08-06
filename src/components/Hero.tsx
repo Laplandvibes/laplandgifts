@@ -83,7 +83,7 @@ export default function Hero() {
               "suomalaiset lahjat" katkesi kolmannelle riville yksinäiseksi
               sanaksi. Mitattu selaimesta kymmenellä leveydellä, ei arvattu. */}
           <h1 className="mt-5 font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl">
-            {s.home.heroTitle} <span className="block text-amber">{s.home.heroTitleAccent}</span>
+            {s.home.heroTitle} <span className="block text-vibe-pink drop-shadow-[0_0_40px_rgba(236,72,153,0.8)]">{s.home.heroTitleAccent}</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
             {s.home.heroLead}

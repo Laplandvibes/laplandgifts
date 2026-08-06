@@ -129,7 +129,7 @@ export default function ProductSearch({
     <div ref={boxRef} className={`relative ${wide ? 'w-full' : 'w-full max-w-xs'}`}>
       <div className="relative">
         <Search
-          className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"
+          className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-white/60"
           aria-hidden="true"
         />
         <input
@@ -149,7 +149,7 @@ export default function ProductSearch({
           aria-autocomplete="list"
           // 16 px estää iOS Safaria zoomaamasta koko sivua kenttään
           // kosketettaessa, sama sääntö kuin toimitusmaavalitsimessa.
-          className="min-h-11 w-full rounded-full border border-line bg-card pl-9 pr-9 text-base text-gray placeholder:text-muted focus:border-amber focus:outline-none focus:ring-2 focus:ring-amber/40 md:min-h-9 md:text-sm"
+          className="min-h-11 w-full rounded-full border border-white/20 bg-white/10 pl-9 pr-9 text-base text-white placeholder:text-white/50 focus:border-vibe-pink focus:outline-none focus:ring-2 focus:ring-vibe-pink/40 md:min-h-9 md:text-sm"
         />
         {q && (
           <button
@@ -159,7 +159,7 @@ export default function ProductSearch({
               setOpen(false)
             }}
             aria-label={n.searchClear}
-            className="absolute right-2 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-muted hover:text-gray"
+            className="absolute right-2 top-1/2 inline-flex h-8 w-8 -translate-y-1/2 items-center justify-center rounded-full text-white/60 hover:text-white"
           >
             <X className="h-4 w-4" aria-hidden="true" />
           </button>

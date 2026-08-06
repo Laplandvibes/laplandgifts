@@ -63,7 +63,7 @@ export default function LangSwitcher() {
         value={lang}
         onChange={(e) => switchTo(e.target.value as Lang)}
         aria-label="Language"
-        className="min-h-11 appearance-none rounded-full border border-line bg-card px-3 pr-7 text-base font-semibold uppercase text-gray sm:hidden"
+        className="min-h-11 appearance-none rounded-full border border-white/20 bg-white/10 px-3 pr-7 text-base font-semibold uppercase text-white sm:hidden"
       >
         {ALL_LANGS.map((l) => (
           <option key={l.code} value={l.code}>{l.label}</option>
@@ -75,14 +75,14 @@ export default function LangSwitcher() {
         aria-label="Language"
         // Myös tämä on 16 px: iPad Safari zoomaa kenttään aivan kuten puhelin,
         // ja sm+ alkaa jo 640 pikselistä.
-        className="hidden h-9 appearance-none rounded-full border border-line bg-card px-3 pr-7 text-base font-semibold text-gray sm:block"
+        className="hidden h-9 appearance-none rounded-full border border-white/20 bg-white/10 px-3 pr-7 text-base font-semibold text-white sm:block"
       >
         {ALL_LANGS.map((l) => (
           <option key={l.code} value={l.code}>{l.native}</option>
         ))}
       </select>
       <ChevronDown
-        className="pointer-events-none absolute right-2 top-1/2 h-3 w-3 -translate-y-1/2 text-gray"
+        className="pointer-events-none absolute right-2 top-1/2 h-3 w-3 -translate-y-1/2 text-white/70"
         aria-hidden="true"
       />
     </div>

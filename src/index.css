@@ -29,7 +29,16 @@
   --font-logo: 'Bebas Neue', 'Arial Narrow', sans-serif;
   --color-pink: #EC4899;
   --color-gray: #1F2937;
-  --color-amber: #F59E0B;
+  /* 🔴 BRANDIVARIT (Vesa 6.8.2026: "kyllä tämä pitää saada meidän brändi
+   * väreihin, og kuva on jo sitä, mutta tämä ei"). Sivun korostus oli amber
+   * #F59E0B, joka ei ole verkoston väri. Token kantaa yhä nimeä `amber`,
+   * koska sitä käyttää 23 tiedostoa — ARVO on nyt vibe-pinkin syvä porras
+   * #DB2777, sama jonka hoteldeals valitsi CTA-pillereihinsä: valkoinen
+   * teksti #EC4899:n päällä on 3.53:1 (AA kaatuu pienessä koossa),
+   * #DB2777:n päällä 4.63:1. Kirkas #EC4899 on isoissa pinnoissa
+   * (`text-vibe-pink`), syvä #DB2777 pienessä tekstissä ja nappien
+   * täytöissä. Nimen vaihto `pink-deep`iksi on erillinen mekaaninen työ. */
+  --color-amber: #DB2777;
   --color-white: #F9FAFB;
   --color-night: #0F172A;
   /* Kaupalliset pinnat: tuotekuva on sivun kirkkain elementti, joten

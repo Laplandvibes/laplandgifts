@@ -17,9 +17,9 @@ function Logo() {
           kutistuu mobiilissa. Työpöydällä pääpalkissa on tilaa, joten
           sanamerkki saa kantaa palkin kokoa. */}
       <span className="font-logo text-2xl leading-none tracking-wide sm:text-3xl lg:text-4xl">
-        <span className="text-pink">#</span>
-        <span className="text-gray">LAPLAND</span>
-        <span className="text-amber">GIFTS</span>
+        <span className="text-vibe-pink">#</span>
+        <span className="text-white">LAPLAND</span>
+        <span className="text-vibe-pink">GIFTS</span>
       </span>
     </Link>
   )

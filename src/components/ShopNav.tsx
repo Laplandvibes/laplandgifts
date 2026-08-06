@@ -94,7 +94,7 @@ export default function ShopNav() {
   const countrySelect = (wrapClass: string, selectClass: string, visibleLabel = false) => (
     <label className={`min-w-0 items-center gap-2 ${wrapClass}`}>
       {visibleLabel ? (
-        <span className="shrink-0 text-sm font-semibold text-muted">{t.shipping.selectorLabel}</span>
+        <span className="shrink-0 text-sm font-semibold text-white/60">{t.shipping.selectorLabel}</span>
       ) : (
         <>
           <span className="sr-only">{t.shipping.selectorLabel}</span>
@@ -104,7 +104,7 @@ export default function ShopNav() {
       <select
         value={country}
         onChange={(e) => setCountry(e.target.value)}
-        className={`min-w-0 rounded-full border border-line bg-card text-gray ${selectClass}`}
+        className={`min-w-0 rounded-full border border-white/20 bg-white/10 text-white ${selectClass}`}
       >
         <option value="">
           {visibleLabel ? t.shipping.selectorAll : t.shipping.selectorLabel}
@@ -151,7 +151,7 @@ export default function ShopNav() {
           pääpalkki (z-50) jäi sen päälle ja söi valikon ylimmän rivin.
           Palkit eivät voi peittää toisiaan: apupalkki on virtauksessa ennen
           headeria, joten se on jo rullautunut pois kun header kiinnittyy. */}
-      <header className="sticky top-0 z-50 border-b border-line bg-card/95 backdrop-blur">
+      <header className="sticky top-0 z-50 border-b border-white/10 bg-night/95 text-white backdrop-blur">
         {/* ── RIVI 1: sanamerkki, haku, toimitusmaa ja kieli ─────────────── */}
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3">
           {/* Logo sisältää jo oman Linkin etusivulle. Ylimääräinen Link-kääre
@@ -187,7 +187,7 @@ export default function ShopNav() {
             aria-expanded={open}
             aria-controls="shop-menu"
             aria-label={open ? n.closeMenu : n.openMenu}
-            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-line px-4 text-sm font-semibold text-gray lg:hidden"
+            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-white/25 px-4 text-sm font-semibold text-white lg:hidden"
           >
             {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
             {n.menuLabel}
@@ -195,7 +195,7 @@ export default function ShopNav() {
         </div>
 
         {/* ── RIVI 2: kategoriat ja toissijaiset linkit, vain lg+ ────────── */}
-        <div className="hidden border-t border-line/60 lg:block">
+        <div className="hidden border-t border-white/10 lg:block">
           <div className="mx-auto flex max-w-7xl items-center gap-x-6 px-4">
             <nav
               aria-label={n.shopNavLabel}
@@ -209,8 +209,8 @@ export default function ShopNav() {
                   to={c.to}
                   aria-current={active ? 'page' : undefined}
                   title={c.full}
-                  className={`relative inline-flex min-h-11 items-center whitespace-nowrap text-[15px] font-medium transition-colors hover:text-amber ${
-                    active ? 'text-amber' : 'text-gray'
+                  className={`relative inline-flex min-h-11 items-center whitespace-nowrap text-[15px] font-medium transition-colors hover:text-vibe-pink ${
+                    active ? 'text-vibe-pink' : 'text-white/85'
                   }`}
                 >
                   {c.short}
@@ -219,7 +219,7 @@ export default function ShopNav() {
                       harmaasta (väri ei saa olla ainoa erottava tekijä). */}
                   <span
                     aria-hidden="true"
-                    className={`absolute inset-x-0 -bottom-px h-0.5 rounded-full bg-amber transition-opacity ${
+                    className={`absolute inset-x-0 -bottom-px h-0.5 rounded-full bg-vibe-pink transition-opacity ${
                       active ? 'opacity-100' : 'opacity-0'
                     }`}
                   />
@@ -240,8 +240,8 @@ export default function ShopNav() {
                     key={s.key}
                     to={s.to}
                     aria-current={here === s.slug ? 'page' : undefined}
-                    className={`inline-flex min-h-11 items-center text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-amber ${
-                      here === s.slug ? 'text-amber' : 'text-muted'
+                    className={`inline-flex min-h-11 items-center text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-vibe-pink ${
+                      here === s.slug ? 'text-vibe-pink' : 'text-white/55'
                     }`}
                   >
                     {s.label}
@@ -249,7 +249,7 @@ export default function ShopNav() {
                 ))}
               </nav>
               <div className="lv-eco-compact shrink-0">
-                <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="light" />
+                <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
               </div>
             </div>
           </div>
@@ -263,12 +263,12 @@ export default function ShopNav() {
         {open && (
           <div
             id="shop-menu"
-            className="max-h-[calc(100svh-7rem)] overflow-y-auto border-t border-line bg-card lg:hidden"
+            className="max-h-[calc(100svh-7rem)] overflow-y-auto border-t border-white/10 bg-night lg:hidden"
           >
             {/* Haku on paneelin ensimmäinen elementti: mobiilissa kategorian
                 arvaaminen on työläämpää kuin työpöydällä, koska koko listaa ei
                 näe kerralla. */}
-            <div className="mx-auto max-w-7xl border-b border-line px-4 py-3">
+            <div className="mx-auto max-w-7xl border-b border-white/10 px-4 py-3">
               <ProductSearch variant="panel" onNavigate={() => setOpen(false)} />
             </div>
             <nav aria-label={n.shopNavLabel} className="mx-auto max-w-7xl px-4 py-2">
@@ -280,8 +280,8 @@ export default function ShopNav() {
                   // avatun sivun päälle eikä sisällöstä näkynyt mitään.
                   onClick={() => setOpen(false)}
                   aria-current={here === c.slug ? 'page' : undefined}
-                  className={`flex min-h-12 items-center border-b border-line/60 text-base font-medium last:border-0 ${
-                    here === c.slug ? 'text-amber' : 'text-gray'
+                  className={`flex min-h-12 items-center border-b border-white/10 text-base font-medium last:border-0 ${
+                    here === c.slug ? 'text-vibe-pink' : 'text-white/85'
                   }`}
                 >
                   {c.full}
@@ -290,7 +290,7 @@ export default function ShopNav() {
             </nav>
             <nav
               aria-label={n.utilityNavLabel}
-              className="mx-auto max-w-7xl border-t border-line px-4 py-2"
+              className="mx-auto max-w-7xl border-t border-white/10 px-4 py-2"
             >
               {secondary.map((s) => (
                 <Link
@@ -302,7 +302,7 @@ export default function ShopNav() {
                   // kaksi näyttämään pois käytöstä olevilta vaikka ne ovat
                   // mobiilin ainoa reitti lahjaopas- ja toimitussivulle.
                   className={`flex min-h-12 items-center text-base font-medium ${
-                    here === s.slug ? 'text-amber' : 'text-gray'
+                    here === s.slug ? 'text-vibe-pink' : 'text-white/85'
                   }`}
                 >
                   {s.label}
@@ -313,9 +313,9 @@ export default function ShopNav() {
                 nyt poistettu; työpöydällä se on kategoriarivin oikeassa
                 reunassa, mobiilissa täällä. Ilman tätä koko muu verkosto
                 katoaisi puhelimelta. */}
-            <div className="mx-auto max-w-7xl border-t border-line px-4 py-3">
+            <div className="mx-auto max-w-7xl border-t border-white/10 px-4 py-3">
               <div className="lv-eco-compact">
-                <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="light" />
+                <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
               </div>
             </div>
             {/* Sama valitsin kuin ylärivillä, mutta näkyvällä labelilla ja
@@ -324,7 +324,7 @@ export default function ShopNav() {
                 toimitusmaa oikeasti vaihdetaan.
                 text-base = 16 px: pienempi koko saa iOS:n zoomaamaan kenttään. */}
             {countrySelect(
-              'mx-auto flex max-w-7xl flex-wrap border-t border-line px-4 py-3',
+              'mx-auto flex max-w-7xl flex-wrap border-t border-white/10 px-4 py-3',
               'min-h-11 flex-1 px-4 text-base',
               true,
             )}

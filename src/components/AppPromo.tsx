@@ -413,13 +413,13 @@ export function AppPromoHero() {
                 </h2>
 
                 {/* The scale is the argument, so it sits directly under the title. */}
-                <div className="mt-4 flex flex-wrap gap-x-6 gap-y-2.5">
+                <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5 sm:flex sm:flex-wrap sm:gap-x-6">
                   {FIGURES.map((n, i) => (
-                    <div key={n} className="flex items-baseline gap-1.5">
+                    <div key={n} className="flex items-baseline gap-1.5 min-w-0">
                       <span style={DISPLAY_FONT} className="tracking-wide text-[#EC4899] text-2xl sm:text-3xl leading-none">
                         {n}
                       </span>
-                      <span className="text-[#F9FAFB]/65 text-[11px] sm:text-xs">{c.stats[i]}</span>
+                      <span className="min-w-0 text-[#F9FAFB]/65 text-[11px] leading-tight sm:text-xs">{c.stats[i]}</span>
                     </div>
                   ))}
                 </div>
@@ -448,8 +448,8 @@ export function AppPromoHero() {
                 different lengths and read as a heap. Two aligned columns, one item
                 per cell, same rhythm on every row. */}
             <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
-                {[...c.features].sort((a, b) => a.length - b.length).map((f) => (
-                <li key={f} className="flex items-start gap-2.5 text-[13px] leading-[1.45] text-[#F9FAFB]/85">
+                {[...c.features].sort((a, b) => a.length - b.length).map((f, fi) => (
+                <li key={f} className={`${fi >= 4 ? 'hidden sm:flex' : 'flex'} items-start gap-2.5 text-[13px] leading-[1.45] text-[#F9FAFB]/85`}>
                   <span aria-hidden className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#EC4899]" />
                   <span>{f}</span>
                 </li>
