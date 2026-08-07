@@ -191,7 +191,7 @@ const de: ChromeCopy = {
       { name: 'Geschenke-Ratgeber', href: '/#gift-guide' },
       { name: 'Kostenlose Ratgeber', href: '/#guides' },
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
-      { name: 'LaplandActivities', href: 'https://laplandactivities.online' },
+      { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
     editorialNote: 'Unabhängig betreut von Lapeso Oy in Finnisch-Lappland · zuletzt überprüft Mai 2026 · wir kooperieren direkt mit ausgewählten Handwerkern und Geschäften und legen das auf jeder Produktseite offen.',
     extraLegalUnsub: 'Newsletter abbestellen',

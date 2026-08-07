@@ -191,7 +191,7 @@ const ja: ChromeCopy = {
       { name: 'ギフトガイド', href: '/#gift-guide' },
       { name: '無料ガイド', href: '/#guides' },
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
-      { name: 'LaplandActivities', href: 'https://laplandactivities.online' },
+      { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
     editorialNote: 'フィンランド・ラップランドのLapeso Oyによって独立運営 · 最終確認 2026年5月 · 選定した職人や店舗と直接提携し、各商品ページで明示しています。',
     extraLegalUnsub: '配信解除',

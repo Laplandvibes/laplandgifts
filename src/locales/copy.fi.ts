@@ -191,7 +191,7 @@ const fi: ChromeCopy = {
       { name: 'Lahjaopas', href: '/#gift-guide' },
       { name: 'Ilmaiset oppaat', href: '/#guides' },
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
-      { name: 'LaplandActivities', href: 'https://laplandactivities.online' },
+      { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
     editorialNote: 'Riippumattomasti ylläpitää Lapeso Oy Suomen Lapista · viimeksi tarkistettu touko 2026 · teemme yhteistyötä valittujen käsityöläisten ja kauppojen kanssa, läpinäkyvästi jokaisella tuotesivulla.',
     extraLegalUnsub: 'Peruuta tilaus',

@@ -191,7 +191,7 @@ const nl: ChromeCopy = {
       { name: 'Cadeaugids', href: '/#gift-guide' },
       { name: 'Gratis gidsen', href: '/#guides' },
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
-      { name: 'LaplandActivities', href: 'https://laplandactivities.online' },
+      { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
     editorialNote: 'Onafhankelijk beheerd door Lapeso Oy in Fins Lapland · laatst beoordeeld in mei 2026 · wij werken rechtstreeks samen met geselecteerde ambachtslieden en winkels, met volledige openheid op elke productpagina.',
     extraLegalUnsub: 'Uitschrijven',

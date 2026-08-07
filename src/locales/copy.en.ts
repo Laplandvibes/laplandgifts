@@ -191,7 +191,7 @@ const en: ChromeCopy = {
       { name: 'Gift Guide', href: '/#gift-guide' },
       { name: 'Free Guides', href: '/#guides' },
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
-      { name: 'LaplandActivities', href: 'https://laplandactivities.online' },
+      { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
     editorialNote: 'Independently maintained by Lapeso Oy in Finnish Lapland · last reviewed May 2026 · we partner with selected artisans and shops directly, with full disclosure on every product page.',
     extraLegalUnsub: 'Unsubscribe',
