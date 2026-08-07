@@ -96,6 +96,16 @@
  * DOM:ista — buildi meni läpi ja markup näytti oikealta.
  */
 @layer base {
+  /* 🔴 Tumman headerin <select> sai text-white-luokan, mutta Windowsin
+   * Chrome piirtää natiivin PUDOTUSLISTAN valkoisella pohjalla ja perii
+   * tekstivärin — vaihtoehdot olivat valkoista valkoisella ja lista näytti
+   * tyhjältä (Vesa 6.8.: "vetolaatikot ei näy"). Optionit pakotetaan aina
+   * tummiksi vaalealla pohjalla; itse kentän suljettu tila säilyy tummana. */
+  select option {
+    color: #1F2937;
+    background-color: #FFFFFF;
+  }
+
   body {
     font-family: var(--font-body);
     color: var(--color-gray);

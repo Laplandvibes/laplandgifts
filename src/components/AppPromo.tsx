@@ -413,9 +413,15 @@ export function AppPromoHero() {
                 </h2>
 
                 {/* The scale is the argument, so it sits directly under the title. */}
-                <div className="mt-4 grid grid-cols-2 gap-x-4 gap-y-2.5 sm:flex sm:flex-wrap sm:gap-x-6">
+                {/* 🔴 Mobiilissa numero on OMALLA rivillään ja seloste sen
+                    alla (flex-col): 2x2-ruudukon solu on ~110 px leveä, ja
+                    kun numero ja pitkä suomenkielinen seloste jakoivat saman
+                    baseline-rivin, seloste rivittyi numeron viereen miten
+                    sattui (Vesa 6.8.: "luvut 32, 211 jne menee miten sattuu").
+                    sm:stä ylöspäin entinen rinnakkaisasettelu. */}
+                <div className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 sm:mt-4 sm:flex sm:flex-wrap sm:gap-x-6">
                   {FIGURES.map((n, i) => (
-                    <div key={n} className="flex items-baseline gap-1.5 min-w-0">
+                    <div key={n} className="flex min-w-0 flex-col gap-0.5 sm:flex-row sm:items-baseline sm:gap-1.5">
                       <span style={DISPLAY_FONT} className="tracking-wide text-[#EC4899] text-2xl sm:text-3xl leading-none">
                         {n}
                       </span>
@@ -449,7 +455,7 @@ export function AppPromoHero() {
                 per cell, same rhythm on every row. */}
             <ul className="mt-5 grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2.5">
                 {[...c.features].sort((a, b) => a.length - b.length).map((f, fi) => (
-                <li key={f} className={`${fi >= 4 ? 'hidden sm:flex' : 'flex'} items-start gap-2.5 text-[13px] leading-[1.45] text-[#F9FAFB]/85`}>
+                <li key={f} className={`${fi >= 2 ? 'hidden sm:flex' : 'flex'} items-start gap-2.5 text-[13px] leading-[1.45] text-[#F9FAFB]/85`}>
                   <span aria-hidden className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#EC4899]" />
                   <span>{f}</span>
                 </li>
@@ -459,7 +465,9 @@ export function AppPromoHero() {
             {/* 🔴 Literal green, not text-aurora-green: the blog remaps that
                 token to pink (#DB2777), and this card must not inherit any
                 site's palette decisions. */}
-            <p style={DISPLAY_FONT} className="mt-5 tracking-wide text-[#10B981] text-lg sm:text-xl leading-none">
+            {/* Hype-rivi vain sm:stä ylöspäin: mobiilikortti oli "aivan liian
+                korkea" (Vesa 6.8.), ja tämä rivi on sen halvin poistettava. */}
+            <p style={DISPLAY_FONT} className="mt-4 hidden tracking-wide text-[#10B981] text-lg sm:mt-5 sm:block sm:text-xl leading-none">
               {c.hype}
             </p>
 
