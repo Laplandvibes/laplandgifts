@@ -16,11 +16,12 @@ import { useLang, LANG_PREFIX } from '../i18n/useLang'
 // prerenderin kanssa: selain näytti eri otsikkoa kuin hakukone.
 import { HOME_META } from '../locales/homeMeta'
 import AdUnit from '../../../shared/ads/AdUnit'
-import ivaloAd from '../../../shared/ads/advertisers/ivalo'
+import IvaloLakeAd from '../components/IvaloLakeAd'
 import kultaCenterAd from '../../../shared/ads/advertisers/kultaCenter'
 import { trackAffiliateClick } from '../lib/analytics'
 import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots'
-import { AD_SLOTS } from '../data/adSlots'
+import { AD_SLOTS } from '../data/adSlots'
+
 import { AppPromoHero } from '../components/AppPromo';
 
 export default function Home() {
@@ -44,6 +45,12 @@ export default function Home() {
 
       <main>
         <Hero />
+        {/* App launch block, directly under the site's own opening. At the foot
+            of the page it measured 81 % down a 33 000 px front page, and an
+            announcement nobody scrolls to is not an announcement. */}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <AppPromoHero />
+        </div>
         {/* 🔴 Tuotteet ovat sivun ensimmäinen sisältöosio (Vesa 1.8.: "kyllähän
             tämä 'tuliaisia ja lahjoja kumppanikaupoista' pitäisi olla se millä
             sivu alkaa?"). Aiemmin nostot olivat neljäntenä, bannerin ja
@@ -61,15 +68,10 @@ export default function Home() {
         <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
         {/* IVALO.COM ad — independent design brands, gift context (shared/ads).
             Disclosure is footer-only on this site. */}
-        <div className="max-w-5xl mx-auto px-4 py-10">
-          <AdUnit
-            spec={ivaloAd}
-            sid="home_gifts_ivalo"
-            lang={lang}
-            variant="light"
-            onCtaClick={(specKey, sid, url) => trackAffiliateClick(specKey, `ad_unit:${sid}`, url)}
-          />
-        </div>
+        {/* Ivalon mainos koko jarvikuvan paalle (Vesa 6.8.). Sama sid ja
+            copy kuin ennen; vain ulkoasu vaihtui AdUnitista paikalliseen
+            koko kuvan komponenttiin. */}
+        <IvaloLakeAd lang={lang} />
         <GiftGuide />
         <ValueProp />
         <ShippingInfo />
@@ -91,9 +93,6 @@ export default function Home() {
 
       <Footer />
     </div>
-    {/* App launch block. Bottom of the page on purpose: the site's own
-        hero is what the search result promised. */}
-    <AppPromoHero />
     </>
   )
 }
