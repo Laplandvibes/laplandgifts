@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Guldsmycken, äkta guld och mineraler från hjärtat av Lapplands guldvaskningstradition.',
     tags: ['Guld', 'Mineraler'],
   },
+  'mailan-putiikki': {
+    description: 'Specialbutik för presenter och souvenirer vid korsningen i Äkäslompolo, den största i sitt slag på Ylläs. Grundad 1970.',
+    tags: ['Presenter', 'Souvenirer'],
+  },
+  'kuukkeli-shop': {
+    description: 'Souvenirer, lappländska delikatesser och textilier i Saariselkäs köpcentrum. Egna bärprodukter: sylt, gelé, såser och safter.',
+    tags: ['Delikatesser', 'Souvenirer'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Klädbutik i Enontekiö med Anar, Nanso, Rukka och Luhta, samt smycken och tryck.',
+    tags: ['Kläder', 'Smycken'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'Presentbutik från Rovaniemi, grundad 1987. Aarikka och Mumin, smycken, textilier och godsaker via nätbutiken.',
+    tags: ['Design', 'Presenter'],
+  },
+  'lappi-shop-levi': {
+    description: 'Lappituotes butik i centrala Levi: souvenirer, vilt- och bärkonserver, renhorn, puukko-knivar och kåsor.',
+    tags: ['Hantverk', 'Souvenirer'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Handgjort av Juha Reinola i äkta nordliga material: renhorn, masurbjörk, keloträ, renskinn och näver.',
+    tags: ['Hantverk', 'Renhorn'],
+  },
 }
 
 export default copy

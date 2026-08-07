@@ -9,9 +9,14 @@ import type { CategoryId } from './types'
  * Se säilyy `district`-kentässä, jotta osoitetieto ei katoa, mutta
  * ryhmittely menee Rovaniemen alle.
  */
-export type TownId = 'rovaniemi' | 'inari' | 'posio' | 'levi' | 'sodankyla'
+export type TownId =
+  | 'rovaniemi' | 'inari' | 'posio' | 'levi' | 'sodankyla'
+  | 'yllas' | 'saariselka' | 'enontekio' | 'utsjoki'
 
-export const TOWN_IDS: TownId[] = ['rovaniemi', 'inari', 'posio', 'levi', 'sodankyla']
+export const TOWN_IDS: TownId[] = [
+  'rovaniemi', 'inari', 'posio', 'levi', 'sodankyla',
+  'yllas', 'saariselka', 'enontekio', 'utsjoki',
+]
 
 export interface Boutique {
   /** URL-slug: /boutique/<slug>. */
@@ -65,6 +70,27 @@ export interface Boutique {
  * 🔴 Duodji Shop palauttaa nodelle 403 mutta on täysin kunnossa oikealla
  * selaimella. Botintorjunta ei ole kuollut linkki: älä poista sitä
  * automaattisen tarkistuksen perusteella.
+ *
+ * ── Laajennuskierros 2026-08-07: 20 ehdokasta, 6 läpäisi ──────────────────
+ * Hylätyt ja syyt, jotta samoja ei tutkita uudelleen:
+ *   Pieni Lankapuoti (Kemi)      TLS-kättely epäonnistuu
+ *   Gift Shop Näkkäläjärvi       ei vastaa
+ *   Otson Pesä (Enontekiö)       ei omaa sivua, vain pns.fi-yrityshakemistossa
+ *   Galdotieva (Enontekiö)       majoitusyritys, ei putiikki
+ *   Oarri (Enontekiö)            ECONNRESET kahdesti
+ *   Lappituote (Rovaniemi)       tukkuri; sen Levin myymälä on listattu
+ *   Rakkapuoti (Pyhätunturi)     rakkapuoti.fi on parkkisivu
+ *   Harianna Souvenirs (Luosto)  vain Facebook
+ *   Lahjapuoti Helmi (Keminmaa)  vain Facebook
+ *   Posion verkkokauppa          Posion KUNNAN asiointikauppa: pitäjähistoriaa,
+ *                                karttoja, vesipisteavaimia, lämmityspaikkoja
+ *
+ * 🔴 Meri-Lappi (Kemi, Tornio, Keminmaa) ja Pyhä-Luosto tuottivat NOLLA
+ * läpäissyttä. Enemmistöllä pienistä lappilaisista putiikeista ei ole omaa
+ * verkkosivua; ne ovat Facebookissa tai kunnan hakemistossa. Vesan linjaus
+ * 2026-08-07: **Facebook-sivu ei kelpaa linkkikohteeksi**, koska hakemisto
+ * lupaa viedä yrityksen omille sivuille. Loput kasvavat yrittäjäkampanjan
+ * kautta, jossa liikkeet ottavat itse yhteyttä.
  */
 export const BOUTIQUES: Boutique[] = [
   { slug: 'lauri-handicrafts', name: 'Lauri Handicrafts', town: 'rovaniemi',
@@ -121,6 +147,40 @@ export const BOUTIQUES: Boutique[] = [
   { slug: 'tankavaaran-kultakyla', name: 'Tankavaaran Kultakylä', town: 'sodankyla',
     district: 'Tankavaara', url: 'https://www.tankavaara.fi',
     hasOnlineStore: false, hasPhysicalStore: true, giftsCategory: 'design',
+    verifiedAt: '2026-08-07' },
+
+  // ── 2026-08-07 laajennuserä ────────────────────────────────────────────────
+  // Kuusi lisäystä, kaikki portin läpäisseitä. Kartoitus kattoi 20 ehdokasta;
+  // saanto oli noin 50 %, koska useimmilla pienillä lappilaisilla putiikeilla
+  // ei ole omaa verkkosivua lainkaan. Ks. hylkäysperusteet alempaa.
+  { slug: 'mailan-putiikki', name: 'Mailan Putiikki', town: 'yllas',
+    district: 'Äkäslompolo', url: 'https://mailanputiikki.fi',
+    hasOnlineStore: false, hasPhysicalStore: true, giftsCategory: 'handicrafts',
+    verifiedAt: '2026-08-07' },
+  { slug: 'kuukkeli-shop', name: 'Kuukkeli Shop', town: 'saariselka',
+    url: 'https://majoituskuukkeli.fi/kuukkeli-shop/',
+    hasOnlineStore: false, hasPhysicalStore: true, giftsCategory: 'treats',
+    verifiedAt: '2026-08-07' },
+  { slug: 'mariellen-vaatehuone', name: 'Mariellen Vaatehuone', town: 'enontekio',
+    url: 'https://www.mariellenvaatehuone.fi/',
+    hasOnlineStore: false, hasPhysicalStore: true, giftsCategory: 'clothing',
+    verifiedAt: '2026-08-07' },
+  // Yhteystiedoissa on vain puhelin ja sähköposti, ei käyntiosoitetta, joten
+  // kivijalkaa EI väitetä. Verkkokauppa on yksiselitteinen: ostoskori,
+  // ilmainen toimitus yli 120 €, toimitus 1-5 arkipäivää.
+  { slug: 'lahjapuoti-tiinuska', name: 'Lahjapuoti Tiinuska', town: 'rovaniemi',
+    url: 'https://www.tiinuska.fi/',
+    hasOnlineStore: true, hasPhysicalStore: false, giftsCategory: 'design',
+    verifiedAt: '2026-08-07' },
+  // Lappituote on tukkuri jonka kuluttajatilaus on kirjautumisen takana;
+  // listattu on sen Levin vähittäismyymälä, jolla on oma sivu ja osoite.
+  { slug: 'lappi-shop-levi', name: 'Lappi Shop Levi', town: 'levi',
+    district: 'Sirkka', url: 'https://www.lappituote.fi/lappi-shop-levi/',
+    hasOnlineStore: false, hasPhysicalStore: true, giftsCategory: 'handicrafts',
+    verifiedAt: '2026-08-07' },
+  { slug: 'utsjoki-handicraft', name: 'Utsjoki Handicraft', town: 'utsjoki',
+    url: 'https://utsjokihandicraft.fi/',
+    hasOnlineStore: true, hasPhysicalStore: true, giftsCategory: 'handicrafts',
     verifiedAt: '2026-08-07' },
 ]
 

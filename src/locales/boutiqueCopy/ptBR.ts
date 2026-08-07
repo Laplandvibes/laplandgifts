@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Joias de ouro, ouro de verdade e minerais do coração da tradição de garimpo de ouro da Lapônia.',
     tags: ['Ouro', 'Minerais'],
   },
+  'mailan-putiikki': {
+    description: 'Loja de presentes e lembranças no cruzamento de Äkäslompolo, a maior do gênero em Ylläs. Fundada em 1970.',
+    tags: ['Presentes', 'Lembranças'],
+  },
+  'kuukkeli-shop': {
+    description: 'Lembranças, iguarias da Lapônia e têxteis no centro comercial de Saariselkä. Produtos próprios de frutas silvestres: geleias, molhos e sucos.',
+    tags: ['Iguarias', 'Lembranças'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Loja de roupas em Enontekiö com Anar, Nanso, Rukka e Luhta, além de joias e estampas.',
+    tags: ['Roupas', 'Joias'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'Loja de presentes de Rovaniemi, fundada em 1987. Produtos Aarikka e Moomin, joias, têxteis e guloseimas pela internet.',
+    tags: ['Design', 'Presentes'],
+  },
+  'lappi-shop-levi': {
+    description: 'Loja da Lappituote no centro de Levi: lembranças, conservas de caça e frutas silvestres, chifre de rena, facas puukko e canecas kuksa.',
+    tags: ['Artesanato', 'Lembranças'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Feito à mão por Juha Reinola com materiais autênticos do norte: chifre de rena, bétula encaracolada, pinho kelo, couro de rena e casca de bétula.',
+    tags: ['Artesanato', 'Chifre de rena'],
+  },
 }
 
 export default copy

@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Goldschmuck, echtes Gold und Mineralien aus dem Zentrum der lappländischen Goldwaschtradition.',
     tags: ['Gold', 'Mineralien'],
   },
+  'mailan-putiikki': {
+    description: 'Fachgeschäft für Geschenke und Mitbringsel an der Kreuzung von Äkäslompolo, das größte seiner Art in Ylläs. 1970 gegründet.',
+    tags: ['Geschenke', 'Souvenirs'],
+  },
+  'kuukkeli-shop': {
+    description: 'Souvenirs, lappländische Delikatessen und Textilien im Einkaufszentrum von Saariselkä. Eigene Beerenprodukte: Marmeladen, Gelees, Saucen und Säfte.',
+    tags: ['Delikatessen', 'Souvenirs'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Bekleidungsgeschäft in Enontekiö mit Anar, Nanso, Rukka und Luhta, dazu Schmuck und Drucke.',
+    tags: ['Kleidung', 'Schmuck'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'Geschenkeladen aus Rovaniemi, gegründet 1987. Aarikka- und Mumin-Artikel, Schmuck, Textilien und Leckereien im Onlineshop.',
+    tags: ['Design', 'Geschenke'],
+  },
+  'lappi-shop-levi': {
+    description: 'Laden von Lappituote im Zentrum von Levi: Souvenirs, Wild- und Beerenkonserven, Rentierhorn, Puukko-Messer und Kuksa-Becher.',
+    tags: ['Handwerk', 'Souvenirs'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Von Juha Reinola handgefertigt aus echten Materialien des Nordens: Rentierhorn, Maserbirke, Kelo-Kiefer, Rentierleder und Birkenrinde.',
+    tags: ['Handwerk', 'Rentierhorn'],
+  },
 }
 
 export default copy

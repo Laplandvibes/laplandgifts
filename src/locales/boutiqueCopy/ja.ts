@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'ラップランドの砂金採取の伝統の中心地から、金のジュエリー、本物の金、鉱物をお届け。',
     tags: ['金', '鉱物'],
   },
+  'mailan-putiikki': {
+    description: 'アキャスロンポロの交差点にあるギフト・土産の専門店。ユッラス最大規模で、1970年創業です。',
+    tags: ['ギフト', 'おみやげ'],
+  },
+  'kuukkeli-shop': {
+    description: 'サーリセルカのショッピングセンターにある土産・ラップランドの味覚・テキスタイルの店。自家製ベリー加工品（ジャム、ゼリー、ソース、ジュース）も扱います。',
+    tags: ['味覚', 'おみやげ'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'エノンテキオの衣料品店。Anar、Nanso、Rukka、Luhtaに加え、ジュエリーやプリント作品も扱います。',
+    tags: ['衣料品', 'ジュエリー'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: '1987年創業、ロヴァニエミのギフトショップ。Aarikkaやムーミンの品、ジュエリー、テキスタイル、菓子をオンラインで販売しています。',
+    tags: ['デザイン', 'ギフト'],
+  },
+  'lappi-shop-levi': {
+    description: 'レヴィ中心部にあるLappituoteの店舗。土産、ジビエとベリーの保存食、トナカイの角、プーッコナイフ、ククサを扱います。',
+    tags: ['工芸品', 'おみやげ'],
+  },
+  'utsjoki-handicraft': {
+    description: 'ユハ・レイノラが北欧の本物の素材から手作りする品々。トナカイの角、カーリーバーチ、ケロ材、トナカイ革、白樺の樹皮を使用。',
+    tags: ['工芸品', 'トナカイの角'],
+  },
 }
 
 export default copy

@@ -54,6 +54,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Gold jewellery, real gold and minerals from the heart of Lapland\'s gold-panning tradition.',
     tags: ['Gold', 'Minerals'],
   },
+  'mailan-putiikki': {
+    description: 'A gift and souvenir shop at the Äkäslompolo crossroads, the largest of its kind in Ylläs. Founded in 1970.',
+    tags: ['Gifts', 'Souvenirs'],
+  },
+  'kuukkeli-shop': {
+    description: 'Souvenirs, Lapland delicacies and textiles in the Saariselkä shopping centre. Own berry products: jams, jellies, sauces and juices.',
+    tags: ['Delicacies', 'Souvenirs'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'A clothing shop in Enontekiö stocking Anar, Nanso, Rukka and Luhta, alongside jewellery and prints.',
+    tags: ['Clothing', 'Jewellery'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'A gift shop from Rovaniemi, founded in 1987. Aarikka and Moomin products, jewellery, textiles and treats, ordered online.',
+    tags: ['Design', 'Gifts'],
+  },
+  'lappi-shop-levi': {
+    description: 'Lappituote’s shop in the centre of Levi: souvenirs, game and berry preserves, reindeer antler, puukko knives and kuksa cups.',
+    tags: ['Crafts', 'Souvenirs'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Handmade by Juha Reinola from genuine northern materials: reindeer antler, curly birch, kelo pine, reindeer leather and birch bark.',
+    tags: ['Crafts', 'Reindeer antler'],
+  },
 }
 
 export default copy

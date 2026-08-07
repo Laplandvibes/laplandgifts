@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Joyas de oro, oro auténtico y minerales desde el corazón de la tradición de búsqueda de oro de Laponia.',
     tags: ['Oro', 'Minerales'],
   },
+  'mailan-putiikki': {
+    description: 'Tienda de regalos y recuerdos en el cruce de Äkäslompolo, la mayor de su tipo en Ylläs. Fundada en 1970.',
+    tags: ['Regalos', 'Recuerdos'],
+  },
+  'kuukkeli-shop': {
+    description: 'Recuerdos, delicias de Laponia y textiles en el centro comercial de Saariselkä. Productos propios de bayas: mermeladas, jaleas, salsas y zumos.',
+    tags: ['Delicias', 'Recuerdos'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Tienda de ropa en Enontekiö con Anar, Nanso, Rukka y Luhta, además de joyas y láminas.',
+    tags: ['Ropa', 'Joyas'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'Tienda de regalos de Rovaniemi, fundada en 1987. Productos Aarikka y Moomin, joyas, textiles y dulces por internet.',
+    tags: ['Diseño', 'Regalos'],
+  },
+  'lappi-shop-levi': {
+    description: 'Tienda de Lappituote en el centro de Levi: recuerdos, conservas de caza y bayas, asta de reno, cuchillos puukko y tazas kuksa.',
+    tags: ['Artesanía', 'Recuerdos'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Hecho a mano por Juha Reinola con materiales auténticos del norte: asta de reno, abedul rizado, pino kelo, cuero de reno y corteza de abedul.',
+    tags: ['Artesanía', 'Asta de reno'],
+  },
 }
 
 export default copy

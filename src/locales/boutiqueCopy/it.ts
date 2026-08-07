@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Gioielli in oro, oro vero e minerali dal cuore della tradizione lapponese della ricerca dell\'oro.',
     tags: ['Oro', 'Minerali'],
   },
+  'mailan-putiikki': {
+    description: 'Negozio di regali e souvenir all’incrocio di Äkäslompolo, il più grande del suo genere a Ylläs. Fondato nel 1970.',
+    tags: ['Regali', 'Souvenir'],
+  },
+  'kuukkeli-shop': {
+    description: 'Souvenir, specialità della Lapponia e tessuti nel centro commerciale di Saariselkä. Prodotti propri ai frutti di bosco: marmellate, gelatine, salse e succhi.',
+    tags: ['Specialità', 'Souvenir'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Negozio di abbigliamento a Enontekiö con Anar, Nanso, Rukka e Luhta, oltre a gioielli e stampe.',
+    tags: ['Abbigliamento', 'Gioielli'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'Negozio di regali di Rovaniemi, fondato nel 1987. Prodotti Aarikka e Moomin, gioielli, tessuti e dolci online.',
+    tags: ['Design', 'Regali'],
+  },
+  'lappi-shop-levi': {
+    description: 'Negozio Lappituote nel centro di Levi: souvenir, conserve di selvaggina e frutti di bosco, corno di renna, coltelli puukko e tazze kuksa.',
+    tags: ['Artigianato', 'Souvenir'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Fatto a mano da Juha Reinola con materiali autentici del nord: corno di renna, betulla riccia, pino kelo, pelle di renna e corteccia di betulla.',
+    tags: ['Artigianato', 'Corno di renna'],
+  },
 }
 
 export default copy

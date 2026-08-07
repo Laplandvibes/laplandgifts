@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: '来自拉普兰淘金传统中心的金饰、真金与矿石。',
     tags: ['黄金', '矿物'],
   },
+  'mailan-putiikki': {
+    description: '位于 Äkäslompolo 十字路口的礼品与纪念品专门店，是 Ylläs 同类中最大的一家。1970 年创立。',
+    tags: ['礼品', '纪念品'],
+  },
+  'kuukkeli-shop': {
+    description: '位于 Saariselkä 购物中心的纪念品、拉普兰美味与纺织品商店。自制浆果制品：果酱、果冻、酱汁与果汁。',
+    tags: ['美味', '纪念品'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Enontekiö 的服装店，经营 Anar、Nanso、Rukka 与 Luhta，另有饰品与版画。',
+    tags: ['服装', '饰品'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: '来自罗瓦涅米的礼品店，1987 年创立。Aarikka 与姆明商品、饰品、纺织品与零食，可在网店选购。',
+    tags: ['设计', '礼品'],
+  },
+  'lappi-shop-levi': {
+    description: 'Lappituote 位于 Levi 市中心的门店：纪念品、野味与浆果罐头、驯鹿角制品、芬兰传统刀与木杯。',
+    tags: ['手工艺品', '纪念品'],
+  },
+  'utsjoki-handicraft': {
+    description: '由 Juha Reinola 用北方的天然材料手工制作：驯鹿角、卷纹桦木、枯立松、驯鹿皮与桦树皮。',
+    tags: ['手工艺品', '驯鹿角'],
+  },
 }
 
 export default copy

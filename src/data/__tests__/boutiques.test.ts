@@ -7,9 +7,9 @@ import { CATEGORY_IDS } from '../types'
 import { CONTENT_PATHS } from '../../routes'
 
 describe('putiikkidatan eheys', () => {
-  it('putiikkeja on 12 ja verkkokauppoja 7', () => {
-    expect(BOUTIQUES).toHaveLength(12)
-    expect(BOUTIQUES.filter((b) => b.hasOnlineStore)).toHaveLength(7)
+  it('putiikkeja on 18 ja verkkokauppoja 9', () => {
+    expect(BOUTIQUES).toHaveLength(18)
+    expect(BOUTIQUES.filter((b) => b.hasOnlineStore)).toHaveLength(9)
   })
 
   it('slugit ovat uniikkeja ja URL-turvallisia', () => {
@@ -88,11 +88,20 @@ describe('putiikkidatan eheys', () => {
   })
 
   it('boutiquesByTown ryhmittelee oikein', () => {
-    expect(boutiquesByTown('rovaniemi')).toHaveLength(6)
+    expect(boutiquesByTown('rovaniemi')).toHaveLength(7)
     expect(boutiquesByTown('inari')).toHaveLength(3)
     expect(boutiquesByTown('posio')).toHaveLength(1)
-    expect(boutiquesByTown('levi')).toHaveLength(1)
+    expect(boutiquesByTown('levi')).toHaveLength(2)
     expect(boutiquesByTown('sodankyla')).toHaveLength(1)
+    expect(boutiquesByTown('yllas')).toHaveLength(1)
+    expect(boutiquesByTown('saariselka')).toHaveLength(1)
+    expect(boutiquesByTown('enontekio')).toHaveLength(1)
+    expect(boutiquesByTown('utsjoki')).toHaveLength(1)
+  })
+
+  it('jokainen putiikki kuuluu johonkin paikkakuntaan ja summa täsmää', () => {
+    const sum = TOWN_IDS.reduce((n, t) => n + boutiquesByTown(t).length, 0)
+    expect(sum).toBe(BOUTIQUES.length)
   })
 
   it('uloslinkki noudattaa UTM-standardia', () => {
@@ -132,7 +141,9 @@ describe('paikkakuntasivun kynnys', () => {
   })
 
   it('loput jäävät hubin muualla-osioon', () => {
-    expect(townsWithoutPages().sort()).toEqual(['levi', 'posio', 'sodankyla'])
+    expect(townsWithoutPages().sort()).toEqual(
+      ['enontekio', 'levi', 'posio', 'saariselka', 'sodankyla', 'utsjoki', 'yllas'],
+    )
   })
 
   it('jokainen paikkakunta on tasan yhdessä joukossa', () => {

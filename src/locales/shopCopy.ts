@@ -218,7 +218,12 @@ export interface ShopCopy {
     outboundCta: string
     crossSellH2: string
     crossSellCta: string
-    townNames: Record<'rovaniemi' | 'inari' | 'posio' | 'levi' | 'sodankyla', string>
+    /** Paikannimet eivät käänny; CJK-kielissäkin latinalainen kirjoitusasu. */
+    townNames: Record<
+      'rovaniemi' | 'inari' | 'posio' | 'levi' | 'sodankyla'
+      | 'yllas' | 'saariselka' | 'enontekio' | 'utsjoki',
+      string
+    >
     duodjiH2: string
     duodjiBody: string
     duodjiAuthorized: string
@@ -430,7 +435,8 @@ const en: ShopCopy = {
     crossSellCta: 'Browse the category',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'How to recognise real Sámi duodji',
     duodjiBody: 'Duodji is Sámi handicraft made by Sámi makers using traditional materials and techniques. Souvenir imitations copy the look without the maker or the tradition. The difference matters to the community whose culture it is, and an authorised seller can tell you who made the piece.',
@@ -626,7 +632,8 @@ const fi: ShopCopy = {
     crossSellCta: 'Selaa kategoriaa',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Näin tunnistat aidon saamelaisen duodjin',
     duodjiBody: 'Duodji on saamelaisten tekemää käsityötä, jossa käytetään perinteisiä materiaaleja ja tekotapoja. Matkamuistoimitaatio kopioi ulkonäön ilman tekijää ja perinnettä. Ero on merkityksellinen sille yhteisölle jonka kulttuurista on kyse, ja auktorisoitu myyjä osaa kertoa kuka esineen on tehnyt.',
@@ -845,7 +852,8 @@ const de: ShopCopy = over({
     crossSellCta: 'Kategorie ansehen',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'So erkennen Sie echtes samisches Duodji',
     duodjiBody: 'Duodji ist samisches Handwerk, hergestellt von samischen Kunsthandwerkern mit traditionellen Materialien und Techniken. Souvenir-Imitationen kopieren das Aussehen ohne die Person und die Tradition dahinter. Für die Gemeinschaft, um deren Kultur es geht, ist dieser Unterschied wichtig, und ein autorisierter Händler kann Ihnen sagen, wer das Stück gefertigt hat.',
@@ -1037,7 +1045,8 @@ const sv: ShopCopy = over({
     crossSellCta: 'Bläddra i kategorin',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Så känner du igen äkta samisk duodji',
     duodjiBody: 'Duodji är samiskt hantverk tillverkat av samiska hantverkare med traditionella material och tekniker. Souvenirimitationer kopierar utseendet utan hantverkaren och traditionen bakom. Skillnaden betyder något för den gemenskap vars kultur det handlar om, och en auktoriserad återförsäljare kan berätta vem som har gjort föremålet.',
@@ -1228,7 +1237,8 @@ const fr: ShopCopy = over({
     crossSellCta: 'Parcourir la catégorie',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Comment reconnaître le vrai duodji sami',
     duodjiBody: 'Le duodji est l\'artisanat sami, réalisé par des artisans samis avec des matériaux et des techniques traditionnels. Les imitations pour touristes copient l\'apparence sans l\'artisan ni la tradition. Cette différence compte pour la communauté dont il s\'agit, et un vendeur agréé peut vous dire qui a fabriqué la pièce.',
@@ -1419,7 +1429,8 @@ const es: ShopCopy = over({
     crossSellCta: 'Ver la categoría',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Cómo reconocer el duodji sami auténtico',
     duodjiBody: 'El duodji es la artesanía sami, hecha por artesanos samis con materiales y técnicas tradicionales. Las imitaciones de souvenir copian el aspecto sin el artesano ni la tradición. La diferencia importa a la comunidad de cuya cultura se trata, y un vendedor autorizado puede decirle quién hizo la pieza.',
@@ -1610,7 +1621,8 @@ const it: ShopCopy = over({
     crossSellCta: 'Sfoglia la categoria',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Come riconoscere il vero duodji sami',
     duodjiBody: 'Il duodji è l\'artigianato sami, realizzato da artigiani sami con materiali e tecniche tradizionali. Le imitazioni da souvenir copiano l\'aspetto senza l\'artigiano e la tradizione. La differenza conta per la comunità della cui cultura si tratta, e un venditore autorizzato può dirvi chi ha realizzato il pezzo.',
@@ -1801,7 +1813,8 @@ const nl: ShopCopy = over({
     crossSellCta: 'Bekijk de categorie',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Zo herkent u echte Samische duodji',
     duodjiBody: 'Duodji is Samisch handwerk, gemaakt door Samische makers met traditionele materialen en technieken. Souvenirimitaties kopiëren het uiterlijk zonder de maker en de traditie. Het verschil doet ertoe voor de gemeenschap om wier cultuur het gaat, en een erkende verkoper kan u vertellen wie het stuk heeft gemaakt.',
@@ -1992,7 +2005,8 @@ const ptBR: ShopCopy = over({
     crossSellCta: 'Ver a categoria',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Como reconhecer o duodji sami autêntico',
     duodjiBody: 'Duodji é o artesanato sami, feito por artesãos samis com materiais e técnicas tradicionais. Imitações de souvenir copiam a aparência sem o artesão e a tradição. A diferença importa para a comunidade de cuja cultura se trata, e um vendedor autorizado pode dizer quem fez a peça.',
@@ -2183,7 +2197,8 @@ const ja: ShopCopy = over({
     crossSellCta: 'カテゴリを見る',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: '本物のサーミのドゥオッジを見分ける',
     duodjiBody: 'ドゥオッジ（duodji）はサーミの人々が伝統的な素材と技法でつくる工芸品です。土産物の模造品は見た目を写すだけで、つくり手も伝統もありません。この違いは、その文化を担う人々にとって重要です。認定販売店であれば、誰がつくった品かを教えてくれます。',
@@ -2374,7 +2389,8 @@ const zhCN: ShopCopy = over({
     crossSellCta: '浏览分类',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: '如何辨认真正的萨米 duodji',
     duodjiBody: 'duodji 是萨米人用传统材料和技法制作的手工艺品。旅游纪念品的仿制品只复制外形，既没有制作者，也没有传统。这个区别对这一文化所属的族群很重要，授权经销商能够告诉你这件作品出自谁手。',
@@ -2565,7 +2581,8 @@ const ko: ShopCopy = over({
     crossSellCta: '카테고리 보기',
     townNames: {
       rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
-      levi: 'Levi', sodankyla: 'Sodankylä',
+      levi: 'Levi', sodankyla: 'Sodankylä', yllas: 'Ylläs',
+      saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: '진짜 사미 두오지를 알아보는 법',
     duodjiBody: '두오지(duodji)는 사미 장인이 전통 재료와 기법으로 만드는 공예품입니다. 기념품 모조품은 겉모습만 베낄 뿐 만든 사람도 전통도 없습니다. 이 차이는 해당 문화를 지닌 공동체에게 중요하며, 인증 판매점은 누가 만든 물건인지 알려줄 수 있습니다.',

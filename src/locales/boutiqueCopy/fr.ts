@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Bijoux en or, or véritable et minéraux issus du cœur de la tradition d\'orpaillage de Laponie.',
     tags: ['Or', 'Minéraux'],
   },
+  'mailan-putiikki': {
+    description: 'Boutique de cadeaux et de souvenirs au carrefour d’Äkäslompolo, la plus grande du genre à Ylläs. Fondée en 1970.',
+    tags: ['Cadeaux', 'Souvenirs'],
+  },
+  'kuukkeli-shop': {
+    description: 'Souvenirs, spécialités de Laponie et textiles dans le centre commercial de Saariselkä. Produits maison à base de baies : confitures, gelées, sauces et jus.',
+    tags: ['Spécialités', 'Souvenirs'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Magasin de vêtements à Enontekiö proposant Anar, Nanso, Rukka et Luhta, ainsi que des bijoux et des impressions.',
+    tags: ['Vêtements', 'Bijoux'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'Boutique de cadeaux de Rovaniemi, fondée en 1987. Articles Aarikka et Moomin, bijoux, textiles et gourmandises en ligne.',
+    tags: ['Design', 'Cadeaux'],
+  },
+  'lappi-shop-levi': {
+    description: 'Magasin Lappituote au centre de Levi : souvenirs, conserves de gibier et de baies, bois de renne, couteaux puukko et tasses kuksa.',
+    tags: ['Artisanat', 'Souvenirs'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Fait main par Juha Reinola à partir de matériaux authentiques du Nord : bois de renne, bouleau ronceux, pin kelo, cuir de renne et écorce de bouleau.',
+    tags: ['Artisanat', 'Bois de renne'],
+  },
 }
 
 export default copy

@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Gouden sieraden, echt goud en mineralen uit het hart van de Laplandse goudwastraditie.',
     tags: ['Goud', 'Mineralen'],
   },
+  'mailan-putiikki': {
+    description: 'Speciaalzaak voor cadeaus en souvenirs op de kruising van Äkäslompolo, de grootste in zijn soort in Ylläs. Opgericht in 1970.',
+    tags: ['Cadeaus', 'Souvenirs'],
+  },
+  'kuukkeli-shop': {
+    description: 'Souvenirs, Laplandse lekkernijen en textiel in het winkelcentrum van Saariselkä. Eigen bessenproducten: jam, gelei, sauzen en sappen.',
+    tags: ['Lekkernijen', 'Souvenirs'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Kledingwinkel in Enontekiö met Anar, Nanso, Rukka en Luhta, plus sieraden en prints.',
+    tags: ['Kleding', 'Sieraden'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'Cadeauwinkel uit Rovaniemi, opgericht in 1987. Aarikka en Moomin, sieraden, textiel en lekkers via de webwinkel.',
+    tags: ['Design', 'Cadeaus'],
+  },
+  'lappi-shop-levi': {
+    description: 'Winkel van Lappituote in het centrum van Levi: souvenirs, wild- en bessenconserven, rendiergewei, puukko-messen en kuksa-bekers.',
+    tags: ['Ambacht', 'Souvenirs'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Met de hand gemaakt door Juha Reinola van echte noordelijke materialen: rendiergewei, gevlamde berk, kelodennen, rendierleer en berkenbast.',
+    tags: ['Ambacht', 'Rendiergewei'],
+  },
 }
 
 export default copy

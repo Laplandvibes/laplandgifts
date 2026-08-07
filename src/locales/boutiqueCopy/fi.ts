@@ -49,6 +49,30 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Kultakoruja, aitoa kultaa ja mineraaleja Lapin kullankaivuuperinteen keskuksesta.',
     tags: ['Kulta', 'Mineraalit'],
   },
+  'mailan-putiikki': {
+    description: 'Lahjatavaroiden ja tuliaisten erikoisliike Äkäslompolon risteyksessä, lajissaan Ylläksen suurin. Perustettu 1970.',
+    tags: ['Lahjatavarat', 'Matkamuistot'],
+  },
+  'kuukkeli-shop': {
+    description: 'Matkamuistoja, Lapin herkkuja ja tekstiilejä Saariselän kauppakeskuksessa. Omat marjajalosteet: hillot, hyytelöt, kastikkeet ja mehut.',
+    tags: ['Herkut', 'Matkamuistot'],
+  },
+  'mariellen-vaatehuone': {
+    description: 'Vaatekauppa Enontekiöllä: Anar, Nanso, Rukka ja Luhta. Valikoimassa myös koruja ja printtejä.',
+    tags: ['Vaatteet', 'Korut'],
+  },
+  'lahjapuoti-tiinuska': {
+    description: 'Vuonna 1987 perustettu lahjapuoti Rovaniemeltä. Aarikkaa ja Muumi-tuotteita, koruja, tekstiilejä ja herkkuja verkkokaupasta.',
+    tags: ['Design', 'Lahjat'],
+  },
+  'lappi-shop-levi': {
+    description: 'Lappituotteen myymälä Levin keskustassa: matkamuistoja, riista- ja marjasäilykkeitä, poronsarvea, puukkoja ja kuksia.',
+    tags: ['Käsityöt', 'Matkamuistot'],
+  },
+  'utsjoki-handicraft': {
+    description: 'Juha Reinolan käsin tekemiä tuotteita aidoista pohjoisen raaka-aineista: poronsarvea, visakoivua, kelopuuta, poronnahkaa ja tuohta.',
+    tags: ['Käsityöt', 'Poronsarvi'],
+  },
 }
 
 export default copy
