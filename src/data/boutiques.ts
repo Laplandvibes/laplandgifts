@@ -79,7 +79,10 @@ export const BOUTIQUES: Boutique[] = [
   { slug: 'duodji-shop', name: 'Duodji Shop', town: 'inari', district: 'Sajos',
     url: 'https://duodjishop.fi', hasOnlineStore: true, hasPhysicalStore: true,
     giftsCategory: 'handicrafts', samiAuthorized: true, verifiedAt: '2026-08-07' },
-  { slug: 'samekki', name: 'Samekki, Sámi Duodji', town: 'inari',
+  // Nimi on 'Samekki', ei 'Samekki, Sámi Duodji': se on yrityksen oma title
+  // (mitattu 2026-08-07), ja nimessä oleva pilkku luki luettelossa kahtena
+  // putiikkina ("3 putiikkia: Duodji Shop, Samekki, Sámi Duodji, Siida Shop").
+  { slug: 'samekki', name: 'Samekki', town: 'inari',
     url: 'https://samekki.fi', hasOnlineStore: true, hasPhysicalStore: true,
     giftsCategory: 'handicrafts', samiAuthorized: true, verifiedAt: '2026-08-07' },
   { slug: 'piece-of-lapland', name: 'Piece of Lapland', town: 'rovaniemi',

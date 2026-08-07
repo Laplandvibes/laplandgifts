@@ -25,6 +25,8 @@ import { readFileSync, writeFileSync } from 'node:fs'
 import { CATEGORIES } from '../src/data/categories.ts'
 import { PRODUCTS } from '../src/data/products.ts'
 import { SHOP_COPY } from '../src/locales/shopCopy.ts'
+import { BOUTIQUES, TOWN_IDS, boutiquesByTown, townsWithPages } from '../src/data/boutiques.ts'
+import { BOUTIQUE_COPY } from '../src/locales/boutiqueCopy/index.ts'
 import { HOME_META } from '../src/locales/homeMeta.ts'
 
 const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv']
@@ -283,12 +285,65 @@ if (legalRoutes.length !== LEGAL.size) {
   process.exit(1)
 }
 
+// ── putiikkihakemisto ──────────────────────────────────────────────────────
+// Nämä käyttävät routeByLangia eivätkä routea, koska hakemiston sisältö on
+// aidosti käännetty kaikille 12 kielelle (SHOP_COPY.boutique + BOUTIQUE_COPY).
+// Kategoria- ja tuotesivuilla englanti on oikea meta, koska sivukin on
+// englanniksi; tässä se lupaisi vähemmän kuin sivu antaa.
+const byLang = (build) => Object.fromEntries(LANGS.map((l) => [l, build(l)]))
+
+// 🔴 Kuvaukset luetellaan paikkakunnat ja putiikit nimeltä, koska juuri ne
+// ovat hakusanat joita varten hakemisto on olemassa ("matkamuistot Rovaniemi").
+// Pelkkä hubIntro ylitti 160 merkin rajan kuudella kielellä.
+const boutiqueHubRoute = routeByLang(
+  '/boutiques',
+  byLang((l) => {
+    const t = SHOP_COPY[l].boutique
+    const towns = TOWN_IDS.map((x) => t.townNames[x]).join(', ')
+    return {
+      title: `${t.hubTitle} | LaplandGifts`,
+      description: `${t.hubLead} ${t.count(BOUTIQUES.length)}: ${towns}.`,
+    }
+  }),
+)
+
+const boutiqueTownRoutes = townsWithPages().map((town) =>
+  routeByLang(
+    `/boutiques/${town}`,
+    byLang((l) => {
+      const t = SHOP_COPY[l].boutique
+      const bs = boutiquesByTown(town)
+      return {
+        title: `${t.townNames[town]}: ${t.hubTitle} | LaplandGifts`,
+        description: `${t.count(bs.length)}: ${bs.map((b) => b.name).join(', ')}.`,
+      }
+    }),
+  ),
+)
+
+const boutiqueRoutes = BOUTIQUES.map((b) =>
+  routeByLang(
+    `/boutique/${b.slug}`,
+    byLang((l) => {
+      const t = SHOP_COPY[l].boutique
+      const place = `${t.townNames[b.town]}${b.district ? `, ${b.district}` : ''}`
+      return {
+        title: `${b.name}, ${t.townNames[b.town]} | LaplandGifts`,
+        description: `${BOUTIQUE_COPY[l][b.slug].description} ${place}.`,
+      }
+    }),
+  ),
+)
+
 const routes = [
   routeByLang('/', HOME_META),
   ...categoryRoutes,
   ...productRoutes,
   giftGuides,
   shipping,
+  boutiqueHubRoute,
+  ...boutiqueTownRoutes,
+  ...boutiqueRoutes,
   ...legalRoutes,
 ]
 

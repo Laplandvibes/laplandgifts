@@ -127,6 +127,7 @@ export default function ShopNav() {
   // Toimitussivulle ei pääse mistään muualta: kortin toimitusmerkintä kertoo
   // alueen, mutta vientirajoitteet ja kumppanitaulukko asuvat vain siellä.
   const secondary = [
+    { key: 'boutiques', to: to('/boutiques'), slug: '/boutiques', label: t.boutique.hubTitle },
     { key: 'guides', to: to('/gift-guides'), slug: '/gift-guides', label: t.nav.guides },
     { key: 'shipping', to: to('/shipping'), slug: '/shipping', label: t.nav.shipping },
   ]
@@ -138,6 +139,7 @@ export default function ShopNav() {
     ...Object.fromEntries(categories.map((c) => [c.slug, c.full])),
     '/gift-guides': t.nav.guides,
     '/shipping': t.nav.shipping,
+    '/boutiques': t.boutique.hubTitle,
   }
 
   return (

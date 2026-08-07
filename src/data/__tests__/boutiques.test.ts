@@ -4,6 +4,7 @@ import {
   TOWN_PAGE_MIN_BOUTIQUES, townsWithPages, townsWithoutPages, boutiqueTownPaths,
 } from '../boutiques'
 import { CATEGORY_IDS } from '../types'
+import { CONTENT_PATHS } from '../../routes'
 
 describe('putiikkidatan eheys', () => {
   it('putiikkeja on 12 ja verkkokauppoja 7', () => {
@@ -150,5 +151,25 @@ describe('paikkakuntasivun kynnys', () => {
     for (const t of townsWithPages()) {
       expect(boutiquesByTown(t).length, t).toBeGreaterThanOrEqual(TOWN_PAGE_MIN_BOUTIQUES)
     }
+  })
+})
+
+describe('reitit ja hakemiston kattavuus', () => {
+  it('hakemiston etusivu on sisältöreittinä', () => {
+    expect(CONTENT_PATHS).toContain('/boutiques')
+  })
+
+  it('jokainen kynnyksen ylittävä paikkakunta on sisältöreittinä', () => {
+    for (const p of boutiqueTownPaths()) expect(CONTENT_PATHS).toContain(p)
+  })
+
+  it('kynnyksen alittavalle paikkakunnalle ei synny reittiä', () => {
+    for (const t of townsWithoutPages()) {
+      expect(CONTENT_PATHS).not.toContain(`/boutiques/${t}`)
+    }
+  })
+
+  it('sisältöreiteissä ei ole duplikaatteja', () => {
+    expect(new Set(CONTENT_PATHS).size).toBe(CONTENT_PATHS.length)
   })
 })
