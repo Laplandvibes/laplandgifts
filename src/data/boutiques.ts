@@ -131,3 +131,30 @@ export function boutiqueOutboundUrl(b: Boutique): string {
   const sep = b.url.includes('?') ? '&' : '?'
   return `${b.url}${sep}utm_source=laplandvibes&utm_medium=referral&utm_campaign=store_${b.slug}`
 }
+
+/**
+ * Kuinka monta putiikkia paikkakunnalla on oltava ennen kuin se saa oman
+ * sivun. Yhden putiikin paikkakuntasivu on ohut sisältö, ja Google kohtelee
+ * sitä sen mukaisesti.
+ *
+ * Kynnys on funktio eikä käsin ylläpidetty lista: kun yrittäjäkampanja tuo
+ * Leville kaksi putiikkia lisää, /boutiques/levi ilmestyy itsestään reitteihin,
+ * prerenderiin ja sitemapiin.
+ */
+export const TOWN_PAGE_MIN_BOUTIQUES = 3
+
+export function townsWithPages(): TownId[] {
+  return TOWN_IDS
+    .filter((t) => boutiquesByTown(t).length >= TOWN_PAGE_MIN_BOUTIQUES)
+    .sort()
+}
+
+export function townsWithoutPages(): TownId[] {
+  return TOWN_IDS
+    .filter((t) => boutiquesByTown(t).length < TOWN_PAGE_MIN_BOUTIQUES)
+    .sort()
+}
+
+export function boutiqueTownPaths(): string[] {
+  return townsWithPages().map((t) => `/boutiques/${t}`)
+}

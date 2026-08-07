@@ -1,6 +1,7 @@
 import { describe, it, expect } from 'vitest'
 import {
   BOUTIQUES, boutiqueBySlug, boutiquesByTown, boutiqueOutboundUrl, TOWN_IDS,
+  TOWN_PAGE_MIN_BOUTIQUES, townsWithPages, townsWithoutPages, boutiqueTownPaths,
 } from '../boutiques'
 import { CATEGORY_IDS } from '../types'
 
@@ -116,6 +117,38 @@ describe('putiikkidatan eheys', () => {
     // ei-auktorisoitu inarilainen, osio nolaisi sen.
     for (const b of boutiquesByTown('inari')) {
       expect(b.samiAuthorized, b.slug).toBe(true)
+    }
+  })
+})
+
+describe('paikkakuntasivun kynnys', () => {
+  it('kynnys on kolme putiikkia', () => {
+    expect(TOWN_PAGE_MIN_BOUTIQUES).toBe(3)
+  })
+
+  it('vain Rovaniemi ja Inari ylittävät kynnyksen', () => {
+    expect(townsWithPages()).toEqual(['inari', 'rovaniemi'])
+  })
+
+  it('loput jäävät hubin muualla-osioon', () => {
+    expect(townsWithoutPages().sort()).toEqual(['levi', 'posio', 'sodankyla'])
+  })
+
+  it('jokainen paikkakunta on tasan yhdessä joukossa', () => {
+    const a = townsWithPages()
+    const b = townsWithoutPages()
+    expect([...a, ...b].sort()).toEqual([...TOWN_IDS].sort())
+    expect(a.filter((t) => b.includes(t))).toHaveLength(0)
+  })
+
+  it('polut generoituvat paikkakunnista', () => {
+    expect(boutiqueTownPaths()).toEqual(['/boutiques/inari', '/boutiques/rovaniemi'])
+  })
+
+  it('kynnyksen ylittävällä paikkakunnalla on aina vähintään kynnyksen verran putiikkeja', () => {
+    // Vahti sille ettei ohutta sivua synny kun dataa muokataan.
+    for (const t of townsWithPages()) {
+      expect(boutiquesByTown(t).length, t).toBeGreaterThanOrEqual(TOWN_PAGE_MIN_BOUTIQUES)
     }
   })
 })
