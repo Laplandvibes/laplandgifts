@@ -104,6 +104,13 @@ export const BOUTIQUES: Boutique[] = [
     giftsCategory: 'design', verifiedAt: '2026-08-07' },
   // Putiikilla ei ole omaa domainia; levi.fi ylläpitää sen sivua. Linkki
   // osoittaa siihen eikä levi.fi:n juureen, joka ei mainitse SHOPPIa lainkaan.
+  //
+  // 🟡 TARKISTETTAVA TALVIKAUDEN ALUSSA. Kaksi signaalia eri suuntiin (7.8.2026):
+  // levi.fi:n englanninkielinen sivu on pystyssä (200 + oikea title), mutta
+  // suomenkielinen 404:ää, ja haussa nousi Facebook-maininta että liike on
+  // suljettu toistaiseksi. Vesan päätös 7.8.: jätetään, koska Levi on
+  // hiihtokeskus ja kausiliikkeen kesäsulku on normaalia. Jos liike ei avaudu
+  // talvikaudeksi, poista tämä rivi: silloin Levi putoaa myös TownId-tyypistä.
   { slug: 'shoppi-craft-design', name: 'SHOPPI Craft & Design', town: 'levi',
     url: 'https://www.levi.fi/en/services/shoppi-craft-and-design-lapland/',
     hasOnlineStore: false, hasPhysicalStore: true,
