@@ -342,6 +342,31 @@ const JOBS = [
     'gold-panning-day-inari',
     'https://cdn.elamyslahjat.fi/storage/photos/products/116437/23910.jpg',
   ],
+  // Era 6.8.2026: superfoodit Ruohonjuuresta (Vesa: "enemman taytetta").
+  [
+    'foodin-six-mushroom-blend',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/aeccde427cd2f1d756e4b8c6b9d60a58.jpg?v=1745627672&width=1024',
+  ],
+  [
+    'foodin-nordic-berry-powder',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/FOODIN-6430055218824-2.jpg?v=1720009193&width=1024',
+  ],
+  [
+    'foodin-chaga-tincture',
+    'https://www.ruohonjuuri.fi/cdn/shop/products/d0d569ab77caa10fbc8498ae081b033d.png?v=1597236923&width=1024',
+  ],
+  [
+    'kaavi-chaga-chunks',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/KAAVI-6430060220430-2.jpg?v=1726726998&width=1024',
+  ],
+  [
+    'puhdistamo-instant-chaga',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220386-1.jpg?v=1699372704&width=1024',
+  ],
+  [
+    'puhdistamo-conifer-extract',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220645-1.jpg?v=1699374709&width=1024',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

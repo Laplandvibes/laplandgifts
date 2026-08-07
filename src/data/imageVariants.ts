@@ -394,6 +394,30 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320
     ]
   },
+  "prod-foodin-chaga-tincture": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-foodin-nordic-berry-powder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-foodin-six-mushroom-blend": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-glass-igloo-night-levi": {
     "full": 800,
     "w": [
@@ -519,6 +543,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     "w": [
       320,
       480
+    ]
+  },
+  "prod-kaavi-chaga-chunks": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
     ]
   },
   "prod-kaino-spruce-sprout-sparkling": {
@@ -802,6 +834,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-pentik-tunturiretki-studio-dish": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-puhdistamo-conifer-extract": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-puhdistamo-instant-chaga": {
     "full": 800,
     "w": [
       320,

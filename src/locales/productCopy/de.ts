@@ -1061,4 +1061,41 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Geschenkkarte'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin Sechs-Pilze-Mischung 100 g',
+    description:
+      'Chaga, Reishi, Igelstachelbart, Cordyceps, Shiitake und Maitake in einem Glas, gemahlen für Kaffee oder Smoothies. Ein Glas deckt das ganze Vitalpilzregal ab.',
+    specs: ['100 g', 'Chaga, Reishi, Igelstachelbart, Cordyceps, Shiitake, Maitake'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin Nordische Beeren Pulvermischung 120 g',
+    description:
+      'Eine finnische Mischung nordischer Beeren als ein Pulver, für Porridge und Joghurt. Die leichteste Art, einen nordischen Beerensommer mit nach Hause zu nehmen.',
+    specs: ['120 g', 'Hergestellt in Finnland'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin Chaga-Tinktur 50 ml',
+    description:
+      'Finnischer Chaga als Tropfen statt Pulver: eine 50-ml-Flasche, die kein Aufbrühen braucht. Die Reisegröße der ganzen Chaga-Idee.',
+    specs: ['50 ml', 'Finnischer Chaga'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini Chaga-Stücke 100 g',
+    description:
+      'Grobe Stücke finnischen Birken-Chagas zum langsamen Aufbrühen, so wie er hier lange vor dem Wort Superfood getrunken wurde. Ein Beutel reicht für viele Kannen.',
+    specs: ['100 g', 'Als langsam gebrühter Tee köcheln'],
+    specLabels: [undefined, 'Verwendung'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo Instant-Chaga-Extraktpulver 28 g',
+    description:
+      'Chaga, der sich direkt in heißem Wasser löst, ohne Köcheln. Das 28-Gramm-Glas passt in jedes Gepäck und übersteht die Reise besser als ein Beutel Stücke.',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo Nadelbaum-Extrakt 50 ml',
+    description:
+      'Ein aus finnischen Nadelbäumen gewonnener Extrakt in Tropfenform. Der Waldgeruch einer Lappland-Wanderung in einer Flasche für die Manteltasche.',
+    specs: ['50 ml'],
+  },
 }

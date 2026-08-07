@@ -174,7 +174,7 @@ export default function ShopNav() {
               rivikseen ja jättää ylimmälle riville logon ja valikkonapin.
               lg:stä ylöspäin pari palaa oikeaan reunaan samalle riville. */}
           <div className="order-last flex w-full min-w-0 items-center gap-2 lg:order-none lg:ml-auto lg:w-auto">
-            {countrySelect('flex flex-1 lg:flex-none', 'h-11 w-full px-3 text-base lg:h-9 lg:max-w-[8.5rem]')}
+            {countrySelect('flex flex-1 lg:flex-none', 'h-11 w-full px-3 text-base lg:h-9 lg:w-auto lg:max-w-none')}
             <LangSwitcher />
           </div>
 

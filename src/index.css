@@ -159,7 +159,21 @@
    Jaettua tiedostoa ei muokata, joten label paljastetaan täältä ja nappi
    nostetaan 44 pikselin kosketuskohteeksi. Valitsin osuu vain valikon
    avausnappiin (`aria-haspopup`), ei pudotusvalikon riveihin. */
-.lv-eco-compact button[aria-haspopup] { min-height: 44px; }
+/* 🔴 Verkosto-nappi on CTA, ei harmaa kehys (Vesa 6.8.: "verkosto cta ei
+   ole yhtään OK ympärillä navibaarissa"). Jaetun komponentin dark-variantti
+   piirtää lasimaisen valkoreunuksen, joka istui huonosti giftsin tummaan
+   palkkiin. Paikallinen sääntö: täysi pinkki pilleri, valkoinen teksti ja
+   ikoni. #DB2777 eikä #EC4899, koska teksti on pieni: valkoinen #EC4899:llä
+   on 3,53:1 (AA kaatuu), #DB2777:llä 4,63:1. !important tarvitaan, koska
+   komponentti asettaa värit inline-tyylinä. Jaettuun tiedostoon ei kosketa. */
+.lv-eco-compact button[aria-haspopup] {
+  min-height: 44px;
+  background: #DB2777 !important;
+  border-color: transparent !important;
+  color: #ffffff !important;
+}
+.lv-eco-compact button[aria-haspopup] svg { color: #ffffff !important; }
+.lv-eco-compact button[aria-haspopup] span { text-shadow: none !important; }
 .lv-eco-compact button[aria-haspopup] > span { display: inline; }
 
 /* Mainospaikan yläotsikko ("PÄÄKUMPPANI · MAINOSPAIKKA VAPAANA") on jaetussa

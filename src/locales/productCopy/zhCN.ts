@@ -1012,4 +1012,41 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, '时长', '人数', '地点', '季节', '礼品卡'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin 六菇混合粉 100 g',
+    description:
+      '白桦茸、灵芝、猴头菇、虫草、香菇和舞茸装进一罐，磨成粉可加入咖啡或奶昔。一罐覆盖整个功能菌菇货架。',
+    specs: ['100 g', '白桦茸、灵芝、猴头菇、虫草、香菇、舞茸'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin 北欧浆果混合粉 120 g',
+    description:
+      '芬兰制造的北方浆果混合粉，加入粥或酸奶。把一个北欧浆果之夏带回家的最轻方式。',
+    specs: ['120 g', '芬兰制造'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin 白桦茸酊剂 50 ml',
+    description:
+      '芬兰白桦茸以滴剂代替粉末：50 ml 小瓶无需熬煮。整个白桦茸理念的旅行装。',
+    specs: ['50 ml', '芬兰白桦茸'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini 白桦茸块 100 g',
+    description:
+      '芬兰桦树白桦茸的粗块，用于慢火熬煮。在“超级食物”这个词出现之前，这里就是这样喝的。一袋可以煮很多壶。',
+    specs: ['100 g', '小火慢煮成茶'],
+    specLabels: [undefined, '用法'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo 速溶白桦茸提取粉 28 g',
+    description:
+      '无需熬煮、直接溶于热水的白桦茸。28 克小罐放进任何行李都行，比一袋原块更经得起旅途。',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo 针叶树提取液 50 ml',
+    description:
+      '从芬兰针叶树中提取的滴剂。拉普兰森林徒步的气息，装进一个能放进大衣口袋的小瓶。',
+    specs: ['50 ml'],
+  },
 }

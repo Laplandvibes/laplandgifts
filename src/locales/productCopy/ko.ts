@@ -1011,4 +1011,41 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, '소요 시간', '참가 인원', '위치', '시즌', '기프트 카드'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin 여섯 가지 버섯 블렌드 100 g',
+    description:
+      '차가버섯, 영지, 노루궁뎅이, 동충하초, 표고, 잎새버섯을 한 병에 담아 커피나 스무디에 타 먹는 분말입니다. 이 한 병이 기능성 버섯 선반 전체를 대신합니다.',
+    specs: ['100 g', '차가버섯, 영지, 노루궁뎅이, 동충하초, 표고, 잎새버섯'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin 북유럽 베리 파우더 믹스 120 g',
+    description:
+      '북쪽의 베리를 하나의 분말로 담은 핀란드산 블렌드로, 죽이나 요거트에 어울립니다. 북유럽 베리의 여름을 집으로 가져가는 가장 가벼운 방법입니다.',
+    specs: ['120 g', '핀란드산'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin 차가버섯 팅크 50 ml',
+    description:
+      '분말 대신 방울로 먹는 핀란드산 차가버섯. 우려낼 필요 없는 50 ml 병으로, 차가버섯이라는 발상의 여행용 사이즈입니다.',
+    specs: ['50 ml', '핀란드산 차가버섯'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini 차가버섯 조각 100 g',
+    description:
+      '천천히 우려내는 핀란드 자작나무 차가버섯의 굵은 조각. 슈퍼푸드라는 말이 생기기 훨씬 전부터 이렇게 마셨습니다. 한 봉지로 여러 주전자를 우립니다.',
+    specs: ['100 g', '약한 불로 오래 우려 차로'],
+    specLabels: [undefined, '사용법'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo 인스턴트 차가버섯 추출 분말 28 g',
+    description:
+      '끓이지 않고 뜨거운 물에 바로 녹는 차가버섯. 28 g 병은 어떤 짐에도 들어가고 조각 봉지보다 여행을 잘 견딥니다.',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo 침엽수 추출액 50 ml',
+    description:
+      '핀란드 침엽수에서 추출해 방울로 먹는 추출액. 라플란드 숲길의 향을 코트 주머니에 들어가는 병에 담았습니다.',
+    specs: ['50 ml'],
+  },
 }

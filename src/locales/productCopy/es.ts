@@ -1010,4 +1010,41 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Tarjeta regalo'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin mezcla de seis setas 100 g',
+    description:
+      'Chaga, reishi, melena de león, cordyceps, shiitake y maitake en un solo bote, molidos para café o batidos. Un bote cubre toda la estantería de setas funcionales.',
+    specs: ['100 g', 'Chaga, reishi, melena de león, cordyceps, shiitake, maitake'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin mezcla de bayas nórdicas en polvo 120 g',
+    description:
+      'Una mezcla finlandesa de bayas del norte en un solo polvo, para gachas y yogur. La forma más ligera de llevarse a casa un verano de bayas nórdicas.',
+    specs: ['120 g', 'Hecho en Finlandia'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin tintura de chaga 50 ml',
+    description:
+      'Chaga finlandés en gotas en lugar de polvo: un frasco de 50 ml que no necesita infusión. El formato de viaje de toda la idea del chaga.',
+    specs: ['50 ml', 'Chaga finlandés'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini trozos de chaga 100 g',
+    description:
+      'Trozos gruesos de chaga de abedul finlandés para infusión lenta, como se bebía aquí mucho antes de la palabra superalimento. Una bolsa da para muchas teteras.',
+    specs: ['100 g', 'Hervir a fuego lento como un té de infusión larga'],
+    specLabels: [undefined, 'Uso'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo polvo de extracto de chaga instantáneo 28 g',
+    description:
+      'Chaga que se disuelve directamente en agua caliente, sin hervir. El bote de 28 gramos cabe en cualquier equipaje y viaja mejor que una bolsa de trozos.',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo extracto de coníferas 50 ml',
+    description:
+      'Un extracto de coníferas finlandesas que se toma en gotas. El olor a bosque de una caminata por Laponia en un frasco de bolsillo.',
+    specs: ['50 ml'],
+  },
 }

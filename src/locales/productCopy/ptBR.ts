@@ -1010,4 +1010,41 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Cartão-presente'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin mistura de seis cogumelos 100 g',
+    description:
+      'Chaga, reishi, juba de leão, cordyceps, shiitake e maitake em um só pote, moídos para café ou vitaminas. Um pote cobre a prateleira inteira de cogumelos funcionais.',
+    specs: ['100 g', 'Chaga, reishi, juba de leão, cordyceps, shiitake, maitake'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin mistura de frutas nórdicas em pó 120 g',
+    description:
+      'Uma mistura finlandesa de frutas do norte em um único pó, para mingau e iogurte. O jeito mais leve de levar um verão de frutas nórdicas para casa.',
+    specs: ['120 g', 'Feito na Finlândia'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin tintura de chaga 50 ml',
+    description:
+      'Chaga finlandês em gotas em vez de pó: um frasco de 50 ml que dispensa infusão. O formato de viagem de toda a ideia do chaga.',
+    specs: ['50 ml', 'Chaga finlandês'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini pedaços de chaga 100 g',
+    description:
+      'Pedaços grossos de chaga de bétula finlandesa para infusão lenta, como se bebia aqui muito antes da palavra superalimento. Um saco rende muitos bules.',
+    specs: ['100 g', 'Ferver em fogo brando como um chá de infusão longa'],
+    specLabels: [undefined, 'Uso'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo pó de extrato de chaga instantâneo 28 g',
+    description:
+      'Chaga que se dissolve direto na água quente, sem fervura. O pote de 28 gramas cabe em qualquer bagagem e viaja melhor que um saco de pedaços.',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo extrato de coníferas 50 ml',
+    description:
+      'Um extrato de coníferas finlandesas, tomado em gotas. O cheiro de floresta de uma trilha na Lapônia em um frasco de bolso.',
+    specs: ['50 ml'],
+  },
 }

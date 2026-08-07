@@ -1012,4 +1012,41 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, '所要時間', '参加人数', '場所', 'シーズン', 'ギフトカード'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin 6種きのこブレンド 100 g',
+    description:
+      'チャーガ、霊芝、ヤマブシタケ、冬虫夏草、しいたけ、まいたけを1つの瓶に。コーヒーやスムージーに混ぜられる粉末で、これ1つで機能性きのこの棚を網羅します。',
+    specs: ['100 g', 'チャーガ、霊芝、ヤマブシタケ、冬虫夏草、しいたけ、まいたけ'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin 北欧ベリーパウダーミックス 120 g',
+    description:
+      '北欧のベリーを1つの粉末にまとめたフィンランド製ブレンド。お粥やヨーグルトに。北欧のベリーの夏を持ち帰るいちばん軽い方法です。',
+    specs: ['120 g', 'フィンランド製'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin チャーガチンキ 50 ml',
+    description:
+      '粉末ではなく滴で摂るフィンランド産チャーガ。50 mlの瓶は煮出し不要。チャーガという発想の旅行サイズです。',
+    specs: ['50 ml', 'フィンランド産チャーガ'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini チャーガ塊 100 g',
+    description:
+      'フィンランドの白樺チャーガの粗い塊。スーパーフードという言葉が生まれるずっと前からの飲み方で、じっくり煮出します。1袋で何ポットも淹れられます。',
+    specs: ['100 g', '弱火でじっくり煮出してお茶に'],
+    specLabels: [undefined, '使い方'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo インスタントチャーガエキス粉末 28 g',
+    description:
+      '煮出さずにお湯に直接溶けるチャーガ。28 gの瓶はどんな荷物にも収まり、塊の袋より旅に強いです。',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo 針葉樹エキス 50 ml',
+    description:
+      'フィンランドの針葉樹から抽出したエキスを滴で。ラップランドの森歩きの香りを、コートのポケットに入る瓶で。',
+    specs: ['50 ml'],
+  },
 }

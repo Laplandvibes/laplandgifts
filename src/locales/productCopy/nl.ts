@@ -1010,4 +1010,41 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Cadeaukaart'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin zes-paddenstoelenmix 100 g',
+    description:
+      'Chaga, reishi, pruikzwam, cordyceps, shiitake en maitake in één pot, gemalen voor koffie of smoothies. Eén pot dekt de hele plank functionele paddenstoelen.',
+    specs: ['100 g', 'Chaga, reishi, pruikzwam, cordyceps, shiitake, maitake'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin Noordse bessen poedermix 120 g',
+    description:
+      'Een Finse mix van noordelijke bessen als één poeder, voor pap en yoghurt. De lichtste manier om een zomer aan Noordse bessen mee naar huis te nemen.',
+    specs: ['120 g', 'Gemaakt in Finland'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin chagatinctuur 50 ml',
+    description:
+      'Finse chaga als druppels in plaats van poeder: een flesje van 50 ml dat niet gezet hoeft te worden. Het reisformaat van het hele chaga-idee.',
+    specs: ['50 ml', 'Finse chaga'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini chagastukken 100 g',
+    description:
+      'Grove stukken Finse berkenchaga om langzaam te trekken, zoals hij hier werd gedronken lang voordat iemand superfood zei. Eén zak is goed voor vele potten.',
+    specs: ['100 g', 'Laten trekken als langzaam gezette thee'],
+    specLabels: [undefined, 'Gebruik'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo instant chaga-extractpoeder 28 g',
+    description:
+      'Chaga die direct oplost in heet water, zonder trekken. De pot van 28 gram past in elke bagage en doorstaat de reis beter dan een zak stukken.',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo naaldboomextract 50 ml',
+    description:
+      'Een extract uit Finse naaldbomen, in te nemen als druppels. De bosgeur van een wandeling in Lapland in een flesje voor de jaszak.',
+    specs: ['50 ml'],
+  },
 }

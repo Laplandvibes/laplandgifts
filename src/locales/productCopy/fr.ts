@@ -1011,4 +1011,41 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Carte cadeau'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin mélange de six champignons 100 g',
+    description:
+      'Chaga, reishi, crinière de lion, cordyceps, shiitaké et maitaké dans un seul pot, moulus pour le café ou les smoothies. Un pot couvre tout le rayon des champignons fonctionnels.',
+    specs: ['100 g', 'Chaga, reishi, crinière de lion, cordyceps, shiitaké, maitaké'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin mélange de baies nordiques en poudre 120 g',
+    description:
+      'Un mélange finlandais de baies du Nord en une seule poudre, pour le porridge et le yaourt. La façon la plus légère de rapporter un été de baies nordiques.',
+    specs: ['120 g', 'Fabriqué en Finlande'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin teinture de chaga 50 ml',
+    description:
+      'Le chaga finlandais en gouttes plutôt qu\'en poudre : un flacon de 50 ml qui ne demande aucune infusion. Le format voyage de toute l\'idée du chaga.',
+    specs: ['50 ml', 'Chaga finlandais'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini morceaux de chaga 100 g',
+    description:
+      'Des morceaux grossiers de chaga de bouleau finlandais à infuser lentement, comme on le buvait ici bien avant le mot superaliment. Un sachet donne de nombreuses théières.',
+    specs: ['100 g', 'Laisser frémir comme un thé longuement infusé'],
+    specLabels: [undefined, 'Utilisation'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo poudre d\'extrait de chaga instantané 28 g',
+    description:
+      'Un chaga qui se dissout directement dans l\'eau chaude, sans infusion. Le pot de 28 grammes tient dans n\'importe quel bagage et voyage mieux qu\'un sachet de morceaux.',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo extrait de conifères 50 ml',
+    description:
+      'Un extrait tiré des conifères finlandais, à prendre en gouttes. L\'odeur de forêt d\'une randonnée en Laponie dans un flacon de poche.',
+    specs: ['50 ml'],
+  },
 }

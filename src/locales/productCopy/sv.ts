@@ -1012,4 +1012,41 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Presentkort'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin Sexsvampsblandning 100 g',
+    description:
+      'Chaga, reishi, lion\'s mane, cordyceps, shiitake och maitake i samma burk, malda för kaffe eller smoothies. En burk täcker hela svamphyllan.',
+    specs: ['100 g', 'Chaga, reishi, lion\'s mane, cordyceps, shiitake, maitake'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin Nordiska bär pulverblandning 120 g',
+    description:
+      'En finsk blandning av nordiska bär som ett enda pulver, för gröt och yoghurt. Det lättaste sättet att ta med en nordisk bärsommar hem.',
+    specs: ['120 g', 'Tillverkad i Finland'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin Chagatinktur 50 ml',
+    description:
+      'Finsk chaga som droppar i stället för pulver: en 50 ml flaska som inte behöver bryggas. Hela chagaidén i reseformat.',
+    specs: ['50 ml', 'Finsk chaga'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini Chagabitar 100 g',
+    description:
+      'Grova bitar av finsk björkchaga för långsam bryggning, så som den dracks här långt innan någon sa superfood. En påse räcker till många kannor.',
+    specs: ['100 g', 'Sjud som långsamt bryggt te'],
+    specLabels: [undefined, 'Användning'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo Instant chagaextraktpulver 28 g',
+    description:
+      'Chaga som löser sig direkt i hett vatten utan sjudning. Burken på 28 gram ryms i vilket bagage som helst och klarar resan bättre än en påse bitar.',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo Barrträdsextrakt 50 ml',
+    description:
+      'Ett extrakt ur finska barrträd som tas i droppform. Doften av en vandring i Lappland i en flaska som ryms i rockfickan.',
+    specs: ['50 ml'],
+  },
 }

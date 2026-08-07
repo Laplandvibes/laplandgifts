@@ -27,7 +27,13 @@ export type SubgroupId = string
 /** Ryhmien järjestys kategoriaa kohden. Määrää myös renderöintijärjestyksen. */
 export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
   design: ['tableware', 'textiles', 'candles', 'objects'],
-  clothing: ['baselayer', 'midlayer', 'outerwear', 'accessories'],
+  // 🔴 Vaatteet ryhmitellään BRÄNDIN mukaan (Vesa 6.8.: "eihän täällä ole
+  // kategorisoitu brändin mukaan ollenkaan, ja en löydä enempää niitä makia
+  // tuotteita"). Vaatetuskategoriassa brändi on se, millä ostaja navigoi:
+  // Makian etsijä haluaa Makia-osion, ei arvailua vaatetyypeistä. Muissa
+  // kategorioissa tyyppiryhmittely säilyy, koska niissä brändejä on monta
+  // pientä eikä kukaan etsi "Emendoa".
+  clothing: ['brandhalti', 'brandnorthoutdoor', 'brandmakia'],
   handicrafts: ['sauna', 'knives', 'wood', 'textiles', 'ceramics'],
   treats: ['salmiakki', 'chocolate', 'savoury', 'drinks'],
   // `drinks` on mukana myös täällä: Kainon kuusenkerkkäjuoma on superfoodi
@@ -50,6 +56,9 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     candles: 'Candleholders',
     objects: 'Small objects',
     sauna: 'Sauna',
+    brandhalti: 'Halti',
+    brandnorthoutdoor: 'North Outdoor',
+    brandmakia: 'Makia',
     baselayer: 'Base layers',
     midlayer: 'Mid layers and knitwear',
     outerwear: 'Shells and outerwear',
@@ -72,6 +81,9 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     candles: 'Kynttilänjalat',
     objects: 'Pienesineet',
     sauna: 'Sauna',
+    brandhalti: 'Halti',
+    brandnorthoutdoor: 'North Outdoor',
+    brandmakia: 'Makia',
     baselayer: 'Aluskerrastot',
     midlayer: 'Välikerrokset ja neuleet',
     outerwear: 'Kuoritakit ja ulkovaatteet',
@@ -107,25 +119,25 @@ const MAP: Record<string, SubgroupId> = {
   'fiskars-moominpappa-scissors': 'objects',
 
   // clothing
-  'halti-hossa-baselayer-men': 'baselayer',
-  'halti-hossa-baselayer-women': 'baselayer',
-  'north-outdoor-arctic-260-zip-neck': 'baselayer',
-  'north-outdoor-honka-jumper': 'midlayer',
-  'north-outdoor-sointu-cardigan': 'midlayer',
-  'halti-heatgrid-midlayer': 'midlayer',
-  'makia-aurora-hoodie': 'midlayer',
-  'halti-tokoi-dx-jacket': 'outerwear',
-  'halti-taival-dx-jacket': 'outerwear',
-  'makia-merino-beanie': 'accessories',
-  'north-outdoor-huuru-beanie': 'accessories',
-  'north-outdoor-pyry-scarf': 'accessories',
-  'north-outdoor-arctic-250-balaclava': 'accessories',
-  'north-outdoor-kevo-gloves': 'accessories',
-  'north-outdoor-heavyweight-gaiter': 'accessories',
-  'halti-kroka-mitten': 'accessories',
-  'halti-sykli-ski-gloves': 'accessories',
-  'halti-tunturit-ski-socks': 'accessories',
-  'halti-merino-socks-2pack': 'accessories',
+  'halti-hossa-baselayer-men': 'brandhalti',
+  'halti-hossa-baselayer-women': 'brandhalti',
+  'north-outdoor-arctic-260-zip-neck': 'brandnorthoutdoor',
+  'north-outdoor-honka-jumper': 'brandnorthoutdoor',
+  'north-outdoor-sointu-cardigan': 'brandnorthoutdoor',
+  'halti-heatgrid-midlayer': 'brandhalti',
+  'makia-aurora-hoodie': 'brandmakia',
+  'halti-tokoi-dx-jacket': 'brandhalti',
+  'halti-taival-dx-jacket': 'brandhalti',
+  'makia-merino-beanie': 'brandmakia',
+  'north-outdoor-huuru-beanie': 'brandnorthoutdoor',
+  'north-outdoor-pyry-scarf': 'brandnorthoutdoor',
+  'north-outdoor-arctic-250-balaclava': 'brandnorthoutdoor',
+  'north-outdoor-kevo-gloves': 'brandnorthoutdoor',
+  'north-outdoor-heavyweight-gaiter': 'brandnorthoutdoor',
+  'halti-kroka-mitten': 'brandhalti',
+  'halti-sykli-ski-gloves': 'brandhalti',
+  'halti-tunturit-ski-socks': 'brandhalti',
+  'halti-merino-socks-2pack': 'brandhalti',
 
   // handicrafts
   'marttiini-lapinleuku-255': 'knives',
@@ -178,6 +190,12 @@ const MAP: Record<string, SubgroupId> = {
   'arctic-warriors-roseroot-elixir': 'oils',
   'omega7-sea-buckthorn-olive-oil': 'oils',
   'kaino-spruce-sprout-sparkling': 'drinks',
+  'foodin-six-mushroom-blend': 'herbal',
+  'foodin-nordic-berry-powder': 'berry',
+  'foodin-chaga-tincture': 'oils',
+  'kaavi-chaga-chunks': 'herbal',
+  'puhdistamo-instant-chaga': 'herbal',
+  'puhdistamo-conifer-extract': 'oils',
 
   // experiences: Elämyslahjat.fi-lahjakortit
   'husky-farm-safari-rovaniemi': 'vouchers',

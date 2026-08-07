@@ -2449,6 +2449,161 @@ export const PRODUCTS: Product[] = [
   },
 
   // ───────────────────────────────────────────────────────────────────────
+  // Erä 6.8.2026 — SUPERFOODIT (Vesa: "tänne pitää saada enemmän täytettä").
+  // Kuusi tuotetta Ruohonjuuresta: metsäsienet ja pakuri kolmessa muodossa,
+  // pohjoismainen marjajauhesekoitus ja havupuu-uute. Hinnat, kuvat ja
+  // kuvaustekstit kaupan JSON-LD:stä 6.8.2026.
+  // ───────────────────────────────────────────────────────────────────────
+  {
+    slug: 'foodin-six-mushroom-blend',
+    category: 'superfoods',
+    brand: 'Foodin',
+    name: { en: 'Foodin six mushroom blend 100 g', fi: 'Foodin Kuuden sienen sekoitus 100 g' },
+    description: {
+      en: 'Chaga, reishi, lion’s mane, cordyceps, shiitake and maitake in one jar, ground for coffee or smoothies. One jar covers the whole functional mushroom shelf.',
+      fi: 'Pakuri, reishi, siiliorakas, cordyceps, siitake ja maitake samassa purkissa, jauhettuna kahviin tai smoothieen. Yksi purkki kattaa koko sienihyllyn.',
+    },
+    priceFrom: 21.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-06',
+    image: 'prod-foodin-six-mushroom-blend',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/foodin-kuuden-sienen-sekoitus-chaga-reishi-lions-mane-siitake-maitake-cordyceps-100-g',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '100 g', fi: '100 g' } },
+        { key: 'contents', value: { en: 'Chaga, reishi, lion’s mane, cordyceps, shiitake, maitake', fi: 'Pakuri, reishi, siiliorakas, cordyceps, siitake, maitake' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/foodin-kuuden-sienen-sekoitus-chaga-reishi-lions-mane-siitake-maitake-cordyceps-100-g',
+      fetchedAt: '2026-08-06',
+    },
+  },
+  {
+    slug: 'foodin-nordic-berry-powder',
+    category: 'superfoods',
+    brand: 'Foodin',
+    name: { en: 'Foodin Nordic berries powder mix 120 g', fi: 'Foodin Pohjolan marjat -marjajauhesekoitus 120 g' },
+    description: {
+      en: 'A Finnish blend of northern berries in one powder, for porridge and yoghurt. The lightest way to carry a summer of Nordic berries home.',
+      fi: 'Kotimainen sekoitus pohjoisen marjoja yhtenä jauheena puuroon ja jogurttiin. Kevyin tapa viedä pohjolan marjakesä kotiin.',
+    },
+    priceFrom: 15.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-06',
+    image: 'prod-foodin-nordic-berry-powder',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/foodin-pohjolan-marjat-kotimainen-marjajauhesekoitus-120-g',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '120 g', fi: '120 g' } },
+        { key: 'origin', value: { en: 'Made in Finland', fi: 'Valmistettu Suomessa' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/foodin-pohjolan-marjat-kotimainen-marjajauhesekoitus-120-g',
+      fetchedAt: '2026-08-06',
+    },
+  },
+  {
+    slug: 'foodin-chaga-tincture',
+    category: 'superfoods',
+    brand: 'Foodin',
+    name: { en: 'Foodin chaga tincture 50 ml', fi: 'Foodin Pakuri-tinktuura 50 ml' },
+    description: {
+      en: 'Finnish chaga as drops instead of powder: a 50 ml bottle that needs no brewing. The travel size of the whole chaga idea.',
+      fi: 'Kotimainen pakuri tippoina jauheen sijaan: 50 ml pullo, joka ei vaadi hauduttamista. Koko pakuriajatuksen matkakoko.',
+    },
+    priceFrom: 19.5,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-06',
+    image: 'prod-foodin-chaga-tincture',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/foodin-pakuri-tinktuura-kotimainen-50-ml',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '50 ml', fi: '50 ml' } },
+        { key: 'origin', value: { en: 'Finnish chaga', fi: 'Kotimainen pakuri' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/foodin-pakuri-tinktuura-kotimainen-50-ml',
+      fetchedAt: '2026-08-06',
+    },
+  },
+  {
+    slug: 'kaavi-chaga-chunks',
+    category: 'superfoods',
+    brand: 'Kaavi Porcini',
+    name: { en: 'Kaavi Porcini chaga chunks 100 g', fi: 'Kaavi Porcini Pakurikääpärouhe 100 g' },
+    description: {
+      en: 'Coarse chunks of Finnish birch chaga for slow brewing, the way it was drunk here long before anyone said superfood. One bag brews many pots.',
+      fi: 'Karkeaa suomalaista koivunpakuria hitaaseen hauduttamiseen, niin kuin sitä juotiin kauan ennen sanaa superfood. Yksi pussi hautuu moneen pannulliseen.',
+    },
+    priceFrom: 21.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-06',
+    image: 'prod-kaavi-chaga-chunks',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/kaavi-porcini-pakurikaaparouhe-100-g',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '100 g', fi: '100 g' } },
+        { key: 'other', label: { en: 'Use', fi: 'Käyttö' }, value: { en: 'Simmer as a slow-brewed tea', fi: 'Haudutetaan teeksi' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/kaavi-porcini-pakurikaaparouhe-100-g',
+      fetchedAt: '2026-08-06',
+    },
+  },
+  {
+    slug: 'puhdistamo-instant-chaga',
+    category: 'superfoods',
+    brand: 'Puhdistamo',
+    name: { en: 'Puhdistamo instant chaga extract powder 28 g', fi: 'Puhdistamo Pakuriuutejauhe, instant-pakuri 28 g' },
+    description: {
+      en: 'Chaga that dissolves straight into hot water, no simmering. The 28 gram jar fits any luggage and survives the trip better than a bag of chunks.',
+      fi: 'Pakuri joka liukenee suoraan kuumaan veteen ilman hauduttamista. 28 gramman purkki mahtuu mihin tahansa matkatavaraan.',
+    },
+    priceFrom: 19.46,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-06',
+    image: 'prod-puhdistamo-instant-chaga',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/puhdistamo-pakuriuutejauhe-instant-pakuri-28-g',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '28 g', fi: '28 g' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/puhdistamo-pakuriuutejauhe-instant-pakuri-28-g',
+      fetchedAt: '2026-08-06',
+    },
+  },
+  {
+    slug: 'puhdistamo-conifer-extract',
+    category: 'superfoods',
+    brand: 'Puhdistamo',
+    name: { en: 'Puhdistamo conifer extract 50 ml', fi: 'Puhdistamo Havupuu-uute 50 ml' },
+    description: {
+      en: 'An extract drawn from Finnish conifers, taken as drops. The forest smell of a Lapland hike in a bottle small enough for a coat pocket.',
+      fi: 'Suomalaisista havupuista uutettu tippoina otettava uute. Lapin metsäretken tuoksu pullossa, joka mahtuu takin taskuun.',
+    },
+    priceFrom: 14.99,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-06',
+    image: 'prod-puhdistamo-conifer-extract',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/puhdistamo-havupuu-uute-50-ml',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '50 ml', fi: '50 ml' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/puhdistamo-havupuu-uute-50-ml',
+      fetchedAt: '2026-08-06',
+    },
+  },
+
+  // ───────────────────────────────────────────────────────────────────────
   // Erä 2.8.2026 osa 2 — MUUMIDESIGN JA SAUNA.
   //
   // Sauna on suomalaisin lahja mitä on, eikä sitä ollut kaupassa lainkaan.

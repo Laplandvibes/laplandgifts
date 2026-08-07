@@ -1010,4 +1010,41 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Stagione', 'Carta regalo'],
   },
+  'foodin-six-mushroom-blend': {
+    name: 'Foodin miscela di sei funghi 100 g',
+    description:
+      'Chaga, reishi, criniera di leone, cordyceps, shiitake e maitake in un solo barattolo, macinati per caffè o frullati. Un barattolo copre l\'intero scaffale dei funghi funzionali.',
+    specs: ['100 g', 'Chaga, reishi, criniera di leone, cordyceps, shiitake, maitake'],
+  },
+  'foodin-nordic-berry-powder': {
+    name: 'Foodin miscela di bacche nordiche in polvere 120 g',
+    description:
+      'Una miscela finlandese di bacche del nord in un\'unica polvere, per porridge e yogurt. Il modo più leggero di portare a casa un\'estate di bacche nordiche.',
+    specs: ['120 g', 'Prodotto in Finlandia'],
+  },
+  'foodin-chaga-tincture': {
+    name: 'Foodin tintura di chaga 50 ml',
+    description:
+      'Chaga finlandese in gocce invece che in polvere: un flacone da 50 ml che non richiede infusione. Il formato da viaggio dell\'intera idea del chaga.',
+    specs: ['50 ml', 'Chaga finlandese'],
+  },
+  'kaavi-chaga-chunks': {
+    name: 'Kaavi Porcini pezzi di chaga 100 g',
+    description:
+      'Pezzi grossolani di chaga di betulla finlandese per un\'infusione lenta, come lo si beveva qui molto prima della parola superfood. Un sacchetto basta per molte teiere.',
+    specs: ['100 g', 'Sobbollire come un tè a lunga infusione'],
+    specLabels: [undefined, 'Uso'],
+  },
+  'puhdistamo-instant-chaga': {
+    name: 'Puhdistamo polvere di estratto di chaga istantaneo 28 g',
+    description:
+      'Chaga che si scioglie direttamente in acqua calda, senza bollitura. Il barattolo da 28 grammi sta in qualsiasi bagaglio e viaggia meglio di un sacchetto di pezzi.',
+    specs: ['28 g'],
+  },
+  'puhdistamo-conifer-extract': {
+    name: 'Puhdistamo estratto di conifere 50 ml',
+    description:
+      'Un estratto di conifere finlandesi da assumere in gocce. Il profumo di bosco di un\'escursione in Lapponia in un flacone tascabile.',
+    specs: ['50 ml'],
+  },
 }
