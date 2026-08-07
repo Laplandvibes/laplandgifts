@@ -2,11 +2,15 @@ import { Fragment, lazy, type ReactElement } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { LANG_PREFIX } from './i18n/useLang'
 import { CATEGORIES } from './data/categories'
+import { boutiqueTownPaths } from './data/boutiques'
 
 const Home = lazy(() => import('./pages/Home'))
 const Category = lazy(() => import('./pages/Category'))
 const Product = lazy(() => import('./pages/Product'))
 const GiftGuides = lazy(() => import('./pages/GiftGuides'))
+const Boutiques = lazy(() => import('./pages/Boutiques'))
+const BoutiqueTown = lazy(() => import('./pages/BoutiqueTown'))
+const Boutique = lazy(() => import('./pages/Boutique'))
 const Shipping = lazy(() => import('./pages/Shipping'))
 const Privacy = lazy(() => import('./pages/Privacy'))
 const Terms = lazy(() => import('./pages/Terms'))
@@ -29,6 +33,10 @@ export const CONTENT_PATHS: string[] = [
   ...CATEGORIES.map((c) => c.slug),
   '/gift-guides',
   '/shipping',
+  '/boutiques',
+  // Paikkakuntapolut tulevat datasta: kynnyksen ylittävä paikkakunta saa
+  // reitin, prerenderin ja sitemap-rivin ilman käsityötä.
+  ...boutiqueTownPaths(),
 ]
 
 /** Lakisivut. Ei sitemapiin eikä murupolkuun, mutta reitit tarvitaan. */
@@ -42,6 +50,11 @@ const ELEMENTS: Record<string, ReactElement> = {
   '/': <Home />,
   '/gift-guides': <GiftGuides />,
   '/shipping': <Shipping />,
+  '/boutiques': <Boutiques />,
+  // 🔴 Ilman tätä riviä ELEMENTSin fallback tekisi /boutiques/rovaniemistä
+  // kategoriasivun, joka ei löydä kategoriaa ja palauttaisi NotFoundin.
+  // Vika näkyisi vasta selaimessa, ei buildissa.
+  ...Object.fromEntries(boutiqueTownPaths().map((p) => [p, <BoutiqueTown />])),
   '/privacy': <Privacy />,
   '/terms': <Terms />,
   '/cookie-policy': <CookiePolicy />,
@@ -60,6 +73,7 @@ export default function AppRoutes() {
             return <Route key={full || '/'} path={full || '/'} element={element} />
           })}
           <Route path={`${prefix}/product/:slug`} element={<Product />} />
+          <Route path={`${prefix}/boutique/:slug`} element={<Boutique />} />
         </Fragment>
       ))}
       <Route path="*" element={<NotFound />} />
