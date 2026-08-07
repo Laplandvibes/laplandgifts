@@ -281,9 +281,12 @@ suurempi. Kumpikin vaihe on itsenäisesti julkaisukelpoinen.
 Rehellisyyskorjaukset (luku 5) kulkevat molemmissa vaiheissa mukana, koska sama data
 elää molemmissa.
 
-## 12. Avoin asia
+## 12. Ratkaistut kysymykset
 
-- **Taigakorun poisto** vaikuttaa lukuihin kolmessa komponentissa × 12 kieltä.
-  Vahvistettava ettei Taigakoru ole maksanut listauksestaan. Nykytilassa listaus on
-  ilmainen kaikille, joten oletus on ettei ole. Jos on maksanut, putiikki jää ja
-  lupaus "vain lappilaisia yrityksiä" muotoillaan uusiksi.
+- **Taigakorun poisto: vahvistettu (Vesa 2026-08-07).** Yksikään putiikki ei ole
+  maksanut listauksestaan. Taigakoru poistetaan, ja lupaus "vain lappilaisia yrityksiä"
+  jää voimaan sellaisenaan. Lopulliset luvut: **14 putiikkia, 8 verkkokauppaa.**
+- **Ei suojeltavia sopimuksia.** Koska yksikään listaus tai mainospaikka ei ole
+  maksettu, luvun 8 ansaintamalli voidaan toteuttaa sellaisenaan ilman siirtymäsääntöjä.
+  Kaikki 14 nykyistä putiikkia ovat ilmaisella listaustasolla, ja ne ovat samalla
+  yrittäjäkampanjan kohdeyleisö.
