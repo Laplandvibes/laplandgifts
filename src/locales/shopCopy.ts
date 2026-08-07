@@ -195,6 +195,37 @@ export interface ShopCopy {
      */
     foodRules: { title: string; intro: string; rows: Array<{ area: string; rule: string }> }
   }
+  /**
+   * Putiikkihakemisto. Lohko on pienin yksikkö: antamatta jätetty lohko
+   * putoaa englantiin, joten uudet avaimet on lisättävä jokaisen kielen
+   * boutique-lohkoon eikä vain englantiin.
+   */
+  boutique: {
+    hubTitle: string
+    hubLead: string
+    hubIntro: string
+    townsH2: string
+    elsewhereH2: string
+    filterAll: string
+    filterOnline: string
+    filterPhysical: string
+    onlineBadge: string
+    physicalBadge: string
+    /** "12 putiikkia". Luku tulee datasta, ei copysta. */
+    count: (n: number) => string
+    visitH2: string
+    shopAtH2: string
+    outboundCta: string
+    crossSellH2: string
+    crossSellCta: string
+    townNames: Record<'rovaniemi' | 'inari' | 'posio' | 'levi' | 'sodankyla', string>
+    duodjiH2: string
+    duodjiBody: string
+    duodjiAuthorized: string
+    listingH2: string
+    listingBody: string
+    listingCta: string
+  }
 }
 
 /**
@@ -380,6 +411,34 @@ const en: ShopCopy = {
       ],
     },
   },
+  boutique: {
+    hubTitle: 'Lapland boutiques',
+    hubLead: 'Where to buy Lapland crafts, in the shops themselves.',
+    hubIntro: 'Every shop here is a Lapland business. Some ship worldwide, some you visit in person, and each link goes to the company\'s own site.',
+    townsH2: 'By town',
+    elsewhereH2: 'Elsewhere in Lapland',
+    filterAll: 'All',
+    filterOnline: 'Ships to you',
+    filterPhysical: 'Visit in person',
+    onlineBadge: 'ONLINE SHOP',
+    physicalBadge: 'WALK IN',
+    count: (n: number) => (n === 1 ? '1 boutique' : `${n} boutiques`),
+    visitH2: 'Visit in person',
+    shopAtH2: 'Order from home',
+    outboundCta: 'Go to their site',
+    crossSellH2: 'Buy this kind of thing online',
+    crossSellCta: 'Browse the category',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'How to recognise real Sámi duodji',
+    duodjiBody: 'Duodji is Sámi handicraft made by Sámi makers using traditional materials and techniques. Souvenir imitations copy the look without the maker or the tradition. The difference matters to the community whose culture it is, and an authorised seller can tell you who made the piece.',
+    duodjiAuthorized: 'Authorised seller of Sámi duodji',
+    listingH2: 'Do you run a Lapland shop?',
+    listingBody: 'A listing here is free for every Lapland business. Tell us who you are, why your visibility is weak right now, and what would change if customers found you.',
+    listingCta: 'Get in touch',
+  },
 }
 
 const fi: ShopCopy = {
@@ -548,6 +607,34 @@ const fi: ShopCopy = {
       ],
     },
   },
+  boutique: {
+    hubTitle: 'Lapin putiikit',
+    hubLead: 'Mistä Lapin käsityöt ostetaan, kaupoista itsestään.',
+    hubIntro: 'Jokainen tämän sivun kauppa on lappilainen yritys. Osa toimittaa kotiin, osaan mennään paikan päälle, ja jokainen linkki vie yrityksen omille sivuille.',
+    townsH2: 'Paikkakunnittain',
+    elsewhereH2: 'Muualla Lapissa',
+    filterAll: 'Kaikki',
+    filterOnline: 'Toimittaa kotiin',
+    filterPhysical: 'Käy paikan päällä',
+    onlineBadge: 'VERKKOKAUPPA',
+    physicalBadge: 'KIVIJALKA',
+    count: (n: number) => (n === 1 ? '1 putiikki' : `${n} putiikkia`),
+    visitH2: 'Vieraile paikan päällä',
+    shopAtH2: 'Tilaa kotiin',
+    outboundCta: 'Siirry heidän sivuilleen',
+    crossSellH2: 'Osta tällaista verkosta',
+    crossSellCta: 'Selaa kategoriaa',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'Näin tunnistat aidon saamelaisen duodjin',
+    duodjiBody: 'Duodji on saamelaisten tekemää käsityötä, jossa käytetään perinteisiä materiaaleja ja tekotapoja. Matkamuistoimitaatio kopioi ulkonäön ilman tekijää ja perinnettä. Ero on merkityksellinen sille yhteisölle jonka kulttuurista on kyse, ja auktorisoitu myyjä osaa kertoa kuka esineen on tehnyt.',
+    duodjiAuthorized: 'Auktorisoitu saamelaiskäsityön myyjä',
+    listingH2: 'Omistatko lappilaisen kaupan?',
+    listingBody: 'Listaus on ilmainen kaikille lappilaisille yrityksille. Kerro keitä olette, miksi näkyvyytenne on nyt heikko, ja mitä muuttuisi jos asiakkaat löytäisivät teidät.',
+    listingCta: 'Ota yhteyttä',
+  },
 }
 
 /**
@@ -573,6 +660,7 @@ interface Over {
   faqAnswerFixes?: ShopCopy['faqAnswerFixes']
   experience?: ShopCopy['experience']
   shipping?: ShopCopy['shipping']
+  boutique?: ShopCopy['boutique']
 }
 
 const over = (o: Over): ShopCopy => ({ ...en, ...o })
@@ -738,6 +826,34 @@ const de: ShopCopy = over({
       ],
     },
   },
+  boutique: {
+    hubTitle: 'Boutiquen in Lappland',
+    hubLead: 'Wo Sie Handwerk aus Lappland kaufen, direkt in den Läden.',
+    hubIntro: 'Jeder Laden hier ist ein Unternehmen aus Lappland. Manche versenden weltweit, andere besuchen Sie vor Ort, und jeder Link führt auf die eigene Seite des Unternehmens.',
+    townsH2: 'Nach Ort',
+    elsewhereH2: 'Anderswo in Lappland',
+    filterAll: 'Alle',
+    filterOnline: 'Versand zu Ihnen',
+    filterPhysical: 'Vor Ort besuchen',
+    onlineBadge: 'ONLINESHOP',
+    physicalBadge: 'LADEN',
+    count: (n: number) => (n === 1 ? '1 Boutique' : `${n} Boutiquen`),
+    visitH2: 'Vor Ort besuchen',
+    shopAtH2: 'Von zu Hause bestellen',
+    outboundCta: 'Zur Website des Ladens',
+    crossSellH2: 'So etwas online kaufen',
+    crossSellCta: 'Kategorie ansehen',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'So erkennen Sie echtes samisches Duodji',
+    duodjiBody: 'Duodji ist samisches Handwerk, hergestellt von samischen Kunsthandwerkern mit traditionellen Materialien und Techniken. Souvenir-Imitationen kopieren das Aussehen ohne die Person und die Tradition dahinter. Für die Gemeinschaft, um deren Kultur es geht, ist dieser Unterschied wichtig, und ein autorisierter Händler kann Ihnen sagen, wer das Stück gefertigt hat.',
+    duodjiAuthorized: 'Autorisierter Händler für samisches Duodji',
+    listingH2: 'Führen Sie einen Laden in Lappland?',
+    listingBody: 'Ein Eintrag ist für jedes Unternehmen aus Lappland kostenlos. Erzählen Sie uns, wer Sie sind, warum Ihre Sichtbarkeit derzeit schwach ist und was sich ändern würde, wenn Kunden Sie fänden.',
+    listingCta: 'Kontakt aufnehmen',
+  },
 })
 
 const sv: ShopCopy = over({
@@ -902,6 +1018,34 @@ const sv: ShopCopy = over({
       ],
     },
   },
+  boutique: {
+    hubTitle: 'Butiker i Lappland',
+    hubLead: 'Var du köper lappländskt hantverk, i butikerna själva.',
+    hubIntro: 'Varje butik här är ett lappländskt företag. Vissa skickar hem till dig, andra besöker du på plats, och varje länk går till företagets egen webbplats.',
+    townsH2: 'Efter ort',
+    elsewhereH2: 'På andra håll i Lappland',
+    filterAll: 'Alla',
+    filterOnline: 'Skickar hem',
+    filterPhysical: 'Besök på plats',
+    onlineBadge: 'NÄTBUTIK',
+    physicalBadge: 'BUTIK PÅ PLATS',
+    count: (n: number) => (n === 1 ? '1 butik' : `${n} butiker`),
+    visitH2: 'Besök på plats',
+    shopAtH2: 'Beställ hem',
+    outboundCta: 'Gå till deras webbplats',
+    crossSellH2: 'Köp sådant här på nätet',
+    crossSellCta: 'Bläddra i kategorin',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'Så känner du igen äkta samisk duodji',
+    duodjiBody: 'Duodji är samiskt hantverk tillverkat av samiska hantverkare med traditionella material och tekniker. Souvenirimitationer kopierar utseendet utan hantverkaren och traditionen bakom. Skillnaden betyder något för den gemenskap vars kultur det handlar om, och en auktoriserad återförsäljare kan berätta vem som har gjort föremålet.',
+    duodjiAuthorized: 'Auktoriserad återförsäljare av samisk duodji',
+    listingH2: 'Driver du en butik i Lappland?',
+    listingBody: 'En listning är gratis för alla lappländska företag. Berätta vilka ni är, varför er synlighet är svag just nu och vad som skulle förändras om kunderna hittade er.',
+    listingCta: 'Ta kontakt',
+  },
 })
 
 const fr: ShopCopy = over({
@@ -1064,6 +1208,34 @@ const fr: ShopCopy = over({
         { area: 'Japon', rule: 'Impossible. La viande exige un certificat d’inspection officiel quel que soit le mode de transport, et les colis postaux sont nommément visés.' },
       ],
     },
+  },
+  boutique: {
+    hubTitle: 'Boutiques de Laponie',
+    hubLead: 'Où acheter l\'artisanat lapon, dans les boutiques elles-mêmes.',
+    hubIntro: 'Chaque boutique de cette page est une entreprise laponne. Certaines expédient chez vous, d\'autres se visitent sur place, et chaque lien mène au site de l\'entreprise.',
+    townsH2: 'Par localité',
+    elsewhereH2: 'Ailleurs en Laponie',
+    filterAll: 'Toutes',
+    filterOnline: 'Livraison à domicile',
+    filterPhysical: 'À visiter sur place',
+    onlineBadge: 'BOUTIQUE EN LIGNE',
+    physicalBadge: 'SUR PLACE',
+    count: (n: number) => (n === 1 ? '1 boutique' : `${n} boutiques`),
+    visitH2: 'À visiter sur place',
+    shopAtH2: 'Commander depuis chez vous',
+    outboundCta: 'Aller sur leur site',
+    crossSellH2: 'Acheter ce type d\'article en ligne',
+    crossSellCta: 'Parcourir la catégorie',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'Comment reconnaître le vrai duodji sami',
+    duodjiBody: 'Le duodji est l\'artisanat sami, réalisé par des artisans samis avec des matériaux et des techniques traditionnels. Les imitations pour touristes copient l\'apparence sans l\'artisan ni la tradition. Cette différence compte pour la communauté dont il s\'agit, et un vendeur agréé peut vous dire qui a fabriqué la pièce.',
+    duodjiAuthorized: 'Vendeur agréé de duodji sami',
+    listingH2: 'Vous tenez une boutique en Laponie ?',
+    listingBody: 'L\'inscription est gratuite pour toute entreprise laponne. Dites-nous qui vous êtes, pourquoi votre visibilité est faible aujourd\'hui et ce qui changerait si les clients vous trouvaient.',
+    listingCta: 'Nous contacter',
   },
 })
 
@@ -1228,6 +1400,34 @@ const es: ShopCopy = over({
       ],
     },
   },
+  boutique: {
+    hubTitle: 'Boutiques de Laponia',
+    hubLead: 'Dónde comprar artesanía lapona, en las propias tiendas.',
+    hubIntro: 'Cada tienda de esta página es una empresa lapona. Algunas envían a su casa, otras se visitan en persona, y cada enlace lleva a la web de la empresa.',
+    townsH2: 'Por localidad',
+    elsewhereH2: 'En otros puntos de Laponia',
+    filterAll: 'Todas',
+    filterOnline: 'Envían a casa',
+    filterPhysical: 'Visitar en persona',
+    onlineBadge: 'TIENDA ONLINE',
+    physicalBadge: 'TIENDA FÍSICA',
+    count: (n: number) => (n === 1 ? '1 boutique' : `${n} boutiques`),
+    visitH2: 'Visitar en persona',
+    shopAtH2: 'Pedir desde casa',
+    outboundCta: 'Ir a su web',
+    crossSellH2: 'Comprar algo así por internet',
+    crossSellCta: 'Ver la categoría',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'Cómo reconocer el duodji sami auténtico',
+    duodjiBody: 'El duodji es la artesanía sami, hecha por artesanos samis con materiales y técnicas tradicionales. Las imitaciones de souvenir copian el aspecto sin el artesano ni la tradición. La diferencia importa a la comunidad de cuya cultura se trata, y un vendedor autorizado puede decirle quién hizo la pieza.',
+    duodjiAuthorized: 'Vendedor autorizado de duodji sami',
+    listingH2: '¿Tiene una tienda en Laponia?',
+    listingBody: 'El listado es gratuito para cualquier empresa lapona. Cuéntenos quiénes son, por qué su visibilidad es baja ahora y qué cambiaría si los clientes les encontraran.',
+    listingCta: 'Contactar',
+  },
 })
 
 const it: ShopCopy = over({
@@ -1390,6 +1590,34 @@ const it: ShopCopy = over({
         { area: 'Giappone', rule: 'Non è possibile. La carne richiede un certificato ufficiale di ispezione qualunque sia il trasporto, e i pacchi postali sono citati espressamente.' },
       ],
     },
+  },
+  boutique: {
+    hubTitle: 'Boutique della Lapponia',
+    hubLead: 'Dove comprare artigianato lappone, nei negozi stessi.',
+    hubIntro: 'Ogni negozio di questa pagina è un\'impresa lappone. Alcuni spediscono a casa, altri si visitano di persona, e ogni link porta al sito dell\'azienda.',
+    townsH2: 'Per località',
+    elsewhereH2: 'Altrove in Lapponia',
+    filterAll: 'Tutte',
+    filterOnline: 'Spedisce a casa',
+    filterPhysical: 'Da visitare',
+    onlineBadge: 'NEGOZIO ONLINE',
+    physicalBadge: 'NEGOZIO FISICO',
+    count: (n: number) => (n === 1 ? '1 boutique' : `${n} boutique`),
+    visitH2: 'Da visitare di persona',
+    shopAtH2: 'Ordinare da casa',
+    outboundCta: 'Vai al loro sito',
+    crossSellH2: 'Comprare qualcosa di simile online',
+    crossSellCta: 'Sfoglia la categoria',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'Come riconoscere il vero duodji sami',
+    duodjiBody: 'Il duodji è l\'artigianato sami, realizzato da artigiani sami con materiali e tecniche tradizionali. Le imitazioni da souvenir copiano l\'aspetto senza l\'artigiano e la tradizione. La differenza conta per la comunità della cui cultura si tratta, e un venditore autorizzato può dirvi chi ha realizzato il pezzo.',
+    duodjiAuthorized: 'Venditore autorizzato di duodji sami',
+    listingH2: 'Gestite un negozio in Lapponia?',
+    listingBody: 'L\'inserimento è gratuito per ogni impresa lappone. Raccontateci chi siete, perché la vostra visibilità è debole adesso e cosa cambierebbe se i clienti vi trovassero.',
+    listingCta: 'Contattaci',
   },
 })
 
@@ -1554,6 +1782,34 @@ const nl: ShopCopy = over({
       ],
     },
   },
+  boutique: {
+    hubTitle: 'Boetieks in Lapland',
+    hubLead: 'Waar u Laps handwerk koopt, in de winkels zelf.',
+    hubIntro: 'Elke winkel op deze pagina is een Laps bedrijf. Sommige verzenden naar u toe, andere bezoekt u ter plaatse, en elke link gaat naar de eigen site van het bedrijf.',
+    townsH2: 'Per plaats',
+    elsewhereH2: 'Elders in Lapland',
+    filterAll: 'Alle',
+    filterOnline: 'Verzendt naar u',
+    filterPhysical: 'Ter plaatse bezoeken',
+    onlineBadge: 'WEBWINKEL',
+    physicalBadge: 'WINKEL',
+    count: (n: number) => (n === 1 ? '1 boetiek' : `${n} boetieks`),
+    visitH2: 'Ter plaatse bezoeken',
+    shopAtH2: 'Vanuit huis bestellen',
+    outboundCta: 'Naar hun site',
+    crossSellH2: 'Zoiets online kopen',
+    crossSellCta: 'Bekijk de categorie',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'Zo herkent u echte Samische duodji',
+    duodjiBody: 'Duodji is Samisch handwerk, gemaakt door Samische makers met traditionele materialen en technieken. Souvenirimitaties kopiëren het uiterlijk zonder de maker en de traditie. Het verschil doet ertoe voor de gemeenschap om wier cultuur het gaat, en een erkende verkoper kan u vertellen wie het stuk heeft gemaakt.',
+    duodjiAuthorized: 'Erkende verkoper van Samische duodji',
+    listingH2: 'Heeft u een winkel in Lapland?',
+    listingBody: 'Een vermelding is gratis voor elk Laps bedrijf. Vertel ons wie u bent, waarom uw zichtbaarheid nu zwak is en wat er zou veranderen als klanten u vonden.',
+    listingCta: 'Neem contact op',
+  },
 })
 
 const ptBR: ShopCopy = over({
@@ -1716,6 +1972,34 @@ const ptBR: ShopCopy = over({
         { area: 'Japão', rule: 'Não é possível. A carne exige certificado oficial de inspeção seja qual for o transporte, e as encomendas postais são citadas expressamente.' },
       ],
     },
+  },
+  boutique: {
+    hubTitle: 'Boutiques da Lapônia',
+    hubLead: 'Onde comprar artesanato lapão, nas próprias lojas.',
+    hubIntro: 'Cada loja desta página é uma empresa da Lapônia. Algumas enviam para a sua casa, outras você visita pessoalmente, e cada link leva ao site da empresa.',
+    townsH2: 'Por localidade',
+    elsewhereH2: 'Em outros pontos da Lapônia',
+    filterAll: 'Todas',
+    filterOnline: 'Envia para casa',
+    filterPhysical: 'Visitar pessoalmente',
+    onlineBadge: 'LOJA ONLINE',
+    physicalBadge: 'LOJA FÍSICA',
+    count: (n: number) => (n === 1 ? '1 boutique' : `${n} boutiques`),
+    visitH2: 'Visitar pessoalmente',
+    shopAtH2: 'Pedir de casa',
+    outboundCta: 'Ir ao site deles',
+    crossSellH2: 'Comprar algo assim pela internet',
+    crossSellCta: 'Ver a categoria',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: 'Como reconhecer o duodji sami autêntico',
+    duodjiBody: 'Duodji é o artesanato sami, feito por artesãos samis com materiais e técnicas tradicionais. Imitações de souvenir copiam a aparência sem o artesão e a tradição. A diferença importa para a comunidade de cuja cultura se trata, e um vendedor autorizado pode dizer quem fez a peça.',
+    duodjiAuthorized: 'Vendedor autorizado de duodji sami',
+    listingH2: 'Você tem uma loja na Lapônia?',
+    listingBody: 'O anúncio é gratuito para qualquer empresa da Lapônia. Conte quem vocês são, por que a visibilidade está fraca agora e o que mudaria se os clientes encontrassem vocês.',
+    listingCta: 'Fale conosco',
   },
 })
 
@@ -1880,6 +2164,34 @@ const ja: ShopCopy = over({
       ],
     },
   },
+  boutique: {
+    hubTitle: 'ラップランドのブティック',
+    hubLead: 'ラップランドの工芸品を買える店を、店ごとに。',
+    hubIntro: 'このページの店はすべてラップランドの企業です。自宅へ配送する店もあれば、現地を訪ねる店もあり、各リンクは企業自身のサイトへつながります。',
+    townsH2: '地域別',
+    elsewhereH2: 'ラップランドのその他の地域',
+    filterAll: 'すべて',
+    filterOnline: '自宅へ配送',
+    filterPhysical: '現地を訪問',
+    onlineBadge: 'オンラインショップ',
+    physicalBadge: '実店舗',
+    count: (n: number) => `${n}店`,
+    visitH2: '現地を訪問',
+    shopAtH2: '自宅から注文',
+    outboundCta: '店のサイトへ',
+    crossSellH2: 'こうした品をオンラインで買う',
+    crossSellCta: 'カテゴリを見る',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: '本物のサーミのドゥオッジを見分ける',
+    duodjiBody: 'ドゥオッジ（duodji）はサーミの人々が伝統的な素材と技法でつくる工芸品です。土産物の模造品は見た目を写すだけで、つくり手も伝統もありません。この違いは、その文化を担う人々にとって重要です。認定販売店であれば、誰がつくった品かを教えてくれます。',
+    duodjiAuthorized: 'サーミのドゥオッジ認定販売店',
+    listingH2: 'ラップランドで店を営んでいますか',
+    listingBody: '掲載はラップランドのすべての企業に無料です。どのような店か、いま知名度が低い理由、そして客に見つけてもらえたら何が変わるかをお知らせください。',
+    listingCta: 'お問い合わせ',
+  },
 })
 
 const zhCN: ShopCopy = over({
@@ -2043,6 +2355,34 @@ const zhCN: ShopCopy = over({
       ],
     },
   },
+  boutique: {
+    hubTitle: '拉普兰精品店',
+    hubLead: '在店里买到拉普兰手工艺品。',
+    hubIntro: '本页每一家店都是拉普兰本地企业。有的可以寄到家，有的需要到店，每个链接都通向企业自己的网站。',
+    townsH2: '按地区',
+    elsewhereH2: '拉普兰其他地区',
+    filterAll: '全部',
+    filterOnline: '可寄到家',
+    filterPhysical: '到店选购',
+    onlineBadge: '网店',
+    physicalBadge: '实体店',
+    count: (n: number) => `${n} 家店`,
+    visitH2: '到店选购',
+    shopAtH2: '在家下单',
+    outboundCta: '前往店铺网站',
+    crossSellH2: '在网上买同类商品',
+    crossSellCta: '浏览分类',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: '如何辨认真正的萨米 duodji',
+    duodjiBody: 'duodji 是萨米人用传统材料和技法制作的手工艺品。旅游纪念品的仿制品只复制外形，既没有制作者，也没有传统。这个区别对这一文化所属的族群很重要，授权经销商能够告诉你这件作品出自谁手。',
+    duodjiAuthorized: '萨米 duodji 授权经销商',
+    listingH2: '您在拉普兰经营店铺吗',
+    listingBody: '拉普兰的任何企业均可免费登记。请告诉我们你们是谁、目前曝光为何不足，以及顾客找到你们后会有什么改变。',
+    listingCta: '联系我们',
+  },
 })
 
 const ko: ShopCopy = over({
@@ -2205,6 +2545,34 @@ const ko: ShopCopy = over({
         { area: '일본', rule: '불가능합니다. 육류는 운송 방식과 관계없이 공식 검사 증명서가 필요하며, 우편 소포가 명시적으로 언급되어 있습니다.' },
       ],
     },
+  },
+  boutique: {
+    hubTitle: '라플란드 부티크',
+    hubLead: '라플란드 공예품을 사는 곳, 가게에서 직접.',
+    hubIntro: '이 페이지의 모든 가게는 라플란드 기업입니다. 집으로 배송하는 곳도 있고 직접 방문하는 곳도 있으며, 모든 링크는 기업 자체 사이트로 연결됩니다.',
+    townsH2: '지역별',
+    elsewhereH2: '라플란드의 다른 지역',
+    filterAll: '전체',
+    filterOnline: '집으로 배송',
+    filterPhysical: '직접 방문',
+    onlineBadge: '온라인 매장',
+    physicalBadge: '오프라인 매장',
+    count: (n: number) => `${n}곳`,
+    visitH2: '직접 방문',
+    shopAtH2: '집에서 주문',
+    outboundCta: '매장 사이트로',
+    crossSellH2: '이런 물건을 온라인으로 구매',
+    crossSellCta: '카테고리 보기',
+    townNames: {
+      rovaniemi: 'Rovaniemi', inari: 'Inari', posio: 'Posio',
+      levi: 'Levi', sodankyla: 'Sodankylä',
+    },
+    duodjiH2: '진짜 사미 두오지를 알아보는 법',
+    duodjiBody: '두오지(duodji)는 사미 장인이 전통 재료와 기법으로 만드는 공예품입니다. 기념품 모조품은 겉모습만 베낄 뿐 만든 사람도 전통도 없습니다. 이 차이는 해당 문화를 지닌 공동체에게 중요하며, 인증 판매점은 누가 만든 물건인지 알려줄 수 있습니다.',
+    duodjiAuthorized: '사미 두오지 인증 판매점',
+    listingH2: '라플란드에서 가게를 운영하십니까',
+    listingBody: '등록은 모든 라플란드 기업에게 무료입니다. 어떤 곳인지, 지금 노출이 왜 약한지, 고객이 찾아오면 무엇이 달라질지 알려주십시오.',
+    listingCta: '문의하기',
   },
 })
 
