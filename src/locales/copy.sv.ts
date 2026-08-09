@@ -48,7 +48,7 @@ const sv: ChromeCopy = {
   },
   productGrid: {
     h2: 'Kommer snart',
-    sub: 'Vår första kollektion handplockas från de bästa hantverkarna i finska Lappland. Gå med i nyhetsbrevet för att vara först på plats.',
+    sub: 'Vår första kollektion kurateras just nu från Lapplands skickligaste hantverkare. Nyhetsbrevet berättar när något nytt kommer.',
     priceTbd: 'Pris kommer',
     notifyMe: 'Meddela mig',
     notifyAria: (name) => `Meddela mig när ${name} finns tillgänglig`,
@@ -122,7 +122,7 @@ const sv: ChromeCopy = {
   newsletter: {
     kicker: 'Få båda guiderna gratis',
     h2: 'Ange din e-post för att ladda ner',
-    body: 'Få direkt tillgång till båda de arktiska guiderna, plus tidiga aviseringar när nya produkter och hantverkssläpp kommer till butiken.',
+    body: 'Du får direkt tillgång till båda arktiska guiderna. I breven berättar jag om butiksfynd och hantverkarna bakom dem.',
     placeholder: 'din@epost.se',
     submit: 'Hämta båda guiderna',
     submitting: 'Skickar…',

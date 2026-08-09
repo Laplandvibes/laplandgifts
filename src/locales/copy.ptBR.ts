@@ -48,7 +48,7 @@ const ptBR: ChromeCopy = {
   },
   productGrid: {
     h2: 'Em breve',
-    sub: 'Nossa primeira coleção está sendo escolhida a dedo entre os melhores artesãos da Lapônia finlandesa. Cadastre-se no boletim para ser um dos primeiros a saber.',
+    sub: 'Nossa primeira coleção está sendo selecionada entre os melhores artesãos da Lapônia. A newsletter conta quando algo novo chega.',
     priceTbd: 'Preço a definir',
     notifyMe: 'Me avise',
     notifyAria: (name) => `Me avise quando ${name} estiver disponível`,
@@ -122,7 +122,7 @@ const ptBR: ChromeCopy = {
   newsletter: {
     kicker: 'Os dois guias de graça',
     h2: 'Digite seu e-mail e baixe agora',
-    body: 'Acesso imediato aos dois guias árticos e avisos antecipados quando chegarem novos produtos e edições artesanais na loja.',
+    body: 'Você recebe acesso imediato aos dois guias árticos. Nas cartas, compartilho achados de butiques e os artesãos por trás deles.',
     placeholder: 'seu@email.com',
     submit: 'Receber os dois guias',
     submitting: 'Enviando…',

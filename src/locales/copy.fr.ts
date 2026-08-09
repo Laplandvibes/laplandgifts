@@ -49,7 +49,7 @@ const fr: ChromeCopy = {
   },
   productGrid: {
     h2: 'Bientôt disponible',
-    sub: 'Notre première collection est sélectionnée avec soin parmi les meilleurs artisans de Laponie finlandaise. Inscrivez-vous à la newsletter pour être prévenu(e) en priorité.',
+    sub: 'Notre première collection est en cours de sélection auprès des meilleurs artisans de Laponie. La lettre vous informe quand du nouveau arrive.',
     priceTbd: 'Prix à venir',
     notifyMe: 'Me prévenir',
     notifyAria: (name) => `Me prévenir quand ${name} sera disponible`,
@@ -123,7 +123,7 @@ const fr: ChromeCopy = {
   newsletter: {
     kicker: 'Les deux guides offerts',
     h2: 'Entrez votre e-mail pour télécharger',
-    body: 'Accès immédiat aux deux guides arctiques, plus les notifications anticipées dès que de nouveaux produits et créations artisanales arrivent en boutique.',
+    body: 'Vous accédez immédiatement aux deux guides arctiques. Dans les lettres, je partage des trouvailles de boutiques et leurs artisans.',
     placeholder: 'votre@email.com',
     submit: 'Recevoir les deux guides',
     submitting: 'Envoi…',

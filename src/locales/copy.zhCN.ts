@@ -48,7 +48,7 @@ const zhCN: ChromeCopy = {
   },
   productGrid: {
     h2: '即将上市',
-    sub: '我们的首个系列正由芬兰拉普兰最优秀的工匠精心打造。请订阅我们的电子报,以便第一时间获得通知。',
+    sub: '我们的首个系列正在从拉普兰最出色的手艺人中甄选。有新品时，简报会告诉你。',
     priceTbd: '价格待定',
     notifyMe: '通知我',
     notifyAria: (name) => `${name} 上架时通知我`,
@@ -122,7 +122,7 @@ const zhCN: ChromeCopy = {
   newsletter: {
     kicker: '两份指南均可免费获取',
     h2: '填写邮箱即可下载',
-    body: '立即获得两份北极指南,并在新商品和工匠新作品上架时第一时间收到通知。',
+    body: '立即获取两份北极指南。信中我会分享精品店的发现和它们背后的手艺人。',
     placeholder: 'your@email.com',
     submit: '获取两份指南',
     submitting: '发送中…',

@@ -79,7 +79,7 @@ function Newsletter() {
             <p className="text-gray/40 text-sm mt-6">{t.successFootnote}</p>
           </div>
         ) : (
-          <><FounderByline tone="pink" />
+          <><FounderByline tone="light" />
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <div className="flex-1 relative">
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray/30" />

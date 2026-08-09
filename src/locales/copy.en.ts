@@ -48,7 +48,7 @@ const en: ChromeCopy = {
   },
   productGrid: {
     h2: 'Coming Soon',
-    sub: 'Our first collection is being handpicked from the best artisans in Finnish Lapland. Sign up for the newsletter to be first in line.',
+    sub: 'Our first collection is being curated from Lapland\'s finest artisans. The newsletter tells you when something new arrives.',
     priceTbd: 'Price TBD',
     notifyMe: 'Notify Me',
     notifyAria: (name) => `Notify me when ${name} is available`,
@@ -122,7 +122,7 @@ const en: ChromeCopy = {
   newsletter: {
     kicker: 'Get Both Guides Free',
     h2: 'Enter Your Email to Download',
-    body: 'Get instant access to both Arctic guides plus early notifications when new products and artisan drops land in the shop.',
+    body: 'You get instant access to both Arctic guides. In the letters I share boutique finds and the artisans behind them.',
     placeholder: 'your@email.com',
     submit: 'Get Both Guides',
     submitting: 'Sending…',

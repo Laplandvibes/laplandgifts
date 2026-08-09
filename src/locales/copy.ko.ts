@@ -48,7 +48,7 @@ const ko: ChromeCopy = {
   },
   productGrid: {
     h2: '곧 출시',
-    sub: '라플란드 최고의 장인들로부터 첫 컬렉션을 엄선하고 있습니다. 뉴스레터에 가입하시면 가장 먼저 소식을 받아보실 수 있습니다.',
+    sub: '첫 컬렉션을 라플란드 최고의 장인들로부터 선별하고 있습니다. 새 소식이 있으면 레터로 알려드립니다.',
     priceTbd: '가격 미정',
     notifyMe: '알림 받기',
     notifyAria: (name) => `${name} 입고 시 알림 받기`,
@@ -122,7 +122,7 @@ const ko: ChromeCopy = {
   newsletter: {
     kicker: '두 가이드 모두 무료로',
     h2: '이메일을 입력하고 다운로드하세요',
-    body: '두 북극 가이드에 바로 접근하실 수 있으며, 새 상품과 장인의 신작이 상점에 입고되면 가장 먼저 알려드립니다.',
+    body: '두 개의 북극 가이드를 즉시 받아보세요. 레터에서는 부티크 발견과 그 뒤의 장인들을 소개합니다.',
     placeholder: 'your@email.com',
     submit: '두 가이드 받기',
     submitting: '보내는 중…',

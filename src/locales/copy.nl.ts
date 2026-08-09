@@ -48,7 +48,7 @@ const nl: ChromeCopy = {
   },
   productGrid: {
     h2: 'Binnenkort beschikbaar',
-    sub: 'Onze eerste collectie wordt zorgvuldig geselecteerd bij de beste ambachtslieden in Fins Lapland. Schrijf u in voor de nieuwsbrief om als eerste op de hoogte te zijn.',
+    sub: 'Onze eerste collectie wordt samengesteld bij de beste ambachtslieden van Lapland. De nieuwsbrief vertelt wanneer er iets nieuws is.',
     priceTbd: 'Prijs volgt',
     notifyMe: 'Houd mij op de hoogte',
     notifyAria: (name) => `Laat het mij weten zodra ${name} beschikbaar is`,
@@ -122,7 +122,7 @@ const nl: ChromeCopy = {
   newsletter: {
     kicker: 'Beide gidsen gratis',
     h2: 'Vul uw e-mail in om te downloaden',
-    body: 'Direct toegang tot beide arctische gidsen, plus vroegtijdige meldingen wanneer nieuwe producten en ambachtelijke creaties in de winkel verschijnen.',
+    body: 'Je krijgt direct toegang tot beide arctische gidsen. In de brieven deel ik boetiekvondsten en de makers erachter.',
     placeholder: 'uw@email.com',
     submit: 'Ontvang beide gidsen',
     submitting: 'Versturen…',

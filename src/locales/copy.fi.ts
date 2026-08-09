@@ -48,7 +48,7 @@ const fi: ChromeCopy = {
   },
   productGrid: {
     h2: 'Pian saatavilla',
-    sub: 'Ensimmäinen mallistomme on parhaillaan valikoitumassa Suomen Lapin taitavimmilta käsityöläisiltä. Tilaa uutiskirje ja kuulet ensimmäisten joukossa.',
+    sub: 'Ensimmäinen mallistomme on parhaillaan valikoitumassa Suomen Lapin taitavimmilta käsityöläisiltä. Uutiskirje kertoo, kun uutta ilmestyy.',
     priceTbd: 'Hinta tulossa',
     notifyMe: 'Ilmoita minulle',
     notifyAria: (name) => `Ilmoita kun ${name} on saatavilla`,
@@ -122,7 +122,7 @@ const fi: ChromeCopy = {
   newsletter: {
     kicker: 'Saat molemmat oppaat ilmaiseksi',
     h2: 'Jätä sähköposti ja lataa heti',
-    body: 'Saat heti pääsyn molempiin arktisiin oppaisiin ja ensimmäisten joukossa tiedon, kun uudet tuotteet ja käsityöt saapuvat kauppaan.',
+    body: 'Saat heti pääsyn molempiin arktisiin oppaisiin. Kirjeissä kerron putiikkilöydöistä ja niiden tekijöistä.',
     placeholder: 'sahkoposti@esimerkki.fi',
     submit: 'Hae molemmat oppaat',
     submitting: 'Lähetetään…',

@@ -48,7 +48,7 @@ const de: ChromeCopy = {
   },
   productGrid: {
     h2: 'Demnächst verfügbar',
-    sub: 'Unsere erste Kollektion wird gerade von den besten Handwerkerinnen und Handwerkern Finnisch-Lapplands ausgewählt. Tragen Sie sich in den Newsletter ein und seien Sie als Erste informiert.',
+    sub: 'Unsere erste Kollektion wird gerade aus Lapplands besten Handwerksbetrieben kuratiert. Der Newsletter meldet sich, wenn Neues eintrifft.',
     priceTbd: 'Preis folgt',
     notifyMe: 'Benachrichtigen',
     notifyAria: (name) => `Benachrichtigen, sobald ${name} verfügbar ist`,
@@ -122,7 +122,7 @@ const de: ChromeCopy = {
   newsletter: {
     kicker: 'Beide Ratgeber kostenlos',
     h2: 'E-Mail eintragen und herunterladen',
-    body: 'Erhalten Sie sofortigen Zugang zu beiden Arktis-Ratgebern sowie vorab Benachrichtigungen, sobald neue Produkte und Handwerker-Drops im Shop landen.',
+    body: 'Sie erhalten sofort Zugang zu beiden Arktis-Guides. In den Briefen erzähle ich von Boutique-Funden und den Menschen dahinter.',
     placeholder: 'ihre@email.de',
     submit: 'Beide Ratgeber holen',
     submitting: 'Senden…',
