@@ -3,6 +3,7 @@ import { Mail, ArrowRight, Download, BookOpen, Map } from 'lucide-react'
 import { trackNewsletterSignup } from '../lib/analytics'
 import { useLang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
+import FounderByline from '../../../shared/FounderByline';
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
@@ -78,6 +79,7 @@ function Newsletter() {
             <p className="text-gray/40 text-sm mt-6">{t.successFootnote}</p>
           </div>
         ) : (
+          <FounderByline tone="pink" />
           <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <div className="flex-1 relative">
               <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray/30" />

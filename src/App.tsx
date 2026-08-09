@@ -1,5 +1,6 @@
 import { BrowserRouter, useLocation } from 'react-router-dom'
 import { AppPromoNudge } from './components/AppPromo'
+import NewsletterPopup from './components/NewsletterPopup'
 import { useEffect, useReducer, Suspense, type ReactNode } from 'react'
 import CookieBanner from './shared/CookieBanner'
 import AppRoutes from './routes'
@@ -82,6 +83,7 @@ function App() {
         </CopyGate>
       </ShippingCountryProvider>
       <LocalisedCookieBanner />
+      <NewsletterPopup />
     <AppPromoNudge />
     </BrowserRouter>
   )
