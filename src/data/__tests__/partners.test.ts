@@ -65,6 +65,12 @@ describe('partnerHref', () => {
       nordicnest: 'www.nordicnest.fi',
       ruohonjuuri: 'www.ruohonjuuri.fi',
       elamyslahjat: 'www.elamyslahjat.fi',
+      // Daisycon 2026-08-10. Kummankin kampanjan base luettiin paneelin
+      // deeplink-rakentajasta: se on se ainoa domain jonka ohjelma hyväksyy
+      // `dl`-kohteeksi. NordicBuddies myy Muumi-lisenssituotteita — se EI ole
+      // sama kauppa kuin shop.moomin.com, eikä sen linkki kelpaa sinne.
+      suomikauppa: 'suomikauppa.fi',
+      nordicbuddies: 'nordicbuddies.com',
     }
     for (const [id, expectedHost] of Object.entries(KNOWN_SHOP_HOSTS)) {
       const p = PARTNERS[id]
@@ -79,11 +85,17 @@ describe('partnerHref', () => {
     // Workerin `epi=`-alatunnistetta — jolloin Adtractionin raportissa klikit
     // ovat erittelemätöntä massaa eikä niistä näe sivustoa eikä paikkaa.
     // Halti ja Makia olivat tässä tilassa 2.8.2026 asti.
+    // 🔴 Vahti kattaa jokaisen affiliate-verkoston, ei vain Adtractionia.
+    // Suomikauppa oli 24 tuotteella katalogin suurin kumppani ja silti
+    // network:'direct' — pelkkä UTM, nolla komissiota — 10.8.2026 asti.
+    // Verkostolistaus tässä on tarkoituksella eksplisiittinen: uusi verkosto
+    // on lisättävä tänne käsin, jolloin sen unohtuminen näkyy punaisena.
+    const AFFILIATE_NETWORKS = ['adtraction', 'daisycon']
     for (const [id, p] of Object.entries(PARTNERS)) {
       expect(p.trackingTemplate, `${id} kirjoittaa verkoston linkin suoraan lähteeseen`)
         .toBeUndefined()
-      if (p.network === 'adtraction') {
-        expect(p.workerRoute, `${id} on adtraction-kumppani ilman workerRoutea`).toBeTruthy()
+      if (AFFILIATE_NETWORKS.includes(p.network)) {
+        expect(p.workerRoute, `${id} on ${p.network}-kumppani ilman workerRoutea`).toBeTruthy()
       }
     }
   })
@@ -101,9 +113,9 @@ describe('partnerHref', () => {
     expect(u.searchParams.get('dest')).toBe(target)
   })
 
-  it('Adtraction-kumppani ei koskaan päädy paljaaseen UTM-linkkiin', () => {
+  it('affiliate-kumppani ei koskaan päädy paljaaseen UTM-linkkiin', () => {
     for (const [id, p] of Object.entries(PARTNERS)) {
-      if (p.network !== 'adtraction') continue
+      if (p.network !== 'adtraction' && p.network !== 'daisycon') continue
       const href = partnerHref(p, `${p.baseUrl}/tuote`, 'gifts_x')
       expect(href.startsWith(p.baseUrl), `${id} meni UTM-reitille`).toBe(false)
     }

@@ -50,6 +50,34 @@ export const PARTNERS: Record<string, Partner> = {
     workerRoute: 'makia',
     verifiedAt: '2026-08-02',
   },
+  nordicbuddies: {
+    id: 'nordicbuddies',
+    name: 'Nordicbuddies',
+    // Daisycon-kampanja 20538, 7 %, attribuutio 30 pv, hyväksyntä 91 pv.
+    // Suomalainen brändi, jolla on virallinen lisenssi Muumeihin, Peppi
+    // Pitkätossuun ja Mauri Kunnaksen hahmoihin: huppareita, t-paitoja,
+    // pipoja ja sukkia.
+    //
+    // 🔴 TÄMÄ EI OLE sama kauppa kuin [[moomin]] (shop.moomin.com). Ne ovat
+    // kaksi eri kauppiasta, ja Daisyconin syvälinkki kelpaa VAIN
+    // nordicbuddies.com-osoitteisiin. shop.moomin.com-tuotteita ei siis saa
+    // siirtää tämän reitin taakse — klikki hylättäisiin ja ostaja päätyisi
+    // väärään kauppaan (sama vikamuoto kuin nordicnest 3.8. ja halti 4.8.).
+    //
+    // 🔴 Ohjelmalla on pitkä kielletty-hakusana-lista (muumi, moomin, peppi,
+    // mauri kunnas, nuuskamuikkunen, …). Rajoitus koskee MAKSETTUA hakua ja
+    // Shopping-mainoksia, ei orgaanista sisältöä. Jos giftsille joskus
+    // avataan Google Shopping -syöte, termit on lisättävä negatiivisiksi
+    // avainsanoiksi tili- ja kampanjatasolla tai ohjelmasta poistetaan.
+    network: 'daisycon',
+    baseUrl: 'https://nordicbuddies.com',
+    // Toimitusehto luettu kaupan omalta sivulta 10.8.2026 (päivitetty
+    // 25.2.2026): "We ship worldwide." Ilmainen toimitus yli 60 € EU + UK +
+    // Norja, yli 100 € muualle maailmaan.
+    shipsTo: 'worldwide',
+    workerRoute: 'nordicbuddies',
+    verifiedAt: '2026-08-10',
+  },
   moomin: {
     id: 'moomin',
     name: 'Moomin Shop',
@@ -206,11 +234,23 @@ export const PARTNERS: Record<string, Partner> = {
   suomikauppa: {
     id: 'suomikauppa',
     name: 'Suomikauppa.fi',
-    network: 'direct',
+    // 🔴 KOMISSIOLLE 2026-08-10. Tämä oli katalogin suurin kumppani — 24
+    // tuotetta — ja se seisoi network:'direct'-tilassa eli pelkällä UTM:llä:
+    // nolla komissiota jokaisesta klikistä. Daisycon hyväksyi ohjelman
+    // (kampanja 17977, 7 %, attribuutio 30 pv, hyväksyntä 31 pv), joten reitti
+    // kääntyy Workerin kautta kuten adtraction-kumppaneilla.
+    //
+    // Ohjelma sallii syvälinkit ja Sub ID:n; Workerin daisycon-käsittelijä
+    // muuntaa `dest`in kampanjan baseen suhteutetuksi `dl`-poluksi ja lisää
+    // media-tunnuksen klikin lähtösivuston perusteella.
+    network: 'daisycon',
     baseUrl: 'https://suomikauppa.fi',
     // Toimitusehdot 31.7.2026: "toimittaa tuotteita lähes kaikkialle maailmaan".
+    // Daisyconin kampanjasivu 10.8.2026 listaa 24 maata + International, mikä
+    // on linjassa: vyöhyke pysyy worldwide.
     shipsTo: 'worldwide',
-    verifiedAt: '2026-07-31',
+    workerRoute: 'suomikauppa',
+    verifiedAt: '2026-08-10',
   },
   nordqvist: {
     id: 'nordqvist',
