@@ -1122,4 +1122,45 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licença'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'Bolsa transversal Marimekko Neat Crossbody Unikko',
+    description:
+      'A papoula Unikko em uma bolsa transversal do tamanho certo para celular, carteira e um par de luvas. Unikko foi desenhada em 1964, depois que Armi Ratia proibiu estampas florais, e sobreviveu à proibição por sessenta anos.',
+    specs: [
+      'Neat Crossbody, tamanho M',
+      'Unikko, azul e azul-escuro',
+    ],
+    specLabels: ['Modelo', 'Estampa'],
+  },
+  'sk-moomin-duvet-set': {
+    name: 'Jogo de capa de edredom Moomin 150 x 210 cm, Sydankapyset',
+    description:
+      'Jogo de cama de algodão com certificação GOTS, com o Moomintroll e a Senhorita Snork. O nome finlandês da estampa, Sydankapyset, descreve exatamente a relação que o desenho mostra.',
+    specs: [
+      'Capa de edredom 150 x 210 cm',
+      'GOTS, o Global Organic Textile Standard',
+    ],
+    specLabels: [undefined, 'Certificação'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'Fio Novita Wonder Wool DK 50 g',
+    description:
+      'Fio de lã pura na espessura DK da Novita, a fiação que abastece as tricoteiras finlandesas desde 1928. Um novelo de 50 gramas tem 112 metros, e a agulha recomendada é de 4 mm.',
+    specs: [
+      '100 % lã',
+      'Novelo de 50 g, 112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, 'Agulha recomendada'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'Aroma para sauna Aromageddon Hankihorppy 15 ml',
+    description:
+      'Menta e cacau como aroma de sauna, o que soa errado até você atravessar um inverno finlandês inteiro. De duas a quatro gotas em uma concha de água, nunca sobre as pedras.',
+    specs: [
+      '15 ml',
+      'De 2 a 4 gotas em uma concha de água',
+    ],
+    specLabels: [undefined, 'Uso'],
+  },
 }

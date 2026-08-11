@@ -1122,4 +1122,45 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licencia'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'Bolso bandolera Marimekko Neat Crossbody Unikko',
+    description:
+      'La amapola Unikko en un bolso bandolera del tamaño justo para el móvil, la cartera y un par de guantes. Unikko se dibujó en 1964 después de que Armi Ratia prohibiera los estampados florales, y ha sobrevivido a esa prohibición sesenta años.',
+    specs: [
+      'Neat Crossbody, talla M',
+      'Unikko, azul y azul oscuro',
+    ],
+    specLabels: ['Modelo', 'Estampado'],
+  },
+  'sk-moomin-duvet-set': {
+    name: 'Juego de funda nórdica Moomin 150 x 210 cm, Sydankapyset',
+    description:
+      'Juego de cama de algodón con certificación GOTS, con Moomintroll y la Señorita Snork. El nombre finlandés del estampado, Sydankapyset, describe justamente la relación que el dibujo muestra.',
+    specs: [
+      'Funda nórdica 150 x 210 cm',
+      'GOTS, el Global Organic Textile Standard',
+    ],
+    specLabels: [undefined, 'Certificación'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'Lana Novita Wonder Wool DK 50 g',
+    description:
+      'Lana pura de grosor DK de Novita, la hilandería que abastece a las tejedoras finlandesas desde 1928. Un ovillo de 50 gramos contiene 112 metros, y la aguja recomendada es de 4 mm.',
+    specs: [
+      '100 % lana',
+      'Ovillo de 50 g, 112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, 'Aguja recomendada'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'Esencia de sauna Aromageddon Hankihorppy 15 ml',
+    description:
+      'Menta y cacao como esencia de sauna, algo que suena raro hasta que has pasado un invierno finlandés entero. De dos a cuatro gotas en un cazo de agua, nunca sobre las piedras.',
+    specs: [
+      '15 ml',
+      'De 2 a 4 gotas en un cazo de agua',
+    ],
+    specLabels: [undefined, 'Uso'],
+  },
 }

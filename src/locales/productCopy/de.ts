@@ -1173,4 +1173,45 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Lizenz'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'Marimekko Neat Crossbody Unikko Umhängetasche',
+    description:
+      'Die Unikko-Mohnblume auf einer Umhängetasche in der Größe für Telefon, Geldbörse und ein Paar Handschuhe. Unikko entstand 1964, nachdem Armi Ratia Blumenmuster verboten hatte, und hat das Verbot um sechzig Jahre überlebt.',
+    specs: [
+      'Neat Crossbody, Größe M',
+      'Unikko, blau und dunkelblau',
+    ],
+    specLabels: ['Modell', 'Muster'],
+  },
+  'sk-moomin-duvet-set': {
+    name: 'Mumin Bettwäscheset 150 x 210 cm, Sydankapyset',
+    description:
+      'GOTS-zertifiziertes Bettwäscheset aus Baumwolle mit Mumintroll und Snorkfräulein. Der finnische Mustername Sydankapyset beschreibt das Verhältnis, das das Muster zeigt.',
+    specs: [
+      'Bettbezug 150 x 210 cm',
+      'GOTS, der Global Organic Textile Standard',
+    ],
+    specLabels: [undefined, 'Zertifizierung'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'Novita Wonder Wool DK Garn 50 g',
+    description:
+      'Reines Wollgarn in DK-Stärke von Novita, der Spinnerei, die finnische Strickerinnen seit 1928 versorgt. Ein Knäuel mit 50 Gramm enthält 112 Meter, empfohlene Nadelstärke 4 mm.',
+    specs: [
+      '100 % Wolle',
+      '50 g Knäuel, 112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, 'Nadelstärke'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'Aromageddon Saunaduft Hankihorppy 15 ml',
+    description:
+      'Minze und Kakao als Saunaduft, was falsch klingt, bis man einen finnischen Winter durchgesessen hat. Zwei bis vier Tropfen kommen in eine Kelle Wasser, nicht auf die Steine.',
+    specs: [
+      '15 ml',
+      '2 bis 4 Tropfen in eine Kelle Wasser',
+    ],
+    specLabels: [undefined, 'Anwendung'],
+  },
 }

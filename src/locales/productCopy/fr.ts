@@ -1123,4 +1123,45 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licence'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'Sac bandoulière Marimekko Neat Crossbody Unikko',
+    description:
+      'Le coquelicot Unikko sur un sac bandoulière dimensionné pour un téléphone, un portefeuille et une paire de gants. Unikko a été dessiné en 1964 après qu Armi Ratia eut interdit les imprimés floraux, et il a survécu à cette interdiction de soixante ans.',
+    specs: [
+      'Neat Crossbody, taille M',
+      'Unikko, bleu et bleu foncé',
+    ],
+    specLabels: ['Modèle', 'Motif'],
+  },
+  'sk-moomin-duvet-set': {
+    name: 'Parure de lit Moomin 150 x 210 cm, Sydankapyset',
+    description:
+      'Parure de lit en coton certifiée GOTS, avec Moumine et Mademoiselle Snorque. Le nom finnois du motif, Sydankapyset, décrit exactement la relation que le motif représente.',
+    specs: [
+      'Housse de couette 150 x 210 cm',
+      'GOTS, le Global Organic Textile Standard',
+    ],
+    specLabels: [undefined, 'Certification'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'Laine Novita Wonder Wool DK 50 g',
+    description:
+      'Laine pure de grosseur DK signée Novita, la filature qui fournit les tricoteuses finlandaises depuis 1928. Une pelote de 50 grammes contient 112 mètres, et les aiguilles recommandées font 4 mm.',
+    specs: [
+      '100 % laine',
+      'Pelote de 50 g, 112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, 'Aiguilles recommandées'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'Parfum de sauna Aromageddon Hankihorppy 15 ml',
+    description:
+      'Menthe et cacao en parfum de sauna, ce qui semble incongru tant qu on n a pas traversé un hiver finlandais. Deux à quatre gouttes dans une louche d eau, pas sur les pierres.',
+    specs: [
+      '15 ml',
+      '2 à 4 gouttes dans une louche d eau',
+    ],
+    specLabels: [undefined, 'Utilisation'],
+  },
 }

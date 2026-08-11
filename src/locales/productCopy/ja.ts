@@ -1124,4 +1124,45 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'ライセンス'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'マリメッコ Neat クロスボディ ウニッコ ショルダーバッグ',
+    description:
+      'スマートフォン、財布、手袋がひとそろい入る大きさのショルダーバッグにウニッコのケシの花。ウニッコは 1964 年、アルミ・ラティアが花柄を禁じたあとに描かれ、その禁令より六十年長く生き延びました。',
+    specs: [
+      'Neat Crossbody、サイズ M',
+      'ウニッコ、ブルーとダークブルー',
+    ],
+    specLabels: ['モデル', '柄'],
+  },
+  'sk-moomin-duvet-set': {
+    name: 'ムーミン 掛け布団カバーセット 150 x 210 cm、Sydankapyset',
+    description:
+      'ムーミントロールとスノークのおじょうさんを描いた、GOTS 認証のコットン寝具セット。フィンランド語の柄名 Sydankapyset は、この柄が描いている関係そのものを指す言葉です。',
+    specs: [
+      '掛け布団カバー 150 x 210 cm',
+      'GOTS（Global Organic Textile Standard）',
+    ],
+    specLabels: [undefined, '認証'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'ノビータ Wonder Wool DK 毛糸 50 g',
+    description:
+      '1928 年からフィンランドの編み手に糸を届けてきたノビータの、DK 太さのピュアウール。50 グラムの玉に 112 メートル、推奨針は 4 mm です。',
+    specs: [
+      'ウール 100 %',
+      '50 g 玉、112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, '推奨針'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'アロマゲドン サウナアロマ Hankihorppy 15 ml',
+    description:
+      'ミントとカカオのサウナアロマ。フィンランドの冬をひと冬越すまでは奇妙に思えるかもしれません。石にかけるのではなく、ひしゃく一杯の水に 2 滴から 4 滴落とします。',
+    specs: [
+      '15 ml',
+      'ひしゃく一杯の水に 2 滴から 4 滴',
+    ],
+    specLabels: [undefined, '使い方'],
+  },
 }

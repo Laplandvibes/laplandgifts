@@ -1122,4 +1122,45 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licenza'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'Borsa a tracolla Marimekko Neat Crossbody Unikko',
+    description:
+      'Il papavero Unikko su una borsa a tracolla della misura giusta per telefono, portafoglio e un paio di guanti. Unikko fu disegnato nel 1964 dopo che Armi Ratia aveva vietato le stampe floreali, ed è sopravvissuto a quel divieto per sessant anni.',
+    specs: [
+      'Neat Crossbody, taglia M',
+      'Unikko, blu e blu scuro',
+    ],
+    specLabels: ['Modello', 'Fantasia'],
+  },
+  'sk-moomin-duvet-set': {
+    name: 'Set copripiumino Moomin 150 x 210 cm, Sydankapyset',
+    description:
+      'Set letto in cotone certificato GOTS, con Moomintroll e la Signorina Snork. Il nome finlandese della fantasia, Sydankapyset, descrive proprio il rapporto che il disegno racconta.',
+    specs: [
+      'Copripiumino 150 x 210 cm',
+      'GOTS, il Global Organic Textile Standard',
+    ],
+    specLabels: [undefined, 'Certificazione'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'Filato Novita Wonder Wool DK 50 g',
+    description:
+      'Filato di pura lana in spessore DK di Novita, il lanificio che rifornisce le maglieriste finlandesi dal 1928. Un gomitolo da 50 grammi contiene 112 metri, e i ferri consigliati sono da 4 mm.',
+    specs: [
+      '100 % lana',
+      'Gomitolo da 50 g, 112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, 'Ferri consigliati'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'Essenza per sauna Aromageddon Hankihorppy 15 ml',
+    description:
+      'Menta e cacao come essenza per sauna, cosa che suona sbagliata finché non hai passato un intero inverno finlandese. Da due a quattro gocce in un mestolo d acqua, non sulle pietre.',
+    specs: [
+      '15 ml',
+      'Da 2 a 4 gocce in un mestolo d acqua',
+    ],
+    specLabels: [undefined, 'Uso'],
+  },
 }

@@ -1122,4 +1122,45 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licentie'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'Marimekko Neat Crossbody Unikko schoudertas',
+    description:
+      'De Unikko-klaproos op een schoudertas op maat van een telefoon, een portemonnee en een paar handschoenen. Unikko werd in 1964 getekend nadat Armi Ratia bloemenprints had verboden, en het overleefde dat verbod met zestig jaar.',
+    specs: [
+      'Neat Crossbody, maat M',
+      'Unikko, blauw en donkerblauw',
+    ],
+    specLabels: ['Model', 'Dessin'],
+  },
+  'sk-moomin-duvet-set': {
+    name: 'Moomin dekbedovertrekset 150 x 210 cm, Sydankapyset',
+    description:
+      'GOTS-gecertificeerd katoenen beddengoedset met Moomintroll en Snorkjuffrouw. De Finse dessinnaam Sydankapyset beschrijft precies de band die het dessin laat zien.',
+    specs: [
+      'Dekbedovertrek 150 x 210 cm',
+      'GOTS, de Global Organic Textile Standard',
+    ],
+    specLabels: [undefined, 'Certificering'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'Novita Wonder Wool DK garen 50 g',
+    description:
+      'Zuiver wollen garen in DK-dikte van Novita, de spinnerij die Finse breiers al sinds 1928 bevoorraadt. Een bol van 50 gram bevat 112 meter, en de aanbevolen naald is 4 mm.',
+    specs: [
+      '100 % wol',
+      'Bol van 50 g, 112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, 'Naalddikte'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'Aromageddon saunageur Hankihorppy 15 ml',
+    description:
+      'Munt en cacao als saunageur, wat verkeerd klinkt tot je een Finse winter hebt uitgezeten. Twee tot vier druppels in een schep water, niet op de stenen.',
+    specs: [
+      '15 ml',
+      '2 tot 4 druppels in een schep water',
+    ],
+    specLabels: [undefined, 'Gebruik'],
+  },
 }

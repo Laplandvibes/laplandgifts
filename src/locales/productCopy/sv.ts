@@ -1124,4 +1124,45 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licens'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'Marimekko Neat Crossbody Unikko axelväska',
+    description:
+      'Unikkovallmon på en axelväska i storleken för telefon, plånbok och ett par handskar. Unikko ritades 1964 efter att Armi Ratia hade förbjudit blomstermönster, och det har överlevt förbudet med sextio år.',
+    specs: [
+      'Neat Crossbody, storlek M',
+      'Unikko, blå och mörkblå',
+    ],
+    specLabels: ['Modell', 'Mönster'],
+  },
+  'sk-moomin-duvet-set': {
+    name: 'Mumin bäddset 150 x 210 cm, Sydankapyset',
+    description:
+      'GOTS-certifierat bäddset i bomull med Mumintrollet och Snorkfröken. Det finska mönsternamnet Sydankapyset beskriver just den relation som mönstret visar.',
+    specs: [
+      'Påslakan 150 x 210 cm',
+      'GOTS, Global Organic Textile Standard',
+    ],
+    specLabels: [undefined, 'Certifiering'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'Novita Wonder Wool DK garn 50 g',
+    description:
+      'Rent ullgarn i DK-tjocklek från Novita, spinneriet som försett finska stickare sedan 1928. Ett nystan på 50 gram rymmer 112 meter, och rekommenderad stickstorlek är 4 mm.',
+    specs: [
+      '100 % ull',
+      '50 g nystan, 112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, 'Stickstorlek'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'Aromageddon bastudoft Hankihorppy 15 ml',
+    description:
+      'Mynta och kakao som bastudoft, vilket låter fel tills man suttit igenom en finsk vinter. Två till fyra droppar i en skopa vatten, inte på stenarna.',
+    specs: [
+      '15 ml',
+      '2 till 4 droppar i en skopa vatten',
+    ],
+    specLabels: [undefined, 'Användning'],
+  },
 }

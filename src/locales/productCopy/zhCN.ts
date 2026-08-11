@@ -1124,4 +1124,45 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '授权'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: 'Marimekko Neat Crossbody Unikko 斜挎包',
+    description:
+      'Unikko 罂粟花印在一只刚好装得下手机、钱包和一副手套的斜挎包上。Unikko 画于 1964 年,就在 Armi Ratia 下令禁止花卉印花之后,它比那道禁令多活了六十年。',
+    specs: [
+      'Neat Crossbody,尺寸 M',
+      'Unikko,蓝色与深蓝色',
+    ],
+    specLabels: ['款式', '花色'],
+  },
+  'sk-moomin-duvet-set': {
+    name: '姆明被套四件套 150 x 210 cm,Sydankapyset',
+    description:
+      '通过 GOTS 认证的纯棉床品套装,印有姆明与斯诺克小姐。芬兰语花色名 Sydankapyset 说的正是图案所描绘的那种关系。',
+    specs: [
+      '被套 150 x 210 cm',
+      'GOTS(全球有机纺织品标准)',
+    ],
+    specLabels: [undefined, '认证'],
+  },
+  'sk-novita-wonder-wool': {
+    name: 'Novita Wonder Wool DK 毛线 50 g',
+    description:
+      '来自 Novita 的 DK 粗细纯羊毛线,这家纺纱厂自 1928 年起为芬兰编织者供线。50 克一团共 112 米,建议棒针 4 mm。',
+    specs: [
+      '100 % 羊毛',
+      '50 g 一团,112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, '建议棒针'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: 'Aromageddon 桑拿香氛 Hankihorppy 15 ml',
+    description:
+      '薄荷与可可做成的桑拿香氛,听起来不太对劲,直到你熬过一整个芬兰冬天。取 2 到 4 滴滴入一勺水中,不要直接浇在石头上。',
+    specs: [
+      '15 ml',
+      '2 到 4 滴滴入一勺水中',
+    ],
+    specLabels: [undefined, '用法'],
+  },
 }

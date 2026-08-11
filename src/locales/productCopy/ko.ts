@@ -1123,4 +1123,45 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '라이선스'],
   },
+  'sk-marimekko-unikko-crossbody': {
+    name: '마리메꼬 니트 크로스바디 우니꼬 숄더백',
+    description:
+      '휴대폰과 지갑, 장갑 한 켤레가 들어가는 크기의 크로스바디 백에 우니꼬 양귀비가 들어갔습니다. 우니꼬는 아르미 라티아가 꽃무늬를 금지한 뒤인 1964년에 그려졌고, 그 금지령보다 육십 년을 더 살아남았습니다.',
+    specs: [
+      '니트 크로스바디, 사이즈 M',
+      '우니꼬, 블루와 다크 블루',
+    ],
+    specLabels: ['모델', '패턴'],
+  },
+  'sk-moomin-duvet-set': {
+    name: '무민 이불 커버 세트 150 x 210 cm, Sydankapyset',
+    description:
+      '무민과 스노크메이든이 들어간 GOTS 인증 면 침구 세트. 핀란드어 패턴 이름 Sydankapyset은 이 그림이 보여 주는 관계를 그대로 가리키는 말입니다.',
+    specs: [
+      '이불 커버 150 x 210 cm',
+      'GOTS, Global Organic Textile Standard',
+    ],
+    specLabels: [undefined, '인증'],
+  },
+  'sk-novita-wonder-wool': {
+    name: '노비타 원더 울 DK 실 50 g',
+    description:
+      '1928년부터 핀란드 뜨개인들에게 실을 공급해 온 노비타의 DK 굵기 순모 실. 50 그램 한 볼에 112 미터가 들어 있고, 권장 바늘은 4 mm입니다.',
+    specs: [
+      '울 100 %',
+      '50 g 볼, 112 m',
+      '4 mm',
+    ],
+    specLabels: [undefined, undefined, '권장 바늘'],
+  },
+  'sk-aromageddon-sauna-scent': {
+    name: '아로마게돈 사우나 향 Hankihorppy 15 ml',
+    description:
+      '민트와 카카오로 만든 사우나 향. 핀란드의 겨울을 한 번 나 보기 전에는 이상하게 들립니다. 돌 위가 아니라 국자 한 컵의 물에 2방울에서 4방울을 떨어뜨립니다.',
+    specs: [
+      '15 ml',
+      '국자 한 컵의 물에 2방울에서 4방울',
+    ],
+    specLabels: [undefined, '사용법'],
+  },
 }

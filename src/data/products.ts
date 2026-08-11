@@ -4223,6 +4223,150 @@ export const PRODUCTS: Product[] = [
       fetchedAt: '2026-08-10',
     },
   },
+  // ── Suomikauppa (Daisycon 17977, 7 %) ──────────────────────────────────
+  // Vesan 10.8. nimeämät osiot: Marimekko uutuutena, muumilakanat, kutomalangat
+  // ("langat on hyvin suosittuja") ja saunatuotteet kesäkaudelle.
+  //
+  // 🔴 Nämä ovat brändejä joita EI OLE Adtractionissa (muisti 31.7.: "Ei
+  // Adtractionissa: Marimekko/Iittala/Fiskars/Fazer/Moomin/Varusteleka").
+  // Suomikauppa on ainoa reitti jolla ne tuottavat meille komissiota.
+  //
+  // Hinnat, materiaalit ja mitat luettu kaupan omasta tuotedatasta 2026-08-10,
+  // kuvat kaupan omista tuotekuvista.
+  {
+    slug: 'sk-marimekko-unikko-crossbody',
+    category: 'design',
+    brand: 'Marimekko',
+    name: {
+      en: 'Marimekko Neat Crossbody Unikko shoulder bag',
+      fi: 'Marimekko Neat Crossbody Unikko -olkalaukku',
+    },
+    description: {
+      en: 'The Unikko poppy on a crossbody bag sized for a phone, a wallet and a pair of gloves. Unikko was drawn in 1964 after Armi Ratia had banned floral prints, and it outlived the ban by sixty years.',
+      fi: 'Unikko-kuosi olkalaukussa, johon mahtuu puhelin, lompakko ja hanskat. Unikko piirrettiin 1964 sen jälkeen kun Armi Ratia oli kieltänyt kukkakuosit, ja se on elänyt kiellon yli kuudellakymmenellä vuodella.',
+    },
+    priceFrom: 80.26,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-sk-marimekko-unikko-crossbody',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl:
+      'https://suomikauppa.fi/products/marimekko-neat-crossbody-unikko-m-shoulder-bag-blue-dark-blue',
+    details: {
+      specs: [
+        { key: 'other', label: { en: 'Model', fi: 'Malli' }, value: { en: 'Neat Crossbody, size M', fi: 'Neat Crossbody, koko M' } },
+        { key: 'other', label: { en: 'Pattern', fi: 'Kuosi' }, value: { en: 'Unikko, blue and dark blue', fi: 'Unikko, sininen ja tummansininen' } },
+      ],
+      sourceUrl:
+        'https://suomikauppa.fi/products/marimekko-neat-crossbody-unikko-m-shoulder-bag-blue-dark-blue',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'sk-moomin-duvet-set',
+    category: 'design',
+    brand: 'Moomin',
+    name: {
+      en: 'Moomin duvet cover set 150 x 210 cm, Sydankapyset',
+      fi: 'Muumi pussilakanasetti 150 x 210 cm, Sydänkäpyset',
+    },
+    description: {
+      en: 'A GOTS certified cotton duvet set printed with Moomintroll and Snorkmaiden. The Finnish name Sydankapyset has no clean translation, it is what you call two people who are soft on each other.',
+      fi: 'GOTS-sertifioitu puuvillainen pussilakanasetti, jossa on Muumipeikko ja Niiskuneiti. Kuosin nimi Sydänkäpyset kertoo suhteesta, jota kuosi kuvaa.',
+    },
+    priceFrom: 56.48,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-sk-moomin-duvet-set',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    badges: ['eco'],
+    partnerProductUrl: 'https://suomikauppa.fi/products/muumi-pussilakanasetti-150x210cm-sydankapyset',
+    details: {
+      specs: [
+        { key: 'size', value: { en: 'Duvet cover 150 x 210 cm', fi: 'Pussilakana 150 x 210 cm' } },
+        {
+          key: 'other',
+          label: { en: 'Certification', fi: 'Sertifiointi' },
+          value: {
+            en: 'GOTS, the Global Organic Textile Standard',
+            fi: 'GOTS eli Global Organic Textile Standard',
+          },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/muumi-pussilakanasetti-150x210cm-sydankapyset',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'sk-novita-wonder-wool',
+    category: 'handicrafts',
+    brand: 'Novita',
+    name: {
+      en: 'Novita Wonder Wool DK yarn 50 g',
+      fi: 'Novita Wonder Wool DK -villalanka 50 g',
+    },
+    description: {
+      en: 'Pure wool DK yarn from Novita, the mill that has supplied Finnish knitters since 1928. A 50 gram ball holds 112 metres, and the recommended needle is 4 mm.',
+      fi: 'Puhdasta villaa oleva DK-vahvuinen lanka Novitalta, joka on toimittanut suomalaisille neulojille lankaa vuodesta 1928. 50 gramman kerässä on 112 metriä, ja puikkosuositus on 4 mm.',
+    },
+    priceFrom: 4.61,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-sk-novita-wonder-wool',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/novita-wonder-wool-dk-50g-villalanka-koski',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % wool', fi: '100 % villaa' } },
+        { key: 'weight', value: { en: '50 g ball, 112 m', fi: '50 g kerä, 112 m' } },
+        {
+          key: 'other',
+          label: { en: 'Needle size', fi: 'Puikkosuositus' },
+          value: { en: '4 mm', fi: '4 mm' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/novita-wonder-wool-dk-50g-villalanka-koski',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'sk-aromageddon-sauna-scent',
+    category: 'handicrafts',
+    brand: 'Aromageddon',
+    name: {
+      en: 'Aromageddon sauna scent, Hankihorppy 15 ml',
+      fi: 'Aromageddon Hankihörppy -saunatuoksu 15 ml',
+    },
+    description: {
+      en: 'Mint and cocoa in a sauna scent, which sounds wrong until you have sat through a Finnish winter. Two to four drops go into a ladle of water, not onto the stones.',
+      fi: 'Minttua ja kaakaota löylytuoksuna, mikä kuulostaa väärältä kunnes on istunut suomalaisen talven läpi. Kaksi tai neljä pisaraa kauhalliseen vettä, ei kiukaalle.',
+    },
+    priceFrom: 9.91,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-sk-aromageddon-sauna-scent',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/aromageddon-hankihorppy-saunatuoksu-15ml',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '15 ml', fi: '15 ml' } },
+        {
+          key: 'other',
+          label: { en: 'Use', fi: 'Käyttö' },
+          value: {
+            en: '2 to 4 drops in a ladle of water',
+            fi: '2-4 pisaraa löylykauhalliseen vettä',
+          },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/aromageddon-hankihorppy-saunatuoksu-15ml',
+      fetchedAt: '2026-08-10',
+    },
+  },
 ]
 
 export function productsByCategory(id: Product['category']): Product[] {

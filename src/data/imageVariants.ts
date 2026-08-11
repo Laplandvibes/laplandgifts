@@ -976,5 +976,37 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       480,
       640
     ]
+  },
+  "prod-sk-aromageddon-sauna-scent": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-marimekko-unikko-crossbody": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-moomin-duvet-set": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-novita-wonder-wool": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
   }
 }
