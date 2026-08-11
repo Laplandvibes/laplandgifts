@@ -1778,14 +1778,24 @@ export const PRODUCTS: Product[] = [
       en: 'Organic hibiscus with apple and forest berries, naturally caffeine free, blended at the Nordqvist factory in Nurmijärvi. Twenty bags weigh 35 grams, which is the lightest gift in this shop.',
       fi: 'Luomuhibiskusta omenan ja metsämarjojen kanssa, luonnostaan kofeiiniton, sekoitettu Nordqvistin tehtaalla Nurmijärvellä. Kaksikymmentä pussia painaa 35 grammaa, eli tämä on kaupan kevein lahja.',
     },
-    priceFrom: 4.55,
+    // 🔴 Siirretty nordqvist.fi:stä Suomikauppaan 2026-08-10. Kaksi syytä, ja
+    // kumpikin on ostajan eduksi eikä vain meidän:
+    //  1. nordqvist.fi ei ole missään affiliate-verkossa, joten tämä tuote
+    //     tuotti nolla jokaisesta klikistä. Suomikauppa on Daisyconissa 7 %.
+    //  2. Nordqvistin oma kauppa toimittaa VAIN Suomeen (partners.ts shipsTo
+    //     'fi'), joten tuote oli piilossa jokaiselta muulta toimitusmaalta.
+    //     Suomikauppa postittaa maailmanlaajuisesti, joten sama tee näkyy nyt
+    //     myös ulkomaille tilaavalle.
+    // Sama tuote, sama valmistaja: "Nordqvist Muumi Metsämarjainen hibiskustee
+    // 20 x 1,75g luomu FI-EKO-201", URL verifioitu 200 + täsmäävä title 10.8.
+    priceFrom: 5.65,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
+    priceCheckedAt: '2026-08-10',
     image: 'prod-nordqvist-moomin-forest-berry-tea',
     imageIsPartner: true,
-    partnerId: 'nordqvist',
+    partnerId: 'suomikauppa',
     partnerProductUrl:
-      'https://nordqvist.fi/products/muumi-metsamarjainen-hibiskus-pussitee-uutuus',
+      'https://suomikauppa.fi/products/muumi-metsamarjainen-hibiskustee',
     details: {
       specs: [
         { key: 'weight', value: { en: '20 x 1.75 g, 35 g', fi: '20 x 1,75 g, 35 g' } },
@@ -1817,7 +1827,7 @@ export const PRODUCTS: Product[] = [
         en: 'Organic hibiscus (89 %), organic apple, natural bilberry powder, natural bilberry and raspberry flavouring.',
         fi: 'Luomuhibiskus (89 %), luomuomena, luontainen mustikkajauhe, luontainen mustikka- ja vadelma-aromi.',
       },
-      sourceUrl: 'https://nordqvist.fi/products/muumi-metsamarjainen-hibiskus-pussitee-uutuus',
+      sourceUrl: 'https://suomikauppa.fi/products/muumi-metsamarjainen-hibiskustee',
       fetchedAt: '2026-08-01',
     },
   },
@@ -1833,13 +1843,18 @@ export const PRODUCTS: Product[] = [
       en: 'Tart cranberry against salted toffee on a hibiscus and rooibos base, so it is caffeine free and still tastes of something in the evening. Nordqvist has been blending tea in Finland since 1883.',
       fi: 'Kirpeä karpalo suolakinuskia vasten hibiskus- ja rooibospohjalla, joten se on kofeiiniton mutta maistuu illallakin joltain. Nordqvist on sekoittanut teetä Suomessa vuodesta 1883.',
     },
-    priceFrom: 4.14,
+    // Siirretty Suomikauppaan 2026-08-10 samasta syystä kuin Muumi-hibiskustee
+    // yllä: nordqvist.fi ei ole missään verkossa eikä toimita Suomen
+    // ulkopuolelle. Sama tuote: "Nordqvist Karpalo-Suolakinuski 20 x 1,75 g
+    // RFA", URL verifioitu 200 + täsmäävä title 10.8.
+    priceFrom: 3.14,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
+    priceCheckedAt: '2026-08-10',
     image: 'prod-nordqvist-cranberry-toffee-tea',
     imageIsPartner: true,
-    partnerId: 'nordqvist',
-    partnerProductUrl: 'https://nordqvist.fi/products/karpalo-suolakinuski',
+    partnerId: 'suomikauppa',
+    partnerProductUrl:
+      'https://suomikauppa.fi/products/nordqvist-karpalo-suolakinuski-pussitee',
     details: {
       specs: [
         { key: 'weight', value: { en: '20 x 1.75 g, 35 g', fi: '20 x 1,75 g, 35 g' } },
@@ -1861,7 +1876,7 @@ export const PRODUCTS: Product[] = [
         en: 'Hibiscus, rooibos, cranberry and salted toffee flavouring.',
         fi: 'Hibiskus, rooibos, karpalo- ja suolainen kinuskiaromi.',
       },
-      sourceUrl: 'https://nordqvist.fi/products/karpalo-suolakinuski',
+      sourceUrl: 'https://suomikauppa.fi/products/nordqvist-karpalo-suolakinuski-pussitee',
       fetchedAt: '2026-08-01',
     },
   },
