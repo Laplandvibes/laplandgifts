@@ -1047,4 +1047,79 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Um extrato de coníferas finlandesas, tomado em gotas. O cheiro de floresta de uma trilha na Lapônia em um frasco de bolso.',
     specs: ['50 ml'],
   },
+  'nb-little-my-beanie': {
+    name: 'Gorro de tricô grosso da Little My',
+    description:
+      'Gorro grosso de tricô com a Little My na dobra, em uma mistura de lã que mantém o formato depois de uma semana sendo colocado e tirado. Um tamanho adulto, e a única personagem Moomin que aprovaria o tempo na Lapônia.',
+    specs: [
+      'Acrílico, náilon e lã',
+      'Adulto, tamanho único',
+      'Produto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, 'Licença'],
+  },
+  'nb-moomintroll-mittens': {
+    name: 'Luvas Moomintroll',
+    description:
+      'Luvas de tricô forradas com fleece macio, 24 centímetros de altura para o punho passar da manga do casaco. Tamanho adulto, e baratas o suficiente para sobreviver a perder uma no trenó puxado por huskies.',
+    specs: [
+      '100 % acrílico, forro de fleece',
+      'Adulto, altura 24 cm, largura acima do polegar 9,5 cm',
+      'Produto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, 'Licença'],
+  },
+  'nb-moomintroll-love-socks': {
+    name: 'Meias retrô Moomintroll Love',
+    description:
+      'Meias brancas caneladas com o Moomintroll bordado dentro de um coração rosa na canela, bordado e não estampado, então resiste à lavagem. Um tamanho cobre do EU 36 ao 42.',
+    specs: [
+      '67 % algodão, 25 % poliéster, 4 % elastodieno, 3 % náilon, 1 % elastano',
+      'Tamanho único, EU 36-42',
+      'Motivo bordado',
+    ],
+    specLabels: [undefined, undefined, 'Detalhe'],
+  },
+  'nb-moomin-classics-tee': {
+    name: 'Camiseta pesada Moomin Classics',
+    description:
+      'Uma camiseta de algodão de 260 gramas na cor lavanda, caimento quadrado, com um pequeno Moomintroll bordado no peito em vez de uma estampa grande. Pesada o bastante para cair reta em vez de marcar o corpo.',
+    specs: [
+      '100 % algodão, 260 g/m2',
+      'Unissex, caimento quadrado, do XS ao XXL',
+      'Caimento quadrado, a loja recomenda pedir um tamanho abaixo',
+    ],
+    specLabels: [undefined, undefined, 'Observação de tamanho'],
+  },
+  'nb-pippi-tee': {
+    name: 'Camiseta da Píppi Meialonga',
+    description:
+      'Píppi impressa na Finlândia em uma camiseta de algodão de 240 gramas, caimento reto unissex com barra mais longa que a média. Em algumas casas, Astrid Lindgren viaja mais longe que os Moomin.',
+    specs: [
+      '100 % algodão, 240 g/m2',
+      'Unissex, caimento reto, do M ao XXL',
+      'Impressa na Finlândia',
+    ],
+  },
+  'nb-moomintroll-hoodie': {
+    name: 'Moletom com capuz Moomintroll',
+    description:
+      'Um moletom com capuz de 300 gramas em algodão e poliéster, impresso na Finlândia, caimento reto unissex. Exatamente a camada em que se vive numa noite de cabana, depois que a sauna esfria.',
+    specs: [
+      '65 % algodão, 35 % poliéster, 300 g/m2',
+      'Unissex, caimento reto, do XS ao XXL',
+      'Impresso na Finlândia',
+    ],
+  },
+  'nb-kunnas-kalevala-tote': {
+    name: 'Ecobag Mauri Kunnas O Kalevala dos cães',
+    description:
+      'Uma ecobag de algodão estampada com ilustrações de Mauri Kunnas de O Kalevala dos cães, sua versão canina da epopeia nacional finlandesa. O item mais barato desta loja que mesmo assim explica um país inteiro.',
+    specs: [
+      '100 % algodão',
+      '38 x 42 cm',
+      'Produto Mauri Kunnas oficial',
+    ],
+    specLabels: [undefined, undefined, 'Licença'],
+  },
 }

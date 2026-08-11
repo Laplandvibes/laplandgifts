@@ -1047,4 +1047,79 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
       'Un estratto di conifere finlandesi da assumere in gocce. Il profumo di bosco di un\'escursione in Lapponia in un flacone tascabile.',
     specs: ['50 ml'],
   },
+  'nb-little-my-beanie': {
+    name: 'Berretto a maglia grossa Mymble',
+    description:
+      'Berretto spesso a maglia con la Piccola My sul risvolto, in una mistura di lana che mantiene la forma dopo una settimana passata a metterlo e toglierlo. Una taglia adulto, e l unico personaggio dei Moomin che approverebbe il tempo che fa in Lapponia.',
+    specs: [
+      'Acrilico, nylon e lana',
+      'Adulto, taglia unica',
+      'Prodotto Moomin ufficiale',
+    ],
+    specLabels: [undefined, undefined, 'Licenza'],
+  },
+  'nb-moomintroll-mittens': {
+    name: 'Muffole Moomintroll',
+    description:
+      'Muffole in maglia foderate di morbido pile, alte 24 centimetri perché il polsino superi la manica della giacca. Taglia adulto, ed economiche abbastanza da sopravvivere alla perdita di una sulla slitta trainata dagli husky.',
+    specs: [
+      '100 % acrilico, fodera in pile',
+      'Adulto, altezza 24 cm, larghezza sopra il pollice 9,5 cm',
+      'Prodotto Moomin ufficiale',
+    ],
+    specLabels: [undefined, undefined, 'Licenza'],
+  },
+  'nb-moomintroll-love-socks': {
+    name: 'Calzini retro Moomintroll Love',
+    description:
+      'Calzini bianchi a coste con Moomintroll ricamato dentro un cuore rosa sullo stinco, ricamato e non stampato, quindi resiste al lavaggio. Una taglia copre dalla EU 36 alla 42.',
+    specs: [
+      '67 % cotone, 25 % poliestere, 4 % elastodiene, 3 % nylon, 1 % elastan',
+      'Taglia unica, EU 36-42',
+      'Motivo ricamato',
+    ],
+    specLabels: [undefined, undefined, 'Dettaglio'],
+  },
+  'nb-moomin-classics-tee': {
+    name: 'T-shirt pesante Moomin Classics',
+    description:
+      'Una t-shirt in cotone da 260 grammi color lavanda, vestibilità squadrata, con un piccolo Moomintroll ricamato sul petto invece di una stampa grande. Abbastanza pesante da cadere dritta invece di aderire.',
+    specs: [
+      '100 % cotone, 260 g/m2',
+      'Unisex, vestibilità squadrata, dalla XS alla XXL',
+      'Vestibilità squadrata, il negozio consiglia una taglia in meno',
+    ],
+    specLabels: [undefined, undefined, 'Nota sulla taglia'],
+  },
+  'nb-pippi-tee': {
+    name: 'T-shirt Pippi Calzelunghe',
+    description:
+      'Pippi stampata in Finlandia su una t-shirt in cotone da 240 grammi, vestibilità dritta unisex con orlo più lungo della media. In certe case Astrid Lindgren viaggia più lontano dei Moomin.',
+    specs: [
+      '100 % cotone, 240 g/m2',
+      'Unisex, vestibilità dritta, dalla M alla XXL',
+      'Stampata in Finlandia',
+    ],
+  },
+  'nb-moomintroll-hoodie': {
+    name: 'Felpa con cappuccio Moomintroll',
+    description:
+      'Una felpa con cappuccio da 300 grammi in cotone e poliestere, stampata in Finlandia, vestibilità dritta unisex. Esattamente lo strato in cui si vive davvero in una sera in baita, una volta che la sauna si è raffreddata.',
+    specs: [
+      '65 % cotone, 35 % poliestere, 300 g/m2',
+      'Unisex, vestibilità dritta, dalla XS alla XXL',
+      'Stampata in Finlandia',
+    ],
+  },
+  'nb-kunnas-kalevala-tote': {
+    name: 'Borsa di tela Mauri Kunnas Il Kalevala dei cani',
+    description:
+      'Una borsa di cotone stampata con le illustrazioni di Mauri Kunnas tratte da Il Kalevala dei cani, la sua versione canina del poema epico nazionale finlandese. La cosa più economica di questo negozio che spiega comunque un intero paese.',
+    specs: [
+      '100 % cotone',
+      '38 x 42 cm',
+      'Prodotto Mauri Kunnas ufficiale',
+    ],
+    specLabels: [undefined, undefined, 'Licenza'],
+  },
 }

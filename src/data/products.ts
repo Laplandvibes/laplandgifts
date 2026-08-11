@@ -3967,6 +3967,262 @@ export const PRODUCTS: Product[] = [
       fetchedAt: '2026-08-03',
     },
   },
+  // ── Nordicbuddies (Daisycon 20538, 7 %) ────────────────────────────────
+  // Virallisesti lisensoidut Muumi-, Peppi- ja Mauri Kunnas -vaatteet.
+  // Erä on tarkoituksella KAKSIKAUTINEN (Vesa 2026-08-10: "kesällä halutaan
+  // ostaa t-paitoja, saunajuttuja, urheiluvaatteita"): pipo, lapaset ja sukat
+  // palvelevat talvimatkaajaa, t-paidat ja huppari kesäkävijää ja
+  // ulkosuomalaista ympäri vuoden.
+  //
+  // 🔴 partnerId on `nordicbuddies`, EI `moomin`. Ne ovat eri kauppiaita, ja
+  // Daisyconin syvälinkki kelpaa vain nordicbuddies.com-osoitteisiin.
+  //
+  // Hinnat, materiaalit, koot ja värit luettu kaupan omasta tuotedatasta
+  // 2026-08-10. Kuvat ovat kumppanin omia tuotekuvia samasta lähteestä.
+  {
+    slug: 'nb-little-my-beanie',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Little My chunky beanie',
+      fi: 'Pikku Myy -neulepipo',
+    },
+    description: {
+      en: 'A thick knitted beanie with Little My on the cuff, in a wool blend that holds its shape after a week of being pulled on and off. One adult size, and the only Moomin character who would approve of the weather in Lapland.',
+      fi: 'Paksu neulepipo, jonka käänteessä on Pikku Myy, villasekoitteessa joka pitää muotonsa viikon vetämisen jälkeenkin. Yksi aikuisten koko, ja ainoa muumihahmo joka hyväksyisi Lapin sään.',
+    },
+    priceFrom: 34.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-nb-little-my-beanie',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/little-my-chunky-beanie',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Acrylic, nylon and wool', fi: 'Akryyli, nailon ja villa' } },
+        { key: 'size', value: { en: 'Adult, one size', fi: 'Aikuisten koko, yksi koko' } },
+        {
+          key: 'other',
+          label: { en: 'Licence', fi: 'Lisenssi' },
+          value: { en: 'Official Moomin product', fi: 'Virallinen Muumi-tuote' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/little-my-chunky-beanie',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'nb-moomintroll-mittens',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Moomintroll mittens',
+      fi: 'Muumipeikko-lapaset',
+    },
+    description: {
+      en: 'Knitted mittens lined with soft fleece, 24 centimetres tall so the cuff reaches past a jacket sleeve. Adult size, and cheap enough that losing one on a husky sled is survivable.',
+      fi: 'Neulotut lapaset pehmeällä fleecevuorella, 24 senttiä korkeat jotta varsi yltää takin hihan yli. Aikuisten koko, ja sen verran edulliset että toisen hukkaaminen huskykelkasta on siedettävää.',
+    },
+    priceFrom: 19.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-nb-moomintroll-mittens',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/moomintroll-mittens-adult',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % acrylic, fleece lining', fi: '100 % akryyli, fleecevuori' } },
+        {
+          key: 'size',
+          value: {
+            en: 'Adult, height 24 cm, width 9.5 cm above the thumb',
+            fi: 'Aikuisten koko, korkeus 24 cm, leveys peukalon yläpuolelta 9,5 cm',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Licence', fi: 'Lisenssi' },
+          value: { en: 'Official Moomin product', fi: 'Virallinen Muumi-tuote' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/moomintroll-mittens-adult',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'nb-moomintroll-love-socks',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Moomintroll Love retro socks',
+      fi: 'Muumipeikko Love -retrosukat',
+    },
+    description: {
+      en: 'White ribbed socks with Moomintroll embroidered into a pink heart on the shin, not printed on, so it survives the wash. One size covers EU 36 to 42.',
+      fi: 'Valkoiset resorisukat, joissa Muumipeikko on kirjottu pinkkiin sydämeen säären kohdalle, ei painettu, joten se kestää pesun. Yksi koko kattaa EU 36-42.',
+    },
+    priceFrom: 12.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-nb-moomintroll-love-socks',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/moomintroll-love-womens-retro-socks-1',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '67 % cotton, 25 % polyester, 4 % elastodiene, 3 % nylon, 1 % elastane',
+            fi: '67 % puuvilla, 25 % polyesteri, 4 % elastodieeni, 3 % nailon, 1 % elastaani',
+          },
+        },
+        { key: 'size', value: { en: 'One size, EU 36-42', fi: 'Yksi koko, EU 36-42' } },
+        {
+          key: 'other',
+          label: { en: 'Detail', fi: 'Yksityiskohta' },
+          value: { en: 'Embroidered artwork', fi: 'Kirjottu kuvio' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/moomintroll-love-womens-retro-socks-1',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'nb-moomin-classics-tee',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Moomin Classics heavy T-shirt',
+      fi: 'Moomin Classics -paksu t-paita',
+    },
+    description: {
+      en: 'A 260 gram cotton T-shirt in lavender, box fit, with a small embroidered Moomintroll at the chest instead of a large print. Heavy enough to hang straight rather than cling.',
+      fi: '260 gramman puuvillainen t-paita laventelinvärisenä, väljä leikkaus, ja rinnassa pieni kirjottu Muumipeikko ison painatuksen sijaan. Riittävän paksu roikkuakseen suorana eikä myötäillen.',
+    },
+    priceFrom: 44.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-nb-moomin-classics-tee',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/moomin-classics-heavy-t-shirt-1',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % cotton, 260 g/m2', fi: '100 % puuvilla, 260 g/m2' } },
+        { key: 'size', value: { en: 'Unisex box fit, XS to XXL', fi: 'Unisex väljä leikkaus, XS-XXL' } },
+        {
+          key: 'other',
+          label: { en: 'Fit note', fi: 'Kokovinkki' },
+          value: {
+            en: 'Box fit, the shop recommends ordering one size down',
+            fi: 'Väljä leikkaus, kauppa suosittelee kokoa pienempää',
+          },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/moomin-classics-heavy-t-shirt-1',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'nb-pippi-tee',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Pippi Longstocking T-shirt',
+      fi: 'Peppi Pitkätossu -t-paita',
+    },
+    description: {
+      en: 'Pippi printed in Finland on a 240 gram cotton T-shirt, unisex straight fit with a longer than average hem. Astrid Lindgren travels further than the Moomins in some households.',
+      fi: 'Peppi painettuna Suomessa 240 gramman puuvillaiselle t-paidalle, unisex-suora leikkaus ja tavallista pidempi helma. Astrid Lindgren matkaa joissakin kodeissa pidemmälle kuin muumit.',
+    },
+    priceFrom: 44.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-nb-pippi-tee',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/pippi-longstocking-t-shirt-52l',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % cotton, 240 g/m2', fi: '100 % puuvilla, 240 g/m2' } },
+        { key: 'size', value: { en: 'Unisex straight fit, M to XXL', fi: 'Unisex suora leikkaus, M-XXL' } },
+        { key: 'origin', value: { en: 'Printed in Finland', fi: 'Painettu Suomessa' } },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/pippi-longstocking-t-shirt-52l',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'nb-moomintroll-hoodie',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Moomintroll hoodie',
+      fi: 'Muumipeikko-huppari',
+    },
+    description: {
+      en: 'A 300 gram cotton and polyester hoodie printed in Finland, unisex straight fit. The layer people actually live in on a cabin evening once the sauna has cooled.',
+      fi: '300 gramman puuvilla-polyesterihuppari painettuna Suomessa, unisex-suora leikkaus. Se kerros jossa mökki-illassa oikeasti eletään sen jälkeen kun sauna on jäähtynyt.',
+    },
+    priceFrom: 89.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-nb-moomintroll-hoodie',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/moomintroll-hoodie',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: {
+            en: '65 % cotton, 35 % polyester, 300 g/m2',
+            fi: '65 % puuvilla, 35 % polyesteri, 300 g/m2',
+          },
+        },
+        { key: 'size', value: { en: 'Unisex straight fit, XS to XXL', fi: 'Unisex suora leikkaus, XS-XXL' } },
+        { key: 'origin', value: { en: 'Printed in Finland', fi: 'Painettu Suomessa' } },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/moomintroll-hoodie',
+      fetchedAt: '2026-08-10',
+    },
+  },
+  {
+    slug: 'nb-kunnas-kalevala-tote',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Mauri Kunnas Canine Kalevala tote bag',
+      fi: 'Mauri Kunnas Koirien Kalevala -kangaskassi',
+    },
+    description: {
+      en: 'A cotton tote printed with Mauri Kunnas artwork from The Canine Kalevala, his dog retelling of the Finnish national epic. The cheapest thing in this shop that still explains a whole country.',
+      fi: 'Puuvillainen kangaskassi Mauri Kunnaksen Koirien Kalevala -kuvituksella, hänen koiraversiollaan kansalliseepoksesta. Kaupan halvin tuote joka silti selittää kokonaisen maan.',
+    },
+    priceFrom: 7.96,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-10',
+    image: 'prod-nb-kunnas-kalevala-tote',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/mauri-kunnas-the-canine-kalevala-tote-bag',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % cotton', fi: '100 % puuvilla' } },
+        { key: 'size', value: { en: '38 x 42 cm', fi: '38 x 42 cm' } },
+        {
+          key: 'other',
+          label: { en: 'Licence', fi: 'Lisenssi' },
+          value: { en: 'Official Mauri Kunnas product', fi: 'Virallinen Mauri Kunnas -tuote' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/mauri-kunnas-the-canine-kalevala-tote-bag',
+      fetchedAt: '2026-08-10',
+    },
+  },
 ]
 
 export function productsByCategory(id: Product['category']): Product[] {

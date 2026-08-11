@@ -1049,4 +1049,79 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Ett extrakt ur finska barrträd som tas i droppform. Doften av en vandring i Lappland i en flaska som ryms i rockfickan.',
     specs: ['50 ml'],
   },
+  'nb-little-my-beanie': {
+    name: 'Lilla My grovstickad mössa',
+    description:
+      'Tjock stickad mössa med Lilla My på uppvikningen, i en ullblandning som håller formen även efter en vecka av att dras på och av. En vuxenstorlek, och den enda muminfiguren som skulle godkänna vädret i Lappland.',
+    specs: [
+      'Akryl, nylon och ull',
+      'Vuxen, en storlek',
+      'Officiell Mumin-produkt',
+    ],
+    specLabels: [undefined, undefined, 'Licens'],
+  },
+  'nb-moomintroll-mittens': {
+    name: 'Mumintrollet vantar',
+    description:
+      'Stickade vantar med mjukt fleecefoder, 24 centimeter höga så att skaftet når över jackärmen. Vuxenstorlek, och billiga nog att det går att överleva att tappa en på en hundspannstur.',
+    specs: [
+      '100 % akryl, fleecefoder',
+      'Vuxen, höjd 24 cm, bredd ovanför tummen 9,5 cm',
+      'Officiell Mumin-produkt',
+    ],
+    specLabels: [undefined, undefined, 'Licens'],
+  },
+  'nb-moomintroll-love-socks': {
+    name: 'Mumintrollet Love retrostrumpor',
+    description:
+      'Vita ribbade strumpor med Mumintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42.',
+    specs: [
+      '67 % bomull, 25 % polyester, 4 % elastodien, 3 % nylon, 1 % elastan',
+      'En storlek, EU 36-42',
+      'Broderat motiv',
+    ],
+    specLabels: [undefined, undefined, 'Detalj'],
+  },
+  'nb-moomin-classics-tee': {
+    name: 'Moomin Classics tjock t-shirt',
+    description:
+      'En t-shirt i 260 gram bomull i lavendel, boxig passform, med ett litet broderat Mumintroll på bröstet i stället för ett stort tryck. Tillräckligt tjock för att falla rakt i stället för att sitta åt.',
+    specs: [
+      '100 % bomull, 260 g/m2',
+      'Unisex, boxig passform, XS till XXL',
+      'Boxig passform, butiken rekommenderar en storlek mindre',
+    ],
+    specLabels: [undefined, undefined, 'Storlekstips'],
+  },
+  'nb-pippi-tee': {
+    name: 'Pippi Långstrump t-shirt',
+    description:
+      'Pippi tryckt i Finland på en t-shirt i 240 gram bomull, unisex med rak passform och längre fåll än vanligt. Astrid Lindgren reser längre än mumintrollen i vissa hem.',
+    specs: [
+      '100 % bomull, 240 g/m2',
+      'Unisex, rak passform, M till XXL',
+      'Tryckt i Finland',
+    ],
+  },
+  'nb-moomintroll-hoodie': {
+    name: 'Mumintrollet hoodie',
+    description:
+      'En hoodie i 300 gram bomull och polyester, tryckt i Finland, unisex med rak passform. Precis det lager man faktiskt lever i under en stugkväll när bastun har svalnat.',
+    specs: [
+      '65 % bomull, 35 % polyester, 300 g/m2',
+      'Unisex, rak passform, XS till XXL',
+      'Tryckt i Finland',
+    ],
+  },
+  'nb-kunnas-kalevala-tote': {
+    name: 'Mauri Kunnas Hundarnas Kalevala tygkasse',
+    description:
+      'En bomullskasse tryckt med Mauri Kunnas illustrationer ur Hundarnas Kalevala, hans hundversion av det finska nationaleposet. Det billigaste i butiken som ändå förklarar ett helt land.',
+    specs: [
+      '100 % bomull',
+      '38 x 42 cm',
+      'Officiell Mauri Kunnas-produkt',
+    ],
+    specLabels: [undefined, undefined, 'Licens'],
+  },
 }

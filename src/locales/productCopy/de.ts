@@ -1098,4 +1098,79 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Ein aus finnischen Nadelbäumen gewonnener Extrakt in Tropfenform. Der Waldgeruch einer Lappland-Wanderung in einer Flasche für die Manteltasche.',
     specs: ['50 ml'],
   },
+  'nb-little-my-beanie': {
+    name: 'Kleine My Grobstrickmütze',
+    description:
+      'Dicke Strickmütze mit der Kleinen My am Umschlag, aus einer Wollmischung, die auch nach einer Woche ständigen Auf- und Absetzens ihre Form hält. Eine Erwachsenengröße, und die einzige Muminfigur, die das Wetter in Lappland gutheißen würde.',
+    specs: [
+      'Acryl, Nylon und Wolle',
+      'Erwachsene, Einheitsgröße',
+      'Offizielles Mumin-Produkt',
+    ],
+    specLabels: [undefined, undefined, 'Lizenz'],
+  },
+  'nb-moomintroll-mittens': {
+    name: 'Mumintroll Fäustlinge',
+    description:
+      'Gestrickte Fäustlinge mit weichem Fleecefutter, 24 Zentimeter hoch, damit der Schaft über den Jackenärmel reicht. Erwachsenengröße und günstig genug, dass der Verlust eines Handschuhs auf dem Husky-Schlitten zu verkraften ist.',
+    specs: [
+      '100 % Acryl, Fleecefutter',
+      'Erwachsene, Höhe 24 cm, Breite über dem Daumen 9,5 cm',
+      'Offizielles Mumin-Produkt',
+    ],
+    specLabels: [undefined, undefined, 'Lizenz'],
+  },
+  'nb-moomintroll-love-socks': {
+    name: 'Mumintroll Love Retrosocken',
+    description:
+      'Weiße Rippsocken mit Mumintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Eine Größe deckt EU 36 bis 42 ab.',
+    specs: [
+      '67 % Baumwolle, 25 % Polyester, 4 % Elastodien, 3 % Nylon, 1 % Elasthan',
+      'Einheitsgröße, EU 36-42',
+      'Gesticktes Motiv',
+    ],
+    specLabels: [undefined, undefined, 'Detail'],
+  },
+  'nb-moomin-classics-tee': {
+    name: 'Moomin Classics schweres T-Shirt',
+    description:
+      'Ein 260 Gramm schweres Baumwoll-T-Shirt in Lavendel, kastiger Schnitt, mit einem kleinen gestickten Mumintroll auf der Brust statt eines großen Drucks. Schwer genug, um gerade zu fallen statt anzuliegen.',
+    specs: [
+      '100 % Baumwolle, 260 g/m2',
+      'Unisex, kastiger Schnitt, XS bis XXL',
+      'Kastiger Schnitt, der Shop empfiehlt eine Nummer kleiner',
+    ],
+    specLabels: [undefined, undefined, 'Größenhinweis'],
+  },
+  'nb-pippi-tee': {
+    name: 'Pippi Langstrumpf T-Shirt',
+    description:
+      'Pippi, in Finnland gedruckt auf ein 240 Gramm schweres Baumwoll-T-Shirt, Unisex mit geradem Schnitt und längerem Saum als üblich. Astrid Lindgren reist in manchen Haushalten weiter als die Mumins.',
+    specs: [
+      '100 % Baumwolle, 240 g/m2',
+      'Unisex, gerader Schnitt, M bis XXL',
+      'Gedruckt in Finnland',
+    ],
+  },
+  'nb-moomintroll-hoodie': {
+    name: 'Mumintroll Hoodie',
+    description:
+      'Ein 300 Gramm schwerer Hoodie aus Baumwolle und Polyester, in Finnland gedruckt, Unisex mit geradem Schnitt. Genau die Schicht, in der man an einem Hüttenabend lebt, sobald die Sauna abgekühlt ist.',
+    specs: [
+      '65 % Baumwolle, 35 % Polyester, 300 g/m2',
+      'Unisex, gerader Schnitt, XS bis XXL',
+      'Gedruckt in Finnland',
+    ],
+  },
+  'nb-kunnas-kalevala-tote': {
+    name: 'Mauri Kunnas Hunde-Kalevala Stofftasche',
+    description:
+      'Eine Baumwolltasche mit Illustrationen von Mauri Kunnas aus der Hunde-Kalevala, seiner Hundefassung des finnischen Nationalepos. Das günstigste Stück in diesem Shop, das trotzdem ein ganzes Land erklärt.',
+    specs: [
+      '100 % Baumwolle',
+      '38 x 42 cm',
+      'Offizielles Mauri-Kunnas-Produkt',
+    ],
+    specLabels: [undefined, undefined, 'Lizenz'],
+  },
 }

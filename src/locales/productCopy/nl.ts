@@ -1047,4 +1047,79 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Een extract uit Finse naaldbomen, in te nemen als druppels. De bosgeur van een wandeling in Lapland in een flesje voor de jaszak.',
     specs: ['50 ml'],
   },
+  'nb-little-my-beanie': {
+    name: 'Kleine My grofgebreide muts',
+    description:
+      'Dikke gebreide muts met Kleine My op de omslag, in een wolmix die zijn vorm houdt na een week van op- en afzetten. Eén volwassenmaat, en het enige Moomin-figuur dat het weer in Lapland zou goedkeuren.',
+    specs: [
+      'Acryl, nylon en wol',
+      'Volwassenen, één maat',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, undefined, 'Licentie'],
+  },
+  'nb-moomintroll-mittens': {
+    name: 'Moomintroll wanten',
+    description:
+      'Gebreide wanten met een zachte fleecevoering, 24 centimeter hoog zodat de boord over de jasmouw valt. Volwassenmaat, en goedkoop genoeg dat er eentje verliezen op een huskyslee te overleven is.',
+    specs: [
+      '100 % acryl, fleecevoering',
+      'Volwassenen, hoogte 24 cm, breedte boven de duim 9,5 cm',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, undefined, 'Licentie'],
+  },
+  'nb-moomintroll-love-socks': {
+    name: 'Moomintroll Love retrosokken',
+    description:
+      'Witte geribbelde sokken met Moomintroll geborduurd in een roze hart op het scheenbeen, geborduurd en niet bedrukt, dus het motief overleeft de was. Eén maat dekt EU 36 tot 42.',
+    specs: [
+      '67 % katoen, 25 % polyester, 4 % elastodieen, 3 % nylon, 1 % elastaan',
+      'Eén maat, EU 36-42',
+      'Geborduurd motief',
+    ],
+    specLabels: [undefined, undefined, 'Detail'],
+  },
+  'nb-moomin-classics-tee': {
+    name: 'Moomin Classics zwaar T-shirt',
+    description:
+      'Een katoenen T-shirt van 260 gram in lavendel, boxy pasvorm, met een klein geborduurd Moomintroll op de borst in plaats van een grote print. Zwaar genoeg om recht te vallen in plaats van aan te sluiten.',
+    specs: [
+      '100 % katoen, 260 g/m2',
+      'Unisex, boxy pasvorm, XS tot XXL',
+      'Boxy pasvorm, de winkel raadt een maat kleiner aan',
+    ],
+    specLabels: [undefined, undefined, 'Maattip'],
+  },
+  'nb-pippi-tee': {
+    name: 'Pippi Langkous T-shirt',
+    description:
+      'Pippi in Finland gedrukt op een katoenen T-shirt van 240 gram, unisex rechte pasvorm met een langere zoom dan gemiddeld. In sommige huizen reist Astrid Lindgren verder dan de Moomins.',
+    specs: [
+      '100 % katoen, 240 g/m2',
+      'Unisex, rechte pasvorm, M tot XXL',
+      'Gedrukt in Finland',
+    ],
+  },
+  'nb-moomintroll-hoodie': {
+    name: 'Moomintroll hoodie',
+    description:
+      'Een hoodie van 300 gram katoen en polyester, gedrukt in Finland, unisex rechte pasvorm. Precies de laag waarin je een hutavond echt doorbrengt, zodra de sauna is afgekoeld.',
+    specs: [
+      '65 % katoen, 35 % polyester, 300 g/m2',
+      'Unisex, rechte pasvorm, XS tot XXL',
+      'Gedrukt in Finland',
+    ],
+  },
+  'nb-kunnas-kalevala-tote': {
+    name: 'Mauri Kunnas Hondenkalevala katoenen tas',
+    description:
+      'Een katoenen tas bedrukt met illustraties van Mauri Kunnas uit de Hondenkalevala, zijn hondenversie van het Finse nationale epos. Het goedkoopste in deze winkel dat toch een heel land uitlegt.',
+    specs: [
+      '100 % katoen',
+      '38 x 42 cm',
+      'Officieel Mauri Kunnas-product',
+    ],
+    specLabels: [undefined, undefined, 'Licentie'],
+  },
 }

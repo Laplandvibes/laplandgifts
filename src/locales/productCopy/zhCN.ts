@@ -1049,4 +1049,79 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '从芬兰针叶树中提取的滴剂。拉普兰森林徒步的气息，装进一个能放进大衣口袋的小瓶。',
     specs: ['50 ml'],
   },
+  'nb-little-my-beanie': {
+    name: '小不点粗针织帽',
+    description:
+      '厚实的针织帽,翻边处是小不点,羊毛混纺,连着一周戴上摘下也不走形。成人均码,也是唯一会认可拉普兰天气的姆明角色。',
+    specs: [
+      '腈纶、尼龙与羊毛',
+      '成人,均码',
+      '姆明官方授权产品',
+    ],
+    specLabels: [undefined, undefined, '授权'],
+  },
+  'nb-moomintroll-mittens': {
+    name: '姆明连指手套',
+    description:
+      '针织连指手套,内衬柔软抓绒,高 24 厘米,袖口可以盖过外套衣袖。成人尺码,价格也够亲民,在狗拉雪橇上丢一只还能接受。',
+    specs: [
+      '100 % 腈纶,抓绒内衬',
+      '成人,高 24 厘米,拇指上方宽 9.5 厘米',
+      '姆明官方授权产品',
+    ],
+    specLabels: [undefined, undefined, '授权'],
+  },
+  'nb-moomintroll-love-socks': {
+    name: '姆明 Love 复古袜',
+    description:
+      '白色罗纹袜,小腿处以粉色爱心刺绣出姆明,是刺绣而非印花,因此经得起水洗。均码覆盖 EU 36 至 42。',
+    specs: [
+      '67 % 棉、25 % 涤纶、4 % 弹性二烯、3 % 尼龙、1 % 氨纶',
+      '均码,EU 36-42',
+      '刺绣图案',
+    ],
+    specLabels: [undefined, undefined, '细节'],
+  },
+  'nb-moomin-classics-tee': {
+    name: 'Moomin Classics 厚重T恤',
+    description:
+      '260 克棉质T恤,薰衣草色,箱型剪裁,胸前是小小的姆明刺绣而非大幅印花。厚度足以垂直落下,而不会贴身。',
+    specs: [
+      '100 % 棉,260 g/m2',
+      '中性,箱型剪裁,XS 至 XXL',
+      '箱型剪裁,商店建议选小一码',
+    ],
+    specLabels: [undefined, undefined, '尺码提示'],
+  },
+  'nb-pippi-tee': {
+    name: '长袜子皮皮T恤',
+    description:
+      '皮皮在芬兰印制于 240 克棉质T恤上,中性直筒剪裁,下摆比一般更长。在有些家庭里,阿斯特丽德·林格伦比姆明走得更远。',
+    specs: [
+      '100 % 棉,240 g/m2',
+      '中性,直筒剪裁,M 至 XXL',
+      '芬兰印制',
+    ],
+  },
+  'nb-moomintroll-hoodie': {
+    name: '姆明连帽衫',
+    description:
+      '300 克棉与涤纶连帽衫,芬兰印制,中性直筒剪裁。桑拿凉下来之后的小屋夜晚,人们真正穿在身上的就是这一件。',
+    specs: [
+      '65 % 棉、35 % 涤纶,300 g/m2',
+      '中性,直筒剪裁,XS 至 XXL',
+      '芬兰印制',
+    ],
+  },
+  'nb-kunnas-kalevala-tote': {
+    name: 'Mauri Kunnas 犬之卡勒瓦拉手提袋',
+    description:
+      '棉质手提袋,印有 Mauri Kunnas 为《犬之卡勒瓦拉》所作的插画,那是他用狗重述的芬兰民族史诗。本店最便宜的东西,却依然能讲清一个国家。',
+    specs: [
+      '100 % 棉',
+      '38 x 42 cm',
+      'Mauri Kunnas 官方授权产品',
+    ],
+    specLabels: [undefined, undefined, '授权'],
+  },
 }

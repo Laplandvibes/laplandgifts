@@ -737,6 +737,62 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-nb-kunnas-kalevala-tote": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-little-my-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-moomin-classics-tee": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-moomintroll-hoodie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-moomintroll-love-socks": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-moomintroll-mittens": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-pippi-tee": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-nordqvist-cranberry-toffee-tea": {
     "full": 800,
     "w": [

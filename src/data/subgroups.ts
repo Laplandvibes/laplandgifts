@@ -33,7 +33,7 @@ export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
   // Makian etsijä haluaa Makia-osion, ei arvailua vaatetyypeistä. Muissa
   // kategorioissa tyyppiryhmittely säilyy, koska niissä brändejä on monta
   // pientä eikä kukaan etsi "Emendoa".
-  clothing: ['brandhalti', 'brandnorthoutdoor', 'brandmakia'],
+  clothing: ['brandhalti', 'brandnorthoutdoor', 'brandmakia', 'brandnordicbuddies'],
   handicrafts: ['sauna', 'knives', 'wood', 'textiles', 'ceramics'],
   treats: ['salmiakki', 'chocolate', 'savoury', 'drinks'],
   // `drinks` on mukana myös täällä: Kainon kuusenkerkkäjuoma on superfoodi
@@ -59,6 +59,7 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     brandhalti: 'Halti',
     brandnorthoutdoor: 'North Outdoor',
     brandmakia: 'Makia',
+    brandnordicbuddies: 'Nordicbuddies',
     baselayer: 'Base layers',
     midlayer: 'Mid layers and knitwear',
     outerwear: 'Shells and outerwear',
@@ -84,6 +85,7 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     brandhalti: 'Halti',
     brandnorthoutdoor: 'North Outdoor',
     brandmakia: 'Makia',
+    brandnordicbuddies: 'Nordicbuddies',
     baselayer: 'Aluskerrastot',
     midlayer: 'Välikerrokset ja neuleet',
     outerwear: 'Kuoritakit ja ulkovaatteet',
@@ -129,6 +131,14 @@ const MAP: Record<string, SubgroupId> = {
   'halti-tokoi-dx-jacket': 'brandhalti',
   'halti-taival-dx-jacket': 'brandhalti',
   'makia-merino-beanie': 'brandmakia',
+  // Nordicbuddies (Daisycon) — lisensoidut Muumi-, Peppi- ja Kunnas-vaatteet.
+  'nb-little-my-beanie': 'brandnordicbuddies',
+  'nb-moomintroll-mittens': 'brandnordicbuddies',
+  'nb-moomintroll-love-socks': 'brandnordicbuddies',
+  'nb-moomin-classics-tee': 'brandnordicbuddies',
+  'nb-pippi-tee': 'brandnordicbuddies',
+  'nb-moomintroll-hoodie': 'brandnordicbuddies',
+  'nb-kunnas-kalevala-tote': 'brandnordicbuddies',
   'north-outdoor-huuru-beanie': 'brandnorthoutdoor',
   'north-outdoor-pyry-scarf': 'brandnorthoutdoor',
   'north-outdoor-arctic-250-balaclava': 'brandnorthoutdoor',

@@ -1048,4 +1048,79 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Un extrait tiré des conifères finlandais, à prendre en gouttes. L\'odeur de forêt d\'une randonnée en Laponie dans un flacon de poche.',
     specs: ['50 ml'],
   },
+  'nb-little-my-beanie': {
+    name: 'Bonnet en grosse maille Petite My',
+    description:
+      'Bonnet épais en maille avec la Petite My sur le revers, dans un mélange de laine qui garde sa forme après une semaine à être enfilé et retiré. Une taille adulte, et le seul personnage des Moumines qui approuverait le temps qu il fait en Laponie.',
+    specs: [
+      'Acrylique, nylon et laine',
+      'Adulte, taille unique',
+      'Produit Moomin officiel',
+    ],
+    specLabels: [undefined, undefined, 'Licence'],
+  },
+  'nb-moomintroll-mittens': {
+    name: 'Moufles Moumine',
+    description:
+      'Moufles tricotées doublées de polaire douce, 24 centimètres de haut pour que la manchette dépasse la manche du manteau. Taille adulte, et assez abordables pour survivre à en perdre une sur un traîneau à chiens.',
+    specs: [
+      '100 % acrylique, doublure polaire',
+      'Adulte, hauteur 24 cm, largeur au-dessus du pouce 9,5 cm',
+      'Produit Moomin officiel',
+    ],
+    specLabels: [undefined, undefined, 'Licence'],
+  },
+  'nb-moomintroll-love-socks': {
+    name: 'Chaussettes rétro Moumine Love',
+    description:
+      'Chaussettes blanches côtelées avec Moumine brodé dans un cœur rose sur le tibia, brodé et non imprimé, ce qui lui permet de résister au lavage. Une taille couvre du EU 36 au 42.',
+    specs: [
+      '67 % coton, 25 % polyester, 4 % élastodiène, 3 % nylon, 1 % élasthanne',
+      'Taille unique, EU 36-42',
+      'Motif brodé',
+    ],
+    specLabels: [undefined, undefined, 'Détail'],
+  },
+  'nb-moomin-classics-tee': {
+    name: 'T-shirt épais Moomin Classics',
+    description:
+      'Un t-shirt en coton de 260 grammes coloris lavande, coupe carrée, avec un petit Moumine brodé sur la poitrine plutôt qu un grand imprimé. Assez épais pour tomber droit au lieu de mouler.',
+    specs: [
+      '100 % coton, 260 g/m2',
+      'Unisexe, coupe carrée, du XS au XXL',
+      'Coupe carrée, la boutique conseille de prendre une taille en dessous',
+    ],
+    specLabels: [undefined, undefined, 'Conseil de taille'],
+  },
+  'nb-pippi-tee': {
+    name: 'T-shirt Fifi Brindacier',
+    description:
+      'Fifi imprimée en Finlande sur un t-shirt en coton de 240 grammes, coupe droite unisexe avec un ourlet plus long que la moyenne. Astrid Lindgren voyage plus loin que les Moumines dans certains foyers.',
+    specs: [
+      '100 % coton, 240 g/m2',
+      'Unisexe, coupe droite, du M au XXL',
+      'Imprimé en Finlande',
+    ],
+  },
+  'nb-moomintroll-hoodie': {
+    name: 'Sweat à capuche Moumine',
+    description:
+      'Un sweat à capuche de 300 grammes en coton et polyester, imprimé en Finlande, coupe droite unisexe. Exactement la couche dans laquelle on vit le soir au chalet, une fois le sauna refroidi.',
+    specs: [
+      '65 % coton, 35 % polyester, 300 g/m2',
+      'Unisexe, coupe droite, du XS au XXL',
+      'Imprimé en Finlande',
+    ],
+  },
+  'nb-kunnas-kalevala-tote': {
+    name: 'Tote bag Mauri Kunnas Le Kalevala des chiens',
+    description:
+      'Un tote bag en coton imprimé des illustrations de Mauri Kunnas tirées du Kalevala des chiens, sa version canine de l épopée nationale finlandaise. L article le moins cher de cette boutique qui explique pourtant tout un pays.',
+    specs: [
+      '100 % coton',
+      '38 x 42 cm',
+      'Produit Mauri Kunnas officiel',
+    ],
+    specLabels: [undefined, undefined, 'Licence'],
+  },
 }
