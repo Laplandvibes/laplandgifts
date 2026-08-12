@@ -2560,6 +2560,7 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'arabia-moomin-mug-friendship',
+    featured: true,
     category: 'design',
     brand: 'Arabia',
     name: { en: 'Arabia Moomin mug, Friendship', fi: 'Arabia Muumimuki, Ystävyys' },
@@ -4133,6 +4134,7 @@ export const PRODUCTS: Product[] = [
   // kuvat kaupan omista tuotekuvista.
   {
     slug: 'sk-marimekko-unikko-crossbody',
+    featured: true,
     category: 'design',
     brand: 'Marimekko',
     name: {
@@ -4277,6 +4279,7 @@ export const PRODUCTS: Product[] = [
   // omat rivinsa omilla teksteillaan eivatka vanhojen paalle kirjoitettuja.
   {
     slug: 'sk-muurla-moomin-bottle',
+    featured: true,
     category: 'design',
     brand: 'Muurla',
     name: {
