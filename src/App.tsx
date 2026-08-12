@@ -6,6 +6,7 @@ import CookieBanner from './shared/CookieBanner'
 import AppRoutes from './routes'
 import { ShippingCountryProvider } from './context/ShippingCountry'
 import { trackPageView } from './lib/analytics'
+import { initConsent } from './lib/consent'
 import LocaleAutoRedirect from './i18n/LocaleAutoRedirect'
 import Hreflang from './i18n/Hreflang'
 import StructuredData from './i18n/StructuredData'
@@ -28,6 +29,12 @@ function CopyGate({ children }: { children: ReactNode }) {
   }, [lang])
   if (!COPY[lang]) return <div className="min-h-screen" />
   return <>{children}</>
+}
+
+/** Kumppaniskriptit ladataan vasta suostumuksen jälkeen. Ks. lib/consent.ts. */
+function ConsentGate() {
+  useEffect(() => initConsent(), [])
+  return null
 }
 
 function ScrollToTop() {
@@ -65,6 +72,7 @@ function LocalisedCookieBanner() {
 function App() {
   return (
     <BrowserRouter>
+      <ConsentGate />
       <ScrollToTop />
       <LocaleAutoRedirect />
       <LocaleSync />

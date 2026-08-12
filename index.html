@@ -171,6 +171,11 @@
       gtag('consent', 'default', {
         analytics_storage: 'denied',
         ad_storage: 'denied',
+        /* 🔴 Nama kaksi puuttuivat 12.8.2026 asti, vaikka laplandstoressa ne
+           olivat. Google suosittaa ETA-alueella kaikkia nelja; ilman niita
+           mainosdatan kaytto ja personointi jaavat oletusarvoonsa. */
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
         wait_for_update: 500
       });
       gtag('js', new Date());
@@ -186,7 +191,11 @@
       });
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-485H5Y4LHP"></script>
-    <script async defer src="https://widget.getyourguide.com/dist/pa.umd.production.min.js" data-gyg-partner-id="VRMKD7N"></script>
+    <!-- 🔴 GetYourGuiden kumppanianalytiikka EI ole enää täällä. Mitattu
+         12.8.2026: tämä tagi latautui ehdoitta ja lähetti GYG:lle kutsun
+         partner_id:llä ja sivun URLilla myös silloin, kun evästesuostumus oli
+         HYLÄTTY — ja kirjoitti partner_id:n localStorageen. Skripti ladataan
+         nyt vasta hyväksynnän jälkeen, ks. src/lib/consent.ts. -->
   </head>
   <body>
     <div id="root"></div>

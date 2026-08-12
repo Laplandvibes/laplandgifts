@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import CookieContent from '../shared/Legal/CookieContent'
+import ConsentControls from '../components/ConsentControls'
 import Logo from '../components/Logo'
 import Footer from '../components/Footer'
 import { useLang, useLocalePath, type Lang } from '../i18n/useLang'
@@ -76,6 +77,12 @@ export default function CookiePolicy() {
 
       <main className="max-w-3xl mx-auto px-4 py-16">
         <CookieContent siteName="LaplandGifts" siteId="laplandgifts" lang={lang} />
+        {/* 🔴 Peruutus on TÄLLÄ sivulla eikä bannerissa: CookieBanner on
+            verkoston jaettu komponentti, jonka on oltava identtinen joka
+            sivustolla, joten sitä ei muuteta yhden sivuston tarpeeseen.
+            Evästekäytäntö on myös se sivu, jolle evästekäytännön ohje ja
+            alatunnisteen linkki jo vievät. */}
+        <ConsentControls lang={lang} />
       </main>
 
       <Footer />
