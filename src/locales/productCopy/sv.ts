@@ -1138,16 +1138,6 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Användning'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'Arabia Muminmugg 0,3 l, Vänskap',
-    description:
-      'En Arabia-muminmugg med motivet Vänskap, där blyga Homsan hittar ett flaskpost från Misan och ger sig ut för att leta efter henne. Arabia har tillverkat muminmuggar i Finland sedan 1990 och tar ur varje motiv i tur och ordning, därför samlas de gamla.',
-    specs: [
-      '0,3 l',
-      'Vänskap, ur berättelsen om Homsan och Misan',
-    ],
-    specLabels: [undefined, 'Motiv'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'Muurla Muminglasflaska 1 l, Äpplen',
     description:
@@ -1245,5 +1235,55 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Formgiven och tryckt i Helsingfors',
     ],
     specLabels: [undefined, undefined, 'Tillverkning'],
+  },
+  'sk-finland-beanie': {
+    name: 'Finland-mössa, blåvit',
+    description:
+      'Den blåvita tofsmössan med FINLAND över kanten, buren på läktaren och sedan resten av vintern. Maskintvätt 30.',
+    specs: [
+      'FINLAND',
+      'Maskintvätt 30 °C',
+    ],
+    specLabels: ['Text', 'Skötsel'],
+  },
+  'sk-finland-tube-scarf': {
+    name: 'Finland-tubhalsduk',
+    description:
+      'En sömlös tub i finska flaggans mönster, som dras upp över ansiktet när vinden kommer från fjället. Under sju euro, vilket är därför folk köper tre.',
+    specs: [
+      'Finlands flagga',
+      'Handtvätt',
+    ],
+    specLabels: ['Mönster', 'Skötsel'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'Emendo bastudyna Lilla My',
+    description:
+      'En bastudyna med bild efter Tove Janssons originalteckningar, tillverkad på licens av Emendo. Det som ligger mellan dig och en lave på nittio grader.',
+    specs: [
+      'Efter Tove Janssons originalteckningar',
+      'Officiell Moomin Characters-licensprodukt',
+    ],
+    specLabels: ['Illustration', 'Licens'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'Rento bastuhatt i linnefrotté',
+    description:
+      'Linnefrotté håller värmen borta från hårbotten och håret på översta laven. Det fungerar åt andra hållet också: i badtunnan i februari håller den huvudet varmt. Maskintvätt 60.',
+    specs: [
+      'Linnefrotté',
+      'Maskintvätt 60 °C',
+    ],
+    specLabels: [undefined, 'Skötsel'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'Rento torkad björkvasta',
+    description:
+      'En torkad björkvasta som blötläggs i varmt vatten före bastun, då återvänder löven och doften. Vastandet är den del av bastun som gäster alltid frågar om och sällan provar.',
+    specs: [
+      'Torkad björk',
+      'Blötlägg före bastun',
+    ],
+    specLabels: [undefined, 'Före användning'],
   },
 }

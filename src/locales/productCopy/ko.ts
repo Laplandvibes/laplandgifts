@@ -1137,16 +1137,6 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, '사용법'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: '아라비아 무민 머그 0,3 l, 우정',
-    description:
-      '아라비아의 무민 머그 우정 편. 수줍은 토플이 미플이 보낸 유리병 편지를 발견하고 그를 찾아 나섭니다. 아라비아는 1990년부터 핀란드에서 무민 머그를 만들고 도안을 차례로 단종시키기 때문에 옛 도안이 수집됩니다.',
-    specs: [
-      '0,3 l',
-      '우정, 토플과 미플의 이야기에서',
-    ],
-    specLabels: [undefined, '도안'],
-  },
   'sk-muurla-moomin-bottle': {
     name: '무울라 무민 유리병 1 l, 사과',
     description:
@@ -1244,5 +1234,55 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '헬싱키에서 디자인·인쇄',
     ],
     specLabels: [undefined, undefined, '제작'],
+  },
+  'sk-finland-beanie': {
+    name: '핀란드 방울 비니 (청백)',
+    description:
+      '챙에 FINLAND가 들어간 파랑·흰색 방울 비니. 관중석에서 쓰기 시작해 겨울 내내 쓰게 됩니다. 세탁기 30도.',
+    specs: [
+      'FINLAND',
+      '세탁기 30 °C',
+    ],
+    specLabels: ['문구', '관리'],
+  },
+  'sk-finland-tube-scarf': {
+    name: '핀란드 넥워머',
+    description:
+      '핀란드 국기 무늬의 이음매 없는 통형 넥워머. 산에서 바람이 내려오면 얼굴까지 끌어올립니다. 7유로가 안 되니 대개 세 개씩 삽니다.',
+    specs: [
+      '핀란드 국기',
+      '손세탁',
+    ],
+    specLabels: ['무늬', '관리'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: '에멘도 리틀 미이 사우나 방석',
+    description:
+      '토베 얀손의 원화를 바탕으로 에멘도가 라이선스 생산한 사우나 방석. 90도의 벤치와 나 사이에 놓이는 것이 바로 이것입니다.',
+    specs: [
+      '토베 얀손 원화 기반',
+      'Moomin Characters 공식 라이선스 제품',
+    ],
+    specLabels: ['원화', '라이선스'],
+  },
+  'sk-rento-sauna-hat': {
+    name: '렌토 리넨 테리 사우나 모자',
+    description:
+      '리넨 테리가 맨 윗단의 열기를 두피와 머리카락에서 막아 줍니다. 반대로도 쓰입니다. 2월의 야외 온수통에서는 머리를 따뜻하게 지켜 줍니다. 세탁기 60도.',
+    specs: [
+      '리넨 테리',
+      '세탁기 60 °C',
+    ],
+    specLabels: [undefined, '관리'],
+  },
+  'sk-rento-birch-whisk': {
+    name: '렌토 건조 자작나무 다발',
+    description:
+      '말린 자작나무 다발. 사우나 전에 따뜻한 물에 담그면 잎과 향이 돌아옵니다. 다발로 몸을 두드리는 것은 방문객이 늘 묻지만 좀처럼 해 보지 않는 사우나의 절차입니다.',
+    specs: [
+      '건조 자작나무',
+      '사우나 전 물에 담그기',
+    ],
+    specLabels: [undefined, '사용 전'],
   },
 }

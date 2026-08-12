@@ -1136,16 +1136,6 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Uso'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'Taza Moomin de Arabia 0,3 l, Amistad',
-    description:
-      'Una taza Moomin de Arabia con el motivo Amistad, donde el tímido Toffle encuentra un mensaje en una botella de Miffle y sale a buscarla. Arabia fabrica tazas Moomin en Finlandia desde 1990 y retira cada motivo por turno, por eso las antiguas se coleccionan.',
-    specs: [
-      '0,3 l',
-      'Amistad, de la historia de Toffle y Miffle',
-    ],
-    specLabels: [undefined, 'Motivo'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'Botella de vidrio Moomin de Muurla 1 l, Manzanas',
     description:
@@ -1243,5 +1233,55 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       'Diseñado e impreso en Helsinki',
     ],
     specLabels: [undefined, undefined, 'Fabricación'],
+  },
+  'sk-finland-beanie': {
+    name: 'Gorro Finlandia, azul y blanco',
+    description:
+      'El gorro azul y blanco con pompón y FINLAND en la vuelta, el de la grada y luego el del resto del invierno. Lavado a máquina a 30.',
+    specs: [
+      'FINLAND',
+      'Lavado a máquina 30 °C',
+    ],
+    specLabels: ['Texto', 'Cuidado'],
+  },
+  'sk-finland-tube-scarf': {
+    name: 'Braga de cuello Finlandia',
+    description:
+      'Un tubo sin costuras con el estampado de la bandera finlandesa, que se sube hasta la cara cuando el viento baja del fiel. Menos de siete euros, y por eso la gente compra tres.',
+    specs: [
+      'Bandera de Finlandia',
+      'Lavado a mano',
+    ],
+    specLabels: ['Estampado', 'Cuidado'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'Cojín de sauna Pequeña My, Emendo',
+    description:
+      'Un cojín de asiento para la sauna con dibujos originales de Tove Jansson, fabricado bajo licencia por Emendo. Lo que hay entre uno y un banco a noventa grados.',
+    specs: [
+      'A partir de los dibujos originales de Tove Jansson',
+      'Producto oficial con licencia Moomin Characters',
+    ],
+    specLabels: ['Ilustración', 'Licencia'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'Gorro de sauna Rento de rizo de lino',
+    description:
+      'El rizo de lino mantiene el calor lejos del cuero cabelludo y del pelo en el banco alto. Y funciona al revés: en una tina exterior en febrero mantiene la cabeza caliente. Lavado a máquina a 60.',
+    specs: [
+      'Rizo de lino',
+      'Lavado a máquina 60 °C',
+    ],
+    specLabels: [undefined, 'Cuidado'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'Ramo de abedul seco Rento',
+    description:
+      'Un ramo de abedul seco que se remoja en agua caliente antes de la sauna para que vuelvan las hojas y el olor. Azotarse con él es la parte de la sauna por la que siempre preguntan los visitantes y que rara vez prueban.',
+    specs: [
+      'Abedul seco',
+      'Remojar antes de la sauna',
+    ],
+    specLabels: [undefined, 'Antes de usar'],
   },
 }

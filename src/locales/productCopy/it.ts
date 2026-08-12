@@ -1136,16 +1136,6 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Uso'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'Tazza Moomin Arabia 0,3 l, Amicizia',
-    description:
-      'Una tazza Moomin di Arabia con il motivo Amicizia, in cui il timido Toffle trova un messaggio in bottiglia di Miffle e parte a cercarla. Arabia produce tazze Moomin in Finlandia dal 1990 e ritira ogni motivo a turno, ed è per questo che le vecchie si collezionano.',
-    specs: [
-      '0,3 l',
-      'Amicizia, dalla storia di Toffle e Miffle',
-    ],
-    specLabels: [undefined, 'Motivo'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'Bottiglia di vetro Moomin Muurla 1 l, Mele',
     description:
@@ -1243,5 +1233,55 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
       'Disegnato e stampato a Helsinki',
     ],
     specLabels: [undefined, undefined, 'Produzione'],
+  },
+  'sk-finland-beanie': {
+    name: 'Berretto Finlandia, blu e bianco',
+    description:
+      'Il berretto con pompon blu e bianco e la scritta FINLAND sul bordo, indossato in tribuna e poi per tutto il resto dell’inverno. Lavaggio in lavatrice a 30.',
+    specs: [
+      'FINLAND',
+      'Lavaggio in lavatrice 30 °C',
+    ],
+    specLabels: ['Scritta', 'Manutenzione'],
+  },
+  'sk-finland-tube-scarf': {
+    name: 'Scaldacollo Finlandia',
+    description:
+      'Un tubolare senza cuciture con il motivo della bandiera finlandese, da tirare sul viso quando il vento scende dal fjell. Sotto i sette euro, ed è per questo che se ne comprano tre.',
+    specs: [
+      'Bandiera finlandese',
+      'Lavaggio a mano',
+    ],
+    specLabels: ['Motivo', 'Manutenzione'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'Cuscino da sauna Mimla la piccola, Emendo',
+    description:
+      'Un cuscino da seduta per la sauna tratto dai disegni originali di Tove Jansson, prodotto su licenza da Emendo. Ciò che sta fra te e una panca a novanta gradi.',
+    specs: [
+      'Dai disegni originali di Tove Jansson',
+      'Prodotto ufficiale su licenza Moomin Characters',
+    ],
+    specLabels: ['Illustrazione', 'Licenza'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'Cappello da sauna Rento in spugna di lino',
+    description:
+      'La spugna di lino tiene il calore lontano da cuoio capelluto e capelli sulla panca alta. Funziona anche al contrario: in una tinozza all’aperto a febbraio tiene la testa al caldo. Lavaggio in lavatrice a 60.',
+    specs: [
+      'Spugna di lino',
+      'Lavaggio in lavatrice 60 °C',
+    ],
+    specLabels: [undefined, 'Manutenzione'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'Fascio di betulla essiccata Rento',
+    description:
+      'Un fascio di betulla essiccata, messo a bagno in acqua calda prima della sauna perché tornino le foglie e l’odore. Battersi con il fascio è la parte della sauna di cui gli ospiti chiedono sempre e che raramente provano.',
+    specs: [
+      'Betulla essiccata',
+      'Ammollare prima della sauna',
+    ],
+    specLabels: [undefined, 'Prima dell’uso'],
   },
 }

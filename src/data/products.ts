@@ -4276,38 +4276,6 @@ export const PRODUCTS: Product[] = [
   // Suomikaupassa, joten mukia ei vaihdettu vaan korvattiin. Siksi nama ovat
   // omat rivinsa omilla teksteillaan eivatka vanhojen paalle kirjoitettuja.
   {
-    slug: 'sk-arabia-moomin-mug-friendship',
-    category: 'design',
-    brand: 'Arabia',
-    name: {
-      en: 'Arabia Moomin mug 0.3 l, Friendship',
-      fi: 'Arabia Muumi-muki 0,3 l, Ystävyys',
-    },
-    description: {
-      en: 'An Arabia Moomin mug from the Friendship motif, where shy Toffle finds a message in a bottle from Miffle and goes looking for her. Arabia has been making Moomin mugs in Finland since 1990 and retires each motif, which is why old ones are collected.',
-      fi: 'Arabian Muumi-muki Ystävyys-aiheella, jossa ujo Nyyti löytää Tuikun pullopostin ja lähtee etsimään häntä. Arabia on valmistanut Muumi-mukeja Suomessa vuodesta 1990 ja poistaa kuosit vuorollaan, minkä takia vanhoja kerätään.',
-    },
-    priceFrom: 24.97,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-12',
-    image: 'prod-sk-arabia-moomin-mug-friendship',
-    imageIsPartner: true,
-    partnerId: 'suomikauppa',
-    partnerProductUrl: 'https://suomikauppa.fi/products/arabia-muumi-muki-03l-ystavyys',
-    details: {
-      specs: [
-        { key: 'size', value: { en: '0.3 l', fi: '0,3 l' } },
-        {
-          key: 'other',
-          label: { en: 'Motif', fi: 'Kuosi' },
-          value: { en: 'Friendship, from the story of Toffle and Miffle', fi: 'Ystävyys, Nyytin ja Tuikun tarinasta' },
-        },
-      ],
-      sourceUrl: 'https://suomikauppa.fi/products/arabia-muumi-muki-03l-ystavyys',
-      fetchedAt: '2026-08-12',
-    },
-  },
-  {
     slug: 'sk-muurla-moomin-bottle',
     category: 'design',
     brand: 'Muurla',
@@ -4624,6 +4592,165 @@ export const PRODUCTS: Product[] = [
         },
       ],
       sourceUrl: 'https://nordicbuddies.com/products/moomin-novels-poster',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'sk-finland-beanie',
+    category: 'clothing',
+    brand: 'Tammer',
+    name: {
+      en: 'Finland beanie, blue and white',
+      fi: 'Finland-pipo, sinivalkoinen',
+    },
+    description: {
+      en: 'The blue-and-white bobble hat with FINLAND across the band, the one worn in the stands and then for the rest of the winter. Machine wash at 30.',
+      fi: 'Sinivalkoinen tupsupipo, jossa lukee FINLAND. Se katsomopipo, joka jää päähän loppitalveksi. Vesipesu 30 astetta.',
+    },
+    priceFrom: 16.19,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-finland-beanie',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/finland-pipo-sinivalkoinen',
+    details: {
+      specs: [
+        { key: 'other', label: { en: 'Text', fi: 'Teksti' }, value: { en: 'FINLAND', fi: 'FINLAND' } },
+        { key: 'other', label: { en: 'Care', fi: 'Hoito' }, value: { en: 'Machine wash 30 °C', fi: 'Vesipesu 30 °C' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/finland-pipo-sinivalkoinen',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'sk-finland-tube-scarf',
+    category: 'clothing',
+    brand: 'Tammer',
+    name: {
+      en: 'Finland tube scarf',
+      fi: 'Suomi-putkihuivi',
+    },
+    description: {
+      en: 'A seamless tube in the Finnish flag pattern, pulled up over the face when the wind comes off the fell. Under seven euros, which is why people buy three.',
+      fi: 'Saumaton putki Suomen lipun kuviolla, vedetään kasvoille kun tuntureilta tulee viima. Alle seitsemän euroa, mistä syystä niitä ostetaan kolme.',
+    },
+    priceFrom: 6.78,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-finland-tube-scarf',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/putkihuivi-sinivalkoinen',
+    details: {
+      specs: [
+        {
+          key: 'other',
+          label: { en: 'Pattern', fi: 'Kuvio' },
+          value: { en: 'Finnish flag', fi: 'Suomen lippu' },
+        },
+        { key: 'other', label: { en: 'Care', fi: 'Hoito' }, value: { en: 'Hand wash', fi: 'Käsinpesu' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/putkihuivi-sinivalkoinen',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'sk-little-my-sauna-cushion',
+    category: 'handicrafts',
+    brand: 'Emendo',
+    name: {
+      en: 'Emendo Little My sauna cushion',
+      fi: 'Emendo Pikku Myy -saunatyyny',
+    },
+    description: {
+      en: 'A sauna seat cushion drawn from Tove Jansson’s original artwork, made under licence by Emendo. The thing that stands between you and a bench at ninety degrees.',
+      fi: 'Saunatyyny, jonka kuvitus on Tove Janssonin alkuperäispiirustuksista, Emendon lisenssituotantoa. Se, mikä on sinun ja yhdeksänkymmenen asteen lauteen välissä.',
+    },
+    priceFrom: 27.48,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-little-my-sauna-cushion',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/emendo-pikku-myy-saunatyyny',
+    details: {
+      specs: [
+        {
+          key: 'other',
+          label: { en: 'Artwork', fi: 'Kuvitus' },
+          value: {
+            en: 'From Tove Jansson’s original drawings',
+            fi: 'Tove Janssonin alkuperäispiirustuksista',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Licence', fi: 'Lisenssi' },
+          value: { en: 'Official Moomin Characters product', fi: 'Virallinen Moomin Characters -lisenssituote' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/emendo-pikku-myy-saunatyyny',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'sk-rento-sauna-hat',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: {
+      en: 'Rento linen-terry sauna hat',
+      fi: 'Rento saunahattu, pellavafrotee',
+    },
+    description: {
+      en: 'Linen terry, which keeps the heat off your scalp and hair on the top bench. It also works the other way round: in an outdoor hot tub in February it keeps your head warm. Machine wash at 60.',
+      fi: 'Pellavafroteeta, joka pitää löylyn kuumuuden poissa päänahasta ja hiuksista ylälauteella. Toimii myös toisin päin: helmikuun paljussa se pitää pään lämpimänä. Vesipesu 60 astetta.',
+    },
+    priceFrom: 32.5,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-rento-sauna-hat',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/rento-saunahattu-pellavafrotee-ruskea',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Linen terry', fi: 'Pellavafrotee' } },
+        { key: 'other', label: { en: 'Care', fi: 'Hoito' }, value: { en: 'Machine wash 60 °C', fi: 'Vesipesu 60 °C' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/rento-saunahattu-pellavafrotee-ruskea',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'sk-rento-birch-whisk',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: {
+      en: 'Rento dried birch whisk',
+      fi: 'Rento kuivattu saunavihta, koivu',
+    },
+    description: {
+      en: 'A dried birch whisk, soaked in warm water before the sauna so the leaves and the smell come back. Whisking is the part of the sauna that visitors always ask about and rarely try.',
+      fi: 'Kuivattu koivuvihta, liotetaan lämpimässä vedessä ennen saunaa jolloin lehdet ja tuoksu palaavat. Vihtominen on se saunan osa, jota vieraat aina kysyvät ja harvoin kokeilevat.',
+    },
+    priceFrom: 12.42,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-rento-birch-whisk',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/rento-kuivattu-saunavihta-koivu',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Dried birch', fi: 'Kuivattu koivu' } },
+        {
+          key: 'other',
+          label: { en: 'Before use', fi: 'Ennen käyttöä' },
+          value: { en: 'Soak before the sauna', fi: 'Liota ennen saunomista' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/rento-kuivattu-saunavihta-koivu',
       fetchedAt: '2026-08-12',
     },
   },

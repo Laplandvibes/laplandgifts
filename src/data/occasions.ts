@@ -38,7 +38,7 @@ export const OCCASION_PICKS: string[][] = [
   // ostetaan kaupasta joka maksaa meille komission.
   [
     'iittala-aalto-vase-160',
-    'sk-arabia-moomin-mug-friendship',
+    'arabia-moomin-mug-friendship',
     'sk-muurla-moomin-bottle',
     'aarikka-prinsessa-candleholder',
     'lapuan-kankurit-kaamos-blanket',

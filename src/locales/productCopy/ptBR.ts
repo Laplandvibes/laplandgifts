@@ -1136,16 +1136,6 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Uso'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'Caneca Moomin Arabia 0,3 l, Amizade',
-    description:
-      'Uma caneca Moomin da Arabia com o motivo Amizade, em que o tímido Toffle encontra uma mensagem na garrafa deixada por Miffle e sai à procura dela. A Arabia fabrica canecas Moomin na Finlândia desde 1990 e aposenta cada motivo na sua vez, por isso as antigas são colecionadas.',
-    specs: [
-      '0,3 l',
-      'Amizade, da história de Toffle e Miffle',
-    ],
-    specLabels: [undefined, 'Motivo'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'Garrafa de vidro Moomin Muurla 1 l, Maçãs',
     description:
@@ -1243,5 +1233,55 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Criado e impresso em Helsinque',
     ],
     specLabels: [undefined, undefined, 'Produção'],
+  },
+  'sk-finland-beanie': {
+    name: 'Gorro Finlândia, azul e branco',
+    description:
+      'O gorro azul e branco com pompom e FINLAND na aba, usado na arquibancada e depois pelo resto do inverno. Lavagem à máquina a 30.',
+    specs: [
+      'FINLAND',
+      'Lavagem à máquina 30 °C',
+    ],
+    specLabels: ['Texto', 'Cuidados'],
+  },
+  'sk-finland-tube-scarf': {
+    name: 'Gola tubular Finlândia',
+    description:
+      'Um tubo sem costura com a estampa da bandeira finlandesa, puxado sobre o rosto quando o vento desce da montanha. Menos de sete euros, e é por isso que as pessoas levam três.',
+    specs: [
+      'Bandeira da Finlândia',
+      'Lavar à mão',
+    ],
+    specLabels: ['Estampa', 'Cuidados'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'Almofada de sauna Pequena My, Emendo',
+    description:
+      'Uma almofada de assento para a sauna a partir dos desenhos originais de Tove Jansson, fabricada sob licença pela Emendo. O que fica entre você e um banco a noventa graus.',
+    specs: [
+      'A partir dos desenhos originais de Tove Jansson',
+      'Produto oficial licenciado Moomin Characters',
+    ],
+    specLabels: ['Ilustração', 'Licença'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'Chapéu de sauna Rento em atoalhado de linho',
+    description:
+      'O atoalhado de linho mantém o calor longe do couro cabeludo e do cabelo no banco de cima. Funciona ao contrário também: numa banheira ao ar livre em fevereiro, mantém a cabeça quente. Lavagem à máquina a 60.',
+    specs: [
+      'Atoalhado de linho',
+      'Lavagem à máquina 60 °C',
+    ],
+    specLabels: [undefined, 'Cuidados'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'Feixe de bétula seca Rento',
+    description:
+      'Um feixe de bétula seca, posto de molho em água morna antes da sauna para que as folhas e o cheiro voltem. Bater-se com ele é a parte da sauna sobre a qual os visitantes sempre perguntam e que raramente experimentam.',
+    specs: [
+      'Bétula seca',
+      'Deixar de molho antes da sauna',
+    ],
+    specLabels: [undefined, 'Antes de usar'],
   },
 }

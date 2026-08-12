@@ -1136,16 +1136,6 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Gebruik'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'Arabia Moomin-mok 0,3 l, Vriendschap',
-    description:
-      'Een Arabia Moomin-mok met het motief Vriendschap, waarin de verlegen Toffle een flessenpost van Miffle vindt en op zoek gaat naar haar. Arabia maakt Moomin-mokken sinds 1990 in Finland en haalt elk motief op zijn beurt uit productie, daarom worden oude verzameld.',
-    specs: [
-      '0,3 l',
-      'Vriendschap, uit het verhaal van Toffle en Miffle',
-    ],
-    specLabels: [undefined, 'Motief'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'Muurla Moomin glazen fles 1 l, Appels',
     description:
@@ -1243,5 +1233,55 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Ontworpen en gedrukt in Helsinki',
     ],
     specLabels: [undefined, undefined, 'Productie'],
+  },
+  'sk-finland-beanie': {
+    name: 'Finland-muts, blauw-wit',
+    description:
+      'De blauw-witte kwastmuts met FINLAND op de rand, op de tribune gedragen en daarna de rest van de winter. Machinewas op 30.',
+    specs: [
+      'FINLAND',
+      'Machinewas 30 °C',
+    ],
+    specLabels: ['Opschrift', 'Onderhoud'],
+  },
+  'sk-finland-tube-scarf': {
+    name: 'Finland-colsjaal',
+    description:
+      'Een naadloze koker met het patroon van de Finse vlag, die je over je gezicht trekt als de wind van de fjeld komt. Onder de zeven euro, en daarom kopen mensen er drie.',
+    specs: [
+      'Finse vlag',
+      'Handwas',
+    ],
+    specLabels: ['Patroon', 'Onderhoud'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'Emendo saunakussen Kleine My',
+    description:
+      'Een saunazitkussen naar de originele tekeningen van Tove Jansson, in licentie gemaakt door Emendo. Wat er tussen jou en een bank van negentig graden zit.',
+    specs: [
+      'Naar de originele tekeningen van Tove Jansson',
+      'Officieel Moomin Characters-licentieproduct',
+    ],
+    specLabels: ['Illustratie', 'Licentie'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'Rento saunamuts van linnenbadstof',
+    description:
+      'Linnenbadstof houdt de hitte weg van hoofdhuid en haar op de bovenste bank. Het werkt ook andersom: in een hottub in februari houdt hij je hoofd warm. Machinewas op 60.',
+    specs: [
+      'Linnenbadstof',
+      'Machinewas 60 °C',
+    ],
+    specLabels: [undefined, 'Onderhoud'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'Rento gedroogde berkentwijgbundel',
+    description:
+      'Een gedroogde berkentwijgbundel, voor de sauna in warm water geweekt zodat de blaadjes en de geur terugkomen. Jezelf ermee slaan is het deel van de sauna waar bezoekers altijd naar vragen en dat ze zelden proberen.',
+    specs: [
+      'Gedroogde berk',
+      'Weken voor de sauna',
+    ],
+    specLabels: [undefined, 'Voor gebruik'],
   },
 }

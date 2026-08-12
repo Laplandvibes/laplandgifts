@@ -33,7 +33,7 @@ export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
   // Makian etsijä haluaa Makia-osion, ei arvailua vaatetyypeistä. Muissa
   // kategorioissa tyyppiryhmittely säilyy, koska niissä brändejä on monta
   // pientä eikä kukaan etsi "Emendoa".
-  clothing: ['brandhalti', 'brandnorthoutdoor', 'brandmakia', 'brandnordicbuddies'],
+  clothing: ['brandhalti', 'brandnorthoutdoor', 'brandmakia', 'brandnordicbuddies', 'finlandtheme'],
   handicrafts: ['sauna', 'knives', 'wood', 'textiles', 'ceramics'],
   treats: ['salmiakki', 'chocolate', 'savoury', 'drinks'],
   // `drinks` on mukana myös täällä: Kainon kuusenkerkkäjuoma on superfoodi
@@ -60,6 +60,7 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     brandnorthoutdoor: 'North Outdoor',
     brandmakia: 'Makia',
     brandnordicbuddies: 'Nordicbuddies',
+    finlandtheme: 'Finland supporter wear',
     baselayer: 'Base layers',
     midlayer: 'Mid layers and knitwear',
     outerwear: 'Shells and outerwear',
@@ -86,6 +87,7 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     brandnorthoutdoor: 'North Outdoor',
     brandmakia: 'Makia',
     brandnordicbuddies: 'Nordicbuddies',
+    finlandtheme: 'Suomi-fanituotteet',
     baselayer: 'Aluskerrastot',
     midlayer: 'Välikerrokset ja neuleet',
     outerwear: 'Kuoritakit ja ulkovaatteet',
@@ -141,11 +143,12 @@ const MAP: Record<string, SubgroupId> = {
   'nb-kunnas-kalevala-tote': 'brandnordicbuddies',
   'nb-kunnas-kalevala-beanie': 'brandnordicbuddies',
   'nb-little-my-mittens': 'brandnordicbuddies',
+  'sk-finland-beanie': 'finlandtheme',
+  'sk-finland-tube-scarf': 'finlandtheme',
   'sk-marimekko-unikko-crossbody': 'textiles',
   'sk-moomin-duvet-set': 'textiles',
   'sk-novita-wonder-wool': 'textiles',
   'sk-aromageddon-sauna-scent': 'sauna',
-  'sk-arabia-moomin-mug-friendship': 'tableware',
   'sk-muurla-moomin-bottle': 'tableware',
   'nb-kunnas-santa-mug': 'tableware',
   'nb-little-my-thermal-bottle': 'tableware',
@@ -174,6 +177,9 @@ const MAP: Record<string, SubgroupId> = {
   'rento-linen-back-scrubber': 'sauna',
   'rento-linen-wash-mitt': 'sauna',
   'emendo-sauna-scents': 'sauna',
+  'sk-little-my-sauna-cushion': 'sauna',
+  'sk-rento-sauna-hat': 'sauna',
+  'sk-rento-birch-whisk': 'sauna',
   'lapuan-kankurit-poro-towel': 'textiles',
   'lapuan-kankurit-kaamos-blanket': 'textiles',
   'nb-little-my-neckpillow': 'textiles',

@@ -1187,16 +1187,6 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Anwendung'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'Arabia Mumin-Becher 0,3 l, Freundschaft',
-    description:
-      'Ein Arabia Mumin-Becher mit dem Motiv Freundschaft, in dem der schüchterne Toffle eine Flaschenpost von Miffle findet und sich auf die Suche nach ihr macht. Arabia stellt Mumin-Becher seit 1990 in Finnland her und nimmt jedes Motiv irgendwann aus dem Programm, weshalb alte gesammelt werden.',
-    specs: [
-      '0,3 l',
-      'Freundschaft, aus der Geschichte von Toffle und Miffle',
-    ],
-    specLabels: [undefined, 'Motiv'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'Muurla Mumin-Glasflasche 1 l, Äpfel',
     description:
@@ -1294,5 +1284,55 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'In Helsinki gestaltet und gedruckt',
     ],
     specLabels: [undefined, undefined, 'Herstellung'],
+  },
+  'sk-finland-beanie': {
+    name: 'Finnland-Bommelmütze, blau-weiß',
+    description:
+      'Die blau-weiße Bommelmütze mit FINLAND auf dem Bund, getragen auf der Tribüne und danach den restlichen Winter. Maschinenwäsche bei 30.',
+    specs: [
+      'FINLAND',
+      'Maschinenwäsche 30 °C',
+    ],
+    specLabels: ['Schriftzug', 'Pflege'],
+  },
+  'sk-finland-tube-scarf': {
+    name: 'Finnland-Schlauchschal',
+    description:
+      'Ein nahtloser Schlauch im Muster der finnischen Flagge, den man über das Gesicht zieht, wenn der Wind vom Fjell kommt. Unter sieben Euro, weshalb die Leute gleich drei nehmen.',
+    specs: [
+      'Finnische Flagge',
+      'Handwäsche',
+    ],
+    specLabels: ['Muster', 'Pflege'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'Emendo Saunakissen Kleine My',
+    description:
+      'Ein Saunasitzkissen nach Tove Janssons Originalzeichnungen, in Lizenz von Emendo gefertigt. Das, was zwischen einem selbst und einer neunzig Grad heißen Bank liegt.',
+    specs: [
+      'Nach Tove Janssons Originalzeichnungen',
+      'Offizielles Moomin-Characters-Lizenzprodukt',
+    ],
+    specLabels: ['Illustration', 'Lizenz'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'Rento Saunahut aus Leinenfrottee',
+    description:
+      'Leinenfrottee hält die Hitze auf der oberen Bank von Kopfhaut und Haar fern. Es funktioniert auch umgekehrt: im Außen-Hotpot im Februar hält er den Kopf warm. Maschinenwäsche bei 60.',
+    specs: [
+      'Leinenfrottee',
+      'Maschinenwäsche 60 °C',
+    ],
+    specLabels: [undefined, 'Pflege'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'Rento getrockneter Birkenquast',
+    description:
+      'Ein getrockneter Birkenquast, vor der Sauna in warmem Wasser eingeweicht, damit Blätter und Duft zurückkommen. Das Quasten ist der Teil der Sauna, nach dem Gäste immer fragen und den sie selten ausprobieren.',
+    specs: [
+      'Getrocknete Birke',
+      'Vor der Sauna einweichen',
+    ],
+    specLabels: [undefined, 'Vor dem Gebrauch'],
   },
 }

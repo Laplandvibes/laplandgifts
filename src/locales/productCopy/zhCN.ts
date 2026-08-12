@@ -1138,16 +1138,6 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, '用法'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'Arabia 姆明马克杯 0,3 l「友谊」',
-    description:
-      'Arabia 的姆明马克杯,图案取自「友谊」:害羞的托夫勒捡到米芙勒的漂流瓶,于是出发去找她。Arabia 自 1990 年起在芬兰制作姆明马克杯,并会逐一停产各款图案,老款因此被人收藏。',
-    specs: [
-      '0,3 l',
-      '友谊,取自托夫勒与米芙勒的故事',
-    ],
-    specLabels: [undefined, '图案'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'Muurla 姆明玻璃瓶 1 l「苹果」',
     description:
@@ -1245,5 +1235,55 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '在赫尔辛基设计并印制',
     ],
     specLabels: [undefined, undefined, '生产'],
+  },
+  'sk-finland-beanie': {
+    name: '芬兰球迷绒球帽(蓝白)',
+    description:
+      '帽檐上织着 FINLAND 的蓝白绒球帽,先戴去看台,之后整个冬天都戴着。机洗 30 度。',
+    specs: [
+      'FINLAND',
+      '机洗 30 °C',
+    ],
+    specLabels: ['文字', '保养'],
+  },
+  'sk-finland-tube-scarf': {
+    name: '芬兰无缝脖套',
+    description:
+      '芬兰国旗图案的无缝筒状脖套,风从山丘上下来时就拉上来盖住脸。不到七欧元,所以大家一买就是三条。',
+    specs: [
+      '芬兰国旗',
+      '手洗',
+    ],
+    specLabels: ['图案', '保养'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'Emendo 小不点桑拿坐垫',
+    description:
+      '图案取自托芙·扬松的原始手稿,由 Emendo 授权生产的桑拿坐垫。九十度的木凳和你之间,隔的就是这块垫子。',
+    specs: [
+      '取自托芙·扬松原始手稿',
+      'Moomin Characters 官方授权产品',
+    ],
+    specLabels: ['原稿', '授权'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'Rento 亚麻毛圈桑拿帽',
+    description:
+      '亚麻毛圈能把上层长凳的高温挡在头皮和头发之外。反过来也管用:二月里泡户外热水桶时,它让头保持温热。机洗 60 度。',
+    specs: [
+      '亚麻毛圈',
+      '机洗 60 °C',
+    ],
+    specLabels: [undefined, '保养'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'Rento 干桦树枝束',
+    description:
+      '干燥的桦树枝束,进桑拿前用温水泡开,叶子和气味就会回来。用它拍打身体,是访客总要问、却很少真去试的那部分桑拿礼仪。',
+    specs: [
+      '干燥桦木',
+      '进桑拿前浸泡',
+    ],
+    specLabels: [undefined, '使用前'],
   },
 }

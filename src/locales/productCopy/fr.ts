@@ -1137,16 +1137,6 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Utilisation'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'Mug Moumine Arabia 0,3 l, Amitié',
-    description:
-      'Un mug Moumine d’Arabia au motif Amitié, où le timide Toffle trouve une bouteille à la mer envoyée par Miffle et part à sa recherche. Arabia fabrique des mugs Moumine en Finlande depuis 1990 et retire chaque motif à son tour, ce qui explique que les anciens se collectionnent.',
-    specs: [
-      '0,3 l',
-      'Amitié, d’après l’histoire de Toffle et Miffle',
-    ],
-    specLabels: [undefined, 'Motif'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'Bouteille en verre Moumine Muurla 1 l, Pommes',
     description:
@@ -1244,5 +1234,55 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Conçue et imprimée à Helsinki',
     ],
     specLabels: [undefined, undefined, 'Fabrication'],
+  },
+  'sk-finland-beanie': {
+    name: 'Bonnet Finlande, bleu et blanc',
+    description:
+      'Le bonnet à pompon bleu et blanc avec FINLAND sur le bord, porté en tribune puis tout le reste de l’hiver. Lavage en machine à 30.',
+    specs: [
+      'FINLAND',
+      'Lavage en machine 30 °C',
+    ],
+    specLabels: ['Inscription', 'Entretien'],
+  },
+  'sk-finland-tube-scarf': {
+    name: 'Tour de cou Finlande',
+    description:
+      'Un tube sans couture au motif du drapeau finlandais, qu’on remonte sur le visage quand le vent descend de la fjeld. Moins de sept euros, et c’est pour cela que les gens en prennent trois.',
+    specs: [
+      'Drapeau finlandais',
+      'Lavage à la main',
+    ],
+    specLabels: ['Motif', 'Entretien'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'Coussin de sauna Petite Mu, Emendo',
+    description:
+      'Un coussin d’assise pour le sauna d’après les dessins originaux de Tove Jansson, fabriqué sous licence par Emendo. Ce qui vous sépare d’une banquette à quatre-vingt-dix degrés.',
+    specs: [
+      'D’après les dessins originaux de Tove Jansson',
+      'Produit sous licence officielle Moomin Characters',
+    ],
+    specLabels: ['Illustration', 'Licence'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'Bonnet de sauna Rento en éponge de lin',
+    description:
+      'L’éponge de lin tient la chaleur à distance du cuir chevelu et des cheveux sur le banc du haut. Cela marche aussi dans l’autre sens : dans un bain nordique en février, il garde la tête au chaud. Lavage en machine à 60.',
+    specs: [
+      'Éponge de lin',
+      'Lavage en machine 60 °C',
+    ],
+    specLabels: [undefined, 'Entretien'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'Balai de bouleau séché Rento',
+    description:
+      'Un balai de bouleau séché, trempé dans l’eau chaude avant le sauna pour que les feuilles et l’odeur reviennent. Se fouetter est la partie du sauna dont les visiteurs parlent toujours et qu’ils essaient rarement.',
+    specs: [
+      'Bouleau séché',
+      'Faire tremper avant le sauna',
+    ],
+    specLabels: [undefined, 'Avant utilisation'],
   },
 }

@@ -1138,16 +1138,6 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, '使い方'],
   },
-  'sk-arabia-moomin-mug-friendship': {
-    name: 'アラビア ムーミンマグ 0,3 l「ともだち」',
-    description:
-      'アラビアのムーミンマグ「ともだち」。内気なスクルッタが瓶に入った手紙を見つけ、差出人のミムラを探しに出かける場面です。アラビアは 1990 年からフィンランドでムーミンマグを作り、絵柄を順に生産終了にしていきます。古いものが集められるのはそのためです。',
-    specs: [
-      '0,3 l',
-      'ともだち、スクルッタとミムラの物語から',
-    ],
-    specLabels: [undefined, '絵柄'],
-  },
   'sk-muurla-moomin-bottle': {
     name: 'ムールラ ムーミン ガラスボトル 1 l「りんご」',
     description:
@@ -1245,5 +1235,55 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'ヘルシンキでデザイン・印刷',
     ],
     specLabels: [undefined, undefined, '製造'],
+  },
+  'sk-finland-beanie': {
+    name: 'フィンランド ボンボンニット帽(青白)',
+    description:
+      '折り返しに FINLAND と入った青と白のボンボン付きニット帽。スタンドでかぶり、そのあと冬のあいだずっとかぶることになります。洗濯機 30 度。',
+    specs: [
+      'FINLAND',
+      '洗濯機 30 °C',
+    ],
+    specLabels: ['文字', 'お手入れ'],
+  },
+  'sk-finland-tube-scarf': {
+    name: 'フィンランド ネックチューブ',
+    description:
+      'フィンランド国旗柄の縫い目のない筒状ネックウォーマー。フェルから風が下りてきたら顔まで引き上げます。7 ユーロ以下なので、たいてい 3 本まとめて買われます。',
+    specs: [
+      'フィンランド国旗',
+      '手洗い',
+    ],
+    specLabels: ['柄', 'お手入れ'],
+  },
+  'sk-little-my-sauna-cushion': {
+    name: 'エメンド リトルミイ サウナクッション',
+    description:
+      'トーベ・ヤンソンの原画をもとにした、エメンドのライセンス生産のサウナ用座布。90 度のベンチと自分のあいだにあるのが、これです。',
+    specs: [
+      'トーベ・ヤンソンの原画より',
+      'Moomin Characters 公式ライセンス製品',
+    ],
+    specLabels: ['原画', 'ライセンス'],
+  },
+  'sk-rento-sauna-hat': {
+    name: 'レント リネンパイル サウナハット',
+    description:
+      '上段の熱から頭皮と髪を守るリネンパイル。逆にも働きます。2 月の屋外ホットタブでは頭を温かく保ちます。洗濯機 60 度。',
+    specs: [
+      'リネンパイル',
+      '洗濯機 60 °C',
+    ],
+    specLabels: [undefined, 'お手入れ'],
+  },
+  'sk-rento-birch-whisk': {
+    name: 'レント 白樺ヴィヒタ(乾燥)',
+    description:
+      '乾燥させた白樺のヴィヒタ。サウナの前にぬるま湯に浸すと、葉と香りが戻ります。ヴィヒタで体を打つのは、旅行者が必ず尋ねるのに、めったに試さないサウナの作法です。',
+    specs: [
+      '乾燥白樺',
+      'サウナの前に浸す',
+    ],
+    specLabels: [undefined, '使う前に'],
   },
 }

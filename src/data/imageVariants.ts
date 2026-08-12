@@ -1025,7 +1025,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-arabia-moomin-mug-friendship": {
+  "prod-sk-aromageddon-sauna-scent": {
     "full": 800,
     "w": [
       320,
@@ -1033,7 +1033,23 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-aromageddon-sauna-scent": {
+  "prod-sk-finland-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-finland-tube-scarf": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-little-my-sauna-cushion": {
     "full": 800,
     "w": [
       320,
@@ -1090,6 +1106,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-outlet-remix-salmiakki": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-rento-birch-whisk": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-rento-sauna-hat": {
     "full": 800,
     "w": [
       320,
