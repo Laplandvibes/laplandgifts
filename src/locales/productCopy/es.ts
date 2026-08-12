@@ -1284,4 +1284,36 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Antes de usar'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: 'Camiseta de aficionado de Finlandia',
+    description:
+      'La camiseta azul y blanca con SUOMI en el pecho y el escudo del león, con el corte que de verdad se lleva al partido. Transpirable, tallas de la M a la XXL, y para febrero parece que en cada casa finlandesa hay una.',
+    specs: [
+      'M–XXL',
+      'SUOMI y el escudo del león',
+    ],
+    specLabels: [undefined, 'Estampación'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'Toalla de baño Marimekko Unikko 70 × 150 cm',
+    description:
+      'Unikko sobre algodón de rizo, beige y blanco, en el formato completo de 70 por 150. El hilo es 65 % algodón orgánico y 35 % reciclado, y la parte reciclada procede de los retales de corte de la propia Marimekko.',
+    specs: [
+      '70 × 150 cm',
+      'Algodón de rizo, 65 % orgánico y 35 % reciclado',
+      'Unikko, beige y blanco',
+    ],
+    specLabels: [undefined, undefined, 'Estampado'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'Toalla de manos Marimekko Unikko 50 × 70 cm',
+    description:
+      'El mismo rizo Unikko en tamaño de manos, la mitad de precio que la de baño y bastante más fácil de meter en la maleta. Beige y blanco, 65 % algodón orgánico y 35 % reciclado.',
+    specs: [
+      '50 × 70 cm',
+      'Algodón de rizo, 65 % orgánico y 35 % reciclado',
+      'Unikko, beige y blanco',
+    ],
+    specLabels: [undefined, undefined, 'Estampado'],
+  },
 }

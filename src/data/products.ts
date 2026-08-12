@@ -4757,6 +4757,116 @@ export const PRODUCTS: Product[] = [
       fetchedAt: '2026-08-12',
     },
   },
+  {
+    slug: 'sk-suomi-hockey-jersey',
+    category: 'clothing',
+    brand: 'Mikebon',
+    name: {
+      en: 'Finland supporter jersey',
+      fi: 'Suomi-fanipaita',
+    },
+    description: {
+      en: 'The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. Breathable, sized M to XXL, and the thing every Finnish household seems to own one of by February.',
+      fi: 'Sinivalkoinen fanipaita, jossa on SUOMI rinnassa ja leijonalogo. Hengittävä materiaali, koot M–XXL. Se paita, joka helmikuuhun mennessä tuntuu löytyvän joka suomalaisesta kaapista.',
+    },
+    priceFrom: 50.07,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-suomi-hockey-jersey',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/suomi-fanipaita-aikuisten-sinivalkoinen',
+    details: {
+      specs: [
+        { key: 'size', value: { en: 'M–XXL', fi: 'M–XXL' } },
+        {
+          key: 'other',
+          label: { en: 'Print', fi: 'Painatus' },
+          value: { en: 'SUOMI and the lion crest', fi: 'SUOMI ja leijonalogo' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/suomi-fanipaita-aikuisten-sinivalkoinen',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'sk-marimekko-unikko-bath-towel',
+    category: 'design',
+    brand: 'Marimekko',
+    name: {
+      en: 'Marimekko Unikko bath towel 70 × 150 cm',
+      fi: 'Marimekko Unikko -kylpypyyhe 70 × 150 cm',
+    },
+    description: {
+      en: 'Unikko on terry cotton, beige and white, in the full 70 by 150 size. The yarn is 65 % organic cotton and 35 % recycled, the recycled part coming from Marimekko’s own cutting waste.',
+      fi: 'Unikko froteepuuvillalla, beige-valkoinen, täydessä 70 × 150 -koossa. Lanka on 65 % luomupuuvillaa ja 35 % kierrätettyä, ja kierrätetty osuus tulee Marimekon omasta leikkuujätteestä.',
+    },
+    priceFrom: 56.41,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-marimekko-unikko-bath-towel',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/marimekko-unikko-kylpypyyhe-70-150-cm-beige-valkoinen',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '70 × 150 cm', fi: '70 × 150 cm' } },
+        {
+          key: 'material',
+          value: {
+            en: 'Terry cotton, 65 % organic and 35 % recycled',
+            fi: 'Froteepuuvilla, 65 % luomua ja 35 % kierrätettyä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Pattern', fi: 'Kuosi' },
+          value: { en: 'Unikko, beige and white', fi: 'Unikko, beige-valkoinen' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/marimekko-unikko-kylpypyyhe-70-150-cm-beige-valkoinen',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'sk-marimekko-unikko-hand-towel',
+    category: 'design',
+    brand: 'Marimekko',
+    name: {
+      en: 'Marimekko Unikko hand towel 50 × 70 cm',
+      fi: 'Marimekko Unikko -käsipyyhe 50 × 70 cm',
+    },
+    description: {
+      en: 'The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. Beige and white, 65 % organic cotton and 35 % recycled.',
+      fi: 'Sama Unikko-frotee käsipyyhkeen koossa, puolet kylpypyyhkeen hinnasta ja huomattavasti helpompi mahduttaa matkalaukkuun. Beige-valkoinen, 65 % luomupuuvillaa ja 35 % kierrätettyä.',
+    },
+    priceFrom: 27.55,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-marimekko-unikko-hand-towel',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/marimekko-unikko-kasipyyhe-50-70-cm-beige-valkoinen',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '50 × 70 cm', fi: '50 × 70 cm' } },
+        {
+          key: 'material',
+          value: {
+            en: 'Terry cotton, 65 % organic and 35 % recycled',
+            fi: 'Froteepuuvilla, 65 % luomua ja 35 % kierrätettyä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Pattern', fi: 'Kuosi' },
+          value: { en: 'Unikko, beige and white', fi: 'Unikko, beige-valkoinen' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/marimekko-unikko-kasipyyhe-50-70-cm-beige-valkoinen',
+      fetchedAt: '2026-08-12',
+    },
+  },
 ]
 
 export function productsByCategory(id: Product['category']): Product[] {

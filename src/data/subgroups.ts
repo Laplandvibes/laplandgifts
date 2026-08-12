@@ -145,6 +145,7 @@ const MAP: Record<string, SubgroupId> = {
   'nb-little-my-mittens': 'brandnordicbuddies',
   'sk-finland-beanie': 'finlandtheme',
   'sk-finland-tube-scarf': 'finlandtheme',
+  'sk-suomi-hockey-jersey': 'finlandtheme',
   'sk-marimekko-unikko-crossbody': 'textiles',
   'sk-moomin-duvet-set': 'textiles',
   'sk-novita-wonder-wool': 'textiles',
@@ -184,6 +185,8 @@ const MAP: Record<string, SubgroupId> = {
   'lapuan-kankurit-kaamos-blanket': 'textiles',
   'nb-little-my-neckpillow': 'textiles',
   'nb-moomintroll-love-cushion': 'textiles',
+  'sk-marimekko-unikko-bath-towel': 'textiles',
+  'sk-marimekko-unikko-hand-towel': 'textiles',
   'pentik-posio-mug': 'ceramics',
   'pentik-tunturiretki-studio-dish': 'ceramics',
 

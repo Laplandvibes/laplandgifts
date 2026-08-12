@@ -1284,4 +1284,36 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Antes de usar'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: 'Camisa de torcedor da Finlândia',
+    description:
+      'A camisa azul e branca com SUOMI no peito e o brasão do leão, no corte que as pessoas realmente vestem para ir ao jogo. Respirável, tamanhos M a XXL, e até fevereiro parece que toda casa finlandesa tem uma.',
+    specs: [
+      'M–XXL',
+      'SUOMI e o brasão do leão',
+    ],
+    specLabels: [undefined, 'Estampa'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'Toalha de banho Marimekko Unikko 70 × 150 cm',
+    description:
+      'Unikko em algodão atoalhado, bege e branco, no formato inteiro de 70 por 150. O fio é 65 % algodão orgânico e 35 % reciclado, e a parte reciclada vem das sobras de corte da própria Marimekko.',
+    specs: [
+      '70 × 150 cm',
+      'Algodão atoalhado, 65 % orgânico e 35 % reciclado',
+      'Unikko, bege e branco',
+    ],
+    specLabels: [undefined, undefined, 'Estampa'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'Toalha de rosto Marimekko Unikko 50 × 70 cm',
+    description:
+      'O mesmo atoalhado Unikko em tamanho de rosto, metade do preço da de banho e bem mais fácil de caber na mala. Bege e branco, 65 % algodão orgânico e 35 % reciclado.',
+    specs: [
+      '50 × 70 cm',
+      'Algodão atoalhado, 65 % orgânico e 35 % reciclado',
+      'Unikko, bege e branco',
+    ],
+    specLabels: [undefined, undefined, 'Estampa'],
+  },
 }

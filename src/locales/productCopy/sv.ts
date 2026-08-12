@@ -1286,4 +1286,36 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Före användning'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: 'Finland supportertröja',
+    description:
+      'Den blåvita supportertröjan med SUOMI över bröstet och lejonvapnet, i den passform man faktiskt har på sig till en match. Andas, storlekar M till XXL, och till februari verkar varje finländskt hushåll ha en.',
+    specs: [
+      'M–XXL',
+      'SUOMI och lejonvapnet',
+    ],
+    specLabels: [undefined, 'Tryck'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'Marimekko Unikko badhandduk 70 × 150 cm',
+    description:
+      'Unikko på frottébomull, beige och vitt, i hela formatet 70 gånger 150. Garnet är 65 % ekologisk bomull och 35 % återvunnen, och den återvunna delen kommer från Marimekkos eget skärspill.',
+    specs: [
+      '70 × 150 cm',
+      'Frottébomull, 65 % ekologisk och 35 % återvunnen',
+      'Unikko, beige och vitt',
+    ],
+    specLabels: [undefined, undefined, 'Mönster'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'Marimekko Unikko handduk 50 × 70 cm',
+    description:
+      'Samma Unikko-frotté i handduksstorlek, halva badhanddukens pris och betydligt lättare att få ner i väskan. Beige och vitt, 65 % ekologisk bomull och 35 % återvunnen.',
+    specs: [
+      '50 × 70 cm',
+      'Frottébomull, 65 % ekologisk och 35 % återvunnen',
+      'Unikko, beige och vitt',
+    ],
+    specLabels: [undefined, undefined, 'Mönster'],
+  },
 }

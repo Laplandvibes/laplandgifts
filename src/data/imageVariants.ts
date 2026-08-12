@@ -1057,8 +1057,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-marimekko-unikko-bath-towel": {
+    "full": 458,
+    "w": [
+      320
+    ]
+  },
   "prod-sk-marimekko-unikko-crossbody": {
     "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-marimekko-unikko-hand-towel": {
+    "full": 768,
     "w": [
       320,
       480,
@@ -1127,6 +1141,12 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320,
       480,
       640
+    ]
+  },
+  "prod-sk-suomi-hockey-jersey": {
+    "full": 360,
+    "w": [
+      320
     ]
   }
 }

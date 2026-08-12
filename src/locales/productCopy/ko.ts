@@ -1285,4 +1285,36 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, '사용 전'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: '핀란드 서포터 저지',
+    description:
+      '가슴에 SUOMI와 사자 문장이 들어간 파랑·흰색 서포터 셔츠. 실제로 경기장에 입고 가는 핏입니다. 통기성이 좋고 사이즈는 M부터 XXL까지. 2월쯤 되면 핀란드 집집마다 한 벌씩 있는 듯 보입니다.',
+    specs: [
+      'M–XXL',
+      'SUOMI와 사자 문장',
+    ],
+    specLabels: [undefined, '프린트'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: '마리메꼬 우니꼬 목욕 타월 70 × 150 cm',
+    description:
+      '테리 면에 우니꼬, 베이지와 흰색, 70 × 150의 전체 크기. 실은 유기농 면 65 %와 재생 면 35 %이며, 재생분은 마리메꼬 자체 재단 자투리에서 나옵니다.',
+    specs: [
+      '70 × 150 cm',
+      '테리 면, 유기농 65 %와 재생 35 %',
+      '우니꼬, 베이지와 흰색',
+    ],
+    specLabels: [undefined, undefined, '무늬'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: '마리메꼬 우니꼬 핸드 타월 50 × 70 cm',
+    description:
+      '같은 우니꼬 테리를 핸드 타월 크기로. 목욕 타월의 절반 가격이고 여행 가방에 넣기도 훨씬 쉽습니다. 베이지와 흰색, 유기농 면 65 %와 재생 35 %.',
+    specs: [
+      '50 × 70 cm',
+      '테리 면, 유기농 65 %와 재생 35 %',
+      '우니꼬, 베이지와 흰색',
+    ],
+    specLabels: [undefined, undefined, '무늬'],
+  },
 }

@@ -1284,4 +1284,36 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Voor gebruik'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: 'Finland supportersshirt',
+    description:
+      'Het blauw-witte supportersshirt met SUOMI op de borst en het leeuwenwapen, in de snit die je echt naar een wedstrijd aantrekt. Ademend, maten M tot XXL, en tegen februari lijkt elk Fins huishouden er een te hebben.',
+    specs: [
+      'M–XXL',
+      'SUOMI en het leeuwenwapen',
+    ],
+    specLabels: [undefined, 'Opdruk'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'Marimekko Unikko badlaken 70 × 150 cm',
+    description:
+      'Unikko op badstof katoen, beige en wit, in het volle formaat 70 bij 150. Het garen is 65 % biologisch katoen en 35 % gerecycled, waarbij het gerecyclede deel uit Marimekko’s eigen snijafval komt.',
+    specs: [
+      '70 × 150 cm',
+      'Badstof katoen, 65 % biologisch en 35 % gerecycled',
+      'Unikko, beige en wit',
+    ],
+    specLabels: [undefined, undefined, 'Dessin'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'Marimekko Unikko handdoek 50 × 70 cm',
+    description:
+      'Dezelfde Unikko-badstof in handdoekformaat, half zo duur als het badlaken en een stuk makkelijker in een koffer te krijgen. Beige en wit, 65 % biologisch katoen en 35 % gerecycled.',
+    specs: [
+      '50 × 70 cm',
+      'Badstof katoen, 65 % biologisch en 35 % gerecycled',
+      'Unikko, beige en wit',
+    ],
+    specLabels: [undefined, undefined, 'Dessin'],
+  },
 }

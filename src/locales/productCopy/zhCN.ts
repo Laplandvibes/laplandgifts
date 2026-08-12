@@ -1286,4 +1286,36 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, '使用前'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: '芬兰球迷球衣',
+    description:
+      '蓝白配色的球迷衫,胸前印着 SUOMI 和狮子徽章,版型就是大家真会穿去看球的那种。面料透气,尺码 M 到 XXL。到了二月,芬兰几乎家家都有一件。',
+    specs: [
+      'M–XXL',
+      'SUOMI 与狮子徽章',
+    ],
+    specLabels: [undefined, '印花'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'Marimekko Unikko 浴巾 70 × 150 cm',
+    description:
+      '毛圈棉上的 Unikko 图案,米色配白色,70 × 150 的完整尺寸。纱线为 65 % 有机棉与 35 % 再生棉,再生的那部分来自 Marimekko 自家的裁剪边角料。',
+    specs: [
+      '70 × 150 cm',
+      '毛圈棉,65 % 有机与 35 % 再生',
+      'Unikko,米色与白色',
+    ],
+    specLabels: [undefined, undefined, '图案'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'Marimekko Unikko 方巾 50 × 70 cm',
+    description:
+      '同样的 Unikko 毛圈棉,方巾尺寸,价格是浴巾的一半,塞进行李箱也容易得多。米色配白色,65 % 有机棉与 35 % 再生棉。',
+    specs: [
+      '50 × 70 cm',
+      '毛圈棉,65 % 有机与 35 % 再生',
+      'Unikko,米色与白色',
+    ],
+    specLabels: [undefined, undefined, '图案'],
+  },
 }

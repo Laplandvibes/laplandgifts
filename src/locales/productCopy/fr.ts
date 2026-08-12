@@ -1285,4 +1285,36 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Avant utilisation'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: 'Maillot de supporter Finlande',
+    description:
+      'Le maillot bleu et blanc avec SUOMI sur la poitrine et l’écusson au lion, dans la coupe qu’on porte vraiment pour aller au match. Respirant, tailles M à XXL, et d’ici février chaque foyer finlandais semble en posséder un.',
+    specs: [
+      'M–XXL',
+      'SUOMI et l’écusson au lion',
+    ],
+    specLabels: [undefined, 'Impression'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'Drap de bain Marimekko Unikko 70 × 150 cm',
+    description:
+      'Unikko sur coton éponge, beige et blanc, au format complet 70 sur 150. Le fil est composé à 65 % de coton biologique et à 35 % de coton recyclé, la part recyclée venant des chutes de coupe de Marimekko.',
+    specs: [
+      '70 × 150 cm',
+      'Coton éponge, 65 % bio et 35 % recyclé',
+      'Unikko, beige et blanc',
+    ],
+    specLabels: [undefined, undefined, 'Motif'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'Serviette Marimekko Unikko 50 × 70 cm',
+    description:
+      'La même éponge Unikko en taille serviette, à moitié prix du drap de bain et bien plus facile à caser dans une valise. Beige et blanc, 65 % coton biologique et 35 % recyclé.',
+    specs: [
+      '50 × 70 cm',
+      'Coton éponge, 65 % bio et 35 % recyclé',
+      'Unikko, beige et blanc',
+    ],
+    specLabels: [undefined, undefined, 'Motif'],
+  },
 }

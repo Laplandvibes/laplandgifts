@@ -3,11 +3,12 @@ import { ExternalLink } from 'lucide-react'
 import ShopNav from '../components/ShopNav'
 import Footer from '../components/Footer'
 import ProductGridSection from '../components/shop/ProductGridSection'
+import BrandSpotlight from '../components/shop/BrandSpotlight'
 import { brandById } from '../data/brands'
 import { productsByBrand } from '../data/brandProducts'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
-import { byShippingBreadth } from '../data/sortProducts'
+import { byShippingBreadth, pickHighlights } from '../data/sortProducts'
 import { useShippingCountry } from '../context/ShippingCountry'
 import { useLang, stripLocale } from '../i18n/useLang'
 import { SHOP_COPY } from '../locales/shopCopy'
@@ -71,6 +72,16 @@ export default function Brand() {
               <ExternalLink className="h-4 w-4" aria-hidden="true" />
             </a>
           </header>
+
+          {/* 🔴 Nosto tekstin ja ruudukon VÄLIIN (Vesa 12.8.). Brändin omaa
+              kuvamateriaalia meillä ei ole oikeutta käyttää, joten sivun
+              visuaalinen ankkuri on kumppanin tuotekuva — se on jo
+              katalogissa ja sen käyttöoikeus tulee affiliate-suhteesta.
+              Nosto valitaan samalla säännöllä kuin muutkin: laajimmin
+              toimittava ensin, sen jälkeen kallein. */}
+          {visible.length > 0 && (
+            <BrandSpotlight product={pickHighlights(visible, 1)[0]} lang={lang} />
+          )}
 
           <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
             {tb.productsH2(brand.name)}

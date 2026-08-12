@@ -1335,4 +1335,36 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Vor dem Gebrauch'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: 'Finnland-Fantrikot',
+    description:
+      'Das blau-weiße Fantrikot mit SUOMI auf der Brust und dem Löwenwappen, im Schnitt, den man tatsächlich zum Spiel anzieht. Atmungsaktiv, Größen M bis XXL, und bis Februar scheint es in jedem finnischen Haushalt eines davon zu geben.',
+    specs: [
+      'M–XXL',
+      'SUOMI und das Löwenwappen',
+    ],
+    specLabels: [undefined, 'Aufdruck'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'Marimekko Unikko Badetuch 70 × 150 cm',
+    description:
+      'Unikko auf Frottee-Baumwolle, beige und weiß, im vollen Format 70 mal 150. Das Garn besteht zu 65 % aus Bio-Baumwolle und zu 35 % aus recycelter, wobei der recycelte Anteil aus Marimekkos eigenen Zuschnittresten stammt.',
+    specs: [
+      '70 × 150 cm',
+      'Frottee-Baumwolle, 65 % bio und 35 % recycelt',
+      'Unikko, beige und weiß',
+    ],
+    specLabels: [undefined, undefined, 'Muster'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'Marimekko Unikko Handtuch 50 × 70 cm',
+    description:
+      'Dasselbe Unikko-Frottee in Handtuchgröße, halb so teuer wie das Badetuch und deutlich leichter im Koffer unterzubringen. Beige und weiß, 65 % Bio-Baumwolle und 35 % recycelt.',
+    specs: [
+      '50 × 70 cm',
+      'Frottee-Baumwolle, 65 % bio und 35 % recycelt',
+      'Unikko, beige und weiß',
+    ],
+    specLabels: [undefined, undefined, 'Muster'],
+  },
 }

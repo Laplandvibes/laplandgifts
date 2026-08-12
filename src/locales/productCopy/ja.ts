@@ -1286,4 +1286,36 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, '使う前に'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: 'フィンランド サポーターシャツ',
+    description:
+      '胸に SUOMI、そしてライオンの紋章が入った青と白のサポーターシャツ。実際に試合に着ていくシルエットです。通気性がよく、サイズは M から XXL。2 月にもなると、フィンランドのどの家にも一枚はあるように見えてきます。',
+    specs: [
+      'M–XXL',
+      'SUOMI とライオンの紋章',
+    ],
+    specLabels: [undefined, 'プリント'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'マリメッコ ウニッコ バスタオル 70 × 150 cm',
+    description:
+      'パイル地のコットンにウニッコ、ベージュと白、70 × 150 のフルサイズ。糸はオーガニックコットン 65 % とリサイクルコットン 35 % で、リサイクル分はマリメッコ自身の裁断くずから来ています。',
+    specs: [
+      '70 × 150 cm',
+      'パイル地コットン、オーガニック 65 % とリサイクル 35 %',
+      'ウニッコ、ベージュと白',
+    ],
+    specLabels: [undefined, undefined, '柄'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'マリメッコ ウニッコ ハンドタオル 50 × 70 cm',
+    description:
+      '同じウニッコのパイル地をハンドタオルのサイズで。バスタオルの半額で、スーツケースにもずっと収めやすい大きさです。ベージュと白、オーガニックコットン 65 % とリサイクル 35 %。',
+    specs: [
+      '50 × 70 cm',
+      'パイル地コットン、オーガニック 65 % とリサイクル 35 %',
+      'ウニッコ、ベージュと白',
+    ],
+    specLabels: [undefined, undefined, '柄'],
+  },
 }

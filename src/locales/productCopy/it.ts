@@ -1284,4 +1284,36 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Prima dell’uso'],
   },
+  'sk-suomi-hockey-jersey': {
+    name: 'Maglia da tifoso Finlandia',
+    description:
+      'La maglia bianco-blu con SUOMI sul petto e lo stemma del leone, nel taglio che si indossa davvero per andare alla partita. Traspirante, taglie dalla M alla XXL, e entro febbraio sembra che in ogni casa finlandese ce ne sia una.',
+    specs: [
+      'M–XXL',
+      'SUOMI e lo stemma del leone',
+    ],
+    specLabels: [undefined, 'Stampa'],
+  },
+  'sk-marimekko-unikko-bath-towel': {
+    name: 'Telo bagno Marimekko Unikko 70 × 150 cm',
+    description:
+      'Unikko su spugna di cotone, beige e bianco, nel formato pieno 70 per 150. Il filato è al 65 % cotone biologico e al 35 % riciclato, e la parte riciclata viene dagli scarti di taglio di Marimekko.',
+    specs: [
+      '70 × 150 cm',
+      'Spugna di cotone, 65 % biologico e 35 % riciclato',
+      'Unikko, beige e bianco',
+    ],
+    specLabels: [undefined, undefined, 'Fantasia'],
+  },
+  'sk-marimekko-unikko-hand-towel': {
+    name: 'Asciugamano Marimekko Unikko 50 × 70 cm',
+    description:
+      'La stessa spugna Unikko in misura asciugamano, a metà prezzo del telo bagno e molto più facile da far stare in valigia. Beige e bianco, 65 % cotone biologico e 35 % riciclato.',
+    specs: [
+      '50 × 70 cm',
+      'Spugna di cotone, 65 % biologico e 35 % riciclato',
+      'Unikko, beige e bianco',
+    ],
+    specLabels: [undefined, undefined, 'Fantasia'],
+  },
 }
