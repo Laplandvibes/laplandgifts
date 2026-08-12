@@ -1,5 +1,3 @@
-import { PRODUCTS } from './products'
-import type { CategoryId, Product } from './types'
 
 /**
  * Teema on kategorian YLI menevä poiminta.
@@ -10,6 +8,12 @@ import type { CategoryId, Product } from './types'
  * astiat", vaan "haluan muumitavaraa". Muumituotteita on neljässä eri
  * kategoriassa, joten kategorianavigaatio hajottaa juuri sen valikoiman,
  * jota ostaja etsii yhtenä kokonaisuutena.
+ *
+ * 🔴 Tässä tiedostossa EI ole yhtään arvoimporttia. `scripts/
+ * build-routes-json.mjs` lataa sen suoraan Nodella, joka purkaa tyypit itse
+ * muttei ratkaise laajennuksettomia polkuja — `import { PRODUCTS } from
+ * './products'` kaatoi buildin. Tuoteliitos asuu siksi omassa
+ * tiedostossaan `themeProducts.ts`.
  *
  * 🔴 Jäsenyys on NIMENOMAINEN slug-lista eikä nimestä pääteltävä sääntö.
  * Kokeilin ensin nimihakua, ja se veti Peppi Pitkätossun Muumi-teemaan.
@@ -110,28 +114,4 @@ const BY_ID = new Map(THEMES.map((t) => [t.id, t]))
 
 export function themeById(id: string): Theme | undefined {
   return BY_ID.get(id as ThemeId)
-}
-
-/** Teeman tuotteet katalogin järjestyksessä. */
-export function productsByTheme(id: ThemeId): Product[] {
-  const t = BY_ID.get(id)
-  if (!t) return []
-  const want = new Set(t.slugs)
-  return PRODUCTS.filter((p) => want.has(p.slug))
-}
-
-/**
- * Kategoriasivulle nostettavat teemat, vahvin ensin.
- *
- * Alaraja on neljä tuotetta: nostoruudukko on neljä korttia leveä, ja
- * kolmen kortin rivi jonka perässä lukee "katso kaikki" näyttää siltä
- * että valikoima loppui kesken.
- */
-export function themesForCategory(cat: CategoryId): Array<{ theme: Theme; items: Product[] }> {
-  return THEMES.map((theme) => ({
-    theme,
-    items: productsByTheme(theme.id).filter((p) => p.category === cat),
-  }))
-    .filter((x) => x.items.length >= 4)
-    .sort((a, b) => b.items.length - a.items.length)
 }

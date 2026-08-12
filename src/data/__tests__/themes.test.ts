@@ -1,6 +1,7 @@
 import { describe, expect, it } from 'vitest'
 import { PRODUCTS } from '../products'
-import { THEMES, productsByTheme, themeById, themesForCategory } from '../themes'
+import { THEMES, themeById } from '../themes'
+import { productsByTheme, themesForCategory } from '../themeProducts'
 import { THEME_COPY } from '../../locales/themeCopy'
 import { LANG_PREFIX, type Lang } from '../../i18n/useLang'
 

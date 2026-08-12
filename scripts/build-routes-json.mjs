@@ -23,6 +23,8 @@
  */
 import { readFileSync, writeFileSync } from 'node:fs'
 import { CATEGORIES } from '../src/data/categories.ts'
+import { THEMES } from '../src/data/themes.ts'
+import { THEME_COPY } from '../src/locales/themeCopy.ts'
 import { PRODUCTS } from '../src/data/products.ts'
 import { SHOP_COPY } from '../src/locales/shopCopy.ts'
 import { BOUTIQUES, TOWN_IDS, boutiquesByTown, townsWithPages } from '../src/data/boutiques.ts'
@@ -223,6 +225,22 @@ const categoryRoutes = [...CATEGORIES]
     return route(cat.slug, build('en'), build('fi'))
   })
 
+// ── teemat ─────────────────────────────────────────────────────────────────
+// Teemasivu saa metansa samasta datasta kuin sivu itse. Ilman tätä lohkoa
+// reitti olisi olemassa selaimessa mutta puuttuisi prerenderistä ja
+// sitemapista, eli sivu olisi kävijälle olemassa ja Googlelle olematon.
+const themeRoutes = THEMES.map((theme) => {
+  const build = (lang) => {
+    const c = THEME_COPY[lang]
+    const name = c.name[theme.id]
+    return {
+      title: fitTitle([`${name} | ${BRAND}`, name]),
+      description: fitDescription(c.intro[theme.id], CATEGORY_TAILS[lang]),
+    }
+  }
+  return route(`/theme/${theme.id}`, build('en'), build('fi'))
+})
+
 // ── tuotteet ───────────────────────────────────────────────────────────────
 const productRoutes = PRODUCTS.map((product) => {
   const build = (lang) => {
@@ -338,6 +356,7 @@ const boutiqueRoutes = BOUTIQUES.map((b) =>
 const routes = [
   routeByLang('/', HOME_META),
   ...categoryRoutes,
+  ...themeRoutes,
   ...productRoutes,
   giftGuides,
   shipping,
