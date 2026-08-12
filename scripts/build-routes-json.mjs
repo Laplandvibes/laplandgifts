@@ -24,6 +24,8 @@
 import { readFileSync, writeFileSync } from 'node:fs'
 import { CATEGORIES } from '../src/data/categories.ts'
 import { THEMES } from '../src/data/themes.ts'
+import { BRANDS } from '../src/data/brands.ts'
+import { BRAND_COPY } from '../src/locales/brandCopy.ts'
 import { THEME_COPY } from '../src/locales/themeCopy.ts'
 import { PRODUCTS } from '../src/data/products.ts'
 import { SHOP_COPY } from '../src/locales/shopCopy.ts'
@@ -241,6 +243,28 @@ const themeRoutes = THEMES.map((theme) => {
   return route(`/theme/${theme.id}`, build('en'), build('fi'))
 })
 
+// ── brändit ────────────────────────────────────────────────────────────────
+// Brändisivun meta tulee samasta tekstistä kuin sivu itse. Kuvaus on
+// esittelyn ensimmäiset lauseet, koska ne kantavat sen mitä brändi on.
+const brandHubRoute = (() => {
+  const build = (lang) => ({
+    title: fitTitle([`${BRAND_COPY[lang].indexH1} | ${BRAND}`, BRAND_COPY[lang].indexH1]),
+    description: fitDescription(BRAND_COPY[lang].indexIntro, CATEGORY_TAILS[lang]),
+  })
+  return route('/brands', build('en'), build('fi'))
+})()
+
+const brandRoutes = BRANDS.map((brand) => {
+  const build = (lang) => {
+    const c = BRAND_COPY[lang]
+    return {
+      title: fitTitle([`${brand.name} | ${BRAND}`, brand.name]),
+      description: fitDescription(leadingSentences(c.profile[brand.id]), CATEGORY_TAILS[lang]),
+    }
+  }
+  return route(`/brand/${brand.id}`, build('en'), build('fi'))
+})
+
 // ── tuotteet ───────────────────────────────────────────────────────────────
 const productRoutes = PRODUCTS.map((product) => {
   const build = (lang) => {
@@ -357,6 +381,8 @@ const routes = [
   routeByLang('/', HOME_META),
   ...categoryRoutes,
   ...themeRoutes,
+  brandHubRoute,
+  ...brandRoutes,
   ...productRoutes,
   giftGuides,
   shipping,

@@ -3,11 +3,14 @@ import { Routes, Route } from 'react-router-dom'
 import { LANG_PREFIX } from './i18n/useLang'
 import { CATEGORIES } from './data/categories'
 import { THEMES } from './data/themes'
+import { BRANDS } from './data/brands'
 import { boutiqueTownPaths } from './data/boutiques'
 
 const Home = lazy(() => import('./pages/Home'))
 const Category = lazy(() => import('./pages/Category'))
 const Theme = lazy(() => import('./pages/Theme'))
+const Brand = lazy(() => import('./pages/Brand'))
+const Brands = lazy(() => import('./pages/Brands'))
 const Product = lazy(() => import('./pages/Product'))
 const GiftGuides = lazy(() => import('./pages/GiftGuides'))
 const Boutiques = lazy(() => import('./pages/Boutiques'))
@@ -36,9 +39,11 @@ export const CONTENT_PATHS: string[] = [
   // Teemasivut tulevat datasta samoin kuin kategoriat: uusi teema saa
   // reitin, prerenderin ja sitemap-rivin yhdella rivilla themes.ts:ssa.
   ...THEMES.map((t) => `/theme/${t.id}`),
+  ...BRANDS.map((b) => `/brand/${b.id}`),
   '/gift-guides',
   '/shipping',
   '/boutiques',
+  '/brands',
   // Paikkakuntapolut tulevat datasta: kynnyksen ylittävä paikkakunta saa
   // reitin, prerenderin ja sitemap-rivin ilman käsityötä.
   ...boutiqueTownPaths(),
@@ -56,7 +61,9 @@ const ELEMENTS: Record<string, ReactElement> = {
   '/gift-guides': <GiftGuides />,
   '/shipping': <Shipping />,
   '/boutiques': <Boutiques />,
+  '/brands': <Brands />,
   ...Object.fromEntries(THEMES.map((t) => [`/theme/${t.id}`, <Theme />])),
+  ...Object.fromEntries(BRANDS.map((b) => [`/brand/${b.id}`, <Brand />])),
   // 🔴 Ilman tätä riviä ELEMENTSin fallback tekisi /boutiques/rovaniemistä
   // kategoriasivun, joka ei löydä kategoriaa ja palauttaisi NotFoundin.
   // Vika näkyisi vasta selaimessa, ei buildissa.

@@ -9,6 +9,7 @@ import ShippingBadge from '../components/shop/ShippingBadge'
 import ProductCard from '../components/shop/ProductCard'
 import { productBySlug, productsByCategory } from '../data/products'
 import { byShippingBreadth } from '../data/sortProducts'
+import { brandByName } from '../data/brands'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept } from '../data/shipping'
 import { countryNames } from '../data/countryNames'
@@ -46,6 +47,7 @@ export default function Product() {
   // Liittyvat noudattavat samaa toimitussaantoa kuin muutkin ruudukot:
   // laajimmin toimittavat ensin. Lukija on tuotesivulla eli lahella ostoa,
   // ja rivi jossa jokainen kortti sanoo "vain Suomi" on umpikuja.
+  const brandProfile = brandByName(product.brand)
   const related = byShippingBreadth(
     productsByCategory(product.category).filter((p) => p.slug !== product.slug),
   ).slice(0, 4)
@@ -98,9 +100,23 @@ export default function Product() {
             </div>
 
             <div className="flex flex-col gap-5">
-              <span className="text-xs font-semibold uppercase tracking-widest text-muted">
-                {product.brand}
-              </span>
+              {/* 🔴 Brändi on linkki jos sillä on esittely, muuten pelkkä
+                  teksti. Ostaja joka lukee "Marttiini" kysyy usein seuraavaksi
+                  kuka se on, ja se on myös hakusana. Ehdollinen siksi, että
+                  esittelyjä on 18 ja brändejä 42: linkki joka vie tyhjään
+                  lupaisi enemmän kuin antaa. */}
+              {brandProfile ? (
+                <Link
+                  to={to(`/brand/${brandProfile.id}`)}
+                  className="text-xs font-semibold uppercase tracking-widest text-muted underline-offset-4 hover:text-pink hover:underline"
+                >
+                  {product.brand}
+                </Link>
+              ) : (
+                <span className="text-xs font-semibold uppercase tracking-widest text-muted">
+                  {product.brand}
+                </span>
+              )}
               {/* Tuotenimi leipatekstifontilla: Bebas Neue on pelkkia versaaleja, ja
                   "MARTTIINI LAPINLEUKU 255" on kaupassa huonompi kuin sekakirjaimet.
                   Sama ratkaisu kuin tuotekortissa. */}
