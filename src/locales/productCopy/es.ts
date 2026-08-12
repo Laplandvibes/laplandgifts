@@ -1157,4 +1157,91 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Cuidado'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: 'Gorro El Kalevala de los perros',
+    description:
+      'Mauri Kunnas convirtió el Kalevala en una epopeya canina en 1992, y el gorro lleva ese dibujo. Poliéster reciclado, una talla de adulto, y tan ligero que acaba en el bolsillo del abrigo en cuanto el autobús se calienta.',
+    specs: [
+      '100 % poliéster reciclado',
+      'Adulto, talla única',
+      'Mauri Kunnas, El Kalevala de los perros',
+    ],
+    specLabels: [undefined, undefined, 'Ilustración'],
+  },
+  'nb-little-my-mittens': {
+    name: 'Manoplas Pequeña My',
+    description:
+      'El par burdeos que acompaña a las manoplas de Moomin, mismo forro polar y mismo precio. La caña es dos centímetros más corta, y el personaje va bien a quien encuentra a Moomin demasiado conciliador.',
+    specs: [
+      '100 % acrílico, forro polar',
+      'Adulto, altura 22 cm, ancho sobre el pulgar 9,5 cm',
+      'Producto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, 'Licencia'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: 'Vaso de viaje Papá Noel',
+    description:
+      'Kunnas dibujó al Papá Noel de Korvatunturi tal como lo imaginan los niños finlandeses, y aquí está en un vaso de 450 ml hecho de PLA y no de plástico fósil. La funda de silicona es de lo que se agarra uno cuando el café quema demasiado para la mano desnuda.',
+    specs: [
+      '450 ml',
+      'Vaso y tapa de PLA, funda de silicona apta para alimentos',
+      'Mauri Kunnas',
+    ],
+    specLabels: [undefined, undefined, 'Ilustración'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: 'Termo Pequeña My 0,55 l',
+    description:
+      'Acero de doble pared, 550 mililitros, y el fabricante indica seis horas de calor. Eso equivale más o menos a un safari en motonieve, que es la prueba real para la que se compra este termo.',
+    specs: [
+      '550 ml',
+      'Acero inoxidable, tapa de PP, junta de silicona',
+      'Seis horas según el fabricante',
+    ],
+    specLabels: [undefined, undefined, 'Mantiene el calor'],
+  },
+  'nb-little-my-neckpillow': {
+    name: 'Almohada cervical Pequeña My',
+    description:
+      'Espuma viscoelástica bajo una funda suave, para el tren nocturno Helsinki–Rovaniemi o el vuelo de vuelta. Lo bastante pequeña para engancharla a la bolsa, que es la única clase de almohada de viaje que uno acaba conservando.',
+    specs: [
+      'Espuma viscoelástica, funda suave',
+      'Producto Moomin oficial',
+    ],
+    specLabels: [undefined, 'Licencia'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: 'Cojín Moomin Love',
+    description:
+      'Un cojín con la silueta de Moomin en lugar de un cuadrado estampado, en varias tallas de 45 a 75 centímetros de alto. De esas cosas que acaban en el sofá de la cabaña y se quedan allí.',
+    specs: [
+      'Poliéster',
+      'Varias tallas, altura 45–75 cm',
+      'Producto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, 'Licencia'],
+  },
+  'nb-little-my-poster': {
+    name: 'Póster Pequeña My',
+    description:
+      'Diseñado e impreso en Helsinki sobre papel seda de 200 gramos, en 30 × 40 o 50 × 70. Un póster se enrolla en un tubo y no pesa nada, cosa que no puede decirse de casi nada de lo que la gente se lleva a casa desde Laponia.',
+    specs: [
+      'Papel seda, 200 g',
+      '30 × 40 cm o 50 × 70 cm',
+      'Diseñado e impreso en Helsinki',
+    ],
+    specLabels: [undefined, undefined, 'Fabricación'],
+  },
+  'nb-moomin-novels-poster': {
+    name: 'Póster de las novelas Moomin',
+    description:
+      'Las portadas de las novelas Moomin de Tove Jansson en una sola lámina, misma impresión de Helsinki y los mismos dos tamaños que los pósteres de personajes. Para quien lee en la familia, no para quien colecciona tazas.',
+    specs: [
+      'Papel seda, 200 g',
+      '30 × 40 cm o 50 × 70 cm',
+      'Diseñado e impreso en Helsinki',
+    ],
+    specLabels: [undefined, undefined, 'Fabricación'],
+  },
 }

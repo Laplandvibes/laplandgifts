@@ -1159,4 +1159,91 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Skötsel'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: 'Hundarnas Kalevala-mössa',
+    description:
+      'Mauri Kunnas gjorde Kalevala till ett hundepos 1992, och mössan bär just den illustrationen. Återvunnen polyester, en vuxenstorlek, och så lätt att den får plats i rockfickan när bussen blir varm.',
+    specs: [
+      '100 % återvunnen polyester',
+      'Vuxen, en storlek',
+      'Mauri Kunnas, Hundarnas Kalevala',
+    ],
+    specLabels: [undefined, undefined, 'Illustration'],
+  },
+  'nb-little-my-mittens': {
+    name: 'Lilla My-vantar',
+    description:
+      'Det vinröda paret till Muminvantarna, samma fleecefoder och samma pris. Skaftet är två centimeter kortare, och figuren passar den som tycker att Mumintrollet är lite väl medgörligt.',
+    specs: [
+      '100 % akryl, fleecefoder',
+      'Vuxen, höjd 22 cm, bredd ovanför tummen 9,5 cm',
+      'Officiell Muminprodukt',
+    ],
+    specLabels: [undefined, undefined, 'Licens'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: 'Jultomten take away-mugg',
+    description:
+      'Kunnas ritade tomten på Korvatunturi så som finska barn ser honom, och här sitter han på en mugg på 450 milliliter gjord av PLA i stället för fossil plast. Silikonmanschetten är det man håller i när kaffet är för hett för bar hand.',
+    specs: [
+      '450 ml',
+      'Mugg och lock i PLA, manschett i livsmedelsgodkänd silikon',
+      'Mauri Kunnas',
+    ],
+    specLabels: [undefined, undefined, 'Illustration'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: 'Lilla My termosflaska 0,55 l',
+    description:
+      'Dubbelväggigt stål, 550 milliliter, och tillverkaren anger sex timmars värmehållning. Det är ungefär en skotersafari, alltså precis det prov flaskan köps för.',
+    specs: [
+      '550 ml',
+      'Rostfritt stål, PP-lock, silikonpackning',
+      'Sex timmar enligt tillverkaren',
+    ],
+    specLabels: [undefined, undefined, 'Håller varmt'],
+  },
+  'nb-little-my-neckpillow': {
+    name: 'Lilla My-nackkudde',
+    description:
+      'Memoryskum under ett mjukt överdrag, för nattåget Helsingfors–Rovaniemi eller hemflyget. Så liten att den går att fästa på väskan, vilket är den enda sortens resekudde någon faktiskt behåller.',
+    specs: [
+      'Memoryskum, mjukt överdrag',
+      'Officiell Muminprodukt',
+    ],
+    specLabels: [undefined, 'Licens'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: 'Mumintrollet Love-kudde',
+    description:
+      'En kudde formad som Mumintrollet i stället för en fyrkant med tryck, i flera storlekar från 45 till 75 centimeter hög. Sådant som hamnar i stugans soffa och blir kvar där.',
+    specs: [
+      'Polyester',
+      'Flera storlekar, höjd 45–75 cm',
+      'Officiell Muminprodukt',
+    ],
+    specLabels: [undefined, undefined, 'Licens'],
+  },
+  'nb-little-my-poster': {
+    name: 'Lilla My-affisch',
+    description:
+      'Formgiven och tryckt i Helsingfors på 200 grams silkespapper, i 30 × 40 eller 50 × 70. En affisch rullas ihop i en hylsa och väger ingenting, vilket är mer än man kan säga om det mesta folk släpar hem från Lappland.',
+    specs: [
+      'Silkespapper, 200 g',
+      '30 × 40 cm eller 50 × 70 cm',
+      'Formgiven och tryckt i Helsingfors',
+    ],
+    specLabels: [undefined, undefined, 'Tillverkning'],
+  },
+  'nb-moomin-novels-poster': {
+    name: 'Affisch med muminböckerna',
+    description:
+      'Omslagen till Tove Janssons muminböcker på ett ark, samma tryck i Helsingfors och samma två storlekar som figuraffischerna. För läsaren i familjen, inte för muggsamlaren.',
+    specs: [
+      'Silkespapper, 200 g',
+      '30 × 40 cm eller 50 × 70 cm',
+      'Formgiven och tryckt i Helsingfors',
+    ],
+    specLabels: [undefined, undefined, 'Tillverkning'],
+  },
 }

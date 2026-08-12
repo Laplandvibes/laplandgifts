@@ -1157,4 +1157,91 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Manutenzione'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: 'Berretto Il Kalevala dei cani',
+    description:
+      'Nel 1992 Mauri Kunnas trasformò il Kalevala in un’epopea canina, e il berretto porta quel disegno. Poliestere riciclato, una taglia adulta, e tanto leggero da finire in tasca appena l’autobus si scalda.',
+    specs: [
+      '100 % poliestere riciclato',
+      'Adulto, taglia unica',
+      'Mauri Kunnas, Il Kalevala dei cani',
+    ],
+    specLabels: [undefined, undefined, 'Illustrazione'],
+  },
+  'nb-little-my-mittens': {
+    name: 'Muffole Mimla la piccola',
+    description:
+      'Il paio bordeaux che fa il paio con le muffole di Moomin, stessa fodera in pile e stesso prezzo. Il polsino è due centimetri più corto, e il personaggio va a chi trova Moomin un po’ troppo accomodante.',
+    specs: [
+      '100 % acrilico, fodera in pile',
+      'Adulto, altezza 22 cm, larghezza sopra il pollice 9,5 cm',
+      'Prodotto Moomin ufficiale',
+    ],
+    specLabels: [undefined, undefined, 'Licenza'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: 'Bicchiere da viaggio Babbo Natale',
+    description:
+      'Kunnas ha disegnato il Babbo Natale del Korvatunturi come lo immaginano i bambini finlandesi, ed eccolo su un bicchiere da 450 ml in PLA invece che in plastica fossile. La fascia in silicone è quella che si stringe quando il caffè scotta troppo per la mano nuda.',
+    specs: [
+      '450 ml',
+      'Bicchiere e coperchio in PLA, fascia in silicone per alimenti',
+      'Mauri Kunnas',
+    ],
+    specLabels: [undefined, undefined, 'Illustrazione'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: 'Bottiglia termica Mimla la piccola 0,55 l',
+    description:
+      'Acciaio a doppia parete, 550 millilitri, e il produttore dichiara sei ore di tenuta al caldo. È più o meno un safari in motoslitta, cioè esattamente la prova per cui questa bottiglia si compra.',
+    specs: [
+      '550 ml',
+      'Acciaio inox, coperchio in PP, guarnizione in silicone',
+      'Sei ore secondo il produttore',
+    ],
+    specLabels: [undefined, undefined, 'Tiene al caldo'],
+  },
+  'nb-little-my-neckpillow': {
+    name: 'Cuscino da viaggio Mimla la piccola',
+    description:
+      'Memory foam sotto una fodera morbida, per il treno notturno Helsinki–Rovaniemi o il volo di ritorno. Abbastanza piccolo da agganciarlo alla borsa, l’unico tipo di cuscino da viaggio che poi si tiene davvero.',
+    specs: [
+      'Memory foam, fodera morbida',
+      'Prodotto Moomin ufficiale',
+    ],
+    specLabels: [undefined, 'Licenza'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: 'Cuscino Moomin Love',
+    description:
+      'Un cuscino sagomato come Moomin invece del solito quadrato stampato, in più misure dai 45 ai 75 centimetri di altezza. Il genere di cosa che finisce sul divano della baita e lì rimane.',
+    specs: [
+      'Poliestere',
+      'Più misure, altezza 45–75 cm',
+      'Prodotto Moomin ufficiale',
+    ],
+    specLabels: [undefined, undefined, 'Licenza'],
+  },
+  'nb-little-my-poster': {
+    name: 'Poster Mimla la piccola',
+    description:
+      'Disegnato e stampato a Helsinki su carta silk da 200 grammi, in 30 × 40 o 50 × 70. Un poster si arrotola in un tubo e non pesa nulla, cosa che non si può dire di quasi niente di ciò che si porta a casa dalla Lapponia.',
+    specs: [
+      'Carta silk, 200 g',
+      '30 × 40 cm o 50 × 70 cm',
+      'Disegnato e stampato a Helsinki',
+    ],
+    specLabels: [undefined, undefined, 'Produzione'],
+  },
+  'nb-moomin-novels-poster': {
+    name: 'Poster dei romanzi Moomin',
+    description:
+      'Le copertine dei romanzi Moomin di Tove Jansson su un unico foglio, stessa stampa di Helsinki e stessi due formati dei poster dei personaggi. Per chi in famiglia legge, non per chi colleziona tazze.',
+    specs: [
+      'Carta silk, 200 g',
+      '30 × 40 cm o 50 × 70 cm',
+      'Disegnato e stampato a Helsinki',
+    ],
+    specLabels: [undefined, undefined, 'Produzione'],
+  },
 }

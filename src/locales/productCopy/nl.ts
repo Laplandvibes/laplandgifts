@@ -1157,4 +1157,91 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Onderhoud'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: 'Muts De Kalevala van de honden',
+    description:
+      'Mauri Kunnas maakte de Kalevala in 1992 tot een hondenepos, en de muts draagt precies die tekening. Gerecycled polyester, één maat voor volwassenen, en licht genoeg om in een jaszak te proppen zodra de bus warm wordt.',
+    specs: [
+      '100 % gerecycled polyester',
+      'Volwassenen, één maat',
+      'Mauri Kunnas, De Kalevala van de honden',
+    ],
+    specLabels: [undefined, undefined, 'Illustratie'],
+  },
+  'nb-little-my-mittens': {
+    name: 'Kleine My wanten',
+    description:
+      'Het bordeauxrode paar bij de Moomin-wanten, dezelfde fleecevoering en dezelfde prijs. De boord is twee centimeter korter, en het personage past bij wie Moomin net iets te meegaand vindt.',
+    specs: [
+      '100 % acryl, fleecevoering',
+      'Volwassenen, hoogte 22 cm, breedte boven de duim 9,5 cm',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, undefined, 'Licentie'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: 'Kerstman take-awaybeker',
+    description:
+      'Kunnas tekende de kerstman van Korvatunturi zoals Finse kinderen hem voor zich zien, en hier staat hij op een beker van 450 ml van PLA in plaats van fossiel plastic. De siliconen band is waar je hem vasthoudt als de koffie te heet is voor een blote hand.',
+    specs: [
+      '450 ml',
+      'Beker en deksel van PLA, band van siliconen voor levensmiddelen',
+      'Mauri Kunnas',
+    ],
+    specLabels: [undefined, undefined, 'Illustratie'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: 'Kleine My thermosfles 0,55 l',
+    description:
+      'Dubbelwandig staal, 550 milliliter, en de fabrikant geeft zes uur warmhouden op. Dat is ongeveer één sneeuwscootersafari, precies de praktijktest waarvoor deze fles gekocht wordt.',
+    specs: [
+      '550 ml',
+      'Roestvrij staal, PP-deksel, siliconen afdichting',
+      'Zes uur volgens de fabrikant',
+    ],
+    specLabels: [undefined, undefined, 'Houdt warm'],
+  },
+  'nb-little-my-neckpillow': {
+    name: 'Kleine My nekkussen',
+    description:
+      'Traagschuim onder een zachte hoes, voor de nachttrein Helsinki–Rovaniemi of de vlucht terug. Klein genoeg om aan de tas te klikken, en dat is het enige soort reiskussen dat iemand echt houdt.',
+    specs: [
+      'Traagschuim, zachte hoes',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, 'Licentie'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: 'Moomin Love kussen',
+    description:
+      'Een kussen in de vorm van Moomin in plaats van een vierkant met opdruk, in meerdere maten van 45 tot 75 centimeter hoog. Het soort ding dat op de bank van de hut belandt en daar blijft.',
+    specs: [
+      'Polyester',
+      'Meerdere maten, hoogte 45–75 cm',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, undefined, 'Licentie'],
+  },
+  'nb-little-my-poster': {
+    name: 'Kleine My poster',
+    description:
+      'Ontworpen en gedrukt in Helsinki op zijdepapier van 200 gram, in 30 × 40 of 50 × 70. Een poster rolt in een koker en weegt niets, wat je van de meeste dingen die mensen uit Lapland mee naar huis slepen niet kunt zeggen.',
+    specs: [
+      'Zijdepapier, 200 g',
+      '30 × 40 cm of 50 × 70 cm',
+      'Ontworpen en gedrukt in Helsinki',
+    ],
+    specLabels: [undefined, undefined, 'Productie'],
+  },
+  'nb-moomin-novels-poster': {
+    name: 'Poster van de Moomin-romans',
+    description:
+      'De omslagen van Tove Janssons Moomin-romans op één vel, dezelfde druk uit Helsinki en dezelfde twee formaten als de personageposters. Voor de lezer in het gezin, niet voor de mokkenverzamelaar.',
+    specs: [
+      'Zijdepapier, 200 g',
+      '30 × 40 cm of 50 × 70 cm',
+      'Ontworpen en gedrukt in Helsinki',
+    ],
+    specLabels: [undefined, undefined, 'Productie'],
+  },
 }

@@ -1157,4 +1157,91 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Cuidados'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: 'Gorro O Kalevala dos cães',
+    description:
+      'Mauri Kunnas transformou o Kalevala em uma epopeia canina em 1992, e o gorro traz esse desenho. Poliéster reciclado, um tamanho adulto, e leve o bastante para ir para o bolso do casaco assim que o ônibus esquenta.',
+    specs: [
+      '100 % poliéster reciclado',
+      'Adulto, tamanho único',
+      'Mauri Kunnas, O Kalevala dos cães',
+    ],
+    specLabels: [undefined, undefined, 'Ilustração'],
+  },
+  'nb-little-my-mittens': {
+    name: 'Luvas Pequena My',
+    description:
+      'O par bordô que acompanha as luvas do Moomin, mesmo forro de fleece e mesmo preço. O punho é dois centímetros mais curto, e o personagem serve a quem acha o Moomin conciliador demais.',
+    specs: [
+      '100 % acrílico, forro de fleece',
+      'Adulto, altura 22 cm, largura acima do polegar 9,5 cm',
+      'Produto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, 'Licença'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: 'Copo de viagem Papai Noel',
+    description:
+      'Kunnas desenhou o Papai Noel de Korvatunturi do jeito que as crianças finlandesas o imaginam, e aqui ele está num copo de 450 ml feito de PLA e não de plástico fóssil. A cinta de silicone é onde se segura quando o café está quente demais para a mão nua.',
+    specs: [
+      '450 ml',
+      'Copo e tampa em PLA, cinta em silicone de grau alimentício',
+      'Mauri Kunnas',
+    ],
+    specLabels: [undefined, undefined, 'Ilustração'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: 'Garrafa térmica Pequena My 0,55 l',
+    description:
+      'Aço de parede dupla, 550 mililitros, e o fabricante indica seis horas de calor. Isso equivale mais ou menos a um safári de snowmobile, que é justamente o teste para o qual essa garrafa é comprada.',
+    specs: [
+      '550 ml',
+      'Aço inoxidável, tampa de PP, vedação de silicone',
+      'Seis horas segundo o fabricante',
+    ],
+    specLabels: [undefined, undefined, 'Mantém quente'],
+  },
+  'nb-little-my-neckpillow': {
+    name: 'Travesseiro de pescoço Pequena My',
+    description:
+      'Espuma viscoelástica sob uma capa macia, para o trem noturno Helsinque–Rovaniemi ou o voo de volta. Pequeno o bastante para prender na bolsa, que é a única versão de travesseiro de viagem que alguém realmente guarda.',
+    specs: [
+      'Espuma viscoelástica, capa macia',
+      'Produto Moomin oficial',
+    ],
+    specLabels: [undefined, 'Licença'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: 'Almofada Moomin Love',
+    description:
+      'Uma almofada recortada no formato do Moomin em vez de um quadrado estampado, em vários tamanhos de 45 a 75 centímetros de altura. Do tipo que vai parar no sofá da cabana e fica por lá.',
+    specs: [
+      'Poliéster',
+      'Vários tamanhos, altura 45–75 cm',
+      'Produto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, 'Licença'],
+  },
+  'nb-little-my-poster': {
+    name: 'Pôster Pequena My',
+    description:
+      'Criado e impresso em Helsinque em papel silk de 200 gramas, em 30 × 40 ou 50 × 70. Um pôster enrola num tubo e não pesa nada, o que não se pode dizer da maioria das coisas que as pessoas levam da Lapônia para casa.',
+    specs: [
+      'Papel silk, 200 g',
+      '30 × 40 cm ou 50 × 70 cm',
+      'Criado e impresso em Helsinque',
+    ],
+    specLabels: [undefined, undefined, 'Produção'],
+  },
+  'nb-moomin-novels-poster': {
+    name: 'Pôster dos romances Moomin',
+    description:
+      'As capas dos romances Moomin de Tove Jansson em uma única folha, mesma impressão de Helsinque e os mesmos dois tamanhos dos pôsteres de personagem. Para quem lê na família, não para quem coleciona canecas.',
+    specs: [
+      'Papel silk, 200 g',
+      '30 × 40 cm ou 50 × 70 cm',
+      'Criado e impresso em Helsinque',
+    ],
+    specLabels: [undefined, undefined, 'Produção'],
+  },
 }

@@ -1208,4 +1208,91 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Pflege'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: 'Mütze „Kalevala der Hunde“',
+    description:
+      'Mauri Kunnas machte das Kalevala 1992 zu einem Hundeepos, und die Mütze trägt genau diese Zeichnung. Recyceltes Polyester, eine Erwachsenengröße, und leicht genug, um sie in die Manteltasche zu stopfen, sobald der Bus warm wird.',
+    specs: [
+      '100 % recyceltes Polyester',
+      'Erwachsene, Einheitsgröße',
+      'Mauri Kunnas, Kalevala der Hunde',
+    ],
+    specLabels: [undefined, undefined, 'Illustration'],
+  },
+  'nb-little-my-mittens': {
+    name: 'Kleine My Fäustlinge',
+    description:
+      'Das weinrote Gegenstück zu den Mumintroll-Fäustlingen, gleiches Fleecefutter und gleicher Preis. Der Schaft ist zwei Zentimeter kürzer, und die Figur passt zu allen, denen Mumintroll etwas zu verträglich ist.',
+    specs: [
+      '100 % Acryl, Fleecefutter',
+      'Erwachsene, Höhe 22 cm, Breite über dem Daumen 9,5 cm',
+      'Offizielles Mumin-Produkt',
+    ],
+    specLabels: [undefined, undefined, 'Lizenz'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: 'Weihnachtsmann-Coffee-to-go-Becher',
+    description:
+      'Kunnas zeichnete den Weihnachtsmann vom Korvatunturi so, wie finnische Kinder ihn sich vorstellen, und hier sitzt er auf einem 450-ml-Becher aus PLA statt aus fossilem Kunststoff. Die Silikonmanschette ist das, woran man sich festhält, wenn der Kaffee zu heiß für die bloße Hand ist.',
+    specs: [
+      '450 ml',
+      'Becher und Deckel aus PLA, Manschette aus lebensmittelechtem Silikon',
+      'Mauri Kunnas',
+    ],
+    specLabels: [undefined, undefined, 'Illustration'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: 'Kleine My Thermosflasche 0,55 l',
+    description:
+      'Doppelwandiger Stahl, 550 Milliliter, und der Hersteller gibt sechs Stunden Warmhaltezeit an. Das entspricht etwa einer Schneemobil-Safari, also genau dem Praxistest, für den diese Flasche gekauft wird.',
+    specs: [
+      '550 ml',
+      'Edelstahl, PP-Deckel, Silikondichtung',
+      'Laut Hersteller sechs Stunden',
+    ],
+    specLabels: [undefined, undefined, 'Hält warm'],
+  },
+  'nb-little-my-neckpillow': {
+    name: 'Kleine My Nackenkissen',
+    description:
+      'Memory-Schaum unter einem weichen Bezug, für den Nachtzug Helsinki–Rovaniemi oder den Rückflug. Klein genug, um es an die Tasche zu clippen, und das ist die einzige Art Reisekissen, die man tatsächlich behält.',
+    specs: [
+      'Memory-Schaum, weicher Bezug',
+      'Offizielles Mumin-Produkt',
+    ],
+    specLabels: [undefined, 'Lizenz'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: 'Mumintroll Love Kissen',
+    description:
+      'Ein Kissen in Mumintroll-Form statt eines Quadrats mit Aufdruck, in mehreren Größen von 45 bis 75 Zentimetern Höhe. Die Sorte Ding, die auf dem Sofa der Hütte landet und dort bleibt.',
+    specs: [
+      'Polyester',
+      'Mehrere Größen, Höhe 45–75 cm',
+      'Offizielles Mumin-Produkt',
+    ],
+    specLabels: [undefined, undefined, 'Lizenz'],
+  },
+  'nb-little-my-poster': {
+    name: 'Kleine My Poster',
+    description:
+      'In Helsinki gestaltet und auf 200-Gramm-Seidenpapier gedruckt, in 30 × 40 oder 50 × 70. Ein Poster rollt sich in eine Hülse und wiegt nichts, mehr als man von den meisten Dingen sagen kann, die Leute aus Lappland mit nach Hause schleppen.',
+    specs: [
+      'Seidenpapier, 200 g',
+      '30 × 40 cm oder 50 × 70 cm',
+      'In Helsinki gestaltet und gedruckt',
+    ],
+    specLabels: [undefined, undefined, 'Herstellung'],
+  },
+  'nb-moomin-novels-poster': {
+    name: 'Poster der Mumin-Romane',
+    description:
+      'Die Buchcover von Tove Janssons Mumin-Romanen auf einem Blatt, gleicher Druck aus Helsinki und dieselben zwei Größen wie die Figurenposter. Für die Leserin in der Familie, nicht für den Becher-Sammler.',
+    specs: [
+      'Seidenpapier, 200 g',
+      '30 × 40 cm oder 50 × 70 cm',
+      'In Helsinki gestaltet und gedruckt',
+    ],
+    specLabels: [undefined, undefined, 'Herstellung'],
+  },
 }

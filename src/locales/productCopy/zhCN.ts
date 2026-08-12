@@ -1159,4 +1159,91 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '保养'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: '《狗狗的卡勒瓦拉》针织帽',
+    description:
+      '1992 年,毛里·库纳斯把《卡勒瓦拉》改写成一部狗的史诗,这顶帽子用的就是那批插画。再生聚酯纤维,成人均码,轻到公交车一暖和就能塞进大衣口袋。',
+    specs: [
+      '100 % 再生聚酯纤维',
+      '成人均码',
+      '毛里·库纳斯《狗狗的卡勒瓦拉》',
+    ],
+    specLabels: [undefined, undefined, '插画'],
+  },
+  'nb-little-my-mittens': {
+    name: '小不点连指手套',
+    description:
+      '与姆明手套配对的酒红款,同样的抓绒内里,同样的价格。筒口短两厘米,而这个角色适合觉得姆明太好说话的人。',
+    specs: [
+      '100 % 腈纶,抓绒内里',
+      '成人款,高 22 cm,拇指上方宽 9.5 cm',
+      '姆明官方产品',
+    ],
+    specLabels: [undefined, undefined, '授权'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: '圣诞老人随行杯',
+    description:
+      '库纳斯笔下的耳朵山圣诞老人,正是芬兰孩子心里的那一个,如今印在这只 450 毫升的杯子上。杯身是 PLA,不含化石基塑料。咖啡烫到空手拿不住时,握的就是那圈食品级硅胶。',
+    specs: [
+      '450 ml',
+      '杯身与杯盖为 PLA,杯套为食品级硅胶',
+      '毛里·库纳斯',
+    ],
+    specLabels: [undefined, undefined, '插画'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: '小不点保温瓶 0.55 l',
+    description:
+      '双层钢壁,550 毫升,厂商标注保温六小时。那大约是一趟雪地摩托越野的时长,也正是买这只瓶子要过的那道实测。',
+    specs: [
+      '550 ml',
+      '不锈钢,PP 盖,硅胶密封圈',
+      '厂商标注六小时',
+    ],
+    specLabels: [undefined, undefined, '保温'],
+  },
+  'nb-little-my-neckpillow': {
+    name: '小不点颈枕',
+    description:
+      '柔软外套下是记忆棉,给赫尔辛基到罗瓦涅米的夜车,或者回程的飞机。小到能扣在包上,而旅行枕只有这一种是真会一直带着的。',
+    specs: [
+      '记忆棉,柔软外套',
+      '姆明官方产品',
+    ],
+    specLabels: [undefined, '授权'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: '姆明 Love 抱枕',
+    description:
+      '按姆明的轮廓裁出来的抱枕,不是印了图案的方枕,有 45 到 75 厘米高的多个尺寸。这种东西一旦落到木屋沙发上,就不会再挪走了。',
+    specs: [
+      '聚酯纤维',
+      '多个尺寸,高 45–75 cm',
+      '姆明官方产品',
+    ],
+    specLabels: [undefined, undefined, '授权'],
+  },
+  'nb-little-my-poster': {
+    name: '小不点海报',
+    description:
+      '在赫尔辛基设计并印制,200 克丝面纸,有 30 × 40 和 50 × 70 两种尺寸。海报卷进纸筒几乎不占重量,而人们从拉普兰扛回家的东西,多数都做不到这一点。',
+    specs: [
+      '丝面纸,200 g',
+      '30 × 40 cm 或 50 × 70 cm',
+      '在赫尔辛基设计并印制',
+    ],
+    specLabels: [undefined, undefined, '生产'],
+  },
+  'nb-moomin-novels-poster': {
+    name: '姆明小说海报',
+    description:
+      '托芙·扬松姆明小说的封面集于一张,同样在赫尔辛基印制,尺寸也与角色海报相同。适合家里读书的那一位,而不是收集马克杯的那一位。',
+    specs: [
+      '丝面纸,200 g',
+      '30 × 40 cm 或 50 × 70 cm',
+      '在赫尔辛基设计并印制',
+    ],
+    specLabels: [undefined, undefined, '生产'],
+  },
 }

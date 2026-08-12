@@ -1158,4 +1158,91 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '관리'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: '«개들의 칼레발라» 비니',
+    description:
+      '마우리 쿤나스는 1992년 «칼레발라»를 개들의 서사시로 다시 그렸고, 이 비니에는 그 그림이 들어가 있습니다. 재생 폴리에스터, 성인 프리 사이즈, 버스가 데워지면 코트 주머니에 밀어 넣을 만큼 가볍습니다.',
+    specs: [
+      '100 % 재생 폴리에스터',
+      '성인용, 프리 사이즈',
+      '마우리 쿤나스, «개들의 칼레발라»',
+    ],
+    specLabels: [undefined, undefined, '일러스트'],
+  },
+  'nb-little-my-mittens': {
+    name: '리틀 미이 벙어리장갑',
+    description:
+      '무민 장갑과 짝을 이루는 버건디. 플리스 안감도 가격도 같습니다. 손목 부분이 2센티미터 짧고, 무민이 조금 무르다고 느끼는 사람에게 어울리는 캐릭터입니다.',
+    specs: [
+      '아크릴 100 %, 플리스 안감',
+      '성인용, 높이 22 cm, 엄지 위 너비 9.5 cm',
+      '무민 공식 제품',
+    ],
+    specLabels: [undefined, undefined, '라이선스'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: '산타클로스 테이크아웃 컵',
+    description:
+      '쿤나스는 코르바툰투리의 산타를 핀란드 아이들이 떠올리는 모습 그대로 그렸고, 그 그림이 450 ml 컵에 담겼습니다. 소재는 화석 유래 플라스틱이 아니라 PLA입니다. 커피가 맨손에 뜨거울 때 쥐는 부분이 실리콘 슬리브입니다.',
+    specs: [
+      '450 ml',
+      '컵과 뚜껑은 PLA, 슬리브는 식품용 실리콘',
+      '마우리 쿤나스',
+    ],
+    specLabels: [undefined, undefined, '일러스트'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: '리틀 미이 보온병 0.55 l',
+    description:
+      '이중 스테인리스, 550 밀리리터, 제조사 표기 보온 시간은 여섯 시간입니다. 스노모빌 사파리 한 번과 얼추 같은 길이이고, 이 보온병을 사는 이유가 바로 그 실전 시험입니다.',
+    specs: [
+      '550 ml',
+      '스테인리스 스틸, PP 뚜껑, 실리콘 패킹',
+      '제조사 표기 여섯 시간',
+    ],
+    specLabels: [undefined, undefined, '보온'],
+  },
+  'nb-little-my-neckpillow': {
+    name: '리틀 미이 목베개',
+    description:
+      '부드러운 커버 아래는 메모리폼. 헬싱키–로바니에미 야간열차나 돌아가는 비행기용입니다. 가방에 걸 수 있을 만큼 작고, 실제로 계속 들고 다니게 되는 여행용 베개는 이런 것뿐입니다.',
+    specs: [
+      '메모리폼, 부드러운 커버',
+      '무민 공식 제품',
+    ],
+    specLabels: [undefined, '라이선스'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: '무민 Love 쿠션',
+    description:
+      '무늬를 찍은 사각형이 아니라 무민 모양으로 재단한 쿠션이며, 높이 45~75센티미터의 여러 크기가 있습니다. 오두막 소파에 한 번 놓이면 그대로 눌러앉는 물건입니다.',
+    specs: [
+      '폴리에스터',
+      '여러 크기, 높이 45~75 cm',
+      '무민 공식 제품',
+    ],
+    specLabels: [undefined, undefined, '라이선스'],
+  },
+  'nb-little-my-poster': {
+    name: '리틀 미이 포스터',
+    description:
+      '헬싱키에서 디자인하고 200그램 실크지에 인쇄했으며, 30 × 40과 50 × 70 두 가지 크기가 있습니다. 포스터는 원통에 말면 무게가 없다시피 한데, 사람들이 라플란드에서 들고 오는 물건 대부분은 그렇지 않습니다.',
+    specs: [
+      '실크지, 200 g',
+      '30 × 40 cm 또는 50 × 70 cm',
+      '헬싱키에서 디자인·인쇄',
+    ],
+    specLabels: [undefined, undefined, '제작'],
+  },
+  'nb-moomin-novels-poster': {
+    name: '무민 소설 포스터',
+    description:
+      '토베 얀손의 무민 소설 표지를 한 장에 모았습니다. 인쇄는 캐릭터 포스터와 같은 헬싱키, 크기도 같은 두 가지입니다. 머그를 모으는 사람이 아니라 집에서 책을 읽는 사람에게 어울립니다.',
+    specs: [
+      '실크지, 200 g',
+      '30 × 40 cm 또는 50 × 70 cm',
+      '헬싱키에서 디자인·인쇄',
+    ],
+    specLabels: [undefined, undefined, '제작'],
+  },
 }

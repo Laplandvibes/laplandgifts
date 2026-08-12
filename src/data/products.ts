@@ -4340,6 +4340,293 @@ export const PRODUCTS: Product[] = [
       fetchedAt: '2026-08-12',
     },
   },
+  {
+    slug: 'nb-kunnas-kalevala-beanie',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'The Canine Kalevala beanie',
+      fi: 'Koirien Kalevala -pipo',
+    },
+    description: {
+      en: 'Mauri Kunnas turned the Kalevala into a dog epic in 1992, and the beanie carries that artwork. Recycled polyester, one adult size, light enough to stuff in a coat pocket when the bus warms up.',
+      fi: 'Mauri Kunnas käänsi Kalevalan koiraeepokseksi 1992, ja pipo kantaa sitä kuvitusta. Kierrätyspolyesteria, yksi aikuisten koko, ja niin kevyt että sen tunkee takin taskuun kun bussi lämpiää.',
+    },
+    priceFrom: 11.96,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-nb-kunnas-kalevala-beanie',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/the-canine-kalevala-winter-hat-beanie-0983',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % recycled polyester', fi: '100 % kierrätyspolyesteri' } },
+        { key: 'size', value: { en: 'Adult, one size', fi: 'Aikuisten, yksi koko' } },
+        {
+          key: 'other',
+          label: { en: 'Illustration', fi: 'Kuvitus' },
+          value: { en: 'Mauri Kunnas, The Canine Kalevala', fi: 'Mauri Kunnas, Koirien Kalevala' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/the-canine-kalevala-winter-hat-beanie-0983',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'nb-little-my-mittens',
+    category: 'clothing',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Little My mittens',
+      fi: 'Pikku Myy -lapaset',
+    },
+    description: {
+      en: 'The burgundy pair to the Moomintroll mittens, same fleece lining and same price. Two centimetres shorter in the cuff, and a character who suits anyone who finds Moomintroll a bit too agreeable.',
+      fi: 'Viininpunainen pari Muumipeikko-lapasille, sama fleecevuori ja sama hinta. Varsi on kaksi senttiä lyhyempi, ja hahmo sopii sille jonka mielestä Muumipeikko on vähän liian sovinnollinen.',
+    },
+    priceFrom: 19.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-nb-little-my-mittens',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/little-my-mittens-2085',
+    details: {
+      specs: [
+        { key: 'material', value: { en: '100 % acrylic, fleece lining', fi: '100 % akryyli, fleecevuori' } },
+        {
+          key: 'size',
+          value: {
+            en: 'Adult, height 22 cm, width 9.5 cm above the thumb',
+            fi: 'Aikuisten koko, korkeus 22 cm, leveys peukalon yläpuolelta 9,5 cm',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Licence', fi: 'Lisenssi' },
+          value: { en: 'Official Moomin product', fi: 'Virallinen Muumi-tuote' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/little-my-mittens-2085',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'nb-kunnas-santa-mug',
+    category: 'design',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Santa Claus take-away mug',
+      fi: 'Joulupukki-takeaway-muki',
+    },
+    description: {
+      en: 'Kunnas drew the Korvatunturi Santa the way Finnish children picture him, and here he is on a 450 ml cup made of PLA rather than fossil plastic. The silicone sleeve is what you hold when the coffee is too hot to carry bare-handed.',
+      fi: 'Kunnas piirsi Korvatunturin pukin sellaisena kuin suomalaislapset sen näkevät, ja tässä hän on 450 millilitran mukissa joka on PLA:ta eikä fossiilista muovia. Silikonivyöstä pidetään kiinni silloin kun kahvi on liian kuumaa paljaaseen käteen.',
+    },
+    priceFrom: 19.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-nb-kunnas-santa-mug',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/santa-claus-take-away-mug',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '450 ml', fi: '450 ml' } },
+        {
+          key: 'material',
+          value: {
+            en: 'PLA cup and lid, food-grade silicone sleeve',
+            fi: 'Muki ja kansi PLA:ta, vyö elintarvikelaatuista silikonia',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Illustration', fi: 'Kuvitus' },
+          value: { en: 'Mauri Kunnas', fi: 'Mauri Kunnas' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/santa-claus-take-away-mug',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'nb-little-my-thermal-bottle',
+    category: 'design',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Little My thermal bottle 0.55 l',
+      fi: 'Pikku Myy -termospullo 0,55 l',
+    },
+    description: {
+      en: 'Double-walled steel, 550 millilitres, and the manufacturer puts the hot-hold at six hours. That is roughly one snowmobile safari, which is the practical test this bottle gets bought for.',
+      fi: 'Kaksinkertainen terässeinä, 550 millilitraa, ja valmistaja lupaa kuuman pysyvän kuutisen tuntia. Se on suunnilleen yksi moottorikelkkasafari, eli juuri se koe jota varten tämä pullo ostetaan.',
+    },
+    priceFrom: 34.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-nb-little-my-thermal-bottle',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/little-my-thermal-everyday-bottle-1',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '550 ml', fi: '550 ml' } },
+        {
+          key: 'material',
+          value: {
+            en: 'Stainless steel, PP lid, silicone seal',
+            fi: 'Ruostumaton teräs, PP-kansi, silikonitiiviste',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Keeps hot', fi: 'Pitää kuumana' },
+          value: { en: 'Six hours per the maker', fi: 'Valmistajan mukaan kuusi tuntia' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/little-my-thermal-everyday-bottle-1',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'nb-little-my-neckpillow',
+    category: 'design',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Little My neck pillow',
+      fi: 'Pikku Myy -niskatyyny',
+    },
+    description: {
+      en: 'Memory foam under a soft cover, for the Helsinki–Rovaniemi night train or the flight home. Small enough to clip on a bag, which is the only version of a travel pillow anyone actually keeps.',
+      fi: 'Muistivaahtoa pehmeän päällisen alla, Helsinki–Rovaniemi-yöjunaan tai kotimatkan lennolle. Sen verran pieni että sen saa kiinni laukkuun, mikä on ainoa matkatyynytyyppi jonka kukaan oikeasti pitää.',
+    },
+    priceFrom: 24.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-nb-little-my-neckpillow',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/little-my-neckpillow',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Memory foam, soft cover', fi: 'Muistivaahto, pehmeä päällinen' } },
+        {
+          key: 'other',
+          label: { en: 'Licence', fi: 'Lisenssi' },
+          value: { en: 'Official Moomin product', fi: 'Virallinen Muumi-tuote' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/little-my-neckpillow',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'nb-moomintroll-love-cushion',
+    category: 'design',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Moomintroll Love cushion',
+      fi: 'Muumipeikko Love -tyyny',
+    },
+    description: {
+      en: 'A shaped Moomintroll cushion rather than a square with a print on it, sold in several sizes from 45 to 75 centimetres tall. The kind of thing that ends up on a cabin sofa and stays there.',
+      fi: 'Muumipeikon muotoinen tyyny, ei neliö jossa on kuva, ja saatavana useassa koossa 45:stä 75 senttiin. Sellainen tavara joka päätyy mökin sohvalle ja jää sinne.',
+    },
+    priceFrom: 39.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-nb-moomintroll-love-cushion',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/moomintroll-love-cushion',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Polyester', fi: 'Polyesteri' } },
+        {
+          key: 'size',
+          value: {
+            en: 'Several sizes, 45–75 cm tall',
+            fi: 'Useita kokoja, korkeus 45–75 cm',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Licence', fi: 'Lisenssi' },
+          value: { en: 'Official Moomin product', fi: 'Virallinen Muumi-tuote' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/moomintroll-love-cushion',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'nb-little-my-poster',
+    category: 'design',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Little My poster',
+      fi: 'Pikku Myy -juliste',
+    },
+    description: {
+      en: 'Designed and printed in Helsinki on 200-gram silk paper, in 30 × 40 or 50 × 70. A poster rolls into a tube and weighs nothing, which is more than can be said for most things people carry home from Lapland.',
+      fi: 'Suunniteltu ja painettu Helsingissä 200 gramman silkkipaperille, koossa 30 × 40 tai 50 × 70. Julisteen saa rullalle hylsyyn eikä se paina mitään, mitä ei voi sanoa useimmista Lapista kotiin raahatuista tavaroista.',
+    },
+    priceFrom: 16.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-nb-little-my-poster',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/little-my-poster',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Silk paper, 200 g', fi: 'Silkkipaperi, 200 g' } },
+        { key: 'size', value: { en: '30 × 40 cm or 50 × 70 cm', fi: '30 × 40 cm tai 50 × 70 cm' } },
+        {
+          key: 'other',
+          label: { en: 'Made in', fi: 'Valmistus' },
+          value: { en: 'Designed and printed in Helsinki', fi: 'Suunniteltu ja painettu Helsingissä' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/little-my-poster',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'nb-moomin-novels-poster',
+    category: 'design',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Moomin novels poster',
+      fi: 'Muumikirjat-juliste',
+    },
+    description: {
+      en: 'The covers of Tove Jansson’s Moomin novels on one sheet, same Helsinki printing and same two sizes as the character posters. For the reader in the family rather than the collector of mugs.',
+      fi: 'Tove Janssonin muumikirjojen kannet yhdessä arkissa, sama helsinkiläinen painatus ja samat kaksi kokoa kuin hahmojulisteissa. Perheen lukijalle, ei mukienkerääjälle.',
+    },
+    priceFrom: 16.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-nb-moomin-novels-poster',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://nordicbuddies.com/products/moomin-novels-poster',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Silk paper, 200 g', fi: 'Silkkipaperi, 200 g' } },
+        { key: 'size', value: { en: '30 × 40 cm or 50 × 70 cm', fi: '30 × 40 cm tai 50 × 70 cm' } },
+        {
+          key: 'other',
+          label: { en: 'Made in', fi: 'Valmistus' },
+          value: { en: 'Designed and printed in Helsinki', fi: 'Suunniteltu ja painettu Helsingissä' },
+        },
+      ],
+      sourceUrl: 'https://nordicbuddies.com/products/moomin-novels-poster',
+      fetchedAt: '2026-08-12',
+    },
+  },
 ]
 
 export function productsByCategory(id: Product['category']): Product[] {

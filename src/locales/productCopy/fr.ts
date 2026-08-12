@@ -1158,4 +1158,91 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Entretien'],
   },
+  'nb-kunnas-kalevala-beanie': {
+    name: 'Bonnet Kalevala des chiens',
+    description:
+      'Mauri Kunnas a transformé le Kalevala en épopée canine en 1992, et le bonnet porte ce dessin-là. Polyester recyclé, une taille adulte, assez léger pour finir dans une poche de manteau dès que le bus se réchauffe.',
+    specs: [
+      '100 % polyester recyclé',
+      'Adulte, taille unique',
+      'Mauri Kunnas, Le Kalevala des chiens',
+    ],
+    specLabels: [undefined, undefined, 'Illustration'],
+  },
+  'nb-little-my-mittens': {
+    name: 'Moufles Petite Mu',
+    description:
+      'La paire bordeaux qui répond aux moufles Moumine, même doublure polaire et même prix. Le poignet est deux centimètres plus court, et le personnage convient à qui trouve Moumine un peu trop accommodant.',
+    specs: [
+      '100 % acrylique, doublure polaire',
+      'Adulte, hauteur 22 cm, largeur au-dessus du pouce 9,5 cm',
+      'Produit Moumine officiel',
+    ],
+    specLabels: [undefined, undefined, 'Licence'],
+  },
+  'nb-kunnas-santa-mug': {
+    name: 'Mug de voyage Père Noël',
+    description:
+      'Kunnas a dessiné le Père Noël de Korvatunturi tel que les enfants finlandais se le représentent, et le voici sur un gobelet de 450 ml en PLA plutôt qu’en plastique fossile. C’est la manchette en silicone qu’on tient quand le café est trop chaud pour la main nue.',
+    specs: [
+      '450 ml',
+      'Gobelet et couvercle en PLA, manchette en silicone alimentaire',
+      'Mauri Kunnas',
+    ],
+    specLabels: [undefined, undefined, 'Illustration'],
+  },
+  'nb-little-my-thermal-bottle': {
+    name: 'Bouteille isotherme Petite Mu 0,55 l',
+    description:
+      'Acier à double paroi, 550 millilitres, et le fabricant annonce six heures de maintien au chaud. Cela correspond à peu près à une safari en motoneige, c’est-à-dire au test pour lequel on achète cette bouteille.',
+    specs: [
+      '550 ml',
+      'Acier inoxydable, couvercle PP, joint silicone',
+      'Six heures selon le fabricant',
+    ],
+    specLabels: [undefined, undefined, 'Maintien au chaud'],
+  },
+  'nb-little-my-neckpillow': {
+    name: 'Coussin de nuque Petite Mu',
+    description:
+      'Mousse à mémoire de forme sous une housse douce, pour le train de nuit Helsinki–Rovaniemi ou le vol du retour. Assez petit pour s’accrocher au sac, seule version du coussin de voyage que l’on garde vraiment.',
+    specs: [
+      'Mousse à mémoire de forme, housse douce',
+      'Produit Moumine officiel',
+    ],
+    specLabels: [undefined, 'Licence'],
+  },
+  'nb-moomintroll-love-cushion': {
+    name: 'Coussin Moumine Love',
+    description:
+      'Un coussin découpé à la forme de Moumine plutôt qu’un carré imprimé, proposé en plusieurs tailles de 45 à 75 centimètres de haut. Le genre d’objet qui atterrit sur le canapé du chalet et n’en repart plus.',
+    specs: [
+      'Polyester',
+      'Plusieurs tailles, hauteur 45–75 cm',
+      'Produit Moumine officiel',
+    ],
+    specLabels: [undefined, undefined, 'Licence'],
+  },
+  'nb-little-my-poster': {
+    name: 'Affiche Petite Mu',
+    description:
+      'Conçue et imprimée à Helsinki sur papier soie 200 grammes, en 30 × 40 ou 50 × 70. Une affiche se roule dans un tube et ne pèse rien, ce qu’on ne peut pas dire de la plupart des choses qu’on rapporte de Laponie.',
+    specs: [
+      'Papier soie, 200 g',
+      '30 × 40 cm ou 50 × 70 cm',
+      'Conçue et imprimée à Helsinki',
+    ],
+    specLabels: [undefined, undefined, 'Fabrication'],
+  },
+  'nb-moomin-novels-poster': {
+    name: 'Affiche des romans Moumine',
+    description:
+      'Les couvertures des romans Moumine de Tove Jansson sur une seule feuille, même impression helsinkienne et mêmes deux formats que les affiches de personnages. Pour la lectrice de la famille plutôt que pour le collectionneur de mugs.',
+    specs: [
+      'Papier soie, 200 g',
+      '30 × 40 cm ou 50 × 70 cm',
+      'Conçue et imprimée à Helsinki',
+    ],
+    specLabels: [undefined, undefined, 'Fabrication'],
+  },
 }
