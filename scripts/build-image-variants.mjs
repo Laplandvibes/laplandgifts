@@ -50,7 +50,13 @@ const used = new Set(['hero-shop'])
 // toimivan vain siksi, että niiden variantit olivat syntyneet joskus
 // muualla. Jos lisäät uuden datatiedoston, joka viittaa kuviin, lisää se
 // tähän — muuten sen kuvat hajoavat vasta livenä.
-for (const f of ['src/data/products.ts', 'src/data/categories.ts', 'src/data/experiences.ts']) {
+// 🔴 Lisatty 2026-08-11: mainoskomponentit viittaavat kuviin SUORAAN, eivat
+// datatiedoston kautta. SuomikauppaOutletAd naytti kolme outlet-tuotetta,
+// joiden kuvat eivat olleet missaan naista kolmesta datatiedostosta, joten ne
+// putosivat used-joukosta ja jaivat kokonaan ilman variantteja. Sama vika kuin
+// experiences.ts:n kanssa 2.8. Jos teet uuden komponentin joka nimeaa kuvia,
+// lisaa se tahan.
+for (const f of ['src/data/products.ts', 'src/data/categories.ts', 'src/data/experiences.ts', 'src/components/SuomikauppaOutletAd.tsx']) {
   const src = fs.readFileSync(f, 'utf8')
   for (const m of src.matchAll(/image:\s*'([^']+)'/g)) used.add(m[1])
   // 🔴 Kaikki kuvaviittaukset EIVÄT ole `image:`-kenttiä. experiences.ts

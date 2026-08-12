@@ -17,6 +17,7 @@ import { useLang, LANG_PREFIX } from '../i18n/useLang'
 import { HOME_META } from '../locales/homeMeta'
 import AdUnit from '../../../shared/ads/AdUnit'
 import IvaloLakeAd from '../components/IvaloLakeAd'
+import SuomikauppaOutletAd from '../components/SuomikauppaOutletAd'
 import kultaCenterAd from '../../../shared/ads/advertisers/kultaCenter'
 import { trackAffiliateClick } from '../lib/analytics'
 import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots'
@@ -72,6 +73,11 @@ export default function Home() {
             copy kuin ennen; vain ulkoasu vaihtui AdUnitista paikalliseen
             koko kuvan komponenttiin. */}
         <IvaloLakeAd lang={lang} />
+        {/* Suomikaupan tarjousosio omana mainoksenaan (Vesa 10.8.). Sijoitettu
+            Ivalon JALKEEN eika ennen: Ivalo on design ja tama on hinta, ja
+            hintakulma toimii paremmin kun lukija on jo nahnyt taysihintaisen
+            valikoiman. Ei prosentteja, ks. komponentin kommentti. */}
+        <SuomikauppaOutletAd lang={lang} />
         <GiftGuide />
         <ValueProp />
         <ShippingInfo />

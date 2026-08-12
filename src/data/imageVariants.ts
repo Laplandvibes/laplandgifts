@@ -1008,5 +1008,29 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       480,
       640
     ]
+  },
+  "prod-sk-outlet-geisha-robe": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-outlet-karl-fazer": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-outlet-remix-salmiakki": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
   }
 }
