@@ -32,7 +32,10 @@ describe('brändiesittelyt', () => {
 
   it('perustamisvuosi on vuosiluku tai tyhjä, ei arvaus', () => {
     for (const b of BRANDS) {
-      if (b.founded) expect(b.founded, b.id).toMatch(/^(1[89]|20)\d{2}$/)
+      // 🔴 Alaraja on 1600-luku eikä 1800-luku: Fiskars on perustettu 1649 ja
+      // on yksi maailman vanhimpia yhä toimivia yrityksiä. Ensimmäinen versio
+      // tästä testistä hylkäsi oikean vuosiluvun.
+      if (b.founded) expect(b.founded, b.id).toMatch(/^(1[6789]|20)\d{2}$/)
     }
   })
 
@@ -82,8 +85,13 @@ describe('brändiesittelyt', () => {
     const claims =
       /made in finland|valmistettu suomessa|in finnland hergestellt|tillverkad i finland|fabriqué en finlande|fabricado en finlandia|prodotto in finlandia|gemaakt in finland|feito na finlândia|フィンランド製|芬兰制造|핀란드에서 제조/i
     for (const b of BRANDS) {
+      // 🔴 Tunnistimen on osuttava KAIKKIIN tapoihin, joilla lähde voi puhua
+      // suomalaisesta valmistuksesta — myös aktiivimuotoon ("it manufactures
+      // its fragrances in Finland", "valmistavansa Suomessa"). Liian kapea
+      // tunnistin kaatoi testin oikein käännettyyn kiinankieliseen tekstiin,
+      // jossa varaus oli tallella.
       const discussesOrigin =
-        /finnish-manufactur|finnish-made|made in finland|manufactured in finland|valmistettu suomessa|suomalaisvalmiste|suomessa valmiste/i
+        /finnish-manufactur|finnish-made|manufactur\w*[^.]{0,60}in finland|made in finland|produc\w*[^.]{0,60}in finland|valmist\w*[^.]{0,60}suomessa|suomessa[^.]{0,40}valmist|suomalaisvalmiste/i
       if (
         discussesOrigin.test(BRAND_COPY.en.profile[b.id]) ||
         discussesOrigin.test(BRAND_COPY.fi.profile[b.id])
