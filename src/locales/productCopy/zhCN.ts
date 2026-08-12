@@ -14,33 +14,6 @@ import type { ProductCopyMap } from './index'
  * väärin tuotetiedoissa.
  */
 export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: '姆明 Blue Love 马克杯 0.3 l',
-    description:
-      '姆明经典系列的 0.3 升玻璃瓷马克杯，图案是小美人鱼与姆明相拥，杯底印着 80 周年的年份。芬兰设计，可用洗碗机和微波炉，所以它经得起天天使用，不必摆在架子上。',
-    specs: [
-      '0.3 l',
-      '玻璃瓷',
-      '可用洗碗机，可入烤箱和微波炉',
-      '芬兰设计，泰国制造',
-      '姆明经典系列。80 周年纪念版杯底印有年份',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, '系列'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: '姆明 Mystical Forest 玻璃杯 28 cl，2 只装',
-    description:
-      'Mystical Forest 系列的两只 28 cl 浮雕玻璃杯，产自芬兰 Iittala 玻璃厂。附礼盒包装，省得你在酒店房间里包玻璃器皿。',
-    specs: [
-      '每只 28 cl',
-      '2 只玻璃杯，装在青绿色包装内',
-      '浮雕玻璃',
-      '可用洗碗机',
-      '产自芬兰 Iittala 玻璃厂',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, '系列'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: '姆明 Mystical Forest 羊毛毯 130x170 cm',
     description:
@@ -1164,5 +1137,26 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '2 到 4 滴滴入一勺水中',
     ],
     specLabels: [undefined, '用法'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'Arabia 姆明马克杯 0,3 l「友谊」',
+    description:
+      'Arabia 的姆明马克杯,图案取自「友谊」:害羞的托夫勒捡到米芙勒的漂流瓶,于是出发去找她。Arabia 自 1990 年起在芬兰制作姆明马克杯,并会逐一停产各款图案,老款因此被人收藏。',
+    specs: [
+      '0,3 l',
+      '友谊,取自托夫勒与米芙勒的故事',
+    ],
+    specLabels: [undefined, '图案'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'Muurla 姆明玻璃瓶 1 l「苹果」',
+    description:
+      '钠钙玻璃瓶,配密封扣盖,把水或果汁端上桌,而不是摆着纸盒。可用洗碗机,一升容量,苹果图案是夏天那一款。',
+    specs: [
+      '1 l',
+      '钠钙玻璃,密封扣盖',
+      '可用洗碗机',
+    ],
+    specLabels: [undefined, undefined, '保养'],
   },
 }

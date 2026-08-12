@@ -12,33 +12,6 @@ import type { ProductCopyMap } from './index'
  * välilyöntien osalta; vain desimaalierotin vaihtuu pilkuksi.
  */
 export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: 'Caneca Moomin Blue Love 0,3 l',
-    description:
-      'Uma caneca de vitroporcelana de 0,3 litro da linha Moomin Classics, com a Senhorita Snork e o Moomin abraçados e o ano do 80º aniversário gravado na base. Desenhada na Finlândia, pode ir à máquina de lavar louça e ao micro-ondas, por isso aguenta o uso diário em vez de ficar na prateleira.',
-    specs: [
-      '0,3 l',
-      'Vitroporcelana',
-      'Pode ir à máquina de lavar louça, ao forno e ao micro-ondas',
-      'Desenhada na Finlândia, fabricada na Tailândia',
-      'Moomin Classics. A edição de 80 anos traz o ano na base',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Coleção'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: 'Copos Moomin Mystical Forest 28 cl, pacote com 2',
-    description:
-      'Dois copos em relevo de 28 cl da coleção Mystical Forest, feitos na vidraria da Iittala na Finlândia. Vêm em caixa de presente, o que evita ter que embrulhar vidro num quarto de hotel.',
-    specs: [
-      '28 cl por copo',
-      '2 copos, entregues em uma embalagem turquesa',
-      'Vidro em relevo',
-      'Pode ir à máquina de lavar louça',
-      'Feitos na vidraria da Iittala na Finlândia',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Coleção'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: 'Manta de lã Moomin Mystical Forest 130x170 cm',
     description:
@@ -1162,5 +1135,26 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'De 2 a 4 gotas em uma concha de água',
     ],
     specLabels: [undefined, 'Uso'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'Caneca Moomin Arabia 0,3 l, Amizade',
+    description:
+      'Uma caneca Moomin da Arabia com o motivo Amizade, em que o tímido Toffle encontra uma mensagem na garrafa deixada por Miffle e sai à procura dela. A Arabia fabrica canecas Moomin na Finlândia desde 1990 e aposenta cada motivo na sua vez, por isso as antigas são colecionadas.',
+    specs: [
+      '0,3 l',
+      'Amizade, da história de Toffle e Miffle',
+    ],
+    specLabels: [undefined, 'Motivo'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'Garrafa de vidro Moomin Muurla 1 l, Maçãs',
+    description:
+      'Uma garrafa de vidro sodo-cálcico com tampa de pressão, para água ou suco na mesa em vez da caixinha. Pode ir à máquina de lavar louça, um litro, e a estampa Maçãs é a de verão.',
+    specs: [
+      '1 l',
+      'Vidro sodo-cálcico, tampa de pressão',
+      'Pode ir à máquina de lavar louça',
+    ],
+    specLabels: [undefined, undefined, 'Cuidados'],
   },
 }

@@ -13,33 +13,6 @@ import type { ProductCopyMap } from './index'
  * tuotetiedoissa.
  */
 export const PRODUCT_COPY_KO: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: '무민 Blue Love 머그 0.3 l',
-    description:
-      '무민 클래식스 라인의 0.3 리터 비트로포슬린 머그. 스노크메이든과 무민이 서로를 안고 있는 그림이 들어가고, 바닥에는 80 주년 연도가 찍혀 있습니다. 핀란드에서 디자인했고 식기세척기와 전자레인지를 쓸 수 있어, 선반에 두는 대신 매일 쓸 수 있습니다.',
-    specs: [
-      '0.3 l',
-      '비트로포슬린',
-      '식기세척기 사용 가능, 오븐과 전자레인지 사용 가능',
-      '핀란드에서 디자인, 태국에서 제조',
-      '무민 클래식스. 80 주년 기념판은 바닥에 연도가 들어갑니다',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, '컬렉션'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: '무민 Mystical Forest 텀블러 28 cl, 2개입',
-    description:
-      'Mystical Forest 컬렉션의 양각 유리잔 28 cl 두 개로, 핀란드 이딸라 유리공장에서 만듭니다. 선물 상자에 담겨 오기 때문에 호텔 방에서 유리 제품을 포장할 일이 없습니다.',
-    specs: [
-      '잔 하나에 28 cl',
-      '유리잔 2개, 청록색 포장에 담겨 배송',
-      '양각 유리',
-      '식기세척기 사용 가능',
-      '핀란드 이딸라 유리공장에서 제조',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, '컬렉션'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: '무민 Mystical Forest 울 블랭킷 130x170 cm',
     description:
@@ -1163,5 +1136,26 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '국자 한 컵의 물에 2방울에서 4방울',
     ],
     specLabels: [undefined, '사용법'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: '아라비아 무민 머그 0,3 l, 우정',
+    description:
+      '아라비아의 무민 머그 우정 편. 수줍은 토플이 미플이 보낸 유리병 편지를 발견하고 그를 찾아 나섭니다. 아라비아는 1990년부터 핀란드에서 무민 머그를 만들고 도안을 차례로 단종시키기 때문에 옛 도안이 수집됩니다.',
+    specs: [
+      '0,3 l',
+      '우정, 토플과 미플의 이야기에서',
+    ],
+    specLabels: [undefined, '도안'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: '무울라 무민 유리병 1 l, 사과',
+    description:
+      '소다 유리에 스윙톱 마개를 단 병. 종이팩 대신 물이나 주스를 식탁에 내놓기 위한 것입니다. 식기세척기 사용 가능, 1리터, 사과 무늬는 여름 도안입니다.',
+    specs: [
+      '1 l',
+      '소다 유리, 스윙톱 마개',
+      '식기세척기 사용 가능',
+    ],
+    specLabels: [undefined, undefined, '관리'],
   },
 }

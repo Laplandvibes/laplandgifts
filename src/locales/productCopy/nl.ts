@@ -12,33 +12,6 @@ import type { ProductCopyMap } from './index'
  * välilyöntien osalta; vain desimaalierotin vaihtuu pilkuksi.
  */
 export const PRODUCT_COPY_NL: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: 'Moomin Blue Love mok 0,3 l',
-    description:
-      'Een mok van vitroporselein van 0,3 liter uit de reeks Moomin Classics, met Snorkjuffrouw en Moomin in een omhelzing en het jaar van het 80-jarig jubileum in de bodem gestempeld. Ontworpen in Finland, vaatwasser- en magnetronbestendig, dus hij houdt dagelijks gebruik uit in plaats van in de kast te staan.',
-    specs: [
-      '0,3 l',
-      'Vitroporselein',
-      'Vaatwasserbestendig, geschikt voor oven en magnetron',
-      'Ontworpen in Finland, gemaakt in Thailand',
-      'Moomin Classics. De jubileumuitgave voor de 80e verjaardag draagt het jaartal in de bodem',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Collectie'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: 'Moomin Mystical Forest glazen 28 cl, set van 2',
-    description:
-      'Twee glazen met reliëf van 28 cl uit de collectie Mystical Forest, gemaakt in de glasfabriek van Iittala in Finland. Ze komen in een cadeauverpakking, wat je bespaart glaswerk in te pakken op een hotelkamer.',
-    specs: [
-      '28 cl per glas',
-      '2 glazen, geleverd in een turquoise verpakking',
-      'Glas met reliëf',
-      'Vaatwasserbestendig',
-      'Gemaakt in de glasfabriek van Iittala in Finland',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Collectie'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: 'Moomin Mystical Forest wollen plaid 130x170 cm',
     description:
@@ -1162,5 +1135,26 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       '2 tot 4 druppels in een schep water',
     ],
     specLabels: [undefined, 'Gebruik'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'Arabia Moomin-mok 0,3 l, Vriendschap',
+    description:
+      'Een Arabia Moomin-mok met het motief Vriendschap, waarin de verlegen Toffle een flessenpost van Miffle vindt en op zoek gaat naar haar. Arabia maakt Moomin-mokken sinds 1990 in Finland en haalt elk motief op zijn beurt uit productie, daarom worden oude verzameld.',
+    specs: [
+      '0,3 l',
+      'Vriendschap, uit het verhaal van Toffle en Miffle',
+    ],
+    specLabels: [undefined, 'Motief'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'Muurla Moomin glazen fles 1 l, Appels',
+    description:
+      'Een fles van natronglas met beugelsluiting, voor water of sap op tafel in plaats van een pak. Vaatwasserbestendig, één liter, en het appeldessin is het zomerse.',
+    specs: [
+      '1 l',
+      'Natronglas, beugelsluiting',
+      'Vaatwasserbestendig',
+    ],
+    specLabels: [undefined, undefined, 'Onderhoud'],
   },
 }

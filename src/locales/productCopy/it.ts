@@ -12,33 +12,6 @@ import type { ProductCopyMap } from './index'
  * välilyöntien osalta; vain desimaalierotin vaihtuu pilkuksi.
  */
 export const PRODUCT_COPY_IT: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: 'Tazza Moomin Blue Love 0,3 l',
-    description:
-      'Una tazza in vetroporcellana da 0,3 litri della linea Moomin Classics, con la Piccola Mymla Snork e Moomin abbracciati e l’anno dell’ottantesimo anniversario impresso sul fondo. Disegnata in Finlandia, lavabile in lavastoviglie e adatta al microonde, quindi regge l’uso quotidiano invece di restare su una mensola.',
-    specs: [
-      '0,3 l',
-      'Vetroporcellana',
-      'Lavabile in lavastoviglie, adatta a forno e microonde',
-      'Disegnata in Finlandia, prodotta in Thailandia',
-      'Moomin Classics. L’edizione per l’80° anniversario porta l’anno sul fondo',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Collezione'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: 'Bicchieri Moomin Mystical Forest 28 cl, set da 2',
-    description:
-      'Due bicchieri in rilievo da 28 cl della collezione Mystical Forest, prodotti nella vetreria Iittala in Finlandia. Arrivano in confezione regalo, il che vi evita di impacchettare vetro in una camera d’albergo.',
-    specs: [
-      '28 cl per bicchiere',
-      '2 bicchieri, consegnati in una confezione turchese',
-      'Vetro in rilievo',
-      'Lavabili in lavastoviglie',
-      'Prodotti nella vetreria Iittala in Finlandia',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Collezione'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: 'Plaid in lana Moomin Mystical Forest 130x170 cm',
     description:
@@ -1162,5 +1135,26 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
       'Da 2 a 4 gocce in un mestolo d acqua',
     ],
     specLabels: [undefined, 'Uso'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'Tazza Moomin Arabia 0,3 l, Amicizia',
+    description:
+      'Una tazza Moomin di Arabia con il motivo Amicizia, in cui il timido Toffle trova un messaggio in bottiglia di Miffle e parte a cercarla. Arabia produce tazze Moomin in Finlandia dal 1990 e ritira ogni motivo a turno, ed è per questo che le vecchie si collezionano.',
+    specs: [
+      '0,3 l',
+      'Amicizia, dalla storia di Toffle e Miffle',
+    ],
+    specLabels: [undefined, 'Motivo'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'Bottiglia di vetro Moomin Muurla 1 l, Mele',
+    description:
+      'Una bottiglia in vetro sodico con tappo meccanico, per acqua o succo in tavola invece del cartone. Lavabile in lavastoviglie, un litro, e la fantasia Mele è quella estiva.',
+    specs: [
+      '1 l',
+      'Vetro sodico, tappo meccanico',
+      'Lavabile in lavastoviglie',
+    ],
+    specLabels: [undefined, undefined, 'Manutenzione'],
   },
 }

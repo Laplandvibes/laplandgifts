@@ -13,33 +13,6 @@ import type { ProductCopyMap } from './index'
  * tavan mukaan.
  */
 export const PRODUCT_COPY_FR: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: 'Mug Moomin Blue Love 0,3 l',
-    description:
-      'Un mug en vitroporcelaine de 0,3 litre issu de la gamme Moomin Classics, avec la Demoiselle Snork et Moomin enlacés et l’année du 80e anniversaire estampée sous le fond. Dessiné en Finlande, il passe au lave-vaisselle et au micro-ondes, donc il sert tous les jours au lieu de rester sur une étagère.',
-    specs: [
-      '0,3 l',
-      'Vitroporcelaine',
-      'Lave-vaisselle, four et micro-ondes',
-      'Dessiné en Finlande, fabriqué en Thaïlande',
-      'Moomin Classics. L’édition du 80e anniversaire porte l’année sous le fond',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Collection'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: 'Verres Moomin Mystical Forest 28 cl, lot de 2',
-    description:
-      'Deux verres gravés en relief de 28 cl issus de la collection Mystical Forest, fabriqués à la verrerie Iittala en Finlande. Ils arrivent en coffret cadeau, ce qui vous évite d’emballer de la verrerie dans une chambre d’hôtel.',
-    specs: [
-      '28 cl par verre',
-      '2 verres, livrés dans un emballage turquoise',
-      'Verre gravé en relief',
-      'Passe au lave-vaisselle',
-      'Fabriqués à la verrerie Iittala en Finlande',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Collection'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: 'Plaid en laine Moomin Mystical Forest 130x170 cm',
     description:
@@ -1163,5 +1136,26 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       '2 à 4 gouttes dans une louche d eau',
     ],
     specLabels: [undefined, 'Utilisation'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'Mug Moumine Arabia 0,3 l, Amitié',
+    description:
+      'Un mug Moumine d’Arabia au motif Amitié, où le timide Toffle trouve une bouteille à la mer envoyée par Miffle et part à sa recherche. Arabia fabrique des mugs Moumine en Finlande depuis 1990 et retire chaque motif à son tour, ce qui explique que les anciens se collectionnent.',
+    specs: [
+      '0,3 l',
+      'Amitié, d’après l’histoire de Toffle et Miffle',
+    ],
+    specLabels: [undefined, 'Motif'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'Bouteille en verre Moumine Muurla 1 l, Pommes',
+    description:
+      'Une bouteille en verre sodocalcique à bouchon mécanique, pour l’eau ou le jus sur la table plutôt qu’une brique. Passe au lave-vaisselle, un litre, et le motif Pommes est celui de l’été.',
+    specs: [
+      '1 l',
+      'Verre sodocalcique, bouchon mécanique',
+      'Passe au lave-vaisselle',
+    ],
+    specLabels: [undefined, undefined, 'Entretien'],
   },
 }

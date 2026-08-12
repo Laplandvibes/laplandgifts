@@ -14,33 +14,6 @@ import type { ProductCopyMap } from './index'
  * tuotetiedoissa.
  */
 export const PRODUCT_COPY_JA: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: 'ムーミン ブルーラブ マグ 0.3 l',
-    description:
-      'ムーミンクラシックスの 0.3 リットルのビトロポーセリン製マグ。スノークのおじょうさんとムーミントロールが抱き合う絵柄で、底には 80 周年の年号が入っています。フィンランドでデザインされ、食洗機と電子レンジに対応。棚に飾るのではなく毎日使えます。',
-    specs: [
-      '0.3 l',
-      'ビトロポーセリン',
-      '食洗機対応、オーブンと電子レンジ可',
-      'フィンランドでデザイン、タイで製造',
-      'ムーミンクラシックス。80 周年記念版は底に年号が入ります',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, 'コレクション'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: 'ムーミン ミスティカルフォレスト タンブラー 28 cl 2個組',
-    description:
-      'ミスティカルフォレストコレクションのエンボス加工された 28 cl のグラス 2個組。フィンランドのイッタラのガラス工場で製造されています。ギフトボックス入りなので、ホテルの部屋でガラス製品を包む手間がかかりません。',
-    specs: [
-      '1個あたり 28 cl',
-      'グラス 2個、ターコイズ色のパッケージ入り',
-      'エンボス加工ガラス',
-      '食洗機対応',
-      'フィンランドのイッタラのガラス工場で製造',
-      'ミスティカルフォレスト',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'コレクション'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: 'ムーミン ミスティカルフォレスト ウールブランケット 130x170 cm',
     description:
@@ -1164,5 +1137,26 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'ひしゃく一杯の水に 2 滴から 4 滴',
     ],
     specLabels: [undefined, '使い方'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'アラビア ムーミンマグ 0,3 l「ともだち」',
+    description:
+      'アラビアのムーミンマグ「ともだち」。内気なスクルッタが瓶に入った手紙を見つけ、差出人のミムラを探しに出かける場面です。アラビアは 1990 年からフィンランドでムーミンマグを作り、絵柄を順に生産終了にしていきます。古いものが集められるのはそのためです。',
+    specs: [
+      '0,3 l',
+      'ともだち、スクルッタとミムラの物語から',
+    ],
+    specLabels: [undefined, '絵柄'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'ムールラ ムーミン ガラスボトル 1 l「りんご」',
+    description:
+      'ソーダガラス製、密閉できるスイングトップ付きのボトル。紙パックのままではなく、水やジュースを食卓に出すためのものです。食洗機対応、1 リットル、りんご柄は夏の絵柄です。',
+    specs: [
+      '1 l',
+      'ソーダガラス、スイングトップ',
+      '食洗機対応',
+    ],
+    specLabels: [undefined, undefined, 'お手入れ'],
   },
 }

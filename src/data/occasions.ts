@@ -32,12 +32,14 @@ export const OCCASION_PICKS: string[][] = [
     'moomin-lingonberry-blueberry-dark-chocolate',
     'finnish-flavours-palalaku-salmiakki',
   ],
-  // Häät: kodin esineitä, jotka kestävät vuosia. Muumi Blue Love -mukissa
-  // Niiskuneiti ja Muumipeikko halaavat, ja lasit tulevat lahjapakkauksessa.
+  // Häät: kodin esineitä, jotka kestävät vuosia. Arabian Ystävyys-muki ja
+  // Muurlan lasipullo korvasivat 12.8. Moomin Shopin Blue Love -mukin ja
+  // Mystical Forest -lasit: sama tuoteperhe ja sama valmistaja, mutta ne
+  // ostetaan kaupasta joka maksaa meille komission.
   [
     'iittala-aalto-vase-160',
-    'moomin-blue-love-mug',
-    'moomin-mystical-forest-tumblers',
+    'sk-arabia-moomin-mug-friendship',
+    'sk-muurla-moomin-bottle',
     'aarikka-prinsessa-candleholder',
     'lapuan-kankurit-kaamos-blanket',
     'pentik-tunturiretki-studio-dish',
@@ -62,7 +64,7 @@ export const OCCASION_PICKS: string[][] = [
     'halti-tokoi-dx-jacket',
     'north-outdoor-huuru-beanie',
     'kupilka-bowl-55',
-    'moomin-mystical-forest-tumblers',
+    'sk-muurla-moomin-bottle',
     'moomin-wild-blueberry-coffee',
   ],
 ]

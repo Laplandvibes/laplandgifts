@@ -12,33 +12,6 @@ import type { ProductCopyMap } from './index'
  * välilyöntien osalta; vain desimaalierotin vaihtuu pilkuksi.
  */
 export const PRODUCT_COPY_ES: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: 'Taza Moomin Blue Love 0,3 l',
-    description:
-      'Una taza de vitroporcelana de 0,3 litros de la gama Moomin Classics, con Snorkmaiden y Moomin abrazados y el año del 80 aniversario estampado en la base. Diseñada en Finlandia, apta para lavavajillas y microondas, así que sobrevive al uso diario en lugar de quedarse en una estantería.',
-    specs: [
-      '0,3 l',
-      'Vitroporcelana',
-      'Apta para lavavajillas, horno y microondas',
-      'Diseñada en Finlandia, fabricada en Tailandia',
-      'Moomin Classics. La edición del 80 aniversario lleva el año en la base',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Colección'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: 'Vasos Moomin Mystical Forest 28 cl, pack de 2',
-    description:
-      'Dos vasos de 28 cl con relieve de la colección Mystical Forest, fabricados en la vidriería de Iittala en Finlandia. Vienen en caja de regalo, lo que te ahorra envolver cristalería en una habitación de hotel.',
-    specs: [
-      '28 cl por vaso',
-      '2 vasos, entregados en un envase turquesa',
-      'Vidrio con relieve',
-      'Apto para lavavajillas',
-      'Fabricados en la vidriería de Iittala en Finlandia',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Colección'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: 'Manta de lana Moomin Mystical Forest 130x170 cm',
     description:
@@ -1162,5 +1135,26 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       'De 2 a 4 gotas en un cazo de agua',
     ],
     specLabels: [undefined, 'Uso'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'Taza Moomin de Arabia 0,3 l, Amistad',
+    description:
+      'Una taza Moomin de Arabia con el motivo Amistad, donde el tímido Toffle encuentra un mensaje en una botella de Miffle y sale a buscarla. Arabia fabrica tazas Moomin en Finlandia desde 1990 y retira cada motivo por turno, por eso las antiguas se coleccionan.',
+    specs: [
+      '0,3 l',
+      'Amistad, de la historia de Toffle y Miffle',
+    ],
+    specLabels: [undefined, 'Motivo'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'Botella de vidrio Moomin de Muurla 1 l, Manzanas',
+    description:
+      'Una botella de vidrio sodocálcico con tapón mecánico, para el agua o el zumo en la mesa en lugar de un cartón. Apta para lavavajillas, un litro, y el estampado de manzanas es el de verano.',
+    specs: [
+      '1 l',
+      'Vidrio sodocálcico, tapón mecánico',
+      'Apta para lavavajillas',
+    ],
+    specLabels: [undefined, undefined, 'Cuidado'],
   },
 }

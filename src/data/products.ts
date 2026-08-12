@@ -46,108 +46,6 @@ const MOOMIN_FOOD_EXCEPT = ['US', 'AU', ...SOUTH_AMERICA]
 export const PRODUCTS: Product[] = [
   // ── design ────────────────────────────────────────────────────────────────
   {
-    slug: 'moomin-blue-love-mug',
-    category: 'design',
-    brand: 'Moomin Arabia',
-    name: {
-      en: 'Moomin Blue Love mug 0,3 l',
-      fi: 'Muumi Blue Love -muki 0,3 l',
-    },
-    description: {
-      en: 'A 0.3 litre vitroporcelain mug from the Moomin Classics range, with Snorkmaiden and Moomintroll hugging and the 80th anniversary year stamped on the base. Designed in Finland, machine washable and microwave safe, so it survives daily use instead of sitting on a shelf.',
-      fi: 'Muumi Classics -sarjan 3 desin vitroposliinimuki, jossa Niiskuneiti ja Muumipeikko halaavat ja pohjaan on leimattu Muumien 80-vuotisjuhlavuosi. Suunniteltu Suomessa, kestää konepesun ja mikron, joten se on arkikäyttöön eikä vitriiniin.',
-    },
-    priceFrom: 24.9,
-    currency: 'EUR',
-    priceCheckedAt: '2026-07-31',
-    image: 'prod-moomin-blue-love-mug',
-    imageIsPartner: true,
-    partnerId: 'moomin',
-    partnerProductUrl: 'https://shop.moomin.com/products/moomin-blue-love-mug-0-3l',
-    featured: true,
-    details: {
-      specs: [
-        { key: 'volume', value: { en: '0.3 l', fi: '0,3 l' } },
-        { key: 'material', value: { en: 'Vitroporcelain', fi: 'Vitroposliini' } },
-        {
-          key: 'care',
-          value: {
-            en: 'Machine washable, oven and microwave safe',
-            fi: 'Kestää konepesun, uunin ja mikron',
-          },
-        },
-        {
-          key: 'origin',
-          value: {
-            en: 'Designed in Finland, made in Thailand',
-            fi: 'Suunniteltu Suomessa, valmistettu Thaimaassa',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Collection', fi: 'Sarja' },
-          value: {
-            en: 'Moomin Classics. The 80th anniversary edition carries the year on the base',
-            fi: 'Moomin Classics. 80-vuotisjuhlapainoksen pohjaan on merkitty vuosiluku',
-          },
-        },
-      ],
-      sourceUrl: 'https://shop.moomin.com/products/moomin-blue-love-mug-0-3l',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
-    slug: 'moomin-mystical-forest-tumblers',
-    category: 'design',
-    brand: 'Moomin Arabia',
-    name: {
-      en: 'Moomin Mystical Forest tumblers 28 cl, 2-pack',
-      fi: 'Muumi Mystical Forest -lasit 28 cl, 2 kpl',
-    },
-    description: {
-      en: 'Two embossed 28 cl glass tumblers from the Mystical Forest collection, made at the Iittala glass factory in Finland. They come in a gift box, which saves you wrapping glassware in a hotel room.',
-      fi: 'Kaksi kohokuvioitua 28 senttilitran lasia Mystical Forest -sarjasta, valmistettu Iittalan lasitehtaalla Suomessa. Tulevat lahjapakkauksessa, joten laseja ei tarvitse kääriä hotellihuoneessa.',
-    },
-    priceFrom: 29.9,
-    currency: 'EUR',
-    priceCheckedAt: '2026-07-31',
-    image: 'prod-moomin-mystical-forest-tumblers',
-    imageIsPartner: true,
-    partnerId: 'moomin',
-    partnerProductUrl:
-      'https://shop.moomin.com/products/moomin-clear-glass-tumblers-2-pack-28cl-moomin-arabia',
-    featured: true,
-    details: {
-      specs: [
-        { key: 'volume', value: { en: '28 cl per tumbler', fi: '28 cl lasi' } },
-        {
-          key: 'contents',
-          value: {
-            en: '2 tumblers, delivered in a turquoise package',
-            fi: '2 lasia, toimitetaan turkoosissa pakkauksessa',
-          },
-        },
-        { key: 'material', value: { en: 'Embossed glass', fi: 'Kohokuvioitu lasi' } },
-        { key: 'care', value: { en: 'Dishwasher safe', fi: 'Konepesun kestävä' } },
-        {
-          key: 'origin',
-          value: {
-            en: 'Made at the Iittala glass factory in Finland',
-            fi: 'Valmistettu Iittalan lasitehtaalla Suomessa',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Collection', fi: 'Sarja' },
-          value: { en: 'Mystical Forest', fi: 'Mystical Forest eli Lumottu metsä' },
-        },
-      ],
-      sourceUrl:
-        'https://shop.moomin.com/products/moomin-clear-glass-tumblers-2-pack-28cl-moomin-arabia',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
     slug: 'moomin-mystical-forest-wool-throw',
     category: 'design',
     brand: 'Moomin Arabia',
@@ -4365,6 +4263,81 @@ export const PRODUCTS: Product[] = [
       ],
       sourceUrl: 'https://suomikauppa.fi/products/aromageddon-hankihorppy-saunatuoksu-15ml',
       fetchedAt: '2026-08-10',
+    },
+  },
+  // ── Muumi-design Suomikaupan kautta (Daisycon 17977, 7 %) ──────────────
+  // 🔴 Nama korvaavat kaksi shop.moomin.com-tuotetta jotka olivat design-sivun
+  // KARJESSA ja tuottivat nolla (Vesa 12.8.: "tasta etusivulta ohjataan
+  // edelleen moomin shoppiin? emme tienaa niista"). Moomin Shop ei ole missaan
+  // affiliate-verkossa; Suomikauppa myy samaa Arabian Muumi-mukisarjaa ja on
+  // Daisyconissa. Sama ostajakokemus, sama valmistaja, mutta tuottaa.
+  //
+  // 🔴 EI ole sama tuote vaan sama TUOTEPERHE: Blue Love -mukia ei ole
+  // Suomikaupassa, joten mukia ei vaihdettu vaan korvattiin. Siksi nama ovat
+  // omat rivinsa omilla teksteillaan eivatka vanhojen paalle kirjoitettuja.
+  {
+    slug: 'sk-arabia-moomin-mug-friendship',
+    category: 'design',
+    brand: 'Arabia',
+    name: {
+      en: 'Arabia Moomin mug 0.3 l, Friendship',
+      fi: 'Arabia Muumi-muki 0,3 l, Ystävyys',
+    },
+    description: {
+      en: 'An Arabia Moomin mug from the Friendship motif, where shy Toffle finds a message in a bottle from Miffle and goes looking for her. Arabia has been making Moomin mugs in Finland since 1990 and retires each motif, which is why old ones are collected.',
+      fi: 'Arabian Muumi-muki Ystävyys-aiheella, jossa ujo Nyyti löytää Tuikun pullopostin ja lähtee etsimään häntä. Arabia on valmistanut Muumi-mukeja Suomessa vuodesta 1990 ja poistaa kuosit vuorollaan, minkä takia vanhoja kerätään.',
+    },
+    priceFrom: 24.97,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-arabia-moomin-mug-friendship',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/arabia-muumi-muki-03l-ystavyys',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '0.3 l', fi: '0,3 l' } },
+        {
+          key: 'other',
+          label: { en: 'Motif', fi: 'Kuosi' },
+          value: { en: 'Friendship, from the story of Toffle and Miffle', fi: 'Ystävyys, Nyytin ja Tuikun tarinasta' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/arabia-muumi-muki-03l-ystavyys',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'sk-muurla-moomin-bottle',
+    category: 'design',
+    brand: 'Muurla',
+    name: {
+      en: 'Muurla Moomin glass bottle 1 l, Apples',
+      fi: 'Muurla Muumi-lasipullo 1 l, Omenat',
+    },
+    description: {
+      en: 'A soda-glass bottle with a patent stopper, for water or juice on the table rather than a carton. Dishwasher safe, one litre, and the Apples print is the summer one.',
+      fi: 'Soodalasinen pullo patenttikorkilla, veden tai mehun tarjoiluun pöydässä tölkin sijaan. Konepesun kestävä, yksi litra, ja Omenat on kuoseista se kesäisin.',
+    },
+    priceFrom: 15.69,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-sk-muurla-moomin-bottle',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/muurla-muumi-lasipullo-1l-omenat',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '1 l', fi: '1 l' } },
+        { key: 'material', value: { en: 'Soda glass, patent stopper', fi: 'Soodalasi, patenttikorkki' } },
+        {
+          key: 'other',
+          label: { en: 'Care', fi: 'Hoito' },
+          value: { en: 'Dishwasher safe', fi: 'Konepesun kestävä' },
+        },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/muurla-muumi-lasipullo-1l-omenat',
+      fetchedAt: '2026-08-12',
     },
   },
 ]

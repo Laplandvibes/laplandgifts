@@ -14,33 +14,6 @@ import type { ProductCopyMap } from './index'
  * numeroiden-täsmäävyystesti sallii.
  */
 export const PRODUCT_COPY_SV: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: 'Muminmugg Blue Love 0,3 l',
-    description:
-      'En mugg i vitroporslin på 0,3 liter ur serien Moomin Classics, med Snorkfröken och Mumintrollet i en kram och 80-årsjubileets årtal stämplat i botten. Formgiven i Finland, tål maskindisk och mikro, så den överlever daglig användning i stället för att stå i en hylla.',
-    specs: [
-      '0,3 l',
-      'Vitroporslin',
-      'Tål maskindisk, ugn och mikro',
-      'Formgiven i Finland, tillverkad i Thailand',
-      'Moomin Classics. Jubileumsutgåvan till 80-årsdagen bär årtalet i botten',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Kollektion'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: 'Muminglas Mystical Forest 28 cl, 2-pack',
-    description:
-      'Två reliefpressade glas på 28 cl ur kollektionen Mystical Forest, tillverkade i Iittalas glasbruk i Finland. De kommer i presentförpackning, vilket besparar dig att slå in glas på ett hotellrum.',
-    specs: [
-      '28 cl per glas',
-      '2 glas, levereras i en turkos förpackning',
-      'Reliefpressat glas',
-      'Tål maskindisk',
-      'Tillverkade i Iittalas glasbruk i Finland',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Kollektion'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: 'Muminpläd i ull Mystical Forest 130x170 cm',
     description:
@@ -1164,5 +1137,26 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       '2 till 4 droppar i en skopa vatten',
     ],
     specLabels: [undefined, 'Användning'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'Arabia Muminmugg 0,3 l, Vänskap',
+    description:
+      'En Arabia-muminmugg med motivet Vänskap, där blyga Homsan hittar ett flaskpost från Misan och ger sig ut för att leta efter henne. Arabia har tillverkat muminmuggar i Finland sedan 1990 och tar ur varje motiv i tur och ordning, därför samlas de gamla.',
+    specs: [
+      '0,3 l',
+      'Vänskap, ur berättelsen om Homsan och Misan',
+    ],
+    specLabels: [undefined, 'Motiv'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'Muurla Muminglasflaska 1 l, Äpplen',
+    description:
+      'En flaska i sodaglas med patentkork, för vatten eller saft på bordet i stället för en kartong. Tål maskindisk, en liter, och äppelmönstret är det sommarliga.',
+    specs: [
+      '1 l',
+      'Sodaglas, patentkork',
+      'Tål maskindisk',
+    ],
+    specLabels: [undefined, undefined, 'Skötsel'],
   },
 }

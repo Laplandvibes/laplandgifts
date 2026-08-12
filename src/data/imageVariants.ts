@@ -697,23 +697,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-moomin-blue-love-mug": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-moomin-lingonberry-blueberry-dark-chocolate": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-moomin-mystical-forest-tumblers": {
     "full": 800,
     "w": [
       320,
@@ -977,6 +961,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-arabia-moomin-mug-friendship": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-aromageddon-sauna-scent": {
     "full": 800,
     "w": [
@@ -994,6 +986,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-moomin-duvet-set": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-muurla-moomin-bottle": {
     "full": 800,
     "w": [
       320,

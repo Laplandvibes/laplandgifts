@@ -13,33 +13,6 @@ import type { ProductCopyMap } from './index'
  * numeroiden-täsmäävyystesti menee läpi.
  */
 export const PRODUCT_COPY_DE: ProductCopyMap = {
-  'moomin-blue-love-mug': {
-    name: 'Mumin-Becher Blue Love 0,3 l',
-    description:
-      'Becher aus Vitroporzellan mit 0,3 Litern aus der Reihe Moomin Classics, mit Snorkfräulein und Mumintroll in Umarmung und dem Jubiläumsjahr zum 80. Geburtstag auf dem Boden. In Finnland entworfen, spülmaschinen- und mikrowellenfest, also für den täglichen Gebrauch statt für das Regal.',
-    specs: [
-      '0,3 l',
-      'Vitroporzellan',
-      'Spülmaschinenfest, backofen- und mikrowellengeeignet',
-      'Entworfen in Finnland, hergestellt in Thailand',
-      'Moomin Classics. Die Ausgabe zum 80. Jubiläum trägt die Jahreszahl auf dem Boden',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Kollektion'],
-  },
-  'moomin-mystical-forest-tumblers': {
-    name: 'Mumin-Gläser Mystical Forest 28 cl, 2er-Pack',
-    description:
-      'Zwei geprägte Gläser mit 28 cl aus der Kollektion Mystical Forest, hergestellt in der Glashütte Iittala in Finnland. Sie kommen in einer Geschenkverpackung, was Ihnen das Einwickeln von Glas im Hotelzimmer erspart.',
-    specs: [
-      '28 cl pro Glas',
-      '2 Gläser, geliefert in einer türkisen Verpackung',
-      'Geprägtes Glas',
-      'Spülmaschinenfest',
-      'Hergestellt in der Glashütte Iittala in Finnland',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Kollektion'],
-  },
   'moomin-mystical-forest-wool-throw': {
     name: 'Mumin-Wolldecke Mystical Forest 130x170 cm',
     description:
@@ -1213,5 +1186,26 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       '2 bis 4 Tropfen in eine Kelle Wasser',
     ],
     specLabels: [undefined, 'Anwendung'],
+  },
+  'sk-arabia-moomin-mug-friendship': {
+    name: 'Arabia Mumin-Becher 0,3 l, Freundschaft',
+    description:
+      'Ein Arabia Mumin-Becher mit dem Motiv Freundschaft, in dem der schüchterne Toffle eine Flaschenpost von Miffle findet und sich auf die Suche nach ihr macht. Arabia stellt Mumin-Becher seit 1990 in Finnland her und nimmt jedes Motiv irgendwann aus dem Programm, weshalb alte gesammelt werden.',
+    specs: [
+      '0,3 l',
+      'Freundschaft, aus der Geschichte von Toffle und Miffle',
+    ],
+    specLabels: [undefined, 'Motiv'],
+  },
+  'sk-muurla-moomin-bottle': {
+    name: 'Muurla Mumin-Glasflasche 1 l, Äpfel',
+    description:
+      'Eine Flasche aus Sodaglas mit Bügelverschluss, für Wasser oder Saft auf dem Tisch statt einer Packung. Spülmaschinenfest, ein Liter, und das Apfelmuster ist das sommerliche.',
+    specs: [
+      '1 l',
+      'Sodaglas, Bügelverschluss',
+      'Spülmaschinenfest',
+    ],
+    specLabels: [undefined, undefined, 'Pflege'],
   },
 }

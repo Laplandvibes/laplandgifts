@@ -107,8 +107,6 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
 /** Tuotteen slug → ryhmä. */
 const MAP: Record<string, SubgroupId> = {
   // design
-  'moomin-blue-love-mug': 'tableware',
-  'moomin-mystical-forest-tumblers': 'tableware',
   'iittala-aalto-vase-160': 'tableware',
   'marimekko-unikko-mug': 'tableware',
   'aarikka-pore-glass-vase': 'tableware',
@@ -143,6 +141,8 @@ const MAP: Record<string, SubgroupId> = {
   'sk-moomin-duvet-set': 'textiles',
   'sk-novita-wonder-wool': 'textiles',
   'sk-aromageddon-sauna-scent': 'sauna',
+  'sk-arabia-moomin-mug-friendship': 'tableware',
+  'sk-muurla-moomin-bottle': 'tableware',
   'north-outdoor-huuru-beanie': 'brandnorthoutdoor',
   'north-outdoor-pyry-scarf': 'brandnorthoutdoor',
   'north-outdoor-arctic-250-balaclava': 'brandnorthoutdoor',
