@@ -1073,7 +1073,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-muurla-moomin-bottle": {
+  "prod-sk-muurla-moomin-bottle-b2": {
     "full": 800,
     "w": [
       320,

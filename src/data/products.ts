@@ -4290,7 +4290,7 @@ export const PRODUCTS: Product[] = [
     priceFrom: 15.69,
     currency: 'EUR',
     priceCheckedAt: '2026-08-12',
-    image: 'prod-sk-muurla-moomin-bottle',
+    image: 'prod-sk-muurla-moomin-bottle-b2',
     imageIsPartner: true,
     partnerId: 'suomikauppa',
     partnerProductUrl: 'https://suomikauppa.fi/products/muurla-muumi-lasipullo-1l-omenat',
