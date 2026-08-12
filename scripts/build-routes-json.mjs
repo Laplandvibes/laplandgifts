@@ -29,6 +29,39 @@ import { BRAND_COPY } from '../src/locales/brandCopy.ts'
 import { LUXURY_COPY } from '../src/locales/luxuryCopy.ts'
 import { THEME_COPY } from '../src/locales/themeCopy.ts'
 import { PRODUCTS } from '../src/data/products.ts'
+// 🔴 Kieltenväliset tuotetekstit ladataan SUORAAN kielitiedostoista eikä
+// productCopy/index.ts:n kautta: index tuo ne laajennuksettomilla poluilla
+// ('./de'), joita Node ei ratkaise. Kielitiedostot itse ovat puhdasta dataa,
+// joissa on vain `import type`, jonka Node poistaa ilman resolvointia.
+// (Sama oppi kuin themes.ts 12.8.)
+import { PRODUCT_COPY_DE } from '../src/locales/productCopy/de.ts'
+import { PRODUCT_COPY_SV } from '../src/locales/productCopy/sv.ts'
+import { PRODUCT_COPY_FR } from '../src/locales/productCopy/fr.ts'
+import { PRODUCT_COPY_ES } from '../src/locales/productCopy/es.ts'
+import { PRODUCT_COPY_IT } from '../src/locales/productCopy/it.ts'
+import { PRODUCT_COPY_NL } from '../src/locales/productCopy/nl.ts'
+import { PRODUCT_COPY_PT_BR } from '../src/locales/productCopy/ptBR.ts'
+import { PRODUCT_COPY_JA } from '../src/locales/productCopy/ja.ts'
+import { PRODUCT_COPY_ZH_CN } from '../src/locales/productCopy/zhCN.ts'
+import { PRODUCT_COPY_KO } from '../src/locales/productCopy/ko.ts'
+
+const PRODUCT_COPY = {
+  de: PRODUCT_COPY_DE, sv: PRODUCT_COPY_SV, fr: PRODUCT_COPY_FR,
+  es: PRODUCT_COPY_ES, it: PRODUCT_COPY_IT, nl: PRODUCT_COPY_NL,
+  'pt-BR': PRODUCT_COPY_PT_BR, ja: PRODUCT_COPY_JA,
+  'zh-CN': PRODUCT_COPY_ZH_CN, ko: PRODUCT_COPY_KO,
+}
+
+/** Tuotteen nimi ja kuvaus kielellä. en ja fi ovat lähdedatassa, muut kymmenen
+ *  käännöstiedostoissa. Puuttuva käännös putoaa englantiin — productCopy.test.ts
+ *  vahtii ettei sellaista ole. */
+const productText = (p, lang) => {
+  const t = PRODUCT_COPY[lang]?.[p.slug]
+  return {
+    name: t?.name ?? p.name[lang] ?? p.name.en,
+    description: t?.description ?? p.description[lang] ?? p.description.en,
+  }
+}
 import { SHOP_COPY } from '../src/locales/shopCopy.ts'
 import { BOUTIQUES, TOWN_IDS, boutiquesByTown, townsWithPages } from '../src/data/boutiques.ts'
 import { BOUTIQUE_COPY } from '../src/locales/boutiqueCopy/index.ts'
@@ -153,6 +186,116 @@ const CATEGORY_TAILS = {
     ['delivery', 'Toimitusalueet näkyvät.'],
     ['delivery', 'Toimitusalue kortissa.'],
   ],
+  de: [
+    ['price', 'Jeder Preis wird am angegebenen Datum im Partnershop abgelesen.'],
+    ['price', 'Jeder Preis stammt aus dem Partnershop und ist datiert.'],
+    ['price', 'Jeder Preis stammt aus dem Partnershop.'],
+    ['price', 'Preise aus den Partnershops.'],
+    ['price', 'Preise aus den Shops.'],
+    ['delivery', 'Das Liefergebiet steht auf jeder Karte.'],
+    ['delivery', 'Liefergebiet auf jeder Karte.'],
+    ['delivery', 'Liefergebiete angegeben.'],
+    ['delivery', 'Mit Liefergebiet.'],
+  ],
+  sv: [
+    ['price', 'Varje pris är hämtat från partnerbutiken det datum som visas.'],
+    ['price', 'Varje pris hämtas från partnerbutiken och dateras.'],
+    ['price', 'Varje pris är hämtat från partnerbutiken.'],
+    ['price', 'Priset kommer från partnerbutiken.'],
+    ['price', 'Priser hämtas från butikerna.'],
+    ['delivery', 'Leveransområdet står på varje kort.'],
+    ['delivery', 'Leveransområde på varje kort.'],
+    ['delivery', 'Leveransområdena visas.'],
+    ['delivery', 'Leveransområde anges.'],
+  ],
+  fr: [
+    ['price', 'Chaque prix est relevé auprès de la boutique partenaire à la date indiquée.'],
+    ['price', 'Chaque prix est relevé auprès de la boutique partenaire et daté.'],
+    ['price', 'Chaque prix est relevé auprès de la boutique partenaire.'],
+    ['price', 'Les prix viennent des boutiques partenaires.'],
+    ['price', 'Prix relevés chez les partenaires.'],
+    ['delivery', 'La zone de livraison est indiquée sur chaque fiche produit.'],
+    ['delivery', 'La zone de livraison figure sur chaque fiche.'],
+    ['delivery', 'Les zones de livraison sont indiquées.'],
+    ['delivery', 'Zones de livraison indiquées.'],
+  ],
+  es: [
+    ['price', 'Cada precio se consulta en la tienda asociada en la fecha indicada.'],
+    ['price', 'Cada precio procede de la tienda asociada y lleva fecha.'],
+    ['price', 'Cada precio se consulta en la tienda asociada.'],
+    ['price', 'Precios de las tiendas asociadas.'],
+    ['price', 'Precios de las tiendas.'],
+    ['delivery', 'La zona de entrega figura en cada tarjeta.'],
+    ['delivery', 'Zona de entrega en cada tarjeta.'],
+    ['delivery', 'Zonas de entrega indicadas.'],
+    ['delivery', 'Zonas de entrega.'],
+  ],
+  it: [
+    ['price', 'Ogni prezzo è rilevato dal negozio partner nella data indicata.'],
+    ['price', 'Ogni prezzo è rilevato dal negozio partner ed è datato.'],
+    ['price', 'Ogni prezzo è rilevato dal negozio partner.'],
+    ['price', 'I prezzi provengono dai negozi partner.'],
+    ['price', 'Prezzi rilevati dai negozi.'],
+    ['delivery', 'L\'area di consegna è indicata su ogni scheda.'],
+    ['delivery', 'Area di consegna su ogni scheda.'],
+    ['delivery', 'Aree di consegna indicate.'],
+    ['delivery', 'Aree di consegna.'],
+  ],
+  nl: [
+    ['price', 'Elke prijs is op de vermelde datum overgenomen van de partnerwinkel.'],
+    ['price', 'Elke prijs is overgenomen van de partnerwinkel, met datum.'],
+    ['price', 'Elke prijs is overgenomen van de partnerwinkel.'],
+    ['price', 'De prijzen komen van de partnerwinkels.'],
+    ['price', 'Prijzen komen van de winkels.'],
+    ['delivery', 'Het bezorggebied staat op elke kaart.'],
+    ['delivery', 'Bezorggebieden staan vermeld.'],
+    ['delivery', 'Bezorggebied op elke kaart.'],
+    ['delivery', 'Bezorggebied vermeld.'],
+  ],
+  'pt-BR': [
+    ['price', 'Todos os preços são consultados na loja parceira na data indicada.'],
+    ['price', 'Cada preço é consultado na loja parceira e vem com data.'],
+    ['price', 'Cada preço é consultado na loja parceira.'],
+    ['price', 'Os preços vêm das lojas parceiras.'],
+    ['price', 'Preços consultados nas lojas.'],
+    ['delivery', 'A área de entrega é indicada em cada cartão.'],
+    ['delivery', 'Área de entrega em cada cartão.'],
+    ['delivery', 'Áreas de entrega indicadas.'],
+    ['delivery', 'Com área de entrega.'],
+  ],
+  ja: [
+    ['price', '価格はすべて提携ショップから取得したもので、取得日を併記しています。'],
+    ['price', '各価格は提携ショップから取得し、日付を記載しています。'],
+    ['price', '価格はすべて提携ショップから取得しています。'],
+    ['price', '価格は提携ショップのものです。'],
+    ['price', '価格はショップから取得。'],
+    ['delivery', '配送エリアは各カードに記載しています。'],
+    ['delivery', '配送エリアはどのカードにも記載。'],
+    ['delivery', '配送エリアを表示しています。'],
+    ['delivery', '配送エリア記載。'],
+  ],
+  'zh-CN': [
+    ['price', '每件商品的价格均取自合作商店，并注明读取日期。'],
+    ['price', '价格取自合作商店，并注明读取日期。'],
+    ['price', '所有价格均取自合作商店。'],
+    ['price', '价格来自合作商店。'],
+    ['price', '价格取自商店。'],
+    ['delivery', '每张卡片上都标注了配送区域。'],
+    ['delivery', '每张卡片均标注配送区域。'],
+    ['delivery', '配送区域已标注。'],
+    ['delivery', '附配送区域。'],
+  ],
+  ko: [
+    ['price', '모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다.'],
+    ['price', '가격은 제휴 상점에서 확인하며 날짜를 표시합니다.'],
+    ['price', '모든 가격은 제휴 상점에서 확인합니다.'],
+    ['price', '가격은 제휴 상점 기준입니다.'],
+    ['price', '가격은 상점 기준입니다.'],
+    ['delivery', '배송 지역은 모든 상품 카드에 표시됩니다.'],
+    ['delivery', '각 카드에 배송 지역이 있습니다.'],
+    ['delivery', '배송 지역이 표시됩니다.'],
+    ['delivery', '배송 지역 표시.'],
+  ],
 }
 
 const PRODUCT_TAILS = {
@@ -182,22 +325,166 @@ const PRODUCT_TAILS = {
     ['delivery', 'Toimitusalue kerrotaan.'],
     ['delivery', 'Toimitusalue näkyy.'],
   ],
+  de: [
+    ['price', 'Der Preis wird im Partnershop abgelesen, dort erfolgt auch der Kauf.'],
+    ['price', 'Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.'],
+    ['price', 'Preis vom Partnershop, dort erfolgt der Kauf.'],
+    ['price', 'Der Preis stammt aus dem Partnershop.'],
+    ['price', 'Verkauf durch den Partnershop.'],
+    ['price', 'Sie kaufen im Partnershop.'],
+    ['price', 'Kauf im Partnershop.'],
+    ['delivery', 'Das Liefergebiet steht auf dieser Seite.'],
+    ['delivery', 'Liefergebiet auf dieser Seite.'],
+    ['delivery', 'Liefergebiet angegeben.'],
+  ],
+  sv: [
+    ['price', 'Priset är hämtat från partnerbutiken och köpet görs i samma butik.'],
+    ['price', 'Priset kommer från partnerbutiken, där du också handlar.'],
+    ['price', 'Priset hämtas från partnerbutiken, där köpet sker.'],
+    ['price', 'Priset är hämtat från partnerbutiken.'],
+    ['price', 'Du köper varan i partnerbutiken.'],
+    ['price', 'Köpet görs i partnerbutiken.'],
+    ['price', 'Säljs av partnerbutiken.'],
+    ['delivery', 'Leveransområdet står på den här sidan.'],
+    ['delivery', 'Leveransområdet finns på sidan.'],
+    ['delivery', 'Leveransområdet anges.'],
+  ],
+  fr: [
+    ['price', 'Le prix est relevé auprès de la boutique partenaire et l\'achat se fait chez elle.'],
+    ['price', 'Le prix vient de la boutique partenaire, où se fait aussi votre achat.'],
+    ['price', 'Le prix est celui de la boutique partenaire, où vous achetez.'],
+    ['price', 'Le prix est relevé auprès de la boutique partenaire.'],
+    ['price', 'Vous achetez dans la boutique partenaire.'],
+    ['price', 'Achat dans la boutique partenaire.'],
+    ['price', 'Vendu par le partenaire.'],
+    ['delivery', 'La zone de livraison est indiquée sur cette page.'],
+    ['delivery', 'Zone de livraison sur cette page.'],
+    ['delivery', 'Zone de livraison indiquée.'],
+  ],
+  es: [
+    ['price', 'El precio se consulta en la tienda asociada, donde también se hace la compra.'],
+    ['price', 'El precio procede de la tienda asociada, donde también se compra.'],
+    ['price', 'El precio es el de la tienda asociada, donde se compra.'],
+    ['price', 'El precio se consulta en la tienda asociada.'],
+    ['price', 'Precio y compra en la tienda asociada.'],
+    ['price', 'Se compra en la tienda asociada.'],
+    ['price', 'Venta en la tienda asociada.'],
+    ['delivery', 'La zona de entrega figura en esta página.'],
+    ['delivery', 'Zona de entrega en esta página.'],
+    ['delivery', 'Zona de entrega indicada.'],
+  ],
+  it: [
+    ['price', 'Il prezzo è rilevato dal negozio partner, dove viene effettuato anche l\'acquisto.'],
+    ['price', 'Il prezzo proviene dal negozio partner, dove si effettua l\'acquisto.'],
+    ['price', 'Il prezzo è rilevato dal negozio partner, dove si acquista.'],
+    ['price', 'Il prezzo è rilevato dal negozio partner.'],
+    ['price', 'Si acquista nel negozio partner.'],
+    ['price', 'Acquisto nel negozio partner.'],
+    ['price', 'Venduto dal partner.'],
+    ['delivery', 'L\'area di consegna è indicata in questa pagina.'],
+    ['delivery', 'Area di consegna in questa pagina.'],
+    ['delivery', 'Area di consegna indicata.'],
+  ],
+  nl: [
+    ['price', 'De prijs is overgenomen van de partnerwinkel en de aankoop gebeurt daar.'],
+    ['price', 'De prijs komt van de partnerwinkel, waar je het ook koopt.'],
+    ['price', 'De prijs komt van de partnerwinkel, waar je bestelt.'],
+    ['price', 'De prijs is overgenomen van de partnerwinkel.'],
+    ['price', 'Je koopt het bij de partnerwinkel.'],
+    ['price', 'Verkocht door de partnerwinkel.'],
+    ['price', 'Gekocht bij de partnerwinkel.'],
+    ['delivery', 'Het bezorggebied staat op deze pagina.'],
+    ['delivery', 'Bezorggebied op deze pagina.'],
+    ['delivery', 'Bezorggebied is vermeld.'],
+  ],
+  'pt-BR': [
+    ['price', 'O preço é consultado na loja parceira, onde também é feita a compra.'],
+    ['price', 'O preço vem da loja parceira, onde você também compra.'],
+    ['price', 'O preço vem da loja parceira, onde se compra.'],
+    ['price', 'O preço é consultado na loja parceira.'],
+    ['price', 'A compra é feita na loja parceira.'],
+    ['price', 'Comprado na loja parceira.'],
+    ['price', 'Venda na loja parceira.'],
+    ['delivery', 'A área de entrega está indicada nesta página.'],
+    ['delivery', 'Área de entrega nesta página.'],
+    ['delivery', 'Área de entrega indicada.'],
+  ],
+  ja: [
+    ['price', '価格は提携ショップから取得し、ご購入も同じショップで行います。'],
+    ['price', '価格は提携ショップのもので、ご購入もそちらで行います。'],
+    ['price', '価格は提携ショップから取得し、ご購入もそちらで。'],
+    ['price', '価格は提携ショップから取得しています。'],
+    ['price', 'ご購入は提携ショップで行います。'],
+    ['price', 'ご購入は提携ショップにて。'],
+    ['price', '販売は提携ショップ。'],
+    ['delivery', '配送エリアはこのページに記載しています。'],
+    ['delivery', '配送エリアはこのページに記載。'],
+    ['delivery', '配送エリアを記載。'],
+  ],
+  'zh-CN': [
+    ['price', '价格取自合作商店，购买同样在该商店完成。'],
+    ['price', '价格来自合作商店，您也在那里购买。'],
+    ['price', '价格取自合作商店，在该店购买。'],
+    ['price', '价格均取自合作商店。'],
+    ['price', '您在合作商店购买。'],
+    ['price', '在合作商店购买。'],
+    ['price', '合作商店售出。'],
+    ['delivery', '本页面标注了配送区域。'],
+    ['delivery', '本页标注配送区域。'],
+    ['delivery', '附配送区域。'],
+  ],
+  ko: [
+    ['price', '가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다.'],
+    ['price', '가격은 제휴 상점 기준이며 구매도 그곳에서 이루어집니다.'],
+    ['price', '가격은 구매가 이루어지는 제휴 상점에서 확인합니다.'],
+    ['price', '표시된 가격은 제휴 상점에서 확인합니다.'],
+    ['price', '구매는 제휴 상점에서 이루어집니다.'],
+    ['price', '제휴 상점에서 구매합니다.'],
+    ['price', '판매처는 제휴 상점.'],
+    ['delivery', '배송 지역은 이 페이지에 표시되어 있습니다.'],
+    ['delivery', '배송 지역은 이 페이지에 있습니다.'],
+    ['delivery', '배송 지역을 표시합니다.'],
+  ],
 }
 
 /**
- * Rakentaa reittimerkinnän. `en` ja `fi` ovat natiiveja, muut kymmenen saavat
- * englannin: kategoria- ja tuotesivujen sisältö itsekin on näillä kielillä
- * englantia (SHOP_COPY), joten saksankielinen meta lupaisi saksankielisen
- * sivun jota ei ole.
+ * Rakentaa reittimerkinnän KAIKILLE kahdelletoista kielelle.
+ *
+ * 🔴 Tämä luki aiemmin näin: "`en` ja `fi` ovat natiiveja, muut kymmenen
+ * saavat englannin: kategoria- ja tuotesivujen sisältö itsekin on näillä
+ * kielillä englantia (SHOP_COPY), joten saksankielinen meta lupaisi
+ * saksankielisen sivun jota ei ole."
+ *
+ * Se oli totta kun se kirjoitettiin, mutta se vanhentui: SHOP_COPY,
+ * THEME_COPY, BRAND_COPY, LUXURY_COPY ja productCopy ovat kaikki nyt
+ * kahdellatoista kielellä, ja saksankielinen kategoriasivu sanoo
+ * "Finnisches Design". Vain meta jäi päivittämättä.
+ *
+ * Mitattu 12.8.2026 ennen korjausta: 175 reitistä 168:lla oli
+ * englanninkielinen otsikko ja kuvaus kymmenellä kielellä — 1 680 URLia,
+ * jotka hreflang esitteli omina kieliversioinaan mutta jotka näyttivät
+ * hakukoneelle lähes identtisiltä.
+ *
+ * 🔴 `build` saa kielen ja palauttaa { title, description }. Jos se heittää
+ * jollakin kielellä, reitti EI hiljaa putoa englantiin vaan build kaatuu:
+ * hiljainen fallback on juuri se, mikä piti tämän vian piilossa kuukausia.
  */
-function route(path, en, fi) {
+function route(path, build) {
+  const byLang = {}
+  for (const l of LANGS) {
+    const v = build(l)
+    if (!v || !v.title || !v.description) {
+      throw new Error(`route(${path}): kieli ${l} palautti tyhjän metan`)
+    }
+    byLang[l] = v
+  }
   return {
     path,
-    fallbackTitle: en.title,
-    fallbackDescription: en.description,
-    fallbackTitleByLang: Object.fromEntries(LANGS.map((l) => [l, l === 'fi' ? fi.title : en.title])),
+    fallbackTitle: byLang.en.title,
+    fallbackDescription: byLang.en.description,
+    fallbackTitleByLang: Object.fromEntries(LANGS.map((l) => [l, byLang[l].title])),
     fallbackDescriptionByLang: Object.fromEntries(
-      LANGS.map((l) => [l, l === 'fi' ? fi.description : en.description]),
+      LANGS.map((l) => [l, byLang[l].description]),
     ),
   }
 }
@@ -225,7 +512,7 @@ const categoryRoutes = [...CATEGORIES]
         description: fitDescription(c.intro[cat.id], CATEGORY_TAILS[lang]),
       }
     }
-    return route(cat.slug, build('en'), build('fi'))
+    return route(cat.slug, build)
   })
 
 // ── teemat ─────────────────────────────────────────────────────────────────
@@ -241,7 +528,7 @@ const themeRoutes = THEMES.map((theme) => {
       description: fitDescription(c.intro[theme.id], CATEGORY_TAILS[lang]),
     }
   }
-  return route(`/theme/${theme.id}`, build('en'), build('fi'))
+  return route(`/theme/${theme.id}`, build)
 })
 
 // ── brändit ────────────────────────────────────────────────────────────────
@@ -252,7 +539,7 @@ const luxuryRoute = (() => {
     title: fitTitle([`${LUXURY_COPY[lang].title} | ${BRAND}`, LUXURY_COPY[lang].title]),
     description: fitDescription(leadingSentences(LUXURY_COPY[lang].lead), CATEGORY_TAILS[lang]),
   })
-  return route('/luxury', build('en'), build('fi'))
+  return route('/luxury', build)
 })()
 
 const brandHubRoute = (() => {
@@ -260,7 +547,7 @@ const brandHubRoute = (() => {
     title: fitTitle([`${BRAND_COPY[lang].indexH1} | ${BRAND}`, BRAND_COPY[lang].indexH1]),
     description: fitDescription(BRAND_COPY[lang].indexIntro, CATEGORY_TAILS[lang]),
   })
-  return route('/brands', build('en'), build('fi'))
+  return route('/brands', build)
 })()
 
 const brandRoutes = BRANDS.map((brand) => {
@@ -271,13 +558,13 @@ const brandRoutes = BRANDS.map((brand) => {
       description: fitDescription(leadingSentences(c.profile[brand.id]), CATEGORY_TAILS[lang]),
     }
   }
-  return route(`/brand/${brand.id}`, build('en'), build('fi'))
+  return route(`/brand/${brand.id}`, build)
 })
 
 // ── tuotteet ───────────────────────────────────────────────────────────────
 const productRoutes = PRODUCTS.map((product) => {
   const build = (lang) => {
-    const name = product.name[lang]
+    const { name, description } = productText(product, lang)
     // Brändi otsikkoon vain jos nimi ei jo kanna sitä: "Marttiini Marttiini
     // Ilves 131" on huonompi otsikko kuin kumpikaan osa yksin.
     const brandWord = product.brand.split(' ')[0].toLowerCase()
@@ -287,14 +574,29 @@ const productRoutes = PRODUCTS.map((product) => {
     // omasta hakutuloksesta, jossa sama tuote on samalla nimellä.
     return {
       title: fitTitle([`${withBrand} | ${BRAND}`, `${name} | ${BRAND}`, withBrand, name]),
-      description: fitDescription(leadingSentences(product.description[lang]), PRODUCT_TAILS[lang]),
+      description: fitDescription(leadingSentences(description), PRODUCT_TAILS[lang]),
     }
   }
-  return route(`/product/${product.slug}`, build('en'), build('fi'))
+  return route(`/product/${product.slug}`, build)
 })
 
 // ── muut sisältösivut ──────────────────────────────────────────────────────
-const giftGuides = route(
+// 🔴 Nämä kaksi sivua saavat yhä englannin muille kielille, ja se on
+// TIETOINEN valinta eikä unohdus: gift-guides- ja shipping-sivujen oma
+// sisältö on käännetty vain englanniksi ja suomeksi, joten saksankielinen
+// meta lupaisi saksankielisen sivun jota ei ole. Kun sivut käännetään,
+// vaihda nämä samaan `route(path, build)`-muotoon kuin muut.
+const enFiOnly = (path, en, fi) => ({
+  path,
+  fallbackTitle: en.title,
+  fallbackDescription: en.description,
+  fallbackTitleByLang: Object.fromEntries(LANGS.map((l) => [l, l === 'fi' ? fi.title : en.title])),
+  fallbackDescriptionByLang: Object.fromEntries(
+    LANGS.map((l) => [l, l === 'fi' ? fi.description : en.description]),
+  ),
+})
+
+const giftGuides = enFiOnly(
   '/gift-guides',
   {
     title: `Lapland gift guides | ${BRAND}`,
@@ -308,7 +610,7 @@ const giftGuides = route(
   },
 )
 
-const shipping = route(
+const shipping = enFiOnly(
   '/shipping',
   {
     title: `Delivery areas and food rules | ${BRAND}`,

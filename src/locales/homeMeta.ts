@@ -47,12 +47,12 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       '厳選したフィンランドデザイン、ラップランドの手工芸品、食べもの、スーパーフード、体験ギフト。提携ショップから注文でき、そのままご自宅の国へ届きます。',
   },
   es: {
-    title: 'LaplandGifts: diseño finlandés y artesanía de Laponia a domicilio',
+    title: 'LaplandGifts: diseño finlandés y artesanía lapona',
     description:
       'Diseño finlandés seleccionado, artesanía de Laponia, delicias, superalimentos y regalos de experiencias. Compra en tiendas asociadas que envían a tu país.',
   },
   'pt-BR': {
-    title: 'LaplandGifts: design finlandês e artesanato da Lapônia em casa',
+    title: 'LaplandGifts: design finlandês e artesanato lapão',
     description:
       'Design finlandês selecionado, artesanato da Lapônia, quitutes, superalimentos e presentes de experiência. Compre em lojas parceiras que entregam no seu país.',
   },
@@ -82,7 +82,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       'Geselecteerd Fins design, Laplands ambacht, lekkernijen, superfoods en beleveniscadeaus. Bestel bij partnerwinkels die naar uw eigen land bezorgen.',
   },
   sv: {
-    title: 'LaplandGifts: finsk design och lappländskt hantverk hem till dig',
+    title: 'LaplandGifts: finsk design och lappländskt hantverk',
     description:
       'Utvald finsk design, lappländskt hantverk, delikatesser, superfoods och upplevelsepresenter. Beställ från partnerbutiker som levererar till ditt hemland.',
   },
