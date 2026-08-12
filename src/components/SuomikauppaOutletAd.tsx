@@ -2,6 +2,7 @@ import { ArrowRight } from 'lucide-react'
 import { AFFILIATE_REL } from '../data/partners'
 import type { Lang } from '../i18n/useLang'
 import { trackAffiliateClick } from '../lib/analytics'
+import { imgSrcSet } from '../lib/img'
 
 /**
  * Suomikauppa outlet — Daisycon 17977, 7 %.
@@ -22,6 +23,11 @@ import { trackAffiliateClick } from '../lib/analytics'
  * siihen; affiliate-linkin pitää mennä kanoniseen osoitteeseen, jotta ketjussa
  * on yksi hyppy vähemmän eikä ohjaus voi katketa.
  */
+
+/** Kuvapaikka on kolmasosa kortin oikeasta puoliskosta, eli noin 110-150 CSS-
+ *  pikseliä. Kolminkertaisella näyttötiheydellä se on ~450 px, joten 480 on
+ *  ylin variantti jota kannattaa pyytää. */
+const SHOT_SIZES = '(min-width: 768px) 150px, 28vw'
 
 const SID = 'home_gifts_suomikauppa_outlet'
 const DEST = 'https://suomikauppa.fi/collections/tarjoukset'
@@ -105,10 +111,19 @@ export default function SuomikauppaOutletAd({ lang }: { lang: Lang }) {
                 key={s.img}
                 className="w-1/3 overflow-hidden rounded-2xl bg-white p-2 shadow-sm ring-1 ring-line"
               >
+                {/* 🔴 srcSet tulee jaetusta `imgSrcSet`-apurista eikä käsin
+                    kirjoitettuna. Ensimmäinen versio latoi leveydet itse ja
+                    jätti `sizes`in pois, jolloin kortti ei noudattanut samaa
+                    kuvasopimusta kuin sivuston muut kortit ja olisi ajautunut
+                    erilleen heti kun manifestin leveydet muuttuvat. Apuri lukee
+                    leveydet IMAGE_VARIANTSista, joten kuva ei voi pyytää
+                    varianttia jota ei ole. */}
                 <picture>
-                  <source type="image/avif" srcSet={`/images/${s.img}-320.avif 320w, /images/${s.img}.avif 800w`} />
+                  <source type="image/avif" srcSet={imgSrcSet(s.img, 'avif')} sizes={SHOT_SIZES} />
                   <img
-                    src={`/images/${s.img}-320.webp`}
+                    src={`/images/${s.img}.webp`}
+                    srcSet={imgSrcSet(s.img, 'webp')}
+                    sizes={SHOT_SIZES}
                     alt={s.alt[l]}
                     width={320}
                     height={320}
