@@ -11,6 +11,7 @@ const Category = lazy(() => import('./pages/Category'))
 const Theme = lazy(() => import('./pages/Theme'))
 const Brand = lazy(() => import('./pages/Brand'))
 const Brands = lazy(() => import('./pages/Brands'))
+const Luxury = lazy(() => import('./pages/Luxury'))
 const Product = lazy(() => import('./pages/Product'))
 const GiftGuides = lazy(() => import('./pages/GiftGuides'))
 const Boutiques = lazy(() => import('./pages/Boutiques'))
@@ -44,6 +45,7 @@ export const CONTENT_PATHS: string[] = [
   '/shipping',
   '/boutiques',
   '/brands',
+  '/luxury',
   // Paikkakuntapolut tulevat datasta: kynnyksen ylittävä paikkakunta saa
   // reitin, prerenderin ja sitemap-rivin ilman käsityötä.
   ...boutiqueTownPaths(),
@@ -62,6 +64,7 @@ const ELEMENTS: Record<string, ReactElement> = {
   '/shipping': <Shipping />,
   '/boutiques': <Boutiques />,
   '/brands': <Brands />,
+  '/luxury': <Luxury />,
   ...Object.fromEntries(THEMES.map((t) => [`/theme/${t.id}`, <Theme />])),
   ...Object.fromEntries(BRANDS.map((b) => [`/brand/${b.id}`, <Brand />])),
   // 🔴 Ilman tätä riviä ELEMENTSin fallback tekisi /boutiques/rovaniemistä

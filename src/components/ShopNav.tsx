@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { BRAND_COPY } from '../locales/brandCopy'
+import { LUXURY_COPY } from '../locales/luxuryCopy'
 import { Link, useLocation } from 'react-router-dom'
 import { Globe, Menu, X } from 'lucide-react'
 import Logo from './Logo'
@@ -129,6 +130,7 @@ export default function ShopNav() {
   // alueen, mutta vientirajoitteet ja kumppanitaulukko asuvat vain siellä.
   const secondary = [
     { key: 'boutiques', to: to('/boutiques'), slug: '/boutiques', label: t.boutique.hubTitle },
+    { key: 'luxury', to: to('/luxury'), slug: '/luxury', label: LUXURY_COPY[lang].title },
     { key: 'brands', to: to('/brands'), slug: '/brands', label: BRAND_COPY[lang].indexH1 },
     { key: 'guides', to: to('/gift-guides'), slug: '/gift-guides', label: t.nav.guides },
     { key: 'shipping', to: to('/shipping'), slug: '/shipping', label: t.nav.shipping },
@@ -143,6 +145,7 @@ export default function ShopNav() {
     '/shipping': t.nav.shipping,
     '/boutiques': t.boutique.hubTitle,
     '/brands': BRAND_COPY[lang].indexH1,
+    '/luxury': LUXURY_COPY[lang].title,
   }
 
   return (

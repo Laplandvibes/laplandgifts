@@ -396,6 +396,39 @@
     }
   },
   {
+    "path": "/luxury",
+    "fallbackTitle": "The expensive end | LaplandGifts",
+    "fallbackDescription": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+    "fallbackTitleByLang": {
+      "en": "The expensive end | LaplandGifts",
+      "fi": "Kallis pää | LaplandGifts",
+      "de": "The expensive end | LaplandGifts",
+      "ja": "The expensive end | LaplandGifts",
+      "es": "The expensive end | LaplandGifts",
+      "pt-BR": "The expensive end | LaplandGifts",
+      "zh-CN": "The expensive end | LaplandGifts",
+      "ko": "The expensive end | LaplandGifts",
+      "fr": "The expensive end | LaplandGifts",
+      "it": "The expensive end | LaplandGifts",
+      "nl": "The expensive end | LaplandGifts",
+      "sv": "The expensive end | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "fi": "Kalleimmat asiat, joihin tämä kauppa osoittaa, eivät ole esineitä vaan päiviä: päivä kullanhuuhdontaa Inarissa, yö lasi-iglussa, aamu porojen kanssa.",
+      "de": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "ja": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "es": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "pt-BR": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "zh-CN": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "ko": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "fr": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "it": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "nl": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
+      "sv": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer."
+    }
+  },
+  {
     "path": "/brand/aarikka",
     "fallbackTitle": "Aarikka | LaplandGifts",
     "fallbackDescription": "Aarikka is a Finnish design house founded in 1954 by Kaija Aarikka and Erkki Ruokonen, known for wooden beads and jewellery. Prices come from the partner shops.",
@@ -4650,6 +4683,237 @@
       "it": "A dried birch whisk, soaked in warm water before the sauna so the leaves and the smell come back. The price comes from the partner shop, where you also buy it.",
       "nl": "A dried birch whisk, soaked in warm water before the sauna so the leaves and the smell come back. The price comes from the partner shop, where you also buy it.",
       "sv": "A dried birch whisk, soaked in warm water before the sauna so the leaves and the smell come back. The price comes from the partner shop, where you also buy it."
+    }
+  },
+  {
+    "path": "/product/sk-suomi-hockey-jersey",
+    "fallbackTitle": "Mikebon Finland supporter jersey | LaplandGifts",
+    "fallbackDescription": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+    "fallbackTitleByLang": {
+      "en": "Mikebon Finland supporter jersey | LaplandGifts",
+      "fi": "Mikebon Suomi-fanipaita | LaplandGifts",
+      "de": "Mikebon Finland supporter jersey | LaplandGifts",
+      "ja": "Mikebon Finland supporter jersey | LaplandGifts",
+      "es": "Mikebon Finland supporter jersey | LaplandGifts",
+      "pt-BR": "Mikebon Finland supporter jersey | LaplandGifts",
+      "zh-CN": "Mikebon Finland supporter jersey | LaplandGifts",
+      "ko": "Mikebon Finland supporter jersey | LaplandGifts",
+      "fr": "Mikebon Finland supporter jersey | LaplandGifts",
+      "it": "Mikebon Finland supporter jersey | LaplandGifts",
+      "nl": "Mikebon Finland supporter jersey | LaplandGifts",
+      "sv": "Mikebon Finland supporter jersey | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "fi": "Sinivalkoinen fanipaita, jossa on SUOMI rinnassa ja leijonalogo. Hengittävä materiaali, koot M–XXL. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
+      "de": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "ja": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "es": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "pt-BR": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "zh-CN": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "ko": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "fr": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "it": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "nl": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page.",
+      "sv": "The blue-and-white supporter shirt with SUOMI across the chest and the lion crest, in the cut people actually wear to a game. The delivery area is on this page."
+    }
+  },
+  {
+    "path": "/product/sk-marimekko-unikko-bath-towel",
+    "fallbackTitle": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+    "fallbackDescription": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+    "fallbackTitleByLang": {
+      "en": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "fi": "Marimekko Unikko -kylpypyyhe 70 × 150 cm | LaplandGifts",
+      "de": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "ja": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "es": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "pt-BR": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "zh-CN": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "ko": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "fr": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "it": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "nl": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+      "sv": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "fi": "Unikko froteepuuvillalla, beige-valkoinen, täydessä 70 × 150 -koossa. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä. Toimitusalue näkyy sivulla.",
+      "de": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "ja": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "es": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "pt-BR": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "zh-CN": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "ko": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "fr": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "it": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "nl": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "sv": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships."
+    }
+  },
+  {
+    "path": "/product/sk-marimekko-unikko-hand-towel",
+    "fallbackTitle": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+    "fallbackDescription": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+    "fallbackTitleByLang": {
+      "en": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "fi": "Marimekko Unikko -käsipyyhe 50 × 70 cm | LaplandGifts",
+      "de": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "ja": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "es": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "pt-BR": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "zh-CN": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "ko": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "fr": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "it": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "nl": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "sv": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "fi": "Sama Unikko-frotee käsipyyhkeen koossa, puolet kylpypyyhkeen hinnasta ja huomattavasti helpompi mahduttaa matkalaukkuun. Hinta on luettu kumppanin kaupasta.",
+      "de": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "ja": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "es": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "pt-BR": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "zh-CN": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "ko": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "fr": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "it": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "nl": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
+      "sv": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop."
+    }
+  },
+  {
+    "path": "/product/fl-taistelevat-metsot",
+    "fallbackTitle": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+    "fallbackDescription": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+    "fallbackTitleByLang": {
+      "en": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "fi": "Taistelevat metsot -satiinipussilakanasetti, parivuoteen",
+      "de": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "ja": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "es": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "pt-BR": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "zh-CN": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "ko": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "fr": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "it": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "nl": "Taistelevat metsot satin duvet set, double | LaplandGifts",
+      "sv": "Taistelevat metsot satin duvet set, double | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "fi": "Ferdinand von Wright maalasi taistelevat metsot vuonna 1886, ja siitä tuli teos jonka jokainen suomalainen tunnistaa. Hinta on luettu kumppanin kaupasta.",
+      "de": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "ja": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "es": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "pt-BR": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "zh-CN": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "ko": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "fr": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "it": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "nl": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
+      "sv": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop."
+    }
+  },
+  {
+    "path": "/product/fl-lino-linen-duvet-set",
+    "fallbackTitle": "Finlayson Lino linen duvet set | LaplandGifts",
+    "fallbackDescription": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+    "fallbackTitleByLang": {
+      "en": "Finlayson Lino linen duvet set | LaplandGifts",
+      "fi": "Finlayson Lino-pellavapussilakanasetti | LaplandGifts",
+      "de": "Finlayson Lino linen duvet set | LaplandGifts",
+      "ja": "Finlayson Lino linen duvet set | LaplandGifts",
+      "es": "Finlayson Lino linen duvet set | LaplandGifts",
+      "pt-BR": "Finlayson Lino linen duvet set | LaplandGifts",
+      "zh-CN": "Finlayson Lino linen duvet set | LaplandGifts",
+      "ko": "Finlayson Lino linen duvet set | LaplandGifts",
+      "fr": "Finlayson Lino linen duvet set | LaplandGifts",
+      "it": "Finlayson Lino linen duvet set | LaplandGifts",
+      "nl": "Finlayson Lino linen duvet set | LaplandGifts",
+      "sv": "Finlayson Lino linen duvet set | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "fi": "Pestyä pellavaa brodeeratulla reunalla, jäkälänvihreänä tai tervanruskeana. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä. Toimitusalue kerrotaan.",
+      "de": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "ja": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "es": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "pt-BR": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "zh-CN": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "ko": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "fr": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "it": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "nl": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships.",
+      "sv": "Washed linen with an embroidered edge, in lichen green or tar brown. The price is read from the partner shop and the purchase is made there. See where it ships."
+    }
+  },
+  {
+    "path": "/product/fl-elefantti-duvet-set",
+    "fallbackTitle": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+    "fallbackDescription": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+    "fallbackTitleByLang": {
+      "en": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "fi": "Elefantti-pussilakanasetti, tummanvihreä | LaplandGifts",
+      "de": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "ja": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "es": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "pt-BR": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "zh-CN": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "ko": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "fr": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "it": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "nl": "Finlayson Elefantti duvet set, dark green | LaplandGifts",
+      "sv": "Finlayson Elefantti duvet set, dark green | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "fi": "Laina Koskela piirsi Elefantin vuonna 1969 Finlaysonin ja Taideteollisen oppilaitoksen suunnittelukilpailuun, ja se on ollut tuotannossa siitä asti.",
+      "de": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "ja": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "es": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "pt-BR": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "zh-CN": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "ko": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "fr": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "it": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "nl": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since.",
+      "sv": "Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since."
+    }
+  },
+  {
+    "path": "/product/fl-reino-bath-towel",
+    "fallbackTitle": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+    "fallbackDescription": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+    "fallbackTitleByLang": {
+      "en": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "fi": "Finlayson Reino-kylpypyyhe 80 × 160 cm | LaplandGifts",
+      "de": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "ja": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "es": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "pt-BR": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "zh-CN": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "ko": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "fr": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "it": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "nl": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts",
+      "sv": "Finlayson Reino bath towel 80 × 160 cm | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "fi": "GOTS-sertifioitua luomupuuvillaa, kudottu ohuesta kerratusta langasta jotta se kuivuu nopeasti eikä jää kostumaan koukkuun. Hinta on luettu kumppanin kaupasta.",
+      "de": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "ja": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "es": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "pt-BR": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "zh-CN": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "ko": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "fr": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "it": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "nl": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.",
+      "sv": "GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink."
     }
   },
   {

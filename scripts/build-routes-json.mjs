@@ -26,6 +26,7 @@ import { CATEGORIES } from '../src/data/categories.ts'
 import { THEMES } from '../src/data/themes.ts'
 import { BRANDS } from '../src/data/brands.ts'
 import { BRAND_COPY } from '../src/locales/brandCopy.ts'
+import { LUXURY_COPY } from '../src/locales/luxuryCopy.ts'
 import { THEME_COPY } from '../src/locales/themeCopy.ts'
 import { PRODUCTS } from '../src/data/products.ts'
 import { SHOP_COPY } from '../src/locales/shopCopy.ts'
@@ -246,6 +247,14 @@ const themeRoutes = THEMES.map((theme) => {
 // ── brändit ────────────────────────────────────────────────────────────────
 // Brändisivun meta tulee samasta tekstistä kuin sivu itse. Kuvaus on
 // esittelyn ensimmäiset lauseet, koska ne kantavat sen mitä brändi on.
+const luxuryRoute = (() => {
+  const build = (lang) => ({
+    title: fitTitle([`${LUXURY_COPY[lang].title} | ${BRAND}`, LUXURY_COPY[lang].title]),
+    description: fitDescription(leadingSentences(LUXURY_COPY[lang].lead), CATEGORY_TAILS[lang]),
+  })
+  return route('/luxury', build('en'), build('fi'))
+})()
+
 const brandHubRoute = (() => {
   const build = (lang) => ({
     title: fitTitle([`${BRAND_COPY[lang].indexH1} | ${BRAND}`, BRAND_COPY[lang].indexH1]),
@@ -382,6 +391,7 @@ const routes = [
   ...categoryRoutes,
   ...themeRoutes,
   brandHubRoute,
+  luxuryRoute,
   ...brandRoutes,
   ...productRoutes,
   giftGuides,
