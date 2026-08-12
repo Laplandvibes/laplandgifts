@@ -8,6 +8,7 @@ import BuyButton from '../components/shop/BuyButton'
 import ShippingBadge from '../components/shop/ShippingBadge'
 import ProductCard from '../components/shop/ProductCard'
 import { productBySlug, productsByCategory } from '../data/products'
+import { byShippingBreadth } from '../data/sortProducts'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept } from '../data/shipping'
 import { countryNames } from '../data/countryNames'
@@ -42,9 +43,12 @@ export default function Product() {
   // kortin "pl. 3 maata" kertoo että rajaus on olemassa, tämä kertoo ketä se
   // koskee.
   const except = mergeExcept(partner.shipsExcept, product.shipsExcept)
-  const related = productsByCategory(product.category)
-    .filter((p) => p.slug !== product.slug)
-    .slice(0, 4)
+  // Liittyvat noudattavat samaa toimitussaantoa kuin muutkin ruudukot:
+  // laajimmin toimittavat ensin. Lukija on tuotesivulla eli lahella ostoa,
+  // ja rivi jossa jokainen kortti sanoo "vain Suomi" on umpikuja.
+  const related = byShippingBreadth(
+    productsByCategory(product.category).filter((p) => p.slug !== product.slug),
+  ).slice(0, 4)
 
   return (
     <>

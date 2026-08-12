@@ -76,6 +76,10 @@ export const OCCASION_PICKS: string[][] = [
  */
 export function productsForOccasion(index: number): Product[] {
   const slugs = OCCASION_PICKS[index] ?? []
+  // 🔴 Jarjestys on TARKOITUKSELLA poimintajarjestys, ja occasions.test.ts
+  // vahtii sita. Toimituslaajuuden mukainen jarjestys tehdaan vasta
+  // renderoitaessa (GiftGuides.tsx), jotta kuratoitu lista sailyy datana
+  // sellaisena kuin se on kirjoitettu.
   return slugs
     .map((slug) => PRODUCTS.find((p) => p.slug === slug))
     .filter((p): p is Product => Boolean(p))

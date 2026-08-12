@@ -3,6 +3,7 @@ import ShopNav from '../components/ShopNav'
 // (SharedFooter odottaa dict-propin). Sama kuin Home.tsx ja Category.tsx.
 import Footer from '../components/Footer'
 import ProductCard from '../components/shop/ProductCard'
+import { byShippingBreadth } from '../data/sortProducts'
 import { productsForOccasion } from '../data/occasions'
 import { OCCASION_THEMES, occasionTheme } from '../data/occasionTheme'
 import { useLang } from '../i18n/useLang'
@@ -50,7 +51,10 @@ export default function GiftGuides() {
 
         <div className="mx-auto max-w-7xl px-4">
           {t.occasions.map((occ, i) => {
-            const picks = productsForOccasion(i)
+            // Kuratoitu lista, mutta laajimmin toimittavat ensin: sama
+            // saanto kuin etusivulla ja kategoriasivuilla. Yksikaan tuote ei
+            // putoa pois, vain jarjestys muuttuu.
+            const picks = byShippingBreadth(productsForOccasion(i))
             const theme = occasionTheme(i)
             const Icon = theme.Icon
             return (

@@ -1,5 +1,9 @@
 import { Link } from 'react-router-dom'
 import { featuredProducts } from '../data/products'
+import { PARTNERS } from '../data/partners'
+import { mergeExcept, shipsTo } from '../data/shipping'
+import { byShippingBreadth } from '../data/sortProducts'
+import { useShippingCountry } from '../context/ShippingCountry'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { SHOP_COPY } from '../locales/shopCopy'
 import ProductCard from './shop/ProductCard'
@@ -18,13 +22,31 @@ import { productName } from '../locales/productCopy'
  * alle, ja kärjessä oleva ruudukko on koko kaupan näyteikkuna: kuudesta
  * tuotteesta jäi neljän palstan työpöytäruudukkoon vajaa rivi (4 + 2).
  * Kahdeksan jakautuu tasan sekä kahteen että neljään palstaan.
+ *
+ * 🔴 Nostot noudattavat samaa toimitussääntöä kuin kategoriasivu (Vesa
+ * 12.8.: "edelleen etusivulla lukee vain suomeen"). Neljästätoista
+ * featured-tuotteesta viisi lähtee vain Suomeen, ja katalogin järjestys
+ * nosti juuri ne kolme ensimmäiseksi. Etusivun ruudukko on koko kaupan
+ * näyteikkuna, ja sen lukija on useimmiten matkalla pois maasta.
+ *
+ * Rajaus tehdään ENNEN kahdeksan poimintaa, ei sen jälkeen: jälkikäteen
+ * suodattaminen jättäisi vajaan rivin.
  */
 export default function ProductGrid() {
   const lang = useLang()
   const to = useLocalePath()
   const t = SHOP_COPY[lang].home
   const s = SHOP_COPY[lang]
-  const products = featuredProducts(8)
+  const { country } = useShippingCountry()
+  const all = featuredProducts(Number.MAX_SAFE_INTEGER)
+  const products = (
+    country
+      ? all.filter((p) => {
+          const partner = PARTNERS[p.partnerId]
+          return shipsTo(partner.shipsTo, country, mergeExcept(partner.shipsExcept, p.shipsExcept))
+        })
+      : byShippingBreadth(all)
+  ).slice(0, 8)
   const itemListSchema = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
