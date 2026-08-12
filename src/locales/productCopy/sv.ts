@@ -1318,4 +1318,48 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Mönster'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Taistelevat metsot satinpåslakansset, dubbelsäng',
+    description:
+      'Ferdinand von Wright målade de stridande tjädrarna 1886, och verket blev en av de målningar som varje finländare kan namnge. Finlayson trycker det på satinbomull, digitalt så att färgerna håller. Påslakanets baksida är enfärgad och trycket finns på båda sidor av örngotten.',
+    specs: [
+      'Satinbomull',
+      'Dubbelsäng',
+      'Ferdinand von Wright, Taistelevat metsot (De stridande tjädrarna), 1886',
+    ],
+    specLabels: [undefined, undefined, 'Konstverk'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Lino linnepåslakansset',
+    description:
+      'Tvättat linne med broderad kant, i lavgrönt eller tjärbrunt. Linne är tungt och faller styvare än bomull, och det blir mjukare för varje tvätt i stället för att slitas ut.',
+    specs: [
+      'Linne',
+      '240 × 210 + 50 × 60 cm eller 150 × 210 + 50 × 60 cm',
+      'Lavgrön eller tjärbrun',
+    ],
+    specLabels: [undefined, undefined, 'Färger'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Elefantti påslakansset, mörkgrönt',
+    description:
+      'Laina Koskela ritade Elefantti 1969 till en formgivningstävling som Finlayson ordnade tillsammans med Konstindustriella läroverket, och mönstret har varit i produktion sedan dess. Bomullspercale med 152 trådar per tum, vilket gör att det känns svalt snarare än mjukt.',
+    specs: [
+      'Bomullspercale, 152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela, 1969',
+    ],
+    specLabels: [undefined, undefined, 'Formgivning'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Reino badhandduk 80 × 160 cm',
+    description:
+      'GOTS-certifierad ekologisk bomull, vävd av ett fint tvinnat garn så att den torkar snabbt i stället för att bli fuktig på kroken. Full badhanddukstorlek, i brunt eller rosa.',
+    specs: [
+      '80 × 160 cm',
+      '100 % ekologisk bomull, GOTS-certifierad',
+      'Brun eller rosa',
+    ],
+    specLabels: [undefined, undefined, 'Färger'],
+  },
 }

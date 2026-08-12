@@ -394,6 +394,38 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320
     ]
   },
+  "prod-fl-elefantti-duvet-set": {
+    "full": 900,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fl-lino-linen-duvet-set": {
+    "full": 900,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fl-reino-bath-towel": {
+    "full": 900,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fl-taistelevat-metsot": {
+    "full": 900,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-foodin-chaga-tincture": {
     "full": 800,
     "w": [

@@ -1367,4 +1367,48 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Muster'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Taistelevat metsot Satin-Bettwäsche-Set, Doppelbett',
+    description:
+      'Ferdinand von Wright malte die kämpfenden Auerhähne 1886, und daraus wurde eines der Gemälde, die jeder Finne benennen kann. Finlayson druckt es digital auf Satinbaumwolle, damit die Farben genau wiedergegeben werden. Die Rückseite des Bezugs ist einfarbig, bei den Kissenbezügen sitzt der Druck auf beiden Seiten.',
+    specs: [
+      'Satinbaumwolle',
+      'Doppelbett',
+      'Ferdinand von Wright, Taistelevat metsot (Kämpfende Auerhähne), 1886',
+    ],
+    specLabels: [undefined, undefined, 'Werk'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Lino Leinen-Bettwäsche-Set',
+    description:
+      'Gewaschenes Leinen mit besticktem Rand, in Flechtengrün oder Teerbraun. Leinen ist schwer und fällt steifer als Baumwolle, und es wird mit jeder Wäsche weicher, statt sich abzunutzen.',
+    specs: [
+      'Leinen',
+      '240 × 210 + 50 × 60 cm oder 150 × 210 + 50 × 60 cm',
+      'Flechtengrün oder Teerbraun',
+    ],
+    specLabels: [undefined, undefined, 'Farben'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Elefantti Bettwäsche-Set, Dunkelgrün',
+    description:
+      'Laina Koskela zeichnete Elefantti 1969 für einen Designwettbewerb, den Finlayson zusammen mit der Kunstgewerbeschule veranstaltete, und seitdem ist das Muster in Produktion. Baumwollperkal mit 152 Fäden pro Zoll, deshalb fühlt es sich auf der Haut kühl an und nicht weich.',
+    specs: [
+      'Baumwollperkal, 152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela, 1969',
+    ],
+    specLabels: [undefined, undefined, 'Entwurf'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Reino Badetuch 80 × 160 cm',
+    description:
+      'GOTS-zertifizierte Bio-Baumwolle, gewebt aus einem feinen Zwirn, damit es schnell trocknet und nicht feucht am Haken hängen bleibt. Volle Badetuchgröße, in Braun oder Pink.',
+    specs: [
+      '80 × 160 cm',
+      '100 % Bio-Baumwolle, GOTS-zertifiziert',
+      'Braun oder Pink',
+    ],
+    specLabels: [undefined, undefined, 'Farben'],
+  },
 }

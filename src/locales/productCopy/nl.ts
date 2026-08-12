@@ -1316,4 +1316,48 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Dessin'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Taistelevat metsot satijnen dekbedovertrekset, tweepersoons',
+    description:
+      'Ferdinand von Wright schilderde de vechtende auerhoenen in 1886 en het werd een van de schilderijen die elke Fin kan noemen. Finlayson drukt het digitaal op satijnkatoen, zodat de kleuren kloppen, met een effen achterkant en de print aan beide zijden van de kussenslopen.',
+    specs: [
+      'Satijnkatoen',
+      'Tweepersoons',
+      'Ferdinand von Wright, De vechtende auerhoenen (1886)',
+    ],
+    specLabels: [undefined, undefined, 'Kunstwerk'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Lino linnen dekbedovertrekset',
+    description:
+      'Gewassen linnen met een geborduurde rand, in korstmosgroen of teerbruin. Linnen is zwaar en valt stugger dan katoen, en het wordt bij elke wasbeurt zachter in plaats van te verslijten.',
+    specs: [
+      'Linnen',
+      '240 × 210 + 50 × 60 cm of 150 × 210 + 50 × 60 cm',
+      'Korstmosgroen of teerbruin',
+    ],
+    specLabels: [undefined, undefined, 'Kleuren'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Elefantti dekbedovertrekset, donkergroen',
+    description:
+      'Laina Koskela tekende Elefantti in 1969 voor een ontwerpwedstrijd van Finlayson en het Instituut voor Kunstnijverheid, en het is sindsdien in productie gebleven. Katoenperkal met 152 draden per inch, waardoor het koel aanvoelt in plaats van zacht.',
+    specs: [
+      'Katoenperkal, 152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela, 1969',
+    ],
+    specLabels: [undefined, undefined, 'Ontwerp'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Reino badhanddoek 80 × 160 cm',
+    description:
+      'GOTS-gecertificeerd biologisch katoen, geweven uit een fijn getwijnd garen zodat hij snel droogt in plaats van vochtig aan de haak te blijven hangen. Volledig badhanddoekformaat, in bruin of roze.',
+    specs: [
+      '80 × 160 cm',
+      '100 % biologisch katoen, GOTS-gecertificeerd',
+      'Bruin of roze',
+    ],
+    specLabels: [undefined, undefined, 'Kleuren'],
+  },
 }

@@ -1316,4 +1316,48 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Estampado'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Juego de funda nórdica de satén Taistelevat metsot, cama doble',
+    description:
+      'Ferdinand von Wright pintó los urogallos en combate en 1886 y se convirtió en uno de los cuadros que todo finlandés sabe nombrar. Finlayson lo estampa en algodón satén, en digital para que los colores se mantengan, con el reverso liso y el estampado en ambas caras de las fundas de almohada.',
+    specs: [
+      'Algodón satén',
+      'Cama doble',
+      'Ferdinand von Wright, Taistelevat metsot (Urogallos en combate), 1886',
+    ],
+    specLabels: [undefined, undefined, 'Obra'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Juego de funda nórdica de lino Lino',
+    description:
+      'Lino lavado con borde bordado, en verde liquen o marrón brea. El lino pesa y cae más rígido que el algodón, y se suaviza con cada lavado en lugar de desgastarse.',
+    specs: [
+      'Lino',
+      '240 × 210 + 50 × 60 cm o 150 × 210 + 50 × 60 cm',
+      'Verde liquen o marrón brea',
+    ],
+    specLabels: [undefined, undefined, 'Colores'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Juego de funda nórdica Elefantti, verde oscuro',
+    description:
+      'Laina Koskela dibujó Elefantti en 1969 para un concurso de diseño que Finlayson organizó con el Instituto de Artes Industriales, y desde entonces sigue en producción. Percal de algodón de 152 hilos por pulgada, por eso resulta fresco al tacto más que suave.',
+    specs: [
+      'Percal de algodón, 152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela, 1969',
+    ],
+    specLabels: [undefined, undefined, 'Diseño'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Toalla de baño Reino 80 × 160 cm',
+    description:
+      'Algodón orgánico con certificación GOTS, tejido con un hilo retorcido fino para que seque rápido en vez de quedarse húmedo en el gancho. Tamaño de toalla de baño completa, en marrón o rosa.',
+    specs: [
+      '80 × 160 cm',
+      '100 % algodón orgánico, certificado GOTS',
+      'Marrón o rosa',
+    ],
+    specLabels: [undefined, undefined, 'Colores'],
+  },
 }

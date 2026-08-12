@@ -1318,4 +1318,48 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '图案'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Taistelevat metsot 缎纹被套组，双人床',
+    description:
+      'Ferdinand von Wright 于 1886 年画下两只搏斗的松鸡，这幅画成了每个芬兰人都叫得出名字的作品之一。Finlayson 以数码印花把它印在缎纹棉布上，颜色因此还原得准确；被套背面是纯色，枕套两面都有印花。',
+    specs: [
+      '缎纹棉',
+      '双人床尺寸',
+      'Ferdinand von Wright，《搏斗的松鸡》（Taistelevat metsot，1886）',
+    ],
+    specLabels: [undefined, undefined, '画作'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Lino 亚麻被套组',
+    description:
+      '水洗亚麻，边缘带刺绣，有地衣绿和焦油棕两色。亚麻较重，垂坠时比棉布硬挺，而且每洗一次就更柔软一分，不会越洗越旧。',
+    specs: [
+      '亚麻',
+      '240 × 210 + 50 × 60 cm 或 150 × 210 + 50 × 60 cm',
+      '地衣绿或焦油棕',
+    ],
+    specLabels: [undefined, undefined, '颜色'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Elefantti 被套组，深绿',
+    description:
+      'Laina Koskela 在 1969 年为 Finlayson 与工艺美术学院合办的设计比赛画了 Elefantti，此后一直在生产。棉密织平纹布，每英寸 152 根纱线，所以贴身时感觉偏凉，而不是柔软。',
+    specs: [
+      '棉密织平纹布，152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela，1969',
+    ],
+    specLabels: [undefined, undefined, '设计'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Reino 浴巾 80 × 160 cm',
+    description:
+      'GOTS 认证有机棉，用细股线织成，因此干得快，不会挂在钩子上一直潮着。完整浴巾尺寸，有棕色和粉色两色。',
+    specs: [
+      '80 × 160 cm',
+      '100 % 有机棉，GOTS 认证',
+      '棕色或粉色',
+    ],
+    specLabels: [undefined, undefined, '颜色'],
+  },
 }

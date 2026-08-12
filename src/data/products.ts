@@ -4867,6 +4867,155 @@ export const PRODUCTS: Product[] = [
       fetchedAt: '2026-08-12',
     },
   },
+  {
+    slug: 'fl-taistelevat-metsot',
+    category: 'design',
+    brand: 'Finlayson',
+    name: {
+      en: 'Taistelevat metsot satin duvet set, double',
+      fi: 'Taistelevat metsot -satiinipussilakanasetti, parivuoteen',
+    },
+    description: {
+      en: 'Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. Finlayson prints it on satin cotton, digitally so the colours hold, with a plain reverse and the print on both sides of the pillowcases.',
+      fi: 'Ferdinand von Wright maalasi taistelevat metsot vuonna 1886, ja siitä tuli teos jonka jokainen suomalainen tunnistaa. Finlayson painaa sen satiinipuuvillalle digitaalisesti niin että värit toistuvat tarkasti. Peiton kääntöpuoli on yksivärinen, ja tyynyliinoissa printti on molemmin puolin.',
+    },
+    priceFrom: 169.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-fl-taistelevat-metsot',
+    imageIsPartner: true,
+    partnerId: 'finlayson',
+    partnerProductUrl:
+      'https://www.finlayson.fi/products/taistelevat-metsot-parivuoteen-satiinipussilakanasetti',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Satin cotton', fi: 'Satiinipuuvilla' } },
+        { key: 'size', value: { en: 'Double', fi: 'Parivuoteen koko' } },
+        {
+          key: 'other',
+          label: { en: 'Artwork', fi: 'Teos' },
+          value: {
+            en: 'Ferdinand von Wright, The Fighting Capercaillies (1886)',
+            fi: 'Ferdinand von Wright, Taistelevat metsot (1886)',
+          },
+        },
+      ],
+      sourceUrl:
+        'https://www.finlayson.fi/products/taistelevat-metsot-parivuoteen-satiinipussilakanasetti',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'fl-lino-linen-duvet-set',
+    category: 'design',
+    brand: 'Finlayson',
+    name: {
+      en: 'Lino linen duvet set',
+      fi: 'Lino-pellavapussilakanasetti',
+    },
+    description: {
+      en: 'Washed linen with an embroidered edge, in lichen green or tar brown. Linen is heavy and falls stiffer than cotton, and it gets softer with every wash rather than wearing out.',
+      fi: 'Pestyä pellavaa brodeeratulla reunalla, jäkälänvihreänä tai tervanruskeana. Pellava on painavaa ja laskeutuu jäykemmin kuin puuvilla, ja se pehmenee joka pesussa sen sijaan että kuluisi.',
+    },
+    priceFrom: 199.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-fl-lino-linen-duvet-set',
+    imageIsPartner: true,
+    partnerId: 'finlayson',
+    partnerProductUrl: 'https://www.finlayson.fi/products/lino-pellavapussilakanasetti-4',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Linen', fi: 'Pellava' } },
+        {
+          key: 'size',
+          value: {
+            en: '240 × 210 + 50 × 60 cm, or 150 × 210 + 50 × 60 cm',
+            fi: '240 × 210 + 50 × 60 cm tai 150 × 210 + 50 × 60 cm',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Colours', fi: 'Sävyt' },
+          value: { en: 'Lichen green or tar brown', fi: 'Jäkälänvihreä tai terva' },
+        },
+      ],
+      sourceUrl: 'https://www.finlayson.fi/products/lino-pellavapussilakanasetti-4',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'fl-elefantti-duvet-set',
+    category: 'design',
+    brand: 'Finlayson',
+    name: {
+      en: 'Elefantti duvet set, dark green',
+      fi: 'Elefantti-pussilakanasetti, tummanvihreä',
+    },
+    description: {
+      en: 'Laina Koskela drew Elefantti in 1969 for a design competition Finlayson ran with the Institute of Industrial Arts, and it has stayed in production since. Cotton percale at 152 threads per inch, which is why it feels cool rather than soft.',
+      fi: 'Laina Koskela piirsi Elefantin vuonna 1969 Finlaysonin ja Taideteollisen oppilaitoksen suunnittelukilpailuun, ja se on ollut tuotannossa siitä asti. Puuvillapalttinaa, lankaluku 152, mistä syystä se tuntuu iholla viileältä eikä pehmeältä.',
+    },
+    priceFrom: 124.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-fl-elefantti-duvet-set',
+    imageIsPartner: true,
+    partnerId: 'finlayson',
+    partnerProductUrl: 'https://www.finlayson.fi/products/elefantti-pussilakanasetti-6',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Cotton percale, 152 TC', fi: 'Puuvillapalttina, 152 TC' } },
+        { key: 'size', value: { en: '240 × 210 + 50 × 60 cm', fi: '240 × 210 + 50 × 60 cm' } },
+        {
+          key: 'other',
+          label: { en: 'Design', fi: 'Suunnittelu' },
+          value: { en: 'Laina Koskela, 1969', fi: 'Laina Koskela, 1969' },
+        },
+      ],
+      sourceUrl: 'https://www.finlayson.fi/products/elefantti-pussilakanasetti-6',
+      fetchedAt: '2026-08-12',
+    },
+  },
+  {
+    slug: 'fl-reino-bath-towel',
+    category: 'design',
+    brand: 'Finlayson',
+    name: {
+      en: 'Reino bath towel 80 × 160 cm',
+      fi: 'Reino-kylpypyyhe 80 × 160 cm',
+    },
+    description: {
+      en: 'GOTS-certified organic cotton, woven from a fine plied yarn so it dries fast instead of staying damp on the hook. Full bath size, in brown or pink.',
+      fi: 'GOTS-sertifioitua luomupuuvillaa, kudottu ohuesta kerratusta langasta jotta se kuivuu nopeasti eikä jää kostumaan koukkuun. Täysi kylpypyyhkeen koko, ruskeana tai pinkkinä.',
+    },
+    priceFrom: 49.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-08-12',
+    image: 'prod-fl-reino-bath-towel',
+    imageIsPartner: true,
+    partnerId: 'finlayson',
+    partnerProductUrl: 'https://www.finlayson.fi/products/reino-kylpypyyhe',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '80 × 160 cm', fi: '80 × 160 cm' } },
+        {
+          key: 'material',
+          value: {
+            en: '100 % organic cotton, GOTS certified',
+            fi: '100 % luomupuuvillaa, GOTS-sertifioitu',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Colours', fi: 'Sävyt' },
+          value: { en: 'Brown or pink', fi: 'Ruskea tai pinkki' },
+        },
+      ],
+      sourceUrl: 'https://www.finlayson.fi/products/reino-kylpypyyhe',
+      fetchedAt: '2026-08-12',
+    },
+  },
 ]
 
 export function productsByCategory(id: Product['category']): Product[] {

@@ -128,6 +128,23 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'eu',
     verifiedAt: '2026-08-02',
   },
+  finlayson: {
+    id: 'finlayson',
+    name: 'Finlayson',
+    // Adtraction-ohjelma on ollut Workerissa (`/go/finlayson`) mutta ilman
+    // yhtäkään tuotetta 12.8.2026 asti — Vesa kysyi Finlaysonin lakanoista ja
+    // reitti löytyi käyttämättömänä.
+    network: 'adtraction',
+    workerRoute: 'finlayson',
+    baseUrl: 'https://www.finlayson.fi',
+    // 🔴 VAIN SUOMI, ja tämä on luettu heidän omasta toimitusehdostaan
+    // 12.8.2026: "Toimitamme tilauksia vain Manner-Suomeen." Ei siis edes
+    // Ahvenanmaalle. Emme mallinna AX:ää erikseen, koska toimitusmaavalitsin
+    // kysyy maata eikä maakuntaa — mutta älä nosta tätä kauppaa
+    // kansainväliselle lukijalle: se on kaupan oma rajaus, ei arvaus.
+    shipsTo: 'fi',
+    verifiedAt: '2026-08-12',
+  },
   nordicnest: {
     id: 'nordicnest',
     name: 'Nordic Nest',

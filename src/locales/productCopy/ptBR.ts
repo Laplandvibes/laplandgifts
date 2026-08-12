@@ -1316,4 +1316,48 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Estampa'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Jogo de capa de edredom de cetim Taistelevat metsot, casal',
+    description:
+      'Ferdinand von Wright pintou os tetrazes em luta em 1886 e o quadro virou um dos que todo finlandês sabe nomear. A Finlayson o imprime em algodão acetinado, com impressão digital para que as cores se mantenham, verso liso e a estampa nos dois lados das fronhas.',
+    specs: [
+      'Algodão acetinado',
+      'Casal',
+      'Ferdinand von Wright, Taistelevat metsot (Os tetrazes em luta), 1886',
+    ],
+    specLabels: [undefined, undefined, 'Obra'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Jogo de capa de edredom de linho Lino',
+    description:
+      'Linho lavado com borda bordada, em verde-liquen ou marrom-piche. O linho é pesado e cai de forma mais rígida que o algodão, e amacia a cada lavagem em vez de se desgastar.',
+    specs: [
+      'Linho',
+      '240 × 210 + 50 × 60 cm ou 150 × 210 + 50 × 60 cm',
+      'Verde-liquen ou marrom-piche',
+    ],
+    specLabels: [undefined, undefined, 'Cores'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Jogo de capa de edredom Elefantti, verde-escuro',
+    description:
+      'Laina Koskela desenhou o Elefantti em 1969 para um concurso de design que a Finlayson realizou com o Instituto de Artes Industriais, e ele segue em produção desde então. Percal de algodão com 152 fios por polegada, por isso a sensação é de frescor e não de maciez.',
+    specs: [
+      'Percal de algodão, 152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela, 1969',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Toalha de banho Reino 80 × 160 cm',
+    description:
+      'Algodão orgânico com certificação GOTS, tecido com fio retorcido fino para secar rápido em vez de ficar úmido no gancho. Tamanho de banho completo, em marrom ou rosa.',
+    specs: [
+      '80 × 160 cm',
+      '100 % algodão orgânico, com certificação GOTS',
+      'Marrom ou rosa',
+    ],
+    specLabels: [undefined, undefined, 'Cores'],
+  },
 }

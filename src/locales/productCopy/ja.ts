@@ -1318,4 +1318,48 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '柄'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Taistelevat metsot サテン掛け布団カバーセット、ダブル',
+    description:
+      'Ferdinand von Wright は1886年に闘うオオライチョウ（Taistelevat metsot）を描き、フィンランド人なら誰もが名前を挙げられる絵の一つになりました。Finlayson はそれをサテンコットンにデジタルプリントし、色が正確に出るようにしています。掛け布団カバーの裏面は無地、枕カバーは両面にプリントが入ります。',
+    specs: [
+      'サテンコットン',
+      'ダブル',
+      'Ferdinand von Wright『Taistelevat metsot』（闘うオオライチョウ）1886年',
+    ],
+    specLabels: [undefined, undefined, '作品'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Lino リネン掛け布団カバーセット',
+    description:
+      '刺繍のふち取りが入ったウォッシュリネン。色はライケングリーン（地衣類の緑）とタールブラウン。リネンは重く、コットンより硬く落ちます。洗うたびに傷むのではなく、やわらかくなっていきます。',
+    specs: [
+      'リネン',
+      '240 × 210 + 50 × 60 cm または 150 × 210 + 50 × 60 cm',
+      'ライケングリーン（地衣類の緑）またはタールブラウン',
+    ],
+    specLabels: [undefined, undefined, 'カラー'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Elefantti 掛け布団カバーセット、ダークグリーン',
+    description:
+      'Laina Koskela は1969年、Finlayson と美術工芸学校が開いたデザインコンペのために Elefantti を描き、それ以来ずっと生産が続いています。1インチあたり152本の糸で織ったコットンパーケールで、そのため肌ざわりはやわらかいというよりひんやりします。',
+    specs: [
+      'コットンパーケール、152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela、1969年',
+    ],
+    specLabels: [undefined, undefined, 'デザイン'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Reino バスタオル 80 × 160 cm',
+    description:
+      'GOTS認証のオーガニックコットン。細い撚り糸で織ってあるので、フックにかけたまま湿っていることがなく、早く乾きます。フルサイズのバスタオルで、色はブラウンとピンク。',
+    specs: [
+      '80 × 160 cm',
+      'オーガニックコットン100 %、GOTS認証',
+      'ブラウンまたはピンク',
+    ],
+    specLabels: [undefined, undefined, 'カラー'],
+  },
 }

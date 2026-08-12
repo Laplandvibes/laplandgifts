@@ -1317,4 +1317,48 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Motif'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Parure de couette en satin Taistelevat metsot, deux places',
+    description:
+      'Ferdinand von Wright a peint le combat des grands tétras en 1886, et le tableau est devenu l\'un de ceux que tous les Finlandais savent nommer. Finlayson l\'imprime sur du coton satiné, en numérique pour que les couleurs tiennent, avec un envers uni et le motif des deux côtés des taies d\'oreiller.',
+    specs: [
+      'Coton satiné',
+      'Deux places',
+      'Ferdinand von Wright, Le combat des grands tétras (1886)',
+    ],
+    specLabels: [undefined, undefined, 'Œuvre'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Parure de couette en lin Lino',
+    description:
+      'Lin lavé à bord brodé, en vert lichen ou brun goudron. Le lin est lourd et tombe plus raide que le coton, et il s\'assouplit à chaque lavage au lieu de s\'user.',
+    specs: [
+      'Lin',
+      '240 × 210 + 50 × 60 cm ou 150 × 210 + 50 × 60 cm',
+      'Vert lichen ou brun goudron',
+    ],
+    specLabels: [undefined, undefined, 'Coloris'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Parure de couette Elefantti, vert foncé',
+    description:
+      'Laina Koskela a dessiné Elefantti en 1969 pour un concours de design organisé par Finlayson avec l\'Institut des arts industriels, et le motif est resté en production depuis. Percale de coton, 152 fils par pouce, d\'où une sensation fraîche plutôt que douce.',
+    specs: [
+      'Percale de coton, 152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela, 1969',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Drap de bain Reino 80 × 160 cm',
+    description:
+      'Coton biologique certifié GOTS, tissé dans un fil retors fin pour qu\'il sèche vite au lieu de rester humide sur le crochet. Format drap de bain complet, en brun ou rose.',
+    specs: [
+      '80 × 160 cm',
+      '100 % coton biologique, certifié GOTS',
+      'Brun ou rose',
+    ],
+    specLabels: [undefined, undefined, 'Coloris'],
+  },
 }

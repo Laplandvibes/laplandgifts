@@ -1316,4 +1316,48 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Fantasia'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Set copripiumino in raso Taistelevat metsot, matrimoniale',
+    description:
+      'Ferdinand von Wright dipinse i galli cedroni in lotta nel 1886 e il quadro è diventato uno di quelli che ogni finlandese sa nominare. Finlayson lo stampa su raso di cotone in digitale, così i colori restano fedeli. Il rovescio del copripiumino è in tinta unita e sulle federe la stampa è su entrambi i lati.',
+    specs: [
+      'Raso di cotone',
+      'Matrimoniale',
+      'Ferdinand von Wright, Taistelevat metsot (I galli cedroni in lotta, 1886)',
+    ],
+    specLabels: [undefined, undefined, 'Opera'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Set copripiumino Lino in tessuto di lino',
+    description:
+      'Lino lavato con bordo ricamato, in verde lichene o marrone catrame. Il lino è pesante e cade più rigido del cotone, e a ogni lavaggio diventa più morbido invece di consumarsi.',
+    specs: [
+      'Lino',
+      '240 × 210 + 50 × 60 cm oppure 150 × 210 + 50 × 60 cm',
+      'Verde lichene o marrone catrame',
+    ],
+    specLabels: [undefined, undefined, 'Colori'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Set copripiumino Elefantti, verde scuro',
+    description:
+      'Laina Koskela disegnò Elefantti nel 1969 per un concorso di design organizzato da Finlayson con l\'Istituto di arti industriali, ed è rimasto in produzione da allora. Percalle di cotone con 152 fili per pollice, per questo al tatto risulta fresco più che morbido.',
+    specs: [
+      'Percalle di cotone, 152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela, 1969',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Telo bagno Reino 80 × 160 cm',
+    description:
+      'Cotone biologico certificato GOTS, tessuto con un filato ritorto sottile in modo che asciughi in fretta invece di restare umido sul gancio. Misura intera da telo bagno, in marrone o rosa.',
+    specs: [
+      '80 × 160 cm',
+      '100 % cotone biologico, certificato GOTS',
+      'Marrone o rosa',
+    ],
+    specLabels: [undefined, undefined, 'Colori'],
+  },
 }

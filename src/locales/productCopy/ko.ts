@@ -1317,4 +1317,48 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '무늬'],
   },
+  'fl-taistelevat-metsot': {
+    name: 'Taistelevat metsot 새틴 이불커버 세트, 더블',
+    description:
+      'Ferdinand von Wright는 1886년에 싸우는 큰들꿩을 그렸고, 이 그림은 핀란드 사람이면 누구나 제목을 아는 작품이 되었습니다. Finlayson은 이 그림을 새틴 면에 디지털 방식으로 프린트해 색이 그대로 나옵니다. 이불커버 뒷면은 무지이고, 베개커버는 양면에 프린트가 들어갑니다.',
+    specs: [
+      '새틴 면',
+      '더블 사이즈',
+      'Ferdinand von Wright, 싸우는 큰들꿩(Taistelevat metsot, 1886)',
+    ],
+    specLabels: [undefined, undefined, '작품'],
+  },
+  'fl-lino-linen-duvet-set': {
+    name: 'Lino 리넨 이불커버 세트',
+    description:
+      '워싱 리넨에 자수 마감을 넣었고, 지의류 녹색과 타르 갈색 두 가지가 있습니다. 리넨은 무겁고 면보다 뻣뻣하게 떨어지며, 세탁할 때마다 낡아가는 대신 부드러워집니다.',
+    specs: [
+      '리넨',
+      '240 × 210 + 50 × 60 cm 또는 150 × 210 + 50 × 60 cm',
+      '지의류 녹색 또는 타르 갈색',
+    ],
+    specLabels: [undefined, undefined, '색상'],
+  },
+  'fl-elefantti-duvet-set': {
+    name: 'Elefantti 이불커버 세트, 진녹색',
+    description:
+      'Laina Koskela는 1969년 Finlayson이 산업미술학교와 함께 연 디자인 공모전을 위해 Elefantti를 그렸고, 그 뒤로 계속 생산되고 있습니다. 인치당 152올 면 퍼케일이라 피부에 닿을 때 부드럽기보다 시원합니다.',
+    specs: [
+      '면 퍼케일, 152 TC',
+      '240 × 210 + 50 × 60 cm',
+      'Laina Koskela, 1969',
+    ],
+    specLabels: [undefined, undefined, '디자인'],
+  },
+  'fl-reino-bath-towel': {
+    name: 'Reino 목욕 타월 80 × 160 cm',
+    description:
+      'GOTS 인증 오가닉 면을 가는 합사로 짜서, 걸어 둔 채 축축하게 있지 않고 빨리 마릅니다. 목욕 타월 전체 사이즈이며, 갈색과 분홍 두 가지가 있습니다.',
+    specs: [
+      '80 × 160 cm',
+      '오가닉 면 100 %, GOTS 인증',
+      '갈색 또는 분홍',
+    ],
+    specLabels: [undefined, undefined, '색상'],
+  },
 }
