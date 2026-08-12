@@ -7,7 +7,20 @@
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
 /images/*
-  Cache-Control: public, max-age=31536000, immutable
+  # 🔴 EI immutable, sama syy kuin /static/*- ja /guides/*-säännöissä alla.
+  # Mitattu 12.8.2026: Muurla-lasipullon 320/480/640-variantit puuttuivat
+  # yhdestä deploysta, ja niitä pyydettiin ennen kuin seuraava deploy oli
+  # levinnyt reunalle. SPA-fallback vastasi HTML:llä statuksella 200, ja se
+  # tallentui .avif-tiedoston nimen alle. `immutable` teki vahingosta
+  # pysyvän: tuotekortissa näkyi pelkkä alt-teksti vielä sen jälkeen kun
+  # oikea tiedosto oli livenä, eikä sitä voinut poistaa ilman
+  # purge-oikeutta.
+  #
+  # Tuotekuvan nimi EI ole sisältöhash (`prod-<slug>-480.avif`), joten
+  # selaimen ikuinen kopio on silti oikein: sama nimi tarkoittaa aina samaa
+  # kuvaa. Vain CDN:n kopion on vanhennuttava, jotta väärä vastaus rajautuu
+  # kymmeneen minuuttiin.
+  Cache-Control: public, max-age=31536000, s-maxage=600
 
 /guides/*
   # 🔴 s-maxage 600, sama syy kuin /static/*-säännössä alla. Mitattu 6.8.2026:
