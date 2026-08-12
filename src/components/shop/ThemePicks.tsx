@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react'
 import ProductCard from './ProductCard'
 import type { Product } from '../../data/types'
 import type { ThemeId } from '../../data/themes'
-import { byShippingBreadth } from '../../data/sortProducts'
+import { pickHighlights } from '../../data/sortProducts'
 import { useLocalePath, type Lang } from '../../i18n/useLang'
 import { THEME_COPY } from '../../locales/themeCopy'
 
@@ -32,9 +32,15 @@ export default function ThemePicks({
   const to = useLocalePath()
   const tt = THEME_COPY[lang]
   const name = tt.name[themeId]
-  // Poiminnassa laajimmin toimittavat ensin: nosto on sivun ensimmäinen asia,
-  // jonka lukija näkee, eikä siinä pidä olla vain Suomeen lähtevää tavaraa.
-  const picks = byShippingBreadth(items).slice(0, 4)
+  // 🔴 Kaksi järjestysehtoa. Laajimmin toimittavat ensin, koska nosto on
+  // sivun ensimmäinen asia eikä siinä pidä olla vain Suomeen lähtevää
+  // tavaraa. Sen jälkeen kallein ensin: katalogin oma järjestys nosti
+  // käsityösivun kärkeen yhdeksän euron saunasaippuan (Vesa 12.8.: "miksi
+  // ekana tulee saippuaa?"). Hinta ei ole laatumittari, mutta se on paras
+  // saatavilla oleva vihje siitä, mikä tuote kantaa osaston ilmeen —
+  // saunahattu ja vihta kertovat suomalaisesta saunasta enemmän kuin
+  // saippuatuubi.
+  const picks = pickHighlights(items, 4)
 
   return (
     <section className="mb-12">

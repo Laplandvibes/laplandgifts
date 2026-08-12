@@ -26,3 +26,25 @@ export function byShippingBreadth(products: Product[]): Product[] {
     .sort((a, b) => a.k - b.k || a.i - b.i)
     .map((x) => x.p)
 }
+
+/**
+ * Nostoruudukon `n` tuotetta: toimituslaajuus ensin, sitten kallein.
+ *
+ * 🔴 Miksi hinta toissijaisena avaimena (Vesa 12.8.: "miksi käsityöt-osiossa
+ * ekana tulee saippuaa?"): katalogin oma järjestys nosti käsityösivun
+ * kärkeen yhdeksän euron saunasaippuan. Hinta ei ole laatumittari, mutta se
+ * on paras saatavilla oleva vihje siitä, mikä tuote kantaa osaston ilmeen —
+ * saunahattu ja koivuvihta kertovat suomalaisesta saunasta enemmän kuin
+ * saippuatuubi.
+ *
+ * Toimituslaajuus voittaa hinnan aina: kallein tuote ei auta lukijaa, jolle
+ * sitä ei lähetetä. Juuri siksi design-sivun 159 euron maljakko ei nouse
+ * kärkeen — sitä ei toimiteta Suomen ulkopuolelle.
+ */
+export function pickHighlights(products: Product[], n: number): Product[] {
+  return products
+    .map((p, i) => ({ p, i, k: BREADTH[PARTNERS[p.partnerId]?.shipsTo] ?? 3 }))
+    .sort((a, b) => a.k - b.k || b.p.priceFrom - a.p.priceFrom || a.i - b.i)
+    .slice(0, n)
+    .map((x) => x.p)
+}
