@@ -45,12 +45,20 @@ export default function ProductCard({ product, lang }: { product: Product; lang:
   return (
     <Link
       to={to(`/product/${product.slug}`)}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-card transition-shadow hover:shadow-lg"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-sand-deep transition-shadow hover:shadow-lg"
     >
-      {/* Tausta on valkoinen eikä hiekka: kumppanien tuotekuvat on kuvattu
-          valkoista vasten, joten `contain`in jättämät reunat sulautuvat kuvaan
-          eivätkä piirrä sen ympärille kehystä. */}
-      <div className="product-media overflow-hidden bg-card p-3">
+      {/* 🔴 Kuvalava on valkoinen, mutta KORTTI on hiekkaa (Vesa 12.8.: "monet
+          taustat on liian valkoisia että itse tuote ei näytä kiinnostavalta
+          ollenkaan"). Mitattuna 93 kuvaa 114:stä oli reunaväriltään lähempänä
+          kuin 40 yksikköä korttitaustaa, ja 77 niistä oli pikselintarkasti
+          samaa #FFFFFF:ää: tuote kellui kortissa ilman mitään rajaa.
+
+          Lava pysyy valkoisena eikä hiekkana, koska kumppanien tuotekuvat on
+          kuvattu valkoista vasten: hiekkaisella lavalla kuvan oma valkoinen
+          suorakaide näkyisi kehyksenä `contain`in jättämien palkkien sisällä.
+          Raja tulee nyt lavan ympäriltä — valkoinen lava lämpimän kortin
+          päällä — eikä kuvan reunasta. */}
+      <div className="product-media m-2 mb-0 overflow-hidden rounded-xl bg-card p-3">
         {/* 🔴 srcSet + sizes. Mitattuna kortin kuvapaikka on 147 CSS-pikseliä
             390 pikselin ruudulla, mutta selain latasi 800 pikselin tiedoston,
             koska muuta ei ollut tarjolla eikä `sizes` kertonut paikan kokoa.

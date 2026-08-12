@@ -2,10 +2,12 @@ import { Fragment, lazy, type ReactElement } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { LANG_PREFIX } from './i18n/useLang'
 import { CATEGORIES } from './data/categories'
+import { THEMES } from './data/themes'
 import { boutiqueTownPaths } from './data/boutiques'
 
 const Home = lazy(() => import('./pages/Home'))
 const Category = lazy(() => import('./pages/Category'))
+const Theme = lazy(() => import('./pages/Theme'))
 const Product = lazy(() => import('./pages/Product'))
 const GiftGuides = lazy(() => import('./pages/GiftGuides'))
 const Boutiques = lazy(() => import('./pages/Boutiques'))
@@ -31,6 +33,9 @@ const NotFound = lazy(() => import('./pages/NotFound'))
 export const CONTENT_PATHS: string[] = [
   '/',
   ...CATEGORIES.map((c) => c.slug),
+  // Teemasivut tulevat datasta samoin kuin kategoriat: uusi teema saa
+  // reitin, prerenderin ja sitemap-rivin yhdella rivilla themes.ts:ssa.
+  ...THEMES.map((t) => `/theme/${t.id}`),
   '/gift-guides',
   '/shipping',
   '/boutiques',
@@ -51,6 +56,7 @@ const ELEMENTS: Record<string, ReactElement> = {
   '/gift-guides': <GiftGuides />,
   '/shipping': <Shipping />,
   '/boutiques': <Boutiques />,
+  ...Object.fromEntries(THEMES.map((t) => [`/theme/${t.id}`, <Theme />])),
   // 🔴 Ilman tätä riviä ELEMENTSin fallback tekisi /boutiques/rovaniemistä
   // kategoriasivun, joka ei löydä kategoriaa ja palauttaisi NotFoundin.
   // Vika näkyisi vasta selaimessa, ei buildissa.

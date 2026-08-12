@@ -11,8 +11,11 @@ import { productsByCategory } from '../data/products'
 import { GIFT_EXPERIENCES, EXPERIENCE_GROUPS, experiencesByGroup } from '../data/experiences'
 import { GYG_PRICE_AS_OF } from '../../../shared/gyg/picks'
 import { groupProducts, subgroupLabel } from '../data/subgroups'
+import { themesForCategory } from '../data/themes'
+import { byShippingBreadth } from '../data/sortProducts'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
+import ThemePicks from '../components/shop/ThemePicks'
 import { useShippingCountry } from '../context/ShippingCountry'
 import { useLang, stripLocale } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
@@ -43,12 +46,16 @@ export default function Category() {
   // tuotteen omaa listaa Moomin Shopin elintarvikkeet näkyisivät
   // yhdysvaltalaiselle ostajalle, vaikka niitä ei saa lähettää sinne: kauppa
   // on 'worldwide' mutta juuri ne tuotteet eivät ole.
+  // 🔴 Ilman maavalintaa ei suodateta mutta JÄRJESTETÄÄN: laajimmalle
+  // toimittavat ensin. Kärjessä oli 159 euron maljakko, jota ei lähetetä
+  // Suomen ulkopuolelle (Vesa 12.8.: "joka turisti lähtee pois heti").
+  // Järjestys ei piilota mitään — ks. data/sortProducts.ts.
   const visible = country
     ? all.filter((p) => {
         const partner = PARTNERS[p.partnerId]
         return shipsTo(partner.shipsTo, country, mergeExcept(partner.shipsExcept, p.shipsExcept))
       })
-    : all
+    : byShippingBreadth(all)
 
   // Kaksi eri tyhjää tilaa: kategoria odottaa vielä tuotteita (merch odottaa
   // Fourthwallia), tai tuotteita on mutta yksikään ei toimita valittuun maahan.
@@ -148,6 +155,23 @@ export default function Category() {
                   Ryhmittely ei piilota mitään: kartasta puuttuva tuote päätyy
                   nimettömään ryhmään listan loppuun, ja jos ryhmiä on vain
                   yksi, otsikkoa ei näytetä lainkaan. */}
+              {/* 🔴 Teemapoiminnat ennen alaryhmiä. Käsityösivu avautui
+                  ensimmäiseen alaryhmään eli saippuaan (Vesa 12.8.: "miksi
+                  käsityöt-osiossa ekana tulee saippuaa? pitäisi olla
+                  kategorisoitu että heti tästä alusta voi valita mitä haluaa
+                  katsoa"). Nosto näyttää heti mistä sivulla on kyse ja vie
+                  yhdellä klikillä koko teemaan kategorian yli.
+
+                  Vain kaksi vahvinta: kolmas nosto työntäisi varsinaisen
+                  valikoiman kahden ruudun päähän. Suodatettua listaa ei
+                  nosteta, koska maavalinnan tehnyt lukija näkee jo pelkkää
+                  itselleen toimitettavaa. */}
+              {!country &&
+                themesForCategory(category.id)
+                  .slice(0, 2)
+                  .map(({ theme, items }) => (
+                    <ThemePicks key={theme.id} themeId={theme.id} items={items} lang={lang} />
+                  ))}
               {(() => {
                 const groups = groupProducts(category.id, visible)
                 if (!visible.length || groups.length <= 1) {
