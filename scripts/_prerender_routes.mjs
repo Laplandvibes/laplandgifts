@@ -60,6 +60,23 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
+// Shared with the other LV prerenderers so this fork cannot silently drift again.
+//
+// Loaded DYNAMICALLY on purpose: this site is its own git repo, while the module
+// lives in the parent monorepo. A static import would fail at module-resolution
+// time — before any code runs — and hard-break the build if this repo is ever
+// built standalone (e.g. in its own CI). This way a missing module just turns the
+// crawlable-body feature off and the prerender still produces its normal output.
+let crawlableMod = null;
+try {
+  crawlableMod = await import("../../_prerender_crawlable_body.mjs");
+} catch {
+  console.warn("[prerender] NOTE: _prerender_crawlable_body.mjs not reachable — crawlable body disabled");
+}
+const readFooterNetwork = crawlableMod?.readFooterNetwork ?? (() => null);
+const buildCrawlableBody = crawlableMod?.buildCrawlableBody ?? (() => null);
+const stripCrawlableBody = crawlableMod?.stripCrawlableBody ?? ((h) => h);
+const injectCrawlableBody = crawlableMod?.injectCrawlableBody ?? ((h) => h);
 
 const CWD = process.cwd();
 const args = Object.fromEntries(
@@ -75,6 +92,12 @@ if (!SITE) {
   process.exit(1);
 }
 const SITE_NAME = args.siteName || 'LaplandVibes';
+const NETWORK = args.crawlableBody ? readFooterNetwork(CWD) : null;
+// Internal links for the crawlable block, filled by pass 0 of the route loop.
+const INTERNAL_BY_LANG = {};
+if (args.crawlableBody && !NETWORK) {
+  console.warn("[prerender] WARN: --crawlableBody set but shared/Footer.tsx links/labels could not be read — skipping body injection");
+}
 const TWITTER = args.twitter || '@laplandvibes';
 const DEFAULT_OG = args.defaultOg || '/og-default.jpg';
 const ROUTES_FILE = resolve(CWD, args.routes || 'scripts/routes.json');
@@ -92,7 +115,9 @@ if (!existsSync(ROUTES_FILE)) {
   process.exit(1);
 }
 
-const SHELL = readFileSync(resolve(DIST, 'index.html'), 'utf-8');
+// Stripped on read: this script overwrites the very file it reads its shell from,
+// so without this a re-run would give every route the HOME page block.
+const SHELL = stripCrawlableBody(readFileSync(resolve(DIST, "index.html"), "utf-8"));
 const routes = JSON.parse(readFileSync(ROUTES_FILE, 'utf-8'));
 
 // Locale config — keep in sync with src/components/SEO.tsx PATH_PREFIX/BCP47/OG_LOCALE
@@ -416,7 +441,7 @@ function hasTagOutsideComments(html, pattern) {
   return pattern.test(stripped);
 }
 
-function injectShell({ shell, bcp47, og, canonical, title, description, hreflangs, ogImage }) {
+function injectShell({ shell, bcp47, og, canonical, title, description, hreflangs, ogImage, lang, internalLinks }) {
   let html = shell;
 
   html = html.replace(/<html\s+lang="[^"]*"/i, `<html lang="${bcp47}"`);
@@ -513,6 +538,11 @@ function injectShell({ shell, bcp47, og, canonical, title, description, hreflang
   setMeta('name', 'twitter:site', TWITTER);
   setMeta('name', 'twitter:image', /^https?:/.test(ogImage) ? ogImage : `${SITE}${ogImage}`);
 
+  html = injectCrawlableBody(
+    html,
+    buildCrawlableBody(NETWORK, { title, description, lang, siteOrigin: SITE, siteName: SITE_NAME, internalLinks, selfUrl: canonical })
+  );
+
   return html;
 }
 
@@ -533,6 +563,10 @@ let written = 0;
 const summary = [];
 const debugNoMeta = [];
 
+// Two passes over the SAME loop: pass 0 collects internal links from this
+// fork's own meta cascade, pass 1 writes the files. Avoids a second copy of
+// the cascade, which is the drift that made these forks a problem.
+for (let __pass = 0; __pass < 2; __pass++)
 for (const route of routes) {
   const routePath = route.path;
   const ogImage = route.ogImage || DEFAULT_OG;
@@ -573,6 +607,11 @@ for (const route of routes) {
 
     const cleanPath = routePath === '/' ? '' : routePath;
     const canonical = `${SITE}${loc.prefix}${cleanPath || '/'}`.replace(/\/$/, cleanPath ? '' : '/');
+    if (__pass === 0) {
+      const __t = String(meta.title || '').split(/\s[|—]\s/)[0].trim();
+      if (__t) (INTERNAL_BY_LANG[loc.lang] = INTERNAL_BY_LANG[loc.lang] || []).push({ url: canonical, text: __t });
+      continue;
+    }
 
     const hreflangs = LOCALE_LIST.map((l) => ({
       hreflang: l.lang === 'en' ? 'en' : l.lang,
@@ -589,8 +628,10 @@ for (const route of routes) {
           );
 
     const html = injectShell({
+      internalLinks: INTERNAL_BY_LANG[loc.lang],
       shell: SHELL,
       bcp47: loc.bcp47,
+      lang: loc.lang,
       og: loc.og,
       canonical,
       title: meta.title,
