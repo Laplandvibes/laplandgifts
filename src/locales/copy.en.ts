@@ -193,7 +193,7 @@ const en: ChromeCopy = {
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
       { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
-    editorialNote: 'Independently maintained by Lapeso Oy in Finnish Lapland · last reviewed May 2026 · we partner with selected artisans and shops directly, with full disclosure on every product page.',
+    editorialNote: 'Independently maintained by LaPeso Oy (business ID 3309136-7) · last reviewed May 2026 · we partner with selected artisans and shops directly, with full disclosure on every product page.',
     extraLegalUnsub: 'Unsubscribe',
   },
   notFound: {

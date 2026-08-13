@@ -193,7 +193,7 @@ const sv: ChromeCopy = {
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
       { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
-    editorialNote: 'Oberoende drivet av Lapeso Oy i finska Lappland · senast granskat i maj 2026 · vi samarbetar direkt med utvalda hantverkare och butiker, med full öppenhet på varje produktsida.',
+    editorialNote: 'Oberoende drivet av LaPeso Oy (FO-nummer 3309136-7) · senast granskat i maj 2026 · vi samarbetar direkt med utvalda hantverkare och butiker, med full öppenhet på varje produktsida.',
     extraLegalUnsub: 'Avsluta prenumeration',
   },
   notFound: {

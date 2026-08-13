@@ -193,7 +193,7 @@ const ko: ChromeCopy = {
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
       { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
-    editorialNote: '라플란드의 Lapeso Oy가 독립적으로 운영합니다 · 마지막 검토: 2026년 5월 · 엄선된 장인과 상점과 직접 제휴하며, 모든 상품 페이지에서 이를 명시합니다.',
+    editorialNote: 'LaPeso Oy(사업자번호 3309136-7)가 독립적으로 운영합니다 · 마지막 검토: 2026년 5월 · 엄선된 장인과 상점과 직접 제휴하며, 모든 상품 페이지에서 이를 명시합니다.',
     extraLegalUnsub: '구독 해지',
   },
   notFound: {

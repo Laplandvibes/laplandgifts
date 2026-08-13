@@ -193,7 +193,7 @@ const zhCN: ChromeCopy = {
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
       { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
-    editorialNote: '由位于芬兰拉普兰的 Lapeso Oy 独立运营 · 最后审阅:2026年5月 · 我们直接与精选工匠和商家合作,并在每个商品页面上完整披露。',
+    editorialNote: '由 LaPeso Oy（企业代码 3309136-7）独立运营 · 最后审阅:2026年5月 · 我们直接与精选工匠和商家合作,并在每个商品页面上完整披露。',
     extraLegalUnsub: '取消订阅',
   },
   notFound: {

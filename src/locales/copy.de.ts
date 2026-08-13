@@ -193,7 +193,7 @@ const de: ChromeCopy = {
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
       { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
-    editorialNote: 'Unabhängig betreut von Lapeso Oy in Finnisch-Lappland · zuletzt überprüft Mai 2026 · wir kooperieren direkt mit ausgewählten Handwerkern und Geschäften und legen das auf jeder Produktseite offen.',
+    editorialNote: 'Unabhängig betreut von LaPeso Oy (Handelsregisternummer 3309136-7) · zuletzt überprüft Mai 2026 · wir kooperieren direkt mit ausgewählten Handwerkern und Geschäften und legen das auf jeder Produktseite offen.',
     extraLegalUnsub: 'Newsletter abbestellen',
   },
   notFound: {

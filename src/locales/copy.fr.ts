@@ -194,7 +194,7 @@ const fr: ChromeCopy = {
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
       { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
-    editorialNote: 'Édité de façon indépendante par Lapeso Oy en Laponie finlandaise · dernière vérification mai 2026 · nous travaillons directement avec des artisans et boutiques sélectionnés, en toute transparence sur chaque fiche produit.',
+    editorialNote: 'Édité de façon indépendante par LaPeso Oy (n° d’entreprise 3309136-7) · dernière vérification mai 2026 · nous travaillons directement avec des artisans et boutiques sélectionnés, en toute transparence sur chaque fiche produit.',
     extraLegalUnsub: 'Se désabonner',
   },
   notFound: {
