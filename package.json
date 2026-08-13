@@ -4,7 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "sync:shared": "node scripts/sync-shared.mjs",
+    "predev": "node scripts/sync-shared.mjs",
     "dev": "vite",
+    "prebuild": "node scripts/sync-shared.mjs",
     "build:nossg": "tsc -b && vite build",
     "build": "node scripts/build-routes-json.mjs && node scripts/build-sitemap.mjs && tsc -b && vite build && node scripts/_prerender_routes.mjs --site=https://laplandgifts.com --siteName=LaplandGifts --twitter=@laplandvibes --defaultOg=/og-default.jpg?v=20260812 --routes=scripts/routes.json",
     "lint": "eslint .",
