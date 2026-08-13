@@ -163,7 +163,7 @@ const COPY: Record<Lang, {
     s3Items: [
       { strong: 'Välttämättömät evästeet', body: 'tarvitaan sivuston toiminnan kannalta (suostumusvalinta, istuntotiedot).' },
       { strong: 'Analytiikkaevästeet', body: 'Google Analytics 4 käyttää näitä ymmärtääkseen, miten kävijät käyttävät sivustoa. Kerätään anonyymisti.' },
-      { strong: 'Kumppanievästeet', body: 'asetetaan, kun klikkaat kumppanilinkkiä (esim. Adtraction, Daisycon- tai Travelpayouts-seuranta). Näiden avulla varauspalvelut kohdistavat komission oikealle lähteelle.' },
+      { strong: 'Kumppanievästeet', body: 'asetetaan, kun klikkaat kumppanilinkkiä (esim. Adtraction-, Daisycon- tai Travelpayouts-seuranta). Näiden avulla varauspalvelut kohdistavat komission oikealle lähteelle.' },
     ],
     s3Tail: (cookieLink) => <>Analytiikkaevästeet asetetaan vasta sen jälkeen, kun olet antanut suostumuksesi evästebannerista. Katso täydelliset tiedot {cookieLink}.</>,
     s4Title: '4. Google Analytics',
