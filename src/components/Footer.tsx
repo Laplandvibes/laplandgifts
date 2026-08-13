@@ -2,6 +2,7 @@ import { Suspense, lazy } from 'react'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { footerDict } from '../locales/footerDict'
+import { AI_NOTE } from './AiDisclosure'
 
 /**
  * 🔴 Jaettu ekosysteemifooter ladataan laiskasti.
@@ -39,7 +40,11 @@ export default function Footer() {
     <Suspense fallback={<div className="h-[36rem] bg-finland" aria-hidden="true" />}>
       <SharedFooter
         pillarLinks={FOOTER_PILLARS}
-        editorialNote={t.editorialNote}
+        /* EU AI Act art. 50: the site-wide half of the AI transparency
+           marking. It rides on `editorialNote` so it reaches every page
+           without editing the shared ecosystem Footer, which has to stay
+           identical across the network. */
+        editorialNote={`${t.editorialNote} · ${AI_NOTE[lang]}`}
         extraLegalLinks={FOOTER_EXTRA_LEGAL}
         dict={footerDict(lang)}
       />

@@ -75,7 +75,10 @@ export default function Terms() {
       </header>
 
       <main className="max-w-3xl mx-auto px-4 py-16">
-        <TermsContent siteName="LaplandGifts" siteUrl="laplandgifts.com" lang={lang} />
+        {/* variant="shop": this site sells nothing and books nothing, so the
+            network's travel wording (hotel/flight search, Sembo, Trip.com,
+            travel insurance) was factually wrong here. Audit 13.8.2026. */}
+        <TermsContent siteName="LaplandGifts" siteUrl="laplandgifts.com" lang={lang} variant="shop" />
       </main>
 
       <Footer />

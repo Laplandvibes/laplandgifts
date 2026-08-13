@@ -4,6 +4,7 @@ import type { GiftExperience } from '../../data/experiences'
 import { AFFILIATE_REL } from '../../data/partners'
 import type { Lang } from '../../i18n/useLang'
 import { SHOP_COPY } from '../../locales/shopCopy'
+import AiDisclosure from '../AiDisclosure'
 
 /**
  * Elämyskortti. Linkki rakennetaan aina gygHref():llä, joka reitittää
@@ -19,7 +20,7 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
           eikä erottunut mistään (Vesa 1.8.). Kuva on AI-generoitu: verkoston
           linjaus on, ettei GetYourGuiden kuvia oteta, koska ne kuuluvat
           retkien jarjestajille eivatka kumppanillemme. */}
-      <div className="category-media overflow-hidden bg-sand-deep">
+      <div className="category-media relative overflow-hidden bg-sand-deep">
         <picture>
           <source
             type="image/avif"
@@ -38,6 +39,11 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
             className="h-full w-full object-cover"
           />
         </picture>
+        {/* EU AI Act art. 50. This card names a real, bookable tour at a real
+            place, and the art is photorealistic — without the mark a reader
+            reads it as a photograph of that place, which is exactly the
+            deep-fake test in art. 3(60). */}
+        <AiDisclosure lang={lang} />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-muted">
