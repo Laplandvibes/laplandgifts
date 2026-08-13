@@ -44,7 +44,7 @@ export default function Home() {
           headerin ankkurinavi (#categories, #products) toimi vain etusivulla. */}
       <ShopNav />
 
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Hero />
         {/* App launch block, directly under the site's own opening. At the foot
             of the page it measured 81 % down a 33 000 px front page, and an

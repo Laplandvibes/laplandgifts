@@ -34,7 +34,7 @@ export default function GiftGuides() {
   return (
     <>
       <ShopNav />
-      <main className="bg-sand pb-14 md:pb-20">
+      <main className="bg-sand pb-14 md:pb-20" id="main-content" tabIndex={-1}>
         {/* Sivun otsikko valkoisella pohjalla ja sen alla neljän tilaisuuden
             värit nauhana: lukija näkee heti, että sivu jakautuu neljään. */}
         <header className="border-b border-line bg-card">

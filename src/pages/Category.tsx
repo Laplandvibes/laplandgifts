@@ -66,7 +66,7 @@ export default function Category() {
   return (
     <>
       <ShopNav />
-      <main className="bg-sand">
+      <main className="bg-sand" id="main-content" tabIndex={-1}>
         <header className="relative overflow-hidden">
           <picture>
             <source srcSet={imgSrcSet(category.image, 'avif')} sizes="100vw" type="image/avif" />

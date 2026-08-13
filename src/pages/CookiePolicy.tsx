@@ -75,7 +75,7 @@ export default function CookiePolicy() {
         </div>
       </header>
 
-      <main className="max-w-3xl mx-auto px-4 py-16">
+      <main className="max-w-3xl mx-auto px-4 py-16" id="main-content" tabIndex={-1}>
         <CookieContent siteName="LaplandGifts" siteId="laplandgifts" lang={lang} />
         {/* 🔴 Peruutus on TÄLLÄ sivulla eikä bannerissa: CookieBanner on
             verkoston jaettu komponentti, jonka on oltava identtinen joka

@@ -12,6 +12,7 @@ import { byShippingBreadth } from '../data/sortProducts'
 import { brandByName } from '../data/brands'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept } from '../data/shipping'
+import { TAX_NOTE } from '../locales/complianceCopy'
 import { countryNames } from '../data/countryNames'
 import { categoryById } from '../data/categories'
 import { useLang, useLocalePath } from '../i18n/useLang'
@@ -55,7 +56,7 @@ export default function Product() {
   return (
     <>
       <ShopNav />
-      <main className="bg-sand">
+      <main className="bg-sand" id="main-content" tabIndex={-1}>
         <div className="mx-auto max-w-7xl px-4 py-8 md:py-12">
           <Link
             to={to(category.slug)}
@@ -139,6 +140,11 @@ export default function Product() {
               <p className="text-sm text-muted">
                 {t.product.priceNote(product.priceCheckedAt, partner.name)}
               </p>
+              {/* Auditti 13.8.2026: yksikään sivu ei kertonut sisältyykö alv
+                  hintaan tai tuleeko EU:n ulkopuolelle tullia. Teksti on
+                  hinnan vieressä eikä vain käyttöehdoissa, koska siellä
+                  ostopäätös tehdään. */}
+              <p className="text-sm text-muted">{TAX_NOTE[lang]}</p>
 
               {/* sid kantaa tuoteslugin: vakio "gifts_product_cta" olisi yksi
                   raportointirivi 77 tuotteelle, eikä komissiota voisi yhdistää

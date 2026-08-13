@@ -25,7 +25,7 @@ export default function Boutique() {
   return (
     <>
       <ShopNav />
-      <main className="bg-sand">
+      <main className="bg-sand" id="main-content" tabIndex={-1}>
         <div className="mx-auto max-w-3xl px-4 pt-8 pb-4">
           <Link
             to={localePath('/boutiques')}

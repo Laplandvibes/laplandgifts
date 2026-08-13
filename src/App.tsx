@@ -4,6 +4,7 @@ import NewsletterPopup from './components/NewsletterPopup'
 import { useEffect, useReducer, Suspense, type ReactNode } from 'react'
 import CookieBanner from './shared/CookieBanner'
 import AppRoutes from './routes'
+import SkipLink from './components/SkipLink'
 import { ShippingCountryProvider } from './context/ShippingCountry'
 import { trackPageView } from './lib/analytics'
 import { initConsent } from './lib/consent'
@@ -72,6 +73,8 @@ function LocalisedCookieBanner() {
 function App() {
   return (
     <BrowserRouter>
+      {/* Ensimmäisenä tab-järjestyksessä, muuten se ei ohita mitään. */}
+      <SkipLink />
       <ConsentGate />
       <ScrollToTop />
       <LocaleAutoRedirect />

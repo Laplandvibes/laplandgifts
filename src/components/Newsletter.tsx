@@ -1,15 +1,19 @@
 import { useState } from 'react'
 import { Mail, ArrowRight, Download, BookOpen, Map } from 'lucide-react'
 import { trackNewsletterSignup } from '../lib/analytics'
-import { useLang } from '../i18n/useLang'
+import { Link } from 'react-router-dom'
+import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
+import { NEWSLETTER_PRIVACY } from '../locales/complianceCopy'
 import FounderByline from '../../../shared/FounderByline';
 
 const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY
 
 function Newsletter() {
-  const t = COPY[useLang()].newsletter
+  const lang = useLang()
+  const to = useLocalePath()
+  const t = COPY[lang].newsletter
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
 
@@ -108,7 +112,15 @@ function Newsletter() {
           <p className="text-red-500 mt-3 text-sm">{t.errorMsg}</p>
         )}
 
-        <p className="text-gray/40 text-xs mt-4">{t.spamNote}</p>
+        {/* Tietosuoja-asetuksen 13 art.: käsittelystä on kerrottava
+            keruuhetkellä, ei vasta alatunnisteen linkin takana. */}
+        <p className="text-gray/40 text-xs mt-4">
+          {t.spamNote}{' '}
+          {NEWSLETTER_PRIVACY[lang].lead}{' '}
+          <Link to={to('/privacy')} className="underline hover:text-amber">
+            {NEWSLETTER_PRIVACY[lang].link}
+          </Link>
+        </p>
       </div>
     </section>
   )

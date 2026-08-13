@@ -54,7 +54,7 @@ export default function Luxury() {
   return (
     <>
       <ShopNav />
-      <main className="bg-night">
+      <main className="bg-night" id="main-content" tabIndex={-1}>
         {/* Musta kiilto: kaksi hyvin tummaa sävyä ja yksi vaalea heijastus,
             ei kuvaa. Kuva veisi huomion tuotteilta, ja mikä tahansa
             maisemakuva olisi tässä koristetta. */}

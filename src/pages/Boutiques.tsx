@@ -26,7 +26,7 @@ export default function Boutiques() {
   return (
     <>
       <ShopNav />
-      <main className="bg-sand">
+      <main className="bg-sand" id="main-content" tabIndex={-1}>
         <header className="mx-auto max-w-7xl px-4 pt-10 pb-6">
           <h1 className="font-heading text-5xl tracking-wide text-night md:text-6xl">
             {t.hubTitle}
