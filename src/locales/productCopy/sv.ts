@@ -986,10 +986,10 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Presentkort'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin Sexsvampsblandning 100 g',
+    name: 'Foodin Sexsvampsblandning 40 g',
     description:
       'Chaga, reishi, lion\'s mane, cordyceps, shiitake och maitake i samma burk, malda för kaffe eller smoothies. En burk täcker hela svamphyllan.',
-    specs: ['100 g', 'Chaga, reishi, lion\'s mane, cordyceps, shiitake, maitake'],
+    specs: ['40 g', 'Chaga, reishi, lion\'s mane, cordyceps, shiitake, maitake'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin Nordiska bär pulverblandning 120 g',

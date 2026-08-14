@@ -985,10 +985,10 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Carte cadeau'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin mélange de six champignons 100 g',
+    name: 'Foodin mélange de six champignons 40 g',
     description:
       'Chaga, reishi, crinière de lion, cordyceps, shiitaké et maitaké dans un seul pot, moulus pour le café ou les smoothies. Un pot couvre tout le rayon des champignons fonctionnels.',
-    specs: ['100 g', 'Chaga, reishi, crinière de lion, cordyceps, shiitaké, maitaké'],
+    specs: ['40 g', 'Chaga, reishi, crinière de lion, cordyceps, shiitaké, maitaké'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin mélange de baies nordiques en poudre 120 g',

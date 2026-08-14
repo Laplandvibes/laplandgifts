@@ -2371,25 +2371,29 @@ export const PRODUCTS: Product[] = [
     slug: 'foodin-six-mushroom-blend',
     category: 'superfoods',
     brand: 'Foodin',
-    name: { en: 'Foodin six mushroom blend 100 g', fi: 'Foodin Kuuden sienen sekoitus 100 g' },
+    // 🔴 Ruohonjuuri korvasi 100 g:n purkin 40 g:n purkilla uudella URLilla:
+    // vanha ...-siitake-maitake-cordyceps-100-g palautti 404:n 15.8.2026, ja
+    // kaupan haku tuntee vain 40 g:n version. Hinta 21,90 € luettu uuden
+    // sivun JSON-LD:stä (InStock) 15.8.2026.
+    name: { en: 'Foodin six mushroom blend 40 g', fi: 'Foodin Kuuden sienen sekoitus 40 g' },
     description: {
       en: 'Chaga, reishi, lion’s mane, cordyceps, shiitake and maitake in one jar, ground for coffee or smoothies. One jar covers the whole functional mushroom shelf.',
       fi: 'Pakuri, reishi, siiliorakas, cordyceps, siitake ja maitake samassa purkissa, jauhettuna kahviin tai smoothieen. Yksi purkki kattaa koko sienihyllyn.',
     },
     priceFrom: 21.9,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-06',
+    priceCheckedAt: '2026-08-15',
     image: 'prod-foodin-six-mushroom-blend',
     imageIsPartner: true,
     partnerId: 'ruohonjuuri',
-    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/foodin-kuuden-sienen-sekoitus-chaga-reishi-lions-mane-siitake-maitake-cordyceps-100-g',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/foodin-kuuden-sienen-sekoitus-chaga-reishi-lions-mane-shiitake-maitake-cordyceps-40-g',
     details: {
       specs: [
-        { key: 'size', value: { en: '100 g', fi: '100 g' } },
+        { key: 'size', value: { en: '40 g', fi: '40 g' } },
         { key: 'contents', value: { en: 'Chaga, reishi, lion’s mane, cordyceps, shiitake, maitake', fi: 'Pakuri, reishi, siiliorakas, cordyceps, siitake, maitake' } },
       ],
-      sourceUrl: 'https://www.ruohonjuuri.fi/products/foodin-kuuden-sienen-sekoitus-chaga-reishi-lions-mane-siitake-maitake-cordyceps-100-g',
-      fetchedAt: '2026-08-06',
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/foodin-kuuden-sienen-sekoitus-chaga-reishi-lions-mane-shiitake-maitake-cordyceps-40-g',
+      fetchedAt: '2026-08-15',
     },
   },
   {

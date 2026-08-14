@@ -984,10 +984,10 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Stagione', 'Carta regalo'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin miscela di sei funghi 100 g',
+    name: 'Foodin miscela di sei funghi 40 g',
     description:
       'Chaga, reishi, criniera di leone, cordyceps, shiitake e maitake in un solo barattolo, macinati per caffè o frullati. Un barattolo copre l\'intero scaffale dei funghi funzionali.',
-    specs: ['100 g', 'Chaga, reishi, criniera di leone, cordyceps, shiitake, maitake'],
+    specs: ['40 g', 'Chaga, reishi, criniera di leone, cordyceps, shiitake, maitake'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin miscela di bacche nordiche in polvere 120 g',

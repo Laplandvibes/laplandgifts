@@ -984,10 +984,10 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Tarjeta regalo'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin mezcla de seis setas 100 g',
+    name: 'Foodin mezcla de seis setas 40 g',
     description:
       'Chaga, reishi, melena de león, cordyceps, shiitake y maitake en un solo bote, molidos para café o batidos. Un bote cubre toda la estantería de setas funcionales.',
-    specs: ['100 g', 'Chaga, reishi, melena de león, cordyceps, shiitake, maitake'],
+    specs: ['40 g', 'Chaga, reishi, melena de león, cordyceps, shiitake, maitake'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin mezcla de bayas nórdicas en polvo 120 g',

@@ -641,6 +641,24 @@ const moominMugs = enFiOnly(
   },
 )
 
+// Opassivu: kohdetermi on suomenkielinen ("pakuri"), sisältö kirjoitettu
+// suomeksi ja englanniksi (Pakuri.tsx). Sama enFiOnly-malli kuin
+// keräilijäsivulla. 🔴 Ei terveysväitteitä metassakaan: kuvaus lupaa
+// rehellisen katsauksen, ei vaikutuksia.
+const pakuri = enFiOnly(
+  '/pakuri',
+  {
+    title: 'Chaga: what it is and how to use it | LaplandGifts',
+    description:
+      'What chaga (pakuri) is, how chunks, extract powder and tincture are used, what research says and does not, and why harvesting needs the landowner’s permission.',
+  },
+  {
+    title: 'Pakuri: käyttö, tutkimus ja pohjoinen keruu | LaplandGifts',
+    description:
+      'Mitä pakuri eli pakurikääpä on, miten rouhetta, uutejauhetta ja tinktuuraa käytetään, mitä tutkimus sanoo ja mitä ei, ja miksi keruu vaatii maanomistajan luvan.',
+  },
+)
+
 // Sama tietoinen valinta kuin enFiOnly, mutta natiivit kielet ovat saksa ja
 // englanti: /finnish-specialties on saksalaiselle ostajalle kirjoitettu opas
 // (kohdetermi "finnische spezialitäten"), jonka sisältö on de+en. Muut
@@ -746,6 +764,7 @@ const routes = [
   giftGuides,
   specialties,
   moominMugs,
+  pakuri,
   shipping,
   boutiqueHubRoute,
   ...boutiqueTownRoutes,

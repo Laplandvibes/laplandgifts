@@ -1,4 +1,4 @@
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import ShopNav from '../components/ShopNav'
 // src/shared/Footer on jaettu SharedFooter, joka odottaa dict-propin.
 // components/Footer on tämän sivuston kääre, joka syöttää sille COPY:n ja
@@ -17,7 +17,7 @@ import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
 import ThemePicks from '../components/shop/ThemePicks'
 import { useShippingCountry } from '../context/ShippingCountry'
-import { useLang, stripLocale } from '../i18n/useLang'
+import { useLang, useLocalePath, stripLocale } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
@@ -28,6 +28,7 @@ import NotFound from './NotFound'
  */
 export default function Category() {
   const lang = useLang()
+  const to = useLocalePath()
   const { pathname } = useLocation()
   const { country } = useShippingCountry()
   const t = SHOP_COPY[lang].category
@@ -201,6 +202,26 @@ export default function Category() {
                   )
                 })
               })()}
+
+              {/* Opassivun nosto: superfoodien tunnetuin hakusana on pakuri,
+                  ja opas vastaa siihen tietointenttiin, jota kategoriasivu ei
+                  palvele. Sivu on fi+en-sisältöinen (Pakuri.tsx), joten
+                  teksti tulee kieliparista eikä 12-kielisestä copysta — sama
+                  malli kuin muumimukinosto lahjaoppaissa. */}
+              {category.id === 'superfoods' && (
+                <p className="mt-10 text-sm text-muted">
+                  {lang === 'fi'
+                    ? 'Pakurista pidemmin: mitä pakuri eli pakurikääpä on, miten rouhe, uutejauhe ja tinktuura eroavat ja mitä tutkimus sanoo — '
+                    : 'More on chaga: what pakuri is, how chunks, extract powder and tincture differ, and what research says — '}
+                  <Link
+                    to={to('/pakuri')}
+                    className="font-medium text-amber underline-offset-2 hover:underline"
+                  >
+                    {lang === 'fi' ? 'Pakuri-opas' : 'Chaga guide'}
+                  </Link>
+                  .
+                </p>
+              )}
             </>
           )}
         </div>

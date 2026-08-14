@@ -986,10 +986,10 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specLabels: [undefined, '所要時間', '参加人数', '場所', 'シーズン', 'ギフトカード'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin 6種きのこブレンド 100 g',
+    name: 'Foodin 6種きのこブレンド 40 g',
     description:
       'チャーガ、霊芝、ヤマブシタケ、冬虫夏草、しいたけ、まいたけを1つの瓶に。コーヒーやスムージーに混ぜられる粉末で、これ1つで機能性きのこの棚を網羅します。',
-    specs: ['100 g', 'チャーガ、霊芝、ヤマブシタケ、冬虫夏草、しいたけ、まいたけ'],
+    specs: ['40 g', 'チャーガ、霊芝、ヤマブシタケ、冬虫夏草、しいたけ、まいたけ'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin 北欧ベリーパウダーミックス 120 g',

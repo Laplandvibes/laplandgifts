@@ -986,10 +986,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specLabels: [undefined, '时长', '人数', '地点', '季节', '礼品卡'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin 六菇混合粉 100 g',
+    name: 'Foodin 六菇混合粉 40 g',
     description:
       '白桦茸、灵芝、猴头菇、虫草、香菇和舞茸装进一罐，磨成粉可加入咖啡或奶昔。一罐覆盖整个功能菌菇货架。',
-    specs: ['100 g', '白桦茸、灵芝、猴头菇、虫草、香菇、舞茸'],
+    specs: ['40 g', '白桦茸、灵芝、猴头菇、虫草、香菇、舞茸'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin 北欧浆果混合粉 120 g',

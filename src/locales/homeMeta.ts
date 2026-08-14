@@ -41,10 +41,15 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
     description:
       'Ausgewähltes finnisches Design, Handwerk aus Lappland, Delikatessen, Superfoods und Erlebnisgeschenke. Bestellt wird bei Partnershops, die nach Hause liefern.',
   },
+  // 🔴 ja, pt-BR, ko ja fr kirjoitettiin uusiksi 15.8.2026 GSC-datan pohjalta:
+  // kaikki neljä kielijuurta olivat top-10-tuntumassa 0 klikillä, ja otsikko
+  // alkoi brändillä eikä hakusanalla ("que ramener de laponie", "boutique
+  // souvenir laponie en ligne" jne.). Hakusana siirtyi alkuun, brändi loppuun —
+  // sama korjaus kuin en/fi 1.8.
   ja: {
-    title: 'LaplandGifts：フィンランドのデザインとラップランドの手仕事を自宅へ',
+    title: 'フィンランドのお土産・ラップランドのギフト | LaplandGifts',
     description:
-      '厳選したフィンランドデザイン、ラップランドの手工芸品、食べもの、スーパーフード、体験ギフト。提携ショップから注文でき、そのままご自宅の国へ届きます。',
+      'フィンランドのお土産をオンラインで。ムーミンやイッタラのデザイン、ラップランドの手工芸品、フィンランドのお菓子、スーパーフード、体験ギフト。提携ショップからご自宅の国へ届きます。',
   },
   es: {
     title: 'LaplandGifts: diseño finlandés y artesanía lapona',
@@ -52,9 +57,9 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       'Diseño finlandés seleccionado, artesanía de Laponia, delicias, superalimentos y regalos de experiencias. Compra en tiendas asociadas que envían a tu país.',
   },
   'pt-BR': {
-    title: 'LaplandGifts: design finlandês e artesanato lapão',
+    title: 'Presentes finlandeses e souvenirs da Lapônia | LaplandGifts',
     description:
-      'Design finlandês selecionado, artesanato da Lapônia, quitutes, superalimentos e presentes de experiência. Compre em lojas parceiras que entregam no seu país.',
+      'Souvenirs da Lapônia e presentes finlandeses: Moomin e Iittala, facas Marttiini, doces e superalimentos. Compre em lojas parceiras que entregam no seu país.',
   },
   'zh-CN': {
     title: 'LaplandGifts：芬兰设计与拉普兰手工艺，直送到家',
@@ -62,14 +67,14 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       '精选芬兰设计、拉普兰手工艺品、特色食品、超级食物和体验礼物。在合作商店下单，商品直接寄送到您所在的国家，行李里不必再挤出空间。',
   },
   ko: {
-    title: 'LaplandGifts: 핀란드 디자인과 라플란드 수공예품을 집으로',
+    title: '핀란드 기념품과 라플란드 선물 | LaplandGifts',
     description:
-      '엄선한 핀란드 디자인, 라플란드 수공예품, 먹거리, 슈퍼푸드, 체험 선물을 모았습니다. 파트너 상점에서 주문하면 살고 있는 나라로 그대로 배송됩니다.',
+      '핀란드 기념품과 라플란드 선물: 무민과 아라비아 디자인, 수공예품, 핀란드 과자, 슈퍼푸드, 체험 선물까지. 제휴 상점에서 주문하면 사는 나라로 배송됩니다.',
   },
   fr: {
-    title: 'LaplandGifts : design finlandais et artisanat de Laponie',
+    title: 'Souvenirs de Laponie et artisanat finlandais | LaplandGifts',
     description:
-      'Design finlandais, artisanat de Laponie, gourmandises, superaliments et cadeaux expérience. Commandez chez des boutiques partenaires qui livrent chez vous.',
+      'Que ramener de Laponie ? Souvenirs et artisanat finlandais : Moomin, Iittala, Marttiini, gourmandises, dans des boutiques en ligne qui livrent chez vous.',
   },
   it: {
     title: 'LaplandGifts: design finlandese e artigianato lappone',

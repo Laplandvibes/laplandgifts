@@ -24,6 +24,20 @@ import { productName, productDescription, specValue, specLabel } from '../locale
 /** Päähakuva: täysleveä kapealla, puoli ruudukkoa lg:stä ylöspäin. */
 const PRODUCT_SIZES = '(min-width: 1024px) 500px, 92vw'
 
+/**
+ * Tuotteet, joiden sivulta linkitetään pakuri-oppaaseen (/pakuri). Lista eikä
+ * kategoriaehto, koska superfoodeissa on myös marjajauheita ja yrttejä, joille
+ * pakuriopas olisi väärä lupaus. Opas on fi+en-sisältöinen (Pakuri.tsx), joten
+ * teksti tulee kieliparista eikä 12-kielisestä copysta.
+ */
+const PAKURI_GUIDE_SLUGS = new Set([
+  'kaapa-mushrooms-pakuri-powder',
+  'foodin-chaga-tincture',
+  'kaavi-chaga-chunks',
+  'puhdistamo-instant-chaga',
+  'foodin-six-mushroom-blend',
+])
+
 export default function Product() {
   const lang = useLang()
   const to = useLocalePath()
@@ -58,12 +72,20 @@ export default function Product() {
       <ShopNav />
       <main className="bg-sand" id="main-content" tabIndex={-1}>
         <div className="mx-auto max-w-7xl px-4 py-8 md:py-12">
+          {/* 🔴 Ankkurina kategorian NIMI, ei yleinen "Takaisin kategoriaan":
+              nimi kertoo lukijalle minne linkki vie, ja se on samalla ainoa
+              sisäinen linkki tuotesivulta kategoriasivulle jokaisella
+              kielellä (superfoods-auditti 14.8.2026: tuotesivut sijoilla
+              3–5, kategoriasivu sijalla 79 — ilman kuvaavaa ankkuria
+              kategoria ei peri tuotesivujen painoa). backToCategory jää
+              ruudunlukijalle kontekstiksi. */}
           <Link
             to={to(category.slug)}
             className="mb-6 inline-flex min-h-11 items-center gap-2 text-sm text-muted hover:text-amber"
           >
             <ArrowLeft className="h-4 w-4" aria-hidden="true" />
-            {t.product.backToCategory}
+            <span className="sr-only">{t.product.backToCategory}: </span>
+            {t.category.names[product.category]}
           </Link>
 
           <div className="grid gap-8 lg:grid-cols-2 lg:gap-12">
@@ -152,6 +174,21 @@ export default function Product() {
                   sids.test.ts vahtii ettei katkaisu sulauta kahta tuotetta. */}
               <BuyButton product={product} sid={`p_${product.slug}`} lang={lang} />
               <p className="text-sm text-muted">{t.product.checkoutNote}</p>
+
+              {PAKURI_GUIDE_SLUGS.has(product.slug) && (
+                <p className="text-sm text-muted">
+                  {lang === 'fi'
+                    ? 'Uutta pakurin kanssa? Mitä pakuri on, miten muodot eroavat ja mitä tutkimus sanoo — '
+                    : 'New to chaga? What pakuri is, how the forms differ and what research says — '}
+                  <Link
+                    to={to('/pakuri')}
+                    className="font-medium text-amber underline-offset-2 hover:underline"
+                  >
+                    {lang === 'fi' ? 'Pakuri-opas' : 'Chaga guide'}
+                  </Link>
+                  .
+                </p>
+              )}
 
               {/* Tuotetiedot ostonapin alla. Osio puuttuu kokonaan, jos
                   kumppani ei julkaise tietoja: tyhjä "Tuotetiedot"-otsikko

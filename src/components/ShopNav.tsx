@@ -145,6 +145,8 @@ export default function ShopNav() {
     // Keräilijäsivu on fi+en-sisältöinen (MoominMugs.tsx), joten sen label
     // tulee sivun omasta kieliparista eikä 12-kielisestä copysta.
     '/harvinaiset-muumimukit': lang === 'fi' ? 'Harvinaiset muumimukit' : 'Rare Moomin mugs',
+    // Sama fi+en-malli: opassivun label tulee sivun omasta kieliparista.
+    '/pakuri': lang === 'fi' ? 'Pakuri' : 'Chaga',
     '/shipping': t.nav.shipping,
     '/boutiques': t.boutique.hubTitle,
     '/brands': BRAND_COPY[lang].indexH1,

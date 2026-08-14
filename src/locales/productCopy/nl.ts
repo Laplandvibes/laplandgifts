@@ -984,10 +984,10 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Cadeaukaart'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin zes-paddenstoelenmix 100 g',
+    name: 'Foodin zes-paddenstoelenmix 40 g',
     description:
       'Chaga, reishi, pruikzwam, cordyceps, shiitake en maitake in één pot, gemalen voor koffie of smoothies. Eén pot dekt de hele plank functionele paddenstoelen.',
-    specs: ['100 g', 'Chaga, reishi, pruikzwam, cordyceps, shiitake, maitake'],
+    specs: ['40 g', 'Chaga, reishi, pruikzwam, cordyceps, shiitake, maitake'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin Noordse bessen poedermix 120 g',

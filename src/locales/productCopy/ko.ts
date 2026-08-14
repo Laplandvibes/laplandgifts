@@ -985,10 +985,10 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specLabels: [undefined, '소요 시간', '참가 인원', '위치', '시즌', '기프트 카드'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin 여섯 가지 버섯 블렌드 100 g',
+    name: 'Foodin 여섯 가지 버섯 블렌드 40 g',
     description:
       '차가버섯, 영지, 노루궁뎅이, 동충하초, 표고, 잎새버섯을 한 병에 담아 커피나 스무디에 타 먹는 분말입니다. 이 한 병이 기능성 버섯 선반 전체를 대신합니다.',
-    specs: ['100 g', '차가버섯, 영지, 노루궁뎅이, 동충하초, 표고, 잎새버섯'],
+    specs: ['40 g', '차가버섯, 영지, 노루궁뎅이, 동충하초, 표고, 잎새버섯'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin 북유럽 베리 파우더 믹스 120 g',

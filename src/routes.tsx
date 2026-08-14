@@ -16,6 +16,7 @@ const Product = lazy(() => import('./pages/Product'))
 const GiftGuides = lazy(() => import('./pages/GiftGuides'))
 const Specialties = lazy(() => import('./pages/Specialties'))
 const MoominMugs = lazy(() => import('./pages/MoominMugs'))
+const Pakuri = lazy(() => import('./pages/Pakuri'))
 const Boutiques = lazy(() => import('./pages/Boutiques'))
 const BoutiqueTown = lazy(() => import('./pages/BoutiqueTown'))
 const Boutique = lazy(() => import('./pages/Boutique'))
@@ -50,6 +51,9 @@ export const CONTENT_PATHS: string[] = [
   // Keräilijäsivu (fi+en, ks. MoominMugs.tsx). Suomenkielinen slug on
   // tarkoituksellinen: kohdetermi on suomenkielinen hakusana.
   '/harvinaiset-muumimukit',
+  // Opassivu pakurista (fi+en, ks. Pakuri.tsx). Suomenkielinen slug on
+  // tarkoituksellinen: kohdetermi "pakuri" on suomenkielinen hakusana.
+  '/pakuri',
   '/shipping',
   '/boutiques',
   '/brands',
@@ -71,6 +75,7 @@ const ELEMENTS: Record<string, ReactElement> = {
   '/gift-guides': <GiftGuides />,
   '/finnish-specialties': <Specialties />,
   '/harvinaiset-muumimukit': <MoominMugs />,
+  '/pakuri': <Pakuri />,
   '/shipping': <Shipping />,
   '/boutiques': <Boutiques />,
   '/brands': <Brands />,

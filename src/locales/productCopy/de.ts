@@ -1035,10 +1035,10 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Geschenkkarte'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin Sechs-Pilze-Mischung 100 g',
+    name: 'Foodin Sechs-Pilze-Mischung 40 g',
     description:
       'Chaga, Reishi, Igelstachelbart, Cordyceps, Shiitake und Maitake in einem Glas, gemahlen für Kaffee oder Smoothies. Ein Glas deckt das ganze Vitalpilzregal ab.',
-    specs: ['100 g', 'Chaga, Reishi, Igelstachelbart, Cordyceps, Shiitake, Maitake'],
+    specs: ['40 g', 'Chaga, Reishi, Igelstachelbart, Cordyceps, Shiitake, Maitake'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin Nordische Beeren Pulvermischung 120 g',

@@ -20,7 +20,7 @@ const LANGS = Object.keys(LANG_PREFIX) as Lang[]
  * englanninkielinen meta on OIKEIN: saksankielinen otsikko lupaisi
  * saksankielisen sivun jota ei ole. Kun sivu käännetään, poista se täältä.
  */
-const EN_FI_ONLY = new Set(['/gift-guides', '/harvinaiset-muumimukit', '/shipping'])
+const EN_FI_ONLY = new Set(['/gift-guides', '/harvinaiset-muumimukit', '/pakuri', '/shipping'])
 
 describe('reittien metat', () => {
   it('jokaisella reitillä on otsikko ja kuvaus kaikilla kielillä', () => {

@@ -984,10 +984,10 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Cartão-presente'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin mistura de seis cogumelos 100 g',
+    name: 'Foodin mistura de seis cogumelos 40 g',
     description:
       'Chaga, reishi, juba de leão, cordyceps, shiitake e maitake em um só pote, moídos para café ou vitaminas. Um pote cobre a prateleira inteira de cogumelos funcionais.',
-    specs: ['100 g', 'Chaga, reishi, juba de leão, cordyceps, shiitake, maitake'],
+    specs: ['40 g', 'Chaga, reishi, juba de leão, cordyceps, shiitake, maitake'],
   },
   'foodin-nordic-berry-powder': {
     name: 'Foodin mistura de frutas nórdicas em pó 120 g',
