@@ -62,8 +62,13 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
           <p className="text-sm font-semibold text-gray">{t.priceNote(pick.price)}</p>
         )}
         {pick.duration && <p className="text-sm text-muted">{t.duration(pick.duration)}</p>}
+        {/* Oma sid: pickin oma sid on kuratoivan sivuston mukaan nimetty
+            (hub_home_pick_*, kids_home_pick_*), joten giftsin GYG-tuotto
+            raportoitui muiden sivustojen placement-nimille eikä sitä voinut
+            kohdentaa (mitattu 14.8.2026). Ryhmä + GYG:n t-tunnus polusta =
+            uniikki ja raportissa luettava. */}
         <a
-          href={gygHref(pick, lang)}
+          href={gygHref(pick, lang, `gifts_${pick.group}_${(pick.path.match(/t\d+$/) || ['exp'])[0]}`)}
           target="_blank"
           rel={AFFILIATE_REL}
           className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-amber px-5 py-3 font-medium text-white transition-colors hover:bg-amber/90"

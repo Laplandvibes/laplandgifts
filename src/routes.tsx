@@ -14,6 +14,8 @@ const Brands = lazy(() => import('./pages/Brands'))
 const Luxury = lazy(() => import('./pages/Luxury'))
 const Product = lazy(() => import('./pages/Product'))
 const GiftGuides = lazy(() => import('./pages/GiftGuides'))
+const Specialties = lazy(() => import('./pages/Specialties'))
+const MoominMugs = lazy(() => import('./pages/MoominMugs'))
 const Boutiques = lazy(() => import('./pages/Boutiques'))
 const BoutiqueTown = lazy(() => import('./pages/BoutiqueTown'))
 const Boutique = lazy(() => import('./pages/Boutique'))
@@ -42,6 +44,12 @@ export const CONTENT_PATHS: string[] = [
   ...THEMES.map((t) => `/theme/${t.id}`),
   ...BRANDS.map((b) => `/brand/${b.id}`),
   '/gift-guides',
+  // Opassivu "Finnische Spezialitäten": sisältö de+en, muut kielet saavat
+  // englannin (sama malli kuin /gift-guides ja /shipping ennen käännöstään).
+  '/finnish-specialties',
+  // Keräilijäsivu (fi+en, ks. MoominMugs.tsx). Suomenkielinen slug on
+  // tarkoituksellinen: kohdetermi on suomenkielinen hakusana.
+  '/harvinaiset-muumimukit',
   '/shipping',
   '/boutiques',
   '/brands',
@@ -61,6 +69,8 @@ export const LEGAL_PATHS: string[] = ['/privacy', '/terms', '/cookie-policy', '/
 const ELEMENTS: Record<string, ReactElement> = {
   '/': <Home />,
   '/gift-guides': <GiftGuides />,
+  '/finnish-specialties': <Specialties />,
+  '/harvinaiset-muumimukit': <MoominMugs />,
   '/shipping': <Shipping />,
   '/boutiques': <Boutiques />,
   '/brands': <Brands />,

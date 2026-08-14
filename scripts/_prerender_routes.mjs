@@ -606,7 +606,14 @@ for (const route of routes) {
     }
 
     const cleanPath = routePath === '/' ? '' : routePath;
-    const canonical = `${SITE}${loc.prefix}${cleanPath || '/'}`.replace(/\/$/, cleanPath ? '' : '/');
+    // Canonical MUST end in "/" — measured live 2026-08-14: Cloudflare Pages
+    // 308-redirects the slashless form to the slash form, while the sitemap
+    // already advertises the slash form. The old composition stripped the
+    // slash, so every canonical pointed at a URL that redirects back — Google
+    // ignored it and indexed both forms ("makia pipo" split across two URLs,
+    // "lapland shirt" across 11). Same defect class as the 2026-08-08 GSC
+    // flood: two of our own signals disagreeing about the canonical URL.
+    const canonical = `${SITE}${loc.prefix}${cleanPath || '/'}`.replace(/\/?$/, '/');
     if (__pass === 0) {
       const __t = String(meta.title || '').split(/\s[|—]\s/)[0].trim();
       if (__t) (INTERNAL_BY_LANG[loc.lang] = INTERNAL_BY_LANG[loc.lang] || []).push({ url: canonical, text: __t });
@@ -615,7 +622,8 @@ for (const route of routes) {
 
     const hreflangs = LOCALE_LIST.map((l) => ({
       hreflang: l.lang === 'en' ? 'en' : l.lang,
-      url: `${SITE}${l.prefix}${cleanPath || '/'}`.replace(/\/$/, cleanPath ? '' : '/'),
+      // Slash form for the same reason as the canonical above.
+      url: `${SITE}${l.prefix}${cleanPath || '/'}`.replace(/\/?$/, '/'),
     }));
 
     const outPath =

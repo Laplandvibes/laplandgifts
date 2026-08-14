@@ -5808,6 +5808,72 @@
     }
   },
   {
+    "path": "/finnish-specialties",
+    "fallbackTitle": "Finnish specialities: what to buy | LaplandGifts",
+    "fallbackDescription": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+    "fallbackTitleByLang": {
+      "en": "Finnish specialities: what to buy | LaplandGifts",
+      "fi": "Finnish specialities: what to buy | LaplandGifts",
+      "de": "Finnische Spezialitäten: Was lohnt sich? | LaplandGifts",
+      "ja": "Finnish specialities: what to buy | LaplandGifts",
+      "es": "Finnish specialities: what to buy | LaplandGifts",
+      "pt-BR": "Finnish specialities: what to buy | LaplandGifts",
+      "zh-CN": "Finnish specialities: what to buy | LaplandGifts",
+      "ko": "Finnish specialities: what to buy | LaplandGifts",
+      "fr": "Finnish specialities: what to buy | LaplandGifts",
+      "it": "Finnish specialities: what to buy | LaplandGifts",
+      "nl": "Finnish specialities: what to buy | LaplandGifts",
+      "sv": "Finnish specialities: what to buy | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "fi": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "de": "Salmiakki, Fazer-Schokolade, Roggenbrot, Leipäjuusto und Terva: Was davon ist echt finnisch, was Touristenkram — und was übersteht den Versand nach Hause?",
+      "ja": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "es": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "pt-BR": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "zh-CN": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "ko": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "fr": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "it": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "nl": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.",
+      "sv": "Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad."
+    }
+  },
+  {
+    "path": "/harvinaiset-muumimukit",
+    "fallbackTitle": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+    "fallbackDescription": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+    "fallbackTitleByLang": {
+      "en": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "fi": "Harvinaiset muumimukit ja niiden arvo | LaplandGifts",
+      "de": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "ja": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "es": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "pt-BR": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "zh-CN": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "ko": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "fr": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "it": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "nl": "Rare Arabia Moomin mugs and their value | LaplandGifts",
+      "sv": "Rare Arabia Moomin mugs and their value | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "fi": "Miksi lopetetut kuviot, kausimukit ja erikoiserät nostavat Arabian muumimukien arvoa, miten pohjaleima ajoittaa mukin ja mistä nykymalleja voi yhä ostaa.",
+      "de": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "ja": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "es": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "pt-BR": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "zh-CN": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "ko": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "fr": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "it": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "nl": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.",
+      "sv": "Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs."
+    }
+  },
+  {
     "path": "/shipping",
     "fallbackTitle": "Delivery areas and food rules | LaplandGifts",
     "fallbackDescription": "Which partner shop ships where, checked from their own delivery terms, plus the import rules that decide whether dried reindeer may be posted to your country.",

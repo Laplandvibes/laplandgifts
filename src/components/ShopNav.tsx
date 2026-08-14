@@ -142,6 +142,9 @@ export default function ShopNav() {
   const crumbLabels: Record<string, string> = {
     ...Object.fromEntries(categories.map((c) => [c.slug, c.full])),
     '/gift-guides': t.nav.guides,
+    // Keräilijäsivu on fi+en-sisältöinen (MoominMugs.tsx), joten sen label
+    // tulee sivun omasta kieliparista eikä 12-kielisestä copysta.
+    '/harvinaiset-muumimukit': lang === 'fi' ? 'Harvinaiset muumimukit' : 'Rare Moomin mugs',
     '/shipping': t.nav.shipping,
     '/boutiques': t.boutique.hubTitle,
     '/brands': BRAND_COPY[lang].indexH1,

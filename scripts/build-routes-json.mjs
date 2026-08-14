@@ -624,6 +624,53 @@ const shipping = enFiOnly(
   },
 )
 
+// Keräilijäsivu: kohdetermi on suomenkielinen ("harvinaiset muumimukit"),
+// sisältö kirjoitettu suomeksi ja englanniksi (MoominMugs.tsx). Sama
+// enFiOnly-malli kuin lahjaoppaalla ja toimitussivulla.
+const moominMugs = enFiOnly(
+  '/harvinaiset-muumimukit',
+  {
+    title: 'Rare Arabia Moomin mugs and their value | LaplandGifts',
+    description:
+      'Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.',
+  },
+  {
+    title: 'Harvinaiset muumimukit ja niiden arvo | LaplandGifts',
+    description:
+      'Miksi lopetetut kuviot, kausimukit ja erikoiserät nostavat Arabian muumimukien arvoa, miten pohjaleima ajoittaa mukin ja mistä nykymalleja voi yhä ostaa.',
+  },
+)
+
+// Sama tietoinen valinta kuin enFiOnly, mutta natiivit kielet ovat saksa ja
+// englanti: /finnish-specialties on saksalaiselle ostajalle kirjoitettu opas
+// (kohdetermi "finnische spezialitäten"), jonka sisältö on de+en. Muut
+// kymmenen kieltä saavat englannin metan, koska sivukin on niillä englantia.
+const deEnOnly = (path, en, deMeta) => ({
+  path,
+  fallbackTitle: en.title,
+  fallbackDescription: en.description,
+  fallbackTitleByLang: Object.fromEntries(
+    LANGS.map((l) => [l, l === 'de' ? deMeta.title : en.title]),
+  ),
+  fallbackDescriptionByLang: Object.fromEntries(
+    LANGS.map((l) => [l, l === 'de' ? deMeta.description : en.description]),
+  ),
+})
+
+const specialties = deEnOnly(
+  '/finnish-specialties',
+  {
+    title: `Finnish specialities: what to buy | ${BRAND}`,
+    description:
+      'Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.',
+  },
+  {
+    title: `Finnische Spezialitäten: Was lohnt sich? | ${BRAND}`,
+    description:
+      'Salmiakki, Fazer-Schokolade, Roggenbrot, Leipäjuusto und Terva: Was davon ist echt finnisch, was Touristenkram — und was übersteht den Versand nach Hause?',
+  },
+)
+
 // ── legal säilytetään sellaisenaan ─────────────────────────────────────────
 const existing = JSON.parse(readFileSync('scripts/routes.json', 'utf8'))
 const legalRoutes = existing
@@ -697,6 +744,8 @@ const routes = [
   ...brandRoutes,
   ...productRoutes,
   giftGuides,
+  specialties,
+  moominMugs,
   shipping,
   boutiqueHubRoute,
   ...boutiqueTownRoutes,

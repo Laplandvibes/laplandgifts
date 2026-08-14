@@ -6,7 +6,8 @@ import ProductCard from '../components/shop/ProductCard'
 import { byShippingBreadth } from '../data/sortProducts'
 import { productsForOccasion } from '../data/occasions'
 import { OCCASION_THEMES, occasionTheme } from '../data/occasionTheme'
-import { useLang } from '../i18n/useLang'
+import { Link } from 'react-router-dom'
+import { useLang, useLocalePath } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { SHOP_COPY } from '../locales/shopCopy'
 
@@ -29,6 +30,7 @@ import { SHOP_COPY } from '../locales/shopCopy'
  */
 export default function GiftGuides() {
   const lang = useLang()
+  const to = useLocalePath()
   const t = COPY[lang].giftGuide
   const s = SHOP_COPY[lang]
   return (
@@ -104,7 +106,23 @@ export default function GiftGuides() {
             )
           })}
 
-          <p className="mt-12 text-sm text-muted">{s.product.checkoutNote}</p>
+          {/* Keräilijäsivun nosto. Sivu on fi+en-sisältöinen (MoominMugs.tsx),
+              joten teksti tulee kieliparista eikä 12-kielisestä copysta —
+              muut kielet näkevät englannin, kuten itse sivullakin. */}
+          <p className="mt-10 text-sm text-muted">
+            {lang === 'fi'
+              ? 'Keräilijälle: miksi jotkut Arabian muumimukit ovat arvokkaita ja mistä vuosimallin tunnistaa — '
+              : 'For collectors: why some Arabia Moomin mugs are valuable and how to identify the year — '}
+            <Link
+              to={to('/harvinaiset-muumimukit')}
+              className="font-medium text-amber underline-offset-2 hover:underline"
+            >
+              {lang === 'fi' ? 'Harvinaiset muumimukit' : 'Rare Moomin mugs'}
+            </Link>
+            .
+          </p>
+
+          <p className="mt-6 text-sm text-muted">{s.product.checkoutNote}</p>
         </div>
       </main>
       <Footer />
