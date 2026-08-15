@@ -1,0 +1,25 @@
+# LaplandGifts
+
+> Moomin and Arabia design, Marttiini puukko knives, Finnish sweets, Arctic berry powders and Lapland experience gifts, from the shops that ship them home.
+
+## Main pages
+
+- [Finnish design gifts](https://laplandgifts.com/design/): Moomin mugs, Iittala glass, Marimekko and Aarikka wooden jewellery.
+- [Finnish clothing and knitwear](https://laplandgifts.com/clothing/): Halti shell jackets, Makia streetwear from Helsinki and North Outdoor merino knitted in Oulu.
+- [Finnish handicrafts](https://laplandgifts.com/handicrafts/): Marttiini knives from Rovaniemi, Kupilka camp dishes, Lapuan Kankurit linen and Pentik ceramics from Posio.
+- [Finnish sweets and food gifts](https://laplandgifts.com/treats/): salmiakki, Fazer chocolate, Nordqvist and Moomin teas, reindeer jerky and sea buckthorn jam.
+- [Arctic berry powders and superfoods](https://laplandgifts.com/superfoods/): Arctic berry powders, chaga and Arctic Warriors herbal products made in Rovaniemi, from Finnish producers.
+- [Lapland experience gifts](https://laplandgifts.com/experiences/): northern lights tours, husky sledding and Santa Claus Village, bought as a gift now and booked when the recipient picks a date.
+- [Moomin theme](https://laplandgifts.com/theme/moomin/): mugs, mittens, bedlinen and posters, gathered from the shop's categories onto one page.
+- [Brands we carry](https://laplandgifts.com/brands/): who makes the things in this shop and where, with links to each brand's own site.
+- [Lapland luxury](https://laplandgifts.com/luxury/): experience gifts such as gold panning in Inari or a night in a glass igloo.
+
+## Languages
+
+English (default, no prefix), Finnish (/fi/), Swedish (/sv/), German (/de/), Spanish (/es/), French (/fr/), Italian (/it/), Dutch (/nl/), Japanese (/ja/), Korean (/kr/), Brazilian Portuguese (/br/), Chinese (/cn/).
+
+## Network
+
+- Hub: https://laplandvibes.com/
+- Sitemap: https://laplandgifts.com/sitemap.xml
+- Contact: info@laplandgifts.com
