@@ -22,9 +22,17 @@ import { trackAffiliateClick } from '../lib/analytics'
  */
 const SID = 'home_gifts_ivalo'
 
+/** Mainosmerkintä sivun kielellä — samat sanat kuin verkoston AD_LABEL-vakiossa
+ *  (shared/ads/AdUnit.tsx) ja laplandfoodin Suomikauppa-pinnoissa. */
+const AD_LABEL: Record<Lang, string> = {
+  en: 'Ad', fi: 'Mainos', de: 'Anzeige', ja: '広告', es: 'Anuncio',
+  'pt-BR': 'Anúncio', 'zh-CN': '广告', ko: '광고', fr: 'Annonce',
+  it: 'Annuncio', nl: 'Advertentie', sv: 'Annons',
+}
+
 export default function IvaloLakeAd({ lang }: { lang: Lang }) {
-  const copy = (ivaloAd.copy[lang === 'fi' ? 'fi' : 'en'] ?? ivaloAd.copy.en)!
-  const href = ivaloAd.linkFor(SID)
+  const copy = (ivaloAd.copy[lang] ?? ivaloAd.copy.en)!
+  const href = ivaloAd.linkFor(SID, lang)
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10">
@@ -69,7 +77,7 @@ export default function IvaloLakeAd({ lang }: { lang: Lang }) {
           </div>
         </div>
         <span className="absolute bottom-3 right-4 rounded-full bg-night/60 px-2.5 py-1 text-[10px] font-semibold uppercase tracking-widest text-white/80">
-          {lang === 'fi' ? 'Mainos' : 'Ad'}
+          {AD_LABEL[lang]}
         </span>
       </div>
     </div>
