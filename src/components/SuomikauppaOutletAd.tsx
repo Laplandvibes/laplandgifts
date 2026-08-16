@@ -35,25 +35,37 @@ const HREF =
   'https://go.laplandvibes.com/go/suomikauppa' +
   `?sid=${SID}&dest=${encodeURIComponent(DEST)}`
 
-/** Kaupan omat tuotekuvat, luettu kaupan katalogista 2026-08-10.
+/** Kaupan omat tuotekuvat. 🔴 EI poimita käsin: `scripts/_fetch-suomikauppa-outlet-shots.mjs`
+ *  hakee ne kaupan katalogista, hylkää kaiken mikä ei ole packshot valkoisella
+ *  ja normalisoi tuotteen pitkän sivun 78 %:iin kanvaasista. Skriptin
+ *  yläkommentissa on täysi peruste ja mitat.
+ *
+ *  🔴🔴 NÄMÄ KOLME OVAT AIKASIDONNAISIA. Jokainen on oltava
+ *  `/collections/tarjoukset`-osiossa juuri nyt, ja osio vaihtuu viikoittain.
+ *  16.8.2026 tarkistettaessa 10.8. poimituista kahta EI enää ollut osiossa
+ *  (Remix 300 g kokonaan poissa; 180 g Karl Fazer vain 4-PACKina ja 23 kpl
+ *  laatikkona). Aja skripti uudelleen ennen kuin luotat tähän listaan.
+ *
  *  Alt-tekstit 12 kielellä samalla sopimuksella kuin näkyvä copy — erisnimet
- *  (Karl Fazer, Geisha, Remix, salmiakki) säilyvät kääntämättä. */
+ *  (Karl Fazer, Geisha, Dumle) säilyvät kääntämättä. Pakkauskoko kuuluu
+ *  alt-tekstiin, koska osiossa myydään nimenomaan monipakkauksia: yksittäisen
+ *  levyn luvannut alt-teksti oli väärä jo ennen tätä korjausta. */
 const SHOTS: { img: string; alt: Record<Lang, string> }[] = [
   {
     img: 'prod-sk-outlet-karl-fazer',
     alt: {
-      en: 'Karl Fazer milk chocolate bar, 180 g',
-      fi: 'Karl Fazer maitosuklaalevy, 180 g',
-      de: 'Karl Fazer Milchschokoladentafel, 180 g',
-      ja: 'Karl Fazer ミルクチョコレート板チョコ 180 g',
-      es: 'Tableta de chocolate con leche Karl Fazer, 180 g',
-      'pt-BR': 'Barra de chocolate ao leite Karl Fazer, 180 g',
-      'zh-CN': 'Karl Fazer 牛奶巧克力 180 克',
-      ko: 'Karl Fazer 밀크 초콜릿 바 180 g',
-      fr: 'Tablette de chocolat au lait Karl Fazer, 180 g',
-      it: 'Tavoletta di cioccolato al latte Karl Fazer, 180 g',
-      nl: 'Karl Fazer melkchocoladereep, 180 g',
-      sv: 'Karl Fazer mjölkchokladkaka, 180 g',
+      en: 'Karl Fazer milk chocolate bars, 180 g, four-pack',
+      fi: 'Karl Fazer maitosuklaalevy 180 g, neljän levyn pakkaus',
+      de: 'Karl Fazer Milchschokoladentafeln, 180 g, Viererpack',
+      ja: 'Karl Fazer ミルクチョコレート板チョコ 180 g 4枚パック',
+      es: 'Tabletas de chocolate con leche Karl Fazer, 180 g, pack de cuatro',
+      'pt-BR': 'Barras de chocolate ao leite Karl Fazer, 180 g, pacote com quatro',
+      'zh-CN': 'Karl Fazer 牛奶巧克力 180 克，四块装',
+      ko: 'Karl Fazer 밀크 초콜릿 바 180 g, 4개입',
+      fr: 'Tablettes de chocolat au lait Karl Fazer, 180 g, lot de quatre',
+      it: 'Tavolette di cioccolato al latte Karl Fazer, 180 g, confezione da quattro',
+      nl: 'Karl Fazer melkchocoladerepen, 180 g, vierpak',
+      sv: 'Karl Fazer mjölkchokladkakor, 180 g, fyrpack',
     },
   },
   {
@@ -74,96 +86,109 @@ const SHOTS: { img: string; alt: Record<Lang, string> }[] = [
     },
   },
   {
-    img: 'prod-sk-outlet-remix-salmiakki',
+    img: 'prod-sk-outlet-dumle-moussemuna',
     alt: {
-      en: 'Fazer Remix salmiakki and chocolate sweet bag, 300 g',
-      fi: 'Fazer Remix salmiakki ja suklaa -karkkipussi, 300 g',
-      de: 'Fazer Remix Beutel mit Salmiak- und Schokoladensüßigkeiten, 300 g',
-      ja: 'Fazer Remix サルミアッキ&チョコレート菓子袋 300 g',
-      es: 'Bolsa de golosinas Fazer Remix de salmiakki y chocolate, 300 g',
-      'pt-BR': 'Pacote de doces Fazer Remix de salmiakki e chocolate, 300 g',
-      'zh-CN': 'Fazer Remix 咸甘草与巧克力糖果袋 300 克',
-      ko: 'Fazer Remix 살미아키·초콜릿 캔디 봉지 300 g',
-      fr: 'Sachet de bonbons Fazer Remix salmiakki et chocolat, 300 g',
-      it: 'Sacchetto di caramelle Fazer Remix salmiakki e cioccolato, 300 g',
-      nl: 'Fazer Remix snoepzak met salmiak en chocolade, 300 g',
-      sv: 'Fazer Remix godispåse med salmiak och choklad, 300 g',
+      en: 'Fazer Dumle chocolate mousse eggs, four-pack, 144 g',
+      fi: 'Fazer Dumle Moussemuna, neljän munan pakkaus, 144 g',
+      de: 'Fazer Dumle Mousse-Eier, Viererpack, 144 g',
+      ja: 'Fazer Dumle ムースエッグ 4個入り 144 g',
+      es: 'Huevos de mousse de chocolate Fazer Dumle, pack de cuatro, 144 g',
+      'pt-BR': 'Ovos de mousse de chocolate Fazer Dumle, pacote com quatro, 144 g',
+      'zh-CN': 'Fazer Dumle 慕斯巧克力蛋，四枚装，144 克',
+      ko: 'Fazer Dumle 무스 초콜릿 에그, 4개입, 144 g',
+      fr: 'Œufs mousse au chocolat Fazer Dumle, lot de quatre, 144 g',
+      it: 'Ovetti mousse al cioccolato Fazer Dumle, confezione da quattro, 144 g',
+      nl: 'Fazer Dumle chocolademousse-eieren, vierpak, 144 g',
+      sv: 'Fazer Dumle chokladmousseägg, fyrpack, 144 g',
     },
   },
 ]
 
-/** 12 kielen copy (fi/en ennallaan; loput käännetty samasta viestistä).
- *  Ei prosentteja millään kielellä — ks. tiedoston yläkommentti. */
+/** 12 kielen copy. Ei prosentteja millään kielellä — ks. tiedoston yläkommentti.
+ *
+ * 🔴 OTSIKKO VAIHDETTU 16.8.2026 (Vesa: "h1 on ihan päin vittua"). Aiempi otsikko
+ * oli englannin "The Finnish shelf, marked down" käännettynä kirjaimellisesti
+ * jokaiselle kielelle. Englanniksi "shelf" on myymälän osasto, mutta suomen
+ * "hylly" on huonekalu: **"Suomalainen hylly alennuksessa" lupaa alennusta
+ * hyllystä, ei siitä mitä hyllyssä on.** Sama kirjaimellisuus ontuu myös
+ * espanjassa (`estante`), italiassa (`scaffale`), portugalissa (`prateleira`),
+ * kiinassa (`货架`) ja koreassa (`진열대`) — ranska (`rayon`) ja hollanti (`schap`)
+ * olivat ainoat joissa se toimi.
+ *
+ * Uusi viesti sanoo saman asian ilman metaforaa: tuttuja suomalaisia merkkejä
+ * alennuksessa. Vaihdettu KAIKKIIN 12 kieleen eikä vain suomeen — yksi korjattu
+ * kieli kahdentoista joukossa olisi jättänyt saman mainoksen kertomaan kahta eri
+ * asiaa maasta riippuen. Väite pysyy rakenteellisena eikä lupaa mitään lukua. */
 const COPY: Record<Lang, { eyebrow: string; headline: string; sub: string; cta: string }> = {
   en: {
     eyebrow: 'Suomikauppa offers',
-    headline: 'The Finnish shelf, marked down',
+    headline: 'Familiar Finnish brands, marked down',
     sub: 'Suomikauppa keeps a standing offers section, several hundred products deep, and it is where the Fazer shelf usually ends up. Worth checking before you pay full price for the same bar somewhere else.',
     cta: 'See the offers',
   },
   fi: {
     eyebrow: 'Suomikaupan tarjoukset',
-    headline: 'Suomalainen hylly alennuksessa',
+    headline: 'Tuttuja suomalaisia merkkejä alennuksessa',
     sub: 'Suomikaupalla on pysyvä tarjousosio, jossa on satoja tuotteita, ja sinne Fazerin hylly yleensä päätyy. Kannattaa vilkaista ennen kuin maksaa samasta levystä täyden hinnan muualla.',
     cta: 'Katso tarjoukset',
   },
   de: {
     eyebrow: 'Suomikauppa-Angebote',
-    headline: 'Das finnische Regal, reduziert',
+    headline: 'Bekannte finnische Marken, reduziert',
     sub: 'Suomikauppa führt eine ständige Angebotsrubrik mit mehreren hundert Produkten, und dort landet das Fazer-Regal meistens. Ein Blick lohnt sich, bevor man dieselbe Tafel anderswo zum vollen Preis kauft.',
     cta: 'Zu den Angeboten',
   },
   ja: {
     eyebrow: 'Suomikauppaのセール',
-    headline: 'フィンランドの棚が、値下げ中',
+    headline: 'おなじみのフィンランドブランドが、値下げ中',
     sub: 'Suomikauppaには数百点規模の常設セールコーナーがあり、Fazerの棚はたいていそこに行き着きます。よそで同じ板チョコに定価を払う前に、のぞいてみる価値があります。',
     cta: 'セールを見る',
   },
   es: {
     eyebrow: 'Ofertas de Suomikauppa',
-    headline: 'El estante finlandés, rebajado',
+    headline: 'Marcas finlandesas conocidas, rebajadas',
     sub: 'Suomikauppa mantiene una sección de ofertas permanente con varios cientos de productos, y ahí suele acabar el estante de Fazer. Merece la pena mirarla antes de pagar el precio completo por la misma tableta en otro sitio.',
     cta: 'Ver las ofertas',
   },
   'pt-BR': {
     eyebrow: 'Ofertas da Suomikauppa',
-    headline: 'A prateleira finlandesa, com desconto',
+    headline: 'Marcas finlandesas conhecidas, com desconto',
     sub: 'A Suomikauppa mantém uma seção permanente de ofertas com centenas de produtos, e é lá que a prateleira da Fazer costuma parar. Vale conferir antes de pagar o preço cheio pela mesma barra em outro lugar.',
     cta: 'Ver as ofertas',
   },
   'zh-CN': {
     eyebrow: 'Suomikauppa 特惠',
-    headline: '芬兰货架，正在打折',
+    headline: '熟悉的芬兰品牌，正在打折',
     sub: 'Suomikauppa 设有常设特惠区，收录数百件商品，Fazer 的货架通常最终都会到那里。在别处为同一块巧克力付全价之前，值得先来看看。',
     cta: '看看特惠',
   },
   ko: {
     eyebrow: 'Suomikauppa 할인',
-    headline: '핀란드 진열대, 할인 중',
+    headline: '익숙한 핀란드 브랜드, 할인 중',
     sub: 'Suomikauppa에는 수백 개 제품이 모인 상설 할인 코너가 있고, Fazer 진열대는 대개 그곳으로 갑니다. 다른 곳에서 같은 초콜릿에 제값을 치르기 전에 한번 들러 볼 만합니다.',
     cta: '할인 보기',
   },
   fr: {
     eyebrow: 'Les offres Suomikauppa',
-    headline: 'Le rayon finlandais, en promotion',
+    headline: 'Des marques finlandaises connues, en promotion',
     sub: 'Suomikauppa tient une rubrique d’offres permanente, riche de plusieurs centaines de produits, et c’est là que finit généralement le rayon Fazer. Un coup d’œil s’impose avant de payer plein tarif la même tablette ailleurs.',
     cta: 'Voir les offres',
   },
   it: {
     eyebrow: 'Le offerte Suomikauppa',
-    headline: 'Lo scaffale finlandese, scontato',
+    headline: 'Marchi finlandesi noti, scontati',
     sub: 'Suomikauppa tiene una sezione offerte permanente con diverse centinaia di prodotti, ed è lì che di solito finisce lo scaffale Fazer. Vale la pena dare un’occhiata prima di pagare altrove il prezzo pieno per la stessa tavoletta.',
     cta: 'Vedi le offerte',
   },
   nl: {
     eyebrow: 'Suomikauppa-aanbiedingen',
-    headline: 'Het Finse schap, afgeprijsd',
+    headline: 'Bekende Finse merken, afgeprijsd',
     sub: 'Suomikauppa heeft een vaste aanbiedingenafdeling met honderden producten, en daar belandt het Fazer-schap meestal. De moeite waard om te checken voordat je elders de volle prijs betaalt voor dezelfde reep.',
     cta: 'Bekijk de aanbiedingen',
   },
   sv: {
     eyebrow: 'Suomikauppas erbjudanden',
-    headline: 'Den finska hyllan, nedsatt',
+    headline: 'Kända finska varumärken, nedsatta',
     sub: 'Suomikauppa har en stående erbjudandesektion med flera hundra produkter, och det är dit Fazer-hyllan oftast tar vägen. Värd en titt innan du betalar fullt pris för samma chokladkaka någon annanstans.',
     cta: 'Se erbjudandena',
   },
