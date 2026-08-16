@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest'
-import { NAV_COPY, type NavCopy } from '../navCopy'
+import { NAV_COPY, type NavCopy, type SecondaryNavId } from '../navCopy'
 import { CATEGORIES } from '../../data/categories'
 
 const CATEGORY_IDS = CATEGORIES.map((c) => c.id)
+
+const SECONDARY_IDS: SecondaryNavId[] = ['boutiques', 'luxury', 'brands', 'guides', 'shipping']
 
 /**
  * 🔴 Navin käännösportti (2.8.2026).
@@ -22,13 +24,18 @@ const SHARED_WITH_EN: Partial<Record<string, string[]>> = {
   // "Design", "Merch" ja "Superfoods" ovat vakiintuneita lainasanoja, joita ei
   // käännetä näissä kielissä. Ne on lueteltava tässä, jotta testi ei pakota
   // keksimään käännöstä joka näyttäisi lukijasta oudolta.
+  // "Boutiques" on ranskalainen lainasana, jonka englanti, ranska, espanja ja
+  // portugali kirjoittavat samalla tavalla. Se on näissä kolmessa se hyväksytyn
+  // käännöksen pääsana ("Boutiques de Laponie/Laponia/da Lapônia") — ei
+  // englanniksi unohtunut rivi. Italia ja hollanti taipuvat omikseen
+  // ("Boutique", "Boetieks") eivätkä tarvitse poikkeusta.
   de: ['Design', 'Merch', 'Superfoods', 'Menü'],
   sv: ['Design', 'Merch', 'Superfoods'],
-  fr: ['Design', 'Merch', 'Menu'],
+  fr: ['Design', 'Merch', 'Menu', 'Boutiques'],
   it: ['Design', 'Merch', 'Menu'],
   nl: ['Design', 'Merch', 'Superfoods', 'Menu'],
-  es: ['Merch'],
-  'pt-BR': ['Design', 'Merch', 'Menu'],
+  es: ['Merch', 'Boutiques'],
+  'pt-BR': ['Design', 'Merch', 'Menu', 'Boutiques'],
   fi: ['Design', 'Merch'],
   ja: [],
   'zh-CN': [],
@@ -39,6 +46,7 @@ const SHARED_WITH_EN: Partial<Record<string, string[]>> = {
 function strings(c: NavCopy): [string, string][] {
   const out: [string, string][] = []
   for (const id of CATEGORY_IDS) out.push([`catShort.${id}`, c.catShort[id]])
+  for (const id of SECONDARY_IDS) out.push([`secShort.${id}`, c.secShort[id]])
   for (const k of [
     'openMenu',
     'closeMenu',

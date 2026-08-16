@@ -28,9 +28,36 @@ import type { CategoryId } from '../data/types'
  * tyyppimuutoksen ja yli tuhat käännettyä riviä, eikä sitä pidä tehdä
  * puolittain niin että osa tuotteista on käännetty ja osa ei.
  */
+/** Kategorioiden oikealla puolella oleva toissijainen linkkirivi. */
+export type SecondaryNavId = 'boutiques' | 'luxury' | 'brands' | 'guides' | 'shipping'
+
 export interface NavCopy {
   /** Kategorian lyhyt navinimi. Koko nimi asuu shopCopy.category.names:ssä. */
   catShort: Record<CategoryId, string>
+  /**
+   * Toissijaisen linkin lyhyt navinimi. Sama ratkaisu ja sama peruste kuin
+   * `catShort`illa — vain sovellettuna riviin, jota se ei aikanaan koskenut.
+   *
+   * 🔴 MIKSI (mitattu 16.8.2026, Vesa: "navigaation tekstejä menee eri kielillä
+   * päällekkäin"): nämä viisi linkkiä ottivat labelinsa suoraan kohdesivun
+   * H1-otsikosta (`boutique.hubTitle`, `LUXURY_COPY.title`, `BRAND_COPY.indexH1`,
+   * `nav.guides`, `nav.shipping`). Otsikko on hakusanapituinen — "Boutiquen in
+   * Lappland", "Ideias de presente" — ja rivillä on tilaa 476 pikseliä. Tarve oli
+   * 12 kielestä KYMMENELLÄ suurempi kuin tila: saksa 728 px, portugali 721,
+   * italia 714, suomi 550. Vain korea ja kiina mahtuivat.
+   *
+   * Ylivuoto ei näkynyt vierityspalkkina vaan rivityksenä: 44 pikselin rivillä
+   * kaksi 12 pikselin tekstiriviä asettuivat lähes kiinni toisiinsa, mikä lukee
+   * päällekkäisyytenä. Suomi oli lievin tapaus (+74 px) — se mitä Vesa näki oli
+   * verkoston paras kieli, ei pahin.
+   *
+   * Lyhyt nimi on aina saman hyväksytyn käännöksen pääsana, ei uusi käännös.
+   * Yhdyssanakieliä (fi Lahjaoppaat, de Geschenkideen, sv Presenttips, nl
+   * Cadeautips) ei lyhennetä: pääsanaa ei voi irrottaa keksimättä uutta sanaa.
+   * Koko otsikko näkyy yhä kohdesivulla, murupolussa, `title`-attribuutissa ja
+   * mobiilivalikossa, joten mikään tieto ei katoa.
+   */
+  secShort: Record<SecondaryNavId, string>
   /** Hampurilaisvalikon nappi (aria-label + ruudunlukija). */
   openMenu: string
   closeMenu: string
@@ -62,6 +89,17 @@ const en: NavCopy = {
     merch: 'Merch',
     experiences: 'Experiences',
   },
+  secShort: {
+    // Koko nimi: "Lapland boutiques".
+    boutiques: 'Boutiques',
+    // Koko nimi: "Lapland luxury".
+    luxury: 'Luxury',
+    // Koko nimi: "Brands we carry".
+    brands: 'Brands',
+    // Koko nimi: "Gift guides".
+    guides: 'Guides',
+    shipping: 'Delivery',
+  },
   openMenu: 'Open menu',
   closeMenu: 'Close menu',
   menuLabel: 'Menu',
@@ -83,6 +121,16 @@ const fi: NavCopy = {
     superfoods: 'Superfoodit',
     merch: 'Merch',
     experiences: 'Elämykset',
+  },
+  secShort: {
+    // Koko nimi: "Lapin putiikit".
+    boutiques: 'Putiikit',
+    // Koko nimi: "Lapin ylellisyys".
+    luxury: 'Ylellisyys',
+    brands: 'Brändit',
+    // Yhdyssana: pääsanaa ei voi irrottaa keksimättä uutta sanaa.
+    guides: 'Lahjaoppaat',
+    shipping: 'Toimitus',
   },
   openMenu: 'Avaa valikko',
   closeMenu: 'Sulje valikko',
@@ -106,6 +154,17 @@ const de: NavCopy = {
     merch: 'Merch',
     experiences: 'Erlebnisse',
   },
+  secShort: {
+    // Koko nimi: "Boutiquen in Lappland".
+    boutiques: 'Boutiquen',
+    // Koko nimi: "Luxus aus Lappland".
+    luxury: 'Luxus',
+    // Koko nimi: "Unsere Marken".
+    brands: 'Marken',
+    // Yhdyssana: pääsanaa ei voi irrottaa keksimättä uutta sanaa.
+    guides: 'Geschenkideen',
+    shipping: 'Versand',
+  },
   openMenu: 'Menü öffnen',
   closeMenu: 'Menü schließen',
   menuLabel: 'Menü',
@@ -127,6 +186,17 @@ const sv: NavCopy = {
     superfoods: 'Superfoods',
     merch: 'Merch',
     experiences: 'Upplevelser',
+  },
+  secShort: {
+    // Koko nimi: "Butiker i Lappland".
+    boutiques: 'Butiker',
+    // Koko nimi: "Lyx från Lappland".
+    luxury: 'Lyx',
+    // Koko nimi: "Våra varumärken".
+    brands: 'Varumärken',
+    // Yhdyssana: pääsanaa ei voi irrottaa keksimättä uutta sanaa.
+    guides: 'Presenttips',
+    shipping: 'Frakt',
   },
   openMenu: 'Öppna menyn',
   closeMenu: 'Stäng menyn',
@@ -150,6 +220,17 @@ const fr: NavCopy = {
     merch: 'Merch',
     experiences: 'Expériences',
   },
+  secShort: {
+    // Koko nimi: "Boutiques de Laponie". Sana on sama kuin englannissa.
+    boutiques: 'Boutiques',
+    // Koko nimi: "Le luxe lapon".
+    luxury: 'Luxe',
+    // Koko nimi: "Nos marques".
+    brands: 'Marques',
+    // Koko nimi: "Idées cadeaux".
+    guides: 'Idées',
+    shipping: 'Livraison',
+  },
   openMenu: 'Ouvrir le menu',
   closeMenu: 'Fermer le menu',
   menuLabel: 'Menu',
@@ -171,6 +252,17 @@ const es: NavCopy = {
     superfoods: 'Superalimentos',
     merch: 'Merch',
     experiences: 'Experiencias',
+  },
+  secShort: {
+    // Koko nimi: "Boutiques de Laponia". Sana on sama kuin englannissa.
+    boutiques: 'Boutiques',
+    // Koko nimi: "Lujo lapón".
+    luxury: 'Lujo',
+    // Koko nimi: "Nuestras marcas".
+    brands: 'Marcas',
+    // Koko nimi: "Ideas de regalo".
+    guides: 'Ideas',
+    shipping: 'Envíos',
   },
   openMenu: 'Abrir el menú',
   closeMenu: 'Cerrar el menú',
@@ -194,6 +286,17 @@ const it: NavCopy = {
     merch: 'Merch',
     experiences: 'Esperienze',
   },
+  secShort: {
+    // Koko nimi: "Boutique della Lapponia".
+    boutiques: 'Boutique',
+    // Koko nimi: "Il lusso lappone".
+    luxury: 'Lusso',
+    // Koko nimi: "I nostri marchi".
+    brands: 'Marchi',
+    // Koko nimi: "Idee regalo".
+    guides: 'Idee',
+    shipping: 'Spedizioni',
+  },
   openMenu: 'Apri il menu',
   closeMenu: 'Chiudi il menu',
   menuLabel: 'Menu',
@@ -215,6 +318,17 @@ const nl: NavCopy = {
     superfoods: 'Superfoods',
     merch: 'Merch',
     experiences: 'Belevenissen',
+  },
+  secShort: {
+    // Koko nimi: "Boetieks in Lapland".
+    boutiques: 'Boetieks',
+    // Koko nimi: "Luxe uit Lapland".
+    luxury: 'Luxe',
+    // Koko nimi: "Onze merken".
+    brands: 'Merken',
+    // Yhdyssana: pääsanaa ei voi irrottaa keksimättä uutta sanaa.
+    guides: 'Cadeautips',
+    shipping: 'Verzending',
   },
   openMenu: 'Menu openen',
   closeMenu: 'Menu sluiten',
@@ -238,6 +352,17 @@ const ptBR: NavCopy = {
     merch: 'Merch',
     experiences: 'Experiências',
   },
+  secShort: {
+    // Koko nimi: "Boutiques da Lapônia". Sana on sama kuin englannissa.
+    boutiques: 'Boutiques',
+    // Koko nimi: "Luxo da Lapônia".
+    luxury: 'Luxo',
+    // Koko nimi: "Nossas marcas".
+    brands: 'Marcas',
+    // Koko nimi: "Ideias de presente".
+    guides: 'Ideias',
+    shipping: 'Entrega',
+  },
   openMenu: 'Abrir o menu',
   closeMenu: 'Fechar o menu',
   menuLabel: 'Menu',
@@ -259,6 +384,16 @@ const ja: NavCopy = {
     superfoods: 'スーパーフード',
     merch: 'グッズ',
     experiences: '体験',
+  },
+  secShort: {
+    // Koko nimi: "ラップランドのブティック".
+    boutiques: 'ブティック',
+    // Koko nimi: "ラップランドの贅沢".
+    luxury: '贅沢',
+    // Koko nimi: "取り扱いブランド".
+    brands: 'ブランド',
+    guides: 'ギフトガイド',
+    shipping: '配送',
   },
   openMenu: 'メニューを開く',
   closeMenu: 'メニューを閉じる',
@@ -282,6 +417,16 @@ const zhCN: NavCopy = {
     merch: '周边',
     experiences: '体验',
   },
+  secShort: {
+    // Koko nimi: "拉普兰精品店".
+    boutiques: '精品店',
+    // Koko nimi: "拉普兰的奢华".
+    luxury: '奢华',
+    // Koko nimi: "我们的品牌".
+    brands: '品牌',
+    guides: '礼物指南',
+    shipping: '配送',
+  },
   openMenu: '打开菜单',
   closeMenu: '关闭菜单',
   menuLabel: '菜单',
@@ -303,6 +448,16 @@ const ko: NavCopy = {
     superfoods: '슈퍼푸드',
     merch: '굿즈',
     experiences: '체험',
+  },
+  secShort: {
+    // Koko nimi: "라플란드 부티크".
+    boutiques: '부티크',
+    // Koko nimi: "라플란드의 럭셔리".
+    luxury: '럭셔리',
+    // Koko nimi: "취급 브랜드".
+    brands: '브랜드',
+    guides: '선물 가이드',
+    shipping: '배송',
   },
   openMenu: '메뉴 열기',
   closeMenu: '메뉴 닫기',

@@ -128,12 +128,18 @@ export default function ShopNav() {
 
   // Toimitussivulle ei pääse mistään muualta: kortin toimitusmerkintä kertoo
   // alueen, mutta vientirajoitteet ja kumppanitaulukko asuvat vain siellä.
+  //
+  // `short` on työpöytärivin label, `label` koko nimi valikkopaneeliin ja
+  // title-attribuuttiin. Sama jako kuin kategorioilla: rivin label tulee
+  // navCopysta, koko nimi kohdesivun omasta copysta. Ks. navCopy.ts `secShort`
+  // — nämä viisi ottivat labelinsa suoraan H1-otsikosta, ja kymmenellä kielellä
+  // kahdestatoista otsikot eivät mahtuneet riville.
   const secondary = [
-    { key: 'boutiques', to: to('/boutiques'), slug: '/boutiques', label: t.boutique.hubTitle },
-    { key: 'luxury', to: to('/luxury'), slug: '/luxury', label: LUXURY_COPY[lang].title },
-    { key: 'brands', to: to('/brands'), slug: '/brands', label: BRAND_COPY[lang].indexH1 },
-    { key: 'guides', to: to('/gift-guides'), slug: '/gift-guides', label: t.nav.guides },
-    { key: 'shipping', to: to('/shipping'), slug: '/shipping', label: t.nav.shipping },
+    { key: 'boutiques', to: to('/boutiques'), slug: '/boutiques', short: n.secShort.boutiques, label: t.boutique.hubTitle },
+    { key: 'luxury', to: to('/luxury'), slug: '/luxury', short: n.secShort.luxury, label: LUXURY_COPY[lang].title },
+    { key: 'brands', to: to('/brands'), slug: '/brands', short: n.secShort.brands, label: BRAND_COPY[lang].indexH1 },
+    { key: 'guides', to: to('/gift-guides'), slug: '/gift-guides', short: n.secShort.guides, label: t.nav.guides },
+    { key: 'shipping', to: to('/shipping'), slug: '/shipping', short: n.secShort.shipping, label: t.nav.shipping },
   ]
 
   // Murupolun labelit: kaupan seitsemän kategoriasivua sekä lahjaopas- ja
@@ -193,14 +199,19 @@ export default function ShopNav() {
 
           {/* 🔴 Napissa lukee "Valikko". Pelkkä hampurilaisikoni ei kerro, että
               sen takana ovat kategoriat, lahjaopas- ja toimitussivu — eli
-              kaikki mihin mobiilissa pääsee. */}
+              kaikki mihin mobiilissa pääsee.
+
+              Näkyy xl:ään asti, ei enää vain lg:hen: 1024–1279 pikselissä
+              toissijaiset linkit ja verkostovalikko eivät mahdu kategoriariville
+              (ks. rivi 2), joten tämä nappi on niiden ainoa reitti siinä
+              välissä. */}
           <button
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-expanded={open}
             aria-controls="shop-menu"
             aria-label={open ? n.closeMenu : n.openMenu}
-            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-white/25 px-4 text-sm font-semibold text-white lg:hidden"
+            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-white/25 px-4 text-sm font-semibold text-white xl:hidden"
           >
             {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
             {n.menuLabel}
@@ -246,18 +257,34 @@ export default function ShopNav() {
                 kahtena eri navigaationa (Vesa 2.8.: "en ymmärrä kahta
                 headerin navibaaria"). Sama sisältö, yksi pinta: pienempi
                 typografia erottaa ne kategorioista ilman omaa väripalkkia. */}
-            <div className="ml-auto flex items-center gap-5">
+            {/* 🔴 Vasta xl:stä (1280 px) ylöspäin. Mitattuna 1024 pikselissä
+                kategoriarivi vei 558 px ja verkostonappi 122 px, joten näille
+                viidelle jäi 268 px — vähemmän kuin lyhinkään kieli (kiina, 394
+                px) tarvitsee. Rivi ei siis vuotanut yhdellä kielellä vaan
+                kaikilla: `scrollWidth` 1196 vs `clientWidth` 1024, ja
+                verkostonappi työntyi kokonaan ruudun ulkopuolelle. 1280:stä
+                ylöspäin tilaa on 476 px ja lyhyet nimet mahtuvat.
+
+                Alle xl:n nämä eivät katoa vaan asuvat valikkopaneelissa, jonka
+                nappi on siksi näkyvissä xl:ään asti. Kategoriat pysyvät
+                rivillä joka leveydellä: ne ovat ainoa reitti tuotteisiin. */}
+            <div className="ml-auto hidden items-center gap-5 xl:flex">
               <nav aria-label={n.utilityNavLabel} className="flex items-center gap-5">
                 {secondary.map((s) => (
                   <Link
                     key={s.key}
                     to={s.to}
                     aria-current={here === s.slug ? 'page' : undefined}
-                    className={`inline-flex min-h-11 items-center text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-vibe-pink ${
+                    title={s.label}
+                    // `whitespace-nowrap`: ilman tätä liian pitkä label rivittyy
+                    // 44 pikselin rivin sisään kahdelle 12 pikselin riville,
+                    // jotka asettuvat lähes kiinni toisiinsa. Juuri se luki
+                    // päällekkäisyytenä (Vesa 16.8.).
+                    className={`inline-flex min-h-11 items-center whitespace-nowrap text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-vibe-pink ${
                       here === s.slug ? 'text-vibe-pink' : 'text-white/55'
                     }`}
                   >
-                    {s.label}
+                    {s.short}
                   </Link>
                 ))}
               </nav>
@@ -273,18 +300,23 @@ export default function ShopNav() {
             katkaistu näkymään: yhdeksän riviä ja valitsin venyttivät palkin 604
             pikseliin, jolloin auki oleva valikko peitti matalalla näytöllä koko
             ruudun eikä sisällöstä näkynyt mitään. Nyt paneeli vierii itse. */}
+        {/* Paneeli elää xl:ään asti, koska kategoriarivi ei kanna toissijaisia
+            linkkejä ennen sitä. 1024–1279 pikselissä paneelista näkyy vain se
+            osa jota rivillä EI ole: haku, kategoriat ja maavalitsin ovat siinä
+            välissä jo headerissa, joten ne piilotetaan `lg:hidden`illä eikä
+            samaa asiaa tarjota kahdesti. */}
         {open && (
           <div
             id="shop-menu"
-            className="max-h-[calc(100svh-7rem)] overflow-y-auto border-t border-white/10 bg-night lg:hidden"
+            className="max-h-[calc(100svh-7rem)] overflow-y-auto border-t border-white/10 bg-night xl:hidden"
           >
             {/* Haku on paneelin ensimmäinen elementti: mobiilissa kategorian
                 arvaaminen on työläämpää kuin työpöydällä, koska koko listaa ei
                 näe kerralla. */}
-            <div className="mx-auto max-w-7xl border-b border-white/10 px-4 py-3">
+            <div className="mx-auto max-w-7xl border-b border-white/10 px-4 py-3 lg:hidden">
               <ProductSearch variant="panel" onNavigate={() => setOpen(false)} />
             </div>
-            <nav aria-label={n.shopNavLabel} className="mx-auto max-w-7xl px-4 py-2">
+            <nav aria-label={n.shopNavLabel} className="mx-auto max-w-7xl px-4 py-2 lg:hidden">
               {categories.map((c) => (
                 <Link
                   key={c.key}
@@ -301,9 +333,12 @@ export default function ShopNav() {
                 </Link>
               ))}
             </nav>
+            {/* `lg:border-t-0`: lg:stä ylöspäin kategoriat piiloutuvat ja tästä
+                tulee paneelin ensimmäinen elementti, jolloin oma yläviiva
+                asettuisi kiinni paneelin omaan yläviivaan. */}
             <nav
               aria-label={n.utilityNavLabel}
-              className="mx-auto max-w-7xl border-t border-white/10 px-4 py-2"
+              className="mx-auto max-w-7xl border-t border-white/10 px-4 py-2 lg:border-t-0"
             >
               {secondary.map((s) => (
                 <Link
@@ -337,7 +372,7 @@ export default function ShopNav() {
                 toimitusmaa oikeasti vaihdetaan.
                 text-base = 16 px: pienempi koko saa iOS:n zoomaamaan kenttään. */}
             {countrySelect(
-              'mx-auto flex max-w-7xl flex-wrap border-t border-white/10 px-4 py-3',
+              'mx-auto flex max-w-7xl flex-wrap border-t border-white/10 px-4 py-3 lg:hidden',
               'min-h-11 flex-1 px-4 text-base',
               true,
             )}
