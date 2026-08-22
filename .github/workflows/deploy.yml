@@ -30,7 +30,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          # 24, not 20: scripts/build-routes-json.mjs does
+          #   import { CATEGORIES } from '../src/data/categories.ts'
+          # Node 20 cannot load .ts at all (ERR_UNKNOWN_FILE_EXTENSION); native
+          # type-stripping is only on by default from 23.6. Measured 2026-08-21:
+          # the first green-build run still died here on node 20.20.2.
+          node-version: "24"
           cache: "npm"
       - run: npm ci
       - run: npm run build
