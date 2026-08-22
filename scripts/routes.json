@@ -6733,5 +6733,39 @@
       "sv": "LaplandGifts cookiepolicy: samtycke till analys, affiliate-spårning och hur du hanterar dina inställningar."
     },
     "legal": true
+  },
+  {
+    "path": "/unsubscribe",
+    "fallbackTitle": "Unsubscribe | LaplandGifts",
+    "fallbackDescription": "Enter your email address to remove yourself from our newsletter list.",
+    "fallbackTitleByLang": {
+      "en": "Unsubscribe | LaplandGifts",
+      "fi": "Peruuta tilaus | LaplandGifts",
+      "de": "Newsletter abbestellen | LaplandGifts",
+      "ja": "配信解除 | LaplandGifts",
+      "es": "Cancelar suscripción | LaplandGifts",
+      "pt-BR": "Cancelar inscrição | LaplandGifts",
+      "zh-CN": "取消订阅 | LaplandGifts",
+      "ko": "구독 해지 | LaplandGifts",
+      "fr": "Désabonnement | LaplandGifts",
+      "it": "Disiscrizione | LaplandGifts",
+      "nl": "Uitschrijven | LaplandGifts",
+      "sv": "Avsluta prenumeration | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Enter your email address to remove yourself from our newsletter list.",
+      "fi": "Anna sähköpostiosoitteesi ja poistamme sinut uutiskirjelistalta.",
+      "de": "Geben Sie Ihre E-Mail-Adresse ein, um sich aus unserem Newsletter auszutragen.",
+      "ja": "メールアドレスを入力すると、ニュースレターの配信リストから削除されます。",
+      "es": "Introduzca su dirección de correo electrónico para darse de baja de nuestro boletín.",
+      "pt-BR": "Digite seu endereço de e-mail para sair da nossa lista de newsletter.",
+      "zh-CN": "请输入您的电子邮箱地址,即可从我们的电子报列表中退订。",
+      "ko": "뉴스레터 목록에서 이메일을 제거하려면 주소를 입력하세요.",
+      "fr": "Entrez votre adresse e-mail pour vous retirer de notre liste de diffusion.",
+      "it": "Inserisca il Suo indirizzo e-mail per rimuoversi dalla lista della newsletter.",
+      "nl": "Vul uw e-mailadres in om u af te melden van onze nieuwsbrief.",
+      "sv": "Ange din e-postadress för att ta bort dig från vår nyhetsbrevslista."
+    },
+    "legal": true
   }
 ]

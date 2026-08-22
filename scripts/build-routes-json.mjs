@@ -68,7 +68,12 @@ import { BOUTIQUE_COPY } from '../src/locales/boutiqueCopy/index.ts'
 import { HOME_META } from '../src/locales/homeMeta.ts'
 
 const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv']
-const LEGAL = new Set(['/privacy', '/terms', '/cookie-policy'])
+// 🔴 /unsubscribe KUULUU TÄHÄN. Se on reitti (routes.tsx LEGAL_PATHS) ja sivu
+// (pages/Unsubscribe.tsx), mutta 16.8. poistettu _redirects-catch-all tarkoittaa
+// että vain prerenderöity polku vastaa 200:lla. Kun sitä ei ollut tässä joukossa,
+// footerin "Unsubscribe" osoitti aitoon 404:ään 22.8. asti — build ei kaatunut,
+// koska reitti oli olemassa Reactissa. Reitti ilman prerenderiä ei ole reitti.
+const LEGAL = new Set(['/privacy', '/terms', '/cookie-policy', '/unsubscribe'])
 const BRAND = 'LaplandGifts'
 
 /** Hakukoneen näyttöikkuna: otsikko katkeaa n. 60 merkin jälkeen, kuvaus 160:n. */
