@@ -10,7 +10,7 @@ import {
   KIDS_PICKS,
   TOURS_PICKS,
   type GygPick,
-} from '../../../shared/gyg/picks'
+} from '../shared/gyg/picks'
 
 /**
  * Lahjaksi ostettavat elämykset.

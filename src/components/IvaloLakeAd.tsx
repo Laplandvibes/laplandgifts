@@ -1,5 +1,5 @@
 import { ArrowRight } from 'lucide-react'
-import ivaloAd from '../../../shared/ads/advertisers/ivalo'
+import ivaloAd from '../shared/ads/advertisers/ivalo'
 import { AFFILIATE_REL } from '../data/partners'
 import type { Lang } from '../i18n/useLang'
 import { trackAffiliateClick } from '../lib/analytics'

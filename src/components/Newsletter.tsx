@@ -6,7 +6,7 @@ import { useLang, useLocalePath } from '../i18n/useLang'
 import type { Lang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
 import { NEWSLETTER_PRIVACY } from '../locales/complianceCopy'
-import FounderByline from '../../../shared/FounderByline';
+import FounderByline from '../shared/FounderByline';
 
 /**
  * [LV-FUNNEL 2026-08-21] Lomakesuppilon eventit Umamiin — paikallinen apuri,

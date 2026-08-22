@@ -63,7 +63,7 @@
 @source "./shared/**/*.{ts,tsx}";
 /* Repo-root shared library (ads etc.) — ./shared above is the site-local copy;
    this line covers ../../shared used by AdUnit imports. */
-@source "../../shared/**/*.{ts,tsx}";
+@source "./shared/**/*.{ts,tsx}";
 
 /* Fontit ladataan index.html:n <link rel="stylesheet">-tagilla eikä täältä
    @importilla: CSS:n sisäinen @import pakottaa selaimen odottamaan ensin tämän

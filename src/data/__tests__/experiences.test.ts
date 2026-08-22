@@ -13,7 +13,7 @@ import {
   VISIT_PICKS,
   NATURE_PICKS,
   WELLNESS_PICKS,
-} from '../../../../shared/gyg/picks'
+} from '../../shared/gyg/picks'
 
 const VERIFIED_PATHS = new Set(
   [

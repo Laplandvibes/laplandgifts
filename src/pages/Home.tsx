@@ -15,12 +15,12 @@ import { useLang, LANG_PREFIX } from '../i18n/useLang'
 // generaattori lukee. Oma taulukko tässä tiedostossa ajautui eri mieltä
 // prerenderin kanssa: selain näytti eri otsikkoa kuin hakukone.
 import { HOME_META } from '../locales/homeMeta'
-import AdUnit from '../../../shared/ads/AdUnit'
+import AdUnit from '../shared/ads/AdUnit'
 import IvaloLakeAd from '../components/IvaloLakeAd'
 import SuomikauppaOutletAd from '../components/SuomikauppaOutletAd'
-import kultaCenterAd from '../../../shared/ads/advertisers/kultaCenter'
+import kultaCenterAd from '../shared/ads/advertisers/kultaCenter'
 import { trackAffiliateClick } from '../lib/analytics'
-import HomeAdSlots, { MainPartnerBanner } from '../../../shared/HomeAdSlots'
+import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots'
 import { AD_SLOTS } from '../data/adSlots'
 
 import { AppPromoHero } from '../components/AppPromo';

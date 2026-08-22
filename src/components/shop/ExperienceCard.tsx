@@ -1,5 +1,5 @@
 import { ArrowUpRight, MapPin } from 'lucide-react'
-import { gygHref } from '../../../../shared/gyg/picks'
+import { gygHref } from '../../shared/gyg/picks'
 import type { GiftExperience } from '../../data/experiences'
 import { AFFILIATE_REL } from '../../data/partners'
 import type { Lang } from '../../i18n/useLang'
