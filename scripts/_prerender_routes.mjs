@@ -65,12 +65,27 @@ import { resolve, dirname } from 'node:path';
 // Loaded DYNAMICALLY on purpose: this site is its own git repo, while the module
 // lives in the parent monorepo. A static import would fail at module-resolution
 // time — before any code runs — and hard-break the build if this repo is ever
-// built standalone (e.g. in its own CI). This way a missing module just turns the
-// crawlable-body feature off and the prerender still produces its normal output.
+// built standalone (e.g. in its own CI).
+//
+// 🔴 The VENDORED copy is tried FIRST, and that order is the whole point.
+// "Fails open" was safe only while CI was disabled and every deploy came from a
+// working tree that had ../../ available. Since push-to-deploy went live
+// (cbbc92f, 2026-08-21) the fallback stopped being a graceful degradation and
+// became a silent production regression: measured 2026-08-22 on deploy
+// 51c394a0 (the CI build of e36cf70), every prerendered page shipped at
+// 13 934 B instead of 38 245 B — the whole ecosystem link block gone from all
+// 2 460 files, with a green build and only a NOTE in the log. Vendoring the
+// module is what makes a plain checkout produce the same bytes as a local
+// build; scripts/sync-shared.mjs keeps the copy fresh from the monorepo's
+// committed state. Never delete the vendored file to "simplify" this.
 let crawlableMod = null;
-try {
-  crawlableMod = await import("../../_prerender_crawlable_body.mjs");
-} catch {
+for (const cand of ["./_prerender_crawlable_body.mjs", "../../_prerender_crawlable_body.mjs"]) {
+  try {
+    crawlableMod = await import(cand);
+    break;
+  } catch { /* try the next candidate */ }
+}
+if (!crawlableMod) {
   console.warn("[prerender] NOTE: _prerender_crawlable_body.mjs not reachable — crawlable body disabled");
 }
 const readFooterNetwork = crawlableMod?.readFooterNetwork ?? (() => null);

@@ -134,36 +134,77 @@ const heldUpstream = [];
 const stale = [];
 const noGit = [];
 
-for (const rel of vendoredFiles()) {
-  const posix = rel.replace(/\\/g, '/');
-  const monorepoRel = `shared/${posix}`;
-  const dest = join(vendoredShared, rel);
+/**
+ * Refresh ONE vendored file from the monorepo's committed state, under both
+ * guards. `monorepoRel` / `localRel` are repo-relative POSIX paths, used both
+ * for the git queries and for what the log prints.
+ */
+function syncOne({ monorepoRel, localRel, dest, upstreamOnDisk }) {
   const head = committed(monorepoRel);
 
   if (head === null) {
     // Not in HEAD: either deleted/renamed upstream, or git is unavailable.
-    if (existsSync(join(monorepoShared, rel))) noGit.push(posix);
-    else stale.push(posix);
-    continue;
+    if (existsSync(upstreamOnDisk)) noGit.push(localRel);
+    else stale.push(localRel);
+    return;
   }
-  if (sameText(head, readFileSync(dest, 'utf8'))) continue;
+  // `existsSync` first: vendoredFiles() enumerates from disk so those always
+  // exist, but a file vendored by explicit path can be deleted out from under
+  // us — restore it rather than crashing the build on a missing read.
+  if (existsSync(dest) && sameText(head, readFileSync(dest, 'utf8'))) return;
 
   // Guard (a): uncommitted here — someone is holding this file, and a refresh
   // would be the one edit they cannot recover.
-  if (dirtyIn(repoRoot, `src/shared/${posix}`)) {
-    heldLocal.push(posix);
-    continue;
+  if (dirtyIn(repoRoot, localRel)) {
+    heldLocal.push(localRel);
+    return;
   }
   // Guard (b): uncommitted upstream — HEAD may be OLDER than what is already
   // committed and live here, so syncing would revert a shipped fix.
   if (dirtyIn(monorepoRoot, monorepoRel)) {
-    heldUpstream.push(posix);
-    continue;
+    heldUpstream.push(monorepoRel);
+    return;
   }
 
   writeFileSync(dest, head);
-  updated.push(posix);
+  updated.push(localRel);
 }
+
+for (const rel of vendoredFiles()) {
+  const posix = rel.replace(/\\/g, '/');
+  syncOne({
+    monorepoRel: `shared/${posix}`,
+    localRel: `src/shared/${posix}`,
+    dest: join(vendoredShared, rel),
+    upstreamOnDisk: join(monorepoShared, rel),
+  });
+}
+
+/**
+ * 🔴 Vendored OUTSIDE src/shared/, and not part of the marker list above.
+ *
+ * scripts/_prerender_routes.mjs imports the crawlable-body helper dynamically
+ * and "fails open" when it cannot resolve it. That was harmless while every
+ * deploy came from a working tree that had ../ available. It stopped being
+ * harmless when push-to-deploy went live (cbbc92f, 2026-08-21): the CI build
+ * of e36cf70 (deploy 51c394a0, 2026-08-22) shipped every prerendered page at
+ * 13 934 B instead of 38 245 B — the ecosystem link block missing from all
+ * 2 460 files — with a green build and one NOTE in the log.
+ *
+ * The module is self-contained (node builtins only), so vendoring it costs
+ * nothing and is the only thing that makes a plain checkout emit the same
+ * bytes as a local build. Same two guards as everything else. This is a
+ * deliberate exception to difference #2 in the header: that one is about
+ * _prerender_routes.mjs, which this repo has genuinely FORKED — this helper
+ * is not forked, so keeping it in sync is right.
+ */
+const CRAWLABLE = '_prerender_crawlable_body.mjs';
+syncOne({
+  monorepoRel: CRAWLABLE,
+  localRel: `scripts/${CRAWLABLE}`,
+  dest: join(repoRoot, 'scripts', CRAWLABLE),
+  upstreamOnDisk: join(monorepoRoot, CRAWLABLE),
+});
 
 writeFileSync(
   join(vendoredShared, MARKER),
@@ -191,22 +232,24 @@ writeFileSync(
   ].join('\n'),
 );
 
-const total = vendoredFiles().length;
+// +1 for scripts/_prerender_crawlable_body.mjs, which is vendored from the
+// monorepo root rather than from shared/ and so is not in vendoredFiles().
+const total = vendoredFiles().length + 1;
 if (updated.length) {
-  console.log(`[sync-shared] Refreshed ${updated.length}/${total} vendored file(s) from ../shared:`);
+  console.log(`[sync-shared] Refreshed ${updated.length}/${total} vendored file(s) from the monorepo:`);
   updated.forEach((f) => console.log(`  • ${f}`));
   console.log('[sync-shared] Commit these so CI builds the same code.');
 } else {
-  console.log(`[sync-shared] ${total} vendored file(s) already up to date with ../shared (or held, see below).`);
+  console.log(`[sync-shared] ${total} vendored file(s) already up to date with the monorepo (or held, see below).`);
 }
 if (heldLocal.length) {
   console.warn(`[sync-shared] HELD: ${heldLocal.length} file(s) differ from the monorepo but are UNCOMMITTED here — left alone so the change is not destroyed:`);
-  heldLocal.forEach((f) => console.warn(`  • src/shared/${f}`));
+  heldLocal.forEach((f) => console.warn(`  • ${f}`));
   console.warn('[sync-shared] Commit or discard them in this repo, then re-run to sync.');
 }
 if (heldUpstream.length) {
   console.warn(`[sync-shared] HELD: ${heldUpstream.length} file(s) have UNCOMMITTED changes in the monorepo — not synced, because HEAD may be older than what is live here:`);
-  heldUpstream.forEach((f) => console.warn(`  • ../shared/${f}`));
+  heldUpstream.forEach((f) => console.warn(`  • ../${f}`));
   console.warn('[sync-shared] Commit them in the monorepo and re-run to pick them up.');
 }
 if (stale.length) {
