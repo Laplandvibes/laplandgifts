@@ -110,8 +110,17 @@ const SITE_NAME = args.siteName || 'LaplandVibes';
 const NETWORK = args.crawlableBody ? readFooterNetwork(CWD) : null;
 // Internal links for the crawlable block, filled by pass 0 of the route loop.
 const INTERNAL_BY_LANG = {};
-if (args.crawlableBody && !NETWORK) {
-  console.warn("[prerender] WARN: --crawlableBody set but shared/Footer.tsx links/labels could not be read — skipping body injection");
+if (args.crawlableBody && (!crawlableMod || !NETWORK)) {
+  console.error('');
+  console.error('[prerender] CRAWLABLE-BODY -PORTTI: --crawlableBody pyydettiin, mutta runkoa ei voi rakentaa.');
+  if (!crawlableMod) console.error('  - _prerender_crawlable_body.mjs ei latautunut (vendoroitu kopio puuttuu?)');
+  else console.error('  - shared/Footer.tsx -linkkeja/labeleita ei voitu lukea');
+  console.error('  23.8.2026 asti tama oli console.warn, ja juuri siksi CI julkaisi sivut joilla oli');
+  console.error('  ~9 sanaa runkoa: vihrea build, yksi rivi lokissa. Fail-open on turvallinen vain');
+  console.error('  niin kauan kuin ainoa buildaaja on tyopuu. Moduuli on nyt vendoroitu, joten myos');
+  console.error('  plain checkout loytaa sen - jos ei loyda, se on aito vika eika ymparistoero.');
+  console.error('');
+  process.exit(1);
 }
 const TWITTER = args.twitter || '@laplandvibes';
 const DEFAULT_OG = args.defaultOg || '/og-default.jpg';
