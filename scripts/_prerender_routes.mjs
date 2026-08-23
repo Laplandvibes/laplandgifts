@@ -17,10 +17,18 @@
  *   --locales=en,fi,de                      (optional) override locale list,
  *                                           comma-separated — for single-locale
  *                                           or 3-locale sites (ski, default 11)
- *   --source=auto|per-lang|nested|json|page-inline
+ *   --source=auto|meta|per-lang|nested|json|page-inline
  *                                           (optional) force a specific reader.
  *                                           Default "auto" tries readers in
  *                                           preference order.
+ *   --meta=scripts/prerender-meta.json      (optional) pre-generated meta map:
+ *                                           { "<path>": { "<lang>": { "title", "description" } } }
+ *                                           Tried FIRST in auto order. Lang codes match
+ *                                           the `lang` field below (en, fi, …, pt-BR, zh-CN).
+ *                                           Lets a site supply per-route × per-locale meta
+ *                                           computed by its own generator (e.g. transport's
+ *                                           scripts/generate-prerender-meta.mjs). Missing
+ *                                           file/route/lang falls through to other readers.
  *
  * routes.json schema:
  *   [
@@ -60,38 +68,12 @@
 
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
-// Shared with the other LV prerenderers so this fork cannot silently drift again.
-//
-// Loaded DYNAMICALLY on purpose: this site is its own git repo, while the module
-// lives in the parent monorepo. A static import would fail at module-resolution
-// time — before any code runs — and hard-break the build if this repo is ever
-// built standalone (e.g. in its own CI).
-//
-// 🔴 The VENDORED copy is tried FIRST, and that order is the whole point.
-// "Fails open" was safe only while CI was disabled and every deploy came from a
-// working tree that had ../../ available. Since push-to-deploy went live
-// (cbbc92f, 2026-08-21) the fallback stopped being a graceful degradation and
-// became a silent production regression: measured 2026-08-22 on deploy
-// 51c394a0 (the CI build of e36cf70), every prerendered page shipped at
-// 13 934 B instead of 38 245 B — the whole ecosystem link block gone from all
-// 2 460 files, with a green build and only a NOTE in the log. Vendoring the
-// module is what makes a plain checkout produce the same bytes as a local
-// build; scripts/sync-shared.mjs keeps the copy fresh from the monorepo's
-// committed state. Never delete the vendored file to "simplify" this.
-let crawlableMod = null;
-for (const cand of ["./_prerender_crawlable_body.mjs", "../../_prerender_crawlable_body.mjs"]) {
-  try {
-    crawlableMod = await import(cand);
-    break;
-  } catch { /* try the next candidate */ }
-}
-if (!crawlableMod) {
-  console.warn("[prerender] NOTE: _prerender_crawlable_body.mjs not reachable — crawlable body disabled");
-}
-const readFooterNetwork = crawlableMod?.readFooterNetwork ?? (() => null);
-const buildCrawlableBody = crawlableMod?.buildCrawlableBody ?? (() => null);
-const stripCrawlableBody = crawlableMod?.stripCrawlableBody ?? ((h) => h);
-const injectCrawlableBody = crawlableMod?.injectCrawlableBody ?? ((h) => h);
+import {
+  readFooterNetwork,
+  buildCrawlableBody,
+  stripCrawlableBody,
+  injectCrawlableBody,
+} from './_prerender_crawlable_body.mjs';
 
 const CWD = process.cwd();
 const args = Object.fromEntries(
@@ -107,25 +89,26 @@ if (!SITE) {
   process.exit(1);
 }
 const SITE_NAME = args.siteName || 'LaplandVibes';
-const NETWORK = args.crawlableBody ? readFooterNetwork(CWD) : null;
-// Internal links for the crawlable block, filled by pass 0 of the route loop.
-const INTERNAL_BY_LANG = {};
-if (args.crawlableBody && (!crawlableMod || !NETWORK)) {
-  console.error('');
-  console.error('[prerender] CRAWLABLE-BODY -PORTTI: --crawlableBody pyydettiin, mutta runkoa ei voi rakentaa.');
-  if (!crawlableMod) console.error('  - _prerender_crawlable_body.mjs ei latautunut (vendoroitu kopio puuttuu?)');
-  else console.error('  - shared/Footer.tsx -linkkeja/labeleita ei voitu lukea');
-  console.error('  23.8.2026 asti tama oli console.warn, ja juuri siksi CI julkaisi sivut joilla oli');
-  console.error('  ~9 sanaa runkoa: vihrea build, yksi rivi lokissa. Fail-open on turvallinen vain');
-  console.error('  niin kauan kuin ainoa buildaaja on tyopuu. Moduuli on nyt vendoroitu, joten myos');
-  console.error('  plain checkout loytaa sen - jos ei loyda, se on aito vika eika ymparistoero.');
-  console.error('');
-  process.exit(1);
-}
 const TWITTER = args.twitter || '@laplandvibes';
 const DEFAULT_OG = args.defaultOg || '/og-default.jpg';
 const ROUTES_FILE = resolve(CWD, args.routes || 'scripts/routes.json');
 const FORCE_SOURCE = args.source || 'auto';
+
+// Optional pre-generated meta map (--meta). Absent/invalid → empty map, which
+// makes the 'meta' reader a no-op and preserves behavior for all other sites.
+let META_MAP = {};
+if (args.meta && typeof args.meta === 'string') {
+  const metaFile = resolve(CWD, args.meta);
+  if (existsSync(metaFile)) {
+    try {
+      META_MAP = JSON.parse(readFileSync(metaFile, 'utf-8'));
+    } catch (e) {
+      console.warn(`[prerender] WARN: could not parse --meta file ${metaFile}: ${e.message}`);
+    }
+  } else {
+    console.warn(`[prerender] WARN: --meta file missing at ${metaFile} — falling back to other readers`);
+  }
+}
 
 const DIST = resolve(CWD, 'dist');
 const LOCALES = resolve(CWD, 'src', 'locales');
@@ -139,9 +122,26 @@ if (!existsSync(ROUTES_FILE)) {
   process.exit(1);
 }
 
-// Stripped on read: this script overwrites the very file it reads its shell from,
-// so without this a re-run would give every route the HOME page block.
-const SHELL = stripCrawlableBody(readFileSync(resolve(DIST, "index.html"), "utf-8"));
+// The shell is read from dist/index.html — which this script also OVERWRITES for
+// the EN home route. Without the strip below, a second run (or a second
+// prerenderer chained after this one, as on laplandskiresorts) reads a shell that
+// already contains the previous run's home-page block, the "#root is empty" regex
+// stops matching, and every route silently inherits the HOME page's h1/description/nav.
+// Stripping makes the script genuinely idempotent, as its docs claim.
+const SHELL = stripCrawlableBody(readFileSync(resolve(DIST, 'index.html'), 'utf-8'));
+
+// Extract the runtime LV-LOCALE-TITLE map (`var T = {…}`) baked into the shell by
+// scripts/inject_locale_titles.mjs — it holds the localized HOME/site title per
+// locale. Reused as a static per-locale <title>/og:title for the HOME route on
+// sites whose routes.json has only an English fallbackTitle (otherwise /fi /de
+// /ja … would ship an English static title — bad for social shares + crawl).
+let SHELL_TITLE_MAP = null;
+try {
+  const tm = SHELL.match(/var\s+T\s*=\s*(\{[\s\S]*?\})\s*;/);
+  if (tm) SHELL_TITLE_MAP = JSON.parse(tm[1]);
+} catch { SHELL_TITLE_MAP = null; }
+// loc.lang → short code used as a key in the shell T map.
+const SHELL_TITLE_KEY = { en: 'en', fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-BR': 'pt-br', 'zh-CN': 'zh-cn', ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv' };
 const routes = JSON.parse(readFileSync(ROUTES_FILE, 'utf-8'));
 
 // Locale config — keep in sync with src/components/SEO.tsx PATH_PREFIX/BCP47/OG_LOCALE
@@ -160,8 +160,20 @@ const FULL_LOCALE_LIST = [
   { lang: 'fr',    prefix: '/fr', bcp47: 'fr-FR', og: 'fr_FR', file: 'copy.fr.ts',   ident: 'fr',   jsonDir: 'fr'    },
   { lang: 'it',    prefix: '/it', bcp47: 'it-IT', og: 'it_IT', file: 'copy.it.ts',   ident: 'it',   jsonDir: 'it'    },
   { lang: 'nl',    prefix: '/nl', bcp47: 'nl-NL', og: 'nl_NL', file: 'copy.nl.ts',   ident: 'nl',   jsonDir: 'nl'    },
-  { lang: 'sv',    prefix: '/sv', bcp47: 'sv-SE', og: 'sv_SE', file: 'copy.sv.ts',   ident: 'sv',   jsonDir: 'sv'    },
 ];
+
+// Opt-in extra locales (e.g. --addLocales=sv). Kept OUT of FULL_LOCALE_LIST so
+// sites without translated copy never emit EN-fallback pages at /sv URLs.
+const EXTRA_LOCALES = {
+  sv: { lang: 'sv', prefix: '/sv', bcp47: 'sv-SE', og: 'sv_SE', file: 'copy.sv.ts', ident: 'sv', jsonDir: 'sv' },
+};
+if (args.addLocales) {
+  for (const key of args.addLocales.split(',').map((s) => s.trim())) {
+    if (EXTRA_LOCALES[key] && !FULL_LOCALE_LIST.some((l) => l.lang === key)) {
+      FULL_LOCALE_LIST.push(EXTRA_LOCALES[key]);
+    }
+  }
+}
 
 const LOCALE_FILTER = args.locales
   ? new Set(args.locales.split(',').map((s) => s.trim()))
@@ -205,11 +217,15 @@ function sliceBlock(src, openIdx) {
 
 /** Find ALL `<key>: { … }` blocks in src, return list of inner slices. */
 function findKeyBlocks(src, key) {
-  const re = new RegExp(`(?:["']${key.replace(/[-/]/g, '\\$&')}["']|\\b${key}\\b)\\s*:\\s*\\{`, 'g');
+  // `key: {` and `key: [` both count. A per-language block is as often a LIST
+  // as an object (`Record<Lang, Faq[]>`), and matching only the object form
+  // made every entry of such a list invisible in all twelve languages at once.
+  const re = new RegExp(`(?:["']${key.replace(/[-/]/g, '\\$&')}["']|\\b${key}\\b)\\s*:\\s*([\\{\\[])`, 'g');
   const out = [];
   let m;
   while ((m = re.exec(src)) !== null) {
-    const inner = sliceBlock(src, m.index + m[0].length - 1);
+    const at = m.index + m[0].length - 1;
+    const inner = m[1] === '{' ? sliceBlock(src, at) : sliceArray(src, at);
     if (inner != null) out.push(inner);
   }
   return out;
@@ -268,8 +284,21 @@ function pickTD(block) {
 // ---------- READER 1: per-lang copy.{lang}.ts (original) ----------
 const perLangSources = {};
 for (const loc of LOCALE_LIST) {
-  const fp = resolve(LOCALES, loc.file);
-  if (existsSync(fp)) perLangSources[loc.lang] = readFileSync(fp, 'utf-8');
+  // Both spellings occur in the network: copy.ptBR.ts (most sites) and
+  // copy.pt-BR.ts (stayinlapland, laplandkids). Trying only the first left
+  // those locales with an empty copy source and no error anywhere.
+  const fp = [loc.file, `copy.${loc.lang}.ts`]
+    .map((n) => resolve(LOCALES, n)).find((p) => existsSync(p)) || resolve(LOCALES, loc.file);
+  let src = existsSync(fp) ? readFileSync(fp, 'utf-8') : '';
+  // 🔴 Some sites keep the locale file as a thin re-export and the real text in
+  // an overrides file beside it: laplandnature's copy.sv.ts is 232 bytes,
+  // `deepMerge(en, SV_OVERRIDES)`, while overrides.sv.ts holds 80+ kB of
+  // Swedish. Readers that looked only at the stub harvested nothing for eight
+  // of twelve locales. Both files are the SAME locale, so appending cannot leak
+  // another language in, and duplicate strings are dropped by harvestKeep.
+  const ovr = fp.replace(/copy\.(?=[^\\\/]*$)/, 'overrides.');
+  if (ovr !== fp && existsSync(ovr)) src += '\n' + readFileSync(ovr, 'utf-8');
+  if (src) perLangSources[loc.lang] = src;
 }
 
 function readPerLangCopy(loc, copyKey) {
@@ -407,15 +436,40 @@ function readPerPageCopyFile(loc, copyFileTpl) {
   return pickTD(seoBlock);
 }
 
+// ---------- READER 0: pre-generated meta map (--meta, e.g. transport) ----------
+function readMetaMap(loc, route) {
+  const entry = META_MAP[route.path];
+  const m = entry && entry[loc.lang];
+  if (!m || (!m.title && !m.description)) return null;
+  return { title: m.title || null, description: m.description || null };
+}
+
+/**
+ * Optional FAQ for a route/locale from the --meta map. Returns an array of
+ * { q, a } or null. Only sites whose meta generator emits a `faq` array (e.g.
+ * laplandnature) produce this; every other site's map has no `faq` key, so this
+ * is a no-op for them and the prerendered output is byte-identical to before.
+ */
+function readFaqFromMeta(loc, route) {
+  const entry = META_MAP[route.path];
+  const m = entry && entry[loc.lang];
+  const faq = m && Array.isArray(m.faq) ? m.faq : null;
+  if (!faq || !faq.length) return null;
+  const items = faq.filter((it) => it && typeof it.q === 'string' && typeof it.a === 'string');
+  return items.length ? items : null;
+}
+
 // ---------- meta resolver: try all configured sources in preference order ----------
 function resolveRouteMeta(loc, route) {
   const order = FORCE_SOURCE === 'auto'
-    ? ['copyFile', 'per-lang', 'nested', 'json', 'page-inline']
+    ? ['meta', 'copyFile', 'per-lang', 'nested', 'json', 'page-inline']
     : [FORCE_SOURCE];
 
   for (const src of order) {
     let meta = null;
-    if (src === 'copyFile' && route.copyFile) {
+    if (src === 'meta') {
+      meta = readMetaMap(loc, route);
+    } else if (src === 'copyFile' && route.copyFile) {
       meta = readPerPageCopyFile(loc, route.copyFile);
     } else if (src === 'per-lang' && route.copyKey) {
       meta = readPerLangCopy(loc, route.copyKey);
@@ -429,6 +483,536 @@ function resolveRouteMeta(loc, route) {
     if (meta && (meta.title || meta.description)) return meta;
   }
   return null;
+}
+
+/**
+ * Resolve {title, description} for ONE route × locale, plus whether the title
+ * came from a locale-specific source.
+ *
+ * Extracted from the render loop so the --crawlableBody pre-pass can build its
+ * internal anchor texts from the SAME cascade the page itself uses. A second
+ * copy of this logic would drift, and drifting copies of prerender logic are
+ * exactly what this codebase has already paid for (the two forked prerenderers).
+ *
+ * Safe to call twice for the same route/locale: every reader returns a FRESH
+ * object literal, so nothing here mutates shared state between passes.
+ */
+function resolveLocaleMeta(route, loc, enMeta) {
+  let meta = resolveRouteMeta(loc, route);
+  let localizedTitle = !!(meta && meta.title);
+  // Per-locale fallbacks BEFORE English: (1) explicit routes.json
+  // fallbackTitleByLang/fallbackDescriptionByLang; (2) for the HOME route, the
+  // localized title from the shell's LV-LOCALE-TITLE map. Keeps a native
+  // <title>/og:title at first byte for every locale instead of English.
+  if (!meta || !meta.title) {
+    const tByLang = route.fallbackTitleByLang && route.fallbackTitleByLang[loc.lang];
+    const dByLang = route.fallbackDescriptionByLang && route.fallbackDescriptionByLang[loc.lang];
+    if (tByLang) {
+      meta = { title: tByLang, description: dByLang || (meta && meta.description) || null };
+      localizedTitle = true;
+    } else if (route.path === '/' && SHELL_TITLE_MAP) {
+      const st = SHELL_TITLE_MAP[SHELL_TITLE_KEY[loc.lang]];
+      if (st) { meta = { title: st, description: (meta && meta.description) || null }; localizedTitle = true; }
+    }
+  }
+  if (!meta || !meta.title) {
+    meta = { title: enMeta.title, description: meta?.description || enMeta.description };
+  }
+  if (!meta.description) {
+    const dByLang = route.fallbackDescriptionByLang && route.fallbackDescriptionByLang[loc.lang];
+    meta.description = dByLang || enMeta.description;
+  }
+  // If the title doesn't already include site name, append it. Detect
+  // pre-existing site name via case-insensitive substring of SITE_NAME or
+  // a clear " | " / " — " separator with a brand-shaped word on the right.
+  if (
+    route.appendSiteName &&
+    meta.title &&
+    !meta.title.toLowerCase().includes(SITE_NAME.toLowerCase()) &&
+    !/\s[|—]\s/.test(meta.title)
+  ) {
+    meta.title = `${meta.title} | ${SITE_NAME}`;
+  }
+  return { meta, localizedTitle };
+}
+
+/** URL a route×locale actually resolves to — same construction the page's own canonical uses. */
+function routeUrl(route, loc) {
+  const cleanPath = route.path === '/' ? '' : route.path;
+  const cLoc = route.canonicalLocale
+    ? (LOCALE_LIST.find((l) => l.lang === route.canonicalLocale) || loc)
+    : loc;
+  return `${SITE}${cLoc.prefix}${cleanPath}`.replace(/\/?$/, '/');
+}
+
+// ---------- crawlable-body text harvest (--crawlableBody) ----------
+// Collect the route's OWN localized copy strings — the same text React renders
+// after hydration — so the pre-hydration block carries real page content, not
+// only title+description+anchors. Measured 2026-08-21 over all 9,491 network
+// pages: the block alone lands at 80–245 words ⇒ ~3,100 pages under the
+// ~250-word thin-content line, while the four sites whose prerender already
+// carries body text (hub/gifts/transport/weddings) sit at 0 thin pages.
+//
+// SAME-LOCALE ONLY: a non-EN route whose copy source lacks that language gets
+// NOTHING here rather than English text — EN paragraphs on a /fi/ URL is
+// wrong-language content the network has already paid for (blog root 18.8.).
+// Fail-open everywhere: any parse problem yields fewer paragraphs, never a
+// broken build. Routes may opt into extra source blocks via routes.json
+// "harvestKeys": ["hero", "intro"] when their own copy block is meta-only.
+const HARVEST_SKIP_KEY_RE = /(aria|alt$|alt[A-Z]|cta|button|label|placeholder|img|image|icon|logo|photo|src|href|url|link|badge|eyebrow|kicker|watching|scroll|consent|cookie[A-Z]|menu|^nav$|nav[A-Z]|search|lang|switch|toggle|price|amount|date|meta[A-Z]|seo)/i;
+
+function harvestKeep(value, meta, seen) {
+  if (typeof value !== 'string') return null;
+  const v = value.replace(/\s+/g, ' ').trim();
+  if (!v || seen.has(v)) return null;
+  if (v.includes('{') || v.includes('}')) return null; // runtime placeholders would render raw
+  if (/^(https?:)?\//.test(v) || /^[\w.+-]+@[\w.-]+$/.test(v)) return null; // paths, URLs, emails
+  if (/^[\d\s€$£%+.,;:–—-]+$/.test(v)) return null; // bare numbers/prices
+  const cjk = (v.match(/[぀-ヿ㐀-䶿一-鿿가-힯]/g) || []).length;
+  const minLen = cjk > v.length * 0.3 ? 18 : 40;
+  if (v.length < minLen) return null;
+  if (meta && (v === meta.title || v === meta.description)) return null; // already in the block
+  seen.add(v);
+  return v;
+}
+
+function harvestFromObject(node, out, meta, seen, budget) {
+  if (!node || budget.words <= 0) return;
+  if (Array.isArray(node)) {
+    for (const it of node) {
+      if (budget.words <= 0) return;
+      if (typeof it === 'string') {
+        const kept = harvestKeep(it, meta, seen);
+        if (kept) { out.push(kept); budget.words -= kept.split(/\s+/).length; }
+      } else harvestFromObject(it, out, meta, seen, budget);
+    }
+    return;
+  }
+  if (typeof node === 'object') {
+    for (const [k, v] of Object.entries(node)) {
+      if (budget.words <= 0) return;
+      if (HARVEST_SKIP_KEY_RE.test(k)) continue;
+      if (typeof v === 'string') {
+        const kept = harvestKeep(v, meta, seen);
+        if (kept) { out.push(kept); budget.words -= kept.split(/\s+/).length; }
+      } else harvestFromObject(v, out, meta, seen, budget);
+    }
+  }
+}
+
+function harvestFromTsBlock(block, out, meta, seen, budget) {
+  if (!block || budget.words <= 0) return;
+  // 🔴 The key may be QUOTED. Half the network's copy files are auto-generated
+  // JSON-style (`"metaTitle": "…"`, laplandkids' header says so in line 1), and
+  // a bare `(\w+)\s*:` never matches those — the closing quote sits between the
+  // key and the colon. Measured 2026-08-22 on laplandkids: the 47 000-character
+  // `pages.destinations` block yielded ZERO strings while the same content in
+  // an unquoted file yielded thousands of words. The build looked healthy
+  // ("harvest: 48 pages with body copy"), just with most routes silently empty.
+  const kvRe = /["']?(\w+)["']?\s*:\s*(['"`])((?:\\.|(?!\2).)*)\2/g;
+  let m;
+  while ((m = kvRe.exec(block)) !== null && budget.words > 0) {
+    if (HARVEST_SKIP_KEY_RE.test(m[1])) continue;
+    const kept = harvestKeep(unescapeJsString(m[3]), meta, seen);
+    if (kept) { out.push(kept); budget.words -= kept.split(/\s+/).length; }
+  }
+  // 🔴 The kv regex above needs a `key:` in front of every string, so a BARE
+  // STRING ARRAY yields nothing at all. laplandluxuryvillas keeps every villa
+  // and destination paragraph in `copy: ['…','…']` and `signature: [...]`, so
+  // its records harvested the one-line tagline and stopped — 8 villa routes ×
+  // 5 locales sat on the shell word count (own crawl 2026-08-23).
+  // Objects INSIDE an array were never the problem: the kv scan is linear and
+  // does not care about nesting, so `[{ title: '…' }]` already matched. Only
+  // key-less strings were invisible.
+  const arrRe = /["']?(\w+)["']?\s*:\s*\[/g;
+  let am;
+  while ((am = arrRe.exec(block)) !== null && budget.words > 0) {
+    if (HARVEST_SKIP_KEY_RE.test(am[1])) continue;
+    const chunk = sliceArray(block, arrRe.lastIndex - 1);
+    if (!chunk) continue;
+    // `(?<![:\w])` keeps this off the values the kv pass already took.
+    const strRe = /(?<![:\w])(['"`])((?:\\.|(?!\1).)*)\1/g;
+    let sm;
+    while ((sm = strRe.exec(chunk)) !== null && budget.words > 0) {
+      const kept = harvestKeep(unescapeJsString(sm[2]), meta, seen);
+      if (kept) { out.push(kept); budget.words -= kept.split(/\s+/).length; }
+    }
+  }
+}
+
+/** Slice the balanced ( … ) starting at openIdx, returning the inside. */
+function sliceParens(src, openIdx) {
+  let depth = 0, start = -1;
+  for (let i = openIdx; i < src.length; i++) {
+    const c = src[i];
+    if (c === '(') { if (depth === 0) start = i + 1; depth++; }
+    else if (c === ')') { depth--; if (depth === 0) return src.slice(start, i); }
+  }
+  return null;
+}
+
+/** Harvest the prose out of JSX bodies inside a record block.
+ *
+ *  `{ heading: '…', body: (<><p>Late September … </p></>) }` — the headings are
+ *  ordinary string fields and are picked up by harvestFromTsBlock, but the
+ *  paragraphs are JSX text nodes. Strip the tags (which takes their attributes
+ *  with them, so no className or href text leaks in) and the {expressions},
+ *  then keep what is left line by line. */
+const INLINE_TAG = /^<\/?(?:em|strong|b|i|u|a|span|code|small|sup|sub|abbr|mark|time|BlogLink|Link)\b/i;
+
+function harvestJsxBodies(block, out, meta, seen, budget) {
+  const re = /\bbody\s*:\s*\(/g;
+  let m;
+  while ((m = re.exec(block)) !== null && budget.words > 0) {
+    const jsx = sliceParens(block, m.index + m[0].length - 1);
+    if (!jsx) continue;
+    re.lastIndex = m.index + m[0].length + (jsx.length || 0);
+    // An inline tag closes a WORD, a block tag closes a LINE. Cutting the line
+    // at every tag looked simpler but split paragraphs mid-sentence: "Late
+    // September to mid-October is <em>ruska</em> — the Finnish autumn…" came
+    // apart into three fragments, two of them under the keep threshold, and the
+    // survivor began mid-clause.
+    const text = jsx
+      .replace(/<[^>]*>/g, (tag) => (INLINE_TAG.test(tag) ? ' ' : '\n'))
+      .replace(/\{[^{}]*\}/g, ' ')    // {' '} and other simple expressions
+      .replace(/&nbsp;/g, ' ');
+    for (const line of text.split('\n')) {
+      if (budget.words <= 0) break;
+      const kept = harvestKeep(line.replace(/\s+/g, ' ').trim(), meta, seen);
+      if (kept) { out.push(kept); budget.words -= kept.split(/\s+/).length; }
+    }
+  }
+}
+
+/** Argument order of the network's `pick(lang, en, fi, …)` helper. A missing
+ *  argument falls back to English, exactly as the runtime helper does. */
+const PICK_ORDER = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv'];
+
+/** Split the balanced ( … ) starting at openIdx into top-level arguments,
+ *  respecting nested brackets and string literals. Returns null on imbalance. */
+function splitCallArgs(src, openIdx) {
+  let depth = 0, start = -1, inStr = false, q = '', esc = false;
+  const args = [];
+  for (let i = openIdx; i < src.length; i++) {
+    const c = src[i];
+    if (inStr) {
+      if (esc) { esc = false; continue; }
+      if (c === '\\') { esc = true; continue; }
+      if (c === q) inStr = false;
+      continue;
+    }
+    if (c === '"' || c === "'" || c === '`') { inStr = true; q = c; continue; }
+    if (c === '(' || c === '[' || c === '{') { depth++; if (depth === 1) start = i + 1; continue; }
+    if (c === ')' || c === ']' || c === '}') {
+      depth--;
+      if (depth === 0) { args.push(src.slice(start, i)); return args; }
+      continue;
+    }
+    if (c === ',' && depth === 1) { args.push(src.slice(start, i)); start = i + 1; }
+  }
+  return null;
+}
+
+/** Harvest this locale's argument out of every `pick(lang, …)` call in src. */
+function harvestPickCalls(src, loc, out, meta, seen, budget) {
+  const idx = PICK_ORDER.indexOf(loc.lang);
+  if (idx < 0) return;
+  const re = /\bpick\s*\(/g;
+  let m;
+  while ((m = re.exec(src)) !== null && budget.words > 0) {
+    const args = splitCallArgs(src, m.index + m[0].length - 1);
+    if (!args || args.length < 2) continue;
+    // args[0] is the lang argument; args[1] is English.
+    const pickArg = args[1 + idx] !== undefined ? args[1 + idx].trim() : '';
+    const chosen = pickArg || (args[1] || '').trim();
+    const lit = /^(['"`])((?:\\.|(?!\1).)*)\1$/.exec(chosen);
+    if (!lit) continue;
+    const kept = harvestKeep(unescapeJsString(lit[2]), meta, seen);
+    if (kept) { out.push(kept); budget.words -= kept.split(/\s+/).length; }
+  }
+}
+
+/** Slice the balanced [ … ] starting at openIdx. Same fail-open contract as
+ *  sliceBlock: an imbalance yields null and the caller harvests nothing. */
+function sliceArray(src, openIdx) {
+  let depth = 0, start = -1;
+  for (let i = openIdx; i < src.length; i++) {
+    const c = src[i];
+    if (c === '[') { if (depth === 0) start = i + 1; depth++; }
+    else if (c === ']') { depth--; if (depth === 0) return start < 0 ? null : src.slice(start, i); }
+  }
+  return null;
+}
+
+/** JSON-locale subtree for a jsonKey — same file/keyPath logic as readJsonLocale. */
+const harvestJsonCache = new Map();
+function readJsonSubtree(loc, jsonKey) {
+  const dir = resolve(LOCALES, loc.jsonDir);
+  if (!existsSync(dir)) return null;
+  const parts = jsonKey.split('.');
+  const tryPaths = parts.length === 1
+    ? [['pages', parts]]
+    : [[parts[0], parts.slice(1)], ['pages', parts]];
+  for (const [file, keyPath] of tryPaths) {
+    const fp = resolve(dir, `${file}.json`);
+    if (!existsSync(fp)) continue;
+    try {
+      let data = harvestJsonCache.get(fp);
+      if (!data) { data = JSON.parse(readFileSync(fp, 'utf-8')); harvestJsonCache.set(fp, data); }
+      let cursor = data;
+      for (const p of keyPath) cursor = cursor?.[p];
+      if (cursor) return cursor;
+    } catch { /* fail open */ }
+  }
+  return null;
+}
+
+function harvestRouteText(loc, route, meta) {
+  const out = [];
+  const seen = new Set();
+  const budget = { words: 700 };
+  try {
+    // Curated FAQ first (same locale ONLY — the JSON-LD EN fallback is fine for
+    // structured data, but visible EN text on a non-EN URL is not).
+    const faq = readFaqFromMeta(loc, route);
+    if (faq) {
+      for (const it of faq) {
+        if (budget.words <= 0) break;
+        const kept = harvestKeep(`${it.q} ${it.a}`, meta, seen);
+        if (kept) { out.push(kept); budget.words -= kept.split(/\s+/).length; }
+      }
+    }
+
+    // Extra whole-file sources (routes.json "harvestFiles") — e.g. the shared
+    // Legal components, whose 12-language COPY map carries the full page text
+    // that React renders on /privacy, /terms and /cookie-policy. Two shapes are
+    // recognized: `const <ident> = {…}` per-lang blocks (stays pages) and a
+    // nested `<lang>: {…}` key inside one big map (shared Legal COPY).
+    // [LV-HARVEST-RECORD 2026-08-22] Detail pages whose copy lives in a
+    // per-language DATA file keyed by slug — laplandnightlife's
+    // `src/data/cities.{lang}.ts` is `Record<slug, {blurb, intro, …}>` in 11
+    // languages, one record per /city/<slug> page. harvestFiles cannot be used
+    // for these: it would harvest the WHOLE file, so all 14 city pages would
+    // print all 14 cities' text — duplicate content, worse than a thin page.
+    //
+    //   { "path": "/city/oulu",
+    //     "harvestRecord": { "file": "src/data/cities.{lang}.ts", "key": "oulu" } }
+    //
+    // An ARRAY is accepted too, when one page's copy is split over several
+    // per-language data files:
+    //
+    //   { "path": "/destinations/levi",
+    //     "harvestRecord": [ { "file": "src/locales/data.gen.{lang}.ts", "key": "levi" },
+    //                        { "file": "src/data/guides.{lang}.ts",      "key": "levi" } ] }
+    //
+    // {lang} is substituted with the locale's copy-file ident (ptBR, zhCN) and,
+    // if that file does not exist, with the plain lang tag (pt-BR, zh-CN) —
+    // both spellings occur in the network. Missing file or missing record ⇒
+    // nothing harvested for that locale, never English in its place.
+    // A route may name SEVERAL records: laplandactivities' destination pages
+    // take their localized name/why/access from `src/locales/data.gen.{lang}.ts`
+    // AND their season/planning copy from `src/data/guides.{lang}.ts`. A single
+    // record would force one of the two to stay out of the crawlable body while
+    // the page itself renders both. Object form still works unchanged.
+    const recs = Array.isArray(route.harvestRecord)
+      ? route.harvestRecord
+      : (route.harvestRecord ? [route.harvestRecord] : []);
+    for (const rec of recs) {
+    if (rec && rec.file && rec.key && budget.words > 0) {
+      // English is the base language on every LV site, so it often has no
+      // per-language overlay file at all. `baseFile` names the English source
+      // and is consulted ONLY for the en locale, so English text can never land
+      // on a localized URL.
+      const candidates = loc.lang === 'en' && rec.baseFile
+        ? [rec.baseFile, rec.file.replace('{lang}', loc.ident)]
+        : [
+          rec.file.replace('{lang}', loc.ident),
+          rec.file.replace('{lang}', loc.lang),
+        ];
+      const fp = candidates.map((c) => resolve(CWD, c)).find((p) => existsSync(p));
+      if (fp) {
+        let src = inlinePageCache.get(fp);
+        if (!src) { src = readFileSync(fp, 'utf-8'); inlinePageCache.set(fp, src); }
+        // The record may be a keyed entry (`oulu: { … }`) or a top-level const
+        // (`const levi: DestinationFacts = { … }`) — both shapes exist.
+        let b = findKeyBlock(src, rec.key);
+        if (!b) {
+          const cm = new RegExp(`\\bconst\\s+${rec.key.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\$&')}\\b[^=]*=\\s*\\{`).exec(src);
+          if (cm) b = sliceBlock(src, cm.index + cm[0].length - 1);
+        }
+        // Third shape: an ARRAY of records identified by a field
+        // (`{ slug: 'levi', … }`) rather than an object map — this is how the
+        // English base data is written on most sites. Walk back from the field
+        // to that record's own opening brace and slice only it; harvesting the
+        // whole file would print every record on every page.
+        if (!b) {
+          const idField = rec.by || 'slug';
+          const esc = (x) => x.replace(/[.*+?^${}()|[\]\\]/g, (c) => '\\' + c);
+          const idRe = new RegExp('["\']?' + esc(idField) + '["\']?\\s*:\\s*([\'"])' + esc(rec.key) + '\\1');
+          const im = idRe.exec(src);
+          if (im) {
+            let depth = 0, open = -1;
+            for (let i = im.index; i >= 0; i--) {
+              const c = src[i];
+              if (c === '}') depth++;
+              else if (c === '{') { if (depth === 0) { open = i; break; } depth--; }
+            }
+            if (open >= 0) b = sliceBlock(src, open);
+          }
+        }
+        if (b) {
+          if (rec.mode === 'localeMap') {
+            // The record is ONE object whose fields are per-language maps
+            // (`title: { en: '…', fi: '…', ja: '…' }`), not a per-language file.
+            // Harvesting the block wholesale would print all twelve languages on
+            // every page, so take only this locale's values. Both `fi:` and
+            // `'pt-BR':` spellings occur.
+            const tag = loc.lang.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+            const re = new RegExp(`['"]?${tag}['"]?\\s*:\\s*(['"])((?:\\\\.|(?!\\1).)*)\\1`, 'g');
+            let mm;
+            while ((mm = re.exec(b)) !== null && budget.words > 0) {
+              const kept = harvestKeep(unescapeJsString(mm[2]), meta, seen);
+              if (kept) { out.push(kept); budget.words -= kept.split(/\s+/).length; }
+            }
+          } else if (rec.mode === 'jsx') {
+            // The prose is in JSX text nodes, so it exists in ONE language only.
+            // Allowed on every locale URL when the route declares
+            // canonicalLocale (that flag's whole meaning is "one language on
+            // every locale URL"); otherwise English pages only.
+            const single = route.canonicalLocale || 'en';
+            if (route.canonicalLocale || loc.lang === single) {
+              harvestFromTsBlock(b, out, meta, seen, budget);
+              harvestJsxBodies(b, out, meta, seen, budget);
+            }
+          } else {
+            harvestFromTsBlock(b, out, meta, seen, budget);
+          }
+        }
+      }
+    }
+    }
+
+    // Positional pick(lang, en, fi, …) copy co-located with a page.
+    if (Array.isArray(route.harvestPickFiles)) {
+      for (const rel of route.harvestPickFiles) {
+        if (budget.words <= 0) break;
+        const fp = resolve(CWD, rel);
+        if (!existsSync(fp)) continue;
+        let src = inlinePageCache.get(fp);
+        if (!src) { src = readFileSync(fp, 'utf-8'); inlinePageCache.set(fp, src); }
+        harvestPickCalls(src, loc, out, meta, seen, budget);
+      }
+    }
+
+    if (Array.isArray(route.harvestFiles)) {
+      for (const rel of route.harvestFiles) {
+        if (budget.words <= 0) break;
+        // A {lang} placeholder means the FILE is one language (laplandstore's
+        // Hero.copy.fi.ts and friends). There is no per-language block to find
+        // inside it, so harvest the whole file — it is this locale's text and
+        // no other's. Paths without {lang} keep the block-scoped behaviour.
+        const perLangFile = rel.includes('{lang}');
+        const fp = perLangFile
+          ? [rel.replace('{lang}', loc.ident), rel.replace('{lang}', loc.lang)]
+            .map((c) => resolve(CWD, c)).find((p) => existsSync(p))
+          : resolve(CWD, rel);
+        if (!fp || !existsSync(fp)) continue;
+        let src = inlinePageCache.get(fp);
+        if (!src) { src = readFileSync(fp, 'utf-8'); inlinePageCache.set(fp, src); }
+        if (perLangFile) { harvestFromTsBlock(src, out, meta, seen, budget); continue; }
+        const reConst = new RegExp(`\\bconst\\s+${loc.ident}\\b\\s*(?::[^=]+)?=\\s*\\{`, 'g');
+        const m = reConst.exec(src);
+        if (m) { harvestFromTsBlock(sliceBlock(src, m.index + m[0].length - 1), out, meta, seen, budget); continue; }
+        // Every per-language block in the file, not just the first: a page
+        // file often holds several Record<Lang, …> maps (hero, seo, body), and
+        // findKeyBlock returned whichever came first in source order.
+        let took = false;
+        for (const k of [loc.lang, loc.ident]) {
+          for (const b of findKeyBlocks(src, k)) {
+            if (budget.words <= 0) break;
+            harvestFromTsBlock(b, out, meta, seen, budget);
+            took = true;
+          }
+          if (took) break;
+        }
+      }
+    }
+
+    const keys = [
+      ...(route.copyKey ? [route.copyKey] : []),
+      ...(route.jsonKey ? [route.jsonKey] : []),
+      ...(Array.isArray(route.harvestKeys) ? route.harvestKeys : []),
+      // The home route also harvests the conventional home-hero blocks — on
+      // every LV site `hero`/`intro` hold the text the home page itself paints.
+      // Absent keys are simply skipped, so sites without them are unaffected.
+      ...(route.path === '/' ? ['hero', 'intro'] : []),
+    ];
+
+    if (route.copyFile) {
+      const fp = resolve(CWD, route.copyFile.replace('{lang}', loc.ident));
+      if (existsSync(fp)) harvestFromTsBlock(readFileSync(fp, 'utf-8'), out, meta, seen, budget);
+    }
+    if (route.pageFile && budget.words > 0) {
+      const fp = resolve(CWD, route.pageFile);
+      if (existsSync(fp)) {
+        const src = inlinePageCache.get(fp) || readFileSync(fp, 'utf-8');
+        inlinePageCache.set(fp, src);
+        const reConst = new RegExp(`\\bconst\\s+${loc.ident}\\b\\s*(?::[^=]+)?=\\s*\\{`, 'g');
+        const m = reConst.exec(src);
+        if (m) harvestFromTsBlock(sliceBlock(src, m.index + m[0].length - 1), out, meta, seen, budget);
+      }
+    }
+    for (const key of keys) {
+      if (budget.words <= 0) break;
+      // per-lang copy.{lang}.ts. A DOTTED key ("pages.home") has to be walked
+      // segment by segment: findKeyBlocks builds a regex from the key, and in
+      // that regex `.` matches any character, so "pages.home" silently matched
+      // nothing at all. Measured on carrental 21.8. — 7 wired routes harvested
+      // 0 words while the copy sat right there under `pages:`.
+      const src = perLangSources[loc.lang];
+      if (src) {
+        let blocks;
+        if (key.includes('.')) {
+          let cursor = src;
+          for (const part of key.split('.')) {
+            const found = findKeyBlocks(cursor, part);
+            cursor = found.length ? found[0] : null;
+            if (!cursor) break;
+          }
+          blocks = cursor ? [cursor] : [];
+        } else {
+          blocks = findKeyBlocks(src, key);
+        }
+        for (const b of blocks) {
+          harvestFromTsBlock(b, out, meta, seen, budget);
+          if (budget.words <= 0) break;
+        }
+      }
+      // monolithic copy.ts
+      if (budget.words > 0 && monolithicSrc) {
+        const langBlock = getLangBlockInMonolithic(loc);
+        if (langBlock) {
+          let cursor = langBlock;
+          for (const part of key.split('.')) cursor = cursor ? findKeyBlock(cursor, part) : null;
+          harvestFromTsBlock(cursor || findKeyBlock(langBlock, key.split('.').pop()), out, meta, seen, budget);
+        }
+      }
+      // JSON locales
+      if (budget.words > 0) harvestFromObject(readJsonSubtree(loc, key), out, meta, seen, budget);
+    }
+  } catch { /* fail open — fewer paragraphs, never a broken build */ }
+  return out.slice(0, 40);
+}
+
+// ---------- crawlable pre-hydration block (--crawlableBody) ----------
+// Implementation lives in the shared module so the two forked prerenderers
+// (laplandchristmas/, laplandgifts/scripts/) use the SAME code instead of a
+// third un-synced copy — the forks diverging silently is exactly what made
+// this a network-wide problem in the first place. See that file for the full
+// rationale, the measurements behind it, and the safety argument.
+const NETWORK = args.crawlableBody ? readFooterNetwork(CWD) : null;
+if (args.crawlableBody && !NETWORK) {
+  console.warn("[prerender] WARN: --crawlableBody set but shared/Footer.tsx links/labels could not be read — skipping body injection");
 }
 
 // ---------- HTML shell injection (same as before) ----------
@@ -465,8 +1049,37 @@ function hasTagOutsideComments(html, pattern) {
   return pattern.test(stripped);
 }
 
-function injectShell({ shell, bcp47, og, canonical, title, description, hreflangs, ogImage, lang, internalLinks }) {
+/**
+ * Titles over 60 chars get truncated in SERPs, and network-wide 2026-08-21 the
+ * biggest single generator of >60 titles is a "| SiteName" suffix on an already
+ * full title (weddings 169 pages, skiresorts 139, carrental 91). Google shows
+ * the site name separately (og:site_name / schema), so dropping the suffix
+ * loses nothing. Only the site's OWN brand suffix is dropped — an informative
+ * tail is content and stays, even over 60.
+ */
+// The brand string in a title does not always equal --siteName. lapland.blog
+// passes `--siteName=LaplandBlog` while every title ends `· Lapland.blog`, so a
+// regex built from the flag alone matched nothing and left 74 titles over the
+// limit (measured 21.8.). Try the flag AND the site's own hostname.
+const SITE_HOST = (() => { try { return new URL(SITE).hostname.replace(/^www\./, ''); } catch { return ''; } })();
+const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+const BRAND_ALTS = [SITE_NAME, SITE_HOST, SITE_HOST.replace(/\.[a-z]+$/, '')]
+  .filter((b) => b && b.length >= 4)
+  .map(reEsc)
+  .join('|');
+const SITE_NAME_SUFFIX_RE = new RegExp(
+  `\\s*[|\\u2014\\u2013\\u00B7•-]\\s*(?:${BRAND_ALTS})(?:\\.(?:com|fi|online|blog))?\\s*$`,
+  'i'
+);
+function shortenTitle(t) {
+  if (!t || t.length <= 60) return t;
+  const short = String(t).replace(SITE_NAME_SUFFIX_RE, '').trim();
+  return short.length >= 25 && short.length < t.length ? short : t;
+}
+
+function injectShell({ shell, bcp47, og, canonical, title, description, hreflangs, ogImage, faq, lang, internalLinks, paragraphs }) {
   let html = shell;
+  title = shortenTitle(title);
 
   html = html.replace(/<html\s+lang="[^"]*"/i, `<html lang="${bcp47}"`);
 
@@ -501,13 +1114,18 @@ function injectShell({ shell, bcp47, og, canonical, title, description, hreflang
     .map((h) => `    <link rel="alternate" hreflang="${h.hreflang}" href="${h.url}" />`)
     .join('\n');
 
-  const canonicalBlock = `    <link rel="canonical" href="${canonical}" />\n${altLinks}\n    <link rel="alternate" hreflang="x-default" href="${SITE}/" />`;
+  // x-default = this page's own EN URL (same path, '' prefix, trailing slash) —
+  // NOT the site root. Falls back to site root only if no EN alternate exists
+  // (e.g. --locales filter without en).
+  const xDefaultUrl =
+    (hreflangs.find((h) => h.hreflang === 'en') || hreflangs[0] || { url: `${SITE}/` }).url;
+  const canonicalBlock = `    <link rel="canonical" href="${canonical}" />\n${altLinks}\n    <link rel="alternate" hreflang="x-default" href="${xDefaultUrl}" />`;
   html = html.replace(/<\/head>/i, `${canonicalBlock}\n  </head>`);
 
   // Server-rendered BreadcrumbList JSON-LD (rich-result eligible), derived from the
   // canonical path. Skips the home page. Locale URL-prefix is treated as the locale root.
   try {
-    const LOC_PREFIXES = new Set(['fi', 'de', 'ja', 'es', 'br', 'cn', 'kr', 'fr', 'it', 'nl', 'sv']);
+    const LOC_PREFIXES = new Set(['fi', 'de', 'ja', 'es', 'br', 'cn', 'kr', 'fr', 'it', 'nl']);
     const u = new URL(canonical);
     const segs = u.pathname.split('/').filter(Boolean);
     const hasLoc = segs.length > 0 && LOC_PREFIXES.has(segs[0]);
@@ -539,6 +1157,25 @@ function injectShell({ shell, bcp47, og, canonical, title, description, hreflang
     }
   } catch { /* never block the build on breadcrumb derivation */ }
 
+  // Server-rendered FAQPage JSON-LD (rich-result eligible). Only emitted when the
+  // --meta map carried a `faq` array for this route/locale (opt-in per site).
+  try {
+    if (Array.isArray(faq) && faq.length) {
+      const faqPage = {
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        inLanguage: bcp47,
+        mainEntity: faq.map((it) => ({
+          '@type': 'Question',
+          name: it.q,
+          acceptedAnswer: { '@type': 'Answer', text: it.a },
+        })),
+      };
+      const faqScript = `    <script type="application/ld+json">${JSON.stringify(faqPage)}</script>`;
+      html = html.replace(/<\/head>/i, `${faqScript}\n  </head>`);
+    }
+  } catch { /* never block the build on FAQ derivation */ }
+
   function setMeta(attr, key, value) {
     const re = new RegExp(
       `<meta\\s+${attr}="${key.replace(/[.*+?^${}()|[\\]\\\\]/g, '\\\\$&')}"[^>]*>`,
@@ -562,9 +1199,21 @@ function injectShell({ shell, bcp47, og, canonical, title, description, hreflang
   setMeta('name', 'twitter:site', TWITTER);
   setMeta('name', 'twitter:image', /^https?:/.test(ogImage) ? ogImage : `${SITE}${ogImage}`);
 
+  // Pre-hydration crawlable body. Only touches an EMPTY #root, so a site that
+  // already ships server-rendered markup is left alone; combined with the strip
+  // applied when SHELL is read, re-running the script is genuinely idempotent.
   html = injectCrawlableBody(
     html,
-    buildCrawlableBody(NETWORK, { title, description, lang, siteOrigin: SITE, siteName: SITE_NAME, internalLinks, selfUrl: canonical })
+    buildCrawlableBody(NETWORK, {
+      title,
+      description,
+      lang,
+      siteOrigin: SITE,
+      siteName: SITE_NAME,
+      internalLinks,
+      selfUrl: canonical,
+      paragraphs,
+    })
   );
 
   return html;
@@ -578,77 +1227,99 @@ function fallbackMeta(routePath, route) {
     .join(' ');
   return {
     title: route.fallbackTitle || `${human || 'Home'} | ${SITE_NAME}`,
-    description: route.fallbackDescription || `${SITE_NAME} — ${human || 'home'}.`,
+    description: route.fallbackDescription || `${SITE_NAME}: ${human || 'home'}.`,
   };
 }
 
 // ---------- write loop ----------
 let written = 0;
+let lastOut = null;
 const summary = [];
 const debugNoMeta = [];
+const harvestStats = { with: 0, without: 0, words: 0 };
 
-// Two passes over the SAME loop: pass 0 collects internal links from this
-// fork's own meta cascade, pass 1 writes the files. Avoids a second copy of
-// the cascade, which is the drift that made these forks a problem.
-for (let __pass = 0; __pass < 2; __pass++)
+// Pre-pass: the site's own pages per locale, for the crawlable block's internal
+// nav. Built BEFORE rendering because every page links to every sibling, so the
+// full list has to exist before the first file is written. Uses the same meta
+// cascade and the same URL construction as the render pass below.
+const INTERNAL_BY_LANG = {};
+if (args.crawlableBody) {
+  const enLocPre = LOCALE_LIST.find((l) => l.lang === 'en') || LOCALE_LIST[0];
+  for (const route of routes) {
+    const enMetaPre = resolveRouteMeta(enLocPre, route) || fallbackMeta(route.path, route);
+    const localesPre = Array.isArray(route.locales)
+      ? LOCALE_LIST.filter((l) => route.locales.includes(l.lang))
+      : LOCALE_LIST;
+    for (const loc of localesPre) {
+      const { meta } = resolveLocaleMeta(route, loc, enMetaPre);
+      // Anchor text is the page's own localized title minus the " | SiteName"
+      // tail — the brand repeated 20× in one list is noise, not information.
+      const text = String(meta.title || '').split(/\s[|—]\s/)[0].trim();
+      if (!text) continue;
+      (INTERNAL_BY_LANG[loc.lang] = INTERNAL_BY_LANG[loc.lang] || []).push({
+        url: routeUrl(route, loc),
+        text,
+      });
+    }
+  }
+  const counts = Object.entries(INTERNAL_BY_LANG).map(([l, a]) => `${l}:${a.length}`);
+  console.log(`[prerender] crawlable internal links per locale — ${counts.join(' ')}`);
+}
+
 for (const route of routes) {
   const routePath = route.path;
-  const ogImage = route.ogImage || DEFAULT_OG;
+  // Route-level OG image; a locale-specific `ogImageByLang` entry (routes.json)
+  // wins inside the locale loop — needed by shared routes whose locales carry
+  // different page-unique heroes (e.g. /northern-lights/where-to-see: nl + pt-BR).
+  const routeOgImage = route.ogImage || DEFAULT_OG;
 
   // EN fallback (always populated): try EN meta first, else derive from path.
   const enLoc = LOCALE_LIST.find((l) => l.lang === 'en') || LOCALE_LIST[0];
   const enMeta = resolveRouteMeta(enLoc, route) || fallbackMeta(routePath, route);
 
-  for (const loc of LOCALE_LIST) {
-    let meta = resolveRouteMeta(loc, route);
-    // Per-locale fallbacks declared directly in routes.json (fallbackTitleByLang /
-    // fallbackDescriptionByLang). For sites whose copy.ts holds only chrome/UI
-    // strings (no per-route SEO meta), this keeps a native <title>/og:title at
-    // first byte for every locale instead of falling back to English.
-    if (!meta || !meta.title) {
-      const tByLang = route.fallbackTitleByLang && route.fallbackTitleByLang[loc.lang];
-      const dByLang = route.fallbackDescriptionByLang && route.fallbackDescriptionByLang[loc.lang];
-      if (tByLang) meta = { title: tByLang, description: dByLang || (meta && meta.description) || null };
-    }
-    if (!meta || !meta.title) {
-      meta = { title: enMeta.title, description: meta?.description || enMeta.description };
-    }
-    if (!meta.description) {
-      const dByLang = route.fallbackDescriptionByLang && route.fallbackDescriptionByLang[loc.lang];
-      meta.description = dByLang || enMeta.description;
-    }
-    // If the title doesn't already include site name, append it. Detect
-    // pre-existing site name via case-insensitive substring of SITE_NAME or
-    // a clear " | " / " — " separator with a brand-shaped word on the right.
-    if (
-      route.appendSiteName &&
-      meta.title &&
-      !meta.title.toLowerCase().includes(SITE_NAME.toLowerCase()) &&
-      !/\s[|—]\s/.test(meta.title)
-    ) {
-      meta.title = `${meta.title} | ${SITE_NAME}`;
-    }
+  // Optional per-route locale restriction: a route with "locales": ["fi"] in
+  // routes.json is generated ONLY for those locales (e.g. a Finnish-market-only
+  // page) — prevents ghost /de/… /ja/… variants that have no matching React route.
+  const routeLocales = Array.isArray(route.locales)
+    ? LOCALE_LIST.filter((l) => route.locales.includes(l.lang))
+    : LOCALE_LIST;
+
+  for (const loc of routeLocales) {
+    const resolved = resolveLocaleMeta(route, loc, enMeta);
+    const meta = resolved.meta;
+    // Tracks whether THIS locale got a locale-specific title from any source
+    // (copy readers, fallbackTitleByLang, shell title map) — routes that end up
+    // on the EN fallback are the only ones worth reporting in the debug log.
+    const localizedTitle = resolved.localizedTitle;
+
+    // Per-locale hero/OG override (see routeOgImage note above).
+    const ogImage = (route.ogImageByLang && route.ogImageByLang[loc.lang]) || routeOgImage;
 
     const cleanPath = routePath === '/' ? '' : routePath;
-    // Canonical MUST end in "/" — measured live 2026-08-14: Cloudflare Pages
-    // 308-redirects the slashless form to the slash form, while the sitemap
-    // already advertises the slash form. The old composition stripped the
-    // slash, so every canonical pointed at a URL that redirects back — Google
-    // ignored it and indexed both forms ("makia pipo" split across two URLs,
-    // "lapland shirt" across 11). Same defect class as the 2026-08-08 GSC
-    // flood: two of our own signals disagreeing about the canonical URL.
-    const canonical = `${SITE}${loc.prefix}${cleanPath || '/'}`.replace(/\/?$/, '/');
-    if (__pass === 0) {
-      const __t = String(meta.title || '').split(/\s[|—]\s/)[0].trim();
-      if (__t) (INTERNAL_BY_LANG[loc.lang] = INTERNAL_BY_LANG[loc.lang] || []).push({ url: canonical, text: __t });
-      continue;
-    }
+    // Canonical/hreflang MUST use the trailing-slash form, because the prerendered
+    // file lives at /path/index.html and Cloudflare Pages serves it at /path/ (200),
+    // 308-redirecting the no-slash form. A canonical pointing at the redirecting
+    // no-slash URL makes Google pick its own canonical ("Duplicate, Google chose
+    // a different canonical than the user"). Trailing slash = the real 200 URL.
 
-    const hreflangs = LOCALE_LIST.map((l) => ({
-      hreflang: l.lang === 'en' ? 'en' : l.lang,
-      // Slash form for the same reason as the canonical above.
-      url: `${SITE}${l.prefix}${cleanPath || '/'}`.replace(/\/?$/, '/'),
-    }));
+    // Opt-in per-route consolidation: a route flagged "canonicalLocale":"en" (or
+    // any lang) renders the SAME single-language content on every locale URL —
+    // e.g. an English-only blog article that isn't translated. Every locale
+    // variant then canonicalises to that ONE locale and advertises NO per-locale
+    // hreflang, so Google folds them into the single real version instead of
+    // flagging "Duplicate, Google chose a different canonical than the user".
+    // Routes without the field keep the default per-locale self-canonical.
+    const canonicalLoc = route.canonicalLocale
+      ? (LOCALE_LIST.find((l) => l.lang === route.canonicalLocale) || loc)
+      : loc;
+    const canonical = `${SITE}${canonicalLoc.prefix}${cleanPath}`.replace(/\/?$/, '/');
+
+    const hreflangs = route.canonicalLocale
+      ? [{ hreflang: canonicalLoc.lang === 'en' ? 'en' : canonicalLoc.lang, url: canonical }]
+      : routeLocales.map((l) => ({
+          hreflang: l.lang === 'en' ? 'en' : l.lang,
+          url: `${SITE}${l.prefix}${cleanPath}`.replace(/\/?$/, '/'),
+        }));
 
     const outPath =
       loc.prefix === '' && cleanPath === ''
@@ -659,8 +1330,16 @@ for (const route of routes) {
             'index.html'
           );
 
+    // FAQ for this route/locale (opt-in via --meta map). Falls back to EN faq so
+    // every locale ships a FAQPage even before per-locale translations land.
+    const faq = readFaqFromMeta(loc, route) || readFaqFromMeta(enLoc, route);
+
+    // Localized page copy for the crawlable block (same-locale only, fail-open).
+    const paragraphs = args.crawlableBody ? harvestRouteText(loc, route, meta) : null;
+    if (paragraphs && paragraphs.length) harvestStats.with++; else harvestStats.without++;
+    harvestStats.words += (paragraphs || []).reduce((a, t) => a + t.split(/\s+/).length, 0);
+
     const html = injectShell({
-      internalLinks: INTERNAL_BY_LANG[loc.lang],
       shell: SHELL,
       bcp47: loc.bcp47,
       lang: loc.lang,
@@ -670,21 +1349,33 @@ for (const route of routes) {
       description: meta.description,
       hreflangs,
       ogImage,
+      faq,
+      internalLinks: INTERNAL_BY_LANG[loc.lang],
+      paragraphs,
     });
 
     mkdirSync(dirname(outPath), { recursive: true });
     writeFileSync(outPath, html, 'utf-8');
+    lastOut = outPath;
     written++;
     if (summary.length < 6) {
       summary.push(`  ${loc.lang.padEnd(5)} ${routePath.padEnd(34)} → ${outPath.replace(DIST + '\\', '').replace(DIST + '/', '')}`);
     }
-    if (!resolveRouteMeta(loc, route) && debugNoMeta.length < 5) {
+    // Report ONLY non-EN locales that truly shipped an EN(-derived) title.
+    // A per-locale fallback (fallbackTitleByLang / shell title map) is a real
+    // localized source — logging it as "no-meta" caused false-alarm fix tasks
+    // (lapland-blog home 2026-07-07, where ja/es were already localized).
+    if (loc.lang !== 'en' && !localizedTitle && debugNoMeta.length < 5) {
       debugNoMeta.push(`    no-meta: ${loc.lang} ${routePath}`);
     }
   }
 }
 
 console.log(`[prerender] wrote ${written} files for ${routes.length} routes × ${LOCALE_LIST.length} locales`);
+if (args.crawlableBody) {
+  const avg = harvestStats.with ? Math.round(harvestStats.words / harvestStats.with) : 0;
+  console.log(`[prerender] harvest: ${harvestStats.with} pages with body copy (avg ${avg} words), ${harvestStats.without} without`);
+}
 console.log(`[prerender] sample:`);
 summary.forEach((l) => console.log(l));
 if (debugNoMeta.length) {
@@ -692,11 +1383,6 @@ if (debugNoMeta.length) {
   debugNoMeta.forEach((l) => console.log(l));
 }
 
-// ⚠️ SIIRRETTY monorepon _prerender_routes.mjs:sta 2026-08-16 (commit 89f1a9b).
-// Tama on laplandgiftsin OMA HAARAUMA (669 rivia vs monorepon 964) eika sita
-// synkata automaattisesti — siksi lippu piti tuoda kasin. Ilman tata build ajoi
-// exit 0 mutta EI kirjoittanut dist/404.html:aa: tuntematon lippu ohitetaan
-// hiljaa. Jos haarauma yhtenaistetaan, poista tama lohko.
 // ---------- 404 page (--emit404) ----------
 // 🔴 MITATTU 2026-08-16: every LV site ships `/*  /index.html  200` in
 // public/_redirects, so Cloudflare Pages answers **200 OK** for paths that do not
@@ -764,4 +1450,46 @@ if (args.emit404) {
     process.exit(1);
   }
   console.log('[prerender] wrote dist/404.html — 404 gate OK (noindex, no canonical)');
+}
+
+// ---------- smoke gate (--crawlableBody) ----------
+// The crawlable block is deliberately fail-open: a missing module or an
+// unparseable shared Footer only warns, so a standalone checkout can still
+// build. That also means the feature can switch itself off in production
+// without anything going red — build-all.sh reads exit 0 as success and the
+// warning scrolls past. The network has been bitten by exactly this shape
+// before (wrangler pin, 2026-08-11: every build green, the failure visible
+// only in the deploy log).
+//
+// So assert the finished artefact, not the intent: read back a file we just
+// wrote and fail the build if the block is gone. Uses the LAST path written,
+// so it cannot pass against a stale dist.
+if (args.crawlableBody && NETWORK && lastOut) {
+  const probe = readFileSync(lastOut, 'utf-8');
+  const problems = [];
+  if (!probe.includes('id="lv-prerender"')) problems.push('crawlable body block missing');
+  if (!/<div id="root"><!--LV-PRE-->/.test(probe)) problems.push('block is not inside #root');
+
+  // The block is hidden from JS browsers (2026-08-23) and the two halves of that
+  // fail in OPPOSITE directions, so both are asserted on the artefact:
+  //   - no class-setting script → the text is painted again and every route
+  //     flashes a wall of copy before the hero, which is what Vesa reported;
+  //   - a hide rule that is NOT gated on that class → the text is hidden from
+  //     the non-JS crawlers as well, which silently deletes the entire SEO
+  //     purpose while leaving the bytes on the page. Nothing else would notice.
+  if (!probe.includes("classList.add('lv-js')")) problems.push('lv-js marker script missing — the block would be painted');
+  if (!probe.includes('.lv-js #lv-prerender{display:none}')) problems.push('class-scoped hide rule missing');
+  for (const m of probe.matchAll(/([^{}]*)#lv-prerender\s*\{\s*display:\s*none/g)) {
+    if (!/\.lv-js\s+$/.test(m[1])) problems.push('hide rule is not class-scoped — non-JS crawlers would lose the block');
+  }
+  if (!probe.includes('id="lv-splash"')) problems.push('branded splash missing');
+
+  if (problems.length) {
+    console.error(`
+[prerender] SMOKE GATE FAILED on ${lastOut}:`);
+    for (const p of problems) console.error(`  - ${p}`);
+    console.error('Refusing to exit 0 — a green build here would ship pages with no crawlable content.\n');
+    process.exit(1);
+  }
+  console.log('[prerender] smoke gate OK — crawlable block present inside #root');
 }
