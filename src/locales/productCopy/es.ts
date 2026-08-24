@@ -1045,7 +1045,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: 'Calcetines retro Moomintroll Love',
     description:
-      'Calcetines blancos de canalé con Moomintroll bordado dentro de un corazón rosa en la espinilla, bordado y no estampado, así que aguanta los lavados. Una talla cubre del EU 36 al 42.',
+      'Calcetines celestes de canalé con Moomintroll bordado dentro de un corazón rosa en la espinilla, bordado y no estampado, así que aguanta los lavados. Una talla cubre del EU 36 al 42.',
     specs: [
       '67 % algodón, 25 % poliéster, 4 % elastodieno, 3 % nailon, 1 % elastano',
       'Talla única, EU 36-42',

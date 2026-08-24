@@ -1046,7 +1046,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: 'Chaussettes rétro Moumine Love',
     description:
-      'Chaussettes blanches côtelées avec Moumine brodé dans un cœur rose sur le tibia, brodé et non imprimé, ce qui lui permet de résister au lavage. Une taille couvre du EU 36 au 42.',
+      'Chaussettes côtelées bleu clair avec Moumine brodé dans un cœur rose sur le tibia, brodé et non imprimé, ce qui lui permet de résister au lavage. Une taille couvre du EU 36 au 42.',
     specs: [
       '67 % coton, 25 % polyester, 4 % élastodiène, 3 % nylon, 1 % élasthanne',
       'Taille unique, EU 36-42',

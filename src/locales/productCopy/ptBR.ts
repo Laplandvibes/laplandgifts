@@ -1045,7 +1045,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: 'Meias retrô Moomintroll Love',
     description:
-      'Meias brancas caneladas com o Moomintroll bordado dentro de um coração rosa na canela, bordado e não estampado, então resiste à lavagem. Um tamanho cobre do EU 36 ao 42.',
+      'Meias caneladas azul-claro com o Moomintroll bordado dentro de um coração rosa na canela, bordado e não estampado, então resiste à lavagem. Um tamanho cobre do EU 36 ao 42.',
     specs: [
       '67 % algodão, 25 % poliéster, 4 % elastodieno, 3 % náilon, 1 % elastano',
       'Tamanho único, EU 36-42',

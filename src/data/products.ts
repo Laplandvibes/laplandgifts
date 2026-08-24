@@ -3954,6 +3954,13 @@ export const PRODUCTS: Product[] = [
       fetchedAt: '2026-08-10',
     },
   },
+  // 🔴 Vaihdettu 24.8.2026 kaupan OMAN feedin perusteella (Daisycon 20538):
+  // vanha kohde `…-retro-socks-1` (valkoinen MOOMIN20G) on loppuunmyyty —
+  // sen ainoa koko EU 36-42 on `available: false` sekä feedissä että kaupan
+  // omassa tuote-JSONissa. Kauppa pitää samasta sukasta kolmea listausta ja
+  // niistä vain `-2` (vaaleansininen MOOMIN20H, 12,90 €) on varastossa, joten
+  // linkki JA kuva vaihdettiin siihen: väri on eri, ja kortin kuvan on
+  // vastattava tuotetta jonka ostaja saa.
   {
     slug: 'nb-moomintroll-love-socks',
     category: 'clothing',
@@ -3963,16 +3970,16 @@ export const PRODUCTS: Product[] = [
       fi: 'Muumipeikko Love -retrosukat',
     },
     description: {
-      en: 'White ribbed socks with Moomintroll embroidered into a pink heart on the shin, not printed on, so it survives the wash. One size covers EU 36 to 42.',
-      fi: 'Valkoiset resorisukat, joissa Muumipeikko on kirjottu pinkkiin sydämeen säären kohdalle, ei painettu, joten se kestää pesun. Yksi koko kattaa EU 36-42.',
+      en: 'Light blue ribbed socks with Moomintroll embroidered into a pink heart on the shin, not printed on, so it survives the wash. One size covers EU 36 to 42.',
+      fi: 'Vaaleansiniset resorisukat, joissa Muumipeikko on kirjottu pinkkiin sydämeen säären kohdalle, ei painettu, joten se kestää pesun. Yksi koko kattaa EU 36-42.',
     },
     priceFrom: 12.9,
     currency: 'EUR',
-    priceCheckedAt: '2026-08-10',
+    priceCheckedAt: '2026-08-24',
     image: 'prod-nb-moomintroll-love-socks',
     imageIsPartner: true,
     partnerId: 'nordicbuddies',
-    partnerProductUrl: 'https://nordicbuddies.com/products/moomintroll-love-womens-retro-socks-1',
+    partnerProductUrl: 'https://nordicbuddies.com/products/moomintroll-love-womens-retro-socks-2',
     details: {
       specs: [
         {
@@ -3989,8 +3996,8 @@ export const PRODUCTS: Product[] = [
           value: { en: 'Embroidered artwork', fi: 'Kirjottu kuvio' },
         },
       ],
-      sourceUrl: 'https://nordicbuddies.com/products/moomintroll-love-womens-retro-socks-1',
-      fetchedAt: '2026-08-10',
+      sourceUrl: 'https://nordicbuddies.com/products/moomintroll-love-womens-retro-socks-2',
+      fetchedAt: '2026-08-24',
     },
   },
   {

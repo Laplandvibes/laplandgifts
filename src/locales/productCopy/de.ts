@@ -1096,7 +1096,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: 'Mumintroll Love Retrosocken',
     description:
-      'Weiße Rippsocken mit Mumintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Eine Größe deckt EU 36 bis 42 ab.',
+      'Hellblaue Rippsocken mit Mumintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Eine Größe deckt EU 36 bis 42 ab.',
     specs: [
       '67 % Baumwolle, 25 % Polyester, 4 % Elastodien, 3 % Nylon, 1 % Elasthan',
       'Einheitsgröße, EU 36-42',

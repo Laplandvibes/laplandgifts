@@ -1047,7 +1047,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: '姆明 Love 复古袜',
     description:
-      '白色罗纹袜,小腿处以粉色爱心刺绣出姆明,是刺绣而非印花,因此经得起水洗。均码覆盖 EU 36 至 42。',
+      '浅蓝色罗纹袜,小腿处以粉色爱心刺绣出姆明,是刺绣而非印花,因此经得起水洗。均码覆盖 EU 36 至 42。',
     specs: [
       '67 % 棉、25 % 涤纶、4 % 弹性二烯、3 % 尼龙、1 % 氨纶',
       '均码,EU 36-42',

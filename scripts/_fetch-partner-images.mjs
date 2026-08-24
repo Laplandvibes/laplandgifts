@@ -367,6 +367,16 @@ const JOBS = [
     'puhdistamo-conifer-extract',
     'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220645-1.jpg?v=1699374709&width=1024',
   ],
+  // Era 24.8.2026: Nordicbuddiesin Love-retrosukat loppuivat kaupasta. Kaupan
+  // oma feed (Daisycon 20538, luettu 24.8.) kertoo kolmesta samannimisesta
+  // listauksesta vain YHDEN olevan varastossa: -2 eli vaaleansininen MOOMIN20H,
+  // kun kortin vanha kuva oli valkoinen MOOMIN20G (-1, loppu). Kuva vaihdetaan
+  // siksi samalla kun linkki: sama sukka eri varissa, ja lukijan pitaa nahda
+  // se jonka voi ostaa.
+  [
+    'nb-moomintroll-love-socks',
+    'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/MOOMIN20H-1.png?width=1200',
+  ],
 ]
 
 const only = new Set(process.argv.slice(2))

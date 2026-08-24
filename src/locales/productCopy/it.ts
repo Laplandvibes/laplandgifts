@@ -1045,7 +1045,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: 'Calzini retro Moomintroll Love',
     description:
-      'Calzini bianchi a coste con Moomintroll ricamato dentro un cuore rosa sullo stinco, ricamato e non stampato, quindi resiste al lavaggio. Una taglia copre dalla EU 36 alla 42.',
+      'Calzini azzurri a coste con Moomintroll ricamato dentro un cuore rosa sullo stinco, ricamato e non stampato, quindi resiste al lavaggio. Una taglia copre dalla EU 36 alla 42.',
     specs: [
       '67 % cotone, 25 % poliestere, 4 % elastodiene, 3 % nylon, 1 % elastan',
       'Taglia unica, EU 36-42',

@@ -1047,7 +1047,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: 'Mumintrollet Love retrostrumpor',
     description:
-      'Vita ribbade strumpor med Mumintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42.',
+      'Ljusblå ribbade strumpor med Mumintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42.',
     specs: [
       '67 % bomull, 25 % polyester, 4 % elastodien, 3 % nylon, 1 % elastan',
       'En storlek, EU 36-42',

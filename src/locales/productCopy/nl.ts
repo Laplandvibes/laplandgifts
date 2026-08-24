@@ -1045,7 +1045,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: 'Moomintroll Love retrosokken',
     description:
-      'Witte geribbelde sokken met Moomintroll geborduurd in een roze hart op het scheenbeen, geborduurd en niet bedrukt, dus het motief overleeft de was. Eén maat dekt EU 36 tot 42.',
+      'Lichtblauwe geribbelde sokken met Moomintroll geborduurd in een roze hart op het scheenbeen, geborduurd en niet bedrukt, dus het motief overleeft de was. Eén maat dekt EU 36 tot 42.',
     specs: [
       '67 % katoen, 25 % polyester, 4 % elastodieen, 3 % nylon, 1 % elastaan',
       'Eén maat, EU 36-42',
