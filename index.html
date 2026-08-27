@@ -175,6 +175,13 @@
         ad_personalization: 'denied',
         wait_for_update: 500
       });
+      /* 🔴 Palautus: jaettu CookieBanner kutsuu consent updatea VAIN accept-klikissa.
+         Ilman tata palaava, jo suostunut kavija jai ikuisesti denied-tilaan. */
+      try {
+        if (localStorage.getItem('laplandgifts_cookie_consent') === 'accepted') {
+          gtag('consent', 'update', { analytics_storage: 'granted' });
+        }
+      } catch (e) { /* privaattitila: pysy denied-tilassa */ }
       gtag('js', new Date());
       gtag('config', 'G-485H5Y4LHP', {
         linker: {
