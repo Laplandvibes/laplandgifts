@@ -1386,7 +1386,7 @@ export const PRODUCTS: Product[] = [
           label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
           value: {
             en: 'Energy 1514 kJ / 360 kcal, fat 14.2 g of which saturates 6.2 g, carbohydrate 7.9 g of which sugars 5.1 g, protein 50.2 g, salt 9.5 g',
-            fi: 'Energia 1514 kJ / 360 kcal, rasva 14,2 g josta tyydyttynyttä 6,2 g, hiilihydraatit 7,9 g joista sokereita 5,1 g, proteiini 50,2 g, suola 9,5 g',
+            fi: 'Energia 1514 kJ / 360 kcal, rasva 14,2 g, josta tyydyttynyttä 6,2 g, hiilihydraatit 7,9 g, joista sokereita 5,1 g, proteiini 50,2 g, suola 9,5 g',
           },
         },
       ],
@@ -1426,7 +1426,7 @@ export const PRODUCTS: Product[] = [
           label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
           value: {
             en: 'Energy 1316 kJ / 311 kcal, fat 0.5 g of which saturates 0 g, carbohydrate 72 g of which sugars 50 g, protein 4.1 g, salt 1.7 g',
-            fi: 'Energia 1316 kJ / 311 kcal, rasva 0,5 g josta tyydyttyneitä 0 g, hiilihydraatit 72 g joista sokeria 50 g, proteiini 4,1 g, suola 1,7 g',
+            fi: 'Energia 1316 kJ / 311 kcal, rasva 0,5 g, josta tyydyttyneitä 0 g, hiilihydraatit 72 g, joista sokeria 50 g, proteiini 4,1 g, suola 1,7 g',
           },
         },
         {
@@ -1482,7 +1482,7 @@ export const PRODUCTS: Product[] = [
           label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
           value: {
             en: 'Energy 781 kJ / 187 kcal, fat 1.9 g of which saturates 0.3 g, carbohydrate 41 g of which sugars 41 g, protein 0.3 g, salt 0.01 g',
-            fi: 'Energia 781 kJ / 187 kcal, rasva 1,9 g josta tyydyttyneitä 0,3 g, hiilihydraatit 41 g joista sokeria 41 g, proteiini 0,3 g, suola 0,01 g',
+            fi: 'Energia 781 kJ / 187 kcal, rasva 1,9 g, josta tyydyttyneitä 0,3 g, hiilihydraatit 41 g, joista sokeria 41 g, proteiini 0,3 g, suola 0,01 g',
           },
         },
         {
@@ -1602,7 +1602,7 @@ export const PRODUCTS: Product[] = [
           label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
           value: {
             en: 'Energy 1261 kJ / 298 kcal, fat 5.5 g of which saturates 2.4 g, carbohydrate 5.2 g of which sugars 4.4 g, protein 56.9 g, salt 5 g',
-            fi: 'Energia 1261 kJ / 298 kcal, rasva 5,5 g josta tyydyttynyttä 2,4 g, hiilihydraatit 5,2 g joista sokereita 4,4 g, proteiini 56,9 g, suola 5 g',
+            fi: 'Energia 1261 kJ / 298 kcal, rasva 5,5 g, josta tyydyttynyttä 2,4 g, hiilihydraatit 5,2 g, joista sokereita 4,4 g, proteiini 56,9 g, suola 5 g',
           },
         },
       ],
@@ -1624,7 +1624,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'Milk chocolate over a crisp hazelnut nougat filling, the bar most Finnish households keep in a drawer. Fazer states it is made without palm oil.',
-      fi: 'Maitosuklaata rapean hasselpähkinänougat-täytteen päällä, se levy jota useimmissa suomalaiskodeissa säilytetään laatikossa. Fazer ilmoittaa sen valmistetuksi ilman palmuöljyä.',
+      fi: 'Maitosuklaata rapean hasselpähkinänougat-täytteen päällä, se levy, jota useimmissa suomalaiskodeissa säilytetään laatikossa. Fazer ilmoittaa sen valmistetuksi ilman palmuöljyä.',
     },
     priceFrom: 4.39,
     currency: 'EUR',
@@ -1813,7 +1813,7 @@ export const PRODUCTS: Product[] = [
           label: { en: 'Bean', fi: 'Papu' },
           value: {
             en: 'Peaberry, a coffee cherry with a single bean instead of two',
-            fi: 'Helmipapu, kahvimarja jossa on kahden pavun sijaan yksi',
+            fi: 'Helmipapu, kahvimarja, jossa on kahden pavun sijaan yksi',
           },
         },
         {
@@ -1979,7 +1979,7 @@ export const PRODUCTS: Product[] = [
           label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
           value: {
             en: 'Energy 367 kcal / 1559 kJ, protein 5 g, carbohydrate 54 g of which sugars 34 g, fibre 31 g, fat 0.8 g, salt 0.01 g',
-            fi: 'Energia 367 kcal / 1559 kJ, proteiini 5 g, hiilihydraatit 54 g joista sokereita 34 g, kuitu 31 g, rasva 0,8 g, suola 0,01 g',
+            fi: 'Energia 367 kcal / 1559 kJ, proteiini 5 g, hiilihydraatit 54 g, joista sokereita 34 g, kuitu 31 g, rasva 0,8 g, suola 0,01 g',
           },
         },
       ],
@@ -2029,7 +2029,7 @@ export const PRODUCTS: Product[] = [
           label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
           value: {
             en: 'Energy 489 kcal / 2045 kJ, protein 13 g, carbohydrate 24 g of which sugars 14 g, fibre 28 g, fat 25 g, salt 0.06 g',
-            fi: 'Energia 489 kcal / 2045 kJ, proteiini 13 g, hiilihydraatit 24 g joista sokereita 14 g, kuitu 28 g, rasva 25 g, suola 0,06 g',
+            fi: 'Energia 489 kcal / 2045 kJ, proteiini 13 g, hiilihydraatit 24 g, joista sokereita 14 g, kuitu 28 g, rasva 25 g, suola 0,06 g',
           },
         },
       ],
@@ -2344,7 +2344,7 @@ export const PRODUCTS: Product[] = [
           label: { en: 'Nutrition per 100 ml', fi: 'Ravintosisältö per 100 ml' },
           value: {
             en: 'Energy 122.65 kJ / 29.3 kcal, fat under 0.1 g of which saturates under 0.1 g, carbohydrate 6.9 g of which sugars 6.9 g, protein under 0.1 g, salt under 0.1 g',
-            fi: 'Energia 122,65 kJ / 29,3 kcal, rasva alle 0,1 g josta tyydyttynyttä alle 0,1 g, hiilihydraatit 6,9 g joista sokereita 6,9 g, proteiini alle 0,1 g, suola alle 0,1 g',
+            fi: 'Energia 122,65 kJ / 29,3 kcal, rasva alle 0,1 g, josta tyydyttynyttä alle 0,1 g, hiilihydraatit 6,9 g, joista sokereita 6,9 g, proteiini alle 0,1 g, suola alle 0,1 g',
           },
         },
         {
@@ -2478,7 +2478,7 @@ export const PRODUCTS: Product[] = [
     name: { en: 'Puhdistamo instant chaga extract powder 28 g', fi: 'Puhdistamo Pakuriuutejauhe, instant-pakuri 28 g' },
     description: {
       en: 'Chaga that dissolves straight into hot water, no simmering. The 28 gram jar fits any luggage and survives the trip better than a bag of chunks.',
-      fi: 'Pakuri joka liukenee suoraan kuumaan veteen ilman hauduttamista. 28 gramman purkki mahtuu mihin tahansa matkatavaraan.',
+      fi: 'Pakuri, joka liukenee suoraan kuumaan veteen ilman hauduttamista. 28 gramman purkki mahtuu mihin tahansa matkatavaraan.',
     },
     priceFrom: 19.46,
     currency: 'EUR',
@@ -2570,7 +2570,7 @@ export const PRODUCTS: Product[] = [
     name: { en: 'Arabia Moomin mug, Friendship', fi: 'Arabia Muumimuki, Ystävyys' },
     description: {
       en: 'The mug shows Ninny, the invisible child who is afraid of the dark and slowly becomes visible again once someone is kind to her. A quieter choice than the well known characters.',
-      fi: 'Mukissa on Nyyti, näkymätön lapsi joka pelkää pimeää ja tulee vähitellen taas näkyväksi kun joku on hänelle ystävällinen. Hillitympi valinta kuin tunnetuimmat hahmot.',
+      fi: 'Mukissa on Nyyti, näkymätön lapsi, joka pelkää pimeää ja tulee vähitellen taas näkyväksi, kun joku on hänelle ystävällinen. Hillitympi valinta kuin tunnetuimmat hahmot.',
     },
     priceFrom: 24.97,
     currency: 'EUR',
@@ -2685,7 +2685,7 @@ export const PRODUCTS: Product[] = [
     name: { en: 'Rento birch sauna honey 150 ml', fi: 'Rento Koivu-saunahunaja 150 ml' },
     description: {
       en: 'Spread it on clean skin, let it sit in the soft heat, rinse warm. Sauna honey is the part of the Finnish sauna ritual that visitors never think to bring home.',
-      fi: 'Levitä puhtaalle iholle, anna imeytyä pehmeässä lämmössä, huuhtele lämpimällä. Saunahunaja on se osa suomalaista saunarituaalia jota vieras ei tule ajatelleeksi ottaa mukaan.',
+      fi: 'Levitä puhtaalle iholle, anna imeytyä pehmeässä lämmössä, huuhtele lämpimällä. Saunahunaja on se osa suomalaista saunarituaalia, jota vieras ei tule ajatelleeksi ottaa mukaan.',
     },
     priceFrom: 12.42,
     currency: 'EUR',
@@ -2910,7 +2910,7 @@ export const PRODUCTS: Product[] = [
     name: { en: 'Fazer Pantteri salmiakki sweets 210 g', fi: 'Fazer Pantteri -salmiakkikarkit 210 g' },
     description: {
       en: 'Soft menthol salmiakki that has been made for over fifty years. Milder than the pastilles, so this is the bag to bring to people who have never tried salmiakki.',
-      fi: 'Pehmeää mentolisalmiakkia, jota on valmistettu yli viisikymmentä vuotta. Pastilleja miedompi, joten tämä on se pussi jonka vie salmiakkia ennen maistamattomille.',
+      fi: 'Pehmeää mentolisalmiakkia, jota on valmistettu yli viisikymmentä vuotta. Pastilleja miedompi, joten tämä on se pussi, jonka vie salmiakkia ennen maistamattomille.',
     },
     priceFrom: 4.87,
     currency: 'EUR',
@@ -3892,7 +3892,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'A thick knitted beanie with Little My on the cuff, in a wool blend that holds its shape after a week of being pulled on and off. One adult size, and the only Moomin character who would approve of the weather in Lapland.',
-      fi: 'Paksu neulepipo, jonka käänteessä on Pikku Myy, villasekoitteessa joka pitää muotonsa viikon vetämisen jälkeenkin. Yksi aikuisten koko, ja ainoa muumihahmo joka hyväksyisi Lapin sään.',
+      fi: 'Paksu neulepipo, jonka käänteessä on Pikku Myy, villasekoitteessa, joka pitää muotonsa viikon vetämisen jälkeenkin. Yksi aikuisten koko, ja ainoa muumihahmo, joka hyväksyisi Lapin sään.',
     },
     priceFrom: 34.9,
     currency: 'EUR',
@@ -4075,7 +4075,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'A 300 gram cotton and polyester hoodie printed in Finland, unisex straight fit. The layer people actually live in on a cabin evening once the sauna has cooled.',
-      fi: '300 gramman puuvilla-polyesterihuppari painettuna Suomessa, unisex-suora leikkaus. Se kerros jossa mökki-illassa oikeasti eletään sen jälkeen kun sauna on jäähtynyt.',
+      fi: '300 gramman puuvilla-polyesterihuppari painettuna Suomessa, unisex-suora leikkaus. Se kerros, jossa mökki-illassa oikeasti eletään sen jälkeen kun sauna on jäähtynyt.',
     },
     priceFrom: 89.9,
     currency: 'EUR',
@@ -4110,7 +4110,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'A cotton tote printed with Mauri Kunnas artwork from The Canine Kalevala, his dog retelling of the Finnish national epic. The cheapest thing in this shop that still explains a whole country.',
-      fi: 'Puuvillainen kangaskassi Mauri Kunnaksen Koirien Kalevala -kuvituksella, hänen koiraversiollaan kansalliseepoksesta. Kaupan halvin tuote joka silti selittää kokonaisen maan.',
+      fi: 'Puuvillainen kangaskassi Mauri Kunnaksen Koirien Kalevala -kuvituksella, hänen koiraversiollaan kansalliseepoksesta. Kaupan halvin tuote, joka silti selittää kokonaisen maan.',
     },
     priceFrom: 7.96,
     currency: 'EUR',
@@ -4365,7 +4365,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'The burgundy pair to the Moomintroll mittens, same fleece lining and same price. Two centimetres shorter in the cuff, and a character who suits anyone who finds Moomintroll a bit too agreeable.',
-      fi: 'Viininpunainen pari Muumipeikko-lapasille, sama fleecevuori ja sama hinta. Varsi on kaksi senttiä lyhyempi, ja hahmo sopii sille jonka mielestä Muumipeikko on vähän liian sovinnollinen.',
+      fi: 'Viininpunainen pari Muumipeikko-lapasille, sama fleecevuori ja sama hinta. Varsi on kaksi senttiä lyhyempi, ja hahmo sopii sille, jonka mielestä Muumipeikko on vähän liian sovinnollinen.',
     },
     priceFrom: 19.9,
     currency: 'EUR',
@@ -4404,7 +4404,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'Kunnas drew the Korvatunturi Santa the way Finnish children picture him, and here he is on a 450 ml cup made of PLA rather than fossil plastic. The silicone sleeve is what you hold when the coffee is too hot to carry bare-handed.',
-      fi: 'Kunnas piirsi Korvatunturin pukin sellaisena kuin suomalaislapset sen näkevät, ja tässä hän on 450 millilitran mukissa joka on PLA:ta eikä fossiilista muovia. Silikonivyöstä pidetään kiinni silloin kun kahvi on liian kuumaa paljaaseen käteen.',
+      fi: 'Kunnas piirsi Korvatunturin pukin sellaisena kuin suomalaislapset sen näkevät, ja tässä hän on 450 millilitran mukissa, joka on PLA:ta eikä fossiilista muovia. Silikonivyöstä pidetään kiinni silloin kun kahvi on liian kuumaa paljaaseen käteen.',
     },
     priceFrom: 19.9,
     currency: 'EUR',
@@ -4443,7 +4443,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'Double-walled steel, 550 millilitres, and the manufacturer puts the hot-hold at six hours. That is roughly one snowmobile safari, which is the practical test this bottle gets bought for.',
-      fi: 'Kaksinkertainen terässeinä, 550 millilitraa, ja valmistaja lupaa juoman pysyvän kuumana kuutisen tuntia. Se on suunnilleen yksi moottorikelkkasafari, eli juuri se koe jota varten tämä pullo ostetaan.',
+      fi: 'Kaksinkertainen terässeinä, 550 millilitraa, ja valmistaja lupaa juoman pysyvän kuumana kuutisen tuntia. Se on suunnilleen yksi moottorikelkkasafari, eli juuri se koe, jota varten tämä pullo ostetaan.',
     },
     priceFrom: 34.9,
     currency: 'EUR',
@@ -4482,7 +4482,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'Memory foam under a soft cover, for the Helsinki–Rovaniemi night train or the flight home. Small enough to clip on a bag, which is the only version of a travel pillow anyone actually keeps.',
-      fi: 'Muistivaahtoa pehmeän päällisen alla, Helsinki–Rovaniemi-yöjunaan tai kotimatkan lennolle. Sen verran pieni että sen saa kiinni laukkuun, mikä on ainoa matkatyynytyyppi jonka kukaan oikeasti pitää.',
+      fi: 'Muistivaahtoa pehmeän päällisen alla, Helsinki–Rovaniemi-yöjunaan tai kotimatkan lennolle. Sen verran pieni, että sen saa kiinni laukkuun, mikä on ainoa matkatyynytyyppi, joka oikeasti pysyy mukana.',
     },
     priceFrom: 24.9,
     currency: 'EUR',
@@ -4514,7 +4514,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'A shaped Moomintroll cushion rather than a square with a print on it, sold in several sizes from 45 to 75 centimetres tall. The kind of thing that ends up on a cabin sofa and stays there.',
-      fi: 'Muumipeikon muotoinen tyyny, ei neliö jossa on kuva, ja saatavana useassa koossa 45:stä 75 senttiin. Sellainen tavara joka päätyy mökin sohvalle ja jää sinne.',
+      fi: 'Muumipeikon muotoinen tyyny, ei neliö, jossa on kuva, ja saatavana useassa koossa 45:stä 75 senttiin. Sellainen tavara, joka päätyy mökin sohvalle ja jää sinne.',
     },
     priceFrom: 39.9,
     currency: 'EUR',
@@ -4888,7 +4888,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. Finlayson prints it on satin cotton, digitally so the colours hold, with a plain reverse and the print on both sides of the pillowcases.',
-      fi: 'Ferdinand von Wright maalasi taistelevat metsot vuonna 1886, ja siitä tuli teos jonka jokainen suomalainen tunnistaa. Finlayson painaa sen satiinipuuvillalle digitaalisesti niin että värit toistuvat tarkasti. Peiton kääntöpuoli on yksivärinen, ja tyynyliinoissa printti on molemmin puolin.',
+      fi: 'Ferdinand von Wright maalasi taistelevat metsot vuonna 1886, ja siitä tuli teos, jonka jokainen suomalainen tunnistaa. Finlayson painaa sen satiinipuuvillalle digitaalisesti niin että värit toistuvat tarkasti. Peiton kääntöpuoli on yksivärinen, ja tyynyliinoissa printti on molemmin puolin.',
     },
     priceFrom: 169.95,
     currency: 'EUR',

@@ -54,7 +54,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       arctic:
         'Marjat, koivu, poro ja napapiirin pohjoispuolella kasvavat kasvit: se osa Lappia, jonka voi ottaa mukaan.',
       sauna:
-        'Vihdat, hatut, tuoksut ja tyynyt. Se mitä lauteille tarvitaan, niistä kaupoista jotka pitävät sitä hyllyssä.',
+        'Vihdat, hatut, tuoksut ja tyynyt. Se, mitä lauteille tarvitaan, niistä kaupoista, jotka pitävät sitä hyllyssä.',
     },
     seeAll: {
       moomin: 'Katso kaikki muumiaiheiset tuotteet',

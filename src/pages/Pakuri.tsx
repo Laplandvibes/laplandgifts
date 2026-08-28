@@ -69,7 +69,7 @@ interface Copy {
 const fi: Copy = {
   h1: 'Pakuri: mitä se on ja miten sitä käytetään',
   lead:
-    'Pakuri eli pakurikääpä (Inonotus obliquus) on koivussa elävä sieni, jonka musta, halkeillut kasvannainen on haudutettu juomaksi pohjoisessa vuosisatojen ajan. Viime vuosina siitä on kasvanut suomalaisten luonnontuotevalmistajien tunnetuimpia tuotteita, ja samalla aihe, josta liikkuu enemmän väitteitä kuin näyttöä. Tämä sivu kertoo, mitä pakuri on, miten sitä käytetään ja mitä tutkimus sanoo ja mitä se ei sano.',
+    'Pakuri eli pakurikääpä (Inonotus obliquus) on koivussa elävä sieni, jonka musta, halkeillut kasvannainen on haudutettu juomaksi pohjoisessa vuosisatojen ajan. Viime vuosina siitä on kasvanut suomalaisten luonnontuotevalmistajien tunnetuimpia tuotteita, ja samalla aihe, josta liikkuu enemmän väitteitä kuin näyttöä. Tämä sivu kertoo, mitä pakuri on, miten sitä käytetään, mitä tutkimus sanoo ja mitä se ei sano.',
   whatTitle: 'Mikä pakuri on',
   what: [
     {

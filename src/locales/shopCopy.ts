@@ -636,10 +636,10 @@ const fi: ShopCopy = {
       saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Näin tunnistat aidon saamelaisen duodjin',
-    duodjiBody: 'Duodji on saamelaisten tekemää käsityötä, jossa käytetään perinteisiä materiaaleja ja tekotapoja. Matkamuistoimitaatio kopioi ulkonäön ilman tekijää ja perinnettä. Ero on merkityksellinen sille yhteisölle, jonka kulttuurista on kyse, ja auktorisoitu myyjä osaa kertoa kuka esineen on tehnyt.',
+    duodjiBody: 'Duodji on saamelaisten tekemää käsityötä, jossa käytetään perinteisiä materiaaleja ja tekotapoja. Matkamuistoimitaatio kopioi ulkonäön ilman tekijää ja perinnettä. Ero on merkityksellinen sille yhteisölle, jonka kulttuurista on kyse, ja auktorisoitu myyjä osaa kertoa, kuka esineen on tehnyt.',
     duodjiAuthorized: 'Auktorisoitu saamelaiskäsityön myyjä',
     listingH2: 'Omistatko lappilaisen kaupan?',
-    listingBody: 'Listaus on ilmainen kaikille lappilaisille yrityksille. Kerro keitä olette, miksi näkyvyytenne on nyt heikko, ja mitä muuttuisi jos asiakkaat löytäisivät teidät.',
+    listingBody: 'Listaus on ilmainen kaikille lappilaisille yrityksille. Kerro, keitä olette, miksi näkyvyytenne on nyt heikko ja mitä muuttuisi, jos asiakkaat löytäisivät teidät.',
     listingCta: 'Ota yhteyttä',
   },
 }
