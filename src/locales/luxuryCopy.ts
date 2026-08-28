@@ -35,7 +35,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   fi: {
     eyebrow: 'Valikoiman kärki',
     title: 'Lapin ylellisyys',
-    lead: 'Kalleimmat asiat, joihin tämä kauppa osoittaa, eivät ole esineitä vaan päiviä: päivä kullanhuuhdontaa Inarissa, yö lasi-iglussa, aamu porojen kanssa. Niiden alla ne esineet, jotka ovat matkalaukkutilan arvoisia.',
+    lead: 'Kalleimmat asiat, joihin tämä kauppa ohjaa, eivät ole esineitä vaan päiviä: päivä kullanhuuhdontaa Inarissa, yö lasi-iglussa, aamu porojen kanssa. Niiden alla ne esineet, jotka ovat matkalaukkutilan arvoisia.',
     experiencesH2: 'Päiviä ja öitä',
     objectsH2: 'Esineitä',
     count: (n) => `${n} tuotetta`,

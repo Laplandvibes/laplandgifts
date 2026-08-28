@@ -178,7 +178,7 @@ export default function Product() {
               {PAKURI_GUIDE_SLUGS.has(product.slug) && (
                 <p className="text-sm text-muted">
                   {lang === 'fi'
-                    ? 'Uutta pakurin kanssa? Mitä pakuri on, miten muodot eroavat ja mitä tutkimus sanoo — '
+                    ? 'Onko pakuri sinulle uusi tuttavuus? Mitä pakuri on, miten muodot eroavat ja mitä tutkimus sanoo: '
                     : 'New to chaga? What pakuri is, how the forms differ and what research says — '}
                   <Link
                     to={to('/pakuri')}

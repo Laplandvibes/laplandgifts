@@ -34,7 +34,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
   fi: {
     title: 'Lapin tuliaiset ja suomalaiset lahjat | LaplandGifts',
     description:
-      'Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka ne lähettävät.',
+      'Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka myös lähettävät ne.',
   },
   de: {
     title: 'LaplandGifts: finnisches Design und Geschenke aus Lappland',

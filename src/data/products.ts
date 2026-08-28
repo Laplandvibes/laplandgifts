@@ -837,7 +837,7 @@ export const PRODUCTS: Product[] = [
           key: 'contents',
           value: {
             en: 'Knife and leather sheath with a snap closure',
-            fi: 'Puukko ja nahkatuppi, jossa neppariluku',
+            fi: 'Puukko ja nahkatuppi, jossa nepparilukko',
           },
         },
         {
@@ -3020,7 +3020,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'The blue bar with whole hazelnuts set in milk chocolate. Fazer has used the same blue wrapper since 1922, which is why it is the one Finns bring abroad.',
-      fi: 'Sininen levy, jossa on kokonaisia hasselpähkinöitä maitosuklaassa. Fazer on käyttänyt samaa sinistä kääreitä vuodesta 1922, ja siksi juuri tämä lähtee mukaan ulkomaille.',
+      fi: 'Sininen levy, jossa on kokonaisia hasselpähkinöitä maitosuklaassa. Fazer on käyttänyt samaa sinistä käärettä vuodesta 1922, ja siksi juuri tämä lähtee mukaan ulkomaille.',
     },
     priceFrom: 7.74,
     currency: 'EUR',
@@ -3128,7 +3128,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'The warmest knit North Outdoor makes, shaped to sit under a helmet. On a snowmobile or a reindeer sled the cold gets in at the neck and cheeks first, and this is the layer that closes that gap.',
-      fi: 'North Outdoorin tuhdointa merinoneulosta, muotoiltu istumaan kypärän alle. Moottorikelkan kyydissä ja porotilan reessä kylmä löytää ensimmäisenä kaulan ja poskien kohdalta, ja juuri sen raon tämä sulkee.',
+      fi: 'North Outdoorin tuhdeinta merinoneulosta, muotoiltu istumaan kypärän alle. Moottorikelkan kyydissä ja porotilan reessä kylmä löytää ensimmäisenä kaulan ja poskien kohdalta, ja juuri sen raon tämä sulkee.',
     },
     priceFrom: 39.95,
     currency: 'EUR',
@@ -4154,7 +4154,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'The Unikko poppy on a crossbody bag sized for a phone, a wallet and a pair of gloves. Unikko was drawn in 1964 after Armi Ratia had banned floral prints, and it outlived the ban by sixty years.',
-      fi: 'Unikko-kuosi olkalaukussa, johon mahtuu puhelin, lompakko ja hanskat. Unikko piirrettiin 1964 sen jälkeen kun Armi Ratia oli kieltänyt kukkakuosit, ja se on elänyt kiellon yli kuudellakymmenellä vuodella.',
+      fi: 'Unikko-kuosi olkalaukussa, johon mahtuu puhelin, lompakko ja hanskat. Unikko piirrettiin 1964 sen jälkeen kun Armi Ratia oli kieltänyt kukkakuosit, ja se on elänyt kieltoaan kuusikymmentä vuotta pidempään.',
     },
     priceFrom: 80.26,
     currency: 'EUR',
@@ -4443,7 +4443,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'Double-walled steel, 550 millilitres, and the manufacturer puts the hot-hold at six hours. That is roughly one snowmobile safari, which is the practical test this bottle gets bought for.',
-      fi: 'Kaksinkertainen terässeinä, 550 millilitraa, ja valmistaja lupaa kuuman pysyvän kuutisen tuntia. Se on suunnilleen yksi moottorikelkkasafari, eli juuri se koe jota varten tämä pullo ostetaan.',
+      fi: 'Kaksinkertainen terässeinä, 550 millilitraa, ja valmistaja lupaa juoman pysyvän kuumana kuutisen tuntia. Se on suunnilleen yksi moottorikelkkasafari, eli juuri se koe jota varten tämä pullo ostetaan.',
     },
     priceFrom: 34.9,
     currency: 'EUR',
@@ -4619,7 +4619,7 @@ export const PRODUCTS: Product[] = [
     },
     description: {
       en: 'The blue-and-white bobble hat with FINLAND across the band, the one worn in the stands and then for the rest of the winter. Machine wash at 30.',
-      fi: 'Sinivalkoinen tupsupipo, jossa lukee FINLAND. Se katsomopipo, joka jää päähän loppitalveksi. Vesipesu 30 astetta.',
+      fi: 'Sinivalkoinen tupsupipo, jossa lukee FINLAND. Se katsomopipo, joka jää päähän lopputalveksi. Vesipesu 30 astetta.',
     },
     priceFrom: 16.19,
     currency: 'EUR',

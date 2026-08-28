@@ -69,7 +69,7 @@ interface Copy {
 const fi: Copy = {
   h1: 'Pakuri: mitä se on ja miten sitä käytetään',
   lead:
-    'Pakuri eli pakurikääpä (Inonotus obliquus) on koivussa elävä sieni, jonka musta, halkeillut kasvannainen on haudutettu juomaksi pohjoisessa vuosisatojen ajan. Viime vuosina siitä on kasvanut suomalaisten luonnontuotevalmistajien tunnetuimpia tuotteita — ja samalla aihe, josta liikkuu enemmän väitteitä kuin näyttöä. Tämä sivu kertoo, mitä pakuri on, miten sitä käytetään ja mitä tutkimus sanoo — ja mitä se ei sano.',
+    'Pakuri eli pakurikääpä (Inonotus obliquus) on koivussa elävä sieni, jonka musta, halkeillut kasvannainen on haudutettu juomaksi pohjoisessa vuosisatojen ajan. Viime vuosina siitä on kasvanut suomalaisten luonnontuotevalmistajien tunnetuimpia tuotteita, ja samalla aihe, josta liikkuu enemmän väitteitä kuin näyttöä. Tämä sivu kertoo, mitä pakuri on, miten sitä käytetään ja mitä tutkimus sanoo ja mitä se ei sano.',
   whatTitle: 'Mikä pakuri on',
   what: [
     {
@@ -80,7 +80,7 @@ const fi: Copy = {
     {
       title: 'Kasvaa hitaasti koivussa',
       body:
-        'Keruukokoinen pahka on kasvanut elävässä koivussa vuosia. Hidas kasvu tekee luonnonpakurista rajallisen raaka-aineen — ja on syy siihen, miksi pakuria myös viljellään Suomessa ymppäämällä sientä talousmetsien koivuihin.',
+        'Keruukokoinen pahka on kasvanut elävässä koivussa vuosia. Hidas kasvu tekee luonnonpakurista rajallisen raaka-aineen, ja juuri siksi pakuria myös viljellään Suomessa ymppäämällä sientä talousmetsien koivuihin.',
     },
     {
       title: 'Pitkä perinne juomana',
@@ -90,17 +90,17 @@ const fi: Copy = {
   ],
   useTitle: 'Näin pakuria käytetään',
   useIntro:
-    'Pakuria myydään kolmessa muodossa, ja ne eroavat lähinnä vaivan määrässä: rouhe vaatii hauduttamisen, uutejauhe ja tinktuura eivät. Kaikissa pätee sama perussääntö — annostus pakkauksen ohjeen mukaan, ei sen yli.',
+    'Pakuria myydään kolmessa muodossa, ja ne eroavat lähinnä vaivan määrässä: rouhe vaatii hauduttamisen, uutejauhe ja tinktuura eivät. Kaikissa pätee sama perussääntö, eli annostus pakkauksen ohjeen mukaan, ei sen yli.',
   useSteps: [
     {
       title: 'Rouhe: hidas haudutus',
       body:
-        'Perinteisin muoto. Karkeaa rouhetta haudutetaan miedolla lämmöllä — ei poreilevassa kiehunnassa — vähintään puolisen tuntia, ja moni antaa pannun hautua tunteja. Sama rouhe-erä kestää useamman hauduttamisen ennen kuin maku laimenee.',
+        'Perinteisin muoto. Karkeaa rouhetta haudutetaan miedolla lämmöllä, ei poreilevassa kiehunnassa, vähintään puolisen tuntia, ja moni antaa pannun hautua tunteja. Sama rouhe-erä kestää useamman hauduttamisen ennen kuin maku laimenee.',
     },
     {
       title: 'Uutejauhe: lusikallinen kuumaan veteen',
       body:
-        'Uutejauhe liukenee suoraan kuumaan veteen tai kahviin ilman hauduttamista. Se on tiiviimpää kuin rouhe, joten valmistajan ilmoittama päiväannos on raja eikä suositus — tiiviys on koko muodon idea.',
+        'Uutejauhe liukenee suoraan kuumaan veteen tai kahviin ilman hauduttamista. Se on tiiviimpää kuin rouhe, joten valmistajan ilmoittama päiväannos on raja eikä suositus: tiiviys on koko muodon idea.',
     },
     {
       title: 'Tinktuura: tippoina',
@@ -108,11 +108,11 @@ const fi: Copy = {
         'Neste, jota annostellaan tipoittain veteen tai suoraan kielelle. Kevyin muoto kokeiluun ja matkalle: ei hauduttamista, ei astioita, ja 50 millilitran pullo kulkee käsimatkatavarassa.',
     },
   ],
-  researchTitle: 'Mitä tutkimus sanoo — ja mitä se ei sano',
+  researchTitle: 'Mitä tutkimus sanoo ja mitä se ei sano',
   researchBody: [
     'Pakurista on julkaistu runsaasti solu- ja eläintutkimuksia: sen yhdisteitä, kuten beetaglukaaneja, polyfenoleja ja betuliinijohdannaisia, on tutkittu laboratoriossa. Ihmisillä tehtyjä kliinisiä tutkimuksia on kuitenkin hyvin vähän, eikä niiden perusteella voi sanoa, että pakuri hoitaisi tai ehkäisisi yhtäkään sairautta.',
-    'Tämä ei ole vain varovaisuutta vaan lainsäädäntöä: elintarvikkeista ei saa EU:ssa esittää lääkkeellisiä väitteitä, eikä pakurille ole hyväksytty yhtään terveysväitettä. Jos myyjä lupaa pakurin parantavan jotakin, väite on sekä katteeton että laiton. Rehellisin tapa suhtautua pakuriin on sama kuin hyvään teehen: juoma, jolla on pitkä perinne ja oma maku — ei lääke.',
-    'Pakuri ei myöskään sovi kaikille. Valmistajat varoittavat pakkauksissaan yhteisvaikutuksista muun muassa verenohennuslääkkeiden ja antibioottien kanssa, ja pakuri sisältää runsaasti oksalaattia — senkin vuoksi annostus pidetään pakkauksen ohjeessa. Jos käytät säännöllistä lääkitystä, kysy lääkäriltä ennen kuin otat pakurin tavaksi.',
+    'Tämä ei ole vain varovaisuutta vaan lainsäädäntöä: elintarvikkeista ei saa EU:ssa esittää lääkkeellisiä väitteitä, eikä pakurille ole hyväksytty yhtään terveysväitettä. Jos myyjä lupaa pakurin parantavan jotakin, väite on sekä katteeton että laiton. Rehellisin tapa suhtautua pakuriin on sama kuin hyvään teehen: juoma, jolla on pitkä perinne ja oma maku, ei lääke.',
+    'Pakuri ei myöskään sovi kaikille. Valmistajat varoittavat pakkauksissaan yhteisvaikutuksista muun muassa verenohennuslääkkeiden ja antibioottien kanssa, ja pakuri sisältää runsaasti oksalaattia, senkin vuoksi annostus pidetään pakkauksen ohjeessa. Jos käytät säännöllistä lääkitystä, kysy lääkäriltä ennen kuin otat pakurin tavaksi.',
   ],
   northTitle: 'Miksi pohjoinen pakuri',
   northBody: [
@@ -134,7 +134,7 @@ const fi: Copy = {
     { slug: 'puhdistamo-instant-chaga', label: 'Puhdistamo instant' },
     { slug: 'foodin-chaga-tincture', label: 'Foodin tinktuura' },
   ],
-  categoryNote: 'Muut pohjoiset luonnontuotteet — marjajauheet, kuusenkerkkä ja yrtit — löytyvät kategoriasta',
+  categoryNote: 'Muut pohjoiset luonnontuotteet eli marjajauheet, kuusenkerkkä ja yrtit löytyvät kategoriasta',
   categoryCta: 'Marjajauheet ja superfoodit',
 }
 

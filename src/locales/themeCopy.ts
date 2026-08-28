@@ -52,7 +52,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       moomin:
         'Mukeja, lapasia, lakanoita ja julisteita. Muumitavara on täällä neljässä eri kategoriassa, joten tämä sivu kerää sen yhteen.',
       arctic:
-        'Marjat, koivu, poro ja napapiirin pohjoispuolella kasvavat kasvit — se osa Lappia, jonka voi ottaa mukaan.',
+        'Marjat, koivu, poro ja napapiirin pohjoispuolella kasvavat kasvit: se osa Lappia, jonka voi ottaa mukaan.',
       sauna:
         'Vihdat, hatut, tuoksut ja tyynyt. Se mitä lauteille tarvitaan, niistä kaupoista jotka pitävät sitä hyllyssä.',
     },

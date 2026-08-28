@@ -110,7 +110,7 @@ const fi: ChromeCopy = {
       },
       {
         title: '7 päivää Lapin taikaa',
-        subtitle: 'Ainoa matkareitti, jonka koskaan tarvitset',
+        subtitle: 'Ainoa matkareitti, jonka tarvitset',
         description: 'Kattava päiväkohtainen reitti Rovaniemeltä Inariin ja takaisin. Sisältää revontulivinkit, husky-safarit, jäänmurtajaristeilyt, realistisen budjettilaskurin ja täyden arktisen pakkauslistan.',
         topics: ['7 päivän reitti', 'Budjettilaskuri', 'Pakkauslista', 'Sesonkiopas', 'Paikalliset vinkit'],
         pages: 13,
@@ -130,7 +130,7 @@ const fi: ChromeCopy = {
     successFootnote: 'Tervetuloa arktiseen perheeseen. Tarkista myös sähköpostisi!',
     btnSecret: 'Käsityön salaisuus',
     btnSeven: '7 päivän taika',
-    errorMsg: 'Jotain meni pieleen. Yritä uudelleen.',
+    errorMsg: 'Jotain meni pieleen. Kokeile vielä kerran.',
     spamNote: 'Ei roskapostia, koskaan. Voit peruuttaa milloin vain.',
   },
   shipping: {
@@ -193,7 +193,7 @@ const fi: ChromeCopy = {
       { name: 'LaplandStays', href: 'https://laplandstays.com' },
       { name: 'LaplandActivities', href: 'https://laplandactivities.fi' },
     ],
-    editorialNote: 'Riippumattomasti ylläpitää LaPeso Oy (Y-tunnus 3309136-7) · viimeksi tarkistettu touko 2026 · teemme yhteistyötä valittujen käsityöläisten ja kauppojen kanssa, läpinäkyvästi jokaisella tuotesivulla.',
+    editorialNote: 'Sivustoa ylläpitää riippumattomasti LaPeso Oy (Y-tunnus 3309136-7) · viimeksi tarkistettu touko 2026 · teemme yhteistyötä valittujen käsityöläisten ja kauppojen kanssa, läpinäkyvästi jokaisella tuotesivulla.',
     extraLegalUnsub: 'Peruuta tilaus',
   },
   notFound: {
@@ -206,11 +206,11 @@ const fi: ChromeCopy = {
     h1: 'Peruuta tilaus',
     body: 'Anna sähköpostiosoitteesi ja poistamme sinut uutiskirjelistalta.',
     successH1: 'Tilaus peruutettu',
-    successBody: 'Et saa enää meiltä viestejä. Harmi nähdä sinun lähtevän.',
+    successBody: 'Et saa enää meiltä viestejä. Harmi, että lähdet.',
     submit: 'Peruuta tilaus',
     submitting: 'Peruutetaan…',
     backHome: 'Takaisin etusivulle',
-    errorMsg: 'Jotain meni pieleen. Yritä uudelleen tai lähetä viesti osoitteeseen info@laplandvibes.com',
+    errorMsg: 'Jotain meni pieleen. Kokeile vielä kerran tai lähetä viesti osoitteeseen info@laplandvibes.com',
   },
   legal: {
     backHome: 'Takaisin etusivulle',

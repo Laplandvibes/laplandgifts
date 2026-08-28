@@ -128,11 +128,11 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
   fi: {
     eyebrow: 'Brändi',
     founded: (y) => `Perustettu ${y}`,
-    officialSite: (n) => `${n}:n omat sivut`,
+    officialSite: (n) => `Omat sivut: ${n}`,
     productsH2: (n) => `${n} tässä kaupassa`,
     indexH1: 'Brändit',
     indexIntro:
-      'Kuka tekee tämän kaupan tavarat ja missä. Jokainen esittely on kirjoitettu siitä, mitä brändi itse kertoo, ja linkittää heidän omille sivuilleen.',
+      'Kuka tekee tämän kaupan tavarat ja missä. Jokainen esittely on kirjoitettu siitä, mitä brändi itse kertoo, ja linkittää brändin omille sivuille.',
     indexCount: (n) => `${n} tuotetta`,
     profile: {
       'aarikka':
@@ -146,7 +146,7 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'north-outdoor':
         'North Outdoor on Pyka Oy:n merinovillavaatebrändi, joka avasi vuonna 2021 oman neulomon Oulun Ruskoon; Yle uutisoi sen Suomen suurimpana villapaitaneulomona. Brändin tuotanto jakautuu useaan maahan, ja brändi kuvaa jaon tuoteryhmittäin eikä yhtenä alkuperänä. Sen oma kuvaus tästä jaosta on englanniksi sisäisesti ristiriitainen, joten tuoteryhmäkohtaista erittelyä ei pidä toistaa varmana tietona.',
       'marttiini':
-        'Marttiini on suomalainen puukkobrändi, jonka seppä Janne Marttiini perusti Rovaniemelle vuonna 1928. Mallisto ulottuu metsästys- ja fileointipuukoista keittiöveitsiin, taittoveitsiin ja perinnepuukkoihin; kahvoissa käytetään visakoivua ja poronsarvea, tupet ovat nahkaa. Tunnetuimpia muotoja ovat leveäteräinen lapinleuku ja kalastajille tehdyt fileveitset.',
+        'Marttiini on suomalainen puukkobrändi, jonka seppä Janne Marttiini perusti Rovaniemelle vuonna 1928. Mallisto ulottuu metsästys- ja fileointipuukoista keittiöveitsiin, taittoveitsiin ja perinnepuukkoihin; kahvoissa käytetään visakoivua ja poronsarvea, tupet ovat nahkaa. Tunnetuimpia muotoja ovat leveäteräinen lapinleuku ja kalastajille tehdyt fileeveitset.',
       'kupilka':
         'Kupilka on suomalainen retkiastiabrändi, jota pyörittää perheyritys Plasthill Oy Kontiolahdella Pohjois-Karjalassa. Kupit, lautaset ja aterimet muovataan omasta Kareline-luonnonkuitukomposiitista, jossa on suunnilleen puoliksi pohjoismaista havusellua ja puoliksi elintarvikelaatuista polyolefiinia. Astiaston alkuperä on brändin itsensä hyvin dokumentoima, mutta laajemmassa valikoimassa (etenkin puukoissa ja tulentekovälineissä) on ulkopuolisia toimittajia.',
       'nordicbuddies':
@@ -162,7 +162,7 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'arctic-warriors':
         'Arctic Warriors on pieni suomalainen luonnontuoteyritys, joka on rekisteröity Narkauksen kylään Rovaniemen lähelle ja perustettu vuonna 2014. Se myy marja- ja yrttijauheita sekä kasviglyserolipohjaisia yrttieliksiirejä, joiden raaka-aineet tulevat lappilaisilta pienviljelijöiltä ja keräilijöiltä. Brändin omilla tuotesivuilla alkuperäksi merkitään Suomi, mutta valmistus- tai pakkauspaikkaa ei kerrota.',
       'makia':
-        'Makia on vuonna 2001 perustettu helsinkiläinen vaatebrändi, joka suunnittelee Suomessa mutta valmistuttaa ulkomailla. Brändin omien sivujen mukaan päätuotantomaa on Türkiye, takit ja suurin osa asusteista tulee Kiinasta, sukkia tehdään Portugalissa ja Türkiyessä, ja Suomessa valmistetaan vain pieni osa villa-asusteista. Tarkkaa tuoteryhmäkohtaista alkuperäjakaumaa ei voi kuitenkaan esittää vahvistettuna, koska brändin omat sivut ovat keskenään ristiriidassa maalistan osalta.',
+        'Makia on vuonna 2001 perustettu helsinkiläinen vaatebrändi, joka suunnittelee Suomessa mutta valmistuttaa ulkomailla. Brändin omien sivujen mukaan päätuotantomaa on Turkki, takit ja suurin osa asusteista tulee Kiinasta, sukkia tehdään Portugalissa ja Turkissa, ja Suomessa valmistetaan vain pieni osa villa-asusteista. Tarkkaa tuoteryhmäkohtaista alkuperäjakaumaa ei voi kuitenkaan esittää vahvistettuna, koska brändin omat sivut ovat keskenään ristiriidassa maalistan osalta.',
       'pentik':
         'Pentik on vuonna 1971 Posiolla aloittanut suomalainen sisustusbrändi, jonka tunnetuin osa on paikkakunnalla yhä toimiva keramiikkatehdas ja sen yhteydessä oleva kynttiläpaja. Tehdas ei kuitenkaan kata koko valikoimaa: brändin oman vastuullisuusraportoinnin mukaan noin neljännes tuotteista valmistettiin Suomessa vuonna 2022, ja loput tulevat muualta Euroopasta ja Aasiasta. Pentik on itse kertonut, ettei se korosta valmistusmaata tuotteissaan.',
       'arabia':
@@ -184,13 +184,13 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'moomin-arabia':
         'Moomin Arabia on suomalaisen keramiikkabrändin Arabian muumisarja. Arabia perustettiin vuonna 1873 ja kuuluu nykyään Fiskars Groupiin; ensimmäiset muumiastiat tulivat 1950-luvulla Tove Janssonin kuvituksin, ja laajalti kerätty mukisarja alkoi 1990-luvulla Kaj Franckin Teema-muotoon pohjautuen. Suunnittelu tehdään Espoon pääkonttorilla, mutta Fiskars Groupin mukaan Arabian tuotteet valmistetaan sopimusvalmistajilla pääosin Thaimaassa ja Romaniassa.',
       'kaino-drinks':
-        'KAINO Drinks on tamperelaisen Poikain Parhaat Oy:n alkoholittomien kuohujuomien sarja. Kuusenkerkkajuoma valmistetaan suomalaisesta kuusenkerkasta kasityona Tampereella, ja juomat ovat 0,0-prosenttisia, vegaanisia ja luomusertifioituja tunnuksella FI-EKO-201. Valikoimaan kuuluvat kuusenkerkka, raparperi & ruusu seka mustaherukanlehti, ja pullokoot ovat 0,75 litraa ja 0,2 litraa.',
+        'KAINO Drinks on tamperelaisen Poikain Parhaat Oy:n alkoholittomien kuohujuomien sarja. Kuusenkerkkäjuoma valmistetaan suomalaisesta kuusenkerkästä käsityönä Tampereella, ja juomat ovat 0,0-prosenttisia, vegaanisia ja luomusertifioituja tunnuksella FI-EKO-201. Valikoimaan kuuluvat kuusenkerkkä, raparperi & ruusu sekä mustaherukanlehti, ja pullokoot ovat 0,75 litraa ja 0,2 litraa.',
       'omega7':
         'Omega7 on suomalainen tyrniöljyvalmisteiden tuotemerkki, jonka ensimmäiset tuotteet tulivat markkinoille vuonna 1997. Tuotteiden SBA24-kaksoistyrniöljy yhdistää tyrnin marjaöljyn ja siemenöljyn, ja se uutetaan liuotinvapaalla menetelmällä yhtiön tehtaalla Torniossa. Valmistaja Aromtech Oy on tehnyt kliinistä tutkimusta Turun yliopiston ja TYKSin tutkijoiden kanssa ja ylläpitää luomutyrnin viljelypilottia Tervolassa.',
       'kaapa-mushrooms':
         'KÄÄPÄ Mushrooms on suomalainen funktionaalisten sienten valmistaja, jonka perustivat vuonna 2018 Eric Puro, Otso Mursula ja Seppo Riikonen. Yrityksen pääkonttori ja tuotantolaitos ovat Karjalohjalla Etelä-Suomessa, ja sienet kasvatetaan FSC- ja PEFC-sertifioiduista suomalaisista metsistä peräisin olevalla koivualustalla. Uutteet tehdään yrityksen omalla NordRelease-ultraäänimenetelmällä puhdistetusta lähdevedestä, raaka-aineena käytetään itiemaljoja rihmastoviljan sijaan, ja yrityksellä on FSSC 22000 -elintarviketurvallisuussertifikaatti.',
       'halva':
-        'Halva on vuonna 1931 perustettu suomalainen perheyritys, jonka perustivat Kreikasta Suomeen muuttaneet veljekset Jean ja Michael Karavokyros. Yritys tunnetaan ennen kaikkea lakritsi- ja salmiakkimakeisista, ja se kertoo makeistehtaansa ja pakkaamonsa sijaitsevan Helsingin Pitajanmaessa. Yritysta luotsaa kolmas sukupolvi, ja valikoimassa on yha seesamitahnasta tehty halva, joka antoi yritykselle nimen.',
+        'Halva on vuonna 1931 perustettu suomalainen perheyritys, jonka perustivat Kreikasta Suomeen muuttaneet veljekset Jean ja Michael Karavokyros. Yritys tunnetaan ennen kaikkea lakritsi- ja salmiakkimakeisista, ja se kertoo makeistehtaansa ja pakkaamonsa sijaitsevan Helsingin Pitäjänmäessä. Yritystä luotsaa kolmas sukupolvi, ja valikoimassa on yhä seesamitahnasta tehty halva, joka antoi yritykselle nimen.',
       'kilpissafarit':
         'Kilpissafarit on kilpisjärveläinen ohjelmapalveluyritys, jonka rajavartija Hannu Rauhala perusti vuonna 1995 ja jota nykyään vetää hänen poikansa Jussi Rauhala. Yritys opastaa moottorikelkkasafareita, lumikenkä- ja vaellusretkiä, revontuliretkiä ja kalastusretkiä Käsivarren erämaassa, muun muassa kelkkareitin Suomen korkeimmalle kohdalle Haltille. Samasta toimipisteestä vuokrataan kelkkoja, sähköfatbikejä, lumikenkiä, kanootteja ja kajakkeja omatoimisille retkeilijöille.',
       'kaavi-porcini':
@@ -218,7 +218,7 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'novita':
         'Novita on vuonna 1928 perustettu suomalainen lankavalmistaja. Perustaja Ernst Gylfe opiskeli kampavillalangan kehruuta Bradfordissa Englannissa ja aloitti tuotannon Helsingissä; yritys on yhä saman perheen omistuksessa neljännessä sukupolvessa. Kehräämö on toiminut Korialla Kouvolassa vuodesta 1974, ja tunnetuin tuote on 7 Veljestä -sukkalanka, jonka villa tulee yhtiön mukaan pääosin Euroopasta, etenkin Englannista.',
       'mikebon':
-        'Mikebon Oy on vuonna 1994 perustettu vantaalainen perheyritys, joka painaa ja brodeeraa tekstiileja. Yritys hoitaa suunnittelun, graafisen toteutuksen, tuotannon ja logistiikan itse ja kertoo omilla sivuillaan tuotannon tapahtuvan Suomessa. Paaasiakkaita ovat matkamuisto- ja lahjatavarakauppiaat, minka lisaksi yritys yllapitaa kuluttajaverkkokauppaa, jonka mallistoihin kuuluu muun muassa Lappi-, Suomi- ja muumiaiheisia paitoja.',
+        'Mikebon Oy on vuonna 1994 perustettu vantaalainen perheyritys, joka painaa ja brodeeraa tekstiilejä. Yritys hoitaa suunnittelun, graafisen toteutuksen, tuotannon ja logistiikan itse ja kertoo omilla sivuillaan tuotannon tapahtuvan Suomessa. Pääasiakkaita ovat matkamuisto- ja lahjatavarakauppiaat, minkä lisäksi yritys ylläpitää kuluttajaverkkokauppaa, jonka mallistoihin kuuluu muun muassa Lappi-, Suomi- ja muumiaiheisia paitoja.',
       'aromageddon':
         'Aromageddon on helsinkiläisen Aromageddon Oy:n saunatuoksusarja, jonka idea syntyi yrityksen oman kertomuksen mukaan kesällä 2024 saunassa. Valikoimaan kuuluu kuusi 15 millilitran tuoksua ja kolme lahjapakkausta, ja aiheet tulevat juomista ja makeisista: viski, olut, jääminttu, piparminttukarkki, kaneli ja minttukaakao. Yritys julkaisee omilla sivuillaan käyttöturvallisuustiedotteen jokaisesta tuoksusta, ja juoma-aiheiset versiot antavat tuoksun ilman alkoholia.',
       'leijona':

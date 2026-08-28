@@ -539,7 +539,7 @@ const fi: ShopCopy = {
       const eur = approxEur(value, currency)
       return eur ? `alk. ${fmt(value, currency, 'fi-FI')} (noin ${eur} €)` : `alk. ${fmt(value, currency, 'fi-FI')}`
     },
-    priceNote: (date, partner) => `Hinta luettu kumppanin ${partner} sivulta ${date}. Lopullisen hinnan määrittää kauppa.`,
+    priceNote: (date, partner) => `Hinta luettu kumppanin (${partner}) sivulta ${date}. Lopullisen hinnan määrittää kauppa.`,
     checkoutNote: 'Viimeistelet ostoksen kumppanin kaupassa. Me emme käsittele maksua emmekä toimitusta.',
     illustrativeImage: 'Kuva on tunnelmakuva, ei kuva juuri tästä tuotteesta. Tuotteen omat kuvat ovat kumppanin sivulla.',
     imageCredit: (partner) => `Tuotekuva: ${partner}`,
@@ -627,7 +627,7 @@ const fi: ShopCopy = {
     count: (n: number) => (n === 1 ? '1 putiikki' : `${n} putiikkia`),
     visitH2: 'Vieraile paikan päällä',
     shopAtH2: 'Tilaa kotiin',
-    outboundCta: 'Siirry heidän sivuilleen',
+    outboundCta: 'Siirry kaupan omille sivuille',
     crossSellH2: 'Osta tällaista verkosta',
     crossSellCta: 'Selaa kategoriaa',
     townNames: {
@@ -636,7 +636,7 @@ const fi: ShopCopy = {
       saariselka: 'Saariselkä', enontekio: 'Enontekiö', utsjoki: 'Utsjoki',
     },
     duodjiH2: 'Näin tunnistat aidon saamelaisen duodjin',
-    duodjiBody: 'Duodji on saamelaisten tekemää käsityötä, jossa käytetään perinteisiä materiaaleja ja tekotapoja. Matkamuistoimitaatio kopioi ulkonäön ilman tekijää ja perinnettä. Ero on merkityksellinen sille yhteisölle jonka kulttuurista on kyse, ja auktorisoitu myyjä osaa kertoa kuka esineen on tehnyt.',
+    duodjiBody: 'Duodji on saamelaisten tekemää käsityötä, jossa käytetään perinteisiä materiaaleja ja tekotapoja. Matkamuistoimitaatio kopioi ulkonäön ilman tekijää ja perinnettä. Ero on merkityksellinen sille yhteisölle, jonka kulttuurista on kyse, ja auktorisoitu myyjä osaa kertoa kuka esineen on tehnyt.',
     duodjiAuthorized: 'Auktorisoitu saamelaiskäsityön myyjä',
     listingH2: 'Omistatko lappilaisen kaupan?',
     listingBody: 'Listaus on ilmainen kaikille lappilaisille yrityksille. Kerro keitä olette, miksi näkyvyytenne on nyt heikko, ja mitä muuttuisi jos asiakkaat löytäisivät teidät.',

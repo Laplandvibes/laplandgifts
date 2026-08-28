@@ -74,7 +74,7 @@ const fi: Copy = {
     {
       title: 'Lopetetut kuviot',
       body:
-        'Suurin osa arvosta syntyy yksinkertaisesta syystä: kuviota ei enää valmisteta. Uusia kappaleita ei tule, ja hyväkuntoisten määrä vain laskee — jokainen sirunnut korva ja konepesussa haalistunut pinta pienentää tarjontaa pysyvästi.',
+        'Suurin osa arvosta syntyy yksinkertaisesta syystä: kuviota ei enää valmisteta. Uusia kappaleita ei tule, ja hyväkuntoisten määrä vain laskee, sillä jokainen lohjennut korva ja konepesussa haalistunut pinta pienentää tarjontaa pysyvästi.',
     },
     {
       title: 'Lyhyet tuotantokaudet',
@@ -89,7 +89,7 @@ const fi: Copy = {
     {
       title: 'Kausimukit',
       body:
-        'Kesä- ja talvimukit myydään vain oman kautensa ajan, sitten valmistus loppuu. Moni nyt arvokas muki oli aikanaan tavallinen sesonkiostos — kauden päättyminen on sarjaan sisäänrakennettu harvinaistumismekanismi.',
+        'Kesä- ja talvimukit myydään vain oman kautensa ajan, sitten valmistus loppuu. Moni nyt arvokas muki oli aikanaan tavallinen sesonkiostos: kauden päättyminen on sarjaan sisäänrakennettu harvinaistumismekanismi.',
     },
   ],
   idTitle: 'Näin tunnistat vuosimallin',
@@ -104,7 +104,7 @@ const fi: Copy = {
     {
       title: 'Selvitä kuvion nimi',
       body:
-        'Jokaisella kuviolla on virallinen nimi, ja sama hahmo esiintyy kymmenissä eri kuvioissa — pelkkä "Nuuskamuikkunen-muki" ei siis yksilöi vielä mitään. Uudemmissa mukeissa nimi lukee pohjan tarrassa; vanhemmissa kuvio tunnistetaan vertaamalla valmistajan kuviolistaan.',
+        'Jokaisella kuviolla on virallinen nimi, ja sama hahmo esiintyy kymmenissä eri kuvioissa: pelkkä "Nuuskamuikkunen-muki" ei siis yksilöi vielä mitään. Uudemmissa mukeissa nimi lukee pohjan tarrassa; vanhemmissa kuvio tunnistetaan vertaamalla valmistajan kuviolistaan.',
     },
     {
       title: 'Tarkista tuotantovuodet',
@@ -114,12 +114,12 @@ const fi: Copy = {
   ],
   valueTitle: 'Mitä harvinaisuudesta maksetaan',
   valueBody: [
-    'Muumimukeilla ei ole virallista hinnastoa, ja sama muki voi lähteä kahdesta huutokaupasta hyvin eri hintaan. Suuruusluokat ovat silti vakiintuneet: arvokkaimmat harvinaisuudet — erikoiserät ja varhaiset, lyhyeen jääneet kuviot — ovat vaihtaneet omistajaa tuhansilla euroilla, ja tavallisemmat tuotannosta poistuneet kuviot liikkuvat kymmenissä tai sadoissa euroissa. Vielä valikoimassa oleva vakiokuvio maksaa käytettynäkin suunnilleen kaupan hinnan.',
-    'Kunto ratkaisee enemmän kuin moni uskoo: siru, halkeama tai konepesun syömä kuvio vie arvosta valtaosan, ja alkuperäispakkaus nostaa sitä. Jos aiot myydä, pese muki käsin äläkä hinnoittele yhden toteutuneen huutokaupan perusteella — seuraa useampaa.',
+    'Muumimukeilla ei ole virallista hinnastoa, ja sama muki voi lähteä kahdesta huutokaupasta hyvin eri hintaan. Suuruusluokat ovat silti vakiintuneet: arvokkaimmat harvinaisuudet eli erikoiserät ja varhaiset, lyhyeen jääneet kuviot ovat vaihtaneet omistajaa tuhansilla euroilla, ja tavallisemmat tuotannosta poistuneet kuviot liikkuvat kymmenissä tai sadoissa euroissa. Vielä valikoimassa oleva vakiokuvio maksaa käytettynäkin suunnilleen kaupan hinnan.',
+    'Kunto ratkaisee enemmän kuin moni uskoo: siru, halkeama tai konepesun syömä kuvio vie arvosta valtaosan, ja alkuperäispakkaus nostaa sitä. Jos aiot myydä, pese muki käsin äläkä hinnoittele yhden toteutuneen huutokaupan perusteella, vaan seuraa useampaa.',
   ],
   buyTitle: 'Mistä nykymallit ostetaan',
   buyIntro:
-    'Keräilykuviot löytyvät huutokaupoista ja kirpputoreilta, mutta valikoimassa olevat kuviot ja kuluvan kauden kausimuki ostetaan tavallisesta kaupasta — ja moni tämän päivän hyllymuki on huomisen lopetettu kuvio. Kumppanimme Nordic Nest pitää muumimukeja omana osastonaan.',
+    'Keräilykuviot löytyvät huutokaupoista ja kirpputoreilta, mutta valikoimassa olevat kuviot ja kuluvan kauden kausimuki ostetaan tavallisesta kaupasta, ja moni tämän päivän hyllymuki on huomisen lopetettu kuvio. Kumppanimme Nordic Nest pitää muumimukeja omana osastonaan.',
   buyCta: 'Muumimukit Nordic Nestissä',
   buySeasonLabel: 'Kausimuki:',
   buySeason: 'Muumimuki kesä 2025',
