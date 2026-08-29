@@ -20,7 +20,7 @@
     "fallbackDescriptionByLang": {
       "en": "Moomin and Arabia design, Marttiini puukko knives, Finnish sweets, Arctic berry powders and Lapland experience gifts, from the shops that ship them home.",
       "fi": "Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka myös lähettävät ne.",
-      "de": "Ausgewähltes finnisches Design, Handwerk aus Lappland, Delikatessen, Superfoods und Erlebnisgeschenke. Bestellt wird bei Partnershops, die nach Hause liefern.",
+      "de": "Finnisches Design, Handwerk aus Lappland, Delikatessen, Superfoods und Erlebnisgeschenke. Bestellt wird bei Partnershops, die nach Hause liefern.",
       "ja": "フィンランドのお土産をオンラインで。ムーミンやイッタラのデザイン、ラップランドの手工芸品、フィンランドのお菓子、スーパーフード、体験ギフト。提携ショップからご自宅の国へ届きます。",
       "es": "Diseño finlandés seleccionado, artesanía de Laponia, delicias, superalimentos y regalos de experiencias. Compra en tiendas asociadas que envían a tu país.",
       "pt-BR": "Souvenirs da Lapônia e presentes finlandeses: Moomin e Iittala, facas Marttiini, doces e superalimentos. Compre em lojas parceiras que entregam no seu país.",
@@ -299,7 +299,7 @@
   {
     "path": "/theme/arctic",
     "fallbackTitle": "Arctic nature | LaplandGifts",
-    "fallbackDescription": "Berries, birch, reindeer and the plants that grow above the Arctic Circle — the part of Lapland you can take home. Every price is read from the partner shop.",
+    "fallbackDescription": "Berries, birch, reindeer and the plants that grow above the Arctic Circle, the part of Lapland you can take home. Every price is read from the partner shop.",
     "fallbackTitleByLang": {
       "en": "Arctic nature | LaplandGifts",
       "fi": "Lapin luonto | LaplandGifts",
@@ -315,18 +315,18 @@
       "sv": "Arktisk natur | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Berries, birch, reindeer and the plants that grow above the Arctic Circle — the part of Lapland you can take home. Every price is read from the partner shop.",
+      "en": "Berries, birch, reindeer and the plants that grow above the Arctic Circle, the part of Lapland you can take home. Every price is read from the partner shop.",
       "fi": "Marjat, koivu, poro ja napapiirin pohjoispuolella kasvavat kasvit: se osa Lappia, jonka voi ottaa mukaan. Jokainen hinta on luettu kumppanin kaupasta.",
-      "de": "Beeren, Birke, Rentier und die Pflanzen nördlich des Polarkreises — der Teil Lapplands, den man mitnehmen kann. Jeder Preis stammt aus dem Partnershop.",
+      "de": "Beeren, Birke, Rentier und die Pflanzen nördlich des Polarkreises, der Teil Lapplands, den man mitnehmen kann. Jeder Preis stammt aus dem Partnershop.",
       "ja": "ベリー、白樺、トナカイ、そして北極圏で育つ植物。ラップランドのうち、持ち帰れる部分です。 価格はすべて提携ショップから取得したもので、取得日を併記しています。 配送エリアは各カードに記載しています。",
       "es": "Bayas, abedul, reno y las plantas que crecen al norte del Círculo Polar: la parte de Laponia que se puede llevar a casa. Precios de las tiendas asociadas.",
-      "pt-BR": "Frutas silvestres, bétula, rena e as plantas que crescem acima do Círculo Polar — a parte da Lapônia que dá para levar. Os preços vêm das lojas parceiras.",
+      "pt-BR": "Frutas silvestres, bétula, rena e as plantas que crescem acima do Círculo Polar, a parte da Lapônia que dá para levar. Cada preço é consultado na loja parceira.",
       "zh-CN": "浆果、桦木、驯鹿,以及生长在北极圈以北的植物——拉普兰当中可以带走的那部分。 每件商品的价格均取自合作商店，并注明读取日期。 每张卡片上都标注了配送区域。",
       "ko": "베리, 자작나무, 순록, 그리고 북극권 위에서 자라는 식물들. 라플란드에서 가져갈 수 있는 부분입니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
-      "fr": "Baies, bouleau, renne et les plantes qui poussent au nord du cercle polaire — la part de Laponie qu’on peut emporter. Les zones de livraison sont indiquées.",
+      "fr": "Baies, bouleau, renne et les plantes qui poussent au nord du cercle polaire, la part de Laponie qu’on peut emporter. Les zones de livraison sont indiquées.",
       "it": "Bacche, betulla, renna e le piante che crescono oltre il Circolo Polare: la parte di Lapponia che si può portare a casa. I prezzi provengono dai negozi partner.",
-      "nl": "Bessen, berk, rendier en de planten boven de poolcirkel — het deel van Lapland dat mee naar huis kan. Elke prijs is overgenomen van de partnerwinkel, met datum.",
-      "sv": "Bär, björk, ren och växterna norr om polcirkeln — den del av Lappland som går att ta med hem. Varje pris är hämtat från partnerbutiken det datum som visas."
+      "nl": "Bessen, berk, rendier en de planten boven de poolcirkel, het deel van Lapland dat mee naar huis kan. Elke prijs is overgenomen van de partnerwinkel, met datum.",
+      "sv": "Bär, björk, ren och växterna norr om polcirkeln, den del av Lappland som går att ta med hem. Varje pris är hämtat från partnerbutiken det datum som visas."
     }
   },
   {
@@ -4541,7 +4541,7 @@
     "fallbackDescriptionByLang": {
       "en": "Two pairs, because the pair you wore today is not dry tomorrow morning. Merino blend rather than pure wool, which survives repeated machine washing better.",
       "fi": "Kaksi paria, koska tänään käytetty pari ei ole huomisaamuna kuiva. Merinosekoitetta eikä puhdasta villaa, mikä kestää toistuvan konepesun paremmin.",
-      "de": "Zwei Paar, weil das Paar von heute morgen früh noch nicht trocken ist. Merinomischung statt reiner Wolle, was wiederholte Maschinenwäsche besser übersteht.",
+      "de": "Zwei Paar, weil das Paar von heute Morgen noch nicht trocken ist. Merinomischung statt reiner Wolle, was wiederholte Maschinenwäsche besser übersteht.",
       "ja": "2 足あるのは、今日履いた方が明日の朝までに乾かないからです。純毛ではなくメリノ混なので、繰り返しの洗濯機洗いにも耐えます。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "Dos pares, porque el que llevaste hoy no estará seco mañana por la mañana. El precio se consulta en la tienda asociada, donde también se hace la compra.",
       "pt-BR": "Dois pares, porque o par que você usou hoje não estará seco amanhã de manhã. O preço vem da loja parceira, onde você também compra. Área de entrega indicada.",
@@ -5399,7 +5399,7 @@
     "fallbackDescriptionByLang": {
       "en": "The blue-and-white bobble hat with FINLAND across the band, the one worn in the stands and then for the rest of the winter. Machine wash at 30.",
       "fi": "Sinivalkoinen tupsupipo, jossa lukee FINLAND. Se katsomopipo, joka jää päähän lopputalveksi. Vesipesu 30 astetta. Myyjänä kumppanin kauppa. Toimitusalue näkyy.",
-      "de": "Die blau-weiße Bommelmütze mit FINLAND auf dem Bund, getragen auf der Tribüne und danach den restlichen Winter. Maschinenwäsche bei 30. Liefergebiet angegeben.",
+      "de": "Die blau-weiße Bommelmütze mit FINLAND auf dem Bund, getragen auf der Tribüne und danach den restlichen Winter. Maschinenwäsche bei 30 Grad.",
       "ja": "折り返しに FINLAND と入った青と白のボンボン付きニット帽。スタンドでかぶり、そのあと冬のあいだずっとかぶることになります。洗濯機 30 度。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "El gorro azul y blanco con pompón y FINLAND en la vuelta, el de la grada y luego el del resto del invierno. Lavado a máquina a 30. Venta en la tienda asociada.",
       "pt-BR": "O gorro azul e branco com pompom e FINLAND na aba, usado na arquibancada e depois pelo resto do inverno. Lavagem à máquina a 30. Área de entrega nesta página.",
@@ -5498,7 +5498,7 @@
     "fallbackDescriptionByLang": {
       "en": "Linen terry, which keeps the heat off your scalp and hair on the top bench. The price is read from the partner shop, where you buy it. Delivery area is listed.",
       "fi": "Pellavafroteeta, joka pitää löylyn kuumuuden poissa päänahasta ja hiuksista ylälauteella. Toimii myös toisin päin: helmikuun paljussa se pitää pään lämpimänä.",
-      "de": "Leinenfrottee hält die Hitze auf der oberen Bank von Kopfhaut und Haar fern. Es funktioniert auch umgekehrt: im Außen-Hotpot im Februar hält er den Kopf warm.",
+      "de": "Leinenfrottee hält die Hitze auf der oberen Bank von Kopfhaut und Haar fern. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein. Liefergebiet angegeben.",
       "ja": "上段の熱から頭皮と髪を守るリネンパイル。逆にも働きます。2 月の屋外ホットタブでは頭を温かく保ちます。洗濯機 60 度。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "El rizo de lino mantiene el calor lejos del cuero cabelludo y del pelo en el banco alto. El precio procede de la tienda asociada, donde también se compra.",
       "pt-BR": "O atoalhado de linho mantém o calor longe do couro cabeludo e do cabelo no banco de cima. O preço é consultado na loja parceira, onde também é feita a compra.",
@@ -6257,7 +6257,7 @@
     "fallbackDescriptionByLang": {
       "en": "Handcrafted reindeer-antler products in their own workshop, free engraving. On the Arctic Circle. Rovaniemi, Joulupukin Pajakylä.",
       "fi": "Käsintehtyjä poronsarvituotteita omassa pajassa, ilmainen kaiverrus. Napapiirillä. Rovaniemi, Joulupukin Pajakylä.",
-      "de": "Handgefertigte Produkte aus Rentierhorn in eigener Werkstatt. Kostenfreie Gravur. Polarkreis. Rovaniemi, Joulupukin Pajakylä.",
+      "de": "Handgefertigte Produkte aus Rentiergeweih in eigener Werkstatt. Kostenfreie Gravur. Polarkreis. Rovaniemi, Joulupukin Pajakylä.",
       "ja": "自社工房で手作りするトナカイの角の製品。刻印サービス無料。北極圏。 Rovaniemi, Joulupukin Pajakylä.",
       "es": "Productos de asta de reno hechos a mano en su propio taller. Grabado gratuito. Círculo Polar Ártico. Rovaniemi, Joulupukin Pajakylä.",
       "pt-BR": "Produtos de chifre de rena feitos à mão no próprio ateliê. Gravação gratuita. Círculo Polar Ártico. Rovaniemi, Joulupukin Pajakylä.",
@@ -6587,7 +6587,7 @@
     "fallbackDescriptionByLang": {
       "en": "Lappituote’s shop in the centre of Levi: souvenirs, game and berry preserves, reindeer antler, puukko knives and kuksa cups. Levi, Sirkka.",
       "fi": "Lappituotteen myymälä Levin keskustassa: matkamuistoja, riista- ja marjasäilykkeitä, poronsarvea, puukkoja ja kuksia. Levi, Sirkka.",
-      "de": "Laden von Lappituote im Zentrum von Levi: Souvenirs, Wild- und Beerenkonserven, Rentierhorn, Puukko-Messer und Kuksa-Becher. Levi, Sirkka.",
+      "de": "Laden von Lappituote im Zentrum von Levi: Souvenirs, Wild- und Beerenkonserven, Rentiergeweih, Puukko-Messer und Kuksa-Becher. Levi, Sirkka.",
       "ja": "レヴィ中心部にあるLappituoteの店舗。土産、ジビエとベリーの保存食、トナカイの角、プーッコナイフ、ククサを扱います。 Levi, Sirkka.",
       "es": "Tienda de Lappituote en el centro de Levi: recuerdos, conservas de caza y bayas, asta de reno, cuchillos puukko y tazas kuksa. Levi, Sirkka.",
       "pt-BR": "Loja da Lappituote no centro de Levi: lembranças, conservas de caça e frutas silvestres, chifre de rena, facas puukko e canecas kuksa. Levi, Sirkka.",
@@ -6620,7 +6620,7 @@
     "fallbackDescriptionByLang": {
       "en": "Handmade by Juha Reinola from genuine northern materials: reindeer antler, curly birch, kelo pine, reindeer leather and birch bark. Utsjoki.",
       "fi": "Juha Reinolan käsin tekemiä tuotteita aidoista pohjoisen raaka-aineista: poronsarvea, visakoivua, kelopuuta, poronnahkaa ja tuohta. Utsjoki.",
-      "de": "Von Juha Reinola handgefertigt aus echten Materialien des Nordens: Rentierhorn, Maserbirke, Kelo-Kiefer, Rentierleder und Birkenrinde. Utsjoki.",
+      "de": "Von Juha Reinola handgefertigt aus echten Materialien des Nordens: Rentiergeweih, Maserbirke, Kelo-Kiefer, Rentierleder und Birkenrinde. Utsjoki.",
       "ja": "ユハ・レイノラが北欧の本物の素材から手作りする品々。トナカイの角、カーリーバーチ、ケロ材、トナカイ革、白樺の樹皮を使用。 Utsjoki.",
       "es": "Hecho a mano por Juha Reinola con materiales auténticos del norte: asta de reno, abedul rizado, pino kelo, cuero de reno y corteza de abedul. Utsjoki.",
       "pt-BR": "Feito à mão por Juha Reinola com materiais autênticos do norte: chifre de rena, bétula encaracolada, pinho kelo, couro de rena e casca de bétula. Utsjoki.",

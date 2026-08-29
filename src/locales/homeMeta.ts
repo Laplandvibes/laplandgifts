@@ -39,7 +39,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
   de: {
     title: 'LaplandGifts: finnisches Design und Geschenke aus Lappland',
     description:
-      'Ausgewähltes finnisches Design, Handwerk aus Lappland, Delikatessen, Superfoods und Erlebnisgeschenke. Bestellt wird bei Partnershops, die nach Hause liefern.',
+      'Finnisches Design, Handwerk aus Lappland, Delikatessen, Superfoods und Erlebnisgeschenke. Bestellt wird bei Partnershops, die nach Hause liefern.',
   },
   // 🔴 ja, pt-BR, ko ja fr kirjoitettiin uusiksi 15.8.2026 GSC-datan pohjalta:
   // kaikki neljä kielijuurta olivat top-10-tuntumassa 0 klikillä, ja otsikko

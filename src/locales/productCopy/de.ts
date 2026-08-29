@@ -550,7 +550,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specs: [
       '20 x 1,75 g, 35 g',
       '95 °C für 2 bis 5 Minuten',
-      'Vegan. Hibiskus und Rooibos sind Rainforest Alliance zertifiziert',
+      'Vegan. Hibiskus und Rooibos sind Rainforest-Alliance-zertifiziert',
     ],
     specLabels: [undefined, 'Zubereitung', 'Ernährung und Zertifizierung'],
   },
@@ -585,7 +585,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specs: [
       '20 x 1,75 g, 35 g',
       'Hergestellt in der Fabrik in Nurmijärvi, Finnland',
-      'Rainforest Alliance zertifizierter Tee, finnische Schlüsselflagge',
+      'Rainforest-Alliance-zertifizierter Tee, finnische Schlüsselflagge',
       'Vegan',
     ],
     specLabels: [undefined, undefined, 'Zertifizierung', 'Ernährung'],
@@ -817,7 +817,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'halti-merino-socks-2pack': {
     name: 'Halti Merinowollsocken, 2er-Pack',
     description:
-      'Zwei Paar, weil das Paar von heute morgen früh noch nicht trocken ist. Merinomischung statt reiner Wolle, was wiederholte Maschinenwäsche besser übersteht.',
+      'Zwei Paar, weil das Paar von heute Morgen noch nicht trocken ist. Merinomischung statt reiner Wolle, was wiederholte Maschinenwäsche besser übersteht.',
     specs: [
       '40 % Merinowolle, 40 % Acryl, 19 % Polyamid, 1 % Elasthan',
       '2 Paar',
@@ -1016,7 +1016,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       '2 Personen',
       'Levi, hoch am Fjell',
       '23 m², beheiztes beschlagfreies Glas, Kochnische, Dusche und WC, motorisiertes Doppelbett',
-      'Gültig für Aufenthalte 27.08-10.11 und 01.04-12.04',
+      'Gültig für Aufenthalte 27.08.–10.11. und 01.04.–12.04.',
     ],
     specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Iglu', 'Geschenkkarte'],
   },
@@ -1288,7 +1288,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'sk-finland-beanie': {
     name: 'Finnland-Bommelmütze, blau-weiß',
     description:
-      'Die blau-weiße Bommelmütze mit FINLAND auf dem Bund, getragen auf der Tribüne und danach den restlichen Winter. Maschinenwäsche bei 30.',
+      'Die blau-weiße Bommelmütze mit FINLAND auf dem Bund, getragen auf der Tribüne und danach den restlichen Winter. Maschinenwäsche bei 30 Grad.',
     specs: [
       'FINLAND',
       'Maschinenwäsche 30 °C',
@@ -1318,7 +1318,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'sk-rento-sauna-hat': {
     name: 'Rento Saunahut aus Leinenfrottee',
     description:
-      'Leinenfrottee hält die Hitze auf der oberen Bank von Kopfhaut und Haar fern. Es funktioniert auch umgekehrt: im Außen-Hotpot im Februar hält er den Kopf warm. Maschinenwäsche bei 60.',
+      'Leinenfrottee hält die Hitze auf der oberen Bank von Kopfhaut und Haar fern. Es funktioniert auch umgekehrt: in einem Whirlpool im Freien hält er im Februar den Kopf warm. Maschinenwäsche bei 60 Grad.',
     specs: [
       'Leinenfrottee',
       'Maschinenwäsche 60 °C',
@@ -1348,7 +1348,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'sk-marimekko-unikko-bath-towel': {
     name: 'Marimekko Unikko Badetuch 70 × 150 cm',
     description:
-      'Unikko auf Frottee-Baumwolle, beige und weiß, im vollen Format 70 mal 150. Das Garn besteht zu 65 % aus Bio-Baumwolle und zu 35 % aus recycelter, wobei der recycelte Anteil aus Marimekkos eigenen Zuschnittresten stammt.',
+      'Unikko auf Frottee-Baumwolle, beige und weiß, im vollen Format 70 mal 150. Das Garn besteht zu 65 % aus Bio-Baumwolle und zu 35 % aus recycelter Baumwolle, wobei der recycelte Anteil aus Marimekkos eigenen Zuschnittresten stammt.',
     specs: [
       '70 × 150 cm',
       'Frottee-Baumwolle, 65 % bio und 35 % recycelt',

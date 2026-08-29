@@ -26,8 +26,8 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Souvenirs', 'Handwerk'],
   },
   'rovaniemi-souvenirs-shop': {
-    description: 'Handgefertigte Produkte aus Rentierhorn in eigener Werkstatt. Kostenfreie Gravur. Polarkreis.',
-    tags: ['Rentierhorn', 'Handwerk'],
+    description: 'Handgefertigte Produkte aus Rentiergeweih in eigener Werkstatt. Kostenfreie Gravur. Polarkreis.',
+    tags: ['Rentiergeweih', 'Handwerk'],
   },
   'christmas-house-shop': {
     description: 'Das größte Souvenirgeschäft im Weihnachtsmanndorf: Lappland-Produkte, Schmuck, Spezialitäten und Zertifikate.',
@@ -66,12 +66,12 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Design', 'Geschenke'],
   },
   'lappi-shop-levi': {
-    description: 'Laden von Lappituote im Zentrum von Levi: Souvenirs, Wild- und Beerenkonserven, Rentierhorn, Puukko-Messer und Kuksa-Becher.',
+    description: 'Laden von Lappituote im Zentrum von Levi: Souvenirs, Wild- und Beerenkonserven, Rentiergeweih, Puukko-Messer und Kuksa-Becher.',
     tags: ['Handwerk', 'Souvenirs'],
   },
   'utsjoki-handicraft': {
-    description: 'Von Juha Reinola handgefertigt aus echten Materialien des Nordens: Rentierhorn, Maserbirke, Kelo-Kiefer, Rentierleder und Birkenrinde.',
-    tags: ['Handwerk', 'Rentierhorn'],
+    description: 'Von Juha Reinola handgefertigt aus echten Materialien des Nordens: Rentiergeweih, Maserbirke, Kelo-Kiefer, Rentierleder und Birkenrinde.',
+    tags: ['Handwerk', 'Rentiergeweih'],
   },
 }
 

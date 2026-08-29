@@ -42,7 +42,7 @@ const de: ChromeCopy = {
     sub: 'Schluss mit zerbrechlichen Souvenirs im Koffer. So funktioniert LaplandGifts, sobald der Shop öffnet: Sie shoppen während der Reise, wir kümmern uns um den Rest.',
     steps: [
       { title: 'Im Urlaub stöbern', description: 'Ein Puukko-Messer entdeckt? Eine Kuksa für die Mutter? Bestellen Sie unterwegs, Sie müssen nichts tragen.' },
-      { title: 'Wir versenden aus Lappland', description: 'Ihre Geschenke werden sorgfältig verpackt und direkt von finnischen Handwerkerinnen und unseren EU-Druckpartnern versendet.' },
+      { title: 'Wir versenden aus Lappland', description: 'Ihre Geschenke werden sorgfältig verpackt und direkt von finnischen Kunsthandwerkerinnen und Kunsthandwerkern sowie unseren EU-Druckpartnern versendet.' },
       { title: 'Zu Hause schon angekommen', description: 'Sie kommen heim und Ihre lappländischen Schätze stehen schon vor der Tür. Kein Gepäckstress, keine zerbrochenen Souvenirs.' },
     ],
   },
@@ -76,8 +76,8 @@ const de: ChromeCopy = {
     occasions: [
       {
         name: 'Weihnachten',
-        description: 'Nichts sagt mehr Weihnachten als ein Geschenk aus der Heimat des Weihnachtsmanns. Wählen Sie aus unseren kuratierten Weihnachtskollektionen.',
-        suggestions: ['Geschenkkorb „Lapland Luxury"', 'Lappland-Wolldecke', 'Moltebeerenmarmeladen-Set', 'Filzpantoffeln'],
+        description: 'Nichts ist weihnachtlicher als ein Geschenk aus der Heimat des Weihnachtsmanns. Wählen Sie aus unseren kuratierten Weihnachtskollektionen.',
+        suggestions: ['Geschenkkorb „Lapland Luxury“', 'Lappland-Wolldecke', 'Moltebeerenmarmeladen-Set', 'Filzpantoffeln'],
       },
       {
         name: 'Hochzeit',
@@ -87,12 +87,12 @@ const de: ChromeCopy = {
       {
         name: 'Geburtstag',
         description: 'Überraschen Sie jemand Besonderen mit einem einzigartigen Geschenk, das in keinem gewöhnlichen Laden zu finden ist.',
-        suggestions: ['Sámi-Duodji-Armband', 'Puukko-Messer', 'Geschenkkorb „Arctic Taste"', 'Rentierhorn-Kerzenhalter'],
+        suggestions: ['Sámi-Duodji-Armband', 'Puukko-Messer', 'Geschenkkorb „Arctic Taste“', 'Rentiergeweih-Kerzenhalter'],
       },
       {
         name: 'Firmenkunden',
         description: 'Beeindrucken Sie Kunden und Partner mit hochwertigen arktischen Geschenken, die sich vom üblichen Firmenangebot abheben.',
-        suggestions: ['Puukko-Messer (graviert)', 'Geschenkkorb „Lapland Luxury"', 'Holz-Kuksa-Becher', 'Polarlicht-Schmuckanhänger'],
+        suggestions: ['Puukko-Messer (graviert)', 'Geschenkkorb „Lapland Luxury“', 'Holz-Kuksa-Becher', 'Polarlicht-Schmuckanhänger'],
       },
     ],
   },
@@ -122,7 +122,7 @@ const de: ChromeCopy = {
   newsletter: {
     kicker: 'Beide Ratgeber kostenlos',
     h2: 'E-Mail eintragen und herunterladen',
-    body: 'Sie erhalten sofort Zugang zu beiden Arktis-Guides. In den Briefen erzähle ich von Boutique-Funden und den Menschen dahinter.',
+    body: 'Sie erhalten sofort Zugang zu beiden Arktis-Ratgebern. In den Briefen erzähle ich von Boutique-Funden und den Menschen dahinter.',
     placeholder: 'ihre@email.de',
     submit: 'Beide Ratgeber holen',
     submitting: 'Senden…',
@@ -139,7 +139,7 @@ const de: ChromeCopy = {
     items: [
       { title: 'Direkt aus Lappland', description: 'Jedes Produkt wird aus Finnland oder von unseren EU-Druckpartnern verschickt. Keine Zwischenhändler, keine mysteriösen Lager.' },
       { title: 'Echtheitsgarantie', description: 'Handwerksprodukte werden mit Herkunftszertifikat geliefert. Sámi-Handwerk ausschließlich von autorisierten Anbietern.' },
-      { title: 'Geschenkfertige Verpackung', description: 'Jede Bestellung wird sorgfältig in recycelbare Verpackung verpackt, inspiriert von der arktischen Natur. Eine persönliche Botschaft können Sie an der Kasse hinzufügen.' },
+      { title: 'Geschenkfertige Verpackung', description: 'Jede Bestellung wird sorgfältig in recycelbares Material gepackt, inspiriert von der arktischen Natur. Eine persönliche Botschaft können Sie an der Kasse hinzufügen.' },
       { title: 'Handwerker unterstützen', description: 'Ein Teil jedes verkauften Handwerksprodukts geht direkt an die Kunsthandwerkerin oder den Kunsthandwerker und deren Gemeinschaft zurück.' },
     ],
   },
@@ -150,11 +150,11 @@ const de: ChromeCopy = {
     items: [
       {
         q: 'Welche authentischen Souvenirs kann man in Lappland kaufen?',
-        a: 'Die echtesten Lappland-Souvenirs stammen aus lokaler Hand: ein Puukko (ein traditionelles finnisches Gürtelmesser), eine Kuksa (ein aus einem Birkenmaserknoll geschnitzter Becher), Waren aus Rentierleder, Wolltextilien sowie Wildsammelprodukte wie Moltebeerenmarmelade, Preiselbeerkonfitüre und Birkensaftprodukte. Sámi-Duodji-Handwerk, Silberschmuck, Geweiharbeiten und gewebte Bänder, gilt als das Wertvollste. Achten Sie auf den Namen des Herstellers oder ein Herkunftszertifikat statt auf Massenware aus Flughafenläden.',
+        a: 'Die echtesten Lappland-Souvenirs stammen aus lokaler Hand: ein Puukko (ein traditionelles finnisches Gürtelmesser), eine Kuksa (ein aus einer Birkenmaserknolle geschnitzter Becher), Waren aus Rentierleder, Wolltextilien sowie Wildsammelprodukte wie Moltebeerenmarmelade, Preiselbeerkonfitüre und Birkensaftprodukte. Sámi-Duodji-Handwerk (Silberschmuck, Geweiharbeiten und gewebte Bänder) gilt als das Wertvollste. Achten Sie auf den Namen des Herstellers oder ein Herkunftszertifikat statt auf Massenware aus Flughafenläden.',
       },
       {
         q: 'Kann ich Sámi-Handwerk fair kaufen, und was ist das Sámi-Duodji-Zeichen?',
-        a: 'Ja. Duodji ist das samische Wort für traditionelles Handwerk, und das runde „Sámi Duodji“-Warenzeichen ist ein Echtheitssiegel: Es wird für Arbeiten vergeben, die von Sámi-Handwerkern mit traditionellen Methoden und Materialien gefertigt werden. Wenn Sie ein Stück mit diesem Zeichen wählen, oder direkt bei einem namentlich genannten Sámi-Kunsthandwerker bzw. einem autorisierten Händler kaufen, , kommt das Geld der Gemeinschaft zugute und die Arbeit ist echt, keine fabrikmäßige Nachahmung samischer Muster. Wir beziehen Sámi-Handwerk ausschließlich über autorisierte Anbieter.',
+        a: 'Ja. Duodji ist das samische Wort für traditionelles Handwerk, und das runde „Sámi Duodji“-Warenzeichen ist ein Echtheitssiegel: Es wird für Arbeiten vergeben, die von Sámi-Handwerkern mit traditionellen Methoden und Materialien gefertigt werden. Wenn Sie ein Stück mit diesem Zeichen wählen oder direkt bei einem namentlich genannten Sámi-Kunsthandwerker bzw. einem autorisierten Händler kaufen, kommt das Geld der Gemeinschaft zugute und die Arbeit ist echt, keine fabrikmäßige Nachahmung samischer Muster. Wir beziehen Sámi-Handwerk ausschließlich über autorisierte Anbieter.',
       },
       {
         q: 'Versenden Geschäfte in Lappland Geschenke ins Ausland?',
@@ -166,7 +166,7 @@ const de: ChromeCopy = {
       },
       {
         q: 'Dürfen Rentier- und Geweihprodukte eingeführt werden?',
-        a: 'Das Rentier (Rangifer tarandus) ist weder gefährdet noch im CITES-Abkommen gelistet, daher sind Artikel aus natürlich abgeworfenem Geweih oder aus Nebenprodukten, Geweih, Leder und Wolle, als persönliche Souvenirs innerhalb der EU und in die meisten Länder in der Regel erlaubt. Die Regeln unterscheiden sich je nach Zielland, besonders bei unbehandelten tierischen Materialien; prüfen Sie daher vor der Reise die Zoll- und Einfuhrbestimmungen Ihres Heimatlandes. Im Zweifel sind behandeltes Leder, Wolle und Holzwaren am sichersten mitzuführen.',
+        a: 'Das Rentier (Rangifer tarandus) ist weder gefährdet noch im CITES-Abkommen gelistet, daher sind Artikel aus natürlich abgeworfenem Geweih oder aus Nebenprodukten (Geweih, Leder und Wolle) als persönliche Souvenirs innerhalb der EU und in die meisten Länder in der Regel erlaubt. Die Regeln unterscheiden sich je nach Zielland, besonders bei unbehandelten tierischen Materialien; prüfen Sie daher vor der Reise die Zoll- und Einfuhrbestimmungen Ihres Heimatlandes. Im Zweifel sind behandeltes Leder, Wolle und Holzwaren am sichersten mitzuführen.',
       },
       {
         q: 'Wie weit im Voraus sollte man Weihnachtsgeschenke aus Lappland bestellen?',
@@ -177,7 +177,7 @@ const de: ChromeCopy = {
   related: {
     kicker: 'Wohin als Nächstes',
     h2: 'Planen Sie den Rest Ihrer Lappland-Reise',
-    sub: 'Teil des LaplandVibes-Netzwerks, erkunden Sie weiter mit unseren Schwesterseiten.',
+    sub: 'Teil des LaplandVibes-Netzwerks: Entdecken Sie weiter auf unseren Schwesterseiten.',
     items: [
       { label: 'Weihnachten in Lappland & Weihnachtsmann', blurb: 'Weihnachtsmanndorf, Weihnachtsreisen und Tipps für die Festtage.', href: 'https://laplandchristmas.com/santa-village/' },
       { label: 'In Lappland gefertigte Produkte', blurb: 'Ein größeres Sortiment lappländischer Waren und arktischen Designs.', href: 'https://laplandstore.fi' },
