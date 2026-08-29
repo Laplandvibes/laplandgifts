@@ -141,7 +141,7 @@ const fi: Copy = {
 const en: Copy = {
   h1: 'Chaga (pakuri): what it is and how to use it',
   lead:
-    'Pakuri is the Finnish name for chaga (Inonotus obliquus), a fungus that lives in birch trees. Its black, cracked growth has been simmered into a drink in the north for centuries, and in recent years it has become one of the best-known products of Finnish wild-food producers — and a topic with more claims in circulation than evidence. This page covers what chaga is, how it is used, and what research says — and does not say.',
+    'Pakuri is the Finnish name for chaga (Inonotus obliquus), a fungus that lives in birch trees. Its black, cracked growth has been simmered into a drink in the north for centuries, and in recent years it has become one of the best-known products of Finnish wild-food producers, and a topic with more claims in circulation than evidence. This page covers what chaga is, how it is used, and what research says, and does not say.',
   whatTitle: 'What chaga is',
   what: [
     {
@@ -152,7 +152,7 @@ const en: Copy = {
     {
       title: 'Grows slowly in living birch',
       body:
-        'A harvest-sized conk has grown in a living birch for years. The slow growth makes wild chaga a limited raw material — and is the reason chaga is also cultivated in Finland by inoculating birches in managed forests.',
+        'A harvest-sized conk has grown in a living birch for years. The slow growth makes wild chaga a limited raw material, and is the reason chaga is also cultivated in Finland by inoculating birches in managed forests.',
     },
     {
       title: 'A long tradition as a drink',
@@ -162,17 +162,17 @@ const en: Copy = {
   ],
   useTitle: 'How chaga is used',
   useIntro:
-    'Chaga is sold in three forms, which differ mainly in effort: chunks need simmering, extract powder and tincture do not. One rule applies to all of them — dose according to the package, never above it.',
+    'Chaga is sold in three forms, which differ mainly in effort: chunks need simmering, extract powder and tincture do not. One rule applies to all of them, dose according to the package, never above it.',
   useSteps: [
     {
       title: 'Chunks: a slow simmer',
       body:
-        'The most traditional form. Coarse chunks are simmered on low heat — not a rolling boil — for half an hour at least, and many let the pot steep for hours. The same batch of chunks survives several brews before the flavour fades.',
+        'The most traditional form. Coarse chunks are simmered on low heat ( not a rolling boil ) for half an hour at least, and many let the pot steep for hours. The same batch of chunks survives several brews before the flavour fades.',
     },
     {
       title: 'Extract powder: a spoonful in hot water',
       body:
-        'Extract powder dissolves straight into hot water or coffee with no simmering. It is more concentrated than chunks, so the maker’s stated daily dose is a limit, not a suggestion — concentration is the whole point of the form.',
+        'Extract powder dissolves straight into hot water or coffee with no simmering. It is more concentrated than chunks, so the maker’s stated daily dose is a limit, not a suggestion, concentration is the whole point of the form.',
     },
     {
       title: 'Tincture: as drops',
@@ -180,15 +180,15 @@ const en: Copy = {
         'A liquid dosed in drops into water or straight onto the tongue. The lightest form for trying chaga out or for travel: no simmering, no pots, and a 50 ml bottle travels in hand luggage.',
     },
   ],
-  researchTitle: 'What research says — and what it does not',
+  researchTitle: 'What research says, and what it does not',
   researchBody: [
     'A lot of cell and animal research has been published on chaga: its compounds, such as beta-glucans, polyphenols and betulin derivatives, have been studied in the laboratory. Clinical studies in humans are very few, however, and they do not support saying that chaga treats or prevents any disease.',
-    'This is not just caution but law: in the EU, medicinal claims may not be made about foods, and not a single health claim has been approved for chaga. If a seller promises chaga will cure something, the claim is both unfounded and illegal. The honest way to approach chaga is the same as good tea: a drink with a long tradition and a taste of its own — not a medicine.',
-    'Chaga does not suit everyone either. Makers warn on their packaging about interactions with blood thinners and antibiotics among others, and chaga is high in oxalates — another reason to keep to the dose on the package. If you take regular medication, ask your doctor before making chaga a habit.',
+    'This is not just caution but law: in the EU, medicinal claims may not be made about foods, and not a single health claim has been approved for chaga. If a seller promises chaga will cure something, the claim is both unfounded and illegal. The honest way to approach chaga is the same as good tea: a drink with a long tradition and a taste of its own, not a medicine.',
+    'Chaga does not suit everyone either. Makers warn on their packaging about interactions with blood thinners and antibiotics among others, and chaga is high in oxalates, another reason to keep to the dose on the package. If you take regular medication, ask your doctor before making chaga a habit.',
   ],
   northTitle: 'Why northern chaga',
   northBody: [
-    'Taking chaga from a living tree is not covered by Finland’s everyman’s rights: harvesting needs the landowner’s permission. That makes Finnish chaga unusually traceable — producers name their harvest areas, some of the harvest comes from certified organic collection areas, and Kääpä Mushrooms, for example, both harvests and cultivates chaga in Finnish birch forests.',
+    'Taking chaga from a living tree is not covered by Finland’s everyman’s rights: harvesting needs the landowner’s permission. That makes Finnish chaga unusually traceable, producers name their harvest areas, some of the harvest comes from certified organic collection areas, and Kääpä Mushrooms, for example, both harvests and cultivates chaga in Finnish birch forests.',
     'The short northern growing season makes chaga slow to renew, and that is exactly why traceability matters: when the raw material takes years to reach harvest size, buying from a producer who tells you where the conk came from is a different thing from buying from an anonymous middleman.',
   ],
   buyTitle: 'Where to buy chaga',
@@ -206,7 +206,7 @@ const en: Copy = {
     { slug: 'puhdistamo-instant-chaga', label: 'Puhdistamo instant' },
     { slug: 'foodin-chaga-tincture', label: 'Foodin tincture' },
   ],
-  categoryNote: 'The rest of our northern wild foods — berry powders, spruce sprouts and herbs — live in the category',
+  categoryNote: 'The rest of our northern wild foods ( berry powders, spruce sprouts and herbs ) live in the category',
   categoryCta: 'Arctic berry powders and superfoods',
 }
 

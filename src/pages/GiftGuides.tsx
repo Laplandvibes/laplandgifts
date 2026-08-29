@@ -112,7 +112,7 @@ export default function GiftGuides() {
           <p className="mt-10 text-sm text-muted">
             {lang === 'fi'
               ? 'Keräilijälle: miksi jotkut Arabian muumimukit ovat arvokkaita ja mistä vuosimallin tunnistaa. Lue '
-              : 'For collectors: why some Arabia Moomin mugs are valuable and how to identify the year — '}
+              : 'For collectors: why some Arabia Moomin mugs are valuable and how to identify the year, '}
             <Link
               to={to('/harvinaiset-muumimukit')}
               className="font-medium text-amber underline-offset-2 hover:underline"

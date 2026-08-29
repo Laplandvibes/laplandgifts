@@ -125,11 +125,11 @@ interface PageCopy {
 }
 
 const de: PageCopy = {
-  h1: 'Finnische Spezialitäten — was lohnt sich wirklich?',
+  h1: 'Finnische Spezialitäten: was lohnt sich wirklich?',
   lead:
     'Neun Klassiker, ehrlich bewertet: was Finnen selbst essen, was nur im Souvenirregal existiert, und was den Postweg nach Deutschland übersteht.',
   intro: [
-    'Wer aus Finnland etwas mitbringen oder nach Hause bestellen will, steht vor einem Regal, in dem Alltagslebensmittel und Touristenware direkt nebeneinander liegen. Dieser Ratgeber sortiert die bekanntesten finnischen Spezialitäten danach, ob Finnen sie tatsächlich kaufen — und ob sie eine Reise oder den Versand überstehen.',
+    'Wer aus Finnland etwas mitbringen oder nach Hause bestellen will, steht vor einem Regal, in dem Alltagslebensmittel und Touristenware direkt nebeneinander liegen. Dieser Ratgeber sortiert die bekanntesten finnischen Spezialitäten danach, ob Finnen sie tatsächlich kaufen, und ob sie eine Reise oder den Versand überstehen.',
     'Jede Bewertung ist eine Meinung aus dem Alltag, keine Werbung: Salmiakki polarisiert auch hier, und das steht dann auch so da. Bestell-Links führen zu Suomikauppa, einem finnischen Versandhändler, der Lebensmittel auch nach Deutschland schickt.',
   ],
   itemsH2: 'Die Klassiker im Einzelnen',
@@ -138,7 +138,7 @@ const de: PageCopy = {
       name: 'Salmiakki',
       kicker: 'Die ehrliche Warnung zuerst',
       body: [
-        'Lakritz mit Salmiak (Ammoniumchlorid) ist die finnische Süßigkeit schlechthin — und sie spaltet jede Runde in zwei Lager, meist beim ersten Stück. Salzig, scharf, für Ungeübte erst einmal ein Schreck. Finnen essen sie trotzdem tütenweise, vom Kiosk bis zum Kino.',
+        'Lakritz mit Salmiak (Ammoniumchlorid) ist die finnische Süßigkeit schlechthin, und sie spaltet jede Runde in zwei Lager, meist beim ersten Stück. Salzig, scharf, für Ungeübte erst einmal ein Schreck. Finnen essen sie trotzdem tütenweise, vom Kiosk bis zum Kino.',
         'Als Mitbringsel ist genau das der Reiz: Salmiakki ist billig, leicht, praktisch unbegrenzt haltbar und garantiert ein Gesprächsthema. Weiche Palalaku-Stücke sind der mildeste Einstieg; wer es ernst meint, greift zu Fazer Super Salmiakki.',
       ],
       travel: 'Übersteht alles: leicht, unzerbrechlich, lange haltbar.',
@@ -146,20 +146,20 @@ const de: PageCopy = {
       productLabel: 'Produktdetails im Shop ansehen',
     },
     fazer: {
-      name: 'Fazer — die blaue Tafel',
+      name: 'Fazer: die blaue Tafel',
       kicker: 'Echter Alltag, kein Souvenir',
       body: [
         'Die Milchschokolade im blauen Papier (Karl Fazer Maitosuklaa) liegt in jedem finnischen Supermarkt an der Kasse und in den meisten Haushalten in der Schublade. Sie ist das Gegenteil von Touristenware: Finnen verschenken sie untereinander, zum Namenstag, als Dankeschön, als Mitbringsel beim Krankenbesuch.',
         'Geschmacklich ist sie cremiger und milder als die meisten deutschen Tafeln. Wer nur ein einziges finnisches Lebensmittel mitbringt, macht mit der blauen Tafel nichts falsch.',
       ],
-      travel: 'Reist gut — nur im Hochsommer schmilzt sie im Paket wie überall.',
+      travel: 'Reist gut, nur im Hochsommer schmilzt sie im Paket wie überall.',
       buyLabel: 'Karl Fazer Maitosuklaa bei Suomikauppa',
     },
     ruisleipa: {
-      name: 'Ruisleipä — Roggenbrot',
+      name: 'Ruisleipä: Roggenbrot',
       kicker: 'Das Heimweh-Lebensmittel Nummer eins',
       body: [
-        'Finnisches Roggenbrot ist dunkler, saurer und dichter als deutsches — auch für deutsche Roggenbrot-Esser ein eigenes Erlebnis. Es ist das Lebensmittel, das im Ausland lebende Finnen am meisten vermissen und sich in Paketen schicken lassen.',
+        'Finnisches Roggenbrot ist dunkler, saurer und dichter als deutsches, auch für deutsche Roggenbrot-Esser ein eigenes Erlebnis. Es ist das Lebensmittel, das im Ausland lebende Finnen am meisten vermissen und sich in Paketen schicken lassen.',
         'Frische Laibe halten die Reise nicht durch. Die versandfähige Form ist Jälkiuunileipä: in der Restwärme des Ofens hart getrocknetes Roggenbrot, das wochenlang hält. Oululainen Jälkiuuni ist davon der Klassiker.',
       ],
       travel: 'Frisch: nein. Jälkiuunileipä und Knäcke: problemlos.',
@@ -169,27 +169,27 @@ const de: PageCopy = {
       name: 'Leipäjuusto + Moltebeeren-Marmelade',
       kicker: 'In Finnland essen, nicht verschicken',
       body: [
-        'Leipäjuusto ist ein flacher, gebackener Frischkäse, der beim Kauen quietscht — daher der Spitzname „Quietschkäse“. Serviert wird er lauwarm mit Moltebeeren-Marmelade (lakkahillo), und diese Kombination ist der beste einzelne Grund, in Lappland ein Café zu betreten.',
-        'Als Bestellung nach Deutschland taugt beides nur bedingt: der Käse ist ein Frischprodukt, und Moltebeeren-Marmelade ist selbst beim finnischen Versandhändler regelmäßig ausverkauft — die Beere wächst wild im Moor und wird praktisch nur von Hand gepflückt. Eine haltbare, lieferbare Alternative aus demselben Regal: Sanddorn-Marmelade von Meritalo, herb statt süß, gut zu Käse.',
+        'Leipäjuusto ist ein flacher, gebackener Frischkäse, der beim Kauen quietscht, daher der Spitzname „Quietschkäse“. Serviert wird er lauwarm mit Moltebeeren-Marmelade (lakkahillo), und diese Kombination ist der beste einzelne Grund, in Lappland ein Café zu betreten.',
+        'Als Bestellung nach Deutschland taugt beides nur bedingt: der Käse ist ein Frischprodukt, und Moltebeeren-Marmelade ist selbst beim finnischen Versandhändler regelmäßig ausverkauft, die Beere wächst wild im Moor und wird praktisch nur von Hand gepflückt. Eine haltbare, lieferbare Alternative aus demselben Regal: Sanddorn-Marmelade von Meritalo, herb statt süß, gut zu Käse.',
       ],
-      travel: 'Käse: nur vor Ort. Marmelade: oft ausverkauft — Sanddorn als Alternative.',
+      travel: 'Käse: nur vor Ort. Marmelade: oft ausverkauft, Sanddorn als Alternative.',
       buyLabel: 'Meritalo Sanddorn-Marmelade bei Suomikauppa',
       productLabel: 'Produktdetails im Shop ansehen',
     },
     korvapuusti: {
-      name: 'Korvapuusti — Zimtschnecke',
+      name: 'Korvapuusti: Zimtschnecke',
       kicker: 'Frisch oder gar nicht',
       body: [
         'Die finnische Zimtschnecke unterscheidet sich von der deutschen durch Kardamom im Teig und Hagelzucker obendrauf. Sie gehört zum Nachmittagskaffee wie in Deutschland das Stück Kuchen.',
-        'Ein Gebäck vom Vortag ist schon nicht mehr dasselbe, ein verschicktes erst recht nicht. Korvapuusti ist ein Grund, in Finnland ein Café zu suchen — oder zu Hause selbst zu backen. Kardamom gibt es in jedem deutschen Gewürzregal.',
+        'Ein Gebäck vom Vortag ist schon nicht mehr dasselbe, ein verschicktes erst recht nicht. Korvapuusti ist ein Grund, in Finnland ein Café zu suchen, oder zu Hause selbst zu backen. Kardamom gibt es in jedem deutschen Gewürzregal.',
       ],
       travel: 'Übersteht keinen Versand. Vor Ort essen oder selbst backen.',
     },
     kuivaliha: {
-      name: 'Poron kuivaliha — Rentier-Trockenfleisch',
+      name: 'Poron kuivaliha: Rentier-Trockenfleisch',
       kicker: 'Das lappländischste Lebensmittel auf dieser Liste',
       body: [
-        'Luftgetrocknetes Rentierfleisch ist in Lappland Proviant, kein Gag: leicht, haltbar, intensiv im Geschmack. Es kostet deutlich mehr als Rind-Jerky — Rentierfleisch wird in Finnland selbst als Delikatesse gehandelt.',
+        'Luftgetrocknetes Rentierfleisch ist in Lappland Proviant, kein Gag: leicht, haltbar, intensiv im Geschmack. Es kostet deutlich mehr als Rind-Jerky, Rentierfleisch wird in Finnland selbst als Delikatesse gehandelt.',
         'Innerhalb der EU darf es problemlos verschickt werden; die kleinen Tüten sind ein gutes Mitbringsel für Leute, die schon alles haben.',
       ],
       travel: 'Versand innerhalb der EU problemlos; außerhalb der EU tabu (tierisches Erzeugnis).',
@@ -197,11 +197,11 @@ const de: PageCopy = {
       productLabel: 'Rentier-Jerky im Shop ansehen',
     },
     lonkero: {
-      name: 'Lonkero — Long Drink',
+      name: 'Lonkero: Long Drink',
       kicker: 'Gin und Grapefruit, seit 1952',
       body: [
-        'Der fertig gemischte Long Drink aus Gin und Grapefruitlimonade wurde zu den Olympischen Spielen 1952 in Helsinki erfunden, damit die Bars dem Ansturm nachkamen — und blieb. Im Supermarktregal steht er heute selbstverständlicher als Bier-Mischgetränke in Deutschland.',
-        'Bestellen lässt er sich nicht: finnische Händler dürfen Alkohol nicht per Post ins Ausland verkaufen. Im Urlaub eine Dose aus dem Supermarkt probieren — das Original stammt von Hartwall und heißt schlicht Original Long Drink.',
+        'Der fertig gemischte Long Drink aus Gin und Grapefruitlimonade wurde zu den Olympischen Spielen 1952 in Helsinki erfunden, damit die Bars dem Ansturm nachkamen, und blieb. Im Supermarktregal steht er heute selbstverständlicher als Bier-Mischgetränke in Deutschland.',
+        'Bestellen lässt er sich nicht: finnische Händler dürfen Alkohol nicht per Post ins Ausland verkaufen. Im Urlaub eine Dose aus dem Supermarkt probieren, das Original stammt von Hartwall und heißt schlicht Original Long Drink.',
       ],
       travel: 'Kein Versand (Alkohol). Vor Ort im Supermarkt, oder Dosen im Koffer.',
     },
@@ -209,16 +209,16 @@ const de: PageCopy = {
       name: 'Salmiakkikossu',
       kicker: 'Der Partyklassiker',
       body: [
-        'Salmiakki-Likör auf Wodka-Basis — meist aus Koskenkorva, daher der Name. Schmeckt wie aufgelöstes Salzlakritz, ist deutlich süffiger als es klingt, und hat in Finnland einen festen Platz auf jeder Feier.',
+        'Salmiakki-Likör auf Wodka-Basis, meist aus Koskenkorva, daher der Name. Schmeckt wie aufgelöstes Salzlakritz, ist deutlich süffiger als es klingt, und hat in Finnland einen festen Platz auf jeder Feier.',
         'Auch hier gilt: kein Postversand für Alkohol. Die Flasche gibt es im Alko (dem staatlichen Alkoholgeschäft) und am Flughafen im Duty-free.',
       ],
       travel: 'Kein Versand (Alkohol). Alko oder Duty-free am Flughafen.',
     },
     terva: {
-      name: 'Terva — Teer',
+      name: 'Terva: Teer',
       kicker: 'Klingt falsch, ist echt',
       body: [
-        'Holzteer aus Kiefern ist ein alter finnischer Werkstoff — und ein Aroma: rauchig, harzig, irgendwo zwischen Lagerfeuer und Sauna. Es steckt in Bonbons, Sirup, Eis und Seife, und wie Salmiakki trennt es Besucher zuverlässig in zwei Lager.',
+        'Holzteer aus Kiefern ist ein alter finnischer Werkstoff, und ein Aroma: rauchig, harzig, irgendwo zwischen Lagerfeuer und Sauna. Es steckt in Bonbons, Sirup, Eis und Seife, und wie Salmiakki trennt es Besucher zuverlässig in zwei Lager.',
         'Tervaleijona-Pastillen sind der klassische Einstieg im Taschenformat. Teerseife wiederum riecht nach finnischer Sauna und ist das seltene Souvenir, das täglich benutzt wird statt zu verstauben.',
       ],
       travel: 'Pastillen und Seife reisen und versenden sich problemlos.',
@@ -228,8 +228,8 @@ const de: PageCopy = {
   },
   touristH2: 'Und was ist Touristenkram?',
   tourist: [
-    'Die einfachste Faustregel: was es nur in Souvenirläden gibt, essen Finnen nicht. Plüsch-Rentiere, „Lapland“-Tassen und Beerenliköre in Schneemann-Flaschen sind für Besucher gemacht — was nicht schlimm ist, solange man es weiß und nicht für die Landesküche hält.',
-    'Bei Lebensmitteln lohnt der Blick aufs Etikett: steht dort ein finnischer Hersteller und eine finnische Adresse, ist es meist dieselbe Ware, die auch im Supermarkt liegt — nur im Souvenirladen teurer. Alles auf dieser Seite gibt es in jedem normalen finnischen Lebensmittelgeschäft.',
+    'Die einfachste Faustregel: was es nur in Souvenirläden gibt, essen Finnen nicht. Plüsch-Rentiere, „Lapland“-Tassen und Beerenliköre in Schneemann-Flaschen sind für Besucher gemacht, was nicht schlimm ist, solange man es weiß und nicht für die Landesküche hält.',
+    'Bei Lebensmitteln lohnt der Blick aufs Etikett: steht dort ein finnischer Hersteller und eine finnische Adresse, ist es meist dieselbe Ware, die auch im Supermarkt liegt, nur im Souvenirladen teurer. Alles auf dieser Seite gibt es in jedem normalen finnischen Lebensmittelgeschäft.',
   ],
   shippingH2: 'Was den Versand nach Deutschland übersteht',
   shipping: [
@@ -244,11 +244,11 @@ const de: PageCopy = {
 }
 
 const en: PageCopy = {
-  h1: 'Finnish specialities — what is actually worth buying?',
+  h1: 'Finnish specialities: what is actually worth buying?',
   lead:
     'Nine classics, honestly rated: what Finns actually eat, what only exists on the souvenir shelf, and what survives the post.',
   intro: [
-    'Anyone wanting to bring something home from Finland, or order it later, faces a shelf where everyday groceries and tourist goods sit side by side. This guide sorts the best-known Finnish specialities by whether Finns actually buy them — and whether they survive a journey or a parcel.',
+    'Anyone wanting to bring something home from Finland, or order it later, faces a shelf where everyday groceries and tourist goods sit side by side. This guide sorts the best-known Finnish specialities by whether Finns actually buy them, and whether they survive a journey or a parcel.',
     'Every verdict is an opinion from everyday life, not advertising: salmiakki polarises people here too, and the guide says so. Order links go to Suomikauppa, a Finnish mail-order grocer that ships abroad.',
   ],
   itemsH2: 'The classics, one by one',
@@ -257,7 +257,7 @@ const en: PageCopy = {
       name: 'Salmiakki',
       kicker: 'The honest warning first',
       body: [
-        'Liquorice salted with ammonium chloride is the Finnish sweet — and it splits every group into two camps, usually on the first piece. Salty, sharp, a genuine shock if you are new to it. Finns still eat it by the bag, from kiosk to cinema.',
+        'Liquorice salted with ammonium chloride is the Finnish sweet, and it splits every group into two camps, usually on the first piece. Salty, sharp, a genuine shock if you are new to it. Finns still eat it by the bag, from kiosk to cinema.',
         'As a gift that is exactly the point: salmiakki is cheap, light, keeps forever and is guaranteed to start a conversation. Soft palalaku pieces are the gentlest introduction; the committed go straight to Fazer Super Salmiakki.',
       ],
       travel: 'Survives anything: light, unbreakable, keeps for months.',
@@ -265,17 +265,17 @@ const en: PageCopy = {
       productLabel: 'See product details in the shop',
     },
     fazer: {
-      name: 'Fazer — the blue bar',
+      name: 'Fazer: the blue bar',
       kicker: 'Genuine everyday, not a souvenir',
       body: [
         'The milk chocolate in the blue wrapper (Karl Fazer Maitosuklaa) sits at every Finnish supermarket checkout and in most kitchen drawers. It is the opposite of tourist goods: Finns give it to each other, for name days, as a thank-you, on hospital visits.',
         'It tastes creamier and milder than most central European bars. If you bring home only one Finnish grocery, the blue bar is the safe answer.',
       ],
-      travel: 'Travels well — melts in a midsummer parcel like any chocolate.',
+      travel: 'Travels well, melts in a midsummer parcel like any chocolate.',
       buyLabel: 'Karl Fazer milk chocolate at Suomikauppa',
     },
     ruisleipa: {
-      name: 'Ruisleipä — rye bread',
+      name: 'Ruisleipä: rye bread',
       kicker: 'The number one homesickness food',
       body: [
         'Finnish rye bread is darker, sourer and denser than most rye elsewhere. It is the food Finns abroad miss most and have posted to them in parcels.',
@@ -288,27 +288,27 @@ const en: PageCopy = {
       name: 'Leipäjuusto + cloudberry jam',
       kicker: 'Eat it in Finland, do not post it',
       body: [
-        'Leipäjuusto is a flat, baked fresh cheese that squeaks when you chew — hence the nickname "squeaky cheese". It is served warm with cloudberry jam (lakkahillo), and that combination is the single best reason to walk into a Lapland café.',
-        'As a mail order it is a poor fit: the cheese is a fresh product, and cloudberry jam is regularly sold out even at the Finnish export grocer — the berry grows wild in bogs and is picked by hand. A shelf-stable alternative from the same aisle: Meritalo sea buckthorn jam, tart rather than sweet, good with cheese.',
+        'Leipäjuusto is a flat, baked fresh cheese that squeaks when you chew, hence the nickname "squeaky cheese". It is served warm with cloudberry jam (lakkahillo), and that combination is the single best reason to walk into a Lapland café.',
+        'As a mail order it is a poor fit: the cheese is a fresh product, and cloudberry jam is regularly sold out even at the Finnish export grocer, the berry grows wild in bogs and is picked by hand. A shelf-stable alternative from the same aisle: Meritalo sea buckthorn jam, tart rather than sweet, good with cheese.',
       ],
-      travel: 'Cheese: only in Finland. Jam: often sold out — sea buckthorn is the alternative.',
+      travel: 'Cheese: only in Finland. Jam: often sold out, sea buckthorn is the alternative.',
       buyLabel: 'Meritalo sea buckthorn jam at Suomikauppa',
       productLabel: 'See product details in the shop',
     },
     korvapuusti: {
-      name: 'Korvapuusti — cinnamon bun',
+      name: 'Korvapuusti: cinnamon bun',
       kicker: 'Fresh or not at all',
       body: [
         'The Finnish cinnamon bun differs from most others through cardamom in the dough and pearl sugar on top. It belongs to afternoon coffee the way cake does elsewhere.',
-        'A day-old bun is already not the same thing, and a posted one even less so. Korvapuusti is a reason to find a café in Finland — or to bake at home. Cardamom is in every spice aisle.',
+        'A day-old bun is already not the same thing, and a posted one even less so. Korvapuusti is a reason to find a café in Finland, or to bake at home. Cardamom is in every spice aisle.',
       ],
       travel: 'Does not survive shipping. Eat it there or bake it yourself.',
     },
     kuivaliha: {
-      name: 'Poron kuivaliha — dried reindeer',
+      name: 'Poron kuivaliha: dried reindeer',
       kicker: 'The most Lapland item on this list',
       body: [
-        'Air-dried reindeer meat is provisions in Lapland, not a gimmick: light, long-keeping, intense. It costs clearly more than beef jerky — reindeer meat is treated as a delicacy in Finland itself.',
+        'Air-dried reindeer meat is provisions in Lapland, not a gimmick: light, long-keeping, intense. It costs clearly more than beef jerky, reindeer meat is treated as a delicacy in Finland itself.',
         'Within the EU it may be posted without trouble; the small bags make a good gift for people who already have everything.',
       ],
       travel: 'Ships fine within the EU; outside the EU not allowed (animal product).',
@@ -316,11 +316,11 @@ const en: PageCopy = {
       productLabel: 'See reindeer jerky in the shop',
     },
     lonkero: {
-      name: 'Lonkero — the long drink',
+      name: 'Lonkero: the long drink',
       kicker: 'Gin and grapefruit, since 1952',
       body: [
-        'The ready-mixed long drink of gin and grapefruit soda was invented for the 1952 Helsinki Olympics so bars could keep up with the crowds — and never left. It sits in the supermarket fridge as naturally as shandy does elsewhere.',
-        'You cannot order it: Finnish shops may not post alcohol abroad. Try a can from the supermarket while visiting — the original is Hartwall’s, plainly named Original Long Drink.',
+        'The ready-mixed long drink of gin and grapefruit soda was invented for the 1952 Helsinki Olympics so bars could keep up with the crowds, and never left. It sits in the supermarket fridge as naturally as shandy does elsewhere.',
+        'You cannot order it: Finnish shops may not post alcohol abroad. Try a can from the supermarket while visiting, the original is Hartwall’s, plainly named Original Long Drink.',
       ],
       travel: 'No shipping (alcohol). Supermarket on site, or cans in the suitcase.',
     },
@@ -328,16 +328,16 @@ const en: PageCopy = {
       name: 'Salmiakkikossu',
       kicker: 'The party classic',
       body: [
-        'Salmiakki liqueur on a vodka base — usually Koskenkorva, hence the name. It tastes like dissolved salty liquorice, goes down far more easily than it sounds, and has a fixed place at Finnish parties.',
+        'Salmiakki liqueur on a vodka base, usually Koskenkorva, hence the name. It tastes like dissolved salty liquorice, goes down far more easily than it sounds, and has a fixed place at Finnish parties.',
         'The same rule applies: no postal shipping for alcohol. The bottle is sold at Alko (the state alcohol shop) and at airport duty-free.',
       ],
       travel: 'No shipping (alcohol). Alko or airport duty-free.',
     },
     terva: {
-      name: 'Terva — pine tar',
+      name: 'Terva: pine tar',
       kicker: 'Sounds wrong, is genuine',
       body: [
-        'Wood tar from pine is an old Finnish material — and a flavour: smoky, resinous, somewhere between campfire and sauna. It goes into sweets, syrup, ice cream and soap, and like salmiakki it reliably splits visitors into two camps.',
+        'Wood tar from pine is an old Finnish material, and a flavour: smoky, resinous, somewhere between campfire and sauna. It goes into sweets, syrup, ice cream and soap, and like salmiakki it reliably splits visitors into two camps.',
         'Tervaleijona pastilles are the classic pocket-sized introduction. Tar soap smells of a Finnish sauna and is that rare souvenir that gets used daily instead of gathering dust.',
       ],
       travel: 'Pastilles and soap travel and ship without any trouble.',
@@ -347,8 +347,8 @@ const en: PageCopy = {
   },
   touristH2: 'So what is tourist bait?',
   tourist: [
-    'The simplest rule of thumb: if it only exists in souvenir shops, Finns do not eat it. Plush reindeer, "Lapland" mugs and berry liqueurs in snowman bottles are made for visitors — which is fine, as long as you know it and do not mistake them for the national cuisine.',
-    'With food, read the label: a Finnish producer with a Finnish address usually means the same product that sits in the supermarket — just pricier in the souvenir shop. Everything on this page is sold in any ordinary Finnish grocery store.',
+    'The simplest rule of thumb: if it only exists in souvenir shops, Finns do not eat it. Plush reindeer, "Lapland" mugs and berry liqueurs in snowman bottles are made for visitors, which is fine, as long as you know it and do not mistake them for the national cuisine.',
+    'With food, read the label: a Finnish producer with a Finnish address usually means the same product that sits in the supermarket: just pricier in the souvenir shop. Everything on this page is sold in any ordinary Finnish grocery store.',
   ],
   shippingH2: 'What survives the post',
   shipping: [

@@ -179,7 +179,7 @@ export default function Product() {
                 <p className="text-sm text-muted">
                   {lang === 'fi'
                     ? 'Onko pakuri sinulle uusi tuttavuus? Mitä pakuri on, miten muodot eroavat ja mitä tutkimus sanoo: '
-                    : 'New to chaga? What pakuri is, how the forms differ and what research says — '}
+                    : 'New to chaga? What pakuri is, how the forms differ and what research says, '}
                   <Link
                     to={to('/pakuri')}
                     className="font-medium text-amber underline-offset-2 hover:underline"

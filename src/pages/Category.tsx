@@ -212,7 +212,7 @@ export default function Category() {
                 <p className="mt-10 text-sm text-muted">
                   {lang === 'fi'
                     ? 'Pakurista pidemmin: mitä pakuri eli pakurikääpä on, miten rouhe, uutejauhe ja tinktuura eroavat ja mitä tutkimus sanoo. Lue '
-                    : 'More on chaga: what pakuri is, how chunks, extract powder and tincture differ, and what research says — '}
+                    : 'More on chaga: what pakuri is, how chunks, extract powder and tincture differ, and what research says, '}
                   <Link
                     to={to('/pakuri')}
                     className="font-medium text-amber underline-offset-2 hover:underline"

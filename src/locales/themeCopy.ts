@@ -34,7 +34,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       moomin:
         'Mugs, mittens, bedlinen and posters. Moomin things sit in four different categories here, so this page gathers them into one.',
       arctic:
-        'Berries, birch, reindeer and the plants that grow above the Arctic Circle — the part of Lapland you can take home.',
+        'Berries, birch, reindeer and the plants that grow above the Arctic Circle, the part of Lapland you can take home.',
       sauna:
         'Whisks, hats, scents and cushions. What you need for the bench, from the shops that stock it in Finland.',
     },
@@ -70,7 +70,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       moomin:
         'Becher, Fäustlinge, Bettwäsche und Poster. Mumin-Sachen stehen hier in vier Kategorien, diese Seite führt sie zusammen.',
       arctic:
-        'Beeren, Birke, Rentier und die Pflanzen nördlich des Polarkreises — der Teil Lapplands, den man mitnehmen kann.',
+        'Beeren, Birke, Rentier und die Pflanzen nördlich des Polarkreises, der Teil Lapplands, den man mitnehmen kann.',
       sauna:
         'Quasten, Hüte, Düfte und Kissen. Was auf die Bank gehört, aus den Läden, die es in Finnland führen.',
     },
@@ -88,7 +88,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       moomin:
         'Muggar, vantar, sängkläder och affischer. Muminsakerna finns här i fyra kategorier, den här sidan samlar dem.',
       arctic:
-        'Bär, björk, ren och växterna norr om polcirkeln — den del av Lappland som går att ta med hem.',
+        'Bär, björk, ren och växterna norr om polcirkeln, den del av Lappland som går att ta med hem.',
       sauna:
         'Vastar, hattar, dofter och dynor. Det som hör laven till, från butikerna som har det i Finland.',
     },
@@ -106,7 +106,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       moomin:
         'Mugs, moufles, linge de lit et affiches. Les objets Moumine sont ici répartis dans quatre catégories ; cette page les rassemble.',
       arctic:
-        'Baies, bouleau, renne et les plantes qui poussent au nord du cercle polaire — la part de Laponie qu’on peut emporter.',
+        'Baies, bouleau, renne et les plantes qui poussent au nord du cercle polaire, la part de Laponie qu’on peut emporter.',
       sauna:
         'Balais, bonnets, parfums et coussins. Ce qu’il faut sur le banc, venu des boutiques qui le vendent en Finlande.',
     },
@@ -160,7 +160,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       moomin:
         'Mokken, wanten, beddengoed en posters. Moomin-spullen staan hier in vier categorieën; deze pagina brengt ze samen.',
       arctic:
-        'Bessen, berk, rendier en de planten boven de poolcirkel — het deel van Lapland dat mee naar huis kan.',
+        'Bessen, berk, rendier en de planten boven de poolcirkel, het deel van Lapland dat mee naar huis kan.',
       sauna:
         'Twijgbundels, mutsen, geuren en kussens. Wat je op de bank nodig hebt, van de winkels die het in Finland voeren.',
     },
@@ -178,7 +178,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       moomin:
         'Canecas, luvas, roupa de cama e pôsteres. As coisas Moomin estão aqui em quatro categorias; esta página reúne tudo.',
       arctic:
-        'Frutas silvestres, bétula, rena e as plantas que crescem acima do Círculo Polar — a parte da Lapônia que dá para levar.',
+        'Frutas silvestres, bétula, rena e as plantas que crescem acima do Círculo Polar, a parte da Lapônia que dá para levar.',
       sauna:
         'Feixes de bétula, chapéus, aromas e almofadas. O que se usa no banco, das lojas que têm isso na Finlândia.',
     },

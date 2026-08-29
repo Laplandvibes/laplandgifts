@@ -144,7 +144,7 @@ const en: Copy = {
     {
       title: 'Retired designs',
       body:
-        'Most of the value comes from a simple fact: the design is no longer made. No new pieces appear, and the number of good-condition ones only falls — every chipped handle and dishwasher-faded print shrinks the supply for good.',
+        'Most of the value comes from a simple fact: the design is no longer made. No new pieces appear, and the number of good-condition ones only falls, every chipped handle and dishwasher-faded print shrinks the supply for good.',
     },
     {
       title: 'Short production runs',
@@ -154,12 +154,12 @@ const en: Copy = {
     {
       title: 'Special editions',
       body:
-        'Some mugs were never sold in ordinary shops at all. The collaboration mugs made with Fazer, for example, were distributed through limited channels — which is exactly why they sit at the top of collector lists: demand is the same as for any mug, supply a fraction.',
+        'Some mugs were never sold in ordinary shops at all. The collaboration mugs made with Fazer, for example, were distributed through limited channels, which is exactly why they sit at the top of collector lists: demand is the same as for any mug, supply a fraction.',
     },
     {
       title: 'Seasonal mugs',
       body:
-        'Summer and winter mugs are sold only for their own season, then production stops. Many mugs that are valuable now were ordinary seasonal purchases in their day — the end of the season is a rarity mechanism built into the series.',
+        'Summer and winter mugs are sold only for their own season, then production stops. Many mugs that are valuable now were ordinary seasonal purchases in their day, the end of the season is a rarity mechanism built into the series.',
     },
   ],
   idTitle: 'How to identify the year',
@@ -174,7 +174,7 @@ const en: Copy = {
     {
       title: 'Find the official design name',
       body:
-        'Every design has an official name, and the same character appears in dozens of designs — “a Snufkin mug” on its own identifies nothing. On newer mugs the name is on the base sticker; older ones are identified by comparing the artwork to the maker’s design list.',
+        'Every design has an official name, and the same character appears in dozens of designs, “a Snufkin mug” on its own identifies nothing. On newer mugs the name is on the base sticker; older ones are identified by comparing the artwork to the maker’s design list.',
     },
     {
       title: 'Check the production years',
@@ -184,12 +184,12 @@ const en: Copy = {
   ],
   valueTitle: 'What rarities actually sell for',
   valueBody: [
-    'There is no official price list for Moomin mugs, and the same mug can leave two auctions at very different prices. The orders of magnitude are settled, though: the most valuable rarities — special editions and early, short-lived designs — have changed hands for thousands of euros, while more common retired designs move in the tens to hundreds. A design still in production costs roughly the shop price even second-hand.',
-    'Condition matters more than most people think: a chip, a crack or a dishwasher-worn print takes most of the value away, and the original box adds to it. If you plan to sell, wash the mug by hand and never price it on a single realised auction — follow several.',
+    'There is no official price list for Moomin mugs, and the same mug can leave two auctions at very different prices. The orders of magnitude are settled, though: the most valuable rarities ( special editions and early, short-lived designs ) have changed hands for thousands of euros, while more common retired designs move in the tens to hundreds. A design still in production costs roughly the shop price even second-hand.',
+    'Condition matters more than most people think: a chip, a crack or a dishwasher-worn print takes most of the value away, and the original box adds to it. If you plan to sell, wash the mug by hand and never price it on a single realised auction, follow several.',
   ],
   buyTitle: 'Where to buy current designs',
   buyIntro:
-    'Collectible designs are found at auctions and flea markets, but designs still in the range and the current seasonal mug are bought new — and many of today’s shelf mugs are tomorrow’s retired designs. Our partner Nordic Nest keeps Moomin mugs as a section of their own.',
+    'Collectible designs are found at auctions and flea markets, but designs still in the range and the current seasonal mug are bought new, and many of today’s shelf mugs are tomorrow’s retired designs. Our partner Nordic Nest keeps Moomin mugs as a section of their own.',
   buyCta: 'Moomin mugs at Nordic Nest',
   buySeasonLabel: 'Seasonal mug:',
   buySeason: 'Moomin mug summer 2025',
