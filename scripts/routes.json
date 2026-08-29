@@ -19,7 +19,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Moomin and Arabia design, Marttiini puukko knives, Finnish sweets, Arctic berry powders and Lapland experience gifts, from the shops that ship them home.",
-      "fi": "Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka ne lähettävät.",
+      "fi": "Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka myös lähettävät ne.",
       "de": "Ausgewähltes finnisches Design, Handwerk aus Lappland, Delikatessen, Superfoods und Erlebnisgeschenke. Bestellt wird bei Partnershops, die nach Hause liefern.",
       "ja": "フィンランドのお土産をオンラインで。ムーミンやイッタラのデザイン、ラップランドの手工芸品、フィンランドのお菓子、スーパーフード、体験ギフト。提携ショップからご自宅の国へ届きます。",
       "es": "Diseño finlandés seleccionado, artesanía de Laponia, delicias, superalimentos y regalos de experiencias. Compra en tiendas asociadas que envían a tu país.",
@@ -272,13 +272,13 @@
       "fi": "Muumit | LaplandGifts",
       "de": "Mumin | LaplandGifts",
       "ja": "ムーミン | LaplandGifts",
-      "es": "Moomin | LaplandGifts",
-      "pt-BR": "Moomin | LaplandGifts",
+      "es": "Mumin | LaplandGifts",
+      "pt-BR": "Mumin | LaplandGifts",
       "zh-CN": "姆明 | LaplandGifts",
       "ko": "무민 | LaplandGifts",
       "fr": "Moumine | LaplandGifts",
-      "it": "Moomin | LaplandGifts",
-      "nl": "Moomin | LaplandGifts",
+      "it": "Mumin | LaplandGifts",
+      "nl": "Moemin | LaplandGifts",
       "sv": "Mumin | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
@@ -316,7 +316,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Berries, birch, reindeer and the plants that grow above the Arctic Circle — the part of Lapland you can take home. Every price is read from the partner shop.",
-      "fi": "Marjat, koivu, poro ja napapiirin pohjoispuolella kasvavat kasvit — se osa Lappia, jonka voi ottaa mukaan. Jokainen hinta on luettu kumppanin kaupasta.",
+      "fi": "Marjat, koivu, poro ja napapiirin pohjoispuolella kasvavat kasvit: se osa Lappia, jonka voi ottaa mukaan. Jokainen hinta on luettu kumppanin kaupasta.",
       "de": "Beeren, Birke, Rentier und die Pflanzen nördlich des Polarkreises — der Teil Lapplands, den man mitnehmen kann. Jeder Preis stammt aus dem Partnershop.",
       "ja": "ベリー、白樺、トナカイ、そして北極圏で育つ植物。ラップランドのうち、持ち帰れる部分です。 価格はすべて提携ショップから取得したもので、取得日を併記しています。 配送エリアは各カードに記載しています。",
       "es": "Bayas, abedul, reno y las plantas que crecen al norte del Círculo Polar: la parte de Laponia que se puede llevar a casa. Precios de las tiendas asociadas.",
@@ -349,7 +349,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Whisks, hats, scents and cushions. What you need for the bench, from the shops that stock it in Finland. Each price is read from the partner shop and dated.",
-      "fi": "Vihdat, hatut, tuoksut ja tyynyt. Se mitä lauteille tarvitaan, niistä kaupoista jotka pitävät sitä hyllyssä. Jokainen hinta on luettu kumppanin kaupasta.",
+      "fi": "Vihdat, hatut, tuoksut ja tyynyt. Se, mitä lauteille tarvitaan, niistä kaupoista, jotka pitävät sitä hyllyssä. Jokainen hinta on luettu kumppanin kaupasta.",
       "de": "Quasten, Hüte, Düfte und Kissen. Was auf die Bank gehört, aus den Läden, die es in Finnland führen. Jeder Preis stammt aus dem Partnershop und ist datiert.",
       "ja": "ヴィヒタ、帽子、香り、座布。ベンチに必要なものを、フィンランドで実際に扱っている店から。 価格はすべて提携ショップから取得したもので、取得日を併記しています。 配送エリアは各カードに記載しています。",
       "es": "Ramos, gorros, aromas y cojines. Lo que hace falta en el banco, de las tiendas que lo tienen en Finlandia. Cada precio se consulta en la tienda asociada.",
@@ -382,7 +382,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Who makes the things in this shop, and where. Every profile is written from what the brand publishes about itself, and links to their own site.",
-      "fi": "Kuka tekee tämän kaupan tavarat ja missä. Jokainen esittely on kirjoitettu siitä, mitä brändi itse kertoo, ja linkittää heidän omille sivuilleen.",
+      "fi": "Kuka tekee tämän kaupan tavarat ja missä. Jokainen esittely on kirjoitettu siitä, mitä brändi itse kertoo, ja linkittää brändin omille sivuille.",
       "de": "Wer die Dinge in diesem Shop herstellt und wo. Jedes Porträt beruht auf dem, was die Marke selbst veröffentlicht, und verlinkt auf ihre eigene Website.",
       "ja": "この店のものを誰がどこで作っているか。各紹介はブランド自身が公表している内容にもとづき、公式サイトへリンクしています。 価格はすべて提携ショップから取得したもので、取得日を併記しています。 配送エリアは各カードに記載しています。",
       "es": "Quién fabrica lo que hay en esta tienda, y dónde. Cada perfil parte de lo que la propia marca publica y enlaza a su web. Precios de las tiendas asociadas.",
@@ -415,7 +415,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer.",
-      "fi": "Kalleimmat asiat, joihin tämä kauppa osoittaa, eivät ole esineitä vaan päiviä: päivä kullanhuuhdontaa Inarissa, yö lasi-iglussa, aamu porojen kanssa.",
+      "fi": "Kalleimmat asiat, joihin tämä kauppa ohjaa, eivät ole esineitä vaan päiviä: päivä kullanhuuhdontaa Inarissa, yö lasi-iglussa, aamu porojen kanssa.",
       "de": "Das Teuerste, worauf dieser Shop verweist, sind keine Gegenstände, sondern Tage: ein Tag Goldwaschen in Inari, eine Nacht im Glasiglu. Liefergebiete angegeben.",
       "ja": "この店が案内するもののうち最も高価なのは、品物ではなく一日です。イナリでの砂金採りの一日、ガラスイグルーの一夜、トナカイと過ごす朝。その下に、スーツケースの場所に見合う品を並べています。 価格はすべて提携ショップから取得したもので、取得日を併記しています。 配送エリアは各カードに記載しています。",
       "es": "Lo más caro a lo que apunta esta tienda no son objetos sino días: un día lavando oro en Inari, una noche en un iglú de cristal, una mañana con los renos.",
@@ -1801,7 +1801,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Mikebon Oy is a family-run textile printing and embroidery company founded in 1994 and based in Petikko, Vantaa. Every price is read from the partner shop.",
-      "fi": "Mikebon Oy on vuonna 1994 perustettu vantaalainen perheyritys, joka painaa ja brodeeraa tekstiileja. Jokainen hinta on luettu kumppanin kaupasta ja päivätty.",
+      "fi": "Mikebon Oy on vuonna 1994 perustettu vantaalainen perheyritys, joka painaa ja brodeeraa tekstiilejä. Jokainen hinta on luettu kumppanin kaupasta ja päivätty.",
       "de": "Mikebon Oy ist ein familiengeführtes Unternehmen für Textildruck und Stickerei, gegründet 1994 und ansässig in Petikko in Vantaa. Liefergebiet auf jeder Karte.",
       "ja": "Mikebon Oy. 価格はすべて提携ショップから取得したもので、取得日を併記しています。 配送エリアは各カードに記載しています。",
       "es": "Mikebon Oy es una empresa familiar de estampación y bordado textil fundada en 1994 y con sede en Petikko, Vantaa. Cada precio se consulta en la tienda asociada.",
@@ -2857,7 +2857,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Milk chocolate over a crisp hazelnut nougat filling, the bar most Finnish households keep in a drawer. Fazer states it is made without palm oil.",
-      "fi": "Maitosuklaata rapean hasselpähkinänougat-täytteen päällä, se levy jota useimmissa suomalaiskodeissa säilytetään laatikossa. Hinta on luettu kumppanin kaupasta.",
+      "fi": "Maitosuklaata rapean hasselpähkinänougat-täytteen päällä, se levy, jota useimmissa suomalaiskodeissa säilytetään laatikossa. Hinta on luettu kumppanin kaupasta.",
       "de": "Milchschokolade über einer knusprigen Haselnussnougatfüllung, die Tafel, die die meisten finnischen Haushalte in einer Schublade haben. Liefergebiet angegeben.",
       "ja": "さくっとしたヘーゼルナッツヌガーをミルクチョコレートで包んだ板チョコ。フィンランドの多くの家庭が引き出しに常備しています。ファッツェルはパーム油不使用と表示しています。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "Chocolate con leche sobre un relleno crujiente de turrón de avellana, la tableta que la mayoría de los hogares finlandeses guarda en un cajón.",
@@ -3451,7 +3451,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Chaga that dissolves straight into hot water, no simmering. The 28 gram jar fits any luggage and survives the trip better than a bag of chunks.",
-      "fi": "Pakuri joka liukenee suoraan kuumaan veteen ilman hauduttamista. 28 gramman purkki mahtuu mihin tahansa matkatavaraan. Hinta on luettu kumppanin kaupasta.",
+      "fi": "Pakuri, joka liukenee suoraan kuumaan veteen ilman hauduttamista. 28 gramman purkki mahtuu mihin tahansa matkatavaraan. Hinta on luettu kumppanin kaupasta.",
       "de": "Chaga, der sich direkt in heißem Wasser löst, ohne Köcheln. Das 28-Gramm-Glas passt in jedes Gepäck und übersteht die Reise besser als ein Beutel Stücke.",
       "ja": "煮出さずにお湯に直接溶けるチャーガ。28 gの瓶はどんな荷物にも収まり、塊の袋より旅に強いです。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "Chaga que se disuelve directamente en agua caliente, sin hervir. El bote de 28 gramos cabe en cualquier equipaje y viaja mejor que una bolsa de trozos.",
@@ -3550,7 +3550,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "The mug shows Ninny, the invisible child who is afraid of the dark and slowly becomes visible again once someone is kind to her. You buy it in the partner shop.",
-      "fi": "Mukissa on Nyyti, näkymätön lapsi joka pelkää pimeää ja tulee vähitellen taas näkyväksi kun joku on hänelle ystävällinen. Hinta on luettu kumppanin kaupasta.",
+      "fi": "Mukissa on Nyyti, näkymätön lapsi, joka pelkää pimeää ja tulee vähitellen taas näkyväksi, kun joku on hänelle ystävällinen. Hinta on luettu kumppanin kaupasta.",
       "de": "Der Becher zeigt Ninny, das unsichtbare Kind, das sich vor der Dunkelheit fürchtet und langsam wieder sichtbar wird, sobald jemand freundlich zu ihr ist.",
       "ja": "描かれているのはニンニ、暗闇を怖がる姿の見えない子どもで、誰かが優しくしてくれるとゆっくり姿を取り戻します。よく知られた登場人物より静かな選択です。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "La taza muestra a Ninny, la niña invisible que tiene miedo de la oscuridad y vuelve a hacerse visible poco a poco cuando alguien la trata con amabilidad.",
@@ -4210,7 +4210,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "The warmest knit North Outdoor makes, shaped to sit under a helmet. The price is read from the partner shop and the purchase is made there. Delivery area shown.",
-      "fi": "North Outdoorin tuhdointa merinoneulosta, muotoiltu istumaan kypärän alle. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä. Toimitusalue kerrotaan.",
+      "fi": "North Outdoorin tuhdeinta merinoneulosta, muotoiltu istumaan kypärän alle. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä. Toimitusalue kerrotaan.",
       "de": "Der wärmste Strick von North Outdoor, geformt, um unter einem Helm zu sitzen. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein. Liefergebiet angegeben.",
       "ja": "ノースアウトドアがつくる中でいちばん暖かい編地で、ヘルメットの下に収まる形です。スノーモービルやトナカイのそりでは寒さがまず首と頬から入ってきます。この一枚がその隙間を塞ぎます。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "El tejido más cálido que hace North Outdoor, con la forma pensada para ir bajo un casco. El precio procede de la tienda asociada, donde también se compra.",
@@ -4738,7 +4738,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "A thick knitted beanie with Little My on the cuff, in a wool blend that holds its shape after a week of being pulled on and off. You buy it in the partner shop.",
-      "fi": "Paksu neulepipo, jonka käänteessä on Pikku Myy, villasekoitteessa joka pitää muotonsa viikon vetämisen jälkeenkin. Hinta on luettu kumppanin kaupasta.",
+      "fi": "Paksu neulepipo, jonka käänteessä on Pikku Myy, villasekoitteessa, joka pitää muotonsa viikon vetämisen jälkeenkin. Hinta on luettu kumppanin kaupasta.",
       "de": "Dicke Strickmütze mit der Kleinen My am Umschlag, aus einer Wollmischung, die auch nach einer Woche ständigen Auf- und Absetzens ihre Form hält.",
       "ja": "折り返しにリトルミイをあしらった厚手のニット帽。ウール混で、一週間かぶったり脱いだりしても形が崩れません。大人用フリーサイズ。ラップランドの天気を気に入りそうな唯一のムーミンのキャラクターです。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "Gorro grueso de punto con Little My en la vuelta, en una mezcla de lana que mantiene la forma después de una semana de ponerlo y quitarlo.",
@@ -4787,7 +4787,7 @@
   {
     "path": "/product/nb-moomintroll-love-socks",
     "fallbackTitle": "Nordicbuddies Moomintroll Love retro socks | LaplandGifts",
-    "fallbackDescription": "White ribbed socks with Moomintroll embroidered into a pink heart on the shin, not printed on, so it survives the wash. One size covers EU 36 to 42.",
+    "fallbackDescription": "Light blue ribbed socks with Moomintroll embroidered into a pink heart on the shin, not printed on, so it survives the wash. One size covers EU 36 to 42.",
     "fallbackTitleByLang": {
       "en": "Nordicbuddies Moomintroll Love retro socks | LaplandGifts",
       "fi": "Nordicbuddies Muumipeikko Love -retrosukat | LaplandGifts",
@@ -4803,18 +4803,18 @@
       "sv": "Nordicbuddies Mumintrollet Love retrostrumpor | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "White ribbed socks with Moomintroll embroidered into a pink heart on the shin, not printed on, so it survives the wash. One size covers EU 36 to 42.",
-      "fi": "Valkoiset resorisukat, joissa Muumipeikko on kirjottu pinkkiin sydämeen säären kohdalle, ei painettu, joten se kestää pesun. Yksi koko kattaa EU 36-42.",
-      "de": "Weiße Rippsocken mit Mumintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Sie kaufen im Partnershop.",
-      "ja": "すねの部分にピンクのハートとムーミントロールを刺繍した白いリブソックス。プリントではなく刺繍なので洗濯にも耐えます。フリーサイズで EU 36-42 に対応。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
-      "es": "Calcetines blancos de canalé con Moomintroll bordado dentro de un corazón rosa en la espinilla, bordado y no estampado, así que aguanta los lavados.",
-      "pt-BR": "Meias brancas caneladas com o Moomintroll bordado dentro de um coração rosa na canela, bordado e não estampado, então resiste à lavagem. Venda na loja parceira.",
-      "zh-CN": "白色罗纹袜,小腿处以粉色爱心刺绣出姆明,是刺绣而非印花,因此经得起水洗。均码覆盖 EU 36 至 42。 价格取自合作商店，购买同样在该商店完成。 本页面标注了配送区域。",
-      "ko": "정강이 부분에 분홍 하트와 무민을 자수로 넣은 흰색 골지 양말. 프린트가 아니라 자수라 세탁에도 견딥니다. 원사이즈로 EU 36에서 42까지 지원합니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
-      "fr": "Chaussettes blanches côtelées avec Moumine brodé dans un cœur rose sur le tibia, brodé et non imprimé, ce qui lui permet de résister au lavage.",
-      "it": "Calzini bianchi a coste con Moomintroll ricamato dentro un cuore rosa sullo stinco, ricamato e non stampato, quindi resiste al lavaggio. Venduto dal partner.",
-      "nl": "Witte geribbelde sokken met Moomintroll geborduurd in een roze hart op het scheenbeen, geborduurd en niet bedrukt, dus het motief overleeft de was.",
-      "sv": "Vita ribbade strumpor med Mumintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42."
+      "en": "Light blue ribbed socks with Moomintroll embroidered into a pink heart on the shin, not printed on, so it survives the wash. One size covers EU 36 to 42.",
+      "fi": "Vaaleansiniset resorisukat, joissa Muumipeikko on kirjottu pinkkiin sydämeen säären kohdalle, ei painettu, joten se kestää pesun. Yksi koko kattaa EU 36-42.",
+      "de": "Hellblaue Rippsocken mit Mumintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Liefergebiet angegeben.",
+      "ja": "すねの部分にピンクのハートとムーミントロールを刺繍した水色のリブソックス。プリントではなく刺繍なので洗濯にも耐えます。フリーサイズで EU 36-42 に対応。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
+      "es": "Calcetines celestes de canalé con Moomintroll bordado dentro de un corazón rosa en la espinilla, bordado y no estampado, así que aguanta los lavados.",
+      "pt-BR": "Meias caneladas azul-claro com o Moomintroll bordado dentro de um coração rosa na canela, bordado e não estampado, então resiste à lavagem.",
+      "zh-CN": "浅蓝色罗纹袜,小腿处以粉色爱心刺绣出姆明,是刺绣而非印花,因此经得起水洗。均码覆盖 EU 36 至 42。 价格取自合作商店，购买同样在该商店完成。 本页面标注了配送区域。",
+      "ko": "정강이 부분에 분홍 하트와 무민을 자수로 넣은 하늘색 골지 양말. 프린트가 아니라 자수라 세탁에도 견딥니다. 원사이즈로 EU 36에서 42까지 지원합니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
+      "fr": "Chaussettes côtelées bleu clair avec Moumine brodé dans un cœur rose sur le tibia, brodé et non imprimé, ce qui lui permet de résister au lavage.",
+      "it": "Calzini azzurri a coste con Moomintroll ricamato dentro un cuore rosa sullo stinco, ricamato e non stampato, quindi resiste al lavaggio. Venduto dal partner.",
+      "nl": "Lichtblauwe geribbelde sokken met Moomintroll geborduurd in een roze hart op het scheenbeen, geborduurd en niet bedrukt, dus het motief overleeft de was.",
+      "sv": "Ljusblå ribbade strumpor med Mumintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42."
     }
   },
   {
@@ -5200,7 +5200,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Kunnas drew the Korvatunturi Santa the way Finnish children picture him, and here he is on a 450 ml cup made of PLA rather than fossil plastic.",
-      "fi": "Kunnas piirsi Korvatunturin pukin sellaisena kuin suomalaislapset sen näkevät, ja tässä hän on 450 millilitran mukissa joka on PLA:ta eikä fossiilista muovia.",
+      "fi": "Kunnas piirsi Korvatunturin pukin sellaisena kuin suomalaislapset sen näkevät, ja tässä hän on 450 millilitran mukissa, joka on PLA:ta eikä fossiilista muovia.",
       "de": "Kunnas zeichnete den Weihnachtsmann vom Korvatunturi so, wie finnische Kinder ihn sich vorstellen. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
       "ja": "クンナスはコルヴァトゥントゥリのサンタを、フィンランドの子どもたちが思い描くままに描きました。それが 450 ml のカップに載っています。素材は化石由来のプラスチックではなく PLA。コーヒーが素手には熱すぎるとき、握るのはシリコンのスリーブです。 価格は提携ショップから取得し、ご購入も同じショップで行います。",
       "es": "Kunnas dibujó al Papá Noel de Korvatunturi tal como lo imaginan los niños finlandeses, y aquí está en un vaso de 450 ml hecho de PLA y no de plástico fósil.",
@@ -5233,7 +5233,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Double-walled steel, 550 millilitres, and the manufacturer puts the hot-hold at six hours. The price comes from the partner shop, where you also buy it.",
-      "fi": "Kaksinkertainen terässeinä, 550 millilitraa, ja valmistaja lupaa kuuman pysyvän kuutisen tuntia. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
+      "fi": "Kaksinkertainen terässeinä, 550 millilitraa, ja valmistaja lupaa juoman pysyvän kuumana kuutisen tuntia. Hinta on luettu kumppanin kaupasta. Toimitusalue näkyy.",
       "de": "Doppelwandiger Stahl, 550 Milliliter, und der Hersteller gibt sechs Stunden Warmhaltezeit an. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
       "ja": "二重構造のステンレス、550 ml。メーカーの保温時間は 6 時間です。スノーモービルサファリ 1 回分におおよそ相当します。このボトルが買われるのは、まさにその実地試験のためです。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "Acero de doble pared, 550 mililitros, y el fabricante indica seis horas de calor. El precio se consulta en la tienda asociada, donde también se hace la compra.",
@@ -5299,7 +5299,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "A shaped Moomintroll cushion rather than a square with a print on it, sold in several sizes from 45 to 75 centimetres tall. The delivery area is on this page.",
-      "fi": "Muumipeikon muotoinen tyyny, ei neliö jossa on kuva, ja saatavana useassa koossa 45:stä 75 senttiin. Sellainen tavara joka päätyy mökin sohvalle ja jää sinne.",
+      "fi": "Muumipeikon muotoinen tyyny, ei neliö, jossa on kuva, ja saatavana useassa koossa 45:stä 75 senttiin. Sellainen tavara, joka päätyy mökin sohvalle ja jää sinne.",
       "de": "Ein Kissen in Mumintroll-Form statt eines Quadrats mit Aufdruck, in mehreren Größen von 45 bis 75 Zentimetern Höhe. Das Liefergebiet steht auf dieser Seite.",
       "ja": "プリントを載せた四角ではなく、ムーミンの形に裁ったクッション。高さ 45〜75 センチの複数サイズがあります。コテージのソファに置かれたら、そのまま居着くたぐいのものです。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "Un cojín con la silueta de Moomin en lugar de un cuadrado estampado, en varias tallas de 45 a 75 centímetros de alto. La zona de entrega figura en esta página.",
@@ -5398,7 +5398,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "The blue-and-white bobble hat with FINLAND across the band, the one worn in the stands and then for the rest of the winter. Machine wash at 30.",
-      "fi": "Sinivalkoinen tupsupipo, jossa lukee FINLAND. Se katsomopipo, joka jää päähän loppitalveksi. Vesipesu 30 astetta. Myyjänä kumppanin kauppa. Toimitusalue näkyy.",
+      "fi": "Sinivalkoinen tupsupipo, jossa lukee FINLAND. Se katsomopipo, joka jää päähän lopputalveksi. Vesipesu 30 astetta. Myyjänä kumppanin kauppa. Toimitusalue näkyy.",
       "de": "Die blau-weiße Bommelmütze mit FINLAND auf dem Bund, getragen auf der Tribüne und danach den restlichen Winter. Maschinenwäsche bei 30. Liefergebiet angegeben.",
       "ja": "折り返しに FINLAND と入った青と白のボンボン付きニット帽。スタンドでかぶり、そのあと冬のあいだずっとかぶることになります。洗濯機 30 度。 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "El gorro azul y blanco con pompón y FINLAND en la vuelta, el de la grada y luego el del resto del invierno. Lavado a máquina a 30. Venta en la tienda asociada.",
@@ -5662,7 +5662,7 @@
     },
     "fallbackDescriptionByLang": {
       "en": "Ferdinand von Wright painted the fighting capercaillies in 1886 and it became one of the paintings every Finn can name. The price is read from the partner shop.",
-      "fi": "Ferdinand von Wright maalasi taistelevat metsot vuonna 1886, ja siitä tuli teos jonka jokainen suomalainen tunnistaa. Hinta on luettu kumppanin kaupasta.",
+      "fi": "Ferdinand von Wright maalasi taistelevat metsot vuonna 1886, ja siitä tuli teos, jonka jokainen suomalainen tunnistaa. Hinta on luettu kumppanin kaupasta.",
       "de": "Ferdinand von Wright malte die kämpfenden Auerhähne 1886, und daraus wurde eines der Gemälde, die jeder Finne benennen kann. Verkauf durch den Partnershop.",
       "ja": "Ferdinand von Wright は1886年に闘うオオライチョウ（Taistelevat metsot）を描き、フィンランド人なら誰もが名前を挙げられる絵の一つになりました。Finlayson. 価格は提携ショップから取得し、ご購入も同じショップで行います。 配送エリアはこのページに記載しています。",
       "es": "Ferdinand von Wright pintó los urogallos en combate en 1886 y se convirtió en uno de los cuadros que todo finlandés sabe nombrar. Venta en la tienda asociada.",
@@ -5962,8 +5962,8 @@
       "fi": "Mistä Lapin käsityöt ostetaan, kaupoista itsestään. 18 putiikkia: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
       "de": "Wo Sie Handwerk aus Lappland kaufen, direkt in den Läden. 18 Boutiquen: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
       "ja": "ラップランドの工芸品を買える店を、店ごとに。 18店: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
-      "es": "Dónde comprar artesanía lapona, en las propias tiendas. 18 boutiques: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
-      "pt-BR": "Onde comprar artesanato lapão, nas próprias lojas. 18 boutiques: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
+      "es": "Dónde comprar artesanía lapona, en las propias tiendas. 18 tiendas: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
+      "pt-BR": "Onde comprar artesanato lapão, nas próprias lojas. 18 lojas: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
       "zh-CN": "在店里买到拉普兰手工艺品。 18 家店: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
       "ko": "라플란드 공예품을 사는 곳, 가게에서 직접. 18곳: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
       "fr": "Où acheter l'artisanat lapon, dans les boutiques elles-mêmes. 18 boutiques: Rovaniemi, Inari, Posio, Levi, Sodankylä, Ylläs, Saariselkä, Enontekiö, Utsjoki.",
@@ -5995,8 +5995,8 @@
       "fi": "3 putiikkia: Duodji Shop, Samekki, Siida Shop.",
       "de": "3 Boutiquen: Duodji Shop, Samekki, Siida Shop.",
       "ja": "3店: Duodji Shop, Samekki, Siida Shop.",
-      "es": "3 boutiques: Duodji Shop, Samekki, Siida Shop.",
-      "pt-BR": "3 boutiques: Duodji Shop, Samekki, Siida Shop.",
+      "es": "3 tiendas: Duodji Shop, Samekki, Siida Shop.",
+      "pt-BR": "3 lojas: Duodji Shop, Samekki, Siida Shop.",
       "zh-CN": "3 家店: Duodji Shop, Samekki, Siida Shop.",
       "ko": "3곳: Duodji Shop, Samekki, Siida Shop.",
       "fr": "3 boutiques: Duodji Shop, Samekki, Siida Shop.",
@@ -6028,8 +6028,8 @@
       "fi": "7 putiikkia: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
       "de": "7 Boutiquen: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
       "ja": "7店: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "es": "7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "pt-BR": "7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
+      "es": "7 tiendas: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
+      "pt-BR": "7 lojas: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
       "zh-CN": "7 家店: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
       "ko": "7곳: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
       "fr": "7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",

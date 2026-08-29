@@ -119,7 +119,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} produits`,
   },
   es: {
-    name: { moomin: 'Moomin', arctic: 'Naturaleza ártica', sauna: 'Sauna' },
+    name: { moomin: 'Mumin', arctic: 'Naturaleza ártica', sauna: 'Sauna' },
     intro: {
       moomin:
         'Tazas, manoplas, ropa de cama y pósteres. Lo de Moomin está aquí en cuatro categorías; esta página lo reúne.',
@@ -137,7 +137,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} productos`,
   },
   it: {
-    name: { moomin: 'Moomin', arctic: 'Natura artica', sauna: 'Sauna' },
+    name: { moomin: 'Mumin', arctic: 'Natura artica', sauna: 'Sauna' },
     intro: {
       moomin:
         'Tazze, muffole, biancheria e poster. Le cose Moomin qui stanno in quattro categorie; questa pagina le mette insieme.',
@@ -155,7 +155,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} prodotti`,
   },
   nl: {
-    name: { moomin: 'Moomin', arctic: 'Arctische natuur', sauna: 'Sauna' },
+    name: { moomin: 'Moemin', arctic: 'Arctische natuur', sauna: 'Sauna' },
     intro: {
       moomin:
         'Mokken, wanten, beddengoed en posters. Moomin-spullen staan hier in vier categorieën; deze pagina brengt ze samen.',
@@ -173,7 +173,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} producten`,
   },
   'pt-BR': {
-    name: { moomin: 'Moomin', arctic: 'Natureza ártica', sauna: 'Sauna' },
+    name: { moomin: 'Mumin', arctic: 'Natureza ártica', sauna: 'Sauna' },
     intro: {
       moomin:
         'Canecas, luvas, roupa de cama e pôsteres. As coisas Moomin estão aqui em quatro categorias; esta página reúne tudo.',
