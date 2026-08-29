@@ -28,7 +28,10 @@
           var path = location.pathname || '/';
           var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', br: 'pt-br', cn: 'zh-cn', kr: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv' };
           // 🔴 Vain kielijuuret. Aiemmin tämä osui myös alasivuihin ja
-          // ylikirjoitti prerenderin kirjoittaman sivukohtaisen <title>:n
+          // ylikirjoitti prerenderin kirjoittaman sivukohtaisen title-elementin
+          // (sana kirjoitettu ilman kulmasulkeita: kirjaimellinen title-tagijono
+          // taman skriptin sisalla oli sivun ENSIMMAINEN "<"+"title>", jonka
+          // naiivit jasentimet poimivat otsikoksi ~800 URLilla, mitattu 30.8.)
           // etusivun otsikolla: JavaScriptin ajava indeksoija näki 300
           // sivulla 12 otsikkoa. Alasivuilla kuoressa on jo oikea otsikko.
           var loc = null;
