@@ -79,7 +79,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
   it: {
     title: 'LaplandGifts: design finlandese e artigianato lappone',
     description:
-      'Design finlandese selezionato, artigianato della Lapponia, specialità, superfood e regali esperienza. Ordina dai negozi partner che spediscono a casa tua.',
+      'Design finlandese selezionato, artigianato della Lapponia, specialità, superfood e regali esperienza. Ordini dai negozi partner che spediscono a casa Sua.',
   },
   nl: {
     title: 'LaplandGifts: Fins design en Laplands ambacht thuisbezorgd',
