@@ -109,7 +109,7 @@ const ivalo: AdSpec = {
     nl: {
       eyebrow: 'Kleding die ketens niet verkopen',
       headline: 'IVALO.COM, de marktplaats voor onafhankelijke designmerken',
-      sub: 'Vernoemd naar Ivalo in Lapland, verzamelt de marktplaats onafhankelijke Europese designermerken op één plek. Kleding en accessoires die je niet op elke straathoek tegenkomt.',
+      sub: 'Vernoemd naar Ivalo in Lapland, verzamelt de marktplaats onafhankelijke Europese designermerken op één plek. Kleding en accessoires die u niet op elke straathoek tegenkomt.',
       trust: ['Onafhankelijke designmerken', 'Gecureerde selectie', 'Thuisbezorgd'],
       cta: 'Ontdek de merken',
       poweredBy: 'Winkelen op IVALO.COM',
