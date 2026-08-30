@@ -1108,9 +1108,9 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specLabels: ['モデル', '柄'],
   },
   'sk-moomin-duvet-set': {
-    name: 'ムーミン 掛け布団カバーセット 150 x 210 cm、Sydankapyset',
+    name: 'ムーミン 掛け布団カバーセット 150 x 210 cm、Sydänkäpyset',
     description:
-      'ムーミントロールとスノークのおじょうさんを描いた、GOTS 認証のコットン寝具セット。フィンランド語の柄名 Sydankapyset は、この柄が描いている関係そのものを指す言葉です。',
+      'ムーミントロールとスノークのおじょうさんを描いた、GOTS 認証のコットン寝具セット。フィンランド語の柄名 Sydänkäpyset は、この柄が描いている関係そのものを指す言葉です。',
     specs: [
       '掛け布団カバー 150 x 210 cm',
       'GOTS（Global Organic Textile Standard）',

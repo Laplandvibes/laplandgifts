@@ -944,10 +944,10 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'aurora-tour-kilpisjarvi': {
     name: 'Tour de aurora boreal de snowmobile para dois, Kilpisjärvi',
     description:
-      'Kilpisjärvi é conhecida pelo céu noturno excepcionalmente limpo. Um trajeto curto de snowmobile leva vocês dois a um ponto onde observar a aurora em total paz, com bebidas quentes contra o frio. À noite, das 20.00 às 23.00, sujeito às condições do tempo.',
+      'Kilpisjärvi é conhecida pelo céu noturno excepcionalmente limpo. Um trajeto curto de snowmobile leva vocês dois a um ponto onde observar a aurora em total paz, com bebidas quentes contra o frio. À noite, das 20h às 23h, sujeito às condições do tempo.',
     specs: [
       'Tour guiado de aurora boreal para dois, cerca de 15 km de snowmobile, bebidas quentes incluídas',
-      '3 horas, das 20.00 às 23.00',
+      '3 horas, das 20h às 23h',
       '2 pessoas',
       'Kilpisjärvi',
       '18 anos para pilotar, 8 anos no trenó',
@@ -1106,9 +1106,9 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: ['Modelo', 'Estampa'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Jogo de capa de edredom Moomin 150 x 210 cm, Sydankapyset',
+    name: 'Jogo de capa de edredom Moomin 150 x 210 cm, Sydänkäpyset',
     description:
-      'Jogo de cama de algodão com certificação GOTS, com o Moomintroll e a Senhorita Snork. O nome finlandês da estampa, Sydankapyset, descreve exatamente a relação que o desenho mostra.',
+      'Jogo de cama de algodão com certificação GOTS, com o Moomintroll e a Senhorita Snork. O nome finlandês da estampa, Sydänkäpyset, descreve exatamente a relação que o desenho mostra.',
     specs: [
       'Capa de edredom 150 x 210 cm',
       'GOTS, o Global Organic Textile Standard',

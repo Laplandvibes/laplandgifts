@@ -1108,9 +1108,9 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specLabels: ['款式', '花色'],
   },
   'sk-moomin-duvet-set': {
-    name: '姆明被套四件套 150 x 210 cm,Sydankapyset',
+    name: '姆明被套四件套 150 x 210 cm,Sydänkäpyset',
     description:
-      '通过 GOTS 认证的纯棉床品套装,印有姆明与斯诺克小姐。芬兰语花色名 Sydankapyset 说的正是图案所描绘的那种关系。',
+      '通过 GOTS 认证的纯棉床品套装,印有姆明与斯诺克小姐。芬兰语花色名 Sydänkäpyset 说的正是图案所描绘的那种关系。',
     specs: [
       '被套 150 x 210 cm',
       'GOTS(全球有机纺织品标准)',

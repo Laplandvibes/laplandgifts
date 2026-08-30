@@ -1107,9 +1107,9 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specLabels: ['모델', '패턴'],
   },
   'sk-moomin-duvet-set': {
-    name: '무민 이불 커버 세트 150 x 210 cm, Sydankapyset',
+    name: '무민 이불 커버 세트 150 x 210 cm, Sydänkäpyset',
     description:
-      '무민과 스노크메이든이 들어간 GOTS 인증 면 침구 세트. 핀란드어 패턴 이름 Sydankapyset은 이 그림이 보여 주는 관계를 그대로 가리키는 말입니다.',
+      '무민과 스노크메이든이 들어간 GOTS 인증 면 침구 세트. 핀란드어 패턴 이름 Sydänkäpyset은 이 그림이 보여 주는 관계를 그대로 가리키는 말입니다.',
     specs: [
       '이불 커버 150 x 210 cm',
       'GOTS, Global Organic Textile Standard',

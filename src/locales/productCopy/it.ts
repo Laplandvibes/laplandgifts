@@ -244,7 +244,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'north-outdoor-pyry-scarf': {
     name: 'Sciarpa in merino North Outdoor Pyry',
     description:
-      'Una sciarpa larga e lunga a punto inglese, 100 per cento merino, lavorata a Oulu. Abbastanza lunga da avvolgersi in più modi, il che conta quando il vento cambia direzione su una fjeld aperta.',
+      'Una sciarpa larga e lunga a punto inglese, 100 per cento merino, lavorata a Oulu. Abbastanza lunga da avvolgersi in più modi, il che conta quando il vento cambia direzione su un fjäll aperto.',
     specs: [
       '100 % lana merino, 18,5 micron, costine 1/1',
       'Taglia unica',
@@ -418,7 +418,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'pentik-tunturiretki-studio-dish': {
     name: 'Piatto triangolare fondo Pentik Tunturiretki Winter Studio 19 cm',
     description:
-      'Anu Pentik ha dipinto le renne che continuano a comparire tra gli alberi durante una camminata sulla fjeld. I pezzi Studio sono dipinti a mano a Posio, quindi non esistono due piatti con esattamente le stesse pennellate.',
+      'Anu Pentik ha dipinto le renne che continuano a comparire tra gli alberi durante una camminata sul fjäll. I pezzi Studio sono dipinti a mano a Posio, quindi non esistono due piatti con esattamente le stesse pennellate.',
     specs: [
       'Diametro 19 cm',
       'Blu',
@@ -637,7 +637,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'arctic-warriors-roseroot-elixir': {
     name: 'Elisir di rodiola Arctic Warriors 100 ml',
     description:
-      'La rodiola cresce sulle rive umide dei ruscelli e sulle pareti di roccia delle fjeld lapponi, e Arctic Warriors la estrae in glicerolo vegetale insieme all’ortica. Un cucchiaino va nel tè, nel porridge o nello yogurt.',
+      'La rodiola cresce sulle rive umide dei ruscelli e sulle pareti di roccia dei fjäll lapponi, e Arctic Warriors la estrae in glicerolo vegetale insieme all’ortica. Un cucchiaino va nel tè, nel porridge o nello yogurt.',
     specs: [
       '100 ml, lordo 0,270 kg',
       '4,5 x 4,5 x 13 cm',
@@ -1106,9 +1106,9 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specLabels: ['Modello', 'Fantasia'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Set copripiumino Moomin 150 x 210 cm, Sydankapyset',
+    name: 'Set copripiumino Moomin 150 x 210 cm, Sydänkäpyset',
     description:
-      'Set letto in cotone certificato GOTS, con Moomintroll e la Signorina Snork. Il nome finlandese della fantasia, Sydankapyset, descrive proprio il rapporto che il disegno racconta.',
+      'Set letto in cotone certificato GOTS, con Moomintroll e la Signorina Snork. Il nome finlandese della fantasia, Sydänkäpyset, descrive proprio il rapporto che il disegno racconta.',
     specs: [
       'Copripiumino 150 x 210 cm',
       'GOTS, il Global Organic Textile Standard',
@@ -1247,7 +1247,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'sk-finland-tube-scarf': {
     name: 'Scaldacollo Finlandia',
     description:
-      'Un tubolare senza cuciture con il motivo della bandiera finlandese, da tirare sul viso quando il vento scende dal fjell. Sotto i sette euro, ed è per questo che se ne comprano tre.',
+      'Un tubolare senza cuciture con il motivo della bandiera finlandese, da tirare sul viso quando il vento scende dal fjäll. Sotto i sette euro, ed è per questo che se ne comprano tre.',
     specs: [
       'Bandiera finlandese',
       'Lavaggio a mano',

@@ -244,7 +244,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'north-outdoor-pyry-scarf': {
     name: 'North Outdoor Pyry merinosjaal',
     description:
-      'Een brede, lange sjaal in patentsteek van 100 procent merino, gebreid in Oulu. Lang genoeg om op verschillende manieren om te slaan, wat uitmaakt als de wind op een open fjeld van richting verandert.',
+      'Een brede, lange sjaal in patentsteek van 100 procent merino, gebreid in Oulu. Lang genoeg om op verschillende manieren om te slaan, wat uitmaakt als de wind op een open fjäll van richting verandert.',
     specs: [
       '100 % merinowol, 18,5 micron, 1/1 ribbreisel',
       'One size',
@@ -418,7 +418,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'pentik-tunturiretki-studio-dish': {
     name: 'Pentik Tunturiretki Winter Studio diepe driehoekige schaal 19 cm',
     description:
-      'Anu Pentik schilderde de rendieren die tijdens een wandeling over de fjeld steeds tussen de bomen opduiken. Studiostukken worden in Posio met de hand beschilderd, dus geen twee schalen dragen precies dezelfde penseelstreken.',
+      'Anu Pentik schilderde de rendieren die tijdens een wandeling over de fjäll steeds tussen de bomen opduiken. Studiostukken worden in Posio met de hand beschilderd, dus geen twee schalen dragen precies dezelfde penseelstreken.',
     specs: [
       'Diameter 19 cm',
       'Blauw',
@@ -637,7 +637,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'arctic-warriors-roseroot-elixir': {
     name: 'Arctic Warriors rozenwortelelixer 100 ml',
     description:
-      'Rozenwortel groeit op de vochtige beekoevers en rotswanden van de Laplandse fjelds, en Arctic Warriors trekt hem samen met brandnetel in plantaardige glycerol. Een theelepel gaat in thee, pap of yoghurt.',
+      'Rozenwortel groeit op de vochtige beekoevers en rotswanden van de Laplandse fjälls, en Arctic Warriors trekt hem samen met brandnetel in plantaardige glycerol. Een theelepel gaat in thee, pap of yoghurt.',
     specs: [
       '100 ml, bruto 0,270 kg',
       '4,5 x 4,5 x 13 cm',
@@ -1106,9 +1106,9 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: ['Model', 'Dessin'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Moomin dekbedovertrekset 150 x 210 cm, Sydankapyset',
+    name: 'Moomin dekbedovertrekset 150 x 210 cm, Sydänkäpyset',
     description:
-      'GOTS-gecertificeerd katoenen beddengoedset met Moomintroll en Snorkjuffrouw. De Finse dessinnaam Sydankapyset beschrijft precies de band die het dessin laat zien.',
+      'GOTS-gecertificeerd katoenen beddengoedset met Moomintroll en Snorkjuffrouw. De Finse dessinnaam Sydänkäpyset beschrijft precies de band die het dessin laat zien.',
     specs: [
       'Dekbedovertrek 150 x 210 cm',
       'GOTS, de Global Organic Textile Standard',
@@ -1247,7 +1247,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-finland-tube-scarf': {
     name: 'Finland-colsjaal',
     description:
-      'Een naadloze koker met het patroon van de Finse vlag, die u over uw gezicht trekt als de wind van de fjeld komt. Onder de zeven euro, en daarom kopen mensen er drie.',
+      'Een naadloze koker met het patroon van de Finse vlag, die u over uw gezicht trekt als de wind van de fjäll komt. Onder de zeven euro, en daarom kopen mensen er drie.',
     specs: [
       'Finse vlag',
       'Handwas',

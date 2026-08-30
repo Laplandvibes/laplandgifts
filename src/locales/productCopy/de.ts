@@ -1157,9 +1157,9 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: ['Modell', 'Muster'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Mumin Bettwäscheset 150 x 210 cm, Sydankapyset',
+    name: 'Mumin Bettwäscheset 150 x 210 cm, Sydänkäpyset',
     description:
-      'GOTS-zertifiziertes Bettwäscheset aus Baumwolle mit Mumintroll und Snorkfräulein. Der finnische Mustername Sydankapyset beschreibt das Verhältnis, das das Muster zeigt.',
+      'GOTS-zertifiziertes Bettwäscheset aus Baumwolle mit Mumintroll und Snorkfräulein. Der finnische Mustername Sydänkäpyset beschreibt das Verhältnis, das das Muster zeigt.',
     specs: [
       'Bettbezug 150 x 210 cm',
       'GOTS, der Global Organic Textile Standard',

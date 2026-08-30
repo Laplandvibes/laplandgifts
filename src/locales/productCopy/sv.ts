@@ -1108,9 +1108,9 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: ['Modell', 'Mönster'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Mumin bäddset 150 x 210 cm, Sydankapyset',
+    name: 'Mumin bäddset 150 x 210 cm, Sydänkäpyset',
     description:
-      'GOTS-certifierat bäddset i bomull med Mumintrollet och Snorkfröken. Det finska mönsternamnet Sydankapyset beskriver just den relation som mönstret visar.',
+      'GOTS-certifierat bäddset i bomull med Mumintrollet och Snorkfröken. Det finska mönsternamnet Sydänkäpyset beskriver just den relation som mönstret visar.',
     specs: [
       'Påslakan 150 x 210 cm',
       'GOTS, Global Organic Textile Standard',

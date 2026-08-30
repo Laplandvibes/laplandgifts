@@ -1106,9 +1106,9 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: ['Modelo', 'Estampado'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Juego de funda nórdica Moomin 150 x 210 cm, Sydankapyset',
+    name: 'Juego de funda nórdica Moomin 150 x 210 cm, Sydänkäpyset',
     description:
-      'Juego de cama de algodón con certificación GOTS, con Moomintroll y la Señorita Snork. El nombre finlandés del estampado, Sydankapyset, describe justamente la relación que el dibujo muestra.',
+      'Juego de cama de algodón con certificación GOTS, con Moomintroll y la Señorita Snork. El nombre finlandés del estampado, Sydänkäpyset, describe justamente la relación que el dibujo muestra.',
     specs: [
       'Funda nórdica 150 x 210 cm',
       'GOTS, el Global Organic Textile Standard',

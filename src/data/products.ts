@@ -4179,11 +4179,11 @@ export const PRODUCTS: Product[] = [
     category: 'design',
     brand: 'Moomin',
     name: {
-      en: 'Moomin duvet cover set 150 x 210 cm, Sydankapyset',
+      en: 'Moomin duvet cover set 150 x 210 cm, Sydänkäpyset',
       fi: 'Muumi pussilakanasetti 150 x 210 cm, Sydänkäpyset',
     },
     description: {
-      en: 'A GOTS certified cotton duvet set printed with Moomintroll and Snorkmaiden. The Finnish name Sydankapyset has no clean translation, it is what you call two people who are soft on each other.',
+      en: 'A GOTS certified cotton duvet set printed with Moomintroll and Snorkmaiden. The Finnish name Sydänkäpyset has no clean translation, it is what you call two people who are soft on each other.',
       fi: 'GOTS-sertifioitu puuvillainen pussilakanasetti, jossa on Muumipeikko ja Niiskuneiti. Kuosin nimi Sydänkäpyset kertoo suhteesta, jota kuosi kuvaa.',
     },
     priceFrom: 56.48,
