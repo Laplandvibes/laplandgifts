@@ -245,7 +245,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'north-outdoor-pyry-scarf': {
     name: 'Écharpe mérinos North Outdoor Pyry',
     description:
-      'Une écharpe large et longue en côtes anglaises, 100 pour cent mérinos, tricotée à Oulu. Assez longue pour s’enrouler de plusieurs façons, ce qui compte quand le vent change de direction sur une fjeld dégagée.',
+      'Une écharpe large et longue en côtes anglaises, 100 pour cent mérinos, tricotée à Oulu. Assez longue pour s’enrouler de plusieurs façons, ce qui compte quand le vent change de direction sur un fjäll dégagé.',
     specs: [
       '100 % laine mérinos, 18,5 microns, tricot côtes 1/1',
       'Taille unique',
@@ -419,7 +419,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'pentik-tunturiretki-studio-dish': {
     name: 'Plat triangulaire creux Pentik Tunturiretki Winter Studio 19 cm',
     description:
-      'Anu Pentik a peint les rennes qui réapparaissent entre les arbres lors d’une marche sur la fjeld. Les pièces Studio sont peintes à la main à Posio, donc deux plats ne portent jamais exactement les mêmes traces de pinceau.',
+      'Anu Pentik a peint les rennes qui réapparaissent entre les arbres lors d’une marche sur le fjäll. Les pièces Studio sont peintes à la main à Posio, donc deux plats ne portent jamais exactement les mêmes traces de pinceau.',
     specs: [
       'Diamètre 19 cm',
       'Bleu',
@@ -638,7 +638,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'arctic-warriors-roseroot-elixir': {
     name: 'Élixir de rhodiole Arctic Warriors 100 ml',
     description:
-      'La rhodiole pousse sur les berges humides des ruisseaux et les parois rocheuses des fjelds de Laponie, et Arctic Warriors l’extrait dans de la glycérine végétale avec de l’ortie. Une cuillère à café se met dans le thé, le porridge ou le yaourt.',
+      'La rhodiole pousse sur les berges humides des ruisseaux et les parois rocheuses des fjälls de Laponie, et Arctic Warriors l’extrait dans de la glycérine végétale avec de l’ortie. Une cuillère à café se met dans le thé, le porridge ou le yaourt.',
     specs: [
       '100 ml, brut 0,270 kg',
       '4,5 x 4,5 x 13 cm',
@@ -913,11 +913,11 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, 'Taille du lot', undefined],
   },
   'husky-farm-safari-rovaniemi': {
-    name: 'Visite d’une ferme de huskys et safari pour deux, Rovaniemi',
+    name: 'Visite d’une ferme de huskies et safari pour deux, Rovaniemi',
     description:
-      'Une carte cadeau pour une visite guidée d’une vraie ferme de huskys près de Rovaniemi, suivie d’une balade en traîneau derrière les chiens dans la forêt d’hiver. Achetée maintenant, livrée par e-mail, la date est choisie par la personne qui la reçoit.',
+      'Une carte cadeau pour une visite guidée d’une vraie ferme de huskies près de Rovaniemi, suivie d’une balade en traîneau derrière les chiens dans la forêt d’hiver. Achetée maintenant, livrée par e-mail, la date est choisie par la personne qui la reçoit.',
     specs: [
-      'Visite guidée d’une ferme de huskys et safari en traîneau pour deux. Le guide peut venir vous chercher dans un rayon de 10 km autour de Rovaniemi',
+      'Visite guidée d’une ferme de huskies et safari en traîneau pour deux. Le guide peut venir vous chercher dans un rayon de 10 km autour de Rovaniemi',
       'Environ 3,5 h',
       '2 personnes',
       'Rovaniemi. Le lieu exact est confirmé à la réservation',
@@ -945,10 +945,10 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'aurora-tour-kilpisjarvi': {
     name: 'Aurores boréales en motoneige pour deux, Kilpisjärvi',
     description:
-      'Kilpisjärvi est connu pour son ciel nocturne exceptionnellement pur. Un court trajet en motoneige vous emmène à deux vers un endroit où observer les aurores dans un calme total, avec des boissons chaudes contre le froid. Le soir de 20.00 à 23.00, sous réserve météo.',
+      'Kilpisjärvi est connu pour son ciel nocturne exceptionnellement pur. Un court trajet en motoneige vous emmène à deux vers un endroit où observer les aurores dans un calme total, avec des boissons chaudes contre le froid. Le soir de 20 h à 23 h, sous réserve météo.',
     specs: [
       'Sortie guidée aux aurores boréales pour deux, environ 15 km en motoneige, boissons chaudes comprises',
-      '3 heures, de 20.00 à 23.00',
+      '3 heures, de 20 h à 23 h',
       '2 personnes',
       'Kilpisjärvi',
       '18 ans pour conduire, 8 ans dans le traîneau',
@@ -959,14 +959,14 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'glass-igloo-night-levi': {
     name: 'Nuit en igloo de verre pour deux, Levi',
     description:
-      'Une nuit à deux dans un igloo de verre chauffé, haut sur le fjell de Levi. Le verre chauffé électriquement reste limpide pendant que vous guettez les aurores depuis un lit double motorisé. Boisson de bienvenue, peignoirs et petit déjeuner compris, avec kitchenette, douche et WC.',
+      'Une nuit à deux dans un igloo de verre chauffé, haut sur le fjäll de Levi. Le verre chauffé électriquement reste limpide pendant que vous guettez les aurores depuis un lit double motorisé. Boisson de bienvenue, peignoirs et petit déjeuner compris, avec kitchenette, douche et WC.',
     specs: [
       'Une nuit pour deux dans un igloo de verre de classe Superior, boisson de bienvenue, peignoirs et chaussons, petit déjeuner. Transport non compris',
-      '1 nuit, départ à 11.00',
+      '1 nuit, départ à 11 h',
       '2 personnes',
-      'Levi, en haut du fjell',
+      'Levi, en haut du fjäll',
       '23 m², verre chauffé antibuée, kitchenette, douche et WC, lit double motorisé',
-      'Valable pour des séjours du 27.08-10.11 et du 01.04-12.04',
+      'Valable pour des séjours du 27/08 au 10/11 et du 01/04 au 12/04',
     ],
     specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Igloo', 'Carte cadeau'],
   },
@@ -1022,9 +1022,9 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specs: ['50 ml'],
   },
   'nb-little-my-beanie': {
-    name: 'Bonnet en grosse maille Petite My',
+    name: 'Bonnet en grosse maille Petite Mu',
     description:
-      'Bonnet épais en maille avec la Petite My sur le revers, dans un mélange de laine qui garde sa forme après une semaine à être enfilé et retiré. Une taille adulte, et le seul personnage des Moumines qui approuverait le temps qu il fait en Laponie.',
+      'Bonnet épais en maille avec la Petite Mu sur le revers, dans un mélange de laine qui garde sa forme après une semaine à être enfilé et retiré. Une taille adulte, et le seul personnage des Moumines qui approuverait le temps qu\'il fait en Laponie.',
     specs: [
       'Acrylique, nylon et laine',
       'Adulte, taille unique',
@@ -1057,7 +1057,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'nb-moomin-classics-tee': {
     name: 'T-shirt épais Moomin Classics',
     description:
-      'Un t-shirt en coton de 260 grammes coloris lavande, coupe carrée, avec un petit Moumine brodé sur la poitrine plutôt qu un grand imprimé. Assez épais pour tomber droit au lieu de mouler.',
+      'Un t-shirt en coton de 260 grammes coloris lavande, coupe carrée, avec un petit Moumine brodé sur la poitrine plutôt qu\'un grand imprimé. Assez épais pour tomber droit au lieu de mouler.',
     specs: [
       '100 % coton, 260 g/m2',
       'Unisexe, coupe carrée, du XS au XXL',
@@ -1088,7 +1088,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'nb-kunnas-kalevala-tote': {
     name: 'Tote bag Mauri Kunnas Le Kalevala des chiens',
     description:
-      'Un tote bag en coton imprimé des illustrations de Mauri Kunnas tirées du Kalevala des chiens, sa version canine de l épopée nationale finlandaise. L article le moins cher de cette boutique qui explique pourtant tout un pays.',
+      'Un tote bag en coton imprimé des illustrations de Mauri Kunnas tirées du Kalevala des chiens, sa version canine de l\'épopée nationale finlandaise. L\'article le moins cher de cette boutique qui explique pourtant tout un pays.',
     specs: [
       '100 % coton',
       '38 x 42 cm',
@@ -1099,7 +1099,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'sk-marimekko-unikko-crossbody': {
     name: 'Sac bandoulière Marimekko Neat Crossbody Unikko',
     description:
-      'Le coquelicot Unikko sur un sac bandoulière dimensionné pour un téléphone, un portefeuille et une paire de gants. Unikko a été dessiné en 1964 après qu Armi Ratia eut interdit les imprimés floraux, et il a survécu à cette interdiction de soixante ans.',
+      'Le coquelicot Unikko sur un sac bandoulière dimensionné pour un téléphone, un portefeuille et une paire de gants. Unikko a été dessiné en 1964 après qu\'Armi Ratia eut interdit les imprimés floraux, et il a survécu à cette interdiction de soixante ans.',
     specs: [
       'Neat Crossbody, taille M',
       'Unikko, bleu et bleu foncé',
@@ -1107,9 +1107,9 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: ['Modèle', 'Motif'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Parure de lit Moomin 150 x 210 cm, Sydankapyset',
+    name: 'Parure de lit Moomin 150 x 210 cm, Sydänkäpyset',
     description:
-      'Parure de lit en coton certifiée GOTS, avec Moumine et Mademoiselle Snorque. Le nom finnois du motif, Sydankapyset, décrit exactement la relation que le motif représente.',
+      'Parure de lit en coton certifiée GOTS, avec Moumine et Mademoiselle Snorque. Le nom finnois du motif, Sydänkäpyset, décrit exactement la relation que le motif représente.',
     specs: [
       'Housse de couette 150 x 210 cm',
       'GOTS, le Global Organic Textile Standard',
@@ -1130,10 +1130,10 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'sk-aromageddon-sauna-scent': {
     name: 'Parfum de sauna Aromageddon Hankihorppy 15 ml',
     description:
-      'Menthe et cacao en parfum de sauna, ce qui semble incongru tant qu on n a pas traversé un hiver finlandais. Deux à quatre gouttes dans une louche d eau, pas sur les pierres.',
+      'Menthe et cacao en parfum de sauna, ce qui semble incongru tant qu\'on n\'a pas traversé un hiver finlandais. Deux à quatre gouttes dans une louche d\'eau, pas sur les pierres.',
     specs: [
       '15 ml',
-      '2 à 4 gouttes dans une louche d eau',
+      '2 à 4 gouttes dans une louche d\'eau',
     ],
     specLabels: [undefined, 'Utilisation'],
   },
@@ -1166,7 +1166,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specs: [
       '100 % acrylique, doublure polaire',
       'Adulte, hauteur 22 cm, largeur au-dessus du pouce 9,5 cm',
-      'Produit Moumine officiel',
+      'Produit Moomin officiel',
     ],
     specLabels: [undefined, undefined, 'Licence'],
   },
@@ -1184,7 +1184,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'nb-little-my-thermal-bottle': {
     name: 'Bouteille isotherme Petite Mu 0,55 l',
     description:
-      'Acier à double paroi, 550 millilitres, et le fabricant annonce six heures de maintien au chaud. Cela correspond à peu près à une safari en motoneige, c’est-à-dire au test pour lequel on achète cette bouteille.',
+      'Acier à double paroi, 550 millilitres, et le fabricant annonce six heures de maintien au chaud. Cela correspond à peu près à un safari en motoneige, c’est-à-dire au test pour lequel on achète cette bouteille.',
     specs: [
       '550 ml',
       'Acier inoxydable, couvercle PP, joint silicone',
@@ -1198,7 +1198,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Mousse à mémoire de forme sous une housse douce, pour le train de nuit Helsinki–Rovaniemi ou le vol du retour. Assez petit pour s’accrocher au sac, seule version du coussin de voyage que l’on garde vraiment.',
     specs: [
       'Mousse à mémoire de forme, housse douce',
-      'Produit Moumine officiel',
+      'Produit Moomin officiel',
     ],
     specLabels: [undefined, 'Licence'],
   },
@@ -1209,16 +1209,16 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specs: [
       'Polyester',
       'Plusieurs tailles, hauteur 45–75 cm',
-      'Produit Moumine officiel',
+      'Produit Moomin officiel',
     ],
     specLabels: [undefined, undefined, 'Licence'],
   },
   'nb-little-my-poster': {
     name: 'Affiche Petite Mu',
     description:
-      'Conçue et imprimée à Helsinki sur papier soie 200 grammes, en 30 × 40 ou 50 × 70. Une affiche se roule dans un tube et ne pèse rien, ce qu’on ne peut pas dire de la plupart des choses qu’on rapporte de Laponie.',
+      'Conçue et imprimée à Helsinki sur papier couché satiné de 200 grammes, en 30 × 40 ou 50 × 70. Une affiche se roule dans un tube et ne pèse rien, ce qu’on ne peut pas dire de la plupart des choses qu’on rapporte de Laponie.',
     specs: [
-      'Papier soie, 200 g',
+      'Papier couché satiné, 200 g',
       '30 × 40 cm ou 50 × 70 cm',
       'Conçue et imprimée à Helsinki',
     ],
@@ -1229,7 +1229,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     description:
       'Les couvertures des romans Moumine de Tove Jansson sur une seule feuille, même impression helsinkienne et mêmes deux formats que les affiches de personnages. Pour la lectrice de la famille plutôt que pour le collectionneur de mugs.',
     specs: [
-      'Papier soie, 200 g',
+      'Papier couché satiné, 200 g',
       '30 × 40 cm ou 50 × 70 cm',
       'Conçue et imprimée à Helsinki',
     ],
@@ -1238,7 +1238,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'sk-finland-beanie': {
     name: 'Bonnet Finlande, bleu et blanc',
     description:
-      'Le bonnet à pompon bleu et blanc avec FINLAND sur le bord, porté en tribune puis tout le reste de l’hiver. Lavage en machine à 30.',
+      'Le bonnet à pompon bleu et blanc avec FINLAND sur le bord, porté en tribune puis tout le reste de l’hiver. Lavage en machine à 30 °C.',
     specs: [
       'FINLAND',
       'Lavage en machine 30 °C',
@@ -1248,7 +1248,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'sk-finland-tube-scarf': {
     name: 'Tour de cou Finlande',
     description:
-      'Un tube sans couture au motif du drapeau finlandais, qu’on remonte sur le visage quand le vent descend de la fjeld. Moins de sept euros, et c’est pour cela que les gens en prennent trois.',
+      'Un tube sans couture au motif du drapeau finlandais, qu’on remonte sur le visage quand le vent descend du fjäll. Moins de sept euros, et c’est pour cela que les gens en prennent trois.',
     specs: [
       'Drapeau finlandais',
       'Lavage à la main',
@@ -1268,7 +1268,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'sk-rento-sauna-hat': {
     name: 'Bonnet de sauna Rento en éponge de lin',
     description:
-      'L’éponge de lin tient la chaleur à distance du cuir chevelu et des cheveux sur le banc du haut. Cela marche aussi dans l’autre sens : dans un bain nordique en février, il garde la tête au chaud. Lavage en machine à 60.',
+      'L’éponge de lin tient la chaleur à distance du cuir chevelu et des cheveux sur le banc du haut. Cela marche aussi dans l’autre sens : dans un bain nordique en février, il garde la tête au chaud. Lavage en machine à 60 °C.',
     specs: [
       'Éponge de lin',
       'Lavage en machine 60 °C',

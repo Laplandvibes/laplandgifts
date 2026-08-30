@@ -78,7 +78,7 @@ const fr: ChromeCopy = {
       {
         name: 'Noël',
         description: "Rien n'évoque mieux Noël qu'un cadeau venu du pays du Père Noël. Choisissez parmi nos sélections festives.",
-        suggestions: ['Panier cadeau "Lapland Luxury"', 'Plaid en laine de Laponie', 'Coffret confiture de mûres arctiques', 'Chaussons en feutre'],
+        suggestions: ['Panier cadeau "Lapland Luxury"', 'Plaid en laine de Laponie', 'Coffret confiture de plaquebières', 'Chaussons en feutre'],
       },
       {
         name: 'Mariage',
@@ -112,7 +112,7 @@ const fr: ChromeCopy = {
       {
         title: '7 jours de magie en Laponie',
         subtitle: 'Le seul itinéraire dont vous aurez besoin',
-        description: 'Un itinéraire complet jour par jour de Rovaniemi à Inari et retour. Inclut conseils pour les aurores boréales, safaris en husky, croisières en brise-glace, planificateur de budget réaliste et liste complète des bagages arctiques.',
+        description: 'Un itinéraire complet jour par jour de Rovaniemi à Inari et retour. Inclut conseils pour les aurores boréales, safaris en traîneau de huskies, croisières en brise-glace, planificateur de budget réaliste et liste complète des bagages arctiques.',
         topics: ['Itinéraire 7 jours', 'Planificateur de budget', 'Liste de bagages', 'Guide saisonnier', 'Conseils locaux'],
         pages: 13,
       },
@@ -151,7 +151,7 @@ const fr: ChromeCopy = {
     items: [
       {
         q: 'Quels sont les souvenirs authentiques à acheter en Laponie ?',
-        a: "Les souvenirs les plus authentiques de Laponie sont façonnés par des mains locales : un puukko (couteau de ceinture traditionnel finlandais), une kuksa (tasse taillée dans une loupe de bouleau), des articles en cuir de renne, des textiles en laine et des produits sauvages comme la confiture de mûres arctiques, la confiture d'airelles et les produits à base de sève de bouleau. L'artisanat sami duodji, bijoux en argent, travail du bois de renne et galons tissés, est le plus prisé. Cherchez le nom de l'artisan ou un certificat d'origine plutôt que des articles produits en série dans les boutiques d'aéroport.",
+        a: "Les souvenirs les plus authentiques de Laponie sont façonnés par des mains locales : un puukko (couteau de ceinture traditionnel finlandais), une kuksa (tasse taillée dans une loupe de bouleau), des articles en cuir de renne, des textiles en laine et des produits sauvages comme la confiture de plaquebières, la confiture d'airelles et les produits à base de sève de bouleau. L'artisanat sami duodji, bijoux en argent, travail du bois de renne et galons tissés, est le plus prisé. Cherchez le nom de l'artisan ou un certificat d'origine plutôt que des articles produits en série dans les boutiques d'aéroport.",
       },
       {
         q: "Puis-je acheter de l'artisanat sami de façon éthique, et qu'est-ce que le label Sámi Duodji ?",
@@ -163,7 +163,7 @@ const fr: ChromeCopy = {
       },
       {
         q: 'Que rapporter de Rovaniemi ?',
-        a: "Rovaniemi se trouve sur le cercle polaire arctique et constitue la porte d'entrée de la Laponie finlandaise, c'est donc un bon endroit pour faire ses achats. Les choix populaires sont une kuksa, un couteau puukko, des accessoires en cuir de renne, des chaussettes et bonnets en laine, des articles Moomins et Père Noël, et des produits arctiques comme la confiture de mûres arctiques, le salmiakki (réglisse salée) et le sirop de sève de bouleau. Pour un objet avec une provenance, choisissez une pièce signée par son auteur plutôt qu'un souvenir générique « Laponie ».",
+        a: "Rovaniemi se trouve sur le cercle polaire arctique et constitue la porte d'entrée de la Laponie finlandaise, c'est donc un bon endroit pour faire ses achats. Les choix populaires sont une kuksa, un couteau puukko, des accessoires en cuir de renne, des chaussettes et bonnets en laine, des articles Moomins et Père Noël, et des produits arctiques comme la confiture de plaquebières, le salmiakki (réglisse salée) et le sirop de sève de bouleau. Pour un objet avec une provenance, choisissez une pièce signée par son auteur plutôt qu'un souvenir générique « Laponie ».",
       },
       {
         q: 'Les produits à base de renne et de bois de renne sont-ils autorisés au retour ?',

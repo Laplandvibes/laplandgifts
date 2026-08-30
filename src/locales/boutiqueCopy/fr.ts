@@ -18,7 +18,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Artisanat sami', 'Duodji'],
   },
   'samekki': {
-    description: 'Bijoux sami en argent faits main: bagues, broches et pièces duodji traditionnelles.',
+    description: 'Bijoux sami en argent faits main : bagues, broches et pièces duodji traditionnelles.',
     tags: ['Argent', 'Artisanat sami'],
   },
   'piece-of-lapland': {
@@ -30,7 +30,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Bois de renne', 'Artisanat'],
   },
   'christmas-house-shop': {
-    description: 'La plus grande boutique de souvenirs du village du Père Noël: produits lapons, bijoux, gourmandises et certificats.',
+    description: 'La plus grande boutique de souvenirs du village du Père Noël : produits lapons, bijoux, gourmandises et certificats.',
     tags: ['Souvenirs', 'Gourmandises'],
   },
   'korundi-shop': {
@@ -42,7 +42,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Bijoux', 'Design'],
   },
   'siida-shop': {
-    description: 'Boutique du musée sami: artisanat duodji, bijoux et cadeaux inspirés de la nature lapone.',
+    description: 'Boutique du musée sami : artisanat duodji, bijoux et cadeaux inspirés de la nature lapone.',
     tags: ['Duodji', 'Cadeaux'],
   },
   'tankavaaran-kultakyla': {
