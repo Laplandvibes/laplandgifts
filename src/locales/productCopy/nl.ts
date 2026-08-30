@@ -114,7 +114,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'aarikka-pore-glass-vase': {
     name: 'Aarikka Pore glazen vaas 16 cm, donkergroen',
     description:
-      'Een ronde, handgeblazen vaas van 1,7 liter met een krans van esdoornkralen die in Finland met de hand geverfd zijn. De luchtbellen in het glas horen erbij, en de krans gaat eraf voordat je hem wast.',
+      'Een ronde, handgeblazen vaas van 1,7 liter met een krans van esdoornkralen die in Finland met de hand geverfd zijn. De luchtbellen in het glas horen erbij, en de krans gaat eraf voordat u hem wast.',
     specs: [
       'Hoogte 16 cm, diameter 16 cm',
       '1,7 l',
@@ -156,7 +156,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'makia-merino-beanie': {
     name: 'Makia Merino muts',
     description:
-      'Een sobere Noordse muts van merinowol, die temperatuur en vocht in balans houdt wanneer je uit een warm café zo de kou in stapt. Geen logo ter grootte van een vuist op de voorkant.',
+      'Een sobere Noordse muts van merinowol, die temperatuur en vocht in balans houdt wanneer u uit een warm café zo de kou in stapt. Geen logo ter grootte van een vuist op de voorkant.',
     specs: [
       '100 % merinowol, patentsteek fijnte 8, mulesingvrij',
       'One size',
@@ -310,7 +310,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'kupilka-classic-cup-21': {
     name: 'Kupilka 21 kampeerbeker 2,1 dl',
     description:
-      'De vorm van de kuksa in een materiaal dat je in de vaatwasser kunt gooien: half dennencellulosevezel, half thermoplast, gegoten in Finland. Hij bevat 2,1 dl, weegt 83 gram en brandt je vingers niet bij een vuur.',
+      'De vorm van de kuksa in een materiaal dat u in de vaatwasser kunt gooien: half dennencellulosevezel, half thermoplast, gegoten in Finland. Hij bevat 2,1 dl, weegt 83 gram en brandt uw vingers niet bij een vuur.',
     specs: [
       '2,1 dl',
       '83 g',
@@ -574,7 +574,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'arctic-power-berries-sea-buckthorn-powder': {
     name: 'Duindoornpoeder 70 g',
     description:
-      'Gevriesdroogde Noordse duindoorn, 70 gram, niets toegevoegd. Zuur en helder oranje, dus een theelepel komt in de pap verder dan je zou denken. Deze winkel prijst in Britse ponden.',
+      'Gevriesdroogde Noordse duindoorn, 70 gram, niets toegevoegd. Zuur en helder oranje, dus een theelepel komt in de pap verder dan u zou denken. Deze winkel prijst in Britse ponden.',
     specs: [
       '70 g',
       '100 % duindoornpoeder van Noordse duindoornbessen. Niets toegevoegd',
@@ -586,7 +586,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Kääpä Mushrooms chaga-extractpoeder 30 g',
     description:
-      'Een pot van 30 gram chaga-extractpoeder van Kääpä Mushrooms, dat functionele paddenstoelen oogst in Noordse bossen, bedoeld om door warme dranken te roeren. Ruohonjuuri levert alleen binnen het douane- en belastinggebied van de Europese Unie, en het etiket vermeldt interacties met medicijnen die je beter eerst kunt lezen.',
+      'Een pot van 30 gram chaga-extractpoeder van Kääpä Mushrooms, dat functionele paddenstoelen oogst in Noordse bossen, bedoeld om door warme dranken te roeren. Ruohonjuuri levert alleen binnen het douane- en belastinggebied van de Europese Unie, en het etiket vermeldt interacties met medicijnen die u beter eerst kunt lezen.',
     specs: [
       '30 g',
       '100 % chaga, biologisch. 100 mg bètaglucaan per dagdosis',
@@ -753,7 +753,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'fazer-super-salmiakki': {
     name: 'Fazer Super Salmiakki pastilles 80 g',
     description:
-      'De hardste van de salmiakklassiekers, sinds de jaren zeventig verkocht in hetzelfde blikvormige doosje. Geef een bezoeker er een en je weet binnen tien seconden in welk kamp hij thuishoort.',
+      'De hardste van de salmiakklassiekers, sinds de jaren zeventig verkocht in hetzelfde blikvormige doosje. Geef een bezoeker er een en u weet binnen tien seconden in welk kamp hij thuishoort.',
     specs: ['80 g'],
   },
   'fazer-pantteri-salmiakki': {
@@ -790,7 +790,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'fazer-light-milk-chocolate': {
     name: 'Karl Fazer lichte melkchocolade 180 g',
     description:
-      'Een lichtere, mildere versie van de blauwe reep. Als de klassieke je te zoet is, neem dan deze.',
+      'Een lichtere, mildere versie van de blauwe reep. Als de klassieke u te zoet is, neem dan deze.',
     specs: ['180 g'],
   },
   'fazer-fazerina': {
@@ -819,25 +819,25 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'north-outdoor-kevo-gloves': {
     name: 'North Outdoor Kevo merinohandschoenen',
     description:
-      'Gebreid van mulesingvrije merino in de eigen breierij van North Outdoor in Oulu. Dun genoeg om op de koudste dagen onder een want te dragen en om aan te houden als je een foto maakt.',
+      'Gebreid van mulesingvrije merino in de eigen breierij van North Outdoor in Oulu. Dun genoeg om op de koudste dagen onder een want te dragen en om aan te houden als u een foto maakt.',
     specs: ['100 % merinowol, mulesingvrij', 'M, L, XL', 'Indigoblauw', 'Gebreid in Oulu, Finland'],
   },
   'north-outdoor-heavyweight-gaiter': {
     name: 'North Outdoor Heavyweight merino nekwarmer',
     description:
-      'Merinofleece, dik genoeg om over de neus te trekken terwijl je wacht tot het licht verschijnt. Wol blijft isoleren wanneer je adem erin condenseert, en dat is nu net het probleem van stilstaan in de kou.',
+      'Merinofleece, dik genoeg om over de neus te trekken terwijl u wacht tot het licht verschijnt. Wol blijft isoleren wanneer uw adem erin condenseert, en dat is nu net het probleem van stilstaan in de kou.',
     specs: ['Merinofleece', 'One size', 'Zwart', 'North Outdoor, Oulu, Finland'],
   },
   'north-outdoor-sointu-cardigan': {
     name: 'North Outdoor Sointu merinovest',
     description:
-      'Een recht merinovest dat leest als binnenkleding maar werkt als tussenlaag. Het enige stuk uit deze set dat je na de safari aan tafel zou dragen.',
+      'Een recht merinovest dat leest als binnenkleding maar werkt als tussenlaag. Het enige stuk uit deze set dat u na de safari aan tafel zou dragen.',
     specs: ['100 % merinowol', 'XS–2XL', 'Latte', 'North Outdoor, Oulu, Finland'],
   },
   'north-outdoor-arctic-260-zip-neck': {
     name: 'North Outdoor Arctic 260 merinotrui met rits',
     description:
-      'Een trui met hoge kraag en rits in 100 procent merino, dik genoeg om binnen alleen te dragen en om buiten als tussenlaag te werken. De rits is het punt: je opent hem tijdens het lopen en sluit hem als je stilstaat.',
+      'Een trui met hoge kraag en rits in 100 procent merino, dik genoeg om binnen alleen te dragen en om buiten als tussenlaag te werken. De rits is het punt: u opent hem tijdens het lopen en sluit hem als u stilstaat.',
     specs: [
       '100 % merinowol',
       'S–3XL',
@@ -861,7 +861,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'halti-hossa-baselayer-women': {
     name: 'Halti Hossa II merino onderkledingset, dames',
     description:
-      'Dezelfde merinoset van 190 g op damesmaat gesneden. Wol houdt zijn warmte vast wanneer je onderweg zweet en daarna stilstaat om te kijken, en zo ziet een dag in Lapland er in werkelijkheid uit.',
+      'Dezelfde merinoset van 190 g op damesmaat gesneden. Wol houdt zijn warmte vast wanneer u onderweg zweet en daarna stilstaat om te kijken, en zo ziet een dag in Lapland er in werkelijkheid uit.',
     specs: [
       '100 % merinowol, 190 g/m², 20,5 micron, 1x1 rib',
       'Shirt met lange mouwen en lange onderbroek',
@@ -892,7 +892,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'halti-sykli-ski-gloves': {
     name: 'Halti Sykli skihandschoenen',
     description:
-      'Waterdichte handschoen met 120 g isolatie, een leren handpalm en een snowlock-boord die voorkomt dat sneeuw zich bij de pols ophoopt als je valt. Gemaakt voor skiën met liften in Levi of Ylläs en niet om mee door de stad te lopen.',
+      'Waterdichte handschoen met 120 g isolatie, een leren handpalm en een snowlock-boord die voorkomt dat sneeuw zich bij de pols ophoopt als u valt. Gemaakt voor skiën met liften in Levi of Ylläs en niet om mee door de stad te lopen.',
     specs: [
       'DrymaxX, rekt in 4 richtingen, waterdicht en winddicht. Leren handpalm',
       '120 g Microtherm Dynamic',
@@ -903,7 +903,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'halti-merino-socks-2pack': {
     name: 'Halti merinowollen sokken, 2-pack',
     description:
-      'Twee paar, omdat het paar dat je vandaag droeg morgenochtend niet droog is. Merinomengsel in plaats van zuivere wol, wat herhaald machinewassen beter doorstaat.',
+      'Twee paar, omdat het paar dat u vandaag droeg morgenochtend niet droog is. Merinomengsel in plaats van zuivere wol, wat herhaald machinewassen beter doorstaat.',
     specs: [
       '40 % merinowol, 40 % acryl, 19 % polyamide, 1 % elastaan',
       '2 paar',
@@ -916,7 +916,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     description:
       'Een cadeaukaart voor een rondleiding op een echte huskyfarm bij Rovaniemi, gevolgd door een sledetocht achter de honden door het winterbos. Nu gekocht, per e-mail bezorgd, en de ontvanger kiest zelf de datum.',
     specs: [
-      'Rondleiding op een huskyfarm en een huskysafari voor twee. De gids kan je ophalen binnen 10 km van Rovaniemi',
+      'Rondleiding op een huskyfarm en een huskysafari voor twee. De gids kan u ophalen binnen 10 km van Rovaniemi',
       'Ongeveer 3,5 u',
       '2 personen',
       'Rovaniemi. De exacte locatie wordt bij het boeken bevestigd',
@@ -944,7 +944,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'aurora-tour-kilpisjarvi': {
     name: 'Noorderlichttocht per sneeuwscooter voor twee, Kilpisjärvi',
     description:
-      'Kilpisjärvi staat bekend om zijn uitzonderlijk heldere nachthemel. Een korte rit per sneeuwscooter brengt jullie naar een plek waar je het noorderlicht in volledige natuurrust bekijkt, met warme dranken tegen de kou. Avonden van 20.00 tot 23.00, onder weersvoorbehoud.',
+      'Kilpisjärvi staat bekend om zijn uitzonderlijk heldere nachthemel. Een korte rit per sneeuwscooter brengt u naar een plek waar u het noorderlicht in volledige natuurrust bekijkt, met warme dranken tegen de kou. Avonden van 20.00 tot 23.00, onder weersvoorbehoud.',
     specs: [
       'Begeleide noorderlichttocht voor twee, ongeveer 15 km per sneeuwscooter, warme dranken inbegrepen',
       '3 uur, van 20.00 tot 23.00',
@@ -958,7 +958,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'glass-igloo-night-levi': {
     name: 'Nacht in een glazen iglo voor twee, Levi',
     description:
-      'Een nacht voor twee in een warme glazen iglo hoog op de fjell van Levi. Het elektrisch verwarmde glas blijft helder terwijl je vanuit een gemotoriseerd tweepersoonsbed naar het noorderlicht speurt. Welkomstdrankje, badjassen en ontbijt inbegrepen, met eigen kitchenette, douche en wc.',
+      'Een nacht voor twee in een warme glazen iglo hoog op de fjell van Levi. Het elektrisch verwarmde glas blijft helder terwijl u vanuit een gemotoriseerd tweepersoonsbed naar het noorderlicht speurt. Welkomstdrankje, badjassen en ontbijt inbegrepen, met eigen kitchenette, douche en wc.',
     specs: [
       'Eén nacht voor twee in een glazen iglo van Superior-klasse, welkomstdrankje, badjassen en sloffen, ontbijt. Vervoer niet inbegrepen',
       '1 nacht, uitchecken om 11.00',
@@ -1077,7 +1077,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'nb-moomintroll-hoodie': {
     name: 'Moomintroll hoodie',
     description:
-      'Een hoodie van 300 gram katoen en polyester, gedrukt in Finland, unisex rechte pasvorm. Precies de laag waarin je een hutavond echt doorbrengt, zodra de sauna is afgekoeld.',
+      'Een hoodie van 300 gram katoen en polyester, gedrukt in Finland, unisex rechte pasvorm. Precies de laag waarin u een hutavond echt doorbrengt, zodra de sauna is afgekoeld.',
     specs: [
       '65 % katoen, 35 % polyester, 300 g/m2',
       'Unisex, rechte pasvorm, XS tot XXL',
@@ -1129,7 +1129,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-aromageddon-sauna-scent': {
     name: 'Aromageddon saunageur Hankihorppy 15 ml',
     description:
-      'Munt en cacao als saunageur, wat verkeerd klinkt tot je een Finse winter hebt uitgezeten. Twee tot vier druppels in een schep water, niet op de stenen.',
+      'Munt en cacao als saunageur, wat verkeerd klinkt tot u een Finse winter hebt uitgezeten. Twee tot vier druppels in een schep water, niet op de stenen.',
     specs: [
       '15 ml',
       '2 tot 4 druppels in een schep water',
@@ -1172,7 +1172,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'nb-kunnas-santa-mug': {
     name: 'Kerstman take-awaybeker',
     description:
-      'Kunnas tekende de kerstman van Korvatunturi zoals Finse kinderen hem voor zich zien, en hier staat hij op een beker van 450 ml van PLA in plaats van fossiel plastic. De siliconen band is waar je hem vasthoudt als de koffie te heet is voor een blote hand.',
+      'Kunnas tekende de kerstman van Korvatunturi zoals Finse kinderen hem voor zich zien, en hier staat hij op een beker van 450 ml van PLA in plaats van fossiel plastic. De siliconen band is waar u hem vasthoudt als de koffie te heet is voor een blote hand.',
     specs: [
       '450 ml',
       'Beker en deksel van PLA, band van siliconen voor levensmiddelen',
@@ -1215,7 +1215,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'nb-little-my-poster': {
     name: 'Kleine My poster',
     description:
-      'Ontworpen en gedrukt in Helsinki op zijdepapier van 200 gram, in 30 × 40 of 50 × 70. Een poster rolt in een koker en weegt niets, wat je van de meeste dingen die mensen uit Lapland mee naar huis slepen niet kunt zeggen.',
+      'Ontworpen en gedrukt in Helsinki op zijdepapier van 200 gram, in 30 × 40 of 50 × 70. Een poster rolt in een koker en weegt niets, wat u van de meeste dingen die mensen uit Lapland mee naar huis slepen niet kunt zeggen.',
     specs: [
       'Zijdepapier, 200 g',
       '30 × 40 cm of 50 × 70 cm',
@@ -1247,7 +1247,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-finland-tube-scarf': {
     name: 'Finland-colsjaal',
     description:
-      'Een naadloze koker met het patroon van de Finse vlag, die je over je gezicht trekt als de wind van de fjeld komt. Onder de zeven euro, en daarom kopen mensen er drie.',
+      'Een naadloze koker met het patroon van de Finse vlag, die u over uw gezicht trekt als de wind van de fjeld komt. Onder de zeven euro, en daarom kopen mensen er drie.',
     specs: [
       'Finse vlag',
       'Handwas',
@@ -1257,7 +1257,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-little-my-sauna-cushion': {
     name: 'Emendo saunakussen Kleine My',
     description:
-      'Een saunazitkussen naar de originele tekeningen van Tove Jansson, in licentie gemaakt door Emendo. Wat er tussen jou en een bank van negentig graden zit.',
+      'Een saunazitkussen naar de originele tekeningen van Tove Jansson, in licentie gemaakt door Emendo. Wat er tussen u en een bank van negentig graden zit.',
     specs: [
       'Naar de originele tekeningen van Tove Jansson',
       'Officieel Moomin Characters-licentieproduct',
@@ -1267,7 +1267,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-rento-sauna-hat': {
     name: 'Rento saunamuts van linnenbadstof',
     description:
-      'Linnenbadstof houdt de hitte weg van hoofdhuid en haar op de bovenste bank. Het werkt ook andersom: in een hottub in februari houdt hij je hoofd warm. Machinewas op 60.',
+      'Linnenbadstof houdt de hitte weg van hoofdhuid en haar op de bovenste bank. Het werkt ook andersom: in een hottub in februari houdt hij uw hoofd warm. Machinewas op 60.',
     specs: [
       'Linnenbadstof',
       'Machinewas 60 °C',
@@ -1287,7 +1287,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-suomi-hockey-jersey': {
     name: 'Finland supportersshirt',
     description:
-      'Het blauw-witte supportersshirt met SUOMI op de borst en het leeuwenwapen, in de snit die je echt naar een wedstrijd aantrekt. Ademend, maten M tot XXL, en tegen februari lijkt elk Fins huishouden er een te hebben.',
+      'Het blauw-witte supportersshirt met SUOMI op de borst en het leeuwenwapen, in de snit die u echt naar een wedstrijd aantrekt. Ademend, maten M tot XXL, en tegen februari lijkt elk Fins huishouden er een te hebben.',
     specs: [
       'M–XXL',
       'SUOMI en het leeuwenwapen',

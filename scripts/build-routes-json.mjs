@@ -392,10 +392,10 @@ const PRODUCT_TAILS = {
   ],
   nl: [
     ['price', 'De prijs is overgenomen van de partnerwinkel en de aankoop gebeurt daar.'],
-    ['price', 'De prijs komt van de partnerwinkel, waar je het ook koopt.'],
-    ['price', 'De prijs komt van de partnerwinkel, waar je bestelt.'],
+    ['price', 'De prijs komt van de partnerwinkel, waar u het ook koopt.'],
+    ['price', 'De prijs komt van de partnerwinkel, waar u bestelt.'],
     ['price', 'De prijs is overgenomen van de partnerwinkel.'],
-    ['price', 'Je koopt het bij de partnerwinkel.'],
+    ['price', 'U koopt het bij de partnerwinkel.'],
     ['price', 'Verkocht door de partnerwinkel.'],
     ['price', 'Gekocht bij de partnerwinkel.'],
     ['delivery', 'Het bezorggebied staat op deze pagina.'],
