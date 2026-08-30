@@ -123,7 +123,7 @@ const it: ChromeCopy = {
     kicker: 'Entrambe le guide in omaggio',
     h2: 'Inserisca la Sua e-mail per scaricare',
     body: 'Ottieni subito l\'accesso a entrambe le guide artiche. Nelle lettere racconto scoperte di boutique e gli artigiani dietro di esse.',
-    placeholder: 'tua@email.com',
+    placeholder: 'sua@email.com',
     submit: 'Ricevi entrambe le guide',
     submitting: 'Invio in corso…',
     successHeading: 'Le Sue guide sono pronte!',
