@@ -162,7 +162,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
       arctic:
         'Bessen, berk, rendier en de planten boven de poolcirkel, het deel van Lapland dat mee naar huis kan.',
       sauna:
-        'Twijgbundels, mutsen, geuren en kussens. Wat je op de bank nodig hebt, van de winkels die het in Finland voeren.',
+        'Twijgbundels, mutsen, geuren en kussens. Wat u op de bank nodig hebt, van de winkels die het in Finland voeren.',
     },
     seeAll: {
       moomin: 'Bekijk alle Moomin-producten',

@@ -183,7 +183,7 @@ const COPY: Record<Lang, { eyebrow: string; headline: string; sub: string; cta: 
   nl: {
     eyebrow: 'Suomikauppa-aanbiedingen',
     headline: 'Bekende Finse merken, afgeprijsd',
-    sub: 'Suomikauppa heeft een vaste aanbiedingenafdeling met honderden producten, en daar belandt het Fazer-schap meestal. De moeite waard om te checken voordat je elders de volle prijs betaalt voor dezelfde reep.',
+    sub: 'Suomikauppa heeft een vaste aanbiedingenafdeling met honderden producten, en daar belandt het Fazer-schap meestal. De moeite waard om te checken voordat u elders de volle prijs betaalt voor dezelfde reep.',
     cta: 'Bekijk de aanbiedingen',
   },
   sv: {

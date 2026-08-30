@@ -122,7 +122,7 @@ const nl: ChromeCopy = {
   newsletter: {
     kicker: 'Beide gidsen gratis',
     h2: 'Vul uw e-mail in om te downloaden',
-    body: 'Je krijgt direct toegang tot beide arctische gidsen. In de brieven deel ik boetiekvondsten en de makers erachter.',
+    body: 'U krijgt direct toegang tot beide arctische gidsen. In de brieven deel ik boetiekvondsten en de makers erachter.',
     placeholder: 'uw@email.com',
     submit: 'Ontvang beide gidsen',
     submitting: 'Versturen…',
