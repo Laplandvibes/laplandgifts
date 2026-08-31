@@ -1032,7 +1032,7 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
     productsH2: (n) => `本店的${n}商品`,
     indexH1: '我们的品牌',
     indexIntro:
-      '这家店里的东西由谁制作、在哪里制作。每篇介绍都依据品牌自己公布的信息写成,并链接到其官方网站。',
+      '这家店里的东西由谁制作、在哪里制作。每篇介绍都依据品牌自己公布的信息写成，并链接到其官方网站。',
     indexCount: (n) => `${n} 件商品`,
     profile: {
       'aarikka':
@@ -1072,7 +1072,7 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'moomin':
         'Moomin Characters Oy Ltd 是位于赫尔辛基的家族公司，拥有并管理 Tove Jansson 笔下姆明角色的权利；这些角色首次出现在 1945 年的《姆明和大洪水》一书中。公司数十年前就不再自行生产商品：以姆明产品名义出售的每一件物品都来自被许可方，这一网络在全球有 800 多家。在礼品方面最易辨认的产品线是 Arabia 的姆明陶瓷马克杯，该系列始于 1990 年，如今已有一百多种设计。',
       'wild-about-lapland':
-        'Wild About Lapland 是一家位于罗瓦涅米的活动运营商，办公地点在 Rovakatu 24。每次行程的参与人数上限为八人，项目全年运行：冬季有北极光之旅、雪地摩托狩猎之旅以及驯鹿和哈士奇拜访，夏季有独木舟和徒步。创始人兼首席向导 Theo Turner 曾是英国皇家海军陆战队突击队员和户外教练，公司持有 Sustainable Travel Finland 标章。',
+        'Wild About Lapland 是一家位于罗瓦涅米的活动运营商，办公地点在 Rovakatu 24。每次行程的参与人数上限为八人，项目全年运行：冬季有北极光之旅、雪地摩托探险之旅以及驯鹿和哈士奇拜访，夏季有独木舟和徒步。创始人兼首席向导 Theo Turner 曾是英国皇家海军陆战队突击队员和户外教练，公司持有 Sustainable Travel Finland 标章。',
       'meritalo':
         'Meritalo 是一家芬兰家族浆果加工企业，由 Susanna 和 Olavi Lindstedt 于 1995 年创立，两人从赫尔辛基迁到芬兰西南部 Salo 地区的 Ylönkylä。公司表示，其所有产品都在当地自有厂房制作，使用 100% 芬兰浆果和水果，原料购自芬兰种植者并采自芬兰森林。产品线以果酱和果冻、果汁和桦树汁为主，包括一款 310 克沙棘果酱，以及草莓、越橘和苹果产品。',
       'nordqvist':
@@ -1092,7 +1092,7 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'halva':
         'Halva 是一家芬兰家族糖果公司，1931 年由从希腊迁居芬兰的兄弟 Jean 和 Michael Karavokyros 创立。它最为人熟知的是甘草糖和咸甘草糖，公司表示其糖果工厂和包装厂位于赫尔辛基的 Pitajanmaki。企业现由第三代经营，为公司命名的芝麻酱哈尔瓦仍在产品线中。',
       'kilpissafarit':
-        'Kilpissafarit 是 Kilpisjärvi 的一家项目服务公司，1995 年由边防军人 Hannu Rauhala 创立，现由其子 Jussi Rauhala 经营。公司在 Kasivarsi 荒野带领雪地摩托狩猎之旅、雪鞋和徒步行程、北极光出行和钓鱼行程，包括通往芬兰最高点 Halti 的雪地摩托路线。同一基地也出租雪地摩托、电动胖胎自行车、雪鞋、独木舟和皮划艇，供自行出行的人使用。',
+        'Kilpissafarit 是 Kilpisjärvi 的一家项目服务公司，1995 年由边防军人 Hannu Rauhala 创立，现由其子 Jussi Rauhala 经营。公司在 Kasivarsi 荒野带领雪地摩托探险之旅、雪鞋和徒步行程、北极光出行和钓鱼行程，包括通往芬兰最高点 Halti 的雪地摩托路线。同一基地也出租雪地摩托、电动胖胎自行车、雪鞋、独木舟和皮划艇，供自行出行的人使用。',
       'kaavi-porcini':
         'Kaavi Porcini 是 Kaavin Herkkutattitehdas Oy 的品牌，这家芬兰公司在自有的 Tohmajärvi 工厂烘干野生林地蘑菇。蘑菇采自北萨沃和北卡累利阿的森林，并在采摘当天烘干。产品线包括牛肝菌、鸡油菌、灰喇叭菌和黑喇叭菌，还有采自 Kittilä 的桦褐孔菌，以及用作调味的牛肝菌粉。',
       'tammer':

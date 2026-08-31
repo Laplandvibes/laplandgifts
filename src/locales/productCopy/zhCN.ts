@@ -564,7 +564,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'arctic-power-berries-blueberry-powder': {
     name: '野生蓝莓粉 70 g',
     description:
-      '冻干的野生越橘，不添加任何东西。生产者表示，一罐 70 克大约要用 700 克鲜果。这家店以英镑计价。',
+      '冻干的野生蓝莓（欧洲越橘），不添加任何东西。生产者表示，一罐 70 克大约要用 700 克鲜果。这家店以英镑计价。',
     specs: [
       '70 g',
       '100 % 蓝莓粉，原料为北欧野生蓝莓（越橘）。不添加任何东西',
@@ -894,7 +894,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'halti-sykli-ski-gloves': {
     name: 'Halti Sykli 滑雪手套',
     description:
-      '带 120 g 填充、皮革掌心和防雪袖口的防水手套，摔倒时雪不会从手腕灌进去。为莱维或于莱斯的缆车滑雪而做，不是为了在城里散步。',
+      '带 120 g 填充、皮革掌心和防雪袖口的防水手套，摔倒时雪不会从手腕灌进去。为莱维或于拉斯的缆车滑雪而做，不是为了在城里散步。',
     specs: [
       'DrymaxX，4 向弹力，防水防风。皮革掌心',
       '120 g Microtherm Dynamic',
@@ -944,14 +944,14 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specLabels: [undefined, '时长', '人数', '地点', '季节', '向导语言', '礼品卡'],
   },
   'aurora-tour-kilpisjarvi': {
-    name: '双人雪地摩托极光之旅，基尔皮斯亚尔维',
+    name: '双人雪地摩托极光之旅，基尔皮斯耶尔维',
     description:
-      '基尔皮斯亚尔维以格外清澈的夜空著称。乘雪地摩托短途行驶，两人即可到达一处能在纯粹自然宁静中观赏极光的地点，并有热饮御寒。晚间 20.00 至 23.00 出发，视天气情况而定。',
+      '基尔皮斯耶尔维以格外清澈的夜空著称。乘雪地摩托短途行驶，两人即可到达一处能在纯粹自然宁静中观赏极光的地点，并有热饮御寒。晚间 20.00 至 23.00 出发，视天气情况而定。',
     specs: [
       '双人向导极光之旅，乘雪地摩托约 15 km，含热饮',
       '3 小时，20.00 至 23.00',
       '2 人',
-      '基尔皮斯亚尔维',
+      '基尔皮斯耶尔维',
       '驾驶须满 18 岁，乘坐雪橇须满 8 岁',
       '有效期 3 年',
     ],
@@ -1025,10 +1025,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-little-my-beanie': {
     name: '小不点粗针织帽',
     description:
-      '厚实的针织帽,翻边处是小不点,羊毛混纺,连着一周戴上摘下也不走形。成人均码,也是唯一会认可拉普兰天气的姆明角色。',
+      '厚实的针织帽，翻边处是小不点，羊毛混纺，连着一周戴上摘下也不走形。成人均码，也是唯一会认可拉普兰天气的姆明角色。',
     specs: [
       '腈纶、尼龙与羊毛',
-      '成人,均码',
+      '成人，均码',
       '姆明官方授权产品',
     ],
     specLabels: [undefined, undefined, '授权'],
@@ -1036,10 +1036,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-moomintroll-mittens': {
     name: '姆明连指手套',
     description:
-      '针织连指手套,内衬柔软抓绒,高 24 厘米,袖口可以盖过外套衣袖。成人尺码,价格也够亲民,在狗拉雪橇上丢一只还能接受。',
+      '针织连指手套，内衬柔软抓绒，高 24 厘米，袖口可以盖过外套衣袖。成人尺码，价格也够亲民，在狗拉雪橇上丢一只还能接受。',
     specs: [
-      '100 % 腈纶,抓绒内衬',
-      '成人,高 24 厘米,拇指上方宽 9.5 厘米',
+      '100 % 腈纶，抓绒内衬',
+      '成人，高 24 厘米，拇指上方宽 9.5 厘米',
       '姆明官方授权产品',
     ],
     specLabels: [undefined, undefined, '授权'],
@@ -1047,10 +1047,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-moomintroll-love-socks': {
     name: '姆明 Love 复古袜',
     description:
-      '浅蓝色罗纹袜,小腿处以粉色爱心刺绣出姆明,是刺绣而非印花,因此经得起水洗。均码覆盖 EU 36 至 42。',
+      '浅蓝色罗纹袜，小腿处以粉色爱心刺绣出姆明，是刺绣而非印花，因此经得起水洗。均码覆盖 EU 36 至 42。',
     specs: [
       '67 % 棉、25 % 涤纶、4 % 弹性二烯、3 % 尼龙、1 % 氨纶',
-      '均码,EU 36-42',
+      '均码，EU 36-42',
       '刺绣图案',
     ],
     specLabels: [undefined, undefined, '细节'],
@@ -1058,38 +1058,38 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-moomin-classics-tee': {
     name: 'Moomin Classics 厚重T恤',
     description:
-      '260 克棉质T恤,薰衣草色,箱型剪裁,胸前是小小的姆明刺绣而非大幅印花。厚度足以垂直落下,而不会贴身。',
+      '260 克棉质T恤，薰衣草色，箱型剪裁，胸前是小小的姆明刺绣而非大幅印花。厚度足以垂直落下，而不会贴身。',
     specs: [
-      '100 % 棉,260 g/m2',
-      '中性,箱型剪裁,XS 至 XXL',
-      '箱型剪裁,商店建议选小一码',
+      '100 % 棉，260 g/m2',
+      '中性，箱型剪裁，XS 至 XXL',
+      '箱型剪裁，商店建议选小一码',
     ],
     specLabels: [undefined, undefined, '尺码提示'],
   },
   'nb-pippi-tee': {
     name: '长袜子皮皮T恤',
     description:
-      '皮皮在芬兰印制于 240 克棉质T恤上,中性直筒剪裁,下摆比一般更长。在有些家庭里,阿斯特丽德·林格伦比姆明走得更远。',
+      '皮皮在芬兰印制于 240 克棉质T恤上，中性直筒剪裁，下摆比一般更长。在有些家庭里，阿斯特丽德·林格伦比姆明走得更远。',
     specs: [
-      '100 % 棉,240 g/m2',
-      '中性,直筒剪裁,M 至 XXL',
+      '100 % 棉，240 g/m2',
+      '中性，直筒剪裁，M 至 XXL',
       '芬兰印制',
     ],
   },
   'nb-moomintroll-hoodie': {
     name: '姆明连帽衫',
     description:
-      '300 克棉与涤纶连帽衫,芬兰印制,中性直筒剪裁。桑拿凉下来之后的小屋夜晚,人们真正穿在身上的就是这一件。',
+      '300 克棉与涤纶连帽衫，芬兰印制，中性直筒剪裁。桑拿凉下来之后的小屋夜晚，人们真正穿在身上的就是这一件。',
     specs: [
-      '65 % 棉、35 % 涤纶,300 g/m2',
-      '中性,直筒剪裁,XS 至 XXL',
+      '65 % 棉、35 % 涤纶，300 g/m2',
+      '中性，直筒剪裁，XS 至 XXL',
       '芬兰印制',
     ],
   },
   'nb-kunnas-kalevala-tote': {
     name: 'Mauri Kunnas 犬之卡勒瓦拉手提袋',
     description:
-      '棉质手提袋,印有 Mauri Kunnas 为《犬之卡勒瓦拉》所作的插画,那是他用狗重述的芬兰民族史诗。本店最便宜的东西,却依然能讲清一个国家。',
+      '棉质手提袋，印有 Mauri Kunnas 为《犬之卡勒瓦拉》所作的插画，那是他用狗重述的芬兰民族史诗。本店最便宜的东西，却依然能讲清一个国家。',
     specs: [
       '100 % 棉',
       '38 x 42 cm',
@@ -1100,30 +1100,30 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-marimekko-unikko-crossbody': {
     name: 'Marimekko Neat Crossbody Unikko 斜挎包',
     description:
-      'Unikko 罂粟花印在一只刚好装得下手机、钱包和一副手套的斜挎包上。Unikko 画于 1964 年,就在 Armi Ratia 下令禁止花卉印花之后,它比那道禁令多活了六十年。',
+      'Unikko 罂粟花印在一只刚好装得下手机、钱包和一副手套的斜挎包上。Unikko 画于 1964 年，就在 Armi Ratia 下令禁止花卉印花之后，它比那道禁令多活了六十年。',
     specs: [
-      'Neat Crossbody,尺寸 M',
-      'Unikko,蓝色与深蓝色',
+      'Neat Crossbody，尺寸 M',
+      'Unikko，蓝色与深蓝色',
     ],
     specLabels: ['款式', '花色'],
   },
   'sk-moomin-duvet-set': {
-    name: '姆明被套四件套 150 x 210 cm,Sydänkäpyset',
+    name: '姆明被套四件套 150 x 210 cm，Sydänkäpyset',
     description:
-      '通过 GOTS 认证的纯棉床品套装,印有姆明与斯诺克小姐。芬兰语花色名 Sydänkäpyset 说的正是图案所描绘的那种关系。',
+      '通过 GOTS 认证的纯棉床品套装，印有姆明与斯诺克小姐。芬兰语花色名 Sydänkäpyset 说的正是图案所描绘的那种关系。',
     specs: [
       '被套 150 x 210 cm',
-      'GOTS(全球有机纺织品标准)',
+      'GOTS（全球有机纺织品标准）',
     ],
     specLabels: [undefined, '认证'],
   },
   'sk-novita-wonder-wool': {
     name: 'Novita Wonder Wool DK 毛线 50 g',
     description:
-      '来自 Novita 的 DK 粗细纯羊毛线,这家纺纱厂自 1928 年起为芬兰编织者供线。50 克一团共 112 米,建议棒针 4 mm。',
+      '来自 Novita 的 DK 粗细纯羊毛线，这家纺纱厂自 1928 年起为芬兰编织者供线。50 克一团共 112 米，建议棒针 4 mm。',
     specs: [
       '100 % 羊毛',
-      '50 g 一团,112 m',
+      '50 g 一团，112 m',
       '4 mm',
     ],
     specLabels: [undefined, undefined, '建议棒针'],
@@ -1131,7 +1131,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-aromageddon-sauna-scent': {
     name: 'Aromageddon 桑拿香氛 Hankihorppy 15 ml',
     description:
-      '薄荷与可可做成的桑拿香氛,听起来不太对劲,直到你熬过一整个芬兰冬天。取 2 到 4 滴滴入一勺水中,不要直接浇在石头上。',
+      '薄荷与可可做成的桑拿香氛，听起来不太对劲，直到你熬过一整个芬兰冬天。取 2 到 4 滴滴入一勺水中，不要直接浇在石头上。',
     specs: [
       '15 ml',
       '2 到 4 滴滴入一勺水中',
@@ -1141,10 +1141,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-muurla-moomin-bottle': {
     name: 'Muurla 姆明玻璃瓶 1 l「苹果」',
     description:
-      '钠钙玻璃瓶,配密封扣盖,把水或果汁端上桌,而不是摆着纸盒。可用洗碗机,一升容量,苹果图案是夏天那一款。',
+      '钠钙玻璃瓶，配密封扣盖，把水或果汁端上桌，而不是摆着纸盒。可用洗碗机，一升容量，苹果图案是夏天那一款。',
     specs: [
       '1 l',
-      '钠钙玻璃,密封扣盖',
+      '钠钙玻璃，密封扣盖',
       '可用洗碗机',
     ],
     specLabels: [undefined, undefined, '保养'],
@@ -1152,7 +1152,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-kunnas-kalevala-beanie': {
     name: '《狗狗的卡勒瓦拉》针织帽',
     description:
-      '1992 年,毛里·库纳斯把《卡勒瓦拉》改写成一部狗的史诗,这顶帽子用的就是那批插画。再生聚酯纤维,成人均码,轻到公交车一暖和就能塞进大衣口袋。',
+      '1992 年，毛里·库纳斯把《卡勒瓦拉》改写成一部狗的史诗，这顶帽子用的就是那批插画。再生聚酯纤维，成人均码，轻到公交车一暖和就能塞进大衣口袋。',
     specs: [
       '100 % 再生聚酯纤维',
       '成人均码',
@@ -1163,10 +1163,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: '小不点连指手套',
     description:
-      '与姆明手套配对的酒红款,同样的抓绒内里,同样的价格。筒口短两厘米,而这个角色适合觉得姆明太好说话的人。',
+      '与姆明手套配对的酒红款，同样的抓绒内里，同样的价格。筒口短两厘米，而这个角色适合觉得姆明太好说话的人。',
     specs: [
-      '100 % 腈纶,抓绒内里',
-      '成人款,高 22 cm,拇指上方宽 9.5 cm',
+      '100 % 腈纶，抓绒内里',
+      '成人款，高 22 cm，拇指上方宽 9.5 cm',
       '姆明官方产品',
     ],
     specLabels: [undefined, undefined, '授权'],
@@ -1174,10 +1174,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-kunnas-santa-mug': {
     name: '圣诞老人随行杯',
     description:
-      '库纳斯笔下的耳朵山圣诞老人,正是芬兰孩子心里的那一个,如今印在这只 450 毫升的杯子上。杯身是 PLA,不含化石基塑料。咖啡烫到空手拿不住时,握的就是那圈食品级硅胶。',
+      '库纳斯笔下的耳朵山圣诞老人，正是芬兰孩子心里的那一个，如今印在这只 450 毫升的杯子上。杯身是 PLA，不含化石基塑料。咖啡烫到空手拿不住时，握的就是那圈食品级硅胶。',
     specs: [
       '450 ml',
-      '杯身与杯盖为 PLA,杯套为食品级硅胶',
+      '杯身与杯盖为 PLA，杯套为食品级硅胶',
       '毛里·库纳斯',
     ],
     specLabels: [undefined, undefined, '插画'],
@@ -1185,10 +1185,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-little-my-thermal-bottle': {
     name: '小不点保温瓶 0.55 l',
     description:
-      '双层钢壁,550 毫升,厂商标注保温六小时。那大约是一趟雪地摩托越野的时长,也正是买这只瓶子要过的那道实测。',
+      '双层钢壁，550 毫升，厂商标注保温六小时。那大约是一趟雪地摩托越野的时长，也正是买这只瓶子要过的那道实测。',
     specs: [
       '550 ml',
-      '不锈钢,PP 盖,硅胶密封圈',
+      '不锈钢，PP 盖，硅胶密封圈',
       '厂商标注六小时',
     ],
     specLabels: [undefined, undefined, '保温'],
@@ -1196,9 +1196,9 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-little-my-neckpillow': {
     name: '小不点颈枕',
     description:
-      '柔软外套下是记忆棉,给赫尔辛基到罗瓦涅米的夜车,或者回程的飞机。小到能扣在包上,而旅行枕只有这一种是真会一直带着的。',
+      '柔软外套下是记忆棉，给赫尔辛基到罗瓦涅米的夜车，或者回程的飞机。小到能扣在包上，而旅行枕只有这一种是真会一直带着的。',
     specs: [
-      '记忆棉,柔软外套',
+      '记忆棉，柔软外套',
       '姆明官方产品',
     ],
     specLabels: [undefined, '授权'],
@@ -1206,10 +1206,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-moomintroll-love-cushion': {
     name: '姆明 Love 抱枕',
     description:
-      '按姆明的轮廓裁出来的抱枕,不是印了图案的方枕,有 45 到 75 厘米高的多个尺寸。这种东西一旦落到木屋沙发上,就不会再挪走了。',
+      '按姆明的轮廓裁出来的抱枕，不是印了图案的方枕，有 45 到 75 厘米高的多个尺寸。这种东西一旦落到木屋沙发上，就不会再挪走了。',
     specs: [
       '聚酯纤维',
-      '多个尺寸,高 45–75 cm',
+      '多个尺寸，高 45–75 cm',
       '姆明官方产品',
     ],
     specLabels: [undefined, undefined, '授权'],
@@ -1217,9 +1217,9 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-little-my-poster': {
     name: '小不点海报',
     description:
-      '在赫尔辛基设计并印制,200 克丝面纸,有 30 × 40 和 50 × 70 两种尺寸。海报卷进纸筒几乎不占重量,而人们从拉普兰扛回家的东西,多数都做不到这一点。',
+      '在赫尔辛基设计并印制，200 克丝面纸，有 30 × 40 和 50 × 70 两种尺寸。海报卷进纸筒几乎不占重量，而人们从拉普兰扛回家的东西，多数都做不到这一点。',
     specs: [
-      '丝面纸,200 g',
+      '丝面纸，200 g',
       '30 × 40 cm 或 50 × 70 cm',
       '在赫尔辛基设计并印制',
     ],
@@ -1228,18 +1228,18 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-moomin-novels-poster': {
     name: '姆明小说海报',
     description:
-      '托芙·扬松姆明小说的封面集于一张,同样在赫尔辛基印制,尺寸也与角色海报相同。适合家里读书的那一位,而不是收集马克杯的那一位。',
+      '托芙·扬松姆明小说的封面集于一张，同样在赫尔辛基印制，尺寸也与角色海报相同。适合家里读书的那一位，而不是收集马克杯的那一位。',
     specs: [
-      '丝面纸,200 g',
+      '丝面纸，200 g',
       '30 × 40 cm 或 50 × 70 cm',
       '在赫尔辛基设计并印制',
     ],
     specLabels: [undefined, undefined, '生产'],
   },
   'sk-finland-beanie': {
-    name: '芬兰球迷绒球帽(蓝白)',
+    name: '芬兰球迷绒球帽（蓝白）',
     description:
-      '帽檐上织着 FINLAND 的蓝白绒球帽,先戴去看台,之后整个冬天都戴着。机洗 30 度。',
+      '帽檐上织着 FINLAND 的蓝白绒球帽，先戴去看台，之后整个冬天都戴着。机洗 30 度。',
     specs: [
       'FINLAND',
       '机洗 30 °C',
@@ -1249,7 +1249,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-finland-tube-scarf': {
     name: '芬兰无缝脖套',
     description:
-      '芬兰国旗图案的无缝筒状脖套,风从山丘上下来时就拉上来盖住脸。不到七欧元,所以大家一买就是三条。',
+      '芬兰国旗图案的无缝筒状脖套，风从山丘上下来时就拉上来盖住脸。不到七欧元，所以大家一买就是三条。',
     specs: [
       '芬兰国旗',
       '手洗',
@@ -1259,7 +1259,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-little-my-sauna-cushion': {
     name: 'Emendo 小不点桑拿坐垫',
     description:
-      '图案取自托芙·扬松的原始手稿,由 Emendo 授权生产的桑拿坐垫。九十度的木凳和你之间,隔的就是这块垫子。',
+      '图案取自托芙·扬松的原始手稿，由 Emendo 授权生产的桑拿坐垫。九十度的木凳和你之间，隔的就是这块垫子。',
     specs: [
       '取自托芙·扬松原始手稿',
       'Moomin Characters 官方授权产品',
@@ -1269,7 +1269,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-rento-sauna-hat': {
     name: 'Rento 亚麻毛圈桑拿帽',
     description:
-      '亚麻毛圈能把上层长凳的高温挡在头皮和头发之外。反过来也管用:二月里泡户外热水桶时,它让头保持温热。机洗 60 度。',
+      '亚麻毛圈能把上层长凳的高温挡在头皮和头发之外。反过来也管用：二月里泡户外热水桶时，它让头保持温热。机洗 60 度。',
     specs: [
       '亚麻毛圈',
       '机洗 60 °C',
@@ -1279,7 +1279,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-rento-birch-whisk': {
     name: 'Rento 干桦树枝束',
     description:
-      '干燥的桦树枝束,进桑拿前用温水泡开,叶子和气味就会回来。用它拍打身体,是访客总要问、却很少真去试的那部分桑拿礼仪。',
+      '干燥的桦树枝束，进桑拿前用温水泡开，叶子和气味就会回来。用它拍打身体，是访客总要问、却很少真去试的那部分桑拿礼仪。',
     specs: [
       '干燥桦木',
       '进桑拿前浸泡',
@@ -1289,7 +1289,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-suomi-hockey-jersey': {
     name: '芬兰球迷球衣',
     description:
-      '蓝白配色的球迷衫,胸前印着 SUOMI 和狮子徽章,版型就是大家真会穿去看球的那种。面料透气,尺码 M 到 XXL。到了二月,芬兰几乎家家都有一件。',
+      '蓝白配色的球迷衫，胸前印着 SUOMI 和狮子徽章，版型就是大家真会穿去看球的那种。面料透气，尺码 M 到 XXL。到了二月，芬兰几乎家家都有一件。',
     specs: [
       'M–XXL',
       'SUOMI 与狮子徽章',
@@ -1299,22 +1299,22 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'sk-marimekko-unikko-bath-towel': {
     name: 'Marimekko Unikko 浴巾 70 × 150 cm',
     description:
-      '毛圈棉上的 Unikko 图案,米色配白色,70 × 150 的完整尺寸。纱线为 65 % 有机棉与 35 % 再生棉,再生的那部分来自 Marimekko 自家的裁剪边角料。',
+      '毛圈棉上的 Unikko 图案，米色配白色，70 × 150 的完整尺寸。纱线为 65 % 有机棉与 35 % 再生棉，再生的那部分来自 Marimekko 自家的裁剪边角料。',
     specs: [
       '70 × 150 cm',
-      '毛圈棉,65 % 有机与 35 % 再生',
-      'Unikko,米色与白色',
+      '毛圈棉，65 % 有机与 35 % 再生',
+      'Unikko，米色与白色',
     ],
     specLabels: [undefined, undefined, '图案'],
   },
   'sk-marimekko-unikko-hand-towel': {
     name: 'Marimekko Unikko 方巾 50 × 70 cm',
     description:
-      '同样的 Unikko 毛圈棉,方巾尺寸,价格是浴巾的一半,塞进行李箱也容易得多。米色配白色,65 % 有机棉与 35 % 再生棉。',
+      '同样的 Unikko 毛圈棉，方巾尺寸，价格是浴巾的一半，塞进行李箱也容易得多。米色配白色，65 % 有机棉与 35 % 再生棉。',
     specs: [
       '50 × 70 cm',
-      '毛圈棉,65 % 有机与 35 % 再生',
-      'Unikko,米色与白色',
+      '毛圈棉，65 % 有机与 35 % 再生',
+      'Unikko，米色与白色',
     ],
     specLabels: [undefined, undefined, '图案'],
   },
