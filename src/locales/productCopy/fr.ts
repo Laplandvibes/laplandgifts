@@ -527,10 +527,10 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: 'Café Moomin Wild Blueberry 250 g',
     description:
-      'Café aromatisé à la myrtille de Bergstrands Kafferosteri, construit sur des caracolis mûris sur les collines de Mogiana, dans le sud du Brésil. Un caracoli est une cerise de café qui n’a formé qu’un grain au lieu de deux, ce qui, selon le torréfacteur, concentre le goût. 250 grammes.',
+      'Café aromatisé à la myrtille de Bergstrands Kafferosteri, construit sur des caracolis mûris sur les collines de Mogiana, dans le sud-est du Brésil. Un caracoli est une cerise de café qui n’a formé qu’un grain au lieu de deux, ce qui, selon le torréfacteur, concentre le goût. 250 grammes.',
     specs: [
       '250 g',
-      'Grains des collines de Mogiana, dans le sud du Brésil, torréfiés par Bergstrands Kafferosteri',
+      'Grains des collines de Mogiana, dans le sud-est du Brésil, torréfiés par Bergstrands Kafferosteri',
       'Caracoli, une cerise de café à grain unique au lieu de deux',
       'Myrtille sauvage',
     ],

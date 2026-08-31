@@ -528,10 +528,10 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: 'Mumintrollet Wild Blueberry kaffe 250 g',
     description:
-      'Blåbärssmaksatt kaffe från Bergstrands Kafferosteri, byggt på pärlbönor mognade på Mogianahöjderna i södra Brasilien. En pärlböna är ett kaffekörsbär som fick en böna i stället för två, vilket rosteriet säger koncentrerar smaken. 250 gram.',
+      'Blåbärssmaksatt kaffe från Bergstrands Kafferosteri, byggt på pärlbönor mognade på Mogianahöjderna i sydöstra Brasilien. En pärlböna är ett kaffekörsbär som fick en böna i stället för två, vilket rosteriet säger koncentrerar smaken. 250 gram.',
     specs: [
       '250 g',
-      'Bönor från Mogianahöjderna i södra Brasilien, rostade av Bergstrands Kafferosteri',
+      'Bönor från Mogianahöjderna i sydöstra Brasilien, rostade av Bergstrands Kafferosteri',
       'Pärlböna, ett kaffekörsbär med en enda böna i stället för två',
       'Vilda blåbär',
     ],

@@ -527,10 +527,10 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: '무민 Wild Blueberry 커피 250 g',
     description:
-      '브라질 남부 모지아나 구릉에서 익은 피베리로 만든 Bergstrands Kafferosteri 의 블루베리 향 커피. 피베리는 원두가 두 개가 아니라 하나만 자란 커피 열매로, 로스터리는 그래서 맛이 응축된다고 말합니다. 250 그램.',
+      '브라질 남동부 모지아나 구릉에서 익은 피베리로 만든 Bergstrands Kafferosteri 의 블루베리 향 커피. 피베리는 원두가 두 개가 아니라 하나만 자란 커피 열매로, 로스터리는 그래서 맛이 응축된다고 말합니다. 250 그램.',
     specs: [
       '250 g',
-      '브라질 남부 모지아나 구릉의 원두, Bergstrands Kafferosteri 에서 로스팅',
+      '브라질 남동부 모지아나 구릉의 원두, Bergstrands Kafferosteri 에서 로스팅',
       '피베리, 원두가 두 개가 아니라 하나만 든 커피 열매',
       '야생 블루베리',
     ],

@@ -526,10 +526,10 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: 'Café Moomin Wild Blueberry 250 g',
     description:
-      'Café com sabor de mirtilo da Bergstrands Kafferosteri, construído sobre grãos moka amadurecidos nas colinas da Mogiana, no sul do Brasil. Um grão moka é uma cereja de café que formou um grão só em vez de dois, o que segundo a torrefação concentra o sabor. 250 gramas.',
+      'Café com sabor de mirtilo da Bergstrands Kafferosteri, construído sobre grãos moka amadurecidos nas colinas da Mogiana, no sudeste do Brasil. Um grão moka é uma cereja de café que formou um grão só em vez de dois, o que segundo a torrefação concentra o sabor. 250 gramas.',
     specs: [
       '250 g',
-      'Grãos das colinas da Mogiana, no sul do Brasil, torrados pela Bergstrands Kafferosteri',
+      'Grãos das colinas da Mogiana, no sudeste do Brasil, torrados pela Bergstrands Kafferosteri',
       'Grão moka, uma cereja de café com um único grão em vez de dois',
       'Mirtilo silvestre',
     ],

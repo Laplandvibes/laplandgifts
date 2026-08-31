@@ -557,10 +557,10 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: 'Mumintroll Wild Blueberry Kaffee 250 g',
     description:
-      'Kaffee mit Blaubeeraroma von der Rösterei Bergstrands Kafferosteri, aufgebaut auf Perlbohnen von den Hügeln der Mogiana im Süden Brasiliens. Eine Perlbohne ist eine Kaffeekirsche, in der statt zweier Bohnen nur eine gewachsen ist, was laut Rösterei den Geschmack verdichtet. 250 Gramm.',
+      'Kaffee mit Blaubeeraroma von der Rösterei Bergstrands Kafferosteri, aufgebaut auf Perlbohnen von den Hügeln der Mogiana im Südosten Brasiliens. Eine Perlbohne ist eine Kaffeekirsche, in der statt zweier Bohnen nur eine gewachsen ist, was laut Rösterei den Geschmack verdichtet. 250 Gramm.',
     specs: [
       '250 g',
-      'Bohnen von den Mogiana-Hügeln im Süden Brasiliens, geröstet von Bergstrands Kafferosteri',
+      'Bohnen von den Mogiana-Hügeln im Südosten Brasiliens, geröstet von Bergstrands Kafferosteri',
       'Perlbohne, eine Kaffeekirsche mit einer einzelnen statt zweier Bohnen',
       'Wilde Blaubeere',
     ],

@@ -528,10 +528,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: '姆明 Wild Blueberry 咖啡 250 g',
     description:
-      'Bergstrands Kafferosteri 的蓝莓风味咖啡，用巴西南部莫吉亚纳丘陵成熟的圆豆制成。圆豆是只长了一颗豆而不是两颗的咖啡果，烘焙厂说这样味道更集中。250 克。',
+      'Bergstrands Kafferosteri 的蓝莓风味咖啡，用巴西东南部莫吉亚纳丘陵成熟的圆豆制成。圆豆是只长了一颗豆而不是两颗的咖啡果，烘焙厂说这样味道更集中。250 克。',
     specs: [
       '250 g',
-      '豆子来自巴西南部莫吉亚纳丘陵，由 Bergstrands Kafferosteri 烘焙',
+      '豆子来自巴西东南部莫吉亚纳丘陵，由 Bergstrands Kafferosteri 烘焙',
       '圆豆，只有一颗豆而不是两颗的咖啡果',
       '野生蓝莓',
     ],

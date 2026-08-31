@@ -526,10 +526,10 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: 'Café Moomin Wild Blueberry 250 g',
     description:
-      'Café con aroma de arándano de Bergstrands Kafferosteri, montado sobre granos caracolillo madurados en las colinas de Mogiana, en el sur de Brasil. Un caracolillo es una cereza de café que formó un solo grano en lugar de dos, algo que según el tostador concentra el sabor. 250 gramos.',
+      'Café con aroma de arándano de Bergstrands Kafferosteri, montado sobre granos caracolillo madurados en las colinas de Mogiana, en el sureste de Brasil. Un caracolillo es una cereza de café que formó un solo grano en lugar de dos, algo que según el tostador concentra el sabor. 250 gramos.',
     specs: [
       '250 g',
-      'Granos de las colinas de Mogiana, en el sur de Brasil, tostados por Bergstrands Kafferosteri',
+      'Granos de las colinas de Mogiana, en el sureste de Brasil, tostados por Bergstrands Kafferosteri',
       'Caracolillo, una cereza de café con un solo grano en lugar de dos',
       'Arándano silvestre',
     ],

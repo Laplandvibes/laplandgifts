@@ -162,7 +162,7 @@ const ptBR: ChromeCopy = {
       },
       {
         q: 'O que levar para casa de Rovaniemi?',
-        a: 'Rovaniemi fica no Círculo Polar Ártico e é a porta de entrada para a Lapônia finlandesa, então é um bom lugar para comprar. Escolhas populares são uma kuksa, uma faca puukko, acessórios de couro de rena, meias e gorros de lã, itens dos Mumin e do Papai Noel, e alimentos árticos como geleia de amora-ártica, salmiakki (alcaçuz salgado) e xarope de seiva de bétula. Para algo com procedência, escolha uma peça assinada pelo autor em vez de uma lembrança genérica de «Lapônia».',
+        a: 'Rovaniemi fica no Círculo Polar Ártico e é a porta de entrada para a Lapônia finlandesa, então é um bom lugar para comprar. Escolhas populares são uma kuksa, uma faca puukko, acessórios de couro de rena, meias e gorros de lã, itens dos Moomins e do Papai Noel, e alimentos árticos como geleia de amora-ártica, salmiakki (alcaçuz salgado) e xarope de seiva de bétula. Para algo com procedência, escolha uma peça assinada pelo autor em vez de uma lembrança genérica de «Lapônia».',
       },
       {
         q: 'É permitido levar produtos de rena e de chifre?',

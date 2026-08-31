@@ -528,10 +528,10 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: 'ムーミントロール ワイルドブルーベリー コーヒー 250 g',
     description:
-      'ブラジル南部モジアナ高原で育ったピーベリーを使った、Bergstrands Kafferosteri のブルーベリー風味のコーヒー。ピーベリーは豆が 2 つではなく 1 つだけ育ったコーヒーチェリーで、焙煎所によれば味が凝縮するといいます。250 グラム。',
+      'ブラジル南東部モジアナ高原で育ったピーベリーを使った、Bergstrands Kafferosteri のブルーベリー風味のコーヒー。ピーベリーは豆が 2 つではなく 1 つだけ育ったコーヒーチェリーで、焙煎所によれば味が凝縮するといいます。250 グラム。',
     specs: [
       '250 g',
-      'ブラジル南部モジアナ高原の豆、Bergstrands Kafferosteri で焙煎',
+      'ブラジル南東部モジアナ高原の豆、Bergstrands Kafferosteri で焙煎',
       'ピーベリー、豆が 2 つではなく 1 つだけのコーヒーチェリー',
       'ワイルドブルーベリー',
     ],

@@ -1787,8 +1787,8 @@ export const PRODUCTS: Product[] = [
       fi: 'Muumipeikko Villimustikka-kahvi 250 g',
     },
     description: {
-      en: 'Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. A peaberry is a coffee cherry that grew one bean instead of two, which the roastery says concentrates the taste. 250 grams.',
-      fi: 'Mustikalla maustettua kahvia Bergstrands Kafferosterilta, pohjana Mogianan kukkuloilla Etelä-Brasiliassa kypsyneet helmipavut. Helmipapu on kahvimarja, johon on kasvanut kahden pavun sijaan yksi, ja paahtimon mukaan maku tiivistyy siitä. 250 grammaa.',
+      en: 'Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southeastern Brazil. A peaberry is a coffee cherry that grew one bean instead of two, which the roastery says concentrates the taste. 250 grams.',
+      fi: 'Mustikalla maustettua kahvia Bergstrands Kafferosterilta, pohjana Mogianan kukkuloilla Kaakkois-Brasiliassa kypsyneet helmipavut. Helmipapu on kahvimarja, johon on kasvanut kahden pavun sijaan yksi, ja paahtimon mukaan maku tiivistyy siitä. 250 grammaa.',
     },
     priceFrom: 12.9,
     currency: 'EUR',
@@ -1804,8 +1804,8 @@ export const PRODUCTS: Product[] = [
         {
           key: 'origin',
           value: {
-            en: 'Beans from the Mogiana hills in southern Brazil, roasted by Bergstrands Kafferosteri',
-            fi: 'Pavut Mogianan kukkuloilta Etelä-Brasiliasta, paahtajana Bergstrands Kafferosteri',
+            en: 'Beans from the Mogiana hills in southeastern Brazil, roasted by Bergstrands Kafferosteri',
+            fi: 'Pavut Mogianan kukkuloilta Kaakkois-Brasiliasta, paahtajana Bergstrands Kafferosteri',
           },
         },
         {

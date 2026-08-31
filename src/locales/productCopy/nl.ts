@@ -526,10 +526,10 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: 'Moomin Wild Blueberry koffie 250 g',
     description:
-      'Koffie met bosbessensmaak van Bergstrands Kafferosteri, gebouwd op parelbonen die gerijpt zijn op de heuvels van Mogiana in het zuiden van Brazilië. Een parelboon is een koffiekers die één boon vormde in plaats van twee, wat volgens de branderij de smaak concentreert. 250 gram.',
+      'Koffie met bosbessensmaak van Bergstrands Kafferosteri, gebouwd op parelbonen die gerijpt zijn op de heuvels van Mogiana in het zuidoosten van Brazilië. Een parelboon is een koffiekers die één boon vormde in plaats van twee, wat volgens de branderij de smaak concentreert. 250 gram.',
     specs: [
       '250 g',
-      'Bonen van de heuvels van Mogiana in het zuiden van Brazilië, gebrand door Bergstrands Kafferosteri',
+      'Bonen van de heuvels van Mogiana in het zuidoosten van Brazilië, gebrand door Bergstrands Kafferosteri',
       'Parelboon, een koffiekers met één boon in plaats van twee',
       'Wilde bosbes',
     ],

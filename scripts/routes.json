@@ -273,7 +273,7 @@
       "de": "Mumin | LaplandGifts",
       "ja": "ムーミン | LaplandGifts",
       "es": "Mumin | LaplandGifts",
-      "pt-BR": "Mumin | LaplandGifts",
+      "pt-BR": "Moomin | LaplandGifts",
       "zh-CN": "姆明 | LaplandGifts",
       "ko": "무민 | LaplandGifts",
       "fr": "Moumine | LaplandGifts",
@@ -530,7 +530,7 @@
   {
     "path": "/brand/halti",
     "fallbackTitle": "Halti | LaplandGifts",
-    "fallbackDescription": "Halti is a Finnish outdoor brand founded in 1976 by Juhani Hyokyvaara, with design done at its Sipoo headquarters. Every price is read from the partner shop.",
+    "fallbackDescription": "Halti is a Finnish outdoor brand founded in 1976 by Juhani Hyökyvaara, with design done at its Sipoo headquarters. Every price is read from the partner shop.",
     "fallbackTitleByLang": {
       "en": "Halti | LaplandGifts",
       "fi": "Halti | LaplandGifts",
@@ -546,18 +546,18 @@
       "sv": "Halti | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Halti is a Finnish outdoor brand founded in 1976 by Juhani Hyokyvaara, with design done at its Sipoo headquarters. Every price is read from the partner shop.",
+      "en": "Halti is a Finnish outdoor brand founded in 1976 by Juhani Hyökyvaara, with design done at its Sipoo headquarters. Every price is read from the partner shop.",
       "fi": "Halti on vuonna 1976 perustettu suomalainen ulkoilubrändi, jonka suunnittelu tehdään Sipoon pääkonttorilla. Jokainen hinta on luettu kumppanin kaupasta.",
-      "de": "Halti ist eine finnische Outdoor-Marke, die 1976 von Juhani Hyokyvaara gegründet wurde, das Design entsteht am Hauptsitz in Sipoo. Liefergebiet auf jeder Karte.",
-      "ja": "Haltiは1976年にJuhani Hyokyvaaraが創業したフィンランドのアウトドアブランドで、デザインはSipooの本社で行われている。同ブランドは自社サイトで、生産が複数の国に分散していると述べている。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
-      "es": "Halti es una marca finlandesa de ropa de exterior fundada en 1976 por Juhani Hyokyvaara, con el diseño hecho en su sede de Sipoo. Zonas de entrega indicadas.",
-      "pt-BR": "A Halti é uma marca finlandesa de outdoor fundada em 1976 por Juhani Hyokyvaara, com design feito em sua sede em Sipoo. Os preços vêm das lojas parceiras.",
-      "zh-CN": "Halti 是芬兰户外品牌，1976 年由 Juhani Hyokyvaara 创立，设计在其 Sipoo 总部完成。品牌在自家网站上说明，生产分散在多个国家：技术运动服装来自中国、越南和孟加拉国，另有意大利、乌克兰和立陶宛的欧洲供应商。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
-      "ko": "Halti는 1976년 Juhani Hyokyvaara가 설립한 핀란드 아웃도어 브랜드로, 디자인은 시포(Sipoo) 본사에서 이루어집니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
-      "fr": "Halti est une marque finlandaise de plein air fondée en 1976 par Juhani Hyokyvaara, dont la conception se fait à son siège de Sipoo.",
-      "it": "Halti è un marchio finlandese di abbigliamento outdoor fondato nel 1976 da Juhani Hyokyvaara, con il design realizzato nella sede di Sipoo. Aree di consegna.",
-      "nl": "Halti is een Fins outdoormerk, in 1976 opgericht door Juhani Hyokyvaara, met het ontwerp op het hoofdkantoor in Sipoo. De prijzen komen van de partnerwinkels.",
-      "sv": "Halti är ett finländskt friluftsvarumärke som grundades 1976 av Juhani Hyokyvaara, och designen görs vid huvudkontoret i Sibbo. Priser hämtas från butikerna."
+      "de": "Halti ist eine finnische Outdoor-Marke, die 1976 von Juhani Hyökyvaara gegründet wurde, das Design entsteht am Hauptsitz in Sipoo. Liefergebiet auf jeder Karte.",
+      "ja": "Haltiは1976年にJuhani Hyökyvaaraが創業したフィンランドのアウトドアブランドで、デザインはSipooの本社で行われている。同ブランドは自社サイトで、生産が複数の国に分散していると述べている。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
+      "es": "Halti es una marca finlandesa de ropa de exterior fundada en 1976 por Juhani Hyökyvaara, con el diseño hecho en su sede de Sipoo. Zonas de entrega indicadas.",
+      "pt-BR": "A Halti é uma marca finlandesa de outdoor fundada em 1976 por Juhani Hyökyvaara, com design feito em sua sede em Sipoo. Os preços vêm das lojas parceiras.",
+      "zh-CN": "Halti 是芬兰户外品牌，1976 年由 Juhani Hyökyvaara 创立，设计在其 Sipoo 总部完成。品牌在自家网站上说明，生产分散在多个国家：技术运动服装来自中国、越南和孟加拉国，另有意大利、乌克兰和立陶宛的欧洲供应商。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
+      "ko": "Halti는 1976년 Juhani Hyökyvaara가 설립한 핀란드 아웃도어 브랜드로, 디자인은 시포(Sipoo) 본사에서 이루어집니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
+      "fr": "Halti est une marque finlandaise de plein air fondée en 1976 par Juhani Hyökyvaara, dont la conception se fait à son siège de Sipoo.",
+      "it": "Halti è un marchio finlandese di abbigliamento outdoor fondato nel 1976 da Juhani Hyökyvaara, con il design realizzato nella sede di Sipoo. Aree di consegna.",
+      "nl": "Halti is een Fins outdoormerk, in 1976 opgericht door Juhani Hyökyvaara, met het ontwerp op het hoofdkantoor in Sipoo. De prijzen komen van de partnerwinkels.",
+      "sv": "Halti är ett finländskt friluftsvarumärke som grundades 1976 av Juhani Hyökyvaara, och designen görs vid huvudkontoret i Sibbo. Priser hämtas från butikerna."
     }
   },
   {
@@ -1079,8 +1079,8 @@
       "de": "Meritalo ist ein finnischer Familienbetrieb der Beerenverarbeitung, gegründet 1995 von Susanna und Olavi Lindstedt. Jeder Preis stammt aus dem Partnershop.",
       "ja": "Meritalo は1995年に Susanna と Olavi Lindstedt が創業したフィンランドの家族経営のベリー加工会社で、二人はヘルシンキから南西フィンランド・サロ地域のユロンキュラへ移り住みました。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアはどのカードにも記載。",
       "es": "Meritalo es una empresa familiar finlandesa de elaboración de bayas fundada en 1995 por Susanna y Olavi Lindstedt, que se mudaron de Helsinki a Ylönkylä.",
-      "pt-BR": "A Meritalo é uma processadora familiar finlandesa de frutas silvestres fundada em 1995 por Susanna e Olavi Lindstedt, que se mudaram de Helsinki para Ylonkyla.",
-      "zh-CN": "Meritalo 是一家芬兰家族浆果加工企业，由 Susanna 和 Olavi Lindstedt 于 1995 年创立，两人从赫尔辛基迁到芬兰西南部 Salo 地区的 Ylonkyla。公司表示，其所有产品都在当地自有厂房制作，使用 100% 芬兰浆果和水果，原料购自芬兰种植者并采自芬兰森林。价格来自合作商店。",
+      "pt-BR": "A Meritalo é uma processadora familiar finlandesa de frutas silvestres fundada em 1995 por Susanna e Olavi Lindstedt. Cada preço é consultado na loja parceira.",
+      "zh-CN": "Meritalo 是一家芬兰家族浆果加工企业，由 Susanna 和 Olavi Lindstedt 于 1995 年创立，两人从赫尔辛基迁到芬兰西南部 Salo 地区的 Ylönkylä。公司表示，其所有产品都在当地自有厂房制作，使用 100% 芬兰浆果和水果，原料购自芬兰种植者并采自芬兰森林。价格来自合作商店。",
       "ko": "Meritalo는 1995년 Susanna Lindstedt와 Olavi Lindstedt가 설립한 핀란드 가족 경영 베리 가공 회사입니다. 두 사람은 헬싱키에서 남서핀란드 살로 지역의 윌뢴퀼레(Ylönkylä)로 이주했습니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다.",
       "fr": "Meritalo est une entreprise familiale finlandaise de transformation de baies fondée en 1995 par Susanna et Olavi Lindstedt. Prix relevés chez les partenaires.",
       "it": "Meritalo è un'azienda familiare finlandese di trasformazione delle bacche, fondata nel 1995 da Susanna e Olavi Lindstedt. Area di consegna su ogni scheda.",
@@ -1112,7 +1112,7 @@
       "de": "Nordqvist ist ein finnisches Teeunternehmen, gegründet 1979, das als Geschäft in Helsinki mit aromatisierten und losen Tees begann und später in Import und.",
       "ja": "Nordqvist は1979年創業のフィンランドの紅茶会社で、フレーバーティーとリーフティーを売るヘルシンキの店として始まり、のちに輸入と卸売へ広がりました。紅茶の着香と包装は、2018年に開設されたヌルミヤルヴィの3,000平方メートルの自社工場で行われています。価格はすべて提携ショップから取得しています。",
       "es": "Nordqvist es una empresa finlandesa de té fundada en 1979, que empezó como una tienda de Helsinki dedicada a la venta de tés aromatizados y a granel y que.",
-      "pt-BR": "A Nordqvist é uma empresa finlandesa de chá fundada em 1979, que começou como uma loja em Helsinki vendendo chás aromatizados e a granel e depois passou à.",
+      "pt-BR": "A Nordqvist é uma empresa finlandesa de chá fundada em 1979, que começou como uma loja em Helsinque vendendo chás aromatizados e a granel e depois passou à.",
       "zh-CN": "Nordqvist 是一家芬兰茶叶公司，成立于 1979 年，起初是赫尔辛基一家销售调味茶和散叶茶的商店，后来转向进口和批发。其茶叶在公司位于 Nurmijärvi 的自有工厂调味和包装，这座 3000 平方米的工厂于 2018 年启用。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
       "ko": "Nordqvist는 1979년에 설립된 핀란드 차 회사로, 헬싱키에서 가향차와 잎차를 파는 상점으로 시작해 나중에 수입과 도매로 옮겨 갔습니다. 차의 가향과 포장은 2018년 문을 연 누르미예르비(Nurmijärvi)의 자사 공장 3,000제곱미터 규모 시설에서 이루어집니다.",
       "fr": "Nordqvist est une entreprise de thé finlandaise fondée en 1979, qui a débuté comme une boutique d'Helsinki vendant des thés aromatisés et en vrac avant de se.",
@@ -1211,7 +1211,7 @@
       "de": "Moomin Arabia ist die Mumin-Serie der finnischen Keramikmarke Arabia, die 1873 gegründet wurde und heute zur Fiskars Group gehört. Liefergebiet auf jeder Karte.",
       "ja": "Moomin Arabia は、1873年創業で現在は Fiskars Group に属するフィンランドの陶磁器ブランド Arabia のムーミンシリーズです。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
       "es": "Moomin Arabia es la gama Mumin de la marca finlandesa de cerámica Arabia, fundada en 1873 y hoy parte de Fiskars Group. Precios de las tiendas asociadas.",
-      "pt-BR": "Moomin Arabia é a linha dos Mumins da marca finlandesa de cerâmica Arabia, fundada em 1873 e hoje parte do Fiskars Group. Os preços vêm das lojas parceiras.",
+      "pt-BR": "Moomin Arabia é a linha dos Moomins da marca finlandesa de cerâmica Arabia, fundada em 1873 e hoje parte do Fiskars Group. Os preços vêm das lojas parceiras.",
       "zh-CN": "Moomin Arabia 是芬兰陶瓷品牌 Arabia 的姆明系列，Arabia 成立于 1873 年，如今属于 Fiskars Group。首批姆明餐具出现在 1950 年代，插画由托韦·扬松绘制，广受收藏的马克杯系列则在 1990 年代开始，采用 Kaj Franck 设计的 Teema 杯型。",
       "ko": "Moomin Arabia는 1873년에 설립되어 오늘날 Fiskars Group에 속한 핀란드 도자기 브랜드 Arabia의 무민 제품군입니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
       "fr": "Moomin Arabia est la gamme Moomins de la marque de céramique finlandaise Arabia, fondée en 1873 et aujourd'hui membre du groupe Fiskars.",
@@ -1355,7 +1355,7 @@
   {
     "path": "/brand/kilpissafarit",
     "fallbackTitle": "Kilpissafarit | LaplandGifts",
-    "fallbackDescription": "Kilpissafarit is a programme service company in Kilpisjarvi, founded in 1995 by border guard Hannu Rauhala and now run by his son Jussi Rauhala.",
+    "fallbackDescription": "Kilpissafarit is a programme service company in Kilpisjärvi, founded in 1995 by border guard Hannu Rauhala and now run by his son Jussi Rauhala.",
     "fallbackTitleByLang": {
       "en": "Kilpissafarit | LaplandGifts",
       "fi": "Kilpissafarit | LaplandGifts",
@@ -1371,17 +1371,17 @@
       "sv": "Kilpissafarit | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Kilpissafarit is a programme service company in Kilpisjarvi, founded in 1995 by border guard Hannu Rauhala and now run by his son Jussi Rauhala.",
+      "en": "Kilpissafarit is a programme service company in Kilpisjärvi, founded in 1995 by border guard Hannu Rauhala and now run by his son Jussi Rauhala.",
       "fi": "Kilpissafarit on kilpisjärveläinen ohjelmapalveluyritys, jonka rajavartija Hannu Rauhala perusti vuonna 1995 ja jota nykyään vetää hänen poikansa Jussi Rauhala.",
       "de": "Kilpissafarit ist ein Programmdienstleister in Kilpisjärvi, gegründet 1995 von dem Grenzschützer Hannu Rauhala und heute von seinem Sohn Jussi Rauhala geführt.",
       "ja": "Kilpissafarit はキルピスヤルヴィのプログラムサービス会社で、1995年に国境警備隊員の Hannu Rauhala が創業し、現在は息子の Jussi Rauhala が運営しています。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
       "es": "Kilpissafarit es una empresa de servicios de programa en Kilpisjärvi, fundada en 1995 por el guardia fronterizo Hannu Rauhala y dirigida ahora por su hijo.",
-      "pt-BR": "Kilpissafarit é uma empresa de serviços de programas em Kilpisjarvi, fundada em 1995 pelo guarda de fronteira Hannu Rauhala e hoje dirigida por seu filho.",
-      "zh-CN": "Kilpissafarit 是 Kilpisjarvi 的一家项目服务公司，1995 年由边防军人 Hannu Rauhala 创立，现由其子 Jussi Rauhala 经营。公司在 Kasivarsi 荒野带领雪地摩托狩猎之旅、雪鞋和徒步行程、北极光出行和钓鱼行程，包括通往芬兰最高点 Halti 的雪地摩托路线。",
+      "pt-BR": "Kilpissafarit é uma empresa de serviços de programas em Kilpisjärvi, fundada em 1995 pelo guarda de fronteira Hannu Rauhala e hoje dirigida por seu filho.",
+      "zh-CN": "Kilpissafarit 是 Kilpisjärvi 的一家项目服务公司，1995 年由边防军人 Hannu Rauhala 创立，现由其子 Jussi Rauhala 经营。公司在 Kasivarsi 荒野带领雪地摩托狩猎之旅、雪鞋和徒步行程、北极光出行和钓鱼行程，包括通往芬兰最高点 Halti 的雪地摩托路线。",
       "ko": "Kilpissafarit는 킬피스예르비(Kilpisjärvi)에 있는 프로그램 서비스 회사로, 1995년 국경수비대원 Hannu Rauhala가 설립했고 지금은 그의 아들 Jussi Rauhala가 운영합니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다.",
       "fr": "Kilpissafarit est une entreprise de services de programmes à Kilpisjärvi, fondée en 1995 par le garde-frontière Hannu Rauhala et dirigée aujourd'hui par son.",
       "it": "Kilpissafarit è un'azienda di servizi per attività a Kilpisjärvi, fondata nel 1995 dalla guardia di frontiera Hannu Rauhala e oggi guidata dal figlio Jussi.",
-      "nl": "Kilpissafarit is een programmadienstenbedrijf in Kilpisjarvi, in 1995 opgericht door grenswachter Hannu Rauhala en nu geleid door zijn zoon Jussi Rauhala.",
+      "nl": "Kilpissafarit is een programmadienstenbedrijf in Kilpisjärvi, in 1995 opgericht door grenswachter Hannu Rauhala en nu geleid door zijn zoon Jussi Rauhala.",
       "sv": "Kilpissafarit är ett programserviceföretag i Kilpisjärvi som grundades 1995 av gränsbevakaren Hannu Rauhala och som nu drivs av hans son Jussi Rauhala."
     }
   },
@@ -1838,7 +1838,7 @@
       "de": "Aromageddon ist eine Saunaduftserie von Aromageddon Oy, einem in Helsinki registrierten Unternehmen, das die Idee auf einen Saunagang im Sommer 2024 datiert.",
       "ja": "Aromageddon はヘルシンキで登記された Aromageddon Oy のサウナ用フレグランスのシリーズで、同社は着想を2024年夏のサウナのひとときにさかのぼるとしています。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
       "es": "Aromageddon es una gama de aromas para sauna de Aromageddon Oy, una empresa registrada en Helsinki. Cada precio procede de la tienda asociada y lleva fecha.",
-      "pt-BR": "Aromageddon é uma linha de aromas para sauna da Aromageddon Oy, empresa registrada em Helsinki. Cada preço é consultado na loja parceira e vem com data.",
+      "pt-BR": "Aromageddon é uma linha de aromas para sauna da Aromageddon Oy, empresa registrada em Helsinque. Cada preço é consultado na loja parceira e vem com data.",
       "zh-CN": "Aromageddon 是 Aromageddon Oy 推出的桑拿香氛系列，该公司在赫尔辛基注册，并把这个想法的起点定在 2024 年夏天的一次桑拿。产品线包括六款 15 毫升香氛，每款 7.90 欧元，另有三款礼盒，主题来自饮品和糖果而非森林或桦树：威士忌、啤酒、冰薄荷、薄荷糖、肉桂和薄荷可可。",
       "ko": "Aromageddon은 헬싱키에 등록된 회사 Aromageddon Oy의 사우나 향 제품군으로, 회사는 그 아이디어가 2024년 여름의 사우나에서 나왔다고 말합니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
       "fr": "Aromageddon est une gamme de parfums de sauna d'Aromageddon Oy, une société immatriculée à Helsinki. La zone de livraison est indiquée sur chaque fiche produit.",
@@ -2939,7 +2939,7 @@
   {
     "path": "/product/moomin-wild-blueberry-coffee",
     "fallbackTitle": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
-    "fallbackDescription": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
+    "fallbackDescription": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southeastern Brazil. Bought in the partner shop.",
     "fallbackTitleByLang": {
       "en": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
       "fi": "Moomin Muumipeikko Villimustikka-kahvi 250 g | LaplandGifts",
@@ -2955,18 +2955,18 @@
       "sv": "Mumintrollet Wild Blueberry kaffe 250 g | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southern Brazil. You buy it in the partner shop.",
-      "fi": "Mustikalla maustettua kahvia Bergstrands Kafferosterilta, pohjana Mogianan kukkuloilla Etelä-Brasiliassa kypsyneet helmipavut. Toimitusalue näkyy tällä sivulla.",
-      "de": "Kaffee mit Blaubeeraroma von der Rösterei Bergstrands Kafferosteri, aufgebaut auf Perlbohnen von den Hügeln der Mogiana im Süden Brasiliens.",
-      "ja": "ブラジル南部モジアナ高原で育ったピーベリーを使った、Bergstrands Kafferosteri のブルーベリー風味のコーヒー。ピーベリーは豆が 2 つではなく 1 つだけ育ったコーヒーチェリーで、焙煎所によれば味が凝縮するといいます。250 グラム。価格は提携ショップから取得し、ご購入も同じショップで行います。",
-      "es": "Café con aroma de arándano de Bergstrands Kafferosteri, montado sobre granos caracolillo madurados en las colinas de Mogiana, en el sur de Brasil.",
-      "pt-BR": "Café com sabor de mirtilo da Bergstrands Kafferosteri, construído sobre grãos moka amadurecidos nas colinas da Mogiana, no sul do Brasil.",
-      "zh-CN": "Bergstrands Kafferosteri 的蓝莓风味咖啡，用巴西南部莫吉亚纳丘陵成熟的圆豆制成。圆豆是只长了一颗豆而不是两颗的咖啡果，烘焙厂说这样味道更集中。250 克。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "브라질 남부 모지아나 구릉에서 익은 피베리로 만든 Bergstrands Kafferosteri 의 블루베리 향 커피. 피베리는 원두가 두 개가 아니라 하나만 자란 커피 열매로, 로스터리는 그래서 맛이 응축된다고 말합니다. 250 그램. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다.",
-      "fr": "Café aromatisé à la myrtille de Bergstrands Kafferosteri, construit sur des caracolis mûris sur les collines de Mogiana, dans le sud du Brésil.",
-      "it": "Caffè aromatizzato al mirtillo di Bergstrands Kafferosteri, costruito su chicchi caracolito maturati sulle colline di Mogiana, nel sud del Brasile.",
-      "nl": "Koffie met bosbessensmaak van Bergstrands Kafferosteri, gebouwd op parelbonen die gerijpt zijn op de heuvels van Mogiana in het zuiden van Brazilië.",
-      "sv": "Blåbärssmaksatt kaffe från Bergstrands Kafferosteri, byggt på pärlbönor mognade på Mogianahöjderna i södra Brasilien. Leveransområdet står på den här sidan."
+      "en": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southeastern Brazil. Bought in the partner shop.",
+      "fi": "Mustikalla maustettua kahvia Bergstrands Kafferosterilta, pohjana Mogianan kukkuloilla Kaakkois-Brasiliassa kypsyneet helmipavut. Ostetaan kumppanin kaupasta.",
+      "de": "Kaffee mit Blaubeeraroma von der Rösterei Bergstrands Kafferosteri, aufgebaut auf Perlbohnen von den Hügeln der Mogiana im Südosten Brasiliens.",
+      "ja": "ブラジル南東部モジアナ高原で育ったピーベリーを使った、Bergstrands Kafferosteri のブルーベリー風味のコーヒー。ピーベリーは豆が 2 つではなく 1 つだけ育ったコーヒーチェリーで、焙煎所によれば味が凝縮するといいます。250 グラム。価格は提携ショップから取得し、ご購入も同じショップで行います。",
+      "es": "Café con aroma de arándano de Bergstrands Kafferosteri, montado sobre granos caracolillo madurados en las colinas de Mogiana, en el sureste de Brasil.",
+      "pt-BR": "Café com sabor de mirtilo da Bergstrands Kafferosteri, construído sobre grãos moka amadurecidos nas colinas da Mogiana, no sudeste do Brasil.",
+      "zh-CN": "Bergstrands Kafferosteri 的蓝莓风味咖啡，用巴西东南部莫吉亚纳丘陵成熟的圆豆制成。圆豆是只长了一颗豆而不是两颗的咖啡果，烘焙厂说这样味道更集中。250 克。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "브라질 남동부 모지아나 구릉에서 익은 피베리로 만든 Bergstrands Kafferosteri 의 블루베리 향 커피. 피베리는 원두가 두 개가 아니라 하나만 자란 커피 열매로, 로스터리는 그래서 맛이 응축된다고 말합니다. 250 그램. 배송 지역은 이 페이지에 표시되어 있습니다.",
+      "fr": "Café aromatisé à la myrtille de Bergstrands Kafferosteri, construit sur des caracolis mûris sur les collines de Mogiana, dans le sud-est du Brésil.",
+      "it": "Caffè aromatizzato al mirtillo di Bergstrands Kafferosteri, costruito su chicchi caracolito maturati sulle colline di Mogiana, nel sud-est del Brasile.",
+      "nl": "Koffie met bosbessensmaak van Bergstrands Kafferosteri, gebouwd op parelbonen die gerijpt zijn op de heuvels van Mogiana in het zuidoosten van Brazilië.",
+      "sv": "Blåbärssmaksatt kaffe från Bergstrands Kafferosteri, byggt på pärlbönor mognade på Mogianahöjderna i sydöstra Brasilien. Leveransområdet står på den här sidan."
     }
   },
   {

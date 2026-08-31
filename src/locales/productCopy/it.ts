@@ -526,10 +526,10 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'moomin-wild-blueberry-coffee': {
     name: 'Caffè Moomin Wild Blueberry 250 g',
     description:
-      'Caffè aromatizzato al mirtillo di Bergstrands Kafferosteri, costruito su chicchi caracolito maturati sulle colline di Mogiana, nel sud del Brasile. Un caracolito è una ciliegia di caffè che ha formato un chicco solo invece di due, cosa che secondo la torrefazione concentra il gusto. 250 grammi.',
+      'Caffè aromatizzato al mirtillo di Bergstrands Kafferosteri, costruito su chicchi caracolito maturati sulle colline di Mogiana, nel sud-est del Brasile. Un caracolito è una ciliegia di caffè che ha formato un chicco solo invece di due, cosa che secondo la torrefazione concentra il gusto. 250 grammi.',
     specs: [
       '250 g',
-      'Chicchi dalle colline di Mogiana, nel sud del Brasile, tostati da Bergstrands Kafferosteri',
+      'Chicchi dalle colline di Mogiana, nel sud-est del Brasile, tostati da Bergstrands Kafferosteri',
       'Caracolito, una ciliegia di caffè con un chicco solo invece di due',
       'Mirtillo selvatico',
     ],
