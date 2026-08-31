@@ -561,7 +561,7 @@ const COPY: Record<Lang, {
       { strong: 'Cloudflare', body: '（Cloudflare Inc.，美国）：受 EU–US 数据隐私框架及标准合同条款(SCC)保护。' },
       { strong: 'Resend', body: '（Resend Inc.，美国）：受标准合同条款(SCC)保护。' },
       { strong: 'Supabase', body: '（Supabase Inc.，美国，亦可使用欧盟区域托管）：受标准合同条款(SCC)保护。' },
-      { strong: 'Adtraction / Daisycon / Travelpayouts / Trip.com', body: '（Adtraction AB，瑞典，欧盟；Daisycon B.V.，荷兰，欧盟;Travelpayouts 与 Trip.com，国际）：欧盟/欧洲经济区以外的传输受标准合同条款(SCC)保护。' },
+      { strong: 'Adtraction / Daisycon / Travelpayouts / Trip.com', body: '（Adtraction AB，瑞典，欧盟；Daisycon B.V.，荷兰，欧盟；Travelpayouts 与 Trip.com，国际）：欧盟/欧洲经济区以外的传输受标准合同条款(SCC)保护。' },
       { strong: 'GetYourGuide', body: '（GetYourGuide GmbH，德国）：位于欧洲经济区内。' },
     ],
     s8aTail: '在任何情形下，数据传输均通过欧盟委员会的充分性决定、EU–US 数据隐私框架或经欧盟委员会批准的标准合同条款进行保护。您可联系我们索取相应保护措施的副本。',
