@@ -50,11 +50,11 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['금', '광물'],
   },
   'mailan-putiikki': {
-    description: '아캐슬롬폴로 교차로에 있는 선물·기념품 전문점으로 윌라스에서 가장 큽니다. 1970년에 문을 열었습니다.',
+    description: '애캐슬롬폴로 교차로에 있는 선물·기념품 전문점으로 윌래스에서 가장 큽니다. 1970년에 문을 열었습니다.',
     tags: ['선물', '기념품'],
   },
   'kuukkeli-shop': {
-    description: '사리셀캐 쇼핑센터에 있는 기념품·라플란드 먹거리·직물 매장입니다. 잼, 젤리, 소스, 주스 등 자체 베리 가공품도 있습니다.',
+    description: '사리셀카 쇼핑센터에 있는 기념품·라플란드 먹거리·직물 매장입니다. 잼, 젤리, 소스, 주스 등 자체 베리 가공품도 있습니다.',
     tags: ['먹거리', '기념품'],
   },
   'mariellen-vaatehuone': {

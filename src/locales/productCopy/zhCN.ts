@@ -625,14 +625,14 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors 荨麻粉 150 g',
     description:
-      '在拉普兰有机农场种植的荨麻，冻干成味道足够中性的粉，拌进汤里或面包里都不会和其他材料打架。每 100 g 含 22 000 mg 钙。',
+      '在拉普兰有机农场种植的荨麻，冻干成味道足够中性的粉，拌进汤里或面包里都不会和其他材料打架。',
     specs: [
       '150 g，毛重 0.162 kg',
       '4 x 16 x 23 cm',
       '冻干荨麻',
       '芬兰，在拉普兰有机农场种植',
       '每天 1 至 5 茶匙',
-      '能量 1484 kJ / 354 kcal，蛋白质 23.6 g，碳水化合物 56 g，脂肪 3.44 g，盐低于 5 mg。维生素 A 1900 µg，钙 22000 mg，镁 5300 mg，铁 68 mg',
+      '能量 1484 kJ / 354 kcal，蛋白质 23.6 g，碳水化合物 56 g，脂肪 3.44 g，盐低于 5 mg。维生素 A 1900 µg',
     ],
     specLabels: [undefined, undefined, undefined, undefined, '用量', '每 100 g 营养成分'],
   },

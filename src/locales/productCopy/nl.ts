@@ -623,14 +623,14 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors brandnetelpoeder 150 g',
     description:
-      'Brandnetel geteeld op biologische boerderijen in Lapland, gevriesdroogd tot een poeder dat neutraal genoeg is om door soep of brood te gaan zonder ruzie te maken met de rest van het gerecht. 22 000 mg calcium per 100 g.',
+      'Brandnetel geteeld op biologische boerderijen in Lapland, gevriesdroogd tot een poeder dat neutraal genoeg is om door soep of brood te gaan zonder ruzie te maken met de rest van het gerecht.',
     specs: [
       '150 g, bruto 0,162 kg',
       '4 x 16 x 23 cm',
       'Gevriesdroogde brandnetel',
       'Finland, geteeld op biologische boerderijen in Lapland',
       '1 tot 5 theelepels per dag',
-      'Energie 1484 kJ / 354 kcal, eiwit 23,6 g, koolhydraten 56 g, vet 3,44 g, zout minder dan 5 mg. Vitamine A 1900 µg, calcium 22000 mg, magnesium 5300 mg, ijzer 68 mg',
+      'Energie 1484 kJ / 354 kcal, eiwit 23,6 g, koolhydraten 56 g, vet 3,44 g, zout minder dan 5 mg. Vitamine A 1900 µg',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosering', 'Voedingswaarde per 100 g'],
   },

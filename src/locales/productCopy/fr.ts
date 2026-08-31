@@ -624,14 +624,14 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'arctic-warriors-nettle-powder': {
     name: 'Poudre d’ortie Arctic Warriors 150 g',
     description:
-      'Ortie cultivée dans des fermes biologiques de Laponie, lyophilisée en une poudre assez neutre pour être mêlée à une soupe ou à un pain sans se disputer avec le reste du plat. 22 000 mg de calcium pour 100 g.',
+      'Ortie cultivée dans des fermes biologiques de Laponie, lyophilisée en une poudre assez neutre pour être mêlée à une soupe ou à un pain sans se disputer avec le reste du plat.',
     specs: [
       '150 g, brut 0,162 kg',
       '4 x 16 x 23 cm',
       'Ortie lyophilisée',
       'Finlande, cultivée dans des fermes biologiques de Laponie',
       '1 à 5 cuillères à café par jour',
-      'Énergie 1484 kJ / 354 kcal, protéines 23,6 g, glucides 56 g, matières grasses 3,44 g, sel moins de 5 mg. Vitamine A 1900 µg, calcium 22000 mg, magnésium 5300 mg, fer 68 mg',
+      'Énergie 1484 kJ / 354 kcal, protéines 23,6 g, glucides 56 g, matières grasses 3,44 g, sel moins de 5 mg. Vitamine A 1900 µg',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Posologie', 'Valeurs nutritionnelles pour 100 g'],
   },

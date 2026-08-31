@@ -654,14 +654,14 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors Brennnesselpulver 150 g',
     description:
-      'Brennnessel von Bio-Höfen in Lappland, gefriergetrocknet zu einem Pulver, das neutral genug ist, um es in Suppe oder Brot zu rühren, ohne dem übrigen Gericht zu widersprechen. 22 000 mg Kalzium je 100 g.',
+      'Brennnessel von Bio-Höfen in Lappland, gefriergetrocknet zu einem Pulver, das neutral genug ist, um es in Suppe oder Brot zu rühren, ohne dem übrigen Gericht zu widersprechen.',
     specs: [
       '150 g, brutto 0,162 kg',
       '4 x 16 x 23 cm',
       'Gefriergetrocknete Brennnessel',
       'Finnland, angebaut auf Bio-Höfen in Lappland',
       '1 bis 5 Teelöffel täglich',
-      'Energie 1484 kJ / 354 kcal, Eiweiß 23,6 g, Kohlenhydrate 56 g, Fett 3,44 g, Salz unter 5 mg. Vitamin A 1900 µg, Kalzium 22000 mg, Magnesium 5300 mg, Eisen 68 mg',
+      'Energie 1484 kJ / 354 kcal, Eiweiß 23,6 g, Kohlenhydrate 56 g, Fett 3,44 g, Salz unter 5 mg. Vitamin A 1900 µg',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosierung', 'Nährwerte je 100 g'],
   },

@@ -2163,8 +2163,8 @@ export const PRODUCTS: Product[] = [
       fi: 'Arctic Warriors nokkosjauhe 150 g',
     },
     description: {
-      en: 'Nettle grown on organic farms in Lapland, freeze dried into a powder neutral enough to stir into soup or bread without arguing with the rest of the dish. 22 000 mg of calcium per 100 g.',
-      fi: 'Lapin luomutiloilla kasvatettua nokkosta, pakastekuivattuna jauheeksi, joka on sen verran neutraalia että sen voi sekoittaa keittoon tai leipään ilman että se riitelee muun ruoan kanssa. Kalsiumia 22 000 mg sadassa grammassa.',
+      en: 'Nettle grown on organic farms in Lapland, freeze dried into a powder neutral enough to stir into soup or bread without arguing with the rest of the dish.',
+      fi: 'Lapin luomutiloilla kasvatettua nokkosta, pakastekuivattuna jauheeksi, joka on sen verran neutraalia että sen voi sekoittaa keittoon tai leipään ilman että se riitelee muun ruoan kanssa.',
     },
     priceFrom: 52,
     currency: 'EUR',
@@ -2194,8 +2194,8 @@ export const PRODUCTS: Product[] = [
           key: 'other',
           label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
           value: {
-            en: 'Energy 1484 kJ / 354 kcal, protein 23.6 g, carbohydrate 56 g, fat 3.44 g, salt under 5 mg. Vitamin A 1900 µg, calcium 22000 mg, magnesium 5300 mg, iron 68 mg',
-            fi: 'Energia 1484 kJ / 354 kcal, proteiini 23,6 g, hiilihydraatit 56 g, rasva 3,44 g, suola alle 5 mg. A-vitamiini 1900 µg, kalsium 22000 mg, magnesium 5300 mg, rauta 68 mg',
+            en: 'Energy 1484 kJ / 354 kcal, protein 23.6 g, carbohydrate 56 g, fat 3.44 g, salt under 5 mg. Vitamin A 1900 µg',
+            fi: 'Energia 1484 kJ / 354 kcal, proteiini 23,6 g, hiilihydraatit 56 g, rasva 3,44 g, suola alle 5 mg. A-vitamiini 1900 µg',
           },
         },
       ],

@@ -625,14 +625,14 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors nässelpulver 150 g',
     description:
-      'Nässla odlad på ekologiska gårdar i Lappland, frystorkad till ett pulver neutralt nog att röras ner i soppa eller bröd utan att bråka med resten av rätten. 22 000 mg kalcium per 100 g.',
+      'Nässla odlad på ekologiska gårdar i Lappland, frystorkad till ett pulver neutralt nog att röras ner i soppa eller bröd utan att bråka med resten av rätten.',
     specs: [
       '150 g, brutto 0,162 kg',
       '4 x 16 x 23 cm',
       'Frystorkad nässla',
       'Finland, odlad på ekologiska gårdar i Lappland',
       '1 till 5 teskedar per dag',
-      'Energi 1484 kJ / 354 kcal, protein 23,6 g, kolhydrat 56 g, fett 3,44 g, salt under 5 mg. A-vitamin 1900 µg, kalcium 22000 mg, magnesium 5300 mg, järn 68 mg',
+      'Energi 1484 kJ / 354 kcal, protein 23,6 g, kolhydrat 56 g, fett 3,44 g, salt under 5 mg. A-vitamin 1900 µg',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosering', 'Näringsvärde per 100 g'],
   },

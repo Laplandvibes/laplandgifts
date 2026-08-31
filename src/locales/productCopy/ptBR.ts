@@ -623,14 +623,14 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'arctic-warriors-nettle-powder': {
     name: 'Pó de urtiga Arctic Warriors 150 g',
     description:
-      'Urtiga cultivada em fazendas orgânicas na Lapônia, liofilizada em um pó neutro o bastante para entrar em uma sopa ou no pão sem brigar com o resto do prato. 22 000 mg de cálcio por 100 g.',
+      'Urtiga cultivada em fazendas orgânicas na Lapônia, liofilizada em um pó neutro o bastante para entrar em uma sopa ou no pão sem brigar com o resto do prato.',
     specs: [
       '150 g, bruto 0,162 kg',
       '4 x 16 x 23 cm',
       'Urtiga liofilizada',
       'Finlândia, cultivada em fazendas orgânicas na Lapônia',
       'De 1 a 5 colheres de chá por dia',
-      'Energia 1484 kJ / 354 kcal, proteínas 23,6 g, carboidratos 56 g, gorduras 3,44 g, sal menos de 5 mg. Vitamina A 1900 µg, cálcio 22000 mg, magnésio 5300 mg, ferro 68 mg',
+      'Energia 1484 kJ / 354 kcal, proteínas 23,6 g, carboidratos 56 g, gorduras 3,44 g, sal menos de 5 mg. Vitamina A 1900 µg',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosagem', 'Informação nutricional por 100 g'],
   },

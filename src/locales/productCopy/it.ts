@@ -623,14 +623,14 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'arctic-warriors-nettle-powder': {
     name: 'Polvere di ortica Arctic Warriors 150 g',
     description:
-      'Ortica coltivata in fattorie biologiche della Lapponia, liofilizzata in una polvere abbastanza neutra da finire in una zuppa o nel pane senza litigare con il resto del piatto. 22 000 mg di calcio per 100 g.',
+      'Ortica coltivata in fattorie biologiche della Lapponia, liofilizzata in una polvere abbastanza neutra da finire in una zuppa o nel pane senza litigare con il resto del piatto.',
     specs: [
       '150 g, lordo 0,162 kg',
       '4 x 16 x 23 cm',
       'Ortica liofilizzata',
       'Finlandia, coltivata in fattorie biologiche della Lapponia',
       'Da 1 a 5 cucchiaini al giorno',
-      'Energia 1484 kJ / 354 kcal, proteine 23,6 g, carboidrati 56 g, grassi 3,44 g, sale meno di 5 mg. Vitamina A 1900 µg, calcio 22000 mg, magnesio 5300 mg, ferro 68 mg',
+      'Energia 1484 kJ / 354 kcal, proteine 23,6 g, carboidrati 56 g, grassi 3,44 g, sale meno di 5 mg. Vitamina A 1900 µg',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosaggio', 'Valori nutrizionali per 100 g'],
   },
