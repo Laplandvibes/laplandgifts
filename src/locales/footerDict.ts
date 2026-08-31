@@ -106,7 +106,7 @@ export function footerDict(lang: Lang) {
       press: { title: 'プレス・メディア', body: '編集パートナーシップとプレスキット。', cta: 'プレスのお問い合わせ →' },
       affiliate: 'このサイトにはアフィリエイトリンクが含まれます。リンク経由でご予約いただいた場合、追加費用なしでLaplandVibesに手数料が支払われることがあります。',
       copyright: '© {{year}} #LaplandVibes、#LaplandVibesネットワークの一部',
-      websiteBy: 'ウェブサイト制作: Yrityspaketit.fi',
+      websiteBy: 'ウェブサイト制作：Yrityspaketit.fi',
       legal: { privacy: 'プライバシーポリシー', cookie: 'クッキーポリシー', terms: '利用規約', contact: 'お問い合わせ' },
       siteLabels: {
         hotelDeals: 'ホテルのお得な情報',

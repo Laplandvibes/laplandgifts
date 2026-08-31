@@ -150,7 +150,7 @@ const nl: ChromeCopy = {
     items: [
       {
         q: 'Wat zijn authentieke souvenirs om in Lapland te kopen?',
-        a: 'De meest authentieke Lapland-souvenirs zijn door lokale handen gemaakt: een puukko (een traditioneel Fins riemmes), een kuksa (een uit een berkenknoest gesneden beker), rendierleren artikelen, wollen textiel en wilde producten zoals kruipbraamjam, vossenbessenconfituur en berkensapproducten. Sami duodji-ambacht, zilveren sieraden, geweiwerk en geweven banden, is het meest gewaardeerd. Let op de naam van de maker of een certificaat van oorsprong in plaats van massaproducten uit de luchthavenwinkel.',
+        a: 'De meest authentieke Lapland-souvenirs zijn door lokale handen gemaakt: een puukko (een traditioneel Fins riemmes), een kuksa (een uit een berkenknoest gesneden beker), rendierleren artikelen, wollen textiel en wilde producten zoals kruipbraamjam, vossenbessenconfituur en berkensapproducten. Sami duodji-ambacht, zilveren sieraden, geweiwerk en geweven banden is het meest gewaardeerd. Let op de naam van de maker of een certificaat van oorsprong in plaats van massaproducten uit de luchthavenwinkel.',
       },
       {
         q: 'Kan ik Sami-ambacht ethisch kopen, en wat is het Sámi Duodji-keurmerk?',

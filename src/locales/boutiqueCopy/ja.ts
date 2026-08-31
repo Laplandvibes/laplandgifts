@@ -50,7 +50,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['金', '鉱物'],
   },
   'mailan-putiikki': {
-    description: 'アキャスロンポロの交差点にあるギフト・土産の専門店。ユッラス最大規模で、1970年創業です。',
+    description: 'アカスロンポロの交差点にあるギフト・土産の専門店。ユッラス最大規模で、1970年創業です。',
     tags: ['ギフト', 'おみやげ'],
   },
   'kuukkeli-shop': {

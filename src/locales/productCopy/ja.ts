@@ -1237,7 +1237,7 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specLabels: [undefined, undefined, '製造'],
   },
   'sk-finland-beanie': {
-    name: 'フィンランド ボンボンニット帽(青白)',
+    name: 'フィンランド ボンボンニット帽（青白）',
     description:
       '折り返しに FINLAND と入った青と白のボンボン付きニット帽。スタンドでかぶり、そのあと冬のあいだずっとかぶることになります。洗濯機 30 度。',
     specs: [
@@ -1277,7 +1277,7 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specLabels: [undefined, 'お手入れ'],
   },
   'sk-rento-birch-whisk': {
-    name: 'レント 白樺ヴィヒタ(乾燥)',
+    name: 'レント 白樺ヴィヒタ（乾燥）',
     description:
       '乾燥させた白樺のヴィヒタ。サウナの前にぬるま湯に浸すと、葉と香りが戻ります。ヴィヒタで体を打つのは、旅行者が必ず尋ねるのに、めったに試さないサウナの作法です。',
     specs: [

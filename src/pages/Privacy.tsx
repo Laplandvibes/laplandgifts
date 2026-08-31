@@ -8,51 +8,51 @@ import { COPY } from '../locales/copy'
 const META: Record<Lang, { title: string; description: string }> = {
   en: {
     title: 'Privacy Policy | LaplandGifts',
-    description: 'How LaplandGifts (Lapeso Oy) handles your data: Google Analytics 4 with Consent Mode v2, newsletter via Resend/Supabase, and affiliate tracking, all explained in plain English.',
+    description: 'How LaplandGifts (LaPeso Oy) handles your data: Google Analytics 4 with Consent Mode v2, newsletter via Resend/Supabase, and affiliate tracking, all explained in plain English.',
   },
   fi: {
     title: 'Tietosuojaseloste | LaplandGifts',
-    description: 'Näin LaplandGifts (Lapeso Oy) käsittelee tietojasi: Google Analytics 4 ja Consent Mode v2, uutiskirje Resendin/Supabasen kautta sekä affiliate-seuranta, selkeästi selitettynä.',
+    description: 'Näin LaplandGifts (LaPeso Oy) käsittelee tietojasi: Google Analytics 4 ja Consent Mode v2, uutiskirje Resendin/Supabasen kautta sekä affiliate-seuranta, selkeästi selitettynä.',
   },
   de: {
     title: 'Datenschutzerklärung | LaplandGifts',
-    description: 'So verarbeitet LaplandGifts (Lapeso Oy) Ihre Daten: Google Analytics 4 mit Consent Mode v2, Newsletter über Resend/Supabase und Affiliate-Tracking, verständlich erklärt.',
+    description: 'So verarbeitet LaplandGifts (LaPeso Oy) Ihre Daten: Google Analytics 4 mit Consent Mode v2, Newsletter über Resend/Supabase und Affiliate-Tracking, verständlich erklärt.',
   },
   ja: {
     title: 'プライバシーポリシー | LaplandGifts',
-    description: 'LaplandGifts（Lapeso Oy）のデータ取り扱い：Consent Mode v2対応のGoogle Analytics 4、Resend/Supabase経由のニュースレター、アフィリエイト計測、わかりやすく解説。',
+    description: 'LaplandGifts（LaPeso Oy）のデータ取り扱い：Consent Mode v2対応のGoogle Analytics 4、Resend/Supabase経由のニュースレター、アフィリエイト計測、わかりやすく解説。',
   },
   es: {
     title: 'Política de privacidad | LaplandGifts',
-    description: 'Cómo LaplandGifts (Lapeso Oy) trata sus datos: Google Analytics 4 con Consent Mode v2, newsletter vía Resend/Supabase y seguimiento de afiliados, explicado con claridad.',
+    description: 'Cómo LaplandGifts (LaPeso Oy) trata sus datos: Google Analytics 4 con Consent Mode v2, newsletter vía Resend/Supabase y seguimiento de afiliados, explicado con claridad.',
   },
   'pt-BR': {
     title: 'Política de privacidade | LaplandGifts',
-    description: 'Como o LaplandGifts (Lapeso Oy) trata seus dados: Google Analytics 4 com Consent Mode v2, newsletter via Resend/Supabase e rastreamento de afiliados, explicado com clareza.',
+    description: 'Como o LaplandGifts (LaPeso Oy) trata seus dados: Google Analytics 4 com Consent Mode v2, newsletter via Resend/Supabase e rastreamento de afiliados, explicado com clareza.',
   },
   'zh-CN': {
     title: '隐私政策 | LaplandGifts',
-    description: 'LaplandGifts（Lapeso Oy）如何处理您的数据：Google Analytics 4 与 Consent Mode v2、通过 Resend/Supabase 的订阅邮件以及联盟跟踪，清晰说明。',
+    description: 'LaplandGifts（LaPeso Oy）如何处理您的数据：Google Analytics 4 与 Consent Mode v2、通过 Resend/Supabase 的订阅邮件以及联盟跟踪，清晰说明。',
   },
   ko: {
     title: '개인정보 처리방침 | LaplandGifts',
-    description: 'LaplandGifts(Lapeso Oy)의 데이터 처리 방식: Consent Mode v2 기반 Google Analytics 4, Resend/Supabase 뉴스레터, 제휴 트래킹, 알기 쉽게 설명합니다.',
+    description: 'LaplandGifts(LaPeso Oy)의 데이터 처리 방식: Consent Mode v2 기반 Google Analytics 4, Resend/Supabase 뉴스레터, 제휴 트래킹, 알기 쉽게 설명합니다.',
   },
   fr: {
     title: 'Politique de confidentialité | LaplandGifts',
-    description: "Comment LaplandGifts (Lapeso Oy) traite vos données : Google Analytics 4 avec Consent Mode v2, newsletter via Resend/Supabase et suivi d'affiliation, expliqué clairement.",
+    description: "Comment LaplandGifts (LaPeso Oy) traite vos données : Google Analytics 4 avec Consent Mode v2, newsletter via Resend/Supabase et suivi d'affiliation, expliqué clairement.",
   },
   it: {
     title: 'Informativa sulla privacy | LaplandGifts',
-    description: 'Come LaplandGifts (Lapeso Oy) tratta i Suoi dati: Google Analytics 4 con Consent Mode v2, newsletter via Resend/Supabase e tracciamento di affiliazione, spiegato con chiarezza.',
+    description: 'Come LaplandGifts (LaPeso Oy) tratta i Suoi dati: Google Analytics 4 con Consent Mode v2, newsletter via Resend/Supabase e tracciamento di affiliazione, spiegato con chiarezza.',
   },
   nl: {
     title: 'Privacybeleid | LaplandGifts',
-    description: 'Hoe LaplandGifts (Lapeso Oy) uw gegevens verwerkt: Google Analytics 4 met Consent Mode v2, nieuwsbrief via Resend/Supabase en affiliate-tracking, helder uitgelegd.',
+    description: 'Hoe LaplandGifts (LaPeso Oy) uw gegevens verwerkt: Google Analytics 4 met Consent Mode v2, nieuwsbrief via Resend/Supabase en affiliate-tracking, helder uitgelegd.',
   },
   sv: {
     title: 'Integritetspolicy | LaplandGifts',
-    description: 'Så hanterar LaplandGifts (Lapeso Oy) dina uppgifter: Google Analytics 4 med Consent Mode v2, nyhetsbrev via Resend/Supabase och affiliate-spårning, tydligt förklarat.',
+    description: 'Så hanterar LaplandGifts (LaPeso Oy) dina uppgifter: Google Analytics 4 med Consent Mode v2, nyhetsbrev via Resend/Supabase och affiliate-spårning, tydligt förklarat.',
   },
 }
 

@@ -99,10 +99,17 @@ const DESC_MAX = 160
 function clampWords(text, max) {
   if (text.length <= max) return text
   const cut = text.slice(0, max)
-  const stop = Math.max(cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '))
+  // 🔴 CJK-lopetusmerkkien perässä EI ole välilyöntiä, joten ne haetaan
+  // sellaisenaan. Ilman tätä ja/zh/ko-teksti katkesi viimeiseen
+  // ASCII-sanaväliin (= latinalaisen sanan perään: "現在はFiskars.") ja
+  // sai perään valepisteen — ~40 brändisivun metakuvaus kolmella kielellä.
+  const stop = Math.max(
+    cut.lastIndexOf('. '), cut.lastIndexOf('! '), cut.lastIndexOf('? '),
+    cut.lastIndexOf('。'), cut.lastIndexOf('！'), cut.lastIndexOf('？'),
+  )
   if (stop > max * 0.5) return cut.slice(0, stop + 1).trim()
-  const comma = cut.lastIndexOf(', ')
-  if (comma > max * 0.5) return `${cut.slice(0, comma)}.`
+  const comma = Math.max(cut.lastIndexOf(', '), cut.lastIndexOf('、'))
+  if (comma > max * 0.5) return cut[comma] === '、' ? `${cut.slice(0, comma)}。` : `${cut.slice(0, comma)}.`
   const space = cut.lastIndexOf(' ')
   return `${(space > 0 ? cut.slice(0, space) : cut).replace(/[\s,;:]+$/, '')}.`
 }
@@ -118,7 +125,9 @@ function clampWords(text, max) {
 const DECIMAL_MASK = '\u0000'
 function sentences(text) {
   const masked = text.replace(/(\d)\.(\d)/g, `$1${DECIMAL_MASK}$2`)
-  const m = masked.match(/[^.!?]+[.!?]+(?:\s|$)/g)
+  // 。！？ päättävät lauseen ilman perässä olevaa välilyöntiä; ilman niitä
+  // koko ja/zh/ko-profiili oli yksi "lause" ja putosi clampWords-katkaisuun.
+  const m = masked.match(/[^.!?。！？]+(?:[。！？]+|[.!?]+(?:\s|$))/g)
   const parts = m ? m.map((s) => s.trim()) : [masked]
   return parts.map((s) => s.replaceAll(DECIMAL_MASK, '.'))
 }
@@ -144,6 +153,10 @@ function leadingSentences(text) {
  * oltava eri: kaksi peräkkäistä toimitusaluelausetta sanoisi saman asian
  * kahdesti eri sanoin, mikä on juuri sitä täytettä jota metakuvaus ei kestä.
  */
+/** CJK-lopetusmerkin perään ei kuulu välilyöntiä — lauseliitokset tehdään
+ *  ASCII-välillä, joten ja/zh-teksteihin jäisi 。+ väli. */
+const joinCjk = (s) => s.replace(/([。！？、]) /g, '$1')
+
 function fitDescription(base, tails) {
   const candidates = [{ text: base, n: 0 }]
   for (let i = 0; i < tails.length; i++) {
@@ -153,6 +166,7 @@ function fitDescription(base, tails) {
       candidates.push({ text: `${base} ${tails[i][1]} ${tails[j][1]}`, n: 2 })
     }
   }
+  for (const c of candidates) c.text = joinCjk(c.text)
   const inWindow = candidates
     .filter((c) => c.text.length >= DESC_MIN && c.text.length <= DESC_MAX)
     .sort((a, b) => a.n - b.n || b.text.length - a.text.length)
@@ -160,7 +174,7 @@ function fitDescription(base, tails) {
   const underMax = candidates
     .filter((c) => c.text.length <= DESC_MAX)
     .sort((a, b) => b.text.length - a.text.length)
-  return underMax.length ? underMax[0].text : clampWords(base, DESC_MAX)
+  return underMax.length ? underMax[0].text : joinCjk(clampWords(base, DESC_MAX))
 }
 
 /** Ensimmäinen otsikkoehdokas, joka mahtuu näyttöikkunaan. */

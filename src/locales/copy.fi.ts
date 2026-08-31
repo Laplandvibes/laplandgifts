@@ -150,7 +150,7 @@ const fi: ChromeCopy = {
     items: [
       {
         q: 'Mitkä ovat aitoja matkamuistoja Lapista?',
-        a: 'Aidoimmat Lapin matkamuistot ovat paikallisten käsialaa: puukko, kuksa (visakoivun pahkasta veistetty juomakuppi), poronnahkatuotteet, villatekstiilit sekä luonnonantimet kuten lakkahillo, puolukkasäilyke ja koivunmahlatuotteet. Saamelainen duodji-käsityö, hopeakorut, sarvityöt ja punotut vyönauhat, on arvostetuinta. Etsi tekijän nimeä tai alkuperätodistusta sen sijaan, että ostaisit massatuotettua tavaraa lentokentän myymälästä.',
+        a: 'Aidoimmat Lapin matkamuistot ovat paikallisten käsialaa: puukko, kuksa (visakoivun pahkasta veistetty juomakuppi), poronnahkatuotteet, villatekstiilit sekä luonnonantimet kuten lakkahillo, puolukkasäilyke ja koivunmahlatuotteet. Saamelainen duodji-käsityö, hopeakorut, sarvityöt ja punotut vyönauhat on arvostetuinta. Etsi tekijän nimeä tai alkuperätodistusta sen sijaan, että ostaisit massatuotettua tavaraa lentokentän myymälästä.',
       },
       {
         q: 'Voinko ostaa saamelaista käsityötä eettisesti, ja mikä on Sámi Duodji -merkki?',
