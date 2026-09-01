@@ -61,7 +61,7 @@ const ivalo: AdSpec = {
     es: {
       eyebrow: 'Ropa que las cadenas no venden',
       headline: 'IVALO.COM, el marketplace de marcas de diseño independientes',
-      sub: 'Bautizado con el nombre de Ivalo, en Laponia, reúne marcas de diseño europeas independientes en un solo lugar. Ropa y accesorios que no verás en cada esquina.',
+      sub: 'Bautizado con el nombre de Ivalo, en Laponia, reúne marcas de diseño europeas independientes en un solo lugar. Ropa y accesorios que no verá en cada esquina.',
       trust: ['Marcas independientes', 'Selección curada', 'Entrega a domicilio'],
       cta: 'Descubre las marcas',
       poweredBy: 'Compras en IVALO.COM',
