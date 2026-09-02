@@ -1636,12 +1636,12 @@ const it: ShopCopy = over({
 const nl: ShopCopy = over({
   nav: { shop: 'Winkel', guides: 'Cadeautips', shipping: 'Verzending', allProducts: 'Alle producten' },
   home: {
-    heroKicker: 'Vanuit Finland tot aan je deur',
+    heroKicker: 'Vanuit Finland tot aan uw deur',
     heroTitle: 'Finse cadeaus en',
     heroTitleAccent: 'souvenirs uit Lapland',
     heroLead:
-      'Fins design en Fins ambacht, snoep en bessenpoeders, op één plek verzameld en bezorgd waar jij woont. Of je hier nu op vakantie bent of vanaf de andere kant van de wereld bestelt: elk product wordt verkocht en verstuurd door een Finse of Noordse winkel, niet door ons.',
-    categoriesH2: 'Wat je in Lapland koopt',
+      'Fins design en Fins ambacht, snoep en bessenpoeders, op één plek verzameld en bezorgd waar u woont. Of u hier nu op vakantie bent of vanaf de andere kant van de wereld bestelt: elk product wordt verkocht en verstuurd door een Finse of Noordse winkel, niet door ons.',
+    categoriesH2: 'Wat u in Lapland koopt',
     categoriesSub:
       'Fins design, kleding, ambacht, lekkers, bessenpoeders, onze eigen merch en belevenissen om cadeau te doen. Elke categorie opent de winkel die het artikel echt verstuurt.',
     featuredH2: 'Cadeaus en souvenirs uit partnerwinkels',
@@ -1659,12 +1659,12 @@ const nl: ShopCopy = over({
         {
           title: 'Controleer het bezorgland',
           description:
-            'Elke kaart zegt of die winkel bezorgt waar jij woont, en noemt de landen die eraf vallen. Je weet het vóór je klikt, niet pas bij het afrekenen.',
+            'Elke kaart zegt of die winkel bezorgt waar u woont, en noemt de landen die eraf vallen. U weet het vóór u klikt, niet pas bij het afrekenen.',
         },
         {
           title: 'Koop in de partnerwinkel',
           description:
-            'De knop opent de winkel die het artikel verkoopt. Betaling, bezorging, retour en garantie zijn van hen, en wij krijgen commissie als je koopt.',
+            'De knop opent de winkel die het artikel verkoopt. Betaling, bezorging, retour en garantie zijn van hen, en wij krijgen commissie als u koopt.',
         },
       ],
     },
@@ -1690,7 +1690,7 @@ const nl: ShopCopy = over({
         {
           title: 'De voorwaarden van de winkel gelden',
           description:
-            'Je koopt in de winkel van de partner, dus hun voorwaarden voor betaling, bezorging, retour en garantie zijn de voorwaarden die tellen. Zij sturen ook het pakket.',
+            'U koopt in de winkel van de partner, dus hun voorwaarden voor betaling, bezorging, retour en garantie zijn de voorwaarden die tellen. Zij sturen ook het pakket.',
         },
       ],
     },
@@ -1703,7 +1703,7 @@ const nl: ShopCopy = over({
       treats: 'Lekkers en eetbare cadeaus',
       superfoods: 'Arctische bessenpoeders',
       merch: 'Lapland-shirts en merch',
-      experiences: 'Belevenissen uit Lapland cadeau',
+      experiences: 'Beleveniscadeaus uit Lapland',
     },
     intro: {
       design: 'Moomin-mokken, glas van Iittala, Marimekko en houten sieraden van Aarikka: het Finse design dat echt mee naar huis gaat. Elk stuk vertrekt bij de Finse of Noordse winkel die het verkoopt.',
@@ -1717,7 +1717,7 @@ const nl: ShopCopy = over({
     productCount: (n) => (n === 1 ? '1 product' : `${n} producten`),
     emptyCategory:
       'We vullen deze categorie nog aan. Blader intussen door de andere categorieën of bekijk de cadeautips.',
-    emptyForCountry: 'Geen van de producten in deze categorie wordt al naar jouw land verzonden. Wissel van bezorgland om alles te zien.',
+    emptyForCountry: 'Geen van de producten in deze categorie wordt al naar uw land verzonden. Wissel van bezorgland om alles te zien.',
   },
   product: {
     buyAt: (partner) => `Kopen bij ${partner}`,
@@ -1726,7 +1726,7 @@ const nl: ShopCopy = over({
       return eur ? `vanaf ${fmt(value, currency, 'nl-NL')} (ongeveer ${eur} €)` : `vanaf ${fmt(value, currency, 'nl-NL')}`
     },
     priceNote: (date, partner) => `Prijs afgelezen bij ${partner} op ${date}. De winkel bepaalt de eindprijs.`,
-    checkoutNote: 'Je rondt de aankoop af in de partnerwinkel. Wij verwerken je betaling en bezorging niet.',
+    checkoutNote: 'U rondt de aankoop af in de partnerwinkel. Wij verwerken uw betaling en bezorging niet.',
     illustrativeImage: 'Sfeerbeeld, niet het exacte artikel. De productfoto’s staan op de pagina van de partner.',
     imageCredit: (partner) => `Productfoto: ${partner}`,
     related: 'Meer uit deze categorie',
@@ -1749,22 +1749,22 @@ const nl: ShopCopy = over({
     detailsSource: (partner, date) => `Productgegevens: ${partner}, gelezen op ${date}`,
   },
   faqAnswerFixes: {
-    1: 'Ja. Duodji is het Samische woord voor traditioneel ambacht, en het ronde merk „Sámi Duodji” is een echtheidskeurmerk dat wordt toegekend aan werk van Samische makers volgens traditionele methoden en met traditionele materialen. Kies je een stuk met dat merk, of koop je rechtstreeks bij een met naam genoemde Samische maker of een erkende verkoper, dan blijft het geld in de gemeenschap en is het werk echt in plaats van een fabrieksimitatie. LaplandGifts voert helemaal geen Samisch ambacht: we verwijzen je liever naar een duodji-verkoper dan dat we je een namaakstuk verkopen.',
-    2: 'Veel winkels doen dat, en daar draait deze site op: elk product hier wordt verkocht en verstuurd door de Finse of Noordse winkel die het maakt of op voorraad heeft, nooit door ons. Elke kaart noemt het bezorggebied van die winkel en de landen die eraf vallen, en bij levensmiddelen zijn de regels strenger: gedroogd rendiervlees reist binnen de Europese Unie, maar niet naar het Verenigd Koninkrijk, de Verenigde Staten of Japan. Online bestellen tijdens de reis betekent dat breekbare dingen apart reizen in plaats van in je koffer. Onze eigen #LaplandVibes-merch is nog niet te koop.',
+    1: 'Ja. Duodji is het Samische woord voor traditioneel ambacht, en het ronde merk ‘Sámi Duodji’ is een echtheidskeurmerk dat wordt toegekend aan werk van Samische makers volgens traditionele methoden en met traditionele materialen. Kiest u een stuk met dat merk, of koopt u rechtstreeks bij een met naam genoemde Samische maker of een erkende verkoper, dan blijft het geld in de gemeenschap en is het werk echt in plaats van een fabrieksimitatie. LaplandGifts voert helemaal geen Samisch ambacht: we verwijzen u liever naar een duodji-verkoper dan dat we u een namaakstuk verkopen.',
+    2: 'Veel winkels doen dat, en daar draait deze site op: elk product hier wordt verkocht en verstuurd door de Finse of Noordse winkel die het maakt of op voorraad heeft, nooit door ons. Elke kaart noemt het bezorggebied van die winkel en de landen die eraf vallen, en bij levensmiddelen zijn de regels strenger: gedroogd rendiervlees reist binnen de Europese Unie, maar niet naar het Verenigd Koninkrijk, de Verenigde Staten of Japan. Online bestellen tijdens de reis betekent dat breekbare dingen apart reizen in plaats van in uw koffer. Onze eigen #LaplandVibes-merch is nog niet te koop.',
   },
   experience: {
     voucherH2: 'Belevenis-cadeaukaarten',
     voucherNote:
       'Gekocht bij Elämyslahjat.fi en per e-mail bezorgd. De ontvanger boekt zelf de datum, en de belevenis wordt in Lapland ingewisseld.',
     priceNote: (price) => `Vanaf ${price}`,
-    priceAsOf: (asOf) => `Vanafprijzen afgelezen op GetYourGuide op ${asOf}. De exacte prijs hangt af van de datum die je kiest.`,
+    priceAsOf: (asOf) => `Vanafprijzen afgelezen op GetYourGuide op ${asOf}. De exacte prijs hangt af van de datum die u kiest.`,
     groups: {
       aurora: 'Noorderlicht',
       husky: 'Huskytochten',
       reindeer: 'Rendieren',
       snowmobile: 'Sneeuwscootersafari’s',
       nature: 'Natuur en nationale parken',
-      sauna: 'Sauna en wak',
+      sauna: 'Sauna en ijszwemmen',
       santa: 'Kerstman en sneeuw',
       kids: 'Voor kinderen',
     },

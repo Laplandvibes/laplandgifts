@@ -158,7 +158,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     description:
       'Een sobere Noordse muts van merinowol, die temperatuur en vocht in balans houdt wanneer u uit een warm café zo de kou in stapt. Geen logo ter grootte van een vuist op de voorkant.',
     specs: [
-      '100 % merinowol, patentsteek fijnte 8, mulesingvrij',
+      '100 % merinowol, patentsteek gauge 8, mulesingvrij',
       'One size',
       'Dark Brown',
       'Gemaakt in Finland, materiaal gemaakt in Italië',
@@ -248,7 +248,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: [
       '100 % merinowol, 18,5 micron, 1/1 ribbreisel',
       'One size',
-      'Pappigrijs',
+      'Papgrijs',
       'Gemaakt in Oulu, Finland',
       'Lucht hem regelmatig en was hem alleen als het nodig is. Wolwasmiddel, fijnwas op 30 °C met de laagste centrifugegang, binnenstebuiten',
       'OEKO-TEX, Woolmark',
@@ -272,11 +272,11 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'marttiini-lapinleuku-255': {
     name: 'Marttiini Lapse mes 255',
     description:
-      'Het traditionele Lapse mes, 27 cm in totaal, met een roestvrij lemmet, een gelakt heft van vlambirken en een leren schede. Marttiini maakt zijn messen in Rovaniemi, en deze uitvoering van het model heeft een vingerbeschermer.',
+      'Het traditionele Lapse mes, 27 cm in totaal, met een roestvrij lemmet, een gelakt heft van vlamberken en een leren schede. Marttiini maakt zijn messen in Rovaniemi, en deze uitvoering van het model heeft een vingerbeschermer.',
     specs: [
       '16 cm',
       'Totale lengte 27 cm',
-      'Lemmet van roestvrij staal, heft van gelakt vlambirken, schede van leer',
+      'Lemmet van roestvrij staal, heft van gelakt vlamberken, schede van leer',
       'Mes en leren schede met drukknoopsluiting',
       '255010',
     ],
@@ -298,11 +298,11 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'marttiini-ilves-131': {
     name: 'Marttiini Lynx 131',
     description:
-      'Een mes van 22 cm met een roestvrij lemmet, een gelakt heft van vlambirken en een bruine leren schede. Marttiini geeft aan dat het model Lynx in de jaren dertig door oprichter Janne Marttiini is getekend.',
+      'Een mes van 22 cm met een roestvrij lemmet, een gelakt heft van vlamberken en een bruine leren schede. Marttiini geeft aan dat het model Lynx in de jaren dertig door oprichter Janne Marttiini is getekend.',
     specs: [
       '11 cm',
       'Totale lengte 22 cm',
-      'Lemmet van roestvrij staal, heft van gelakt vlambirken, schede van bruin leer',
+      'Lemmet van roestvrij staal, heft van gelakt vlamberken, schede van bruin leer',
       '131010',
     ],
     specLabels: ['Lemmetlengte', undefined, undefined, 'Artikelnummer'],
@@ -416,7 +416,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, 'Collectie', 'Productcode'],
   },
   'pentik-tunturiretki-studio-dish': {
-    name: 'Pentik Tunturiretki Winter Studio diepe driehoekige schaal 19 cm',
+    name: 'Pentik Tunturiretki Winter Studio diepe driehoekschaal 19 cm',
     description:
       'Anu Pentik schilderde de rendieren die tijdens een wandeling over de fjäll steeds tussen de bomen opduiken. Studiostukken worden in Posio met de hand beschilderd, dus geen twee schalen dragen precies dezelfde penseelstreken.',
     specs: [
@@ -831,7 +831,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'north-outdoor-sointu-cardigan': {
     name: 'North Outdoor Sointu merinovest',
     description:
-      'Een recht merinovest dat leest als binnenkleding maar werkt als tussenlaag. Het enige stuk uit deze set dat u na de safari aan tafel zou dragen.',
+      'Een recht merinovest dat eruitziet als binnenkleding maar werkt als tussenlaag. Het enige stuk uit deze set dat u na de safari aan tafel zou dragen.',
     specs: ['100 % merinowol', 'XS–2XL', 'Latte', 'North Outdoor, Oulu, Finland'],
   },
   'north-outdoor-arctic-260-zip-neck': {
@@ -881,7 +881,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'halti-taival-dx-jacket': {
     name: 'Halti Taival DX 3L shelljas, heren',
     description:
-      'Een driedelige shell met 20 000 mm waterdichtheid en 30 000 g ademend vermogen. Die twee getallen tellen in verschillende richtingen: het eerste houdt natte sneeuw buiten, het tweede laat het zweet van een klim ontsnappen in plaats van het binnenin te laten bevriezen.',
+      'Een drielaagse shell met 20 000 mm waterdichtheid en 30 000 g ademend vermogen. Die twee getallen tellen in verschillende richtingen: het eerste houdt natte sneeuw buiten, het tweede laat het zweet van een klim ontsnappen in plaats van het binnenin te laten bevriezen.',
     specs: [
       'DrymaxX Nano gebreide shell, 3 lagen. 100 % gerecycled polyester',
       '20 000 mm',
@@ -892,7 +892,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'halti-sykli-ski-gloves': {
     name: 'Halti Sykli skihandschoenen',
     description:
-      'Waterdichte handschoen met 120 g isolatie, een leren handpalm en een snowlock-boord die voorkomt dat sneeuw zich bij de pols ophoopt als u valt. Gemaakt voor skiën met liften in Levi of Ylläs en niet om mee door de stad te lopen.',
+      'Waterdichte handschoen met 120 g isolatie, een leren handpalm en een snowlock-boord die voorkomt dat sneeuw zich bij de pols ophoopt als u valt. Gemaakt voor pisteskiën in Levi of Ylläs en niet om mee door de stad te lopen.',
     specs: [
       'DrymaxX, rekt in 4 richtingen, waterdicht en winddicht. Leren handpalm',
       '120 g Microtherm Dynamic',
@@ -958,12 +958,12 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'glass-igloo-night-levi': {
     name: 'Nacht in een glazen iglo voor twee, Levi',
     description:
-      'Een nacht voor twee in een warme glazen iglo hoog op de fjell van Levi. Het elektrisch verwarmde glas blijft helder terwijl u vanuit een gemotoriseerd tweepersoonsbed naar het noorderlicht speurt. Welkomstdrankje, badjassen en ontbijt inbegrepen, met eigen kitchenette, douche en wc.',
+      'Een nacht voor twee in een warme glazen iglo hoog op de fjäll van Levi. Het elektrisch verwarmde glas blijft helder terwijl u vanuit een gemotoriseerd tweepersoonsbed naar het noorderlicht speurt. Welkomstdrankje, badjassen en ontbijt inbegrepen, met eigen kitchenette, douche en wc.',
     specs: [
       'Eén nacht voor twee in een glazen iglo van Superior-klasse, welkomstdrankje, badjassen en sloffen, ontbijt. Vervoer niet inbegrepen',
       '1 nacht, uitchecken om 11.00',
       '2 personen',
-      'Levi, hoog op de fjell',
+      'Levi, hoog op de fjäll',
       '23 m², verwarmd condensvrij glas, kitchenette, douche en wc, gemotoriseerd tweepersoonsbed',
       'Geldig voor verblijven 27.08-10.11 en 01.04-12.04',
     ],
@@ -1021,9 +1021,9 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: ['50 ml'],
   },
   'nb-little-my-beanie': {
-    name: 'Kleine My grofgebreide muts',
+    name: 'Kleine Mij grofgebreide muts',
     description:
-      'Dikke gebreide muts met Kleine My op de omslag, in een wolmix die zijn vorm houdt na een week van op- en afzetten. Eén volwassenmaat, en het enige Moomin-figuur dat het weer in Lapland zou goedkeuren.',
+      'Dikke gebreide muts met Kleine Mij op de omslag, in een wolmix die zijn vorm houdt na een week van op- en afzetten. Eén volwassenmaat, en het enige Moomin-figuur dat het weer in Lapland zou goedkeuren.',
     specs: [
       'Acryl, nylon en wol',
       'Volwassenen, één maat',
@@ -1034,7 +1034,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'nb-moomintroll-mittens': {
     name: 'Moomintroll wanten',
     description:
-      'Gebreide wanten met een zachte fleecevoering, 24 centimeter hoog zodat de boord over de jasmouw valt. Volwassenmaat, en goedkoop genoeg dat er eentje verliezen op een huskyslee te overleven is.',
+      'Gebreide wanten met een zachte fleecevoering, 24 centimeter hoog zodat de boord over de jasmouw valt. Volwassenmaat, en goedkoop genoeg dat het te overleven is als er eentje op een huskyslee verloren gaat.',
     specs: [
       '100 % acryl, fleecevoering',
       'Volwassenen, hoogte 24 cm, breedte boven de duim 9,5 cm',
@@ -1159,7 +1159,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Illustratie'],
   },
   'nb-little-my-mittens': {
-    name: 'Kleine My wanten',
+    name: 'Kleine Mij wanten',
     description:
       'Het bordeauxrode paar bij de Moomin-wanten, dezelfde fleecevoering en dezelfde prijs. De boord is twee centimeter korter, en het personage past bij wie Moomin net iets te meegaand vindt.',
     specs: [
@@ -1181,7 +1181,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Illustratie'],
   },
   'nb-little-my-thermal-bottle': {
-    name: 'Kleine My thermosfles 0,55 l',
+    name: 'Kleine Mij thermosfles 0,55 l',
     description:
       'Dubbelwandig staal, 550 milliliter, en de fabrikant geeft zes uur warmhouden op. Dat is ongeveer één sneeuwscootersafari, precies de praktijktest waarvoor deze fles gekocht wordt.',
     specs: [
@@ -1192,7 +1192,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Houdt warm'],
   },
   'nb-little-my-neckpillow': {
-    name: 'Kleine My nekkussen',
+    name: 'Kleine Mij nekkussen',
     description:
       'Traagschuim onder een zachte hoes, voor de nachttrein Helsinki–Rovaniemi of de vlucht terug. Klein genoeg om aan de tas te klikken, en dat is het enige soort reiskussen dat iemand echt houdt.',
     specs: [
@@ -1213,7 +1213,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Licentie'],
   },
   'nb-little-my-poster': {
-    name: 'Kleine My poster',
+    name: 'Kleine Mij poster',
     description:
       'Ontworpen en gedrukt in Helsinki op zijdepapier van 200 gram, in 30 × 40 of 50 × 70. Een poster rolt in een koker en weegt niets, wat u van de meeste dingen die mensen uit Lapland mee naar huis slepen niet kunt zeggen.',
     specs: [
@@ -1255,7 +1255,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: ['Patroon', 'Onderhoud'],
   },
   'sk-little-my-sauna-cushion': {
-    name: 'Emendo saunakussen Kleine My',
+    name: 'Emendo saunakussen Kleine Mij',
     description:
       'Een saunazitkussen naar de originele tekeningen van Tove Jansson, in licentie gemaakt door Emendo. Wat er tussen u en een bank van negentig graden zit.',
     specs: [
@@ -1277,7 +1277,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-rento-birch-whisk': {
     name: 'Rento gedroogde berkentwijgbundel',
     description:
-      'Een gedroogde berkentwijgbundel, voor de sauna in warm water geweekt zodat de blaadjes en de geur terugkomen. Jezelf ermee slaan is het deel van de sauna waar bezoekers altijd naar vragen en dat ze zelden proberen.',
+      'Een gedroogde berkentwijgbundel, voor de sauna in warm water geweekt zodat de blaadjes en de geur terugkomen. Zichzelf ermee slaan is het deel van de sauna waar bezoekers altijd naar vragen en dat ze zelden proberen.',
     specs: [
       'Gedroogde berk',
       'Weken voor de sauna',

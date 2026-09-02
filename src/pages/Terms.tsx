@@ -47,8 +47,8 @@ const META: Record<Lang, { title: string; description: string }> = {
     description: 'Termini di servizio di LaplandGifts: utilizzo del sito, divulgazione di affiliazione e condizioni di acquisto.',
   },
   nl: {
-    title: 'Servicevoorwaarden | LaplandGifts',
-    description: 'Servicevoorwaarden van LaplandGifts: gebruik van de site, affiliate-vermelding en winkelvoorwaarden.',
+    title: 'Gebruiksvoorwaarden | LaplandGifts',
+    description: 'Gebruiksvoorwaarden van LaplandGifts: gebruik van de site, affiliate-vermelding en winkelvoorwaarden.',
   },
   sv: {
     title: 'Användarvillkor | LaplandGifts',

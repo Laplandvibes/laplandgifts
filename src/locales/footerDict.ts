@@ -406,7 +406,7 @@ export function footerDict(lang: Lang) {
       travelGuideKicker: 'Lapland-reisgids',
       about: {
         eyebrow: 'Over LaplandVibes',
-        body: 'De toonaangevende gids voor Fins Lapland, van het noorderlicht tot de middernachtszon. Geselecteerde ervaringen, insidertips en de praktische basis voor uw Arctische reis.',
+        body: 'De toonaangevende gids voor Fins Lapland, van het noorderlicht tot de middernachtszon. Geselecteerde ervaringen, insidertips en de praktische basis voor uw arctische reis.',
         badge: 'Onafhankelijk beheerd · bronnen vermeld',
       },
       spottedError: { title: 'Een fout gezien?', body: 'Iets dat aangepast moet worden? Laat het ons weten, we corrigeren het meteen.', cta: 'Fout melden →' },

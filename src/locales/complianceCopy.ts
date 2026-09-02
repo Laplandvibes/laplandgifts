@@ -43,7 +43,7 @@ export const NEWSLETTER_PRIVACY: Record<Lang, { lead: string; link: string }> = 
   ko: { lead: '개인정보 처리 방법:', link: '개인정보 처리방침' },
   fr: { lead: 'Comment nous traitons vos données :', link: 'Politique de confidentialité' },
   it: { lead: 'Come trattiamo i tuoi dati:', link: 'Informativa sulla privacy' },
-  nl: { lead: 'Hoe wij met je gegevens omgaan:', link: 'Privacybeleid' },
+  nl: { lead: 'Hoe wij met uw gegevens omgaan:', link: 'Privacybeleid' },
   sv: { lead: 'Så hanterar vi dina uppgifter:', link: 'Integritetspolicy' },
 }
 

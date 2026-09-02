@@ -155,7 +155,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} prodotti`,
   },
   nl: {
-    name: { moomin: 'Moemin', arctic: 'Arctische natuur', sauna: 'Sauna' },
+    name: { moomin: 'Moomin', arctic: 'Arctische natuur', sauna: 'Sauna' },
     intro: {
       moomin:
         'Mokken, wanten, beddengoed en posters. Moomin-spullen staan hier in vier categorieën; deze pagina brengt ze samen.',

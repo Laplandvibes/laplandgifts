@@ -76,7 +76,7 @@ const nl: ChromeCopy = {
     occasions: [
       {
         name: 'Kerst',
-        description: "Niets zegt Kerst zoals een cadeau uit het thuisland van de Kerstman. Kies uit onze zorgvuldig samengestelde feestselecties.",
+        description: "Niets voelt zo als Kerstmis als een cadeau uit het thuisland van de Kerstman. Kies uit onze zorgvuldig samengestelde feestselecties.",
         suggestions: ['Cadeaumand "Lapland Luxury"', 'Wollen deken uit Lapland', 'Set kruipbraamjam', 'Vilten pantoffels'],
       },
       {
@@ -150,11 +150,11 @@ const nl: ChromeCopy = {
     items: [
       {
         q: 'Wat zijn authentieke souvenirs om in Lapland te kopen?',
-        a: 'De meest authentieke Lapland-souvenirs zijn door lokale handen gemaakt: een puukko (een traditioneel Fins riemmes), een kuksa (een uit een berkenknoest gesneden beker), rendierleren artikelen, wollen textiel en wilde producten zoals kruipbraamjam, vossenbessenconfituur en berkensapproducten. Sami duodji-ambacht, zilveren sieraden, geweiwerk en geweven banden is het meest gewaardeerd. Let op de naam van de maker of een certificaat van oorsprong in plaats van massaproducten uit de luchthavenwinkel.',
+        a: 'De meest authentieke Lapland-souvenirs zijn door lokale handen gemaakt: een puukko (een traditioneel Fins riemmes), een kuksa (een uit een berkenknoest gesneden beker), rendierleren artikelen, wollen textiel en wilde producten zoals kruipbraamjam, vossenbessenconfituur en berkensapproducten. Sami duodji-ambacht, zilveren sieraden, geweiwerk en geweven banden worden het meest gewaardeerd. Let op de naam van de maker of een certificaat van oorsprong in plaats van massaproducten uit de luchthavenwinkel.',
       },
       {
         q: 'Kan ik Sami-ambacht ethisch kopen, en wat is het Sámi Duodji-keurmerk?',
-        a: 'Ja. Duodji is het Samische woord voor traditioneel ambacht, en het ronde «Sámi Duodji»-handelsmerk is een echtheidskeurmerk dat wordt toegekend aan werk dat door Sami-makers met traditionele methoden en materialen is vervaardigd. Kiest u een artikel met dat keurmerk of koopt u rechtstreeks bij een met naam genoemde Sami-ambachtsman of een erkende verkoper, dan steunt het geld de gemeenschap en is het stuk echt, geen fabrieksimitatie van Sami-ontwerpen. Wij betrekken Sami-ambacht alleen via erkende verkopers.',
+        a: 'Ja. Duodji is het Samische woord voor traditioneel ambacht, en het ronde ‘Sámi Duodji’-handelsmerk is een echtheidskeurmerk dat wordt toegekend aan werk dat door Sami-makers met traditionele methoden en materialen is vervaardigd. Kiest u een artikel met dat keurmerk of koopt u rechtstreeks bij een met naam genoemde Sami-ambachtsman of een erkende verkoper, dan steunt het geld de gemeenschap en is het stuk echt, geen fabrieksimitatie van Sami-ontwerpen. Wij betrekken Sami-ambacht alleen via erkende verkopers.',
       },
       {
         q: 'Versturen winkels in Lapland cadeaus naar het buitenland?',
@@ -162,7 +162,7 @@ const nl: ChromeCopy = {
       },
       {
         q: 'Wat neemt u mee naar huis vanuit Rovaniemi?',
-        a: 'Rovaniemi ligt op de poolcirkel en is de toegangspoort tot Fins Lapland, dus het is een goede plek om te winkelen. Populaire keuzes zijn een kuksa, een puukko-mes, rendierleren accessoires, wollen sokken en mutsen, Moomin- en kerstman-artikelen, en arctische etenswaren zoals kruipbraamjam, salmiakki (zoute drop) en berkensapsiroop. Voor iets met herkomst kiest u een stuk dat door de maker is gesigneerd in plaats van een algemeen «Lapland»-souvenir.',
+        a: 'Rovaniemi ligt op de poolcirkel en is de toegangspoort tot Fins Lapland, dus het is een goede plek om te winkelen. Populaire keuzes zijn een kuksa, een puukko-mes, rendierleren accessoires, wollen sokken en mutsen, Moomin- en kerstman-artikelen, en arctische etenswaren zoals kruipbraamjam, salmiakki (zoute drop) en berkensapsiroop. Voor iets met herkomst kiest u een stuk dat door de maker is gesigneerd in plaats van een algemeen ‘Lapland’-souvenir.',
       },
       {
         q: 'Mag u producten van rendier en gewei meenemen?',
@@ -206,7 +206,7 @@ const nl: ChromeCopy = {
     h1: 'Uitschrijven',
     body: 'Vul uw e-mailadres in om u af te melden van onze nieuwsbrief.',
     successH1: 'U bent uitgeschreven',
-    successBody: 'U ontvangt geen e-mails meer van ons. We vinden het jammer u te zien gaan.',
+    successBody: 'U ontvangt geen e-mails meer van ons. Jammer dat u gaat.',
     submit: 'Uitschrijven',
     submitting: 'Uitschrijven…',
     backHome: 'Terug naar home',
