@@ -943,7 +943,7 @@ const sv: ShopCopy = over({
       treats: 'Finska sötsaker och matgåvor: salmiak, choklad från Fazer, te från Nordqvist och Mumin, Mumin-kaffe, torkat renkött och havtornssylt. Införselreglerna skiljer sig åt mellan länder, så läs fraktnoteringen på kortet.',
       superfoods: 'Arktiska bärpulver, chaga och Arctic Warriors örtprodukter tillverkade i Rovaniemi, från finska producenter.',
       merch: 'Vårt eget #LAPLANDVIBES-tryck på t-shirtar, hoodies och kepsar. Tryckbutiken är ännu inte öppen, så här finns inget att köpa i dag. Nyhetsbrevet berättar när den öppnar.',
-      experiences: 'Norrskensturer, hundspann och Tomtens by, köpta som present nu och bokade när mottagaren väljer ett datum.',
+      experiences: 'Norrskensturer, hundspann och Jultomtens by, köpta som present nu och bokade när mottagaren väljer ett datum.',
     },
     productCount: (n) => (n === 1 ? '1 produkt' : `${n} produkter`),
     emptyCategory:

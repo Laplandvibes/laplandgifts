@@ -272,9 +272,9 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Certifikat'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Marttiini lapsk kniv 255',
+    name: 'Marttiini lappkniv 255',
     description:
-      'Den traditionella lapska kniven, 27 cm totalt, med rostfritt blad, lackat masurbjörkskaft och läderslida. Marttiini tillverkar sina knivar i Rovaniemi, och den här versionen av modellen har fingerskydd.',
+      'Den traditionella lappkniven, 27 cm totalt, med rostfritt blad, lackat masurbjörkskaft och läderslida. Marttiini tillverkar sina knivar i Rovaniemi, och den här versionen av modellen har fingerskydd.',
     specs: [
       '16 cm',
       'Total längd 27 cm',
@@ -986,7 +986,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Presentkort'],
   },
   'foodin-six-mushroom-blend': {
-    name: 'Foodin Sexsvampsblandning 40 g',
+    name: 'Foodin blandning av sex svampar 40 g',
     description:
       'Chaga, reishi, lion\'s mane, cordyceps, shiitake och maitake i samma burk, malda för kaffe eller smoothies. En burk täcker hela svamphyllan.',
     specs: ['40 g', 'Chaga, reishi, lion\'s mane, cordyceps, shiitake, maitake'],

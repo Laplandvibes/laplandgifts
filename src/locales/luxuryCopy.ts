@@ -53,7 +53,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   sv: {
     eyebrow: 'Toppen av urvalet',
     title: 'Lyx från Lappland',
-    lead: 'Det dyraste den här butiken pekar på är inte föremål utan dagar: en dag med guldvaskning i Enare, en natt i glasiglo, en morgon med renarna. Under dem de saker som är värda platsen i väskan.',
+    lead: 'Det dyraste den här butiken pekar på är inte föremål utan dagar: en dag med guldvaskning i Enare, en natt i glasigloo, en morgon med renarna. Under dem de saker som är värda platsen i väskan.',
     experiencesH2: 'Dagar och nätter',
     objectsH2: 'Saker',
     count: (n) => `${n} produkter`,
