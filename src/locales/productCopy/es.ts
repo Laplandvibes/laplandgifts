@@ -156,7 +156,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'makia-merino-beanie': {
     name: 'Gorro Makia Merino',
     description:
-      'Un gorro nórdico sencillo de lana merina, que equilibra temperatura y humedad cuando sales de un café caliente directo al frío. Sin un logotipo del tamaño de un puño en la parte delantera.',
+      'Un gorro nórdico sencillo de lana merina, que equilibra temperatura y humedad cuando sale de un café caliente directo al frío. Sin un logotipo del tamaño de un puño en la parte delantera.',
     specs: [
       '100 % lana merina, punto inglés galga 8, libre de mulesing',
       'Talla única',
@@ -310,7 +310,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'kupilka-classic-cup-21': {
     name: 'Taza de campamento Kupilka 21, 2,1 dl',
     description:
-      'La forma del kuksa en un material que puedes meter en el lavavajillas: mitad fibra de celulosa de pino, mitad termoplástico, moldeado en Finlandia. Tiene 2,1 dl, pesa 83 gramos y no te quema los dedos junto al fuego.',
+      'La forma del kuksa en un material que puede meter en el lavavajillas: mitad fibra de celulosa de pino, mitad termoplástico, moldeado en Finlandia. Tiene 2,1 dl, pesa 83 gramos y no le quema los dedos junto al fuego.',
     specs: [
       '2,1 dl',
       '83 g',
@@ -592,7 +592,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       '100 % chaga, ecológico. 100 mg de betaglucano por dosis diaria',
       'Finlandia',
       'Ecológico con la hoja ecológica de la Unión Europea. Sin gluten, sin lactosa, sin lácteos, sin soja, sin azúcar, sin cafeína, sin aditivos, vegano, silvestre',
-      'El chaga no debe tomarse junto con antibióticos, anticoagulantes, penicilina o glucosa intravenosa. Toma la dosis indicada en el envase y no la superes',
+      'El chaga no debe tomarse junto con antibióticos, anticoagulantes, penicilina o glucosa intravenosa. Tome la dosis indicada en el envase y no la supere',
       '6430071310212',
     ],
     specLabels: [undefined, undefined, undefined, 'Dieta', 'Advertencia', 'EAN'],
@@ -657,7 +657,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       '150 ml',
       'Aceite de baya y de semilla de espino amarillo con aceite de oliva, niveles de vitamina A y E estandarizados',
       'Desarrollado y elaborado en Finlandia',
-      'Sigue la dosis del envase y no la superes. Un complemento alimenticio no sustituye a una dieta variada. Mantener fuera del alcance de los niños',
+      'Siga la dosis del envase y no la supere. Un complemento alimenticio no sustituye a una dieta variada. Mantener fuera del alcance de los niños',
     ],
     specLabels: [undefined, undefined, undefined, 'Nota'],
   },
@@ -753,7 +753,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'fazer-super-salmiakki': {
     name: 'Pastillas Fazer Super Salmiakki 80 g',
     description:
-      'El más duro de los clásicos del salmiakki, vendido en la misma caja con forma de lata desde los años setenta. Dale una a un visitante y sabrás en diez segundos a qué bando pertenece.',
+      'El más duro de los clásicos del salmiakki, vendido en la misma caja con forma de lata desde los años setenta. Dele una a un visitante y sabrá en diez segundos a qué bando pertenece.',
     specs: ['80 g'],
   },
   'fazer-pantteri-salmiakki': {
@@ -790,7 +790,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'fazer-light-milk-chocolate': {
     name: 'Karl Fazer chocolate con leche claro 180 g',
     description:
-      'Una versión más clara y más suave de la tableta azul. Si la clásica te resulta demasiado dulce, esta es la que hay que llevarse.',
+      'Una versión más clara y más suave de la tableta azul. Si la clásica le resulta demasiado dulce, esta es la que hay que llevarse.',
     specs: ['180 g'],
   },
   'fazer-fazerina': {
@@ -825,19 +825,19 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'north-outdoor-heavyweight-gaiter': {
     name: 'Cuello de merino North Outdoor Heavyweight',
     description:
-      'Forro polar de merino, lo bastante grueso para subirlo por encima de la nariz mientras esperas a que aparezcan las luces. La lana sigue aislando cuando tu aliento se condensa en ella, que es justo el problema de quedarse quieto en el frío.',
+      'Forro polar de merino, lo bastante grueso para subirlo por encima de la nariz mientras espera a que aparezcan las luces. La lana sigue aislando cuando su aliento se condensa en ella, que es justo el problema de quedarse quieto en el frío.',
     specs: ['Forro polar de merino', 'Talla única', 'Negro', 'North Outdoor, Oulu, Finlandia'],
   },
   'north-outdoor-sointu-cardigan': {
     name: 'Cárdigan de merino North Outdoor Sointu',
     description:
-      'Un cárdigan de merino de corte recto que se lee como ropa de interior pero funciona como capa intermedia. La única prenda de este conjunto que te pondrías para cenar después del safari.',
+      'Un cárdigan de merino de corte recto que se lee como ropa de interior pero funciona como capa intermedia. La única prenda de este conjunto que se pondría para cenar después del safari.',
     specs: ['100 % lana merina', 'XS–2XL', 'Latte', 'North Outdoor, Oulu, Finlandia'],
   },
   'north-outdoor-arctic-260-zip-neck': {
     name: 'Jersey con cremallera de merino North Outdoor Arctic 260',
     description:
-      'Un jersey de cuello alto con cremallera en 100 por ciento merino, lo bastante grueso para llevarlo solo en interiores y para servir de capa intermedia fuera. La cremallera es la clave: la abres al caminar y la cierras cuando te paras.',
+      'Un jersey de cuello alto con cremallera en 100 por ciento merino, lo bastante grueso para llevarlo solo en interiores y para servir de capa intermedia fuera. La cremallera es la clave: la abre al caminar y la cierra cuando se para.',
     specs: [
       '100 % lana merina',
       'S–3XL',
@@ -861,7 +861,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'halti-hossa-baselayer-women': {
     name: 'Conjunto de ropa interior de merino Halti Hossa II, mujer',
     description:
-      'El mismo conjunto de merino de 190 g con corte de mujer. La lana conserva el calor cuando sudas caminando y luego te quedas quieta mirando, que es como es de verdad un día en Laponia.',
+      'El mismo conjunto de merino de 190 g con corte de mujer. La lana conserva el calor cuando suda caminando y luego se queda quieta mirando, que es como es de verdad un día en Laponia.',
     specs: [
       '100 % lana merina, 190 g/m², 20,5 micras, canalé 1x1',
       'Camiseta de manga larga y pantalón largo',
@@ -892,7 +892,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'halti-sykli-ski-gloves': {
     name: 'Guantes de esquí Halti Sykli',
     description:
-      'Guante impermeable con 120 g de aislamiento, palma de cuero y puño snowlock que impide que la nieve se meta por la muñeca cuando te caes. Hecho para esquiar con remontes en Levi o Ylläs y no para pasear por la ciudad.',
+      'Guante impermeable con 120 g de aislamiento, palma de cuero y puño snowlock que impide que la nieve se meta por la muñeca cuando se cae. Hecho para esquiar con remontes en Levi o Ylläs y no para pasear por la ciudad.',
     specs: [
       'DrymaxX, se estira en 4 direcciones, impermeable y cortavientos. Palma de cuero',
       '120 g Microtherm Dynamic',

@@ -1252,11 +1252,11 @@ const fr: ShopCopy = over({
 const es: ShopCopy = over({
   nav: { shop: 'Tienda', guides: 'Ideas de regalo', shipping: 'Envíos', allProducts: 'Todos los productos' },
   home: {
-    heroKicker: 'De Finlandia hasta tu puerta',
+    heroKicker: 'De Finlandia hasta su puerta',
     heroTitle: 'Regalos finlandeses y',
     heroTitleAccent: 'souvenirs de Laponia',
     heroLead:
-      'Diseño y artesanía de Finlandia, dulces y polvos de bayas, reunidos en un solo sitio y enviados donde vives. Tanto si estás aquí de vacaciones como si compras desde el otro lado del mundo, cada producto lo vende y lo envía una tienda finlandesa o nórdica, no nosotros.',
+      'Diseño y artesanía de Finlandia, dulces y polvos de bayas, reunidos en un solo sitio y enviados donde vive. Tanto si está aquí de vacaciones como si compra desde el otro lado del mundo, cada producto lo vende y lo envía una tienda finlandesa o nórdica, no nosotros.',
     categoriesH2: 'Qué comprar en Laponia',
     categoriesSub:
       'Diseño finlandés, ropa, artesanía, dulces, polvos de bayas, nuestra propia merch y experiencias para regalar. Cada categoría abre la tienda que realmente envía el artículo.',
@@ -1268,19 +1268,19 @@ const es: ShopCopy = over({
       sub: 'LaplandGifts es una selección comprobada, no una caja. De esta página al paquete hay tres pasos.',
       steps: [
         {
-          title: 'Explora una selección comprobada',
+          title: 'Explore una selección comprobada',
           description:
             'Cada producto se abrió en la página de la propia tienda antes de añadirlo aquí. El nombre, los materiales y el precio están leídos ahí, no escritos por nosotros.',
         },
         {
-          title: 'Comprueba el país de entrega',
+          title: 'Compruebe el país de entrega',
           description:
-            'Cada ficha dice si esa tienda envía a donde vives y nombra los países que deja fuera. Lo sabes antes de hacer clic, no al pagar.',
+            'Cada ficha dice si esa tienda envía a donde vive y nombra los países que deja fuera. Lo sabe antes de hacer clic, no al pagar.',
         },
         {
-          title: 'Compra en la tienda asociada',
+          title: 'Compre en la tienda asociada',
           description:
-            'El botón abre la tienda que vende el artículo. El pago, el envío, las devoluciones y la garantía son suyos, y nosotros cobramos una comisión si compras.',
+            'El botón abre la tienda que vende el artículo. El pago, el envío, las devoluciones y la garantía son suyos, y nosotros cobramos una comisión si compra.',
         },
       ],
     },
@@ -1306,7 +1306,7 @@ const es: ShopCopy = over({
         {
           title: 'Se aplican las condiciones de la tienda',
           description:
-            'Compras en la tienda del socio, así que sus condiciones de pago, envío, devolución y garantía son las que valen. También es quien manda el paquete.',
+            'Compra en la tienda del socio, así que sus condiciones de pago, envío, devolución y garantía son las que valen. También es quien manda el paquete.',
         },
       ],
     },
@@ -1322,18 +1322,18 @@ const es: ShopCopy = over({
       experiences: 'Experiencias de Laponia para regalar',
     },
     intro: {
-      design: 'Tazas Moomin, vidrio de Iittala, Marimekko y joyas de madera de Aarikka: el diseño finlandés que de verdad se va a casa contigo. Cada pieza sale de la tienda finlandesa o nórdica que la vende.',
+      design: 'Tazas Moomin, vidrio de Iittala, Marimekko y joyas de madera de Aarikka: el diseño finlandés que de verdad se va a casa con usted. Cada pieza sale de la tienda finlandesa o nórdica que la vende.',
       clothing: 'Chaquetas técnicas de Halti, streetwear de Makia desde Helsinki y punto de merino de North Outdoor, tejido en su propia fábrica de Oulu.',
       handicrafts: 'Cuchillos Marttiini de Rovaniemi, vajilla de camping Kupilka, lino de Lapuan Kankurit desde Lapua y cerámica de Pentik desde Posio: artesanía para usar, no para la estantería.',
-      treats: 'Dulces y regalos gourmet finlandeses: salmiakki, chocolate de Fazer, tés de Nordqvist y Moomin, café Moomin, cecina de reno y mermelada de espino amarillo. Las normas de importación cambian según el país, así que mira la nota de envío de cada ficha.',
+      treats: 'Dulces y regalos gourmet finlandeses: salmiakki, chocolate de Fazer, tés de Nordqvist y Moomin, café Moomin, cecina de reno y mermelada de espino amarillo. Las normas de importación cambian según el país, así que mire la nota de envío de cada ficha.',
       superfoods: 'Polvos de bayas árticas, chaga y productos de hierbas de Arctic Warriors hechos en Rovaniemi, de productores finlandeses.',
-      merch: 'Nuestra propia estampación #LAPLANDVIBES en camisetas, sudaderas y gorras. El taller de impresión aún no está abierto, así que hoy no hay nada que comprar aquí. La newsletter avisará cuando lo esté.',
+      merch: 'Nuestra propia estampación #LAPLANDVIBES en camisetas, sudaderas y gorras. El taller de impresión aún no está abierto, así que hoy no hay nada que comprar aquí. El boletín avisará cuando lo esté.',
       experiences: 'Salidas a ver auroras boreales, trineos de huskies y el pueblo de Papá Noel, comprados como regalo ahora y reservados cuando la persona elija la fecha.',
     },
     productCount: (n) => (n === 1 ? '1 producto' : `${n} productos`),
     emptyCategory:
-      'Todavía estamos completando esta categoría. Mientras tanto, mira las otras categorías o las ideas de regalo.',
-    emptyForCountry: 'Ninguno de los productos de esta categoría llega todavía a tu país. Cambia el país de entrega para verlo todo.',
+      'Todavía estamos completando esta categoría. Mientras tanto, mire las otras categorías o las ideas de regalo.',
+    emptyForCountry: 'Ninguno de los productos de esta categoría llega todavía a su país. Cambie el país de entrega para verlo todo.',
   },
   product: {
     buyAt: (partner) => `Comprar en ${partner}`,
@@ -1342,7 +1342,7 @@ const es: ShopCopy = over({
       return eur ? `desde ${fmt(value, currency, 'es-ES')} (unos ${eur} €)` : `desde ${fmt(value, currency, 'es-ES')}`
     },
     priceNote: (date, partner) => `Precio leído en ${partner} el ${date}. La tienda fija el precio final.`,
-    checkoutNote: 'La compra se completa en la tienda asociada. Nosotros no gestionamos tu pago ni tu envío.',
+    checkoutNote: 'La compra se completa en la tienda asociada. Nosotros no gestionamos su pago ni su envío.',
     illustrativeImage: 'Imagen ilustrativa, no es el artículo exacto. Las fotos del producto están en la página del socio.',
     imageCredit: (partner) => `Foto del producto: ${partner}`,
     related: 'Más de esta categoría',
@@ -1365,7 +1365,7 @@ const es: ShopCopy = over({
     detailsSource: (partner, date) => `Información del producto: ${partner}, leída el ${date}`,
   },
   faqAnswerFixes: {
-    1: 'Sí. Duodji es la palabra sami para la artesanía tradicional, y la marca redonda «Sámi Duodji» es un sello de autenticidad que se concede a las piezas hechas por artesanos samis con métodos y materiales tradicionales. Elegir una pieza con ese sello, o comprar directamente a un artesano sami con nombre propio o a un vendedor autorizado, deja el dinero en la comunidad y mantiene el trabajo auténtico en lugar de una imitación de fábrica. LaplandGifts no vende ninguna artesanía sami: preferimos indicarte un vendedor duodji antes que venderte una copia.',
+    1: 'Sí. Duodji es la palabra sami para la artesanía tradicional, y la marca redonda «Sámi Duodji» es un sello de autenticidad que se concede a las piezas hechas por artesanos samis con métodos y materiales tradicionales. Elegir una pieza con ese sello, o comprar directamente a un artesano sami con nombre propio o a un vendedor autorizado, deja el dinero en la comunidad y mantiene el trabajo auténtico en lugar de una imitación de fábrica. LaplandGifts no vende ninguna artesanía sami: preferimos indicarle un vendedor duodji antes que venderle una copia.',
     2: 'Muchas lo hacen, y en eso se basa este sitio: cada producto de aquí lo vende y lo envía la tienda finlandesa o nórdica que lo fabrica o lo tiene en stock, nunca nosotros. Cada ficha nombra la zona de entrega de esa tienda y los países que deja fuera, y con los alimentos las normas son más estrictas: la cecina de reno viaja dentro de la Unión Europea pero no al Reino Unido, Estados Unidos ni Japón. Comprar por internet durante el viaje hace que lo frágil viaje aparte en vez de en la maleta. Nuestra propia merch estampada #LaplandVibes todavía no está a la venta.',
   },
   experience: {
@@ -1373,7 +1373,7 @@ const es: ShopCopy = over({
     voucherNote:
       'Se compran en Elämyslahjat.fi y llegan por correo electrónico. Quien la recibe reserva la fecha, y la experiencia se disfruta en Laponia.',
     priceNote: (price) => `Desde ${price}`,
-    priceAsOf: (asOf) => `Precios de partida leídos en GetYourGuide el ${asOf}. El precio exacto depende de la fecha que elijas.`,
+    priceAsOf: (asOf) => `Precios de partida leídos en GetYourGuide el ${asOf}. El precio exacto depende de la fecha que elija.`,
     groups: {
       aurora: 'Auroras boreales',
       husky: 'Trineos de huskies',

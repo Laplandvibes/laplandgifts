@@ -64,7 +64,7 @@ const COPY: Record<Lang, {
     note: 'Le retrait recharge la page afin que les scripts déjà chargés cessent de fonctionner.',
   },
   es: {
-    h: 'Tu elección',
+    h: 'Su elección',
     accepted: 'Has aceptado las cookies de analítica y de socios.',
     declined: 'Has rechazado las cookies de analítica y de socios.',
     none: 'Aún no has elegido. No se carga nada hasta entonces.',

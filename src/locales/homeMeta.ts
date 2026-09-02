@@ -54,7 +54,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
   es: {
     title: 'LaplandGifts: diseño finlandés y artesanía lapona',
     description:
-      'Diseño finlandés seleccionado, artesanía de Laponia, delicias, superalimentos y regalos de experiencias. Compra en tiendas asociadas que envían a tu país.',
+      'Diseño finlandés seleccionado, artesanía de Laponia, delicias, superalimentos y regalos de experiencias. Compre en tiendas asociadas que envían a su país.',
   },
   'pt-BR': {
     title: 'Presentes finlandeses e souvenirs da Lapônia | LaplandGifts',

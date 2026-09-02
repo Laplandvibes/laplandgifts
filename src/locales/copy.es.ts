@@ -43,12 +43,12 @@ const es: ChromeCopy = {
     steps: [
       { title: 'Explore en vacaciones', description: '¿Le encantó un cuchillo puukko? ¿Una kuksa para su madre? Encárguelo mientras viaja, no necesita cargar con nada.' },
       { title: 'Enviamos desde Laponia', description: 'Sus regalos se embalan con cuidado y se envían directamente desde artesanos finlandeses y nuestros socios de impresión en la UE.' },
-      { title: 'Le esperan en casa', description: 'Vuelve a casa y sus tesoros lapones ya están en la puerta. Sin estrés de equipaje, sin recuerdos rotos.' },
+      { title: 'Le esperan en casa', description: 'Vuelva a casa y sus tesoros lapones ya están en la puerta. Sin estrés de equipaje, sin recuerdos rotos.' },
     ],
   },
   productGrid: {
     h2: 'Próximamente',
-    sub: 'Nuestra primera colección se está seleccionando entre los mejores artesanos de Laponia. El boletín te cuenta cuando llega algo nuevo.',
+    sub: 'Nuestra primera colección se está seleccionando entre los mejores artesanos de Laponia. El boletín le avisa cuando llega algo nuevo.',
     priceTbd: 'Precio por confirmar',
     notifyMe: 'Avísenme',
     notifyAria: (name) => `Avíseme cuando ${name} esté disponible`,
@@ -122,7 +122,7 @@ const es: ChromeCopy = {
   newsletter: {
     kicker: 'Reciba ambas guías gratis',
     h2: 'Introduzca su correo para descargarlas',
-    body: 'Obtienes acceso inmediato a ambas guías árticas. En las cartas comparto hallazgos de boutiques y los artesanos detrás de ellos.',
+    body: 'Obtiene acceso inmediato a ambas guías árticas. En las cartas comparto hallazgos de boutiques y los artesanos detrás de ellos.',
     placeholder: 'su@correo.com',
     submit: 'Recibir ambas guías',
     submitting: 'Enviando…',
