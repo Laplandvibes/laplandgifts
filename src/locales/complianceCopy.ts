@@ -37,7 +37,7 @@ export const NEWSLETTER_PRIVACY: Record<Lang, { lead: string; link: string }> = 
   fi: { lead: 'Näin käsittelemme tietojasi:', link: 'Tietosuojaseloste' },
   de: { lead: 'So gehen wir mit Ihren Daten um:', link: 'Datenschutzerklärung' },
   ja: { lead: '個人情報の取り扱いについて：', link: 'プライバシーポリシー' },
-  es: { lead: 'Cómo tratamos tus datos:', link: 'Política de Privacidad' },
+  es: { lead: 'Cómo tratamos sus datos:', link: 'Política de Privacidad' },
   'pt-BR': { lead: 'Como tratamos seus dados:', link: 'Política de Privacidade' },
   'zh-CN': { lead: '我们如何处理您的数据：', link: '隐私政策' },
   ko: { lead: '개인정보 처리 방법:', link: '개인정보 처리방침' },
