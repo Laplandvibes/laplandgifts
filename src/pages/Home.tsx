@@ -15,10 +15,9 @@ import { useLang, LANG_PREFIX } from '../i18n/useLang'
 // generaattori lukee. Oma taulukko tässä tiedostossa ajautui eri mieltä
 // prerenderin kanssa: selain näytti eri otsikkoa kuin hakukone.
 import { HOME_META } from '../locales/homeMeta'
-import AdUnit from '../shared/ads/AdUnit'
 import IvaloLakeAd from '../components/IvaloLakeAd'
 import SuomikauppaOutletAd from '../components/SuomikauppaOutletAd'
-import kultaCenterAd from '../shared/ads/advertisers/kultaCenter'
+import KalevalaRail from '../shared/ads/KalevalaRail'
 import { trackAffiliateClick } from '../lib/analytics'
 import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots'
 import { AD_SLOTS } from '../data/adSlots'
@@ -82,12 +81,19 @@ export default function Home() {
         <ValueProp />
         <ShippingInfo />
         <Guides />
-        {/* Kulta-Center ad — FI-only spec, renders only on /fi. */}
+        {/* Kulta-Center — was the shared AdUnit brand card. Replaced 2026-09-03
+            (Vesa: "koruliike, heillä on Kalevalaa, miksi ei tuoda niitä esille").
+            Two measured reasons, not a redesign:
+              1. The card's shared spec is Finnish-only, so eleven of the twelve
+                 locales rendered NOTHING here at all.
+              2. On /fi it rendered without the word "Kalevala" anywhere — the
+                 only "Kalevala" on this site was Mauri Kunnas' Koirien Kalevala
+                 tote bag, which is a different thing entirely.
+            The rail runs in all twelve locales and shows eight real pieces. */}
         <div className="max-w-5xl mx-auto px-4 pb-10">
-          <AdUnit
-            spec={kultaCenterAd}
-            sid="home_gifts_kulta"
+          <KalevalaRail
             lang={lang}
+            sid="home_gifts_kalevala"
             variant="light"
             onCtaClick={(specKey, sid, url) => trackAffiliateClick(specKey, `ad_unit:${sid}`, url)}
           />
