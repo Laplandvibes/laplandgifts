@@ -15,8 +15,11 @@ import { useLang, LANG_PREFIX } from '../i18n/useLang'
 // generaattori lukee. Oma taulukko tässä tiedostossa ajautui eri mieltä
 // prerenderin kanssa: selain näytti eri otsikkoa kuin hakukone.
 import { HOME_META } from '../locales/homeMeta'
-import IvaloLakeAd from '../components/IvaloLakeAd'
-import SuomikauppaOutletAd from '../components/SuomikauppaOutletAd'
+import ProductRail from '../shared/ads/ProductRail'
+import suomikauppaRail from '../shared/ads/rails/suomikauppa'
+import suomikauppaPicks from '../shared/ads/data/suomikauppaPicks'
+import ivaloRail from '../shared/ads/rails/ivalo'
+import ivaloPicks from '../shared/ads/data/ivaloPicks'
 import KalevalaRail from '../shared/ads/KalevalaRail'
 import { trackAffiliateClick } from '../lib/analytics'
 import HomeAdSlots, { MainPartnerBanner } from '../shared/HomeAdSlots'
@@ -71,12 +74,18 @@ export default function Home() {
         {/* Ivalon mainos koko jarvikuvan paalle (Vesa 6.8.). Sama sid ja
             copy kuin ennen; vain ulkoasu vaihtui AdUnitista paikalliseen
             koko kuvan komponenttiin. */}
-        <IvaloLakeAd lang={lang} />
+        <div className="max-w-5xl mx-auto px-4 pb-8">
+          <ProductRail partner={ivaloRail} snapshot={ivaloPicks} lang={lang} sid="home_gifts_ivalo" variant="light"
+            onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)} />
+        </div>
         {/* Suomikaupan tarjousosio omana mainoksenaan (Vesa 10.8.). Sijoitettu
             Ivalon JALKEEN eika ennen: Ivalo on design ja tama on hinta, ja
             hintakulma toimii paremmin kun lukija on jo nahnyt taysihintaisen
             valikoiman. Ei prosentteja, ks. komponentin kommentti. */}
-        <SuomikauppaOutletAd lang={lang} />
+        <div className="max-w-5xl mx-auto px-4 pb-8">
+          <ProductRail partner={suomikauppaRail} snapshot={suomikauppaPicks} lang={lang} sid="home_gifts_suomikauppa" variant="light"
+            onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)} />
+        </div>
         <GiftGuide />
         <ValueProp />
         <ShippingInfo />
