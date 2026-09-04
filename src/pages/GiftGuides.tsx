@@ -1,3 +1,6 @@
+import ProductRail, { type RailLang } from '../shared/ads/ProductRail'
+import sukkamestaritRail from '../shared/ads/rails/sukkamestarit'
+import sukkamestaritPicks from '../shared/ads/data/sukkamestaritPicks'
 import ShopNav from '../components/ShopNav'
 // components/Footer on tämän sivuston kääre jaetun SharedFooterin ympärillä
 // (SharedFooter odottaa dict-propin). Sama kuin Home.tsx ja Category.tsx.
@@ -124,6 +127,12 @@ export default function GiftGuides() {
 
           <p className="mt-6 text-sm text-muted">{s.product.checkoutNote}</p>
         </div>
+      {/* Tuoterivi sivulle jolla ei ollut yhtään mainosta (Vesa 4.9.: lisää potentiaalisille sivuille). */}
+      <section className="px-4 sm:px-6 py-10">
+        <div className="max-w-6xl mx-auto">
+          <ProductRail partner={sukkamestaritRail} snapshot={sukkamestaritPicks} lang={lang as RailLang} sid="gift_guides_socks" variant="light" />
+        </div>
+      </section>
       </main>
       <Footer />
     </>
