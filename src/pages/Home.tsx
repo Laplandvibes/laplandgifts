@@ -16,6 +16,14 @@ import { useLang, LANG_PREFIX } from '../i18n/useLang'
 // prerenderin kanssa: selain näytti eri otsikkoa kuin hakukone.
 import { HOME_META } from '../locales/homeMeta'
 import ProductRail from '../shared/ads/ProductRail'
+import nordicbuddiesRail from '../shared/ads/rails/nordicbuddies'
+import nordicbuddiesPicks from '../shared/ads/data/nordicbuddiesPicks'
+import finlaysonRail from '../shared/ads/rails/finlayson'
+import finlaysonPicks from '../shared/ads/data/finlaysonPicks'
+import nordicnestRail from '../shared/ads/rails/nordicnest'
+import nordicnestPicks from '../shared/ads/data/nordicnestPicks'
+import sukkamestaritRail from '../shared/ads/rails/sukkamestarit'
+import sukkamestaritPicks from '../shared/ads/data/sukkamestaritPicks'
 import suomikauppaRail from '../shared/ads/rails/suomikauppa'
 import suomikauppaPicks from '../shared/ads/data/suomikauppaPicks'
 import ivaloRail from '../shared/ads/rails/ivalo'
@@ -86,9 +94,25 @@ export default function Home() {
           <ProductRail partner={suomikauppaRail} snapshot={suomikauppaPicks} lang={lang} sid="home_gifts_suomikauppa" variant="light"
             onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)} />
         </div>
+        <div className="max-w-5xl mx-auto px-4 pb-8">
+          <ProductRail partner={nordicbuddiesRail} snapshot={nordicbuddiesPicks} lang={lang} sid="home_gifts_nordicbuddies" variant="light"
+            onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)} />
+        </div>
         <GiftGuide />
+        <div className="max-w-5xl mx-auto px-4 pb-8">
+          <ProductRail partner={finlaysonRail} snapshot={finlaysonPicks} lang={lang} sid="home_gifts_finlayson" variant="light"
+            onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)} />
+        </div>
         <ValueProp />
+        <div className="max-w-5xl mx-auto px-4 pb-8">
+          <ProductRail partner={nordicnestRail} snapshot={nordicnestPicks} lang={lang} sid="home_gifts_nordicnest" variant="light"
+            onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)} />
+        </div>
         <ShippingInfo />
+        <div className="max-w-5xl mx-auto px-4 pb-8">
+          <ProductRail partner={sukkamestaritRail} snapshot={sukkamestaritPicks} lang={lang} sid="home_gifts_sukkamestarit" variant="light"
+            onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)} />
+        </div>
         <Guides />
         {/* Kulta-Center — was the shared AdUnit brand card. Replaced 2026-09-03
             (Vesa: "koruliike, heillä on Kalevalaa, miksi ei tuoda niitä esille").
