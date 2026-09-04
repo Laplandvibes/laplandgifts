@@ -13,7 +13,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: 'Manta de lã Moomin Mystical Forest 130x170 cm',
+    name: 'Manta de lã Moomin Mystical Forest 130×170 cm',
     description:
       'Uma manta de 130 por 170 cm em 100 por cento lã, desenhada na Finlândia para a coleção Mystical Forest. Só lavagem a seco, então trate como manta de sofá e não como toalha de piquenique.',
     specs: [
@@ -1021,7 +1021,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specs: ['50 ml'],
   },
   'nb-little-my-beanie': {
-    name: 'Gorro de tricô grosso da Little My',
+    name: 'Gorro de tricô grosso da Pequena My',
     description:
       'Gorro grosso de tricô com a Little My na dobra, em uma mistura de lã que mantém o formato depois de uma semana sendo colocado e tirado. Um tamanho adulto, e a única personagem Moomin que aprovaria o tempo na Lapônia.',
     specs: [

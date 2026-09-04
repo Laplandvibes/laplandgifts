@@ -13,7 +13,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_NL: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: 'Moomin Mystical Forest wollen plaid 130x170 cm',
+    name: 'Moomin Mystical Forest wollen plaid 130 x 170 cm',
     description:
       'Een plaid van 130 bij 170 cm in 100 procent wol, ontworpen in Finland voor de collectie Mystical Forest. Alleen chemisch reinigen, dus reken op een bankplaid en niet op een picknickkleed.',
     specs: [
@@ -584,7 +584,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Bessengebruik', 'Voedingswaarde per 100 g'],
   },
   'kaapa-mushrooms-pakuri-powder': {
-    name: 'Kääpä Mushrooms chaga-extractpoeder 30 g',
+    name: 'Kääpä Mushrooms chagaextractpoeder 30 g',
     description:
       'Een pot van 30 gram chaga-extractpoeder van Kääpä Mushrooms, dat functionele paddenstoelen oogst in Noordse bossen, bedoeld om door warme dranken te roeren. Ruohonjuuri levert alleen binnen het douane- en belastinggebied van de Europese Unie, en het etiket vermeldt interacties met medicijnen die u beter eerst kunt lezen.',
     specs: [
@@ -726,7 +726,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: ['50 x 22 cm', 'Zwart'],
   },
   'rento-linen-back-scrubber': {
-    name: 'Rento rugwasser van linnen badstof 14 x 70 cm',
+    name: 'Rento rugwasser van linnenbadstof 14 x 70 cm',
     description:
       'Linnen badstof, lang genoeg om over de eigen rug te reiken. De huid wordt eerst zacht in de hitte en wordt daarna gewassen, en dat is de volgorde die Finnen aanhouden zonder erbij na te denken.',
     specs: ['14 x 70 cm', 'Linnen badstof'],
@@ -823,7 +823,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: ['100 % merinowol, mulesingvrij', 'M, L, XL', 'Indigoblauw', 'Gebreid in Oulu, Finland'],
   },
   'north-outdoor-heavyweight-gaiter': {
-    name: 'North Outdoor Heavyweight merino nekwarmer',
+    name: 'North Outdoor Heavyweight merinonekwarmer',
     description:
       'Merinofleece, dik genoeg om over de neus te trekken terwijl u wacht tot het licht verschijnt. Wol blijft isoleren wanneer uw adem erin condenseert, en dat is nu net het probleem van stilstaan in de kou.',
     specs: ['Merinofleece', 'One size', 'Zwart', 'North Outdoor, Oulu, Finland'],
@@ -990,7 +990,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: ['40 g', 'Chaga, reishi, pruikzwam, cordyceps, shiitake, maitake'],
   },
   'foodin-nordic-berry-powder': {
-    name: 'Foodin Noordse bessen poedermix 120 g',
+    name: 'Foodin Noordse bessenpoedermix 120 g',
     description:
       'Een Finse mix van noordelijke bessen als één poeder, voor pap en yoghurt. De lichtste manier om een zomer aan Noordse bessen mee naar huis te nemen.',
     specs: ['120 g', 'Gemaakt in Finland'],

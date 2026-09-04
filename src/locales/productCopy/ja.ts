@@ -15,7 +15,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_JA: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: 'ムーミン ミスティカルフォレスト ウールブランケット 130x170 cm',
+    name: 'ムーミン ミスティカルフォレスト ウールブランケット 130×170 cm',
     description:
       '130 かける 170 cm、ウール 100 パーセントのブランケット。ミスティカルフォレストコレクションのためにフィンランドでデザインされました。ドライクリーニングのみなので、ピクニック用ではなくソファ用と考えてください。',
     specs: [

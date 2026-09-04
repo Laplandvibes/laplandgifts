@@ -30,10 +30,34 @@ import { imgSrcSet } from '../lib/img'
 const SHOT_SIZES = '(min-width: 768px) 150px, 28vw'
 
 const SID = 'home_gifts_suomikauppa_outlet'
-const DEST = 'https://suomikauppa.fi/collections/tarjoukset'
-const HREF =
+
+/**
+ * Outlet-osio kaupan OMALLA kielella (Niina/Bear 2026-07-30 -saanto, muistin
+ * partner_article_and_ad_checklist.md §9). Mainoksen copy on 12 kielella, joten
+ * ilman tata japaninkielinen lukija luki japaninkielisen mainoksen ja laskeutui
+ * suomenkieliselle sivulle.
+ *
+ * 🔴🔴 POLKUJA EI SAA PAATELLA PREFIKSISTA. Shopify palauttaa suomenkielisen
+ * kahvan myos kaannetyn prefiksin alla: /en/collections/tarjoukset vastaa 200 ja
+ * lang="en", mutta kaupan OMA hreflang osoittaa /en/collections/outlet — myos
+ * slug on kaannetty (sv erbjudanden, de angebote, ja seule-osio). Nama on luettu
+ * suomikauppa.fi:n hreflangista ja mitattu 4.9.2026: kaikki 200 + oikea
+ * <html lang>.
+ *
+ * de ja ja ovat kaupan markkinaversioita (de-DE, ja-JP) — se on ainoa muoto
+ * jossa saksa ja japani ovat olemassa, joten valuutta/toimitus tulee mukana.
+ * Loput kielet menevat kansainvaliseen englantiin.
+ */
+const DEST_BY_LANG: Partial<Record<Lang, string>> = {
+  fi: 'https://suomikauppa.fi/collections/tarjoukset',
+  sv: 'https://suomikauppa.fi/sv/collections/erbjudanden',
+  de: 'https://suomikauppa.fi/de-de/collections/angebote',
+  ja: 'https://suomikauppa.fi/ja-jp/collections/%E3%82%BB%E3%83%BC%E3%83%AB%E6%83%85%E5%A0%B1',
+}
+const DEST_EN = 'https://suomikauppa.fi/en/collections/outlet'
+const hrefFor = (lang: Lang) =>
   'https://go.laplandvibes.com/go/suomikauppa' +
-  `?sid=${SID}&dest=${encodeURIComponent(DEST)}`
+  `?sid=${SID}&dest=${encodeURIComponent(DEST_BY_LANG[lang] ?? DEST_EN)}`
 
 /** Kaupan omat tuotekuvat. 🔴 EI poimita käsin: `scripts/_fetch-suomikauppa-outlet-shots.mjs`
  *  hakee ne kaupan katalogista, hylkää kaiken mikä ei ole packshot valkoisella
@@ -205,6 +229,7 @@ const AD_LABEL: Record<Lang, string> = {
 
 export default function SuomikauppaOutletAd({ lang }: { lang: Lang }) {
   const copy = COPY[lang] ?? COPY.en
+  const HREF = hrefFor(lang)
 
   return (
     <div className="mx-auto max-w-5xl px-4 py-10">

@@ -13,7 +13,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_ES: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: 'Manta de lana Moomin Mystical Forest 130x170 cm',
+    name: 'Manta de lana Moomin Mystical Forest 130×170 cm',
     description:
       'Una manta de 130 por 170 cm en 100 por ciento lana, diseñada en Finlandia para la colección Mystical Forest. Solo limpieza en seco, así que tómala como manta de sofá y no como mantel de pícnic.',
     specs: [
@@ -1021,7 +1021,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specs: ['50 ml'],
   },
   'nb-little-my-beanie': {
-    name: 'Gorro de punto grueso de Little My',
+    name: 'Gorro de punto grueso de Pequeña My',
     description:
       'Gorro grueso de punto con Little My en la vuelta, en una mezcla de lana que mantiene la forma después de una semana de ponerlo y quitarlo. Una talla de adulto, y el único personaje Moomin que aprobaría el tiempo que hace en Laponia.',
     specs: [
@@ -1085,7 +1085,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
   },
   'nb-kunnas-kalevala-tote': {
-    name: 'Bolsa de tela Mauri Kunnas El Kalevala canino',
+    name: 'Bolsa de tela Mauri Kunnas El Kalevala de los perros',
     description:
       'Una bolsa de algodón estampada con ilustraciones de Mauri Kunnas de El Kalevala canino, su versión perruna de la epopeya nacional finlandesa. Lo más barato de esta tienda que aun así explica todo un país.',
     specs: [

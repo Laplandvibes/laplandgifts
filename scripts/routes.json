@@ -53,16 +53,16 @@
     "fallbackDescriptionByLang": {
       "en": "Moomin mugs, Iittala glass, Marimekko and Aarikka wooden jewellery: the Finnish design that actually travels home.",
       "fi": "Muumimukeja, Iittalan lasia, Marimekkoa ja Aarikan puukoruja: sitä suomalaista designia, joka oikeasti lähtee matkaan.",
-      "de": "Mumin-Becher, Glas von Iittala, Marimekko und Holzschmuck von Aarikka: das finnische Design, das wirklich mit nach Hause reist.",
+      "de": "Moomin-Becher, Glas von Iittala, Marimekko und Holzschmuck von Aarikka: das finnische Design, das wirklich mit nach Hause reist.",
       "ja": "ムーミンのマグ、イッタラのガラス、マリメッコ、アアリッカの木のアクセサリー。本当に持ち帰りたくなるフィンランドデザインです。どの品も、それを販売するフィンランドまたは北欧のショップから発送されます。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
-      "es": "Tazas Moomin, vidrio de Iittala, Marimekko y joyas de madera de Aarikka: el diseño finlandés que de verdad se va a casa con usted.",
+      "es": "Tazas Moomin, vidrio de Iittala, Marimekko y joyas de madera de Aarikka: el diseño finlandés que de verdad tiene un lugar en su casa.",
       "pt-BR": "Canecas Moomin, vidro da Iittala, Marimekko e joias de madeira da Aarikka: o design finlandês que realmente vai para casa com você.",
       "zh-CN": "姆明马克杯、Iittala 玻璃、Marimekko 和 Aarikka 木饰品：真正会被带回家的芬兰设计。每件商品都由销售它的芬兰或北欧商店寄出。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
-      "ko": "무민 머그, 이딸라 유리, 마리메꼬, 아리카의 나무 장신구까지. 실제로 집까지 따라오는 핀란드 디자인입니다. 모든 상품은 그것을 파는 핀란드 또는 북유럽 상점에서 발송됩니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
+      "ko": "무민 머그, 이딸라 유리, 마리메꼬, 아리카의 나무 장신구까지. 실제로 집까지 따라오는 핀란드 디자인입니다. 모든 상품은 판매하는 핀란드 또는 북유럽 상점에서 발송됩니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
       "fr": "Mugs Moomin, verre Iittala, Marimekko et bijoux en bois Aarikka : le design finlandais qui rentre vraiment à la maison.",
-      "it": "Tazze Moomin, vetro Iittala, Marimekko e gioielli in legno Aarikka: il design finlandese che torna davvero a casa con te.",
+      "it": "Tazze Moomin, vetro Iittala, Marimekko e gioielli in legno Aarikka: il design finlandese che torna davvero a casa con Lei.",
       "nl": "Moomin-mokken, glas van Iittala, Marimekko en houten sieraden van Aarikka: het Finse design dat echt mee naar huis gaat.",
-      "sv": "Muminmuggar, glas från Iittala, Marimekko och träsmycken från Aarikka: den finska design som faktiskt följer med hem."
+      "sv": "Moominmuggar, glas från Iittala, Marimekko och träsmycken från Aarikka: den finska design som faktiskt följer med hem."
     }
   },
   {
@@ -138,7 +138,7 @@
     "fallbackTitleByLang": {
       "en": "Finnish sweets and food gifts | LaplandGifts",
       "fi": "Suomalaiset herkut | LaplandGifts",
-      "de": "Süßes und Essgeschenke | LaplandGifts",
+      "de": "Süßes und kulinarische Geschenke | LaplandGifts",
       "ja": "お菓子と食の贈り物 | LaplandGifts",
       "es": "Dulces y regalos gourmet | LaplandGifts",
       "pt-BR": "Doces e presentes gastronômicos | LaplandGifts",
@@ -147,12 +147,12 @@
       "fr": "Douceurs et gourmandises | LaplandGifts",
       "it": "Dolci e regali gastronomici | LaplandGifts",
       "nl": "Lekkers en eetbare cadeaus | LaplandGifts",
-      "sv": "Sötsaker och matgåvor | LaplandGifts"
+      "sv": "Sötsaker och matpresenter | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Finnish sweets and food gifts: salmiakki, Fazer chocolate, Nordqvist and Moomin teas, Moomin coffee, reindeer jerky and sea buckthorn jam.",
       "fi": "Suomalaisia herkkuja: salmiakkia, Fazerin suklaata, Nordqvistin ja Muumien teetä, Muumi-kahvia, poron kuivalihaa ja tyrnihilloa.",
-      "de": "Finnische Süßigkeiten und Essgeschenke: Salmiak, Fazer-Schokolade, Tee von Nordqvist und Mumin, Mumin-Kaffee, Rentier-Trockenfleisch und Sanddornmarmelade.",
+      "de": "Finnische Süßigkeiten und Essgeschenke: Salmiak, Fazer-Schokolade, Tee von Nordqvist und Moomin, Moomin-Kaffee, Rentier-Trockenfleisch und Sanddornmarmelade.",
       "ja": "フィンランドのお菓子と食の贈り物。サルミアッキ、ファッツェルのチョコレート、ノルドクヴィストとムーミンの紅茶、ムーミンのコーヒー、トナカイの干し肉、シーバックソーンのジャム。輸入規則は国ごとに異なるため、各カードの配送に関する記載をご確認ください。価格はすべて提携ショップから取得したもので、取得日を併記しています。",
       "es": "Dulces y regalos gourmet finlandeses: salmiakki, chocolate de Fazer, tés de Nordqvist y Moomin, café Moomin, cecina de reno y mermelada de espino amarillo.",
       "pt-BR": "Doces e presentes gastronômicos finlandeses: salmiakki, chocolate da Fazer, chás da Nordqvist e Moomin, café Moomin.",
@@ -161,7 +161,7 @@
       "fr": "Douceurs et cadeaux gourmands finlandais : salmiakki, chocolat Fazer, thés Nordqvist et Moomin, café Moomin, viande de renne séchée et confiture d’argousier.",
       "it": "Dolci e regali gastronomici finlandesi: salmiakki, cioccolato Fazer, tè Nordqvist e Moomin, caffè Moomin.",
       "nl": "Fins lekkers en eetbare cadeaus: salmiak, chocolade van Fazer, thee van Nordqvist en Moomin, Moomin-koffie, gedroogd rendiervlees en duindoornjam.",
-      "sv": "Finska sötsaker och matgåvor: salmiak, choklad från Fazer, te från Nordqvist och Mumin, Mumin-kaffe, torkat renkött och havtornssylt."
+      "sv": "Finska sötsaker och matgåvor: salmiak, choklad från Fazer, te från Nordqvist och Moomin, Moomin-kaffe, torkat renkött och havtornssylt."
     }
   },
   {
@@ -172,7 +172,7 @@
       "en": "Arctic berry powders and superfoods | LaplandGifts",
       "fi": "Marjajauheet ja superfoodit | LaplandGifts",
       "de": "Arktische Beerenpulver | LaplandGifts",
-      "ja": "北極のベリーパウダー | LaplandGifts",
+      "ja": "北極圏のベリーパウダー | LaplandGifts",
       "es": "Polvos de bayas árticas | LaplandGifts",
       "pt-BR": "Pós de frutas árticas | LaplandGifts",
       "zh-CN": "北极浆果粉 | LaplandGifts",
@@ -186,7 +186,7 @@
       "en": "Arctic berry powders, chaga and Arctic Warriors herbal products made in Rovaniemi, from Finnish producers. Each price is read from the partner shop and dated.",
       "fi": "Arktista marjajauhetta, pakuria ja Rovaniemellä valmistettuja Arctic Warriorsin yrttivalmisteita suomalaisilta tuottajilta. Hinnat tulevat kumppanikaupoista.",
       "de": "Arktische Beerenpulver, Chaga und die in Rovaniemi hergestellten Kräuterprodukte von Arctic Warriors, von finnischen Erzeugern. Liefergebiet auf jeder Karte.",
-      "ja": "北極のベリーパウダー、チャーガ、そしてロヴァニエミで作られるアークティック・ウォリアーズのハーブ製品。いずれもフィンランドの生産者によるものです。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
+      "ja": "北極圏のベリーパウダー、チャーガ、そしてロヴァニエミで作られるアークティック・ウォリアーズのハーブ製品。いずれもフィンランドの生産者によるものです。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
       "es": "Polvos de bayas árticas, chaga y productos de hierbas de Arctic Warriors hechos en Rovaniemi, de productores finlandeses. Precios de las tiendas asociadas.",
       "pt-BR": "Pós de frutas árticas, chaga e produtos de ervas da Arctic Warriors feitos em Rovaniemi, de produtores finlandeses. A área de entrega é indicada em cada cartão.",
       "zh-CN": "北极浆果粉、桦褐孔菌，以及在罗瓦涅米生产的 Arctic Warriors 草本产品，均来自芬兰生产者。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
@@ -206,12 +206,12 @@
       "fi": "Lapland-paidat ja merch | LaplandGifts",
       "de": "Lappland-Shirts und Merch | LaplandGifts",
       "ja": "ラップランドのTシャツとグッズ | LaplandGifts",
-      "es": "Camisetas y merch de Laponia | LaplandGifts",
-      "pt-BR": "Camisetas e merch da Lapônia | LaplandGifts",
+      "es": "Camisetas y souvenirs de Laponia | LaplandGifts",
+      "pt-BR": "Camisetas e souvenirs da Lapônia | LaplandGifts",
       "zh-CN": "拉普兰T恤与周边 | LaplandGifts",
       "ko": "라플란드 티셔츠와 굿즈 | LaplandGifts",
-      "fr": "T-shirts et merch de Laponie | LaplandGifts",
-      "it": "T-shirt e merch della Lapponia | LaplandGifts",
+      "fr": "T-shirts et souvenirs de Laponie | LaplandGifts",
+      "it": "T-shirt e souvenir della Lapponia | LaplandGifts",
       "nl": "Lapland-shirts en merch | LaplandGifts",
       "sv": "Lapplandströjor och merch | LaplandGifts"
     },
@@ -270,21 +270,21 @@
     "fallbackTitleByLang": {
       "en": "Moomin | LaplandGifts",
       "fi": "Muumit | LaplandGifts",
-      "de": "Mumin | LaplandGifts",
+      "de": "Moomin | LaplandGifts",
       "ja": "ムーミン | LaplandGifts",
-      "es": "Mumin | LaplandGifts",
+      "es": "Moomin | LaplandGifts",
       "pt-BR": "Moomin | LaplandGifts",
       "zh-CN": "姆明 | LaplandGifts",
       "ko": "무민 | LaplandGifts",
       "fr": "Moumine | LaplandGifts",
-      "it": "Mumin | LaplandGifts",
+      "it": "Moomin | LaplandGifts",
       "nl": "Moomin | LaplandGifts",
-      "sv": "Mumin | LaplandGifts"
+      "sv": "Moomin | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Mugs, mittens, bedlinen and posters. Moomin things sit in four different categories here, so this page gathers them into one. Prices are read from the shops.",
       "fi": "Mukeja, lapasia, lakanoita ja julisteita. Muumitavara on täällä neljässä eri kategoriassa, joten tämä sivu kerää sen yhteen. Hinnat tulevat kumppanikaupoista.",
-      "de": "Becher, Fäustlinge, Bettwäsche und Poster. Mumin-Sachen stehen hier in vier Kategorien, diese Seite führt sie zusammen. Jeder Preis stammt aus dem Partnershop.",
+      "de": "Becher, Fäustlinge, Bettwäsche und Poster. Moomin-Sachen stehen hier in vier Kategorien, diese Seite führt sie zusammen. Jeder Preis stammt aus dem Partnershop.",
       "ja": "マグ、ミトン、寝具、ポスター。ムーミンのものはこのサイトでは四つのカテゴリーに散らばっているので、このページで一つにまとめています。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
       "es": "Tazas, manoplas, ropa de cama y pósteres. Lo de Moomin está aquí en cuatro categorías; esta página lo reúne. Cada precio se consulta en la tienda asociada.",
       "pt-BR": "Canecas, luvas, roupa de cama e pôsteres. As coisas Moomin estão aqui em quatro categorias; esta página reúne tudo. A área de entrega é indicada em cada cartão.",
@@ -293,7 +293,7 @@
       "fr": "Mugs, moufles, linge de lit et affiches. Les objets Moumine sont ici répartis dans quatre catégories ; cette page les rassemble. Zones de livraison indiquées.",
       "it": "Tazze, muffole, biancheria e poster. Le cose Moomin qui stanno in quattro categorie; questa pagina le mette insieme. Ogni prezzo è rilevato dal negozio partner.",
       "nl": "Mokken, wanten, beddengoed en posters. Moomin-spullen staan hier in vier categorieën; deze pagina brengt ze samen. De prijzen komen van de partnerwinkels.",
-      "sv": "Muggar, vantar, sängkläder och affischer. Muminsakerna finns här i fyra kategorier, den här sidan samlar dem. Varje pris hämtas från partnerbutiken och dateras."
+      "sv": "Muggar, vantar, sängkläder och affischer. Moominsakerna finns här i fyra kategorier, den här sidan samlar dem. Varje pris är hämtat från partnerbutiken."
     }
   },
   {
@@ -680,7 +680,7 @@
     "fallbackDescriptionByLang": {
       "en": "Nordicbuddies is a Helsinki-based Finnish design company (registered as Oy Bisly Ltd) and an official licensee of Moomin, Pippi Longstocking and Mauri Kunnas.",
       "fi": "Nordicbuddies on helsinkiläinen suomalainen designyritys (Oy Bisly Ltd) ja virallinen Muumi-, Peppi Pitkätossu- ja Mauri Kunnas -lisenssinhaltija.",
-      "de": "Nordicbuddies ist ein finnisches Designunternehmen mit Sitz in Helsinki (eingetragen als Oy Bisly Ltd) und offizieller Lizenznehmer von Mumin. Mit Liefergebiet.",
+      "de": "Nordicbuddies ist ein finnisches Designunternehmen mit Sitz in Helsinki (eingetragen als Oy Bisly Ltd) und offizieller Lizenznehmer von Moomin.",
       "ja": "Nordicbuddiesはヘルシンキを拠点とするフィンランドのデザイン会社（登記名Oy Bisly Ltd）で、ムーミン、長くつ下のピッピ、Mauri Kunnasの公式ライセンシーとして、靴下、シャツ、キャップ、バッグなどのアクセサリーを販売している。各価格は提携ショップから取得し、日付を記載しています。",
       "es": "Nordicbuddies es una empresa finlandesa de diseño con sede en Helsinki (registrada como Oy Bisly Ltd) y licenciataria oficial de Moomin. Precios de las tiendas.",
       "pt-BR": "A Nordicbuddies é uma empresa de design finlandesa sediada em Helsinque (registrada como Oy Bisly Ltd) e licenciada oficial de Moomin. Com área de entrega.",
@@ -689,7 +689,7 @@
       "fr": "Nordicbuddies est une entreprise de design finlandaise basée à Helsinki (immatriculée sous le nom d'Oy Bisly Ltd) et licenciée officielle de Moumine.",
       "it": "Nordicbuddies è un'azienda di design finlandese con sede a Helsinki (registrata come Oy Bisly Ltd) e licenziataria ufficiale di Moomin. Aree di consegna.",
       "nl": "Nordicbuddies is een Fins designbedrijf uit Helsinki (geregistreerd als Oy Bisly Ltd) en officieel licentiehouder van Moomin, Pippi Langkous en Mauri Kunnas.",
-      "sv": "Nordicbuddies är ett finländskt designföretag i Helsingfors (registrerat som Oy Bisly Ltd) och officiell licenstagare för Mumin. Priser hämtas från butikerna."
+      "sv": "Nordicbuddies är ett finländskt designföretag i Helsingfors (registrerat som Oy Bisly Ltd) och officiell licenstagare för Moomin. Priser hämtas från butikerna."
     }
   },
   {
@@ -1010,7 +1010,7 @@
     "fallbackDescriptionByLang": {
       "en": "Moomin Characters Oy Ltd is the Helsinki family company that owns and supervises the rights to Tove Jansson's Moomin characters. Prices are read from the shops.",
       "fi": "Moomin Characters Oy Ltd on helsinkiläinen perheyhtiö, joka omistaa ja valvoo Tove Janssonin muumihahmojen oikeuksia; hahmot esiteltiin ensi kerran vuoden 1945.",
-      "de": "Moomin Characters Oy Ltd ist das Helsinkier Familienunternehmen, das die Rechte an Tove Janssons Mumin-Figuren besitzt und verwaltet. Liefergebiete angegeben.",
+      "de": "Moomin Characters Oy Ltd ist das Helsinkier Familienunternehmen, das die Rechte an Tove Janssons Moomin-Figuren besitzt und verwaltet. Liefergebiete angegeben.",
       "ja": "Moomin Characters Oy Ltdは、Tove Janssonのムーミンのキャラクターの権利を所有・管理するヘルシンキの家族経営会社である。ムーミンは1945年の書籍『小さなトロールと大きな洪水』で初めて登場した。各価格は提携ショップから取得し、日付を記載しています。配送エリアは各カードに記載しています。",
       "es": "Moomin Characters Oy Ltd es la empresa familiar de Helsinki que posee y supervisa los derechos de los personajes Moomin de Tove Jansson. Precios de las tiendas.",
       "pt-BR": "A Moomin Characters Oy Ltd é a empresa familiar de Helsinque que detém e supervisiona os direitos sobre os personagens Moomin de Tove Jansson.",
@@ -1208,14 +1208,14 @@
     "fallbackDescriptionByLang": {
       "en": "Moomin Arabia is the Moomin range of the Finnish ceramics brand Arabia, founded in 1873 and today part of Fiskars Group. Prices come from the partner shops.",
       "fi": "Moomin Arabia on suomalaisen keramiikkabrändin Arabian muumisarja. Jokainen hinta on luettu kumppanin kaupasta merkittynä päivänä. Toimitusalue näkyy kortissa.",
-      "de": "Moomin Arabia ist die Mumin-Serie der finnischen Keramikmarke Arabia, die 1873 gegründet wurde und heute zur Fiskars Group gehört. Liefergebiet auf jeder Karte.",
+      "de": "Moomin Arabia ist die Moomin-Serie der finnischen Keramikmarke Arabia, die 1873 gegründet wurde und heute zur Fiskars Group gehört. Preise aus den Partnershops.",
       "ja": "Moomin Arabia は、1873年創業で現在は Fiskars Group に属するフィンランドの陶磁器ブランド Arabia のムーミンシリーズです。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
-      "es": "Moomin Arabia es la gama Mumin de la marca finlandesa de cerámica Arabia, fundada en 1873 y hoy parte de Fiskars Group. Precios de las tiendas asociadas.",
+      "es": "Moomin Arabia es la gama Moomin de la marca finlandesa de cerámica Arabia, fundada en 1873 y hoy parte de Fiskars Group. Precios de las tiendas asociadas.",
       "pt-BR": "Moomin Arabia é a linha dos Moomins da marca finlandesa de cerâmica Arabia, fundada em 1873 e hoje parte do Fiskars Group. Os preços vêm das lojas parceiras.",
       "zh-CN": "Moomin Arabia 是芬兰陶瓷品牌 Arabia 的姆明系列，Arabia 成立于 1873 年，如今属于 Fiskars Group。首批姆明餐具出现在 1950 年代，插画由托韦·扬松绘制，广受收藏的马克杯系列则在 1990 年代开始，采用 Kaj Franck 设计的 Teema 杯型。",
       "ko": "Moomin Arabia는 1873년에 설립되어 오늘날 Fiskars Group에 속한 핀란드 도자기 브랜드 Arabia의 무민 제품군입니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
       "fr": "Moomin Arabia est la gamme Moomins de la marque de céramique finlandaise Arabia, fondée en 1873 et aujourd'hui membre du groupe Fiskars.",
-      "it": "Moomin Arabia è la linea Mumin del marchio ceramico finlandese Arabia, fondato nel 1873 e oggi parte di Fiskars Group. I prezzi provengono dai negozi partner.",
+      "it": "Moomin Arabia è la linea Moomin del marchio ceramico finlandese Arabia, fondato nel 1873 e oggi parte di Fiskars Group. I prezzi provengono dai negozi partner.",
       "nl": "Moomin Arabia is de Moomin-collectie van het Finse keramiekmerk Arabia, opgericht in 1873 en tegenwoordig onderdeel van Fiskars Group. Bezorggebied vermeld.",
       "sv": "Moomin Arabia är muminsortimentet från det finländska keramikvarumärket Arabia, som grundades 1873 och i dag ingår i Fiskars Group. Leveransområdena visas."
     }
@@ -1882,21 +1882,21 @@
   },
   {
     "path": "/product/moomin-mystical-forest-wool-throw",
-    "fallbackTitle": "Moomin Mystical Forest wool throw 130x170 cm | LaplandGifts",
+    "fallbackTitle": "Moomin Mystical Forest wool throw 130×170 cm | LaplandGifts",
     "fallbackDescription": "A 130 by 170 cm throw in 100 per cent wool, designed in Finland for the Mystical Forest collection. The price is read from the partner shop, where you buy it.",
     "fallbackTitleByLang": {
-      "en": "Moomin Mystical Forest wool throw 130x170 cm | LaplandGifts",
+      "en": "Moomin Mystical Forest wool throw 130×170 cm | LaplandGifts",
       "fi": "Muumi Mystical Forest -villatorkkupeitto 130 x 170 cm",
-      "de": "Mumin-Wolldecke Mystical Forest 130x170 cm | LaplandGifts",
-      "ja": "ムーミン ミスティカルフォレスト ウールブランケット 130x170 cm | LaplandGifts",
-      "es": "Manta de lana Moomin Mystical Forest 130x170 cm",
-      "pt-BR": "Manta de lã Moomin Mystical Forest 130x170 cm | LaplandGifts",
-      "zh-CN": "姆明 Mystical Forest 羊毛毯 130x170 cm | LaplandGifts",
-      "ko": "무민 Mystical Forest 울 블랭킷 130x170 cm | LaplandGifts",
-      "fr": "Plaid en laine Moomin Mystical Forest 130x170 cm",
-      "it": "Plaid in lana Moomin Mystical Forest 130x170 cm",
-      "nl": "Moomin Mystical Forest wollen plaid 130x170 cm",
-      "sv": "Muminpläd i ull Mystical Forest 130x170 cm | LaplandGifts"
+      "de": "Moomin-Wolldecke Mystical Forest 130 x 170 cm | LaplandGifts",
+      "ja": "ムーミン ミスティカルフォレスト ウールブランケット 130×170 cm | LaplandGifts",
+      "es": "Manta de lana Moomin Mystical Forest 130×170 cm",
+      "pt-BR": "Manta de lã Moomin Mystical Forest 130×170 cm | LaplandGifts",
+      "zh-CN": "姆明 Mystical Forest 羊毛毯 130×170 cm | LaplandGifts",
+      "ko": "무민 Mystical Forest 울 블랭킷 130×170 cm | LaplandGifts",
+      "fr": "Plaid en laine Moomin Mystical Forest 130×170 cm",
+      "it": "Plaid in lana Moomin Mystical Forest 130×170 cm",
+      "nl": "Moomin Mystical Forest wollen plaid 130 x 170 cm",
+      "sv": "Moominpläd i ull Mystical Forest 130 x 170 cm | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "A 130 by 170 cm throw in 100 per cent wool, designed in Finland for the Mystical Forest collection. The price is read from the partner shop, where you buy it.",
@@ -2443,10 +2443,10 @@
   },
   {
     "path": "/product/kupilka-classic-cup-21",
-    "fallbackTitle": "Kupilka 21 camp cup 2,1 dl | LaplandGifts",
+    "fallbackTitle": "Kupilka 21 camp cup 2.1 dl | LaplandGifts",
     "fallbackDescription": "The kuksa shape in a material you can throw in the dishwasher: half pine cellulose fibre, half thermoplastic, moulded in Finland. Bought in the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Kupilka 21 camp cup 2,1 dl | LaplandGifts",
+      "en": "Kupilka 21 camp cup 2.1 dl | LaplandGifts",
       "fi": "Kupilka 21 -juomamuki 2,1 dl | LaplandGifts",
       "de": "Kupilka 21 Outdoor-Becher 2,1 dl | LaplandGifts",
       "ja": "Kupilka クピルカ 21 キャンプカップ 2.1 dl | LaplandGifts",
@@ -2877,7 +2877,7 @@
     "fallbackTitleByLang": {
       "en": "Nordqvist Moomin forest berry hibiscus tea, 20 bags",
       "fi": "Nordqvist Muumi metsämarjainen hibiskustee, 20 pussia",
-      "de": "Nordqvist Mumin Waldbeeren-Hibiskustee, 20 Beutel",
+      "de": "Nordqvist Moomin Waldbeeren-Hibiskustee, 20 Beutel",
       "ja": "Nordqvist ノルドクヴィスト ムーミン 森のベリーとハイビスカスティー 20 袋 | LaplandGifts",
       "es": "Infusión Nordqvist Moomin de hibisco y bayas del bosque.",
       "pt-BR": "Chá Nordqvist Moomin de frutas do bosque e hibisco.",
@@ -2886,7 +2886,7 @@
       "fr": "Infusion Nordqvist Moomin hibiscus et baies des bois.",
       "it": "Infuso Nordqvist Moomin ai frutti di bosco e ibisco.",
       "nl": "Nordqvist Moomin bosvruchten- en hibiscusthee, 20 zakjes",
-      "sv": "Nordqvist Mumin skogsbär- och hibiskuste, 20 påsar"
+      "sv": "Nordqvist Moomin skogsbär- och hibiskuste, 20 påsar"
     },
     "fallbackDescriptionByLang": {
       "en": "Organic hibiscus with apple and forest berries, naturally caffeine free, blended at the Nordqvist factory in Nurmijärvi. The delivery area is on this page.",
@@ -2916,7 +2916,7 @@
       "pt-BR": "Chá Nordqvist de cranberry e caramelo salgado, 20 sachês",
       "zh-CN": "Nordqvist 蔓越莓咸太妃茶，20 包 | LaplandGifts",
       "ko": "Nordqvist 노르드크비스트 크랜베리와 솔티드 토피 티, 20 티백 | LaplandGifts",
-      "fr": "Infusion Nordqvist canneberge et caramel salé, 20 sachets",
+      "fr": "Infusion Nordqvist à la canneberge et au caramel salé.",
       "it": "Infuso Nordqvist mirtillo rosso e caramello salato.",
       "nl": "Nordqvist veenbes- en gezouten toffeethee, 20 zakjes",
       "sv": "Nordqvist tranbär och saltkola-te, 20 påsar | LaplandGifts"
@@ -2943,7 +2943,7 @@
     "fallbackTitleByLang": {
       "en": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
       "fi": "Moomin Muumipeikko Villimustikka-kahvi 250 g | LaplandGifts",
-      "de": "Moomin Mumintroll Wild Blueberry Kaffee 250 g | LaplandGifts",
+      "de": "Moomintroll Wild Blueberry Kaffee 250 g | LaplandGifts",
       "ja": "Moomin ムーミントロール ワイルドブルーベリー コーヒー 250 g | LaplandGifts",
       "es": "Café Moomin Wild Blueberry 250 g | LaplandGifts",
       "pt-BR": "Café Moomin Wild Blueberry 250 g | LaplandGifts",
@@ -2952,7 +2952,7 @@
       "fr": "Café Moomin Wild Blueberry 250 g | LaplandGifts",
       "it": "Caffè Moomin Wild Blueberry 250 g | LaplandGifts",
       "nl": "Moomin Wild Blueberry koffie 250 g | LaplandGifts",
-      "sv": "Mumintrollet Wild Blueberry kaffe 250 g | LaplandGifts"
+      "sv": "Moomintrollet Wild Blueberry kaffe 250 g | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southeastern Brazil. Bought in the partner shop.",
@@ -2976,7 +2976,7 @@
     "fallbackTitleByLang": {
       "en": "Moomintroll dark chocolate with lingonberry and blueberry.",
       "fi": "Moomin Muumipeikko-tummasuklaa, puolukka ja mustikka 70 g",
-      "de": "Mumintroll Zartbitterschokolade mit Preiselbeere und.",
+      "de": "Moomintroll Zartbitterschokolade mit Preiselbeere und.",
       "ja": "Moomin ムーミントロール リンゴンベリーとブルーベリーのダークチョコレート 70 g | LaplandGifts",
       "es": "Chocolate negro Moomin con arándano rojo y arándano 70 g",
       "pt-BR": "Chocolate amargo Moomin com airela e mirtilo 70 g",
@@ -2985,7 +2985,7 @@
       "fr": "Chocolat noir Moomin airelle et myrtille 70 g | LaplandGifts",
       "it": "Cioccolato fondente Moomin con mirtillo rosso e mirtillo 70.",
       "nl": "Moomin pure chocolade met vossenbes en bosbes 70 g",
-      "sv": "Moomin Mumintrollet mörk choklad med lingon och blåbär 70 g"
+      "sv": "Moomintrollet mörk choklad med lingon och blåbär 70 g"
     },
     "fallbackDescriptionByLang": {
       "en": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
@@ -3009,7 +3009,7 @@
     "fallbackTitleByLang": {
       "en": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
       "fi": "Moomin Muumi Marjaretki-tee, 20 pussia | LaplandGifts",
-      "de": "Moomin Mumin Berry Picking Tee, 20 Beutel | LaplandGifts",
+      "de": "Moomin Berry Picking Tee, 20 Beutel | LaplandGifts",
       "ja": "Moomin ムーミン ベリーピッキング ティー 20 袋 | LaplandGifts",
       "es": "Té Moomin Berry Picking, 20 bolsitas | LaplandGifts",
       "pt-BR": "Chá Moomin Berry Picking, 20 sachês | LaplandGifts",
@@ -3018,7 +3018,7 @@
       "fr": "Thé Moomin Berry Picking, 20 sachets | LaplandGifts",
       "it": "Tè Moomin Berry Picking, 20 filtri | LaplandGifts",
       "nl": "Moomin Berry Picking thee, 20 zakjes | LaplandGifts",
-      "sv": "Moomin Mumin Berry Picking te, 20 påsar | LaplandGifts"
+      "sv": "Moomin Berry Picking te, 20 påsar | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
@@ -3116,7 +3116,7 @@
       "ko": "Kääpä Mushrooms 차가버섯 추출 분말 30 g | LaplandGifts",
       "fr": "Poudre d’extrait de chaga Kääpä Mushrooms 30 g",
       "it": "Polvere di estratto di chaga Kääpä Mushrooms 30 g",
-      "nl": "Kääpä Mushrooms chaga-extractpoeder 30 g | LaplandGifts",
+      "nl": "Kääpä Mushrooms chagaextractpoeder 30 g | LaplandGifts",
       "sv": "Kääpä Mushrooms sprängtickeextrakt i pulver 30 g"
     },
     "fallbackDescriptionByLang": {
@@ -3339,7 +3339,7 @@
     "fallbackTitleByLang": {
       "en": "Foodin Nordic berries powder mix 120 g | LaplandGifts",
       "fi": "Foodin Pohjolan marjat -marjajauhesekoitus 120 g",
-      "de": "Foodin Nordische Beeren Pulvermischung 120 g | LaplandGifts",
+      "de": "Foodin Nordische Beerenpulvermischung 120 g | LaplandGifts",
       "ja": "Foodin 北欧ベリーパウダーミックス 120 g | LaplandGifts",
       "es": "Foodin mezcla de bayas nórdicas en polvo 120 g",
       "pt-BR": "Foodin mistura de frutas nórdicas em pó 120 g | LaplandGifts",
@@ -3347,8 +3347,8 @@
       "ko": "Foodin 북유럽 베리 파우더 믹스 120 g | LaplandGifts",
       "fr": "Foodin mélange de baies nordiques en poudre 120 g",
       "it": "Foodin miscela di bacche nordiche in polvere 120 g",
-      "nl": "Foodin Noordse bessen poedermix 120 g | LaplandGifts",
-      "sv": "Foodin Nordiska bär pulverblandning 120 g | LaplandGifts"
+      "nl": "Foodin Noordse bessenpoedermix 120 g | LaplandGifts",
+      "sv": "Foodin Nordisk bärpulverblandning 120 g | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "A Finnish blend of northern berries in one powder, for porridge and yoghurt. The lightest way to carry a summer of Nordic berries home. Delivery area is listed.",
@@ -3504,7 +3504,7 @@
     "fallbackTitleByLang": {
       "en": "Arabia Moomin mug, Snufkin | LaplandGifts",
       "fi": "Arabia Muumimuki, Nuuskamuikkunen | LaplandGifts",
-      "de": "Arabia Mumin-Becher, Snufkin | LaplandGifts",
+      "de": "Arabia Moomin-Becher, Snufkin | LaplandGifts",
       "ja": "Arabia アラビア ムーミンマグ スナフキン | LaplandGifts",
       "es": "Taza Arabia Moomin, Snufkin | LaplandGifts",
       "pt-BR": "Caneca Arabia Moomin, Snufkin | LaplandGifts",
@@ -3513,7 +3513,7 @@
       "fr": "Mug Arabia Moomin, Snufkin | LaplandGifts",
       "it": "Tazza Arabia Moomin, Snufkin | LaplandGifts",
       "nl": "Arabia Moomin mok, Snufkin | LaplandGifts",
-      "sv": "Arabia Muminmugg, Snusmumriken | LaplandGifts"
+      "sv": "Arabia Moominmugg, Snusmumriken | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Arabia has printed Tove Jansson’s drawings on these mugs since 1990, and collectors track the retired ones by year. The price is read from the partner shop.",
@@ -3537,7 +3537,7 @@
     "fallbackTitleByLang": {
       "en": "Arabia Moomin mug, Friendship | LaplandGifts",
       "fi": "Arabia Muumimuki, Ystävyys | LaplandGifts",
-      "de": "Arabia Mumin-Becher, Friendship | LaplandGifts",
+      "de": "Arabia Moomin-Becher, Friendship | LaplandGifts",
       "ja": "Arabia アラビア ムーミンマグ フレンドシップ | LaplandGifts",
       "es": "Taza Arabia Moomin, Friendship | LaplandGifts",
       "pt-BR": "Caneca Arabia Moomin, Friendship | LaplandGifts",
@@ -3546,7 +3546,7 @@
       "fr": "Mug Arabia Moomin, Friendship | LaplandGifts",
       "it": "Tazza Arabia Moomin, Friendship | LaplandGifts",
       "nl": "Arabia Moomin mok, Friendship | LaplandGifts",
-      "sv": "Arabia Muminmugg, Friendship | LaplandGifts"
+      "sv": "Arabia Moominmugg, Friendship | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "The mug shows Ninny, the invisible child who is afraid of the dark and slowly becomes visible again once someone is kind to her. You buy it in the partner shop.",
@@ -3570,7 +3570,7 @@
     "fallbackTitleByLang": {
       "en": "Arabia Moomin mini figurine, Moomintroll | LaplandGifts",
       "fi": "Arabia Muumi-minifiguriini, Muumipeikko | LaplandGifts",
-      "de": "Arabia Mumin-Minifigur, Mumintroll | LaplandGifts",
+      "de": "Arabia Moomin-Minifigur, Moomintroll | LaplandGifts",
       "ja": "Arabia アラビア ムーミン ミニフィギュア ムーミントロール | LaplandGifts",
       "es": "Minifigura Arabia Moomin, Moomin | LaplandGifts",
       "pt-BR": "Miniatura Arabia Moomin, Moomin | LaplandGifts",
@@ -3579,7 +3579,7 @@
       "fr": "Mini-figurine Arabia Moomin, Moomin | LaplandGifts",
       "it": "Minifigura Arabia Moomin, Moomin | LaplandGifts",
       "nl": "Arabia Moomin minifiguur, Moomin | LaplandGifts",
-      "sv": "Arabia Mumin minifigur, Mumintrollet | LaplandGifts"
+      "sv": "Arabia Moomin minifigur, Moomintrollet | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "A hand made ceramic figurine drawn up by Tuulikki Pietilä in the 1990s and sold in its own box. Small enough that it travels home in a coat pocket.",
@@ -3603,7 +3603,7 @@
     "fallbackTitleByLang": {
       "en": "Fiskars Moominpappa universal scissors | LaplandGifts",
       "fi": "Fiskars Muumipappa-yleissakset | LaplandGifts",
-      "de": "Fiskars Muminpapa Universalschere | LaplandGifts",
+      "de": "Fiskars Moominpapa Universalschere | LaplandGifts",
       "ja": "Fiskars フィスカース ムーミンパパ 万能はさみ | LaplandGifts",
       "es": "Tijeras universales Fiskars Papá Moomin | LaplandGifts",
       "pt-BR": "Tesoura universal Fiskars Papai Moomin | LaplandGifts",
@@ -3612,7 +3612,7 @@
       "fr": "Ciseaux universels Fiskars Papa Moomin | LaplandGifts",
       "it": "Forbici universali Fiskars Papà Moomin | LaplandGifts",
       "nl": "Fiskars Moominpappa universele schaar | LaplandGifts",
-      "sv": "Fiskars Muminpappa universalsax | LaplandGifts"
+      "sv": "Fiskars Moominpappa universalsax | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Fiskars orange handled scissors are in more Finnish kitchen drawers than any other tool. This pair is 21 cm in stainless steel with Moominpappa on the handle.",
@@ -3626,7 +3626,7 @@
       "fr": "Les ciseaux Fiskars à manche orange sont dans plus de tiroirs de cuisine finlandais que n’importe quel autre outil. Vous achetez dans la boutique partenaire.",
       "it": "Le forbici Fiskars dal manico arancione stanno in più cassetti di cucina finlandesi di qualsiasi altro attrezzo. L'area di consegna è indicata in questa pagina.",
       "nl": "Fiskars-scharen met oranje handvat liggen in meer Finse keukenlades dan welk ander gereedschap ook. De prijs komt van de partnerwinkel, waar u het ook koopt.",
-      "sv": "Fiskars saxar med orange handtag ligger i fler finska köksbord än något annat redskap. Den här är 21 cm i rostfritt stål med Muminpappa på handtaget."
+      "sv": "Fiskars saxar med orange handtag ligger i fler finska köksbord än något annat redskap. Den här är 21 cm i rostfritt stål med Moominpappa på handtaget."
     }
   },
   {
@@ -3776,7 +3776,7 @@
       "ko": "Rento 리넨 테리 등밀이 14 x 70 cm | LaplandGifts",
       "fr": "Gant de dos en éponge de lin Rento 14 x 70 cm | LaplandGifts",
       "it": "Spugna da schiena in spugna di lino Rento 14 x 70 cm",
-      "nl": "Rento rugwasser van linnen badstof 14 x 70 cm | LaplandGifts",
+      "nl": "Rento rugwasser van linnenbadstof 14 x 70 cm | LaplandGifts",
       "sv": "Rento ryggskrubb i linnefrotté 14 x 70 cm | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
@@ -4137,7 +4137,7 @@
       "pt-BR": "Barra de trufa de laranja Fazer Fazerina 99 g | LaplandGifts",
       "zh-CN": "Fazer Fazerina 香橙松露巧克力排 99 g | LaplandGifts",
       "ko": "Fazer 파제르 파제리나 오렌지 트러플 바 99 g | LaplandGifts",
-      "fr": "Tablette truffe à l’orange Fazer Fazerina 99 g",
+      "fr": "Tablette de truffe à l’orange Fazer Fazerina 99 g",
       "it": "Tavoletta al tartufo di arancia Fazer Fazerina 99 g",
       "nl": "Fazer Fazerina sinaasappeltruffelreep 99 g | LaplandGifts",
       "sv": "Fazer Fazerina apelsintryffelkaka 99 g | LaplandGifts"
@@ -4271,7 +4271,7 @@
       "ko": "North Outdoor 노스아웃도어 Heavyweight 메리노 넥게이터 | LaplandGifts",
       "fr": "Tour de cou mérinos North Outdoor Heavyweight | LaplandGifts",
       "it": "Scaldacollo in merino North Outdoor Heavyweight",
-      "nl": "North Outdoor Heavyweight merino nekwarmer | LaplandGifts",
+      "nl": "North Outdoor Heavyweight merinonekwarmer | LaplandGifts",
       "sv": "North Outdoor Heavyweight merinohalskrage | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
@@ -4368,7 +4368,7 @@
       "pt-BR": "Conjunto de segunda pele de merino Halti Hossa II, masculino",
       "zh-CN": "Halti Hossa II 美利奴内层套装，男款 | LaplandGifts",
       "ko": "Halti 할티 Hossa II 메리노 베이스레이어 세트, 남성 | LaplandGifts",
-      "fr": "Ensemble sous-vêtement mérinos Halti Hossa II, homme",
+      "fr": "Ensemble de sous-vêtements mérinos Halti Hossa II, homme",
       "it": "Set intimo in merino Halti Hossa II, uomo | LaplandGifts",
       "nl": "Halti Hossa II merino onderkledingset, heren | LaplandGifts",
       "sv": "Halti Hossa II merinounderställ, herr | LaplandGifts"
@@ -4626,7 +4626,7 @@
     "fallbackTitleByLang": {
       "en": "Northern lights tour by snowmobile for two, Kilpisjärvi",
       "fi": "Revontuliretki moottorikelkalla kahdelle, Kilpisjärvi",
-      "de": "Nordlicht-Tour mit dem Schneemobil für zwei, Kilpisjärvi",
+      "de": "Polarlicht-Tour mit dem Schneemobil für zwei, Kilpisjärvi",
       "ja": "Kilpissafarit スノーモービルで行くオーロラツアー 2名、キルピスヤルヴィ | LaplandGifts",
       "es": "Auroras boreales en moto de nieve para dos, Kilpisjärvi",
       "pt-BR": "Tour de aurora boreal de snowmobile para dois, Kilpisjärvi",
@@ -4658,8 +4658,8 @@
     "fallbackDescription": "A night for two in a warm glass igloo high on the Levi fell. The electrically heated glass stays clear while you look for auroras from a motorised double bed.",
     "fallbackTitleByLang": {
       "en": "Glass igloo night for two, Levi | LaplandGifts",
-      "fi": "Igluyö kahdelle Levillä | LaplandGifts",
-      "de": "Glasiglu-Nacht für zwei, Levi | LaplandGifts",
+      "fi": "Lasi-igluyö kahdelle Levillä | LaplandGifts",
+      "de": "Glas-Iglu-Nacht für zwei, Levi | LaplandGifts",
       "ja": "Golden Crown Levin Iglut グラスイグルーでの一泊 2名、レヴィ | LaplandGifts",
       "es": "Noche en iglú de cristal para dos, Levi | LaplandGifts",
       "pt-BR": "Noite em iglu de vidro para dois, Levi | LaplandGifts",
@@ -4727,8 +4727,8 @@
       "fi": "Nordicbuddies Pikku Myy -neulepipo | LaplandGifts",
       "de": "Nordicbuddies Kleine My Grobstrickmütze | LaplandGifts",
       "ja": "Nordicbuddies リトルミイ ざっくりニット帽 | LaplandGifts",
-      "es": "Gorro de punto grueso de Little My | LaplandGifts",
-      "pt-BR": "Gorro de tricô grosso da Little My | LaplandGifts",
+      "es": "Gorro de punto grueso de Pequeña My | LaplandGifts",
+      "pt-BR": "Gorro de tricô grosso da Pequena My | LaplandGifts",
       "zh-CN": "Nordicbuddies 小不点粗针织帽 | LaplandGifts",
       "ko": "Nordicbuddies 리틀 미이 굵은 니트 비니 | LaplandGifts",
       "fr": "Bonnet en grosse maille Petite Mu | LaplandGifts",
@@ -4758,7 +4758,7 @@
     "fallbackTitleByLang": {
       "en": "Nordicbuddies Moomintroll mittens | LaplandGifts",
       "fi": "Nordicbuddies Muumipeikko-lapaset | LaplandGifts",
-      "de": "Nordicbuddies Mumintroll Fäustlinge | LaplandGifts",
+      "de": "Nordicbuddies Moomintroll Fäustlinge | LaplandGifts",
       "ja": "Nordicbuddies ムーミントロール ミトン | LaplandGifts",
       "es": "Nordicbuddies Manoplas de Moomintroll | LaplandGifts",
       "pt-BR": "Nordicbuddies Luvas Moomintroll | LaplandGifts",
@@ -4767,7 +4767,7 @@
       "fr": "Nordicbuddies Moufles Moumine | LaplandGifts",
       "it": "Nordicbuddies Muffole Moomintroll | LaplandGifts",
       "nl": "Nordicbuddies Moomintroll wanten | LaplandGifts",
-      "sv": "Nordicbuddies Mumintrollet vantar | LaplandGifts"
+      "sv": "Nordicbuddies Moomintrollet vantar | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Knitted mittens lined with soft fleece, 24 centimetres tall so the cuff reaches past a jacket sleeve. The price is read from the partner shop, where you buy it.",
@@ -4791,7 +4791,7 @@
     "fallbackTitleByLang": {
       "en": "Nordicbuddies Moomintroll Love retro socks | LaplandGifts",
       "fi": "Nordicbuddies Muumipeikko Love -retrosukat | LaplandGifts",
-      "de": "Nordicbuddies Mumintroll Love Retrosocken | LaplandGifts",
+      "de": "Nordicbuddies Moomintroll Love Retrosocken | LaplandGifts",
       "ja": "Nordicbuddies ムーミントロール Love レトロソックス | LaplandGifts",
       "es": "Calcetines retro Moomintroll Love | LaplandGifts",
       "pt-BR": "Nordicbuddies Meias retrô Moomintroll Love | LaplandGifts",
@@ -4800,12 +4800,12 @@
       "fr": "Nordicbuddies Chaussettes rétro Moumine Love | LaplandGifts",
       "it": "Nordicbuddies Calzini retro Moomintroll Love | LaplandGifts",
       "nl": "Nordicbuddies Moomintroll Love retrosokken | LaplandGifts",
-      "sv": "Nordicbuddies Mumintrollet Love retrostrumpor | LaplandGifts"
+      "sv": "Moomintrollet Love retrostrumpor | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Light blue ribbed socks with Moomintroll embroidered into a pink heart on the shin, not printed on, so it survives the wash. One size covers EU 36 to 42.",
       "fi": "Vaaleansiniset resorisukat, joissa Muumipeikko on kirjottu pinkkiin sydämeen säären kohdalle, ei painettu, joten se kestää pesun. Yksi koko kattaa EU 36-42.",
-      "de": "Hellblaue Rippsocken mit Mumintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Liefergebiet angegeben.",
+      "de": "Hellblaue Rippsocken mit Moomintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Liefergebiet angegeben.",
       "ja": "すねの部分にピンクのハートとムーミントロールを刺繍した水色のリブソックス。プリントではなく刺繍なので洗濯にも耐えます。フリーサイズで EU 36-42 に対応。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
       "es": "Calcetines celestes de canalé con Moomintroll bordado dentro de un corazón rosa en la espinilla, bordado y no estampado, así que aguanta los lavados.",
       "pt-BR": "Meias caneladas azul-claro com o Moomintroll bordado dentro de um coração rosa na canela, bordado e não estampado, então resiste à lavagem.",
@@ -4814,7 +4814,7 @@
       "fr": "Chaussettes côtelées bleu clair avec Moumine brodé dans un cœur rose sur le tibia, brodé et non imprimé, ce qui lui permet de résister au lavage.",
       "it": "Calzini azzurri a coste con Moomintroll ricamato dentro un cuore rosa sullo stinco, ricamato e non stampato, quindi resiste al lavaggio. Venduto dal partner.",
       "nl": "Lichtblauwe geribbelde sokken met Moomintroll geborduurd in een roze hart op het scheenbeen, geborduurd en niet bedrukt, dus het motief overleeft de was.",
-      "sv": "Ljusblå ribbade strumpor med Mumintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42."
+      "sv": "Ljusblå ribbade strumpor med Moomintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42."
     }
   },
   {
@@ -4838,7 +4838,7 @@
     "fallbackDescriptionByLang": {
       "en": "A 260 gram cotton T-shirt in lavender, box fit, with a small embroidered Moomintroll at the chest instead of a large print. The delivery area is on this page.",
       "fi": "260 gramman puuvillainen t-paita laventelinvärisenä, väljä leikkaus, ja rinnassa pieni kirjottu Muumipeikko ison painatuksen sijaan. Toimitusalue näkyy sivulla.",
-      "de": "Ein 260 Gramm schweres Baumwoll-T-Shirt in Lavendel, kastiger Schnitt, mit einem kleinen gestickten Mumintroll auf der Brust statt eines großen Drucks.",
+      "de": "Ein 260 Gramm schweres Baumwoll-T-Shirt in Lavendel, kastiger Schnitt, mit einem kleinen gestickten Moomintroll auf der Brust statt eines großen Drucks.",
       "ja": "260 グラムのコットンを使ったラベンダー色のTシャツ。ボックスシルエットで、大きなプリントではなく胸元に小さなムーミントロールの刺繍が入ります。体に張り付かず、まっすぐ落ちる厚みです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
       "es": "Una camiseta de algodón de 260 gramos en color lavanda, corte holgado, con un pequeño Moomintroll bordado en el pecho en lugar de un estampado grande.",
       "pt-BR": "Uma camiseta de algodão de 260 gramas na cor lavanda, caimento quadrado, com um pequeno Moomintroll bordado no peito em vez de uma estampa grande.",
@@ -4847,7 +4847,7 @@
       "fr": "Un t-shirt en coton de 260 grammes coloris lavande, coupe carrée, avec un petit Moumine brodé sur la poitrine plutôt qu'un grand imprimé.",
       "it": "Una t-shirt in cotone da 260 grammi color lavanda, vestibilità squadrata, con un piccolo Moomintroll ricamato sul petto invece di una stampa grande.",
       "nl": "Een katoenen T-shirt van 260 gram in lavendel, boxy pasvorm, met een klein geborduurd Moomintroll op de borst in plaats van een grote print.",
-      "sv": "En t-shirt i 260 gram bomull i lavendel, boxig passform, med ett litet broderat Mumintroll på bröstet i stället för ett stort tryck. Säljs av partnerbutiken."
+      "sv": "En t-shirt i 260 gram bomull i lavendel, boxig passform, med ett litet broderat Moomintroll på bröstet i stället för ett stort tryck. Säljs av partnerbutiken."
     }
   },
   {
@@ -4890,7 +4890,7 @@
     "fallbackTitleByLang": {
       "en": "Nordicbuddies Moomintroll hoodie | LaplandGifts",
       "fi": "Nordicbuddies Muumipeikko-huppari | LaplandGifts",
-      "de": "Nordicbuddies Mumintroll Hoodie | LaplandGifts",
+      "de": "Nordicbuddies Moomintroll Hoodie | LaplandGifts",
       "ja": "Nordicbuddies ムーミントロール フーディー | LaplandGifts",
       "es": "Sudadera con capucha de Moomintroll | LaplandGifts",
       "pt-BR": "Nordicbuddies Moletom com capuz Moomintroll | LaplandGifts",
@@ -4899,7 +4899,7 @@
       "fr": "Nordicbuddies Sweat à capuche Moumine | LaplandGifts",
       "it": "Nordicbuddies Felpa con cappuccio Moomintroll | LaplandGifts",
       "nl": "Nordicbuddies Moomintroll hoodie | LaplandGifts",
-      "sv": "Nordicbuddies Mumintrollet hoodie | LaplandGifts"
+      "sv": "Nordicbuddies Moomintrollet hoodie | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "A 300 gram cotton and polyester hoodie printed in Finland, unisex straight fit. The layer people actually live in on a cabin evening once the sauna has cooled.",
@@ -4925,7 +4925,7 @@
       "fi": "Mauri Kunnas Koirien Kalevala -kangaskassi | LaplandGifts",
       "de": "Mauri Kunnas Hunde-Kalevala Stofftasche | LaplandGifts",
       "ja": "Nordicbuddies マウリ・クンナス 犬のカレワラ トートバッグ | LaplandGifts",
-      "es": "Bolsa de tela Mauri Kunnas El Kalevala canino | LaplandGifts",
+      "es": "Bolsa de tela Mauri Kunnas El Kalevala de los perros",
       "pt-BR": "Ecobag Mauri Kunnas O Kalevala dos cães | LaplandGifts",
       "zh-CN": "Nordicbuddies Mauri Kunnas 犬之卡勒瓦拉手提袋 | LaplandGifts",
       "ko": "Nordicbuddies 마우리 쿤나스 개들의 칼레발라 토트백 | LaplandGifts",
@@ -4989,7 +4989,7 @@
     "fallbackTitleByLang": {
       "en": "Moomin duvet cover set 150 x 210 cm, Sydänkäpyset",
       "fi": "Moomin Muumi pussilakanasetti 150 x 210 cm, Sydänkäpyset",
-      "de": "Moomin Mumin Bettwäscheset 150 x 210 cm, Sydänkäpyset",
+      "de": "Moomin Bettwäscheset 150 x 210 cm, Sydänkäpyset",
       "ja": "ムーミン 掛け布団カバーセット 150 x 210 cm、Sydänkäpyset | LaplandGifts",
       "es": "Juego de funda nórdica Moomin 150 x 210 cm, Sydänkäpyset",
       "pt-BR": "Jogo de capa de edredom Moomin 150 x 210 cm, Sydänkäpyset",
@@ -4998,12 +4998,12 @@
       "fr": "Parure de lit Moomin 150 x 210 cm, Sydänkäpyset",
       "it": "Set copripiumino Moomin 150 x 210 cm, Sydänkäpyset",
       "nl": "Moomin dekbedovertrekset 150 x 210 cm, Sydänkäpyset",
-      "sv": "Mumin bäddset 150 x 210 cm, Sydänkäpyset | LaplandGifts"
+      "sv": "Moomin bäddset 150 x 210 cm, Sydänkäpyset | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "A GOTS certified cotton duvet set printed with Moomintroll and Snorkmaiden. The price is read from the partner shop, where you buy it. Delivery area is listed.",
       "fi": "GOTS-sertifioitu puuvillainen pussilakanasetti, jossa on Muumipeikko ja Niiskuneiti. Kuosin nimi Sydänkäpyset kertoo suhteesta, jota kuosi kuvaa.",
-      "de": "GOTS-zertifiziertes Bettwäscheset aus Baumwolle mit Mumintroll und Snorkfräulein. Der Preis wird im Partnershop abgelesen, dort erfolgt auch der Kauf.",
+      "de": "GOTS-zertifiziertes Bettwäscheset aus Baumwolle mit Moomintroll und Snorkfräulein. Der Preis wird im Partnershop abgelesen, dort erfolgt auch der Kauf.",
       "ja": "ムーミントロールとスノークのおじょうさんを描いた、GOTS 認証のコットン寝具セット。フィンランド語の柄名 Sydänkäpyset は、この柄が描いている関係そのものを指す言葉です。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
       "es": "Juego de cama de algodón con certificación GOTS, con Moomintroll y la Señorita Snork. El precio procede de la tienda asociada, donde también se compra.",
       "pt-BR": "Jogo de cama de algodão com certificação GOTS, com o Moomintroll e a Senhorita Snork. O preço é consultado na loja parceira, onde também é feita a compra.",
@@ -5012,7 +5012,7 @@
       "fr": "Parure de lit en coton certifiée GOTS, avec Moumine et Mademoiselle Snorque. Le prix est relevé auprès de la boutique partenaire et l'achat se fait chez elle.",
       "it": "Set letto in cotone certificato GOTS, con Moomintroll e la Signorina Snork. Il prezzo è rilevato dal negozio partner, dove viene effettuato anche l'acquisto.",
       "nl": "GOTS-gecertificeerd katoenen beddengoedset met Moomintroll en Snorkjuffrouw. De prijs komt van de partnerwinkel, waar u het ook koopt. Bezorggebied is vermeld.",
-      "sv": "GOTS-certifierat bäddset i bomull med Mumintrollet och Snorkfröken. Det finska mönsternamnet Sydänkäpyset beskriver just den relation som mönstret visar."
+      "sv": "GOTS-certifierat bäddset i bomull med Moomintrollet och Snorkfröken. Det finska mönsternamnet Sydänkäpyset beskriver just den relation som mönstret visar."
     }
   },
   {
@@ -5088,16 +5088,16 @@
     "fallbackTitleByLang": {
       "en": "Muurla Moomin glass bottle 1 l, Apples | LaplandGifts",
       "fi": "Muurla Muumi-lasipullo 1 l, Omenat | LaplandGifts",
-      "de": "Muurla Mumin-Glasflasche 1 l, Äpfel | LaplandGifts",
+      "de": "Muurla Moomin-Glasflasche 1 l, Äpfel | LaplandGifts",
       "ja": "Muurla ムールラ ムーミン ガラスボトル 1 l「りんご」 | LaplandGifts",
       "es": "Botella de vidrio Moomin de Muurla 1 l, Manzanas",
       "pt-BR": "Garrafa de vidro Moomin Muurla 1 l, Maçãs | LaplandGifts",
-      "zh-CN": "Muurla 姆明玻璃瓶 1 l「苹果」 | LaplandGifts",
+      "zh-CN": "Muurla 姆明玻璃瓶 1 l“苹果” | LaplandGifts",
       "ko": "Muurla 무울라 무민 유리병 1 l, 사과 | LaplandGifts",
       "fr": "Bouteille en verre Moumine Muurla 1 l, Pommes | LaplandGifts",
       "it": "Bottiglia di vetro Moomin Muurla 1 l, Mele | LaplandGifts",
       "nl": "Muurla Moomin glazen fles 1 l, Appels | LaplandGifts",
-      "sv": "Muurla Muminglasflaska 1 l, Äpplen | LaplandGifts"
+      "sv": "Muurla Moominglasflaska 1 l, Äpplen | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "A soda-glass bottle with a patent stopper, for water or juice on the table rather than a carton. The price comes from the partner shop, where you also buy it.",
@@ -5126,7 +5126,7 @@
       "es": "Nordicbuddies Gorro El Kalevala de los perros | LaplandGifts",
       "pt-BR": "Nordicbuddies Gorro O Kalevala dos cães | LaplandGifts",
       "zh-CN": "Nordicbuddies 《狗狗的卡勒瓦拉》针织帽 | LaplandGifts",
-      "ko": "Nordicbuddies «개들의 칼레발라» 비니 | LaplandGifts",
+      "ko": "Nordicbuddies 《개들의 칼레발라》 비니 | LaplandGifts",
       "fr": "Nordicbuddies Bonnet Kalevala des chiens | LaplandGifts",
       "it": "Nordicbuddies Berretto Il Kalevala dei cani | LaplandGifts",
       "nl": "Nordicbuddies Muts De Kalevala van de honden | LaplandGifts",
@@ -5168,7 +5168,7 @@
     "fallbackDescriptionByLang": {
       "en": "The burgundy pair to the Moomintroll mittens, same fleece lining and same price. The price is read from the partner shop and the purchase is made there.",
       "fi": "Viininpunainen pari Muumipeikko-lapasille, sama fleecevuori ja sama hinta. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä. Toimitusalue kerrotaan.",
-      "de": "Das weinrote Gegenstück zu den Mumintroll-Fäustlingen, gleiches Fleecefutter und gleicher Preis. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
+      "de": "Das weinrote Gegenstück zu den Moomintroll-Fäustlingen, gleiches Fleecefutter und gleicher Preis. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
       "ja": "ムーミンのミトンと対になるワインレッド。フリースの裏地も価格も同じです。袖口は 2 センチ短く、ムーミンは少し人が良すぎると思う人向けのキャラクターです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
       "es": "El par burdeos que acompaña a las manoplas de Moomin, mismo forro polar y mismo precio. El precio procede de la tienda asociada, donde también se compra.",
       "pt-BR": "O par bordô que acompanha as luvas do Moomin, mesmo forro de fleece e mesmo preço. O preço é consultado na loja parceira, onde também é feita a compra.",
@@ -5177,7 +5177,7 @@
       "fr": "La paire bordeaux qui répond aux moufles Moumine, même doublure polaire et même prix. Le prix vient de la boutique partenaire, où se fait aussi votre achat.",
       "it": "Il paio bordeaux che fa il paio con le muffole di Moomin, stessa fodera in pile e stesso prezzo. Il prezzo è rilevato dal negozio partner, dove si acquista.",
       "nl": "Het bordeauxrode paar bij de Moomin-wanten, dezelfde fleecevoering en dezelfde prijs. De prijs is overgenomen van de partnerwinkel en de aankoop gebeurt daar.",
-      "sv": "Det vinröda paret till Muminvantarna, samma fleecefoder och samma pris. Priset kommer från partnerbutiken, där du också handlar. Leveransområdet finns på sidan."
+      "sv": "Det vinröda paret till Moominvantarna, samma fleecefoder och samma pris. Priset hämtas från partnerbutiken, där köpet sker. Leveransområdet finns på sidan."
     }
   },
   {
@@ -5286,7 +5286,7 @@
     "fallbackTitleByLang": {
       "en": "Nordicbuddies Moomintroll Love cushion | LaplandGifts",
       "fi": "Nordicbuddies Muumipeikko Love -tyyny | LaplandGifts",
-      "de": "Nordicbuddies Mumintroll Love Kissen | LaplandGifts",
+      "de": "Nordicbuddies Moomintroll Love Kissen | LaplandGifts",
       "ja": "Nordicbuddies ムーミン Love クッション | LaplandGifts",
       "es": "Nordicbuddies Cojín Moomin Love | LaplandGifts",
       "pt-BR": "Nordicbuddies Almofada Moomin Love | LaplandGifts",
@@ -5295,12 +5295,12 @@
       "fr": "Nordicbuddies Coussin Moumine Love | LaplandGifts",
       "it": "Nordicbuddies Cuscino Moomin Love | LaplandGifts",
       "nl": "Nordicbuddies Moomin Love kussen | LaplandGifts",
-      "sv": "Nordicbuddies Mumintrollet Love-kudde | LaplandGifts"
+      "sv": "Nordicbuddies Moomintrollet Love-kudde | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "A shaped Moomintroll cushion rather than a square with a print on it, sold in several sizes from 45 to 75 centimetres tall. The delivery area is on this page.",
       "fi": "Muumipeikon muotoinen tyyny, ei neliö, jossa on kuva, ja saatavana useassa koossa 45:stä 75 senttiin. Sellainen tavara, joka päätyy mökin sohvalle ja jää sinne.",
-      "de": "Ein Kissen in Mumintroll-Form statt eines Quadrats mit Aufdruck, in mehreren Größen von 45 bis 75 Zentimetern Höhe. Das Liefergebiet steht auf dieser Seite.",
+      "de": "Ein Kissen in Moomintroll-Form statt eines Quadrats mit Aufdruck, in mehreren Größen von 45 bis 75 Zentimetern Höhe. Das Liefergebiet steht auf dieser Seite.",
       "ja": "プリントを載せた四角ではなく、ムーミンの形に裁ったクッション。高さ 45〜75 センチの複数サイズがあります。コテージのソファに置かれたら、そのまま居着くたぐいのものです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
       "es": "Un cojín con la silueta de Moomin en lugar de un cuadrado estampado, en varias tallas de 45 a 75 centímetros de alto. La zona de entrega figura en esta página.",
       "pt-BR": "Uma almofada recortada no formato do Moomin em vez de um quadrado estampado, em vários tamanhos de 45 a 75 centímetros de altura. Área de entrega nesta página.",
@@ -5309,7 +5309,7 @@
       "fr": "Un coussin découpé à la forme de Moumine plutôt qu’un carré imprimé, proposé en plusieurs tailles de 45 à 75 centimètres de haut. Zone de livraison indiquée.",
       "it": "Un cuscino sagomato come Moomin invece del solito quadrato stampato, in più misure dai 45 ai 75 centimetri di altezza. Il prezzo è rilevato dal negozio partner.",
       "nl": "Een kussen in de vorm van Moomin in plaats van een vierkant met opdruk, in meerdere maten van 45 tot 75 centimeter hoog. Het bezorggebied staat op deze pagina.",
-      "sv": "En kudde formad som Mumintrollet i stället för en fyrkant med tryck, i flera storlekar från 45 till 75 centimeter hög. Leveransområdet står på den här sidan."
+      "sv": "En kudde formad som Moomintrollet i stället för en fyrkant med tryck, i flera storlekar från 45 till 75 centimeter hög. Leveransområdet står på den här sidan."
     }
   },
   {
@@ -5352,7 +5352,7 @@
     "fallbackTitleByLang": {
       "en": "Nordicbuddies Moomin novels poster | LaplandGifts",
       "fi": "Nordicbuddies Muumikirjat-juliste | LaplandGifts",
-      "de": "Nordicbuddies Poster der Mumin-Romane | LaplandGifts",
+      "de": "Nordicbuddies Poster der Moomin-Romane | LaplandGifts",
       "ja": "Nordicbuddies ムーミン小説ポスター | LaplandGifts",
       "es": "Nordicbuddies Póster de las novelas Moomin | LaplandGifts",
       "pt-BR": "Nordicbuddies Pôster dos romances Moomin | LaplandGifts",
@@ -5366,7 +5366,7 @@
     "fallbackDescriptionByLang": {
       "en": "The covers of Tove Jansson’s Moomin novels on one sheet, same Helsinki printing and same two sizes as the character posters. The delivery area is on this page.",
       "fi": "Tove Janssonin muumikirjojen kannet yhdessä arkissa, sama helsinkiläinen painatus ja samat kaksi kokoa kuin hahmojulisteissa. Ostat tuotteen kumppanin kaupasta.",
-      "de": "Die Buchcover von Tove Janssons Mumin-Romanen auf einem Blatt, gleicher Druck aus Helsinki und dieselben zwei Größen wie die Figurenposter. Kauf im Partnershop.",
+      "de": "Die Buchcover von Tove Janssons Moomin-Romanen auf einem Blatt, gleicher Druck aus Helsinki und dieselben zwei Größen wie die Figurenposter.",
       "ja": "トーベ・ヤンソンのムーミン小説の表紙を 1 枚に。印刷はキャラクターポスターと同じヘルシンキ、サイズも同じ 2 種類です。マグを集める人ではなく、家族のなかの読み手に向いています。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
       "es": "Las portadas de las novelas Moomin de Tove Jansson en una sola lámina, misma impresión de Helsinki y los mismos dos tamaños que los pósteres de personajes.",
       "pt-BR": "As capas dos romances Moomin de Tove Jansson em uma única folha, mesma impressão de Helsinque e os mesmos dois tamanhos dos pôsteres de personagem.",
@@ -6554,7 +6554,7 @@
     "fallbackDescriptionByLang": {
       "en": "A gift shop from Rovaniemi, founded in 1987. Aarikka and Moomin products, jewellery, textiles and treats, ordered online. Rovaniemi.",
       "fi": "Vuonna 1987 perustettu lahjapuoti Rovaniemeltä. Aarikkaa ja Muumi-tuotteita, koruja, tekstiilejä ja herkkuja verkkokaupasta. Rovaniemi.",
-      "de": "Geschenkeladen aus Rovaniemi, gegründet 1987. Aarikka- und Mumin-Artikel, Schmuck, Textilien und Leckereien im Onlineshop. Rovaniemi.",
+      "de": "Geschenkeladen aus Rovaniemi, gegründet 1987. Aarikka- und Moomin-Artikel, Schmuck, Textilien und Leckereien im Onlineshop. Rovaniemi.",
       "ja": "1987年創業、ロヴァニエミのギフトショップ。Aarikkaやムーミンの品、ジュエリー、テキスタイル、菓子をオンラインで販売しています。 ロヴァニエミ.",
       "es": "Tienda de regalos de Rovaniemi, fundada en 1987. Productos Aarikka y Moomin, joyas, textiles y dulces por internet. Rovaniemi.",
       "pt-BR": "Loja de presentes de Rovaniemi, fundada em 1987. Produtos Aarikka e Moomin, joias, têxteis e guloseimas pela internet. Rovaniemi.",
@@ -6563,7 +6563,7 @@
       "fr": "Boutique de cadeaux de Rovaniemi, fondée en 1987. Articles Aarikka et Moomin, bijoux, textiles et gourmandises en ligne. Rovaniemi.",
       "it": "Negozio di regali di Rovaniemi, fondato nel 1987. Prodotti Aarikka e Moomin, gioielli, tessuti e dolci online. Rovaniemi.",
       "nl": "Cadeauwinkel uit Rovaniemi, opgericht in 1987. Aarikka en Moomin, sieraden, textiel en lekkers via de webwinkel. Rovaniemi.",
-      "sv": "Presentbutik från Rovaniemi, grundad 1987. Aarikka och Mumin, smycken, textilier och godsaker via nätbutiken. Rovaniemi."
+      "sv": "Presentbutik från Rovaniemi, grundad 1987. Aarikka och Moomin, smycken, textilier och godsaker via nätbutiken. Rovaniemi."
     }
   },
   {
@@ -6748,7 +6748,7 @@
       "zh-CN": "取消订阅 | LaplandGifts",
       "ko": "구독 해지 | LaplandGifts",
       "fr": "Désabonnement | LaplandGifts",
-      "it": "Disiscrizione | LaplandGifts",
+      "it": "Annulla iscrizione | LaplandGifts",
       "nl": "Uitschrijven | LaplandGifts",
       "sv": "Avsluta prenumeration | LaplandGifts"
     },

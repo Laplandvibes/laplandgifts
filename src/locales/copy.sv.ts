@@ -162,7 +162,7 @@ const sv: ChromeCopy = {
       },
       {
         q: 'Vad ska jag ta med hem från Rovaniemi?',
-        a: 'Rovaniemi ligger vid polcirkeln och är porten till finska Lappland, så det är en bra plats att handla på. Populära val är en kuksakopp, en puukkokniv, accessoarer i renläder, ullsockor och mössor, Mumin- och tomteprylar samt arktisk mat som hjortronsylt, salmiak (salt lakrits) och björksavssirap. För något med ursprung väljer du en pjäs som är signerad av tillverkaren i stället för en allmän ”Lappland”-souvenir.',
+        a: 'Rovaniemi ligger vid polcirkeln och är porten till finska Lappland, så det är en bra plats att handla på. Populära val är en kuksakopp, en puukkokniv, accessoarer i renläder, ullsockor och mössor, Moomin- och tomteprylar samt arktisk mat som hjortronsylt, salmiak (salt lakrits) och björksavssirap. För något med ursprung väljer du en pjäs som är signerad av tillverkaren i stället för en allmän ”Lappland”-souvenir.',
       },
       {
         q: 'Får man ta med produkter av ren och horn hem?',

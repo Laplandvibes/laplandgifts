@@ -65,17 +65,17 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} tuotetta`,
   },
   de: {
-    name: { moomin: 'Mumin', arctic: 'Arktische Natur', sauna: 'Sauna' },
+    name: { moomin: 'Moomin', arctic: 'Arktische Natur', sauna: 'Sauna' },
     intro: {
       moomin:
-        'Becher, Fäustlinge, Bettwäsche und Poster. Mumin-Sachen stehen hier in vier Kategorien, diese Seite führt sie zusammen.',
+        'Becher, Fäustlinge, Bettwäsche und Poster. Moomin-Sachen stehen hier in vier Kategorien, diese Seite führt sie zusammen.',
       arctic:
         'Beeren, Birke, Rentier und die Pflanzen nördlich des Polarkreises, der Teil Lapplands, den man mitnehmen kann.',
       sauna:
         'Quasten, Hüte, Düfte und Kissen. Was auf die Bank gehört, aus den Läden, die es in Finnland führen.',
     },
     seeAll: {
-      moomin: 'Alle Mumin-Produkte ansehen',
+      moomin: 'Alle Moomin-Produkte ansehen',
       arctic: 'Alle Produkte der arktischen Natur ansehen',
       sauna: 'Alle Sauna-Produkte ansehen',
     },
@@ -83,10 +83,10 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} Produkte`,
   },
   sv: {
-    name: { moomin: 'Mumin', arctic: 'Arktisk natur', sauna: 'Bastu' },
+    name: { moomin: 'Moomin', arctic: 'Arktisk natur', sauna: 'Bastu' },
     intro: {
       moomin:
-        'Muggar, vantar, sängkläder och affischer. Muminsakerna finns här i fyra kategorier, den här sidan samlar dem.',
+        'Muggar, vantar, sängkläder och affischer. Moominsakerna finns här i fyra kategorier, den här sidan samlar dem.',
       arctic:
         'Bär, björk, ren och växterna norr om polcirkeln, den del av Lappland som går att ta med hem.',
       sauna:
@@ -119,7 +119,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} produits`,
   },
   es: {
-    name: { moomin: 'Mumin', arctic: 'Naturaleza ártica', sauna: 'Sauna' },
+    name: { moomin: 'Moomin', arctic: 'Naturaleza ártica', sauna: 'Sauna' },
     intro: {
       moomin:
         'Tazas, manoplas, ropa de cama y pósteres. Lo de Moomin está aquí en cuatro categorías; esta página lo reúne.',
@@ -137,7 +137,7 @@ export const THEME_COPY: Record<Lang, ThemeCopy> = {
     count: (n) => `${n} productos`,
   },
   it: {
-    name: { moomin: 'Mumin', arctic: 'Natura artica', sauna: 'Sauna' },
+    name: { moomin: 'Moomin', arctic: 'Natura artica', sauna: 'Sauna' },
     intro: {
       moomin:
         'Tazze, muffole, biancheria e poster. Le cose Moomin qui stanno in quattro categorie; questa pagina le mette insieme.',

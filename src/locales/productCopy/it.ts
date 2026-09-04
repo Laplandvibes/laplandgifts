@@ -13,7 +13,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_IT: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: 'Plaid in lana Moomin Mystical Forest 130x170 cm',
+    name: 'Plaid in lana Moomin Mystical Forest 130×170 cm',
     description:
       'Un plaid da 130 per 170 cm in 100 per cento lana, disegnato in Finlandia per la collezione Mystical Forest. Solo lavaggio a secco, quindi consideratelo un plaid da divano e non una coperta da picnic.',
     specs: [

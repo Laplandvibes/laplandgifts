@@ -39,13 +39,21 @@ import { DEFAULT_PREMIUM_SPOTS } from '../shared/PremiumSpotGrid';
  * 2.9. mutta Worker on deployaamatta — ÄLÄ deployaa tätä sivustoa ennen kuin
  * /go/keloa vastaa 302 eikä 400. `articleUrl` on toimituksellinen linkki,
  * ei Workerin kautta.
+ *
+ * 🔴🔴 KIELIVERSIO (Niina/Bear 2026-07-30 -sääntö, Vesa löysi rikon 4.9.):
+ * linkin pitää viedä kumppanin OMAAN kieliversioon. keloa.fi ilmoittaa
+ * hreflangissaan kaksi: fi = / ja en = /en/home/. `urlFi` menee Workerin
+ * oletuspohjaan (suomenkielinen juuri), `url` — eli kaikki muut lokaalit —
+ * kantaa `dest`-parametrin englanninkieliseen versioon. Worker hyväksyy
+ * destin vain jos se alkaa reitin `base`illa, joten se ei ole avoin ohjaus.
+ * Molemmat mitattu livenä 4.9.2026: HTTP 200.
  */
 const KELOA: Partner = {
   name: 'Keloa',
   tagline: 'Käsintehdyt silmälasit tuohesta ja poronsarvesta',
   taglineEn: 'Handmade eyewear from birch bark and reindeer antler',
   taglineSv: 'Handgjorda glasögon av näver och renhorn',
-  url: 'https://go.laplandvibes.com/go/keloa?sid=laplandgifts_home_main_partner',
+  url: 'https://go.laplandvibes.com/go/keloa?sid=laplandgifts_home_main_partner&dest=https%3A%2F%2Fkeloa.fi%2Fen%2Fhome%2F',
   urlFi: 'https://go.laplandvibes.com/go/keloa?sid=laplandgifts_home_main_partner',
   photoSrc: '/images/partners/keloa-atelier.webp',
   imageSrc: '/images/partners/keloa-atelier.webp',

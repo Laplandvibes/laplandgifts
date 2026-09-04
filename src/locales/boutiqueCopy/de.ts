@@ -62,7 +62,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Kleidung', 'Schmuck'],
   },
   'lahjapuoti-tiinuska': {
-    description: 'Geschenkeladen aus Rovaniemi, gegründet 1987. Aarikka- und Mumin-Artikel, Schmuck, Textilien und Leckereien im Onlineshop.',
+    description: 'Geschenkeladen aus Rovaniemi, gegründet 1987. Aarikka- und Moomin-Artikel, Schmuck, Textilien und Leckereien im Onlineshop.',
     tags: ['Design', 'Geschenke'],
   },
   'lappi-shop-levi': {

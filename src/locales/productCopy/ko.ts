@@ -14,7 +14,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_KO: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: '무민 Mystical Forest 울 블랭킷 130x170 cm',
+    name: '무민 Mystical Forest 울 블랭킷 130×170 cm',
     description:
       '130 × 170 cm, 울 100 퍼센트 블랭킷으로 Mystical Forest 컬렉션을 위해 핀란드에서 디자인했습니다. 드라이클리닝만 가능하므로 소풍용 깔개가 아니라 소파용 담요로 보시면 됩니다.',
     specs: [
@@ -1149,7 +1149,7 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specLabels: [undefined, undefined, '관리'],
   },
   'nb-kunnas-kalevala-beanie': {
-    name: '«개들의 칼레발라» 비니',
+    name: '《개들의 칼레발라》 비니',
     description:
       '마우리 쿤나스는 1992년 «칼레발라»를 개들의 서사시로 다시 그렸고, 이 비니에는 그 그림이 들어가 있습니다. 재생 폴리에스터, 성인 프리 사이즈, 버스가 데워지면 코트 주머니에 밀어 넣을 만큼 가볍습니다.',
     specs: [

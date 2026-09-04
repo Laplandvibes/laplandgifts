@@ -12,7 +12,7 @@ const es: ChromeCopy = {
     badge: 'La tienda abre pronto',
     title: 'Regale un trozo del',
     titleAccent: 'Ártico',
-    lead: 'Pronto podrá encargar regalos auténticos de Laponia durante sus vacaciones y encontrarlos esperándole en casa. Tesoros artesanales, productos de marca propia y experiencias árticas, directamente desde la Laponia finlandesa. La primera colección se está seleccionando ahora mismo.',
+    lead: 'Pronto podrá encargar regalos auténticos de Laponia durante sus vacaciones y encontrarlos esperándolo en casa. Tesoros artesanales, artículos de diseño y experiencias árticas, directamente desde la Laponia finlandesa. La primera colección se está seleccionando ahora mismo.',
     ctaExplore: 'Ver regalos',
     ctaGuide: 'Guía de regalos',
   },
@@ -162,7 +162,7 @@ const es: ChromeCopy = {
       },
       {
         q: '¿Qué llevarse a casa desde Rovaniemi?',
-        a: 'Rovaniemi está en el círculo polar ártico y es la puerta de entrada a la Laponia finlandesa, así que es un buen lugar para comprar. Las opciones populares son una kuksa, un cuchillo puukko, accesorios de cuero de reno, calcetines y gorros de lana, artículos de los Mumin y de Papá Noel, y alimentos árticos como mermelada de mora ártica, salmiakki (regaliz salado) y sirope de savia de abedul. Para algo con procedencia, elija una pieza firmada por su autor en lugar de un recuerdo genérico de «Laponia».',
+        a: 'Rovaniemi está en el círculo polar ártico y es la puerta de entrada a la Laponia finlandesa, así que es un buen lugar para comprar. Las opciones populares son una kuksa, un cuchillo puukko, accesorios de cuero de reno, calcetines y gorros de lana, artículos de los Moomin y de Papá Noel, y alimentos árticos como mermelada de mora ártica, salmiakki (regaliz salado) y sirope de savia de abedul. Para algo con procedencia, elija una pieza firmada por su autor en lugar de un recuerdo genérico de «Laponia».',
       },
       {
         q: '¿Es legal llevarse productos de reno y de asta?',

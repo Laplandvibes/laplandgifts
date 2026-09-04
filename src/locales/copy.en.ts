@@ -12,7 +12,7 @@ const en: ChromeCopy = {
     badge: 'Shop opening soon',
     title: 'Give a Piece of the',
     titleAccent: 'Arctic',
-    lead: "Soon you'll be able to order authentic Lapland gifts while you're on holiday and find them waiting at home before you. Handcrafted treasures, branded merch and Arctic experiences, shipped directly from Finnish Lapland. The first collection is being handpicked now.",
+    lead: "Soon you'll be able to order authentic Lapland gifts while you're on holiday and find them waiting for you at home before you get there. Handcrafted treasures, branded merch and Arctic experiences, shipped directly from Finnish Lapland. The first collection is being hand-picked now.",
     ctaExplore: 'Explore Gifts',
     ctaGuide: 'Gift Guide',
   },

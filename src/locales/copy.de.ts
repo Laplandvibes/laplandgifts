@@ -162,7 +162,7 @@ const de: ChromeCopy = {
       },
       {
         q: 'Was sollte man aus Rovaniemi mitbringen?',
-        a: 'Rovaniemi liegt am Polarkreis und ist das Tor zum finnischen Lappland, also ein guter Ort zum Einkaufen. Beliebt sind eine Kuksa, ein Puukko-Messer, Accessoires aus Rentierleder, Wollsocken und -mützen, Mumin- und Weihnachtsmann-Artikel sowie arktische Lebensmittel wie Moltebeerenmarmelade, Salmiakki (Salzlakritz) und Birkensaftsirup. Für etwas mit Herkunft wählen Sie ein vom Hersteller signiertes Stück statt eines generischen „Lappland“-Souvenirs.',
+        a: 'Rovaniemi liegt am Polarkreis und ist das Tor zum finnischen Lappland, also ein guter Ort zum Einkaufen. Beliebt sind eine Kuksa, ein Puukko-Messer, Accessoires aus Rentierleder, Wollsocken und -mützen, Moomin- und Weihnachtsmann-Artikel sowie arktische Lebensmittel wie Moltebeerenmarmelade, Salmiakki (Salzlakritz) und Birkensaftsirup. Für etwas mit Herkunft wählen Sie ein vom Hersteller signiertes Stück statt eines generischen „Lappland“-Souvenirs.',
       },
       {
         q: 'Dürfen Rentier- und Geweihprodukte eingeführt werden?',

@@ -14,7 +14,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_DE: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: 'Mumin-Wolldecke Mystical Forest 130x170 cm',
+    name: 'Moomin-Wolldecke Mystical Forest 130 x 170 cm',
     description:
       'Decke von 130 mal 170 cm aus 100 Prozent Wolle, in Finnland für die Kollektion Mystical Forest entworfen. Nur chemische Reinigung, also eher Sofadecke als Picknickunterlage.',
     specs: [
@@ -532,7 +532,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
   },
   'nordqvist-moomin-forest-berry-tea': {
-    name: 'Nordqvist Mumin Waldbeeren-Hibiskustee, 20 Beutel',
+    name: 'Nordqvist Moomin Waldbeeren-Hibiskustee, 20 Beutel',
     description:
       'Bio-Hibiskus mit Apfel und Waldbeeren, von Natur aus koffeinfrei, gemischt in der Nordqvist-Fabrik in Nurmijärvi. Zwanzig Beutel wiegen 35 Gramm und sind damit das leichteste Geschenk in diesem Shop.',
     specs: [
@@ -555,7 +555,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, 'Zubereitung', 'Ernährung und Zertifizierung'],
   },
   'moomin-wild-blueberry-coffee': {
-    name: 'Mumintroll Wild Blueberry Kaffee 250 g',
+    name: 'Moomintroll Wild Blueberry Kaffee 250 g',
     description:
       'Kaffee mit Blaubeeraroma von der Rösterei Bergstrands Kafferosteri, aufgebaut auf Perlbohnen von den Hügeln der Mogiana im Südosten Brasiliens. Eine Perlbohne ist eine Kaffeekirsche, in der statt zweier Bohnen nur eine gewachsen ist, was laut Rösterei den Geschmack verdichtet. 250 Gramm.',
     specs: [
@@ -567,7 +567,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Bohne', 'Aroma'],
   },
   'moomin-lingonberry-blueberry-dark-chocolate': {
-    name: 'Mumintroll Zartbitterschokolade mit Preiselbeere und Blaubeere 70 g',
+    name: 'Moomintroll Zartbitterschokolade mit Preiselbeere und Blaubeere 70 g',
     description:
       'Zartbitterschokolade in Bio-Qualität mit 70 Prozent Kakao von Kalmar Chokladfabrik mit gefriergetrockneten Preiselbeeren und Blaubeeren, eingeschlagen in ein Motiv von Tove Jansson. Der Kakao ist Criollo und Trinitario aus Peru, die Tafel wird in Schweden hergestellt.',
     specs: [
@@ -579,7 +579,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, 'Ernährung'],
   },
   'moomin-berry-picking-tea': {
-    name: 'Mumin Berry Picking Tee, 20 Beutel',
+    name: 'Moomin Berry Picking Tee, 20 Beutel',
     description:
       'Schwarzer Tee mit Vanille- und roten Beerenaromen, gemischt in der Fabrik in Nurmijärvi in Finnland und mit der finnischen Schlüsselflagge ausgezeichnet. Der Tee entsteht in Zusammenarbeit mit dem Finnischen Roten Kreuz: 0,40 Euro pro verkaufter Packung gehen an die Arbeit des Roten Kreuzes mit Kindern, Jugendlichen und einsamen Menschen.',
     specs: [
@@ -832,30 +832,30 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   // `products.ts`, weil der Schlüssel der Slug ist und die Reihenfolge im
   // Objekt nichts bestimmt. Nur `specs` ist positionsgebunden.
   'arabia-moomin-mug-snufkin': {
-    name: 'Arabia Mumin-Becher, Snufkin',
+    name: 'Arabia Moomin-Becher, Snufkin',
     description:
       'Arabia druckt die Zeichnungen von Tove Jansson seit 1990 auf diese Becher, und Sammler verfolgen die eingestellten Motive nach Jahrgang. Snufkin ist der, der im Herbst geht und im Frühling zurückkommt.',
     specs: ['0,3 l', 'Tove Jansson'],
     specLabels: [undefined, 'Illustration'],
   },
   'arabia-moomin-mug-friendship': {
-    name: 'Arabia Mumin-Becher, Friendship',
+    name: 'Arabia Moomin-Becher, Friendship',
     description:
       'Der Becher zeigt Ninny, das unsichtbare Kind, das sich vor der Dunkelheit fürchtet und langsam wieder sichtbar wird, sobald jemand freundlich zu ihr ist. Eine leisere Wahl als die bekannten Figuren.',
     specs: ['0,3 l', 'Tove Jansson'],
     specLabels: [undefined, 'Illustration'],
   },
   'arabia-moomin-figurine-moomintroll': {
-    name: 'Arabia Mumin-Minifigur, Mumintroll',
+    name: 'Arabia Moomin-Minifigur, Moomintroll',
     description:
       'Eine handgefertigte Keramikfigur, in den 1990er Jahren von Tuulikki Pietilä entworfen und in einer eigenen Schachtel verkauft. Klein genug, um in einer Manteltasche nach Hause zu reisen.',
     specs: ['Tuulikki Pietilä, 1990er Jahre', 'Handgefertigte Keramik, in einer eigenen Schachtel verkauft'],
     specLabels: ['Design', 'Herstellung'],
   },
   'fiskars-moominpappa-scissors': {
-    name: 'Fiskars Muminpapa Universalschere',
+    name: 'Fiskars Moominpapa Universalschere',
     description:
-      'Fiskars-Scheren mit orangefarbenem Griff liegen in mehr finnischen Küchenschubladen als jedes andere Werkzeug. Diese hier misst 21 cm, ist aus Edelstahl und trägt Muminpapa auf dem Griff.',
+      'Fiskars-Scheren mit orangefarbenem Griff liegen in mehr finnischen Küchenschubladen als jedes andere Werkzeug. Diese hier misst 21 cm, ist aus Edelstahl und trägt Moominpapa auf dem Griff.',
     specs: ['21 cm', 'Edelstahl'],
   },
   'rento-tar-sauna-soap': {
@@ -993,7 +993,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Sprache der Führung', 'Geschenkkarte'],
   },
   'aurora-tour-kilpisjarvi': {
-    name: 'Nordlicht-Tour mit dem Schneemobil für zwei, Kilpisjärvi',
+    name: 'Polarlicht-Tour mit dem Schneemobil für zwei, Kilpisjärvi',
     description:
       'Kilpisjärvi ist für seinen außergewöhnlich klaren Nachthimmel bekannt. Eine kurze Schneemobilfahrt bringt Sie zu zweit an einen Ort, an dem sich die Nordlichter in völliger Stille beobachten lassen, mit warmen Getränken gegen die Kälte. Abends von 20.00 bis 23.00 Uhr, mit Wettervorbehalt.',
     specs: [
@@ -1007,7 +1007,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Altersgrenze', 'Geschenkkarte'],
   },
   'glass-igloo-night-levi': {
-    name: 'Glasiglu-Nacht für zwei, Levi',
+    name: 'Glas-Iglu-Nacht für zwei, Levi',
     description:
       'Eine Nacht zu zweit in einem warmen Glasiglu hoch am Fjell von Levi. Das elektrisch beheizte Glas bleibt klar, während Sie vom motorisierten Doppelbett aus nach Nordlichtern schauen. Begrüßungsgetränk, Bademäntel und Frühstück inklusive, mit eigener Kochnische, Dusche und WC.',
     specs: [
@@ -1041,7 +1041,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specs: ['40 g', 'Chaga, Reishi, Igelstachelbart, Cordyceps, Shiitake, Maitake'],
   },
   'foodin-nordic-berry-powder': {
-    name: 'Foodin Nordische Beeren Pulvermischung 120 g',
+    name: 'Foodin Nordische Beerenpulvermischung 120 g',
     description:
       'Eine finnische Mischung nordischer Beeren als ein Pulver, für Porridge und Joghurt. Die leichteste Art, einen nordischen Beerensommer mit nach Hause zu nehmen.',
     specs: ['120 g', 'Hergestellt in Finnland'],
@@ -1074,29 +1074,29 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'nb-little-my-beanie': {
     name: 'Kleine My Grobstrickmütze',
     description:
-      'Dicke Strickmütze mit der Kleinen My am Umschlag, aus einer Wollmischung, die auch nach einer Woche ständigen Auf- und Absetzens ihre Form hält. Eine Erwachsenengröße, und die einzige Muminfigur, die das Wetter in Lappland gutheißen würde.',
+      'Dicke Strickmütze mit der Kleinen My am Umschlag, aus einer Wollmischung, die auch nach einer Woche ständigen Auf- und Absetzens ihre Form hält. Eine Erwachsenengröße, und die einzige Moominfigur, die das Wetter in Lappland gutheißen würde.',
     specs: [
       'Acryl, Nylon und Wolle',
       'Erwachsene, Einheitsgröße',
-      'Offizielles Mumin-Produkt',
+      'Offizielles Moomin-Produkt',
     ],
     specLabels: [undefined, undefined, 'Lizenz'],
   },
   'nb-moomintroll-mittens': {
-    name: 'Mumintroll Fäustlinge',
+    name: 'Moomintroll Fäustlinge',
     description:
       'Gestrickte Fäustlinge mit weichem Fleecefutter, 24 Zentimeter hoch, damit der Schaft über den Jackenärmel reicht. Erwachsenengröße und günstig genug, dass der Verlust eines Handschuhs auf dem Husky-Schlitten zu verkraften ist.',
     specs: [
       '100 % Acryl, Fleecefutter',
       'Erwachsene, Höhe 24 cm, Breite über dem Daumen 9,5 cm',
-      'Offizielles Mumin-Produkt',
+      'Offizielles Moomin-Produkt',
     ],
     specLabels: [undefined, undefined, 'Lizenz'],
   },
   'nb-moomintroll-love-socks': {
-    name: 'Mumintroll Love Retrosocken',
+    name: 'Moomintroll Love Retrosocken',
     description:
-      'Hellblaue Rippsocken mit Mumintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Eine Größe deckt EU 36 bis 42 ab.',
+      'Hellblaue Rippsocken mit Moomintroll, in ein rosa Herz am Schienbein gestickt statt aufgedruckt, deshalb übersteht das Motiv die Wäsche. Eine Größe deckt EU 36 bis 42 ab.',
     specs: [
       '67 % Baumwolle, 25 % Polyester, 4 % Elastodien, 3 % Nylon, 1 % Elasthan',
       'Einheitsgröße, EU 36-42',
@@ -1107,7 +1107,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'nb-moomin-classics-tee': {
     name: 'Moomin Classics schweres T-Shirt',
     description:
-      'Ein 260 Gramm schweres Baumwoll-T-Shirt in Lavendel, kastiger Schnitt, mit einem kleinen gestickten Mumintroll auf der Brust statt eines großen Drucks. Schwer genug, um gerade zu fallen statt anzuliegen.',
+      'Ein 260 Gramm schweres Baumwoll-T-Shirt in Lavendel, kastiger Schnitt, mit einem kleinen gestickten Moomintroll auf der Brust statt eines großen Drucks. Schwer genug, um gerade zu fallen statt anzuliegen.',
     specs: [
       '100 % Baumwolle, 260 g/m2',
       'Unisex, kastiger Schnitt, XS bis XXL',
@@ -1118,7 +1118,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'nb-pippi-tee': {
     name: 'Pippi Langstrumpf T-Shirt',
     description:
-      'Pippi, in Finnland gedruckt auf ein 240 Gramm schweres Baumwoll-T-Shirt, Unisex mit geradem Schnitt und längerem Saum als üblich. Astrid Lindgren reist in manchen Haushalten weiter als die Mumins.',
+      'Pippi, in Finnland gedruckt auf ein 240 Gramm schweres Baumwoll-T-Shirt, Unisex mit geradem Schnitt und längerem Saum als üblich. Astrid Lindgren reist in manchen Haushalten weiter als die Moomins.',
     specs: [
       '100 % Baumwolle, 240 g/m2',
       'Unisex, gerader Schnitt, M bis XXL',
@@ -1126,7 +1126,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
   },
   'nb-moomintroll-hoodie': {
-    name: 'Mumintroll Hoodie',
+    name: 'Moomintroll Hoodie',
     description:
       'Ein 300 Gramm schwerer Hoodie aus Baumwolle und Polyester, in Finnland gedruckt, Unisex mit geradem Schnitt. Genau die Schicht, in der man an einem Hüttenabend lebt, sobald die Sauna abgekühlt ist.',
     specs: [
@@ -1157,9 +1157,9 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: ['Modell', 'Muster'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Mumin Bettwäscheset 150 x 210 cm, Sydänkäpyset',
+    name: 'Moomin Bettwäscheset 150 x 210 cm, Sydänkäpyset',
     description:
-      'GOTS-zertifiziertes Bettwäscheset aus Baumwolle mit Mumintroll und Snorkfräulein. Der finnische Mustername Sydänkäpyset beschreibt das Verhältnis, das das Muster zeigt.',
+      'GOTS-zertifiziertes Bettwäscheset aus Baumwolle mit Moomintroll und Snorkfräulein. Der finnische Mustername Sydänkäpyset beschreibt das Verhältnis, das das Muster zeigt.',
     specs: [
       'Bettbezug 150 x 210 cm',
       'GOTS, der Global Organic Textile Standard',
@@ -1188,7 +1188,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, 'Anwendung'],
   },
   'sk-muurla-moomin-bottle': {
-    name: 'Muurla Mumin-Glasflasche 1 l, Äpfel',
+    name: 'Muurla Moomin-Glasflasche 1 l, Äpfel',
     description:
       'Eine Flasche aus Sodaglas mit Bügelverschluss, für Wasser oder Saft auf dem Tisch statt einer Packung. Spülmaschinenfest, ein Liter, und das Apfelmuster ist das sommerliche.',
     specs: [
@@ -1212,11 +1212,11 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Kleine My Fäustlinge',
     description:
-      'Das weinrote Gegenstück zu den Mumintroll-Fäustlingen, gleiches Fleecefutter und gleicher Preis. Der Schaft ist zwei Zentimeter kürzer, und die Figur passt zu allen, denen Mumintroll etwas zu verträglich ist.',
+      'Das weinrote Gegenstück zu den Moomintroll-Fäustlingen, gleiches Fleecefutter und gleicher Preis. Der Schaft ist zwei Zentimeter kürzer, und die Figur passt zu allen, denen Moomintroll etwas zu verträglich ist.',
     specs: [
       '100 % Acryl, Fleecefutter',
       'Erwachsene, Höhe 22 cm, Breite über dem Daumen 9,5 cm',
-      'Offizielles Mumin-Produkt',
+      'Offizielles Moomin-Produkt',
     ],
     specLabels: [undefined, undefined, 'Lizenz'],
   },
@@ -1248,18 +1248,18 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Memory-Schaum unter einem weichen Bezug, für den Nachtzug Helsinki–Rovaniemi oder den Rückflug. Klein genug, um es an die Tasche zu clippen, und das ist die einzige Art Reisekissen, die man tatsächlich behält.',
     specs: [
       'Memory-Schaum, weicher Bezug',
-      'Offizielles Mumin-Produkt',
+      'Offizielles Moomin-Produkt',
     ],
     specLabels: [undefined, 'Lizenz'],
   },
   'nb-moomintroll-love-cushion': {
-    name: 'Mumintroll Love Kissen',
+    name: 'Moomintroll Love Kissen',
     description:
-      'Ein Kissen in Mumintroll-Form statt eines Quadrats mit Aufdruck, in mehreren Größen von 45 bis 75 Zentimetern Höhe. Die Sorte Ding, die auf dem Sofa der Hütte landet und dort bleibt.',
+      'Ein Kissen in Moomintroll-Form statt eines Quadrats mit Aufdruck, in mehreren Größen von 45 bis 75 Zentimetern Höhe. Die Sorte Ding, die auf dem Sofa der Hütte landet und dort bleibt.',
     specs: [
       'Polyester',
       'Mehrere Größen, Höhe 45–75 cm',
-      'Offizielles Mumin-Produkt',
+      'Offizielles Moomin-Produkt',
     ],
     specLabels: [undefined, undefined, 'Lizenz'],
   },
@@ -1275,9 +1275,9 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Herstellung'],
   },
   'nb-moomin-novels-poster': {
-    name: 'Poster der Mumin-Romane',
+    name: 'Poster der Moomin-Romane',
     description:
-      'Die Buchcover von Tove Janssons Mumin-Romanen auf einem Blatt, gleicher Druck aus Helsinki und dieselben zwei Größen wie die Figurenposter. Für die Leserin in der Familie, nicht für den Becher-Sammler.',
+      'Die Buchcover von Tove Janssons Moomin-Romanen auf einem Blatt, gleicher Druck aus Helsinki und dieselben zwei Größen wie die Figurenposter. Für die Leserin in der Familie, nicht für den Becher-Sammler.',
     specs: [
       'Seidenpapier, 200 g',
       '30 × 40 cm oder 50 × 70 cm',

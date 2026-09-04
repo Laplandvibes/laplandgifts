@@ -15,7 +15,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: '姆明 Mystical Forest 羊毛毯 130x170 cm',
+    name: '姆明 Mystical Forest 羊毛毯 130×170 cm',
     description:
       '130 乘 170 cm、100% 羊毛的盖毯，为 Mystical Forest 系列在芬兰设计。只能干洗，所以把它当沙发毯而不是野餐垫。',
     specs: [
@@ -1139,7 +1139,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specLabels: [undefined, '用法'],
   },
   'sk-muurla-moomin-bottle': {
-    name: 'Muurla 姆明玻璃瓶 1 l「苹果」',
+    name: 'Muurla 姆明玻璃瓶 1 l“苹果”',
     description:
       '钠钙玻璃瓶，配密封扣盖，把水或果汁端上桌，而不是摆着纸盒。可用洗碗机，一升容量，苹果图案是夏天那一款。',
     specs: [

@@ -14,7 +14,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_FR: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: 'Plaid en laine Moomin Mystical Forest 130x170 cm',
+    name: 'Plaid en laine Moomin Mystical Forest 130×170 cm',
     description:
       'Un plaid de 130 sur 170 cm en 100 pour cent laine, dessiné en Finlande pour la collection Mystical Forest. Nettoyage à sec uniquement, donc plutôt plaid de canapé que couverture de pique-nique.',
     specs: [
@@ -514,7 +514,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Infusion', 'Régime'],
   },
   'nordqvist-cranberry-toffee-tea': {
-    name: 'Infusion Nordqvist canneberge et caramel salé, 20 sachets',
+    name: 'Infusion Nordqvist à la canneberge et au caramel salé, 20 sachets',
     description:
       'Canneberge acidulée contre caramel salé sur une base d’hibiscus et de rooibos, donc sans caféine et pourtant encore savoureuse le soir. Nordqvist assemble du thé en Finlande depuis 1883.',
     specs: [
@@ -795,7 +795,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specs: ['180 g'],
   },
   'fazer-fazerina': {
-    name: 'Tablette truffe à l’orange Fazer Fazerina 99 g',
+    name: 'Tablette de truffe à l’orange Fazer Fazerina 99 g',
     description:
       'Truffe à l’orange à l’intérieur du chocolat au lait, fabriquée depuis 1953. Plus fine que la tablette bleue et celle qui survit à un sac à dos sans fondre en un bloc.',
     specs: ['99 g'],
@@ -849,7 +849,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, 'Détails'],
   },
   'halti-hossa-baselayer-men': {
-    name: 'Ensemble sous-vêtement mérinos Halti Hossa II, homme',
+    name: 'Ensemble de sous-vêtements mérinos Halti Hossa II, homme',
     description:
       'Haut et caleçon long dans la même boîte, mérinos 190 g en 20,5 microns. La couche la plus proche de la peau décide si le reste de la tenue fonctionne, et c’est celle avec laquelle la plupart des visiteurs arrivent sans.',
     specs: [

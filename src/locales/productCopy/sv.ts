@@ -15,7 +15,7 @@ import type { ProductCopyMap } from './index'
  */
 export const PRODUCT_COPY_SV: ProductCopyMap = {
   'moomin-mystical-forest-wool-throw': {
-    name: 'Muminpläd i ull Mystical Forest 130x170 cm',
+    name: 'Moominpläd i ull Mystical Forest 130 x 170 cm',
     description:
       'En pläd på 130 gånger 170 cm i 100 procent ull, formgiven i Finland för kollektionen Mystical Forest. Endast kemtvätt, så räkna med soffpläd snarare än picknickfilt.',
     specs: [
@@ -503,7 +503,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Näringsvärde per 100 g'],
   },
   'nordqvist-moomin-forest-berry-tea': {
-    name: 'Nordqvist Mumin skogsbär- och hibiskuste, 20 påsar',
+    name: 'Nordqvist Moomin skogsbär- och hibiskuste, 20 påsar',
     description:
       'Ekologisk hibiskus med äpple och skogsbär, naturligt koffeinfritt, blandat i Nordqvists fabrik i Nurmijärvi. Tjugo påsar väger 35 gram, vilket är den lättaste presenten i den här butiken.',
     specs: [
@@ -526,7 +526,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, 'Bryggning', 'Kost och certifiering'],
   },
   'moomin-wild-blueberry-coffee': {
-    name: 'Mumintrollet Wild Blueberry kaffe 250 g',
+    name: 'Moomintrollet Wild Blueberry kaffe 250 g',
     description:
       'Blåbärssmaksatt kaffe från Bergstrands Kafferosteri, byggt på pärlbönor mognade på Mogianahöjderna i sydöstra Brasilien. En pärlböna är ett kaffekörsbär som fick en böna i stället för två, vilket rosteriet säger koncentrerar smaken. 250 gram.',
     specs: [
@@ -538,7 +538,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Böna', 'Smak'],
   },
   'moomin-lingonberry-blueberry-dark-chocolate': {
-    name: 'Mumintrollet mörk choklad med lingon och blåbär 70 g',
+    name: 'Moomintrollet mörk choklad med lingon och blåbär 70 g',
     description:
       'Ekologisk mörk choklad med 70 procent kakao från Kalmar Chokladfabrik med frystorkade lingon och blåbär, insvept i Tove Janssons teckningar. Kakaon är Criollo och Trinitario från Peru och kakan tillverkas i Sverige.',
     specs: [
@@ -550,7 +550,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, 'Kost'],
   },
   'moomin-berry-picking-tea': {
-    name: 'Mumin Berry Picking te, 20 påsar',
+    name: 'Moomin Berry Picking te, 20 påsar',
     description:
       'Svart te med smak av vanilj och röda bär, blandat i fabriken i Nurmijärvi i Finland och försett med den finska Nyckelflaggan. Teet är ett samarbete med Finlands Röda Kors: 0,40 euro av varje såld förpackning går till Röda Korsets arbete med barn, unga och ensamma.',
     specs: [
@@ -677,30 +677,30 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, 'Näringsvärde per 100 ml', 'Kost och certifiering'],
   },
   'arabia-moomin-mug-snufkin': {
-    name: 'Arabia Muminmugg, Snusmumriken',
+    name: 'Arabia Moominmugg, Snusmumriken',
     description:
       'Arabia har tryckt Tove Janssons teckningar på de här muggarna sedan 1990, och samlare håller reda på de utgångna motiven efter årtal. Snusmumriken är den som ger sig av på hösten och kommer tillbaka på våren.',
     specs: ['0,3 l', 'Tove Jansson'],
     specLabels: [undefined, 'Illustration'],
   },
   'arabia-moomin-mug-friendship': {
-    name: 'Arabia Muminmugg, Friendship',
+    name: 'Arabia Moominmugg, Friendship',
     description:
       'Muggen visar Ninni, det osynliga barnet som är rädd för mörkret och långsamt blir synligt igen när någon är vänlig mot henne. Ett tystare val än de välkända figurerna.',
     specs: ['0,3 l', 'Tove Jansson'],
     specLabels: [undefined, 'Illustration'],
   },
   'arabia-moomin-figurine-moomintroll': {
-    name: 'Arabia Mumin minifigur, Mumintrollet',
+    name: 'Arabia Moomin minifigur, Moomintrollet',
     description:
       'En handgjord keramikfigur ritad av Tuulikki Pietilä på 1990-talet och såld i egen ask. Liten nog att resa hem i en rockficka.',
     specs: ['Tuulikki Pietilä, 1990-talet', 'Handgjord keramik, säljs i egen ask'],
     specLabels: ['Formgivare', 'Tillverkning'],
   },
   'fiskars-moominpappa-scissors': {
-    name: 'Fiskars Muminpappa universalsax',
+    name: 'Fiskars Moominpappa universalsax',
     description:
-      'Fiskars saxar med orange handtag ligger i fler finska köksbord än något annat redskap. Den här är 21 cm i rostfritt stål med Muminpappa på handtaget.',
+      'Fiskars saxar med orange handtag ligger i fler finska köksbord än något annat redskap. Den här är 21 cm i rostfritt stål med Moominpappa på handtaget.',
     specs: ['21 cm', 'Rostfritt stål'],
   },
   'rento-tar-sauna-soap': {
@@ -992,7 +992,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specs: ['40 g', 'Chaga, reishi, lion\'s mane, cordyceps, shiitake, maitake'],
   },
   'foodin-nordic-berry-powder': {
-    name: 'Foodin Nordiska bär pulverblandning 120 g',
+    name: 'Foodin Nordisk bärpulverblandning 120 g',
     description:
       'En finsk blandning av nordiska bär som ett enda pulver, för gröt och yoghurt. Det lättaste sättet att ta med en nordisk bärsommar hem.',
     specs: ['120 g', 'Tillverkad i Finland'],
@@ -1029,25 +1029,25 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specs: [
       'Akryl, nylon och ull',
       'Vuxen, en storlek',
-      'Officiell Mumin-produkt',
+      'Officiell Moomin-produkt',
     ],
     specLabels: [undefined, undefined, 'Licens'],
   },
   'nb-moomintroll-mittens': {
-    name: 'Mumintrollet vantar',
+    name: 'Moomintrollet vantar',
     description:
       'Stickade vantar med mjukt fleecefoder, 24 centimeter höga så att skaftet når över jackärmen. Vuxenstorlek, och billiga nog att det går att överleva att tappa en på en hundspannstur.',
     specs: [
       '100 % akryl, fleecefoder',
       'Vuxen, höjd 24 cm, bredd ovanför tummen 9,5 cm',
-      'Officiell Mumin-produkt',
+      'Officiell Moomin-produkt',
     ],
     specLabels: [undefined, undefined, 'Licens'],
   },
   'nb-moomintroll-love-socks': {
-    name: 'Mumintrollet Love retrostrumpor',
+    name: 'Moomintrollet Love retrostrumpor',
     description:
-      'Ljusblå ribbade strumpor med Mumintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42.',
+      'Ljusblå ribbade strumpor med Moomintrollet broderat i ett rosa hjärta på smalbenet, inte tryckt, så motivet klarar tvätten. En storlek täcker EU 36 till 42.',
     specs: [
       '67 % bomull, 25 % polyester, 4 % elastodien, 3 % nylon, 1 % elastan',
       'En storlek, EU 36-42',
@@ -1058,7 +1058,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
   'nb-moomin-classics-tee': {
     name: 'Moomin Classics tjock t-shirt',
     description:
-      'En t-shirt i 260 gram bomull i lavendel, boxig passform, med ett litet broderat Mumintroll på bröstet i stället för ett stort tryck. Tillräckligt tjock för att falla rakt i stället för att sitta åt.',
+      'En t-shirt i 260 gram bomull i lavendel, boxig passform, med ett litet broderat Moomintroll på bröstet i stället för ett stort tryck. Tillräckligt tjock för att falla rakt i stället för att sitta åt.',
     specs: [
       '100 % bomull, 260 g/m2',
       'Unisex, boxig passform, XS till XXL',
@@ -1077,7 +1077,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
   },
   'nb-moomintroll-hoodie': {
-    name: 'Mumintrollet hoodie',
+    name: 'Moomintrollet hoodie',
     description:
       'En hoodie i 300 gram bomull och polyester, tryckt i Finland, unisex med rak passform. Precis det lager man faktiskt lever i under en stugkväll när bastun har svalnat.',
     specs: [
@@ -1108,9 +1108,9 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: ['Modell', 'Mönster'],
   },
   'sk-moomin-duvet-set': {
-    name: 'Mumin bäddset 150 x 210 cm, Sydänkäpyset',
+    name: 'Moomin bäddset 150 x 210 cm, Sydänkäpyset',
     description:
-      'GOTS-certifierat bäddset i bomull med Mumintrollet och Snorkfröken. Det finska mönsternamnet Sydänkäpyset beskriver just den relation som mönstret visar.',
+      'GOTS-certifierat bäddset i bomull med Moomintrollet och Snorkfröken. Det finska mönsternamnet Sydänkäpyset beskriver just den relation som mönstret visar.',
     specs: [
       'Påslakan 150 x 210 cm',
       'GOTS, Global Organic Textile Standard',
@@ -1139,7 +1139,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, 'Användning'],
   },
   'sk-muurla-moomin-bottle': {
-    name: 'Muurla Muminglasflaska 1 l, Äpplen',
+    name: 'Muurla Moominglasflaska 1 l, Äpplen',
     description:
       'En flaska i sodaglas med patentkork, för vatten eller saft på bordet i stället för en kartong. Tål maskindisk, en liter, och äppelmönstret är det sommarliga.',
     specs: [
@@ -1163,11 +1163,11 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Lilla My-vantar',
     description:
-      'Det vinröda paret till Muminvantarna, samma fleecefoder och samma pris. Skaftet är två centimeter kortare, och figuren passar den som tycker att Mumintrollet är lite väl medgörligt.',
+      'Det vinröda paret till Moominvantarna, samma fleecefoder och samma pris. Skaftet är två centimeter kortare, och figuren passar den som tycker att Moomintrollet är lite väl medgörligt.',
     specs: [
       '100 % akryl, fleecefoder',
       'Vuxen, höjd 22 cm, bredd ovanför tummen 9,5 cm',
-      'Officiell Muminprodukt',
+      'Officiell Moominprodukt',
     ],
     specLabels: [undefined, undefined, 'Licens'],
   },
@@ -1199,18 +1199,18 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Memoryskum under ett mjukt överdrag, för nattåget Helsingfors–Rovaniemi eller hemflyget. Så liten att den går att fästa på väskan, vilket är den enda sortens resekudde någon faktiskt behåller.',
     specs: [
       'Memoryskum, mjukt överdrag',
-      'Officiell Muminprodukt',
+      'Officiell Moominprodukt',
     ],
     specLabels: [undefined, 'Licens'],
   },
   'nb-moomintroll-love-cushion': {
-    name: 'Mumintrollet Love-kudde',
+    name: 'Moomintrollet Love-kudde',
     description:
-      'En kudde formad som Mumintrollet i stället för en fyrkant med tryck, i flera storlekar från 45 till 75 centimeter hög. Sådant som hamnar i stugans soffa och blir kvar där.',
+      'En kudde formad som Moomintrollet i stället för en fyrkant med tryck, i flera storlekar från 45 till 75 centimeter hög. Sådant som hamnar i stugans soffa och blir kvar där.',
     specs: [
       'Polyester',
       'Flera storlekar, höjd 45–75 cm',
-      'Officiell Muminprodukt',
+      'Officiell Moominprodukt',
     ],
     specLabels: [undefined, undefined, 'Licens'],
   },

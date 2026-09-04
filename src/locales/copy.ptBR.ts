@@ -12,7 +12,7 @@ const ptBR: ChromeCopy = {
     badge: 'A loja abre em breve',
     title: 'Presenteie um pedaço do',
     titleAccent: 'Ártico',
-    lead: 'Em breve você vai poder encomendar presentes autênticos da Lapônia durante as férias e encontrá-los em casa antes mesmo de chegar. Tesouros artesanais, produtos da marca própria e experiências árticas, direto da Lapônia finlandesa. A primeira coleção está sendo selecionada agora.',
+    lead: 'Em breve você vai poder encomendar presentes autênticos da Lapônia durante as férias e encontrá-los em casa antes mesmo de chegar. Tesouros artesanais, peças de design e experiências árticas, direto da Lapônia finlandesa. A primeira coleção está sendo selecionada agora.',
     ctaExplore: 'Ver presentes',
     ctaGuide: 'Guia de presentes',
   },

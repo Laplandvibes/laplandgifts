@@ -50,7 +50,7 @@ export const PRODUCTS: Product[] = [
     category: 'design',
     brand: 'Moomin Arabia',
     name: {
-      en: 'Moomin Mystical Forest wool throw 130x170 cm',
+      en: 'Moomin Mystical Forest wool throw 130×170 cm',
       fi: 'Muumi Mystical Forest -villatorkkupeitto 130 x 170 cm',
     },
     description: {
@@ -958,7 +958,7 @@ export const PRODUCTS: Product[] = [
     category: 'handicrafts',
     brand: 'Kupilka',
     name: {
-      en: 'Kupilka 21 camp cup 2,1 dl',
+      en: 'Kupilka 21 camp cup 2.1 dl',
       fi: 'Kupilka 21 -juomamuki 2,1 dl',
     },
     description: {
@@ -3754,7 +3754,7 @@ export const PRODUCTS: Product[] = [
     brand: 'Golden Crown Levin Iglut',
     name: {
       en: 'Glass igloo night for two, Levi',
-      fi: 'Igluyö kahdelle Levillä',
+      fi: 'Lasi-igluyö kahdelle Levillä',
     },
     description: {
       en: 'A night for two in a warm glass igloo high on the Levi fell. The electrically heated glass stays clear while you look for auroras from a motorised double bed. Welcome drink, bathrobes and breakfast are included, and the igloo has its own kitchenette, shower and WC.',
