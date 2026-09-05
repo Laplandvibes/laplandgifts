@@ -429,7 +429,7 @@ const JOBS = [
   ['sk-rento-pino-sauna-seat-cover', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/6410413148451-scaled.jpg?v=1635499650'], // suomikauppa.fi/products/rento-pino-laudeliina-50x150-cm-harmaa
   ['sk-moomin-chocolate-chip-biscuit-tin', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Moominkeksit.jpg?v=1762943561'], // suomikauppa.fi/products/muumi-suklaahippukeksi-peltirasiassa-200g
   ['sk-paulig-cafe-new-york-beans', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06411300169788_H1N1_8e32dd29-2c17-46f3-b8b4-2f5d4e5a4b19.png?v=1763457986'], // suomikauppa.fi/products/paulig-cafe-new-york-450g-papukahvi-rfa
-  ['rj-korpihilla-spruce-sprout-sparkling-750', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/6d4f5a2813f971b8a2a42f07bbb3674b.jpg?v=1597244711'], // www.ruohonjuuri.fi/products/korpihilla-kuohuva-kuusenkerkka-kuohujuoma-750-ml
+  ['rj-korpihilla-spruce-sprout-sparkling-750', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/05e612632a389a5732a9964cf5a6f7d6.jpg?v=1618960800'], // www.ruohonjuuri.fi/products/korpihilla-kuohuva-kuusenkerkka-kuohujuoma-750-ml
 ]
 
 const only = new Set(process.argv.slice(2))

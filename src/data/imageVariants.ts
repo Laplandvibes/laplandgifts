@@ -1120,8 +1120,12 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-rj-korpihilla-spruce-sprout-sparkling-750": {
-    "full": 182,
-    "w": []
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
   },
   "prod-rj-nordic-koivu-birch-sap": {
     "full": 800,
