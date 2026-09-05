@@ -61,7 +61,7 @@ export default function Theme() {
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              className="h-[38svh] min-h-64 w-full object-cover"
+              className="h-[46svh] min-h-72 max-h-[560px] w-full object-cover"
             />
           </picture>
           <div className="absolute inset-0 bg-night/55" aria-hidden="true" />

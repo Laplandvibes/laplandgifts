@@ -295,3 +295,32 @@
      reunavälimuisti myrkyttyy uudelleen. */
   --lv-build: 2026080101;
 }
+
+/* ── Ylellisyys-hero: liike ilman kirjastoa (Vesa 5.9.: "emotion graphics").
+   Vain transform/opacity/filter. 21 s kierto = 3 kohtausta × 7 s. ── */
+.lux-scene { opacity: 0; animation: lux-scene 21s linear infinite; }
+@keyframes lux-scene {
+  0% { opacity: 0; } 6% { opacity: 1; } 33% { opacity: 1; } 40% { opacity: 0; } 100% { opacity: 0; }
+}
+.lux-scene-img { transform: scale(1.06); animation: lux-kenburns 21s ease-in-out infinite; will-change: transform; }
+@keyframes lux-kenburns {
+  0% { transform: scale(1.06) translate3d(0, 0, 0); }
+  40% { transform: scale(1.16) translate3d(-1.5%, -1.5%, 0); }
+  41%, 100% { transform: scale(1.06) translate3d(0, 0, 0); }
+}
+.lux-caption { opacity: 0; filter: blur(6px); transform: translateY(8px); animation: lux-caption 21s cubic-bezier(0.23, 1, 0.32, 1) infinite; }
+@keyframes lux-caption {
+  0% { opacity: 0; filter: blur(6px); transform: translateY(8px); }
+  7% { opacity: 1; filter: blur(0); transform: translateY(0); }
+  31% { opacity: 1; filter: blur(0); transform: translateY(0); }
+  37% { opacity: 0; filter: blur(6px); transform: translateY(-8px); }
+  100% { opacity: 0; }
+}
+.lux-word-inner { transform: translateY(110%); animation: lux-word 0.9s cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+@keyframes lux-word { to { transform: translateY(0); } }
+.lux-rise { opacity: 0; transform: translateY(10px); animation: lux-rise 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+@keyframes lux-rise { to { opacity: 1; transform: translateY(0); } }
+@media (prefers-reduced-motion: reduce) {
+  .lux-scene, .lux-scene-img, .lux-caption, .lux-word-inner, .lux-rise { animation: none !important; opacity: 1; transform: none; filter: none; }
+  .lux-scene:not(:first-of-type), .lux-caption:not(:first-of-type) { display: none; }
+}

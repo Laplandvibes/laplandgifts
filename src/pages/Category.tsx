@@ -105,7 +105,8 @@ export default function Category() {
               loading="eager"
               fetchPriority="high"
               decoding="async"
-              className="h-[38svh] min-h-64 w-full object-cover"
+              className="h-[46svh] min-h-72 max-h-[560px] w-full object-cover"
+              style={{ objectPosition: category.focal ?? "center" }}
             />
           </picture>
           <div className="absolute inset-0 bg-night/55" aria-hidden="true" />
@@ -244,8 +245,10 @@ export default function Category() {
           )}
         </div>
 
+        {/* Sama leveys kuin tuoteruudukolla: kapeampi kelluva kehys tuoteruudukon
+            alla luki eri kohtaan asetettuna (Vesa 5.9.: "eriparia ja eri kohdassa"). */}
         {CATEGORY_RAIL[category.id] && (
-          <div className="mx-auto max-w-5xl px-4 pb-12">
+          <div className="mx-auto max-w-7xl px-4 pb-12">
             <ProductRail
               partner={CATEGORY_RAIL[category.id].partner}
               snapshot={CATEGORY_RAIL[category.id].snapshot}

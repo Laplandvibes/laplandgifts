@@ -22,6 +22,9 @@ export interface LuxuryCopy {
   count: (n: number) => string
   /** Alaviite: hinnat ovat kumppanin, ei meidän. */
   note: string
+  /** Heron kolme kohtausta (revontulet, lasi-iglu, kullanhuuhdonta) — samat kuin
+   *  sivun elämystuotteet, ei lupauksia joita sivu ei myy. */
+  scenes: [string, string, string]
 }
 
 export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
@@ -33,6 +36,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Things',
     count: (n) => `${n} products`,
     note: 'Every price is the partner shop’s own, read on the date shown on the product page. We do not sell these ourselves.',
+    scenes: ['An evening under the aurora', 'A night in a glass igloo', 'A day panning for gold'],
   },
   fi: {
     eyebrow: 'Valikoiman kärki',
@@ -42,6 +46,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Esineitä',
     count: (n) => `${n} tuotetta`,
     note: 'Jokainen hinta on kumppanikaupan oma ja luettu tuotesivulla näkyvänä päivänä. Emme myy näitä itse.',
+    scenes: ['Ilta revontulien alla', 'Yö lasi-iglussa', 'Päivä kullanhuuhdonnassa'],
   },
   de: {
     eyebrow: 'Die Spitze des Sortiments',
@@ -51,6 +56,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Dinge',
     count: (n) => `${n} Produkte`,
     note: 'Jeder Preis stammt vom Partnershop und wurde an dem auf der Produktseite genannten Tag gelesen. Wir verkaufen diese Artikel nicht selbst.',
+    scenes: ['Ein Abend unter dem Polarlicht', 'Eine Nacht im Glasiglu', 'Ein Tag beim Goldwaschen'],
   },
   sv: {
     eyebrow: 'Toppen av urvalet',
@@ -60,6 +66,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Saker',
     count: (n) => `${n} produkter`,
     note: 'Varje pris är partnerbutikens eget och avläst det datum som anges på produktsidan. Vi säljer inte dessa själva.',
+    scenes: ['En kväll under norrskenet', 'En natt i glasigloo', 'En dag med guldvaskning'],
   },
   fr: {
     eyebrow: 'Le haut de la sélection',
@@ -69,6 +76,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Objets',
     count: (n) => `${n} produits`,
     note: 'Chaque prix est celui de la boutique partenaire, relevé à la date indiquée sur la fiche produit. Nous ne vendons pas ces articles nous-mêmes.',
+    scenes: ['Un soir sous les aurores', 'Une nuit en igloo de verre', 'Une journée d’orpaillage'],
   },
   es: {
     eyebrow: 'Lo más alto de la selección',
@@ -78,6 +86,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Objetos',
     count: (n) => `${n} productos`,
     note: 'Cada precio es el de la tienda asociada, leído en la fecha que aparece en la ficha del producto. No los vendemos nosotros.',
+    scenes: ['Una tarde bajo la aurora', 'Una noche en un iglú de cristal', 'Un día bateando oro'],
   },
   it: {
     eyebrow: 'La punta della selezione',
@@ -87,6 +96,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Oggetti',
     count: (n) => `${n} prodotti`,
     note: 'Ogni prezzo è quello del negozio partner, letto alla data indicata sulla scheda prodotto. Non li vendiamo noi.',
+    scenes: ['Una sera sotto l’aurora', 'Una notte in un igloo di vetro', 'Un giorno a cercare l’oro'],
   },
   nl: {
     eyebrow: 'De top van het assortiment',
@@ -96,6 +106,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Voorwerpen',
     count: (n) => `${n} producten`,
     note: 'Elke prijs is die van de partnerwinkel, afgelezen op de datum die op de productpagina staat. Wij verkopen deze niet zelf.',
+    scenes: ['Een avond onder het noorderlicht', 'Een nacht in een glazen iglo', 'Een dag goud wassen'],
   },
   'pt-BR': {
     eyebrow: 'O topo da seleção',
@@ -105,6 +116,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: 'Objetos',
     count: (n) => `${n} produtos`,
     note: 'Cada preço é o da loja parceira, lido na data indicada na página do produto. Não vendemos estes itens.',
+    scenes: ['Uma noite sob a aurora', 'Uma noite num iglu de vidro', 'Um dia garimpando ouro'],
   },
   ja: {
     eyebrow: '品ぞろえの頂点',
@@ -114,6 +126,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: '品物',
     count: (n) => `${n} 点`,
     note: '価格はすべて提携店のもので、商品ページに記載の日付に確認したものです。当サイトが販売しているわけではありません。',
+    scenes: ['オーロラの下の夜', 'グラスイグルーでの一夜', '砂金採りの一日'],
   },
   'zh-CN': {
     eyebrow: '选品的顶端',
@@ -123,6 +136,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: '物件',
     count: (n) => `${n} 件商品`,
     note: '所有价格均为合作商店自己的定价，在商品页面标注的日期读取。我们并不亲自销售这些商品。',
+    scenes: ['极光下的夜晚', '玻璃冰屋的一夜', '淘金的一天'],
   },
   ko: {
     eyebrow: '구성의 정점',
@@ -132,5 +146,6 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
     objectsH2: '물건',
     count: (n) => `상품 ${n}개`,
     note: '모든 가격은 제휴 상점의 가격이며 상품 페이지에 표시된 날짜에 확인한 것입니다. 저희가 직접 판매하지 않습니다.',
+    scenes: ['오로라 아래의 저녁', '유리 이글루에서의 하룻밤', '사금 채취의 하루'],
   },
 }
