@@ -35,8 +35,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Who makes the things in this shop, and where. Every profile is written from what the brand publishes about itself, and links to their own site.',
     indexCount: (n) => `${n} products`,
     profile: {
-      'aarikka':
-        'Aarikka is a Finnish design house founded in 1954 by Kaija Aarikka and Erkki Ruokonen, known for wooden beads and jewellery, and owned by Martinex Oy since 2017. The brand credits Finland with design and with hand assembly of its wooden jewellery and wooden home products, but it does not present itself as a wholly Finnish-manufactured range. Its clothing carries explicit per-product manufacturing countries outside Finland, and some raw materials are sourced abroad.',
       'foodin':
         'Foodin is a family-owned Finnish organic food company based in Vaajakoski, Jyväskylä, which describes itself as manufacturing rather than only importing. Its raw chocolate line is stone-ground and hand-finished at the company\'s own Vaajakoski plant, with cocoa sourced from Criollo beans grown in the Peruvian Amazon. The same plant is also named as the production site for the company\'s protein bars.',
       'kuivalihakundi':
@@ -55,8 +53,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko was founded in Finland in 1951 and still runs its own textile printing factory in Helsinki, which prints over a million metres of fabric a year, including every fabric sold by the metre. The finished products themselves are sewn by a network of partner suppliers, and Marimekko names Finland, the Baltic countries, Portugal, China and Thailand among its manufacturing countries. In 2025, 54 percent of products were made in the EU and other European countries, so a Marimekko product cannot be assumed to be made in Finland without checking the individual item.',
       'rento':
         'Rento is a Finnish-designed sauna range owned by the Tampere family company Tammer Brands Oy. The brand designs in Finland and carries the Design from Finland mark widely, but production is split across Finland, other European countries and Amfori BSCI-audited factories, and the country of origin is decided per product rather than per brand. Several items sold as Rento are made outside Finland, so origin has to be checked product by product.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit is a Finnish weaving company whose main mill is in Lapua and whose roots go back to 1917. By its own account it weaves 95% of its products in Lapua, while the remainder is made at a part-owned mill in Kaunas, Lithuania, and by European subcontractors. All raw materials originate outside Finland: flax from France, the Netherlands and Belgium, mohair from South Africa.',
       'iittala':
         'Iittala is a Finnish design brand built around the Iittala glass factory, founded in 1881 in Iittala village and now part of Fiskars Group. Its parent company describes the Hämeenlinna site as the only glass factory still operating in Finland, employing around 200 people, and Iittala states on its own site that Alvar Aalto vases and Ultima Thule glass are mouth-blown there. Its ceramics, however, are made by contract manufacturers abroad, so the Finnish-origin claim applies to the glassware only.',
       'arctic-warriors':
@@ -81,8 +77,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo is a Finnish wellness brand founded in 2009 that sells vitamins, minerals and other supplements alongside energy drinks, kombucha, protein and raw chocolate bars, and superfoods. The company runs its own factory in Lempäälä, Finland, where it makes most of its supplements and reports producing over 80 million capsules in a single year. The plant holds FSSC 22000 food safety certification, and the company states that its drinks are sweetened with stevia or organic cane sugar instead of aspartame, acesulfame K or sucralose.',
       'emendo':
         'Emendo Oy is a Finnish sauna and wellness company based in Vaasa, which states on its own site that it was founded in 1986. Its range covers sauna and loyly fragrances, sauna honeys, linen-cotton sauna textiles, ladles, soaps and skin care products, sold under two names, Emendo and KOLO Sauna. The company says it manufactures its fragrances, sauna honeys and face, body and foot care products in Finland, and its Moomin sauna items are licensed from Moomin Characters and based on Tove Jansson\'s original drawings.',
-      'moomin-arabia':
-        'Moomin Arabia is the Moomin range of the Finnish ceramics brand Arabia, founded in 1873 and today part of Fiskars Group. The first Moomin dishes appeared in the 1950s with illustrations by Tove Jansson, and the widely collected mug series began in the 1990s using Kaj Franck\'s Teema shape. Design work is done at the company\'s Espoo headquarters in Finland, while Fiskars Group states that Arabia products are made by contract manufacturers mainly in Thailand and Romania.',
       'kaino-drinks':
         'KAINO Drinks is a non-alcoholic sparkling drink range from Poikain Parhaat Oy, a food company based in Tampere, Finland. The spruce sprout drink is made by hand in Tampere from Finnish spruce sprouts, and the drinks are 0.0% alcohol, vegan and certified organic under FI-EKO-201. The range covers spruce sprout, rhubarb and rose, and blackcurrant leaf, sold in 0.75 litre and 0.2 litre bottles.',
       'omega7':
@@ -135,8 +129,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Kuka tekee tämän kaupan tavarat ja missä. Jokainen esittely on kirjoitettu siitä, mitä brändi itse kertoo, ja linkittää brändin omille sivuille.',
     indexCount: (n) => `${n} tuotetta`,
     profile: {
-      'aarikka':
-        'Aarikka on suomalainen designtalo, jonka Kaija Aarikka ja Erkki Ruokonen perustivat vuonna 1954 ja joka on ollut Martinex Oy:n omistuksessa vuodesta 2017. Brändi kertoo suunnittelevansa Suomessa ja kokoavansa puukorunsa ja puiset kodintuotteensa käsin Suomessa, mutta se ei esitä koko mallistoaan Suomessa valmistettuna: vaatteille ilmoitetaan tuotekohtainen valmistusmaa Suomen ulkopuolelta.',
       'foodin':
         'Foodin on vaajakoskelainen perheyritys, joka valmistaa luomuruokaa ja luonnontuotteita omalla tehtaallaan Jyväskylässä. Raakasuklaat jauhetaan kivimyllyllä ja viimeistellään käsityönä Vaajakoskella, ja kaakao tulee Perun Amazonian Criollo-pavuista. Sama tehdas mainitaan myös proteiinipatukoiden valmistuspaikkana.',
       'kuivalihakundi':
@@ -155,8 +147,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko on perustettu Suomessa 1951, ja sillä on yhä oma tekstiilipaino Helsingissä, jossa painetaan yli miljoona metriä kangasta vuodessa – muun muassa kaikki metritavarana myytävä kangas. Valmiit tuotteet ompelee kumppanitoimittajien verkosto, ja Marimekko nimeää valmistusmaikseen Suomen, Baltian maat, Portugalin, Kiinan ja Thaimaan. Vuonna 2025 tuotteista 54 % valmistui EU- ja muissa Euroopan maissa, joten yksittäisen tuotteen alkuperää ei voi päätellä brändin perusteella.',
       'rento':
         'Rento on tamperelaisen perheyrityksen Tammer Brands Oy:n omistama saunatuotesarja. Suunnittelu tehdään Suomessa ja Design from Finland -merkki on laajasti käytössä, mutta valmistus jakautuu Suomen, muun Euroopan ja Amfori BSCI -auditoitujen tehtaiden kesken. Valmistusmaa määräytyy tuotekohtaisesti eikä brändin tasolla, joten alkuperä on tarkistettava tuote kerrallaan.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit on suomalainen kutomobrändi, jonka pääkutomo sijaitsee Lapualla ja jonka juuret ulottuvat vuoteen 1917. Yritys kertoo itse kutovansa Lapualla 95 % tuotteistaan, mutta loput syntyvät osaomisteisessa kutomossa Kaunasissa Liettuassa ja eurooppalaisilla alihankkijoilla. Raaka-aineet tulevat kokonaan Suomen ulkopuolelta: pellava Ranskasta, Alankomaista ja Belgiasta, mohair Etelä-Afrikasta.',
       'iittala':
         'Iittala on suomalainen designbrändi, jonka ydin on vuonna 1881 Iittalan kylään perustettu lasitehdas; omistaja on nykyään Fiskars Group. Emoyhtiön mukaan Hämeenlinnan tehdas on Suomen ainoa yhä toimiva lasitehdas ja työllistää noin 200 henkeä, ja Iittala kertoo omilla sivuillaan Alvar Aalto -maljakoiden ja Ultima Thulen syntyvän siellä suupuhaltamalla. Keramiikka sen sijaan valmistetaan sopimusvalmistajilla ulkomailla, joten suomalaisuusväite pätee vain lasituotteisiin.',
       'arctic-warriors':
@@ -181,8 +171,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo on vuonna 2009 perustettu suomalainen hyvinvointibrändi, jonka valikoimaan kuuluu vitamiineja, kivennäisaineita ja muita ravintolisiä sekä energiajuomia, kombuchaa, proteiini- ja raakasuklaapatukoita ja superfoodeja. Yrityksellä on oma tehdas Lempäälässä, jossa valmistetaan suurin osa sen ravintolisistä; kapseleita kerrotaan syntyneen siellä yhden vuoden aikana yli 80 miljoonaa. Tehtaalla on FSSC 22000 -elintarviketurvallisuussertifikaatti, ja yritys ilmoittaa makeuttavansa juomansa stevialla tai luomuruokosokerilla eikä aspartaamilla, asesulfaami K:lla tai sukraloosilla.',
       'emendo':
         'Emendo Oy on vaasalainen sauna- ja hyvinvointialan yritys, joka kertoo omalla sivullaan perustamisvuodekseen 1986. Valikoimaan kuuluvat saunatuoksut ja löylytuoksut, saunahunajat, pellava-puuvillatekstiilit, kiulut, saippuat ja ihonhoitotuotteet kahdella tuotemerkillä, Emendo ja KOLO Sauna. Yritys ilmoittaa valmistavansa Suomessa tuoksut, saunahunajat sekä kasvojen-, vartalon- ja jalkojenhoitotuotteet, ja sen Muumi-saunatuotteet ovat Moomin Characters -lisenssituotteita, jotka pohjautuvat Tove Janssonin alkuperäispiirustuksiin.',
-      'moomin-arabia':
-        'Moomin Arabia on suomalaisen keramiikkabrändin Arabian muumisarja. Arabia perustettiin vuonna 1873 ja kuuluu nykyään Fiskars Groupiin; ensimmäiset muumiastiat tulivat 1950-luvulla Tove Janssonin kuvituksin, ja laajalti kerätty mukisarja alkoi 1990-luvulla Kaj Franckin Teema-muotoon pohjautuen. Suunnittelu tehdään Espoon pääkonttorilla, mutta Fiskars Groupin mukaan Arabian tuotteet valmistetaan sopimusvalmistajilla pääosin Thaimaassa ja Romaniassa.',
       'kaino-drinks':
         'KAINO Drinks on tamperelaisen Poikain Parhaat Oy:n alkoholittomien kuohujuomien sarja. Kuusenkerkkäjuoma valmistetaan suomalaisesta kuusenkerkästä käsityönä Tampereella, ja juomat ovat 0,0-prosenttisia, vegaanisia ja luomusertifioituja tunnuksella FI-EKO-201. Valikoimaan kuuluvat kuusenkerkkä, raparperi & ruusu sekä mustaherukanlehti, ja pullokoot ovat 0,75 litraa ja 0,2 litraa.',
       'omega7':
@@ -235,8 +223,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Wer die Dinge in diesem Shop herstellt und wo. Jedes Porträt beruht auf dem, was die Marke selbst veröffentlicht, und verlinkt auf ihre eigene Website.',
     indexCount: (n) => `${n} Produkte`,
     profile: {
-      'aarikka':
-        'Aarikka ist ein finnisches Designhaus, das 1954 von Kaija Aarikka und Erkki Ruokonen gegründet wurde, bekannt für Holzperlen und Schmuck und seit 2017 im Besitz von Martinex Oy. Die Marke verortet das Design und die Handmontage ihres Holzschmucks und ihrer Wohnprodukte aus Holz in Finnland, stellt ihr Sortiment aber nicht als vollständig in Finnland gefertigt dar. Bei der Kleidung werden pro Produkt ausdrücklich Herstellungsländer außerhalb Finnlands angegeben, und ein Teil der Rohstoffe stammt aus dem Ausland.',
       'foodin':
         'Foodin ist ein familiengeführtes finnisches Bio-Lebensmittelunternehmen mit Sitz in Vaajakoski, Jyväskylä, das sich selbst als Hersteller und nicht nur als Importeur beschreibt. Die Rohschokoladen-Linie wird im firmeneigenen Werk in Vaajakoski auf Steinmühlen gemahlen und von Hand fertiggestellt, der Kakao stammt von Criollo-Bohnen aus dem peruanischen Amazonasgebiet. Dasselbe Werk wird auch als Produktionsstätte für die Proteinriegel des Unternehmens genannt.',
       'kuivalihakundi':
@@ -255,8 +241,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko wurde 1951 in Finnland gegründet und betreibt weiterhin eine eigene Textildruckerei in Helsinki, die jährlich über eine Million Meter Stoff bedruckt, darunter jede als Meterware verkaufte Stoffbahn. Die fertigen Produkte selbst werden von einem Netz von Partnerlieferanten genäht, und Marimekko nennt Finnland, die baltischen Länder, Portugal, China und Thailand unter seinen Herstellungsländern. 2025 wurden 54 Prozent der Produkte in der EU und in anderen europäischen Ländern gefertigt, bei einem Marimekko-Produkt kann also ohne Prüfung des einzelnen Artikels nicht davon ausgegangen werden, dass es in Finnland hergestellt wurde.',
       'rento':
         'Rento ist eine in Finnland entworfene Sauna-Produktreihe des Familienunternehmens Tammer Brands Oy aus Tampere. Die Marke gestaltet in Finnland und trägt das Zeichen Design from Finland auf vielen Produkten, die Produktion verteilt sich jedoch auf Finnland, andere europäische Länder und nach amfori BSCI auditierte Fabriken, und das Ursprungsland wird pro Produkt und nicht pro Marke festgelegt. Mehrere als Rento verkaufte Artikel werden außerhalb Finnlands hergestellt, die Herkunft muss also Produkt für Produkt geprüft werden.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit ist eine finnische Weberei, deren Hauptwerk in Lapua steht und deren Wurzeln bis 1917 zurückreichen. Nach eigenen Angaben webt das Unternehmen 95 % seiner Produkte in Lapua, der Rest entsteht in einer teilweise eigenen Weberei in Kaunas, Litauen, und bei europäischen Subunternehmern. Alle Rohstoffe stammen von außerhalb Finnlands: Flachs aus Frankreich, den Niederlanden und Belgien, Mohair aus Südafrika.',
       'iittala':
         'Iittala ist eine finnische Designmarke rund um die Glashütte Iittala, die 1881 im Dorf Iittala gegründet wurde und heute zur Fiskars Group gehört. Der Mutterkonzern beschreibt den Standort Hämeenlinna als die einzige noch in Finnland betriebene Glashütte mit rund 200 Beschäftigten, und Iittala gibt auf der eigenen Website an, dass die Vasen von Alvar Aalto und das Glas der Serie Ultima Thule dort mundgeblasen werden. Die Keramik wird dagegen von Auftragsfertigern im Ausland produziert, die Angabe finnischer Herkunft gilt also nur für das Glas.',
       'arctic-warriors':
@@ -281,8 +265,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo ist eine finnische Wellnessmarke, gegründet 2009, die Vitamine, Mineralstoffe und andere Nahrungsergänzungsmittel sowie Energydrinks, Kombucha, Protein- und Rohschokoladenriegel und Superfoods verkauft. Das Unternehmen betreibt eine eigene Fabrik in Lempäälä in Finnland, wo es die meisten seiner Nahrungsergänzungsmittel herstellt und nach eigenen Angaben in einem einzigen Jahr über 80 Millionen Kapseln produziert hat. Das Werk ist nach dem Lebensmittelsicherheitsstandard FSSC 22000 zertifiziert, und das Unternehmen gibt an, dass seine Getränke mit Stevia oder Bio-Rohrzucker statt mit Aspartam, Acesulfam K oder Sucralose gesüßt werden.',
       'emendo':
         'Emendo Oy ist ein finnisches Sauna- und Wellnessunternehmen mit Sitz in Vaasa, das auf seiner eigenen Website angibt, 1986 gegründet worden zu sein. Das Sortiment umfasst Sauna- und Löylydüfte, Saunahonige, Saunatextilien aus Leinen und Baumwolle, Kellen, Seifen und Hautpflegeprodukte, verkauft unter zwei Namen, Emendo und KOLO Sauna. Das Unternehmen gibt an, seine Düfte, Saunahonige sowie Gesichts-, Körper- und Fußpflegeprodukte in Finnland herzustellen, und seine Moomin-Saunaartikel sind von Moomin Characters lizenziert und beruhen auf Tove Janssons Originalzeichnungen.',
-      'moomin-arabia':
-        'Moomin Arabia ist die Moomin-Serie der finnischen Keramikmarke Arabia, die 1873 gegründet wurde und heute zur Fiskars Group gehört. Das erste Moomin-Geschirr erschien in den 1950er-Jahren mit Illustrationen von Tove Jansson, und die vielfach gesammelte Becherserie begann in den 1990er-Jahren auf Basis der Teema-Form von Kaj Franck. Die Designarbeit erfolgt am Unternehmenssitz in Espoo in Finnland, während die Fiskars Group angibt, dass Arabia-Produkte von Auftragsfertigern vor allem in Thailand und Rumänien hergestellt werden.',
       'kaino-drinks':
         'KAINO Drinks ist eine Serie alkoholfreier prickelnder Getränke von Poikain Parhaat Oy, einem Lebensmittelunternehmen mit Sitz in Tampere in Finnland. Das Fichtensprossengetränk wird in Tampere von Hand aus finnischen Fichtensprossen hergestellt, und die Getränke haben 0,0 % Alkohol, sind vegan und nach FI-EKO-201 bio-zertifiziert. Das Sortiment umfasst Fichtensprosse, Rhabarber und Rose sowie Blatt der schwarzen Johannisbeere, verkauft in Flaschen zu 0,75 Liter und 0,2 Liter.',
       'omega7':
@@ -335,8 +317,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Vem som tillverkar sakerna i den här butiken och var. Varje presentation bygger på vad varumärket själv publicerar och länkar till deras egen webbplats.',
     indexCount: (n) => `${n} produkter`,
     profile: {
-      'aarikka':
-        'Aarikka är ett finländskt designhus som grundades 1954 av Kaija Aarikka och Erkki Ruokonen, känt för träpärlor och smycken, och som ägs av Martinex Oy sedan 2017. Varumärket uppger att designen och handmonteringen av träsmyckena och trävarorna för hemmet sker i Finland, men det framställer inte sortimentet som helt tillverkat i Finland. För kläderna anges tillverkningsland uttryckligen per produkt, och de ligger utanför Finland; en del råvaror köps också in utomlands.',
       'foodin':
         'Foodin är ett familjeägt finländskt ekologiskt livsmedelsföretag med bas i Vaajakoski i Jyväskylä, som beskriver sig som tillverkare och inte enbart importör. Företagets råchokladserie stenmals och handbearbetas i den egna fabriken i Vaajakoski, och kakaon kommer från Criollo-bönor odlade i den peruanska Amazonas. Samma fabrik anges också som produktionsplats för företagets proteinbarer.',
       'kuivalihakundi':
@@ -355,8 +335,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko grundades i Finland 1951 och driver fortfarande sin egen textiltryckerifabrik i Helsingfors, som trycker över en miljon meter tyg per år, inklusive alla tyger som säljs i metervara. Själva de färdiga produkterna sys av ett nätverk av samarbetsleverantörer, och Marimekko nämner Finland, Baltikum, Portugal, Kina och Thailand bland sina tillverkningsländer. År 2025 tillverkades 54 procent av produkterna inom EU och andra europeiska länder, så en Marimekko-produkt kan inte antas vara tillverkad i Finland utan att den enskilda varan kontrolleras.',
       'rento':
         'Rento är ett finländskt designat bastusortiment som ägs av familjeföretaget Tammer Brands Oy i Tammerfors. Varumärket designar i Finland och bär märket Design from Finland på en stor del av sortimentet, men produktionen är fördelad på Finland, andra europeiska länder och fabriker som granskats enligt Amfori BSCI, och ursprungslandet avgörs per produkt i stället för per varumärke. Flera varor som säljs som Rento tillverkas utanför Finland, så ursprunget måste kontrolleras produkt för produkt.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit är ett finländskt väveriföretag vars huvudväveri ligger i Lappo och vars rötter går tillbaka till 1917. Enligt egen uppgift väver företaget 95 % av sina produkter i Lappo, medan resten tillverkas vid ett delägt väveri i Kaunas i Litauen och av europeiska underleverantörer. Alla råvaror har sitt ursprung utanför Finland: lin från Frankrike, Nederländerna och Belgien, mohair från Sydafrika.',
       'iittala':
         'Iittala är ett finländskt designvarumärke som byggts kring glasbruket i Iittala, grundat 1881 i byn Iittala och i dag en del av Fiskars Group. Moderbolaget beskriver anläggningen i Tavastehus som det enda glasbruk som fortfarande är i drift i Finland, med omkring 200 anställda, och Iittala uppger på sin egen webbplats att Alvar Aalto-vaserna och Ultima Thule-glasen munblåses där. Keramiken tillverkas däremot av kontraktstillverkare utomlands, så påståendet om finländskt ursprung gäller endast glasprodukterna.',
       'arctic-warriors':
@@ -381,8 +359,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo är ett finländskt wellnessvarumärke som grundades 2009 och som säljer vitaminer, mineraler och andra kosttillskott vid sidan av energidrycker, kombucha, protein- och rawchokladbitar samt superfoods. Företaget driver en egen fabrik i Lempäälä i Finland, där det tillverkar största delen av sina kosttillskott och uppger sig producera över 80 miljoner kapslar på ett år. Anläggningen har livsmedelssäkerhetscertifikatet FSSC 22000, och företaget uppger att dess drycker sötas med stevia eller ekologiskt rörsocker i stället för aspartam, acesulfam K eller sukralos.',
       'emendo':
         'Emendo Oy är ett finländskt bastu- och wellnessföretag med bas i Vasa, som på sin egen webbplats uppger att det grundades 1986. Sortimentet omfattar bastu- och löylydofter, bastuhonung, bastutextilier i lin och bomull, badskopor, tvålar och hudvårdsprodukter, som säljs under två namn, Emendo och KOLO Sauna. Företaget uppger att det tillverkar sina dofter, bastuhonungar och ansikts-, kropps- och fotvårdsprodukter i Finland, och dess muminbastuprodukter är licensierade av Moomin Characters och bygger på Tove Janssons originalteckningar.',
-      'moomin-arabia':
-        'Moomin Arabia är muminsortimentet från det finländska keramikvarumärket Arabia, som grundades 1873 och i dag ingår i Fiskars Group. De första muminserviserna kom på 1950-talet med illustrationer av Tove Jansson, och den flitigt samlade muggserien inleddes på 1990-talet med Kaj Francks Teema-form. Formgivningen görs vid företagets huvudkontor i Esbo i Finland, medan Fiskars Group uppger att Arabias produkter tillverkas av kontraktstillverkare huvudsakligen i Thailand och Rumänien.',
       'kaino-drinks':
         'KAINO Drinks är ett sortiment alkoholfria mousserande drycker från Poikain Parhaat Oy, ett livsmedelsföretag med bas i Tammerfors i Finland. Drycken av granskott tillverkas för hand i Tammerfors av finländska granskott, och dryckerna är 0,0 % alkohol, veganska och ekologiskt certifierade under FI-EKO-201. Sortimentet omfattar granskott, rabarber och ros samt svartvinbärsblad, och säljs i flaskor på 0,75 liter och 0,2 liter.',
       'omega7':
@@ -435,8 +411,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Qui fabrique les articles de cette boutique, et où. Chaque portrait s’appuie sur ce que la marque publie elle-même et renvoie à son propre site.',
     indexCount: (n) => `${n} produits`,
     profile: {
-      'aarikka':
-        'Aarikka est une maison de design finlandaise fondée en 1954 par Kaija Aarikka et Erkki Ruokonen, connue pour ses perles et ses bijoux en bois, et détenue par Martinex Oy depuis 2017. La marque attribue à la Finlande la conception ainsi que l\'assemblage à la main de ses bijoux en bois et de ses articles de maison en bois, mais elle ne se présente pas comme une gamme entièrement fabriquée en Finlande. Ses vêtements indiquent, produit par produit, des pays de fabrication explicites situés hors de Finlande, et certaines matières premières proviennent de l\'étranger.',
       'foodin':
         'Foodin est une entreprise familiale finlandaise d\'aliments biologiques établie à Vaajakoski, à Jyväskylä, qui se décrit comme fabricant et non comme simple importateur. Sa gamme de chocolat cru est broyée à la meule de pierre et finie à la main dans l\'usine que l\'entreprise possède à Vaajakoski, avec un cacao issu de fèves Criollo cultivées en Amazonie péruvienne. La même usine est également citée comme site de production des barres protéinées de l\'entreprise.',
       'kuivalihakundi':
@@ -455,8 +429,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko a été fondée en Finlande en 1951 et exploite toujours sa propre usine d\'impression textile à Helsinki, qui imprime plus d\'un million de mètres de tissu par an, y compris tous les tissus vendus au mètre. Les produits finis eux-mêmes sont cousus par un réseau de fournisseurs partenaires, et Marimekko cite la Finlande, les pays baltes, le Portugal, la Chine et la Thaïlande parmi ses pays de fabrication. En 2025, 54 pour cent des produits ont été fabriqués dans l\'UE et dans d\'autres pays européens : on ne peut donc pas supposer qu\'un produit Marimekko soit fabriqué en Finlande sans vérifier l\'article en question.',
       'rento':
         'Rento est une gamme de sauna conçue en Finlande et détenue par l\'entreprise familiale Tammer Brands Oy, de Tampere. La marque conçoit en Finlande et porte largement le label Design from Finland, mais la production est répartie entre la Finlande, d\'autres pays européens et des usines auditées Amfori BSCI, et le pays d\'origine est déterminé par produit et non par marque. Plusieurs articles vendus sous le nom de Rento sont fabriqués hors de Finlande, l\'origine doit donc être vérifiée produit par produit.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit est une entreprise de tissage finlandaise dont l\'usine principale se trouve à Lapua et dont les racines remontent à 1917. Selon ses propres informations, elle tisse 95 % de ses produits à Lapua, le reste étant fabriqué dans une usine détenue en partie à Kaunas, en Lituanie, et par des sous-traitants européens. Toutes les matières premières proviennent de l\'extérieur de la Finlande : le lin de France, des Pays-Bas et de Belgique, le mohair d\'Afrique du Sud.',
       'iittala':
         'Iittala est une marque de design finlandaise construite autour de la verrerie d\'Iittala, fondée en 1881 dans le village d\'Iittala et aujourd\'hui intégrée au groupe Fiskars. Sa société mère décrit le site de Hämeenlinna comme la seule verrerie encore en activité en Finlande, employant environ 200 personnes, et Iittala indique sur son propre site que les vases d\'Alvar Aalto et le verre Ultima Thule y sont soufflés à la bouche. Sa céramique, en revanche, est fabriquée par des sous-traitants à l\'étranger : l\'origine finlandaise ne vaut donc que pour la verrerie.',
       'arctic-warriors':
@@ -481,8 +453,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo est une marque finlandaise de bien-être fondée en 2009 qui vend des vitamines, des minéraux et d\'autres compléments alimentaires, ainsi que des boissons énergisantes, du kombucha, des barres protéinées et de chocolat cru, et des superaliments. L\'entreprise exploite sa propre usine à Lempäälä, en Finlande, où elle fabrique la majeure partie de ses compléments et indique avoir produit plus de 80 millions de gélules en une seule année. L\'usine détient la certification de sécurité alimentaire FSSC 22000, et l\'entreprise indique que ses boissons sont sucrées à la stévia ou au sucre de canne biologique plutôt qu\'à l\'aspartame, à l\'acésulfame K ou au sucralose.',
       'emendo':
         'Emendo Oy est une entreprise finlandaise de sauna et de bien-être basée à Vaasa, qui indique sur son propre site avoir été fondée en 1986. Sa gamme couvre les parfums de sauna et de loyly, les miels de sauna, les textiles de sauna en lin et coton, les louches, les savons et les produits de soin de la peau, vendus sous deux noms, Emendo et KOLO Sauna. L\'entreprise dit fabriquer en Finlande ses parfums, ses miels de sauna et ses produits de soin du visage, du corps et des pieds, et ses articles de sauna Moomin sont sous licence de Moomin Characters et fondés sur les dessins originaux de Tove Jansson.',
-      'moomin-arabia':
-        'Moomin Arabia est la gamme Moomins de la marque de céramique finlandaise Arabia, fondée en 1873 et aujourd\'hui membre du groupe Fiskars. La première vaisselle Moomins est apparue dans les années 1950 avec des illustrations de Tove Jansson, et la série de mugs très collectionnée a débuté dans les années 1990 en reprenant la forme Teema de Kaj Franck. Le travail de design est réalisé au siège de l\'entreprise à Espoo, en Finlande, tandis que Fiskars Group indique que les produits Arabia sont fabriqués par des sous-traitants principalement en Thaïlande et en Roumanie.',
       'kaino-drinks':
         'KAINO Drinks est une gamme de boissons pétillantes sans alcool de Poikain Parhaat Oy, une entreprise alimentaire basée à Tampere, en Finlande. La boisson aux pousses d\'épicéa est fabriquée à la main à Tampere à partir de pousses d\'épicéa finlandaises, et les boissons titrent 0,0 % d\'alcool, sont véganes et certifiées biologiques sous le numéro FI-EKO-201. La gamme comprend pousse d\'épicéa, rhubarbe et rose, et feuille de cassis, vendues en bouteilles de 0,75 litre et de 0,2 litre.',
       'omega7':
@@ -535,8 +505,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Quién fabrica lo que hay en esta tienda, y dónde. Cada perfil parte de lo que la propia marca publica y enlaza a su web.',
     indexCount: (n) => `${n} productos`,
     profile: {
-      'aarikka':
-        'Aarikka es una casa de diseño finlandesa fundada en 1954 por Kaija Aarikka y Erkki Ruokonen, conocida por sus cuentas y joyas de madera, y propiedad de Martinex Oy desde 2017. La marca atribuye a Finlandia el diseño y el ensamblaje a mano de sus joyas de madera y de sus productos de madera para el hogar, pero no se presenta como una gama fabricada íntegramente en Finlandia. Su ropa indica de forma explícita el país de fabricación de cada producto fuera de Finlandia, y algunas materias primas se obtienen en el extranjero.',
       'foodin':
         'Foodin es una empresa finlandesa de alimentos ecológicos de propiedad familiar, con sede en Vaajakoski, Jyväskylä, que se describe a sí misma como fabricante y no solo como importadora. Su línea de chocolate crudo se muele a la piedra y se termina a mano en la planta propia de la empresa en Vaajakoski, con cacao procedente de granos criollo cultivados en la Amazonía peruana. Esa misma planta se menciona también como lugar de producción de las barritas de proteína de la empresa.',
       'kuivalihakundi':
@@ -555,8 +523,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko se fundó en Finlandia en 1951 y sigue teniendo su propia fábrica de estampación textil en Helsinki, que imprime más de un millón de metros de tela al año, incluida toda la tela que se vende por metros. Los productos acabados los cosen una red de proveedores asociados, y Marimekko cita a Finlandia, los países bálticos, Portugal, China y Tailandia entre sus países de fabricación. En 2025, el 54 por ciento de los productos se fabricó en la UE y en otros países europeos, por lo que no se puede dar por hecho que un producto de Marimekko esté fabricado en Finlandia sin comprobar el artículo concreto.',
       'rento':
         'Rento es una gama de sauna de diseño finlandés propiedad de la empresa familiar Tammer Brands Oy, de Tampere. La marca diseña en Finlandia y usa ampliamente el sello Design from Finland, pero la producción se reparte entre Finlandia, otros países europeos y fábricas auditadas según Amfori BSCI, y el país de origen se decide por producto y no por marca. Varios artículos vendidos como Rento se fabrican fuera de Finlandia, así que el origen hay que comprobarlo producto por producto.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit es una empresa textil finlandesa cuya fábrica principal está en Lapua y cuyas raíces se remontan a 1917. Según sus propios datos, teje el 95 % de sus productos en Lapua, mientras que el resto se hace en una fábrica participada en Kaunas, Lituania, y en subcontratistas europeos. Todas las materias primas proceden de fuera de Finlandia: el lino de Francia, los Países Bajos y Bélgica, el mohair de Sudáfrica.',
       'iittala':
         'Iittala es una marca de diseño finlandesa construida en torno a la fábrica de vidrio de Iittala, fundada en 1881 en la aldea de Iittala y hoy parte de Fiskars Group. Su empresa matriz describe la planta de Hämeenlinna como la única fábrica de vidrio que sigue operando en Finlandia, con unos 200 empleados, e Iittala afirma en su propio sitio que allí se soplan a boca los jarrones de Alvar Aalto y el vidrio Ultima Thule. Su cerámica, en cambio, la hacen fabricantes subcontratados en el extranjero, por lo que la afirmación de origen finlandés se aplica solo a la cristalería.',
       'arctic-warriors':
@@ -581,8 +547,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo es una marca finlandesa de bienestar fundada en 2009 que vende vitaminas, minerales y otros complementos junto a bebidas energéticas, kombucha, barritas de proteínas y de chocolate crudo, y superalimentos. La empresa tiene su propia fábrica en Lempäälä, Finlandia, donde elabora la mayoría de sus complementos y donde declara haber producido más de 80 millones de cápsulas en un solo año. La planta cuenta con la certificación de seguridad alimentaria FSSC 22000, y la empresa afirma que sus bebidas se endulzan con estevia o azúcar de caña ecológico en lugar de aspartamo, acesulfamo K o sucralosa.',
       'emendo':
         'Emendo Oy es una empresa finlandesa de sauna y bienestar con sede en Vaasa, que indica en su propio sitio web que fue fundada en 1986. Su gama abarca fragancias para la sauna y el löyly, mieles de sauna, textiles de sauna en lino y algodón, cazos, jabones y productos de cuidado de la piel, vendidos bajo dos nombres, Emendo y KOLO Sauna. La empresa dice que fabrica en Finlandia sus fragancias, sus mieles de sauna y sus productos de cuidado facial, corporal y de pies, y sus artículos de sauna Moomin están licenciados por Moomin Characters y se basan en los dibujos originales de Tove Jansson.',
-      'moomin-arabia':
-        'Moomin Arabia es la gama Moomin de la marca finlandesa de cerámica Arabia, fundada en 1873 y hoy parte de Fiskars Group. Las primeras vajillas Moomin aparecieron en los años cincuenta con ilustraciones de Tove Jansson, y la serie de tazas, muy coleccionada, comenzó en los años noventa con la forma Teema de Kaj Franck. El trabajo de diseño se hace en la sede de la empresa en Espoo, Finlandia, mientras que Fiskars Group indica que los productos de Arabia los fabrican empresas subcontratadas principalmente en Tailandia y Rumanía.',
       'kaino-drinks':
         'KAINO Drinks es una gama de bebidas espumosas sin alcohol de Poikain Parhaat Oy, una empresa alimentaria con sede en Tampere, Finlandia. La bebida de brotes de abeto se elabora a mano en Tampere con brotes de abeto finlandeses, y las bebidas tienen 0,0 % de alcohol, son veganas y cuentan con certificación ecológica FI-EKO-201. La gama incluye brote de abeto, ruibarbo y rosa, y hoja de grosella negra, en botellas de 0,75 litros y 0,2 litros.',
       'omega7':
@@ -635,8 +599,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Chi produce le cose di questo negozio, e dove. Ogni profilo parte da ciò che il marchio pubblica di sé e rimanda al suo sito.',
     indexCount: (n) => `${n} prodotti`,
     profile: {
-      'aarikka':
-        'Aarikka è una casa di design finlandese fondata nel 1954 da Kaija Aarikka ed Erkki Ruokonen, nota per le perle e i gioielli in legno, di proprietà di Martinex Oy dal 2017. Il marchio attribuisce alla Finlandia il design e l\'assemblaggio a mano dei suoi gioielli in legno e dei suoi prodotti in legno per la casa, ma non si presenta come una gamma interamente fabbricata in Finlandia. I suoi capi di abbigliamento riportano esplicitamente, prodotto per prodotto, paesi di fabbricazione fuori dalla Finlandia, e alcune materie prime provengono dall\'estero.',
       'foodin':
         'Foodin è un\'azienda finlandese di alimenti biologici a conduzione familiare con sede a Vaajakoski, Jyväskylä, che si descrive come produttore e non solo come importatore. La sua linea di cioccolato crudo viene macinata a pietra e rifinita a mano nello stabilimento di proprietà dell\'azienda a Vaajakoski, con cacao ottenuto da fave Criollo coltivate nell\'Amazzonia peruviana. Lo stesso stabilimento è indicato anche come sito di produzione delle barrette proteiche dell\'azienda.',
       'kuivalihakundi':
@@ -655,8 +617,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko è stata fondata in Finlandia nel 1951 e gestisce tuttora la propria stamperia tessile a Helsinki, che stampa oltre un milione di metri di tessuto all\'anno, compresi tutti i tessuti venduti al metro. I prodotti finiti sono invece cuciti da una rete di fornitori partner, e Marimekko indica tra i propri paesi di fabbricazione Finlandia, paesi baltici, Portogallo, Cina e Thailandia. Nel 2025 il 54 percento dei prodotti è stato realizzato nell\'UE e in altri paesi europei, quindi non si può dare per scontato che un prodotto Marimekko sia fabbricato in Finlandia senza controllare il singolo articolo.',
       'rento':
         'Rento è una gamma di prodotti per la sauna progettata in Finlandia e di proprietà dell\'azienda familiare Tammer Brands Oy di Tampere. Il marchio progetta in Finlandia e usa ampiamente il marchio Design from Finland, ma la produzione è distribuita tra la Finlandia, altri paesi europei e fabbriche verificate secondo Amfori BSCI, e il paese di origine è deciso per singolo prodotto e non per marchio. Diversi articoli venduti come Rento sono fabbricati fuori dalla Finlandia, quindi l\'origine va verificata prodotto per prodotto.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit è un\'azienda tessile finlandese il cui stabilimento principale si trova a Lapua e le cui radici risalgono al 1917. Secondo quanto dichiara, tesse il 95% dei suoi prodotti a Lapua, mentre il resto è realizzato in uno stabilimento partecipato a Kaunas, in Lituania, e da subappaltatori europei. Tutte le materie prime provengono da fuori dalla Finlandia: il lino da Francia, Paesi Bassi e Belgio, il mohair dal Sudafrica.',
       'iittala':
         'Iittala è un marchio di design finlandese costruito attorno alla vetreria di Iittala, fondata nel 1881 nel villaggio di Iittala e oggi parte di Fiskars Group. La sua casa madre descrive il sito di Hämeenlinna come l\'unica vetreria ancora in attività in Finlandia, con circa 200 dipendenti, e Iittala dichiara sul proprio sito che i vasi di Alvar Aalto e i bicchieri Ultima Thule vengono soffiati a bocca lì. Le sue ceramiche sono invece prodotte da terzisti all\'estero, quindi l\'affermazione sull\'origine finlandese vale solo per gli articoli in vetro.',
       'arctic-warriors':
@@ -681,8 +641,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo è un marchio finlandese del benessere fondato nel 2009 che vende vitamine, minerali e altri integratori accanto a bevande energetiche, kombucha, barrette proteiche e di cioccolato crudo e superfood. L\'azienda gestisce un proprio stabilimento a Lempäälä, in Finlandia, dove produce la maggior parte dei suoi integratori e dichiara di aver prodotto oltre 80 milioni di capsule in un solo anno. Lo stabilimento è certificato FSSC 22000 per la sicurezza alimentare e l\'azienda afferma che le sue bevande sono dolcificate con stevia o zucchero di canna biologico anziché con aspartame, acesulfame K o sucralosio.',
       'emendo':
         'Emendo Oy è un\'azienda finlandese di prodotti per la sauna e il benessere con sede a Vaasa, che sul proprio sito dichiara di essere stata fondata nel 1986. La sua gamma comprende fragranze per la sauna e per il löyly, mieli da sauna, tessili da sauna in lino e cotone, mestoli, saponi e prodotti per la cura della pelle, venduti con due nomi, Emendo e KOLO Sauna. L\'azienda afferma di produrre in Finlandia le proprie fragranze, i mieli da sauna e i prodotti per la cura di viso, corpo e piedi, e i suoi articoli per la sauna a tema Moomin sono su licenza di Moomin Characters e basati sui disegni originali di Tove Jansson.',
-      'moomin-arabia':
-        'Moomin Arabia è la linea Moomin del marchio ceramico finlandese Arabia, fondato nel 1873 e oggi parte di Fiskars Group. Le prime stoviglie Moomin comparvero negli anni Cinquanta con illustrazioni di Tove Jansson, e la serie di tazze molto ricercata dai collezionisti iniziò negli anni Novanta utilizzando la forma Teema di Kaj Franck. Il lavoro di design viene svolto nella sede aziendale di Espoo, in Finlandia, mentre Fiskars Group dichiara che i prodotti Arabia sono realizzati da produttori terzi principalmente in Thailandia e Romania.',
       'kaino-drinks':
         'KAINO Drinks è una gamma di bevande frizzanti analcoliche di Poikain Parhaat Oy, un\'azienda alimentare con sede a Tampere, in Finlandia. La bevanda ai germogli di abete è prodotta a mano a Tampere con germogli di abete finlandesi, e le bevande sono a 0,0% di alcol, vegane e certificate biologiche con il codice FI-EKO-201. La gamma comprende germogli di abete, rabarbaro e rosa, e foglia di ribes nero, venduta in bottiglie da 0,75 litri e da 0,2 litri.',
       'omega7':
@@ -735,8 +693,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Wie de spullen in deze winkel maakt, en waar. Elk profiel is geschreven op basis van wat het merk zelf publiceert en linkt naar zijn eigen site.',
     indexCount: (n) => `${n} producten`,
     profile: {
-      'aarikka':
-        'Aarikka is een Fins designhuis, in 1954 opgericht door Kaija Aarikka en Erkki Ruokonen, bekend om houten kralen en sieraden, en sinds 2017 eigendom van Martinex Oy. Het merk schrijft aan Finland het ontwerp toe en het met de hand assembleren van zijn houten sieraden en houten woonproducten, maar presenteert zijn assortiment niet als volledig in Finland vervaardigd. Bij de kleding staat per product expliciet een productieland buiten Finland vermeld, en een deel van de grondstoffen komt uit het buitenland.',
       'foodin':
         'Foodin is een Fins biologisch voedingsbedrijf in familiebezit, gevestigd in Vaajakoski, Jyväskylä, dat zichzelf omschrijft als producent en niet alleen als importeur. De rauwe chocoladelijn wordt in de eigen fabriek in Vaajakoski op steen gemalen en met de hand afgewerkt, met cacao van Criollo-bonen uit het Peruaanse Amazonegebied. Dezelfde fabriek wordt ook genoemd als productielocatie van de proteïnerepen van het bedrijf.',
       'kuivalihakundi':
@@ -755,8 +711,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko werd in 1951 in Finland opgericht en heeft nog steeds een eigen textieldrukkerij in Helsinki, waar per jaar ruim een miljoen meter stof wordt bedrukt, waaronder alle stof die per meter wordt verkocht. De eindproducten zelf worden genaaid door een netwerk van partnerleveranciers, en Marimekko noemt Finland, de Baltische landen, Portugal, China en Thailand als productielanden. In 2025 werd 54 procent van de producten in de EU en andere Europese landen gemaakt, dus van een Marimekko-product kan niet zonder controle van het afzonderlijke artikel worden aangenomen dat het in Finland is gemaakt.',
       'rento':
         'Rento is een in Finland ontworpen saunacollectie van het Tamperese familiebedrijf Tammer Brands Oy. Het merk ontwerpt in Finland en draagt breed het merkteken Design from Finland, maar de productie is verdeeld over Finland, andere Europese landen en fabrieken met een Amfori BSCI-audit, en het land van herkomst wordt per product bepaald, niet per merk. Verschillende artikelen die als Rento worden verkocht, worden buiten Finland gemaakt, dus de herkomst moet product voor product worden gecontroleerd.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit is een Fins weverijbedrijf waarvan de belangrijkste weverij in Lapua staat en waarvan de wortels teruggaan tot 1917. Naar eigen zeggen weeft het 95% van zijn producten in Lapua, terwijl de rest wordt gemaakt in een deels eigen weverij in Kaunas, Litouwen, en door Europese onderaannemers. Alle grondstoffen komen van buiten Finland: vlas uit Frankrijk, Nederland en België, mohair uit Zuid-Afrika.',
       'iittala':
         'Iittala is een Fins designmerk dat is opgebouwd rond de glasfabriek Iittala, in 1881 opgericht in het dorp Iittala en nu onderdeel van Fiskars Group. Het moederbedrijf omschrijft de vestiging in Hämeenlinna als de enige glasfabriek die nog in Finland werkt, met ongeveer 200 medewerkers, en Iittala vermeldt op zijn eigen site dat de vazen van Alvar Aalto en het glas van Ultima Thule daar met de mond worden geblazen. Het keramiek wordt echter gemaakt door contractfabrikanten in het buitenland, dus de claim van Finse herkomst geldt alleen voor het glaswerk.',
       'arctic-warriors':
@@ -781,8 +735,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo is een Fins wellnessmerk dat in 2009 werd opgericht en vitamines, mineralen en andere supplementen verkoopt, naast energiedranken, kombucha, eiwitrepen, repen van rauwe chocolade en superfoods. Het bedrijf heeft een eigen fabriek in Lempäälä, Finland, waar het de meeste van zijn supplementen maakt en waar het naar eigen opgave in één jaar meer dan 80 miljoen capsules produceerde. De fabriek heeft de voedselveiligheidscertificering FSSC 22000, en het bedrijf stelt dat zijn dranken worden gezoet met stevia of biologische rietsuiker in plaats van aspartaam, acesulfaam K of sucralose.',
       'emendo':
         'Emendo Oy is een Fins sauna- en wellnessbedrijf uit Vaasa, dat op zijn eigen site aangeeft dat het in 1986 is opgericht. Het assortiment omvat sauna- en loylygeuren, saunahoning, saunatextiel van linnen en katoen, opgietlepels, zepen en huidverzorgingsproducten, verkocht onder twee namen: Emendo en KOLO Sauna. Het bedrijf zegt dat het zijn geuren, saunahoning en gezichts-, lichaams- en voetverzorgingsproducten in Finland maakt, en zijn Moomin-saunaproducten zijn gelicentieerd van Moomin Characters en gebaseerd op de originele tekeningen van Tove Jansson.',
-      'moomin-arabia':
-        'Moomin Arabia is de Moomin-collectie van het Finse keramiekmerk Arabia, opgericht in 1873 en tegenwoordig onderdeel van Fiskars Group. Het eerste Moomin-servies verscheen in de jaren vijftig met illustraties van Tove Jansson, en de veel verzamelde mokkenserie begon in de jaren negentig op basis van de Teema-vorm van Kaj Franck. Het ontwerpwerk gebeurt op het hoofdkantoor van het bedrijf in Espoo in Finland, terwijl Fiskars Group aangeeft dat Arabia-producten worden gemaakt door contractfabrikanten, voornamelijk in Thailand en Roemenië.',
       'kaino-drinks':
         'KAINO Drinks is een alcoholvrije reeks bruisende dranken van Poikain Parhaat Oy, een voedingsbedrijf uit Tampere, Finland. De drank van sparrenscheuten wordt met de hand gemaakt in Tampere van Finse sparrenscheuten, en de dranken bevatten 0,0% alcohol, zijn veganistisch en biologisch gecertificeerd onder FI-EKO-201. Het assortiment omvat sparrenscheut, rabarber en roos, en zwartebessenblad, verkocht in flessen van 0,75 liter en 0,2 liter.',
       'omega7':
@@ -835,8 +787,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'Quem faz as coisas desta loja, e onde. Cada perfil parte do que a própria marca publica e leva ao site dela.',
     indexCount: (n) => `${n} produtos`,
     profile: {
-      'aarikka':
-        'A Aarikka é uma casa de design finlandesa fundada em 1954 por Kaija Aarikka e Erkki Ruokonen, conhecida por contas e joias de madeira, e pertencente à Martinex Oy desde 2017. A marca atribui à Finlândia o design e a montagem manual de suas joias de madeira e de seus produtos de madeira para a casa, mas não se apresenta como uma linha inteiramente fabricada na Finlândia. Suas roupas trazem países de fabricação explícitos, produto a produto, fora da Finlândia, e parte das matérias-primas vem do exterior.',
       'foodin':
         'A Foodin é uma empresa finlandesa familiar de alimentos orgânicos sediada em Vaajakoski, Jyväskylä, que se descreve como fabricante e não apenas importadora. Sua linha de chocolate cru é moída em pedra e finalizada à mão na fábrica própria da empresa em Vaajakoski, com cacau de grãos Criollo cultivados na Amazônia peruana. A mesma fábrica também é indicada como local de produção das barras de proteína da empresa.',
       'kuivalihakundi':
@@ -855,8 +805,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'A Marimekko foi fundada na Finlândia em 1951 e ainda opera sua própria estamparia têxtil em Helsinque, que estampa mais de um milhão de metros de tecido por ano, incluindo todos os tecidos vendidos por metro. Os produtos acabados são costurados por uma rede de fornecedores parceiros, e a Marimekko cita Finlândia, países bálticos, Portugal, China e Tailândia entre seus países de fabricação. Em 2025, 54 por cento dos produtos foram feitos na UE e em outros países europeus, portanto não se pode presumir que um produto Marimekko seja feito na Finlândia sem verificar a peça individual.',
       'rento':
         'A Rento é uma linha de sauna de design finlandês pertencente à empresa familiar Tammer Brands Oy, de Tampere. A marca faz o design na Finlândia e usa amplamente o selo Design from Finland, mas a produção está dividida entre a Finlândia, outros países europeus e fábricas auditadas pelo Amfori BSCI, e o país de origem é definido por produto, e não por marca. Vários itens vendidos como Rento são feitos fora da Finlândia, portanto a origem precisa ser verificada produto a produto.',
-      'lapuan-kankurit':
-        'A Lapuan Kankurit é uma tecelagem finlandesa cuja fábrica principal fica em Lapua e cujas raízes remontam a 1917. Segundo a própria empresa, 95% de seus produtos são tecidos em Lapua, enquanto o restante é feito em uma fábrica de propriedade parcial em Kaunas, na Lituânia, e por subcontratados europeus. Todas as matérias-primas vêm de fora da Finlândia: linho da França, dos Países Baixos e da Bélgica, mohair da África do Sul.',
       'iittala':
         'A Iittala é uma marca de design finlandesa construída em torno da fábrica de vidro de Iittala, fundada em 1881 no vilarejo de Iittala e hoje parte do Fiskars Group. Sua empresa-mãe descreve a unidade de Hämeenlinna como a única fábrica de vidro ainda em operação na Finlândia, com cerca de 200 funcionários, e a Iittala afirma no próprio site que os vasos de Alvar Aalto e o vidro Ultima Thule são soprados à boca ali. Sua cerâmica, porém, é feita por fabricantes terceirizados no exterior, portanto a alegação de origem finlandesa vale apenas para os artigos de vidro.',
       'arctic-warriors':
@@ -881,8 +829,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'A Puhdistamo é uma marca finlandesa de bem-estar fundada em 2009 que vende vitaminas, minerais e outros suplementos, além de bebidas energéticas, kombucha, barras de proteína e de chocolate cru e superalimentos. A empresa opera sua própria fábrica em Lempäälä, na Finlândia, onde produz a maior parte de seus suplementos e informa ter produzido mais de 80 milhões de cápsulas em um único ano. A fábrica tem a certificação de segurança alimentar FSSC 22000, e a empresa afirma que suas bebidas são adoçadas com estévia ou açúcar de cana orgânico em vez de aspartame, acessulfame K ou sucralose.',
       'emendo':
         'A Emendo Oy é uma empresa finlandesa de sauna e bem-estar sediada em Vaasa, que afirma no próprio site ter sido fundada em 1986. Sua linha abrange fragrâncias para sauna e para o loyly, méis de sauna, têxteis de sauna em linho e algodão, conchas, sabonetes e produtos de cuidado da pele, vendidos sob dois nomes, Emendo e KOLO Sauna. A empresa diz fabricar na Finlândia suas fragrâncias, méis de sauna e produtos de cuidado para rosto, corpo e pés, e seus artigos de sauna dos Moomins são licenciados pela Moomin Characters e baseados nos desenhos originais de Tove Jansson.',
-      'moomin-arabia':
-        'Moomin Arabia é a linha dos Moomins da marca finlandesa de cerâmica Arabia, fundada em 1873 e hoje parte do Fiskars Group. As primeiras louças dos Moomins surgiram nos anos 1950 com ilustrações de Tove Jansson, e a série de canecas muito colecionada começou nos anos 1990 usando o formato Teema, de Kaj Franck. O trabalho de design é feito na sede da empresa em Espoo, na Finlândia, enquanto o Fiskars Group afirma que os produtos Arabia são fabricados por terceiros principalmente na Tailândia e na Romênia.',
       'kaino-drinks':
         'KAINO Drinks é uma linha de bebidas gaseificadas sem álcool da Poikain Parhaat Oy, uma empresa de alimentos sediada em Tampere, na Finlândia. A bebida de brotos de abeto é feita à mão em Tampere com brotos de abeto finlandeses, e as bebidas têm 0,0% de álcool, são veganas e certificadas como orgânicas sob o código FI-EKO-201. A linha abrange brotos de abeto, ruibarbo e rosa, e folha de groselha-preta, vendidas em garrafas de 0,75 litro e 0,2 litro.',
       'omega7':
@@ -935,8 +881,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       'この店のものを誰がどこで作っているか。各紹介はブランド自身が公表している内容にもとづき、公式サイトへリンクしています。',
     indexCount: (n) => `商品 ${n} 点`,
     profile: {
-      'aarikka':
-        'Aarikkaは1954年にKaija AarikkaとErkki Ruokonenが創業したフィンランドのデザインハウスで、木製ビーズとジュエリーで知られ、2017年からMartinex Oyが所有している。同ブランドはデザインと、木製ジュエリーおよび木製ホーム用品の手作業による組み立てをフィンランドで行うとしているが、全製品がフィンランド製のシリーズだとは称していない。衣料品には製品ごとにフィンランド国外の製造国が明記されており、原材料の一部は海外から調達されている。',
       'foodin':
         'FoodinはユヴァスキュラのVaajakoskiを拠点とするフィンランドの家族経営オーガニック食品会社で、輸入だけでなく製造も行っていると自ら説明している。ローチョコレート製品は同社自身のVaajakoski工場で石臼挽きされ、手作業で仕上げられており、カカオはペルーのアマゾンで栽培されたクリオロ種の豆を使用している。同じ工場は同社のプロテインバーの生産拠点としても挙げられている。',
       'kuivalihakundi':
@@ -955,8 +899,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekkoは1951年にフィンランドで創業し、現在もヘルシンキで自社のテキスタイルプリント工場を運営しており、年間100万メートルを超える生地をプリントしている。メートル単位で販売される生地はすべてここでプリントされる。完成品そのものはパートナーサプライヤーのネットワークが縫製しており、Marimekkoは製造国としてフィンランド、バルト諸国、ポルトガル、中国、タイを挙げている。2025年には製品の54パーセントがEUおよびその他の欧州諸国で作られたため、個々の商品を確認せずにMarimekko製品がフィンランド製だと決めつけることはできない。',
       'rento':
         'Rentoはタンペレの家族経営企業Tammer Brands Oyが所有する、フィンランドでデザインされたサウナ用品シリーズである。同ブランドはフィンランドでデザインを行い、Design from Finlandマークを広く付けているが、生産はフィンランド、その他の欧州諸国、およびAmfori BSCIの監査を受けた工場に分かれており、原産国はブランド単位ではなく製品ごとに決まる。Rentoとして販売される複数の商品はフィンランド国外で作られているため、原産地は製品ごとに確認する必要がある。',
-      'lapuan-kankurit':
-        'Lapuan Kankuritはフィンランドの織物会社で、主力の工場はLapuaにあり、そのルーツは1917年にさかのぼる。同社自身の説明では製品の95%をLapuaで織っており、残りはリトアニアのカウナスにある一部出資の工場と、欧州の下請け業者が製造している。原材料はすべてフィンランド国外を原産とし、亜麻はフランス、オランダ、ベルギーから、モヘアは南アフリカからである。',
       'iittala':
         'Iittalaは1881年にIittala村に創業したイッタラガラス工場を核とするフィンランドのデザインブランドで、現在はFiskars Groupの一部である。親会社はハメーンリンナの拠点をフィンランドで今も操業している唯一のガラス工場と説明し、約200人を雇用しているとしている。Iittalaは自社サイトで、Alvar Aaltoのベースとウルティマ・トゥーレ（Ultima Thule）のガラスがそこで宙吹きされていると述べている。一方、陶器は海外の委託製造業者が作っているため、フィンランド原産という主張はガラス製品にのみ当てはまる。',
       'arctic-warriors':
@@ -981,8 +923,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo は2009年創業のフィンランドのウェルネスブランドで、ビタミンやミネラルなどのサプリメントに加え、エナジードリンク、コンブチャ、プロテインとローチョコレートのバー、スーパーフードを販売しています。同社はフィンランドのレンパーラに自社工場を持ち、サプリメントの大半をそこで製造しており、1年間で8,000万カプセル以上を生産したと報告しています。工場は FSSC 22000 の食品安全認証を取得しており、同社は、飲料の甘味料にアスパルテーム、アセスルファムK、スクラロースではなくステビアまたはオーガニックのサトウキビ糖を使っているとしています。',
       'emendo':
         'Emendo Oy はヴァーサを拠点とするフィンランドのサウナ・ウェルネス企業で、自社サイトでは1986年創業としています。製品はサウナとロウリュの香り、サウナハニー、リネンコットンのサウナテキスタイル、柄杓、石けん、スキンケア用品で、Emendo と KOLO Sauna の2つの名前で販売されています。同社によれば、香り製品、サウナハニー、顔・体・足のケア用品はフィンランドで製造しており、ムーミンのサウナ用品は Moomin Characters のライセンスに基づき、Tove Jansson のオリジナルの絵をもとにしています。',
-      'moomin-arabia':
-        'Moomin Arabia は、1873年創業で現在は Fiskars Group に属するフィンランドの陶磁器ブランド Arabia のムーミンシリーズです。最初のムーミンの食器は1950年代に Tove Jansson のイラストで登場し、広く集められているマグカップのシリーズは1990年代に Kaj Franck の Teema の形を使って始まりました。デザインはフィンランド・エスポーの本社で行われており、一方で Fiskars Group は、Arabia の製品が主にタイとルーマニアの委託製造先で作られているとしています。',
       'kaino-drinks':
         'KAINO Drinks は、フィンランド・タンペレを拠点とする食品会社 Poikain Parhaat Oy のノンアルコール炭酸飲料のシリーズです。トウヒの新芽の飲料はフィンランド産のトウヒの新芽からタンペレで手作りされ、アルコール分0.0%、ヴィーガン対応で、FI-EKO-201 のオーガニック認証を受けています。ラインナップはトウヒの新芽、ルバーブとローズ、クロスグリの葉で、0.75リットルと0.2リットルのボトルで販売されています。',
       'omega7':
@@ -1035,8 +975,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       '这家店里的东西由谁制作、在哪里制作。每篇介绍都依据品牌自己公布的信息写成，并链接到其官方网站。',
     indexCount: (n) => `${n} 件商品`,
     profile: {
-      'aarikka':
-        'Aarikka 是芬兰设计公司，1954 年由 Kaija Aarikka 和 Erkki Ruokonen 创立，以木珠和首饰闻名，2017 年起由 Martinex Oy 拥有。品牌把设计以及木质首饰和木质家居产品的手工组装归于芬兰，但并未把自己表述为完全在芬兰制造的产品系列。其服装按单件产品明确标注了芬兰以外的制造国，部分原材料也从国外采购。',
       'foodin':
         'Foodin 是一家芬兰家族所有的有机食品公司，位于于韦斯屈莱的 Vaajakoski，公司称自己从事制造，而不只是进口。其生巧克力系列在公司自有的 Vaajakoski 工厂石磨并手工完成，可可来自秘鲁亚马逊地区种植的 Criollo 豆。同一工厂也被列为公司蛋白棒的生产地点。',
       'kuivalihakundi':
@@ -1055,8 +993,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko 于 1951 年在芬兰创立，至今在赫尔辛基经营自有的纺织印花厂，每年印制超过一百万米面料，包括所有按米出售的面料。成品本身由合作供应商网络缝制，Marimekko 列出的制造国包括芬兰、波罗的海国家、葡萄牙、中国和泰国。2025 年有 54% 的产品在欧盟及其他欧洲国家生产，因此在未核对具体单品之前，不能假定某件 Marimekko 产品是在芬兰制造的。',
       'rento':
         'Rento 是芬兰设计的桑拿用品系列，由坦佩雷的家族公司 Tammer Brands Oy 拥有。品牌在芬兰设计，并广泛使用 Design from Finland 标志，但生产分散在芬兰、其他欧洲国家以及通过 Amfori BSCI 审核的工厂，原产国按产品而非按品牌确定。以 Rento 名义销售的若干产品在芬兰以外制造，因此原产地必须逐件产品核对。',
-      'lapuan-kankurit':
-        'Lapuan Kankurit 是芬兰织造公司，主厂在拉普阿，源头可追溯到 1917 年。按其自己的说法，95% 的产品在拉普阿织造，其余在立陶宛考纳斯一家参股工厂以及欧洲分包商处制造。所有原材料都来自芬兰以外：亚麻来自法国、荷兰和比利时，马海毛来自南非。',
       'iittala':
         'Iittala 是围绕 Iittala 玻璃厂建立的芬兰设计品牌，该厂 1881 年创立于 Iittala 村，现属 Fiskars Group。其母公司称海门林纳的厂区是芬兰唯一仍在运营的玻璃厂，约有 200 名员工；Iittala 在自家网站上说明，Alvar Aalto 花瓶和 Ultima Thule 玻璃器皿在那里由人工吹制。不过其陶瓷制品由国外的代工厂生产，因此芬兰原产的说法仅适用于玻璃制品。',
       'arctic-warriors':
@@ -1081,8 +1017,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo 是一家芬兰健康品牌，成立于 2009 年，销售维生素、矿物质和其他膳食补充剂，以及能量饮料、康普茶、蛋白棒和生可可棒、超级食品。公司在芬兰 Lempäälä 经营自有工厂，大部分补充剂在此制造，公司称一年内生产超过 8000 万粒胶囊。该厂持有 FSSC 22000 食品安全认证，公司表示其饮料使用甜叶菊或有机蔗糖增甜，而非阿斯巴甜、安赛蜜或三氯蔗糖。',
       'emendo':
         'Emendo Oy 是一家位于 Vaasa 的芬兰桑拿和健康用品公司，公司在自有网站上表示成立于 1986 年。产品涵盖桑拿和 loyly 香氛、桑拿蜂蜜、亚麻棉桑拿纺织品、水勺、肥皂和护肤品，以 Emendo 和 KOLO Sauna 两个名称销售。公司称其香氛、桑拿蜂蜜以及面部、身体和足部护理产品在芬兰制造，其姆明桑拿用品获 Moomin Characters 授权，基于托韦·扬松的原始画作。',
-      'moomin-arabia':
-        'Moomin Arabia 是芬兰陶瓷品牌 Arabia 的姆明系列，Arabia 成立于 1873 年，如今属于 Fiskars Group。首批姆明餐具出现在 1950 年代，插画由托韦·扬松绘制，广受收藏的马克杯系列则在 1990 年代开始，采用 Kaj Franck 设计的 Teema 杯型。设计工作在公司位于芬兰埃斯波的总部完成，而 Fiskars Group 表示 Arabia 产品主要由泰国和罗马尼亚的代工厂生产。',
       'kaino-drinks':
         'KAINO Drinks 是 Poikain Parhaat Oy 推出的无酒精气泡饮料系列，这家食品公司位于芬兰坦佩雷。云杉嫩芽饮料在坦佩雷手工制作，使用芬兰云杉嫩芽，饮料酒精度为 0.0%，为纯素并获 FI-EKO-201 有机认证。产品线包括云杉嫩芽、大黄与玫瑰、黑加仑叶，有 0.75 升和 0.2 升瓶装。',
       'omega7':
@@ -1135,8 +1069,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
       '이 상점의 물건을 누가 어디서 만드는가. 각 소개는 브랜드가 스스로 공개한 내용을 바탕으로 쓰였고 공식 사이트로 연결됩니다.',
     indexCount: (n) => `상품 ${n}개`,
     profile: {
-      'aarikka':
-        'Aarikka는 1954년 Kaija Aarikka와 Erkki Ruokonen이 설립한 핀란드 디자인 하우스로, 나무 비즈와 주얼리로 알려져 있으며 2017년부터 Martinex Oy가 소유하고 있습니다. 브랜드는 디자인과 나무 주얼리 및 목재 홈 제품의 수작업 조립을 핀란드에서 한다고 밝히지만, 제품군 전체가 핀란드에서 제조된다고 내세우지는 않습니다. 의류에는 핀란드 밖의 제조국이 제품별로 명시되어 있고, 일부 원자재는 해외에서 조달됩니다.',
       'foodin':
         'Foodin은 위베스퀼레(Jyväskylä)의 바야코스키(Vaajakoski)에 본사를 둔 가족 소유 핀란드 유기농 식품 회사로, 수입만 하는 것이 아니라 제조도 한다고 스스로 설명합니다. 로 초콜릿 제품군은 회사 자체 바야코스키 공장에서 돌로 갈아 손으로 마무리하며, 카카오는 페루 아마존에서 재배된 크리올로(Criollo) 원두를 씁니다. 같은 공장은 이 회사 단백질 바의 생산지로도 명시되어 있습니다.',
       'kuivalihakundi':
@@ -1155,8 +1087,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Marimekko는 1951년 핀란드에서 설립되었고 지금도 헬싱키에서 자체 텍스타일 프린팅 공장을 운영하며, 이곳에서 연간 100만 미터가 넘는 원단을 인쇄합니다. 미터 단위로 판매되는 원단은 모두 여기서 인쇄됩니다. 완제품 자체는 협력 공급업체 네트워크가 봉제하며, Marimekko는 제조국으로 핀란드, 발트 국가들, 포르투갈, 중국, 태국을 꼽습니다. 2025년에는 제품의 54퍼센트가 EU 및 그 밖의 유럽 국가에서 만들어졌으므로, 개별 제품을 확인하지 않고 Marimekko 제품이 핀란드에서 만들어졌다고 단정할 수는 없습니다.',
       'rento':
         'Rento는 탐페레(Tampere)의 가족 회사 Tammer Brands Oy가 소유한, 핀란드에서 디자인된 사우나 용품군입니다. 브랜드는 핀란드에서 디자인하고 Design from Finland 마크를 폭넓게 달고 있지만, 생산은 핀란드, 다른 유럽 국가, 그리고 Amfori BSCI 감사를 받은 공장으로 나뉘며, 원산지는 브랜드 단위가 아니라 제품 단위로 정해집니다. Rento로 판매되는 여러 제품이 핀란드 밖에서 만들어지므로, 원산지는 제품마다 확인해야 합니다.',
-      'lapuan-kankurit':
-        'Lapuan Kankurit는 주력 공장이 라푸아(Lapua)에 있고 뿌리가 1917년까지 거슬러 올라가는 핀란드 직물 회사입니다. 자체 설명에 따르면 제품의 95%를 라푸아에서 직조하고, 나머지는 리투아니아 카우나스에 있는 일부 지분 보유 공장과 유럽 하청업체가 만듭니다. 원자재는 모두 핀란드 밖에서 옵니다: 아마는 프랑스, 네덜란드, 벨기에에서, 모헤어는 남아프리카공화국에서 옵니다.',
       'iittala':
         'Iittala는 1881년 Iittala 마을에 세워졌고 현재 Fiskars Group에 속한 Iittala 유리 공장을 중심으로 한 핀란드 디자인 브랜드입니다. 모회사는 하멘린나(Hämeenlinna) 공장을 핀란드에서 아직 가동되는 유일한 유리 공장이라고 설명하며 약 200명이 일한다고 밝히고, Iittala는 자사 사이트에서 Alvar Aalto 화병과 Ultima Thule 유리가 그곳에서 입으로 불어 만들어진다고 밝힙니다. 다만 도자기는 해외 위탁 제조사가 만들므로, 핀란드 원산지 주장은 유리 제품에만 해당합니다.',
       'arctic-warriors':
@@ -1181,8 +1111,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Puhdistamo는 2009년에 설립된 핀란드 웰니스 브랜드로, 비타민과 미네랄 등 보충제와 함께 에너지 음료, 콤부차, 프로틴 바와 로 초콜릿 바, 슈퍼푸드를 판매합니다. 회사는 핀란드 렘패앨래(Lempäälä)에 자체 공장을 운영하며 보충제 대부분을 그곳에서 만들고, 한 해에 캡슐 8천만 개 이상을 생산했다고 전합니다. 이 공장은 FSSC 22000 식품안전 인증을 보유하고 있으며, 회사는 자사 음료가 아스파탐, 아세설팜칼륨, 수크랄로스 대신 스테비아나 유기농 사탕수수당으로 감미된다고 밝히고 있습니다.',
       'emendo':
         'Emendo Oy는 바사(Vaasa)에 본사를 둔 핀란드 사우나·웰니스 회사로, 자사 사이트에서 1986년에 설립되었다고 밝히고 있습니다. 제품군은 사우나와 뢰윌리 향, 사우나 꿀, 리넨 혼방 사우나 텍스타일, 국자, 비누, 스킨케어 제품을 다루며 Emendo와 KOLO Sauna 두 이름으로 판매됩니다. 회사는 향과 사우나 꿀, 얼굴·바디·발 관리 제품을 핀란드에서 제조한다고 말하며, 무민 사우나 제품은 Moomin Characters의 라이선스를 받아 Tove Jansson의 원화를 바탕으로 만들어집니다.',
-      'moomin-arabia':
-        'Moomin Arabia는 1873년에 설립되어 오늘날 Fiskars Group에 속한 핀란드 도자기 브랜드 Arabia의 무민 제품군입니다. 첫 무민 식기는 1950년대에 Tove Jansson의 일러스트와 함께 나왔고, 널리 수집되는 머그 시리즈는 1990년대에 Kaj Franck의 Teema 형태를 사용해 시작되었습니다. 디자인 작업은 핀란드 에스포(Espoo)의 본사에서 이루어지며, Fiskars Group은 Arabia 제품이 주로 태국과 루마니아의 위탁 제조사에서 만들어진다고 밝히고 있습니다.',
       'kaino-drinks':
         'KAINO Drinks는 핀란드 탐페레(Tampere)에 있는 식품 회사 Poikain Parhaat Oy의 무알코올 스파클링 음료 제품군입니다. 가문비나무 새순 음료는 핀란드산 가문비나무 새순으로 탐페레에서 손으로 만들어지며, 음료는 알코올 0.0%에 비건이고 FI-EKO-201 유기농 인증을 받았습니다. 제품군은 가문비나무 새순, 루바브와 장미, 블랙커런트 잎으로 이루어지며 0.75리터와 0.2리터 병으로 판매됩니다.',
       'omega7':

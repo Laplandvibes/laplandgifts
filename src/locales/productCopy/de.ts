@@ -13,20 +13,6 @@ import type { ProductCopyMap } from './index'
  * numeroiden-täsmäävyystesti menee läpi.
  */
 export const PRODUCT_COPY_DE: ProductCopyMap = {
-  'moomin-mystical-forest-wool-throw': {
-    name: 'Moomin-Wolldecke Mystical Forest 130 x 170 cm',
-    description:
-      'Decke von 130 mal 170 cm aus 100 Prozent Wolle, in Finnland für die Kollektion Mystical Forest entworfen. Nur chemische Reinigung, also eher Sofadecke als Picknickunterlage.',
-    specs: [
-      '100 % Wolle',
-      '130 x 170 cm',
-      'Blau',
-      'Chemische Reinigung, schonendes Verfahren',
-      'Entworfen in Finnland, hergestellt in Litauen',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Kollektion'],
-  },
   'iittala-aalto-vase-160': {
     name: 'Iittala Alvar Aalto Vase 160 mm, klar',
     description:
@@ -96,43 +82,6 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       undefined,
       'Designer',
       'Artikelnummer und EAN',
-    ],
-  },
-  'aarikka-prinsessa-candleholder': {
-    name: 'Aarikka Prinsessa Kerzenhalter',
-    description:
-      'Aarikka dreht Birkenperlen seit den 1950er-Jahren, und Prinsessa trägt einen Kranz davon um einen 5,5 cm hohen Halter, der entweder ein Teelicht oder eine Stabkerze aufnimmt. Klein genug zum Verschicken, markant genug, um in Finnland erkannt zu werden.',
-    specs: [
-      'Höhe 5,5 cm, Durchmesser 6 cm',
-      'Birke, Ahorn, Aluminium',
-      '98 g',
-      'Entworfen in Finnland, hergestellt in Italien',
-      'Kerzenhalter mit einem Kranz aus Holzperlen. Passend für Teelichter und Stabkerzen',
-      'B08633',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Produktcode'],
-  },
-  'aarikka-pore-glass-vase': {
-    name: 'Aarikka Pore Glasvase 16 cm, dunkelgrün',
-    description:
-      'Eine runde, mundgeblasene Vase mit 1,7 Litern, die einen in Finnland von Hand gefärbten Ahornperlenkranz trägt. Luftblasen im Glas gehören dazu, und der Kranz wird vor dem Spülen abgenommen.',
-    specs: [
-      'Höhe 16 cm, Durchmesser 16 cm',
-      '1,7 l',
-      'Glas und Ahorn',
-      'Klar und grün',
-      'Glas hergestellt in Polen, der Holzkranz in Finnland',
-      'Von Hand spülen. Den Holzkranz vor dem Spülen abnehmen',
-      'B08706',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Produktcode',
     ],
   },
   'halti-tokoi-dx-jacket': {
@@ -376,56 +325,6 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Modellnummer'],
   },
-  'lapuan-kankurit-poro-towel': {
-    name: 'Lapuan Kankurit PORO Leinenhandtuch 46 x 70 cm',
-    description:
-      'Ein Rentier, gezeichnet vom Illustrator Matti Pikkujämsä, gewebt in der Weberei in Lapua aus europäischer Leinenkette und Bio-Baumwollschuss. Es lässt sich flach in den Koffer legen, und die Saugfähigkeit stellt sich erst nach einigen Wäschen ein.',
-    specs: [
-      '46 x 70 cm',
-      '60 % Leinen, Masters of Linen, und 40 % Baumwolle',
-      'Leinen-Grün',
-      'Hergestellt in Finnland',
-      'Vor dem ersten Gebrauch separat bei 60 °C im Schonwaschgang mit viel Wasser waschen. Nicht schleudern. Weichspüler und Bleichmittel vermeiden. Nicht in den Trockner. Feucht bügeln. Einlaufen ca. 5 %',
-      'Matti Pikkujämsä',
-      '20527',
-      'Schlüsselflagge, Masters of Linen',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Designer',
-      'Produktcode',
-      'Zertifikate',
-    ],
-  },
-  'lapuan-kankurit-kaamos-blanket': {
-    name: 'Lapuan Kankurit KAAMOS Wolldecke 100 x 150 cm',
-    description:
-      'Kaamos ist die Polarnacht, und Hanna Galtat leitete das Muster daraus ab, wie sich das Tageslicht im Lauf des Tages bewegt. Das Schussgarn ist Wolle vom Finnschaf, die die Weberei von Höfen im Umkreis von etwa 400 km um Lapua bezieht.',
-    specs: [
-      '100 x 150 cm',
-      '100 % Schurwolle',
-      'Weiß-Schwarz',
-      'Hergestellt in Finnland',
-      'Nur bei starker Verschmutzung waschen, sonst im Freien lüften. Handwäsche bei max. 30 °C oder chemische Reinigung. Nicht reiben, dehnen oder auswringen. Nicht in den Trockner. Mit feuchtem Tuch bei max. 150 °C bügeln',
-      'Hanna Galtat',
-      '102939',
-      'Schlüsselflagge',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Designer',
-      'Produktcode',
-      'Zertifikat',
-    ],
-  },
   'pentik-posio-mug': {
     name: 'Pentik Posio Becher 0,3 l',
     description:
@@ -553,42 +452,6 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Vegan. Hibiskus und Rooibos sind Rainforest-Alliance-zertifiziert',
     ],
     specLabels: [undefined, 'Zubereitung', 'Ernährung und Zertifizierung'],
-  },
-  'moomin-wild-blueberry-coffee': {
-    name: 'Moomintroll Wild Blueberry Kaffee 250 g',
-    description:
-      'Kaffee mit Blaubeeraroma von der Rösterei Bergstrands Kafferosteri, aufgebaut auf Perlbohnen von den Hügeln der Mogiana im Südosten Brasiliens. Eine Perlbohne ist eine Kaffeekirsche, in der statt zweier Bohnen nur eine gewachsen ist, was laut Rösterei den Geschmack verdichtet. 250 Gramm.',
-    specs: [
-      '250 g',
-      'Bohnen von den Mogiana-Hügeln im Südosten Brasiliens, geröstet von Bergstrands Kafferosteri',
-      'Perlbohne, eine Kaffeekirsche mit einer einzelnen statt zweier Bohnen',
-      'Wilde Blaubeere',
-    ],
-    specLabels: [undefined, undefined, 'Bohne', 'Aroma'],
-  },
-  'moomin-lingonberry-blueberry-dark-chocolate': {
-    name: 'Moomintroll Zartbitterschokolade mit Preiselbeere und Blaubeere 70 g',
-    description:
-      'Zartbitterschokolade in Bio-Qualität mit 70 Prozent Kakao von Kalmar Chokladfabrik mit gefriergetrockneten Preiselbeeren und Blaubeeren, eingeschlagen in ein Motiv von Tove Jansson. Der Kakao ist Criollo und Trinitario aus Peru, die Tafel wird in Schweden hergestellt.',
-    specs: [
-      '70 g',
-      'Zartbitterschokolade, 70 % Kakao',
-      'Kakaobohnen Criollo und Trinitario aus Peru, hergestellt in Schweden',
-      'Bio',
-    ],
-    specLabels: [undefined, undefined, undefined, 'Ernährung'],
-  },
-  'moomin-berry-picking-tea': {
-    name: 'Moomin Berry Picking Tee, 20 Beutel',
-    description:
-      'Schwarzer Tee mit Vanille- und roten Beerenaromen, gemischt in der Fabrik in Nurmijärvi in Finnland und mit der finnischen Schlüsselflagge ausgezeichnet. Der Tee entsteht in Zusammenarbeit mit dem Finnischen Roten Kreuz: 0,40 Euro pro verkaufter Packung gehen an die Arbeit des Roten Kreuzes mit Kindern, Jugendlichen und einsamen Menschen.',
-    specs: [
-      '20 x 1,75 g, 35 g',
-      'Hergestellt in der Fabrik in Nurmijärvi, Finnland',
-      'Rainforest-Alliance-zertifizierter Tee, finnische Schlüsselflagge',
-      'Vegan',
-    ],
-    specLabels: [undefined, undefined, 'Zertifizierung', 'Ernährung'],
   },
   'arctic-power-berries-blueberry-powder': {
     name: 'Wildblaubeerpulver 70 g',
@@ -1805,5 +1668,96 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Verkaufsverpackung',
     ],
     specLabels: [undefined, undefined, 'Verpackung'],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-aurora-borealis-reindeer-tealight': {
+    name: 'Aurora Borealis Rentier-Teelichthalter 10 cm',
+    description:
+      'Polierter Teelichthalter aus Metall in Rentierform, 10 cm hoch. Das kleine Lappland-Objekt für die Fensterbank im Dezember, leicht genug für den gepolsterten Umschlag.',
+    specs: [
+      'Höhe 10 cm',
+      'Poliertes Metall',
+      'Teelicht',
+    ],
+    specLabels: [undefined, undefined, 'Für'],
+  },
+  'sk-muurla-moomin-bottle-05l-marjat': {
+    name: 'Muurla Mumin Glasflasche 0,5 l, Beeren',
+    description:
+      'Halbliterflasche aus Sodaglas mit dichtem Bügelverschluss und dem Motiv Beeren, spülmaschinenfest. Muurla macht sie für Saft und Salatdressing, und der halbe Liter passt in die Kühlschranktür.',
+    specs: [
+      '0,5 l',
+      'Sodaglas, Bügelverschluss',
+      'Spülmaschinenfest',
+    ],
+  },
+  'nb-hattifatteners-cushion': {
+    name: 'Hattifnatten-Kissen',
+    description:
+      'Polyesterkissen in Form einer Reihe Hattifnatten, 45 bis 75 x 30 bis 50 x 10 cm, nur Handwäsche. Es kommt vakuumverpackt und braucht einen Tag, um seine Form zurückzubekommen, die einzige Zeit, in der Hattifnatten stillhalten.',
+    specs: [
+      'Polyester',
+      '45–75 x 30–50 x 10 cm',
+      'Nur Handwäsche',
+      'Vakuumverpackt, nimmt nach dem Auspacken seine Form wieder an',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Verpackung'],
+  },
+  'sk-emendo-moomin-sauna-seat-cover': {
+    name: 'Emendo Mumin-Liebe Saunatuch 150 x 50 cm, braun',
+    description:
+      'Saunasitztuch aus Leinen und Baumwolle, 150 x 50 cm, mit Tove Janssons Originalzeichnungen, offizielles Lizenzprodukt. Leinen nimmt Feuchtigkeit auf und verträgt harte Wäsche, also liegt es auf der Bank oder steht hinter dem Rücken.',
+    specs: [
+      '150 x 50 cm',
+      'Leinen 60 %, Baumwolle 40 %',
+      'Offizielles Moomin-Characters-Produkt',
+    ],
+    specLabels: [undefined, undefined, 'Lizenz'],
+  },
+  'sk-rento-pino-sauna-seat-cover': {
+    name: 'Rento Pino Saunatuch 50 x 150 cm, grau',
+    description:
+      'Jacquardgewebtes Saunasitztuch aus Baumwolle, 50 x 150 cm, entworfen von Anna Säteri für Rento. Leichte Baumwolle fühlt sich auf der heißen Bank kühl an, nimmt Schweiß auf, trocknet schnell, und das Muster übersteht die Wäsche.',
+    specs: [
+      '50 x 150 cm',
+      'Jacquardgewebte Baumwolle',
+      'Anna Säteri',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'sk-moomin-chocolate-chip-biscuit-tin': {
+    name: 'Mumin Schokoladenkekse in der Dose 200 g',
+    description:
+      'Mini-Schokoladenkekse, 200 Gramm, in einer Mumin-Dose, die die Kekse als Aufbewahrungsdose überlebt. Die Schokoladenstücke machen 16 Prozent des Kekses aus und enthalten mindestens 40 Prozent Kakaotrockenmasse.',
+    specs: [
+      '200 g',
+      'Schokoladenstücke 16 %, in der Schokolade mindestens 40 % Kakaotrockenmasse',
+      'Sammeldose, als Aufbewahrungsdose weiterverwendbar',
+    ],
+    specLabels: [undefined, undefined, 'Verpackung'],
+  },
+  'sk-paulig-cafe-new-york-beans': {
+    name: 'Paulig Café New York Kaffeebohnen 450 g',
+    description:
+      'Mittel-dunkler Bohnenkaffee, 450 Gramm, lateinamerikanischer Arabica mit brasilianischen Bohnen für Süße und eine fruchtige Note. Paulig röstet seit 1876 Kaffee in Finnland, und die Finnen trinken pro Kopf mehr davon als alle anderen.',
+    specs: [
+      '450 g',
+      'Mittel-dunkel, ganze Bohnen',
+      'Lateinamerikanischer Arabica und brasilianische Bohnen',
+    ],
+    specLabels: [undefined, 'Röstung', undefined],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-korpihilla-spruce-sprout-sparkling-750': {
+    name: 'Korpihilla Fichtenspitzen-Schaumgetränk 750 ml',
+    description:
+      'Alkoholfreies Schaumgetränk, von Hand aus Fichtenspitzen in Finnisch-Lappland hergestellt, 750 ml. 2005 vom Magazin Viisi Tähteä zu Finnlands bestem Getränk gekürt, und noch immer die Flasche, die man öffnet, wenn der Toast nach Wald schmecken soll.',
+    specs: [
+      '750 ml',
+      'Von Hand in Finnisch-Lappland hergestellt',
+      'Alkoholfrei',
+      'Finnlands bestes Getränk 2005, Magazin Viisi Tähteä',
+    ],
+    specLabels: [undefined, undefined, 'Alkohol', 'Auszeichnung'],
   },
 }

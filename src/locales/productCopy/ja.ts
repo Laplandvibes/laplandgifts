@@ -14,20 +14,6 @@ import type { ProductCopyMap } from './index'
  * tuotetiedoissa.
  */
 export const PRODUCT_COPY_JA: ProductCopyMap = {
-  'moomin-mystical-forest-wool-throw': {
-    name: 'ムーミン ミスティカルフォレスト ウールブランケット 130×170 cm',
-    description:
-      '130 かける 170 cm、ウール 100 パーセントのブランケット。ミスティカルフォレストコレクションのためにフィンランドでデザインされました。ドライクリーニングのみなので、ピクニック用ではなくソファ用と考えてください。',
-    specs: [
-      'ウール 100 %',
-      '130 x 170 cm',
-      'ブルー',
-      'ドライクリーニング、弱い処理',
-      'フィンランドでデザイン、リトアニアで製造',
-      'ミスティカルフォレスト',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'コレクション'],
-  },
   'iittala-aalto-vase-160': {
     name: 'イッタラ アルヴァ・アアルト ベース 160 mm クリア',
     description:
@@ -98,35 +84,6 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'デザイナー',
       '品番と EAN',
     ],
-  },
-  'aarikka-prinsessa-candleholder': {
-    name: 'アアリッカ プリンセッサ キャンドルホルダー',
-    description:
-      'アアリッカは 1950 年代から白樺のビーズを挽いてきました。プリンセッサはそのビーズの輪を 5.5 cm のホルダーに巻き、ティーライトにも棒状のキャンドルにも使えます。郵送できる小ささで、フィンランドではひと目でそれと分かります。',
-    specs: [
-      '高さ 5.5 cm、直径 6 cm',
-      '白樺、カエデ、アルミニウム',
-      '98 g',
-      'フィンランドでデザイン、イタリアで製造',
-      '木製ビーズの輪が付いたキャンドルホルダー。ティーライトと棒状キャンドルに対応',
-      'B08633',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, '品番'],
-  },
-  'aarikka-pore-glass-vase': {
-    name: 'アアリッカ ポレ ガラスベース 16 cm ダークグリーン',
-    description:
-      '手吹きの丸いベース、容量 1.7 リットル。フィンランドで手染めされたカエデのビーズの輪を纏っています。ガラスの中の気泡はこの製品の一部で、洗う前に輪を外します。',
-    specs: [
-      '高さ 16 cm、直径 16 cm',
-      '1.7 l',
-      'ガラスとカエデ',
-      '透明とグリーン',
-      'ガラスはポーランド製、木の輪はフィンランド製',
-      '手洗いしてください。洗う前に木の輪を外してください',
-      'B08706',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, undefined, '品番'],
   },
   'halti-tokoi-dx-jacket': {
     name: 'ハルティ Tokoi DX シェルジャケット メンズ',
@@ -353,56 +310,6 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'モデル番号'],
   },
-  'lapuan-kankurit-poro-towel': {
-    name: 'ラプアン カンクリ PORO リネンタオル 46 x 70 cm',
-    description:
-      'イラストレーターのマッティ・ピックヤムサが描いたトナカイを、ラプアの織工場でヨーロッパ産リネンの経糸とオーガニックコットンの緯糸で織り上げたタオル。スーツケースに平らに畳めます。吸水性は数回洗ってから出てきます。',
-    specs: [
-      '46 x 70 cm',
-      'リネン 60 %（Masters of Linen）とコットン 40 %',
-      'リネングリーン',
-      'フィンランドで製造',
-      '使用前に 60 °C の弱水流でたっぷりの水を使い単独洗いしてください。脱水はしないでください。柔軟剤と漂白剤は避けてください。乾燥機は不可。湿っているうちにアイロンをかけてください。収縮率は約 5 %',
-      'マッティ・ピックヤムサ',
-      '20527',
-      'フィンランドの鍵マーク、Masters of Linen',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'デザイナー',
-      '品番',
-      '認証',
-    ],
-  },
-  'lapuan-kankurit-kaamos-blanket': {
-    name: 'ラプアン カンクリ KAAMOS ウールブランケット 100 x 150 cm',
-    description:
-      'カーモスは極夜のこと。ハンナ・ガルタットは一日のうちで日の光が移ろうさまから柄を起こしました。緯糸は、工場がラプアから約 400 km の範囲の農場から集めるフィンシープのウールです。',
-    specs: [
-      '100 x 150 cm',
-      '純新毛 100 %',
-      'ホワイトとブラック',
-      'フィンランドで製造',
-      'ひどく汚れたときだけ洗い、ふだんは屋外で風を通してください。最高 30 °C の手洗いまたはドライクリーニング。こすったり、引っ張ったり、絞ったりしないでください。乾燥機は不可。最高 150 °C で湿らせた布を当ててアイロンを',
-      'ハンナ・ガルタット',
-      '102939',
-      'フィンランドの鍵マーク',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'デザイナー',
-      '品番',
-      '認証',
-    ],
-  },
   'pentik-posio-mug': {
     name: 'ペンティック ポシオ マグ 0.3 l',
     description:
@@ -524,42 +431,6 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'ヴィーガン。ハイビスカスとルイボスは Rainforest Alliance 認証',
     ],
     specLabels: [undefined, '淹れ方', '食事対応と認証'],
-  },
-  'moomin-wild-blueberry-coffee': {
-    name: 'ムーミントロール ワイルドブルーベリー コーヒー 250 g',
-    description:
-      'ブラジル南東部モジアナ高原で育ったピーベリーを使った、Bergstrands Kafferosteri のブルーベリー風味のコーヒー。ピーベリーは豆が 2 つではなく 1 つだけ育ったコーヒーチェリーで、焙煎所によれば味が凝縮するといいます。250 グラム。',
-    specs: [
-      '250 g',
-      'ブラジル南東部モジアナ高原の豆、Bergstrands Kafferosteri で焙煎',
-      'ピーベリー、豆が 2 つではなく 1 つだけのコーヒーチェリー',
-      'ワイルドブルーベリー',
-    ],
-    specLabels: [undefined, undefined, '豆', '風味'],
-  },
-  'moomin-lingonberry-blueberry-dark-chocolate': {
-    name: 'ムーミントロール リンゴンベリーとブルーベリーのダークチョコレート 70 g',
-    description:
-      'Kalmar Chokladfabrik のカカオ 70 パーセントのオーガニックダークチョコレートに、フリーズドライのリンゴンベリーとブルーベリーを入れ、トーベ・ヤンソンの絵で包みました。カカオはペルー産のクリオロとトリニタリオで、製造はスウェーデンです。',
-    specs: [
-      '70 g',
-      'ダークチョコレート、カカオ 70 %',
-      'ペルー産のクリオロとトリニタリオのカカオ豆、スウェーデンで製造',
-      'オーガニック',
-    ],
-    specLabels: [undefined, undefined, undefined, '食事対応'],
-  },
-  'moomin-berry-picking-tea': {
-    name: 'ムーミン ベリーピッキング ティー 20 袋',
-    description:
-      'バニラと赤い果実の香りをつけた紅茶。フィンランドのヌルミヤルヴィ工場でブレンドされ、フィンランドの鍵マークが付いています。フィンランド赤十字との協働で、1 袋売れるごとに 0.40 ユーロが子どもや若者、孤立した人のための赤十字の活動に使われます。',
-    specs: [
-      '20 x 1.75 g、35 g',
-      'フィンランドのヌルミヤルヴィ工場で製造',
-      'Rainforest Alliance 認証の茶葉、フィンランドの鍵マーク',
-      'ヴィーガン',
-    ],
-    specLabels: [undefined, undefined, '認証', '食事対応'],
   },
   'arctic-power-berries-blueberry-powder': {
     name: '野生ブルーベリーパウダー 70 g',
@@ -1764,5 +1635,96 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       '販売用パッケージ',
     ],
     specLabels: [undefined, undefined, 'パッケージ'],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-aurora-borealis-reindeer-tealight': {
+    name: 'Aurora Borealis トナカイ ティーライトホルダー 10 cm',
+    description:
+      'トナカイの形をした磨き上げた金属製のティーライトホルダー、高さ10 cm。12月の窓辺に置く小さなラップランドの品で、クッション封筒で送れるほど軽いです。',
+    specs: [
+      '高さ10 cm',
+      '磨き上げた金属',
+      'ティーライト',
+    ],
+    specLabels: [undefined, undefined, '用途'],
+  },
+  'sk-muurla-moomin-bottle-05l-marjat': {
+    name: 'Muurla ムーミン ガラスボトル 0.5 l、ベリー',
+    description:
+      '密閉できるスイングトップ付きのソーダガラス製0.5リットルボトルで、ベリー柄、食洗機対応。Muurlaはジュースやサラダドレッシング用に作っており、0.5リットルは冷蔵庫のドアポケットに収まる大きさです。',
+    specs: [
+      '0.5 l',
+      'ソーダガラス、スイングトップ',
+      '食洗機対応',
+    ],
+  },
+  'nb-hattifatteners-cushion': {
+    name: 'ニョロニョロ クッション',
+    description:
+      '一列に並んだニョロニョロの形をしたポリエステルのクッション、45〜75 x 30〜50 x 10 cm、手洗いのみ。真空パックで届き、元の形に戻るまで1日かかります。ニョロニョロがじっとしているのはその時だけです。',
+    specs: [
+      'ポリエステル',
+      '45–75 x 30–50 x 10 cm',
+      '手洗いのみ',
+      '真空パック、開封後に元の形に戻る',
+    ],
+    specLabels: [undefined, undefined, undefined, 'パッケージ'],
+  },
+  'sk-emendo-moomin-sauna-seat-cover': {
+    name: 'Emendo ムーミン・ラブ サウナシートカバー 150 x 50 cm、ブラウン',
+    description:
+      'トーベ・ヤンソンの原画を使ったリネンとコットンのサウナシートカバー、150 x 50 cm、公式ライセンス商品。リネンは湿気を吸い、強い洗濯にも耐えるので、ベンチに敷いても背中の後ろに立てても使えます。',
+    specs: [
+      '150 x 50 cm',
+      'リネン60 %、コットン40 %',
+      'Moomin Characters公式商品',
+    ],
+    specLabels: [undefined, undefined, 'ライセンス'],
+  },
+  'sk-rento-pino-sauna-seat-cover': {
+    name: 'Rento Pino サウナシートカバー 50 x 150 cm、グレー',
+    description:
+      'ジャカード織りコットンのサウナシートカバー、50 x 150 cm、Anna SäteriがRentoのためにデザイン。軽いコットンは熱いベンチの上でひんやりと感じられ、汗を吸って速く乾き、柄は洗濯しても残ります。',
+    specs: [
+      '50 x 150 cm',
+      'ジャカード織りコットン',
+      'Anna Säteri',
+    ],
+    specLabels: [undefined, undefined, 'デザイン'],
+  },
+  'sk-moomin-chocolate-chip-biscuit-tin': {
+    name: 'ムーミン チョコチップビスケット 缶入り 200 g',
+    description:
+      'ミニチョコチップビスケット200グラムをムーミンの缶に詰めました。缶はビスケットの後も収納缶として残ります。チョコレート片はビスケットの16パーセントで、カカオ固形分は40パーセント以上です。',
+    specs: [
+      '200 g',
+      'チョコレート片16 %、チョコレートのカカオ固形分40 %以上',
+      'コレクション缶、収納缶として再利用可',
+    ],
+    specLabels: [undefined, undefined, 'パッケージ'],
+  },
+  'sk-paulig-cafe-new-york-beans': {
+    name: 'Paulig Café New York コーヒー豆 450 g',
+    description:
+      '中深煎りの豆コーヒー450グラム。ラテンアメリカのアラビカに甘みを添えるブラジル豆を合わせた、フルーティーな味わい。Pauligは1876年からフィンランドでコーヒーを焙煎しており、フィンランド人の一人当たりの消費量は世界一です。',
+    specs: [
+      '450 g',
+      '中深煎り、豆のまま',
+      'ラテンアメリカのアラビカとブラジル豆',
+    ],
+    specLabels: [undefined, '焙煎', undefined],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-korpihilla-spruce-sprout-sparkling-750': {
+    name: 'Korpihilla トウヒの新芽スパークリング 750 ml',
+    description:
+      'フィンランドのラップランドでトウヒの新芽から手作りされたノンアルコールのスパークリング、750 ml。2005年に雑誌Viisi Tähteäでフィンランド最高の飲み物に選ばれ、今も乾杯に森の味が欲しいときに開ける一本です。',
+    specs: [
+      '750 ml',
+      'フィンランドのラップランドで手作り',
+      'ノンアルコール',
+      'フィンランド最高の飲み物2005、雑誌Viisi Tähteä',
+    ],
+    specLabels: [undefined, undefined, 'アルコール', '受賞'],
   },
 }

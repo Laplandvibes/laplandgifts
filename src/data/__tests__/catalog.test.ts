@@ -227,20 +227,6 @@ describe('toimitusrajaukset', () => {
     }
   })
 
-  it('Moomin Shopin elintarvikkeet katoavat Yhdysvalloista mutta eivät Saksasta', () => {
-    const foods = PRODUCTS.filter((p) => p.partnerId === 'moomin' && p.category === 'treats')
-    expect(foods.length, 'Moomin Shopin elintarvikkeet puuttuvat katalogista').toBeGreaterThan(0)
-    for (const p of foods) {
-      const partner = PARTNERS[p.partnerId]
-      const except = mergeExcept(partner.shipsExcept, p.shipsExcept)
-      for (const blocked of ['US', 'AU', 'BR']) {
-        expect(shipsTo(partner.shipsTo, blocked, except), `${p.slug} → ${blocked}`).toBe(false)
-      }
-      for (const allowed of ['DE', 'FI', 'JP', 'CA']) {
-        expect(shipsTo(partner.shipsTo, allowed, except), `${p.slug} → ${allowed}`).toBe(true)
-      }
-    }
-  })
 })
 
 /**

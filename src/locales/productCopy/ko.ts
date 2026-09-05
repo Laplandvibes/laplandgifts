@@ -13,20 +13,6 @@ import type { ProductCopyMap } from './index'
  * tuotetiedoissa.
  */
 export const PRODUCT_COPY_KO: ProductCopyMap = {
-  'moomin-mystical-forest-wool-throw': {
-    name: '무민 Mystical Forest 울 블랭킷 130×170 cm',
-    description:
-      '130 × 170 cm, 울 100 퍼센트 블랭킷으로 Mystical Forest 컬렉션을 위해 핀란드에서 디자인했습니다. 드라이클리닝만 가능하므로 소풍용 깔개가 아니라 소파용 담요로 보시면 됩니다.',
-    specs: [
-      '울 100%',
-      '130 x 170 cm',
-      '블루',
-      '드라이클리닝, 약한 공정',
-      '핀란드에서 디자인, 리투아니아에서 제조',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, '컬렉션'],
-  },
   'iittala-aalto-vase-160': {
     name: '이딸라 알바 알토 베이스 160 mm, 투명',
     description:
@@ -97,35 +83,6 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '디자이너',
       '품번과 EAN',
     ],
-  },
-  'aarikka-prinsessa-candleholder': {
-    name: '아리카 프린세사 캔들홀더',
-    description:
-      '아리카는 1950년대부터 자작나무 구슬을 깎아 왔고, 프린세사는 그 구슬로 만든 고리를 5.5 cm 홀더에 둘렀습니다. 티라이트와 기둥형 초 모두 쓸 수 있습니다. 우편으로 보낼 만큼 작고, 핀란드에서는 한눈에 알아볼 만큼 특징이 뚜렷합니다.',
-    specs: [
-      '높이 5.5 cm, 지름 6 cm',
-      '자작나무, 단풍나무, 알루미늄',
-      '98 g',
-      '핀란드에서 디자인, 이탈리아에서 제조',
-      '나무 구슬 고리가 하나 달린 캔들홀더. 티라이트와 곧은 초에 사용',
-      'B08633',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, '제품 코드'],
-  },
-  'aarikka-pore-glass-vase': {
-    name: '아리카 포레 유리 화병 16 cm, 다크 그린',
-    description:
-      '핀란드에서 손으로 물들인 단풍나무 구슬 고리를 두른, 1.7 리터의 둥근 핸드블로운 화병. 유리 안의 기포는 이 제품의 일부이며, 씻기 전에 고리를 빼면 됩니다.',
-    specs: [
-      '높이 16 cm, 지름 16 cm',
-      '1.7 l',
-      '유리와 단풍나무',
-      '투명과 그린',
-      '유리는 폴란드산, 나무 고리는 핀란드산',
-      '손으로 씻으세요. 씻기 전에 나무 고리를 빼세요',
-      'B08706',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, undefined, '제품 코드'],
   },
   'halti-tokoi-dx-jacket': {
     name: '할티 Tokoi DX 셸 재킷, 남성',
@@ -352,56 +309,6 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, undefined, '모델 번호'],
   },
-  'lapuan-kankurit-poro-towel': {
-    name: '라푸안 칸쿠리트 PORO 리넨 타월 46 x 70 cm',
-    description:
-      '일러스트레이터 마티 피쿠얌새가 그린 순록을, 라푸아의 직물 공장에서 유럽산 리넨 날실과 유기농 면 씨실로 짰습니다. 여행 가방에 평평하게 접히고, 흡수력은 몇 번 빨고 나서야 올라옵니다.',
-    specs: [
-      '46 x 70 cm',
-      '리넨 60%(Masters of Linen)와 면 40%',
-      '리넨 그린',
-      '핀란드에서 제조',
-      '사용 전에 60 °C 약한 코스로 물을 넉넉히 써서 단독 세탁하세요. 탈수하지 마세요. 섬유유연제와 표백제는 피하세요. 건조기는 사용하지 마세요. 축축할 때 다림질하세요. 수축률 약 5%',
-      '마티 피쿠얌새',
-      '20527',
-      '핀란드 열쇠 깃발 마크, Masters of Linen',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '디자이너',
-      '제품 코드',
-      '인증',
-    ],
-  },
-  'lapuan-kankurit-kaamos-blanket': {
-    name: '라푸안 칸쿠리트 KAAMOS 울 블랭킷 100 x 150 cm',
-    description:
-      '카모스는 극야를 뜻하고, 한나 갈타트는 하루 동안 햇빛이 움직이는 방식에서 이 패턴을 끌어냈습니다. 씨실은 공장이 라푸아에서 약 400 km 반경의 농장에서 모으는 핀란드 재래종 양털입니다.',
-    specs: [
-      '100 x 150 cm',
-      '순수 새 양모 100%',
-      '화이트와 블랙',
-      '핀란드에서 제조',
-      '많이 더러울 때만 세탁하고 평소에는 바깥 바람을 쐬세요. 최고 30 °C 손세탁 또는 드라이클리닝. 문지르거나 잡아당기거나 비틀지 마세요. 건조기는 사용하지 마세요. 젖은 천을 대고 최고 150 °C 로 다림질하세요',
-      '한나 갈타트',
-      '102939',
-      '핀란드 열쇠 깃발 마크',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '디자이너',
-      '제품 코드',
-      '인증',
-    ],
-  },
   'pentik-posio-mug': {
     name: '펜틱 포시오 머그 0.3 l',
     description:
@@ -523,42 +430,6 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '비건. 히비스커스와 루이보스는 Rainforest Alliance 인증',
     ],
     specLabels: [undefined, '우리는 법', '식이와 인증'],
-  },
-  'moomin-wild-blueberry-coffee': {
-    name: '무민 Wild Blueberry 커피 250 g',
-    description:
-      '브라질 남동부 모지아나 구릉에서 익은 피베리로 만든 Bergstrands Kafferosteri의 블루베리 향 커피. 피베리는 원두가 두 개가 아니라 하나만 자란 커피 열매로, 로스터리는 그래서 맛이 응축된다고 말합니다. 250 그램.',
-    specs: [
-      '250 g',
-      '브라질 남동부 모지아나 구릉의 원두, Bergstrands Kafferosteri 에서 로스팅',
-      '피베리, 원두가 두 개가 아니라 하나만 든 커피 열매',
-      '야생 블루베리',
-    ],
-    specLabels: [undefined, undefined, '원두', '향미'],
-  },
-  'moomin-lingonberry-blueberry-dark-chocolate': {
-    name: '무민 링곤베리와 블루베리 다크 초콜릿 70 g',
-    description:
-      'Kalmar Chokladfabrik의 코코아 70 퍼센트 유기농 다크 초콜릿에 동결건조 링곤베리와 블루베리를 넣고, 토베 얀손의 그림으로 포장했습니다. 코코아는 페루산 크리올로와 트리니타리오이고 완제품은 스웨덴에서 만듭니다.',
-    specs: [
-      '70 g',
-      '다크 초콜릿, 코코아 70%',
-      '페루산 크리올로와 트리니타리오 카카오빈, 스웨덴에서 제조',
-      '유기농',
-    ],
-    specLabels: [undefined, undefined, undefined, '식이'],
-  },
-  'moomin-berry-picking-tea': {
-    name: '무민 Berry Picking 티, 20 티백',
-    description:
-      '바닐라와 붉은 베리 향을 더한 홍차로, 핀란드 누르미야르비 공장에서 블렌딩하고 핀란드 열쇠 깃발 마크를 달았습니다. 이 차는 핀란드 적십자와의 협업으로, 한 팩이 팔릴 때마다 0.40 유로가 어린이와 청소년, 외로운 사람들을 위한 적십자 활동에 쓰입니다.',
-    specs: [
-      '20 x 1.75 g, 35 g',
-      '핀란드 누르미야르비 공장에서 제조',
-      'Rainforest Alliance 인증 찻잎, 핀란드 열쇠 깃발 마크',
-      '비건',
-    ],
-    specLabels: [undefined, undefined, '인증', '식이'],
   },
   'arctic-power-berries-blueberry-powder': {
     name: '야생 블루베리 파우더 70 g',
@@ -1763,5 +1634,96 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '판매용 포장',
     ],
     specLabels: [undefined, undefined, '포장'],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-aurora-borealis-reindeer-tealight': {
+    name: 'Aurora Borealis 순록 티라이트 홀더 10 cm',
+    description:
+      '순록 모양의 광택 금속 티라이트 홀더로 높이 10 cm입니다. 12월 창턱에 놓을 작은 라플란드 소품이며, 완충 봉투에 넣어 부칠 만큼 가볍습니다.',
+    specs: [
+      '높이 10 cm',
+      '광택 금속',
+      '티라이트',
+    ],
+    specLabels: [undefined, undefined, '용도'],
+  },
+  'sk-muurla-moomin-bottle-05l-marjat': {
+    name: 'Muurla 무민 유리병 0.5 l, 베리',
+    description:
+      '밀폐되는 스윙 마개와 베리 프린트가 있는 소다 유리 0.5리터 병으로, 식기세척기 사용이 가능합니다. Muurla는 주스와 샐러드 드레싱용으로 만들었고, 0.5리터는 냉장고 문에 딱 맞는 크기입니다.',
+    specs: [
+      '0.5 l',
+      '소다 유리, 스윙 마개',
+      '식기세척기 사용 가능',
+    ],
+  },
+  'nb-hattifatteners-cushion': {
+    name: '해티패트너 쿠션',
+    description:
+      '한 줄로 늘어선 해티패트너 모양의 폴리에스터 쿠션, 45~75 x 30~50 x 10 cm, 손세척만 가능. 진공 포장으로 도착해 원래 모양으로 부풀어 오르기까지 하루가 걸리는데, 해티패트너가 가만히 있는 유일한 순간입니다.',
+    specs: [
+      '폴리에스터',
+      '45–75 x 30–50 x 10 cm',
+      '손세척만 가능',
+      '진공 포장, 개봉 후 원래 모양으로 복원',
+    ],
+    specLabels: [undefined, undefined, undefined, '포장'],
+  },
+  'sk-emendo-moomin-sauna-seat-cover': {
+    name: 'Emendo 무민 러브 사우나 시트 커버 150 x 50 cm, 브라운',
+    description:
+      '토베 얀손의 원화가 들어간 리넨과 면 혼방 사우나 시트 커버, 150 x 50 cm, 공식 라이선스 제품입니다. 리넨은 습기를 흡수하고 강한 세탁을 견디므로 벤치에 깔거나 등 뒤에 세워 씁니다.',
+    specs: [
+      '150 x 50 cm',
+      '리넨 60 %, 면 40 %',
+      'Moomin Characters 공식 제품',
+    ],
+    specLabels: [undefined, undefined, '라이선스'],
+  },
+  'sk-rento-pino-sauna-seat-cover': {
+    name: 'Rento Pino 사우나 시트 커버 50 x 150 cm, 그레이',
+    description:
+      '자카드 직조 면 사우나 시트 커버, 50 x 150 cm, Anna Säteri가 Rento를 위해 디자인했습니다. 가벼운 면은 뜨거운 벤치 위에서 시원하게 느껴지고 땀을 흡수하며 빨리 마르고, 무늬는 세탁 후에도 남습니다.',
+    specs: [
+      '50 x 150 cm',
+      '자카드 직조 면',
+      'Anna Säteri',
+    ],
+    specLabels: [undefined, undefined, '디자인'],
+  },
+  'sk-moomin-chocolate-chip-biscuit-tin': {
+    name: '무민 초콜릿 칩 비스킷 틴 200 g',
+    description:
+      '무민 틴에 담긴 미니 초콜릿 칩 비스킷 200그램으로, 틴은 비스킷을 다 먹은 뒤 보관함으로 남습니다. 초콜릿 조각은 비스킷의 16퍼센트이며 코코아 고형분이 40퍼센트 이상입니다.',
+    specs: [
+      '200 g',
+      '초콜릿 조각 16 %, 초콜릿의 코코아 고형분 40 % 이상',
+      '수집용 틴, 보관함으로 재사용 가능',
+    ],
+    specLabels: [undefined, undefined, '포장'],
+  },
+  'sk-paulig-cafe-new-york-beans': {
+    name: 'Paulig Café New York 커피 원두 450 g',
+    description:
+      '중강배전 원두 커피 450그램으로, 라틴아메리카 아라비카에 단맛을 더하는 브라질 원두를 섞어 과일 향이 감돕니다. Paulig는 1876년부터 핀란드에서 커피를 볶아 왔고, 핀란드인은 1인당 커피를 세계에서 가장 많이 마십니다.',
+    specs: [
+      '450 g',
+      '중강배전, 홀빈',
+      '라틴아메리카 아라비카와 브라질 원두',
+    ],
+    specLabels: [undefined, '로스팅', undefined],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-korpihilla-spruce-sprout-sparkling-750': {
+    name: 'Korpihilla 가문비나무 새순 스파클링 750 ml',
+    description:
+      '핀란드 라플란드에서 가문비나무 새순으로 손수 만든 무알코올 스파클링 음료, 750 ml. 2005년 잡지 Viisi Tähteä가 핀란드 최고의 음료로 뽑았고, 건배에서 숲의 맛이 나야 할 때 여전히 여는 한 병입니다.',
+    specs: [
+      '750 ml',
+      '핀란드 라플란드에서 수제',
+      '무알코올',
+      '2005년 핀란드 최고의 음료, 잡지 Viisi Tähteä',
+    ],
+    specLabels: [undefined, undefined, '알코올', '수상'],
   },
 }

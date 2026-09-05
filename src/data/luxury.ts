@@ -46,8 +46,11 @@ export const LUXURY_HERO_SLUGS: string[] = [
 export const LUXURY_OBJECT_SLUGS: string[] = [
   'iittala-aalto-vase-160',
   'marttiini-lapinleuku-255',
-  'lapuan-kankurit-kaamos-blanket',
-  'moomin-mystical-forest-wool-throw',
+  // 5.9. ilta: Lapuan Kankureiden huopa ja Arabian villatorkku olivat provisiottomia
+  // suoralinkkejä (Vesa: pois). Tilalla Unikko (painettu vuodesta 1964) ja Finlaysonin
+  // pellava (kutomo vuodesta 1820); molemmat myydään komissiolla.
+  'sk-marimekko-unikko-crossbody',
+  'fl-lino-linen-duvet-set',
 ]
 
 /** Sivun ja reittimetan yhteinen valinta: elämykset hintarajalla, esineet listalta. */

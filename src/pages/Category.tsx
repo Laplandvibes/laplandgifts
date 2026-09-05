@@ -17,6 +17,7 @@ import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
 import ThemePicks from '../components/shop/ThemePicks'
 import { useShippingCountry } from '../context/ShippingCountry'
+import { countryName } from '../data/countryNames'
 import { useLang, useLocalePath, stripLocale } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
 import { SHOP_COPY } from '../locales/shopCopy'
@@ -48,7 +49,7 @@ export default function Category() {
   const lang = useLang()
   const to = useLocalePath()
   const { pathname } = useLocation()
-  const { country } = useShippingCountry()
+  const { country, setCountry } = useShippingCountry()
   const t = SHOP_COPY[lang].category
   const tx = SHOP_COPY[lang].experience
 
@@ -121,8 +122,20 @@ export default function Category() {
         </header>
 
         <div className="mx-auto max-w-7xl px-4 py-10 md:py-14">
+          {/* Suodatin näkyviin (Vesa 5.9.: "superfoodeja on 3?" — selaimessa oli
+              US valittuna, 17 muuta olivat piilossa eikä sivu sanonut sitä). */}
           <p className="mb-6 text-sm text-muted">
-            {t.productCount(isExperiences ? GIFT_EXPERIENCES.length + visible.length : visible.length)}
+            {country && !isExperiences && visible.length < all.length ? (
+              <>
+                {t.filteredCount(visible.length, all.length, countryName(country, lang))}
+                {' · '}
+                <button type="button" onClick={() => setCountry('')} className="font-medium text-amber underline-offset-2 hover:underline">
+                  {t.showAll}
+                </button>
+              </>
+            ) : (
+              t.productCount(isExperiences ? GIFT_EXPERIENCES.length + visible.length : visible.length)
+            )}
           </p>
           {isExperiences ? (
             <>

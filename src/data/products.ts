@@ -5,19 +5,6 @@ import type { Product } from './types'
 // tämän tiedoston importit ovat tyyppi-importteja, jotka häviävät käännöksessä,
 // joten ongelma ei ole näkynyt aiemmin. tsconfig sallii päätteen
 // (allowImportingTsExtensions).
-import { SOUTH_AMERICA } from './countryNames.ts'
-
-/**
- * Moomin Shopin elintarvikkeiden maarajaus. Luettu jokaisen tuotteen omalta
- * sivulta 1.8.2026, sanatarkasti: "This product is not available for shipment
- * to the USA, South America or Australia." / "Tätä tuotetta ei voida toimittaa
- * Yhdysvaltoihin, Etelä-Amerikkaan tai Australiaan."
- *
- * Manner puretaan maakoodeiksi, koska toimitusmaasuodatin vertaa maita eikä
- * mantereita. Rajaus on tuotteissa eikä kumppanissa: sama kauppa lähettää mukin
- * Yhdysvaltoihin, kahvipaketin ei.
- */
-const MOOMIN_FOOD_EXCEPT = ['US', 'AU', ...SOUTH_AMERICA]
 
 /**
  * Kuratoitu tuotekatalogi. Jokainen rivi on avattu kumppanin sivulta ja
@@ -45,52 +32,6 @@ const MOOMIN_FOOD_EXCEPT = ['US', 'AU', ...SOUTH_AMERICA]
  */
 export const PRODUCTS: Product[] = [
   // ── design ────────────────────────────────────────────────────────────────
-  {
-    slug: 'moomin-mystical-forest-wool-throw',
-    category: 'design',
-    brand: 'Moomin Arabia',
-    name: {
-      en: 'Moomin Mystical Forest wool throw 130×170 cm',
-      fi: 'Muumi Mystical Forest -villatorkkupeitto 130 x 170 cm',
-    },
-    description: {
-      en: 'A 130 by 170 cm throw in 100 per cent wool, designed in Finland for the Mystical Forest collection. Dry clean only, so treat it as a sofa blanket rather than a picnic rug.',
-      fi: '130 x 170 senttimetrin torkkupeitto sataprosenttisesta villasta, suunniteltu Suomessa Mystical Forest -sarjaan. Vain kuivapesu, joten se on sohvan viltti eikä eväsretken alusta.',
-    },
-    priceFrom: 139.9,
-    currency: 'EUR',
-    priceCheckedAt: '2026-07-31',
-    image: 'prod-moomin-mystical-forest-wool-throw',
-    imageIsPartner: true,
-    partnerId: 'moomin',
-    partnerProductUrl:
-      'https://shop.moomin.com/products/moomin-mystical-forest-wool-throw-130x170cm',
-    details: {
-      specs: [
-        { key: 'material', value: { en: '100 % wool', fi: '100 % villaa' } },
-        { key: 'size', value: { en: '130 x 170 cm', fi: '130 x 170 cm' } },
-        { key: 'color', value: { en: 'Blue', fi: 'Sininen' } },
-        {
-          key: 'care',
-          value: { en: 'Dry cleaning, mild process', fi: 'Kuivapesu, mieto käsittely' },
-        },
-        {
-          key: 'origin',
-          value: {
-            en: 'Designed in Finland, made in Lithuania',
-            fi: 'Suunniteltu Suomessa, valmistettu Liettuassa',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Collection', fi: 'Sarja' },
-          value: { en: 'Mystical Forest', fi: 'Mystical Forest eli Lumottu metsä' },
-        },
-      ],
-      sourceUrl: 'https://shop.moomin.com/products/moomin-mystical-forest-wool-throw-130x170cm',
-      fetchedAt: '2026-08-01',
-    },
-  },
 
   {
     slug: 'iittala-aalto-vase-160',
@@ -242,105 +183,6 @@ export const PRODUCTS: Product[] = [
       sourceUrl:
         'https://www.nordicnest.fi/tuotemerkit/marimekko/unikko-muki-2-5-dl/?variantId=666236-01',
       fetchedAt: '2026-08-03',
-    },
-  },
-  {
-    slug: 'aarikka-prinsessa-candleholder',
-    category: 'design',
-    brand: 'Aarikka',
-    name: {
-      en: 'Aarikka Prinsessa candleholder',
-      fi: 'Aarikka Prinsessa-kynttilänjalka',
-    },
-    description: {
-      en: 'Aarikka has been turning birch beads since the 1950s, and Prinsessa wears a wreath of them around a 5.5 cm holder that takes either a tealight or a taper. Small enough to post, distinctive enough to be recognised in Finland.',
-      fi: 'Aarikka on sorvannut koivuhelmiä 1950-luvulta asti, ja Prinsessa kantaa niistä tehtyä seppelettä 5,5 senttiä korkean jalan ympärillä. Sopii sekä lämpö- että kynttiläkynttilälle, mahtuu kirjekuoreen ja tunnistetaan Suomessa.',
-    },
-    priceFrom: 35,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
-    image: 'prod-aarikka-prinsessa-candleholder',
-    imageIsPartner: true,
-    partnerId: 'aarikka',
-    partnerProductUrl:
-      'https://www.aarikka.com/products/prinsessa-candleholder-varnished-wood-and-gold',
-    details: {
-      specs: [
-        { key: 'size', value: { en: 'Height 5.5 cm, diameter 6 cm', fi: 'Korkeus 5,5 cm, halkaisija 6 cm' } },
-        { key: 'material', value: { en: 'Birch, maple, aluminium', fi: 'Koivu, vaahtera, alumiini' } },
-        { key: 'weight', value: { en: '98 g', fi: '98 g' } },
-        {
-          key: 'origin',
-          value: { en: 'Designed in Finland, made in Italy', fi: 'Suunniteltu Suomessa, valmistettu Italiassa' },
-        },
-        {
-          key: 'contents',
-          value: {
-            en: 'Candleholder with one wreath of wooden beads. Fits tealights and straight candles',
-            fi: 'Kynttilänjalka ja yksi puuhelmiseppele. Sopii lämpökynttilöille ja suorille kynttilöille',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Product code', fi: 'Tuotekoodi' },
-          value: { en: 'B08633', fi: 'B08633' },
-        },
-      ],
-      sourceUrl:
-        'https://www.aarikka.com/products/prinsessa-candleholder-varnished-wood-and-gold',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
-    slug: 'aarikka-pore-glass-vase',
-    category: 'design',
-    brand: 'Aarikka',
-    name: {
-      en: 'Aarikka Pore glass vase 16 cm, dark green',
-      fi: 'Aarikka Pore-lasimaljakko 16 cm, tummanvihreä',
-    },
-    description: {
-      en: 'A round hand blown vase, 1.7 litres, wearing a maple bead wreath dyed by hand in Finland. Air bubbles in the glass are part of it, and the wreath comes off before washing.',
-      fi: 'Pyöreä suupuhallettu maljakko, tilavuus 1,7 litraa, kaulassaan käsin värjätty vaahterahelmiseppele Suomesta. Lasin ilmakuplat kuuluvat asiaan, ja seppele otetaan pois ennen pesua.',
-    },
-    priceFrom: 70,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
-    image: 'prod-aarikka-pore-glass-vase',
-    imageIsPartner: true,
-    partnerId: 'aarikka',
-    partnerProductUrl: 'https://www.aarikka.com/products/pore-glass-vase-16-cm-dark-green',
-    details: {
-      specs: [
-        {
-          key: 'size',
-          value: { en: 'Height 16 cm, diameter 16 cm', fi: 'Korkeus 16 cm, halkaisija 16 cm' },
-        },
-        { key: 'volume', value: { en: '1.7 l', fi: '1,7 l' } },
-        { key: 'material', value: { en: 'Glass and maple', fi: 'Lasi ja vaahtera' } },
-        { key: 'color', value: { en: 'Clear and green', fi: 'Kirkas ja vihreä' } },
-        {
-          key: 'origin',
-          value: {
-            en: 'Glass made in Poland, the wooden wreath made in Finland',
-            fi: 'Lasi valmistettu Puolassa, puuseppele Suomessa',
-          },
-        },
-        {
-          key: 'care',
-          value: {
-            en: 'Wash by hand. Remove the wooden wreath before washing',
-            fi: 'Pese käsin. Irrota puuseppele ennen pesua',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Product code', fi: 'Tuotekoodi' },
-          value: { en: 'B08706', fi: 'B08706' },
-        },
-      ],
-      sourceUrl: 'https://www.aarikka.com/products/pore-glass-vase-16-cm-dark-green',
-      fetchedAt: '2026-08-01',
     },
   },
 
@@ -1110,121 +952,6 @@ export const PRODUCTS: Product[] = [
     },
   },
   {
-    slug: 'lapuan-kankurit-poro-towel',
-    category: 'handicrafts',
-    brand: 'Lapuan Kankurit',
-    name: {
-      en: 'Lapuan Kankurit PORO linen towel 46 x 70 cm',
-      fi: 'Lapuan Kankurit PORO-pellavapyyhe 46 x 70 cm',
-    },
-    description: {
-      en: 'A reindeer drawn by illustrator Matti Pikkujämsä, woven in the mill in Lapua from European linen warp and organic cotton weft. Folds flat into a suitcase, and the absorbency only arrives after a few washes.',
-      fi: 'Matti Pikkujämsän piirtämä poro, kudottu Lapuan kutomossa eurooppalaisesta pellavaloimesta ja luomupuuvillakuteesta. Litistyy matkalaukkuun, ja imukyky kehittyy vasta parin pesun jälkeen.',
-    },
-    priceFrom: 19.9,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
-    image: 'prod-lapuan-kankurit-poro-towel',
-    imageIsPartner: true,
-    partnerId: 'lapuankankurit',
-    partnerProductUrl:
-      'https://lapuankankurit.fi/shop/tea-towels/poro-linen-towel-linen-green-46-x-70-cm/',
-    featured: true,
-    details: {
-      specs: [
-        { key: 'size', value: { en: '46 x 70 cm', fi: '46 x 70 cm' } },
-        {
-          key: 'material',
-          value: {
-            en: '60 % linen, Masters of Linen, and 40 % cotton',
-            fi: '60 % pellavaa, Masters of Linen, ja 40 % puuvillaa',
-          },
-        },
-        { key: 'color', value: { en: 'Linen-green', fi: 'Pellava-vihreä' } },
-        { key: 'origin', value: { en: 'Made in Finland', fi: 'Valmistettu Suomessa' } },
-        {
-          key: 'care',
-          value: {
-            en: 'Wash separately before use at 60 °C on a gentle cycle in plenty of water. Do not spin dry. Avoid softener and bleach. Do not tumble dry. Iron while still damp. Shrinkage approx. 5 %',
-            fi: 'Pese erikseen ennen käyttöä 60 °C hienopesulla runsaassa vedessä. Ei linkousta. Vältä huuhteluainetta ja valkaisua. Ei rumpukuivausta. Silitä kosteana. Kutistuma noin 5 %',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Designer', fi: 'Suunnittelija' },
-          value: { en: 'Matti Pikkujämsä', fi: 'Matti Pikkujämsä' },
-        },
-        {
-          key: 'other',
-          label: { en: 'Product code', fi: 'Tuotekoodi' },
-          value: { en: '20527', fi: '20527' },
-        },
-        {
-          key: 'other',
-          label: { en: 'Certificates', fi: 'Sertifikaatit' },
-          value: { en: 'Key Flag, Masters of Linen', fi: 'Avainlippu, Masters of Linen' },
-        },
-      ],
-      sourceUrl:
-        'https://lapuankankurit.fi/shop/tea-towels/poro-linen-towel-linen-green-46-x-70-cm/',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
-    slug: 'lapuan-kankurit-kaamos-blanket',
-    category: 'handicrafts',
-    brand: 'Lapuan Kankurit',
-    name: {
-      en: 'Lapuan Kankurit KAAMOS wool blanket 100 x 150 cm',
-      fi: 'Lapuan Kankurit KAAMOS-villahuopa 100 x 150 cm',
-    },
-    description: {
-      en: 'Kaamos is the polar night, and Hanna Galtat drew the pattern from the way daylight moves through the day. The weft yarn is Finnsheep wool the mill collects from farms within about 400 km of Lapua.',
-      fi: 'Kaamos on se pimeä kausi, ja Hanna Galtatin kuvio seuraa päivänvalon kulkua vuorokauden aikana. Kudelanka on suomenlampaan villaa, jonka kutomo kerää noin 400 kilometrin säteeltä Lapualta.',
-    },
-    priceFrom: 99.9,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
-    image: 'prod-lapuan-kankurit-kaamos-blanket',
-    imageIsPartner: true,
-    partnerId: 'lapuankankurit',
-    partnerProductUrl:
-      'https://lapuankankurit.fi/shop/wool-blankets-cushion-covers/kaamos-wool-blanket-white-black-100-x-150-cm/',
-    details: {
-      specs: [
-        { key: 'size', value: { en: '100 x 150 cm', fi: '100 x 150 cm' } },
-        { key: 'material', value: { en: '100 % pure new wool', fi: '100 % uutta villaa' } },
-        { key: 'color', value: { en: 'White-black', fi: 'Valkoinen-musta' } },
-        { key: 'origin', value: { en: 'Made in Finland', fi: 'Valmistettu Suomessa' } },
-        {
-          key: 'care',
-          value: {
-            en: 'Only wash if very dirty, otherwise air it outdoors. Hand wash at max. 30 °C or dry clean. Do not scrub, stretch or wring. Do not tumble dry. Iron with a damp cloth at max. 150 °C',
-            fi: 'Pese vain jos on hyvin likainen, muuten tuuleta ulkona. Käsinpesu enintään 30 °C tai kuivapesu. Älä hankaa, venytä tai väännä. Ei rumpukuivausta. Silitä kostean liinan läpi enintään 150 °C',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Designer', fi: 'Suunnittelija' },
-          value: { en: 'Hanna Galtat', fi: 'Hanna Galtat' },
-        },
-        {
-          key: 'other',
-          label: { en: 'Product code', fi: 'Tuotekoodi' },
-          value: { en: '102939', fi: '102939' },
-        },
-        {
-          key: 'other',
-          label: { en: 'Certificate', fi: 'Sertifikaatti' },
-          value: { en: 'Key Flag', fi: 'Avainlippu' },
-        },
-      ],
-      sourceUrl:
-        'https://lapuankankurit.fi/shop/wool-blankets-cushion-covers/kaamos-wool-blanket-white-black-100-x-150-cm/',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
     slug: 'pentik-posio-mug',
     category: 'handicrafts',
     brand: 'Pentik',
@@ -1775,162 +1502,6 @@ export const PRODUCTS: Product[] = [
         fi: 'Hibiskus, rooibos, karpalo- ja suolainen kinuskiaromi.',
       },
       sourceUrl: 'https://suomikauppa.fi/products/nordqvist-karpalo-suolakinuski-pussitee',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
-    slug: 'moomin-wild-blueberry-coffee',
-    category: 'treats',
-    brand: 'Moomin',
-    name: {
-      en: 'Moomintroll Wild Blueberry coffee 250 g',
-      fi: 'Muumipeikko Villimustikka-kahvi 250 g',
-    },
-    description: {
-      en: 'Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southeastern Brazil. A peaberry is a coffee cherry that grew one bean instead of two, which the roastery says concentrates the taste. 250 grams.',
-      fi: 'Mustikalla maustettua kahvia Bergstrands Kafferosterilta, pohjana Mogianan kukkuloilla Kaakkois-Brasiliassa kypsyneet helmipavut. Helmipapu on kahvimarja, johon on kasvanut kahden pavun sijaan yksi, ja paahtimon mukaan maku tiivistyy siitä. 250 grammaa.',
-    },
-    priceFrom: 12.9,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
-    image: 'prod-moomin-wild-blueberry-coffee',
-    imageIsPartner: true,
-    partnerId: 'moomin',
-    shipsExcept: MOOMIN_FOOD_EXCEPT,
-    partnerProductUrl: 'https://shop.moomin.com/products/moomintroll-coffee-wild-blueberry-250g',
-    details: {
-      specs: [
-        { key: 'weight', value: { en: '250 g', fi: '250 g' } },
-        {
-          key: 'origin',
-          value: {
-            en: 'Beans from the Mogiana hills in southeastern Brazil, roasted by Bergstrands Kafferosteri',
-            fi: 'Pavut Mogianan kukkuloilta Kaakkois-Brasiliasta, paahtajana Bergstrands Kafferosteri',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Bean', fi: 'Papu' },
-          value: {
-            en: 'Peaberry, a coffee cherry with a single bean instead of two',
-            fi: 'Helmipapu, kahvimarja, jossa on kahden pavun sijaan yksi',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Flavour', fi: 'Maku' },
-          value: { en: 'Wild blueberry', fi: 'Villimustikka' },
-        },
-      ],
-      // Kumppani ei julkaise kahville ainesosaluetteloa, joten kenttä puuttuu.
-      sourceUrl: 'https://shop.moomin.com/products/moomintroll-coffee-wild-blueberry-250g',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
-    slug: 'moomin-lingonberry-blueberry-dark-chocolate',
-    category: 'treats',
-    brand: 'Moomin',
-    name: {
-      en: 'Moomintroll dark chocolate with lingonberry and blueberry 70 g',
-      fi: 'Muumipeikko-tummasuklaa, puolukka ja mustikka 70 g',
-    },
-    description: {
-      en: 'Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork. The cocoa is Criollo and Trinitario from Peru and the bar is made in Sweden.',
-      fi: 'Luomua ja 70 prosentin tummaa suklaata Kalmar Chokladfabrikilta, mukana pakastekuivattua puolukkaa ja mustikkaa, kääreessä Tove Janssonin kuvitus. Kaakao on perulaista Criolloa ja Trinitarioa, ja levy valmistetaan Ruotsissa.',
-    },
-    priceFrom: 8.9,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
-    image: 'prod-moomin-lingonberry-blueberry-dark-chocolate',
-    imageIsPartner: true,
-    partnerId: 'moomin',
-    shipsExcept: MOOMIN_FOOD_EXCEPT,
-    partnerProductUrl:
-      'https://shop.moomin.com/products/moomintroll-dark-chocolate-with-lingonberry-blueberry-70g',
-    details: {
-      specs: [
-        { key: 'weight', value: { en: '70 g', fi: '70 g' } },
-        {
-          key: 'contents',
-          value: { en: 'Dark chocolate, 70 % cocoa', fi: 'Tummaa suklaata, kaakaota 70 %' },
-        },
-        {
-          key: 'origin',
-          value: {
-            en: 'Criollo and Trinitario cocoa beans from Peru, manufactured in Sweden',
-            fi: 'Criollo- ja Trinitario-kaakaopapuja Perusta, valmistettu Ruotsissa',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Diet', fi: 'Ruokavalio' },
-          value: { en: 'Organic', fi: 'Luomu' },
-        },
-      ],
-      ingredients: {
-        en: 'Cocoa mass*, cane sugar*, cocoa butter*, blueberries*, lingonberries*. *Organic ingredient.',
-        fi: 'Kaakaomassa*, ruokosokeri*, kaakaovoi*, mustikka*, puolukka*. *Luomuainesosa.',
-      },
-      allergens: {
-        en: 'May contain traces of almonds, nuts and soya.',
-        fi: 'Saattaa sisältää jäämiä manteleista, pähkinöistä ja soijasta.',
-      },
-      sourceUrl:
-        'https://shop.moomin.com/products/moomintroll-dark-chocolate-with-lingonberry-blueberry-70g',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
-    slug: 'moomin-berry-picking-tea',
-    category: 'treats',
-    brand: 'Moomin',
-    name: {
-      en: 'Moomin Berry Picking tea, 20 bags',
-      fi: 'Muumi Marjaretki-tee, 20 pussia',
-    },
-    description: {
-      en: 'Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. The tea is a collaboration with the Finnish Red Cross: 0.40 euro from every pack sold goes to Red Cross work with children, young people and the lonely.',
-      fi: 'Mustaa teetä vaniljan ja punaisten marjojen maulla, sekoitettu Nurmijärven tehtaalla ja merkitty Avainlipulla. Tee on yhteistyötä Suomen Punaisen Ristin kanssa: jokaisesta myydystä paketista 0,40 euroa menee Punaisen Ristin työhön lasten, nuorten ja yksinäisten parissa.',
-    },
-    priceFrom: 5.5,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-01',
-    image: 'prod-moomin-berry-picking-tea',
-    imageIsPartner: true,
-    partnerId: 'moomin',
-    shipsExcept: MOOMIN_FOOD_EXCEPT,
-    partnerProductUrl: 'https://shop.moomin.com/products/moomin-berry-picking-bagged-tea',
-    details: {
-      specs: [
-        { key: 'weight', value: { en: '20 x 1.75 g, 35 g', fi: '20 x 1,75 g, 35 g' } },
-        {
-          key: 'origin',
-          value: {
-            en: 'Made at the Nurmijärvi factory in Finland',
-            fi: 'Valmistettu Nurmijärven tehtaalla Suomessa',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Certification', fi: 'Sertifiointi' },
-          value: {
-            en: 'Rainforest Alliance certified tea, Finnish Avainlippu mark',
-            fi: 'Rainforest Alliance -sertifioitua teetä, Avainlippu-merkki',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Diet', fi: 'Ruokavalio' },
-          value: { en: 'Vegan', fi: 'Vegaaninen' },
-        },
-      ],
-      ingredients: {
-        en: 'Black tea*, flavour of red berries and vanilla. *Rainforest Alliance Certified.',
-        fi: 'Musta tee*, punaisten marjojen ja vaniljan aromi. *Rainforest Alliance -sertifioitu.',
-      },
-      // Kumppani ei ilmoita allergeeneja tälle tuotteelle, joten kenttä puuttuu.
-      sourceUrl: 'https://shop.moomin.com/products/moomin-berry-picking-bagged-tea',
       fetchedAt: '2026-08-01',
     },
   },
@@ -6054,7 +5625,8 @@ export const PRODUCTS: Product[] = [
   },
   {
     slug: 'rj-poikain-parhaat-blueberry-lemonade',
-    category: 'superfoods',
+    // Herkku, ei superfoodi: limonaadi kuuluu juomahyllylle salmiakin viereen.
+    category: 'treats',
     brand: 'Poikain Parhaat',
     name: {
       en: 'Poikain Parhaat blueberry lemonade 0.33 l',
@@ -6254,6 +5826,256 @@ export const PRODUCTS: Product[] = [
         { key: 'other', label: { en: 'Packaging', fi: 'Pakkaus' }, value: { en: 'Retail box', fi: 'Myyntipakkaus' } },
       ],
       sourceUrl: 'https://suomikauppa.fi/products/muurla-muumi-lasirasia-yhdessa-11-5cm',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  // ── katalogin täydennys 2026-09-05 ─────────────────────────────────────────
+  // Vesa 5.9.: 'miten voi olla että makiaa on vain kaksi tuotetta', 'tekstiileissä
+  // vain yksi tuote', 'herkut-osio on aivan poor', 'superfoodeja vain 5', 'miksi on
+  // jätetty vajaita gridejä'. 42 tuotetta kumppanien omista Shopify-tiedoista
+  // (products.json, luettu 2026-09-05): hinta, kuva ja tiedot kumppanin sivulta.
+  // Ryhmät täytetty neljällä jaollisiksi (xl-ruudukko on 4 saraketta).
+  {
+    slug: 'sk-aurora-borealis-reindeer-tealight',
+    category: 'design',
+    brand: 'Aurora Borealis',
+    name: {
+      en: 'Aurora Borealis reindeer tealight holder 10 cm',
+      fi: 'Aurora Borealis poro-kynttilänjalka 10 cm',
+    },
+    description: {
+      en: 'A polished metal tealight holder shaped as a reindeer, 10 cm tall. The small Lapland object for a windowsill in December, and light enough to post in a padded envelope.',
+      fi: 'Kiiltävää metallia oleva poronmuotoinen tuikkukynttilänjalka, korkeus 10 cm. Pieni Lapin esine joulukuun ikkunalaudalle, ja niin kevyt että se lähtee pehmustetussa kirjekuoressa.',
+    },
+    priceFrom: 12.76,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-aurora-borealis-reindeer-tealight',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/aurora-borealis-kynttilanjalka-poro-kiiltava-10-cm',
+    details: {
+      specs: [
+        { key: 'size', value: { en: 'Height 10 cm', fi: 'Korkeus 10 cm' } },
+        { key: 'material', value: { en: 'Polished metal', fi: 'Kiiltävä metalli' } },
+        { key: 'other', label: { en: 'For', fi: 'Sopii' }, value: { en: 'Tealight', fi: 'Lämpökynttilä' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/aurora-borealis-kynttilanjalka-poro-kiiltava-10-cm',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  {
+    slug: 'sk-muurla-moomin-bottle-05l-marjat',
+    category: 'design',
+    brand: 'Muurla',
+    name: {
+      en: 'Muurla Moomin glass bottle 0.5 l, Berries',
+      fi: 'Muurla Muumi-lasipullo 0,5 l, Marjat',
+    },
+    description: {
+      en: 'A half litre soda glass bottle with a tight swing top and the Berries print, dishwasher safe. Muurla makes them for juice and salad dressing, and the half litre is the size that fits a fridge door.',
+      fi: 'Puolen litran soodalasipullo tiiviillä patenttikorkilla ja Marjat-kuvituksella, konepesun kestävä. Muurla tekee ne mehulle ja salaatinkastikkeelle, ja puoli litraa on koko, joka mahtuu jääkaapin oveen.',
+    },
+    priceFrom: 13.18,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-muurla-moomin-bottle-05l-marjat',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/muurla-muumi-lasipullo-0-5l-marjat',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '0.5 l', fi: '0,5 l' } },
+        { key: 'material', value: { en: 'Soda glass, swing top', fi: 'Soodalasi, patenttikorkki' } },
+        { key: 'care', value: { en: 'Dishwasher safe', fi: 'Konepesun kestävä' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/muurla-muumi-lasipullo-0-5l-marjat',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  {
+    slug: 'nb-hattifatteners-cushion',
+    category: 'design',
+    brand: 'Nordicbuddies',
+    name: {
+      en: 'Hattifatteners cushion',
+      fi: 'Hattivatit-tyyny',
+    },
+    description: {
+      en: 'A polyester cushion shaped like a row of Hattifatteners, 45 to 75 by 30 to 50 by 10 cm, hand wash only. It arrives vacuum packed and takes a day to swell back to shape, which is the only time the Hattifatteners keep still.',
+      fi: 'Hattivattirivin muotoinen polyesterityyny, 45–75 x 30–50 x 10 cm, vain käsinpesu. Tulee tyhjiöpakattuna ja pullistuu päivässä muotoonsa, ja se on ainoa hetki jolloin hattivatit pysyvät paikoillaan.',
+    },
+    priceFrom: 39.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-nb-hattifatteners-cushion',
+    imageIsPartner: true,
+    partnerId: 'nordicbuddies',
+    partnerProductUrl: 'https://www.nordicbuddies.com/products/hattifatteners-cushion',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Polyester', fi: 'Polyesteri' } },
+        { key: 'size', value: { en: '45–75 x 30–50 x 10 cm', fi: '45–75 x 30–50 x 10 cm' } },
+        { key: 'care', value: { en: 'Hand wash only', fi: 'Vain käsinpesu' } },
+        { key: 'other', label: { en: 'Packaging', fi: 'Pakkaus' }, value: { en: 'Vacuum packed, returns to shape after unpacking', fi: 'Tyhjiöpakattu, palautuu muotoonsa avattaessa' } },
+      ],
+      sourceUrl: 'https://www.nordicbuddies.com/products/hattifatteners-cushion',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  {
+    slug: 'sk-emendo-moomin-sauna-seat-cover',
+    category: 'handicrafts',
+    brand: 'Emendo',
+    name: {
+      en: 'Emendo Moomin Love sauna seat cover 150 x 50 cm, brown',
+      fi: 'Emendo Rakkausmuumi-laudeliina 150 x 50 cm, ruskea',
+    },
+    description: {
+      en: 'A 150 by 50 cm linen and cotton sauna seat cover with Tove Jansson\'s original Moomin drawings, an official licensed product. Linen absorbs moisture and takes hard washing, so it goes on the bench or stands behind the back.',
+      fi: '150 x 50 cm pellava-puuvillainen laudeliina Tove Janssonin alkuperäispiirustuksilla, virallinen lisenssituote. Pellava imee kosteutta ja kestää kovan pesun, joten se menee lauteelle tai pystyyn selän taakse.',
+    },
+    priceFrom: 43.8,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-emendo-moomin-sauna-seat-cover',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/emendo-rakkausmuumi-laudeliina-ruskea',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '150 x 50 cm', fi: '150 x 50 cm' } },
+        { key: 'material', value: { en: 'Linen 60 %, cotton 40 %', fi: 'Pellava 60 %, puuvilla 40 %' } },
+        { key: 'other', label: { en: 'Licence', fi: 'Lisenssi' }, value: { en: 'Official Moomin Characters product', fi: 'Virallinen Moomin Characters -tuote' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/emendo-rakkausmuumi-laudeliina-ruskea',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  {
+    slug: 'sk-rento-pino-sauna-seat-cover',
+    category: 'handicrafts',
+    brand: 'Rento',
+    name: {
+      en: 'Rento Pino sauna seat cover 50 x 150 cm, grey',
+      fi: 'Rento Pino -laudeliina 50 x 150 cm, harmaa',
+    },
+    description: {
+      en: 'A jacquard woven cotton sauna seat cover, 50 by 150 cm, designed by Anna Säteri for Rento. Light cotton feels cool against the skin on a hot bench, absorbs sweat and dries fast, and the pattern survives the wash.',
+      fi: 'Jacquard-kudottu puuvillainen laudeliina, 50 x 150 cm, Anna Säterin suunnittelema Rennolle. Kevyt puuvilla tuntuu vilpoisalta kuumalla lauteella, imee hien ja kuivuu nopeasti, ja kuosi kestää pesun.',
+    },
+    priceFrom: 36.5,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-rento-pino-sauna-seat-cover',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/rento-pino-laudeliina-50x150-cm-harmaa',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '50 x 150 cm', fi: '50 x 150 cm' } },
+        { key: 'material', value: { en: 'Jacquard woven cotton', fi: 'Jacquard-kudottu puuvilla' } },
+        { key: 'other', label: { en: 'Design', fi: 'Suunnittelu' }, value: { en: 'Anna Säteri', fi: 'Anna Säteri' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/rento-pino-laudeliina-50x150-cm-harmaa',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  {
+    slug: 'sk-moomin-chocolate-chip-biscuit-tin',
+    category: 'treats',
+    brand: 'Moomin',
+    name: {
+      en: 'Moomin chocolate chip biscuits in a tin 200 g',
+      fi: 'Muumi-suklaahippukeksit peltirasiassa 200 g',
+    },
+    description: {
+      en: 'Mini chocolate chip biscuits, 200 grams, in a Moomin tin that outlives the biscuits as a storage box. The chocolate pieces are 16 per cent of the biscuit and carry at least 40 per cent cocoa solids.',
+      fi: 'Pieniä suklaahippukeksejä, 200 grammaa, Muumi-peltirasiassa, joka jää keksien jälkeen säilytysrasiaksi. Suklaapaloja on 16 % keksistä, ja niissä on kaakaokuiva-ainetta vähintään 40 %.',
+    },
+    priceFrom: 12.42,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-moomin-chocolate-chip-biscuit-tin',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/muumi-suklaahippukeksi-peltirasiassa-200g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '200 g', fi: '200 g' } },
+        { key: 'contents', value: { en: 'Chocolate pieces 16 %, cocoa solids at least 40 % in the chocolate', fi: 'Suklaapaloja 16 %, suklaassa kaakaokuiva-ainetta vähintään 40 %' } },
+        { key: 'other', label: { en: 'Packaging', fi: 'Pakkaus' }, value: { en: 'Collectable tin, reusable as a storage box', fi: 'Keräilypurkki, jää säilytysrasiaksi' } },
+      ],
+      ingredients: {
+        en: 'Wheat flour, sugar, vegetable fat (palm), chocolate pieces (16 %) [sugar, cocoa mass, cocoa butter, emulsifier (sunflower lecithin)], desiccated coconut, brown sugar, low fat cocoa powder, salt, raising agent (ammonium carbonate), natural flavouring. May contain small amounts of egg, milk, hazelnut, pecan and macadamia.',
+        fi: 'Vehnäjauho, sokeri, kasvirasva (palmu), suklaapalat (16 %) [sokeri, kaakaomassa, kaakaovoi, emulgointiaine (auringonkukkalesitiini)], kuivattu kookos, ruskea sokeri, vähärasvainen kaakaojauhe, suola, nostatusaine (ammoniumkarbonaatti), luonnollinen aromi. Saattaa sisältää pieniä määriä kananmunaa, maitoa, hasselpähkinää, pekaanipähkinää ja makadamiapähkinää.',
+      },
+      sourceUrl: 'https://suomikauppa.fi/products/muumi-suklaahippukeksi-peltirasiassa-200g',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  {
+    slug: 'sk-paulig-cafe-new-york-beans',
+    category: 'treats',
+    brand: 'Paulig',
+    name: {
+      en: 'Paulig Café New York coffee beans 450 g',
+      fi: 'Paulig Café New York kahvipavut 450 g',
+    },
+    description: {
+      en: 'A medium dark bean coffee, 450 grams, Latin American arabica with Brazilian beans for sweetness and a fruity edge. Paulig has roasted coffee in Finland since 1876, and Finns drink more of it per head than anyone else.',
+      fi: 'Keskitumma papukahvi, 450 grammaa, Latinalaisen Amerikan arabicaa ja makeutta antavia brasilialaisia papuja, hedelmäinen vivahde. Paulig on paahtanut kahvia Suomessa vuodesta 1876, ja suomalaiset juovat sitä henkeä kohti enemmän kuin kukaan muu.',
+    },
+    priceFrom: 16.94,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-paulig-cafe-new-york-beans',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/paulig-cafe-new-york-450g-papukahvi-rfa',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '450 g', fi: '450 g' } },
+        { key: 'other', label: { en: 'Roast', fi: 'Paahto' }, value: { en: 'Medium dark, whole beans', fi: 'Keskitumma, kokonaiset pavut' } },
+        { key: 'origin', value: { en: 'Latin American arabica and Brazilian beans', fi: 'Latinalaisen Amerikan arabica ja brasilialaiset pavut' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/paulig-cafe-new-york-450g-papukahvi-rfa',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  // ── katalogin täydennys 2026-09-05 ─────────────────────────────────────────
+  // Vesa 5.9.: 'miten voi olla että makiaa on vain kaksi tuotetta', 'tekstiileissä
+  // vain yksi tuote', 'herkut-osio on aivan poor', 'superfoodeja vain 5', 'miksi on
+  // jätetty vajaita gridejä'. 42 tuotetta kumppanien omista Shopify-tiedoista
+  // (products.json, luettu 2026-09-05): hinta, kuva ja tiedot kumppanin sivulta.
+  // Ryhmät täytetty neljällä jaollisiksi (xl-ruudukko on 4 saraketta).
+  {
+    slug: 'rj-korpihilla-spruce-sprout-sparkling-750',
+    category: 'superfoods',
+    brand: 'Korpihilla',
+    name: {
+      en: 'Korpihilla sparkling spruce sprout drink 750 ml',
+      fi: 'Korpihilla kuohuva kuusenkerkkäjuoma 750 ml',
+    },
+    description: {
+      en: 'A non alcoholic sparkling drink made by hand from spruce sprouts in Finnish Lapland, 750 ml. Named Finland\'s best drink in 2005 by the magazine Viisi Tähteä, and still the bottle to open when the toast has to taste of the forest.',
+      fi: 'Alkoholiton kuohujuoma, tehty käsityönä kuusenkerkistä Suomen Lapissa, 750 ml. Viisi Tähteä -lehti valitsi sen Suomen parhaaksi juomaksi 2005, ja se on yhä pullo, joka avataan kun maljan pitää maistua metsältä.',
+    },
+    priceFrom: 18.5,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-rj-korpihilla-spruce-sprout-sparkling-750',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/korpihilla-kuohuva-kuusenkerkka-kuohujuoma-750-ml',
+    details: {
+      specs: [
+        { key: 'volume', value: { en: '750 ml', fi: '750 ml' } },
+        { key: 'origin', value: { en: 'Made by hand in Finnish Lapland', fi: 'Tehty käsityönä Suomen Lapissa' } },
+        { key: 'other', label: { en: 'Alcohol', fi: 'Alkoholi' }, value: { en: 'Alcohol free', fi: 'Alkoholiton' } },
+        { key: 'other', label: { en: 'Award', fi: 'Palkinto' }, value: { en: 'Finland\'s best drink 2005, Viisi Tähteä magazine', fi: 'Suomen paras juoma 2005, Viisi Tähteä -lehti' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/korpihilla-kuohuva-kuusenkerkka-kuohujuoma-750-ml',
       fetchedAt: '2026-09-05',
     },
   },

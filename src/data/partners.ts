@@ -78,6 +78,8 @@ export const PARTNERS: Record<string, Partner> = {
     workerRoute: 'nordicbuddies',
     verifiedAt: '2026-08-10',
   },
+  // 5.9.2026: Moomin Shopin tuotteet poistettu (suoralinkki, ei provisiota; Vesa:
+  // pois). Kumppanirivi jää partners.test.ts:n UTM-esimerkiksi.
   moomin: {
     id: 'moomin',
     name: 'Moomin Shop',
@@ -165,27 +167,6 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'fi',
     verifiedAt: '2026-08-03',
   },
-  aarikka: {
-    id: 'aarikka',
-    name: 'Aarikka',
-    network: 'direct',
-    baseUrl: 'https://www.aarikka.com',
-    // Payment and Delivery 1.8.2026 luettelee 72 toimitusmaata kaikilta
-    // mantereilta (mm. Australia, Brasilia, Japani, Kanada, Meksiko,
-    // Etelä-Korea, Uusi-Seelanti) ja rajaa yhden pois: "Unfortunately, we are
-    // not able to ship orders to the United States for the time being due to
-    // customs-related reasons."
-    //
-    // 🔴 Tämä oli aiemmin 'eu', koska mallissa ei ollut tapaa sanoa
-    // "maailmanlaajuinen paitsi yksi maa". Se piilotti kumppanin kaikilta
-    // EU:n ulkopuolisilta ostajilta, vaikka kauppa toimittaa heille:
-    // Britannia, Kanada, Japani, Etelä-Korea, Australia, Sveitsi ja Norja ovat
-    // kaikki toimitusmaalistalla. Nyt vyöhyke kertoo totuuden ja poikkeus
-    // hoitaa Yhdysvallat.
-    shipsTo: 'worldwide',
-    shipsExcept: ['US'],
-    verifiedAt: '2026-08-01',
-  },
   scandinavianoutdoor: {
     id: 'scandinavianoutdoor',
     name: 'Scandinavian Outdoor',
@@ -210,29 +191,6 @@ export const PARTNERS: Record<string, Partner> = {
     // Parametrin nimi on `dest`, ei `url`: ks. worker.js handleAdtraction.
     workerRoute: 'scandinavianoutdoor',
     shipsTo: 'worldwide',
-    verifiedAt: '2026-08-01',
-  },
-  lapuankankurit: {
-    id: 'lapuankankurit',
-    name: 'Lapuan Kankurit',
-    network: 'direct',
-    baseUrl: 'https://lapuankankurit.fi',
-    // Shipping & Payment 1.8.2026, sanatarkasti: "We deliver products to the
-    // following countries; Belgium, Netherlands, Ireland, Great Britain, Italy,
-    // Austria, Luxemburg, Norway, France, Sweden, Germany, Finland (not Åland),
-    // Switzerland and Denmark."
-    //
-    // 🔴 Listalla on 11 EU-maata, ei 27. Pelkkä 'eu' lupasi toimituksen
-    // espanjalaiselle, puolalaiselle ja kreikkalaiselle ostajalle, joille
-    // kauppa ei toimita lainkaan (heidät ohjataan asiakaspalveluun). Poikkeus
-    // listaa ne 16 EU-maata, jotka EIVÄT ole kaupan omalla listalla.
-    // Britannia, Norja ja Sveitsi jäävät edelleen suodattimen ulkopuolelle,
-    // koska vyöhyke on 'eu'; se on aliarvio eikä väärä lupaus.
-    shipsTo: 'eu',
-    shipsExcept: [
-      'BG', 'CY', 'CZ', 'EE', 'ES', 'GR', 'HR', 'HU',
-      'LT', 'LV', 'MT', 'PL', 'PT', 'RO', 'SI', 'SK',
-    ],
     verifiedAt: '2026-08-01',
   },
   pentik: {
@@ -268,18 +226,6 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'worldwide',
     workerRoute: 'suomikauppa',
     verifiedAt: '2026-08-10',
-  },
-  nordqvist: {
-    id: 'nordqvist',
-    name: 'Nordqvist',
-    network: 'direct',
-    baseUrl: 'https://nordqvist.fi',
-    // 🔴 Toimituskäytäntö 1.8.2026 tuntee vain Postin kotimaan toimitustavat
-    // (noutopiste, Express yritysosoitteisiin, kotiinkuljetus) eikä mainitse
-    // ulkomaantoimituksia lainkaan. Siksi 'fi': tuote näkyy suodattimessa vain
-    // Suomeen tilaaville, tyypillisesti matkan aikana tilaaville.
-    shipsTo: 'fi',
-    verifiedAt: '2026-08-01',
   },
   kuivalihakundi: {
     id: 'kuivalihakundi',

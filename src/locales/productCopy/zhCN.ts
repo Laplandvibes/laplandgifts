@@ -14,20 +14,6 @@ import type { ProductCopyMap } from './index'
  * väärin tuotetiedoissa.
  */
 export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
-  'moomin-mystical-forest-wool-throw': {
-    name: '姆明 Mystical Forest 羊毛毯 130×170 cm',
-    description:
-      '130 乘 170 cm、100% 羊毛的盖毯，为 Mystical Forest 系列在芬兰设计。只能干洗，所以把它当沙发毯而不是野餐垫。',
-    specs: [
-      '100 % 羊毛',
-      '130 x 170 cm',
-      '蓝色',
-      '干洗，温和程序',
-      '芬兰设计，立陶宛制造',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, '系列'],
-  },
   'iittala-aalto-vase-160': {
     name: 'Iittala 阿尔瓦·阿尔托花瓶 160 mm，透明',
     description:
@@ -98,35 +84,6 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '设计师',
       '货号与 EAN',
     ],
-  },
-  'aarikka-prinsessa-candleholder': {
-    name: 'Aarikka Prinsessa 烛台',
-    description:
-      'Aarikka 从 1950 年代起就在车削桦木珠，Prinsessa 把一圈木珠环在 5.5 cm 的烛台上，茶蜡和直立蜡烛都放得下。小到可以邮寄，特征鲜明到在芬兰一眼就能认出。',
-    specs: [
-      '高 5.5 cm，直径 6 cm',
-      '桦木、枫木、铝',
-      '98 g',
-      '芬兰设计，意大利制造',
-      '烛台配一圈木珠。适用于茶蜡和直立蜡烛',
-      'B08633',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, '产品编码'],
-  },
-  'aarikka-pore-glass-vase': {
-    name: 'Aarikka Pore 玻璃花瓶 16 cm，深绿色',
-    description:
-      '一只圆形手工吹制花瓶，容量 1.7 升，外面套着在芬兰手工染色的枫木珠环。玻璃里的气泡是它的一部分，清洗前把木环取下。',
-    specs: [
-      '高 16 cm，直径 16 cm',
-      '1.7 l',
-      '玻璃与枫木',
-      '透明与绿色',
-      '玻璃产自波兰，木环产自芬兰',
-      '手洗。清洗前取下木环',
-      'B08706',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, undefined, '产品编码'],
   },
   'halti-tokoi-dx-jacket': {
     name: 'Halti Tokoi DX 冲锋衣，男款',
@@ -353,56 +310,6 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, undefined, '型号'],
   },
-  'lapuan-kankurit-poro-towel': {
-    name: 'Lapuan Kankurit PORO 亚麻毛巾 46 x 70 cm',
-    description:
-      '插画家马蒂·皮库亚姆萨画的驯鹿，在拉普阿的织厂以欧洲亚麻作经纱、有机棉作纬纱织成。可以平整地折进行李箱，吸水性要洗过几次才出来。',
-    specs: [
-      '46 x 70 cm',
-      '60 % 亚麻（Masters of Linen）和 40 % 棉',
-      '亚麻绿',
-      '芬兰制造',
-      '首次使用前单独洗涤，60 °C 轻柔程序，用足量水。不要脱水。避免柔顺剂和漂白剂。不可烘干。趁湿熨烫。缩率约 5 %',
-      '马蒂·皮库亚姆萨',
-      '20527',
-      '芬兰钥匙旗标志，Masters of Linen',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '设计师',
-      '产品编码',
-      '认证',
-    ],
-  },
-  'lapuan-kankurit-kaamos-blanket': {
-    name: 'Lapuan Kankurit KAAMOS 羊毛毯 100 x 150 cm',
-    description:
-      'Kaamos 指极夜，汉娜·加尔塔特从日光在一天里移动的方式中取出了这个图案。纬纱是芬兰绵羊毛，由织厂从距拉普阿约 400 km 范围内的农场收集。',
-    specs: [
-      '100 x 150 cm',
-      '100 % 纯新羊毛',
-      '白与黑',
-      '芬兰制造',
-      '很脏时才洗，平时拿到户外通风。最高 30 °C 手洗或干洗。不要揉搓、拉扯或拧绞。不可烘干。垫湿布熨烫，最高 150 °C',
-      '汉娜·加尔塔特',
-      '102939',
-      '芬兰钥匙旗标志',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '设计师',
-      '产品编码',
-      '认证',
-    ],
-  },
   'pentik-posio-mug': {
     name: 'Pentik Posio 马克杯 0.3 l',
     description:
@@ -524,42 +431,6 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '纯素。洛神花和路易波士通过 Rainforest Alliance 认证',
     ],
     specLabels: [undefined, '冲泡', '饮食与认证'],
-  },
-  'moomin-wild-blueberry-coffee': {
-    name: '姆明 Wild Blueberry 咖啡 250 g',
-    description:
-      'Bergstrands Kafferosteri 的蓝莓风味咖啡，用巴西东南部莫吉亚纳丘陵成熟的圆豆制成。圆豆是只长了一颗豆而不是两颗的咖啡果，烘焙厂说这样味道更集中。250 克。',
-    specs: [
-      '250 g',
-      '豆子来自巴西东南部莫吉亚纳丘陵，由 Bergstrands Kafferosteri 烘焙',
-      '圆豆，只有一颗豆而不是两颗的咖啡果',
-      '野生蓝莓',
-    ],
-    specLabels: [undefined, undefined, '豆种', '风味'],
-  },
-  'moomin-lingonberry-blueberry-dark-chocolate': {
-    name: '姆明 越橘与蓝莓黑巧克力 70 g',
-    description:
-      'Kalmar Chokladfabrik 出品的 70% 可可有机黑巧克力，加入冻干越橘和蓝莓，外包装用的是托芙·扬松的画。可可是来自秘鲁的 Criollo 和 Trinitario，成品在瑞典制造。',
-    specs: [
-      '70 g',
-      '黑巧克力，可可 70 %',
-      '来自秘鲁的 Criollo 和 Trinitario 可可豆，在瑞典生产',
-      '有机',
-    ],
-    specLabels: [undefined, undefined, undefined, '饮食'],
-  },
-  'moomin-berry-picking-tea': {
-    name: '姆明 Berry Picking 茶，20 包',
-    description:
-      '带香草和红色浆果风味的红茶，在芬兰努尔米耶尔维工厂调配，带有芬兰钥匙旗标志。这款茶与芬兰红十字会合作：每售出一包，0.40 欧元用于红十字会面向儿童、青少年和孤独者的工作。',
-    specs: [
-      '20 x 1.75 g，35 g',
-      '在芬兰努尔米耶尔维工厂生产',
-      '通过 Rainforest Alliance 认证的茶叶，芬兰钥匙旗标志',
-      '纯素',
-    ],
-    specLabels: [undefined, undefined, '认证', '饮食'],
   },
   'arctic-power-berries-blueberry-powder': {
     name: '野生蓝莓粉 70 g',
@@ -1764,5 +1635,96 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '零售包装',
     ],
     specLabels: [undefined, undefined, '包装'],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-aurora-borealis-reindeer-tealight': {
+    name: 'Aurora Borealis 驯鹿茶蜡烛台 10 cm',
+    description:
+      '驯鹿造型的抛光金属茶蜡烛台，高10厘米。十二月放在窗台上的一件拉普兰小物，轻得可以装进气泡信封寄出。',
+    specs: [
+      '高10 cm',
+      '抛光金属',
+      '茶蜡',
+    ],
+    specLabels: [undefined, undefined, '适用'],
+  },
+  'sk-muurla-moomin-bottle-05l-marjat': {
+    name: 'Muurla 姆明玻璃瓶 0.5 l，浆果',
+    description:
+      '半升钠钙玻璃瓶，带密封卡扣瓶塞和浆果图案，可用洗碗机。Muurla做它来装果汁和沙拉酱，半升正好放进冰箱门。',
+    specs: [
+      '0.5 l',
+      '钠钙玻璃，卡扣瓶塞',
+      '可用洗碗机',
+    ],
+  },
+  'nb-hattifatteners-cushion': {
+    name: '溜溜抱枕',
+    description:
+      '一排溜溜造型的聚酯抱枕，45至75 x 30至50 x 10厘米，仅可手洗。真空包装送达，需要一天才能恢复原形，这是溜溜唯一安静不动的时候。',
+    specs: [
+      '聚酯',
+      '45–75 x 30–50 x 10 cm',
+      '仅可手洗',
+      '真空包装，拆开后恢复原形',
+    ],
+    specLabels: [undefined, undefined, undefined, '包装'],
+  },
+  'sk-emendo-moomin-sauna-seat-cover': {
+    name: 'Emendo 姆明之爱桑拿坐垫布 150 x 50 cm，棕色',
+    description:
+      '亚麻棉混纺桑拿坐垫布，150 x 50厘米，印有托芙·扬松的原画，官方授权产品。亚麻吸湿、耐高强度洗涤，可铺在长凳上或竖着靠在背后。',
+    specs: [
+      '150 x 50 cm',
+      '亚麻60 %，棉40 %',
+      'Moomin Characters官方产品',
+    ],
+    specLabels: [undefined, undefined, '授权'],
+  },
+  'sk-rento-pino-sauna-seat-cover': {
+    name: 'Rento Pino 桑拿坐垫布 50 x 150 cm，灰色',
+    description:
+      '提花织造的棉质桑拿坐垫布，50 x 150厘米，由Anna Säteri为Rento设计。轻薄的棉布在热凳上触感清凉，吸汗、快干，花纹经洗不褪。',
+    specs: [
+      '50 x 150 cm',
+      '提花织棉',
+      'Anna Säteri',
+    ],
+    specLabels: [undefined, undefined, '设计'],
+  },
+  'sk-moomin-chocolate-chip-biscuit-tin': {
+    name: '姆明巧克力豆饼干铁盒装 200 g',
+    description:
+      '迷你巧克力豆饼干200克，装在姆明铁盒里，饼干吃完后铁盒还能当收纳盒。巧克力块占饼干的16%，其中可可固形物不低于40%。',
+    specs: [
+      '200 g',
+      '巧克力块16 %，巧克力中可可固形物不低于40 %',
+      '收藏铁盒，可作收纳盒',
+    ],
+    specLabels: [undefined, undefined, '包装'],
+  },
+  'sk-paulig-cafe-new-york-beans': {
+    name: 'Paulig Café New York 咖啡豆 450 g',
+    description:
+      '中深烘焙咖啡豆450克，拉丁美洲阿拉比卡配上带来甜感的巴西豆，带果香。Paulig自1876年起在芬兰烘焙咖啡，芬兰人的人均咖啡饮用量世界第一。',
+    specs: [
+      '450 g',
+      '中深烘焙，整豆',
+      '拉丁美洲阿拉比卡与巴西豆',
+    ],
+    specLabels: [undefined, '烘焙', undefined],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-korpihilla-spruce-sprout-sparkling-750': {
+    name: 'Korpihilla 云杉嫩芽气泡饮 750 ml',
+    description:
+      '在芬兰拉普兰用云杉嫩芽手工制作的无酒精气泡饮，750毫升。2005年被《Viisi Tähteä》杂志评为芬兰最佳饮品，至今仍是想让举杯带上森林味道时要开的那一瓶。',
+    specs: [
+      '750 ml',
+      '芬兰拉普兰手工制作',
+      '无酒精',
+      '2005年芬兰最佳饮品，《Viisi Tähteä》杂志',
+    ],
+    specLabels: [undefined, undefined, '酒精', '奖项'],
   },
 }

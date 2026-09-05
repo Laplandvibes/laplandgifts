@@ -119,10 +119,7 @@ const MAP: Record<string, SubgroupId> = {
   // design
   'iittala-aalto-vase-160': 'tableware',
   'marimekko-unikko-mug': 'tableware',
-  'aarikka-pore-glass-vase': 'tableware',
-  'moomin-mystical-forest-wool-throw': 'textiles',
   'iittala-kivi-candleholder': 'candles',
-  'aarikka-prinsessa-candleholder': 'candles',
   'arabia-moomin-mug-snufkin': 'tableware',
   'arabia-moomin-mug-friendship': 'tableware',
   'arabia-moomin-figurine-moomintroll': 'objects',
@@ -189,8 +186,6 @@ const MAP: Record<string, SubgroupId> = {
   'sk-little-my-sauna-cushion': 'sauna',
   'sk-rento-sauna-hat': 'sauna',
   'sk-rento-birch-whisk': 'sauna',
-  'lapuan-kankurit-poro-towel': 'textiles',
-  'lapuan-kankurit-kaamos-blanket': 'textiles',
   'nb-little-my-neckpillow': 'textiles',
   'nb-moomintroll-love-cushion': 'textiles',
   'sk-marimekko-unikko-bath-towel': 'textiles',
@@ -214,15 +209,12 @@ const MAP: Record<string, SubgroupId> = {
   'fazer-light-milk-chocolate': 'chocolate',
   'fazer-fazerina': 'chocolate',
   'fazer-jaffa-orange': 'chocolate',
-  'moomin-lingonberry-blueberry-dark-chocolate': 'chocolate',
   'kuivalihakundi-poro-jerky': 'savoury',
   'kuivalihakundi-poro-jerky-200g': 'savoury',
   'kuivalihakundi-beef-jerky-smoked': 'savoury',
   'meritalo-tyrnihillo': 'savoury',
   'nordqvist-moomin-forest-berry-tea': 'drinks',
   'nordqvist-cranberry-toffee-tea': 'drinks',
-  'moomin-berry-picking-tea': 'drinks',
-  'moomin-wild-blueberry-coffee': 'drinks',
 
   // superfoods
   'arctic-power-berries-blueberry-powder': 'berry',
@@ -291,6 +283,16 @@ const MAP: Record<string, SubgroupId> = {
   // katalogin täydennys 2026-09-05
   'sk-muurla-moomin-80v-tray': 'tableware',
   'sk-muurla-moomin-glass-box-yhdessa': 'tableware',
+  // katalogin täydennys 2026-09-05
+  'sk-aurora-borealis-reindeer-tealight': 'candles',
+  'sk-muurla-moomin-bottle-05l-marjat': 'tableware',
+  'nb-hattifatteners-cushion': 'textiles',
+  'sk-emendo-moomin-sauna-seat-cover': 'textiles',
+  'sk-rento-pino-sauna-seat-cover': 'textiles',
+  'sk-moomin-chocolate-chip-biscuit-tin': 'chocolate',
+  'sk-paulig-cafe-new-york-beans': 'drinks',
+  // katalogin täydennys 2026-09-05
+  'rj-korpihilla-spruce-sprout-sparkling-750': 'drinks',
 }
 
 export function subgroupOf(slug: string): SubgroupId {

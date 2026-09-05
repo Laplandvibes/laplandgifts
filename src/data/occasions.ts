@@ -26,13 +26,16 @@ export const OCCASION_PICKS: string[][] = [
   // että päälahja.
   [
     'iittala-kivi-candleholder',
-    'moomin-mystical-forest-wool-throw',
+    'nb-hattifatteners-cushion',
     'halti-kroka-mitten',
     'nordqvist-moomin-forest-berry-tea',
-    'moomin-lingonberry-blueberry-dark-chocolate',
+    'sk-marianne-toffee-rae',
     'finnish-flavours-palalaku-salmiakki',
   ],
-  // Häät: kodin esineitä, jotka kestävät vuosia. Arabian Ystävyys-muki ja
+  // Häät: kodin esineitä, jotka kestävät vuosia. 5.9.2026: Aarikan kynttilänjalka ja
+  // Lapuan Kankureiden huopa vaihtuivat poro-kynttilänjalkaan ja Unikko-pyyhkeeseen,
+  // koska Aarikka ja Lapuan Kankurit olivat provisiottomia suoralinkkejä (Vesa: pois).
+  // Arabian Ystävyys-muki ja
   // Muurlan lasipullo korvasivat 12.8. Moomin Shopin Blue Love -mukin ja
   // Mystical Forest -lasit: sama tuoteperhe ja sama valmistaja, mutta ne
   // ostetaan kaupasta joka maksaa meille komission.
@@ -40,8 +43,8 @@ export const OCCASION_PICKS: string[][] = [
     'iittala-aalto-vase-160',
     'arabia-moomin-mug-friendship',
     'sk-muurla-moomin-bottle',
-    'aarikka-prinsessa-candleholder',
-    'lapuan-kankurit-kaamos-blanket',
+    'sk-aurora-borealis-reindeer-tealight',
+    'sk-marimekko-unikko-bath-towel',
     'pentik-tunturiretki-studio-dish',
   ],
   // Syntymäpäivä: viisi eri kategoriaa kuudella tuotteella, koska tässä
@@ -65,7 +68,7 @@ export const OCCASION_PICKS: string[][] = [
     'north-outdoor-huuru-beanie',
     'kupilka-bowl-55',
     'sk-muurla-moomin-bottle',
-    'moomin-wild-blueberry-coffee',
+    'sk-paulig-cafe-new-york-beans',
   ],
 ]
 

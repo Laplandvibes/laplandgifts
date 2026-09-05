@@ -35,7 +35,6 @@ export interface Brand {
 }
 
 export const BRANDS: Brand[] = [
-  { id: 'aarikka', name: 'Aarikka', founded: '1954', officialUrl: 'https://www.aarikka.fi' },
   { id: 'foodin', name: 'Foodin', founded: '2013', officialUrl: 'https://foodin.fi/' },
   { id: 'kuivalihakundi', name: 'Kuivalihakundi', founded: '2015', officialUrl: 'https://kuivalihakundi.com/' },
   { id: 'halti', name: 'Halti', founded: '1976', officialUrl: 'https://halti.com/' },
@@ -45,7 +44,6 @@ export const BRANDS: Brand[] = [
   { id: 'nordicbuddies', name: 'Nordicbuddies', founded: '2019', officialUrl: 'https://nordicbuddies.com/' },
   { id: 'marimekko', name: 'Marimekko', founded: '1951', officialUrl: 'https://www.marimekko.com/' },
   { id: 'rento', name: 'Rento', founded: '', officialUrl: 'https://rentosauna.fi/' },
-  { id: 'lapuan-kankurit', name: 'Lapuan Kankurit', founded: '1917', officialUrl: 'https://lapuankankurit.fi/' },
   { id: 'iittala', name: 'Iittala', founded: '1881', officialUrl: 'https://www.iittala.com' },
   { id: 'arctic-warriors', name: 'Arctic Warriors', founded: '2014', officialUrl: 'https://arcticwarriors.fi/' },
   { id: 'makia', name: 'Makia', founded: '2001', officialUrl: 'https://makia.com' },
@@ -58,7 +56,6 @@ export const BRANDS: Brand[] = [
   { id: 'nordqvist', name: 'Nordqvist', founded: '1979', officialUrl: 'https://nordqvist.fi/' },
   { id: 'puhdistamo', name: 'Puhdistamo', founded: '2009', officialUrl: 'https://www.puhdistamo.fi/' },
   { id: 'emendo', name: 'Emendo', founded: '1986', officialUrl: 'https://emendo.fi' },
-  { id: 'moomin-arabia', name: 'Moomin Arabia', founded: '', officialUrl: 'https://www.moominarabia.com/' },
   { id: 'kaino-drinks', name: 'KAINO Drinks', founded: '', officialUrl: 'https://poikainparhaat.fi/kaino/' },
   { id: 'omega7', name: 'Omega7', founded: '1997', officialUrl: 'https://www.omega7.fi/' },
   { id: 'kaapa-mushrooms', name: 'Kääpä Mushrooms', founded: '2018', officialUrl: 'https://www.kaapamushrooms.com/' },

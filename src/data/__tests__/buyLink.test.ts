@@ -14,7 +14,7 @@ describe('buyLinkProps', () => {
   })
 
   it('käyttää sid-arvoa kampanjatunnisteena', () => {
-    const p = PRODUCTS.find((x) => x.partnerId === 'moomin')!
+    const p = PRODUCTS.find((x) => x.partnerId === 'pentik')!
     const props = buyLinkProps(p, 'gifts_design_card')
     expect(new URL(props.href).searchParams.get('utm_campaign')).toBe('gifts_design_card')
   })

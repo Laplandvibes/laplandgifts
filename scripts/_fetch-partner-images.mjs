@@ -421,6 +421,15 @@ const JOBS = [
   ['nb-hattifatteners-retro-socks', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/HATT17H_9acaa216-e902-464a-ac7f-badb5f94c92a.png?v=1779878415'], // www.nordicbuddies.com/products/hattifatteners-womens-retro-socks-1
   ['sk-muurla-moomin-80v-tray', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114971794.png?v=1737010853'], // suomikauppa.fi/products/muurla-muumi-80v-tarjotin-27cmx20cm
   ['sk-muurla-moomin-glass-box-yhdessa', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114971961.png?v=1737011998'], // suomikauppa.fi/products/muurla-muumi-lasirasia-yhdessa-11-5cm
+  // ── provisiottomien tilalle 2026-09-05 ilta (Vesa: Moomin Shop, Aarikka, Lapuan Kankurit pois) ──
+  ['sk-aurora-borealis-reindeer-tealight', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6410411157158porokynttila.jpg?v=1747740785'], // suomikauppa.fi/products/aurora-borealis-kynttilanjalka-poro-kiiltava-10-cm
+  ['sk-muurla-moomin-bottle-05l-marjat', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114963355.png?v=1737011309'], // suomikauppa.fi/products/muurla-muumi-lasipullo-0-5l-marjat
+  ['nb-hattifatteners-cushion', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/HATT77A-1.png?v=1784100355'], // www.nordicbuddies.com/products/hattifatteners-cushion
+  ['sk-emendo-moomin-sauna-seat-cover', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/EmendoRakkausmuumilaudeliina_ruskea150x50cm.jpg?v=1761576031'], // suomikauppa.fi/products/emendo-rakkausmuumi-laudeliina-ruskea
+  ['sk-rento-pino-sauna-seat-cover', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/6410413148451-scaled.jpg?v=1635499650'], // suomikauppa.fi/products/rento-pino-laudeliina-50x150-cm-harmaa
+  ['sk-moomin-chocolate-chip-biscuit-tin', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Moominkeksit.jpg?v=1762943561'], // suomikauppa.fi/products/muumi-suklaahippukeksi-peltirasiassa-200g
+  ['sk-paulig-cafe-new-york-beans', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06411300169788_H1N1_8e32dd29-2c17-46f3-b8b4-2f5d4e5a4b19.png?v=1763457986'], // suomikauppa.fi/products/paulig-cafe-new-york-450g-papukahvi-rfa
+  ['rj-korpihilla-spruce-sprout-sparkling-750', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/6d4f5a2813f971b8a2a42f07bbb3674b.jpg?v=1597244711'], // www.ruohonjuuri.fi/products/korpihilla-kuohuva-kuusenkerkka-kuohujuoma-750-ml
 ]
 
 const only = new Set(process.argv.slice(2))

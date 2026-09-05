@@ -12,20 +12,6 @@ import type { ProductCopyMap } from './index'
  * välilyöntien osalta; vain desimaalierotin vaihtuu pilkuksi.
  */
 export const PRODUCT_COPY_NL: ProductCopyMap = {
-  'moomin-mystical-forest-wool-throw': {
-    name: 'Moomin Mystical Forest wollen plaid 130 x 170 cm',
-    description:
-      'Een plaid van 130 bij 170 cm in 100 procent wol, ontworpen in Finland voor de collectie Mystical Forest. Alleen chemisch reinigen, dus reken op een bankplaid en niet op een picknickkleed.',
-    specs: [
-      '100 % wol',
-      '130 x 170 cm',
-      'Blauw',
-      'Chemisch reinigen, mild proces',
-      'Ontworpen in Finland, gemaakt in Litouwen',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Collectie'],
-  },
   'iittala-aalto-vase-160': {
     name: 'Iittala Alvar Aalto vaas 160 mm, helder',
     description:
@@ -96,35 +82,6 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Ontwerpers',
       'Artikelnummer en EAN',
     ],
-  },
-  'aarikka-prinsessa-candleholder': {
-    name: 'Aarikka Prinsessa kandelaar',
-    description:
-      'Aarikka draait al sinds de jaren vijftig berkenkralen, en Prinsessa draagt er een krans van rond een houder van 5,5 cm die een waxinelichtje of een rechte kaars aankan. Klein genoeg om te posten, herkenbaar genoeg om in Finland thuisgebracht te worden.',
-    specs: [
-      'Hoogte 5,5 cm, diameter 6 cm',
-      'Berk, esdoorn, aluminium',
-      '98 g',
-      'Ontworpen in Finland, gemaakt in Italië',
-      'Kandelaar met één krans van houten kralen. Geschikt voor waxinelichtjes en rechte kaarsen',
-      'B08633',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Productcode'],
-  },
-  'aarikka-pore-glass-vase': {
-    name: 'Aarikka Pore glazen vaas 16 cm, donkergroen',
-    description:
-      'Een ronde, handgeblazen vaas van 1,7 liter met een krans van esdoornkralen die in Finland met de hand geverfd zijn. De luchtbellen in het glas horen erbij, en de krans gaat eraf voordat u hem wast.',
-    specs: [
-      'Hoogte 16 cm, diameter 16 cm',
-      '1,7 l',
-      'Glas en esdoorn',
-      'Helder en groen',
-      'Glas gemaakt in Polen, de houten krans gemaakt in Finland',
-      'Met de hand wassen. Verwijder de houten krans voor het wassen',
-      'B08706',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, undefined, 'Productcode'],
   },
   'halti-tokoi-dx-jacket': {
     name: 'Halti Tokoi DX shelljas, heren',
@@ -351,56 +308,6 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Modelnummer'],
   },
-  'lapuan-kankurit-poro-towel': {
-    name: 'Lapuan Kankurit PORO linnen handdoek 46 x 70 cm',
-    description:
-      'Een rendier getekend door illustrator Matti Pikkujämsä, geweven in de weverij in Lapua met een ketting van Europees linnen en een inslag van biologisch katoen. Hij vouwt plat in een koffer, en het absorptievermogen komt pas na een paar wasbeurten.',
-    specs: [
-      '46 x 70 cm',
-      '60 % linnen, Masters of Linen, en 40 % katoen',
-      'Linnen-groen',
-      'Gemaakt in Finland',
-      'Voor gebruik apart wassen op 60 °C met een fijnwasprogramma en veel water. Niet centrifugeren. Vermijd wasverzachter en bleekmiddel. Niet in de droger. Strijken zolang hij vochtig is. Krimp ongeveer 5 %',
-      'Matti Pikkujämsä',
-      '20527',
-      'Finse Sleutelvlag, Masters of Linen',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Ontwerper',
-      'Productcode',
-      'Certificaten',
-    ],
-  },
-  'lapuan-kankurit-kaamos-blanket': {
-    name: 'Lapuan Kankurit KAAMOS wollen deken 100 x 150 cm',
-    description:
-      'Kaamos is de poolnacht, en Hanna Galtat haalde het patroon uit de manier waarop daglicht zich door de dag beweegt. Het inslaggaren is wol van Finse landschapen die de weverij ophaalt bij boerderijen binnen ongeveer 400 km van Lapua.',
-    specs: [
-      '100 x 150 cm',
-      '100 % zuiver scheerwol',
-      'Wit-zwart',
-      'Gemaakt in Finland',
-      'Was hem alleen als hij erg vuil is, lucht hem anders buiten. Handwas op maximaal 30 °C of chemisch reinigen. Niet schrobben, rekken of wringen. Niet in de droger. Strijken met een vochtige doek op maximaal 150 °C',
-      'Hanna Galtat',
-      '102939',
-      'Finse Sleutelvlag',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Ontwerper',
-      'Productcode',
-      'Certificaat',
-    ],
-  },
   'pentik-posio-mug': {
     name: 'Pentik Posio mok 0,3 l',
     description:
@@ -522,42 +429,6 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Veganistisch. Hibiscus en rooibos zijn Rainforest Alliance-gecertificeerd',
     ],
     specLabels: [undefined, 'Zetten', 'Dieet en certificering'],
-  },
-  'moomin-wild-blueberry-coffee': {
-    name: 'Moomin Wild Blueberry koffie 250 g',
-    description:
-      'Koffie met bosbessensmaak van Bergstrands Kafferosteri, gebouwd op parelbonen die gerijpt zijn op de heuvels van Mogiana in het zuidoosten van Brazilië. Een parelboon is een koffiekers die één boon vormde in plaats van twee, wat volgens de branderij de smaak concentreert. 250 gram.',
-    specs: [
-      '250 g',
-      'Bonen van de heuvels van Mogiana in het zuidoosten van Brazilië, gebrand door Bergstrands Kafferosteri',
-      'Parelboon, een koffiekers met één boon in plaats van twee',
-      'Wilde bosbes',
-    ],
-    specLabels: [undefined, undefined, 'Boon', 'Smaak'],
-  },
-  'moomin-lingonberry-blueberry-dark-chocolate': {
-    name: 'Moomin pure chocolade met vossenbes en bosbes 70 g',
-    description:
-      'Biologische pure chocolade met 70 procent cacao van Kalmar Chokladfabrik met gevriesdroogde vossenbessen en bosbessen, verpakt in een tekening van Tove Jansson. De cacao is Criollo en Trinitario uit Peru en de reep wordt in Zweden gemaakt.',
-    specs: [
-      '70 g',
-      'Pure chocolade, 70 % cacao',
-      'Cacaobonen Criollo en Trinitario uit Peru, gemaakt in Zweden',
-      'Biologisch',
-    ],
-    specLabels: [undefined, undefined, undefined, 'Dieet'],
-  },
-  'moomin-berry-picking-tea': {
-    name: 'Moomin Berry Picking thee, 20 zakjes',
-    description:
-      'Zwarte thee met vanille- en rodebessensmaak, gemengd in de fabriek in Nurmijärvi in Finland en voorzien van de Finse Sleutelvlag. De thee is een samenwerking met het Finse Rode Kruis: 0,40 euro per verkocht pak gaat naar het werk van het Rode Kruis met kinderen, jongeren en eenzame mensen.',
-    specs: [
-      '20 x 1,75 g, 35 g',
-      'Gemaakt in de fabriek in Nurmijärvi in Finland',
-      'Rainforest Alliance-gecertificeerde thee, Finse Sleutelvlag',
-      'Veganistisch',
-    ],
-    specLabels: [undefined, undefined, 'Certificering', 'Dieet'],
   },
   'arctic-power-berries-blueberry-powder': {
     name: 'Wilde bosbessenpoeder 70 g',
@@ -1762,5 +1633,96 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Verkoopverpakking',
     ],
     specLabels: [undefined, undefined, 'Verpakking'],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-aurora-borealis-reindeer-tealight': {
+    name: 'Aurora Borealis waxinelichthouder rendier 10 cm',
+    description:
+      'Gepolijste metalen waxinelichthouder in de vorm van een rendier, 10 cm hoog. Het kleine Lapland-object voor de vensterbank in december, licht genoeg voor een gewatteerde envelop.',
+    specs: [
+      'Hoogte 10 cm',
+      'Gepolijst metaal',
+      'Waxinelichtje',
+    ],
+    specLabels: [undefined, undefined, 'Voor'],
+  },
+  'sk-muurla-moomin-bottle-05l-marjat': {
+    name: 'Muurla Moomin glazen fles 0,5 l, Bessen',
+    description:
+      'Halveliterfles van sodaglas met een dichte beugelsluiting en de print Bessen, vaatwasserbestendig. Muurla maakt ze voor sap en slasaus, en de halve liter past in de koelkastdeur.',
+    specs: [
+      '0,5 l',
+      'Sodaglas, beugelsluiting',
+      'Vaatwasserbestendig',
+    ],
+  },
+  'nb-hattifatteners-cushion': {
+    name: 'Hattifnattenkussen',
+    description:
+      'Polyester kussen in de vorm van een rij Hattifnatten, 45 tot 75 x 30 tot 50 x 10 cm, alleen handwas. Het komt vacuüm verpakt en heeft een dag nodig om zijn vorm terug te krijgen, de enige keer dat Hattifnatten stil blijven.',
+    specs: [
+      'Polyester',
+      '45–75 x 30–50 x 10 cm',
+      'Alleen handwas',
+      'Vacuüm verpakt, krijgt na het uitpakken zijn vorm terug',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Verpakking'],
+  },
+  'sk-emendo-moomin-sauna-seat-cover': {
+    name: 'Emendo Moomin Liefde saunahanddoek 150 x 50 cm, bruin',
+    description:
+      'Saunazitdoek van linnen en katoen, 150 x 50 cm, met Tove Janssons originele Moomin-tekeningen, officieel gelicentieerd product. Linnen neemt vocht op en verdraagt een harde was, dus het ligt op de bank of staat achter de rug.',
+    specs: [
+      '150 x 50 cm',
+      'Linnen 60 %, katoen 40 %',
+      'Officieel Moomin Characters-product',
+    ],
+    specLabels: [undefined, undefined, 'Licentie'],
+  },
+  'sk-rento-pino-sauna-seat-cover': {
+    name: 'Rento Pino saunahanddoek 50 x 150 cm, grijs',
+    description:
+      'Jacquardgeweven katoenen saunazitdoek, 50 x 150 cm, ontworpen door Anna Säteri voor Rento. Licht katoen voelt koel aan op de hete bank, neemt zweet op, droogt snel, en het patroon doorstaat de was.',
+    specs: [
+      '50 x 150 cm',
+      'Jacquardgeweven katoen',
+      'Anna Säteri',
+    ],
+    specLabels: [undefined, undefined, 'Ontwerp'],
+  },
+  'sk-moomin-chocolate-chip-biscuit-tin': {
+    name: 'Moomin chocolate chip koekjes in blik 200 g',
+    description:
+      'Mini chocolate chip koekjes, 200 gram, in een Moomin-blik dat de koekjes overleeft als opbergdoos. De chocoladestukjes zijn 16 procent van het koekje en bevatten minstens 40 procent cacaobestanddelen.',
+    specs: [
+      '200 g',
+      'Chocoladestukjes 16 %, in de chocolade minstens 40 % cacaobestanddelen',
+      'Verzamelblik, herbruikbaar als opbergdoos',
+    ],
+    specLabels: [undefined, undefined, 'Verpakking'],
+  },
+  'sk-paulig-cafe-new-york-beans': {
+    name: 'Paulig Café New York koffiebonen 450 g',
+    description:
+      'Middeldonkere bonenkoffie, 450 gram, Latijns-Amerikaanse arabica met Braziliaanse bonen voor zoetheid en een fruitig randje. Paulig brandt sinds 1876 koffie in Finland, en Finnen drinken er per hoofd meer van dan wie ook.',
+    specs: [
+      '450 g',
+      'Middeldonker gebrand, hele bonen',
+      'Latijns-Amerikaanse arabica en Braziliaanse bonen',
+    ],
+    specLabels: [undefined, 'Branding', undefined],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-korpihilla-spruce-sprout-sparkling-750': {
+    name: 'Korpihilla bruisende sparrenscheutendrank 750 ml',
+    description:
+      'Alcoholvrije bruisdrank, met de hand gemaakt van sparrenscheuten in Fins Lapland, 750 ml. In 2005 door het blad Viisi Tähteä uitgeroepen tot beste drank van Finland, en nog altijd de fles die opengaat als de toost naar bos moet smaken.',
+    specs: [
+      '750 ml',
+      'Met de hand gemaakt in Fins Lapland',
+      'Alcoholvrij',
+      'Beste drank van Finland 2005, blad Viisi Tähteä',
+    ],
+    specLabels: [undefined, undefined, 'Alcohol', 'Onderscheiding'],
   },
 }

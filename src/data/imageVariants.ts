@@ -229,22 +229,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       1600
     ]
   },
-  "prod-aarikka-pore-glass-vase": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-aarikka-prinsessa-candleholder": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-arabia-moomin-figurine-moomintroll": {
     "full": 800,
     "w": [
@@ -671,22 +655,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-lapuan-kankurit-kaamos-blanket": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-lapuan-kankurit-poro-towel": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-leijona-tar-liquorice": {
     "full": 800,
     "w": [
@@ -799,31 +767,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-moomin-berry-picking-tea": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-moomin-lingonberry-blueberry-dark-chocolate": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-moomin-mystical-forest-wool-throw": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-moomin-wild-blueberry-coffee": {
+  "prod-nb-hattifatteners-cushion": {
     "full": 800,
     "w": [
       320,
@@ -1175,6 +1119,10 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-rj-korpihilla-spruce-sprout-sparkling-750": {
+    "full": 182,
+    "w": []
+  },
   "prod-rj-nordic-koivu-birch-sap": {
     "full": 800,
     "w": [
@@ -1228,6 +1176,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-aromageddon-sauna-scent": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-aurora-borealis-reindeer-tealight": {
+    "full": 700,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-emendo-moomin-sauna-seat-cover": {
     "full": 800,
     "w": [
       320,
@@ -1377,6 +1341,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-moomin-chocolate-chip-biscuit-tin": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-moomin-duvet-set-merella": {
     "full": 800,
     "w": [
@@ -1399,6 +1371,13 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320,
       480,
       640
+    ]
+  },
+  "prod-sk-muurla-moomin-bottle-05l-marjat": {
+    "full": 515,
+    "w": [
+      320,
+      480
     ]
   },
   "prod-sk-muurla-moomin-bottle-b2": {
@@ -1438,6 +1417,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-paulig-cafe-new-york-beans": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-poikain-parhaat-freeze-dried-blueberry": {
     "full": 800,
     "w": [
@@ -1447,6 +1434,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-rento-birch-whisk": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-rento-pino-sauna-seat-cover": {
     "full": 800,
     "w": [
       320,

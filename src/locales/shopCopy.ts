@@ -68,6 +68,10 @@ export interface ShopCopy {
       string
     >
     productCount: (n: number) => string
+    /** Toimitusmaa valittu ja se piilottaa osan: näytetty / kaikki + maa. */
+    filteredCount: (shown: number, total: number, country: string) => string
+    /** Tyhjentää maavalinnan. */
+    showAll: string
     /** Kategoriassa ei ole yhtään tuotetta, suodattimesta riippumatta. */
     emptyCategory: string
     /** Kategoriassa on tuotteita, mutta yksikään ei toimita valittuun maahan. */
@@ -337,6 +341,8 @@ const en: ShopCopy = {
       experiences: 'Northern lights tours, husky sledding and Santa Claus Village, bought as a gift now and booked when the recipient picks a date.',
     },
     productCount: (n) => (n === 1 ? '1 product' : `${n} products`),
+    filteredCount: (shown, total, country) => `${shown} of ${total} products ship to ${country}`,
+    showAll: 'Show all',
     emptyCategory:
       'We are still adding products to this category. In the meantime, browse the other categories or check the gift guides.',
     emptyForCountry: 'None of the products in this category ship to your country yet. Switch the delivery country to see everything.',
@@ -530,6 +536,8 @@ const fi: ShopCopy = {
       experiences: 'Revontuliretkiä, huskysafareita ja Joulupukin Pajakylää lahjaksi ostettuna, varattavaksi silloin, kun saaja itse valitsee päivän.',
     },
     productCount: (n) => (n === 1 ? '1 tuote' : `${n} tuotetta`),
+    filteredCount: (shown, total, country) => `${shown} / ${total} tuotetta toimitetaan maahan ${country}`,
+    showAll: 'Näytä kaikki',
     emptyCategory:
       'Täydennämme tätä kategoriaa parhaillaan. Selaa sillä välin muita kategorioita tai katso lahjaoppaat.',
     emptyForCountry: 'Yksikään tämän kategorian tuote ei toimita vielä valitsemaasi maahan. Vaihda toimitusmaa nähdäksesi kaikki.',
@@ -756,6 +764,8 @@ const de: ShopCopy = over({
       experiences: 'Nordlichttouren, Huskyschlitten und das Dorf des Weihnachtsmanns, jetzt als Geschenk gekauft und dann gebucht, wenn die beschenkte Person ein Datum wählt.',
     },
     productCount: (n) => (n === 1 ? '1 Produkt' : `${n} Produkte`),
+    filteredCount: (shown, total, country) => `${shown} von ${total} Produkten liefern nach ${country}`,
+    showAll: 'Alle anzeigen',
     emptyCategory:
       'Wir ergänzen diese Kategorie noch. Sehen Sie sich in der Zwischenzeit die anderen Kategorien an oder werfen Sie einen Blick in die Geschenkideen.',
     emptyForCountry: 'Noch keines der Produkte dieser Kategorie wird in Ihr Land geliefert. Wechseln Sie das Lieferland, um alles zu sehen.',
@@ -949,6 +959,8 @@ const sv: ShopCopy = over({
       experiences: 'Norrskensturer, hundspann och Jultomtens by, köpta som present nu och bokade när mottagaren väljer ett datum.',
     },
     productCount: (n) => (n === 1 ? '1 produkt' : `${n} produkter`),
+    filteredCount: (shown, total, country) => `${shown} av ${total} produkter levereras till ${country}`,
+    showAll: 'Visa alla',
     emptyCategory:
       'Vi fyller fortfarande på den här kategorin. Titta under tiden i de andra kategorierna eller läs presenttipsen.',
     emptyForCountry: 'Ingen av produkterna i den här kategorin skickas ännu till ditt land. Byt leveransland för att se allt.',
@@ -1143,6 +1155,8 @@ const fr: ShopCopy = over({
       experiences: 'Sorties aurores boréales, traîneaux à chiens et village du père Noël, achetés en cadeau maintenant et réservés quand la personne choisit sa date.',
     },
     productCount: (n) => (n === 1 ? '1 produit' : `${n} produits`),
+    filteredCount: (shown, total, country) => `${shown} produits sur ${total} sont livrés en ${country}`,
+    showAll: 'Tout afficher',
     emptyCategory:
       'Nous complétons encore cette catégorie. En attendant, parcourez les autres catégories ou consultez les idées cadeaux.',
     emptyForCountry: 'Aucun produit de cette catégorie n’est encore livré dans votre pays. Changez de pays de livraison pour tout voir.',
@@ -1336,6 +1350,8 @@ const es: ShopCopy = over({
       experiences: 'Salidas a ver auroras boreales, trineos de huskies y el pueblo de Papá Noel, comprados como regalo ahora y reservados cuando la persona elija la fecha.',
     },
     productCount: (n) => (n === 1 ? '1 producto' : `${n} productos`),
+    filteredCount: (shown, total, country) => `${shown} de ${total} productos se envían a ${country}`,
+    showAll: 'Mostrar todo',
     emptyCategory:
       'Todavía estamos completando esta categoría. Mientras tanto, mire las otras categorías o las ideas de regalo.',
     emptyForCountry: 'Ninguno de los productos de esta categoría llega todavía a su país. Cambie el país de entrega para verlo todo.',
@@ -1529,6 +1545,8 @@ const it: ShopCopy = over({
       experiences: 'Escursioni per l’aurora boreale, slitte trainate dagli husky e il villaggio di Babbo Natale, comprati come regalo ora e prenotati quando chi li riceve sceglie la data.',
     },
     productCount: (n) => (n === 1 ? '1 prodotto' : `${n} prodotti`),
+    filteredCount: (shown, total, country) => `${shown} prodotti su ${total} spediscono in ${country}`,
+    showAll: 'Mostra tutti',
     emptyCategory:
       'Stiamo ancora completando questa categoria. Nel frattempo sfoglia le altre categorie o dai un’occhiata alle idee regalo.',
     emptyForCountry: 'Nessun prodotto di questa categoria arriva ancora nel tuo paese. Cambia il paese di consegna per vedere tutto.',
@@ -1722,6 +1740,8 @@ const nl: ShopCopy = over({
       experiences: 'Noorderlichttochten, huskysleeën en het dorp van de Kerstman, nu als cadeau gekocht en geboekt wanneer de ontvanger een datum kiest.',
     },
     productCount: (n) => (n === 1 ? '1 product' : `${n} producten`),
+    filteredCount: (shown, total, country) => `${shown} van ${total} producten leveren aan ${country}`,
+    showAll: 'Alles tonen',
     emptyCategory:
       'We vullen deze categorie nog aan. Blader intussen door de andere categorieën of bekijk de cadeautips.',
     emptyForCountry: 'Geen van de producten in deze categorie wordt al naar uw land verzonden. Wissel van bezorgland om alles te zien.',
@@ -1915,6 +1935,8 @@ const ptBR: ShopCopy = over({
       experiences: 'Passeios para ver a aurora boreal, trenós puxados por huskies e a aldeia do Papai Noel, comprados como presente agora e reservados quando quem recebe escolher a data.',
     },
     productCount: (n) => (n === 1 ? '1 produto' : `${n} produtos`),
+    filteredCount: (shown, total, country) => `${shown} de ${total} produtos enviam para ${country}`,
+    showAll: 'Mostrar todos',
     emptyCategory:
       'Ainda estamos completando esta categoria. Enquanto isso, veja as outras categorias ou as ideias de presente.',
     emptyForCountry: 'Nenhum produto desta categoria chega ainda ao seu país. Troque o país de entrega para ver tudo.',
@@ -2108,6 +2130,8 @@ const ja: ShopCopy = over({
       experiences: 'オーロラツアー、ハスキーぞり、サンタクロース村。今は贈り物として購入し、受け取った方が日付を選んでから予約します。',
     },
     productCount: (n) => `商品 ${n} 点`,
+    filteredCount: (shown, total, country) => `${total}点中${shown}点が${country}へ配送可能`,
+    showAll: 'すべて表示',
     emptyCategory:
       'このカテゴリーは現在追加中です。その間、ほかのカテゴリーをご覧いただくか、ギフトガイドをお試しください。',
     emptyForCountry: 'このカテゴリーの商品は、まだお住まいの国に配送されません。配送先の国を切り替えるとすべて表示されます。',
@@ -2301,6 +2325,8 @@ const zhCN: ShopCopy = over({
       experiences: '极光之旅、哈士奇雪橇和圣诞老人村：现在作为礼物买下，等收礼的人选好日期再预订。',
     },
     productCount: (n) => `${n} 件商品`,
+    filteredCount: (shown, total, country) => `${total} 件中 ${shown} 件可配送至${country}`,
+    showAll: '显示全部',
     emptyCategory:
       '这个分类还在补充中。在此期间，可以看看其他分类，或者翻翻礼物指南。',
     emptyForCountry: '这个分类里还没有商品可以寄到你所在的国家。切换配送国家即可查看全部。',
@@ -2494,6 +2520,8 @@ const ko: ShopCopy = over({
       experiences: '오로라 투어, 허스키 썰매, 산타클로스 마을. 지금은 선물로 구매하고, 받는 사람이 날짜를 고르면 예약합니다.',
     },
     productCount: (n) => `상품 ${n}개`,
+    filteredCount: (shown, total, country) => `상품 ${total}개 중 ${shown}개를 ${country}(으)로 배송`,
+    showAll: '모두 보기',
     emptyCategory:
       '이 카테고리는 아직 채우는 중입니다. 그동안 다른 카테고리를 둘러보시거나 선물 가이드를 참고하세요.',
     emptyForCountry: '이 카테고리의 상품 중 아직 고객님의 나라로 배송되는 것이 없습니다. 배송 국가를 바꾸면 전체를 볼 수 있습니다.',

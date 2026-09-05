@@ -398,7 +398,7 @@
   {
     "path": "/luxury",
     "fallbackTitle": "Lapland luxury | LaplandGifts",
-    "fallbackDescription": "Lapland's most expensive gifts on one page: 9 items, €100–€1,490. Every price is read from the partner shop on the date shown. Delivery area on every card.",
+    "fallbackDescription": "Lapland's most expensive gifts on one page: 9 items, €80–€1,490. Experiences first: gold panning in Inari, a night in a glass igloo and a morning with reindeer.",
     "fallbackTitleByLang": {
       "en": "Lapland luxury | LaplandGifts",
       "fi": "Lapin luxus | LaplandGifts",
@@ -414,51 +414,18 @@
       "sv": "Lyx från Lappland | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Lapland's most expensive gifts on one page: 9 items, €100–€1,490. Every price is read from the partner shop on the date shown. Delivery area on every card.",
-      "fi": "Lapin kalleimmat lahjat yhdellä sivulla: 9 tuotetta, 100 €–1 490 €. Ensin elämykset: kullanhuuhdonta Inarissa, yö lasi-iglussa ja aamu porojen kanssa.",
-      "de": "Lapplands teuerste Geschenke auf einer Seite: 9 Produkte, 100 €–1.490 €. Jeder Preis stammt aus dem Partnershop und ist datiert. Liefergebiet auf jeder Karte.",
-      "ja": "ラップランドで最も高価なギフトを1ページに：9点、€100–€1,490。まずは体験。イナリでの砂金採り、グラスイグルーでの一夜、トナカイと過ごす朝。その次に、Kalevalaのジュエリーと、何十年も同じ作り方で作られてきた4つの定番。価格はパートナーショップのものです。価格はすべて提携ショップから取得しています。",
-      "es": "Los regalos más caros de Laponia en una sola página: 9 productos, 100 €–1490 €. Cada precio se consulta en la tienda asociada. Zona de entrega en cada tarjeta.",
-      "pt-BR": "Os presentes mais caros da Lapônia em uma só página: 9 produtos, € 100–€ 1.490. Os preços vêm das lojas parceiras. A área de entrega é indicada em cada cartão.",
-      "zh-CN": "拉普兰最贵的礼物集中在一页：9 件，€100–€1,490。先是体验：在伊纳里淘金、玻璃冰屋的一夜、与驯鹿共度的早晨。然后是Kalevala珠宝和四件几十年来做法不变的经典之作。价格以合作商店为准。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
-      "ko": "라플란드에서 가장 비싼 선물을 한 페이지에: 9개, €100–€1,490. 먼저 체험: 이나리 사금 채취, 유리 이글루에서의 하룻밤, 순록과 함께하는 아침. 그다음 Kalevala 주얼리와 수십 년째 같은 방식으로 만드는 네 가지 클래식. 가격은 파트너 상점 기준입니다.",
-      "fr": "Les cadeaux les plus chers de Laponie sur une seule page : 9 produits, 100 €–1 490 €. Chaque prix est relevé auprès de la boutique partenaire et daté.",
-      "it": "I regali più costosi della Lapponia in una sola pagina: 9 prodotti, 100 €–1490 €. Ogni prezzo è rilevato dal negozio partner. Area di consegna su ogni scheda.",
-      "nl": "De duurste cadeaus van Lapland op één pagina: 9 producten, € 100–€ 1.490. Elke prijs is overgenomen van de partnerwinkel, met datum. Bezorggebied op elke kaart.",
-      "sv": "Lapplands dyraste presenter på en sida: 9 produkter, 100 €–1 490 €. Först upplevelserna: guldvaskning i Enare, en natt i glasigloo och en morgon med renarna."
-    }
-  },
-  {
-    "path": "/brand/aarikka",
-    "fallbackTitle": "Aarikka | LaplandGifts",
-    "fallbackDescription": "Aarikka is a Finnish design house founded in 1954 by Kaija Aarikka and Erkki Ruokonen, known for wooden beads and jewellery. Prices come from the partner shops.",
-    "fallbackTitleByLang": {
-      "en": "Aarikka | LaplandGifts",
-      "fi": "Aarikka | LaplandGifts",
-      "de": "Aarikka | LaplandGifts",
-      "ja": "Aarikka | LaplandGifts",
-      "es": "Aarikka | LaplandGifts",
-      "pt-BR": "Aarikka | LaplandGifts",
-      "zh-CN": "Aarikka | LaplandGifts",
-      "ko": "Aarikka | LaplandGifts",
-      "fr": "Aarikka | LaplandGifts",
-      "it": "Aarikka | LaplandGifts",
-      "nl": "Aarikka | LaplandGifts",
-      "sv": "Aarikka | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Aarikka is a Finnish design house founded in 1954 by Kaija Aarikka and Erkki Ruokonen, known for wooden beads and jewellery. Prices come from the partner shops.",
-      "fi": "Aarikka on suomalainen designtalo, jonka Kaija Aarikka ja Erkki Ruokonen perustivat vuonna 1954 ja joka on ollut Martinex Oy:n omistuksessa vuodesta 2017.",
-      "de": "Aarikka ist ein finnisches Designhaus, das 1954 von Kaija Aarikka und Erkki Ruokonen gegründet wurde. Jeder Preis stammt aus dem Partnershop und ist datiert.",
-      "ja": "Aarikkaは1954年にKaija AarikkaとErkki Ruokonenが創業したフィンランドのデザインハウスで、木製ビーズとジュエリーで知られ、2017年からMartinex Oyが所有している。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
-      "es": "Aarikka es una casa de diseño finlandesa fundada en 1954 por Kaija Aarikka y Erkki Ruokonen, conocida por sus cuentas y joyas de madera. Precios de las tiendas.",
-      "pt-BR": "A Aarikka é uma casa de design finlandesa fundada em 1954 por Kaija Aarikka e Erkki Ruokonen, conhecida por contas e joias de madeira. Com área de entrega.",
-      "zh-CN": "Aarikka 是芬兰设计公司，1954 年由 Kaija Aarikka 和 Erkki Ruokonen 创立，以木珠和首饰闻名，2017 年起由 Martinex Oy 拥有。品牌把设计以及木质首饰和木质家居产品的手工组装归于芬兰，但并未把自己表述为完全在芬兰制造的产品系列。价格取自合作商店，并注明读取日期。",
-      "ko": "Aarikka는 1954년 Kaija Aarikka와 Erkki Ruokonen이 설립한 핀란드 디자인 하우스로, 나무 비즈와 주얼리로 알려져 있으며 2017년부터 Martinex Oy가 소유하고 있습니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역 표시.",
-      "fr": "Aarikka est une maison de design finlandaise fondée en 1954 par Kaija Aarikka et Erkki Ruokonen, connue pour ses perles et ses bijoux en bois.",
-      "it": "Aarikka è una casa di design finlandese fondata nel 1954 da Kaija Aarikka ed Erkki Ruokonen, nota per le perle e i gioielli in legno. Aree di consegna indicate.",
-      "nl": "Aarikka is een Fins designhuis, in 1954 opgericht door Kaija Aarikka en Erkki Ruokonen, bekend om houten kralen en sieraden. Prijzen komen van de winkels.",
-      "sv": "Aarikka är ett finländskt designhus som grundades 1954 av Kaija Aarikka och Erkki Ruokonen, känt för träpärlor och smycken. Leveransområdet står på varje kort."
+      "en": "Lapland's most expensive gifts on one page: 9 items, €80–€1,490. Experiences first: gold panning in Inari, a night in a glass igloo and a morning with reindeer.",
+      "fi": "Lapin kalleimmat lahjat yhdellä sivulla: 9 tuotetta, 80 €–1 490 €. Ensin elämykset: kullanhuuhdonta Inarissa, yö lasi-iglussa ja aamu porojen kanssa.",
+      "de": "Lapplands teuerste Geschenke auf einer Seite: 9 Produkte, 80 €–1.490 €. Jeder Preis wird am angegebenen Datum im Partnershop abgelesen. Liefergebiete angegeben.",
+      "ja": "ラップランドで最も高価なギフトを1ページに：9点、€80–€1,490。まずは体験。イナリでの砂金採り、グラスイグルーでの一夜、トナカイと過ごす朝。その次に、Kalevalaのジュエリーと、何十年も同じ作り方で作られてきた4つの定番。価格はパートナーショップのものです。価格はすべて提携ショップから取得しています。",
+      "es": "Los regalos más caros de Laponia en una sola página: 9 productos, 80 €–1490 €. Cada precio se consulta en la tienda asociada. Zona de entrega en cada tarjeta.",
+      "pt-BR": "Os presentes mais caros da Lapônia em uma só página: 9 produtos, € 80–€ 1.490. Os preços vêm das lojas parceiras. A área de entrega é indicada em cada cartão.",
+      "zh-CN": "拉普兰最贵的礼物集中在一页：9 件，€80–€1,490。先是体验：在伊纳里淘金、玻璃冰屋的一夜、与驯鹿共度的早晨。然后是Kalevala珠宝和四件几十年来做法不变的经典之作。价格以合作商店为准。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
+      "ko": "라플란드에서 가장 비싼 선물을 한 페이지에: 9개, €80–€1,490. 먼저 체험: 이나리 사금 채취, 유리 이글루에서의 하룻밤, 순록과 함께하는 아침. 그다음 Kalevala 주얼리와 수십 년째 같은 방식으로 만드는 네 가지 클래식. 가격은 파트너 상점 기준입니다.",
+      "fr": "Les cadeaux les plus chers de Laponie sur une seule page : 9 produits, 80 €–1 490 €. Chaque prix est relevé auprès de la boutique partenaire à la date indiquée.",
+      "it": "I regali più costosi della Lapponia in una sola pagina: 9 prodotti, 80 €–1490 €. Ogni prezzo è rilevato dal negozio partner. Area di consegna su ogni scheda.",
+      "nl": "De duurste cadeaus van Lapland op één pagina: 9 producten, € 80–€ 1.490. Elke prijs is overgenomen van de partnerwinkel, met datum. Bezorggebied op elke kaart.",
+      "sv": "Lapplands dyraste presenter på en sida: 9 produkter, 80 €–1 490 €. Först upplevelserna: guldvaskning i Enare, en natt i glasigloo och en morgon med renarna."
     }
   },
   {
@@ -756,39 +723,6 @@
       "it": "Rento è una gamma di prodotti per la sauna progettata in Finlandia e di proprietà dell'azienda familiare Tammer Brands Oy di Tampere. Aree di consegna indicate.",
       "nl": "Rento is een in Finland ontworpen saunacollectie van het Tamperese familiebedrijf Tammer Brands Oy. Elke prijs is overgenomen van de partnerwinkel, met datum.",
       "sv": "Rento är ett finländskt designat bastusortiment som ägs av familjeföretaget Tammer Brands Oy i Tammerfors. Varje pris hämtas från partnerbutiken och dateras."
-    }
-  },
-  {
-    "path": "/brand/lapuan-kankurit",
-    "fallbackTitle": "Lapuan Kankurit | LaplandGifts",
-    "fallbackDescription": "Lapuan Kankurit is a Finnish weaving company whose main mill is in Lapua and whose roots go back to 1917. Each price is read from the partner shop and dated.",
-    "fallbackTitleByLang": {
-      "en": "Lapuan Kankurit | LaplandGifts",
-      "fi": "Lapuan Kankurit | LaplandGifts",
-      "de": "Lapuan Kankurit | LaplandGifts",
-      "ja": "Lapuan Kankurit | LaplandGifts",
-      "es": "Lapuan Kankurit | LaplandGifts",
-      "pt-BR": "Lapuan Kankurit | LaplandGifts",
-      "zh-CN": "Lapuan Kankurit | LaplandGifts",
-      "ko": "Lapuan Kankurit | LaplandGifts",
-      "fr": "Lapuan Kankurit | LaplandGifts",
-      "it": "Lapuan Kankurit | LaplandGifts",
-      "nl": "Lapuan Kankurit | LaplandGifts",
-      "sv": "Lapuan Kankurit | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Lapuan Kankurit is a Finnish weaving company whose main mill is in Lapua and whose roots go back to 1917. Each price is read from the partner shop and dated.",
-      "fi": "Lapuan Kankurit on suomalainen kutomobrändi, jonka pääkutomo sijaitsee Lapualla ja jonka juuret ulottuvat vuoteen 1917. Toimitusalue näkyy jokaisessa kortissa.",
-      "de": "Lapuan Kankurit ist eine finnische Weberei, deren Hauptwerk in Lapua steht und deren Wurzeln bis 1917 zurückreichen. Jeder Preis stammt aus dem Partnershop.",
-      "ja": "Lapuan Kankuritはフィンランドの織物会社で、主力の工場はLapuaにあり、そのルーツは1917年にさかのぼる。同社自身の説明では製品の95%をLapuaで織っており、残りはリトアニアのカウナスにある一部出資の工場と、欧州の下請け業者が製造している。各価格は提携ショップから取得し、日付を記載しています。",
-      "es": "Lapuan Kankurit es una empresa textil finlandesa cuya fábrica principal está en Lapua y cuyas raíces se remontan a 1917. Precios de las tiendas asociadas.",
-      "pt-BR": "A Lapuan Kankurit é uma tecelagem finlandesa cuja fábrica principal fica em Lapua e cujas raízes remontam a 1917. A área de entrega é indicada em cada cartão.",
-      "zh-CN": "Lapuan Kankurit 是芬兰织造公司，主厂在拉普阿，源头可追溯到 1917 年。按其自己的说法，95% 的产品在拉普阿织造，其余在立陶宛考纳斯一家参股工厂以及欧洲分包商处制造。所有原材料都来自芬兰以外：亚麻来自法国、荷兰和比利时，马海毛来自南非。每件商品的价格均取自合作商店，并注明读取日期。",
-      "ko": "Lapuan Kankurit는 주력 공장이 라푸아(Lapua)에 있고 뿌리가 1917년까지 거슬러 올라가는 핀란드 직물 회사입니다. 자체 설명에 따르면 제품의 95%를 라푸아에서 직조하고, 나머지는 리투아니아 카우나스에 있는 일부 지분 보유 공장과 유럽 하청업체가 만듭니다.",
-      "fr": "Lapuan Kankurit est une entreprise de tissage finlandaise dont l'usine principale se trouve à Lapua et dont les racines remontent à 1917.",
-      "it": "Lapuan Kankurit è un'azienda tessile finlandese il cui stabilimento principale si trova a Lapua e le cui radici risalgono al 1917. Prezzi rilevati dai negozi.",
-      "nl": "Lapuan Kankurit is een Fins weverijbedrijf waarvan de belangrijkste weverij in Lapua staat en waarvan de wortels teruggaan tot 1917. Bezorggebied op elke kaart.",
-      "sv": "Lapuan Kankurit är ett finländskt väveriföretag vars huvudväveri ligger i Lappo och vars rötter går tillbaka till 1917. Leveransområdet står på varje kort."
     }
   },
   {
@@ -1185,39 +1119,6 @@
       "it": "Emendo Oy è un'azienda finlandese di prodotti per la sauna e il benessere con sede a Vaasa, che sul proprio sito dichiara di essere stata fondata nel 1986.",
       "nl": "Emendo Oy is een Fins sauna- en wellnessbedrijf uit Vaasa, dat op zijn eigen site aangeeft dat het in 1986 is opgericht. De prijzen komen van de partnerwinkels.",
       "sv": "Emendo Oy är ett finländskt bastu- och wellnessföretag med bas i Vasa, som på sin egen webbplats uppger att det grundades 1986. Priser hämtas från butikerna."
-    }
-  },
-  {
-    "path": "/brand/moomin-arabia",
-    "fallbackTitle": "Moomin Arabia | LaplandGifts",
-    "fallbackDescription": "Moomin Arabia is the Moomin range of the Finnish ceramics brand Arabia, founded in 1873 and today part of Fiskars Group. Prices come from the partner shops.",
-    "fallbackTitleByLang": {
-      "en": "Moomin Arabia | LaplandGifts",
-      "fi": "Moomin Arabia | LaplandGifts",
-      "de": "Moomin Arabia | LaplandGifts",
-      "ja": "Moomin Arabia | LaplandGifts",
-      "es": "Moomin Arabia | LaplandGifts",
-      "pt-BR": "Moomin Arabia | LaplandGifts",
-      "zh-CN": "Moomin Arabia | LaplandGifts",
-      "ko": "Moomin Arabia | LaplandGifts",
-      "fr": "Moomin Arabia | LaplandGifts",
-      "it": "Moomin Arabia | LaplandGifts",
-      "nl": "Moomin Arabia | LaplandGifts",
-      "sv": "Moomin Arabia | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Moomin Arabia is the Moomin range of the Finnish ceramics brand Arabia, founded in 1873 and today part of Fiskars Group. Prices come from the partner shops.",
-      "fi": "Moomin Arabia on suomalaisen keramiikkabrändin Arabian muumisarja. Jokainen hinta on luettu kumppanin kaupasta merkittynä päivänä. Toimitusalue näkyy kortissa.",
-      "de": "Moomin Arabia ist die Moomin-Serie der finnischen Keramikmarke Arabia, die 1873 gegründet wurde und heute zur Fiskars Group gehört. Preise aus den Partnershops.",
-      "ja": "Moomin Arabia は、1873年創業で現在は Fiskars Group に属するフィンランドの陶磁器ブランド Arabia のムーミンシリーズです。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
-      "es": "Moomin Arabia es la gama Moomin de la marca finlandesa de cerámica Arabia, fundada en 1873 y hoy parte de Fiskars Group. Precios de las tiendas asociadas.",
-      "pt-BR": "Moomin Arabia é a linha dos Moomins da marca finlandesa de cerâmica Arabia, fundada em 1873 e hoje parte do Fiskars Group. Os preços vêm das lojas parceiras.",
-      "zh-CN": "Moomin Arabia 是芬兰陶瓷品牌 Arabia 的姆明系列，Arabia 成立于 1873 年，如今属于 Fiskars Group。首批姆明餐具出现在 1950 年代，插画由托韦·扬松绘制，广受收藏的马克杯系列则在 1990 年代开始，采用 Kaj Franck 设计的 Teema 杯型。",
-      "ko": "Moomin Arabia는 1873년에 설립되어 오늘날 Fiskars Group에 속한 핀란드 도자기 브랜드 Arabia의 무민 제품군입니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
-      "fr": "Moomin Arabia est la gamme Moomins de la marque de céramique finlandaise Arabia, fondée en 1873 et aujourd'hui membre du groupe Fiskars.",
-      "it": "Moomin Arabia è la linea Moomin del marchio ceramico finlandese Arabia, fondato nel 1873 e oggi parte di Fiskars Group. I prezzi provengono dai negozi partner.",
-      "nl": "Moomin Arabia is de Moomin-collectie van het Finse keramiekmerk Arabia, opgericht in 1873 en tegenwoordig onderdeel van Fiskars Group. Bezorggebied vermeld.",
-      "sv": "Moomin Arabia är muminsortimentet från det finländska keramikvarumärket Arabia, som grundades 1873 och i dag ingår i Fiskars Group. Leveransområdena visas."
     }
   },
   {
@@ -1881,39 +1782,6 @@
     }
   },
   {
-    "path": "/product/moomin-mystical-forest-wool-throw",
-    "fallbackTitle": "Moomin Mystical Forest wool throw 130×170 cm | LaplandGifts",
-    "fallbackDescription": "A 130 by 170 cm throw in 100 per cent wool, designed in Finland for the Mystical Forest collection. The price is read from the partner shop, where you buy it.",
-    "fallbackTitleByLang": {
-      "en": "Moomin Mystical Forest wool throw 130×170 cm | LaplandGifts",
-      "fi": "Muumi Mystical Forest -villatorkkupeitto 130 x 170 cm",
-      "de": "Moomin-Wolldecke Mystical Forest 130 x 170 cm | LaplandGifts",
-      "ja": "ムーミン ミスティカルフォレスト ウールブランケット 130×170 cm | LaplandGifts",
-      "es": "Manta de lana Moomin Mystical Forest 130×170 cm",
-      "pt-BR": "Manta de lã Moomin Mystical Forest 130×170 cm | LaplandGifts",
-      "zh-CN": "姆明 Mystical Forest 羊毛毯 130×170 cm | LaplandGifts",
-      "ko": "무민 Mystical Forest 울 블랭킷 130×170 cm | LaplandGifts",
-      "fr": "Plaid en laine Moomin Mystical Forest 130×170 cm",
-      "it": "Plaid in lana Moomin Mystical Forest 130×170 cm",
-      "nl": "Moomin Mystical Forest wollen plaid 130 x 170 cm",
-      "sv": "Moominpläd i ull Mystical Forest 130 x 170 cm | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "A 130 by 170 cm throw in 100 per cent wool, designed in Finland for the Mystical Forest collection. The price is read from the partner shop, where you buy it.",
-      "fi": "130 x 170 senttimetrin torkkupeitto sataprosenttisesta villasta, suunniteltu Suomessa Mystical Forest -sarjaan. Ostetaan kumppanin kaupasta. Toimitusalue näkyy.",
-      "de": "Decke von 130 mal 170 cm aus 100 Prozent Wolle, in Finnland für die Kollektion Mystical Forest entworfen. Preis vom Partnershop, dort erfolgt der Kauf.",
-      "ja": "130 かける 170 cm、ウール 100 パーセントのブランケット。ミスティカルフォレストコレクションのためにフィンランドでデザインされました。ドライクリーニングのみなので、ピクニック用ではなくソファ用と考えてください。価格は提携ショップのもので、ご購入もそちらで行います。配送エリアはこのページに記載しています。",
-      "es": "Una manta de 130 por 170 cm en 100 por ciento lana, diseñada en Finlandia para la colección Mystical Forest. El precio se consulta en la tienda asociada.",
-      "pt-BR": "Uma manta de 130 por 170 cm em 100 por cento lã, desenhada na Finlândia para a coleção Mystical Forest. O preço vem da loja parceira, onde você também compra.",
-      "zh-CN": "130 乘 170 cm、100% 羊毛的盖毯，为 Mystical Forest 系列在芬兰设计。只能干洗，所以把它当沙发毯而不是野餐垫。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "130 × 170 cm, 울 100 퍼센트 블랭킷으로 Mystical Forest 컬렉션을 위해 핀란드에서 디자인했습니다. 드라이클리닝만 가능하므로 소풍용 깔개가 아니라 소파용 담요로 보시면 됩니다. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다. 배송 지역은 이 페이지에 있습니다.",
-      "fr": "Un plaid de 130 sur 170 cm en 100 pour cent laine, dessiné en Finlande pour la collection Mystical Forest. Le prix est relevé auprès de la boutique partenaire.",
-      "it": "Un plaid da 130 per 170 cm in 100 per cento lana, disegnato in Finlandia per la collezione Mystical Forest. L'area di consegna è indicata in questa pagina.",
-      "nl": "Een plaid van 130 bij 170 cm in 100 procent wol, ontworpen in Finland voor de collectie Mystical Forest. De prijs komt van de partnerwinkel, waar u bestelt.",
-      "sv": "En pläd på 130 gånger 170 cm i 100 procent ull, formgiven i Finland för kollektionen Mystical Forest. Priset kommer från partnerbutiken, där du också handlar."
-    }
-  },
-  {
     "path": "/product/iittala-aalto-vase-160",
     "fallbackTitle": "Iittala Alvar Aalto vase 160 mm, clear | LaplandGifts",
     "fallbackDescription": "Alvar Aalto drew this wave in 1936 and Iittala still mouth blows it, so the outline of every piece differs a little. The price is read from the partner shop.",
@@ -2010,72 +1878,6 @@
       "it": "Maija Isola disegnò il papavero Unikko nel 1964, dopo che Marimekko aveva vietato le stampe floreali, e il motivo sopravvisse al divieto. Venduto dal partner.",
       "nl": "Maija Isola tekende de klaproos Unikko in 1964, nadat Marimekko bloemenprints had verboden, en het patroon overleefde het verbod. Gekocht bij de partnerwinkel.",
       "sv": "Maija Isola ritade vallmon Unikko 1964 efter att Marimekko hade förbjudit blommönster, och mönstret överlevde förbudet. Leveransområdet står på den här sidan."
-    }
-  },
-  {
-    "path": "/product/aarikka-prinsessa-candleholder",
-    "fallbackTitle": "Aarikka Prinsessa candleholder | LaplandGifts",
-    "fallbackDescription": "Aarikka has been turning birch beads since the 1950s, and Prinsessa wears a wreath of them around a 5.5 cm holder that takes either a tealight or a taper.",
-    "fallbackTitleByLang": {
-      "en": "Aarikka Prinsessa candleholder | LaplandGifts",
-      "fi": "Aarikka Prinsessa-kynttilänjalka | LaplandGifts",
-      "de": "Aarikka Prinsessa Kerzenhalter | LaplandGifts",
-      "ja": "Aarikka アアリッカ プリンセッサ キャンドルホルダー | LaplandGifts",
-      "es": "Portavelas Aarikka Prinsessa | LaplandGifts",
-      "pt-BR": "Castiçal Aarikka Prinsessa | LaplandGifts",
-      "zh-CN": "Aarikka Prinsessa 烛台 | LaplandGifts",
-      "ko": "Aarikka 아리카 프린세사 캔들홀더 | LaplandGifts",
-      "fr": "Bougeoir Aarikka Prinsessa | LaplandGifts",
-      "it": "Portacandela Aarikka Prinsessa | LaplandGifts",
-      "nl": "Aarikka Prinsessa kandelaar | LaplandGifts",
-      "sv": "Aarikka Prinsessa ljushållare | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Aarikka has been turning birch beads since the 1950s, and Prinsessa wears a wreath of them around a 5.5 cm holder that takes either a tealight or a taper.",
-      "fi": "Aarikka on sorvannut koivuhelmiä 1950-luvulta asti, ja Prinsessa kantaa niistä tehtyä seppelettä 5,5 senttiä korkean jalan ympärillä. Myyjänä kumppanin kauppa.",
-      "de": "Aarikka dreht Birkenperlen seit den 1950er-Jahren, und Prinsessa trägt einen Kranz davon um einen 5,5 cm hohen Halter. Das Liefergebiet steht auf dieser Seite.",
-      "ja": "アアリッカは 1950 年代から白樺のビーズを挽いてきました。プリンセッサはそのビーズの輪を 5.5 cm のホルダーに巻き、ティーライトにも棒状のキャンドルにも使えます。郵送できる小ささで、フィンランドではひと目でそれと分かります。価格は提携ショップのもので、ご購入もそちらで行います。配送エリアはこのページに記載。",
-      "es": "Aarikka tornea cuentas de abedul desde los años cincuenta, y Prinsessa lleva una corona de ellas alrededor de un soporte de 5,5 cm que acepta una vela de té o.",
-      "pt-BR": "A Aarikka tornea contas de bétula desde os anos 1950, e o Prinsessa usa uma coroa delas em volta de um suporte de 5,5 cm que aceita uma vela rechaud ou uma.",
-      "zh-CN": "Aarikka 从 1950 年代起就在车削桦木珠，Prinsessa 把一圈木珠环在 5.5 cm 的烛台上，茶蜡和直立蜡烛都放得下。小到可以邮寄，特征鲜明到在芬兰一眼就能认出。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "아리카는 1950년대부터 자작나무 구슬을 깎아 왔고, 프린세사는 그 구슬로 만든 고리를 5.5 cm 홀더에 둘렀습니다. 티라이트와 기둥형 초 모두 쓸 수 있습니다. 우편으로 보낼 만큼 작고, 핀란드에서는 한눈에 알아볼 만큼 특징이 뚜렷합니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
-      "fr": "Aarikka tourne des perles de bouleau depuis les années 1950, et Prinsessa en porte une couronne autour d’un support de 5,5 cm qui accepte une bougie.",
-      "it": "Aarikka tornisce perline di betulla dagli anni cinquanta, e Prinsessa ne porta una corona attorno a un supporto da 5,5 cm che accoglie un lumino oppure una.",
-      "nl": "Aarikka draait al sinds de jaren vijftig berkenkralen, en Prinsessa draagt er een krans van rond een houder van 5,5 cm die een waxinelichtje of een rechte.",
-      "sv": "Aarikka har svarvat björkpärlor sedan 1950-talet, och Prinsessa bär en krans av dem runt en hållare på 5,5 cm som tar antingen värmeljus eller kronljus."
-    }
-  },
-  {
-    "path": "/product/aarikka-pore-glass-vase",
-    "fallbackTitle": "Aarikka Pore glass vase 16 cm, dark green | LaplandGifts",
-    "fallbackDescription": "A round hand blown vase, 1.7 litres, wearing a maple bead wreath dyed by hand in Finland. The price comes from the partner shop, where you also buy it.",
-    "fallbackTitleByLang": {
-      "en": "Aarikka Pore glass vase 16 cm, dark green | LaplandGifts",
-      "fi": "Aarikka Pore-lasimaljakko 16 cm, tummanvihreä | LaplandGifts",
-      "de": "Aarikka Pore Glasvase 16 cm, dunkelgrün | LaplandGifts",
-      "ja": "Aarikka アアリッカ ポレ ガラスベース 16 cm ダークグリーン | LaplandGifts",
-      "es": "Jarrón de vidrio Aarikka Pore 16 cm, verde oscuro",
-      "pt-BR": "Vaso de vidro Aarikka Pore 16 cm, verde escuro",
-      "zh-CN": "Aarikka Pore 玻璃花瓶 16 cm，深绿色 | LaplandGifts",
-      "ko": "Aarikka 아리카 포레 유리 화병 16 cm, 다크 그린 | LaplandGifts",
-      "fr": "Vase en verre Aarikka Pore 16 cm, vert foncé | LaplandGifts",
-      "it": "Vaso in vetro Aarikka Pore 16 cm, verde scuro | LaplandGifts",
-      "nl": "Aarikka Pore glazen vaas 16 cm, donkergroen | LaplandGifts",
-      "sv": "Aarikka Pore glasvas 16 cm, mörkgrön | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "A round hand blown vase, 1.7 litres, wearing a maple bead wreath dyed by hand in Finland. The price comes from the partner shop, where you also buy it.",
-      "fi": "Pyöreä suupuhallettu maljakko, tilavuus 1,7 litraa, kaulassaan käsin värjätty vaahterahelmiseppele Suomesta. Myyjänä kumppanin kauppa. Toimitusalue kerrotaan.",
-      "de": "Eine runde, mundgeblasene Vase mit 1,7 Litern, die einen in Finnland von Hand gefärbten Ahornperlenkranz trägt. Preis vom Partnershop, dort erfolgt der Kauf.",
-      "ja": "手吹きの丸いベース、容量 1.7 リットル。フィンランドで手染めされたカエデのビーズの輪を纏っています。ガラスの中の気泡はこの製品の一部で、洗う前に輪を外します。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
-      "es": "Un jarrón redondo soplado a mano, de 1,7 litros, con una corona de cuentas de arce teñidas a mano en Finlandia. El precio se consulta en la tienda asociada.",
-      "pt-BR": "Um vaso redondo soprado à mão, 1,7 litro, com uma coroa de contas de bordo tingidas à mão na Finlândia. O preço vem da loja parceira, onde você também compra.",
-      "zh-CN": "一只圆形手工吹制花瓶，容量 1.7 升，外面套着在芬兰手工染色的枫木珠环。玻璃里的气泡是它的一部分，清洗前把木环取下。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "핀란드에서 손으로 물들인 단풍나무 구슬 고리를 두른, 1.7 리터의 둥근 핸드블로운 화병. 유리 안의 기포는 이 제품의 일부이며, 씻기 전에 고리를 빼면 됩니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
-      "fr": "Un vase rond soufflé à la bouche, 1,7 litre, portant une couronne de perles d’érable teintées à la main en Finlande. Vous achetez dans la boutique partenaire.",
-      "it": "Un vaso rotondo soffiato a mano, 1,7 litri, con una corona di perline di acero tinte a mano in Finlandia. L'area di consegna è indicata in questa pagina.",
-      "nl": "Een ronde, handgeblazen vaas van 1,7 liter met een krans van esdoornkralen die in Finland met de hand geverfd zijn. Het bezorggebied staat op deze pagina.",
-      "sv": "En rund handblåst vas på 1,7 liter med en krans av lönnpärlor som färgas för hand i Finland. Luftbubblorna i glaset hör till, och kransen tas av före disk."
     }
   },
   {
@@ -2541,72 +2343,6 @@
     }
   },
   {
-    "path": "/product/lapuan-kankurit-poro-towel",
-    "fallbackTitle": "Lapuan Kankurit PORO linen towel 46 x 70 cm | LaplandGifts",
-    "fallbackDescription": "A reindeer drawn by illustrator Matti Pikkujämsä, woven in the mill in Lapua from European linen warp and organic cotton weft. You buy it in the partner shop.",
-    "fallbackTitleByLang": {
-      "en": "Lapuan Kankurit PORO linen towel 46 x 70 cm | LaplandGifts",
-      "fi": "Lapuan Kankurit PORO-pellavapyyhe 46 x 70 cm | LaplandGifts",
-      "de": "Lapuan Kankurit PORO Leinenhandtuch 46 x 70 cm",
-      "ja": "ラプアン カンクリ PORO リネンタオル 46 x 70 cm | LaplandGifts",
-      "es": "Toalla de lino Lapuan Kankurit PORO 46 x 70 cm",
-      "pt-BR": "Toalha de linho Lapuan Kankurit PORO 46 x 70 cm",
-      "zh-CN": "Lapuan Kankurit PORO 亚麻毛巾 46 x 70 cm | LaplandGifts",
-      "ko": "라푸안 칸쿠리트 PORO 리넨 타월 46 x 70 cm | LaplandGifts",
-      "fr": "Serviette en lin Lapuan Kankurit PORO 46 x 70 cm",
-      "it": "Asciugamano in lino Lapuan Kankurit PORO 46 x 70 cm",
-      "nl": "Lapuan Kankurit PORO linnen handdoek 46 x 70 cm",
-      "sv": "Lapuan Kankurit PORO linnehandduk 46 x 70 cm | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "A reindeer drawn by illustrator Matti Pikkujämsä, woven in the mill in Lapua from European linen warp and organic cotton weft. You buy it in the partner shop.",
-      "fi": "Matti Pikkujämsän piirtämä poro, kudottu Lapuan kutomossa eurooppalaisesta pellavaloimesta ja luomupuuvillakuteesta. Hinta on luettu kumppanin kaupasta.",
-      "de": "Ein Rentier, gezeichnet vom Illustrator Matti Pikkujämsä, gewebt in der Weberei in Lapua aus europäischer Leinenkette und Bio-Baumwollschuss.",
-      "ja": "イラストレーターのマッティ・ピックヤムサが描いたトナカイを、ラプアの織工場でヨーロッパ産リネンの経糸とオーガニックコットンの緯糸で織り上げたタオル。スーツケースに平らに畳めます。吸水性は数回洗ってから出てきます。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
-      "es": "Un reno dibujado por el ilustrador Matti Pikkujämsä, tejido en el taller de Lapua con urdimbre de lino europeo y trama de algodón orgánico.",
-      "pt-BR": "Uma rena desenhada pelo ilustrador Matti Pikkujämsä, tecida na fábrica em Lapua com urdume de linho europeu e trama de algodão orgânico. Venda na loja parceira.",
-      "zh-CN": "插画家马蒂·皮库亚姆萨画的驯鹿，在拉普阿的织厂以欧洲亚麻作经纱、有机棉作纬纱织成。可以平整地折进行李箱，吸水性要洗过几次才出来。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "일러스트레이터 마티 피쿠얌새가 그린 순록을, 라푸아의 직물 공장에서 유럽산 리넨 날실과 유기농 면 씨실로 짰습니다. 여행 가방에 평평하게 접히고, 흡수력은 몇 번 빨고 나서야 올라옵니다. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
-      "fr": "Un renne dessiné par l’illustrateur Matti Pikkujämsä, tissé dans l’atelier de Lapua avec une chaîne en lin européen et une trame en coton biologique.",
-      "it": "Una renna disegnata dall’illustratore Matti Pikkujämsä, tessuta nel lanificio di Lapua con ordito in lino europeo e trama in cotone biologico.",
-      "nl": "Een rendier getekend door illustrator Matti Pikkujämsä, geweven in de weverij in Lapua met een ketting van Europees linnen en een inslag van biologisch katoen.",
-      "sv": "En ren ritad av illustratören Matti Pikkujämsä, vävd i väveriet i Lappo av europeisk linnevarp och ekologisk bomullsinslag. Du köper varan i partnerbutiken."
-    }
-  },
-  {
-    "path": "/product/lapuan-kankurit-kaamos-blanket",
-    "fallbackTitle": "Lapuan Kankurit KAAMOS wool blanket 100 x 150 cm",
-    "fallbackDescription": "Kaamos is the polar night, and Hanna Galtat drew the pattern from the way daylight moves through the day. Sold by the partner shop. Delivery area on this page.",
-    "fallbackTitleByLang": {
-      "en": "Lapuan Kankurit KAAMOS wool blanket 100 x 150 cm",
-      "fi": "Lapuan Kankurit KAAMOS-villahuopa 100 x 150 cm",
-      "de": "Lapuan Kankurit KAAMOS Wolldecke 100 x 150 cm | LaplandGifts",
-      "ja": "ラプアン カンクリ KAAMOS ウールブランケット 100 x 150 cm | LaplandGifts",
-      "es": "Manta de lana Lapuan Kankurit KAAMOS 100 x 150 cm",
-      "pt-BR": "Manta de lã Lapuan Kankurit KAAMOS 100 x 150 cm",
-      "zh-CN": "Lapuan Kankurit KAAMOS 羊毛毯 100 x 150 cm | LaplandGifts",
-      "ko": "라푸안 칸쿠리트 KAAMOS 울 블랭킷 100 x 150 cm | LaplandGifts",
-      "fr": "Couverture en laine Lapuan Kankurit KAAMOS 100 x 150 cm",
-      "it": "Coperta in lana Lapuan Kankurit KAAMOS 100 x 150 cm",
-      "nl": "Lapuan Kankurit KAAMOS wollen deken 100 x 150 cm",
-      "sv": "Lapuan Kankurit KAAMOS ullpläd 100 x 150 cm | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Kaamos is the polar night, and Hanna Galtat drew the pattern from the way daylight moves through the day. Sold by the partner shop. Delivery area on this page.",
-      "fi": "Kaamos on se pimeä kausi, ja Hanna Galtatin kuvio seuraa päivänvalon kulkua vuorokauden aikana. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
-      "de": "Kaamos ist die Polarnacht, und Hanna Galtat leitete das Muster daraus ab, wie sich das Tageslicht im Lauf des Tages bewegt. Verkauf durch den Partnershop.",
-      "ja": "カーモスは極夜のこと。ハンナ・ガルタットは一日のうちで日の光が移ろうさまから柄を起こしました。緯糸は、工場がラプアから約 400 km の範囲の農場から集めるフィンシープのウールです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
-      "es": "Kaamos es la noche polar, y Hanna Galtat sacó el patrón de cómo se mueve la luz del día a lo largo de la jornada. El precio se consulta en la tienda asociada.",
-      "pt-BR": "Kaamos é a noite polar, e Hanna Galtat tirou o padrão do jeito como a luz do dia se move ao longo das horas. O preço vem da loja parceira, onde se compra.",
-      "zh-CN": "Kaamos 指极夜，汉娜·加尔塔特从日光在一天里移动的方式中取出了这个图案。纬纱是芬兰绵羊毛，由织厂从距拉普阿约 400 km 范围内的农场收集。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "카모스는 극야를 뜻하고, 한나 갈타트는 하루 동안 햇빛이 움직이는 방식에서 이 패턴을 끌어냈습니다. 씨실은 공장이 라푸아에서 약 400 km 반경의 농장에서 모으는 핀란드 재래종 양털입니다. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
-      "fr": "Kaamos est la nuit polaire, et Hanna Galtat a tiré le motif de la façon dont la lumière du jour se déplace au fil des heures. Achat dans la boutique partenaire.",
-      "it": "Kaamos è la notte polare, e Hanna Galtat ha ricavato il motivo dal modo in cui la luce del giorno si sposta nell’arco delle ore. Acquisto nel negozio partner.",
-      "nl": "Kaamos is de poolnacht, en Hanna Galtat haalde het patroon uit de manier waarop daglicht zich door de dag beweegt. De prijs is overgenomen van de partnerwinkel.",
-      "sv": "Kaamos är polarnatten, och Hanna Galtat hämtade mönstret ur hur dagsljuset rör sig genom dygnet. Priset kommer från partnerbutiken, där du också handlar."
-    }
-  },
-  {
     "path": "/product/pentik-posio-mug",
     "fallbackTitle": "Pentik Posio mug 0,3 l | LaplandGifts",
     "fallbackDescription": "Pentik fires this mug in Posio, which the company calls the northernmost ceramics factory in the world, and the whole Posio range is decorated with reindeer.",
@@ -2934,105 +2670,6 @@
       "it": "Mirtillo rosso aspro contro caramello salato su una base di ibisco e rooibos, quindi senza caffeina e con ancora un sapore la sera. Area di consegna indicata.",
       "nl": "Zure veenbes tegenover gezouten toffee op een basis van hibiscus en rooibos, dus cafeïnevrij en toch met smaak in de avond. U koopt het bij de partnerwinkel.",
       "sv": "Syrligt tranbär mot saltkola på en bas av hibiskus och rooibos, alltså koffeinfritt och ändå med smak kvar på kvällen. Leveransområdet står på den här sidan."
-    }
-  },
-  {
-    "path": "/product/moomin-wild-blueberry-coffee",
-    "fallbackTitle": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
-    "fallbackDescription": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southeastern Brazil. Bought in the partner shop.",
-    "fallbackTitleByLang": {
-      "en": "Moomintroll Wild Blueberry coffee 250 g | LaplandGifts",
-      "fi": "Moomin Muumipeikko Villimustikka-kahvi 250 g | LaplandGifts",
-      "de": "Moomintroll Wild Blueberry Kaffee 250 g | LaplandGifts",
-      "ja": "Moomin ムーミントロール ワイルドブルーベリー コーヒー 250 g | LaplandGifts",
-      "es": "Café Moomin Wild Blueberry 250 g | LaplandGifts",
-      "pt-BR": "Café Moomin Wild Blueberry 250 g | LaplandGifts",
-      "zh-CN": "Moomin 姆明 Wild Blueberry 咖啡 250 g | LaplandGifts",
-      "ko": "Moomin 무민 Wild Blueberry 커피 250 g | LaplandGifts",
-      "fr": "Café Moomin Wild Blueberry 250 g | LaplandGifts",
-      "it": "Caffè Moomin Wild Blueberry 250 g | LaplandGifts",
-      "nl": "Moomin Wild Blueberry koffie 250 g | LaplandGifts",
-      "sv": "Moomintrollet Wild Blueberry kaffe 250 g | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Blueberry flavoured coffee from Bergstrands Kafferosteri, built on peaberries ripened on the Mogiana hills in southeastern Brazil. Bought in the partner shop.",
-      "fi": "Mustikalla maustettua kahvia Bergstrands Kafferosterilta, pohjana Mogianan kukkuloilla Kaakkois-Brasiliassa kypsyneet helmipavut. Ostetaan kumppanin kaupasta.",
-      "de": "Kaffee mit Blaubeeraroma von der Rösterei Bergstrands Kafferosteri, aufgebaut auf Perlbohnen von den Hügeln der Mogiana im Südosten Brasiliens.",
-      "ja": "ブラジル南東部モジアナ高原で育ったピーベリーを使った、Bergstrands Kafferosteri のブルーベリー風味のコーヒー。ピーベリーは豆が 2 つではなく 1 つだけ育ったコーヒーチェリーで、焙煎所によれば味が凝縮するといいます。250 グラム。価格は提携ショップから取得し、ご購入も同じショップで行います。",
-      "es": "Café con aroma de arándano de Bergstrands Kafferosteri, montado sobre granos caracolillo madurados en las colinas de Mogiana, en el sureste de Brasil.",
-      "pt-BR": "Café com sabor de mirtilo da Bergstrands Kafferosteri, construído sobre grãos moka amadurecidos nas colinas da Mogiana, no sudeste do Brasil.",
-      "zh-CN": "Bergstrands Kafferosteri 的蓝莓风味咖啡，用巴西东南部莫吉亚纳丘陵成熟的圆豆制成。圆豆是只长了一颗豆而不是两颗的咖啡果，烘焙厂说这样味道更集中。250 克。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "브라질 남동부 모지아나 구릉에서 익은 피베리로 만든 Bergstrands Kafferosteri의 블루베리 향 커피. 피베리는 원두가 두 개가 아니라 하나만 자란 커피 열매로, 로스터리는 그래서 맛이 응축된다고 말합니다. 250 그램. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다.",
-      "fr": "Café aromatisé à la myrtille de Bergstrands Kafferosteri, construit sur des caracolis mûris sur les collines de Mogiana, dans le sud-est du Brésil.",
-      "it": "Caffè aromatizzato al mirtillo di Bergstrands Kafferosteri, costruito su chicchi caracolito maturati sulle colline di Mogiana, nel sud-est del Brasile.",
-      "nl": "Koffie met bosbessensmaak van Bergstrands Kafferosteri, gebouwd op parelbonen die gerijpt zijn op de heuvels van Mogiana in het zuidoosten van Brazilië.",
-      "sv": "Blåbärssmaksatt kaffe från Bergstrands Kafferosteri, byggt på pärlbönor mognade på Mogianahöjderna i sydöstra Brasilien. Leveransområdet står på den här sidan."
-    }
-  },
-  {
-    "path": "/product/moomin-lingonberry-blueberry-dark-chocolate",
-    "fallbackTitle": "Moomintroll dark chocolate with lingonberry and blueberry.",
-    "fallbackDescription": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
-    "fallbackTitleByLang": {
-      "en": "Moomintroll dark chocolate with lingonberry and blueberry.",
-      "fi": "Moomin Muumipeikko-tummasuklaa, puolukka ja mustikka 70 g",
-      "de": "Moomintroll Zartbitterschokolade mit Preiselbeere und.",
-      "ja": "Moomin ムーミントロール リンゴンベリーとブルーベリーのダークチョコレート 70 g | LaplandGifts",
-      "es": "Chocolate negro Moomin con arándano rojo y arándano 70 g",
-      "pt-BR": "Chocolate amargo Moomin com airela e mirtilo 70 g",
-      "zh-CN": "Moomin 姆明 越橘与蓝莓黑巧克力 70 g | LaplandGifts",
-      "ko": "Moomin 무민 링곤베리와 블루베리 다크 초콜릿 70 g | LaplandGifts",
-      "fr": "Chocolat noir Moomin airelle et myrtille 70 g | LaplandGifts",
-      "it": "Cioccolato fondente Moomin con mirtillo rosso e mirtillo 70.",
-      "nl": "Moomin pure chocolade met vossenbes en bosbes 70 g",
-      "sv": "Moomintrollet mörk choklad med lingon och blåbär 70 g"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Organic 70 per cent dark chocolate from Kalmar Chokladfabrik with freeze dried lingonberries and blueberries, wrapped in Tove Jansson artwork.",
-      "fi": "Luomua ja 70 prosentin tummaa suklaata Kalmar Chokladfabrikilta, mukana pakastekuivattua puolukkaa ja mustikkaa, kääreessä Tove Janssonin kuvitus.",
-      "de": "Zartbitterschokolade in Bio-Qualität mit 70 Prozent Kakao von Kalmar Chokladfabrik mit gefriergetrockneten Preiselbeeren und Blaubeeren. Liefergebiet angegeben.",
-      "ja": "Kalmar Chokladfabrik のカカオ 70 パーセントのオーガニックダークチョコレートに、フリーズドライのリンゴンベリーとブルーベリーを入れ、トーベ・ヤンソンの絵で包みました。カカオはペルー産のクリオロとトリニタリオで、製造はスウェーデンです。価格は提携ショップから取得し、ご購入も同じショップで行います。",
-      "es": "Chocolate negro ecológico con 70 por ciento de cacao de Kalmar Chokladfabrik con arándanos rojos y arándanos liofilizados. Se compra en la tienda asociada.",
-      "pt-BR": "Chocolate amargo orgânico com 70 por cento de cacau da Kalmar Chokladfabrik com airelas e mirtilos liofilizados, embrulhado em um desenho de Tove Jansson.",
-      "zh-CN": "Kalmar Chokladfabrik 出品的 70% 可可有机黑巧克力，加入冻干越橘和蓝莓，外包装用的是托芙·扬松的画。可可是来自秘鲁的 Criollo 和 Trinitario，成品在瑞典制造。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "Kalmar Chokladfabrik의 코코아 70 퍼센트 유기농 다크 초콜릿에 동결건조 링곤베리와 블루베리를 넣고, 토베 얀손의 그림으로 포장했습니다. 코코아는 페루산 크리올로와 트리니타리오이고 완제품은 스웨덴에서 만듭니다. 가격은 제휴 상점 기준이며 구매도 그곳에서 이루어집니다.",
-      "fr": "Chocolat noir biologique à 70 pour cent de cacao de Kalmar Chokladfabrik avec des airelles et des myrtilles lyophilisées. Achat dans la boutique partenaire.",
-      "it": "Cioccolato fondente biologico al 70 per cento di cacao di Kalmar Chokladfabrik con mirtilli rossi e mirtilli liofilizzati. Area di consegna in questa pagina.",
-      "nl": "Biologische pure chocolade met 70 procent cacao van Kalmar Chokladfabrik met gevriesdroogde vossenbessen en bosbessen, verpakt in een tekening van Tove Jansson.",
-      "sv": "Ekologisk mörk choklad med 70 procent kakao från Kalmar Chokladfabrik med frystorkade lingon och blåbär, insvept i Tove Janssons teckningar."
-    }
-  },
-  {
-    "path": "/product/moomin-berry-picking-tea",
-    "fallbackTitle": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
-    "fallbackDescription": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
-    "fallbackTitleByLang": {
-      "en": "Moomin Berry Picking tea, 20 bags | LaplandGifts",
-      "fi": "Moomin Muumi Marjaretki-tee, 20 pussia | LaplandGifts",
-      "de": "Moomin Berry Picking Tee, 20 Beutel | LaplandGifts",
-      "ja": "Moomin ムーミン ベリーピッキング ティー 20 袋 | LaplandGifts",
-      "es": "Té Moomin Berry Picking, 20 bolsitas | LaplandGifts",
-      "pt-BR": "Chá Moomin Berry Picking, 20 sachês | LaplandGifts",
-      "zh-CN": "Moomin 姆明 Berry Picking 茶，20 包 | LaplandGifts",
-      "ko": "Moomin 무민 Berry Picking 티, 20 티백 | LaplandGifts",
-      "fr": "Thé Moomin Berry Picking, 20 sachets | LaplandGifts",
-      "it": "Tè Moomin Berry Picking, 20 filtri | LaplandGifts",
-      "nl": "Moomin Berry Picking thee, 20 zakjes | LaplandGifts",
-      "sv": "Moomin Berry Picking te, 20 påsar | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Black tea with vanilla and red berry flavours, blended at the Nurmijärvi factory in Finland and carrying the Finnish Avainlippu mark. Sold by the partner shop.",
-      "fi": "Mustaa teetä vaniljan ja punaisten marjojen maulla, sekoitettu Nurmijärven tehtaalla ja merkitty Avainlipulla. Myyjänä kumppanin kauppa. Toimitusalue kerrotaan.",
-      "de": "Schwarzer Tee mit Vanille- und roten Beerenaromen, gemischt in der Fabrik in Nurmijärvi in Finnland und mit der finnischen Schlüsselflagge ausgezeichnet.",
-      "ja": "バニラと赤い果実の香りをつけた紅茶。フィンランドのヌルミヤルヴィ工場でブレンドされ、フィンランドの鍵マークが付いています。フィンランド赤十字との協働で、1 袋売れるごとに 0.40 ユーロが子どもや若者、孤立した人のための赤十字の活動に使われます。価格は提携ショップから取得し、ご購入も同じショップで行います。",
-      "es": "Té negro con aromas de vainilla y bayas rojas, mezclado en la fábrica de Nurmijärvi en Finlandia y con la Bandera Llave finlandesa. Venta en la tienda asociada.",
-      "pt-BR": "Chá preto com sabor de baunilha e frutas vermelhas, misturado na fábrica de Nurmijärvi na Finlândia e com a Bandeira-Chave finlandesa. Área de entrega indicada.",
-      "zh-CN": "带香草和红色浆果风味的红茶，在芬兰努尔米耶尔维工厂调配，带有芬兰钥匙旗标志。这款茶与芬兰红十字会合作：每售出一包，0.40 欧元用于红十字会面向儿童、青少年和孤独者的工作。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "바닐라와 붉은 베리 향을 더한 홍차로, 핀란드 누르미야르비 공장에서 블렌딩하고 핀란드 열쇠 깃발 마크를 달았습니다. 이 차는 핀란드 적십자와의 협업으로, 한 팩이 팔릴 때마다 0.40 유로가 어린이와 청소년, 외로운 사람들을 위한 적십자 활동에 쓰입니다. 제휴 상점에서 구매합니다.",
-      "fr": "Thé noir aux arômes de vanille et de baies rouges, assemblé à l’usine de Nurmijärvi en Finlande et portant le drapeau-clé finlandais. Vendu par le partenaire.",
-      "it": "Tè nero con aromi di vaniglia e bacche rosse, miscelato nello stabilimento di Nurmijärvi in Finlandia e con la Bandiera Chiave finlandese. Venduto dal partner.",
-      "nl": "Zwarte thee met vanille- en rodebessensmaak, gemengd in de fabriek in Nurmijärvi in Finland en voorzien van de Finse Sleutelvlag. Gekocht bij de partnerwinkel.",
-      "sv": "Svart te med smak av vanilj och röda bär, blandat i fabriken i Nurmijärvi i Finland och försett med den finska Nyckelflaggan. Du köper varan i partnerbutiken."
     }
   },
   {
@@ -7191,6 +6828,270 @@
       "it": "Scatola di vetro a forma di cuore della miniserie Yhdessä, insieme, di Muurla, 11,5 x 10 x 5,5 cm, lavaggio a mano, consegnata nella sua confezione di vendita.",
       "nl": "Hartvormig glazen doosje uit Muurla's minireeks Yhdessä, samen, 11,5 x 10 x 5,5 cm, handwas, geleverd in de verkoopverpakking. U koopt het bij de partnerwinkel.",
       "sv": "Hjärtformad glasask ur Muurlas miniserie Yhdessä, tillsammans, 11,5 x 10 x 5,5 cm, handdisk, levereras i sin försäljningsförpackning. Säljs av partnerbutiken."
+    }
+  },
+  {
+    "path": "/product/sk-aurora-borealis-reindeer-tealight",
+    "fallbackTitle": "Aurora Borealis reindeer tealight holder 10 cm",
+    "fallbackDescription": "A polished metal tealight holder shaped as a reindeer, 10 cm tall. The price is read from the partner shop, where you buy it. The delivery area is on this page.",
+    "fallbackTitleByLang": {
+      "en": "Aurora Borealis reindeer tealight holder 10 cm",
+      "fi": "Aurora Borealis poro-kynttilänjalka 10 cm | LaplandGifts",
+      "de": "Aurora Borealis Rentier-Teelichthalter 10 cm | LaplandGifts",
+      "ja": "Aurora Borealis トナカイ ティーライトホルダー 10 cm | LaplandGifts",
+      "es": "Portavelas reno Aurora Borealis 10 cm | LaplandGifts",
+      "pt-BR": "Porta-velas rena Aurora Borealis 10 cm | LaplandGifts",
+      "zh-CN": "Aurora Borealis 驯鹿茶蜡烛台 10 cm | LaplandGifts",
+      "ko": "Aurora Borealis 순록 티라이트 홀더 10 cm | LaplandGifts",
+      "fr": "Photophore renne Aurora Borealis 10 cm | LaplandGifts",
+      "it": "Portalumino renna Aurora Borealis 10 cm | LaplandGifts",
+      "nl": "Aurora Borealis waxinelichthouder rendier 10 cm",
+      "sv": "Aurora Borealis värmeljushållare ren 10 cm | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A polished metal tealight holder shaped as a reindeer, 10 cm tall. The price is read from the partner shop, where you buy it. The delivery area is on this page.",
+      "fi": "Kiiltävää metallia oleva poronmuotoinen tuikkukynttilänjalka, korkeus 10 cm. Hinta tulee kumppanin kaupasta, josta tuote myös ostetaan. Toimitusalue kerrotaan.",
+      "de": "Polierter Teelichthalter aus Metall in Rentierform, 10 cm hoch. Der Preis wird im Partnershop abgelesen, dort erfolgt auch der Kauf. Liefergebiet angegeben.",
+      "ja": "トナカイの形をした磨き上げた金属製のティーライトホルダー、高さ10 cm。12月の窓辺に置く小さなラップランドの品で、クッション封筒で送れるほど軽いです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Portavelas de metal pulido con forma de reno, 10 cm de alto. El pequeño objeto lapón para el alféizar en diciembre, tan ligero que viaja en un sobre acolchado.",
+      "pt-BR": "Porta-velas de metal polido em forma de rena, 10 cm de altura. O preço é consultado na loja parceira, onde também é feita a compra. Área de entrega indicada.",
+      "zh-CN": "驯鹿造型的抛光金属茶蜡烛台，高10厘米。十二月放在窗台上的一件拉普兰小物，轻得可以装进气泡信封寄出。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "순록 모양의 광택 금속 티라이트 홀더로 높이 10 cm입니다. 12월 창턱에 놓을 작은 라플란드 소품이며, 완충 봉투에 넣어 부칠 만큼 가볍습니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
+      "fr": "Photophore en métal poli en forme de renne, 10 cm de haut. Le prix vient de la boutique partenaire, où se fait aussi votre achat. Zone de livraison indiquée.",
+      "it": "Portalumino in metallo lucido a forma di renna, alto 10 cm. Il prezzo proviene dal negozio partner, dove si effettua l'acquisto. Area di consegna indicata.",
+      "nl": "Gepolijste metalen waxinelichthouder in de vorm van een rendier, 10 cm hoog. De prijs komt van de partnerwinkel, waar u het ook koopt. Bezorggebied is vermeld.",
+      "sv": "Polerad värmeljushållare i metall formad som en ren, 10 cm hög. Priset kommer från partnerbutiken, där du också handlar. Leveransområdet står på den här sidan."
+    }
+  },
+  {
+    "path": "/product/sk-muurla-moomin-bottle-05l-marjat",
+    "fallbackTitle": "Muurla Moomin glass bottle 0.5 l, Berries | LaplandGifts",
+    "fallbackDescription": "A half litre soda glass bottle with a tight swing top and the Berries print, dishwasher safe. The price comes from the partner shop, where you also buy it.",
+    "fallbackTitleByLang": {
+      "en": "Muurla Moomin glass bottle 0.5 l, Berries | LaplandGifts",
+      "fi": "Muurla Muumi-lasipullo 0,5 l, Marjat | LaplandGifts",
+      "de": "Muurla Mumin Glasflasche 0,5 l, Beeren | LaplandGifts",
+      "ja": "Muurla ムーミン ガラスボトル 0.5 l、ベリー | LaplandGifts",
+      "es": "Botella de vidrio Moomin Muurla 0,5 l, Bayas | LaplandGifts",
+      "pt-BR": "Garrafa de vidro Moomin Muurla 0,5 l, Frutas silvestres",
+      "zh-CN": "Muurla 姆明玻璃瓶 0.5 l，浆果 | LaplandGifts",
+      "ko": "Muurla 무민 유리병 0.5 l, 베리 | LaplandGifts",
+      "fr": "Bouteille en verre Moomin Muurla 0,5 l, Baies | LaplandGifts",
+      "it": "Bottiglia di vetro Moomin Muurla 0,5 l, Bacche",
+      "nl": "Muurla Moomin glazen fles 0,5 l, Bessen | LaplandGifts",
+      "sv": "Muurla Mumin glasflaska 0,5 l, Bär | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A half litre soda glass bottle with a tight swing top and the Berries print, dishwasher safe. The price comes from the partner shop, where you also buy it.",
+      "fi": "Puolen litran soodalasipullo tiiviillä patenttikorkilla ja Marjat-kuvituksella, konepesun kestävä. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
+      "de": "Halbliterflasche aus Sodaglas mit dichtem Bügelverschluss und dem Motiv Beeren, spülmaschinenfest. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
+      "ja": "密閉できるスイングトップ付きのソーダガラス製0.5リットルボトルで、ベリー柄、食洗機対応。Muurlaはジュースやサラダドレッシング用に作っており、0.5リットルは冷蔵庫のドアポケットに収まる大きさです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Botella de medio litro de vidrio sódico con tapón mecánico hermético y el estampado Bayas, apta para lavavajillas. El precio se consulta en la tienda asociada.",
+      "pt-BR": "Garrafa de meio litro em vidro sodocálcico com tampa mecânica vedada e a estampa Frutas silvestres, pode ir à lava-louças. A compra é feita na loja parceira.",
+      "zh-CN": "半升钠钙玻璃瓶，带密封卡扣瓶塞和浆果图案，可用洗碗机。Muurla做它来装果汁和沙拉酱，半升正好放进冰箱门。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "밀폐되는 스윙 마개와 베리 프린트가 있는 소다 유리 0.5리터 병으로, 식기세척기 사용이 가능합니다. Muurla는 주스와 샐러드 드레싱용으로 만들었고, 0.5리터는 냉장고 문에 딱 맞는 크기입니다. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다. 배송 지역은 이 페이지에 있습니다.",
+      "fr": "Bouteille d'un demi-litre en verre sodique avec bouchon mécanique étanche et le motif Baies, lavable au lave-vaisselle. Achat dans la boutique partenaire.",
+      "it": "Bottiglia da mezzo litro in vetro sodico con tappo meccanico a tenuta e la fantasia Bacche, lavabile in lavastoviglie. Il prezzo è rilevato dal negozio partner.",
+      "nl": "Halveliterfles van sodaglas met een dichte beugelsluiting en de print Bessen, vaatwasserbestendig. De prijs komt van de partnerwinkel, waar u het ook koopt.",
+      "sv": "Halvlitersflaska i sodaglas med tät patentkork och mönstret Bär, tål maskindisk. Priset kommer från partnerbutiken, där du också handlar. Leveransområdet anges."
+    }
+  },
+  {
+    "path": "/product/nb-hattifatteners-cushion",
+    "fallbackTitle": "Nordicbuddies Hattifatteners cushion | LaplandGifts",
+    "fallbackDescription": "A polyester cushion shaped like a row of Hattifatteners, 45 to 75 by 30 to 50 by 10 cm, hand wash only. You buy it in the partner shop. Delivery area is listed.",
+    "fallbackTitleByLang": {
+      "en": "Nordicbuddies Hattifatteners cushion | LaplandGifts",
+      "fi": "Nordicbuddies Hattivatit-tyyny | LaplandGifts",
+      "de": "Nordicbuddies Hattifnatten-Kissen | LaplandGifts",
+      "ja": "Nordicbuddies ニョロニョロ クッション | LaplandGifts",
+      "es": "Nordicbuddies Cojín Hattifatteners | LaplandGifts",
+      "pt-BR": "Nordicbuddies Almofada Hattifatteners | LaplandGifts",
+      "zh-CN": "Nordicbuddies 溜溜抱枕 | LaplandGifts",
+      "ko": "Nordicbuddies 해티패트너 쿠션 | LaplandGifts",
+      "fr": "Nordicbuddies Coussin Hattifatteners | LaplandGifts",
+      "it": "Nordicbuddies Cuscino Hattifatteners | LaplandGifts",
+      "nl": "Nordicbuddies Hattifnattenkussen | LaplandGifts",
+      "sv": "Nordicbuddies Hattifnattkudde | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A polyester cushion shaped like a row of Hattifatteners, 45 to 75 by 30 to 50 by 10 cm, hand wash only. You buy it in the partner shop. Delivery area is listed.",
+      "fi": "Hattivattirivin muotoinen polyesterityyny, 45–75 x 30–50 x 10 cm, vain käsinpesu. Hinta tulee kumppanin kaupasta, josta tuote myös ostetaan. Toimitusalue näkyy.",
+      "de": "Polyesterkissen in Form einer Reihe Hattifnatten, 45 bis 75 x 30 bis 50 x 10 cm, nur Handwäsche. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
+      "ja": "一列に並んだニョロニョロの形をしたポリエステルのクッション、45〜75 x 30〜50 x 10 cm、手洗いのみ。真空パックで届き、元の形に戻るまで1日かかります。ニョロニョロがじっとしているのはその時だけです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Cojín de poliéster con forma de fila de Hattifatteners, 45 a 75 x 30 a 50 x 10 cm, solo lavado a mano. El precio es el de la tienda asociada, donde se compra.",
+      "pt-BR": "Almofada de poliéster em forma de fileira de Hattifatteners, 45 a 75 x 30 a 50 x 10 cm, somente lavagem à mão. O preço vem da loja parceira, onde se compra.",
+      "zh-CN": "一排溜溜造型的聚酯抱枕，45至75 x 30至50 x 10厘米，仅可手洗。真空包装送达，需要一天才能恢复原形，这是溜溜唯一安静不动的时候。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "한 줄로 늘어선 해티패트너 모양의 폴리에스터 쿠션, 45~75 x 30~50 x 10 cm, 손세척만 가능. 진공 포장으로 도착해 원래 모양으로 부풀어 오르기까지 하루가 걸리는데, 해티패트너가 가만히 있는 유일한 순간입니다. 가격은 제휴 상점 기준이며 구매도 그곳에서 이루어집니다.",
+      "fr": "Coussin en polyester en forme de rangée de Hattifatteners, 45 à 75 x 30 à 50 x 10 cm, lavage à la main uniquement. Vous achetez dans la boutique partenaire.",
+      "it": "Cuscino in poliestere a forma di fila di Hattifatteners, da 45 a 75 x da 30 a 50 x 10 cm, solo lavaggio a mano. L'area di consegna è indicata in questa pagina.",
+      "nl": "Polyester kussen in de vorm van een rij Hattifnatten, 45 tot 75 x 30 tot 50 x 10 cm, alleen handwas. De prijs komt van de partnerwinkel, waar u het ook koopt.",
+      "sv": "Polyesterkudde formad som en rad hattifnattar, 45 till 75 x 30 till 50 x 10 cm, endast handtvätt. Priset kommer från partnerbutiken, där du också handlar."
+    }
+  },
+  {
+    "path": "/product/sk-emendo-moomin-sauna-seat-cover",
+    "fallbackTitle": "Emendo Moomin Love sauna seat cover 150 x 50 cm, brown",
+    "fallbackDescription": "A 150 by 50 cm linen and cotton sauna seat cover with Tove Jansson's original Moomin drawings, an official licensed product. The delivery area is on this page.",
+    "fallbackTitleByLang": {
+      "en": "Emendo Moomin Love sauna seat cover 150 x 50 cm, brown",
+      "fi": "Emendo Rakkausmuumi-laudeliina 150 x 50 cm, ruskea",
+      "de": "Emendo Mumin-Liebe Saunatuch 150 x 50 cm, braun",
+      "ja": "Emendo ムーミン・ラブ サウナシートカバー 150 x 50 cm、ブラウン | LaplandGifts",
+      "es": "Toalla de banco de sauna Emendo Moomin Amor 150 x 50 cm.",
+      "pt-BR": "Toalha de banco de sauna Emendo Moomin Amor 150 x 50 cm.",
+      "zh-CN": "Emendo 姆明之爱桑拿坐垫布 150 x 50 cm，棕色 | LaplandGifts",
+      "ko": "Emendo 무민 러브 사우나 시트 커버 150 x 50 cm, 브라운 | LaplandGifts",
+      "fr": "Serviette de banc de sauna Emendo Moomin Amour 150 x 50 cm.",
+      "it": "Telo da sauna Emendo Moomin Amore 150 x 50 cm, marrone",
+      "nl": "Emendo Moomin Liefde saunahanddoek 150 x 50 cm, bruin",
+      "sv": "Emendo Muminkärlek bastuhandduk 150 x 50 cm, brun"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A 150 by 50 cm linen and cotton sauna seat cover with Tove Jansson's original Moomin drawings, an official licensed product. The delivery area is on this page.",
+      "fi": "150 x 50 cm pellava-puuvillainen laudeliina Tove Janssonin alkuperäispiirustuksilla, virallinen lisenssituote. Myyjänä kumppanin kauppa. Toimitusalue kerrotaan.",
+      "de": "Saunasitztuch aus Leinen und Baumwolle, 150 x 50 cm, mit Tove Janssons Originalzeichnungen, offizielles Lizenzprodukt. Das Liefergebiet steht auf dieser Seite.",
+      "ja": "トーベ・ヤンソンの原画を使ったリネンとコットンのサウナシートカバー、150 x 50 cm、公式ライセンス商品。リネンは湿気を吸い、強い洗濯にも耐えるので、ベンチに敷いても背中の後ろに立てても使えます。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Toalla de banco de sauna de lino y algodón, 150 x 50 cm, con los dibujos originales de Tove Jansson, producto con licencia oficial. Venta en la tienda asociada.",
+      "pt-BR": "Toalha de banco de sauna em linho e algodão, 150 x 50 cm, com os desenhos originais de Tove Jansson, produto com licença oficial. Área de entrega nesta página.",
+      "zh-CN": "亚麻棉混纺桑拿坐垫布，150 x 50厘米，印有托芙·扬松的原画，官方授权产品。亚麻吸湿、耐高强度洗涤，可铺在长凳上或竖着靠在背后。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "토베 얀손의 원화가 들어간 리넨과 면 혼방 사우나 시트 커버, 150 x 50 cm, 공식 라이선스 제품입니다. 리넨은 습기를 흡수하고 강한 세탁을 견디므로 벤치에 깔거나 등 뒤에 세워 씁니다. 가격은 제휴 상점 기준이며 구매도 그곳에서 이루어집니다. 배송 지역은 이 페이지에 있습니다.",
+      "fr": "Serviette de banc de sauna en lin et coton, 150 x 50 cm, avec les dessins originaux de Tove Jansson, produit sous licence officielle. Vendu par le partenaire.",
+      "it": "Telo da panca in lino e cotone, 150 x 50 cm, con i disegni originali di Tove Jansson, prodotto su licenza ufficiale. Il prezzo è rilevato dal negozio partner.",
+      "nl": "Saunazitdoek van linnen en katoen, 150 x 50 cm, met Tove Janssons originele Moomin-tekeningen, officieel gelicentieerd product. Verkocht door de partnerwinkel.",
+      "sv": "Bastuhandduk i linne och bomull, 150 x 50 cm, med Tove Janssons originalteckningar, officiell licensprodukt. Priset hämtas från partnerbutiken, där köpet sker."
+    }
+  },
+  {
+    "path": "/product/sk-rento-pino-sauna-seat-cover",
+    "fallbackTitle": "Rento Pino sauna seat cover 50 x 150 cm, grey | LaplandGifts",
+    "fallbackDescription": "A jacquard woven cotton sauna seat cover, 50 by 150 cm, designed by Anna Säteri for Rento. The price comes from the partner shop, where you also buy it.",
+    "fallbackTitleByLang": {
+      "en": "Rento Pino sauna seat cover 50 x 150 cm, grey | LaplandGifts",
+      "fi": "Rento Pino -laudeliina 50 x 150 cm, harmaa | LaplandGifts",
+      "de": "Rento Pino Saunatuch 50 x 150 cm, grau | LaplandGifts",
+      "ja": "Rento Pino サウナシートカバー 50 x 150 cm、グレー | LaplandGifts",
+      "es": "Toalla de banco de sauna Rento Pino 50 x 150 cm, gris",
+      "pt-BR": "Toalha de banco de sauna Rento Pino 50 x 150 cm, cinza",
+      "zh-CN": "Rento Pino 桑拿坐垫布 50 x 150 cm，灰色 | LaplandGifts",
+      "ko": "Rento Pino 사우나 시트 커버 50 x 150 cm, 그레이 | LaplandGifts",
+      "fr": "Serviette de banc de sauna Rento Pino 50 x 150 cm, gris",
+      "it": "Telo da sauna Rento Pino 50 x 150 cm, grigio | LaplandGifts",
+      "nl": "Rento Pino saunahanddoek 50 x 150 cm, grijs | LaplandGifts",
+      "sv": "Rento Pino bastuhandduk 50 x 150 cm, grå | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A jacquard woven cotton sauna seat cover, 50 by 150 cm, designed by Anna Säteri for Rento. The price comes from the partner shop, where you also buy it.",
+      "fi": "Jacquard-kudottu puuvillainen laudeliina, 50 x 150 cm, Anna Säterin suunnittelema Rennolle. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
+      "de": "Jacquardgewebtes Saunasitztuch aus Baumwolle, 50 x 150 cm, entworfen von Anna Säteri für Rento. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
+      "ja": "ジャカード織りコットンのサウナシートカバー、50 x 150 cm、Anna SäteriがRentoのためにデザイン。軽いコットンは熱いベンチの上でひんやりと感じられ、汗を吸って速く乾き、柄は洗濯しても残ります。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Toalla de banco de sauna de algodón tejido jacquard, 50 x 150 cm, diseñada por Anna Säteri para Rento. El precio es el de la tienda asociada, donde se compra.",
+      "pt-BR": "Toalha de banco de sauna em algodão tecido jacquard, 50 x 150 cm, desenhada por Anna Säteri para a Rento. O preço vem da loja parceira, onde você também compra.",
+      "zh-CN": "提花织造的棉质桑拿坐垫布，50 x 150厘米，由Anna Säteri为Rento设计。轻薄的棉布在热凳上触感清凉，吸汗、快干，花纹经洗不褪。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "자카드 직조 면 사우나 시트 커버, 50 x 150 cm, Anna Säteri가 Rento를 위해 디자인했습니다. 가벼운 면은 뜨거운 벤치 위에서 시원하게 느껴지고 땀을 흡수하며 빨리 마르고, 무늬는 세탁 후에도 남습니다. 가격은 제휴 상점 기준이며 구매도 그곳에서 이루어집니다.",
+      "fr": "Serviette de banc de sauna en coton tissé jacquard, 50 x 150 cm, dessinée par Anna Säteri pour Rento. Le prix est relevé auprès de la boutique partenaire.",
+      "it": "Telo da panca in cotone tessuto jacquard, 50 x 150 cm, disegnato da Anna Säteri per Rento. Il prezzo proviene dal negozio partner, dove si effettua l'acquisto.",
+      "nl": "Jacquardgeweven katoenen saunazitdoek, 50 x 150 cm, ontworpen door Anna Säteri voor Rento. Gekocht bij de partnerwinkel. Het bezorggebied staat op deze pagina.",
+      "sv": "Jacquardvävd bastuhandduk i bomull, 50 x 150 cm, formgiven av Anna Säteri för Rento. Priset är hämtat från partnerbutiken och köpet görs i samma butik."
+    }
+  },
+  {
+    "path": "/product/sk-moomin-chocolate-chip-biscuit-tin",
+    "fallbackTitle": "Moomin chocolate chip biscuits in a tin 200 g | LaplandGifts",
+    "fallbackDescription": "Mini chocolate chip biscuits, 200 grams, in a Moomin tin that outlives the biscuits as a storage box. The price is read from the partner shop, where you buy it.",
+    "fallbackTitleByLang": {
+      "en": "Moomin chocolate chip biscuits in a tin 200 g | LaplandGifts",
+      "fi": "Muumi-suklaahippukeksit peltirasiassa 200 g | LaplandGifts",
+      "de": "Mumin Schokoladenkekse in der Dose 200 g | LaplandGifts",
+      "ja": "Moomin ムーミン チョコチップビスケット 缶入り 200 g | LaplandGifts",
+      "es": "Galletas con pepitas de chocolate Moomin en lata 200 g",
+      "pt-BR": "Biscoitos com gotas de chocolate Moomin em lata 200 g",
+      "zh-CN": "Moomin 姆明巧克力豆饼干铁盒装 200 g | LaplandGifts",
+      "ko": "Moomin 무민 초콜릿 칩 비스킷 틴 200 g | LaplandGifts",
+      "fr": "Biscuits aux pépites de chocolat Moomin en boîte 200 g",
+      "it": "Biscotti con gocce di cioccolato Moomin in latta 200 g",
+      "nl": "Moomin chocolate chip koekjes in blik 200 g | LaplandGifts",
+      "sv": "Moomin Mumin chokladkakor i plåtburk 200 g | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Mini chocolate chip biscuits, 200 grams, in a Moomin tin that outlives the biscuits as a storage box. The price is read from the partner shop, where you buy it.",
+      "fi": "Pieniä suklaahippukeksejä, 200 grammaa, Muumi-peltirasiassa, joka jää keksien jälkeen säilytysrasiaksi. Ostetaan kumppanin kaupasta. Toimitusalue näkyy sivulla.",
+      "de": "Mini-Schokoladenkekse, 200 Gramm, in einer Mumin-Dose, die die Kekse als Aufbewahrungsdose überlebt. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
+      "ja": "ミニチョコチップビスケット200グラムをムーミンの缶に詰めました。缶はビスケットの後も収納缶として残ります。チョコレート片はビスケットの16パーセントで、カカオ固形分は40パーセント以上です。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Mini galletas con pepitas de chocolate, 200 gramos, en una lata Moomin que sobrevive a las galletas como caja de almacenaje. Se compra en la tienda asociada.",
+      "pt-BR": "Mini biscoitos com gotas de chocolate, 200 gramas, numa lata Moomin que sobrevive aos biscoitos como caixa de guardar. O preço é consultado na loja parceira.",
+      "zh-CN": "迷你巧克力豆饼干200克，装在姆明铁盒里，饼干吃完后铁盒还能当收纳盒。巧克力块占饼干的16%，其中可可固形物不低于40%。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "무민 틴에 담긴 미니 초콜릿 칩 비스킷 200그램으로, 틴은 비스킷을 다 먹은 뒤 보관함으로 남습니다. 초콜릿 조각은 비스킷의 16퍼센트이며 코코아 고형분이 40퍼센트 이상입니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 있습니다.",
+      "fr": "Mini biscuits aux pépites de chocolat, 200 grammes, dans une boîte Moomin qui survit aux biscuits comme boîte de rangement. Achat dans la boutique partenaire.",
+      "it": "Mini biscotti con gocce di cioccolato, 200 grammi, in una latta Moomin che sopravvive ai biscotti come scatola. L'area di consegna è indicata in questa pagina.",
+      "nl": "Mini chocolate chip koekjes, 200 gram, in een Moomin-blik dat de koekjes overleeft als opbergdoos. De prijs komt van de partnerwinkel, waar u het ook koopt.",
+      "sv": "Små chokladkakor, 200 gram, i en Muminburk som överlever kakorna som förvaringsburk. Priset är hämtat från partnerbutiken och köpet görs i samma butik."
+    }
+  },
+  {
+    "path": "/product/sk-paulig-cafe-new-york-beans",
+    "fallbackTitle": "Paulig Café New York coffee beans 450 g | LaplandGifts",
+    "fallbackDescription": "A medium dark bean coffee, 450 grams, Latin American arabica with Brazilian beans for sweetness and a fruity edge. The price is read from the partner shop.",
+    "fallbackTitleByLang": {
+      "en": "Paulig Café New York coffee beans 450 g | LaplandGifts",
+      "fi": "Paulig Café New York kahvipavut 450 g | LaplandGifts",
+      "de": "Paulig Café New York Kaffeebohnen 450 g | LaplandGifts",
+      "ja": "Paulig Café New York コーヒー豆 450 g | LaplandGifts",
+      "es": "Café en grano Paulig Café New York 450 g | LaplandGifts",
+      "pt-BR": "Café em grãos Paulig Café New York 450 g | LaplandGifts",
+      "zh-CN": "Paulig Café New York 咖啡豆 450 g | LaplandGifts",
+      "ko": "Paulig Café New York 커피 원두 450 g | LaplandGifts",
+      "fr": "Café en grains Paulig Café New York 450 g | LaplandGifts",
+      "it": "Caffè in grani Paulig Café New York 450 g | LaplandGifts",
+      "nl": "Paulig Café New York koffiebonen 450 g | LaplandGifts",
+      "sv": "Paulig Café New York kaffebönor 450 g | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A medium dark bean coffee, 450 grams, Latin American arabica with Brazilian beans for sweetness and a fruity edge. The price is read from the partner shop.",
+      "fi": "Keskitumma papukahvi, 450 grammaa, Latinalaisen Amerikan arabicaa ja makeutta antavia brasilialaisia papuja, hedelmäinen vivahde. Ostetaan kumppanin kaupasta.",
+      "de": "Mittel-dunkler Bohnenkaffee, 450 Gramm, lateinamerikanischer Arabica mit brasilianischen Bohnen für Süße und eine fruchtige Note. Verkauf durch den Partnershop.",
+      "ja": "中深煎りの豆コーヒー450グラム。ラテンアメリカのアラビカに甘みを添えるブラジル豆を合わせた、フルーティーな味わい。Pauligは1876年からフィンランドでコーヒーを焙煎しており、フィンランド人の一人当たりの消費量は世界一です。価格は提携ショップから取得し、ご購入もそちらで。配送エリアはこのページに記載しています。",
+      "es": "Café en grano de tueste medio oscuro, 450 gramos, arábica latinoamericano con granos brasileños para el dulzor y un toque afrutado. Venta en la tienda asociada.",
+      "pt-BR": "Café em grãos de torra média-escura, 450 gramas, arábica latino-americano com grãos brasileiros para a doçura e um toque frutado. Área de entrega nesta página.",
+      "zh-CN": "中深烘焙咖啡豆450克，拉丁美洲阿拉比卡配上带来甜感的巴西豆，带果香。Paulig自1876年起在芬兰烘焙咖啡，芬兰人的人均咖啡饮用量世界第一。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "중강배전 원두 커피 450그램으로, 라틴아메리카 아라비카에 단맛을 더하는 브라질 원두를 섞어 과일 향이 감돕니다. Paulig는 1876년부터 핀란드에서 커피를 볶아 왔고, 핀란드인은 1인당 커피를 세계에서 가장 많이 마십니다. 가격은 제휴 상점 기준이며 구매도 그곳에서 이루어집니다.",
+      "fr": "Café en grains à torréfaction mi-foncée, 450 grammes, arabica d'Amérique latine avec des grains brésiliens pour la douceur et une note fruitée.",
+      "it": "Caffè in grani a tostatura medio-scura, 450 grammi, arabica latinoamericano con chicchi brasiliani per la dolcezza e una nota fruttata. Venduto dal partner.",
+      "nl": "Middeldonkere bonenkoffie, 450 gram, Latijns-Amerikaanse arabica met Braziliaanse bonen voor zoetheid en een fruitig randje. U koopt het bij de partnerwinkel.",
+      "sv": "Mellanmörkt bönkaffe, 450 gram, latinamerikansk arabica med brasilianska bönor för sötma och en fruktig ton. Priset hämtas från partnerbutiken, där köpet sker."
+    }
+  },
+  {
+    "path": "/product/rj-korpihilla-spruce-sprout-sparkling-750",
+    "fallbackTitle": "Korpihilla sparkling spruce sprout drink 750 ml",
+    "fallbackDescription": "A non alcoholic sparkling drink made by hand from spruce sprouts in Finnish Lapland, 750 ml. The price comes from the partner shop, where you also buy it.",
+    "fallbackTitleByLang": {
+      "en": "Korpihilla sparkling spruce sprout drink 750 ml",
+      "fi": "Korpihilla kuohuva kuusenkerkkäjuoma 750 ml | LaplandGifts",
+      "de": "Korpihilla Fichtenspitzen-Schaumgetränk 750 ml",
+      "ja": "Korpihilla トウヒの新芽スパークリング 750 ml | LaplandGifts",
+      "es": "Espumoso de brotes de abeto Korpihilla 750 ml | LaplandGifts",
+      "pt-BR": "Espumante de brotos de abeto Korpihilla 750 ml",
+      "zh-CN": "Korpihilla 云杉嫩芽气泡饮 750 ml | LaplandGifts",
+      "ko": "Korpihilla 가문비나무 새순 스파클링 750 ml | LaplandGifts",
+      "fr": "Pétillant aux pousses d'épicéa Korpihilla 750 ml",
+      "it": "Spumante analcolico ai germogli di abete Korpihilla 750 ml",
+      "nl": "Korpihilla bruisende sparrenscheutendrank 750 ml",
+      "sv": "Korpihilla mousserande granskottsdryck 750 ml | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A non alcoholic sparkling drink made by hand from spruce sprouts in Finnish Lapland, 750 ml. The price comes from the partner shop, where you also buy it.",
+      "fi": "Alkoholiton kuohujuoma, tehty käsityönä kuusenkerkistä Suomen Lapissa, 750 ml. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä. Toimitusalue näkyy.",
+      "de": "Alkoholfreies Schaumgetränk, von Hand aus Fichtenspitzen in Finnisch-Lappland hergestellt, 750 ml. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
+      "ja": "フィンランドのラップランドでトウヒの新芽から手作りされたノンアルコールのスパークリング、750 ml。2005年に雑誌Viisi Tähteäでフィンランド最高の飲み物に選ばれ、今も乾杯に森の味が欲しいときに開ける一本です。価格は提携ショップのもので、ご購入もそちらで行います。配送エリアはこのページに記載しています。",
+      "es": "Bebida espumosa sin alcohol, hecha a mano con brotes de abeto en la Laponia finlandesa, 750 ml. El precio es el de la tienda asociada, donde se compra.",
+      "pt-BR": "Bebida espumante sem álcool, feita à mão com brotos de abeto na Lapônia finlandesa, 750 ml. O preço é consultado na loja parceira, onde também é feita a compra.",
+      "zh-CN": "在芬兰拉普兰用云杉嫩芽手工制作的无酒精气泡饮，750毫升。2005年被《Viisi Tähteä》杂志评为芬兰最佳饮品，至今仍是想让举杯带上森林味道时要开的那一瓶。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "핀란드 라플란드에서 가문비나무 새순으로 손수 만든 무알코올 스파클링 음료, 750 ml. 2005년 잡지 Viisi Tähteä가 핀란드 최고의 음료로 뽑았고, 건배에서 숲의 맛이 나야 할 때 여전히 여는 한 병입니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다.",
+      "fr": "Boisson pétillante sans alcool, faite à la main à partir de pousses d'épicéa en Laponie finlandaise, 750 ml. La zone de livraison est indiquée sur cette page.",
+      "it": "Bevanda frizzante analcolica, fatta a mano con germogli di abete nella Lapponia finlandese, 750 ml. Il prezzo è rilevato dal negozio partner, dove si acquista.",
+      "nl": "Alcoholvrije bruisdrank, met de hand gemaakt van sparrenscheuten in Fins Lapland, 750 ml. De prijs is overgenomen van de partnerwinkel. Bezorggebied is vermeld.",
+      "sv": "Alkoholfri mousserande dryck, gjord för hand av granskott i finska Lappland, 750 ml. Priset är hämtat från partnerbutiken och köpet görs i samma butik."
     }
   },
   {

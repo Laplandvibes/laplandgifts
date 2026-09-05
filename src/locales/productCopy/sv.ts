@@ -14,20 +14,6 @@ import type { ProductCopyMap } from './index'
  * numeroiden-täsmäävyystesti sallii.
  */
 export const PRODUCT_COPY_SV: ProductCopyMap = {
-  'moomin-mystical-forest-wool-throw': {
-    name: 'Moominpläd i ull Mystical Forest 130 x 170 cm',
-    description:
-      'En pläd på 130 gånger 170 cm i 100 procent ull, formgiven i Finland för kollektionen Mystical Forest. Endast kemtvätt, så räkna med soffpläd snarare än picknickfilt.',
-    specs: [
-      '100 % ull',
-      '130 x 170 cm',
-      'Blå',
-      'Kemtvätt, skonsam process',
-      'Formgiven i Finland, tillverkad i Litauen',
-      'Mystical Forest',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Kollektion'],
-  },
   'iittala-aalto-vase-160': {
     name: 'Iittala Alvar Aalto vas 160 mm, klar',
     description:
@@ -98,35 +84,6 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Formgivare',
       'Artikelnummer och EAN',
     ],
-  },
-  'aarikka-prinsessa-candleholder': {
-    name: 'Aarikka Prinsessa ljushållare',
-    description:
-      'Aarikka har svarvat björkpärlor sedan 1950-talet, och Prinsessa bär en krans av dem runt en hållare på 5,5 cm som tar antingen värmeljus eller kronljus. Liten nog att posta, tydlig nog att kännas igen i Finland.',
-    specs: [
-      'Höjd 5,5 cm, diameter 6 cm',
-      'Björk, lönn, aluminium',
-      '98 g',
-      'Formgiven i Finland, tillverkad i Italien',
-      'Ljushållare med en krans av träpärlor. Passar värmeljus och raka ljus',
-      'B08633',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Produktkod'],
-  },
-  'aarikka-pore-glass-vase': {
-    name: 'Aarikka Pore glasvas 16 cm, mörkgrön',
-    description:
-      'En rund handblåst vas på 1,7 liter med en krans av lönnpärlor som färgas för hand i Finland. Luftbubblorna i glaset hör till, och kransen tas av före disk.',
-    specs: [
-      'Höjd 16 cm, diameter 16 cm',
-      '1,7 l',
-      'Glas och lönn',
-      'Klar och grön',
-      'Glaset tillverkat i Polen, träkransen i Finland',
-      'Diska för hand. Ta av träkransen före disk',
-      'B08706',
-    ],
-    specLabels: [undefined, undefined, undefined, undefined, undefined, undefined, 'Produktkod'],
   },
   'halti-tokoi-dx-jacket': {
     name: 'Halti Tokoi DX skaljacka, herr',
@@ -353,56 +310,6 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Modellnummer'],
   },
-  'lapuan-kankurit-poro-towel': {
-    name: 'Lapuan Kankurit PORO linnehandduk 46 x 70 cm',
-    description:
-      'En ren ritad av illustratören Matti Pikkujämsä, vävd i väveriet i Lappo av europeisk linnevarp och ekologisk bomullsinslag. Viks platt ner i resväskan, och uppsugningsförmågan kommer först efter några tvättar.',
-    specs: [
-      '46 x 70 cm',
-      '60 % lin, Masters of Linen, och 40 % bomull',
-      'Lin-grön',
-      'Tillverkad i Finland',
-      'Tvätta separat före användning i 60 °C i skonsam process med rikligt med vatten. Centrifugera inte. Undvik sköljmedel och blekmedel. Torktumla inte. Stryk medan den är fuktig. Krympning cirka 5 %',
-      'Matti Pikkujämsä',
-      '20527',
-      'Nyckelflaggan, Masters of Linen',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Formgivare',
-      'Produktkod',
-      'Certifikat',
-    ],
-  },
-  'lapuan-kankurit-kaamos-blanket': {
-    name: 'Lapuan Kankurit KAAMOS ullpläd 100 x 150 cm',
-    description:
-      'Kaamos är polarnatten, och Hanna Galtat hämtade mönstret ur hur dagsljuset rör sig genom dygnet. Inslagsgarnet är ull från finsk lantras som väveriet samlar in från gårdar inom omkring 400 km från Lappo.',
-    specs: [
-      '100 x 150 cm',
-      '100 % ren ny ull',
-      'Vit-svart',
-      'Tillverkad i Finland',
-      'Tvätta bara om den är mycket smutsig, vädra den annars utomhus. Handtvätt i högst 30 °C eller kemtvätt. Gnid inte, sträck inte och vrid inte. Torktumla inte. Stryk med fuktig duk i högst 150 °C',
-      'Hanna Galtat',
-      '102939',
-      'Nyckelflaggan',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Formgivare',
-      'Produktkod',
-      'Certifikat',
-    ],
-  },
   'pentik-posio-mug': {
     name: 'Pentik Posio mugg 0,3 l',
     description:
@@ -524,42 +431,6 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Veganskt. Hibiskus och rooibos är Rainforest Alliance-certifierade',
     ],
     specLabels: [undefined, 'Bryggning', 'Kost och certifiering'],
-  },
-  'moomin-wild-blueberry-coffee': {
-    name: 'Moomintrollet Wild Blueberry kaffe 250 g',
-    description:
-      'Blåbärssmaksatt kaffe från Bergstrands Kafferosteri, byggt på pärlbönor mognade på Mogianahöjderna i sydöstra Brasilien. En pärlböna är ett kaffekörsbär som fick en böna i stället för två, vilket rosteriet säger koncentrerar smaken. 250 gram.',
-    specs: [
-      '250 g',
-      'Bönor från Mogianahöjderna i sydöstra Brasilien, rostade av Bergstrands Kafferosteri',
-      'Pärlböna, ett kaffekörsbär med en enda böna i stället för två',
-      'Vilda blåbär',
-    ],
-    specLabels: [undefined, undefined, 'Böna', 'Smak'],
-  },
-  'moomin-lingonberry-blueberry-dark-chocolate': {
-    name: 'Moomintrollet mörk choklad med lingon och blåbär 70 g',
-    description:
-      'Ekologisk mörk choklad med 70 procent kakao från Kalmar Chokladfabrik med frystorkade lingon och blåbär, insvept i Tove Janssons teckningar. Kakaon är Criollo och Trinitario från Peru och kakan tillverkas i Sverige.',
-    specs: [
-      '70 g',
-      'Mörk choklad, 70 % kakao',
-      'Kakaobönor Criollo och Trinitario från Peru, tillverkad i Sverige',
-      'Ekologisk',
-    ],
-    specLabels: [undefined, undefined, undefined, 'Kost'],
-  },
-  'moomin-berry-picking-tea': {
-    name: 'Moomin Berry Picking te, 20 påsar',
-    description:
-      'Svart te med smak av vanilj och röda bär, blandat i fabriken i Nurmijärvi i Finland och försett med den finska Nyckelflaggan. Teet är ett samarbete med Finlands Röda Kors: 0,40 euro av varje såld förpackning går till Röda Korsets arbete med barn, unga och ensamma.',
-    specs: [
-      '20 x 1,75 g, 35 g',
-      'Tillverkat i fabriken i Nurmijärvi i Finland',
-      'Rainforest Alliance-certifierat te, finska Nyckelflaggan',
-      'Veganskt',
-    ],
-    specLabels: [undefined, undefined, 'Certifiering', 'Kost'],
   },
   'arctic-power-berries-blueberry-powder': {
     name: 'Vilt blåbärspulver 70 g',
@@ -1764,5 +1635,96 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Försäljningsförpackning',
     ],
     specLabels: [undefined, undefined, 'Förpackning'],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-aurora-borealis-reindeer-tealight': {
+    name: 'Aurora Borealis värmeljushållare ren 10 cm',
+    description:
+      'Polerad värmeljushållare i metall formad som en ren, 10 cm hög. Det lilla Lapplandsföremålet för fönsterbrädan i december, lätt nog att posta i ett vadderat kuvert.',
+    specs: [
+      'Höjd 10 cm',
+      'Polerad metall',
+      'Värmeljus',
+    ],
+    specLabels: [undefined, undefined, 'För'],
+  },
+  'sk-muurla-moomin-bottle-05l-marjat': {
+    name: 'Muurla Mumin glasflaska 0,5 l, Bär',
+    description:
+      'Halvlitersflaska i sodaglas med tät patentkork och mönstret Bär, tål maskindisk. Muurla gör dem för saft och salladsdressing, och halvlitern får plats i kylskåpsdörren.',
+    specs: [
+      '0,5 l',
+      'Sodaglas, patentkork',
+      'Tål maskindisk',
+    ],
+  },
+  'nb-hattifatteners-cushion': {
+    name: 'Hattifnattkudde',
+    description:
+      'Polyesterkudde formad som en rad hattifnattar, 45 till 75 x 30 till 50 x 10 cm, endast handtvätt. Den kommer vakuumpackad och tar en dag på sig att svälla tillbaka till sin form, den enda gången hattifnattar står stilla.',
+    specs: [
+      'Polyester',
+      '45–75 x 30–50 x 10 cm',
+      'Endast handtvätt',
+      'Vakuumpackad, återtar formen efter uppackning',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Förpackning'],
+  },
+  'sk-emendo-moomin-sauna-seat-cover': {
+    name: 'Emendo Muminkärlek bastuhandduk 150 x 50 cm, brun',
+    description:
+      'Bastuhandduk i linne och bomull, 150 x 50 cm, med Tove Janssons originalteckningar, officiell licensprodukt. Linne suger upp fukt och tål hård tvätt, så den ligger på laven eller står bakom ryggen.',
+    specs: [
+      '150 x 50 cm',
+      'Linne 60 %, bomull 40 %',
+      'Officiell Moomin Characters-produkt',
+    ],
+    specLabels: [undefined, undefined, 'Licens'],
+  },
+  'sk-rento-pino-sauna-seat-cover': {
+    name: 'Rento Pino bastuhandduk 50 x 150 cm, grå',
+    description:
+      'Jacquardvävd bastuhandduk i bomull, 50 x 150 cm, formgiven av Anna Säteri för Rento. Lätt bomull känns sval mot huden på den heta laven, suger upp svett, torkar snabbt, och mönstret klarar tvätten.',
+    specs: [
+      '50 x 150 cm',
+      'Jacquardvävd bomull',
+      'Anna Säteri',
+    ],
+    specLabels: [undefined, undefined, 'Formgivning'],
+  },
+  'sk-moomin-chocolate-chip-biscuit-tin': {
+    name: 'Mumin chokladkakor i plåtburk 200 g',
+    description:
+      'Små chokladkakor, 200 gram, i en Muminburk som överlever kakorna som förvaringsburk. Chokladbitarna utgör 16 procent av kakan och innehåller minst 40 procent kakaotorrsubstans.',
+    specs: [
+      '200 g',
+      'Chokladbitar 16 %, i chokladen minst 40 % kakaotorrsubstans',
+      'Samlarburk, kan användas som förvaringsburk',
+    ],
+    specLabels: [undefined, undefined, 'Förpackning'],
+  },
+  'sk-paulig-cafe-new-york-beans': {
+    name: 'Paulig Café New York kaffebönor 450 g',
+    description:
+      'Mellanmörkt bönkaffe, 450 gram, latinamerikansk arabica med brasilianska bönor för sötma och en fruktig ton. Paulig har rostat kaffe i Finland sedan 1876, och finländarna dricker mer av det per person än någon annan.',
+    specs: [
+      '450 g',
+      'Mellanmörk rostning, hela bönor',
+      'Latinamerikansk arabica och brasilianska bönor',
+    ],
+    specLabels: [undefined, 'Rostning', undefined],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-korpihilla-spruce-sprout-sparkling-750': {
+    name: 'Korpihilla mousserande granskottsdryck 750 ml',
+    description:
+      'Alkoholfri mousserande dryck, gjord för hand av granskott i finska Lappland, 750 ml. Utsedd till Finlands bästa dryck 2005 av tidningen Viisi Tähteä, och fortfarande flaskan man öppnar när skålen ska smaka skog.',
+    specs: [
+      '750 ml',
+      'Gjord för hand i finska Lappland',
+      'Alkoholfri',
+      'Finlands bästa dryck 2005, tidningen Viisi Tähteä',
+    ],
+    specLabels: [undefined, undefined, 'Alkohol', 'Utmärkelse'],
   },
 }

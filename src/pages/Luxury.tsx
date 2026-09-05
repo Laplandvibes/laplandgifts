@@ -12,6 +12,7 @@ import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
 import { byShippingBreadth } from '../data/sortProducts'
 import { useShippingCountry } from '../context/ShippingCountry'
+import { countryName } from '../data/countryNames'
 import { useLang } from '../i18n/useLang'
 import { SHOP_COPY } from '../locales/shopCopy'
 import { LUXURY_COPY } from '../locales/luxuryCopy'
@@ -33,7 +34,7 @@ import { LUXURY_COPY } from '../locales/luxuryCopy'
  */
 export default function Luxury() {
   const lang = useLang()
-  const { country } = useShippingCountry()
+  const { country, setCountry } = useShippingCountry()
   const t = SHOP_COPY[lang].category
   const tl = LUXURY_COPY[lang]
 
@@ -77,7 +78,19 @@ export default function Luxury() {
         />
 
         <div className="mx-auto max-w-7xl px-4 py-10 md:py-14">
-          <p className="mb-8 font-body text-sm text-muted">{tl.count(visible.length)}</p>
+          <p className="mb-8 font-body text-sm text-muted">
+            {country && visible.length < all.length ? (
+              <>
+                {t.filteredCount(visible.length, all.length, countryName(country, lang))}
+                {' · '}
+                <button type="button" onClick={() => setCountry('')} className="font-medium text-amber underline-offset-2 hover:underline">
+                  {t.showAll}
+                </button>
+              </>
+            ) : (
+              tl.count(visible.length)
+            )}
+          </p>
 
           {experiences.length > 0 && (
             <section className="mb-14">
