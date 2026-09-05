@@ -12,8 +12,7 @@ import {
   TOURS_PICKS,
   VISIT_PICKS,
   NATURE_PICKS,
-  WELLNESS_PICKS,
-} from '../../shared/gyg/picks'
+  WELLNESS_PICKS, LUXURY_PICKS } from '../../shared/gyg/picks'
 
 const VERIFIED_PATHS = new Set(
   [
@@ -26,8 +25,7 @@ const VERIFIED_PATHS = new Set(
     TOURS_PICKS,
     VISIT_PICKS,
     NATURE_PICKS,
-    WELLNESS_PICKS,
-  ].flatMap((list) => list.map((p) => p.path))
+    WELLNESS_PICKS, LUXURY_PICKS].flatMap((list) => list.map((p) => p.path))
 )
 
 describe('elämyslahjat', () => {

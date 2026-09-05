@@ -1,6 +1,8 @@
 import ShopNav from '../components/ShopNav'
 import Footer from '../components/Footer'
 import LuxuryHero from '../components/LuxuryHero'
+import ExperienceCard from '../components/shop/ExperienceCard'
+import { GIFT_EXPERIENCES } from '../data/experiences'
 import ProductGridSection from '../components/shop/ProductGridSection'
 import { PRODUCTS } from '../data/products'
 import { LUXURY_MIN_PRICE, LUXURY_HERO_SLUGS } from '../data/luxury'
@@ -82,6 +84,16 @@ export default function Luxury() {
                 lang={lang}
                 emptyMessage={t.emptyForCountry}
               />
+              {/* GetYourGuiden suuret päivät (≥ 250 €): Sampo-jäänmurtaja ym.
+                  Samassa osiossa kuin Elämyslahjat-tuotteet — lukijalle ne ovat
+                  samaa hyllyä, vain kauppa on eri. */}
+              {GIFT_EXPERIENCES.some((e) => Number.parseFloat(e.price ?? '0') >= 250) && (
+                <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {GIFT_EXPERIENCES.filter((e) => Number.parseFloat(e.price ?? '0') >= 250).map((e) => (
+                    <ExperienceCard key={e.path} pick={e} lang={lang} />
+                  ))}
+                </div>
+              )}
             </section>
           )}
 

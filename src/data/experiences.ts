@@ -9,8 +9,7 @@ import {
   WELLNESS_PICKS,
   KIDS_PICKS,
   TOURS_PICKS,
-  type GygPick,
-} from '../shared/gyg/picks'
+  type GygPick, LUXURY_PICKS } from '../shared/gyg/picks'
 
 /**
  * Lahjaksi ostettavat elämykset.
@@ -56,6 +55,7 @@ export type ExperienceGroup =
   | 'husky'
   | 'reindeer'
   | 'snowmobile'
+  | 'icebreaker'
   | 'nature'
   | 'sauna'
   | 'santa'
@@ -93,6 +93,8 @@ const SELECTION: Row[] = [
   [pick(HUSKY_PICKS, 'self-driven'), 'exp-husky-selfdrive', 'husky', 'Drive your own husky team, 6 km', 'Aja itse huskyvaljakkoa, 6 km'],
   [pick(KIDS_PICKS, '10 km Husky Safari'), 'exp-husky-kennel', 'husky', 'Husky safari with a kennel visit', 'Huskysafari ja tarhavierailu'],
 
+  // ── Jäänmurtaja ──────────────────────────────────────────────
+  [pick(LUXURY_PICKS, 'Sampo'), 'exp-icebreaker', 'icebreaker', 'Icebreaker Sampo cruise with ice floating, Kemi', 'Jäänmurtaja Sampo -risteily ja jääkellunta, Kemi'],
   // ── Porot ─────────────────────────────────────────────────────────────
   [pick(CHRISTMAS_PICKS, 'Reindeer Sledding'), 'exp-reindeer', 'reindeer', 'Reindeer sleigh ride under the lights', 'Poroajelu revontulien alla'],
   // 🔴 Vaihdettu 3.8.2026: monorepon picks.ts poisti Levin poroajelun t505204
@@ -145,6 +147,7 @@ export const EXPERIENCE_GROUPS: ExperienceGroup[] = [
   'husky',
   'reindeer',
   'snowmobile',
+  'icebreaker',
   'nature',
   'sauna',
   'santa',
