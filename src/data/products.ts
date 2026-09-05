@@ -1508,107 +1508,6 @@ export const PRODUCTS: Product[] = [
 
   // ── superfoods ────────────────────────────────────────────────────────────
   {
-    slug: 'arctic-power-berries-blueberry-powder',
-    category: 'superfoods',
-    brand: 'Arctic Power Berries',
-    name: {
-      en: 'Wild blueberry powder 70 g',
-      fi: 'Luonnonmustikkajauhe 70 g',
-    },
-    description: {
-      en: 'Freeze dried wild bilberry, nothing added. The producer says roughly 700 grams of fresh berries go into one 70 gram jar. This shop prices in pounds sterling.',
-      fi: 'Pakastekuivattua luonnonmustikkaa ilman lisättyä mitään. Valmistajan mukaan yhteen 70 gramman purkkiin menee noin 700 grammaa tuoreita marjoja. Tämän kaupan hinnat ovat punnissa.',
-    },
-    priceFrom: 14.9,
-    currency: 'GBP',
-    priceCheckedAt: '2026-07-31',
-    image: 'prod-arctic-power-berries-blueberry-powder',
-    imageIsPartner: true,
-    partnerId: 'arcticpowerberries',
-    partnerProductUrl: 'https://arcticpowerberries.com/products/blueberry-70g',
-    featured: true,
-    details: {
-      specs: [
-        { key: 'weight', value: { en: '70 g', fi: '70 g' } },
-        {
-          key: 'contents',
-          value: {
-            en: '100 % blueberry powder made from wild Nordic blueberries, also known as bilberries. Nothing added',
-            fi: '100 % mustikkajauhetta pohjoisesta luonnonmustikasta. Ei lisättyä mitään',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Berries used', fi: 'Marjojen määrä' },
-          value: {
-            en: 'About 700 g of fresh berries make 70 g of berry powder',
-            fi: 'Noin 700 g tuoreita marjoja tekee 70 g marjajauhetta',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
-          value: {
-            en: 'Energy 367 kcal / 1559 kJ, protein 5 g, carbohydrate 54 g of which sugars 34 g, fibre 31 g, fat 0.8 g, salt 0.01 g',
-            fi: 'Energia 367 kcal / 1559 kJ, proteiini 5 g, hiilihydraatit 54 g, joista sokereita 34 g, kuitu 31 g, rasva 0,8 g, suola 0,01 g',
-          },
-        },
-      ],
-      sourceUrl: 'https://arcticpowerberries.com/products/blueberry-70g',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
-    slug: 'arctic-power-berries-sea-buckthorn-powder',
-    category: 'superfoods',
-    brand: 'Arctic Power Berries',
-    name: {
-      en: 'Sea buckthorn powder 70 g',
-      fi: 'Tyrnijauhe 70 g',
-    },
-    description: {
-      en: 'Freeze dried Nordic sea buckthorn, 70 grams, nothing added. Tart and bright orange, so a teaspoon carries further in porridge than you would guess. This shop prices in pounds sterling.',
-      fi: 'Pakastekuivattua pohjoista tyrniä, 70 grammaa, ei lisättyä mitään. Kirpeä ja kirkkaan oranssi, joten teelusikallinen kantaa puurossa pidemmälle kuin arvaisi. Tämän kaupan hinnat ovat punnissa.',
-    },
-    priceFrom: 12.9,
-    currency: 'GBP',
-    priceCheckedAt: '2026-07-31',
-    image: 'prod-arctic-power-berries-sea-buckthorn-powder',
-    imageIsPartner: true,
-    partnerId: 'arcticpowerberries',
-    partnerProductUrl: 'https://arcticpowerberries.com/products/sea-buckthorn-70g',
-    details: {
-      specs: [
-        { key: 'weight', value: { en: '70 g', fi: '70 g' } },
-        {
-          key: 'contents',
-          value: {
-            en: '100 % sea buckthorn powder made from Nordic sea buckthorn berries. Nothing added',
-            fi: '100 % tyrnijauhetta pohjoisista tyrnimarjoista. Ei lisättyä mitään',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Berries used', fi: 'Marjojen määrä' },
-          value: {
-            en: 'About 700 g of fresh berries make 70 g of berry powder',
-            fi: 'Noin 700 g tuoreita marjoja tekee 70 g marjajauhetta',
-          },
-        },
-        {
-          key: 'other',
-          label: { en: 'Nutrition per 100 g', fi: 'Ravintosisältö per 100 g' },
-          value: {
-            en: 'Energy 489 kcal / 2045 kJ, protein 13 g, carbohydrate 24 g of which sugars 14 g, fibre 28 g, fat 25 g, salt 0.06 g',
-            fi: 'Energia 489 kcal / 2045 kJ, proteiini 13 g, hiilihydraatit 24 g, joista sokereita 14 g, kuitu 28 g, rasva 25 g, suola 0,06 g',
-          },
-        },
-      ],
-      sourceUrl: 'https://arcticpowerberries.com/products/sea-buckthorn-70g',
-      fetchedAt: '2026-08-01',
-    },
-  },
-  {
     slug: 'kaapa-mushrooms-pakuri-powder',
     category: 'superfoods',
     brand: 'Kääpä Mushrooms',
@@ -1917,31 +1816,6 @@ export const PRODUCTS: Product[] = [
       ],
       sourceUrl: 'https://www.ruohonjuuri.fi/products/foodin-kuuden-sienen-sekoitus-chaga-reishi-lions-mane-shiitake-maitake-cordyceps-40-g',
       fetchedAt: '2026-08-15',
-    },
-  },
-  {
-    slug: 'foodin-nordic-berry-powder',
-    category: 'superfoods',
-    brand: 'Foodin',
-    name: { en: 'Foodin Nordic berries powder mix 120 g', fi: 'Foodin Pohjolan marjat -marjajauhesekoitus 120 g' },
-    description: {
-      en: 'A Finnish blend of northern berries in one powder, for porridge and yoghurt. The lightest way to carry a summer of Nordic berries home.',
-      fi: 'Kotimainen sekoitus pohjoisen marjoja yhtenä jauheena puuroon ja jogurttiin. Kevyin tapa viedä pohjolan marjakesä kotiin.',
-    },
-    priceFrom: 15.95,
-    currency: 'EUR',
-    priceCheckedAt: '2026-08-06',
-    image: 'prod-foodin-nordic-berry-powder',
-    imageIsPartner: true,
-    partnerId: 'ruohonjuuri',
-    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/foodin-pohjolan-marjat-kotimainen-marjajauhesekoitus-120-g',
-    details: {
-      specs: [
-        { key: 'size', value: { en: '120 g', fi: '120 g' } },
-        { key: 'origin', value: { en: 'Made in Finland', fi: 'Valmistettu Suomessa' } },
-      ],
-      sourceUrl: 'https://www.ruohonjuuri.fi/products/foodin-pohjolan-marjat-kotimainen-marjajauhesekoitus-120-g',
-      fetchedAt: '2026-08-06',
     },
   },
   {
@@ -6076,6 +5950,116 @@ export const PRODUCTS: Product[] = [
         { key: 'other', label: { en: 'Award', fi: 'Palkinto' }, value: { en: 'Finland\'s best drink 2005, Viisi Tähteä magazine', fi: 'Suomen paras juoma 2005, Viisi Tähteä -lehti' } },
       ],
       sourceUrl: 'https://www.ruohonjuuri.fi/products/korpihilla-kuohuva-kuusenkerkka-kuohujuoma-750-ml',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  // ── katalogin täydennys 2026-09-05 ─────────────────────────────────────────
+  // Vesa 5.9.: 'miten voi olla että makiaa on vain kaksi tuotetta', 'tekstiileissä
+  // vain yksi tuote', 'herkut-osio on aivan poor', 'superfoodeja vain 5', 'miksi on
+  // jätetty vajaita gridejä'. 42 tuotetta kumppanien omista Shopify-tiedoista
+  // (products.json, luettu 2026-09-05): hinta, kuva ja tiedot kumppanin sivulta.
+  // Ryhmät täytetty neljällä jaollisiksi (xl-ruudukko on 4 saraketta).
+  {
+    slug: 'rj-raitaniemi-sea-buckthorn-powder',
+    category: 'superfoods',
+    brand: 'Marjatila Raitaniemi',
+    name: {
+      en: 'Marjatila Raitaniemi sea buckthorn powder 100 g',
+      fi: 'Marjatila Raitaniemi tyrnijauhe 100 g',
+    },
+    description: {
+      en: 'Sea buckthorn dried and ground whole, seeds included, on a Finnish berry farm, 100 grams. One teaspoon stands for a decilitre of fresh berries, and the powder is dried down to 3 to 5 per cent moisture, which is why it keeps for years.',
+      fi: 'Tyrniä kuivattuna ja jauhettuna kokonaisena siemenineen suomalaisella marjatilalla, 100 grammaa. Teelusikallinen vastaa desilitraa tuoreita marjoja, ja jauhe on kuivattu 3–5 prosentin kosteuteen, siksi se säilyy vuosia.',
+    },
+    priceFrom: 12.5,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-rj-raitaniemi-sea-buckthorn-powder',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/marjatila-raitaniemi-tyrnijauhe-100-g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '100 g', fi: '100 g' } },
+        { key: 'contents', value: { en: 'Sea buckthorn, ground whole with the seeds', fi: 'Tyrni, jauhettu kokonaisena siemenineen' } },
+        { key: 'other', label: { en: 'Dosage', fi: 'Annostus' }, value: { en: '1 to 3 teaspoons a day in porridge or yoghurt', fi: '1–3 teelusikallista päivässä puuroon tai jogurttiin' } },
+        { key: 'other', label: { en: 'Equivalent', fi: 'Vastaavuus' }, value: { en: '1 teaspoon of powder equals 1 dl of fresh berries', fi: '1 teelusikallinen jauhetta vastaa 1 dl tuoreita marjoja' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/marjatila-raitaniemi-tyrnijauhe-100-g',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  {
+    slug: 'rj-raitaniemi-crowberry-powder',
+    category: 'superfoods',
+    brand: 'Marjatila Raitaniemi',
+    name: {
+      en: 'Marjatila Raitaniemi crowberry powder 100 g',
+      fi: 'Marjatila Raitaniemi variksenmarjajauhe 100 g',
+    },
+    description: {
+      en: 'Finnish crowberry picked from the wild, dried whole and ground, nothing added, 100 grams. Crowberry is the black berry that carpets Lapland fell slopes and rarely reaches a shop, so this is the closest most people get to eating one.',
+      fi: 'Suomalaista luonnosta kerättyä variksenmarjaa kokonaisena kuivattuna ja jauhettuna, ei mitään lisättyä, 100 grammaa. Variksenmarja on Lapin tunturirinteiden musta marja, jota harvoin näkee kaupassa, joten tämä on lähimpänä sen maistamista.',
+    },
+    priceFrom: 11.7,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-rj-raitaniemi-crowberry-powder',
+    imageIsPartner: true,
+    partnerId: 'ruohonjuuri',
+    partnerProductUrl: 'https://www.ruohonjuuri.fi/products/marjatila-raitaniemi-variksenmarjajauhe-100g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '100 g', fi: '100 g' } },
+        { key: 'contents', value: { en: '100 % Finnish crowberry, dried and ground whole', fi: '100 % suomalaista variksenmarjaa, kuivattu ja jauhettu kokonaisena' } },
+        { key: 'other', label: { en: 'Additives', fi: 'Lisäaineet' }, value: { en: 'None, no preservatives', fi: 'Ei lisä- eikä säilöntäaineita' } },
+      ],
+      sourceUrl: 'https://www.ruohonjuuri.fi/products/marjatila-raitaniemi-variksenmarjajauhe-100g',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  // ── katalogin täydennys 2026-09-05 ─────────────────────────────────────────
+  // Vesa 5.9.: 'miten voi olla että makiaa on vain kaksi tuotetta', 'tekstiileissä
+  // vain yksi tuote', 'herkut-osio on aivan poor', 'superfoodeja vain 5', 'miksi on
+  // jätetty vajaita gridejä'. 42 tuotetta kumppanien omista Shopify-tiedoista
+  // (products.json, luettu 2026-09-05): hinta, kuva ja tiedot kumppanin sivulta.
+  // Ryhmät täytetty neljällä jaollisiksi (xl-ruudukko on 4 saraketta).
+  // ── katalogin täydennys 2026-09-05 ─────────────────────────────────────────
+  // Vesa 5.9.: 'miten voi olla että makiaa on vain kaksi tuotetta', 'tekstiileissä
+  // vain yksi tuote', 'herkut-osio on aivan poor', 'superfoodeja vain 5', 'miksi on
+  // jätetty vajaita gridejä'. 42 tuotetta kumppanien omista Shopify-tiedoista
+  // (products.json, luettu 2026-09-05): hinta, kuva ja tiedot kumppanin sivulta.
+  // Ryhmät täytetty neljällä jaollisiksi (xl-ruudukko on 4 saraketta).
+  {
+    slug: 'sk-poikain-parhaat-puolukka',
+    category: 'superfoods',
+    brand: 'Poikain Parhaat',
+    name: {
+      en: 'Poikain Parhaat freeze dried lingonberries 15 g',
+      fi: 'Poikain Parhaat pakastekuivattu puolukka 15 g',
+    },
+    description: {
+      en: 'Whole Finnish lingonberries, freeze dried and nothing else, 15 grams. Freeze drying keeps the colour, the bite and the vitamins and fibre, and the bag weighs nothing in a suitcase. Lactose free, gluten free, vegan, no added sugar or preservatives.',
+      fi: 'Kokonaisia suomalaisia puolukoita pakastekuivattuna, ei mitään muuta, 15 grammaa. Pakastekuivaus säilyttää värin, rakenteen sekä vitamiinit ja kuidut, ja pussi ei paina matkalaukussa mitään. Laktoositon, gluteeniton, vegaaninen, ilman lisättyä sokeria tai säilöntäaineita.',
+    },
+    priceFrom: 5.27,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-poikain-parhaat-puolukka',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/poikain-parhaat-pakastekuivattu-puolukka-15g',
+    details: {
+      specs: [
+        { key: 'weight', value: { en: '15 g', fi: '15 g' } },
+        { key: 'contents', value: { en: '100 % Finnish freeze dried lingonberry', fi: '100 % suomalaista pakastekuivattua puolukkaa' } },
+        { key: 'other', label: { en: 'Diet', fi: 'Ruokavalio' }, value: { en: 'Lactose free, gluten free, vegan, no added sugar, no preservatives', fi: 'Laktoositon, gluteeniton, vegaaninen, sokeriton, säilöntäaineeton' } },
+      ],
+      ingredients: {
+        en: 'Finnish freeze dried lingonberry.',
+        fi: 'Suomalainen pakastekuivattu puolukka.',
+      },
+      sourceUrl: 'https://suomikauppa.fi/products/poikain-parhaat-pakastekuivattu-puolukka-15g',
       fetchedAt: '2026-09-05',
     },
   },

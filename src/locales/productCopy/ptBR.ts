@@ -430,30 +430,6 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Preparo', 'Dieta e certificação'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: 'Pó de mirtilo silvestre 70 g',
-    description:
-      'Mirtilo silvestre liofilizado, sem nada adicionado. O produtor informa que cerca de 700 gramas de frutas frescas entram em um pote de 70 gramas. Esta loja precifica em libras esterlinas.',
-    specs: [
-      '70 g',
-      '100 % pó de mirtilo feito com mirtilos silvestres nórdicos. Sem nada adicionado',
-      'Cerca de 700 g de frutas frescas rendem 70 g de pó de frutas',
-      'Energia 367 kcal / 1559 kJ, proteínas 5 g, carboidratos 54 g dos quais açúcares 34 g, fibras 31 g, gorduras 0,8 g, sal 0,01 g',
-    ],
-    specLabels: [undefined, undefined, 'Frutas utilizadas', 'Informação nutricional por 100 g'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: 'Pó de espinheiro-marítimo 70 g',
-    description:
-      'Espinheiro-marítimo nórdico liofilizado, 70 gramas, sem nada adicionado. Ácido e de laranja intenso, então uma colher de chá rende mais no mingau do que se imagina. Esta loja precifica em libras esterlinas.',
-    specs: [
-      '70 g',
-      '100 % pó de espinheiro-marítimo feito com frutos nórdicos de espinheiro-marítimo. Sem nada adicionado',
-      'Cerca de 700 g de frutas frescas rendem 70 g de pó de frutas',
-      'Energia 489 kcal / 2045 kJ, proteínas 13 g, carboidratos 24 g dos quais açúcares 14 g, fibras 28 g, gorduras 25 g, sal 0,06 g',
-    ],
-    specLabels: [undefined, undefined, 'Frutas utilizadas', 'Informação nutricional por 100 g'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Pó de extrato de chaga Kääpä Mushrooms 30 g',
     description:
@@ -841,12 +817,6 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     description:
       'Chaga, reishi, juba de leão, cordyceps, shiitake e maitake em um só pote, moídos para café ou vitaminas. Um pote cobre a prateleira inteira de cogumelos funcionais.',
     specs: ['40 g', 'Chaga, reishi, juba de leão, cordyceps, shiitake, maitake'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin mistura de frutas nórdicas em pó 120 g',
-    description:
-      'Uma mistura finlandesa de frutas do norte em um único pó, para mingau e iogurte. O jeito mais leve de levar um verão de frutas nórdicas para casa.',
-    specs: ['120 g', 'Feito na Finlândia'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin tintura de chaga 50 ml',
@@ -1724,5 +1694,42 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Melhor bebida da Finlândia em 2005, revista Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, 'Álcool', 'Prêmio'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Pó de espinheiro-marítimo Marjatila Raitaniemi 100 g',
+    description:
+      'Espinheiro-marítimo seco e moído inteiro, com as sementes, numa fazenda finlandesa de frutas silvestres, 100 gramas. Uma colher de chá equivale a um decilitro de frutas frescas, e o pó é seco até 3 a 5 por cento de umidade, por isso dura anos.',
+    specs: [
+      '100 g',
+      'Espinheiro-marítimo, moído inteiro com as sementes',
+      '1 a 3 colheres de chá por dia no mingau ou no iogurte',
+      '1 colher de chá de pó equivale a 1 dl de frutas frescas',
+    ],
+    specLabels: [undefined, undefined, 'Dose', 'Equivalência'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Pó de camarinha Marjatila Raitaniemi 100 g',
+    description:
+      'Camarinha finlandesa colhida na natureza, seca inteira e moída, sem nada adicionado, 100 gramas. A camarinha é a fruta preta que cobre as encostas dos fjells da Lapônia e raramente chega a uma loja, então isto é o mais perto que a maioria vai chegar de prová-la.',
+    specs: [
+      '100 g',
+      '100 % camarinha finlandesa, seca e moída inteira',
+      'Nenhum, sem conservantes',
+    ],
+    specLabels: [undefined, undefined, 'Aditivos'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Lingonberries liofilizadas Poikain Parhaat 15 g',
+    description:
+      'Lingonberries finlandesas inteiras, liofilizadas e nada mais, 15 gramas. A liofilização preserva a cor, a textura, as vitaminas e as fibras, e o saquinho não pesa nada na mala. Sem lactose, sem glúten, veganas, sem açúcar adicionado nem conservantes.',
+    specs: [
+      '15 g',
+      '100 % lingonberry finlandesa liofilizada',
+      'Sem lactose, sem glúten, vegano, sem açúcar adicionado, sem conservantes',
+    ],
+    specLabels: [undefined, undefined, 'Dieta'],
   },
 }

@@ -217,8 +217,6 @@ const MAP: Record<string, SubgroupId> = {
   'nordqvist-cranberry-toffee-tea': 'drinks',
 
   // superfoods
-  'arctic-power-berries-blueberry-powder': 'berry',
-  'arctic-power-berries-sea-buckthorn-powder': 'berry',
   'arctic-warriors-nettle-powder': 'herbal',
   'arctic-warriors-spruce-sprout-powder': 'herbal',
   'kaapa-mushrooms-pakuri-powder': 'herbal',
@@ -226,7 +224,6 @@ const MAP: Record<string, SubgroupId> = {
   'omega7-sea-buckthorn-olive-oil': 'oils',
   'kaino-spruce-sprout-sparkling': 'drinks',
   'foodin-six-mushroom-blend': 'herbal',
-  'foodin-nordic-berry-powder': 'berry',
   'foodin-chaga-tincture': 'oils',
   'kaavi-chaga-chunks': 'herbal',
   'puhdistamo-instant-chaga': 'herbal',
@@ -293,6 +290,12 @@ const MAP: Record<string, SubgroupId> = {
   'sk-paulig-cafe-new-york-beans': 'drinks',
   // katalogin täydennys 2026-09-05
   'rj-korpihilla-spruce-sprout-sparkling-750': 'drinks',
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': 'berry',
+  'rj-raitaniemi-crowberry-powder': 'berry',
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': 'berry',
 }
 
 export function subgroupOf(slug: string): SubgroupId {

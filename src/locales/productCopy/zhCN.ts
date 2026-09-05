@@ -432,30 +432,6 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, '冲泡', '饮食与认证'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: '野生蓝莓粉 70 g',
-    description:
-      '冻干的野生蓝莓（欧洲越橘），不添加任何东西。生产者表示，一罐 70 克大约要用 700 克鲜果。这家店以英镑计价。',
-    specs: [
-      '70 g',
-      '100 % 蓝莓粉，原料为北欧野生蓝莓（越橘）。不添加任何东西',
-      '约 700 g 鲜果制成 70 g 浆果粉',
-      '能量 367 kcal / 1559 kJ，蛋白质 5 g，碳水化合物 54 g 其中糖 34 g，膳食纤维 31 g，脂肪 0.8 g，盐 0.01 g',
-    ],
-    specLabels: [undefined, undefined, '用果量', '每 100 g 营养成分'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: '沙棘粉 70 g',
-    description:
-      '冻干的北欧沙棘，70 克，不添加任何东西。酸味明显，颜色是鲜亮的橙，所以一茶匙撒在麦片粥里比想象中管用。这家店以英镑计价。',
-    specs: [
-      '70 g',
-      '100 % 沙棘粉，原料为北欧沙棘果。不添加任何东西',
-      '约 700 g 鲜果制成 70 g 浆果粉',
-      '能量 489 kcal / 2045 kJ，蛋白质 13 g，碳水化合物 24 g 其中糖 14 g，膳食纤维 28 g，脂肪 25 g，盐 0.06 g',
-    ],
-    specLabels: [undefined, undefined, '用果量', '每 100 g 营养成分'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Kääpä Mushrooms 桦褐孔菌提取物粉 30 g',
     description:
@@ -843,12 +819,6 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     description:
       '白桦茸、灵芝、猴头菇、虫草、香菇和舞茸装进一罐，磨成粉可加入咖啡或奶昔。一罐覆盖整个功能菌菇货架。',
     specs: ['40 g', '白桦茸、灵芝、猴头菇、虫草、香菇、舞茸'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin 北欧浆果混合粉 120 g',
-    description:
-      '芬兰制造的北方浆果混合粉，加入粥或酸奶。把一个北欧浆果之夏带回家的最轻方式。',
-    specs: ['120 g', '芬兰制造'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin 白桦茸酊剂 50 ml',
@@ -1726,5 +1696,42 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '2005年芬兰最佳饮品，《Viisi Tähteä》杂志',
     ],
     specLabels: [undefined, undefined, '酒精', '奖项'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Marjatila Raitaniemi 沙棘粉 100 g',
+    description:
+      '在芬兰浆果农场连籽整果干燥后磨成的沙棘粉，100克。一茶匙相当于一分升鲜果，粉末干燥至3至5%的含水量，所以能存放数年。',
+    specs: [
+      '100 g',
+      '沙棘，连籽整果磨粉',
+      '每天1至3茶匙，加入燕麦粥或酸奶',
+      '1茶匙粉末相当于1 dl鲜果',
+    ],
+    specLabels: [undefined, undefined, '用量', '换算'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Marjatila Raitaniemi 岩高兰粉 100 g',
+    description:
+      '野外采摘的芬兰岩高兰整果干燥磨粉，无任何添加，100克。岩高兰是铺满拉普兰山坡的黑色浆果，很少进入商店，所以这是大多数人最接近尝到它的方式。',
+    specs: [
+      '100 g',
+      '100 %芬兰岩高兰，整果干燥磨粉',
+      '无，不含防腐剂',
+    ],
+    specLabels: [undefined, undefined, '添加剂'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Poikain Parhaat 冻干越橘 15 g',
+    description:
+      '整颗的芬兰越橘，冻干，别无他物，15克。冻干保留了颜色、口感、维生素和膳食纤维，袋子在行李箱里没有分量。无乳糖、无麸质、纯素，不加糖也不加防腐剂。',
+    specs: [
+      '15 g',
+      '100 %芬兰冻干越橘',
+      '无乳糖、无麸质、纯素、不加糖、无防腐剂',
+    ],
+    specLabels: [undefined, undefined, '饮食'],
   },
 }

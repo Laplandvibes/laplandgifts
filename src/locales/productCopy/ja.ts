@@ -432,30 +432,6 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, '淹れ方', '食事対応と認証'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: '野生ブルーベリーパウダー 70 g',
-    description:
-      'フリーズドライした野生のビルベリー、他には何も加えていません。生産者によれば、70 グラムの瓶ひとつにおよそ 700 グラムの生の果実が入ります。この店の価格は英ポンド建てです。',
-    specs: [
-      '70 g',
-      '北欧の野生ブルーベリー（ビルベリー）から作ったブルーベリーパウダー 100 %。他に何も加えていません',
-      '生の果実 約 700 g からベリーパウダー 70 g',
-      'エネルギー 367 kcal / 1559 kJ、たんぱく質 5 g、炭水化物 54 g うち糖類 34 g、食物繊維 31 g、脂質 0.8 g、食塩相当量 0.01 g',
-    ],
-    specLabels: [undefined, undefined, '使用する果実の量', '100 g あたりの栄養成分'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: 'シーバックソーンパウダー 70 g',
-    description:
-      'フリーズドライした北欧のシーバックソーン、70 グラム、他には何も加えていません。酸味が強く鮮やかなオレンジ色なので、小さじ 1 杯でもポリッジの中で思ったより広がります。この店の価格は英ポンド建てです。',
-    specs: [
-      '70 g',
-      '北欧のシーバックソーンの実から作ったシーバックソーンパウダー 100 %。他に何も加えていません',
-      '生の果実 約 700 g からベリーパウダー 70 g',
-      'エネルギー 489 kcal / 2045 kJ、たんぱく質 13 g、炭水化物 24 g うち糖類 14 g、食物繊維 28 g、脂質 25 g、食塩相当量 0.06 g',
-    ],
-    specLabels: [undefined, undefined, '使用する果実の量', '100 g あたりの栄養成分'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Kääpä Mushrooms チャーガエキスパウダー 30 g',
     description:
@@ -843,12 +819,6 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     description:
       'チャーガ、霊芝、ヤマブシタケ、冬虫夏草、しいたけ、まいたけを1つの瓶に。コーヒーやスムージーに混ぜられる粉末で、これ1つで機能性きのこの棚を網羅します。',
     specs: ['40 g', 'チャーガ、霊芝、ヤマブシタケ、冬虫夏草、しいたけ、まいたけ'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin 北欧ベリーパウダーミックス 120 g',
-    description:
-      '北欧のベリーを1つの粉末にまとめたフィンランド製ブレンド。お粥やヨーグルトに。北欧のベリーの夏を持ち帰るいちばん軽い方法です。',
-    specs: ['120 g', 'フィンランド製'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin チャーガチンキ 50 ml',
@@ -1726,5 +1696,42 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'フィンランド最高の飲み物2005、雑誌Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, 'アルコール', '受賞'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Marjatila Raitaniemi シーバックソーンパウダー 100 g',
+    description:
+      'フィンランドのベリー農園で種ごと丸ごと乾燥して挽いたシーバックソーン、100グラム。小さじ1杯が生のベリー1デシリットルに相当し、水分3〜5パーセントまで乾燥させているため何年も保存できます。',
+    specs: [
+      '100 g',
+      'シーバックソーン、種ごと丸ごと粉砕',
+      '1日小さじ1〜3杯をポリッジやヨーグルトに',
+      'パウダー小さじ1杯は生のベリー1 dlに相当',
+    ],
+    specLabels: [undefined, undefined, '用量', '換算'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Marjatila Raitaniemi クロウベリーパウダー 100 g',
+    description:
+      '野生から摘んだフィンランド産クロウベリーを丸ごと乾燥して挽き、何も加えていない100グラム。クロウベリーはラップランドのフェルの斜面を覆う黒い実で、店に並ぶことはまれです。これがほとんどの人にとって味わう一番近い方法です。',
+    specs: [
+      '100 g',
+      'フィンランド産クロウベリー100 %、丸ごと乾燥・粉砕',
+      'なし、保存料不使用',
+    ],
+    specLabels: [undefined, undefined, '添加物'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Poikain Parhaat フリーズドライ リンゴンベリー 15 g',
+    description:
+      'フィンランド産リンゴンベリーをまるごとフリーズドライしただけの15グラム。フリーズドライは色、歯ごたえ、ビタミンと食物繊維を保ち、袋はスーツケースの中で重さを感じません。乳糖不使用、グルテンフリー、ヴィーガン、砂糖と保存料無添加。',
+    specs: [
+      '15 g',
+      'フィンランド産フリーズドライリンゴンベリー100 %',
+      '乳糖不使用、グルテンフリー、ヴィーガン、砂糖無添加、保存料無添加',
+    ],
+    specLabels: [undefined, undefined, '食事対応'],
   },
 }

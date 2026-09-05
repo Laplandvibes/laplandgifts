@@ -432,30 +432,6 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Bryggning', 'Kost och certifiering'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: 'Vilt blåbärspulver 70 g',
-    description:
-      'Frystorkade vilda blåbär, inget tillsatt. Producenten uppger att ungefär 700 gram färska bär går åt till en burk på 70 gram. Den här butiken prissätter i brittiska pund.',
-    specs: [
-      '70 g',
-      '100 % blåbärspulver av vilda nordiska blåbär. Inget tillsatt',
-      'Cirka 700 g färska bär ger 70 g bärpulver',
-      'Energi 367 kcal / 1559 kJ, protein 5 g, kolhydrat 54 g varav sockerarter 34 g, fiber 31 g, fett 0,8 g, salt 0,01 g',
-    ],
-    specLabels: [undefined, undefined, 'Åtgång av bär', 'Näringsvärde per 100 g'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: 'Havtornspulver 70 g',
-    description:
-      'Frystorkad nordisk havtorn, 70 gram, inget tillsatt. Syrlig och klart orange, så en tesked räcker längre i gröten än man tror. Den här butiken prissätter i brittiska pund.',
-    specs: [
-      '70 g',
-      '100 % havtornspulver av nordiska havtornsbär. Inget tillsatt',
-      'Cirka 700 g färska bär ger 70 g bärpulver',
-      'Energi 489 kcal / 2045 kJ, protein 13 g, kolhydrat 24 g varav sockerarter 14 g, fiber 28 g, fett 25 g, salt 0,06 g',
-    ],
-    specLabels: [undefined, undefined, 'Åtgång av bär', 'Näringsvärde per 100 g'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Kääpä Mushrooms sprängtickeextrakt i pulver 30 g',
     description:
@@ -843,12 +819,6 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     description:
       'Chaga, reishi, lion\'s mane, cordyceps, shiitake och maitake i samma burk, malda för kaffe eller smoothies. En burk täcker hela svamphyllan.',
     specs: ['40 g', 'Chaga, reishi, lion\'s mane, cordyceps, shiitake, maitake'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin Nordisk bärpulverblandning 120 g',
-    description:
-      'En finsk blandning av nordiska bär som ett enda pulver, för gröt och yoghurt. Det lättaste sättet att ta med en nordisk bärsommar hem.',
-    specs: ['120 g', 'Tillverkad i Finland'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin Chagatinktur 50 ml',
@@ -1726,5 +1696,42 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Finlands bästa dryck 2005, tidningen Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, 'Alkohol', 'Utmärkelse'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Marjatila Raitaniemi havtornspulver 100 g',
+    description:
+      'Havtorn torkat och malet helt med kärnorna på en finsk bärgård, 100 gram. En tesked motsvarar en deciliter färska bär, och pulvret är torkat till 3 till 5 procents fukthalt, därför håller det i åratal.',
+    specs: [
+      '100 g',
+      'Havtorn, malet helt med kärnorna',
+      '1 till 3 teskedar om dagen i gröt eller yoghurt',
+      '1 tesked pulver motsvarar 1 dl färska bär',
+    ],
+    specLabels: [undefined, undefined, 'Dosering', 'Motsvarighet'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Marjatila Raitaniemi kråkbärspulver 100 g',
+    description:
+      'Finskt vilt kråkbär, torkat helt och malet, inget tillsatt, 100 gram. Kråkbär är det svarta bäret som täcker Lapplands fjällsluttningar och sällan når en butik, så närmare än så här kommer de flesta inte att smaka det.',
+    specs: [
+      '100 g',
+      '100 % finskt kråkbär, torkat och malet helt',
+      'Inga, inga konserveringsmedel',
+    ],
+    specLabels: [undefined, undefined, 'Tillsatser'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Poikain Parhaat frystorkade lingon 15 g',
+    description:
+      'Hela finska lingon, frystorkade och inget annat, 15 gram. Frystorkningen bevarar färg, tuggmotstånd, vitaminer och fibrer, och påsen väger inget i resväskan. Laktosfria, glutenfria, veganska, utan tillsatt socker eller konserveringsmedel.',
+    specs: [
+      '15 g',
+      '100 % finskt frystorkat lingon',
+      'Laktosfri, glutenfri, vegansk, utan tillsatt socker, utan konserveringsmedel',
+    ],
+    specLabels: [undefined, undefined, 'Kost'],
   },
 }

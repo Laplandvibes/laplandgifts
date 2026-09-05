@@ -430,30 +430,6 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Preparazione', 'Dieta e certificazione'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: 'Polvere di mirtillo selvatico 70 g',
-    description:
-      'Mirtillo selvatico liofilizzato, senza nulla aggiunto. Il produttore dichiara che circa 700 grammi di bacche fresche finiscono in un barattolo da 70 grammi. Questo negozio prezza in sterline britanniche.',
-    specs: [
-      '70 g',
-      '100 % polvere di mirtillo da mirtilli selvatici nordici. Senza nulla aggiunto',
-      'Circa 700 g di bacche fresche danno 70 g di polvere di bacche',
-      'Energia 367 kcal / 1559 kJ, proteine 5 g, carboidrati 54 g di cui zuccheri 34 g, fibre 31 g, grassi 0,8 g, sale 0,01 g',
-    ],
-    specLabels: [undefined, undefined, 'Bacche impiegate', 'Valori nutrizionali per 100 g'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: 'Polvere di olivello spinoso 70 g',
-    description:
-      'Olivello spinoso nordico liofilizzato, 70 grammi, senza nulla aggiunto. Aspro e arancione acceso, quindi un cucchiaino rende nel porridge più di quanto si creda. Questo negozio prezza in sterline britanniche.',
-    specs: [
-      '70 g',
-      '100 % polvere di olivello spinoso da bacche nordiche di olivello spinoso. Senza nulla aggiunto',
-      'Circa 700 g di bacche fresche danno 70 g di polvere di bacche',
-      'Energia 489 kcal / 2045 kJ, proteine 13 g, carboidrati 24 g di cui zuccheri 14 g, fibre 28 g, grassi 25 g, sale 0,06 g',
-    ],
-    specLabels: [undefined, undefined, 'Bacche impiegate', 'Valori nutrizionali per 100 g'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Polvere di estratto di chaga Kääpä Mushrooms 30 g',
     description:
@@ -841,12 +817,6 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     description:
       'Chaga, reishi, criniera di leone, cordyceps, shiitake e maitake in un solo barattolo, macinati per caffè o frullati. Un barattolo copre l\'intero scaffale dei funghi funzionali.',
     specs: ['40 g', 'Chaga, reishi, criniera di leone, cordyceps, shiitake, maitake'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin miscela di bacche nordiche in polvere 120 g',
-    description:
-      'Una miscela finlandese di bacche del nord in un\'unica polvere, per porridge e yogurt. Il modo più leggero di portare a casa un\'estate di bacche nordiche.',
-    specs: ['120 g', 'Prodotto in Finlandia'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin tintura di chaga 50 ml',
@@ -1724,5 +1694,42 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
       'Miglior bevanda della Finlandia 2005, rivista Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, 'Alcol', 'Premio'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Polvere di olivello spinoso Marjatila Raitaniemi 100 g',
+    description:
+      'Olivello spinoso essiccato e macinato intero, semi compresi, in una fattoria finlandese di bacche, 100 grammi. Un cucchiaino vale un decilitro di bacche fresche, e la polvere è essiccata al 3-5 per cento di umidità, per questo si conserva anni.',
+    specs: [
+      '100 g',
+      'Olivello spinoso, macinato intero con i semi',
+      'Da 1 a 3 cucchiaini al giorno nel porridge o nello yogurt',
+      '1 cucchiaino di polvere equivale a 1 dl di bacche fresche',
+    ],
+    specLabels: [undefined, undefined, 'Dosaggio', 'Equivalenza'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Polvere di empetro Marjatila Raitaniemi 100 g',
+    description:
+      'Empetro finlandese raccolto allo stato selvatico, essiccato intero e macinato, senza aggiunte, 100 grammi. L\'empetro è la bacca nera che ricopre i pendii dei fjell lapponi e raramente arriva in un negozio, quindi questo è quanto di più vicino all\'assaggiarla.',
+    specs: [
+      '100 g',
+      '100 % empetro finlandese, essiccato e macinato intero',
+      'Nessuno, senza conservanti',
+    ],
+    specLabels: [undefined, undefined, 'Additivi'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Mirtilli rossi liofilizzati Poikain Parhaat 15 g',
+    description:
+      'Mirtilli rossi finlandesi interi, liofilizzati e nient\'altro, 15 grammi. La liofilizzazione conserva colore, consistenza, vitamine e fibre, e la busta in valigia non pesa nulla. Senza lattosio, senza glutine, vegani, senza zuccheri aggiunti né conservanti.',
+    specs: [
+      '15 g',
+      '100 % mirtillo rosso finlandese liofilizzato',
+      'Senza lattosio, senza glutine, vegano, senza zuccheri aggiunti, senza conservanti',
+    ],
+    specLabels: [undefined, undefined, 'Dieta'],
   },
 }

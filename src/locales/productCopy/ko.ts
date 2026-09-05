@@ -431,30 +431,6 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, '우리는 법', '식이와 인증'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: '야생 블루베리 파우더 70 g',
-    description:
-      '동결건조한 야생 빌베리로, 다른 것은 넣지 않았습니다. 생산자는 70 그램 한 병에 신선한 열매가 약 700 그램 들어간다고 밝힙니다. 이 가게는 영국 파운드로 가격을 매깁니다.',
-    specs: [
-      '70 g',
-      '북유럽 야생 블루베리(빌베리)로 만든 블루베리 파우더 100%. 다른 것은 넣지 않았습니다',
-      '신선한 열매 약 700 g 으로 베리 파우더 70 g',
-      '열량 367 kcal / 1559 kJ, 단백질 5 g, 탄수화물 54 g 그중 당류 34 g, 식이섬유 31 g, 지방 0.8 g, 소금 0.01 g',
-    ],
-    specLabels: [undefined, undefined, '사용된 열매의 양', '100 g당 영양성분'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: '산자나무 파우더 70 g',
-    description:
-      '동결건조한 북유럽 산자나무 열매 70 그램, 다른 것은 넣지 않았습니다. 시큼하고 선명한 주황색이라 죽에 한 티스푼만 넣어도 생각보다 멀리 갑니다. 이 가게는 영국 파운드로 가격을 매깁니다.',
-    specs: [
-      '70 g',
-      '북유럽 산자나무 열매로 만든 산자나무 파우더 100%. 다른 것은 넣지 않았습니다',
-      '신선한 열매 약 700 g 으로 베리 파우더 70 g',
-      '열량 489 kcal / 2045 kJ, 단백질 13 g, 탄수화물 24 g 그중 당류 14 g, 식이섬유 28 g, 지방 25 g, 소금 0.06 g',
-    ],
-    specLabels: [undefined, undefined, '사용된 열매의 양', '100 g당 영양성분'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Kääpä Mushrooms 차가버섯 추출 분말 30 g',
     description:
@@ -842,12 +818,6 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     description:
       '차가버섯, 영지, 노루궁뎅이, 동충하초, 표고, 잎새버섯을 한 병에 담아 커피나 스무디에 타 먹는 분말입니다. 이 한 병이 기능성 버섯 선반 전체를 대신합니다.',
     specs: ['40 g', '차가버섯, 영지, 노루궁뎅이, 동충하초, 표고, 잎새버섯'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin 북유럽 베리 파우더 믹스 120 g',
-    description:
-      '북쪽의 베리를 하나의 분말로 담은 핀란드산 블렌드로, 죽이나 요거트에 어울립니다. 북유럽 베리의 여름을 집으로 가져가는 가장 가벼운 방법입니다.',
-    specs: ['120 g', '핀란드산'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin 차가버섯 팅크 50 ml',
@@ -1725,5 +1695,42 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '2005년 핀란드 최고의 음료, 잡지 Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, '알코올', '수상'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Marjatila Raitaniemi 비타민나무 열매 파우더 100 g',
+    description:
+      '핀란드 베리 농장에서 씨째 통째로 말려 갈아 만든 비타민나무 열매 파우더 100그램입니다. 한 티스푼이 생과 1데시리터에 해당하며, 수분 3~5퍼센트까지 건조해 몇 년을 보관할 수 있습니다.',
+    specs: [
+      '100 g',
+      '비타민나무 열매, 씨째 통째로 분쇄',
+      '하루 1~3티스푼을 죽이나 요거트에',
+      '파우더 1티스푼은 생과 1 dl에 해당',
+    ],
+    specLabels: [undefined, undefined, '복용량', '환산'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Marjatila Raitaniemi 크로우베리 파우더 100 g',
+    description:
+      '야생에서 딴 핀란드산 크로우베리를 통째로 말려 갈고 아무것도 넣지 않은 100그램입니다. 크로우베리는 라플란드 산비탈을 뒤덮는 검은 열매로 상점에 거의 나오지 않으니, 대부분의 사람에게는 이것이 맛볼 수 있는 가장 가까운 길입니다.',
+    specs: [
+      '100 g',
+      '100 % 핀란드산 크로우베리, 통째로 건조 후 분쇄',
+      '없음, 보존료 무첨가',
+    ],
+    specLabels: [undefined, undefined, '첨가물'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Poikain Parhaat 동결건조 링곤베리 15 g',
+    description:
+      '핀란드산 링곤베리를 통째로 동결건조한 것, 그 외에는 아무것도 없는 15그램. 동결건조는 색과 식감, 비타민과 식이섬유를 지키고, 봉지는 여행 가방에서 무게가 느껴지지 않습니다. 무유당, 글루텐 프리, 비건, 설탕과 보존료 무첨가.',
+    specs: [
+      '15 g',
+      '100 % 핀란드산 동결건조 링곤베리',
+      '무유당, 글루텐 프리, 비건, 설탕 무첨가, 보존료 무첨가',
+    ],
+    specLabels: [undefined, undefined, '식단'],
   },
 }

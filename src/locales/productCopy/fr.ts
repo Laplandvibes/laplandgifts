@@ -431,30 +431,6 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Infusion', 'Régime et certification'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: 'Poudre de myrtille sauvage 70 g',
-    description:
-      'Myrtille sauvage lyophilisée, sans rien d’ajouté. Le producteur indique qu’environ 700 grammes de baies fraîches entrent dans un pot de 70 grammes. Cette boutique affiche ses prix en livres sterling.',
-    specs: [
-      '70 g',
-      '100 % poudre de myrtille issue de myrtilles sauvages nordiques. Rien d’ajouté',
-      'Environ 700 g de baies fraîches donnent 70 g de poudre de baies',
-      'Énergie 367 kcal / 1559 kJ, protéines 5 g, glucides 54 g dont sucres 34 g, fibres 31 g, matières grasses 0,8 g, sel 0,01 g',
-    ],
-    specLabels: [undefined, undefined, 'Baies utilisées', 'Valeurs nutritionnelles pour 100 g'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: 'Poudre d’argousier 70 g',
-    description:
-      'Argousier nordique lyophilisé, 70 grammes, sans rien d’ajouté. Acidulé et orange vif, donc une cuillère à café va plus loin dans le porridge qu’on ne le croit. Cette boutique affiche ses prix en livres sterling.',
-    specs: [
-      '70 g',
-      '100 % poudre d’argousier issue de baies d’argousier nordiques. Rien d’ajouté',
-      'Environ 700 g de baies fraîches donnent 70 g de poudre de baies',
-      'Énergie 489 kcal / 2045 kJ, protéines 13 g, glucides 24 g dont sucres 14 g, fibres 28 g, matières grasses 25 g, sel 0,06 g',
-    ],
-    specLabels: [undefined, undefined, 'Baies utilisées', 'Valeurs nutritionnelles pour 100 g'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Poudre d’extrait de chaga Kääpä Mushrooms 30 g',
     description:
@@ -842,12 +818,6 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     description:
       'Chaga, reishi, crinière de lion, cordyceps, shiitaké et maitaké dans un seul pot, moulus pour le café ou les smoothies. Un pot couvre tout le rayon des champignons fonctionnels.',
     specs: ['40 g', 'Chaga, reishi, crinière de lion, cordyceps, shiitaké, maitaké'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin mélange de baies nordiques en poudre 120 g',
-    description:
-      'Un mélange finlandais de baies du Nord en une seule poudre, pour le porridge et le yaourt. La façon la plus légère de rapporter un été de baies nordiques.',
-    specs: ['120 g', 'Fabriqué en Finlande'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin teinture de chaga 50 ml',
@@ -1725,5 +1695,42 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Meilleure boisson de Finlande 2005, magazine Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, 'Alcool', 'Distinction'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Poudre d\'argousier Marjatila Raitaniemi 100 g',
+    description:
+      'Argousier séché et moulu entier, graines comprises, dans une ferme finlandaise de baies, 100 grammes. Une cuillère à café vaut un décilitre de baies fraîches, et la poudre est séchée à 3 à 5 pour cent d\'humidité, ce qui explique qu\'elle se garde des années.',
+    specs: [
+      '100 g',
+      'Argousier, moulu entier avec les graines',
+      '1 à 3 cuillères à café par jour dans le porridge ou le yaourt',
+      '1 cuillère à café de poudre équivaut à 1 dl de baies fraîches',
+    ],
+    specLabels: [undefined, undefined, 'Dosage', 'Équivalence'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Poudre de camarine Marjatila Raitaniemi 100 g',
+    description:
+      'Camarine finlandaise cueillie dans la nature, séchée entière et moulue, sans rien d\'ajouté, 100 grammes. La camarine est la baie noire qui tapisse les pentes des fjells de Laponie et arrive rarement en boutique, alors c\'est ce qui se rapproche le plus d\'en goûter une.',
+    specs: [
+      '100 g',
+      '100 % camarine finlandaise, séchée et moulue entière',
+      'Aucun, sans conservateurs',
+    ],
+    specLabels: [undefined, undefined, 'Additifs'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Airelles rouges lyophilisées Poikain Parhaat 15 g',
+    description:
+      'Des airelles rouges finlandaises entières, lyophilisées et rien d\'autre, 15 grammes. La lyophilisation garde la couleur, le croquant, les vitamines et les fibres, et le sachet ne pèse rien dans une valise. Sans lactose, sans gluten, végétaliennes, sans sucre ajouté ni conservateurs.',
+    specs: [
+      '15 g',
+      '100 % airelle rouge finlandaise lyophilisée',
+      'Sans lactose, sans gluten, végétalien, sans sucre ajouté, sans conservateurs',
+    ],
+    specLabels: [undefined, undefined, 'Régime'],
   },
 }

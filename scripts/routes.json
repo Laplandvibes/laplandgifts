@@ -1485,39 +1485,6 @@
     }
   },
   {
-    "path": "/brand/arctic-power-berries",
-    "fallbackTitle": "Arctic Power Berries | LaplandGifts",
-    "fallbackDescription": "Arctic Power Berries is a berry powder brand run by Anna and Eveliina, two childhood friends from Rovaniemi in Finnish Lapland who started the business after.",
-    "fallbackTitleByLang": {
-      "en": "Arctic Power Berries | LaplandGifts",
-      "fi": "Arctic Power Berries | LaplandGifts",
-      "de": "Arctic Power Berries | LaplandGifts",
-      "ja": "Arctic Power Berries | LaplandGifts",
-      "es": "Arctic Power Berries | LaplandGifts",
-      "pt-BR": "Arctic Power Berries | LaplandGifts",
-      "zh-CN": "Arctic Power Berries | LaplandGifts",
-      "ko": "Arctic Power Berries | LaplandGifts",
-      "fr": "Arctic Power Berries | LaplandGifts",
-      "it": "Arctic Power Berries | LaplandGifts",
-      "nl": "Arctic Power Berries | LaplandGifts",
-      "sv": "Arctic Power Berries | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Arctic Power Berries is a berry powder brand run by Anna and Eveliina, two childhood friends from Rovaniemi in Finnish Lapland who started the business after.",
-      "fi": "Arctic Power Berries on marjajauhebrändi, jota pyörittävät Anna ja Eveliina, kaksi lapsuudenystävää Rovaniemeltä. Jokainen hinta on luettu kumppanin kaupasta.",
-      "de": "Arctic Power Berries ist eine Marke für Beerenpulver, geführt von Anna und Eveliina, zwei Jugendfreundinnen aus Rovaniemi im finnischen Lappland.",
-      "ja": "Arctic Power Berries は、フィンランド・ラップランドのロヴァニエミ出身の幼なじみ Anna と Eveliina が、ロンドンへ移ったのちに始めたベリーパウダーのブランドです。価格はすべて提携ショップから取得したもので、取得日を併記しています。配送エリアは各カードに記載しています。",
-      "es": "Arctic Power Berries es una marca de bayas en polvo llevada por Anna y Eveliina, dos amigas de la infancia de Rovaniemi, en la Laponia finlandesa.",
-      "pt-BR": "Arctic Power Berries é uma marca de pós de frutas silvestres tocada por Anna e Eveliina, duas amigas de infância de Rovaniemi, na Lapônia finlandesa.",
-      "zh-CN": "Arctic Power Berries 是由 Anna 和 Eveliina 经营的浆果粉品牌，两人是来自芬兰拉普兰罗瓦涅米的儿时好友，移居伦敦后创办了这家企业。产品为 70 克装的单一浆果粉：蓝莓（欧洲越橘）、越橘、沙棘、黑加仑、蔓越莓、草莓和树莓，另有一款混合浆果配方。价格取自合作商店，并注明读取日期。",
-      "ko": "Arctic Power Berries는 핀란드 라플란드 로바니에미 출신의 어린 시절 친구인 Anna와 Eveliina가 런던으로 이주한 뒤 시작한 베리 분말 브랜드입니다. 모든 가격은 표시된 날짜에 제휴 상점에서 확인한 것입니다. 배송 지역은 모든 상품 카드에 표시됩니다.",
-      "fr": "Arctic Power Berries est une marque de poudres de baies dirigée par Anna et Eveliina, deux amies d'enfance de Rovaniemi, en Laponie finlandaise.",
-      "it": "Arctic Power Berries è un marchio di bacche in polvere gestito da Anna ed Eveliina, due amiche d'infanzia di Rovaniemi, nella Lapponia finlandese.",
-      "nl": "Arctic Power Berries is een merk van bessenpoeder dat wordt gerund door Anna en Eveliina. Elke prijs is op de vermelde datum overgenomen van de partnerwinkel.",
-      "sv": "Arctic Power Berries är ett varumärke för bärpulver som drivs av Anna och Eveliina. Varje pris hämtas från partnerbutiken och dateras. Leveransområdena visas."
-    }
-  },
-  {
     "path": "/brand/golden-crown-levin-iglut",
     "fallbackTitle": "Golden Crown Levin Iglut | LaplandGifts",
     "fallbackDescription": "Levin Iglut Golden Crown is a family-run glass igloo resort on the Utsuvaara fell next to Levi in Finnish Lapland. Every price is read from the partner shop.",
@@ -2673,72 +2640,6 @@
     }
   },
   {
-    "path": "/product/arctic-power-berries-blueberry-powder",
-    "fallbackTitle": "Wild blueberry powder 70 g | LaplandGifts",
-    "fallbackDescription": "Freeze dried wild bilberry, nothing added. The producer says roughly 700 grams of fresh berries go into one 70 gram jar. This shop prices in pounds sterling.",
-    "fallbackTitleByLang": {
-      "en": "Wild blueberry powder 70 g | LaplandGifts",
-      "fi": "Luonnonmustikkajauhe 70 g | LaplandGifts",
-      "de": "Arctic Power Berries Wildblaubeerpulver 70 g | LaplandGifts",
-      "ja": "Arctic Power Berries 野生ブルーベリーパウダー 70 g | LaplandGifts",
-      "es": "Polvo de arándano silvestre 70 g | LaplandGifts",
-      "pt-BR": "Pó de mirtilo silvestre 70 g | LaplandGifts",
-      "zh-CN": "Arctic Power Berries 野生蓝莓粉 70 g | LaplandGifts",
-      "ko": "Arctic Power Berries 야생 블루베리 파우더 70 g | LaplandGifts",
-      "fr": "Poudre de myrtille sauvage 70 g | LaplandGifts",
-      "it": "Polvere di mirtillo selvatico 70 g | LaplandGifts",
-      "nl": "Wilde bosbessenpoeder 70 g | LaplandGifts",
-      "sv": "Arctic Power Berries Vilt blåbärspulver 70 g | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Freeze dried wild bilberry, nothing added. The producer says roughly 700 grams of fresh berries go into one 70 gram jar. This shop prices in pounds sterling.",
-      "fi": "Pakastekuivattua luonnonmustikkaa ilman lisättyä mitään. Valmistajan mukaan yhteen 70 gramman purkkiin menee noin 700 grammaa tuoreita marjoja.",
-      "de": "Gefriergetrocknete wilde Heidelbeere, ohne Zusätze. Der Hersteller gibt an, dass etwa 700 Gramm frische Beeren in ein Glas mit 70 Gramm gehen.",
-      "ja": "フリーズドライした野生のビルベリー、他には何も加えていません。生産者によれば、70 グラムの瓶ひとつにおよそ 700 グラムの生の果実が入ります。この店の価格は英ポンド建てです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
-      "es": "Arándano silvestre liofilizado, sin nada añadido. El productor indica que unos 700 gramos de bayas frescas entran en un bote de 70 gramos.",
-      "pt-BR": "Mirtilo silvestre liofilizado, sem nada adicionado. O produtor informa que cerca de 700 gramas de frutas frescas entram em um pote de 70 gramas.",
-      "zh-CN": "冻干的野生蓝莓（欧洲越橘），不添加任何东西。生产者表示，一罐 70 克大约要用 700 克鲜果。这家店以英镑计价。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "동결건조한 야생 빌베리로, 다른 것은 넣지 않았습니다. 생산자는 70 그램 한 병에 신선한 열매가 약 700 그램 들어간다고 밝힙니다. 이 가게는 영국 파운드로 가격을 매깁니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 있습니다.",
-      "fr": "Myrtille sauvage lyophilisée, sans rien d’ajouté. Le producteur indique qu’environ 700 grammes de baies fraîches entrent dans un pot de 70 grammes.",
-      "it": "Mirtillo selvatico liofilizzato, senza nulla aggiunto. Il produttore dichiara che circa 700 grammi di bacche fresche finiscono in un barattolo da 70 grammi.",
-      "nl": "Gevriesdroogde wilde bosbes, niets toegevoegd. De producent geeft aan dat er ongeveer 700 gram verse bessen in één pot van 70 gram gaan.",
-      "sv": "Frystorkade vilda blåbär, inget tillsatt. Producenten uppger att ungefär 700 gram färska bär går åt till en burk på 70 gram. Du köper varan i partnerbutiken."
-    }
-  },
-  {
-    "path": "/product/arctic-power-berries-sea-buckthorn-powder",
-    "fallbackTitle": "Sea buckthorn powder 70 g | LaplandGifts",
-    "fallbackDescription": "Freeze dried Nordic sea buckthorn, 70 grams, nothing added. Tart and bright orange, so a teaspoon carries further in porridge than you would guess.",
-    "fallbackTitleByLang": {
-      "en": "Sea buckthorn powder 70 g | LaplandGifts",
-      "fi": "Arctic Power Berries Tyrnijauhe 70 g | LaplandGifts",
-      "de": "Arctic Power Berries Sanddornpulver 70 g | LaplandGifts",
-      "ja": "Arctic Power Berries シーバックソーンパウダー 70 g | LaplandGifts",
-      "es": "Polvo de espino amarillo 70 g | LaplandGifts",
-      "pt-BR": "Pó de espinheiro-marítimo 70 g | LaplandGifts",
-      "zh-CN": "Arctic Power Berries 沙棘粉 70 g | LaplandGifts",
-      "ko": "Arctic Power Berries 산자나무 파우더 70 g | LaplandGifts",
-      "fr": "Arctic Power Berries Poudre d’argousier 70 g | LaplandGifts",
-      "it": "Polvere di olivello spinoso 70 g | LaplandGifts",
-      "nl": "Arctic Power Berries Duindoornpoeder 70 g | LaplandGifts",
-      "sv": "Arctic Power Berries Havtornspulver 70 g | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "Freeze dried Nordic sea buckthorn, 70 grams, nothing added. Tart and bright orange, so a teaspoon carries further in porridge than you would guess.",
-      "fi": "Pakastekuivattua pohjoista tyrniä, 70 grammaa, ei lisättyä mitään. Kirpeä ja kirkkaan oranssi, joten teelusikallinen kantaa puurossa pidemmälle kuin arvaisi.",
-      "de": "Gefriergetrockneter nordischer Sanddorn, 70 Gramm, ohne Zusätze. Der Preis wird im Partnershop abgelesen, dort erfolgt auch der Kauf. Liefergebiet angegeben.",
-      "ja": "フリーズドライした北欧のシーバックソーン、70 グラム、他には何も加えていません。酸味が強く鮮やかなオレンジ色なので、小さじ 1 杯でもポリッジの中で思ったより広がります。この店の価格は英ポンド建てです。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
-      "es": "Espino amarillo nórdico liofilizado, 70 gramos, sin nada añadido. El precio procede de la tienda asociada, donde también se compra. Zona de entrega indicada.",
-      "pt-BR": "Espinheiro-marítimo nórdico liofilizado, 70 gramas, sem nada adicionado. O preço vem da loja parceira, onde você também compra. Área de entrega nesta página.",
-      "zh-CN": "冻干的北欧沙棘，70 克，不添加任何东西。酸味明显，颜色是鲜亮的橙，所以一茶匙撒在麦片粥里比想象中管用。这家店以英镑计价。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "동결건조한 북유럽 산자나무 열매 70 그램, 다른 것은 넣지 않았습니다. 시큼하고 선명한 주황색이라 죽에 한 티스푼만 넣어도 생각보다 멀리 갑니다. 이 가게는 영국 파운드로 가격을 매깁니다. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
-      "fr": "Argousier nordique lyophilisé, 70 grammes, sans rien d’ajouté. Acidulé et orange vif, donc une cuillère à café va plus loin dans le porridge qu’on ne le croit.",
-      "it": "Olivello spinoso nordico liofilizzato, 70 grammi, senza nulla aggiunto. Il prezzo è rilevato dal negozio partner, dove viene effettuato anche l'acquisto.",
-      "nl": "Gevriesdroogde Noordse duindoorn, 70 gram, niets toegevoegd. Zuur en helder oranje, dus een theelepel komt in de pap verder dan u zou denken.",
-      "sv": "Frystorkad nordisk havtorn, 70 gram, inget tillsatt. Syrlig och klart orange, så en tesked räcker längre i gröten än man tror. Du köper varan i partnerbutiken."
-    }
-  },
-  {
     "path": "/product/kaapa-mushrooms-pakuri-powder",
     "fallbackTitle": "Kääpä Mushrooms chaga extract powder 30 g | LaplandGifts",
     "fallbackDescription": "A 30 gram jar of chaga extract powder from Kääpä Mushrooms, who harvest functional mushrooms in Nordic forests, meant for stirring into hot drinks.",
@@ -2967,39 +2868,6 @@
       "it": "Chaga, reishi, criniera di leone, cordyceps, shiitake e maitake in un solo barattolo, macinati per caffè o frullati. Il prezzo è rilevato dal negozio partner.",
       "nl": "Chaga, reishi, pruikzwam, cordyceps, shiitake en maitake in één pot, gemalen voor koffie of smoothies. Eén pot dekt de hele plank functionele paddenstoelen.",
       "sv": "Chaga, reishi, lion's mane, cordyceps, shiitake och maitake i samma burk, malda för kaffe eller smoothies. En burk täcker hela svamphyllan."
-    }
-  },
-  {
-    "path": "/product/foodin-nordic-berry-powder",
-    "fallbackTitle": "Foodin Nordic berries powder mix 120 g | LaplandGifts",
-    "fallbackDescription": "A Finnish blend of northern berries in one powder, for porridge and yoghurt. The lightest way to carry a summer of Nordic berries home. Delivery area is listed.",
-    "fallbackTitleByLang": {
-      "en": "Foodin Nordic berries powder mix 120 g | LaplandGifts",
-      "fi": "Foodin Pohjolan marjat -marjajauhesekoitus 120 g",
-      "de": "Foodin Nordische Beerenpulvermischung 120 g | LaplandGifts",
-      "ja": "Foodin 北欧ベリーパウダーミックス 120 g | LaplandGifts",
-      "es": "Foodin mezcla de bayas nórdicas en polvo 120 g",
-      "pt-BR": "Foodin mistura de frutas nórdicas em pó 120 g | LaplandGifts",
-      "zh-CN": "Foodin 北欧浆果混合粉 120 g | LaplandGifts",
-      "ko": "Foodin 북유럽 베리 파우더 믹스 120 g | LaplandGifts",
-      "fr": "Foodin mélange de baies nordiques en poudre 120 g",
-      "it": "Foodin miscela di bacche nordiche in polvere 120 g",
-      "nl": "Foodin Noordse bessenpoedermix 120 g | LaplandGifts",
-      "sv": "Foodin Nordisk bärpulverblandning 120 g | LaplandGifts"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "A Finnish blend of northern berries in one powder, for porridge and yoghurt. The lightest way to carry a summer of Nordic berries home. Delivery area is listed.",
-      "fi": "Kotimainen sekoitus pohjoisen marjoja yhtenä jauheena puuroon ja jogurttiin. Kevyin tapa viedä pohjolan marjakesä kotiin. Hinta on luettu kumppanin kaupasta.",
-      "de": "Eine finnische Mischung nordischer Beeren als ein Pulver, für Porridge und Joghurt. Die leichteste Art, einen nordischen Beerensommer mit nach Hause zu nehmen.",
-      "ja": "北欧のベリーを1つの粉末にまとめたフィンランド製ブレンド。お粥やヨーグルトに。北欧のベリーの夏を持ち帰るいちばん軽い方法です。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
-      "es": "Una mezcla finlandesa de bayas del norte en un solo polvo, para gachas y yogur. La forma más ligera de llevarse a casa un verano de bayas nórdicas.",
-      "pt-BR": "Uma mistura finlandesa de frutas do norte em um único pó, para mingau e iogurte. O jeito mais leve de levar um verão de frutas nórdicas para casa.",
-      "zh-CN": "芬兰制造的北方浆果混合粉，加入粥或酸奶。把一个北欧浆果之夏带回家的最轻方式。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "북쪽의 베리를 하나의 분말로 담은 핀란드산 블렌드로, 죽이나 요거트에 어울립니다. 북유럽 베리의 여름을 집으로 가져가는 가장 가벼운 방법입니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
-      "fr": "Un mélange finlandais de baies du Nord en une seule poudre, pour le porridge et le yaourt. La façon la plus légère de rapporter un été de baies nordiques.",
-      "it": "Una miscela finlandese di bacche del nord in un'unica polvere, per porridge e yogurt. Il modo più leggero di portare a casa un'estate di bacche nordiche.",
-      "nl": "Een Finse mix van noordelijke bessen als één poeder, voor pap en yoghurt. De lichtste manier om een zomer aan Noordse bessen mee naar huis te nemen.",
-      "sv": "En finsk blandning av nordiska bär som ett enda pulver, för gröt och yoghurt. Det lättaste sättet att ta med en nordisk bärsommar hem. Säljs av partnerbutiken."
     }
   },
   {
@@ -7092,6 +6960,105 @@
       "it": "Bevanda frizzante analcolica, fatta a mano con germogli di abete nella Lapponia finlandese, 750 ml. Il prezzo è rilevato dal negozio partner, dove si acquista.",
       "nl": "Alcoholvrije bruisdrank, met de hand gemaakt van sparrenscheuten in Fins Lapland, 750 ml. De prijs is overgenomen van de partnerwinkel. Bezorggebied is vermeld.",
       "sv": "Alkoholfri mousserande dryck, gjord för hand av granskott i finska Lappland, 750 ml. Priset är hämtat från partnerbutiken och köpet görs i samma butik."
+    }
+  },
+  {
+    "path": "/product/rj-raitaniemi-sea-buckthorn-powder",
+    "fallbackTitle": "Marjatila Raitaniemi sea buckthorn powder 100 g",
+    "fallbackDescription": "Sea buckthorn dried and ground whole, seeds included, on a Finnish berry farm, 100 grams. The price comes from the partner shop, where you also buy it.",
+    "fallbackTitleByLang": {
+      "en": "Marjatila Raitaniemi sea buckthorn powder 100 g",
+      "fi": "Marjatila Raitaniemi tyrnijauhe 100 g | LaplandGifts",
+      "de": "Marjatila Raitaniemi Sanddornpulver 100 g | LaplandGifts",
+      "ja": "Marjatila Raitaniemi シーバックソーンパウダー 100 g | LaplandGifts",
+      "es": "Polvo de espino amarillo Marjatila Raitaniemi 100 g",
+      "pt-BR": "Pó de espinheiro-marítimo Marjatila Raitaniemi 100 g",
+      "zh-CN": "Marjatila Raitaniemi 沙棘粉 100 g | LaplandGifts",
+      "ko": "Marjatila Raitaniemi 비타민나무 열매 파우더 100 g | LaplandGifts",
+      "fr": "Poudre d'argousier Marjatila Raitaniemi 100 g | LaplandGifts",
+      "it": "Polvere di olivello spinoso Marjatila Raitaniemi 100 g",
+      "nl": "Marjatila Raitaniemi duindoornpoeder 100 g | LaplandGifts",
+      "sv": "Marjatila Raitaniemi havtornspulver 100 g | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Sea buckthorn dried and ground whole, seeds included, on a Finnish berry farm, 100 grams. The price comes from the partner shop, where you also buy it.",
+      "fi": "Tyrniä kuivattuna ja jauhettuna kokonaisena siemenineen suomalaisella marjatilalla, 100 grammaa. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
+      "de": "Sanddorn, auf einem finnischen Beerenhof ganz mit den Kernen getrocknet und gemahlen, 100 Gramm. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
+      "ja": "フィンランドのベリー農園で種ごと丸ごと乾燥して挽いたシーバックソーン、100グラム。小さじ1杯が生のベリー1デシリットルに相当し、水分3〜5パーセントまで乾燥させているため何年も保存できます。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Espino amarillo secado y molido entero, con semillas, en una granja finlandesa de bayas, 100 gramos. El precio es el de la tienda asociada, donde se compra.",
+      "pt-BR": "Espinheiro-marítimo seco e moído inteiro, com as sementes, numa fazenda finlandesa de frutas silvestres, 100 gramas. O preço é consultado na loja parceira.",
+      "zh-CN": "在芬兰浆果农场连籽整果干燥后磨成的沙棘粉，100克。一茶匙相当于一分升鲜果，粉末干燥至3至5%的含水量，所以能存放数年。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "핀란드 베리 농장에서 씨째 통째로 말려 갈아 만든 비타민나무 열매 파우더 100그램입니다. 한 티스푼이 생과 1데시리터에 해당하며, 수분 3~5퍼센트까지 건조해 몇 년을 보관할 수 있습니다. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
+      "fr": "Argousier séché et moulu entier, graines comprises, dans une ferme finlandaise de baies, 100 grammes. Le prix est relevé auprès de la boutique partenaire.",
+      "it": "Olivello spinoso essiccato e macinato intero, semi compresi, in una fattoria finlandese di bacche, 100 grammi. L'area di consegna è indicata in questa pagina.",
+      "nl": "Duindoorn, op een Finse bessenboerderij heel met de zaden gedroogd en gemalen, 100 gram. De prijs is overgenomen van de partnerwinkel. Bezorggebied is vermeld.",
+      "sv": "Havtorn torkat och malet helt med kärnorna på en finsk bärgård, 100 gram. Priset hämtas från partnerbutiken, där köpet sker. Leveransområdet finns på sidan."
+    }
+  },
+  {
+    "path": "/product/rj-raitaniemi-crowberry-powder",
+    "fallbackTitle": "Marjatila Raitaniemi crowberry powder 100 g | LaplandGifts",
+    "fallbackDescription": "Finnish crowberry picked from the wild, dried whole and ground, nothing added, 100 grams. The price comes from the partner shop, where you also buy it.",
+    "fallbackTitleByLang": {
+      "en": "Marjatila Raitaniemi crowberry powder 100 g | LaplandGifts",
+      "fi": "Marjatila Raitaniemi variksenmarjajauhe 100 g | LaplandGifts",
+      "de": "Marjatila Raitaniemi Krähenbeerenpulver 100 g | LaplandGifts",
+      "ja": "Marjatila Raitaniemi クロウベリーパウダー 100 g | LaplandGifts",
+      "es": "Polvo de camarina Marjatila Raitaniemi 100 g | LaplandGifts",
+      "pt-BR": "Pó de camarinha Marjatila Raitaniemi 100 g | LaplandGifts",
+      "zh-CN": "Marjatila Raitaniemi 岩高兰粉 100 g | LaplandGifts",
+      "ko": "Marjatila Raitaniemi 크로우베리 파우더 100 g | LaplandGifts",
+      "fr": "Poudre de camarine Marjatila Raitaniemi 100 g | LaplandGifts",
+      "it": "Polvere di empetro Marjatila Raitaniemi 100 g | LaplandGifts",
+      "nl": "Marjatila Raitaniemi kraaiheidepoeder 100 g | LaplandGifts",
+      "sv": "Marjatila Raitaniemi kråkbärspulver 100 g | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Finnish crowberry picked from the wild, dried whole and ground, nothing added, 100 grams. The price comes from the partner shop, where you also buy it.",
+      "fi": "Suomalaista luonnosta kerättyä variksenmarjaa kokonaisena kuivattuna ja jauhettuna, ei mitään lisättyä, 100 grammaa. Hinta on luettu kumppanin kaupasta.",
+      "de": "Finnische Krähenbeere aus Wildsammlung, ganz getrocknet und gemahlen, ohne Zusatz, 100 Gramm. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein.",
+      "ja": "野生から摘んだフィンランド産クロウベリーを丸ごと乾燥して挽き、何も加えていない100グラム。クロウベリーはラップランドのフェルの斜面を覆う黒い実で、店に並ぶことはまれです。これがほとんどの人にとって味わう一番近い方法です。価格は提携ショップのもので、ご購入もそちらで行います。配送エリアはこのページに記載しています。",
+      "es": "Camarina finlandesa silvestre, secada entera y molida, sin nada añadido, 100 gramos. El precio procede de la tienda asociada, donde también se compra.",
+      "pt-BR": "Camarinha finlandesa colhida na natureza, seca inteira e moída, sem nada adicionado, 100 gramas. O preço vem da loja parceira, onde você também compra.",
+      "zh-CN": "野外采摘的芬兰岩高兰整果干燥磨粉，无任何添加，100克。岩高兰是铺满拉普兰山坡的黑色浆果，很少进入商店，所以这是大多数人最接近尝到它的方式。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "야생에서 딴 핀란드산 크로우베리를 통째로 말려 갈고 아무것도 넣지 않은 100그램입니다. 크로우베리는 라플란드 산비탈을 뒤덮는 검은 열매로 상점에 거의 나오지 않으니, 대부분의 사람에게는 이것이 맛볼 수 있는 가장 가까운 길입니다. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다.",
+      "fr": "Camarine finlandaise cueillie dans la nature, séchée entière et moulue, sans rien d'ajouté, 100 grammes. Le prix est relevé auprès de la boutique partenaire.",
+      "it": "Empetro finlandese raccolto allo stato selvatico, essiccato intero e macinato, senza aggiunte, 100 grammi. L'area di consegna è indicata in questa pagina.",
+      "nl": "Finse wilde kraaihei, heel gedroogd en gemalen, niets toegevoegd, 100 gram. De prijs is overgenomen van de partnerwinkel. Het bezorggebied staat op deze pagina.",
+      "sv": "Finskt vilt kråkbär, torkat helt och malet, inget tillsatt, 100 gram. Priset är hämtat från partnerbutiken och köpet görs i samma butik. Leveransområdet anges."
+    }
+  },
+  {
+    "path": "/product/sk-poikain-parhaat-puolukka",
+    "fallbackTitle": "Poikain Parhaat freeze dried lingonberries 15 g",
+    "fallbackDescription": "Whole Finnish lingonberries, freeze dried and nothing else, 15 grams. The price comes from the partner shop, where you also buy it. Delivery area on this page.",
+    "fallbackTitleByLang": {
+      "en": "Poikain Parhaat freeze dried lingonberries 15 g",
+      "fi": "Poikain Parhaat pakastekuivattu puolukka 15 g | LaplandGifts",
+      "de": "Poikain Parhaat gefriergetrocknete Preiselbeeren 15 g",
+      "ja": "Poikain Parhaat フリーズドライ リンゴンベリー 15 g | LaplandGifts",
+      "es": "Arándanos rojos liofilizados Poikain Parhaat 15 g",
+      "pt-BR": "Lingonberries liofilizadas Poikain Parhaat 15 g",
+      "zh-CN": "Poikain Parhaat 冻干越橘 15 g | LaplandGifts",
+      "ko": "Poikain Parhaat 동결건조 링곤베리 15 g | LaplandGifts",
+      "fr": "Airelles rouges lyophilisées Poikain Parhaat 15 g",
+      "it": "Mirtilli rossi liofilizzati Poikain Parhaat 15 g",
+      "nl": "Poikain Parhaat gevriesdroogde vossenbessen 15 g",
+      "sv": "Poikain Parhaat frystorkade lingon 15 g | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Whole Finnish lingonberries, freeze dried and nothing else, 15 grams. The price comes from the partner shop, where you also buy it. Delivery area on this page.",
+      "fi": "Kokonaisia suomalaisia puolukoita pakastekuivattuna, ei mitään muuta, 15 grammaa. Hinta tulee kumppanin kaupasta, josta tuote myös ostetaan. Toimitusalue näkyy.",
+      "de": "Ganze finnische Preiselbeeren, gefriergetrocknet und sonst nichts, 15 Gramm. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein. Liefergebiet angegeben.",
+      "ja": "フィンランド産リンゴンベリーをまるごとフリーズドライしただけの15グラム。フリーズドライは色、歯ごたえ、ビタミンと食物繊維を保ち、袋はスーツケースの中で重さを感じません。乳糖不使用、グルテンフリー、ヴィーガン、砂糖と保存料無添加。価格は提携ショップから取得し、ご購入もそちらで。配送エリアはこのページに記載しています。",
+      "es": "Arándanos rojos finlandeses enteros, liofilizados y nada más, 15 gramos. El precio se consulta en la tienda asociada, donde también se hace la compra.",
+      "pt-BR": "Lingonberries finlandesas inteiras, liofilizadas e nada mais, 15 gramas. O preço vem da loja parceira, onde você também compra. Área de entrega nesta página.",
+      "zh-CN": "整颗的芬兰越橘，冻干，别无他物，15克。冻干保留了颜色、口感、维生素和膳食纤维，袋子在行李箱里没有分量。无乳糖、无麸质、纯素，不加糖也不加防腐剂。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "핀란드산 링곤베리를 통째로 동결건조한 것, 그 외에는 아무것도 없는 15그램. 동결건조는 색과 식감, 비타민과 식이섬유를 지키고, 봉지는 여행 가방에서 무게가 느껴지지 않습니다. 무유당, 글루텐 프리, 비건, 설탕과 보존료 무첨가. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다.",
+      "fr": "Des airelles rouges finlandaises entières, lyophilisées et rien d'autre, 15 grammes. Le prix vient de la boutique partenaire, où se fait aussi votre achat.",
+      "it": "Mirtilli rossi finlandesi interi, liofilizzati e nient'altro, 15 grammi. Il prezzo è rilevato dal negozio partner, dove viene effettuato anche l'acquisto.",
+      "nl": "Hele Finse vossenbessen, gevriesdroogd en verder niets, 15 gram. Vriesdrogen bewaart kleur, beet, vitaminen en vezels, en het zakje weegt niets in een koffer.",
+      "sv": "Hela finska lingon, frystorkade och inget annat, 15 gram. Frystorkningen bevarar färg, tuggmotstånd, vitaminer och fibrer, och påsen väger inget i resväskan."
     }
   },
   {

@@ -453,30 +453,6 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Zubereitung', 'Ernährung und Zertifizierung'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: 'Wildblaubeerpulver 70 g',
-    description:
-      'Gefriergetrocknete wilde Heidelbeere, ohne Zusätze. Der Hersteller gibt an, dass etwa 700 Gramm frische Beeren in ein Glas mit 70 Gramm gehen. Dieser Shop rechnet in Pfund Sterling ab.',
-    specs: [
-      '70 g',
-      '100 % Blaubeerpulver aus wilden nordischen Blaubeeren, auch Heidelbeeren genannt. Ohne Zusätze',
-      'Aus etwa 700 g frischen Beeren entstehen 70 g Beerenpulver',
-      'Energie 367 kcal / 1559 kJ, Eiweiß 5 g, Kohlenhydrate 54 g davon Zucker 34 g, Ballaststoffe 31 g, Fett 0,8 g, Salz 0,01 g',
-    ],
-    specLabels: [undefined, undefined, 'Beereneinsatz', 'Nährwerte je 100 g'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: 'Sanddornpulver 70 g',
-    description:
-      'Gefriergetrockneter nordischer Sanddorn, 70 Gramm, ohne Zusätze. Herb und leuchtend orange, sodass ein Teelöffel im Porridge weiter trägt, als man vermuten würde. Dieser Shop rechnet in Pfund Sterling ab.',
-    specs: [
-      '70 g',
-      '100 % Sanddornpulver aus nordischen Sanddornbeeren. Ohne Zusätze',
-      'Aus etwa 700 g frischen Beeren entstehen 70 g Beerenpulver',
-      'Energie 489 kcal / 2045 kJ, Eiweiß 13 g, Kohlenhydrate 24 g davon Zucker 14 g, Ballaststoffe 28 g, Fett 25 g, Salz 0,06 g',
-    ],
-    specLabels: [undefined, undefined, 'Beereneinsatz', 'Nährwerte je 100 g'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Kääpä Mushrooms Chaga-Extraktpulver 30 g',
     description:
@@ -876,12 +852,6 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     description:
       'Chaga, Reishi, Igelstachelbart, Cordyceps, Shiitake und Maitake in einem Glas, gemahlen für Kaffee oder Smoothies. Ein Glas deckt das ganze Vitalpilzregal ab.',
     specs: ['40 g', 'Chaga, Reishi, Igelstachelbart, Cordyceps, Shiitake, Maitake'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin Nordische Beerenpulvermischung 120 g',
-    description:
-      'Eine finnische Mischung nordischer Beeren als ein Pulver, für Porridge und Joghurt. Die leichteste Art, einen nordischen Beerensommer mit nach Hause zu nehmen.',
-    specs: ['120 g', 'Hergestellt in Finnland'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin Chaga-Tinktur 50 ml',
@@ -1759,5 +1729,42 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Finnlands bestes Getränk 2005, Magazin Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, 'Alkohol', 'Auszeichnung'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Marjatila Raitaniemi Sanddornpulver 100 g',
+    description:
+      'Sanddorn, auf einem finnischen Beerenhof ganz mit den Kernen getrocknet und gemahlen, 100 Gramm. Ein Teelöffel steht für einen Deziliter frische Beeren, und das Pulver ist auf 3 bis 5 Prozent Feuchte getrocknet, weshalb es jahrelang hält.',
+    specs: [
+      '100 g',
+      'Sanddorn, ganz mit den Kernen gemahlen',
+      '1 bis 3 Teelöffel täglich in Porridge oder Joghurt',
+      '1 Teelöffel Pulver entspricht 1 dl frischen Beeren',
+    ],
+    specLabels: [undefined, undefined, 'Dosierung', 'Entsprechung'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Marjatila Raitaniemi Krähenbeerenpulver 100 g',
+    description:
+      'Finnische Krähenbeere aus Wildsammlung, ganz getrocknet und gemahlen, ohne Zusatz, 100 Gramm. Die Krähenbeere ist die schwarze Beere, die Lapplands Fjellhänge bedeckt und selten in einen Laden gelangt, näher kommen die meisten dem Probieren nicht.',
+    specs: [
+      '100 g',
+      '100 % finnische Krähenbeere, ganz getrocknet und gemahlen',
+      'Keine, keine Konservierungsstoffe',
+    ],
+    specLabels: [undefined, undefined, 'Zusatzstoffe'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Poikain Parhaat gefriergetrocknete Preiselbeeren 15 g',
+    description:
+      'Ganze finnische Preiselbeeren, gefriergetrocknet und sonst nichts, 15 Gramm. Die Gefriertrocknung erhält Farbe, Biss, Vitamine und Ballaststoffe, und der Beutel wiegt im Koffer nichts. Laktosefrei, glutenfrei, vegan, ohne Zuckerzusatz und Konservierungsstoffe.',
+    specs: [
+      '15 g',
+      '100 % finnische gefriergetrocknete Preiselbeere',
+      'Laktosefrei, glutenfrei, vegan, ohne Zuckerzusatz, ohne Konservierungsstoffe',
+    ],
+    specLabels: [undefined, undefined, 'Ernährung'],
   },
 }

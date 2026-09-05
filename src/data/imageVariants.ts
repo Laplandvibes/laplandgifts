@@ -251,22 +251,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-arctic-power-berries-blueberry-powder": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-arctic-power-berries-sea-buckthorn-powder": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-arctic-warriors-nettle-powder": {
     "full": 800,
     "w": [
@@ -417,14 +401,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-foodin-chaga-tincture": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-foodin-nordic-berry-powder": {
     "full": 800,
     "w": [
       320,
@@ -1143,6 +1119,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-rj-raitaniemi-crowberry-powder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-raitaniemi-sea-buckthorn-powder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-rj-yrttipaja-chaga-powder": {
     "full": 800,
     "w": [
@@ -1430,6 +1422,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-poikain-parhaat-freeze-dried-blueberry": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-poikain-parhaat-puolukka": {
     "full": 800,
     "w": [
       320,

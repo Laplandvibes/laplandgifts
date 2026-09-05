@@ -430,30 +430,6 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Preparación', 'Dieta y certificación'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: 'Polvo de arándano silvestre 70 g',
-    description:
-      'Arándano silvestre liofilizado, sin nada añadido. El productor indica que unos 700 gramos de bayas frescas entran en un bote de 70 gramos. Esta tienda fija sus precios en libras esterlinas.',
-    specs: [
-      '70 g',
-      '100 % polvo de arándano hecho con arándanos silvestres nórdicos. Sin nada añadido',
-      'Unos 700 g de bayas frescas dan 70 g de polvo de bayas',
-      'Energía 367 kcal / 1559 kJ, proteínas 5 g, hidratos de carbono 54 g de los cuales azúcares 34 g, fibra 31 g, grasas 0,8 g, sal 0,01 g',
-    ],
-    specLabels: [undefined, undefined, 'Bayas empleadas', 'Información nutricional por 100 g'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: 'Polvo de espino amarillo 70 g',
-    description:
-      'Espino amarillo nórdico liofilizado, 70 gramos, sin nada añadido. Ácido y de color naranja intenso, así que una cucharadita cunde más en las gachas de lo que uno diría. Esta tienda fija sus precios en libras esterlinas.',
-    specs: [
-      '70 g',
-      '100 % polvo de espino amarillo hecho con bayas nórdicas de espino amarillo. Sin nada añadido',
-      'Unos 700 g de bayas frescas dan 70 g de polvo de bayas',
-      'Energía 489 kcal / 2045 kJ, proteínas 13 g, hidratos de carbono 24 g de los cuales azúcares 14 g, fibra 28 g, grasas 25 g, sal 0,06 g',
-    ],
-    specLabels: [undefined, undefined, 'Bayas empleadas', 'Información nutricional por 100 g'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Polvo de extracto de chaga Kääpä Mushrooms 30 g',
     description:
@@ -841,12 +817,6 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     description:
       'Chaga, reishi, melena de león, cordyceps, shiitake y maitake en un solo bote, molidos para café o batidos. Un bote cubre toda la estantería de setas funcionales.',
     specs: ['40 g', 'Chaga, reishi, melena de león, cordyceps, shiitake, maitake'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin mezcla de bayas nórdicas en polvo 120 g',
-    description:
-      'Una mezcla finlandesa de bayas del norte en un solo polvo, para gachas y yogur. La forma más ligera de llevarse a casa un verano de bayas nórdicas.',
-    specs: ['120 g', 'Hecho en Finlandia'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin tintura de chaga 50 ml',
@@ -1724,5 +1694,42 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       'Mejor bebida de Finlandia 2005, revista Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, 'Alcohol', 'Premio'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Polvo de espino amarillo Marjatila Raitaniemi 100 g',
+    description:
+      'Espino amarillo secado y molido entero, con semillas, en una granja finlandesa de bayas, 100 gramos. Una cucharadita equivale a un decilitro de bayas frescas, y el polvo se seca hasta un 3 a 5 por ciento de humedad, por eso dura años.',
+    specs: [
+      '100 g',
+      'Espino amarillo, molido entero con las semillas',
+      '1 a 3 cucharaditas al día en gachas o yogur',
+      '1 cucharadita de polvo equivale a 1 dl de bayas frescas',
+    ],
+    specLabels: [undefined, undefined, 'Dosis', 'Equivalencia'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Polvo de camarina Marjatila Raitaniemi 100 g',
+    description:
+      'Camarina finlandesa silvestre, secada entera y molida, sin nada añadido, 100 gramos. La camarina es la baya negra que tapiza las laderas de los fjells de Laponia y rara vez llega a una tienda, así que esto es lo más cerca que la mayoría estará de probarla.',
+    specs: [
+      '100 g',
+      '100 % camarina finlandesa, secada y molida entera',
+      'Ninguno, sin conservantes',
+    ],
+    specLabels: [undefined, undefined, 'Aditivos'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Arándanos rojos liofilizados Poikain Parhaat 15 g',
+    description:
+      'Arándanos rojos finlandeses enteros, liofilizados y nada más, 15 gramos. La liofilización conserva el color, la textura, las vitaminas y la fibra, y la bolsa no pesa nada en una maleta. Sin lactosa, sin gluten, veganos, sin azúcar añadido ni conservantes.',
+    specs: [
+      '15 g',
+      '100 % arándano rojo finlandés liofilizado',
+      'Sin lactosa, sin gluten, vegano, sin azúcar añadido, sin conservantes',
+    ],
+    specLabels: [undefined, undefined, 'Dieta'],
   },
 }

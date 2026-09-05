@@ -55,7 +55,7 @@ export const OCCASION_PICKS: string[][] = [
     'makia-merino-beanie',
     'kupilka-classic-cup-21',
     'kuivalihakundi-poro-jerky',
-    'arctic-power-berries-blueberry-powder',
+    'rj-arctic-warriors-blueberry-powder',
   ],
   // Yrityslahjat: yksi puukko eikä kolme. Kuusi eri valmistajaa ja neljä
   // kategoriaa, hinnat 13–250 €, jotta samasta listasta löytyy sekä

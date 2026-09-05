@@ -430,6 +430,9 @@ const JOBS = [
   ['sk-moomin-chocolate-chip-biscuit-tin', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Moominkeksit.jpg?v=1762943561'], // suomikauppa.fi/products/muumi-suklaahippukeksi-peltirasiassa-200g
   ['sk-paulig-cafe-new-york-beans', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06411300169788_H1N1_8e32dd29-2c17-46f3-b8b4-2f5d4e5a4b19.png?v=1763457986'], // suomikauppa.fi/products/paulig-cafe-new-york-450g-papukahvi-rfa
   ['rj-korpihilla-spruce-sprout-sparkling-750', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/05e612632a389a5732a9964cf5a6f7d6.jpg?v=1618960800'], // www.ruohonjuuri.fi/products/korpihilla-kuohuva-kuusenkerkka-kuohujuoma-750-ml
+  ['rj-raitaniemi-sea-buckthorn-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/RAITA-6420616473090-2.jpg?v=1613737307'], // www.ruohonjuuri.fi/products/marjatila-raitaniemi-tyrnijauhe-100-g
+  ['rj-raitaniemi-crowberry-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/dc7478f35effde50e770b9ca83cda190.jpg?v=1729679541'], // www.ruohonjuuri.fi/products/marjatila-raitaniemi-variksenmarjajauhe-100g
+  ['sk-poikain-parhaat-puolukka', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/pk_puolukka.png?v=1762782835'], // suomikauppa.fi/products/poikain-parhaat-pakastekuivattu-puolukka-15g (slug lyhyt: Workerin 50 merkin sid-katkaisu)
 ]
 
 const only = new Set(process.argv.slice(2))

@@ -430,30 +430,6 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Zetten', 'Dieet en certificering'],
   },
-  'arctic-power-berries-blueberry-powder': {
-    name: 'Wilde bosbessenpoeder 70 g',
-    description:
-      'Gevriesdroogde wilde bosbes, niets toegevoegd. De producent geeft aan dat er ongeveer 700 gram verse bessen in één pot van 70 gram gaan. Deze winkel prijst in Britse ponden.',
-    specs: [
-      '70 g',
-      '100 % bosbessenpoeder van wilde Noordse bosbessen. Niets toegevoegd',
-      'Ongeveer 700 g verse bessen geven 70 g bessenpoeder',
-      'Energie 367 kcal / 1559 kJ, eiwit 5 g, koolhydraten 54 g waarvan suikers 34 g, vezels 31 g, vet 0,8 g, zout 0,01 g',
-    ],
-    specLabels: [undefined, undefined, 'Bessengebruik', 'Voedingswaarde per 100 g'],
-  },
-  'arctic-power-berries-sea-buckthorn-powder': {
-    name: 'Duindoornpoeder 70 g',
-    description:
-      'Gevriesdroogde Noordse duindoorn, 70 gram, niets toegevoegd. Zuur en helder oranje, dus een theelepel komt in de pap verder dan u zou denken. Deze winkel prijst in Britse ponden.',
-    specs: [
-      '70 g',
-      '100 % duindoornpoeder van Noordse duindoornbessen. Niets toegevoegd',
-      'Ongeveer 700 g verse bessen geven 70 g bessenpoeder',
-      'Energie 489 kcal / 2045 kJ, eiwit 13 g, koolhydraten 24 g waarvan suikers 14 g, vezels 28 g, vet 25 g, zout 0,06 g',
-    ],
-    specLabels: [undefined, undefined, 'Bessengebruik', 'Voedingswaarde per 100 g'],
-  },
   'kaapa-mushrooms-pakuri-powder': {
     name: 'Kääpä Mushrooms chagaextractpoeder 30 g',
     description:
@@ -841,12 +817,6 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     description:
       'Chaga, reishi, pruikzwam, cordyceps, shiitake en maitake in één pot, gemalen voor koffie of smoothies. Eén pot dekt de hele plank functionele paddenstoelen.',
     specs: ['40 g', 'Chaga, reishi, pruikzwam, cordyceps, shiitake, maitake'],
-  },
-  'foodin-nordic-berry-powder': {
-    name: 'Foodin Noordse bessenpoedermix 120 g',
-    description:
-      'Een Finse mix van noordelijke bessen als één poeder, voor pap en yoghurt. De lichtste manier om een zomer aan Noordse bessen mee naar huis te nemen.',
-    specs: ['120 g', 'Gemaakt in Finland'],
   },
   'foodin-chaga-tincture': {
     name: 'Foodin chagatinctuur 50 ml',
@@ -1724,5 +1694,42 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Beste drank van Finland 2005, blad Viisi Tähteä',
     ],
     specLabels: [undefined, undefined, 'Alcohol', 'Onderscheiding'],
+  },
+  // katalogin täydennys 2026-09-05
+  'rj-raitaniemi-sea-buckthorn-powder': {
+    name: 'Marjatila Raitaniemi duindoornpoeder 100 g',
+    description:
+      'Duindoorn, op een Finse bessenboerderij heel met de zaden gedroogd en gemalen, 100 gram. Eén theelepel staat voor een deciliter verse bessen, en het poeder is gedroogd tot 3 à 5 procent vocht, daarom blijft het jaren goed.',
+    specs: [
+      '100 g',
+      'Duindoorn, heel met de zaden gemalen',
+      '1 tot 3 theelepels per dag in pap of yoghurt',
+      '1 theelepel poeder komt overeen met 1 dl verse bessen',
+    ],
+    specLabels: [undefined, undefined, 'Dosering', 'Equivalent'],
+  },
+  'rj-raitaniemi-crowberry-powder': {
+    name: 'Marjatila Raitaniemi kraaiheidepoeder 100 g',
+    description:
+      'Finse wilde kraaihei, heel gedroogd en gemalen, niets toegevoegd, 100 gram. Kraaihei is de zwarte bes die de fjellhellingen van Lapland bedekt en zelden een winkel haalt, dus dichter bij het proeven komen de meesten niet.',
+    specs: [
+      '100 g',
+      '100 % Finse kraaihei, heel gedroogd en gemalen',
+      'Geen, geen conserveermiddelen',
+    ],
+    specLabels: [undefined, undefined, 'Toevoegingen'],
+  },
+  // katalogin täydennys 2026-09-05
+  // katalogin täydennys 2026-09-05
+  'sk-poikain-parhaat-puolukka': {
+    name: 'Poikain Parhaat gevriesdroogde vossenbessen 15 g',
+    description:
+      'Hele Finse vossenbessen, gevriesdroogd en verder niets, 15 gram. Vriesdrogen bewaart kleur, beet, vitaminen en vezels, en het zakje weegt niets in een koffer. Lactosevrij, glutenvrij, veganistisch, zonder toegevoegde suiker of conserveermiddelen.',
+    specs: [
+      '15 g',
+      '100 % Finse gevriesdroogde vossenbes',
+      'Lactosevrij, glutenvrij, veganistisch, geen toegevoegde suiker, geen conserveermiddelen',
+    ],
+    specLabels: [undefined, undefined, 'Dieet'],
   },
 }

@@ -248,16 +248,6 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'worldwide',
     verifiedAt: '2026-08-01',
   },
-  arcticpowerberries: {
-    id: 'arcticpowerberries',
-    name: 'Arctic Power Berries',
-    network: 'direct',
-    baseUrl: 'https://arcticpowerberries.com',
-    // 🔴 Kaupan oletusvaluutta on GBP, ei EUR (Shopify.currency.active = "GBP",
-    // og:price:currency = GBP). Tuotteiden currency-kenttä on siksi 'GBP'.
-    shipsTo: 'worldwide',
-    verifiedAt: '2026-07-31',
-  },
   ruohonjuuri: {
     id: 'ruohonjuuri',
     name: 'Ruohonjuuri',

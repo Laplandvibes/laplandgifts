@@ -67,7 +67,6 @@ export const BRANDS: Brand[] = [
   { id: 'finnish-flavours', name: 'Finnish Flavours', founded: '', officialUrl: 'https://finnishflavours.com/' },
   { id: 'aurora-borealis', name: 'Aurora Borealis', founded: '', officialUrl: 'https://www.tammerbrands.fi/brandit/aurora-borealis/' },
   { id: 'fiskars', name: 'Fiskars', founded: '1649', officialUrl: 'https://www.fiskars.com/fi-fi' },
-  { id: 'arctic-power-berries', name: 'Arctic Power Berries', founded: '', officialUrl: 'https://arcticpowerberries.com/' },
   { id: 'golden-crown-levin-iglut', name: 'Golden Crown Levin Iglut', founded: '2008', officialUrl: 'https://leviniglut.fi/' },
   { id: 'sisu', name: 'Sisu', founded: '1928', officialUrl: 'https://www.cloetta.fi/brandit/sisu/' },
   { id: 'kultakuume-com', name: 'Kultakuume.com', founded: '2008', officialUrl: 'https://kultakuume.com/' },
