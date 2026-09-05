@@ -25,19 +25,22 @@ import { imgSrcSet } from '../lib/img'
  * katalogista, eivät copysta, joten rivi on aina totta. Tilaisuuden kuvaus
  * copy-tiedostoissa jää käyttämättä — se oli täytettä.
  */
-const FACT: Record<Lang, (n: number, min: string, max: string) => string> = {
-  fi: (n, a, b) => `${n} ehdotusta, ${a}–${b}`,
-  en: (n, a, b) => `${n} picks, ${a}–${b}`,
-  sv: (n, a, b) => `${n} förslag, ${a}–${b}`,
-  de: (n, a, b) => `${n} Vorschläge, ${a}–${b}`,
-  fr: (n, a, b) => `${n} idées, ${a}–${b}`,
-  it: (n, a, b) => `${n} idee, ${a}–${b}`,
-  es: (n, a, b) => `${n} ideas, ${a}–${b}`,
-  'pt-BR': (n, a, b) => `${n} sugestões, ${a}–${b}`,
-  nl: (n, a, b) => `${n} ideeën, ${a}–${b}`,
-  ja: (n, a, b) => `${n}点、${a}–${b}`,
-  'zh-CN': (n, a, b) => `${n} 件，${a}–${b}`,
-  ko: (n, a, b) => `${n}개, ${a}–${b}`,
+/** Hintahaarukka tilaisuuden korteista. Vesa 5.9.: "mitä noi 4 ehdotusta on" —
+ *  lukumäärä oli itsestäänselvyys kun kortit ovat siinä, joten rivillä on vain
+ *  hinnat, jotka lukija ei näe kortteja katsomatta. */
+const PRICES: Record<Lang, (min: string, max: string) => string> = {
+  fi: (a, b) => `Hinnat ${a}–${b}`,
+  en: (a, b) => `Prices ${a}–${b}`,
+  sv: (a, b) => `Priser ${a}–${b}`,
+  de: (a, b) => `Preise ${a}–${b}`,
+  fr: (a, b) => `Prix ${a}–${b}`,
+  it: (a, b) => `Prezzi ${a}–${b}`,
+  es: (a, b) => `Precios ${a}–${b}`,
+  'pt-BR': (a, b) => `Preços ${a}–${b}`,
+  nl: (a, b) => `Prijzen ${a}–${b}`,
+  ja: (a, b) => `価格 ${a}–${b}`,
+  'zh-CN': (a, b) => `价格 ${a}–${b}`,
+  ko: (a, b) => `가격 ${a}–${b}`,
 }
 
 function money(n: number, currency: string, lang: Lang) {
@@ -51,7 +54,7 @@ function GiftGuide() {
   const to = useLocalePath()
   const t = COPY[lang].giftGuide
   const s = SHOP_COPY[lang]
-  const fact = FACT[lang] ?? FACT.en
+  const prices = PRICES[lang] ?? PRICES.en
   return (
     <section id="gift-guide" className="bg-sand py-14 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
@@ -76,27 +79,32 @@ function GiftGuide() {
             /* Etusivulla neljä ensimmäistä ehdotusta, sivulla kaikki kuusi. */
             const picks = productsForOccasion(i).slice(0, 4)
             if (picks.length === 0) return null
-            const prices = picks.map((p) => p.priceFrom)
+            const priceList = picks.map((p) => p.priceFrom)
             const cur = picks[0].currency
             return (
-              <li key={occasion.name} className="border-t border-line py-7 first:border-t-0 first:pt-0 md:py-9">
-                <div className="flex items-baseline gap-3 md:gap-4">
-                  <span className="font-heading text-xl leading-none tracking-wide text-muted/70 md:text-2xl" aria-hidden="true">
+              <li key={occasion.name} className="grid grid-cols-1 gap-4 border-t border-line py-7 first:border-t-0 first:pt-0 md:grid-cols-12 md:gap-8 md:py-10">
+                {/* Vasen palsta: numero, tilaisuus, hinnat. Oikea: neljä korttia
+                    koko leveydeltä. Ennen kortit olivat vasemmalla 60 %:n
+                    leveydellä ja hintarivi roikkui pienenä oikeassa laidassa
+                    tyhjän välin takana (Vesa 5.9.: "kiristää oikealta"). */}
+                <div className="md:col-span-3">
+                  <span className="block font-heading text-xl leading-none tracking-wide text-muted/70 md:text-2xl" aria-hidden="true">
                     {String(i + 1).padStart(2, '0')}
                   </span>
-                  <h3 className="flex items-center gap-2.5 font-heading text-3xl leading-none tracking-wide text-gray md:text-4xl">
+                  <h3 className="mt-1 flex items-center gap-2.5 font-heading text-3xl leading-none tracking-wide text-gray md:mt-2 md:text-4xl">
                     {occasion.name}
                     <Icon className="h-4 w-4 text-muted/60 md:h-5 md:w-5" strokeWidth={1.75} aria-hidden="true" />
                   </h3>
-                  <span className="ml-auto shrink-0 text-[13px] text-muted">
-                    {fact(picks.length, money(Math.min(...prices), cur, lang), money(Math.max(...prices), cur, lang))}
-                  </span>
+                  <p className="mt-2 text-[14px] text-muted md:mt-3 md:text-[15px]">
+                    {/* "6–140 €", ei "6 €–140 €": valuutta kerran, haarukan lopussa. */}
+                    {prices(String(Math.round(Math.min(...priceList))), money(Math.max(...priceList), cur, lang))}
+                  </p>
                 </div>
 
                 {/* Yksi vaakarivi kapealla, neljä rinnakkain md:stä ylöspäin —
                     sama liike kuin kumppaniriveillä, mutta linkit ovat omia
                     tuotesivuja. */}
-                <ul className="-mx-4 mt-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 md:mx-0 md:grid md:max-w-3xl md:grid-cols-4 md:gap-4 md:overflow-visible md:px-0">
+                <ul className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 md:col-span-9 md:mx-0 md:grid md:grid-cols-4 md:gap-4 md:overflow-visible md:px-0 md:pb-0">
                   {picks.map((p) => (
                     <li key={p.slug} className="w-[42vw] max-w-[11rem] shrink-0 snap-start md:w-auto md:max-w-none">
                       <Link
