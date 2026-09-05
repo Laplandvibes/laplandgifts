@@ -6369,39 +6369,6 @@
     }
   },
   {
-    "path": "/product/sk-moomin-kids-duvet-set-halaus",
-    "fallbackTitle": "Moomin children's duvet cover set 100 x 135 cm, Halaus",
-    "fallbackDescription": "A children's cotton duvet cover and pillowcase in the Halaus, hug, print, 100 by 135 cm cover and 60 by 40 cm pillowcase with a zip. Bought in the partner shop.",
-    "fallbackTitleByLang": {
-      "en": "Moomin children's duvet cover set 100 x 135 cm, Halaus",
-      "fi": "Moomin Muumi-lasten pussilakanasetti 100 x 135 cm, Halaus",
-      "de": "Moomin Mumin Kinderbettwäsche-Set 100 x 135 cm, Halaus",
-      "ja": "Moomin ムーミン 子ども用布団カバーセット 100 x 135 cm、Halaus | LaplandGifts",
-      "es": "Juego de funda nórdica infantil Moomin 100 x 135 cm, Halaus",
-      "pt-BR": "Jogo de capa de edredom infantil Moomin 100 x 135 cm, Halaus",
-      "zh-CN": "Moomin 姆明儿童被套套装 100 x 135 cm，Halaus | LaplandGifts",
-      "ko": "Moomin 무민 아동 이불 커버 세트 100 x 135 cm, Halaus | LaplandGifts",
-      "fr": "Parure de lit enfant Moomin 100 x 135 cm, Halaus",
-      "it": "Set copripiumino bambini Moomin 100 x 135 cm, Halaus",
-      "nl": "Moomin kinderdekbedovertrekset 100 x 135 cm, Halaus",
-      "sv": "Moomin Mumin påslakanset för barn 100 x 135 cm, Halaus"
-    },
-    "fallbackDescriptionByLang": {
-      "en": "A children's cotton duvet cover and pillowcase in the Halaus, hug, print, 100 by 135 cm cover and 60 by 40 cm pillowcase with a zip. Bought in the partner shop.",
-      "fi": "Lasten puuvillainen pussilakana ja tyynyliina Halaus-kuosilla, pussilakana 100 x 135 cm ja tyynyliina 60 x 40 cm, vetoketjulla. Ostetaan kumppanin kaupasta.",
-      "de": "Kinderbettbezug und Kissenbezug aus Baumwolle im Muster Halaus, Umarmung, Bezug 100 x 135 cm und Kissen 60 x 40 cm mit Reißverschluss. Liefergebiet angegeben.",
-      "ja": "Halaus、抱擁、の柄のコットンの子ども用布団カバーと枕カバー。カバー100 x 135 cm、枕カバー60 x 40 cm、ファスナー式。ベビーベッドやジュニアベッドに合うサイズなので、初めての寝具の贈り物になります。価格は提携ショップのもので、ご購入もそちらで行います。配送エリアはこのページに記載しています。",
-      "es": "Funda nórdica y funda de almohada infantiles de algodón con el estampado Halaus, abrazo, funda 100 x 135 cm y almohada 60 x 40 cm con cremallera.",
-      "pt-BR": "Capa de edredom e fronha infantis de algodão na estampa Halaus, abraço, capa 100 x 135 cm e fronha 60 x 40 cm com zíper. O preço é consultado na loja parceira.",
-      "zh-CN": "Halaus（拥抱）图案的棉质儿童被套和枕套，被套100 x 135厘米，枕套60 x 40厘米，带拉链。尺寸适合婴儿床或儿童床，是一份合适的第一套床品礼物。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "Halaus, 포옹, 패턴의 면 아동 이불 커버와 베개 커버로, 이불 커버 100 x 135 cm, 베개 커버 60 x 40 cm, 지퍼 여밈입니다. 유아 침대나 주니어 침대에 맞는 크기라 첫 침구 선물로 좋습니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다.",
-      "fr": "Housse de couette et taie d'oreiller enfant en coton au motif Halaus, câlin, housse 100 x 135 cm et taie 60 x 40 cm avec fermeture éclair.",
-      "it": "Copripiumino e federa per bambini in cotone con la fantasia Halaus, abbraccio, copripiumino 100 x 135 cm e federa 60 x 40 cm con cerniera. Venduto dal partner.",
-      "nl": "Katoenen kinderdekbedovertrek en kussensloop in het dessin Halaus, knuffel, overtrek 100 x 135 cm en sloop 60 x 40 cm met rits. Verkocht door de partnerwinkel.",
-      "sv": "Påslakan och örngott i bomull för barn i mönstret Halaus, kram, påslakan 100 x 135 cm och örngott 60 x 40 cm med dragkedja. Du köper varan i partnerbutiken."
-    }
-  },
-  {
     "path": "/product/sk-arabia-moomintroll-mini-figurine",
     "fallbackTitle": "Arabia Moomintroll mini figurine | LaplandGifts",
     "fallbackDescription": "A hand made ceramic Moomintroll about 6 cm tall, designed by Tuulikki Pietilä in the 1990s and sold in its own gift box. The delivery area is on this page.",
@@ -7158,6 +7125,72 @@
       "it": "Chips croccanti di shiitake da coltivazione biologica, cotti delicatamente e conditi con peperoncino, sale e pepe, 50 grammi. Area di consegna in questa pagina.",
       "nl": "Knapperige chips van biologisch gekweekte shiitake, zacht gegaard en gekruid met chili, zout en peper, 50 gram. De prijs is overgenomen van de partnerwinkel.",
       "sv": "Krispiga chips av ekologiskt odlad shiitake, skonsamt tillagade och kryddade med chili, salt och peppar, 50 gram. Leveransområdet står på den här sidan."
+    }
+  },
+  {
+    "path": "/product/sk-muurla-moomin-80v-tray",
+    "fallbackTitle": "Muurla Moomin 80 years tray 27 x 20 cm | LaplandGifts",
+    "fallbackDescription": "A 27 by 20 cm tray from Muurla's Moomin 80 years series, dishwasher safe. The price comes from the partner shop, where you also buy it. Delivery area is listed.",
+    "fallbackTitleByLang": {
+      "en": "Muurla Moomin 80 years tray 27 x 20 cm | LaplandGifts",
+      "fi": "Muurla Muumi 80v -tarjotin 27 x 20 cm | LaplandGifts",
+      "de": "Muurla Mumin 80 Jahre Tablett 27 x 20 cm | LaplandGifts",
+      "ja": "Muurla ムーミン80周年トレイ 27 x 20 cm | LaplandGifts",
+      "es": "Bandeja Moomin 80 años Muurla 27 x 20 cm | LaplandGifts",
+      "pt-BR": "Bandeja Moomin 80 anos Muurla 27 x 20 cm | LaplandGifts",
+      "zh-CN": "Muurla 姆明80周年托盘 27 x 20 cm | LaplandGifts",
+      "ko": "Muurla 무민 80주년 트레이 27 x 20 cm | LaplandGifts",
+      "fr": "Plateau Moomin 80 ans Muurla 27 x 20 cm | LaplandGifts",
+      "it": "Vassoio Moomin 80 anni Muurla 27 x 20 cm | LaplandGifts",
+      "nl": "Muurla Moomin 80 jaar dienblad 27 x 20 cm | LaplandGifts",
+      "sv": "Muurla Mumin 80 år bricka 27 x 20 cm | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A 27 by 20 cm tray from Muurla's Moomin 80 years series, dishwasher safe. The price comes from the partner shop, where you also buy it. Delivery area is listed.",
+      "fi": "27 x 20 cm tarjotin Muurlan Muumi 80 vuotta -sarjasta, konepesun kestävä. Hinta tulee kumppanin kaupasta, josta tuote myös ostetaan. Toimitusalue näkyy sivulla.",
+      "de": "Tablett von 27 x 20 cm aus Muurlas Serie Mumin 80 Jahre, spülmaschinenfest. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein. Liefergebiet angegeben.",
+      "ja": "Muurlaのムーミン80周年シリーズの27 x 20 cmのトレイで、食洗機対応。マグ2つとビスケットの皿をキッチンからソファへ運べる大きさで、置けばテーブルの一部のように見えます。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Bandeja de 27 x 20 cm de la serie Moomin 80 años de Muurla, apta para lavavajillas. El precio se consulta en la tienda asociada. Zona de entrega en esta página.",
+      "pt-BR": "Bandeja de 27 x 20 cm da série Moomin 80 anos da Muurla, pode ir à lava-louças. O preço vem da loja parceira, onde você também compra. Área de entrega indicada.",
+      "zh-CN": "Muurla姆明80周年系列的27 x 20厘米托盘，可用洗碗机。刚好能把两个马克杯和一盘饼干从厨房端到沙发，放下后看起来就像餐桌的一部分。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "Muurla 무민 80주년 시리즈의 27 x 20 cm 트레이로, 식기세척기 사용이 가능합니다. 머그 두 개와 비스킷 접시를 부엌에서 소파까지 나르기 좋은 크기이며, 놓고 나면 식탁의 일부처럼 보입니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다.",
+      "fr": "Plateau de 27 x 20 cm de la série Moomin 80 ans de Muurla, lavable au lave-vaisselle. Le prix vient de la boutique partenaire, où se fait aussi votre achat.",
+      "it": "Vassoio da 27 x 20 cm della serie Moomin 80 anni di Muurla, lavabile in lavastoviglie. Il prezzo proviene dal negozio partner, dove si effettua l'acquisto.",
+      "nl": "Dienblad van 27 x 20 cm uit Muurla's serie Moomin 80 jaar, vaatwasserbestendig. De prijs is overgenomen van de partnerwinkel en de aankoop gebeurt daar.",
+      "sv": "Bricka på 27 x 20 cm ur Muurlas serie Mumin 80 år, tål maskindisk. Priset är hämtat från partnerbutiken och köpet görs i samma butik. Leveransområdet anges."
+    }
+  },
+  {
+    "path": "/product/sk-muurla-moomin-glass-box-yhdessa",
+    "fallbackTitle": "Muurla Moomin glass box Yhdessä 11.5 cm | LaplandGifts",
+    "fallbackDescription": "A heart shaped glass box from Muurla's Yhdessä, together, mini series, 11.5 by 10 by 5.5 cm, hand wash, delivered in its retail box. Bought in the partner shop.",
+    "fallbackTitleByLang": {
+      "en": "Muurla Moomin glass box Yhdessä 11.5 cm | LaplandGifts",
+      "fi": "Muurla Muumi-lasirasia Yhdessä 11,5 cm | LaplandGifts",
+      "de": "Muurla Mumin Glasdose Yhdessä 11,5 cm | LaplandGifts",
+      "ja": "Muurla ムーミン ガラスボックス Yhdessä 11.5 cm | LaplandGifts",
+      "es": "Caja de cristal Moomin Muurla Yhdessä 11,5 cm | LaplandGifts",
+      "pt-BR": "Caixa de vidro Moomin Muurla Yhdessä 11,5 cm | LaplandGifts",
+      "zh-CN": "Muurla 姆明玻璃盒 Yhdessä 11.5 cm | LaplandGifts",
+      "ko": "Muurla 무민 유리 상자 Yhdessä 11.5 cm | LaplandGifts",
+      "fr": "Boîte en verre Moomin Muurla Yhdessä 11,5 cm | LaplandGifts",
+      "it": "Scatola di vetro Moomin Muurla Yhdessä 11,5 cm",
+      "nl": "Muurla Moomin glazen doosje Yhdessä 11,5 cm | LaplandGifts",
+      "sv": "Muurla Mumin glasask Yhdessä 11,5 cm | LaplandGifts"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A heart shaped glass box from Muurla's Yhdessä, together, mini series, 11.5 by 10 by 5.5 cm, hand wash, delivered in its retail box. Bought in the partner shop.",
+      "fi": "Sydämenmuotoinen lasirasia Muurlan Yhdessä-minisarjasta, 11,5 x 10 x 5,5 cm, käsinpesu, toimitetaan myyntipakkauksessa. Hinta on luettu kumppanin kaupasta.",
+      "de": "Herzförmige Glasdose aus Muurlas Miniserie Yhdessä, zusammen, 11,5 x 10 x 5,5 cm, Handwäsche, geliefert in der Verkaufsverpackung. Sie kaufen im Partnershop.",
+      "ja": "Muurlaのミニシリーズ Yhdessä（いっしょに）のハート形ガラスボックス。11.5 x 10 x 5.5 cm、手洗い、販売用パッケージ入りでお届けします。指輪、折りたたんだメモ、初めての乳歯といった小さな宝物のために。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載。",
+      "es": "Caja de cristal en forma de corazón de la miniserie Yhdessä, juntos, de Muurla, 11,5 x 10 x 5,5 cm, lavado a mano, entregada en su caja de venta.",
+      "pt-BR": "Caixa de vidro em forma de coração da minissérie Yhdessä, juntos, da Muurla, 11,5 x 10 x 5,5 cm, lavar à mão, entregue na embalagem de venda.",
+      "zh-CN": "Muurla Yhdessä（一起）迷你系列的心形玻璃盒，11.5 x 10 x 5.5厘米，手洗，以零售包装交付。用来收小小的珍藏：戒指、折好的字条、第一颗乳牙。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "Muurla의 Yhdessä(함께) 미니 시리즈의 하트 모양 유리 상자로, 11.5 x 10 x 5.5 cm, 손세척, 판매용 포장에 담겨 배송됩니다. 반지, 접은 쪽지, 첫 유치 같은 작은 보물을 위한 것입니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다.",
+      "fr": "Boîte en verre en forme de cœur de la mini-série Yhdessä, ensemble, de Muurla, 11,5 x 10 x 5,5 cm, lavage à la main, livrée dans son emballage de vente.",
+      "it": "Scatola di vetro a forma di cuore della miniserie Yhdessä, insieme, di Muurla, 11,5 x 10 x 5,5 cm, lavaggio a mano, consegnata nella sua confezione di vendita.",
+      "nl": "Hartvormig glazen doosje uit Muurla's minireeks Yhdessä, samen, 11,5 x 10 x 5,5 cm, handwas, geleverd in de verkoopverpakking. U koopt het bij de partnerwinkel.",
+      "sv": "Hjärtformad glasask ur Muurlas miniserie Yhdessä, tillsammans, 11,5 x 10 x 5,5 cm, handdisk, levereras i sin försäljningsförpackning. Säljs av partnerbutiken."
     }
   },
   {

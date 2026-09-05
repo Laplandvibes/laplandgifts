@@ -5499,35 +5499,6 @@ export const PRODUCTS: Product[] = [
     },
   },
   {
-    slug: 'sk-moomin-kids-duvet-set-halaus',
-    category: 'design',
-    brand: 'Moomin',
-    name: {
-      en: 'Moomin children\'s duvet cover set 100 x 135 cm, Halaus',
-      fi: 'Muumi-lasten pussilakanasetti 100 x 135 cm, Halaus',
-    },
-    description: {
-      en: 'A children\'s cotton duvet cover and pillowcase in the Halaus, hug, print, 100 by 135 cm cover and 60 by 40 cm pillowcase with a zip. The size fits a cot or a junior bed, so it is a first bedding gift.',
-      fi: 'Lasten puuvillainen pussilakana ja tyynyliina Halaus-kuosilla, pussilakana 100 x 135 cm ja tyynyliina 60 x 40 cm, vetoketjulla. Koko sopii pinnasänkyyn tai juniorisänkyyn, eli se on ensimmäinen vuodevaatelahja.',
-    },
-    priceFrom: 50.07,
-    currency: 'EUR',
-    priceCheckedAt: '2026-09-05',
-    image: 'prod-sk-moomin-kids-duvet-set-halaus',
-    imageIsPartner: true,
-    partnerId: 'suomikauppa',
-    partnerProductUrl: 'https://suomikauppa.fi/products/muumi-halaus-lasten-pussilakanasetti-100cmx135cm-60cmx40cm',
-    details: {
-      specs: [
-        { key: 'size', value: { en: 'Duvet cover 100 x 135 cm, pillowcase 60 x 40 cm', fi: 'Pussilakana 100 x 135 cm, tyynyliina 60 x 40 cm' } },
-        { key: 'material', value: { en: '100 % cotton', fi: '100 % puuvillaa' } },
-        { key: 'other', label: { en: 'Closure', fi: 'Suljenta' }, value: { en: 'Zip', fi: 'Vetoketju' } },
-      ],
-      sourceUrl: 'https://suomikauppa.fi/products/muumi-halaus-lasten-pussilakanasetti-100cmx135cm-60cmx40cm',
-      fetchedAt: '2026-09-05',
-    },
-  },
-  {
     slug: 'sk-arabia-moomintroll-mini-figurine',
     category: 'handicrafts',
     brand: 'Arabia',
@@ -6220,6 +6191,69 @@ export const PRODUCTS: Product[] = [
         { key: 'contents', value: { en: 'Organically grown shiitake, chili, salt and pepper', fi: 'Luonnonmukaisesti kasvatettua siitaketta, chiliä, suolaa ja pippuria' } },
       ],
       sourceUrl: 'https://www.ruohonjuuri.fi/products/forestly-foods-sienisipsi-chili-50-g',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  // ── katalogin täydennys 2026-09-05 ─────────────────────────────────────────
+  // Vesa 5.9.: 'miten voi olla että makiaa on vain kaksi tuotetta', 'tekstiileissä
+  // vain yksi tuote', 'herkut-osio on aivan poor', 'superfoodeja vain 5', 'miksi on
+  // jätetty vajaita gridejä'. 42 tuotetta kumppanien omista Shopify-tiedoista
+  // (products.json, luettu 2026-09-05): hinta, kuva ja tiedot kumppanin sivulta.
+  // Ryhmät täytetty neljällä jaollisiksi (xl-ruudukko on 4 saraketta).
+  {
+    slug: 'sk-muurla-moomin-80v-tray',
+    category: 'design',
+    brand: 'Muurla',
+    name: {
+      en: 'Muurla Moomin 80 years tray 27 x 20 cm',
+      fi: 'Muurla Muumi 80v -tarjotin 27 x 20 cm',
+    },
+    description: {
+      en: 'A 27 by 20 cm tray from Muurla\'s Moomin 80 years series, dishwasher safe. The size that carries two mugs and a plate of biscuits from the kitchen to the sofa, and looks like part of the table once it is there.',
+      fi: '27 x 20 cm tarjotin Muurlan Muumi 80 vuotta -sarjasta, konepesun kestävä. Koko, jolla kaksi mukia ja keksilautanen kulkevat keittiöstä sohvalle, ja joka näyttää pöydän osalta perille päästyään.',
+    },
+    priceFrom: 32.62,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-muurla-moomin-80v-tray',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/muurla-muumi-80v-tarjotin-27cmx20cm',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '27 x 20 cm', fi: '27 x 20 cm' } },
+        { key: 'care', value: { en: 'Dishwasher safe', fi: 'Konepesun kestävä' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/muurla-muumi-80v-tarjotin-27cmx20cm',
+      fetchedAt: '2026-09-05',
+    },
+  },
+  {
+    slug: 'sk-muurla-moomin-glass-box-yhdessa',
+    category: 'design',
+    brand: 'Muurla',
+    name: {
+      en: 'Muurla Moomin glass box Yhdessä 11.5 cm',
+      fi: 'Muurla Muumi-lasirasia Yhdessä 11,5 cm',
+    },
+    description: {
+      en: 'A heart shaped glass box from Muurla\'s Yhdessä, together, mini series, 11.5 by 10 by 5.5 cm, hand wash, delivered in its retail box. Meant for the small treasures: rings, a folded note, a first tooth.',
+      fi: 'Sydämenmuotoinen lasirasia Muurlan Yhdessä-minisarjasta, 11,5 x 10 x 5,5 cm, käsinpesu, toimitetaan myyntipakkauksessa. Tarkoitettu pienille aarteille: sormuksille, taitetulle lapulle, ensimmäiselle hampaalle.',
+    },
+    priceFrom: 25.04,
+    currency: 'EUR',
+    priceCheckedAt: '2026-09-05',
+    image: 'prod-sk-muurla-moomin-glass-box-yhdessa',
+    imageIsPartner: true,
+    partnerId: 'suomikauppa',
+    partnerProductUrl: 'https://suomikauppa.fi/products/muurla-muumi-lasirasia-yhdessa-11-5cm',
+    details: {
+      specs: [
+        { key: 'size', value: { en: '11.5 x 10 x 5.5 cm', fi: '11,5 x 10 x 5,5 cm' } },
+        { key: 'care', value: { en: 'Hand wash', fi: 'Käsinpesu' } },
+        { key: 'other', label: { en: 'Packaging', fi: 'Pakkaus' }, value: { en: 'Retail box', fi: 'Myyntipakkaus' } },
+      ],
+      sourceUrl: 'https://suomikauppa.fi/products/muurla-muumi-lasirasia-yhdessa-11-5cm',
       fetchedAt: '2026-09-05',
     },
   },

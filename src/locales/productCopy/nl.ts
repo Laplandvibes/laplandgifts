@@ -1517,17 +1517,6 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Sluiting'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: 'Moomin kinderdekbedovertrekset 100 x 135 cm, Halaus',
-    description:
-      'Katoenen kinderdekbedovertrek en kussensloop in het dessin Halaus, knuffel, overtrek 100 x 135 cm en sloop 60 x 40 cm met rits. De maat past een ledikant of juniorbed, dus een eerste beddengoedcadeau.',
-    specs: [
-      'Dekbedovertrek 100 x 135 cm, kussensloop 60 x 40 cm',
-      '100 % katoen',
-      'Rits',
-    ],
-    specLabels: [undefined, undefined, 'Sluiting'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Arabia Moomintroll minifiguur',
     description:
@@ -1752,5 +1741,26 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       '50 g',
       'Biologisch gekweekte shiitake, chili, zout en peper',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Muurla Moomin 80 jaar dienblad 27 x 20 cm',
+    description:
+      'Dienblad van 27 x 20 cm uit Muurla\'s serie Moomin 80 jaar, vaatwasserbestendig. De maat die twee mokken en een bord koekjes van de keuken naar de bank draagt en daar oogt als een deel van de tafel.',
+    specs: [
+      '27 x 20 cm',
+      'Vaatwasserbestendig',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Muurla Moomin glazen doosje Yhdessä 11,5 cm',
+    description:
+      'Hartvormig glazen doosje uit Muurla\'s minireeks Yhdessä, samen, 11,5 x 10 x 5,5 cm, handwas, geleverd in de verkoopverpakking. Bedoeld voor de kleine schatten: ringen, een gevouwen briefje, een eerste tandje.',
+    specs: [
+      '11,5 x 10 x 5,5 cm',
+      'Handwas',
+      'Verkoopverpakking',
+    ],
+    specLabels: [undefined, undefined, 'Verpakking'],
   },
 }

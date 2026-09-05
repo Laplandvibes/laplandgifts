@@ -1518,17 +1518,6 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Fermeture'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: 'Parure de lit enfant Moomin 100 x 135 cm, Halaus',
-    description:
-      'Housse de couette et taie d\'oreiller enfant en coton au motif Halaus, câlin, housse 100 x 135 cm et taie 60 x 40 cm avec fermeture éclair. La taille convient à un lit à barreaux ou un lit junior, donc un premier cadeau de linge de lit.',
-    specs: [
-      'Housse de couette 100 x 135 cm, taie d\'oreiller 60 x 40 cm',
-      '100 % coton',
-      'Fermeture éclair',
-    ],
-    specLabels: [undefined, undefined, 'Fermeture'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Mini figurine Moomin Arabia',
     description:
@@ -1753,5 +1742,26 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       '50 g',
       'Shiitaké cultivé en bio, piment, sel et poivre',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Plateau Moomin 80 ans Muurla 27 x 20 cm',
+    description:
+      'Plateau de 27 x 20 cm de la série Moomin 80 ans de Muurla, lavable au lave-vaisselle. La taille qui porte deux mugs et une assiette de biscuits de la cuisine au canapé, et qui semble faire partie de la table une fois arrivée.',
+    specs: [
+      '27 x 20 cm',
+      'Lavable au lave-vaisselle',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Boîte en verre Moomin Muurla Yhdessä 11,5 cm',
+    description:
+      'Boîte en verre en forme de cœur de la mini-série Yhdessä, ensemble, de Muurla, 11,5 x 10 x 5,5 cm, lavage à la main, livrée dans son emballage de vente. Faite pour les petits trésors : des bagues, un mot plié, une première dent.',
+    specs: [
+      '11,5 x 10 x 5,5 cm',
+      'Lavage à la main',
+      'Emballage de vente',
+    ],
+    specLabels: [undefined, undefined, 'Emballage'],
   },
 }

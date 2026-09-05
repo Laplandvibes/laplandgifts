@@ -1519,17 +1519,6 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '開閉'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: 'ムーミン 子ども用布団カバーセット 100 x 135 cm、Halaus',
-    description:
-      'Halaus、抱擁、の柄のコットンの子ども用布団カバーと枕カバー。カバー100 x 135 cm、枕カバー60 x 40 cm、ファスナー式。ベビーベッドやジュニアベッドに合うサイズなので、初めての寝具の贈り物になります。',
-    specs: [
-      '布団カバー100 x 135 cm、枕カバー60 x 40 cm',
-      'コットン100 %',
-      'ファスナー',
-    ],
-    specLabels: [undefined, undefined, '開閉'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Arabia ムーミントロール ミニフィギュア',
     description:
@@ -1754,5 +1743,26 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       '50 g',
       '有機栽培のしいたけ、チリ、塩、こしょう',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Muurla ムーミン80周年トレイ 27 x 20 cm',
+    description:
+      'Muurlaのムーミン80周年シリーズの27 x 20 cmのトレイで、食洗機対応。マグ2つとビスケットの皿をキッチンからソファへ運べる大きさで、置けばテーブルの一部のように見えます。',
+    specs: [
+      '27 x 20 cm',
+      '食洗機対応',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Muurla ムーミン ガラスボックス Yhdessä 11.5 cm',
+    description:
+      'Muurlaのミニシリーズ Yhdessä（いっしょに）のハート形ガラスボックス。11.5 x 10 x 5.5 cm、手洗い、販売用パッケージ入りでお届けします。指輪、折りたたんだメモ、初めての乳歯といった小さな宝物のために。',
+    specs: [
+      '11.5 x 10 x 5.5 cm',
+      '手洗い',
+      '販売用パッケージ',
+    ],
+    specLabels: [undefined, undefined, 'パッケージ'],
   },
 }

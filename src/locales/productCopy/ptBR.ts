@@ -1517,17 +1517,6 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Fechamento'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: 'Jogo de capa de edredom infantil Moomin 100 x 135 cm, Halaus',
-    description:
-      'Capa de edredom e fronha infantis de algodão na estampa Halaus, abraço, capa 100 x 135 cm e fronha 60 x 40 cm com zíper. O tamanho serve para berço ou cama júnior, então é um primeiro presente de roupa de cama.',
-    specs: [
-      'Capa de edredom 100 x 135 cm, fronha 60 x 40 cm',
-      '100 % algodão',
-      'Zíper',
-    ],
-    specLabels: [undefined, undefined, 'Fechamento'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Miniatura Moomintroll Arabia',
     description:
@@ -1752,5 +1741,26 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       '50 g',
       'Shiitake de cultivo orgânico, pimenta, sal e pimenta-do-reino',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Bandeja Moomin 80 anos Muurla 27 x 20 cm',
+    description:
+      'Bandeja de 27 x 20 cm da série Moomin 80 anos da Muurla, pode ir à lava-louças. O tamanho que leva duas canecas e um prato de biscoitos da cozinha ao sofá e, chegando lá, parece parte da mesa.',
+    specs: [
+      '27 x 20 cm',
+      'Pode ir à lava-louças',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Caixa de vidro Moomin Muurla Yhdessä 11,5 cm',
+    description:
+      'Caixa de vidro em forma de coração da minissérie Yhdessä, juntos, da Muurla, 11,5 x 10 x 5,5 cm, lavar à mão, entregue na embalagem de venda. Feita para os pequenos tesouros: anéis, um bilhete dobrado, um primeiro dente.',
+    specs: [
+      '11,5 x 10 x 5,5 cm',
+      'Lavar à mão',
+      'Embalagem de venda',
+    ],
+    specLabels: [undefined, undefined, 'Embalagem'],
   },
 }

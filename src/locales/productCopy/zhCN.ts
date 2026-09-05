@@ -1519,17 +1519,6 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '开合'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: '姆明儿童被套套装 100 x 135 cm，Halaus',
-    description:
-      'Halaus（拥抱）图案的棉质儿童被套和枕套，被套100 x 135厘米，枕套60 x 40厘米，带拉链。尺寸适合婴儿床或儿童床，是一份合适的第一套床品礼物。',
-    specs: [
-      '被套100 x 135 cm，枕套60 x 40 cm',
-      '100 %棉',
-      '拉链',
-    ],
-    specLabels: [undefined, undefined, '开合'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Arabia 姆明迷你摆件',
     description:
@@ -1754,5 +1743,26 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '50 g',
       '有机种植香菇、辣椒、盐和胡椒',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Muurla 姆明80周年托盘 27 x 20 cm',
+    description:
+      'Muurla姆明80周年系列的27 x 20厘米托盘，可用洗碗机。刚好能把两个马克杯和一盘饼干从厨房端到沙发，放下后看起来就像餐桌的一部分。',
+    specs: [
+      '27 x 20 cm',
+      '可用洗碗机',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Muurla 姆明玻璃盒 Yhdessä 11.5 cm',
+    description:
+      'Muurla Yhdessä（一起）迷你系列的心形玻璃盒，11.5 x 10 x 5.5厘米，手洗，以零售包装交付。用来收小小的珍藏：戒指、折好的字条、第一颗乳牙。',
+    specs: [
+      '11.5 x 10 x 5.5 cm',
+      '手洗',
+      '零售包装',
+    ],
+    specLabels: [undefined, undefined, '包装'],
   },
 }

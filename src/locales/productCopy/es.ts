@@ -1517,17 +1517,6 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Cierre'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: 'Juego de funda nórdica infantil Moomin 100 x 135 cm, Halaus',
-    description:
-      'Funda nórdica y funda de almohada infantiles de algodón con el estampado Halaus, abrazo, funda 100 x 135 cm y almohada 60 x 40 cm con cremallera. La medida sirve para cuna o cama junior, así que es un primer regalo de ropa de cama.',
-    specs: [
-      'Funda nórdica 100 x 135 cm, funda de almohada 60 x 40 cm',
-      '100 % algodón',
-      'Cremallera',
-    ],
-    specLabels: [undefined, undefined, 'Cierre'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Minifigura Moomintroll Arabia',
     description:
@@ -1752,5 +1741,26 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       '50 g',
       'Shiitake de cultivo ecológico, chile, sal y pimienta',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Bandeja Moomin 80 años Muurla 27 x 20 cm',
+    description:
+      'Bandeja de 27 x 20 cm de la serie Moomin 80 años de Muurla, apta para lavavajillas. El tamaño que lleva dos tazas y un plato de galletas de la cocina al sofá y que, una vez allí, parece parte de la mesa.',
+    specs: [
+      '27 x 20 cm',
+      'Apta para lavavajillas',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Caja de cristal Moomin Muurla Yhdessä 11,5 cm',
+    description:
+      'Caja de cristal en forma de corazón de la miniserie Yhdessä, juntos, de Muurla, 11,5 x 10 x 5,5 cm, lavado a mano, entregada en su caja de venta. Pensada para los pequeños tesoros: anillos, una nota doblada, un primer diente.',
+    specs: [
+      '11,5 x 10 x 5,5 cm',
+      'Lavar a mano',
+      'Caja de venta',
+    ],
+    specLabels: [undefined, undefined, 'Envase'],
   },
 }

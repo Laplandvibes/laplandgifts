@@ -1517,17 +1517,6 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Chiusura'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: 'Set copripiumino bambini Moomin 100 x 135 cm, Halaus',
-    description:
-      'Copripiumino e federa per bambini in cotone con la fantasia Halaus, abbraccio, copripiumino 100 x 135 cm e federa 60 x 40 cm con cerniera. La misura va bene per lettino o letto junior, quindi è un primo regalo di biancheria da letto.',
-    specs: [
-      'Copripiumino 100 x 135 cm, federa 60 x 40 cm',
-      '100 % cotone',
-      'Cerniera',
-    ],
-    specLabels: [undefined, undefined, 'Chiusura'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Mini statuina Moomintroll Arabia',
     description:
@@ -1752,5 +1741,26 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
       '50 g',
       'Shiitake da coltivazione biologica, peperoncino, sale e pepe',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Vassoio Moomin 80 anni Muurla 27 x 20 cm',
+    description:
+      'Vassoio da 27 x 20 cm della serie Moomin 80 anni di Muurla, lavabile in lavastoviglie. La misura che porta due tazze e un piatto di biscotti dalla cucina al divano e, una volta lì, sembra parte del tavolo.',
+    specs: [
+      '27 x 20 cm',
+      'Lavabile in lavastoviglie',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Scatola di vetro Moomin Muurla Yhdessä 11,5 cm',
+    description:
+      'Scatola di vetro a forma di cuore della miniserie Yhdessä, insieme, di Muurla, 11,5 x 10 x 5,5 cm, lavaggio a mano, consegnata nella sua confezione di vendita. Pensata per i piccoli tesori: anelli, un biglietto piegato, un primo dentino.',
+    specs: [
+      '11,5 x 10 x 5,5 cm',
+      'Lavaggio a mano',
+      'Confezione di vendita',
+    ],
+    specLabels: [undefined, undefined, 'Confezione'],
   },
 }

@@ -1519,17 +1519,6 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Stängning'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: 'Mumin påslakanset för barn 100 x 135 cm, Halaus',
-    description:
-      'Påslakan och örngott i bomull för barn i mönstret Halaus, kram, påslakan 100 x 135 cm och örngott 60 x 40 cm med dragkedja. Storleken passar spjälsäng eller juniorsäng, alltså en första sängklädespresent.',
-    specs: [
-      'Påslakan 100 x 135 cm, örngott 60 x 40 cm',
-      '100 % bomull',
-      'Dragkedja',
-    ],
-    specLabels: [undefined, undefined, 'Stängning'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Arabia Mumintrollet minifigur',
     description:
@@ -1754,5 +1743,26 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       '50 g',
       'Ekologiskt odlad shiitake, chili, salt och peppar',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Muurla Mumin 80 år bricka 27 x 20 cm',
+    description:
+      'Bricka på 27 x 20 cm ur Muurlas serie Mumin 80 år, tål maskindisk. Storleken som bär två muggar och en tallrik kex från köket till soffan och ser ut som en del av bordet väl framme.',
+    specs: [
+      '27 x 20 cm',
+      'Tål maskindisk',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Muurla Mumin glasask Yhdessä 11,5 cm',
+    description:
+      'Hjärtformad glasask ur Muurlas miniserie Yhdessä, tillsammans, 11,5 x 10 x 5,5 cm, handdisk, levereras i sin försäljningsförpackning. Avsedd för de små skatterna: ringar, en vikt lapp, en första tand.',
+    specs: [
+      '11,5 x 10 x 5,5 cm',
+      'Handdisk',
+      'Försäljningsförpackning',
+    ],
+    specLabels: [undefined, undefined, 'Förpackning'],
   },
 }

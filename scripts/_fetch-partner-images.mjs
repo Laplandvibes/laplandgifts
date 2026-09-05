@@ -416,10 +416,11 @@ const JOBS = [
   ['halti-viiri-fleece-gloves', 'https://cdn.shopify.com/s/files/1/0718/0913/files/0840751_P99_ViiriStormwallGloves.jpg?v=1755772758'], // www.halti.fi/products/viiri-fleece-hanskat
   ['nb-moomin-classics-beanie', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/MOOMIN26D_d94aa65e-ebc8-4350-9a66-cc38ec803e61.jpg?v=1728983826'], // www.nordicbuddies.com/products/moomin-classics-winter-hat-beanie-4817
   ['nb-snufkin-mens-socks', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/SNUFKIN17E_2.png?v=1784265009'], // www.nordicbuddies.com/products/snufkin-mens-socks-1
-  ['sk-moomin-kids-duvet-set-halaus', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/5904209603442.jpg?v=1707814708'], // suomikauppa.fi/products/muumi-halaus-lasten-pussilakanasetti-100cmx135cm-60cmx40cm
   ['sk-moomin-duvet-set-merella', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/5904209606658.jpg?v=1707814575'], // suomikauppa.fi/products/muumi-merella-pussilakanasetti-140cmx200cm-50cmx70cm
   ['sk-suomi-propeller-cap', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/108007SuomiKannatusPropellilippis.png?v=1680585294'], // suomikauppa.fi/products/suomi-kannatus-propellilippis
   ['nb-hattifatteners-retro-socks', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/HATT17H_9acaa216-e902-464a-ac7f-badb5f94c92a.png?v=1779878415'], // www.nordicbuddies.com/products/hattifatteners-womens-retro-socks-1
+  ['sk-muurla-moomin-80v-tray', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114971794.png?v=1737010853'], // suomikauppa.fi/products/muurla-muumi-80v-tarjotin-27cmx20cm
+  ['sk-muurla-moomin-glass-box-yhdessa', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114971961.png?v=1737011998'], // suomikauppa.fi/products/muurla-muumi-lasirasia-yhdessa-11-5cm
 ]
 
 const only = new Set(process.argv.slice(2))

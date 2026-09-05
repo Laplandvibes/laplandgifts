@@ -1560,17 +1560,6 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Verschluss'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: 'Mumin Kinderbettwäsche-Set 100 x 135 cm, Halaus',
-    description:
-      'Kinderbettbezug und Kissenbezug aus Baumwolle im Muster Halaus, Umarmung, Bezug 100 x 135 cm und Kissen 60 x 40 cm mit Reißverschluss. Die Größe passt ins Gitterbett oder Juniorbett, also ein erstes Bettwäschegeschenk.',
-    specs: [
-      'Bettbezug 100 x 135 cm, Kissenbezug 60 x 40 cm',
-      '100 % Baumwolle',
-      'Reißverschluss',
-    ],
-    specLabels: [undefined, undefined, 'Verschluss'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Arabia Mumintroll Minifigur',
     description:
@@ -1795,5 +1784,26 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       '50 g',
       'Biologisch angebauter Shiitake, Chili, Salz und Pfeffer',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Muurla Mumin 80 Jahre Tablett 27 x 20 cm',
+    description:
+      'Tablett von 27 x 20 cm aus Muurlas Serie Mumin 80 Jahre, spülmaschinenfest. Die Größe, die zwei Becher und einen Teller Kekse von der Küche aufs Sofa trägt und dort wie ein Teil des Tisches aussieht.',
+    specs: [
+      '27 x 20 cm',
+      'Spülmaschinenfest',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Muurla Mumin Glasdose Yhdessä 11,5 cm',
+    description:
+      'Herzförmige Glasdose aus Muurlas Miniserie Yhdessä, zusammen, 11,5 x 10 x 5,5 cm, Handwäsche, geliefert in der Verkaufsverpackung. Gedacht für die kleinen Schätze: Ringe, einen gefalteten Zettel, einen ersten Zahn.',
+    specs: [
+      '11,5 x 10 x 5,5 cm',
+      'Handwäsche',
+      'Verkaufsverpackung',
+    ],
+    specLabels: [undefined, undefined, 'Verpackung'],
   },
 }

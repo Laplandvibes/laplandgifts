@@ -1393,7 +1393,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-moomin-kids-duvet-set-halaus": {
+  "prod-sk-muurla-moomin-80v-tray": {
     "full": 800,
     "w": [
       320,
@@ -1411,6 +1411,13 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
   },
   "prod-sk-muurla-moomin-enamel-mug-lumipyry": {
     "full": 600,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-sk-muurla-moomin-glass-box-yhdessa": {
+    "full": 514,
     "w": [
       320,
       480

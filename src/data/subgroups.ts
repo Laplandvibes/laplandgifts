@@ -265,7 +265,6 @@ const MAP: Record<string, SubgroupId> = {
   'sk-muurla-moomin-enamel-mug-lumipyry': 'tableware',
   'sk-arabia-moomin-pitcher-moominhouse': 'tableware',
   'sk-moomin-duvet-set-merella': 'textiles',
-  'sk-moomin-kids-duvet-set-halaus': 'textiles',
   'sk-arabia-moomintroll-mini-figurine': 'ceramics',
   'sk-arabia-snorkmaiden-mini-figurine': 'ceramics',
   'sk-lapin-puukko-gift-box': 'knives',
@@ -289,6 +288,9 @@ const MAP: Record<string, SubgroupId> = {
   'rj-kaino-spruce-sprout-sparkling-075': 'drinks',
   'rj-yrttipaja-chaga-powder': 'herbal',
   'rj-forestly-mushroom-chips-chili': 'herbal',
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': 'tableware',
+  'sk-muurla-moomin-glass-box-yhdessa': 'tableware',
 }
 
 export function subgroupOf(slug: string): SubgroupId {

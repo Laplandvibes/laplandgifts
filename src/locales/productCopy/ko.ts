@@ -1518,17 +1518,6 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '여밈'],
   },
-  'sk-moomin-kids-duvet-set-halaus': {
-    name: '무민 아동 이불 커버 세트 100 x 135 cm, Halaus',
-    description:
-      'Halaus, 포옹, 패턴의 면 아동 이불 커버와 베개 커버로, 이불 커버 100 x 135 cm, 베개 커버 60 x 40 cm, 지퍼 여밈입니다. 유아 침대나 주니어 침대에 맞는 크기라 첫 침구 선물로 좋습니다.',
-    specs: [
-      '이불 커버 100 x 135 cm, 베개 커버 60 x 40 cm',
-      '100 % 면',
-      '지퍼',
-    ],
-    specLabels: [undefined, undefined, '여밈'],
-  },
   'sk-arabia-moomintroll-mini-figurine': {
     name: 'Arabia 무민트롤 미니 피규어',
     description:
@@ -1753,5 +1742,26 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '50 g',
       '유기농 재배 표고버섯, 칠리, 소금, 후추',
     ],
+  },
+  // katalogin täydennys 2026-09-05
+  'sk-muurla-moomin-80v-tray': {
+    name: 'Muurla 무민 80주년 트레이 27 x 20 cm',
+    description:
+      'Muurla 무민 80주년 시리즈의 27 x 20 cm 트레이로, 식기세척기 사용이 가능합니다. 머그 두 개와 비스킷 접시를 부엌에서 소파까지 나르기 좋은 크기이며, 놓고 나면 식탁의 일부처럼 보입니다.',
+    specs: [
+      '27 x 20 cm',
+      '식기세척기 사용 가능',
+    ],
+  },
+  'sk-muurla-moomin-glass-box-yhdessa': {
+    name: 'Muurla 무민 유리 상자 Yhdessä 11.5 cm',
+    description:
+      'Muurla의 Yhdessä(함께) 미니 시리즈의 하트 모양 유리 상자로, 11.5 x 10 x 5.5 cm, 손세척, 판매용 포장에 담겨 배송됩니다. 반지, 접은 쪽지, 첫 유치 같은 작은 보물을 위한 것입니다.',
+    specs: [
+      '11.5 x 10 x 5.5 cm',
+      '손세척',
+      '판매용 포장',
+    ],
+    specLabels: [undefined, undefined, '포장'],
   },
 }
