@@ -72,15 +72,15 @@ function FAQ() {
   const c = COPY[lang]
   const items = faqItemsFor(lang)
   return (
-    <section id="faq" className="py-20 bg-sand">
+    <section id="faq" className="py-14 md:py-20 bg-sand">
       <div className="max-w-3xl mx-auto px-4">
-        <div className="text-center mb-12">
-          <div className="flex items-center justify-center gap-2 mb-3">
+        <div className="mb-8 md:mb-12">
+          <div className="flex items-center gap-2 mb-3">
             <HelpCircle className="w-5 h-5 text-amber" />
             <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
           </div>
-          <h2 className="font-heading text-5xl md:text-6xl tracking-wide text-gray mb-3">{t.h2}</h2>
-          <p className="text-muted text-lg max-w-2xl mx-auto">{t.sub}</p>
+          <h2 className="font-heading text-3xl md:text-5xl leading-none tracking-wide text-gray mb-3">{t.h2}</h2>
+          <p className="text-muted text-[15px] md:text-base leading-relaxed max-w-xl">{t.sub}</p>
         </div>
 
         <div className="space-y-4">

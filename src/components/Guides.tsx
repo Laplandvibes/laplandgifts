@@ -59,18 +59,18 @@ function Guides() {
   }
 
   return (
-    <section id="guides" className="bg-sand py-20">
+    <section id="guides" className="bg-sand py-14 md:py-20">
       <div className="mx-auto max-w-5xl px-4">
-        <div className="mb-14 text-center">
-          <div className="mb-3 flex items-center justify-center gap-2">
+        <div className="mb-8 md:mb-12">
+          <div className="mb-3 flex items-center gap-2">
             <FileText className="h-5 w-5 text-amber" />
             <span className="text-sm font-medium uppercase tracking-widest text-amber">{t.kicker}</span>
           </div>
-          <h2 className="mb-3 font-heading text-5xl tracking-wide text-gray md:text-6xl">{t.h2}</h2>
-          <p className="mx-auto max-w-2xl text-lg text-muted">{t.sub}</p>
+          <h2 className="mb-3 font-heading text-3xl leading-none tracking-wide text-gray md:text-5xl">{t.h2}</h2>
+          <p className="max-w-xl text-[15px] leading-relaxed text-muted md:text-base">{t.sub}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8">
           {t.guides.map((guide, i) => (
             <article
               key={guide.title}
@@ -93,7 +93,7 @@ function Guides() {
                 </picture>
               </div>
 
-              <div className="flex flex-1 flex-col p-7">
+              <div className="flex flex-1 flex-col p-5 md:p-7">
                 <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-amber">
                   {t.pagesPdf(guide.pages)}
                 </p>
@@ -101,9 +101,9 @@ function Guides() {
                   {guide.title}
                 </h3>
                 <p className="mb-3 mt-1 text-sm font-medium text-amber/90">{guide.subtitle}</p>
-                <p className="mb-5 text-sm leading-relaxed text-gray/75">{guide.description}</p>
+                <p className="mb-5 line-clamp-3 text-sm leading-relaxed text-gray/75 md:line-clamp-none">{guide.description}</p>
 
-                <div className="mb-6 flex flex-wrap gap-2">
+                <div className="mb-6 hidden flex-wrap gap-2 sm:flex">
                   {guide.topics.map((topic) => (
                     <span
                       key={topic}

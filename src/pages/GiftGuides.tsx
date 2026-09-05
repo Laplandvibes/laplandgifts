@@ -85,7 +85,7 @@ export default function GiftGuides() {
                       {/* Leipäteksti on tumma harmaa eikä tilaisuuden sävy:
                           sävy kuuluu otsikolle, ja kokonainen kappale värillä
                           latistaa hierarkian. Mitattu 6,7:1 sävypohjalla. */}
-                      <p className="mt-2 max-w-2xl leading-relaxed text-gray/80">{occ.description}</p>
+                      
                     </div>
                   </div>
                   {picks.length > 0 && (

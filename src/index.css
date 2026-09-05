@@ -275,6 +275,9 @@
  * palkkia. */
 .product-media { aspect-ratio: 1 / 1; }
 .category-media { aspect-ratio: 3 / 2; }
+/* Yksin jäänyt viimeinen tiili leviää koko riville: matala panoraama, ei jättikuva. */
+.category-media--wide { aspect-ratio: 3 / 1.15; }
+@media (min-width: 1024px) { .category-media--wide { aspect-ratio: 3 / 0.85; } }
 
 /* Cache-bust 2026-07-31: Cloudflaren reunavälimuistiin jäi deployn jälkeen
    myrkyttynyt kopio /assets/index-*.css:stä. Origin-otsakkeen sisältävä

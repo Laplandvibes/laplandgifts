@@ -44,9 +44,11 @@ describe('luksusvalikoima', () => {
       const c = LUXURY_COPY[lang]
       expect(c, `${lang}: LUXURY_COPY puuttuu`).toBeTruthy()
       for (const k of ['eyebrow', 'title', 'lead', 'experiencesH2', 'objectsH2', 'note'] as const) {
-        expect(c[k], `${lang}/${k}`).toBeTruthy()
-        expect(banned.test(c[k]), `${lang}/${k}: kielletty sana`).toBe(false)
-        expect(c[k].includes('—'), `${lang}/${k}: em-viiva`).toBe(false)
+        // lead on funktio (n, min, max) — testataan renderöity teksti.
+        const v = k === 'lead' ? c.lead(24, '80 €', '1 490 €') : c[k]
+        expect(v, `${lang}/${k}`).toBeTruthy()
+        expect(banned.test(v), `${lang}/${k}: kielletty sana`).toBe(false)
+        expect(v.includes('—'), `${lang}/${k}: em-viiva`).toBe(false)
       }
       expect(c.count(5)).toContain('5')
     }

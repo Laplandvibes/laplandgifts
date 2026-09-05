@@ -50,6 +50,8 @@ export default function Luxury() {
     .filter((p) => p.category === 'experiences')
     .sort((a, b) => rank(a.slug) - rank(b.slug) || b.priceFrom - a.priceFrom)
   const objects = visible.filter((p) => p.category !== 'experiences')
+  const fmtMoney = (n: number) =>
+    new Intl.NumberFormat(lang === 'pt-BR' ? 'pt-BR' : lang, { style: 'currency', currency: visible[0]?.currency ?? 'EUR', maximumFractionDigits: 0 }).format(n)
 
   return (
     <>
@@ -70,7 +72,7 @@ export default function Luxury() {
             <h1 className="font-heading text-6xl tracking-wide text-gray md:text-8xl">
               {tl.title}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">{tl.lead}</p>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">{tl.lead(visible.length, fmtMoney(Math.min(...visible.map((p) => p.priceFrom))), fmtMoney(Math.max(...visible.map((p) => p.priceFrom))))}</p>
           </div>
         </header>
 

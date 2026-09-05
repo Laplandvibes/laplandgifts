@@ -14,7 +14,9 @@ import type { Lang } from '../i18n/useLang'
 export interface LuxuryCopy {
   eyebrow: string
   title: string
-  lead: string
+  /** FUNKTIO (Vesa 5.9.2026): mitä sivulla on, montako, mihin hintaan — ei
+   *  selitystä sivun järjestyksestä. Luvut tulevat datasta renderöitäessä. */
+  lead: (n: number, min: string, max: string) => string
   experiencesH2: string
   objectsH2: string
   count: (n: number) => string
@@ -26,7 +28,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   en: {
     eyebrow: 'The top of the range',
     title: 'Lapland luxury',
-    lead: 'The costliest things this shop points to are not objects but days: a day panning gold in Inari, a night in a glass igloo, a morning with the reindeer. Below them, the pieces worth the suitcase space.',
+    lead: (n, a, b) => `Lapland's most expensive gifts on one page: ${n} items, ${a}–${b}. Experiences first: gold panning in Inari, a night in a glass igloo and a morning with reindeer. Then the objects worth the suitcase space. Prices are the partner shops' own.`,
     experiencesH2: 'Days and nights',
     objectsH2: 'Things',
     count: (n) => `${n} products`,
@@ -35,7 +37,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   fi: {
     eyebrow: 'Valikoiman kärki',
     title: 'Lapin ylellisyys',
-    lead: 'Kalleimmat asiat, joihin tämä kauppa ohjaa, eivät ole esineitä vaan päiviä: päivä kullanhuuhdontaa Inarissa, yö lasi-iglussa, aamu porojen kanssa. Niiden alla ne esineet, jotka ovat matkalaukkutilan arvoisia.',
+    lead: (n, a, b) => `Lapin kalleimmat lahjat yhdellä sivulla: ${n} tuotetta, ${a}–${b}. Ensin elämykset: kullanhuuhdonta Inarissa, yö lasi-iglussa ja aamu porojen kanssa. Sitten esineet, jotka ansaitsevat matkalaukkutilan. Hinnat ovat kumppanikauppojen omia.`,
     experiencesH2: 'Päiviä ja öitä',
     objectsH2: 'Esineitä',
     count: (n) => `${n} tuotetta`,
@@ -44,7 +46,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   de: {
     eyebrow: 'Die Spitze des Sortiments',
     title: 'Luxus aus Lappland',
-    lead: 'Das Teuerste, worauf dieser Shop verweist, sind keine Gegenstände, sondern Tage: ein Tag Goldwaschen in Inari, eine Nacht im Glasiglu, ein Morgen bei den Rentieren. Darunter die Stücke, die den Platz im Koffer wert sind.',
+    lead: (n, a, b) => `Lapplands teuerste Geschenke auf einer Seite: ${n} Produkte, ${a}–${b}. Zuerst die Erlebnisse: Goldwaschen in Inari, eine Nacht im Glasiglu und ein Morgen bei den Rentieren. Dann die Stücke, die den Platz im Koffer verdienen. Die Preise sind die der Partnershops.`,
     experiencesH2: 'Tage und Nächte',
     objectsH2: 'Dinge',
     count: (n) => `${n} Produkte`,
@@ -53,7 +55,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   sv: {
     eyebrow: 'Toppen av urvalet',
     title: 'Lyx från Lappland',
-    lead: 'Det dyraste den här butiken pekar på är inte föremål utan dagar: en dag med guldvaskning i Enare, en natt i glasigloo, en morgon med renarna. Under dem de saker som är värda platsen i väskan.',
+    lead: (n, a, b) => `Lapplands dyraste presenter på en sida: ${n} produkter, ${a}–${b}. Först upplevelserna: guldvaskning i Enare, en natt i glasigloo och en morgon med renarna. Sedan föremålen som förtjänar plats i resväskan. Priserna är butikernas egna.`,
     experiencesH2: 'Dagar och nätter',
     objectsH2: 'Saker',
     count: (n) => `${n} produkter`,
@@ -62,7 +64,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   fr: {
     eyebrow: 'Le haut de la sélection',
     title: 'Le luxe lapon',
-    lead: 'Ce que cette boutique propose de plus cher, ce ne sont pas des objets mais des journées : une journée d’orpaillage à Inari, une nuit en igloo de verre, un matin avec les rennes. En dessous, les pièces qui méritent la place dans la valise.',
+    lead: (n, a, b) => `Les cadeaux les plus chers de Laponie sur une seule page : ${n} produits, ${a}–${b}. D’abord les expériences : orpaillage à Inari, une nuit en igloo de verre et un matin avec les rennes. Puis les objets qui méritent une place dans la valise. Les prix sont ceux des boutiques partenaires.`,
     experiencesH2: 'Journées et nuits',
     objectsH2: 'Objets',
     count: (n) => `${n} produits`,
@@ -71,7 +73,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   es: {
     eyebrow: 'Lo más alto de la selección',
     title: 'Lujo lapón',
-    lead: 'Lo más caro a lo que apunta esta tienda no son objetos sino días: un día lavando oro en Inari, una noche en un iglú de cristal, una mañana con los renos. Debajo, las piezas que merecen el sitio en la maleta.',
+    lead: (n, a, b) => `Los regalos más caros de Laponia en una sola página: ${n} productos, ${a}–${b}. Primero las experiencias: bateo de oro en Inari, una noche en un iglú de cristal y una mañana con los renos. Después, los objetos que merecen sitio en la maleta. Los precios son los de las tiendas asociadas.`,
     experiencesH2: 'Días y noches',
     objectsH2: 'Objetos',
     count: (n) => `${n} productos`,
@@ -80,7 +82,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   it: {
     eyebrow: 'La punta della selezione',
     title: 'Il lusso lappone',
-    lead: 'Le cose più costose a cui questo negozio rimanda non sono oggetti ma giornate: un giorno a cercare oro a Inari, una notte in un igloo di vetro, una mattina con le renne. Sotto, i pezzi che meritano lo spazio in valigia.',
+    lead: (n, a, b) => `I regali più costosi della Lapponia in una sola pagina: ${n} prodotti, ${a}–${b}. Prima le esperienze: la ricerca dell’oro a Inari, una notte in un igloo di vetro e una mattina con le renne. Poi gli oggetti che meritano spazio in valigia. I prezzi sono quelli dei negozi partner.`,
     experiencesH2: 'Giornate e notti',
     objectsH2: 'Oggetti',
     count: (n) => `${n} prodotti`,
@@ -89,7 +91,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   nl: {
     eyebrow: 'De top van het assortiment',
     title: 'Luxe uit Lapland',
-    lead: 'Het duurste waar deze winkel naar verwijst zijn geen voorwerpen maar dagen: een dag goud wassen in Inari, een nacht in een glazen iglo, een ochtend bij de rendieren. Daaronder de stukken die de plek in de koffer waard zijn.',
+    lead: (n, a, b) => `De duurste cadeaus van Lapland op één pagina: ${n} producten, ${a}–${b}. Eerst de ervaringen: goud wassen in Inari, een nacht in een glazen iglo en een ochtend bij de rendieren. Dan de voorwerpen die de kofferruimte waard zijn. De prijzen zijn die van de partnerwinkels.`,
     experiencesH2: 'Dagen en nachten',
     objectsH2: 'Voorwerpen',
     count: (n) => `${n} producten`,
@@ -98,7 +100,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   'pt-BR': {
     eyebrow: 'O topo da seleção',
     title: 'Luxo da Lapônia',
-    lead: 'O mais caro para onde esta loja aponta não são objetos, e sim dias: um dia garimpando ouro em Inari, uma noite num iglu de vidro, uma manhã com as renas. Abaixo, as peças que valem o espaço na mala.',
+    lead: (n, a, b) => `Os presentes mais caros da Lapônia em uma só página: ${n} produtos, ${a}–${b}. Primeiro as experiências: garimpo de ouro em Inari, uma noite em iglu de vidro e uma manhã com as renas. Depois, os objetos que merecem espaço na mala. Os preços são das lojas parceiras.`,
     experiencesH2: 'Dias e noites',
     objectsH2: 'Objetos',
     count: (n) => `${n} produtos`,
@@ -107,7 +109,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   ja: {
     eyebrow: '品ぞろえの頂点',
     title: 'ラップランドの贅沢',
-    lead: 'この店が案内するもののうち最も高価なのは、品物ではなく一日です。イナリでの砂金採りの一日、グラスイグルーの一夜、トナカイと過ごす朝。その下に、スーツケースの場所に見合う品を並べています。',
+    lead: (n, a, b) => `ラップランドで最も高価なギフトを1ページに：${n}点、${a}–${b}。まずは体験。イナリでの砂金採り、グラスイグルーでの一夜、トナカイと過ごす朝。その次に、スーツケースの場所に値する品々。価格はパートナーショップのものです。`,
     experiencesH2: '昼と夜',
     objectsH2: '品物',
     count: (n) => `${n} 点`,
@@ -116,7 +118,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   'zh-CN': {
     eyebrow: '选品的顶端',
     title: '拉普兰的奢华',
-    lead: '这家店指向的最贵的东西不是物件，而是日子：在伊纳里淘金的一天、玻璃冰屋的一夜、与驯鹿共处的一个早晨。往下是那些值得占用行李箱空间的物件。',
+    lead: (n, a, b) => `拉普兰最贵的礼物集中在一页：${n} 件，${a}–${b}。先是体验：在伊纳里淘金、玻璃冰屋的一夜、与驯鹿共度的早晨。然后是值得占用行李箱空间的物件。价格以合作商店为准。`,
     experiencesH2: '白天与夜晚',
     objectsH2: '物件',
     count: (n) => `${n} 件商品`,
@@ -125,7 +127,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   ko: {
     eyebrow: '구성의 정점',
     title: '라플란드의 럭셔리',
-    lead: '이 상점이 안내하는 것 중 가장 비싼 것은 물건이 아니라 하루입니다. 이나리에서 사금을 채취하는 하루, 유리 이글루에서의 하룻밤, 순록과 보내는 아침. 그 아래에는 여행 가방의 자리를 내줄 만한 물건들이 있습니다.',
+    lead: (n, a, b) => `라플란드에서 가장 비싼 선물을 한 페이지에: ${n}개, ${a}–${b}. 먼저 체험: 이나리 사금 채취, 유리 이글루에서의 하룻밤, 순록과 함께하는 아침. 그다음 여행 가방 자리를 차지할 만한 물건들. 가격은 파트너 상점 기준입니다.`,
     experiencesH2: '낮과 밤',
     objectsH2: '물건',
     count: (n) => `상품 ${n}개`,

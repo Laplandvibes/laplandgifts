@@ -6,7 +6,7 @@ import { imgSrcSet } from '../../lib/img'
 import { SHOP_COPY } from '../../locales/shopCopy'
 
 /** 1 palsta < 640 px, 2 palstaa 640–1023 px, 3 palstaa 1024 px:stä ylöspäin. */
-const CATEGORY_SIZES = '(min-width: 1024px) 420px, (min-width: 640px) 46vw, 92vw'
+const CATEGORY_SIZES = '(min-width: 1024px) 420px, 46vw'
 
 /**
  * Kategoriakortti etusivun gridiin.
@@ -17,20 +17,20 @@ const CATEGORY_SIZES = '(min-width: 1024px) 420px, (min-width: 640px) 46vw, 92vw
  * Otsikko istuu kuvan päällä omassa tummennuksessaan, joten se on luettava
  * riippumatta siitä latautuiko kuva.
  */
-export default function CategoryCard({ category, lang }: { category: Category; lang: Lang }) {
+export default function CategoryCard({ category, lang, wide = false }: { category: Category; lang: Lang; wide?: boolean }) {
   const to = useLocalePath()
   const t = SHOP_COPY[lang].category
   const name = t.names[category.id]
   return (
     <Link
       to={to(category.slug)}
-      className="group relative block overflow-hidden rounded-2xl border border-line bg-card"
+      className={`group relative block overflow-hidden rounded-2xl border border-line bg-card ${wide ? "col-span-2 lg:col-span-3" : ""}`}
     >
       {/* srcSet + sizes: kortin kuvapaikka on 356 CSS-pikseliä mobiilissa,
           mutta ilman vaihtoehtoja selain latasi 1200 pikselin tiedoston (91 kt
           yhdestä kuvasta). 480 ja 800 pikselin versiot tulevat
           scripts/build-image-variants.mjs:stä. */}
-      <div className="category-media overflow-hidden bg-sand-deep">
+      <div className={`category-media overflow-hidden bg-sand-deep ${wide ? "category-media--wide" : ""}`}>
         <picture>
           <source srcSet={imgSrcSet(category.image, 'avif')} sizes={CATEGORY_SIZES} type="image/avif" />
           <img
@@ -46,8 +46,8 @@ export default function CategoryCard({ category, lang }: { category: Category; l
           />
         </picture>
       </div>
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-night/85 to-transparent p-5 pt-14">
-        <h3 className="font-heading text-2xl tracking-wide text-white md:text-3xl">{name}</h3>
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-night/85 to-transparent p-3 pt-10 md:p-5 md:pt-14">
+        <h3 className="font-heading text-lg leading-tight tracking-wide text-white sm:text-2xl md:text-3xl">{name}</h3>
       </div>
     </Link>
   )
