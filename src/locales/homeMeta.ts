@@ -72,7 +72,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       '핀란드 기념품과 라플란드 선물: 무민과 아라비아 디자인, 수공예품, 핀란드 과자, 슈퍼푸드, 체험 선물까지. 제휴 상점에서 주문하면 사는 나라로 배송됩니다.',
   },
   fr: {
-    title: 'Souvenirs de Laponie en ligne et artisanat finlandais | LaplandGifts',
+    title: 'Souvenirs de Laponie et artisanat finlandais | LaplandGifts',
     description:
       'Que ramener de Laponie ? Souvenirs et artisanat finlandais : Moomin, Iittala, Marttiini, gourmandises, dans des boutiques en ligne qui livrent chez vous.',
   },

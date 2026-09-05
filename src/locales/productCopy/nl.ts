@@ -602,23 +602,11 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     description:
       'Gevriesdroogde sparrenscheuten, met de hand geplukt binnen een venster van twee weken in biologische staatsbossen, en maar om het jaar uit hetzelfde bos. Citrus en hars in één lepel, 382 mg vitamine C per 100 g.',
     specs: [
-      '40 g, bruto 0,046 kg',
-      '3 x 11 x 17 cm',
-      'Gevriesdroogde sparrenscheut',
-      'Finland',
-      '1 tot 3 theelepels per dag',
-      'Energie 1683 kJ / 402 kcal, eiwit 12,1 g, koolhydraten 77,8 g, vet 4,19 g. Vitamine C 382 mg, vitamine A 970 µg, vitamine K1 332 mg, kalium 1200 mg, fosfor 350 mg, calcium 130 mg, magnesium 120 mg, zink 3,6 mg, ijzer 2 mg',
-      'Geoogst onder licentie in biologische bossen van de Finse staatsbosdienst, om het jaar per bos',
+      '40 g',
+      'Gevriesdroogde sparrenscheuten',
+      '382 mg per 100 g',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Dosering',
-      'Voedingswaarde per 100 g',
-      'Oogst',
-    ],
+    specLabels: [undefined, undefined, 'Vitamine C'],
   },
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors brandnetelpoeder 150 g',
@@ -639,15 +627,9 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     description:
       'Rozenwortel groeit op de vochtige beekoevers en rotswanden van de Laplandse fjälls, en Arctic Warriors trekt hem samen met brandnetel in plantaardige glycerol. Een theelepel gaat in thee, pap of yoghurt.',
     specs: [
-      '100 ml, bruto 0,270 kg',
-      '4,5 x 4,5 x 13 cm',
-      'Plantaardige glycerol, brandnetel, rozenwortel',
-      'Finland',
-      '1 tot 2 theelepels per dag',
-      'Zuivelvrij, glutenvrij, veganistisch. De plantaardige glycerol heeft geen invloed op de bloedsuiker',
-      'Een voedingssupplement vervangt geen gevarieerde voeding. Buiten bereik van kinderen houden en de aangegeven dosis niet overschrijden',
+      '100 ml',
+      'Rozenwortel en brandnetel',
     ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Dosering', 'Dieet', 'Let op'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 duindoorn- en olijfolie 150 ml',
@@ -1359,5 +1341,416 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Bruin of roze',
     ],
     specLabels: [undefined, undefined, 'Kleuren'],
+  },
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': {
+    name: 'Makia Kontio hoodie',
+    description:
+      'Hoodie met normale pasvorm van 100 procent biologisch katoen, pas na het naaien geverfd. Stukverven geeft een diepere kleur en een zachtere hand dan garenverven, en de tint houdt haar licht gedragen look was na was.',
+    specs: [
+      '100 % biologisch katoen, stukgeverfd',
+      'S tot XXL',
+    ],
+  },
+  'makia-trademark-hoodie': {
+    name: 'Makia Trademark hoodie',
+    description:
+      'De eenvoudigste hoodie van Makia: normale pasvorm, 100 procent biologisch katoen en het kleine merkteken op de borst. De trui voor een hutweek waarin dezelfde sweater van het ochtendvuur naar de saunaveranda gaat.',
+    specs: [
+      '100 % biologisch katoen',
+      'S tot XXL',
+    ],
+  },
+  'makia-moray-zip-knit': {
+    name: 'Makia Moray gebreid vest met rits',
+    description:
+      'Gebreid vest met rits in normale pasvorm van 100 procent merinowol. Merino warmt zonder dik te zijn en droogt van binnenuit, dus het werkt als laag onder een shell op een fjelltocht en alleen in een warm café.',
+    specs: [
+      '100 % merinowol',
+      'S tot XXL',
+    ],
+  },
+  'makia-form-jacket': {
+    name: 'Makia Form winterjas',
+    description:
+      'Lange winterjas met normale pasvorm en isolatie van gerecycled polyester. Een verborgen boord in de mouwopening sluit de manchet af tegen wind, en dat telt op een januaristraat in Rovaniemi zwaarder dan welke kenmerkenlijst ook.',
+    specs: [
+      'Isolatie van gerecycled polyester, verborgen boorden in de manchetten',
+      'S tot XXL',
+    ],
+  },
+  'makia-martin-beanie': {
+    name: 'Makia Martin merino muts',
+    description:
+      'Muts van 100 procent merinowol met een klein embleem, gebreid in Finland. De goedkoopste weg naar Makia en het stuk dat van oktober tot april het vaakst dagelijks gedragen wordt.',
+    specs: [
+      '100 % merinowol',
+      'Gemaakt in Finland',
+      'Eén maat',
+    ],
+  },
+  'makia-mari-balaclava': {
+    name: 'Makia Mari gebreide bivakmuts',
+    description:
+      'Gebreide bivakmuts van een mix van wol, polyester, alpaca en elastaan. Bedekt oren, hals en wangen in één keer, en dat is het verschil tussen een sneeuwscootertocht en een sneeuwscootertocht die je om de verkeerde reden onthoudt.',
+    specs: [
+      'Mix van wol, polyester, alpaca en elastaan',
+      'Eén maat',
+    ],
+  },
+  'halti-pehmee-merino-beanie': {
+    name: 'Halti Pehmee merino muts',
+    description:
+      'Stadsmuts van 100 procent merinowol met dubbele boord, gemaakt in Finland. Halti noemt hem Pehmee, zacht, en het is de muts voor dagen waarop een skimuts eruit zou zien alsof je verkeerd bent afgeslagen.',
+    specs: [
+      '100 % merinowol',
+      'Gemaakt in Finland',
+      'Plat drogen',
+      'Eén maat',
+    ],
+  },
+  'halti-rockmoon-fleece-hoodie': {
+    name: 'Halti Rockmoon fleecejack met capuchon, heren',
+    description:
+      'Warm fleecejack met capuchon van dubbel geruwde stretchstof, met winddicht microweefsel op capuchon en schouders waar de kou het eerst binnenkomt. Onder een shell op het fjell, alleen rond de hut.',
+    specs: [
+      'Dubbel geruwde stretchfleece, winddicht microweefsel op capuchon en schouders',
+      'S tot XXXL',
+    ],
+  },
+  'halti-viiri-fleece-gloves': {
+    name: 'Halti Viiri fleecehandschoenen',
+    description:
+      'Lichte handschoenen van 45 gram in winddichte Stormwall-fleece, met siliconen gripprint op de handpalm en touchscreentoppen op duim en wijsvinger, zodat de noorderlichtfoto zonder blote handen gemaakt wordt.',
+    specs: [
+      'Stormwall-fleece 100 % polyester, handpalm 65 % polyester, 32 % polyamide, 3 % elastaan',
+      '45 g',
+      'Duim en wijsvinger',
+      'Fijne was op maximaal 30 °C',
+    ],
+    specLabels: [undefined, undefined, 'Touchscreen', undefined],
+  },
+  'nb-moomin-classics-beanie': {
+    name: 'Moomin Classics muts',
+    description:
+      'Muts voor volwassenen uit de collectie Moomin Classics van gerecycled polyester en acryl, beige, één maat. Een officieel Moomin-product, en dat is de lijn die hem van de marktkraamversie scheidt.',
+    specs: [
+      'Gerecycled polyester en acryl',
+      'Volwassenen, één maat',
+      'Beige',
+    ],
+  },
+  'nb-snufkin-mens-socks': {
+    name: 'Snufkin herensokken',
+    description:
+      'Herensokken met Snufkin, EU 40 tot 45, 60 procent katoen met polyester, nylon en elastaan voor rek. Het goedkoopste Moomin-cadeau op deze site dat gedragen wordt in plaats van uitgestald.',
+    specs: [
+      'EU 40-45',
+      '60 % katoen, 33 % polyester, 4 % nylon, 2 % elastaan, 1 % elastodieen',
+    ],
+  },
+  'nb-hattifatteners-retro-socks': {
+    name: 'Hattifnatten retrosokken, dames',
+    description:
+      'Sokken in retrostijl met de Hattifnatten, EU 36 tot 42, 67 procent katoen. Rekbaar genoeg dat één maat de meesten past, en het eerste wat een Moomin-lezer pakt als de sokkenla open staat.',
+    specs: [
+      'EU 36-42',
+      '67 % katoen, 25 % polyester, 4 % elastodieen, 3 % nylon, 1 % elastaan',
+    ],
+  },
+  'sk-suomi-propeller-cap': {
+    name: 'Suomi supporterspet met propeller',
+    description:
+      'Blauw-witte propellerpet voor de tribune, de fanzone en de ijshockeyfinale in de kroeg. Geen serieus hoofddeksel, en dat is precies de bedoeling op een avond dat Finland speelt.',
+    specs: [
+      'Blauw en wit',
+    ],
+  },
+  'sk-muurla-moomin-lantern-tahtihetki': {
+    name: 'Muurla Moomin lantaarn Tähtihetki 18 cm',
+    description:
+      'Handgemaakte lantaarn van loodvrij glas uit Muurla\'s serie Tähtihetki met gouden details, 15,5 cm breed en 18 cm hoog. Dient als kaarslantaarn, als schaal voor het snoep van het seizoen of als vaas voor een klein boeket.',
+    specs: [
+      'Ø 15,5 cm, hoogte 18 cm',
+      'Handgemaakt loodvrij glas',
+      'Handwas',
+    ],
+  },
+  'sk-hukka-soapstone-candle': {
+    name: 'Hukka Jätkänkynttilä stenen waxinelichthouder',
+    description:
+      'Stenen waxinelichthouder in de vorm van een jätkänkynttilä, het gespleten houtblokvuur dat houthakkers op de sneeuw aanstaken. 56 mm breed, 100 mm hoog, 310 gram, voor een waxinelichtje van 40 mm. Levend vuur op koude steen, binnen.',
+    specs: [
+      'Ø 56 x 100 mm, voor een waxinelichtje van Ø 40 mm',
+      '0,31 kg',
+      '1 houder',
+    ],
+  },
+  'sk-muurla-moomin-enamel-mug-lumipyry': {
+    name: 'Muurla Moomin emaillen mok Lumipyry 3,7 dl',
+    description:
+      'Emaillen mok van 3,7 dl met een kern van koolstofstaal en dubbele emaillelaag, bedrukt met de sneeuwstormscène Lumipyry. Voor warme en koude dranken, mag in de vaatwasser en mee naar het kampvuur, niet in de magnetron.',
+    specs: [
+      '3,7 dl',
+      'Koolstofstaal met dubbele emaillelaag',
+      'Vaatwasserbestendig, niet voor de magnetron',
+    ],
+  },
+  'sk-arabia-moomin-pitcher-moominhouse': {
+    name: 'Arabia Moomin kan 1,0 l, Moominhuis',
+    description:
+      'Kan van één liter van Arabia met het Moominhuis, het ronde kachelvormige huis dat Moominpappa zelf bouwde en \'s nachts nooit op slot doet. Met keramisch deksel dat op een zomertafel insecten uit het sap houdt.',
+    specs: [
+      '1,0 l',
+      'Keramisch deksel inbegrepen',
+    ],
+    specLabels: [undefined, 'Deksel'],
+  },
+  'sk-moomin-duvet-set-merella': {
+    name: 'Moomin dekbedovertrekset 140 x 200 cm, Merellä',
+    description:
+      'Katoenen dekbedovertrek en kussensloop met de Moomins op zee, overtrek 140 x 200 cm en sloop 50 x 70 cm, ritssluiting. Wassen voor het eerste gebruik, zoals elk bedrukt katoenen beddengoed.',
+    specs: [
+      'Dekbedovertrek 140 x 200 cm, kussensloop 50 x 70 cm',
+      '100 % katoen',
+      'Rits',
+    ],
+    specLabels: [undefined, undefined, 'Sluiting'],
+  },
+  'sk-moomin-kids-duvet-set-halaus': {
+    name: 'Moomin kinderdekbedovertrekset 100 x 135 cm, Halaus',
+    description:
+      'Katoenen kinderdekbedovertrek en kussensloop in het dessin Halaus, knuffel, overtrek 100 x 135 cm en sloop 60 x 40 cm met rits. De maat past een ledikant of juniorbed, dus een eerste beddengoedcadeau.',
+    specs: [
+      'Dekbedovertrek 100 x 135 cm, kussensloop 60 x 40 cm',
+      '100 % katoen',
+      'Rits',
+    ],
+    specLabels: [undefined, undefined, 'Sluiting'],
+  },
+  'sk-arabia-moomintroll-mini-figurine': {
+    name: 'Arabia Moomintroll minifiguur',
+    description:
+      'Handgemaakte keramische Moomintroll van ongeveer 6 cm hoog, in de jaren 1990 ontworpen door Tuulikki Pietilä en verkocht in een eigen geschenkdoos. De figuurtjes worden in series verzameld, wat er één een veilig cadeau maakt en twee een gewoonte.',
+    specs: [
+      'Hoogte ongeveer 6 cm',
+      'Handgemaakt keramiek',
+      'Tuulikki Pietilä, jaren 1990',
+    ],
+    specLabels: [undefined, undefined, 'Ontwerp'],
+  },
+  'sk-arabia-snorkmaiden-mini-figurine': {
+    name: 'Arabia Snorkjuffrouw minifiguur',
+    description:
+      'Handgemaakte keramische Snorkjuffrouw van ongeveer 6 cm hoog uit de serie van Tuulikki Pietilä uit de jaren 1990, in een eigen geschenkdoos. Zet haar naast de Moomintroll en de twee staan op de vensterbank zoals op de boekomslagen.',
+    specs: [
+      'Hoogte ongeveer 6 cm',
+      'Handgemaakt keramiek',
+      'Tuulikki Pietilä, jaren 1990',
+    ],
+    specLabels: [undefined, undefined, 'Ontwerp'],
+  },
+  'sk-lapin-puukko-gift-box': {
+    name: 'Lapland puukko met lemmetbeschermer, geschenkdoos',
+    description:
+      'Puukko in Laplandse stijl met lemmetbeschermer, geleverd in een geschenkdoos. De winkel presenteert het als het mes voor bostochten en dagelijkse klussen, en als het soort voorwerp dat wordt doorgegeven in plaats van vervangen.',
+    specs: [
+      'Lemmetbeschermer en geschenkdoos',
+    ],
+    specLabels: ['Inbegrepen'],
+  },
+  'sk-loimu-sauna-thermometer': {
+    name: 'Loimu saunathermometer, berken',
+    description:
+      'Saunathermometer in een berkenhouten lijst met duidelijke wijzerplaat. Hij beantwoordt de enige vraag die een gast stelt voor de eerste schep water, en hij ziet eruit alsof hij op een blokhutwand hoort in plaats van naast een ketel.',
+    specs: [
+      'Berken',
+    ],
+  },
+  'sk-helsingin-villasukkatehdas-wool-socks': {
+    name: 'Helsingin Villasukkatehdas wollen sokken',
+    description:
+      'Kaardwollen sokken van de enige traditionele wolsokkenfabriek van Finland, gebreid op machines uit de jaren 1950 in Helsinki. 70 procent mulesingvrije wol, gesponnen in Jämsä en geverfd in Kyröskoski, in meerdere maten en vier kleuren genoemd naar schors, mos, korstmos en nacht.',
+    specs: [
+      '70 % wol (mulesingvrij), 30 % polyamide',
+      'Gebreid in Helsinki, wol gesponnen in Jämsä en geverfd in Kyröskoski',
+      'Meerdere maten, vier kleuren',
+    ],
+  },
+  'sk-halva-salmiakkikalat': {
+    name: 'Halva Salmiakkikalat zoute dropvisjes 230 g',
+    description:
+      'Visvormige salmiaksnoepjes van Halva, 230 gram, de zak die in elk Fins dashboardkastje ligt. Stevige beet, intense zoute drop, en het eerste wat je een bezoeker geeft die zegt echt Finland te willen proeven.',
+    specs: [
+      '230 g',
+    ],
+  },
+  'sk-kouvolan-lakritsi-500g': {
+    name: 'Kouvolan Lakritsi dropstukken 500 g',
+    description:
+      'Een halve kilo zachte dropstukken uit Kouvola, gemaakt naar een recept uit 1945 dat in 1960 werd verfijnd door een Engelse dropspecialist. Zo smaakt gewone drop als er niets wordt toegevoegd om de wortel te verbergen.',
+    specs: [
+      '500 g',
+      'Uit 1945, aangepast in 1960',
+    ],
+    specLabels: [undefined, 'Recept'],
+  },
+  'sk-fazer-omar-chocolate-bar': {
+    name: 'Fazer Omar chocoladereep 180 g',
+    description:
+      'Gelimiteerde reep van 180 gram voor de 60e verjaardag van Omar: de milde, romige Omar-toffee die sinds 1966 wordt verkocht, in Fazer melkchocolade met minstens 30 procent cacao. Slechts beperkte tijd te koop.',
+    specs: [
+      '180 g',
+      'Melkchocolade met minstens 30 % cacao',
+      'Gelimiteerde editie voor het 60-jarig jubileum',
+    ],
+    specLabels: [undefined, 'Cacao', 'Beschikbaarheid'],
+  },
+  'sk-fazer-salty-suffeli-puffi': {
+    name: 'Karl Fazer Salty Suffeli Puffi chocoladereep 160 g',
+    description:
+      'Fazers melkchocolade van verse melk met knapperige zout-zoete Suffeli-maïspuffen erdoor. 160 gram, minstens 30 procent cacao, en het antwoord voor wie niet kan kiezen tussen zout en zoet.',
+    specs: [
+      '160 g',
+      'Melkchocolade met minstens 30 % cacao',
+    ],
+    specLabels: [undefined, 'Cacao'],
+  },
+  'sk-tyrkisk-peber-chewy': {
+    name: 'Fazer Tyrkisk Peber Chewy salmiakpastilles 38 g',
+    description:
+      'De hete salmiak van Tyrkisk Peber als nieuwe zachte kauwpastille in plaats van een harde schil. Een zakverpakking van 38 gram, door de winkel gelist in augustus 2026, voor wie salmiak en een kick in dezelfde hap wil.',
+    specs: [
+      '38 g',
+    ],
+  },
+  'sk-tyrkisk-peber-sour-foams': {
+    name: 'Fazer Tyrkisk Peber Sour Foams schuimsnoepjes 150 g',
+    description:
+      'Zachte schuimsnoepjes met een milde Tyrkisk Peber-hitte en zure smaken van kiwi-aardbei en citroen-limoen, 150 gram. Een zachtere weg naar de peperdropfamilie, en de zak die je in gemengd gezelschap als eerste opent.',
+    specs: [
+      '150 g',
+    ],
+  },
+  'sk-marianne-toffee-rae': {
+    name: 'Fazer Marianne Toffee chocoladedragees 150 g',
+    description:
+      'De Marianne-dragees in een toffeeversie: een glanzende, krokante schil rond een kern van melkchocolade met minstens 28 procent cacao, in een hersluitbare zak van 150 gram. Ook bedoeld om mee te bakken, als er zo lang nog over zijn.',
+    specs: [
+      '150 g',
+      'Melkchocolade met minstens 28 % cacao',
+      'Hersluitbare zak',
+    ],
+    specLabels: [undefined, 'Cacao', 'Verpakking'],
+  },
+  'sk-fasupala-lakritsi': {
+    name: 'Fazer Fasupala Lakritsi wafelkoekjes 199 g',
+    description:
+      'Hapklare wafels met een vulling met dropsmaak onder een laagje met melkchocoladesmaak, 199 gram, zonder palmolie. De dropversie van een koekje dat Finnen al per doos eten, door de winkel gelist in augustus 2026.',
+    specs: [
+      '199 g',
+      'Zonder palmolie',
+    ],
+    specLabels: [undefined, 'Vet'],
+  },
+  'sk-finnish-flavours-cloudberry-jam': {
+    name: 'Finnish Flavours premium kruipbraamjam 250 g',
+    description:
+      'Kruipbraamjam met 75 procent Finse kruipbramen en 20 procent suiker, 250 gram. Kruipbramen rijpen eind juli op Laplandse venen en zijn niet op grote schaal te kweken, en daarom kost een pot zoveel als twee zakken chocolade.',
+    specs: [
+      '250 g',
+      'Finse kruipbraam 75 %, suiker 20 %',
+    ],
+  },
+  'sk-lapin-liha-smoked-reindeer-soup': {
+    name: 'Lapin Liha gerookte rendiersoep 400 g',
+    description:
+      'Romige soep met warm en koud gerookt rendier, 400 gram, gemaakt door Lapin Liha. Verwarmen in een pan; het is de smaak van een Laplandse hutlunch in een pak dat in een koffer past.',
+    specs: [
+      '400 g',
+      'Warm gerookt rendier 3 % en koud gerookt rendier 3 %',
+      'Verwarmen in een pan',
+    ],
+    specLabels: [undefined, undefined, 'Bereiding'],
+  },
+  'sk-vaasan-ruispalat-5pack': {
+    name: 'Vaasan Ruispalat roggebrood 5 x 330 g',
+    description:
+      'Vijf zakken van het best verkochte brood van Finland: gescheurde volkorenroggebroodjes gebakken op echt zuurdesem van 100 procent Fins graan, zes per zak van 330 gram, 12 procent vezels. Wat Finnen in het buitenland bezoekers vragen mee te nemen.',
+    specs: [
+      '5 x 330 g, 6 broodjes per zak',
+      'Volkorenrogge 87 % van het graan, vezels 12 %',
+    ],
+  },
+  'sk-poikain-parhaat-freeze-dried-blueberry': {
+    name: 'Poikain Parhaat gevriesdroogde bosbessen 15 g',
+    description:
+      'Hele Finse bosbessen, gevriesdroogd en verder niets: 15 gram die in een koffer niets wegen en naar augustus op een veen smaken. Lactosevrij, glutenvrij, veganistisch, zonder toegevoegde suiker of conserveermiddelen.',
+    specs: [
+      '15 g',
+      '100 % Finse gevriesdroogde bosbes',
+      'Lactosevrij, glutenvrij, veganistisch, geen toegevoegde suiker, geen conserveermiddelen',
+    ],
+    specLabels: [undefined, undefined, 'Dieet'],
+  },
+  'rj-arctic-warriors-blueberry-powder': {
+    name: 'Arctic Warriors bosbessenpoeder 45 g',
+    description:
+      'Finse bosbessen, heel met hun sap gedroogd en gemalen, niets toegevoegd, 45 gram. Een lepel in pap, yoghurt of een smoothie; dezelfde bes wordt hier via Ruohonjuuri verkocht, dat binnen de EU verzendt.',
+    specs: [
+      '45 g',
+      '100 % Finse bosbes, heel gedroogd met het sap',
+    ],
+  },
+  'rj-poikain-parhaat-blueberry-lemonade': {
+    name: 'Poikain Parhaat bosbessenlimonade 0,33 l',
+    description:
+      'Biologische bosbessenlimonade gemaakt in Vehmainen, Tampere, van echte ingrediënten zonder kunstmatige smaak- of kleurstoffen, fles van 0,33 liter. De frisdrank naast de salmiak op een Finse proeftafel.',
+    specs: [
+      '0,33 l',
+      'Gemaakt in Vehmainen, Tampere',
+      'Biologisch, geen kunstmatige smaak- of kleurstoffen',
+    ],
+    specLabels: [undefined, undefined, 'Toevoegingen'],
+  },
+  'rj-nordic-koivu-birch-sap': {
+    name: 'Nordic Koivu berkensap 500 ml',
+    description:
+      'Berkensap, in het voorjaar getapt wanneer de boom het in de wortels opgeslagen water omhoog haalt, rechtstreeks van de boom gebotteld zonder hittebehandeling of conserveermiddelen, 500 ml. Smaakt licht zoet en vooral naar koud, schoon water.',
+    specs: [
+      '500 ml',
+      'Niet hittebehandeld, geen conserveermiddelen',
+    ],
+    specLabels: [undefined, 'Verwerking'],
+  },
+  'rj-kaino-spruce-sprout-sparkling-075': {
+    name: 'KAINO Drinks sparrenscheuten biologische bruisdrank 0,75 l',
+    description:
+      'Alcoholvrije biologische bruisdrank met sparrenscheuten, de tere meiloten van de Finse spar, in een fles van 0,75 liter. Gemaakt in Vehmainen, Tampere, voor de toost op een feest waar niet iedereen drinkt.',
+    specs: [
+      '0,75 l',
+      'Alcoholvrij, biologisch',
+      'Gemaakt in Vehmainen, Tampere',
+    ],
+    specLabels: [undefined, 'Alcohol', undefined],
+  },
+  'rj-yrttipaja-chaga-powder': {
+    name: 'Yrttipaja chagapoeder 35 g',
+    description:
+      'Gemalen chaga, de zwarte zwam die op berkenstammen groeit, om als thee te zetten: een eetlepel per liter water, minstens tien minuten laten trekken op het vuur en zeven. 35 gram, de goedkoopste manier om pakuri te proberen voor je brokken koopt.',
+    specs: [
+      '35 g',
+      '1 eetlepel per liter water, minstens 10 minuten zachtjes koken en zeven',
+    ],
+    specLabels: [undefined, 'Gebruik'],
+  },
+  'rj-forestly-mushroom-chips-chili': {
+    name: 'Forestly Foods paddenstoelchips, chili 50 g',
+    description:
+      'Knapperige chips van biologisch gekweekte shiitake, zacht gegaard en gekruid met chili, zout en peper, 50 gram. Umami in een zak, voor op de bank of verkruimeld over een soep.',
+    specs: [
+      '50 g',
+      'Biologisch gekweekte shiitake, chili, zout en peper',
+    ],
   },
 }

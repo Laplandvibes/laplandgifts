@@ -604,23 +604,11 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     description:
       'Frystorkade granskott, handplockade under ett tvåveckorsfönster i ekologiska statliga skogar, och bara vartannat år ur samma skog. Citrus och kåda i en sked, 382 mg C-vitamin per 100 g.',
     specs: [
-      '40 g, brutto 0,046 kg',
-      '3 x 11 x 17 cm',
-      'Frystorkat granskott',
-      'Finland',
-      '1 till 3 teskedar per dag',
-      'Energi 1683 kJ / 402 kcal, protein 12,1 g, kolhydrat 77,8 g, fett 4,19 g. C-vitamin 382 mg, A-vitamin 970 µg, K1-vitamin 332 mg, kalium 1200 mg, fosfor 350 mg, kalcium 130 mg, magnesium 120 mg, zink 3,6 mg, järn 2 mg',
-      'Skördat med licens i ekologiska skogar som ägs av finska Forststyrelsen, vartannat år per skog',
+      '40 g',
+      'Frystorkade granskott',
+      '382 mg per 100 g',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Dosering',
-      'Näringsvärde per 100 g',
-      'Skörd',
-    ],
+    specLabels: [undefined, undefined, 'C-vitamin'],
   },
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors nässelpulver 150 g',
@@ -641,15 +629,9 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     description:
       'Rosenrot växer på fuktiga bäckstränder och klippväggar på Lapplands fjäll, och Arctic Warriors extraherar den i vegetabiliskt glycerol tillsammans med nässla. En tesked går i te, gröt eller yoghurt.',
     specs: [
-      '100 ml, brutto 0,270 kg',
-      '4,5 x 4,5 x 13 cm',
-      'Vegetabiliskt glycerol, nässla, rosenrot',
-      'Finland',
-      '1 till 2 teskedar per dag',
-      'Mjölkfri, glutenfri, vegansk. Det vegetabiliska glycerolet påverkar inte blodsockret',
-      'Ett kosttillskott ersätter inte en varierad kost. Förvaras utom räckhåll för barn och överskrid inte angiven dos',
+      '100 ml',
+      'Rosenrot och nässla',
     ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Dosering', 'Kost', 'Observera'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 havtorns- och olivolja 150 ml',
@@ -1361,5 +1343,416 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Brun eller rosa',
     ],
     specLabels: [undefined, undefined, 'Färger'],
+  },
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': {
+    name: 'Makia Kontio huvtröja',
+    description:
+      'Huvtröja i normal passform av 100 procent ekologisk bomull, färgad efter sömnaden. Plaggfärgning ger djupare färg och mjukare känsla än garnfärgning, och nyansen behåller sitt lätt slitna utseende tvätt efter tvätt.',
+    specs: [
+      '100 % ekologisk bomull, plaggfärgad',
+      'S till XXL',
+    ],
+  },
+  'makia-trademark-hoodie': {
+    name: 'Makia Trademark huvtröja',
+    description:
+      'Makias enklaste hoodie: normal passform, 100 procent ekologisk bomull och det lilla varumärket på bröstet. Den att packa för en stugvecka där samma tröja går från morgonbrasan till bastuverandan på kvällen.',
+    specs: [
+      '100 % ekologisk bomull',
+      'S till XXL',
+    ],
+  },
+  'makia-moray-zip-knit': {
+    name: 'Makia Moray stickad kofta med dragkedja',
+    description:
+      'Kofta med dragkedja i normal passform, stickad av 100 procent merinoull. Merino värmer utan att bli bylsig och torkar inifrån, så den fungerar som lager under skalet på fjällvandringen och ensam på ett varmt kafé.',
+    specs: [
+      '100 % merinoull',
+      'S till XXL',
+    ],
+  },
+  'makia-form-jacket': {
+    name: 'Makia Form vinterjacka',
+    description:
+      'Lång vinterjacka med normal passform och vadd av återvunnen polyester. En dold mudd inne i ärmslutet stänger manschetten mot vinden, och det betyder mer på en januarigata i Rovaniemi än någon funktionslista.',
+    specs: [
+      'Vadd av återvunnen polyester, dolda muddar i ärmarna',
+      'S till XXL',
+    ],
+  },
+  'makia-martin-beanie': {
+    name: 'Makia Martin merinomössa',
+    description:
+      'Mössa i 100 procent merinoull med en liten etikett, stickad i Finland. Det billigaste sättet in i Makia och plagget som troligast bärs varje dag från oktober till april.',
+    specs: [
+      '100 % merinoull',
+      'Tillverkad i Finland',
+      'En storlek',
+    ],
+  },
+  'makia-mari-balaclava': {
+    name: 'Makia Mari stickad balaklava',
+    description:
+      'Stickad balaklava i en blandning av ull, polyester, alpacka och elastan. Täcker öron, hals och kinder på en gång, vilket är skillnaden mellan en skotertur och en skotertur man minns av fel anledning.',
+    specs: [
+      'Blandning av ull, polyester, alpacka och elastan',
+      'En storlek',
+    ],
+  },
+  'halti-pehmee-merino-beanie': {
+    name: 'Halti Pehmee merinomössa',
+    description:
+      'Stadsmössa i 100 procent merinoull med dubbel mudd, tillverkad i Finland. Halti kallar den Pehmee, mjuk, och det är mössan för dagar då en skidmössa skulle se ut som om man svängt fel.',
+    specs: [
+      '100 % merinoull',
+      'Tillverkad i Finland',
+      'Plantorkas',
+      'En storlek',
+    ],
+  },
+  'halti-rockmoon-fleece-hoodie': {
+    name: 'Halti Rockmoon fleecejacka med huva, herr',
+    description:
+      'Varm fleecejacka med huva i dubbelborstat stretchtyg, med vindtätt mikrotyg på huva och axlar där kylan kommer in först. Under skalet på fjället, ensam runt stugan.',
+    specs: [
+      'Dubbelborstad stretchfleece, vindtätt mikrotyg på huva och axlar',
+      'S till XXXL',
+    ],
+  },
+  'halti-viiri-fleece-gloves': {
+    name: 'Halti Viiri fleecehandskar',
+    description:
+      'Lätta 45-gramshandskar i vindtät Stormwall-fleece, med silikongrepp i handflatan och pekskärmsfingertoppar på tumme och pekfinger, så att norrskensbilden tas utan bara händer.',
+    specs: [
+      'Stormwall-fleece 100 % polyester, handflata 65 % polyester, 32 % polyamid, 3 % elastan',
+      '45 g',
+      'Tumme och pekfinger',
+      'Skontvätt i högst 30 °C',
+    ],
+    specLabels: [undefined, undefined, 'Pekskärm', undefined],
+  },
+  'nb-moomin-classics-beanie': {
+    name: 'Mumin Classics mössa',
+    description:
+      'Vuxenmössa ur kollektionen Moomin Classics i återvunnen polyester och akryl, beige, en storlek. En officiell Muminprodukt, och det är linjen som skiljer den från torgståndsversionen.',
+    specs: [
+      'Återvunnen polyester och akryl',
+      'Vuxen, en storlek',
+      'Beige',
+    ],
+  },
+  'nb-snufkin-mens-socks': {
+    name: 'Snusmumriken herrstrumpor',
+    description:
+      'Herrstrumpor med Snusmumriken, EU 40 till 45, 60 procent bomull med polyester, nylon och elastan för stretch. Den billigaste Muminpresenten på sajten som ändå används i stället för att ställas fram.',
+    specs: [
+      'EU 40-45',
+      '60 % bomull, 33 % polyester, 4 % nylon, 2 % elastan, 1 % elastodien',
+    ],
+  },
+  'nb-hattifatteners-retro-socks': {
+    name: 'Hattifnattar retrostrumpor, dam',
+    description:
+      'Strumpor i retrostil med hattifnattarna, EU 36 till 42, 67 procent bomull. Stretchiga nog att en storlek passar de flesta, och det första en Muminläsare plockar upp när strumplådan står öppen.',
+    specs: [
+      'EU 36-42',
+      '67 % bomull, 25 % polyester, 4 % elastodien, 3 % nylon, 1 % elastan',
+    ],
+  },
+  'sk-suomi-propeller-cap': {
+    name: 'Suomi supporterkeps med propeller',
+    description:
+      'Blåvit propellerkeps för läktaren, fanzonen och ishockeyfinalen på puben. Ingen seriös huvudbonad, och det är precis poängen en kväll när Finland spelar.',
+    specs: [
+      'Blått och vitt',
+    ],
+  },
+  'sk-muurla-moomin-lantern-tahtihetki': {
+    name: 'Muurla Mumin lykta Tähtihetki 18 cm',
+    description:
+      'Handgjord lykta i blyfritt glas ur Muurlas serie Tähtihetki med gulddetaljer, 15,5 cm bred och 18 cm hög. Fungerar som ljuslykta, som skål för säsongens godis eller som vas för en liten bukett.',
+    specs: [
+      'Ø 15,5 cm, höjd 18 cm',
+      'Handgjort blyfritt glas',
+      'Handdisk',
+    ],
+  },
+  'sk-hukka-soapstone-candle': {
+    name: 'Hukka Jätkänkynttilä värmeljushållare i sten',
+    description:
+      'Värmeljushållare i sten formad som en jätkänkynttilä, den kluvna stockelden som skogsarbetare tände på snön. 56 mm bred, 100 mm hög, 310 gram, för ett 40 mm värmeljus. Levande eld på kall sten, inomhus.',
+    specs: [
+      'Ø 56 x 100 mm, för ett värmeljus Ø 40 mm',
+      '0,31 kg',
+      '1 hållare',
+    ],
+  },
+  'sk-muurla-moomin-enamel-mug-lumipyry': {
+    name: 'Muurla Mumin emaljmugg Lumipyry 3,7 dl',
+    description:
+      'Emaljmugg på 3,7 dl med kärna av kolstål och dubbel emaljering, tryckt med snöstormsscenen Lumipyry. Tål varma och kalla drycker, går i diskmaskinen och ut till lägerelden, inte in i mikron.',
+    specs: [
+      '3,7 dl',
+      'Kolstål med dubbel emaljering',
+      'Tål maskindisk, inte för mikrovågsugn',
+    ],
+  },
+  'sk-arabia-moomin-pitcher-moominhouse': {
+    name: 'Arabia Mumin kanna 1,0 l, Muminhuset',
+    description:
+      'Enliters kanna från Arabia med Muminhuset, det runda kakelugnsformade huset som Muminpappan byggde själv och aldrig låser om natten. Med keramiklock som håller insekterna borta från saften på sommarbordet.',
+    specs: [
+      '1,0 l',
+      'Keramiklock ingår',
+    ],
+    specLabels: [undefined, 'Lock'],
+  },
+  'sk-moomin-duvet-set-merella': {
+    name: 'Mumin påslakanset 140 x 200 cm, Merellä',
+    description:
+      'Påslakan och örngott i bomull med Muminfamiljen till havs, påslakan 140 x 200 cm och örngott 50 x 70 cm, dragkedja. Tvättas före första användning, som alla tryckta bomullssängkläder.',
+    specs: [
+      'Påslakan 140 x 200 cm, örngott 50 x 70 cm',
+      '100 % bomull',
+      'Dragkedja',
+    ],
+    specLabels: [undefined, undefined, 'Stängning'],
+  },
+  'sk-moomin-kids-duvet-set-halaus': {
+    name: 'Mumin påslakanset för barn 100 x 135 cm, Halaus',
+    description:
+      'Påslakan och örngott i bomull för barn i mönstret Halaus, kram, påslakan 100 x 135 cm och örngott 60 x 40 cm med dragkedja. Storleken passar spjälsäng eller juniorsäng, alltså en första sängklädespresent.',
+    specs: [
+      'Påslakan 100 x 135 cm, örngott 60 x 40 cm',
+      '100 % bomull',
+      'Dragkedja',
+    ],
+    specLabels: [undefined, undefined, 'Stängning'],
+  },
+  'sk-arabia-moomintroll-mini-figurine': {
+    name: 'Arabia Mumintrollet minifigur',
+    description:
+      'Handgjort Mumintroll i keramik, cirka 6 cm högt, formgivet av Tuulikki Pietilä på 1990-talet och sålt i egen presentask. Figurerna samlas i serier, vilket gör en till en säker present och två till en vana.',
+    specs: [
+      'Höjd cirka 6 cm',
+      'Handgjord keramik',
+      'Tuulikki Pietilä, 1990-talet',
+    ],
+    specLabels: [undefined, undefined, 'Formgivning'],
+  },
+  'sk-arabia-snorkmaiden-mini-figurine': {
+    name: 'Arabia Snorkfröken minifigur',
+    description:
+      'Handgjord Snorkfröken i keramik, cirka 6 cm hög, ur Tuulikki Pietiläs serie från 1990-talet, i egen presentask. Para ihop med Mumintrollet så står de två på fönsterbrädan som på bokomslagen.',
+    specs: [
+      'Höjd cirka 6 cm',
+      'Handgjord keramik',
+      'Tuulikki Pietilä, 1990-talet',
+    ],
+    specLabels: [undefined, undefined, 'Formgivning'],
+  },
+  'sk-lapin-puukko-gift-box': {
+    name: 'Lapplandspuukko med bladskydd, presentask',
+    description:
+      'Puukko i lappländsk stil med bladskydd, levererad i presentask. Butiken presenterar den som kniven för skogsturer och vardagssysslor, och som den sortens föremål som går i arv i stället för att bytas ut.',
+    specs: [
+      'Bladskydd och presentask',
+    ],
+    specLabels: ['Ingår'],
+  },
+  'sk-loimu-sauna-thermometer': {
+    name: 'Loimu bastutermometer, björk',
+    description:
+      'Bastutermometer i björkram med tydlig skala. Den svarar på den enda fråga en gäst ställer före första skopan vatten, och den ser ut att höra hemma på en timmervägg snarare än bredvid en panna.',
+    specs: [
+      'Björk',
+    ],
+  },
+  'sk-helsingin-villasukkatehdas-wool-socks': {
+    name: 'Helsingin Villasukkatehdas ullstrumpor',
+    description:
+      'Kardullstrumpor från Finlands enda traditionella ullstrumpsfabrik, stickade på 1950-talsmaskiner i Helsingfors. 70 procent mulesingfri ull spunnen i Jämsä och färgad i Kyröskoski, i flera storlekar och fyra färger döpta efter bark, mossa, lav och natt.',
+    specs: [
+      '70 % ull (mulesingfri), 30 % polyamid',
+      'Stickade i Helsingfors, ullen spunnen i Jämsä och färgad i Kyröskoski',
+      'Flera storlekar, fyra färger',
+    ],
+  },
+  'sk-halva-salmiakkikalat': {
+    name: 'Halva Salmiakkikalat saltlakritsfiskar 230 g',
+    description:
+      'Fiskformade salmiakgodisar från Halva, 230 gram, påsen som ligger i varje finskt handskfack. Fast tugga, intensiv saltlakrits, och det första man räcker en besökare som säger sig vilja smaka riktiga Finland.',
+    specs: [
+      '230 g',
+    ],
+  },
+  'sk-kouvolan-lakritsi-500g': {
+    name: 'Kouvolan Lakritsi lakritsbitar 500 g',
+    description:
+      'Ett halvt kilo mjuka lakritsbitar från Kouvola, gjorda efter ett recept från 1945 som finjusterades 1960 av en engelsk lakritsspecialist. Så här smakar ren lakrits när inget tillsätts för att dölja roten.',
+    specs: [
+      '500 g',
+      'Från 1945, justerat 1960',
+    ],
+    specLabels: [undefined, 'Recept'],
+  },
+  'sk-fazer-omar-chocolate-bar': {
+    name: 'Fazer Omar chokladkaka 180 g',
+    description:
+      'Begränsad 180-gramskaka till Omars 60-årsjubileum: den milda, krämiga Omar-kolan som sålts sedan 1966, i Fazers mjölkchoklad med minst 30 procent kakao. Säljs bara under begränsad tid.',
+    specs: [
+      '180 g',
+      'Mjölkchoklad med minst 30 % kakao',
+      'Begränsad upplaga till 60-årsjubileet',
+    ],
+    specLabels: [undefined, 'Kakao', 'Tillgänglighet'],
+  },
+  'sk-fazer-salty-suffeli-puffi': {
+    name: 'Karl Fazer Salty Suffeli Puffi chokladkaka 160 g',
+    description:
+      'Fazers mjölkchoklad gjord på färsk mjölk, med knapriga saltsöta Suffeli-majspuffar invikta. 160 gram, minst 30 procent kakao, och svaret för den som inte kan välja mellan salt och sött.',
+    specs: [
+      '160 g',
+      'Mjölkchoklad med minst 30 % kakao',
+    ],
+    specLabels: [undefined, 'Kakao'],
+  },
+  'sk-tyrkisk-peber-chewy': {
+    name: 'Fazer Tyrkisk Peber Chewy salmiakpastiller 38 g',
+    description:
+      'Tyrkisk Pebers heta salmiak som ny mjuk tuggpastill i stället för hårt skal. En 38-grams fickförpackning, listad av butiken i augusti 2026, för den som vill ha salmiak och sting i samma munsbit.',
+    specs: [
+      '38 g',
+    ],
+  },
+  'sk-tyrkisk-peber-sour-foams': {
+    name: 'Fazer Tyrkisk Peber Sour Foams skumgodis 150 g',
+    description:
+      'Mjuka skumgodisar med mild Tyrkisk Peber-hetta och syrliga smaker av kiwi-jordgubb och citron-lime, 150 gram. En mildare väg in i pepparlakritsfamiljen, och påsen som öppnas först i ett blandat sällskap.',
+    specs: [
+      '150 g',
+    ],
+  },
+  'sk-marianne-toffee-rae': {
+    name: 'Fazer Marianne Toffee chokladdragéer 150 g',
+    description:
+      'Marianne-dragéerna i kolaversion: blankt krispigt skal runt en kärna av mjölkchoklad med minst 28 procent kakao, i återförslutbar 150-gramspåse. Också tänkta för bakning, om några överlever så länge.',
+    specs: [
+      '150 g',
+      'Mjölkchoklad med minst 28 % kakao',
+      'Återförslutbar påse',
+    ],
+    specLabels: [undefined, 'Kakao', 'Förpackning'],
+  },
+  'sk-fasupala-lakritsi': {
+    name: 'Fazer Fasupala Lakritsi rånkex 199 g',
+    description:
+      'Munsbitsstora rån med lakritssmakande fyllning under ett överdrag med mjölkchokladsmak, 199 gram, utan palmolja. Lakritsversionen av ett kex finländare redan äter i lådor, listad av butiken i augusti 2026.',
+    specs: [
+      '199 g',
+      'Utan palmolja',
+    ],
+    specLabels: [undefined, 'Fett'],
+  },
+  'sk-finnish-flavours-cloudberry-jam': {
+    name: 'Finnish Flavours premium hjortronsylt 250 g',
+    description:
+      'Hjortronsylt med 75 procent finska hjortron och 20 procent socker, 250 gram. Hjortron mognar på lappländska myrar i slutet av juli och kan inte odlas i stor skala, och det är därför en burk kostar lika mycket som två påsar choklad.',
+    specs: [
+      '250 g',
+      'Finskt hjortron 75 %, socker 20 %',
+    ],
+  },
+  'sk-lapin-liha-smoked-reindeer-soup': {
+    name: 'Lapin Liha rökt rensoppa 400 g',
+    description:
+      'Krämig soppa med varm- och kallrökt ren, 400 gram, tillverkad av Lapin Liha. Värm i kastrull; det är smaken av en lappländsk stuglunch i en förpackning som får plats i resväskan.',
+    specs: [
+      '400 g',
+      'Varmrökt ren 3 % och kallrökt ren 3 %',
+      'Värm i kastrull',
+    ],
+    specLabels: [undefined, undefined, 'Tillagning'],
+  },
+  'sk-vaasan-ruispalat-5pack': {
+    name: 'Vaasan Ruispalat rågbröd 5 x 330 g',
+    description:
+      'Fem påsar av Finlands mest sålda bröd: rivna fullkornsrågbitar bakade på äkta surdeg av 100 procent finsk spannmål, sex per 330-gramspåse, 12 procent fiber. Det utlandsfinländare ber besökare ta med.',
+    specs: [
+      '5 x 330 g, 6 bitar per påse',
+      'Fullkornsråg 87 % av spannmålen, fiber 12 %',
+    ],
+  },
+  'sk-poikain-parhaat-freeze-dried-blueberry': {
+    name: 'Poikain Parhaat frystorkade blåbär 15 g',
+    description:
+      'Hela finska skogsblåbär, frystorkade och inget annat: 15 gram som inte väger något i resväskan och smakar augusti på en myr. Laktosfria, glutenfria, veganska, utan tillsatt socker eller konserveringsmedel.',
+    specs: [
+      '15 g',
+      '100 % finskt frystorkat blåbär',
+      'Laktosfri, glutenfri, vegansk, utan tillsatt socker, utan konserveringsmedel',
+    ],
+    specLabels: [undefined, undefined, 'Kost'],
+  },
+  'rj-arctic-warriors-blueberry-powder': {
+    name: 'Arctic Warriors blåbärspulver 45 g',
+    description:
+      'Finska blåbär torkade hela med sin saft och malda, inget tillsatt, 45 gram. En sked i gröten, yoghurten eller smoothien; samma bär säljs här via Ruohonjuuri, som skickar inom EU.',
+    specs: [
+      '45 g',
+      '100 % finskt blåbär, torkat helt med saften',
+    ],
+  },
+  'rj-poikain-parhaat-blueberry-lemonade': {
+    name: 'Poikain Parhaat blåbärslemonad 0,33 l',
+    description:
+      'Ekologisk blåbärslemonad gjord i Vehmainen, Tammerfors, av riktiga råvaror utan konstgjorda aromer eller färgämnen, flaska på 0,33 liter. Läsken att ställa bredvid salmiaken på ett finskt provsmakningsbord.',
+    specs: [
+      '0,33 l',
+      'Tillverkad i Vehmainen, Tammerfors',
+      'Ekologisk, inga konstgjorda aromer eller färgämnen',
+    ],
+    specLabels: [undefined, undefined, 'Tillsatser'],
+  },
+  'rj-nordic-koivu-birch-sap': {
+    name: 'Nordic Koivu björksav 500 ml',
+    description:
+      'Björksav tappad på våren när trädet lyfter vattnet det lagrat i rötterna, buteljerad direkt från trädet utan värmebehandling eller konserveringsmedel, 500 ml. Smakar svagt sött och mest av kallt, rent vatten.',
+    specs: [
+      '500 ml',
+      'Inte värmebehandlad, inga konserveringsmedel',
+    ],
+    specLabels: [undefined, 'Behandling'],
+  },
+  'rj-kaino-spruce-sprout-sparkling-075': {
+    name: 'KAINO Drinks granskott ekologisk mousserande dryck 0,75 l',
+    description:
+      'Alkoholfri ekologisk mousserande dryck smaksatt med granskott, den finska granens späda majskott, i flaska på 0,75 liter. Gjord i Vehmainen, Tammerfors, för skålen på en fest där inte alla dricker.',
+    specs: [
+      '0,75 l',
+      'Alkoholfri, ekologisk',
+      'Tillverkad i Vehmainen, Tammerfors',
+    ],
+    specLabels: [undefined, 'Alkohol', undefined],
+  },
+  'rj-yrttipaja-chaga-powder': {
+    name: 'Yrttipaja chagapulver 35 g',
+    description:
+      'Malen chaga, den svarta svampen som växer på björkstammar, att brygga som te: en matsked per liter vatten, sjud minst tio minuter och sila. 35 gram, det billigaste sättet att prova pakuri innan man köper bitar.',
+    specs: [
+      '35 g',
+      '1 matsked per liter vatten, sjud minst 10 minuter och sila',
+    ],
+    specLabels: [undefined, 'Användning'],
+  },
+  'rj-forestly-mushroom-chips-chili': {
+    name: 'Forestly Foods svampchips, chili 50 g',
+    description:
+      'Krispiga chips av ekologiskt odlad shiitake, skonsamt tillagade och kryddade med chili, salt och peppar, 50 gram. Umami i påse, för soffan eller smulade över en soppa.',
+    specs: [
+      '50 g',
+      'Ekologiskt odlad shiitake, chili, salt och peppar',
+    ],
   },
 }

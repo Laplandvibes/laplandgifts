@@ -5,7 +5,9 @@ import ExperienceCard from '../components/shop/ExperienceCard'
 import { GIFT_EXPERIENCES } from '../data/experiences'
 import ProductGridSection from '../components/shop/ProductGridSection'
 import { PRODUCTS } from '../data/products'
-import { LUXURY_MIN_PRICE, LUXURY_HERO_SLUGS } from '../data/luxury'
+import { LUXURY_HERO_SLUGS, luxuryProducts } from '../data/luxury'
+import KalevalaRail from '../shared/ads/KalevalaRail'
+import { trackAffiliateClick } from '../lib/analytics'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
 import { byShippingBreadth } from '../data/sortProducts'
@@ -35,7 +37,9 @@ export default function Luxury() {
   const t = SHOP_COPY[lang].category
   const tl = LUXURY_COPY[lang]
 
-  const all = PRODUCTS.filter((p) => p.priceFrom >= LUXURY_MIN_PRICE)
+  // Elämykset hintarajalla, esineet käsin valitulta listalta (luxury.ts).
+  // Vesa 5.9.: Makia-huppari ei ole luksusta vaikka maksaa 119 €.
+  const all = luxuryProducts(PRODUCTS)
   const visible = country
     ? all.filter((p) => {
         const partner = PARTNERS[p.partnerId]
@@ -52,6 +56,7 @@ export default function Luxury() {
   const experiences = visible
     .filter((p) => p.category === 'experiences')
     .sort((a, b) => rank(a.slug) - rank(b.slug) || b.priceFrom - a.priceFrom)
+  // Esineiden järjestys on listan järjestys, ei hinnan.
   const objects = visible.filter((p) => p.category !== 'experiences')
   const fmtMoney = (n: number) =>
     new Intl.NumberFormat(lang === 'pt-BR' ? 'pt-BR' : lang, { style: 'currency', currency: visible[0]?.currency ?? 'EUR', maximumFractionDigits: 0 }).format(n)
@@ -96,6 +101,17 @@ export default function Luxury() {
               )}
             </section>
           )}
+
+          {/* Kalevala-korut (Kulta-Center): sivun ainoa esineluksus, jolla on
+              hintaa ja historiaa. Rivillä on oma otsikko ja lähdemerkintä. */}
+          <section className="mb-14">
+            <KalevalaRail
+              lang={lang}
+              sid="luxury_kalevala"
+              variant="light"
+              onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)}
+            />
+          </section>
 
           {objects.length > 0 && (
             <section>

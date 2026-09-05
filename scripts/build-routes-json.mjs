@@ -27,7 +27,7 @@ import { THEMES } from '../src/data/themes.ts'
 import { BRANDS } from '../src/data/brands.ts'
 import { BRAND_COPY } from '../src/locales/brandCopy.ts'
 import { LUXURY_COPY } from '../src/locales/luxuryCopy.ts'
-import { LUXURY_MIN_PRICE } from '../src/data/luxury.ts'
+import { luxuryProducts } from '../src/data/luxury.ts'
 import { THEME_COPY } from '../src/locales/themeCopy.ts'
 import { PRODUCTS } from '../src/data/products.ts'
 // 🔴 Kieltenväliset tuotetekstit ladataan SUORAAN kielitiedostoista eikä
@@ -557,7 +557,7 @@ const themeRoutes = THEMES.map((theme) => {
 const luxuryRoute = (() => {
   // lead on funktio (n, min, max): samat luvut kuin sivulla, koko katalogista
   // (sivu suodattaa lisäksi toimitusmaan mukaan, jota metassa ei ole).
-  const lux = PRODUCTS.filter((p) => p.priceFrom >= LUXURY_MIN_PRICE)
+  const lux = luxuryProducts(PRODUCTS)
   const money = (lang, n) => new Intl.NumberFormat(lang === 'pt-BR' ? 'pt-BR' : lang, { style: 'currency', currency: lux[0]?.currency ?? 'EUR', maximumFractionDigits: 0 }).format(n)
   const lead = (lang) => LUXURY_COPY[lang].lead(lux.length, money(lang, Math.min(...lux.map((p) => p.priceFrom))), money(lang, Math.max(...lux.map((p) => p.priceFrom))))
   const build = (lang) => ({

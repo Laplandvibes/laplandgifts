@@ -94,6 +94,12 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       480
     ]
   },
+  "exp-icebreaker": {
+    "full": 800,
+    "w": [
+      480
+    ]
+  },
   "exp-kids-husky-short": {
     "full": 1600,
     "w": [
@@ -506,6 +512,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-pehmee-merino-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-rockmoon-fleece-hoodie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-sykli-ski-gloves": {
     "full": 800,
     "w": [
@@ -531,6 +553,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-halti-tunturit-ski-socks": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-viiri-fleece-gloves": {
     "full": 800,
     "w": [
       320,
@@ -673,7 +703,55 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-makia-form-jacket": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-kontio-hoodie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-mari-balaclava": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-martin-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-makia-merino-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-moray-zip-knit": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-trademark-hoodie": {
     "full": 800,
     "w": [
       320,
@@ -753,6 +831,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-nb-hattifatteners-retro-socks": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-nb-kunnas-kalevala-beanie": {
     "full": 800,
     "w": [
@@ -817,6 +903,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-nb-moomin-classics-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-nb-moomin-classics-tee": {
     "full": 800,
     "w": [
@@ -866,6 +960,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-nb-pippi-tee": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-snufkin-mens-socks": {
     "full": 800,
     "w": [
       320,
@@ -1049,6 +1151,54 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-rj-arctic-warriors-blueberry-powder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-forestly-mushroom-chips-chili": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-kaino-spruce-sprout-sparkling-075": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-nordic-koivu-birch-sap": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-poikain-parhaat-blueberry-lemonade": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-yrttipaja-chaga-powder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sisu-xylitol-salmiakki": {
     "full": 800,
     "w": [
@@ -1057,7 +1207,51 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-arabia-moomin-pitcher-moominhouse": {
+    "full": 360,
+    "w": [
+      320
+    ]
+  },
+  "prod-sk-arabia-moomintroll-mini-figurine": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-arabia-snorkmaiden-mini-figurine": {
+    "full": 396,
+    "w": [
+      320
+    ]
+  },
   "prod-sk-aromageddon-sauna-scent": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-fasupala-lakritsi": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-fazer-omar-chocolate-bar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-fazer-salty-suffeli-puffi": {
     "full": 800,
     "w": [
       320,
@@ -1081,7 +1275,79 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-finnish-flavours-cloudberry-jam": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-halva-salmiakkikalat": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-helsingin-villasukkatehdas-wool-socks": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-hukka-soapstone-candle": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-kouvolan-lakritsi-500g": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-lapin-liha-smoked-reindeer-soup": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-lapin-puukko-gift-box": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-little-my-sauna-cushion": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-loimu-sauna-thermometer": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-marianne-toffee-rae": {
     "full": 800,
     "w": [
       320,
@@ -1111,7 +1377,23 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-moomin-duvet-set-merella": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-moomin-duvet-set": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-moomin-kids-duvet-set-halaus": {
     "full": 800,
     "w": [
       320,
@@ -1127,6 +1409,20 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-muurla-moomin-enamel-mug-lumipyry": {
+    "full": 600,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-sk-muurla-moomin-lantern-tahtihetki": {
+    "full": 514,
+    "w": [
+      320,
+      480
+    ]
+  },
   "prod-sk-novita-wonder-wool": {
     "full": 800,
     "w": [
@@ -1135,22 +1431,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-outlet-dumle-moussemuna": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-sk-outlet-geisha-robe": {
-    "full": 632,
-    "w": [
-      320,
-      480
-    ]
-  },
-  "prod-sk-outlet-karl-fazer": {
+  "prod-sk-poikain-parhaat-freeze-dried-blueberry": {
     "full": 800,
     "w": [
       320,
@@ -1178,6 +1459,38 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     "full": 360,
     "w": [
       320
+    ]
+  },
+  "prod-sk-suomi-propeller-cap": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-tyrkisk-peber-chewy": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-tyrkisk-peber-sour-foams": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-vaasan-ruispalat-5pack": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
     ]
   }
 }

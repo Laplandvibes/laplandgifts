@@ -604,23 +604,11 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     description:
       '冻干云杉嫩芽，在有机国有林中于两周的窗口期手工采摘，同一片林子每两年才采一次。一勺里有柑橘和松脂的气味，每 100 g 含 382 mg 维生素 C。',
     specs: [
-      '40 g，毛重 0.046 kg',
-      '3 x 11 x 17 cm',
+      '40 g',
       '冻干云杉嫩芽',
-      '芬兰',
-      '每天 1 至 3 茶匙',
-      '能量 1683 kJ / 402 kcal，蛋白质 12.1 g，碳水化合物 77.8 g，脂肪 4.19 g。维生素 C 382 mg，维生素 A 970 µg，维生素 K1 332 mg，钾 1200 mg，磷 350 mg，钙 130 mg，镁 120 mg，锌 3.6 mg，铁 2 mg',
-      '经许可在芬兰国家林业局所属的有机林中采集，同一片林子每两年一次',
+      '每100 g含382 mg',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '用量',
-      '每 100 g 营养成分',
-      '采集',
-    ],
+    specLabels: [undefined, undefined, '维生素C'],
   },
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors 荨麻粉 150 g',
@@ -641,15 +629,9 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     description:
       '红景天长在拉普兰山地潮湿的溪岸和岩壁上，Arctic Warriors 把它连同荨麻一起萃取进植物甘油。一茶匙可以加进茶、麦片粥或酸奶。',
     specs: [
-      '100 ml，毛重 0.270 kg',
-      '4.5 x 4.5 x 13 cm',
-      '植物甘油、荨麻、红景天',
-      '芬兰',
-      '每天 1 至 2 茶匙',
-      '不含乳制品、无麸质、纯素。植物甘油不影响血糖',
-      '膳食补充剂不能替代多样化的饮食。请置于儿童无法取得处，不要超过标示剂量',
+      '100 ml',
+      '红景天和荨麻',
     ],
-    specLabels: [undefined, undefined, undefined, undefined, '用量', '饮食', '注意'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 沙棘与橄榄油 150 ml',
@@ -1361,5 +1343,416 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '棕色或粉色',
     ],
     specLabels: [undefined, undefined, '颜色'],
+  },
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': {
+    name: 'Makia Kontio 连帽卫衣',
+    description:
+      '常规版型连帽卫衣，100%有机棉，缝制后再染色。成衣染色比纱线染色颜色更深、手感更软，色泽在一次次洗涤后仍保留略带穿旧感的样子。',
+    specs: [
+      '100 %有机棉，成衣染色',
+      'S到XXL',
+    ],
+  },
+  'makia-trademark-hoodie': {
+    name: 'Makia Trademark 连帽卫衣',
+    description:
+      'Makia最素净的连帽衫：常规版型，100%有机棉，胸前一枚小小的商标。适合带去小木屋过一周，同一件卫衣从清晨的篝火穿到傍晚的桑拿门廊。',
+    specs: [
+      '100 %有机棉',
+      'S到XXL',
+    ],
+  },
+  'makia-moray-zip-knit': {
+    name: 'Makia Moray 拉链针织开衫',
+    description:
+      '常规版型拉链开衫，100%美利奴羊毛织成。美利奴保暖却不臃肿，由内向外干燥，在山地徒步时可作硬壳外套下的中间层，在温暖的咖啡馆里单穿也合适。',
+    specs: [
+      '100 %美利奴羊毛',
+      'S到XXL',
+    ],
+  },
+  'makia-form-jacket': {
+    name: 'Makia Form 冬季外套',
+    description:
+      '常规版型长款冬季外套，填充再生聚酯保暖层。袖口内侧的隐藏罗纹能挡住灌进来的风，一月罗瓦涅米的街头，这一点比任何功能清单都重要。',
+    specs: [
+      '再生聚酯保暖填充，袖口隐藏罗纹',
+      'S到XXL',
+    ],
+  },
+  'makia-martin-beanie': {
+    name: 'Makia Martin 美利奴毛线帽',
+    description:
+      '100%美利奴羊毛毛线帽，带一枚小布章，在芬兰织造。这是入手Makia最便宜的方式，也是从十月到四月最可能天天戴的一件。',
+    specs: [
+      '100 %美利奴羊毛',
+      '芬兰制造',
+      '均码',
+    ],
+  },
+  'makia-mari-balaclava': {
+    name: 'Makia Mari 针织头套',
+    description:
+      '羊毛、聚酯、羊驼毛和氨纶混纺的针织头套。一次遮住耳朵、脖子和脸颊，这正是一次雪地摩托之旅与一次因错误原因被记住的雪地摩托之旅的区别。',
+    specs: [
+      '羊毛、聚酯、羊驼毛和氨纶混纺',
+      '均码',
+    ],
+  },
+  'halti-pehmee-merino-beanie': {
+    name: 'Halti Pehmee 美利奴毛线帽',
+    description:
+      '100%美利奴羊毛城市毛线帽，双层罗纹翻边，芬兰制造。Halti称它为Pehmee，意为柔软，是那种戴滑雪帽会显得走错路的日子里该戴的帽子。',
+    specs: [
+      '100 %美利奴羊毛',
+      '芬兰制造',
+      '平铺晾干',
+      '均码',
+    ],
+  },
+  'halti-rockmoon-fleece-hoodie': {
+    name: 'Halti Rockmoon 男款连帽抓绒衣',
+    description:
+      '双面拉绒弹力面料的保暖连帽抓绒衣，在最先受寒的帽子和肩部使用防风微纤维面料。在山地穿在硬壳外套下面，在木屋周围可以单穿。',
+    specs: [
+      '双面拉绒弹力抓绒，帽子和肩部为防风微纤维面料',
+      'S到XXXL',
+    ],
+  },
+  'halti-viiri-fleece-gloves': {
+    name: 'Halti Viiri 抓绒手套',
+    description:
+      '45克的轻量手套，采用防风Stormwall抓绒，掌心有硅胶防滑印花，拇指和食指指尖支持触屏，拍极光照片不必光着手。',
+    specs: [
+      'Stormwall抓绒100 %聚酯，掌心65 %聚酯、32 %聚酰胺、3 %氨纶',
+      '45 g',
+      '拇指和食指',
+      '最高30 °C轻柔洗涤',
+    ],
+    specLabels: [undefined, undefined, '触屏', undefined],
+  },
+  'nb-moomin-classics-beanie': {
+    name: '姆明 Classics 毛线帽',
+    description:
+      'Moomin Classics系列成人毛线帽，再生聚酯与腈纶，米色，均码。姆明官方正版产品，这正是它与集市摊位货的分界线。',
+    specs: [
+      '再生聚酯与腈纶',
+      '成人，均码',
+      '米色',
+    ],
+  },
+  'nb-snufkin-mens-socks': {
+    name: '史力奇男袜',
+    description:
+      '印有史力奇的男袜，欧码40到45，60%棉，加入聚酯、尼龙和氨纶以增加弹性。本站最便宜的姆明礼物，而且是拿来穿的，不是摆着看的。',
+    specs: [
+      '欧码40-45',
+      '60 %棉、33 %聚酯、4 %尼龙、2 %氨纶、1 %弹性二烯',
+    ],
+  },
+  'nb-hattifatteners-retro-socks': {
+    name: '溜溜女款复古袜',
+    description:
+      '印有溜溜的复古风格袜子，欧码36到42，67%棉。弹性足够，一个尺码适合大多数人，也是姆明读者打开袜子抽屉时最先拿起的一双。',
+    specs: [
+      '欧码36-42',
+      '67 %棉、25 %聚酯、4 %弹性二烯、3 %尼龙、1 %氨纶',
+    ],
+  },
+  'sk-suomi-propeller-cap': {
+    name: 'Suomi 球迷螺旋桨帽',
+    description:
+      '蓝白色螺旋桨帽，戴去看台、球迷区和酒吧里的冰球决赛。它不是一顶正经的帽子，而在芬兰队比赛的夜晚，这正是重点。',
+    specs: [
+      '蓝白色',
+    ],
+  },
+  'sk-muurla-moomin-lantern-tahtihetki': {
+    name: 'Muurla 姆明烛灯 Tähtihetki 18 cm',
+    description:
+      'Muurla Tähtihetki系列手工无铅玻璃烛灯，带金色细节，直径15.5厘米，高18厘米。可作烛灯、装应季糖果的碗，或插一小束花的花瓶。',
+    specs: [
+      'Ø 15.5 cm，高18 cm',
+      '手工无铅玻璃',
+      '手洗',
+    ],
+  },
+  'sk-hukka-soapstone-candle': {
+    name: 'Hukka Jätkänkynttilä 石制茶蜡烛台',
+    description:
+      '石制茶蜡烛台，做成jätkänkynttilä的形状，即伐木工在雪地上点燃的劈开的木桩火。直径56毫米，高100毫米，重310克，适用40毫米茶蜡。冷石上的活火，在室内。',
+    specs: [
+      'Ø 56 x 100 mm，适用Ø 40 mm茶蜡',
+      '0.31 kg',
+      '烛台1个',
+    ],
+  },
+  'sk-muurla-moomin-enamel-mug-lumipyry': {
+    name: 'Muurla 姆明搪瓷杯 Lumipyry 3.7 dl',
+    description:
+      '3.7分升搪瓷杯，碳钢内芯加双层搪瓷，印有暴风雪场景Lumipyry。冷热饮皆可，可进洗碗机、可带去篝火边，不可进微波炉。',
+    specs: [
+      '3.7 dl',
+      '碳钢加双层搪瓷',
+      '可用洗碗机，不可微波',
+    ],
+  },
+  'sk-arabia-moomin-pitcher-moominhouse': {
+    name: 'Arabia 姆明水壶 1.0 l，姆明屋',
+    description:
+      'Arabia一升水壶，图案是姆明屋：姆明爸爸亲手建造、夜里也从不上锁的圆形炉子状房子。附陶瓷盖，夏日餐桌上能把虫子挡在果汁之外。',
+    specs: [
+      '1.0 l',
+      '附陶瓷盖',
+    ],
+    specLabels: [undefined, '盖子'],
+  },
+  'sk-moomin-duvet-set-merella': {
+    name: '姆明被套套装 140 x 200 cm，Merellä',
+    description:
+      '棉质被套和枕套，图案是海上的姆明一家，被套140 x 200厘米，枕套50 x 70厘米，拉链开合。首次使用前请先清洗，如同所有印花棉质床品。',
+    specs: [
+      '被套140 x 200 cm，枕套50 x 70 cm',
+      '100 %棉',
+      '拉链',
+    ],
+    specLabels: [undefined, undefined, '开合'],
+  },
+  'sk-moomin-kids-duvet-set-halaus': {
+    name: '姆明儿童被套套装 100 x 135 cm，Halaus',
+    description:
+      'Halaus（拥抱）图案的棉质儿童被套和枕套，被套100 x 135厘米，枕套60 x 40厘米，带拉链。尺寸适合婴儿床或儿童床，是一份合适的第一套床品礼物。',
+    specs: [
+      '被套100 x 135 cm，枕套60 x 40 cm',
+      '100 %棉',
+      '拉链',
+    ],
+    specLabels: [undefined, undefined, '开合'],
+  },
+  'sk-arabia-moomintroll-mini-figurine': {
+    name: 'Arabia 姆明迷你摆件',
+    description:
+      '手工陶瓷姆明，高约6厘米，由图莉基·皮耶蒂莱在1990年代设计，配有专属礼盒出售。这些摆件按系列收藏，一个是稳妥的礼物，两个就成了习惯。',
+    specs: [
+      '高约6 cm',
+      '手工陶瓷',
+      '图莉基·皮耶蒂莱，1990年代',
+    ],
+    specLabels: [undefined, undefined, '设计'],
+  },
+  'sk-arabia-snorkmaiden-mini-figurine': {
+    name: 'Arabia 可儿迷你摆件',
+    description:
+      '手工陶瓷可儿，高约6厘米，出自图莉基·皮耶蒂莱1990年代的系列，配专属礼盒。与姆明配成一对，两人便像书封上那样并肩站在窗台上。',
+    specs: [
+      '高约6 cm',
+      '手工陶瓷',
+      '图莉基·皮耶蒂莱，1990年代',
+    ],
+    specLabels: [undefined, undefined, '设计'],
+  },
+  'sk-lapin-puukko-gift-box': {
+    name: '拉普兰普科刀 带刀鞘，礼盒装',
+    description:
+      '拉普兰风格的普科刀，带刀鞘，以礼盒交付。店家把它介绍为森林远足和日常活计的刀，也是那种会被传承而不是被换掉的物件。',
+    specs: [
+      '刀鞘和礼盒',
+    ],
+    specLabels: ['包含'],
+  },
+  'sk-loimu-sauna-thermometer': {
+    name: 'Loimu 桑拿温度计，桦木',
+    description:
+      '桦木框桑拿温度计，表盘清晰。它回答的是客人在浇第一勺水之前唯一会问的问题，而且看起来该挂在原木墙上，而不是锅炉旁边。',
+    specs: [
+      '桦木',
+    ],
+  },
+  'sk-helsingin-villasukkatehdas-wool-socks': {
+    name: 'Helsingin Villasukkatehdas 羊毛袜',
+    description:
+      '来自芬兰唯一一家传统羊毛袜厂的粗纺羊毛袜，在赫尔辛基用1950年代的机器织造。70%无割皮羊毛，在于姆萨纺纱、在屈勒斯科斯基染色，多种尺码和四种颜色，以树皮、苔藓、地衣和黑夜命名。',
+    specs: [
+      '70 %羊毛（无割皮），30 %聚酰胺',
+      '赫尔辛基织造，羊毛于于姆萨纺纱、屈勒斯科斯基染色',
+      '多种尺码，四种颜色',
+    ],
+  },
+  'sk-halva-salmiakkikalat': {
+    name: 'Halva Salmiakkikalat 咸甘草鱼 230 g',
+    description:
+      'Halva出品的鱼形咸甘草糖，230克，每个芬兰汽车手套箱里都有的那一袋。口感紧实，咸甘草味浓烈，是递给说想尝尝真正芬兰的访客的第一样东西。',
+    specs: [
+      '230 g',
+    ],
+  },
+  'sk-kouvolan-lakritsi-500g': {
+    name: 'Kouvolan Lakritsi 甘草糖块 500 g',
+    description:
+      '来自科沃拉的半公斤软甘草块，配方诞生于1945年，1960年经一位英国甘草专家微调。不加任何东西掩盖甘草根本味时，原味甘草就是这个味道。',
+    specs: [
+      '500 g',
+      '1945年配方，1960年调整',
+    ],
+    specLabels: [undefined, '配方'],
+  },
+  'sk-fazer-omar-chocolate-bar': {
+    name: 'Fazer Omar 巧克力排 180 g',
+    description:
+      '为Omar六十周年推出的限量180克巧克力排：自1966年起销售的温和奶香Omar太妃糖，裹在可可含量至少30%的Fazer牛奶巧克力中。限时销售。',
+    specs: [
+      '180 g',
+      '可可含量至少30 %的牛奶巧克力',
+      '60周年限量版',
+    ],
+    specLabels: [undefined, '可可', '供应'],
+  },
+  'sk-fazer-salty-suffeli-puffi': {
+    name: 'Karl Fazer Salty Suffeli Puffi 巧克力排 160 g',
+    description:
+      'Fazer用新鲜牛奶制成的牛奶巧克力，混入酥脆的咸甜Suffeli玉米泡芙。160克，可可含量至少30%，献给在咸与甜之间拿不定主意的人。',
+    specs: [
+      '160 g',
+      '可可含量至少30 %的牛奶巧克力',
+    ],
+    specLabels: [undefined, '可可'],
+  },
+  'sk-tyrkisk-peber-chewy': {
+    name: 'Fazer Tyrkisk Peber Chewy 咸甘草软糖 38 g',
+    description:
+      'Tyrkisk Peber的辛辣咸甘草，以新的软质咀嚼糖代替硬壳。38克口袋装，店家于2026年8月上架，献给想在同一口里同时得到咸甘草和辛辣的人。',
+    specs: [
+      '38 g',
+    ],
+  },
+  'sk-tyrkisk-peber-sour-foams': {
+    name: 'Fazer Tyrkisk Peber Sour Foams 棉花软糖 150 g',
+    description:
+      '柔软的棉花软糖，带有温和的Tyrkisk Peber辛辣，以及酸酸的猕猴桃草莓和柠檬青柠口味，150克。进入胡椒甘草家族的温和入口，在口味各异的一群人里最先打开的一袋。',
+    specs: [
+      '150 g',
+    ],
+  },
+  'sk-marianne-toffee-rae': {
+    name: 'Fazer Marianne Toffee 巧克力豆 150 g',
+    description:
+      'Marianne巧克力豆系列的太妃版：光亮酥脆的外壳包着可可含量至少28%的牛奶巧克力芯，装在可重封的150克袋中。也可用于烘焙，前提是能留到那时候。',
+    specs: [
+      '150 g',
+      '可可含量至少28 %的牛奶巧克力',
+      '可重封袋',
+    ],
+    specLabels: [undefined, '可可', '包装'],
+  },
+  'sk-fasupala-lakritsi': {
+    name: 'Fazer Fasupala Lakritsi 威化饼干 199 g',
+    description:
+      '一口大小的威化，牛奶巧克力味涂层下是甘草味夹心，199克，不含棕榈油。芬兰人已经整盒整盒吃的饼干的甘草版本，店家于2026年8月上架。',
+    specs: [
+      '199 g',
+      '不含棕榈油',
+    ],
+    specLabels: [undefined, '油脂'],
+  },
+  'sk-finnish-flavours-cloudberry-jam': {
+    name: 'Finnish Flavours 优质云莓果酱 250 g',
+    description:
+      '含75%芬兰云莓和20%糖的云莓果酱，250克。云莓七月底在拉普兰的沼泽上成熟，无法大规模种植，所以一罐的价钱抵得上两袋巧克力。',
+    specs: [
+      '250 g',
+      '芬兰云莓75 %，糖20 %',
+    ],
+  },
+  'sk-lapin-liha-smoked-reindeer-soup': {
+    name: 'Lapin Liha 烟熏驯鹿汤 400 g',
+    description:
+      '含热熏和冷熏驯鹿肉的奶油浓汤，400克，由Lapin Liha制作。用锅加热即可；这是拉普兰木屋午餐的味道，装在放得进行李箱的包装里。',
+    specs: [
+      '400 g',
+      '热熏驯鹿肉3 %和冷熏驯鹿肉3 %',
+      '用锅加热',
+    ],
+    specLabels: [undefined, undefined, '烹调'],
+  },
+  'sk-vaasan-ruispalat-5pack': {
+    name: 'Vaasan Ruispalat 黑麦面包 5 x 330 g',
+    description:
+      '芬兰最畅销面包的五袋装：用100%芬兰谷物和真正的酸面团烤制的撕开式全麦黑麦小面包，每袋330克六个，膳食纤维12%。海外芬兰人会请来访者带的东西。',
+    specs: [
+      '5 x 330 g，每袋6个',
+      '全麦黑麦占谷物的87 %，膳食纤维12 %',
+    ],
+  },
+  'sk-poikain-parhaat-freeze-dried-blueberry': {
+    name: 'Poikain Parhaat 冻干蓝莓 15 g',
+    description:
+      '整颗的芬兰森林蓝莓，冻干，别无他物：15克，在行李箱里没有分量，尝起来是沼泽上的八月。无乳糖、无麸质、纯素，不加糖也不加防腐剂。',
+    specs: [
+      '15 g',
+      '100 %芬兰冻干蓝莓',
+      '无乳糖、无麸质、纯素、不加糖、无防腐剂',
+    ],
+    specLabels: [undefined, undefined, '饮食'],
+  },
+  'rj-arctic-warriors-blueberry-powder': {
+    name: 'Arctic Warriors 蓝莓粉 45 g',
+    description:
+      '芬兰蓝莓连汁整颗干燥后磨成粉，无任何添加，45克。一勺加进燕麦粥、酸奶或奶昔；这里售卖的同一种浆果经由Ruohonjuuri发货，配送范围为欧盟境内。',
+    specs: [
+      '45 g',
+      '100 %芬兰蓝莓，连汁整颗干燥',
+    ],
+  },
+  'rj-poikain-parhaat-blueberry-lemonade': {
+    name: 'Poikain Parhaat 蓝莓柠檬水 0.33 l',
+    description:
+      '在坦佩雷的韦赫迈宁用真材实料制作的有机蓝莓柠檬水，不含人工香精和色素，0.33升瓶装。芬兰试吃桌上放在咸甘草旁边的那瓶饮料。',
+    specs: [
+      '0.33 l',
+      '产于坦佩雷的韦赫迈宁',
+      '有机，无人工香精或色素',
+    ],
+    specLabels: [undefined, undefined, '添加剂'],
+  },
+  'rj-nordic-koivu-birch-sap': {
+    name: 'Nordic Koivu 桦树汁 500 ml',
+    description:
+      '春天树木把储存在根部的水分向上输送时采集的桦树汁，直接从树上装瓶，不经热处理，不加防腐剂，500毫升。味道微甜，主要是冰凉洁净的水的味道。',
+    specs: [
+      '500 ml',
+      '未经热处理，无防腐剂',
+    ],
+    specLabels: [undefined, '加工'],
+  },
+  'rj-kaino-spruce-sprout-sparkling-075': {
+    name: 'KAINO Drinks 云杉嫩芽有机气泡饮 0.75 l',
+    description:
+      '以云杉嫩芽（芬兰云杉五月的柔嫩新芽）调味的无酒精有机气泡饮，0.75升瓶装。产于坦佩雷的韦赫迈宁，为不是人人都喝酒的派对上的举杯而备。',
+    specs: [
+      '0.75 l',
+      '无酒精，有机',
+      '产于坦佩雷的韦赫迈宁',
+    ],
+    specLabels: [undefined, '酒精', undefined],
+  },
+  'rj-yrttipaja-chaga-powder': {
+    name: 'Yrttipaja 白桦茸粉 35 g',
+    description:
+      '磨碎的白桦茸，即生长在桦树干上的黑色真菌，用来煮茶：每升水一汤匙，小火煮至少十分钟后滤出。35克，是在买块状白桦茸之前尝试pakuri最便宜的方法。',
+    specs: [
+      '35 g',
+      '每升水1汤匙，小火煮至少10分钟后滤出',
+    ],
+    specLabels: [undefined, '用法'],
+  },
+  'rj-forestly-mushroom-chips-chili': {
+    name: 'Forestly Foods 蘑菇脆片，辣椒味 50 g',
+    description:
+      '有机种植香菇制成的酥脆薯片式脆片，轻柔烹制，以辣椒、盐和胡椒调味，50克。一袋鲜味，窝在沙发上吃，或捏碎撒在汤上。',
+    specs: [
+      '50 g',
+      '有机种植香菇、辣椒、盐和胡椒',
+    ],
   },
 }

@@ -603,23 +603,11 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     description:
       'Pousses d’épicéa lyophilisées, cueillies à la main sur une fenêtre de deux semaines dans des forêts d’État biologiques, et seulement une année sur deux dans la même forêt. Agrumes et résine dans une cuillerée, 382 mg de vitamine C pour 100 g.',
     specs: [
-      '40 g, brut 0,046 kg',
-      '3 x 11 x 17 cm',
-      'Pousse d’épicéa lyophilisée',
-      'Finlande',
-      '1 à 3 cuillères à café par jour',
-      'Énergie 1683 kJ / 402 kcal, protéines 12,1 g, glucides 77,8 g, matières grasses 4,19 g. Vitamine C 382 mg, vitamine A 970 µg, vitamine K1 332 mg, potassium 1200 mg, phosphore 350 mg, calcium 130 mg, magnésium 120 mg, zinc 3,6 mg, fer 2 mg',
-      'Récoltées sous licence dans des forêts biologiques appartenant à l’administration forestière de l’État finlandais, une année sur deux par forêt',
+      '40 g',
+      'Pousses d\'épicéa lyophilisées',
+      '382 mg pour 100 g',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Posologie',
-      'Valeurs nutritionnelles pour 100 g',
-      'Récolte',
-    ],
+    specLabels: [undefined, undefined, 'Vitamine C'],
   },
   'arctic-warriors-nettle-powder': {
     name: 'Poudre d’ortie Arctic Warriors 150 g',
@@ -640,15 +628,9 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     description:
       'La rhodiole pousse sur les berges humides des ruisseaux et les parois rocheuses des fjälls de Laponie, et Arctic Warriors l’extrait dans de la glycérine végétale avec de l’ortie. Une cuillère à café se met dans le thé, le porridge ou le yaourt.',
     specs: [
-      '100 ml, brut 0,270 kg',
-      '4,5 x 4,5 x 13 cm',
-      'Glycérine végétale, ortie, rhodiole',
-      'Finlande',
-      '1 à 2 cuillères à café par jour',
-      'Sans produits laitiers, sans gluten, végane. La glycérine végétale n’a pas d’effet sur la glycémie',
-      'Un complément alimentaire ne remplace pas une alimentation variée. Tenir hors de portée des enfants et ne pas dépasser la dose indiquée',
+      '100 ml',
+      'Rhodiole et ortie',
     ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Posologie', 'Régime', 'Remarque'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 huile d’argousier et d’olive 150 ml',
@@ -948,7 +930,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Kilpisjärvi est connu pour son ciel nocturne exceptionnellement pur. Un court trajet en motoneige vous emmène à deux vers un endroit où observer les aurores dans un calme total, avec des boissons chaudes contre le froid. Le soir de 20 h à 23 h, sous réserve météo.',
     specs: [
       'Sortie guidée aux aurores boréales pour deux, environ 15 km en motoneige, boissons chaudes comprises',
-      '3 heures, de 20 h à 23 h',
+      '3 heures, de 20.00 à 23.00',
       '2 personnes',
       'Kilpisjärvi',
       '18 ans pour conduire, 8 ans dans le traîneau',
@@ -962,11 +944,11 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Une nuit à deux dans un igloo de verre chauffé, haut sur le fjäll de Levi. Le verre chauffé électriquement reste limpide pendant que vous guettez les aurores depuis un lit double motorisé. Boisson de bienvenue, peignoirs et petit déjeuner compris, avec kitchenette, douche et WC.',
     specs: [
       'Une nuit pour deux dans un igloo de verre de classe Superior, boisson de bienvenue, peignoirs et chaussons, petit déjeuner. Transport non compris',
-      '1 nuit, départ à 11 h',
+      '1 nuit, départ à 11.00',
       '2 personnes',
       'Levi, en haut du fjäll',
       '23 m², verre chauffé antibuée, kitchenette, douche et WC, lit double motorisé',
-      'Valable pour des séjours du 27/08 au 10/11 et du 01/04 au 12/04',
+      'Valable pour des séjours du 27.08 au 10.11 et du 01.04 au 12.04',
     ],
     specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Igloo', 'Carte cadeau'],
   },
@@ -1360,5 +1342,416 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Brun ou rose',
     ],
     specLabels: [undefined, undefined, 'Coloris'],
+  },
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': {
+    name: 'Sweat à capuche Makia Kontio',
+    description:
+      'Sweat à capuche coupe classique en coton biologique à 100 pour cent, teint après confection. La teinture sur vêtement donne une couleur plus profonde et une main plus douce que la teinture sur fil, et la nuance garde son léger aspect délavé lavage après lavage.',
+    specs: [
+      '100 % coton biologique, teint sur vêtement',
+      'S à XXL',
+    ],
+  },
+  'makia-trademark-hoodie': {
+    name: 'Sweat à capuche Makia Trademark',
+    description:
+      'Le sweat le plus sobre de Makia : coupe classique, coton biologique à 100 pour cent et la petite marque sur la poitrine. Celui à emporter pour une semaine en chalet, où le même sweat passe du feu du matin à la terrasse du sauna le soir.',
+    specs: [
+      '100 % coton biologique',
+      'S à XXL',
+    ],
+  },
+  'makia-moray-zip-knit': {
+    name: 'Cardigan zippé en maille Makia Moray',
+    description:
+      'Cardigan zippé coupe classique tricoté en laine mérinos à 100 pour cent. Le mérinos tient chaud sans épaisseur et sèche de l\'intérieur, donc il sert de couche sous une veste imperméable en randonnée sur les fjells et se porte seul dans un café chauffé.',
+    specs: [
+      '100 % laine mérinos',
+      'S à XXL',
+    ],
+  },
+  'makia-form-jacket': {
+    name: 'Veste d\'hiver Makia Form',
+    description:
+      'Longue veste d\'hiver de coupe classique avec isolation en polyester recyclé. Un bord-côte caché dans l\'ouverture de manche ferme le poignet contre le vent, ce qui compte plus dans une rue de Rovaniemi en janvier que n\'importe quelle liste de caractéristiques.',
+    specs: [
+      'Isolation en polyester recyclé, bords-côtes cachés aux poignets',
+      'S à XXL',
+    ],
+  },
+  'makia-martin-beanie': {
+    name: 'Bonnet en mérinos Makia Martin',
+    description:
+      'Bonnet en laine mérinos à 100 pour cent avec un petit écusson, tricoté en Finlande. La porte d\'entrée la moins chère chez Makia et la pièce la plus susceptible d\'être portée tous les jours d\'octobre à avril.',
+    specs: [
+      '100 % laine mérinos',
+      'Fabriqué en Finlande',
+      'Taille unique',
+    ],
+  },
+  'makia-mari-balaclava': {
+    name: 'Cagoule tricotée Makia Mari',
+    description:
+      'Cagoule tricotée dans un mélange de laine, polyester, alpaga et élasthanne. Elle couvre les oreilles, le cou et les joues d\'un coup, ce qui fait la différence entre une sortie en motoneige et une sortie en motoneige dont on se souvient pour la mauvaise raison.',
+    specs: [
+      'Mélange de laine, polyester, alpaga et élasthanne',
+      'Taille unique',
+    ],
+  },
+  'halti-pehmee-merino-beanie': {
+    name: 'Bonnet en mérinos Halti Pehmee',
+    description:
+      'Bonnet de ville en laine mérinos à 100 pour cent avec double revers côtelé, fabriqué en Finlande. Halti l\'appelle Pehmee, doux, et c\'est le bonnet des jours où un bonnet de ski donnerait l\'air de s\'être trompé de route.',
+    specs: [
+      '100 % laine mérinos',
+      'Fabriqué en Finlande',
+      'Séchage à plat',
+      'Taille unique',
+    ],
+  },
+  'halti-rockmoon-fleece-hoodie': {
+    name: 'Veste polaire à capuche Halti Rockmoon, homme',
+    description:
+      'Veste polaire chaude à capuche en tissu stretch gratté des deux côtés, avec un microtissu coupe-vent sur la capuche et les épaules, là où le froid entre en premier. Sous une veste imperméable sur le fjell, seule autour du chalet.',
+    specs: [
+      'Polaire stretch grattée des deux côtés, microtissu coupe-vent sur la capuche et les épaules',
+      'S à XXXL',
+    ],
+  },
+  'halti-viiri-fleece-gloves': {
+    name: 'Gants en polaire Halti Viiri',
+    description:
+      'Gants légers de 45 grammes en polaire coupe-vent Stormwall, avec impression antidérapante en silicone sur la paume et bouts tactiles au pouce et à l\'index, pour prendre la photo des aurores sans les mains nues.',
+    specs: [
+      'Polaire Stormwall 100 % polyester, paume 65 % polyester, 32 % polyamide, 3 % élasthanne',
+      '45 g',
+      'Pouce et index',
+      'Lavage délicat à 30 °C maximum',
+    ],
+    specLabels: [undefined, undefined, 'Écran tactile', undefined],
+  },
+  'nb-moomin-classics-beanie': {
+    name: 'Bonnet Moomin Classics',
+    description:
+      'Bonnet adulte de la collection Moomin Classics en polyester recyclé et acrylique, beige, taille unique. Un produit Moomin officiel, et c\'est la ligne qui le sépare de la version des étals de marché.',
+    specs: [
+      'Polyester recyclé et acrylique',
+      'Adulte, taille unique',
+      'Beige',
+    ],
+  },
+  'nb-snufkin-mens-socks': {
+    name: 'Chaussettes homme Snufkin',
+    description:
+      'Chaussettes homme avec Snufkin, EU 40 à 45, coton à 60 pour cent avec polyester, nylon et élasthanne pour l\'élasticité. Le cadeau Moomin le moins cher de ce site qui se porte au lieu de s\'exposer.',
+    specs: [
+      'EU 40-45',
+      '60 % coton, 33 % polyester, 4 % nylon, 2 % élasthanne, 1 % élastodiène',
+    ],
+  },
+  'nb-hattifatteners-retro-socks': {
+    name: 'Chaussettes rétro femme Hattifatteners',
+    description:
+      'Chaussettes de style rétro avec les Hattifatteners, EU 36 à 42, coton à 67 pour cent. Assez extensibles pour qu\'une taille aille à presque tout le monde, et la première chose qu\'une lectrice des Moomins attrape quand le tiroir à chaussettes est ouvert.',
+    specs: [
+      'EU 36-42',
+      '67 % coton, 25 % polyester, 4 % élastodiène, 3 % nylon, 1 % élasthanne',
+    ],
+  },
+  'sk-suomi-propeller-cap': {
+    name: 'Casquette à hélice de supporter Suomi',
+    description:
+      'Casquette à hélice bleue et blanche pour les tribunes, la fan zone et la finale de hockey sur glace au pub. Pas un couvre-chef sérieux, et c\'est exactement le but un soir où la Finlande joue.',
+    specs: [
+      'Bleu et blanc',
+    ],
+  },
+  'sk-muurla-moomin-lantern-tahtihetki': {
+    name: 'Lanterne Moomin Muurla Tähtihetki 18 cm',
+    description:
+      'Lanterne en verre sans plomb faite main de la série Tähtihetki de Muurla, avec détails dorés, 15,5 cm de diamètre et 18 cm de haut. Elle sert de photophore, de coupe pour les douceurs de saison ou de vase pour un petit bouquet.',
+    specs: [
+      'Ø 15,5 cm, hauteur 18 cm',
+      'Verre sans plomb fait main',
+      'Lavage à la main',
+    ],
+  },
+  'sk-hukka-soapstone-candle': {
+    name: 'Photophore en pierre Hukka Jätkänkynttilä',
+    description:
+      'Photophore en pierre en forme de jätkänkynttilä, la bûche fendue que les bûcherons allumaient sur la neige. 56 mm de diamètre, 100 mm de haut, 310 grammes, pour une bougie chauffe-plat de 40 mm. Du feu vivant sur de la pierre froide, à l\'intérieur.',
+    specs: [
+      'Ø 56 x 100 mm, pour une bougie chauffe-plat Ø 40 mm',
+      '0,31 kg',
+      '1 photophore',
+    ],
+  },
+  'sk-muurla-moomin-enamel-mug-lumipyry': {
+    name: 'Mug émaillé Moomin Muurla Lumipyry 3,7 dl',
+    description:
+      'Mug émaillé de 3,7 dl avec un cœur en acier au carbone et un double émaillage, imprimé de la scène de tempête de neige Lumipyry. Pour les boissons chaudes et froides, passe au lave-vaisselle et au feu de camp, pas au micro-ondes.',
+    specs: [
+      '3,7 dl',
+      'Acier au carbone avec double émaillage',
+      'Passe au lave-vaisselle, pas au micro-ondes',
+    ],
+  },
+  'sk-arabia-moomin-pitcher-moominhouse': {
+    name: 'Pichet Moomin Arabia 1,0 l, Maison des Moomins',
+    description:
+      'Pichet d\'un litre d\'Arabia avec la Maison des Moomins, la maison ronde en forme de poêle que Papa Moomin a construite lui-même et ne ferme jamais à clé la nuit. Livré avec un couvercle en céramique qui garde les insectes hors du jus sur une table d\'été.',
+    specs: [
+      '1,0 l',
+      'Couvercle en céramique inclus',
+    ],
+    specLabels: [undefined, 'Couvercle'],
+  },
+  'sk-moomin-duvet-set-merella': {
+    name: 'Parure de lit Moomin 140 x 200 cm, Merellä',
+    description:
+      'Housse de couette et taie d\'oreiller en coton avec les Moomins en mer, housse 140 x 200 cm et taie 50 x 70 cm, fermeture zippée. À laver avant la première utilisation, comme tout linge de lit en coton imprimé.',
+    specs: [
+      'Housse de couette 140 x 200 cm, taie d\'oreiller 50 x 70 cm',
+      '100 % coton',
+      'Fermeture éclair',
+    ],
+    specLabels: [undefined, undefined, 'Fermeture'],
+  },
+  'sk-moomin-kids-duvet-set-halaus': {
+    name: 'Parure de lit enfant Moomin 100 x 135 cm, Halaus',
+    description:
+      'Housse de couette et taie d\'oreiller enfant en coton au motif Halaus, câlin, housse 100 x 135 cm et taie 60 x 40 cm avec fermeture éclair. La taille convient à un lit à barreaux ou un lit junior, donc un premier cadeau de linge de lit.',
+    specs: [
+      'Housse de couette 100 x 135 cm, taie d\'oreiller 60 x 40 cm',
+      '100 % coton',
+      'Fermeture éclair',
+    ],
+    specLabels: [undefined, undefined, 'Fermeture'],
+  },
+  'sk-arabia-moomintroll-mini-figurine': {
+    name: 'Mini figurine Moomin Arabia',
+    description:
+      'Moomin en céramique fait main d\'environ 6 cm de haut, dessiné par Tuulikki Pietilä dans les années 1990 et vendu dans son propre coffret cadeau. Les figurines se collectionnent par séries, ce qui fait d\'une un cadeau sûr et de deux une habitude.',
+    specs: [
+      'Hauteur environ 6 cm',
+      'Céramique faite main',
+      'Tuulikki Pietilä, années 1990',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'sk-arabia-snorkmaiden-mini-figurine': {
+    name: 'Mini figurine Snorkmaiden Arabia',
+    description:
+      'Snorkmaiden en céramique faite main d\'environ 6 cm de haut, de la série des années 1990 de Tuulikki Pietilä, dans son propre coffret cadeau. Avec le Moomin, les deux se tiennent sur un rebord de fenêtre comme sur les couvertures des livres.',
+    specs: [
+      'Hauteur environ 6 cm',
+      'Céramique faite main',
+      'Tuulikki Pietilä, années 1990',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'sk-lapin-puukko-gift-box': {
+    name: 'Puukko de Laponie avec protège-lame, coffret cadeau',
+    description:
+      'Puukko de style lapon avec protège-lame, livré dans un coffret cadeau. La boutique le présente comme le couteau des sorties en forêt et des tâches du quotidien, et comme le genre d\'objet qui se transmet au lieu de se remplacer.',
+    specs: [
+      'Protège-lame et coffret cadeau',
+    ],
+    specLabels: ['Inclus'],
+  },
+  'sk-loimu-sauna-thermometer': {
+    name: 'Thermomètre de sauna Loimu, bouleau',
+    description:
+      'Thermomètre de sauna dans un cadre en bouleau avec un cadran lisible. Il répond à la seule question qu\'un invité pose avant la première louche d\'eau, et il a l\'air d\'appartenir à un mur en rondins plutôt qu\'à une chaufferie.',
+    specs: [
+      'Bouleau',
+    ],
+  },
+  'sk-helsingin-villasukkatehdas-wool-socks': {
+    name: 'Chaussettes en laine Helsingin Villasukkatehdas',
+    description:
+      'Chaussettes en laine cardée de la seule fabrique traditionnelle de chaussettes en laine de Finlande, tricotées à Helsinki sur des machines des années 1950. Laine à 70 pour cent sans mulesing, filée à Jämsä et teinte à Kyröskoski, en plusieurs tailles et quatre couleurs nommées d\'après l\'écorce, la mousse, le lichen et la nuit.',
+    specs: [
+      '70 % laine (sans mulesing), 30 % polyamide',
+      'Tricotées à Helsinki, laine filée à Jämsä et teinte à Kyröskoski',
+      'Plusieurs tailles, quatre couleurs',
+    ],
+  },
+  'sk-halva-salmiakkikalat': {
+    name: 'Poissons de réglisse salée Halva Salmiakkikalat 230 g',
+    description:
+      'Bonbons au salmiak en forme de poisson de Halva, 230 grammes, le sachet qui traîne dans toutes les boîtes à gants finlandaises. Mâche ferme, réglisse salée intense, et la première chose à tendre à un visiteur qui dit vouloir goûter la vraie Finlande.',
+    specs: [
+      '230 g',
+    ],
+  },
+  'sk-kouvolan-lakritsi-500g': {
+    name: 'Morceaux de réglisse Kouvolan Lakritsi 500 g',
+    description:
+      'Un demi-kilo de morceaux de réglisse tendre de Kouvola, faits selon une recette née en 1945 et affinée en 1960 par un spécialiste anglais de la réglisse. Voilà le goût de la réglisse nature quand rien n\'est ajouté pour masquer la racine.',
+    specs: [
+      '500 g',
+      'De 1945, ajustée en 1960',
+    ],
+    specLabels: [undefined, 'Recette'],
+  },
+  'sk-fazer-omar-chocolate-bar': {
+    name: 'Tablette de chocolat Fazer Omar 180 g',
+    description:
+      'Tablette limitée de 180 grammes créée pour les 60 ans d\'Omar : le caramel Omar doux et crémeux vendu depuis 1966, pris dans le chocolat au lait Fazer à au moins 30 pour cent de cacao. En vente pour une durée limitée seulement.',
+    specs: [
+      '180 g',
+      'Chocolat au lait à au moins 30 % de cacao',
+      'Édition limitée pour le 60e anniversaire',
+    ],
+    specLabels: [undefined, 'Cacao', 'Disponibilité'],
+  },
+  'sk-fazer-salty-suffeli-puffi': {
+    name: 'Tablette de chocolat Karl Fazer Salty Suffeli Puffi 160 g',
+    description:
+      'Le chocolat au lait Fazer fait avec du lait frais, avec des soufflés de maïs Suffeli croquants, salés et sucrés. 160 grammes, au moins 30 pour cent de cacao, et la réponse pour qui n\'arrive pas à choisir entre salé et sucré.',
+    specs: [
+      '160 g',
+      'Chocolat au lait à au moins 30 % de cacao',
+    ],
+    specLabels: [undefined, 'Cacao'],
+  },
+  'sk-tyrkisk-peber-chewy': {
+    name: 'Pastilles de salmiak Fazer Tyrkisk Peber Chewy 38 g',
+    description:
+      'Le salmiak piquant de Tyrkisk Peber dans une nouvelle pastille tendre à mâcher au lieu de la coque dure. Un paquet de poche de 38 grammes, référencé par la boutique en août 2026, pour ceux qui veulent le salmiak et le piquant dans la même bouchée.',
+    specs: [
+      '38 g',
+    ],
+  },
+  'sk-tyrkisk-peber-sour-foams': {
+    name: 'Bonbons mousse Fazer Tyrkisk Peber Sour Foams 150 g',
+    description:
+      'Bonbons mousse tendres avec le léger piquant de Tyrkisk Peber et des saveurs acidulées kiwi-fraise et citron-citron vert, 150 grammes. Une entrée plus douce dans la famille de la réglisse au poivre, et le sachet à ouvrir en premier dans un groupe mélangé.',
+    specs: [
+      '150 g',
+    ],
+  },
+  'sk-marianne-toffee-rae': {
+    name: 'Dragées au chocolat Fazer Marianne Toffee 150 g',
+    description:
+      'La série des dragées Marianne en version caramel : une coque brillante et croquante autour d\'un cœur en chocolat au lait à au moins 28 pour cent de cacao, dans un sachet refermable de 150 grammes. Aussi prévues pour la pâtisserie, s\'il en reste jusque-là.',
+    specs: [
+      '150 g',
+      'Chocolat au lait à au moins 28 % de cacao',
+      'Sachet refermable',
+    ],
+    specLabels: [undefined, 'Cacao', 'Emballage'],
+  },
+  'sk-fasupala-lakritsi': {
+    name: 'Gaufrettes Fazer Fasupala Lakritsi 199 g',
+    description:
+      'Gaufrettes format bouchée avec un fourrage goût réglisse sous un enrobage goût chocolat au lait, 199 grammes, sans huile de palme. La version réglisse d\'un biscuit que les Finlandais mangent déjà par boîtes, référencée par la boutique en août 2026.',
+    specs: [
+      '199 g',
+      'Sans huile de palme',
+    ],
+    specLabels: [undefined, 'Matière grasse'],
+  },
+  'sk-finnish-flavours-cloudberry-jam': {
+    name: 'Confiture de plaquebières premium Finnish Flavours 250 g',
+    description:
+      'Confiture de plaquebières avec 75 pour cent de plaquebières finlandaises et 20 pour cent de sucre, 250 grammes. Les plaquebières mûrissent sur les tourbières de Laponie fin juillet et ne se cultivent pas à grande échelle, ce qui explique qu\'un pot coûte le prix de deux sachets de chocolat.',
+    specs: [
+      '250 g',
+      'Plaquebière finlandaise 75 %, sucre 20 %',
+    ],
+  },
+  'sk-lapin-liha-smoked-reindeer-soup': {
+    name: 'Soupe de renne fumé Lapin Liha 400 g',
+    description:
+      'Soupe crémeuse au renne fumé à chaud et à froid, 400 grammes, fabriquée par Lapin Liha. À réchauffer dans une casserole ; c\'est le goût d\'un déjeuner de chalet lapon dans un sachet qui tient dans une valise.',
+    specs: [
+      '400 g',
+      'Renne fumé à chaud 3 % et renne fumé à froid 3 %',
+      'Réchauffer dans une casserole',
+    ],
+    specLabels: [undefined, undefined, 'Préparation'],
+  },
+  'sk-vaasan-ruispalat-5pack': {
+    name: 'Pain de seigle Vaasan Ruispalat 5 x 330 g',
+    description:
+      'Cinq sachets du pain le plus vendu de Finlande : petits pains de seigle complet déchirés, cuits sur un vrai levain à partir de céréales finlandaises à 100 pour cent, six par sachet de 330 grammes, 12 pour cent de fibres. Ce que les Finlandais expatriés demandent aux visiteurs d\'apporter.',
+    specs: [
+      '5 x 330 g, 6 petits pains par sachet',
+      'Seigle complet 87 % des céréales, fibres 12 %',
+    ],
+  },
+  'sk-poikain-parhaat-freeze-dried-blueberry': {
+    name: 'Myrtilles lyophilisées Poikain Parhaat 15 g',
+    description:
+      'Des myrtilles sauvages finlandaises entières, lyophilisées et rien d\'autre : 15 grammes qui ne pèsent rien dans une valise et ont le goût d\'août sur une tourbière. Sans lactose, sans gluten, végétaliennes, sans sucre ajouté ni conservateurs.',
+    specs: [
+      '15 g',
+      '100 % myrtille finlandaise lyophilisée',
+      'Sans lactose, sans gluten, végétalien, sans sucre ajouté, sans conservateurs',
+    ],
+    specLabels: [undefined, undefined, 'Régime'],
+  },
+  'rj-arctic-warriors-blueberry-powder': {
+    name: 'Poudre de myrtille Arctic Warriors 45 g',
+    description:
+      'Myrtilles finlandaises séchées entières avec leur jus puis moulues, sans rien d\'ajouté, 45 grammes. Une cuillère dans le porridge, le yaourt ou un smoothie ; la même baie est vendue ici via Ruohonjuuri, qui livre dans l\'UE.',
+    specs: [
+      '45 g',
+      '100 % myrtille finlandaise, séchée entière avec le jus',
+    ],
+  },
+  'rj-poikain-parhaat-blueberry-lemonade': {
+    name: 'Limonade à la myrtille Poikain Parhaat 0,33 l',
+    description:
+      'Limonade bio à la myrtille faite à Vehmainen, Tampere, avec de vrais ingrédients sans arômes ni colorants artificiels, bouteille de 0,33 litre. La boisson à poser à côté du salmiak sur une table de dégustation finlandaise.',
+    specs: [
+      '0,33 l',
+      'Fabriquée à Vehmainen, Tampere',
+      'Bio, sans arômes ni colorants artificiels',
+    ],
+    specLabels: [undefined, undefined, 'Additifs'],
+  },
+  'rj-nordic-koivu-birch-sap': {
+    name: 'Sève de bouleau Nordic Koivu 500 ml',
+    description:
+      'Sève de bouleau récoltée au printemps quand l\'arbre fait remonter l\'eau stockée dans ses racines, mise en bouteille directement de l\'arbre sans traitement thermique ni conservateurs, 500 ml. Un goût à peine sucré, surtout celui d\'une eau froide et pure.',
+    specs: [
+      '500 ml',
+      'Non traitée thermiquement, sans conservateurs',
+    ],
+    specLabels: [undefined, 'Traitement'],
+  },
+  'rj-kaino-spruce-sprout-sparkling-075': {
+    name: 'Pétillant bio aux pousses d\'épicéa KAINO Drinks 0,75 l',
+    description:
+      'Boisson pétillante bio sans alcool aromatisée aux pousses d\'épicéa, les jeunes pousses de mai de l\'épicéa finlandais, en bouteille de 0,75 litre. Fabriquée à Vehmainen, Tampere, pour le toast d\'une fête où tout le monde ne boit pas.',
+    specs: [
+      '0,75 l',
+      'Sans alcool, bio',
+      'Fabriquée à Vehmainen, Tampere',
+    ],
+    specLabels: [undefined, 'Alcool', undefined],
+  },
+  'rj-yrttipaja-chaga-powder': {
+    name: 'Poudre de chaga Yrttipaja 35 g',
+    description:
+      'Chaga moulu, le champignon noir qui pousse sur les troncs de bouleau, à infuser comme un thé : une cuillère à soupe par litre d\'eau, à frémir au moins dix minutes puis filtrer. 35 grammes, la manière la moins chère d\'essayer le pakuri avant d\'acheter des morceaux.',
+    specs: [
+      '35 g',
+      '1 cuillère à soupe par litre d\'eau, frémir au moins 10 minutes et filtrer',
+    ],
+    specLabels: [undefined, 'Utilisation'],
+  },
+  'rj-forestly-mushroom-chips-chili': {
+    name: 'Chips de champignons Forestly Foods, piment 50 g',
+    description:
+      'Chips croustillantes de shiitakés cultivés en bio, cuits doucement et assaisonnés au piment, au sel et au poivre, 50 grammes. De l\'umami en sachet, pour le canapé ou émiettées sur une soupe.',
+    specs: [
+      '50 g',
+      'Shiitaké cultivé en bio, piment, sel et poivre',
+    ],
   },
 }

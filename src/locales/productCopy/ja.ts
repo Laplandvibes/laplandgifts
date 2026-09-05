@@ -604,23 +604,11 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     description:
       'オーガニックの国有林で 2 週間の限られた時期に手摘みし、同じ森からは 2 年に一度だけ採るトウヒの新芽をフリーズドライしました。ひと匙に柑橘と樹脂の香り、100 g あたりビタミン C 382 mg。',
     specs: [
-      '40 g、総重量 0.046 kg',
-      '3 x 11 x 17 cm',
-      'フリーズドライしたトウヒの新芽',
-      'フィンランド',
-      '1 日に小さじ 1 から 3 杯',
-      'エネルギー 1683 kJ / 402 kcal、たんぱく質 12.1 g、炭水化物 77.8 g、脂質 4.19 g。ビタミン C 382 mg、ビタミン A 970 µg、ビタミン K1 332 mg、カリウム 1200 mg、リン 350 mg、カルシウム 130 mg、マグネシウム 120 mg、亜鉛 3.6 mg、鉄 2 mg',
-      'フィンランド国有林管理局のオーガニック林で許可を得て採取、同じ森からは 2 年に一度',
+      '40 g',
+      'フリーズドライのトウヒの新芽',
+      '100 gあたり382 mg',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '摂取量の目安',
-      '100 g あたりの栄養成分',
-      '採取',
-    ],
+    specLabels: [undefined, undefined, 'ビタミンC'],
   },
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors イラクサパウダー 150 g',
@@ -641,15 +629,9 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     description:
       'イワベンケイはラップランドの山の湿った沢べりや岩肌に生えます。Arctic Warriors はこれをイラクサとともに植物性グリセリンに抽出しました。小さじ 1 杯を紅茶やポリッジ、ヨーグルトに。',
     specs: [
-      '100 ml、総重量 0.270 kg',
-      '4.5 x 4.5 x 13 cm',
-      '植物性グリセリン、イラクサ、イワベンケイ',
-      'フィンランド',
-      '1 日に小さじ 1 から 2 杯',
-      '乳製品不使用、グルテンフリー、ヴィーガン。植物性グリセリンは血糖値に影響しません',
-      '栄養補助食品はバランスの取れた食事に代わるものではありません。子どもの手の届かない場所に保管し、表示された量を超えないでください',
+      '100 ml',
+      'イワベンケイとイラクサ',
     ],
-    specLabels: [undefined, undefined, undefined, undefined, '摂取量の目安', '食事対応', '注記'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 シーバックソーンとオリーブのオイル 150 ml',
@@ -1361,5 +1343,416 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'ブラウンまたはピンク',
     ],
     specLabels: [undefined, undefined, 'カラー'],
+  },
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': {
+    name: 'Makia Kontio フーデッドスウェット',
+    description:
+      'オーガニックコットン100パーセントのレギュラーフィットのパーカーで、縫製後に染色しています。製品染めは糸染めより深い色と柔らかな風合いを生み、洗うたびにわずかに着古したような色合いを保ちます。',
+    specs: [
+      'オーガニックコットン100 %、製品染め',
+      'SからXXL',
+    ],
+  },
+  'makia-trademark-hoodie': {
+    name: 'Makia Trademark フーデッドスウェット',
+    description:
+      'Makiaで最もシンプルなパーカー。レギュラーフィット、オーガニックコットン100パーセント、胸元に小さなトレードマーク。朝の焚き火から夜のサウナのポーチまで同じ一枚で過ごすコテージの一週間に持っていく服です。',
+    specs: [
+      'オーガニックコットン100 %',
+      'SからXXL',
+    ],
+  },
+  'makia-moray-zip-knit': {
+    name: 'Makia Moray ジップニットカーディガン',
+    description:
+      'メリノウール100パーセントで編んだレギュラーフィットのジップカーディガン。メリノはかさばらずに暖かく内側から乾くので、フェルの山歩きではシェルの下の一枚として、暖かいカフェではこれ一枚で着られます。',
+    specs: [
+      'メリノウール100 %',
+      'SからXXL',
+    ],
+  },
+  'makia-form-jacket': {
+    name: 'Makia Form ウィンタージャケット',
+    description:
+      'リサイクルポリエステル中綿のレギュラーフィットのロング丈ウィンタージャケット。袖口の内側に隠れたリブが風を止めます。1月のロヴァニエミの街では、どんな機能一覧よりそれが大事です。',
+    specs: [
+      'リサイクルポリエステル中綿、袖口に隠しリブ',
+      'SからXXL',
+    ],
+  },
+  'makia-martin-beanie': {
+    name: 'Makia Martin メリノビーニー',
+    description:
+      '小さなワッペン付きのメリノウール100パーセントのビーニーで、フィンランドで編まれています。Makiaへの一番手頃な入口であり、10月から4月まで毎日かぶられる可能性が最も高い一点です。',
+    specs: [
+      'メリノウール100 %',
+      'フィンランド製',
+      'フリーサイズ',
+    ],
+  },
+  'makia-mari-balaclava': {
+    name: 'Makia Mari ニットバラクラバ',
+    description:
+      'ウール、ポリエステル、アルパカ、ポリウレタンの混紡で編んだバラクラバ。耳、首、頬を一度に覆います。それがスノーモービルツアーと、良くない理由で記憶に残るスノーモービルツアーの差です。',
+    specs: [
+      'ウール、ポリエステル、アルパカ、ポリウレタンの混紡',
+      'フリーサイズ',
+    ],
+  },
+  'halti-pehmee-merino-beanie': {
+    name: 'Halti Pehmee メリノビーニー',
+    description:
+      '二重リブのメリノウール100パーセントのタウン用ビーニーで、フィンランド製。HaltiはPehmee、柔らかい、と名付けました。スキー帽では道を間違えたように見える日のためのビーニーです。',
+    specs: [
+      'メリノウール100 %',
+      'フィンランド製',
+      '平干し',
+      'フリーサイズ',
+    ],
+  },
+  'halti-rockmoon-fleece-hoodie': {
+    name: 'Halti Rockmoon フード付きフリース メンズ',
+    description:
+      '両面起毛のストレッチ素材の暖かいフード付きフリース。冷気が最初に入るフードと肩には防風マイクロファブリックを配しています。フェルではシェルの下に、コテージのまわりではこれ一枚で。',
+    specs: [
+      '両面起毛ストレッチフリース、フードと肩に防風マイクロファブリック',
+      'SからXXXL',
+    ],
+  },
+  'halti-viiri-fleece-gloves': {
+    name: 'Halti Viiri フリースグローブ',
+    description:
+      '防風Stormwallフリースの45グラムの軽いグローブ。手のひらにシリコンのグリッププリント、親指と人差し指にタッチスクリーン対応の指先。素手にならずにオーロラの写真が撮れます。',
+    specs: [
+      'Stormwallフリース ポリエステル100 %、手のひら ポリエステル65 %、ポリアミド32 %、ポリウレタン3 %',
+      '45 g',
+      '親指と人差し指',
+      '30 °C以下でおしゃれ着洗い',
+    ],
+    specLabels: [undefined, undefined, 'タッチスクリーン', undefined],
+  },
+  'nb-moomin-classics-beanie': {
+    name: 'ムーミン Classics ビーニー',
+    description:
+      'Moomin Classicsコレクションの大人用ビーニー。リサイクルポリエステルとアクリル、ベージュ、フリーサイズ。ムーミン公式商品であり、それが市場の屋台の品と一線を画す点です。',
+    specs: [
+      'リサイクルポリエステルとアクリル',
+      '大人用、フリーサイズ',
+      'ベージュ',
+    ],
+  },
+  'nb-snufkin-mens-socks': {
+    name: 'スナフキン メンズソックス',
+    description:
+      'スナフキンのメンズソックス、EU 40から45、コットン60パーセントにポリエステル、ナイロン、ポリウレタンで伸縮性を加えています。このサイトで一番手頃なムーミンギフトで、飾られるのではなく履かれる品です。',
+    specs: [
+      'EU 40-45',
+      'コットン60 %、ポリエステル33 %、ナイロン4 %、ポリウレタン2 %、エラストジエン1 %',
+    ],
+  },
+  'nb-hattifatteners-retro-socks': {
+    name: 'ニョロニョロ レトロソックス レディース',
+    description:
+      'ニョロニョロのレトロ調ソックス、EU 36から42、コットン67パーセント。ほとんどの人に合う伸縮性があり、靴下の引き出しが開いていればムーミンの読者が最初に手に取る一足です。',
+    specs: [
+      'EU 36-42',
+      'コットン67 %、ポリエステル25 %、エラストジエン4 %、ナイロン3 %、ポリウレタン1 %',
+    ],
+  },
+  'sk-suomi-propeller-cap': {
+    name: 'Suomi 応援プロペラキャップ',
+    description:
+      'スタンド、ファンゾーン、パブでのアイスホッケー決勝のための青と白のプロペラキャップ。真面目な帽子ではありませんが、フィンランドが試合をする夜にはまさにそれが肝心です。',
+    specs: [
+      '青と白',
+    ],
+  },
+  'sk-muurla-moomin-lantern-tahtihetki': {
+    name: 'Muurla ムーミン ランタン Tähtihetki 18 cm',
+    description:
+      'Muurlaの Tähtihetki シリーズの、金の装飾が入った手作りの無鉛ガラスランタン。直径15.5 cm、高さ18 cm。キャンドルランタンとしても、季節のお菓子のボウルとしても、小さな花束の花瓶としても使えます。',
+    specs: [
+      'Ø 15.5 cm、高さ18 cm',
+      '手作りの無鉛ガラス',
+      '手洗い',
+    ],
+  },
+  'sk-hukka-soapstone-candle': {
+    name: 'Hukka Jätkänkynttilä 石のティーライトホルダー',
+    description:
+      'きこりが雪の上で燃やした割り丸太の火、jätkänkynttiläの形をした石のティーライトホルダー。直径56 mm、高さ100 mm、310グラム、40 mmのティーライト用。冷たい石の上の生きた火を、屋内で。',
+    specs: [
+      'Ø 56 x 100 mm、Ø 40 mmのティーライト用',
+      '0.31 kg',
+      'ホルダー1個',
+    ],
+  },
+  'sk-muurla-moomin-enamel-mug-lumipyry': {
+    name: 'Muurla ムーミン ホーローマグ Lumipyry 3.7 dl',
+    description:
+      '炭素鋼の芯に二重のホーローをかけた3.7 dlのマグで、吹雪の情景Lumipyryがプリントされています。温かい飲み物にも冷たい飲み物にも使え、食洗機と焚き火はOK、電子レンジは不可。',
+    specs: [
+      '3.7 dl',
+      '炭素鋼に二重ホーロー',
+      '食洗機可、電子レンジ不可',
+    ],
+  },
+  'sk-arabia-moomin-pitcher-moominhouse': {
+    name: 'Arabia ムーミン ピッチャー 1.0 l、ムーミンハウス',
+    description:
+      'ムーミンパパが自分で建て、夜も鍵をかけない丸いストーブ形の家、ムーミンハウスを描いたArabiaの1リットルのピッチャー。夏のテーブルでジュースに虫が入らないよう、陶器のふたが付いています。',
+    specs: [
+      '1.0 l',
+      '陶器のふた付き',
+    ],
+    specLabels: [undefined, 'ふた'],
+  },
+  'sk-moomin-duvet-set-merella': {
+    name: 'ムーミン 布団カバーセット 140 x 200 cm、Merellä',
+    description:
+      '海のムーミンたちを描いたコットンの布団カバーと枕カバー。カバー140 x 200 cm、枕カバー50 x 70 cm、ファスナー式。プリント入りのコットン寝具の常として、初回使用前に洗ってください。',
+    specs: [
+      '布団カバー140 x 200 cm、枕カバー50 x 70 cm',
+      'コットン100 %',
+      'ファスナー',
+    ],
+    specLabels: [undefined, undefined, '開閉'],
+  },
+  'sk-moomin-kids-duvet-set-halaus': {
+    name: 'ムーミン 子ども用布団カバーセット 100 x 135 cm、Halaus',
+    description:
+      'Halaus、抱擁、の柄のコットンの子ども用布団カバーと枕カバー。カバー100 x 135 cm、枕カバー60 x 40 cm、ファスナー式。ベビーベッドやジュニアベッドに合うサイズなので、初めての寝具の贈り物になります。',
+    specs: [
+      '布団カバー100 x 135 cm、枕カバー60 x 40 cm',
+      'コットン100 %',
+      'ファスナー',
+    ],
+    specLabels: [undefined, undefined, '開閉'],
+  },
+  'sk-arabia-moomintroll-mini-figurine': {
+    name: 'Arabia ムーミントロール ミニフィギュア',
+    description:
+      '高さ約6 cmの手作りの陶器のムーミントロール。1990年代にトゥーリッキ・ピエティラがデザインし、専用のギフトボックス入りで販売されています。フィギュアはシリーズで集められるため、1つは安心な贈り物、2つは習慣になります。',
+    specs: [
+      '高さ約6 cm',
+      '手作りの陶器',
+      'トゥーリッキ・ピエティラ、1990年代',
+    ],
+    specLabels: [undefined, undefined, 'デザイン'],
+  },
+  'sk-arabia-snorkmaiden-mini-figurine': {
+    name: 'Arabia スノークのおじょうさん ミニフィギュア',
+    description:
+      'トゥーリッキ・ピエティラの1990年代のシリーズから、高さ約6 cmの手作りの陶器のスノークのおじょうさん。専用のギフトボックス入り。ムーミントロールと並べれば、本の表紙のように二人で窓辺に立ちます。',
+    specs: [
+      '高さ約6 cm',
+      '手作りの陶器',
+      'トゥーリッキ・ピエティラ、1990年代',
+    ],
+    specLabels: [undefined, undefined, 'デザイン'],
+  },
+  'sk-lapin-puukko-gift-box': {
+    name: 'ラップランドのプーッコナイフ 刃カバー付き、ギフトボックス',
+    description:
+      '刃カバー付きのラップランド様式のプーッコで、ギフトボックスに入れてお届けします。店はこれを森歩きと日々の作業のためのナイフとして、そして買い替えるのではなく受け継がれる類の品として紹介しています。',
+    specs: [
+      '刃カバーとギフトボックス',
+    ],
+    specLabels: ['付属'],
+  },
+  'sk-loimu-sauna-thermometer': {
+    name: 'Loimu サウナ温度計、白樺',
+    description:
+      '見やすい文字盤の白樺枠のサウナ温度計。最初の一杯の水をかける前に客が尋ねる唯一の問いに答え、ボイラーの脇ではなく丸太の壁にふさわしい姿をしています。',
+    specs: [
+      '白樺',
+    ],
+  },
+  'sk-helsingin-villasukkatehdas-wool-socks': {
+    name: 'Helsingin Villasukkatehdas ウールソックス',
+    description:
+      'フィンランド唯一の伝統的なウールソックス工場の紡毛ソックスで、ヘルシンキで1950年代の機械で編まれています。ミュールシングフリーのウール70パーセントをユムサで紡ぎキュロスコスキで染めたもので、複数のサイズと、樹皮、苔、地衣、夜にちなむ4色。',
+    specs: [
+      'ウール70 %（ミュールシングフリー）、ポリアミド30 %',
+      'ヘルシンキで編み、ウールはユムサで紡ぎキュロスコスキで染色',
+      '複数サイズ、4色',
+    ],
+  },
+  'sk-halva-salmiakkikalat': {
+    name: 'Halva Salmiakkikalat サルミアッキの魚 230 g',
+    description:
+      'Halvaの魚の形のサルミアッキキャンディー、230グラム。フィンランドのどの車のグローブボックスにも入っている袋です。しっかりした噛みごたえ、濃厚な塩リコリス。本物のフィンランドを味わいたいという訪問者に最初に渡すものです。',
+    specs: [
+      '230 g',
+    ],
+  },
+  'sk-kouvolan-lakritsi-500g': {
+    name: 'Kouvolan Lakritsi リコリスピース 500 g',
+    description:
+      'コウヴォラの柔らかいリコリスピース500グラム。1945年に生まれ、1960年に英国のリコリス専門家が調整したレシピで作られています。根の味を隠すために何も加えないと、プレーンなリコリスはこういう味になります。',
+    specs: [
+      '500 g',
+      '1945年のレシピ、1960年に調整',
+    ],
+    specLabels: [undefined, 'レシピ'],
+  },
+  'sk-fazer-omar-chocolate-bar': {
+    name: 'Fazer Omar チョコレートバー 180 g',
+    description:
+      'Omarの60周年に作られた限定の180グラムのバー。1966年から売られている、まろやかでクリーミーなOmarトフィーを、カカオ30パーセント以上のFazerミルクチョコレートに入れました。期間限定販売。',
+    specs: [
+      '180 g',
+      'カカオ30 %以上のミルクチョコレート',
+      '60周年の限定版',
+    ],
+    specLabels: [undefined, 'カカオ', '販売'],
+  },
+  'sk-fazer-salty-suffeli-puffi': {
+    name: 'Karl Fazer Salty Suffeli Puffi チョコレートバー 160 g',
+    description:
+      '新鮮な牛乳で作るFazerのミルクチョコレートに、塩味と甘みのあるカリカリのSuffeliコーンパフを混ぜ込みました。160グラム、カカオ30パーセント以上。塩味か甘味か決められない人への答えです。',
+    specs: [
+      '160 g',
+      'カカオ30 %以上のミルクチョコレート',
+    ],
+    specLabels: [undefined, 'カカオ'],
+  },
+  'sk-tyrkisk-peber-chewy': {
+    name: 'Fazer Tyrkisk Peber Chewy サルミアッキパスティル 38 g',
+    description:
+      'Tyrkisk Peberの辛いサルミアッキを、硬い殻の代わりに新しい柔らかいチュアブルパスティルにしました。店が2026年8月に扱い始めた38グラムのポケットサイズ。サルミアッキと刺激を一口で欲しい人向けです。',
+    specs: [
+      '38 g',
+    ],
+  },
+  'sk-tyrkisk-peber-sour-foams': {
+    name: 'Fazer Tyrkisk Peber Sour Foams フォームキャンディー 150 g',
+    description:
+      'Tyrkisk Peberの穏やかな辛さに、酸っぱいキウイストロベリーとレモンライムの味をつけた柔らかいフォームキャンディー、150グラム。ペッパーリコリス一族へのやさしい入口で、混成グループで最初に開ける袋です。',
+    specs: [
+      '150 g',
+    ],
+  },
+  'sk-marianne-toffee-rae': {
+    name: 'Fazer Marianne Toffee チョコレートドロップ 150 g',
+    description:
+      'Marianneドロップシリーズのトフィー版。つややかでパリッとした殻の中に、カカオ28パーセント以上のミルクチョコレートの芯。再封できる150グラムの袋入り。そこまで残っていれば、お菓子作りにも使えます。',
+    specs: [
+      '150 g',
+      'カカオ28 %以上のミルクチョコレート',
+      '再封できる袋',
+    ],
+    specLabels: [undefined, 'カカオ', 'パッケージ'],
+  },
+  'sk-fasupala-lakritsi': {
+    name: 'Fazer Fasupala Lakritsi ウエハースビスケット 199 g',
+    description:
+      'ミルクチョコレート風味のコーティングの下にリコリス風味のフィリングを挟んだ一口サイズのウエハース、199グラム、パーム油不使用。フィンランド人が箱ごと食べているビスケットのリコリス版で、店が2026年8月に扱い始めました。',
+    specs: [
+      '199 g',
+      'パーム油不使用',
+    ],
+    specLabels: [undefined, '油脂'],
+  },
+  'sk-finnish-flavours-cloudberry-jam': {
+    name: 'Finnish Flavours プレミアム クラウドベリージャム 250 g',
+    description:
+      'フィンランド産クラウドベリー75パーセント、砂糖20パーセントのジャム、250グラム。クラウドベリーは7月末にラップランドの湿原で熟し、大規模栽培ができません。だから一瓶がチョコレート二袋分の値段になります。',
+    specs: [
+      '250 g',
+      'フィンランド産クラウドベリー75 %、砂糖20 %',
+    ],
+  },
+  'sk-lapin-liha-smoked-reindeer-soup': {
+    name: 'Lapin Liha スモークトナカイスープ 400 g',
+    description:
+      '温燻と冷燻のトナカイ肉が入ったクリーミーなスープ、400グラム、Lapin Liha製。鍋で温めるだけ。スーツケースに入る袋に詰まった、ラップランドのコテージの昼食の味です。',
+    specs: [
+      '400 g',
+      '温燻トナカイ3 %と冷燻トナカイ3 %',
+      '鍋で温める',
+    ],
+    specLabels: [undefined, undefined, '調理'],
+  },
+  'sk-vaasan-ruispalat-5pack': {
+    name: 'Vaasan Ruispalat ライ麦パン 5 x 330 g',
+    description:
+      'フィンランドで最も売れているパンの5袋セット。フィンランド産穀物100パーセントを本物のサワードウで焼いた、ちぎり分けの全粒ライ麦ロールで、330グラムの袋に6個、食物繊維12パーセント。海外在住のフィンランド人が訪問者に頼む土産です。',
+    specs: [
+      '5 x 330 g、1袋6個',
+      '全粒ライ麦は穀物の87 %、食物繊維12 %',
+    ],
+  },
+  'sk-poikain-parhaat-freeze-dried-blueberry': {
+    name: 'Poikain Parhaat フリーズドライブルーベリー 15 g',
+    description:
+      'フィンランドの森のブルーベリーをまるごとフリーズドライしただけの15グラム。スーツケースの中では重さを感じず、湿原の8月の味がします。乳糖不使用、グルテンフリー、ヴィーガン、砂糖と保存料無添加。',
+    specs: [
+      '15 g',
+      'フィンランド産フリーズドライブルーベリー100 %',
+      '乳糖不使用、グルテンフリー、ヴィーガン、砂糖無添加、保存料無添加',
+    ],
+    specLabels: [undefined, undefined, '食事対応'],
+  },
+  'rj-arctic-warriors-blueberry-powder': {
+    name: 'Arctic Warriors ブルーベリーパウダー 45 g',
+    description:
+      'フィンランド産ブルーベリーを果汁ごとまるごと乾燥して挽いた、無添加の45グラム。ポリッジ、ヨーグルト、スムージーにひとさじ。ここでは同じベリーをEU域内に発送するRuohonjuuri経由で販売しています。',
+    specs: [
+      '45 g',
+      'フィンランド産ブルーベリー100 %、果汁ごとまるごと乾燥',
+    ],
+  },
+  'rj-poikain-parhaat-blueberry-lemonade': {
+    name: 'Poikain Parhaat ブルーベリーレモネード 0.33 l',
+    description:
+      'タンペレのヴェフマイネンで、人工香料や着色料を使わず本物の材料で作ったオーガニックのブルーベリーレモネード、0.33リットル瓶。フィンランドの試食テーブルでサルミアッキの隣に置く飲み物です。',
+    specs: [
+      '0.33 l',
+      'タンペレのヴェフマイネン製',
+      'オーガニック、人工香料・着色料不使用',
+    ],
+    specLabels: [undefined, undefined, '添加物'],
+  },
+  'rj-nordic-koivu-birch-sap': {
+    name: 'Nordic Koivu 白樺の樹液 500 ml',
+    description:
+      '木が根に蓄えた水を汲み上げる春に採取した白樺の樹液を、加熱処理も保存料もなしに木から直接瓶詰めした500 ml。かすかに甘く、ほとんどは冷たく澄んだ水の味です。',
+    specs: [
+      '500 ml',
+      '非加熱、保存料不使用',
+    ],
+    specLabels: [undefined, '処理'],
+  },
+  'rj-kaino-spruce-sprout-sparkling-075': {
+    name: 'KAINO Drinks トウヒの新芽 オーガニックスパークリング 0.75 l',
+    description:
+      'フィンランドのトウヒの柔らかな5月の新芽で香りづけした、ノンアルコールのオーガニックスパークリング、0.75リットル瓶。タンペレのヴェフマイネン製。全員が飲むわけではないパーティーの乾杯のために。',
+    specs: [
+      '0.75 l',
+      'ノンアルコール、オーガニック',
+      'タンペレのヴェフマイネン製',
+    ],
+    specLabels: [undefined, 'アルコール', undefined],
+  },
+  'rj-yrttipaja-chaga-powder': {
+    name: 'Yrttipaja チャーガパウダー 35 g',
+    description:
+      '白樺の幹に育つ黒いきのこ、チャーガを挽いたお茶用のパウダー。水1リットルに大さじ1杯、10分以上煮出してこします。35グラム、塊を買う前にパクリを試す一番手頃な方法です。',
+    specs: [
+      '35 g',
+      '水1リットルに大さじ1杯、10分以上煮出してこす',
+    ],
+    specLabels: [undefined, '使い方'],
+  },
+  'rj-forestly-mushroom-chips-chili': {
+    name: 'Forestly Foods きのこチップス チリ 50 g',
+    description:
+      '有機栽培のしいたけをやさしく加熱し、チリ、塩、こしょうで味付けしたカリカリのチップス、50グラム。袋に入ったうま味で、ソファのお供にも、スープに砕いてのせても。',
+    specs: [
+      '50 g',
+      '有機栽培のしいたけ、チリ、塩、こしょう',
+    ],
   },
 }

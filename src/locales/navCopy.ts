@@ -126,7 +126,8 @@ const fi: NavCopy = {
     // Koko nimi: "Lapin putiikit".
     boutiques: 'Putiikit',
     // Koko nimi: "Lapin ylellisyys".
-    luxury: 'Ylellisyys',
+    // Vesa 5.9.2026: "kyllä suomeksi se voi olla myös luxus. ylellisyys tuntuu oudolta"
+    luxury: 'Luxus',
     brands: 'Brändit',
     // Yhdyssana: pääsanaa ei voi irrottaa keksimättä uutta sanaa.
     guides: 'Lahjaoppaat',

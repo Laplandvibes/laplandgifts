@@ -56,7 +56,7 @@ const used = new Set(['hero-shop'])
 // putosivat used-joukosta ja jaivat kokonaan ilman variantteja. Sama vika kuin
 // experiences.ts:n kanssa 2.8. Jos teet uuden komponentin joka nimeaa kuvia,
 // lisaa se tahan.
-for (const f of ['src/data/products.ts', 'src/data/categories.ts', 'src/data/experiences.ts', 'src/components/SuomikauppaOutletAd.tsx']) {
+for (const f of ['src/data/products.ts', 'src/data/categories.ts', 'src/data/experiences.ts']) {
   const src = fs.readFileSync(f, 'utf8')
   for (const m of src.matchAll(/image:\s*'([^']+)'/g)) used.add(m[1])
   // 🔴 Kaikki kuvaviittaukset EIVÄT ole `image:`-kenttiä. experiences.ts

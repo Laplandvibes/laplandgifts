@@ -10,7 +10,7 @@ import { categoryBySlug } from '../data/categories'
 import { productsByCategory } from '../data/products'
 import { GIFT_EXPERIENCES, EXPERIENCE_GROUPS, experiencesByGroup } from '../data/experiences'
 import { GYG_PRICE_AS_OF } from '../shared/gyg/picks'
-import { groupProducts, subgroupLabel } from '../data/subgroups'
+import { groupProducts, subgroupLabel, subgroupNote } from '../data/subgroups'
 import { themesForCategory } from '../data/themeProducts'
 import { byShippingBreadth } from '../data/sortProducts'
 import { PARTNERS } from '../data/partners'
@@ -205,13 +205,16 @@ export default function Category() {
                 }
                 return groups.map((g) => {
                   const label = subgroupLabel(g.id, lang)
+                  // Hyllyn otsake vain herkuilla: mikä hylly on ja miksi.
+                  const note = category.id === 'treats' ? subgroupNote(g.id, lang) : undefined
                   return (
                     <section key={g.id} className="mb-12 last:mb-0">
                       {label && (
-                        <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
+                        <h2 className={`${note ? 'mb-2' : 'mb-5'} font-heading text-3xl tracking-wide text-gray`}>
                           {label}
                         </h2>
                       )}
+                      {note && <p className="mb-5 max-w-2xl text-sm text-muted">{note}</p>}
                       <ProductGridSection
                         products={g.items}
                         lang={lang}

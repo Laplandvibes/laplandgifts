@@ -602,23 +602,11 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     description:
       'Brotos de abeto liofilizados, colhidos à mão em uma janela de duas semanas em florestas estatais orgânicas, e só a cada dois anos na mesma floresta. Cítrico e resina em uma colher, 382 mg de vitamina C por 100 g.',
     specs: [
-      '40 g, bruto 0,046 kg',
-      '3 x 11 x 17 cm',
-      'Broto de abeto liofilizado',
-      'Finlândia',
-      'De 1 a 3 colheres de chá por dia',
-      'Energia 1683 kJ / 402 kcal, proteínas 12,1 g, carboidratos 77,8 g, gorduras 4,19 g. Vitamina C 382 mg, vitamina A 970 µg, vitamina K1 332 mg, potássio 1200 mg, fósforo 350 mg, cálcio 130 mg, magnésio 120 mg, zinco 3,6 mg, ferro 2 mg',
-      'Colhidos sob licença em florestas orgânicas da administração florestal do Estado finlandês, a cada dois anos por floresta',
+      '40 g',
+      'Brotos de abeto liofilizados',
+      '382 mg por 100 g',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Dosagem',
-      'Informação nutricional por 100 g',
-      'Colheita',
-    ],
+    specLabels: [undefined, undefined, 'Vitamina C'],
   },
   'arctic-warriors-nettle-powder': {
     name: 'Pó de urtiga Arctic Warriors 150 g',
@@ -639,15 +627,9 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     description:
       'A raiz-de-ouro cresce nas margens úmidas dos córregos e nas paredes de rocha das montanhas da Lapônia, e a Arctic Warriors a extrai em glicerol vegetal junto com urtiga. Uma colher de chá vai no chá, no mingau ou no iogurte.',
     specs: [
-      '100 ml, bruto 0,270 kg',
-      '4,5 x 4,5 x 13 cm',
-      'Glicerol vegetal, urtiga, raiz-de-ouro',
-      'Finlândia',
-      'De 1 a 2 colheres de chá por dia',
-      'Sem laticínios, sem glúten, vegano. O glicerol vegetal não afeta o açúcar no sangue',
-      'Um suplemento alimentar não substitui uma alimentação variada. Manter fora do alcance de crianças e não ultrapassar a dose indicada',
+      '100 ml',
+      'Rodiola e urtiga',
     ],
-    specLabels: [undefined, undefined, undefined, undefined, 'Dosagem', 'Dieta', 'Observação'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 óleo de espinheiro-marítimo e azeite 150 ml',
@@ -947,7 +929,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Kilpisjärvi é conhecida pelo céu noturno excepcionalmente limpo. Um trajeto curto de snowmobile leva vocês dois a um ponto onde observar a aurora em total paz, com bebidas quentes contra o frio. À noite, das 20h às 23h, sujeito às condições do tempo.',
     specs: [
       'Tour guiado de aurora boreal para dois, cerca de 15 km de snowmobile, bebidas quentes incluídas',
-      '3 horas, das 20h às 23h',
+      '3 horas, das 20.00 às 23.00',
       '2 pessoas',
       'Kilpisjärvi',
       '18 anos para pilotar, 8 anos no trenó',
@@ -1359,5 +1341,416 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Marrom ou rosa',
     ],
     specLabels: [undefined, undefined, 'Cores'],
+  },
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': {
+    name: 'Moletom com capuz Makia Kontio',
+    description:
+      'Moletom com capuz de caimento regular em algodão orgânico 100 por cento, tingido depois da costura. O tingimento na peça dá uma cor mais profunda e um toque mais macio que o tingimento no fio, e o tom mantém seu ar levemente desgastado lavagem após lavagem.',
+    specs: [
+      '100 % algodão orgânico, tingido na peça',
+      'S a XXL',
+    ],
+  },
+  'makia-trademark-hoodie': {
+    name: 'Moletom com capuz Makia Trademark',
+    description:
+      'O moletom mais simples da Makia: caimento regular, algodão orgânico 100 por cento e a pequena marca no peito. O que se leva para uma semana na cabana, em que o mesmo moletom vai da fogueira da manhã à varanda da sauna à noite.',
+    specs: [
+      '100 % algodão orgânico',
+      'S a XXL',
+    ],
+  },
+  'makia-moray-zip-knit': {
+    name: 'Cardigã de tricô com zíper Makia Moray',
+    description:
+      'Cardigã com zíper de caimento regular, tricotado em lã merino 100 por cento. A merino aquece sem volume e seca de dentro para fora, então funciona como camada sob uma jaqueta impermeável numa caminhada nos fjells e sozinho num café aquecido.',
+    specs: [
+      '100 % lã merino',
+      'S a XXL',
+    ],
+  },
+  'makia-form-jacket': {
+    name: 'Jaqueta de inverno Makia Form',
+    description:
+      'Jaqueta longa de inverno com caimento regular e isolamento em poliéster reciclado. Um punho canelado escondido na abertura da manga fecha o pulso contra o vento, o que importa mais numa rua de Rovaniemi em janeiro do que qualquer lista de recursos.',
+    specs: [
+      'Isolamento em poliéster reciclado, punhos canelados escondidos',
+      'S a XXL',
+    ],
+  },
+  'makia-martin-beanie': {
+    name: 'Gorro de merino Makia Martin',
+    description:
+      'Gorro de lã merino 100 por cento com um pequeno emblema, tricotado na Finlândia. A porta de entrada mais barata para a Makia e a peça com mais chance de ser usada todo dia de outubro a abril.',
+    specs: [
+      '100 % lã merino',
+      'Feito na Finlândia',
+      'Tamanho único',
+    ],
+  },
+  'makia-mari-balaclava': {
+    name: 'Balaclava de tricô Makia Mari',
+    description:
+      'Balaclava tricotada em mistura de lã, poliéster, alpaca e elastano. Cobre orelhas, pescoço e bochechas de uma vez, e essa é a diferença entre um passeio de moto de neve e um passeio de moto de neve lembrado pelo motivo errado.',
+    specs: [
+      'Mistura de lã, poliéster, alpaca e elastano',
+      'Tamanho único',
+    ],
+  },
+  'halti-pehmee-merino-beanie': {
+    name: 'Gorro de merino Halti Pehmee',
+    description:
+      'Gorro urbano de lã merino 100 por cento com barra canelada dupla, feito na Finlândia. A Halti o chama de Pehmee, macio, e é o gorro para os dias em que um gorro de esqui pareceria uma curva errada.',
+    specs: [
+      '100 % lã merino',
+      'Feito na Finlândia',
+      'Secar na horizontal',
+      'Tamanho único',
+    ],
+  },
+  'halti-rockmoon-fleece-hoodie': {
+    name: 'Fleece com capuz Halti Rockmoon, masculino',
+    description:
+      'Fleece quente com capuz em tecido elástico escovado dos dois lados, com microtecido corta-vento no capuz e nos ombros, por onde o frio entra primeiro. Sob uma jaqueta impermeável no fjell, sozinho ao redor da cabana.',
+    specs: [
+      'Fleece elástico escovado dos dois lados, microtecido corta-vento no capuz e nos ombros',
+      'S a XXXL',
+    ],
+  },
+  'halti-viiri-fleece-gloves': {
+    name: 'Luvas de fleece Halti Viiri',
+    description:
+      'Luvas leves de 45 gramas em fleece corta-vento Stormwall, com estampa de silicone antiderrapante na palma e pontas touchscreen no polegar e no indicador, para tirar a foto da aurora sem as mãos nuas.',
+    specs: [
+      'Fleece Stormwall 100 % poliéster, palma 65 % poliéster, 32 % poliamida, 3 % elastano',
+      '45 g',
+      'Polegar e indicador',
+      'Lavagem delicada a no máximo 30 °C',
+    ],
+    specLabels: [undefined, undefined, 'Touchscreen', undefined],
+  },
+  'nb-moomin-classics-beanie': {
+    name: 'Gorro Moomin Classics',
+    description:
+      'Gorro adulto da coleção Moomin Classics em poliéster reciclado e acrílico, bege, tamanho único. Um produto Moomin oficial, e essa é a linha que o separa da versão de barraca de feira.',
+    specs: [
+      'Poliéster reciclado e acrílico',
+      'Adulto, tamanho único',
+      'Bege',
+    ],
+  },
+  'nb-snufkin-mens-socks': {
+    name: 'Meias masculinas Snufkin',
+    description:
+      'Meias masculinas com o Snufkin, EU 40 a 45, 60 por cento algodão com poliéster, náilon e elastano para elasticidade. O presente Moomin mais barato deste site que é usado em vez de exposto.',
+    specs: [
+      'EU 40-45',
+      '60 % algodão, 33 % poliéster, 4 % náilon, 2 % elastano, 1 % elastodieno',
+    ],
+  },
+  'nb-hattifatteners-retro-socks': {
+    name: 'Meias retrô femininas Hattifatteners',
+    description:
+      'Meias em estilo retrô com os Hattifatteners, EU 36 a 42, 67 por cento algodão. Elásticas o bastante para um tamanho servir à maioria, e a primeira coisa que uma leitora dos Moomins pega quando a gaveta de meias está aberta.',
+    specs: [
+      'EU 36-42',
+      '67 % algodão, 25 % poliéster, 4 % elastodieno, 3 % náilon, 1 % elastano',
+    ],
+  },
+  'sk-suomi-propeller-cap': {
+    name: 'Boné de hélice de torcedor Suomi',
+    description:
+      'Boné de hélice azul e branco para a arquibancada, a fan zone e a final de hóquei no gelo no pub. Não é um chapéu sério, e esse é exatamente o ponto numa noite em que a Finlândia joga.',
+    specs: [
+      'Azul e branco',
+    ],
+  },
+  'sk-muurla-moomin-lantern-tahtihetki': {
+    name: 'Lanterna Moomin Muurla Tähtihetki 18 cm',
+    description:
+      'Lanterna de vidro sem chumbo feita à mão da série Tähtihetki da Muurla com detalhes dourados, 15,5 cm de diâmetro e 18 cm de altura. Serve como lanterna para velas, tigela para os doces da estação ou vaso para um buquê pequeno.',
+    specs: [
+      'Ø 15,5 cm, altura 18 cm',
+      'Vidro sem chumbo feito à mão',
+      'Lavar à mão',
+    ],
+  },
+  'sk-hukka-soapstone-candle': {
+    name: 'Porta-velas de pedra Hukka Jätkänkynttilä',
+    description:
+      'Porta-velas de pedra no formato de um jätkänkynttilä, a tora rachada que os lenhadores acendiam sobre a neve. 56 mm de diâmetro, 100 mm de altura, 310 gramas, para uma vela de chá de 40 mm. Fogo vivo sobre pedra fria, dentro de casa.',
+    specs: [
+      'Ø 56 x 100 mm, para uma vela de chá Ø 40 mm',
+      '0,31 kg',
+      '1 porta-velas',
+    ],
+  },
+  'sk-muurla-moomin-enamel-mug-lumipyry': {
+    name: 'Caneca esmaltada Moomin Muurla Lumipyry 3,7 dl',
+    description:
+      'Caneca esmaltada de 3,7 dl com núcleo de aço carbono e esmalte duplo, estampada com a cena de nevasca Lumipyry. Aceita bebidas quentes e frias, vai à lava-louças e à fogueira, não ao micro-ondas.',
+    specs: [
+      '3,7 dl',
+      'Aço carbono com esmalte duplo',
+      'Pode ir à lava-louças, não ao micro-ondas',
+    ],
+  },
+  'sk-arabia-moomin-pitcher-moominhouse': {
+    name: 'Jarra Moomin Arabia 1,0 l, Casa dos Moomins',
+    description:
+      'Jarra de um litro da Arabia com a Casa dos Moomins, a casa redonda em forma de fogão que o Papai Moomin construiu sozinho e nunca tranca à noite. Vem com tampa de cerâmica que mantém os insetos longe do suco numa mesa de verão.',
+    specs: [
+      '1,0 l',
+      'Tampa de cerâmica incluída',
+    ],
+    specLabels: [undefined, 'Tampa'],
+  },
+  'sk-moomin-duvet-set-merella': {
+    name: 'Jogo de capa de edredom Moomin 140 x 200 cm, Merellä',
+    description:
+      'Capa de edredom e fronha de algodão com os Moomins no mar, capa 140 x 200 cm e fronha 50 x 70 cm, fechamento com zíper. Lavar antes do primeiro uso, como toda roupa de cama de algodão estampado.',
+    specs: [
+      'Capa de edredom 140 x 200 cm, fronha 50 x 70 cm',
+      '100 % algodão',
+      'Zíper',
+    ],
+    specLabels: [undefined, undefined, 'Fechamento'],
+  },
+  'sk-moomin-kids-duvet-set-halaus': {
+    name: 'Jogo de capa de edredom infantil Moomin 100 x 135 cm, Halaus',
+    description:
+      'Capa de edredom e fronha infantis de algodão na estampa Halaus, abraço, capa 100 x 135 cm e fronha 60 x 40 cm com zíper. O tamanho serve para berço ou cama júnior, então é um primeiro presente de roupa de cama.',
+    specs: [
+      'Capa de edredom 100 x 135 cm, fronha 60 x 40 cm',
+      '100 % algodão',
+      'Zíper',
+    ],
+    specLabels: [undefined, undefined, 'Fechamento'],
+  },
+  'sk-arabia-moomintroll-mini-figurine': {
+    name: 'Miniatura Moomintroll Arabia',
+    description:
+      'Moomintroll de cerâmica feito à mão com cerca de 6 cm de altura, desenhado por Tuulikki Pietilä nos anos 1990 e vendido em sua própria caixa de presente. As miniaturas são colecionadas em séries, o que faz de uma um presente seguro e de duas um hábito.',
+    specs: [
+      'Altura de cerca de 6 cm',
+      'Cerâmica feita à mão',
+      'Tuulikki Pietilä, anos 1990',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'sk-arabia-snorkmaiden-mini-figurine': {
+    name: 'Miniatura Snorkmaiden Arabia',
+    description:
+      'Snorkmaiden de cerâmica feita à mão com cerca de 6 cm de altura, da série dos anos 1990 de Tuulikki Pietilä, em sua própria caixa de presente. Ao lado do Moomintroll, os dois ficam no parapeito como nas capas dos livros.',
+    specs: [
+      'Altura de cerca de 6 cm',
+      'Cerâmica feita à mão',
+      'Tuulikki Pietilä, anos 1990',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'sk-lapin-puukko-gift-box': {
+    name: 'Faca puukko da Lapônia com protetor de lâmina, caixa de presente',
+    description:
+      'Puukko em estilo lapão com protetor de lâmina, entregue em caixa de presente. A loja o apresenta como a faca para passeios na floresta e tarefas do dia a dia, e como o tipo de objeto que passa de geração em geração em vez de ser trocado.',
+    specs: [
+      'Protetor de lâmina e caixa de presente',
+    ],
+    specLabels: ['Incluído'],
+  },
+  'sk-loimu-sauna-thermometer': {
+    name: 'Termômetro de sauna Loimu, bétula',
+    description:
+      'Termômetro de sauna com moldura de bétula e mostrador claro. Ele responde à única pergunta que um convidado faz antes da primeira concha de água, e parece pertencer a uma parede de toras e não ao lado de uma caldeira.',
+    specs: [
+      'Bétula',
+    ],
+  },
+  'sk-helsingin-villasukkatehdas-wool-socks': {
+    name: 'Meias de lã Helsingin Villasukkatehdas',
+    description:
+      'Meias de lã cardada da única fábrica tradicional de meias de lã da Finlândia, tricotadas em Helsinque em máquinas dos anos 1950. 70 por cento de lã sem mulesing, fiada em Jämsä e tingida em Kyröskoski, em vários tamanhos e quatro cores batizadas de casca, musgo, líquen e noite.',
+    specs: [
+      '70 % lã (sem mulesing), 30 % poliamida',
+      'Tricotadas em Helsinque, lã fiada em Jämsä e tingida em Kyröskoski',
+      'Vários tamanhos, quatro cores',
+    ],
+  },
+  'sk-halva-salmiakkikalat': {
+    name: 'Peixinhos de alcaçuz salgado Halva Salmiakkikalat 230 g',
+    description:
+      'Balas de salmiakki em formato de peixe da Halva, 230 gramas, o saco que fica em todo porta-luvas finlandês. Mordida firme, alcaçuz salgado intenso, e a primeira coisa a entregar a um visitante que diz querer provar a Finlândia de verdade.',
+    specs: [
+      '230 g',
+    ],
+  },
+  'sk-kouvolan-lakritsi-500g': {
+    name: 'Pedaços de alcaçuz Kouvolan Lakritsi 500 g',
+    description:
+      'Meio quilo de pedaços de alcaçuz macio de Kouvola, feitos com uma receita nascida em 1945 e ajustada em 1960 por um especialista inglês em alcaçuz. É assim que o alcaçuz puro sabe quando nada é adicionado para esconder a raiz.',
+    specs: [
+      '500 g',
+      'De 1945, ajustada em 1960',
+    ],
+    specLabels: [undefined, 'Receita'],
+  },
+  'sk-fazer-omar-chocolate-bar': {
+    name: 'Barra de chocolate Fazer Omar 180 g',
+    description:
+      'Barra limitada de 180 gramas criada para os 60 anos do Omar: o toffee Omar suave e cremoso vendido desde 1966, dentro do chocolate ao leite Fazer com pelo menos 30 por cento de cacau. À venda só por tempo limitado.',
+    specs: [
+      '180 g',
+      'Chocolate ao leite com pelo menos 30 % de cacau',
+      'Edição limitada para o 60º aniversário',
+    ],
+    specLabels: [undefined, 'Cacau', 'Disponibilidade'],
+  },
+  'sk-fazer-salty-suffeli-puffi': {
+    name: 'Barra de chocolate Karl Fazer Salty Suffeli Puffi 160 g',
+    description:
+      'O chocolate ao leite da Fazer feito com leite fresco, com crocantes flocos de milho Suffeli salgados e doces. 160 gramas, pelo menos 30 por cento de cacau, e a resposta para quem não consegue decidir entre salgado e doce.',
+    specs: [
+      '160 g',
+      'Chocolate ao leite com pelo menos 30 % de cacau',
+    ],
+    specLabels: [undefined, 'Cacau'],
+  },
+  'sk-tyrkisk-peber-chewy': {
+    name: 'Pastilhas de salmiakki Fazer Tyrkisk Peber Chewy 38 g',
+    description:
+      'O salmiakki picante da Tyrkisk Peber numa nova pastilha macia de mascar no lugar da casca dura. Embalagem de bolso de 38 gramas, listada pela loja em agosto de 2026, para quem quer salmiakki e ardência na mesma mordida.',
+    specs: [
+      '38 g',
+    ],
+  },
+  'sk-tyrkisk-peber-sour-foams': {
+    name: 'Balas de espuma Fazer Tyrkisk Peber Sour Foams 150 g',
+    description:
+      'Balas de espuma macias com a ardência leve da Tyrkisk Peber e sabores azedos de kiwi-morango e limão-lima, 150 gramas. Uma entrada mais suave na família do alcaçuz apimentado, e o saco que se abre primeiro num grupo misto.',
+    specs: [
+      '150 g',
+    ],
+  },
+  'sk-marianne-toffee-rae': {
+    name: 'Drágeas de chocolate Fazer Marianne Toffee 150 g',
+    description:
+      'A série de drágeas Marianne em versão toffee: casca brilhante e crocante em volta de um centro de chocolate ao leite com pelo menos 28 por cento de cacau, em saco de 150 gramas com fecho. Também pensadas para assar, se alguma sobreviver até lá.',
+    specs: [
+      '150 g',
+      'Chocolate ao leite com pelo menos 28 % de cacau',
+      'Saco com fecho',
+    ],
+    specLabels: [undefined, 'Cacau', 'Embalagem'],
+  },
+  'sk-fasupala-lakritsi': {
+    name: 'Biscoitos wafer Fazer Fasupala Lakritsi 199 g',
+    description:
+      'Wafers de uma mordida com recheio sabor alcaçuz sob uma cobertura sabor chocolate ao leite, 199 gramas, sem óleo de palma. A versão de alcaçuz de um biscoito que os finlandeses já comem às caixas, listada pela loja em agosto de 2026.',
+    specs: [
+      '199 g',
+      'Sem óleo de palma',
+    ],
+    specLabels: [undefined, 'Gordura'],
+  },
+  'sk-finnish-flavours-cloudberry-jam': {
+    name: 'Geleia premium de amora-ártica Finnish Flavours 250 g',
+    description:
+      'Geleia com 75 por cento de amoras-árticas finlandesas e 20 por cento de açúcar, 250 gramas. As amoras-árticas amadurecem nos pântanos da Lapônia no fim de julho e não podem ser cultivadas em grande escala, por isso um pote custa o que custam dois sacos de chocolate.',
+    specs: [
+      '250 g',
+      'Amora-ártica finlandesa 75 %, açúcar 20 %',
+    ],
+  },
+  'sk-lapin-liha-smoked-reindeer-soup': {
+    name: 'Sopa de rena defumada Lapin Liha 400 g',
+    description:
+      'Sopa cremosa com rena defumada a quente e a frio, 400 gramas, feita pela Lapin Liha. Aquecer numa panela; é o sabor de um almoço de cabana lapão numa embalagem que cabe na mala.',
+    specs: [
+      '400 g',
+      'Rena defumada a quente 3 % e rena defumada a frio 3 %',
+      'Aquecer numa panela',
+    ],
+    specLabels: [undefined, undefined, 'Preparo'],
+  },
+  'sk-vaasan-ruispalat-5pack': {
+    name: 'Pão de centeio Vaasan Ruispalat 5 x 330 g',
+    description:
+      'Cinco sacos do pão mais vendido da Finlândia: pãezinhos de centeio integral rasgados, assados com fermento natural de verdade a partir de cereais finlandeses 100 por cento, seis por saco de 330 gramas, 12 por cento de fibras. O que os finlandeses no exterior pedem que os visitantes tragam.',
+    specs: [
+      '5 x 330 g, 6 pãezinhos por saco',
+      'Centeio integral 87 % do cereal, fibras 12 %',
+    ],
+  },
+  'sk-poikain-parhaat-freeze-dried-blueberry': {
+    name: 'Mirtilos liofilizados Poikain Parhaat 15 g',
+    description:
+      'Mirtilos silvestres finlandeses inteiros, liofilizados e nada mais: 15 gramas que não pesam nada na mala e têm gosto de agosto num pântano. Sem lactose, sem glúten, veganos, sem açúcar adicionado nem conservantes.',
+    specs: [
+      '15 g',
+      '100 % mirtilo finlandês liofilizado',
+      'Sem lactose, sem glúten, vegano, sem açúcar adicionado, sem conservantes',
+    ],
+    specLabels: [undefined, undefined, 'Dieta'],
+  },
+  'rj-arctic-warriors-blueberry-powder': {
+    name: 'Pó de mirtilo Arctic Warriors 45 g',
+    description:
+      'Mirtilos finlandeses secos inteiros com seu suco e moídos, sem nada adicionado, 45 gramas. Uma colher no mingau, no iogurte ou no smoothie; a mesma fruta é vendida aqui pela Ruohonjuuri, que envia dentro da UE.',
+    specs: [
+      '45 g',
+      '100 % mirtilo finlandês, seco inteiro com o suco',
+    ],
+  },
+  'rj-poikain-parhaat-blueberry-lemonade': {
+    name: 'Limonada de mirtilo Poikain Parhaat 0,33 l',
+    description:
+      'Limonada orgânica de mirtilo feita em Vehmainen, Tampere, com ingredientes de verdade e sem aromas ou corantes artificiais, garrafa de 0,33 litro. O refrigerante para pôr ao lado do salmiakki numa mesa de degustação finlandesa.',
+    specs: [
+      '0,33 l',
+      'Feita em Vehmainen, Tampere',
+      'Orgânica, sem aromas ou corantes artificiais',
+    ],
+    specLabels: [undefined, undefined, 'Aditivos'],
+  },
+  'rj-nordic-koivu-birch-sap': {
+    name: 'Seiva de bétula Nordic Koivu 500 ml',
+    description:
+      'Seiva de bétula colhida na primavera, quando a árvore sobe a água armazenada nas raízes, engarrafada direto da árvore sem tratamento térmico ou conservantes, 500 ml. Tem gosto levemente doce e sobretudo de água fria e limpa.',
+    specs: [
+      '500 ml',
+      'Sem tratamento térmico, sem conservantes',
+    ],
+    specLabels: [undefined, 'Processamento'],
+  },
+  'rj-kaino-spruce-sprout-sparkling-075': {
+    name: 'Espumante orgânico de brotos de abeto KAINO Drinks 0,75 l',
+    description:
+      'Bebida espumante orgânica sem álcool aromatizada com brotos de abeto, os brotos tenros de maio do abeto finlandês, em garrafa de 0,75 litro. Feita em Vehmainen, Tampere, para o brinde numa festa em que nem todos bebem.',
+    specs: [
+      '0,75 l',
+      'Sem álcool, orgânica',
+      'Feita em Vehmainen, Tampere',
+    ],
+    specLabels: [undefined, 'Álcool', undefined],
+  },
+  'rj-yrttipaja-chaga-powder': {
+    name: 'Pó de chaga Yrttipaja 35 g',
+    description:
+      'Chaga moído, o fungo preto que cresce nos troncos de bétula, para preparar como chá: uma colher de sopa por litro de água, ferver em fogo baixo por pelo menos dez minutos e coar. 35 gramas, o jeito mais barato de experimentar o pakuri antes de comprar pedaços.',
+    specs: [
+      '35 g',
+      '1 colher de sopa por litro de água, ferver em fogo baixo por pelo menos 10 minutos e coar',
+    ],
+    specLabels: [undefined, 'Uso'],
+  },
+  'rj-forestly-mushroom-chips-chili': {
+    name: 'Chips de cogumelo Forestly Foods, pimenta 50 g',
+    description:
+      'Chips crocantes de shiitake de cultivo orgânico, cozidos com delicadeza e temperados com pimenta, sal e pimenta-do-reino, 50 gramas. Umami num saco, para o sofá ou esfarelados sobre uma sopa.',
+    specs: [
+      '50 g',
+      'Shiitake de cultivo orgânico, pimenta, sal e pimenta-do-reino',
+    ],
   },
 }

@@ -603,23 +603,11 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     description:
       '유기농 국유림에서 2 주라는 짧은 기간에 손으로 따고, 같은 숲에서는 2 년에 한 번만 채취한 가문비 새순을 동결건조했습니다. 한 숟가락에 감귤과 송진의 향, 100 g당 비타민 C 382 mg.',
     specs: [
-      '40 g, 총중량 0.046 kg',
-      '3 x 11 x 17 cm',
-      '동결건조 가문비 새순',
-      '핀란드',
-      '하루 1 에서 3 티스푼',
-      '열량 1683 kJ / 402 kcal, 단백질 12.1 g, 탄수화물 77.8 g, 지방 4.19 g. 비타민 C 382 mg, 비타민 A 970 µg, 비타민 K1 332 mg, 칼륨 1200 mg, 인 350 mg, 칼슘 130 mg, 마그네슘 120 mg, 아연 3.6 mg, 철 2 mg',
-      '핀란드 국유림 관리청 소유의 유기농 숲에서 허가를 받아 채취, 같은 숲에서는 2 년에 한 번',
+      '40 g',
+      '동결건조 가문비나무 새순',
+      '100 g당 382 mg',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '섭취량',
-      '100 g당 영양성분',
-      '채취',
-    ],
+    specLabels: [undefined, undefined, '비타민 C'],
   },
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors 쐐기풀 파우더 150 g',
@@ -640,15 +628,9 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     description:
       '홍경천은 라플란드 산지의 축축한 개울가와 바위 벽에서 자랍니다. Arctic Warriors는 이것을 쐐기풀과 함께 식물성 글리세롤에 추출합니다. 한 티스푼을 차나 죽, 요구르트에 넣으면 됩니다.',
     specs: [
-      '100 ml, 총중량 0.270 kg',
-      '4.5 x 4.5 x 13 cm',
-      '식물성 글리세롤, 쐐기풀, 홍경천',
-      '핀란드',
-      '하루 1 에서 2 티스푼',
-      '유제품 무첨가, 글루텐 프리, 비건. 식물성 글리세롤은 혈당에 영향을 주지 않습니다',
-      '건강기능식품은 균형 잡힌 식사를 대신하지 않습니다. 어린이의 손이 닿지 않는 곳에 보관하고 표시된 양을 넘기지 마세요',
+      '100 ml',
+      '홍경천과 쐐기풀',
     ],
-    specLabels: [undefined, undefined, undefined, undefined, '섭취량', '식이', '참고'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 산자나무와 올리브 오일 150 ml',
@@ -885,8 +867,8 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '내수압 20,000 mm, 투습도 30,000 g의 3 겹 셸. 이 두 숫자는 서로 반대 방향의 이야기입니다. 앞의 것은 진눈깨비를 바깥에 두고, 뒤의 것은 오르막에서 흘린 땀을 안에서 얼리지 않고 내보냅니다.',
     specs: [
       'DrymaxX Nano 니트 셸, 3 겹. 재활용 폴리에스터 100%',
-      '20,000 mm',
-      '30,000 g/m²/24 h',
+      '20 000 mm',
+      '30 000 g/m²/24 h',
     ],
     specLabels: [undefined, '내수압', '투습도'],
   },
@@ -897,7 +879,7 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specs: [
       'DrymaxX, 4 방향 신축, 방수 방풍. 가죽 손바닥',
       '120 g Microtherm Dynamic',
-      '15,000 mm / 15,000 g/m²/24 h',
+      '15 000 mm / 15 000 g/m²/24 h',
     ],
     specLabels: [undefined, '충전재', '내수압과 투습도'],
   },
@@ -948,7 +930,7 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '킬피스야르비는 유난히 맑은 밤하늘로 알려진 곳입니다. 스노모빌로 잠시 달리면 자연의 고요 속에서 오로라를 감상할 수 있는 장소에 도착하며, 추위를 녹일 따뜻한 음료가 준비됩니다. 저녁 20:00~23:00에 진행되며 기상 상황에 따라 달라질 수 있습니다.',
     specs: [
       '가이드 동행 오로라 투어 2인, 스노모빌로 약 15 km, 따뜻한 음료 포함',
-      '3시간, 20:00~23:00',
+      '3시간, 20.00~23.00',
       '2명',
       '킬피스야르비',
       '운전은 18세부터, 썰매 탑승은 8세부터',
@@ -1059,7 +1041,7 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     description:
       '260 그램 면 티셔츠, 라벤더 색상, 박시한 핏이며 큰 프린트 대신 가슴에 작은 무민 자수가 들어갑니다. 몸에 붙지 않고 곧게 떨어질 만큼 두껍습니다.',
     specs: [
-      '면 100%, 260 g/m²',
+      '면 100%, 260 g/m2',
       '유니섹스 박시 핏, XS부터 XXL까지',
       '박시 핏이라 매장은 한 사이즈 작게 주문하기를 권합니다',
     ],
@@ -1070,7 +1052,7 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     description:
       '240 그램 면 티셔츠에 삐삐를 핀란드에서 프린트했습니다. 유니섹스 스트레이트 핏이고 밑단이 평균보다 깁니다. 어떤 집에서는 아스트리드 린드그렌이 무민보다 더 멀리 여행합니다.',
     specs: [
-      '면 100%, 240 g/m²',
+      '면 100%, 240 g/m2',
       '유니섹스 스트레이트 핏, M부터 XXL까지',
       '핀란드에서 프린트',
     ],
@@ -1080,7 +1062,7 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     description:
       '면과 폴리에스터 300 그램 후디를 핀란드에서 프린트했습니다. 유니섹스 스트레이트 핏입니다. 사우나가 식은 뒤 오두막의 저녁에 실제로 걸치고 있는 옷이 바로 이 한 벌입니다.',
     specs: [
-      '면 65%, 폴리에스터 35%, 300 g/m²',
+      '면 65%, 폴리에스터 35%, 300 g/m2',
       '유니섹스 스트레이트 핏, XS부터 XXL까지',
       '핀란드에서 프린트',
     ],
@@ -1360,5 +1342,416 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '갈색 또는 분홍',
     ],
     specLabels: [undefined, undefined, '색상'],
+  },
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': {
+    name: 'Makia Kontio 후드 스웨트셔츠',
+    description:
+      '봉제 후에 염색한 100퍼센트 유기농 면 레귤러 핏 후드입니다. 제품 염색은 원사 염색보다 색이 깊고 촉감이 부드러우며, 빨아도 살짝 바랜 듯한 느낌이 그대로 남습니다.',
+    specs: [
+      '100 % 유기농 면, 제품 염색',
+      'S부터 XXL까지',
+    ],
+  },
+  'makia-trademark-hoodie': {
+    name: 'Makia Trademark 후드 스웨트셔츠',
+    description:
+      'Makia에서 가장 담백한 후드: 레귤러 핏, 100퍼센트 유기농 면, 가슴의 작은 트레이드마크. 아침 모닥불에서 저녁 사우나 베란다까지 같은 옷 한 벌로 지내는 오두막 일주일에 챙겨 갈 옷입니다.',
+    specs: [
+      '100 % 유기농 면',
+      'S부터 XXL까지',
+    ],
+  },
+  'makia-moray-zip-knit': {
+    name: 'Makia Moray 집업 니트 가디건',
+    description:
+      '100퍼센트 메리노 울로 짠 레귤러 핏 집업 가디건입니다. 메리노는 두껍지 않게 따뜻하고 안쪽부터 마르기 때문에, 산지 트레킹에서는 셸 재킷 아래 레이어로, 따뜻한 카페에서는 단독으로 입기 좋습니다.',
+    specs: [
+      '100 % 메리노 울',
+      'S부터 XXL까지',
+    ],
+  },
+  'makia-form-jacket': {
+    name: 'Makia Form 겨울 재킷',
+    description:
+      '재생 폴리에스터 충전재를 넣은 레귤러 핏 롱 겨울 재킷입니다. 소매 끝 안쪽의 숨겨진 립이 바람을 막아 주는데, 1월 로바니에미의 거리에서는 어떤 기능 목록보다 그것이 중요합니다.',
+    specs: [
+      '재생 폴리에스터 충전재, 소매 끝 숨은 립',
+      'S부터 XXL까지',
+    ],
+  },
+  'makia-martin-beanie': {
+    name: 'Makia Martin 메리노 비니',
+    description:
+      '작은 패치가 달린 100퍼센트 메리노 울 비니로 핀란드에서 짰습니다. Makia로 들어가는 가장 저렴한 입구이자, 10월부터 4월까지 매일 쓰게 될 가능성이 가장 큰 제품입니다.',
+    specs: [
+      '100 % 메리노 울',
+      '핀란드 제조',
+      '원 사이즈',
+    ],
+  },
+  'makia-mari-balaclava': {
+    name: 'Makia Mari 니트 바라클라바',
+    description:
+      '울, 폴리에스터, 알파카, 엘라스테인 혼방으로 짠 바라클라바입니다. 귀, 목, 뺨을 한 번에 덮어 주며, 그것이 스노모빌 투어와 엉뚱한 이유로 기억에 남는 스노모빌 투어의 차이입니다.',
+    specs: [
+      '울, 폴리에스터, 알파카, 엘라스테인 혼방',
+      '원 사이즈',
+    ],
+  },
+  'halti-pehmee-merino-beanie': {
+    name: 'Halti Pehmee 메리노 비니',
+    description:
+      '이중 립 밴드의 100퍼센트 메리노 울 시티 비니로 핀란드에서 만들었습니다. Halti는 이것을 부드럽다는 뜻의 Pehmee라 부르며, 스키 모자를 쓰면 길을 잘못 든 것처럼 보이는 날을 위한 비니입니다.',
+    specs: [
+      '100 % 메리노 울',
+      '핀란드 제조',
+      '뉘어서 건조',
+      '원 사이즈',
+    ],
+  },
+  'halti-rockmoon-fleece-hoodie': {
+    name: 'Halti Rockmoon 남성 후드 플리스',
+    description:
+      '양면 기모 스트레치 원단의 따뜻한 후드 플리스로, 추위가 가장 먼저 들어오는 후드와 어깨에는 방풍 마이크로 원단을 댔습니다. 산에서는 셸 아래에, 오두막 주변에서는 단독으로.',
+    specs: [
+      '양면 기모 스트레치 플리스, 후드와 어깨에 방풍 마이크로 원단',
+      'S부터 XXXL까지',
+    ],
+  },
+  'halti-viiri-fleece-gloves': {
+    name: 'Halti Viiri 플리스 장갑',
+    description:
+      '방풍 Stormwall 플리스로 만든 45그램의 가벼운 장갑입니다. 손바닥에는 실리콘 그립 프린트, 엄지와 검지 끝은 터치스크린 대응이라 맨손 없이 오로라 사진을 찍을 수 있습니다.',
+    specs: [
+      'Stormwall 플리스 100 % 폴리에스터, 손바닥 65 % 폴리에스터, 32 % 폴리아미드, 3 % 엘라스테인',
+      '45 g',
+      '엄지와 검지',
+      '최고 30 °C 섬세 세탁',
+    ],
+    specLabels: [undefined, undefined, '터치스크린', undefined],
+  },
+  'nb-moomin-classics-beanie': {
+    name: '무민 Classics 비니',
+    description:
+      'Moomin Classics 컬렉션의 성인용 비니로 재생 폴리에스터와 아크릴, 베이지, 원 사이즈입니다. 무민 공식 제품이며, 그것이 시장 좌판 버전과 구분되는 선입니다.',
+    specs: [
+      '재생 폴리에스터와 아크릴',
+      '성인용, 원 사이즈',
+      '베이지',
+    ],
+  },
+  'nb-snufkin-mens-socks': {
+    name: '스너프킨 남성 양말',
+    description:
+      '스너프킨이 그려진 남성 양말, EU 40부터 45, 면 60퍼센트에 신축성을 위한 폴리에스터, 나일론, 엘라스테인. 이 사이트에서 가장 저렴한 무민 선물이면서 진열이 아니라 신게 되는 제품입니다.',
+    specs: [
+      'EU 40-45',
+      '면 60 %, 폴리에스터 33 %, 나일론 4 %, 엘라스테인 2 %, 엘라스토디엔 1 %',
+    ],
+  },
+  'nb-hattifatteners-retro-socks': {
+    name: '해티패트너 여성 레트로 양말',
+    description:
+      '해티패트너가 그려진 레트로 스타일 양말, EU 36부터 42, 면 67퍼센트. 한 사이즈로 대부분에게 맞을 만큼 잘 늘어나며, 양말 서랍이 열려 있으면 무민 독자가 가장 먼저 집어 드는 한 켤레입니다.',
+    specs: [
+      'EU 36-42',
+      '면 67 %, 폴리에스터 25 %, 엘라스토디엔 4 %, 나일론 3 %, 엘라스테인 1 %',
+    ],
+  },
+  'sk-suomi-propeller-cap': {
+    name: 'Suomi 응원 프로펠러 모자',
+    description:
+      '관중석, 팬 존, 펍의 아이스하키 결승전을 위한 파란색과 흰색의 프로펠러 모자입니다. 진지한 모자는 아니지만, 핀란드가 경기하는 밤에는 바로 그것이 핵심입니다.',
+    specs: [
+      '파란색과 흰색',
+    ],
+  },
+  'sk-muurla-moomin-lantern-tahtihetki': {
+    name: 'Muurla 무민 랜턴 Tähtihetki 18 cm',
+    description:
+      '금색 디테일이 들어간 Muurla Tähtihetki 시리즈의 수제 무연 유리 랜턴으로, 지름 15.5 cm, 높이 18 cm입니다. 촛불 랜턴으로도, 계절 간식을 담는 볼로도, 작은 꽃다발용 화병으로도 씁니다.',
+    specs: [
+      'Ø 15.5 cm, 높이 18 cm',
+      '수제 무연 유리',
+      '손세척',
+    ],
+  },
+  'sk-hukka-soapstone-candle': {
+    name: 'Hukka Jätkänkynttilä 돌 티라이트 홀더',
+    description:
+      '벌목꾼들이 눈 위에서 피우던 쪼갠 통나무 불, jätkänkynttilä 모양의 돌 티라이트 홀더입니다. 지름 56 mm, 높이 100 mm, 310그램, 40 mm 티라이트용. 차가운 돌 위의 살아 있는 불을 실내에서.',
+    specs: [
+      'Ø 56 x 100 mm, Ø 40 mm 티라이트용',
+      '0.31 kg',
+      '홀더 1개',
+    ],
+  },
+  'sk-muurla-moomin-enamel-mug-lumipyry': {
+    name: 'Muurla 무민 에나멜 머그 Lumipyry 3.7 dl',
+    description:
+      '탄소강 심에 이중 에나멜을 입힌 3.7 dl 머그로, 눈보라 장면 Lumipyry가 프린트되어 있습니다. 뜨거운 음료와 찬 음료 모두 담을 수 있고, 식기세척기와 캠프파이어는 되지만 전자레인지는 안 됩니다.',
+    specs: [
+      '3.7 dl',
+      '탄소강에 이중 에나멜',
+      '식기세척기 사용 가능, 전자레인지 불가',
+    ],
+  },
+  'sk-arabia-moomin-pitcher-moominhouse': {
+    name: 'Arabia 무민 피처 1.0 l, 무민하우스',
+    description:
+      '무민파파가 직접 지었고 밤에도 문을 잠그지 않는 둥근 난로 모양의 집, 무민하우스가 그려진 Arabia의 1리터 피처입니다. 여름 식탁에서 주스에 벌레가 들어가지 않게 막아 주는 도자기 뚜껑이 딸려 있습니다.',
+    specs: [
+      '1.0 l',
+      '도자기 뚜껑 포함',
+    ],
+    specLabels: [undefined, '뚜껑'],
+  },
+  'sk-moomin-duvet-set-merella': {
+    name: '무민 이불 커버 세트 140 x 200 cm, Merellä',
+    description:
+      '바다 위의 무민 가족이 그려진 면 이불 커버와 베개 커버로, 이불 커버 140 x 200 cm, 베개 커버 50 x 70 cm, 지퍼 여밈입니다. 프린트된 면 침구가 늘 그렇듯 첫 사용 전에 세탁하세요.',
+    specs: [
+      '이불 커버 140 x 200 cm, 베개 커버 50 x 70 cm',
+      '100 % 면',
+      '지퍼',
+    ],
+    specLabels: [undefined, undefined, '여밈'],
+  },
+  'sk-moomin-kids-duvet-set-halaus': {
+    name: '무민 아동 이불 커버 세트 100 x 135 cm, Halaus',
+    description:
+      'Halaus, 포옹, 패턴의 면 아동 이불 커버와 베개 커버로, 이불 커버 100 x 135 cm, 베개 커버 60 x 40 cm, 지퍼 여밈입니다. 유아 침대나 주니어 침대에 맞는 크기라 첫 침구 선물로 좋습니다.',
+    specs: [
+      '이불 커버 100 x 135 cm, 베개 커버 60 x 40 cm',
+      '100 % 면',
+      '지퍼',
+    ],
+    specLabels: [undefined, undefined, '여밈'],
+  },
+  'sk-arabia-moomintroll-mini-figurine': {
+    name: 'Arabia 무민트롤 미니 피규어',
+    description:
+      '높이 약 6 cm의 수제 도자기 무민트롤로, 1990년대에 툴리키 피에틸래가 디자인했고 전용 선물 상자에 담겨 판매됩니다. 피규어는 시리즈로 모으기 때문에 하나는 안전한 선물이고 둘은 습관이 됩니다.',
+    specs: [
+      '높이 약 6 cm',
+      '수제 도자기',
+      '툴리키 피에틸래, 1990년대',
+    ],
+    specLabels: [undefined, undefined, '디자인'],
+  },
+  'sk-arabia-snorkmaiden-mini-figurine': {
+    name: 'Arabia 스노크메이든 미니 피규어',
+    description:
+      '툴리키 피에틸래의 1990년대 시리즈에서 나온 높이 약 6 cm의 수제 도자기 스노크메이든으로, 전용 선물 상자에 담겨 있습니다. 무민트롤과 짝을 이루면 둘은 책 표지에서처럼 창턱에 나란히 섭니다.',
+    specs: [
+      '높이 약 6 cm',
+      '수제 도자기',
+      '툴리키 피에틸래, 1990년대',
+    ],
+    specLabels: [undefined, undefined, '디자인'],
+  },
+  'sk-lapin-puukko-gift-box': {
+    name: '라플란드 푸코 나이프 칼집 포함, 선물 상자',
+    description:
+      '칼집이 딸린 라플란드 스타일 푸코로, 선물 상자에 담아 배송됩니다. 상점은 이것을 숲 나들이와 일상 작업을 위한 칼로, 그리고 교체되기보다 물려주게 되는 종류의 물건으로 소개합니다.',
+    specs: [
+      '칼집과 선물 상자',
+    ],
+    specLabels: ['포함'],
+  },
+  'sk-loimu-sauna-thermometer': {
+    name: 'Loimu 사우나 온도계, 자작나무',
+    description:
+      '선명한 눈금판이 달린 자작나무 프레임의 사우나 온도계입니다. 첫 국자의 물을 끼얹기 전에 손님이 묻는 유일한 질문에 답해 주며, 보일러 옆이 아니라 통나무 벽에 어울리는 모습입니다.',
+    specs: [
+      '자작나무',
+    ],
+  },
+  'sk-helsingin-villasukkatehdas-wool-socks': {
+    name: 'Helsingin Villasukkatehdas 울 양말',
+    description:
+      '핀란드 유일의 전통 울 양말 공장에서 1950년대 기계로 헬싱키에서 짠 방모 울 양말입니다. 뮬징 프리 울 70퍼센트를 얌새에서 방적하고 퀴뢰스코스키에서 염색했으며, 여러 사이즈와 나무껍질, 이끼, 지의류, 밤의 이름을 딴 네 가지 색상이 있습니다.',
+    specs: [
+      '울 70 % (뮬징 프리), 폴리아미드 30 %',
+      '헬싱키에서 편직, 울은 얌새에서 방적하고 퀴뢰스코스키에서 염색',
+      '여러 사이즈, 네 가지 색상',
+    ],
+  },
+  'sk-halva-salmiakkikalat': {
+    name: 'Halva Salmiakkikalat 짠 감초 물고기 230 g',
+    description:
+      'Halva의 물고기 모양 살미아키 사탕 230그램으로, 핀란드의 모든 자동차 글로브 박스에 들어 있는 그 봉지입니다. 단단한 씹는 맛, 강렬한 짠 감초, 그리고 진짜 핀란드를 맛보고 싶다는 방문객에게 가장 먼저 건네는 것입니다.',
+    specs: [
+      '230 g',
+    ],
+  },
+  'sk-kouvolan-lakritsi-500g': {
+    name: 'Kouvolan Lakritsi 감초 조각 500 g',
+    description:
+      '1945년에 태어나 1960년 영국 감초 전문가가 다듬은 레시피로 만든 코우볼라의 부드러운 감초 조각 반 킬로입니다. 뿌리 맛을 감추려고 아무것도 넣지 않으면 담백한 감초는 이런 맛이 납니다.',
+    specs: [
+      '500 g',
+      '1945년 레시피, 1960년 조정',
+    ],
+    specLabels: [undefined, '레시피'],
+  },
+  'sk-fazer-omar-chocolate-bar': {
+    name: 'Fazer Omar 초콜릿 바 180 g',
+    description:
+      'Omar 60주년을 위해 만든 한정 180그램 바: 1966년부터 판매된 부드럽고 크리미한 Omar 토피를 코코아 30퍼센트 이상의 Fazer 밀크초콜릿에 넣었습니다. 한정 기간에만 판매합니다.',
+    specs: [
+      '180 g',
+      '코코아 30 % 이상의 밀크초콜릿',
+      '60주년 한정판',
+    ],
+    specLabels: [undefined, '코코아', '판매'],
+  },
+  'sk-fazer-salty-suffeli-puffi': {
+    name: 'Karl Fazer Salty Suffeli Puffi 초콜릿 바 160 g',
+    description:
+      '신선한 우유로 만든 Fazer 밀크초콜릿에 바삭하고 짭짤달콤한 Suffeli 옥수수 퍼프를 넣었습니다. 160그램, 코코아 30퍼센트 이상, 짠맛과 단맛 사이에서 결정하지 못하는 사람을 위한 답입니다.',
+    specs: [
+      '160 g',
+      '코코아 30 % 이상의 밀크초콜릿',
+    ],
+    specLabels: [undefined, '코코아'],
+  },
+  'sk-tyrkisk-peber-chewy': {
+    name: 'Fazer Tyrkisk Peber Chewy 살미아키 파스틸 38 g',
+    description:
+      'Tyrkisk Peber의 매운 살미아키를 딱딱한 껍질 대신 새로운 부드러운 츄어블 파스틸로 만들었습니다. 상점이 2026년 8월에 등록한 38그램 포켓 팩으로, 살미아키와 자극을 한 입에 원하는 사람을 위한 제품입니다.',
+    specs: [
+      '38 g',
+    ],
+  },
+  'sk-tyrkisk-peber-sour-foams': {
+    name: 'Fazer Tyrkisk Peber Sour Foams 폼 캔디 150 g',
+    description:
+      '은은한 Tyrkisk Peber의 매운맛과 새콤한 키위 딸기, 레몬 라임 맛이 나는 부드러운 폼 캔디 150그램입니다. 페퍼 감초 가족으로 들어가는 순한 입구이자, 취향이 섞인 무리에서 가장 먼저 여는 봉지입니다.',
+    specs: [
+      '150 g',
+    ],
+  },
+  'sk-marianne-toffee-rae': {
+    name: 'Fazer Marianne Toffee 초콜릿 드롭 150 g',
+    description:
+      'Marianne 드롭 시리즈의 토피 버전: 코코아 28퍼센트 이상의 밀크초콜릿 심을 윤기 나고 바삭한 껍질이 감싸며, 다시 밀봉할 수 있는 150그램 봉지에 담겼습니다. 그때까지 남아 있다면 베이킹용으로도 좋습니다.',
+    specs: [
+      '150 g',
+      '코코아 28 % 이상의 밀크초콜릿',
+      '다시 밀봉 가능한 봉지',
+    ],
+    specLabels: [undefined, '코코아', '포장'],
+  },
+  'sk-fasupala-lakritsi': {
+    name: 'Fazer Fasupala Lakritsi 웨이퍼 비스킷 199 g',
+    description:
+      '밀크초콜릿 맛 코팅 아래 감초 맛 필링이 든 한입 크기 웨이퍼 199그램으로, 팜유는 쓰지 않았습니다. 핀란드인들이 이미 상자째 먹는 비스킷의 감초 버전이며, 상점이 2026년 8월에 등록했습니다.',
+    specs: [
+      '199 g',
+      '팜유 무첨가',
+    ],
+    specLabels: [undefined, '지방'],
+  },
+  'sk-finnish-flavours-cloudberry-jam': {
+    name: 'Finnish Flavours 프리미엄 클라우드베리 잼 250 g',
+    description:
+      '핀란드산 클라우드베리 75퍼센트와 설탕 20퍼센트로 만든 잼 250그램입니다. 클라우드베리는 7월 말 라플란드의 늪지에서 익고 대규모로 재배할 수 없기 때문에, 한 병 값이 초콜릿 두 봉지 값과 같습니다.',
+    specs: [
+      '250 g',
+      '핀란드산 클라우드베리 75 %, 설탕 20 %',
+    ],
+  },
+  'sk-lapin-liha-smoked-reindeer-soup': {
+    name: 'Lapin Liha 훈제 순록 수프 400 g',
+    description:
+      '온훈과 냉훈 순록 고기가 든 크리미한 수프 400그램으로, Lapin Liha가 만들었습니다. 냄비에 데우기만 하면 됩니다. 여행 가방에 들어가는 포장에 담긴 라플란드 오두막 점심의 맛입니다.',
+    specs: [
+      '400 g',
+      '온훈 순록 3 %와 냉훈 순록 3 %',
+      '냄비에 데우기',
+    ],
+    specLabels: [undefined, undefined, '조리'],
+  },
+  'sk-vaasan-ruispalat-5pack': {
+    name: 'Vaasan Ruispalat 호밀빵 5 x 330 g',
+    description:
+      '핀란드에서 가장 많이 팔리는 빵 다섯 봉지: 100퍼센트 핀란드산 곡물을 진짜 사워도우로 구운 뜯어 먹는 통호밀 롤로, 330그램 한 봉지에 여섯 개, 식이섬유 12퍼센트. 해외의 핀란드인들이 방문객에게 가져다 달라고 부탁하는 것입니다.',
+    specs: [
+      '5 x 330 g, 봉지당 6개',
+      '통호밀이 곡물의 87 %, 식이섬유 12 %',
+    ],
+  },
+  'sk-poikain-parhaat-freeze-dried-blueberry': {
+    name: 'Poikain Parhaat 동결건조 블루베리 15 g',
+    description:
+      '핀란드 숲의 블루베리를 통째로 동결건조한 것, 그 외에는 아무것도 없는 15그램. 여행 가방에서는 무게가 느껴지지 않고 늪지의 8월 맛이 납니다. 무유당, 글루텐 프리, 비건, 설탕과 보존료 무첨가.',
+    specs: [
+      '15 g',
+      '100 % 핀란드산 동결건조 블루베리',
+      '무유당, 글루텐 프리, 비건, 설탕 무첨가, 보존료 무첨가',
+    ],
+    specLabels: [undefined, undefined, '식단'],
+  },
+  'rj-arctic-warriors-blueberry-powder': {
+    name: 'Arctic Warriors 블루베리 파우더 45 g',
+    description:
+      '핀란드산 블루베리를 즙째 통째로 말려 갈고 아무것도 넣지 않은 45그램입니다. 죽, 요거트, 스무디에 한 스푼. 같은 열매를 여기서는 EU 역내로 배송하는 Ruohonjuuri를 통해 판매합니다.',
+    specs: [
+      '45 g',
+      '100 % 핀란드산 블루베리, 즙째 통째로 건조',
+    ],
+  },
+  'rj-poikain-parhaat-blueberry-lemonade': {
+    name: 'Poikain Parhaat 블루베리 레모네이드 0.33 l',
+    description:
+      '탐페레 베흐마이넨에서 인공 향료나 색소 없이 진짜 재료로 만든 유기농 블루베리 레모네이드, 0.33리터 병입니다. 핀란드 시식 테이블에서 살미아키 옆에 놓을 청량음료입니다.',
+    specs: [
+      '0.33 l',
+      '탐페레 베흐마이넨 제조',
+      '유기농, 인공 향료나 색소 없음',
+    ],
+    specLabels: [undefined, undefined, '첨가물'],
+  },
+  'rj-nordic-koivu-birch-sap': {
+    name: 'Nordic Koivu 자작나무 수액 500 ml',
+    description:
+      '나무가 뿌리에 저장한 물을 끌어올리는 봄에 채취한 자작나무 수액을 열처리나 보존료 없이 나무에서 바로 병에 담은 500 ml입니다. 은은하게 달고, 대부분은 차갑고 깨끗한 물 맛입니다.',
+    specs: [
+      '500 ml',
+      '열처리 없음, 보존료 없음',
+    ],
+    specLabels: [undefined, '가공'],
+  },
+  'rj-kaino-spruce-sprout-sparkling-075': {
+    name: 'KAINO Drinks 가문비나무 새순 유기농 스파클링 0.75 l',
+    description:
+      '핀란드 가문비나무의 연한 5월 새순으로 향을 낸 무알코올 유기농 스파클링 음료, 0.75리터 병입니다. 탐페레 베흐마이넨에서 만들었으며, 모두가 술을 마시지는 않는 파티의 건배를 위한 것입니다.',
+    specs: [
+      '0.75 l',
+      '무알코올, 유기농',
+      '탐페레 베흐마이넨 제조',
+    ],
+    specLabels: [undefined, '알코올', undefined],
+  },
+  'rj-yrttipaja-chaga-powder': {
+    name: 'Yrttipaja 차가버섯 파우더 35 g',
+    description:
+      '자작나무 줄기에 자라는 검은 버섯 차가를 갈아 차로 우리는 파우더입니다: 물 1리터에 큰술 하나, 10분 이상 끓여서 거릅니다. 35그램, 덩어리를 사기 전에 파쿠리를 맛보는 가장 저렴한 방법입니다.',
+    specs: [
+      '35 g',
+      '물 1리터에 큰술 1, 10분 이상 끓여서 거르기',
+    ],
+    specLabels: [undefined, '사용법'],
+  },
+  'rj-forestly-mushroom-chips-chili': {
+    name: 'Forestly Foods 버섯 칩, 칠리 50 g',
+    description:
+      '유기농으로 재배한 표고버섯을 부드럽게 익혀 칠리, 소금, 후추로 간한 바삭한 칩 50그램입니다. 봉지에 담긴 감칠맛으로, 소파에서 먹거나 수프 위에 부숴 올립니다.',
+    specs: [
+      '50 g',
+      '유기농 재배 표고버섯, 칠리, 소금, 후추',
+    ],
   },
 }

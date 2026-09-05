@@ -35,7 +35,11 @@ export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
   // pientä eikä kukaan etsi "Emendoa".
   clothing: ['brandhalti', 'brandnorthoutdoor', 'brandmakia', 'brandnordicbuddies', 'finlandtheme'],
   handicrafts: ['sauna', 'knives', 'wood', 'textiles', 'ceramics'],
-  treats: ['salmiakki', 'chocolate', 'savoury', 'drinks'],
+  // Herkut: erikoisuudet ensin (se mitä ei saa muualta), sitten klassikot,
+  // uutuudet (Suomikaupan created_at 2026-08) ja loput (Vesa 5.9.: 'missä
+  // analyysi uutuustuotteista', 'erikoisuuksia, jotain mitä ihan suomalaisetkin
+  // haluaa maistaa').
+  treats: ['specialties', 'salmiakki', 'chocolate', 'novelties', 'savoury', 'drinks'],
   // `drinks` on mukana myös täällä: Kainon kuusenkerkkäjuoma on superfoodi
   // mutta muodoltaan juoma, ei jauhe eikä öljy. Sama ryhmätunnus voi esiintyä
   // useassa kategoriassa — nimi tulee samasta taulukosta, joten se lukee
@@ -68,6 +72,8 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     knives: 'Puukko knives',
     wood: 'Wood and camp tableware',
     ceramics: 'Ceramics',
+    specialties: 'Finnish specialities',
+    novelties: 'New this season',
     salmiakki: 'Salmiakki and liquorice',
     chocolate: 'Chocolate and biscuits',
     savoury: 'Dried meat and preserves',
@@ -95,6 +101,8 @@ const LABELS: Partial<Record<Lang, Record<SubgroupId, string>>> = {
     knives: 'Puukot',
     wood: 'Puu ja retkiastiat',
     ceramics: 'Keramiikka',
+    specialties: 'Erikoisuudet',
+    novelties: 'Uutuudet',
     salmiakki: 'Salmiakki ja lakritsi',
     chocolate: 'Suklaa ja keksit',
     savoury: 'Kuivaliha ja säilykkeet',
@@ -238,6 +246,49 @@ const MAP: Record<string, SubgroupId> = {
   'aurora-tour-kilpisjarvi': 'vouchers',
   'glass-igloo-night-levi': 'vouchers',
   'gold-panning-day-inari': 'vouchers',
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': 'brandmakia',
+  'makia-trademark-hoodie': 'brandmakia',
+  'makia-moray-zip-knit': 'brandmakia',
+  'makia-form-jacket': 'brandmakia',
+  'makia-martin-beanie': 'brandmakia',
+  'makia-mari-balaclava': 'brandmakia',
+  'halti-pehmee-merino-beanie': 'brandhalti',
+  'halti-rockmoon-fleece-hoodie': 'brandhalti',
+  'halti-viiri-fleece-gloves': 'brandhalti',
+  'nb-moomin-classics-beanie': 'brandnordicbuddies',
+  'nb-snufkin-mens-socks': 'brandnordicbuddies',
+  'nb-hattifatteners-retro-socks': 'brandnordicbuddies',
+  'sk-suomi-propeller-cap': 'finlandtheme',
+  'sk-muurla-moomin-lantern-tahtihetki': 'candles',
+  'sk-hukka-soapstone-candle': 'candles',
+  'sk-muurla-moomin-enamel-mug-lumipyry': 'tableware',
+  'sk-arabia-moomin-pitcher-moominhouse': 'tableware',
+  'sk-moomin-duvet-set-merella': 'textiles',
+  'sk-moomin-kids-duvet-set-halaus': 'textiles',
+  'sk-arabia-moomintroll-mini-figurine': 'ceramics',
+  'sk-arabia-snorkmaiden-mini-figurine': 'ceramics',
+  'sk-lapin-puukko-gift-box': 'knives',
+  'sk-loimu-sauna-thermometer': 'sauna',
+  'sk-helsingin-villasukkatehdas-wool-socks': 'textiles',
+  'sk-halva-salmiakkikalat': 'salmiakki',
+  'sk-kouvolan-lakritsi-500g': 'salmiakki',
+  'sk-fazer-omar-chocolate-bar': 'chocolate',
+  'sk-fazer-salty-suffeli-puffi': 'chocolate',
+  'sk-tyrkisk-peber-chewy': 'novelties',
+  'sk-tyrkisk-peber-sour-foams': 'novelties',
+  'sk-marianne-toffee-rae': 'novelties',
+  'sk-fasupala-lakritsi': 'novelties',
+  'sk-finnish-flavours-cloudberry-jam': 'specialties',
+  'sk-lapin-liha-smoked-reindeer-soup': 'specialties',
+  'sk-vaasan-ruispalat-5pack': 'specialties',
+  'sk-poikain-parhaat-freeze-dried-blueberry': 'specialties',
+  'rj-arctic-warriors-blueberry-powder': 'berry',
+  'rj-poikain-parhaat-blueberry-lemonade': 'drinks',
+  'rj-nordic-koivu-birch-sap': 'drinks',
+  'rj-kaino-spruce-sprout-sparkling-075': 'drinks',
+  'rj-yrttipaja-chaga-powder': 'herbal',
+  'rj-forestly-mushroom-chips-chili': 'herbal',
 }
 
 export function subgroupOf(slug: string): SubgroupId {
@@ -273,6 +324,37 @@ export function groupProducts(
     if (!order.includes(id) && items.length) out.push({ id, label: '', items })
   }
   return out
+}
+
+/**
+ * Hyllyn yhden rivin otsake h2:n alle: mikä hylly on ja miksi (Vesa 5.9.2026:
+ * "herkut osiohan on aivan poor, ei tule vesi kielelle yhtään, missä analyysi
+ * uutuustuotteista"). Vain herkuilla; muilla kategorioilla otsikko riittää.
+ * Väitteet ovat tuotedatasta (Suomikaupan created_at, Kuivalihakundin
+ * toimitusehto, Nordqvistin Nurmijärvi), ei keksittyjä. Kääntämättömät kielet
+ * putoavat englantiin kuten ryhmien nimetkin.
+ */
+const NOTES: Partial<Record<Lang, Partial<Record<SubgroupId, string>>>> = {
+  en: {
+    specialties: 'The things you cannot buy outside Finland: cloudberry jam, smoked reindeer soup, real rye bread.',
+    salmiakki: 'Salty liquorice from soft to hot. Start with Halva\'s Salmiakkikalat, end with Tyrkisk Peber.',
+    chocolate: 'Fazer milk chocolate and the bars built on it, from the classic blue to the anniversary Omar.',
+    novelties: 'New at Suomikauppa in August 2026: Fazer\'s latest, taken from the shop\'s own new arrivals list.',
+    savoury: 'Reindeer jerky and preserves. Meat cannot be posted outside the EU, so delivery stops at the EU border.',
+    drinks: 'Nordqvist teas blended in Nurmijärvi, and Moomin coffee.',
+  },
+  fi: {
+    specialties: 'Se, mitä ei saa Suomen ulkopuolelta: lakkahillo, savuporokeitto, oikea ruisleipä.',
+    salmiakki: 'Salmiakkia pehmeästä tuliseen. Aloita Halvan Salmiakkikaloista, päätä Tyrkisk Peberiin.',
+    chocolate: 'Fazerin maitosuklaa ja sen päälle rakennetut levyt, klassisesta sinisestä juhlavuoden Omariin.',
+    novelties: 'Suomikaupan elokuun 2026 uutuudet: Fazerin tuoreimmat, poimittu kaupan omasta uutuuslistasta.',
+    savoury: 'Poron kuivalihaa ja säilykkeitä. Lihaa ei saa postittaa EU:n ulkopuolelle, joten toimitus päättyy EU:n rajalle.',
+    drinks: 'Nordqvistin Nurmijärvellä sekoitetut teet ja Muumi-kahvi.',
+  },
+}
+
+export function subgroupNote(id: SubgroupId, lang: Lang): string | undefined {
+  return NOTES[lang]?.[id] ?? NOTES.en?.[id]
 }
 
 /** Testien käyttöön: kaikki kartassa olevat slugit. */

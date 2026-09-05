@@ -377,6 +377,49 @@ const JOBS = [
     'nb-moomintroll-love-socks',
     'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/MOOMIN20H-1.png?width=1200',
   ],
+  // ── katalogin täydennys, erä 2026-09-05 (Shopify products.json → images[0]) ──
+  ['makia-kontio-hoodie', 'https://cdn.shopify.com/s/files/1/0855/1360/1302/files/M40205_996_21913.jpg?v=1786702693'], // makia.com/products/kontio-hooded-sweatshirt
+  ['makia-trademark-hoodie', 'https://cdn.shopify.com/s/files/1/0855/1360/1302/files/M40203_744_21854.jpg?v=1786704323'], // makia.com/products/trademark-hooded-sweatshirt
+  ['makia-moray-zip-knit', 'https://cdn.shopify.com/s/files/1/0855/1360/1302/files/HARMAA_NEULE_4601.jpg?v=1764013118'], // makia.com/products/moray-zip-knit
+  ['makia-form-jacket', 'https://cdn.shopify.com/s/files/1/0855/1360/1302/files/M31050_774_1_1.jpg?v=1788590282'], // makia.com/products/form-jacket-1
+  ['makia-martin-beanie', 'https://cdn.shopify.com/s/files/1/0855/1360/1302/files/0d95d96d39194213b6cfc6c95e954fe2U82198_773_M_231.png?v=1764342983'], // makia.com/products/martin-beanie
+  ['makia-mari-balaclava', 'https://cdn.shopify.com/s/files/1/0855/1360/1302/files/U882197_920_6403_47c72926-2a06-4ee0-a758-4dec4ad5cd77.jpg?v=1764567859'], // makia.com/products/mari-balaclava
+  ['sk-muurla-moomin-lantern-tahtihetki', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/MuurlaMuumikynttilalyhtyTahtihetki18cm.png?v=1760940434'], // suomikauppa.fi/products/muurla-muumi-kynttilalyhty-tahtihetki-18cm
+  ['sk-hukka-soapstone-candle', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/hukkastore-lahjat-jatkankynttila.jpg?v=1686661635'], // suomikauppa.fi/products/hukka-jatkankynttila
+  ['sk-muurla-moomin-enamel-mug-lumipyry', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114970049.png?v=1737011061'], // suomikauppa.fi/products/muurla-muumi-lumipyry-emalimuki-3-7dl
+  ['sk-arabia-moomin-pitcher-moominhouse', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/36411801005074.jpg?v=1738137941'], // suomikauppa.fi/products/arabia-muumi-kaadin-1-0l-muumitalo
+  ['sk-arabia-moomintroll-mini-figurine', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/6411801003338.jpg?v=1635500106'], // suomikauppa.fi/products/arabia-muumi-minifiguriini-muumipeikko
+  ['sk-arabia-snorkmaiden-mini-figurine', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/6411801003321.jpg?v=1635500106'], // suomikauppa.fi/products/arabia-muumi-niiskuneiti-minifiguuri
+  ['sk-lapin-puukko-gift-box', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Lapinpuukkoterasuojalla_lahjapakkaus.jpg?v=1730715987'], // suomikauppa.fi/products/lapin-puukko-terasuojalla-lahjapakkaus
+  ['sk-helsingin-villasukkatehdas-wool-socks', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Helsingin_Villasukkatehdas_1.png?v=1732531803'], // suomikauppa.fi/products/helsingin-villasukkatehdas-villasukat-lampaanvilla-70-useita-vareja-ja-kokoja
+  ['sk-loimu-sauna-thermometer', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Saunamittariloimu.png?v=1734006387'], // suomikauppa.fi/products/loimu-saunamittari-koivu
+  ['sk-halva-salmiakkikalat', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06420900014039_C1L1.jpg?v=1763103641'], // suomikauppa.fi/products/halva-salmiakkikalat-230g
+  ['sk-kouvolan-lakritsi-500g', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Kouvolan_lakritsi_500g.webp?v=1785750272'], // suomikauppa.fi/products/kouvolan-lakritsi-lakritsipala-500g-2
+  ['sk-fazer-omar-chocolate-bar', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453095168_A1C1.jpg?v=1776926642'], // suomikauppa.fi/products/fazer-omar-suklaalevy-180-g
+  ['sk-fazer-salty-suffeli-puffi', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453095199_C1C1.jpg?v=1787156015'], // suomikauppa.fi/products/karl-fazer-salty-suffeli-puff-160g
+  ['sk-tyrkisk-peber-chewy', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453041431_C1L1.jpg?v=1787155317'], // suomikauppa.fi/products/tyrkisk-peber-chewy-salmiakkipastilli-38g
+  ['sk-tyrkisk-peber-sour-foams', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453051188_C1C1.jpg?v=1787155250'], // suomikauppa.fi/products/tyrkisk-peber-hot-sour-vaahto-makeispussi-150g
+  ['sk-marianne-toffee-rae', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453040557_C1C1.jpg?v=1787155005'], // suomikauppa.fi/products/marianne-toffee-suklaarae-150-g
+  ['sk-fasupala-lakritsi', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453077294_C1L1.jpg?v=1787154757'], // suomikauppa.fi/products/fasupala-lakritsi-vohvelikeksi-199-g
+  ['sk-finnish-flavours-cloudberry-jam', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Finnish_Flavours_Suomalainen_premium_lakkahillo_250g.png?v=1764266509'], // suomikauppa.fi/products/finnish-flavours-suomalainen-premium-lakkahillo-250g
+  ['sk-lapin-liha-smoked-reindeer-soup', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/07319992294001_A1NA.png?v=1774264740'], // suomikauppa.fi/products/lapin-liha-savuporokeitto-400g
+  ['sk-vaasan-ruispalat-5pack', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/4_378585eb-5a41-49d7-86d1-5c835caef54b.png?v=1788338772'], // suomikauppa.fi/products/5-pack-vaasan-ruispalat-330-g-6-kpl-revitty-taysjyvaruisleipa
+  ['sk-poikain-parhaat-freeze-dried-blueberry', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/pk_mustikka.png?v=1762782832'], // suomikauppa.fi/products/poikain-parhaat-pakastekuivattu-mustikka-15g
+  ['rj-arctic-warriors-blueberry-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/ARTIC-6430055010527-1.jpg?v=1733221029'], // www.ruohonjuuri.fi/products/arctic-warriors-mustikkajauhe-45-g
+  ['rj-poikain-parhaat-blueberry-lemonade', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/7d32e4cd5d994599869546b1795bf1df.jpg?v=1713573567'], // www.ruohonjuuri.fi/products/poikain-parhaat-mustikkalimonaadi-033-l
+  ['rj-nordic-koivu-birch-sap', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/NORDIC-6420610341012-2.jpg?v=1614686271'], // www.ruohonjuuri.fi/products/nordic-koivu-koivunmahla-500-ml
+  ['rj-kaino-spruce-sprout-sparkling-075', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/949fd7453d59a6b987eb5c21252f61ae.jpg?v=1713573422'], // www.ruohonjuuri.fi/products/kaino-drinks-kuusenkerkka-luomukuohujuoma-075-l
+  ['rj-yrttipaja-chaga-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/0f44bd83691bab32db064f7f80709c07.jpg?v=1713833450'], // www.ruohonjuuri.fi/products/yrttipaja-pakurikaapa-jauhe-35-g
+  ['rj-forestly-mushroom-chips-chili', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/abc2be85b85065245bf48c08aee9ee92.jpg?v=1719907228'], // www.ruohonjuuri.fi/products/forestly-foods-sienisipsi-chili-50-g
+['halti-pehmee-merino-beanie', 'https://cdn.shopify.com/s/files/1/0718/0913/files/0801347_A38_Pehmeebeanie.jpg?v=1764836097'], // www.halti.fi/products/pehmee-merinopipo
+  ['halti-rockmoon-fleece-hoodie', 'https://cdn.shopify.com/s/files/1/0718/0913/files/0880284_H28_RockmoonMHoodedfleece_main.jpg?v=1784893458'], // www.halti.fi/products/rockmoon-fleecehuppari-miesten
+  ['halti-viiri-fleece-gloves', 'https://cdn.shopify.com/s/files/1/0718/0913/files/0840751_P99_ViiriStormwallGloves.jpg?v=1755772758'], // www.halti.fi/products/viiri-fleece-hanskat
+  ['nb-moomin-classics-beanie', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/MOOMIN26D_d94aa65e-ebc8-4350-9a66-cc38ec803e61.jpg?v=1728983826'], // www.nordicbuddies.com/products/moomin-classics-winter-hat-beanie-4817
+  ['nb-snufkin-mens-socks', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/SNUFKIN17E_2.png?v=1784265009'], // www.nordicbuddies.com/products/snufkin-mens-socks-1
+  ['sk-moomin-kids-duvet-set-halaus', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/5904209603442.jpg?v=1707814708'], // suomikauppa.fi/products/muumi-halaus-lasten-pussilakanasetti-100cmx135cm-60cmx40cm
+  ['sk-moomin-duvet-set-merella', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/5904209606658.jpg?v=1707814575'], // suomikauppa.fi/products/muumi-merella-pussilakanasetti-140cmx200cm-50cmx70cm
+  ['sk-suomi-propeller-cap', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/108007SuomiKannatusPropellilippis.png?v=1680585294'], // suomikauppa.fi/products/suomi-kannatus-propellilippis
+  ['nb-hattifatteners-retro-socks', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/HATT17H_9acaa216-e902-464a-ac7f-badb5f94c92a.png?v=1779878415'], // www.nordicbuddies.com/products/hattifatteners-womens-retro-socks-1
 ]
 
 const only = new Set(process.argv.slice(2))

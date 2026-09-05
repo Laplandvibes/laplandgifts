@@ -633,23 +633,11 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     description:
       'Gefriergetrocknete Fichtensprossen, innerhalb eines Zeitfensters von zwei Wochen von Hand gepflückt, aus staatlichen Bio-Wäldern und nur jedes zweite Jahr aus demselben Wald. Zitrus und Harz in einem Löffel, 382 mg Vitamin C je 100 g.',
     specs: [
-      '40 g, brutto 0,046 kg',
-      '3 x 11 x 17 cm',
-      'Gefriergetrocknete Fichtensprosse',
-      'Finnland',
-      '1 bis 3 Teelöffel täglich',
-      'Energie 1683 kJ / 402 kcal, Eiweiß 12,1 g, Kohlenhydrate 77,8 g, Fett 4,19 g. Vitamin C 382 mg, Vitamin A 970 µg, Vitamin K1 332 mg, Kalium 1200 mg, Phosphor 350 mg, Kalzium 130 mg, Magnesium 120 mg, Zink 3,6 mg, Eisen 2 mg',
-      'Unter Lizenz aus Bio-Wäldern der finnischen staatlichen Forstverwaltung geerntet, je Wald jedes zweite Jahr',
+      '40 g',
+      'Gefriergetrocknete Fichtenspitzen',
+      '382 mg pro 100 g',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Dosierung',
-      'Nährwerte je 100 g',
-      'Ernte',
-    ],
+    specLabels: [undefined, undefined, 'Vitamin C'],
   },
   'arctic-warriors-nettle-powder': {
     name: 'Arctic Warriors Brennnesselpulver 150 g',
@@ -670,22 +658,8 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     description:
       'Rosenwurz wächst an den feuchten Bachufern und Felswänden der lappländischen Fjells, und Arctic Warriors extrahiert sie zusammen mit Brennnessel in pflanzliches Glycerin. Ein Teelöffel kommt in Tee, Porridge oder Joghurt.',
     specs: [
-      '100 ml, brutto 0,270 kg',
-      '4,5 x 4,5 x 13 cm',
-      'Pflanzliches Glycerin, Brennnessel, Rosenwurz',
-      'Finnland',
-      '1 bis 2 Teelöffel täglich',
-      'Milchfrei, glutenfrei, vegan. Das pflanzliche Glycerin beeinflusst den Blutzucker nicht',
-      'Ein Nahrungsergänzungsmittel ersetzt keine abwechslungsreiche Ernährung. Außerhalb der Reichweite von Kindern aufbewahren und die angegebene Dosis nicht überschreiten',
-    ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Dosierung',
-      'Ernährung',
-      'Hinweis',
+      '100 ml',
+      'Rosenwurz und Brennnessel',
     ],
   },
   'omega7-sea-buckthorn-olive-oil': {
@@ -1410,5 +1384,416 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Braun oder Pink',
     ],
     specLabels: [undefined, undefined, 'Farben'],
+  },
+  // katalogin täydennys 2026-09-05
+  'makia-kontio-hoodie': {
+    name: 'Makia Kontio Kapuzenpullover',
+    description:
+      'Kapuzenpullover in normaler Passform aus 100 Prozent Bio-Baumwolle, erst nach dem Nähen gefärbt. Die Stückfärbung gibt eine tiefere Farbe und einen weicheren Griff als Garnfärbung, und der Ton behält seinen leicht getragenen Look Wäsche für Wäsche.',
+    specs: [
+      '100 % Bio-Baumwolle, stückgefärbt',
+      'S bis XXL',
+    ],
+  },
+  'makia-trademark-hoodie': {
+    name: 'Makia Trademark Kapuzenpullover',
+    description:
+      'Makias schlichtester Hoodie: normale Passform, 100 Prozent Bio-Baumwolle und das kleine Markenzeichen auf der Brust. Der für eine Hüttenwoche, in der derselbe Pullover vom Morgenfeuer bis zur Saunaveranda am Abend getragen wird.',
+    specs: [
+      '100 % Bio-Baumwolle',
+      'S bis XXL',
+    ],
+  },
+  'makia-moray-zip-knit': {
+    name: 'Makia Moray Strickjacke mit Reißverschluss',
+    description:
+      'Strickjacke mit Reißverschluss in normaler Passform aus 100 Prozent Merinowolle. Merino wärmt ohne aufzutragen und trocknet von innen, also taugt sie als Schicht unter der Shell auf der Fjellwanderung und allein im warmen Café.',
+    specs: [
+      '100 % Merinowolle',
+      'S bis XXL',
+    ],
+  },
+  'makia-form-jacket': {
+    name: 'Makia Form Winterjacke',
+    description:
+      'Lange Winterjacke mit normaler Passform und Isolierung aus recyceltem Polyester. Ein verdeckter Rippbund im Ärmelsaum schließt die Manschette gegen Wind, und das zählt auf einer Januarstraße in Rovaniemi mehr als jede Ausstattungsliste.',
+    specs: [
+      'Isolierung aus recyceltem Polyester, verdeckte Rippbündchen',
+      'S bis XXL',
+    ],
+  },
+  'makia-martin-beanie': {
+    name: 'Makia Martin Merinomütze',
+    description:
+      'Mütze aus 100 Prozent Merinowolle mit kleinem Aufnäher, in Finnland gestrickt. Der günstigste Einstieg bei Makia und das Stück, das von Oktober bis April am ehesten täglich getragen wird.',
+    specs: [
+      '100 % Merinowolle',
+      'Hergestellt in Finnland',
+      'Einheitsgröße',
+    ],
+  },
+  'makia-mari-balaclava': {
+    name: 'Makia Mari Strick-Sturmhaube',
+    description:
+      'Gestrickte Sturmhaube aus einer Mischung von Wolle, Polyester, Alpaka und Elasthan. Deckt Ohren, Hals und Wangen auf einmal ab, und das ist der Unterschied zwischen einer Schneemobilfahrt und einer, an die man sich aus dem falschen Grund erinnert.',
+    specs: [
+      'Mischung aus Wolle, Polyester, Alpaka und Elasthan',
+      'Einheitsgröße',
+    ],
+  },
+  'halti-pehmee-merino-beanie': {
+    name: 'Halti Pehmee Merinomütze',
+    description:
+      'Stadtmütze aus 100 Prozent Merinowolle mit doppellagigem Rippbund, hergestellt in Finnland. Halti nennt sie Pehmee, weich, und sie ist die Mütze für Tage, an denen eine Skimütze nach falscher Abzweigung aussähe.',
+    specs: [
+      '100 % Merinowolle',
+      'Hergestellt in Finnland',
+      'Liegend trocknen',
+      'Einheitsgröße',
+    ],
+  },
+  'halti-rockmoon-fleece-hoodie': {
+    name: 'Halti Rockmoon Herren-Fleecejacke mit Kapuze',
+    description:
+      'Warme Kapuzen-Fleecejacke aus beidseitig angerautem Stretchstoff, mit winddichtem Mikrogewebe an Kapuze und Schultern, wo die Kälte zuerst hereinkommt. Unter der Shell auf dem Fjell, allein rund um die Hütte.',
+    specs: [
+      'Beidseitig angerautes Stretch-Fleece, winddichtes Mikrogewebe an Kapuze und Schultern',
+      'S bis XXXL',
+    ],
+  },
+  'halti-viiri-fleece-gloves': {
+    name: 'Halti Viiri Fleecehandschuhe',
+    description:
+      'Leichte 45-Gramm-Handschuhe aus winddichtem Stormwall-Fleece, mit Silikon-Griffdruck auf der Handfläche und Touchscreen-Spitzen an Daumen und Zeigefinger, damit das Polarlichtfoto ohne bloße Hände gelingt.',
+    specs: [
+      'Stormwall-Fleece 100 % Polyester, Handfläche 65 % Polyester, 32 % Polyamid, 3 % Elasthan',
+      '45 g',
+      'Daumen und Zeigefinger',
+      'Schonwäsche bei höchstens 30 °C',
+    ],
+    specLabels: [undefined, undefined, 'Touchscreen', undefined],
+  },
+  'nb-moomin-classics-beanie': {
+    name: 'Mumin Classics Mütze',
+    description:
+      'Erwachsenenmütze aus der Kollektion Moomin Classics aus recyceltem Polyester und Acryl, beige, Einheitsgröße. Ein offizielles Mumin-Produkt, und das ist die Linie, die sie von der Marktstandversion trennt.',
+    specs: [
+      'Recyceltes Polyester und Acryl',
+      'Erwachsene, Einheitsgröße',
+      'Beige',
+    ],
+  },
+  'nb-snufkin-mens-socks': {
+    name: 'Schnupferich Herrensocken',
+    description:
+      'Herrensocken mit Schnupferich, EU 40 bis 45, 60 Prozent Baumwolle mit Polyester, Nylon und Elasthan für Dehnung. Das günstigste Mumin-Geschenk dieser Seite, das getragen und nicht ausgestellt wird.',
+    specs: [
+      'EU 40-45',
+      '60 % Baumwolle, 33 % Polyester, 4 % Nylon, 2 % Elasthan, 1 % Elastodien',
+    ],
+  },
+  'nb-hattifatteners-retro-socks': {
+    name: 'Hattifnatten Damen-Retrosocken',
+    description:
+      'Socken im Retrostil mit den Hattifnatten, EU 36 bis 42, 67 Prozent Baumwolle. Dehnbar genug, dass eine Größe den meisten passt, und das Erste, was eine Mumin-Leserin aus der offenen Sockenschublade zieht.',
+    specs: [
+      'EU 36-42',
+      '67 % Baumwolle, 25 % Polyester, 4 % Elastodien, 3 % Nylon, 1 % Elasthan',
+    ],
+  },
+  'sk-suomi-propeller-cap': {
+    name: 'Suomi Fan-Propellerkappe',
+    description:
+      'Blau-weiße Propellerkappe für die Tribüne, die Fanzone und das Eishockeyfinale im Pub. Keine ernsthafte Kopfbedeckung, und genau das ist der Punkt an einem Abend, an dem Finnland spielt.',
+    specs: [
+      'Blau und Weiß',
+    ],
+  },
+  'sk-muurla-moomin-lantern-tahtihetki': {
+    name: 'Muurla Mumin Laterne Tähtihetki 18 cm',
+    description:
+      'Handgefertigte Laterne aus bleifreiem Glas aus Muurlas Serie Tähtihetki mit Golddetails, 15,5 cm breit und 18 cm hoch. Taugt als Kerzenlaterne, als Schale für die Süßigkeiten der Saison oder als Vase für einen kleinen Strauß.',
+    specs: [
+      'Ø 15,5 cm, Höhe 18 cm',
+      'Handgefertigtes bleifreies Glas',
+      'Handwäsche',
+    ],
+  },
+  'sk-hukka-soapstone-candle': {
+    name: 'Hukka Jätkänkynttilä Teelichthalter aus Stein',
+    description:
+      'Teelichthalter aus Stein in der Form eines jätkänkynttilä, des gespaltenen Holzscheitfeuers, das Holzfäller im Schnee anzündeten. 56 mm breit, 100 mm hoch, 310 Gramm, für ein 40-mm-Teelicht. Lebendiges Feuer auf kaltem Stein, drinnen.',
+    specs: [
+      'Ø 56 x 100 mm, für ein Teelicht Ø 40 mm',
+      '0,31 kg',
+      '1 Halter',
+    ],
+  },
+  'sk-muurla-moomin-enamel-mug-lumipyry': {
+    name: 'Muurla Mumin Emaillebecher Lumipyry 3,7 dl',
+    description:
+      'Emaillebecher mit 3,7 dl, Kern aus Kohlenstoffstahl mit doppelter Emaillierung, bedruckt mit der Schneesturmszene Lumipyry. Für heiße und kalte Getränke, spülmaschinenfest und lagerfeuertauglich, nicht für die Mikrowelle.',
+    specs: [
+      '3,7 dl',
+      'Kohlenstoffstahl mit doppelter Emaillierung',
+      'Spülmaschinenfest, nicht für die Mikrowelle',
+    ],
+  },
+  'sk-arabia-moomin-pitcher-moominhouse': {
+    name: 'Arabia Mumin Krug 1,0 l, Muminhaus',
+    description:
+      'Ein-Liter-Krug von Arabia mit dem Muminhaus, dem runden, ofenförmigen Haus, das Muminpapa selbst gebaut hat und nachts nie abschließt. Mit Keramikdeckel, der auf dem Sommertisch Insekten vom Saft fernhält.',
+    specs: [
+      '1,0 l',
+      'Keramikdeckel inklusive',
+    ],
+    specLabels: [undefined, 'Deckel'],
+  },
+  'sk-moomin-duvet-set-merella': {
+    name: 'Mumin Bettwäsche-Set 140 x 200 cm, Merellä',
+    description:
+      'Bettbezug und Kissenbezug aus Baumwolle mit den Mumins auf See, Bezug 140 x 200 cm und Kissen 50 x 70 cm, Reißverschluss. Vor dem ersten Gebrauch waschen, wie jede bedruckte Baumwollbettwäsche.',
+    specs: [
+      'Bettbezug 140 x 200 cm, Kissenbezug 50 x 70 cm',
+      '100 % Baumwolle',
+      'Reißverschluss',
+    ],
+    specLabels: [undefined, undefined, 'Verschluss'],
+  },
+  'sk-moomin-kids-duvet-set-halaus': {
+    name: 'Mumin Kinderbettwäsche-Set 100 x 135 cm, Halaus',
+    description:
+      'Kinderbettbezug und Kissenbezug aus Baumwolle im Muster Halaus, Umarmung, Bezug 100 x 135 cm und Kissen 60 x 40 cm mit Reißverschluss. Die Größe passt ins Gitterbett oder Juniorbett, also ein erstes Bettwäschegeschenk.',
+    specs: [
+      'Bettbezug 100 x 135 cm, Kissenbezug 60 x 40 cm',
+      '100 % Baumwolle',
+      'Reißverschluss',
+    ],
+    specLabels: [undefined, undefined, 'Verschluss'],
+  },
+  'sk-arabia-moomintroll-mini-figurine': {
+    name: 'Arabia Mumintroll Minifigur',
+    description:
+      'Handgefertigter Mumintroll aus Keramik, etwa 6 cm hoch, in den 1990er Jahren von Tuulikki Pietilä entworfen und in eigener Geschenkbox. Die Figuren werden in Serien gesammelt, was eine zum sicheren Geschenk und zwei zur Gewohnheit macht.',
+    specs: [
+      'Höhe etwa 6 cm',
+      'Handgefertigte Keramik',
+      'Tuulikki Pietilä, 1990er Jahre',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'sk-arabia-snorkmaiden-mini-figurine': {
+    name: 'Arabia Snorkfräulein Minifigur',
+    description:
+      'Handgefertigtes Snorkfräulein aus Keramik, etwa 6 cm hoch, aus Tuulikki Pietiläs Serie der 1990er Jahre, in eigener Geschenkbox. Zusammen mit dem Mumintroll stehen die beiden auf dem Fensterbrett wie auf den Buchcovern.',
+    specs: [
+      'Höhe etwa 6 cm',
+      'Handgefertigte Keramik',
+      'Tuulikki Pietilä, 1990er Jahre',
+    ],
+    specLabels: [undefined, undefined, 'Design'],
+  },
+  'sk-lapin-puukko-gift-box': {
+    name: 'Lappland-Puukko mit Klingenschutz, Geschenkbox',
+    description:
+      'Puukko im Lappland-Stil mit Klingenschutz, geliefert in einer Geschenkbox. Der Shop stellt es als Messer für Waldtouren und Alltagsarbeiten vor und als den Gegenstand, der weitergegeben statt ersetzt wird.',
+    specs: [
+      'Klingenschutz und Geschenkbox',
+    ],
+    specLabels: ['Enthalten'],
+  },
+  'sk-loimu-sauna-thermometer': {
+    name: 'Loimu Saunathermometer, Birke',
+    description:
+      'Saunathermometer im Birkenrahmen mit klarer Skala. Es beantwortet die einzige Frage, die ein Gast vor der ersten Kelle Wasser stellt, und sieht aus, als gehöre es an eine Blockwand und nicht neben einen Kessel.',
+    specs: [
+      'Birke',
+    ],
+  },
+  'sk-helsingin-villasukkatehdas-wool-socks': {
+    name: 'Helsingin Villasukkatehdas Wollsocken',
+    description:
+      'Streichwollsocken aus Finnlands einziger traditioneller Wollsockenfabrik, auf Maschinen aus den 1950er Jahren in Helsinki gestrickt. 70 Prozent mulesingfreie Wolle, in Jämsä gesponnen und in Kyröskoski gefärbt, in mehreren Größen und vier Farben nach Rinde, Moos, Flechte und Nacht.',
+    specs: [
+      '70 % Wolle (mulesingfrei), 30 % Polyamid',
+      'Gestrickt in Helsinki, Wolle gesponnen in Jämsä und gefärbt in Kyröskoski',
+      'Mehrere Größen, vier Farben',
+    ],
+  },
+  'sk-halva-salmiakkikalat': {
+    name: 'Halva Salmiakkikalat Salzlakritzfische 230 g',
+    description:
+      'Fischförmige Salmiakbonbons von Halva, 230 Gramm, die Tüte, die in jedem finnischen Handschuhfach liegt. Fester Biss, intensives Salzlakritz, und das Erste, was man einem Besucher reicht, der echtes Finnland schmecken will.',
+    specs: [
+      '230 g',
+    ],
+  },
+  'sk-kouvolan-lakritsi-500g': {
+    name: 'Kouvolan Lakritsi Lakritzstücke 500 g',
+    description:
+      'Ein halbes Kilo weiche Lakritzstücke aus Kouvola nach einem Rezept von 1945, das 1960 von einem englischen Lakritzspezialisten verfeinert wurde. So schmeckt schlichtes Lakritz, wenn nichts zugesetzt wird, um die Wurzel zu verstecken.',
+    specs: [
+      '500 g',
+      'Von 1945, angepasst 1960',
+    ],
+    specLabels: [undefined, 'Rezept'],
+  },
+  'sk-fazer-omar-chocolate-bar': {
+    name: 'Fazer Omar Schokoladentafel 180 g',
+    description:
+      'Limitierte 180-Gramm-Tafel zum 60. Geburtstag von Omar: das milde, cremige Omar-Toffee, das seit 1966 verkauft wird, in Fazer-Milchschokolade mit mindestens 30 Prozent Kakao. Nur für begrenzte Zeit im Verkauf.',
+    specs: [
+      '180 g',
+      'Milchschokolade mit mindestens 30 % Kakao',
+      'Limitierte Auflage zum 60. Jubiläum',
+    ],
+    specLabels: [undefined, 'Kakao', 'Verfügbarkeit'],
+  },
+  'sk-fazer-salty-suffeli-puffi': {
+    name: 'Karl Fazer Salty Suffeli Puffi Schokoladentafel 160 g',
+    description:
+      'Fazers Milchschokolade aus frischer Milch mit knusprigen, salzig-süßen Suffeli-Maispuffs. 160 Gramm, mindestens 30 Prozent Kakao, und die Antwort für alle, die sich nicht zwischen salzig und süß entscheiden können.',
+    specs: [
+      '160 g',
+      'Milchschokolade mit mindestens 30 % Kakao',
+    ],
+    specLabels: [undefined, 'Kakao'],
+  },
+  'sk-tyrkisk-peber-chewy': {
+    name: 'Fazer Tyrkisk Peber Chewy Salmiakpastillen 38 g',
+    description:
+      'Das scharfe Salmiak von Tyrkisk Peber als neue weiche Kaupastille statt harter Schale. Eine 38-Gramm-Taschenpackung, vom Shop im August 2026 gelistet, für Leute, die Salmiak und Schärfe im selben Bissen wollen.',
+    specs: [
+      '38 g',
+    ],
+  },
+  'sk-tyrkisk-peber-sour-foams': {
+    name: 'Fazer Tyrkisk Peber Sour Foams Schaumbonbons 150 g',
+    description:
+      'Weiche Schaumbonbons mit milder Tyrkisk-Peber-Schärfe und sauren Aromen von Kiwi-Erdbeere und Zitrone-Limette, 150 Gramm. Ein sanfterer Einstieg in die Pfefferlakritz-Familie und die Tüte, die in gemischter Runde zuerst aufgeht.',
+    specs: [
+      '150 g',
+    ],
+  },
+  'sk-marianne-toffee-rae': {
+    name: 'Fazer Marianne Toffee Schokoladendragees 150 g',
+    description:
+      'Die Marianne-Dragees in der Toffee-Version: glänzende, knackige Hülle um einen Milchschokoladenkern mit mindestens 28 Prozent Kakao, im wiederverschließbaren 150-Gramm-Beutel. Auch zum Backen gedacht, falls welche so lange überleben.',
+    specs: [
+      '150 g',
+      'Milchschokolade mit mindestens 28 % Kakao',
+      'Wiederverschließbarer Beutel',
+    ],
+    specLabels: [undefined, 'Kakao', 'Verpackung'],
+  },
+  'sk-fasupala-lakritsi': {
+    name: 'Fazer Fasupala Lakritsi Waffelkekse 199 g',
+    description:
+      'Mundgerechte Waffeln mit Lakritzfüllung unter einem Überzug mit Milchschokoladengeschmack, 199 Gramm, ohne Palmöl. Die Lakritzversion eines Kekses, den Finnen schon kartonweise essen, vom Shop im August 2026 gelistet.',
+    specs: [
+      '199 g',
+      'Ohne Palmöl',
+    ],
+    specLabels: [undefined, 'Fett'],
+  },
+  'sk-finnish-flavours-cloudberry-jam': {
+    name: 'Finnish Flavours Premium-Moltebeerenkonfitüre 250 g',
+    description:
+      'Moltebeerenkonfitüre mit 75 Prozent finnischen Moltebeeren und 20 Prozent Zucker, 250 Gramm. Moltebeeren reifen Ende Juli auf lappländischen Mooren und lassen sich nicht im großen Stil anbauen, deshalb kostet ein Glas so viel wie zwei Tüten Schokolade.',
+    specs: [
+      '250 g',
+      'Finnische Moltebeere 75 %, Zucker 20 %',
+    ],
+  },
+  'sk-lapin-liha-smoked-reindeer-soup': {
+    name: 'Lapin Liha Räucherrentiersuppe 400 g',
+    description:
+      'Cremige Suppe mit heiß- und kaltgeräuchertem Rentier, 400 Gramm, hergestellt von Lapin Liha. Im Topf erwärmen; es ist der Geschmack eines lappländischen Hüttenmittagessens in einer Packung, die in den Koffer passt.',
+    specs: [
+      '400 g',
+      'Heißgeräuchertes Rentier 3 % und kaltgeräuchertes Rentier 3 %',
+      'Im Topf erwärmen',
+    ],
+    specLabels: [undefined, undefined, 'Zubereitung'],
+  },
+  'sk-vaasan-ruispalat-5pack': {
+    name: 'Vaasan Ruispalat Roggenbrot 5 x 330 g',
+    description:
+      'Fünf Beutel von Finnlands meistverkauftem Brot: gerissene Vollkornroggenbrötchen auf echtem Sauerteig aus 100 Prozent finnischem Getreide, sechs pro 330-Gramm-Beutel, 12 Prozent Ballaststoffe. Das, was Auslandsfinnen sich von Besuchern mitbringen lassen.',
+    specs: [
+      '5 x 330 g, 6 Brötchen pro Beutel',
+      'Vollkornroggen 87 % des Getreides, Ballaststoffe 12 %',
+    ],
+  },
+  'sk-poikain-parhaat-freeze-dried-blueberry': {
+    name: 'Poikain Parhaat gefriergetrocknete Heidelbeeren 15 g',
+    description:
+      'Ganze finnische Waldheidelbeeren, gefriergetrocknet und sonst nichts: 15 Gramm, die im Koffer nichts wiegen und nach August im Moor schmecken. Laktosefrei, glutenfrei, vegan, ohne Zuckerzusatz und Konservierungsstoffe.',
+    specs: [
+      '15 g',
+      '100 % finnische gefriergetrocknete Heidelbeere',
+      'Laktosefrei, glutenfrei, vegan, ohne Zuckerzusatz, ohne Konservierungsstoffe',
+    ],
+    specLabels: [undefined, undefined, 'Ernährung'],
+  },
+  'rj-arctic-warriors-blueberry-powder': {
+    name: 'Arctic Warriors Heidelbeerpulver 45 g',
+    description:
+      'Finnische Heidelbeeren, ganz mit ihrem Saft getrocknet und gemahlen, ohne Zusatz, 45 Gramm. Ein Löffel in Porridge, Joghurt oder Smoothie; dieselbe Beere wird hier über Ruohonjuuri verkauft, das innerhalb der EU versendet.',
+    specs: [
+      '45 g',
+      '100 % finnische Heidelbeere, ganz mit dem Saft getrocknet',
+    ],
+  },
+  'rj-poikain-parhaat-blueberry-lemonade': {
+    name: 'Poikain Parhaat Heidelbeerlimonade 0,33 l',
+    description:
+      'Bio-Heidelbeerlimonade aus Vehmainen, Tampere, aus echten Zutaten ohne künstliche Aromen oder Farbstoffe, 0,33-Liter-Flasche. Das Erfrischungsgetränk neben dem Salmiak auf einem finnischen Verkostungstisch.',
+    specs: [
+      '0,33 l',
+      'Hergestellt in Vehmainen, Tampere',
+      'Bio, keine künstlichen Aromen oder Farbstoffe',
+    ],
+    specLabels: [undefined, undefined, 'Zusatzstoffe'],
+  },
+  'rj-nordic-koivu-birch-sap': {
+    name: 'Nordic Koivu Birkensaft 500 ml',
+    description:
+      'Birkensaft, im Frühjahr gezapft, wenn der Baum das in den Wurzeln gespeicherte Wasser hebt, direkt vom Baum ohne Hitzebehandlung oder Konservierungsstoffe abgefüllt, 500 ml. Schmeckt leicht süß und vor allem nach kaltem, klarem Wasser.',
+    specs: [
+      '500 ml',
+      'Nicht hitzebehandelt, keine Konservierungsstoffe',
+    ],
+    specLabels: [undefined, 'Verarbeitung'],
+  },
+  'rj-kaino-spruce-sprout-sparkling-075': {
+    name: 'KAINO Drinks Fichtenspitzen Bio-Schaumgetränk 0,75 l',
+    description:
+      'Alkoholfreies Bio-Schaumgetränk mit Fichtenspitzen, den zarten Maitrieben der finnischen Fichte, in der 0,75-Liter-Flasche. Hergestellt in Vehmainen, Tampere, für den Toast auf einer Feier, bei der nicht alle trinken.',
+    specs: [
+      '0,75 l',
+      'Alkoholfrei, bio',
+      'Hergestellt in Vehmainen, Tampere',
+    ],
+    specLabels: [undefined, 'Alkohol', undefined],
+  },
+  'rj-yrttipaja-chaga-powder': {
+    name: 'Yrttipaja Chagapulver 35 g',
+    description:
+      'Gemahlener Chaga, der schwarze Pilz an Birkenstämmen, zum Aufbrühen als Tee: ein Esslöffel pro Liter Wasser, mindestens zehn Minuten köcheln und abseihen. 35 Gramm, der günstigste Weg, Pakuri zu probieren, bevor man Stücke kauft.',
+    specs: [
+      '35 g',
+      '1 Esslöffel pro Liter Wasser, mindestens 10 Minuten köcheln und abseihen',
+    ],
+    specLabels: [undefined, 'Anwendung'],
+  },
+  'rj-forestly-mushroom-chips-chili': {
+    name: 'Forestly Foods Pilzchips, Chili 50 g',
+    description:
+      'Knusprige Chips aus biologisch angebauten Shiitake-Pilzen, schonend gegart und mit Chili, Salz und Pfeffer gewürzt, 50 Gramm. Umami in der Tüte, fürs Sofa oder über eine Suppe gebröselt.',
+    specs: [
+      '50 g',
+      'Biologisch angebauter Shiitake, Chili, Salz und Pfeffer',
+    ],
   },
 }

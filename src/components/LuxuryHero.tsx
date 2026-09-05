@@ -2,7 +2,7 @@ import { imgSrcSet } from '../lib/img'
 import type { Lang } from '../i18n/useLang'
 
 /**
- * Ylellisyys-sivun hero — liikettä ilman kirjastoa (verkoston sääntö: ei
+ * Luxus-sivun hero — liikettä ilman kirjastoa (verkoston sääntö: ei
  * Framer Motionia, vain CSS).
  *
  * 🔴 Vesa 5.9.2026: "tältä sivulta puuttuu se luxuksen tunne, tämä herokin on

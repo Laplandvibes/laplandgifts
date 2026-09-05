@@ -1,12 +1,12 @@
 import { describe, expect, it } from 'vitest'
 import { PRODUCTS } from '../products'
 import { PARTNERS } from '../partners'
-import { LUXURY_MIN_PRICE, LUXURY_HERO_SLUGS } from '../luxury'
+import { LUXURY_MIN_PRICE, LUXURY_HERO_SLUGS, LUXURY_OBJECT_SLUGS, luxuryProducts } from '../luxury'
 import { LUXURY_COPY } from '../../locales/luxuryCopy'
 import { LANG_PREFIX, type Lang } from '../../i18n/useLang'
 
 const LANGS = Object.keys(LANG_PREFIX) as Lang[]
-const rows = PRODUCTS.filter((p) => p.priceFrom >= LUXURY_MIN_PRICE)
+const rows = luxuryProducts(PRODUCTS)
 
 describe('luksusvalikoima', () => {
   it('kärkitunnukset ovat olemassa ja tarpeeksi kalliita', () => {
@@ -20,7 +20,7 @@ describe('luksusvalikoima', () => {
   })
 
   it('sivulla on tarpeeksi tuotteita ollakseen olemassa', () => {
-    expect(rows.length).toBeGreaterThanOrEqual(12)
+    expect(rows.length).toBeGreaterThanOrEqual(8)
   })
 
   it('🔴 kärki ei ole Suomeen rajattu', () => {
@@ -30,6 +30,21 @@ describe('luksusvalikoima', () => {
       const p = PRODUCTS.find((x) => x.slug === slug)!
       expect(PARTNERS[p.partnerId].shipsTo, slug).not.toBe('fi')
     }
+  })
+
+  it('🔴 esineet ovat käsin valittuja klassikoita, eivät vaatteita eivätkä hintasuodattimen tulos', () => {
+    // Vesa 5.9.2026: "onko tää läppä että luxus sivulla on joku makia huppari
+    // luxus tuotteena?" Hinta ei ole ylellisyyden mitta.
+    expect(LUXURY_OBJECT_SLUGS.length).toBe(4)
+    for (const slug of LUXURY_OBJECT_SLUGS) {
+      const p = PRODUCTS.find((x) => x.slug === slug)
+      expect(p, `tuntematon esine ${slug}`).toBeTruthy()
+      expect(p!.category, slug).not.toBe('clothing')
+      expect(p!.category, slug).not.toBe('experiences')
+      expect(p!.priceFrom, slug).toBeGreaterThanOrEqual(LUXURY_MIN_PRICE)
+    }
+    const objects = rows.filter((p) => p.category !== 'experiences').map((p) => p.slug)
+    expect(objects).toEqual(LUXURY_OBJECT_SLUGS)
   })
 
   it('elämyksiä on tarpeeksi omaksi osiokseen', () => {
