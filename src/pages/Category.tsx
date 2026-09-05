@@ -21,11 +21,29 @@ import { useLang, useLocalePath, stripLocale } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
+import ProductRail, { type RailPartner } from '../shared/ads/ProductRail'
+import type { PartnerSnapshot } from '../shared/ads/data/partnerTypes'
+import nordicnestRail from '../shared/ads/rails/nordicnest'
+import nordicnestPicks from '../shared/ads/data/nordicnestPicks'
+import nordicbuddiesRail from '../shared/ads/rails/nordicbuddies'
+import nordicbuddiesPicks from '../shared/ads/data/nordicbuddiesPicks'
+import { trackAffiliateClick } from '../lib/analytics'
 
 /**
  * Yksi komponentti palvelee kaikkia seitsemää kategoriaa: kategoria luetaan
  * polusta, joten uuden kategorian lisääminen on rivi categories.ts:ssä.
  */
+/**
+ * Kategoriasivun tuoterivi — yksi per sivu, aiheen mukaan. Nämä rivit olivat
+ * etusivulla (7 riviä ripoteltuna), ja FI+EN-only-rivit jättivät kymmenellä
+ * kielellä tyhjän aukon. Täällä aihe osuu: design → Nordic Nest, vaatteet →
+ * Nordicbuddies. Muut kategoriat: ei riviä ennen kuin on osuva kumppani.
+ */
+const CATEGORY_RAIL: Record<string, { partner: RailPartner; snapshot: PartnerSnapshot }> = {
+  design: { partner: nordicnestRail, snapshot: nordicnestPicks },
+  clothing: { partner: nordicbuddiesRail, snapshot: nordicbuddiesPicks },
+}
+
 export default function Category() {
   const lang = useLang()
   const to = useLocalePath()
@@ -225,6 +243,19 @@ export default function Category() {
             </>
           )}
         </div>
+
+        {CATEGORY_RAIL[category.id] && (
+          <div className="mx-auto max-w-5xl px-4 pb-12">
+            <ProductRail
+              partner={CATEGORY_RAIL[category.id].partner}
+              snapshot={CATEGORY_RAIL[category.id].snapshot}
+              lang={lang}
+              sid={`category_${category.id}_rail`}
+              variant="light"
+              onCtaClick={(k, sid, url) => trackAffiliateClick(k, `ad_unit:${sid}`, url)}
+            />
+          </div>
+        )}
       </main>
       <Footer />
     </>
