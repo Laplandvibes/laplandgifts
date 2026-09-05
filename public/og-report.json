@@ -1,0 +1,87 @@
+{
+  "version": "20260905",
+  "domain": "laplandgifts.com",
+  "brand": "GIFTS",
+  "tagline": "Finnish gifts and Lapland souvenirs",
+  "generated": "2026-09-05T21:51:04.067Z",
+  "staticFallbackSeason": "summer",
+  "seasons": {
+    "summer": {
+      "heroUrl": "https://laplandgifts.com/images/hero-shop.webp",
+      "heroAlt": null,
+      "heroSha": "8eddce5a57c3f811",
+      "bytes": 108123,
+      "sha256": "5fb2b6e8afd46042c28e03fc8564088936602fbe11e36a6588b27d355696d6a7",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 15300,
+      "inkBox": [
+        357,
+        493,
+        843,
+        603
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 139.2,
+      "centerSq": 129.4,
+      "photoRegion": 176.4,
+      "photoRegionRef": 176.4,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 489,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": []
+    },
+    "winter": {
+      "heroUrl": "https://laplandgifts.com/images/hero-shop.webp",
+      "heroAlt": null,
+      "heroSha": "8eddce5a57c3f811",
+      "bytes": 108123,
+      "sha256": "5fb2b6e8afd46042c28e03fc8564088936602fbe11e36a6588b27d355696d6a7",
+      "bandH": 168,
+      "photoPct": 73.3,
+      "ink": 15300,
+      "inkBox": [
+        357,
+        493,
+        843,
+        603
+      ],
+      "safe": true,
+      "accentP10": 5.06,
+      "accentMed": 5.06,
+      "whiteP10": 17.08,
+      "whiteMed": 17.08,
+      "mean": 139.2,
+      "centerSq": 129.4,
+      "photoRegion": 176.4,
+      "photoRegionRef": 176.4,
+      "overlayPixels": 0,
+      "maxDiff": 0,
+      "fit": {
+        "size": 74,
+        "lines": 1,
+        "ts": 30,
+        "tagW": 489,
+        "fits": true,
+        "bandH": 168
+      },
+      "contrastOk": true,
+      "zeroOverlay": true,
+      "errors": [],
+      "sameAsSummer": true
+    }
+  }
+}
