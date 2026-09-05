@@ -17,12 +17,12 @@ const ICONS = [Search, Globe, Store]
 function ValueProp() {
   const t = SHOP_COPY[useLang()].home.valueProp
   return (
-    <section className="py-16 bg-night">
+    <section className="py-16 bg-sand-deep">
       <div className="max-w-5xl mx-auto px-4">
-        <h2 className="font-heading text-4xl md:text-5xl tracking-wide text-white text-center mb-3">
+        <h2 className="font-heading text-4xl md:text-5xl tracking-wide text-gray text-center mb-3">
           {t.h2}
         </h2>
-        <p className="text-white/75 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-muted text-center mb-12 max-w-2xl mx-auto">
           {t.sub}
         </p>
 
@@ -31,14 +31,14 @@ function ValueProp() {
             const Icon = ICONS[i]
             return (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 rounded-2xl bg-amber/20 flex items-center justify-center mx-auto mb-4 relative">
+                <div className="w-16 h-16 rounded-2xl bg-amber/10 flex items-center justify-center mx-auto mb-4 relative">
                   <Icon className="w-7 h-7 text-amber" />
-                  <span className="absolute -top-2 -right-2 w-7 h-7 bg-amber text-night text-sm font-bold rounded-full flex items-center justify-center">
+                  <span className="absolute -top-2 -right-2 w-7 h-7 bg-amber text-white text-sm font-bold rounded-full flex items-center justify-center">
                     {i + 1}
                   </span>
                 </div>
-                <h3 className="font-heading text-2xl tracking-wide text-white mb-2">{s.title}</h3>
-                <p className="text-white/75 text-sm leading-relaxed">{s.description}</p>
+                <h3 className="font-heading text-2xl tracking-wide text-gray mb-2">{s.title}</h3>
+                <p className="text-muted text-sm leading-relaxed">{s.description}</p>
               </div>
             )
           })}

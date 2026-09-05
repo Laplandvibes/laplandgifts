@@ -27,7 +27,7 @@ import { trackAffiliateClick } from '../lib/analytics'
  *
  * 🔴 Ei täsmähintoja tekstissä: opas ei ole katalogisivu eikä sillä ole
  * priceCheckedAt-vahtia. Hinta jää kaupan kerrottavaksi (sama periaate kuin
- * SuomikauppaOutletAd).
+ * tuoteriveillä: ProductRail näyttää hinnan vain tarkistuspäivän kanssa).
  */
 
 const SK = PARTNERS.suomikauppa

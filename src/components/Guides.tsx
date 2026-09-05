@@ -59,26 +59,26 @@ function Guides() {
   }
 
   return (
-    <section id="guides" className="bg-night py-20">
+    <section id="guides" className="bg-sand py-20">
       <div className="mx-auto max-w-5xl px-4">
         <div className="mb-14 text-center">
           <div className="mb-3 flex items-center justify-center gap-2">
             <FileText className="h-5 w-5 text-amber" />
             <span className="text-sm font-medium uppercase tracking-widest text-amber">{t.kicker}</span>
           </div>
-          <h2 className="mb-3 font-heading text-5xl tracking-wide text-white md:text-6xl">{t.h2}</h2>
-          <p className="mx-auto max-w-2xl text-lg text-white/75">{t.sub}</p>
+          <h2 className="mb-3 font-heading text-5xl tracking-wide text-gray md:text-6xl">{t.h2}</h2>
+          <p className="mx-auto max-w-2xl text-lg text-muted">{t.sub}</p>
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {t.guides.map((guide, i) => (
             <article
               key={guide.title}
-              className="group flex flex-col overflow-hidden rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:border-amber/40"
+              className="group flex flex-col overflow-hidden rounded-2xl border border-line bg-card shadow-[0_1px_2px_rgba(15,23,42,0.04),0_16px_32px_-20px_rgba(15,23,42,0.25)] transition-all hover:border-amber/40"
             >
               {/* Kansi. 8:5 pitää kortit samankorkuisina riippumatta siitä
                   kuinka pitkä kuvausteksti on. */}
-              <div className="aspect-[8/5] overflow-hidden bg-white/5">
+              <div className="aspect-[8/5] overflow-hidden bg-sand-deep">
                 <picture>
                   <source type="image/avif" srcSet={`/images/${COVERS[i]}.avif`} />
                   <img
@@ -97,17 +97,17 @@ function Guides() {
                 <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-amber">
                   {t.pagesPdf(guide.pages)}
                 </p>
-                <h3 className="font-heading text-2xl leading-tight tracking-wide text-white md:text-3xl">
+                <h3 className="font-heading text-2xl leading-tight tracking-wide text-gray md:text-3xl">
                   {guide.title}
                 </h3>
                 <p className="mb-3 mt-1 text-sm font-medium text-amber/90">{guide.subtitle}</p>
-                <p className="mb-5 text-sm leading-relaxed text-white/80">{guide.description}</p>
+                <p className="mb-5 text-sm leading-relaxed text-gray/75">{guide.description}</p>
 
                 <div className="mb-6 flex flex-wrap gap-2">
                   {guide.topics.map((topic) => (
                     <span
                       key={topic}
-                      className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/75"
+                      className="rounded-full border border-line bg-sand-deep px-3 py-1 text-xs text-gray/75"
                     >
                       {topic}
                     </span>

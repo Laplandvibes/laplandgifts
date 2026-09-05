@@ -54,32 +54,32 @@ export default function Luxury() {
   return (
     <>
       <ShopNav />
-      <main className="bg-night" id="main-content" tabIndex={-1}>
+      <main className="bg-sand" id="main-content" tabIndex={-1}>
         {/* Musta kiilto: kaksi hyvin tummaa sävyä ja yksi vaalea heijastus,
             ei kuvaa. Kuva veisi huomion tuotteilta, ja mikä tahansa
             maisemakuva olisi tässä koristetta. */}
-        <header className="relative overflow-hidden border-b border-white/10 bg-[radial-gradient(ellipse_at_30%_-10%,#243044_0%,#0F172A_45%,#080D18_100%)]">
+        <header className="relative overflow-hidden border-b border-line bg-card">
           <div
-            className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-white/40 to-transparent"
+            className="pointer-events-none absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-amber/40 to-transparent"
             aria-hidden="true"
           />
           <div className="mx-auto max-w-7xl px-4 py-16 md:py-24">
-            <p className="mb-3 font-body text-xs uppercase tracking-[0.22em] text-white/50">
+            <p className="mb-3 font-body text-xs uppercase tracking-[0.22em] text-amber">
               {tl.eyebrow}
             </p>
-            <h1 className="font-heading text-6xl tracking-wide text-white md:text-8xl">
+            <h1 className="font-heading text-6xl tracking-wide text-gray md:text-8xl">
               {tl.title}
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white/70">{tl.lead}</p>
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted">{tl.lead}</p>
           </div>
         </header>
 
         <div className="mx-auto max-w-7xl px-4 py-10 md:py-14">
-          <p className="mb-8 font-body text-sm text-white/50">{tl.count(visible.length)}</p>
+          <p className="mb-8 font-body text-sm text-muted">{tl.count(visible.length)}</p>
 
           {experiences.length > 0 && (
             <section className="mb-14">
-              <h2 className="mb-5 font-heading text-3xl tracking-wide text-white">
+              <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
                 {tl.experiencesH2}
               </h2>
               <ProductGridSection
@@ -92,7 +92,7 @@ export default function Luxury() {
 
           {objects.length > 0 && (
             <section>
-              <h2 className="mb-5 font-heading text-3xl tracking-wide text-white">
+              <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
                 {tl.objectsH2}
               </h2>
               <ProductGridSection
@@ -103,7 +103,7 @@ export default function Luxury() {
             </section>
           )}
 
-          <p className="mt-12 border-t border-white/10 pt-5 font-body text-xs text-white/40">
+          <p className="mt-12 border-t border-line pt-5 font-body text-xs text-muted">
             {tl.note}
           </p>
         </div>
