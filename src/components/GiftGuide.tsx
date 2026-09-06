@@ -104,7 +104,13 @@ function GiftGuide() {
                 {/* Yksi vaakarivi kapealla, neljä rinnakkain md:stä ylöspäin —
                     sama liike kuin kumppaniriveillä, mutta linkit ovat omia
                     tuotesivuja. */}
-                <ul className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 md:col-span-9 md:mx-0 md:grid md:grid-cols-4 md:gap-4 md:overflow-visible md:px-0 md:pb-0">
+                {/* 🔴 Oikean reunan häivytys, VAIN mobiilissa (Vesa 2026-09-06,
+                    mitattu scripts/mobile_wrap_audit.mjs): rivi katkesi kesken
+                    kortin suoraan ruudun reunaan, mikä lukee renderöinti-
+                    virheenä eikä "jatkuu oikealle" -vihjeenä. md:stä ylös tämä
+                    on ruudukko joka mahtuu kokonaan — silloin maski vain
+                    haalistaisi viimeisen sarakkeen turhaan, siksi md:none. */}
+                <ul className="-mx-4 flex snap-x snap-mandatory gap-3 overflow-x-auto px-4 pb-2 [mask-image:linear-gradient(to_right,#000_calc(100%_-_44px),transparent_100%)] md:col-span-9 md:mx-0 md:grid md:grid-cols-4 md:gap-4 md:overflow-visible md:px-0 md:pb-0 md:[mask-image:none]">
                   {picks.map((p) => (
                     <li key={p.slug} className="w-[42vw] max-w-[11rem] shrink-0 snap-start md:w-auto md:max-w-none">
                       <Link
