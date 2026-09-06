@@ -67,6 +67,8 @@ import { SHOP_COPY } from '../src/locales/shopCopy.ts'
 import { BOUTIQUES, TOWN_IDS, boutiquesByTown, townsWithPages } from '../src/data/boutiques.ts'
 import { BOUTIQUE_COPY } from '../src/locales/boutiqueCopy/index.ts'
 import { HOME_META } from '../src/locales/homeMeta.ts'
+// [LV-DUP 2026-09-06] localized title tails for brand/boutique/theme pages — see the module.
+import { brandTitleBase, brandTitleShort, boutiqueTitleBase, themeTitleBase } from '../src/locales/titleWords.ts'
 
 const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv']
 // 🔴 /unsubscribe KUULUU TÄHÄN. Se on reitti (routes.tsx LEGAL_PATHS) ja sivu
@@ -543,8 +545,9 @@ const themeRoutes = THEMES.map((theme) => {
   const build = (lang) => {
     const c = THEME_COPY[lang]
     const name = c.name[theme.id]
+    const localized = themeTitleBase(name, lang)
     return {
-      title: fitTitle([`${name} | ${BRAND}`, name]),
+      title: fitTitle([`${localized} | ${BRAND}`, localized, `${name} | ${BRAND}`, name]),
       description: fitDescription(c.intro[theme.id], CATEGORY_TAILS[lang]),
     }
   }
@@ -578,8 +581,10 @@ const brandHubRoute = (() => {
 const brandRoutes = BRANDS.map((brand) => {
   const build = (lang) => {
     const c = BRAND_COPY[lang]
+    const localized = brandTitleBase(brand.name, lang)
+    const short = brandTitleShort(brand.name, lang)
     return {
-      title: fitTitle([`${brand.name} | ${BRAND}`, brand.name]),
+      title: fitTitle([`${localized} | ${BRAND}`, localized, `${short} | ${BRAND}`, short, `${brand.name} | ${BRAND}`, brand.name]),
       description: fitDescription(leadingSentences(c.profile[brand.id]), CATEGORY_TAILS[lang]),
     }
   }
@@ -597,8 +602,18 @@ const productRoutes = PRODUCTS.map((product) => {
     // Ehdokkaat pisimmästä lyhimpään. Kun kumppanibrändi ja oma brändi eivät
     // mahdu yhtä aikaa, oma brändi voittaa: se erottaa tuloksen kumppanin
     // omasta hakutuloksesta, jossa sama tuote on samalla nimellä.
+    // [LV-DUP 2026-09-06] localized category tail first: "Halva Salmiakkiruutu 170 g – makeiset"
+    // was one title in ten locales when the product name carries no translatable word.
+    const catName = SHOP_COPY[lang]?.category?.names?.[product.category]
+    const cjk = lang === 'ja' || lang === 'zh-CN'
+    const withCat = catName ? (cjk ? `${withBrand}｜${catName}` : `${withBrand} – ${catName}`) : null
+    const nameCat = catName ? (cjk ? `${name}｜${catName}` : `${name} – ${catName}`) : null
     return {
-      title: fitTitle([`${withBrand} | ${BRAND}`, `${name} | ${BRAND}`, withBrand, name]),
+      title: fitTitle([
+        ...(withCat ? [`${withCat} | ${BRAND}`, withCat] : []),
+        ...(nameCat ? [`${nameCat} | ${BRAND}`, nameCat] : []),
+        `${withBrand} | ${BRAND}`, `${name} | ${BRAND}`, withBrand, name,
+      ]),
       description: fitDescription(leadingSentences(description), PRODUCT_TAILS[lang]),
     }
   }
@@ -613,6 +628,9 @@ const productRoutes = PRODUCTS.map((product) => {
 // vaihda nämä samaan `route(path, build)`-muotoon kuin muut.
 const enFiOnly = (path, en, fi) => ({
   path,
+  // [LV-DUP 2026-09-06] the other ten locales serve this English page: canonical → /en,
+  // no hreflang cluster for them (prerender `nativeLocales`). Titles stay as they were.
+  nativeLocales: ['en', 'fi'],
   fallbackTitle: en.title,
   fallbackDescription: en.description,
   fallbackTitleByLang: Object.fromEntries(LANGS.map((l) => [l, l === 'fi' ? fi.title : en.title])),
@@ -690,6 +708,7 @@ const pakuri = enFiOnly(
 // kymmenen kieltä saavat englannin metan, koska sivukin on niillä englantia.
 const deEnOnly = (path, en, deMeta) => ({
   path,
+  nativeLocales: ['en', 'de'],
   fallbackTitle: en.title,
   fallbackDescription: en.description,
   fallbackTitleByLang: Object.fromEntries(
@@ -758,7 +777,9 @@ const boutiqueTownRoutes = townsWithPages().map((town) =>
       const bs = boutiquesByTown(town)
       return {
         title: `${t.townNames[town]}: ${t.hubTitle} | LaplandGifts`,
-        description: `${t.count(bs.length)}: ${bs.map((b) => b.name).join(', ')}.`,
+        // [LV-DESC-MIN 2026-09-06] the bare count line was 42–46 characters; lead with the
+        // hub sentence like /boutiques does (the prerender clamps anything over 160).
+        description: `${t.hubLead} ${t.count(bs.length)}: ${bs.map((b) => b.name).join(', ')}.`,
       }
     }),
   ),
@@ -770,8 +791,9 @@ const boutiqueRoutes = BOUTIQUES.map((b) =>
     byLang((l) => {
       const t = SHOP_COPY[l].boutique
       const place = `${t.townNames[b.town]}${b.district ? `, ${b.district}` : ''}`
+      const localized = boutiqueTitleBase(b.name, t.townNames[b.town], l)
       return {
-        title: `${b.name}, ${t.townNames[b.town]} | LaplandGifts`,
+        title: fitTitle([`${localized} | LaplandGifts`, localized, `${b.name}, ${t.townNames[b.town]} | LaplandGifts`]),
         description: `${BOUTIQUE_COPY[l][b.slug].description} ${place}.`,
       }
     }),

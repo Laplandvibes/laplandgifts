@@ -24,7 +24,7 @@ const META: Record<Lang, { title: string; description: string }> = {
     description: 'LaplandGiftsのクッキーポリシー：アナリティクスへの同意、アフィリエイト計測、設定の管理方法について。',
   },
   es: {
-    title: 'Política de cookies | LaplandGifts',
+    title: 'Política de cookies y consentimiento | LaplandGifts',
     description: 'Política de cookies de LaplandGifts: consentimiento de analítica, seguimiento de afiliados y gestión de sus preferencias.',
   },
   'pt-BR': {
