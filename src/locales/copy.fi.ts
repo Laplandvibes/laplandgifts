@@ -204,7 +204,7 @@ const fi: ChromeCopy = {
   unsubscribe: {
     title: 'Peruuta tilaus | LaplandGifts',
     h1: 'Peruuta tilaus',
-    body: 'Anna sähköpostiosoitteesi ja poistamme sinut uutiskirjelistalta.',
+    body: 'Anna sähköpostiosoitteesi ja poistamme sinut uutiskirjelistalta. Poisto tulee voimaan heti.',
     successH1: 'Tilaus peruutettu',
     successBody: 'Et saa enää meiltä viestejä. Harmi, että lähdet.',
     submit: 'Peruuta tilaus',

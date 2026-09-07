@@ -204,7 +204,7 @@ const sv: ChromeCopy = {
   unsubscribe: {
     title: 'Avsluta prenumeration | LaplandGifts',
     h1: 'Avsluta prenumeration',
-    body: 'Ange din e-postadress för att ta bort dig från vår nyhetsbrevslista.',
+    body: 'Ange din e-postadress för att ta bort dig från vår nyhetsbrevslista. Avregistreringen gäller direkt.',
     successH1: 'Du har avslutat prenumerationen',
     successBody: 'Du får inga fler e-postmeddelanden från oss. Tråkigt att se dig lämna.',
     submit: 'Avsluta prenumeration',

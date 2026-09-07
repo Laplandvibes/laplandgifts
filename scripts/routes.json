@@ -1750,11 +1750,11 @@
   },
   {
     "path": "/product/iittala-aalto-vase-160",
-    "fallbackTitle": "Iittala Alvar Aalto vase 160 mm, clear | LaplandGifts",
+    "fallbackTitle": "Alvar Aalto vase 160 mm, clear – Finnish design gifts",
     "fallbackDescription": "Alvar Aalto drew this wave in 1936 and Iittala still mouth blows it, so the outline of every piece differs a little. The price is read from the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Iittala Alvar Aalto vase 160 mm, clear | LaplandGifts",
-      "fi": "Iittala Alvar Aalto -maljakko 160 mm, kirkas | LaplandGifts",
+      "en": "Alvar Aalto vase 160 mm, clear – Finnish design gifts",
+      "fi": "Alvar Aalto -maljakko 160 mm, kirkas – Suomalainen design",
       "de": "Iittala Alvar Aalto Vase 160 mm, klar – Finnisches Design",
       "ja": "Iittala イッタラ アルヴァ・アアルト ベース 160 mm クリア｜フィンランドデザイン",
       "es": "Jarrón Iittala Alvar Aalto 160 mm, transparente",
@@ -1788,7 +1788,7 @@
     "fallbackTitleByLang": {
       "en": "Iittala Kivi votive 60 mm, pine green – Finnish design gifts",
       "fi": "Iittala Kivi -kynttilälyhty 60 mm, petrolinvihreä",
-      "de": "Iittala Kivi Teelichthalter 60 mm, tannengrün | LaplandGifts",
+      "de": "Kivi Teelichthalter 60 mm, tannengrün – Finnisches Design",
       "ja": "Iittala イッタラ キビ キャンドルホルダー 60 mm パイングリーン｜フィンランドデザイン",
       "es": "Portavelas Iittala Kivi 60 mm, verde pino – Diseño finlandés",
       "pt-BR": "Porta-velas Iittala Kivi 60 mm, verde pinho | LaplandGifts",
@@ -1796,7 +1796,7 @@
       "ko": "Iittala 이딸라 키비 캔들홀더 60 mm, 파인 그린 – 핀란드 디자인 | LaplandGifts",
       "fr": "Photophore Iittala Kivi 60 mm, vert sapin | LaplandGifts",
       "it": "Portacandela Iittala Kivi 60 mm, verde pino | LaplandGifts",
-      "nl": "Iittala Kivi waxinelichthouder 60 mm, dennengroen",
+      "nl": "Kivi waxinelichthouder 60 mm, dennengroen – Fins design",
       "sv": "Iittala Kivi värmeljushållare 60 mm, tallgrön – Finsk design"
     },
     "fallbackDescriptionByLang": {
@@ -1849,10 +1849,10 @@
   },
   {
     "path": "/product/halti-tokoi-dx-jacket",
-    "fallbackTitle": "Halti Tokoi DX shell jacket, men's | LaplandGifts",
+    "fallbackTitle": "Tokoi DX shell jacket, men's – Finnish clothing and knitwear",
     "fallbackDescription": "A weatherproof shell with every seam taped, a light lining and an adjustable hood, cut loosely enough to layer a wool jumper underneath. Delivery area shown.",
     "fallbackTitleByLang": {
-      "en": "Halti Tokoi DX shell jacket, men's | LaplandGifts",
+      "en": "Tokoi DX shell jacket, men's – Finnish clothing and knitwear",
       "fi": "Halti Tokoi DX -kuoritakki, miesten | LaplandGifts",
       "de": "Halti Tokoi DX Wetterjacke, Herren – Kleidung und Strick",
       "ja": "Halti ハルティ Tokoi DX シェルジャケット メンズ｜衣類とニット | LaplandGifts",
@@ -1915,10 +1915,10 @@
   },
   {
     "path": "/product/makia-aurora-hoodie",
-    "fallbackTitle": "Makia Aurora hooded sweatshirt | LaplandGifts",
+    "fallbackTitle": "Aurora hooded sweatshirt – Finnish clothing and knitwear",
     "fallbackDescription": "A regular-fit hoodie in 100 per cent organic cotton from the Helsinki label Makia. Heavy enough to wear as the outer layer indoors and on mild autumn evenings.",
     "fallbackTitleByLang": {
-      "en": "Makia Aurora hooded sweatshirt | LaplandGifts",
+      "en": "Aurora hooded sweatshirt – Finnish clothing and knitwear",
       "fi": "Makia Aurora -huppari – Suomalaiset vaatteet ja neuleet",
       "de": "Makia Aurora Kapuzenpullover – Kleidung und Strick",
       "ja": "Makia マキア オーロラ フーディー｜衣類とニット | LaplandGifts",
@@ -1985,7 +1985,7 @@
     "fallbackDescription": "Knee-high merino blend socks with padding at the shin and ankle, the parts a ski boot presses on. Halti states they are made in Europe. Delivery area is listed.",
     "fallbackTitleByLang": {
       "en": "Halti Tunturit ski socks – Finnish clothing and knitwear",
-      "fi": "Halti Tunturit -hiihtosukat | LaplandGifts",
+      "fi": "Tunturit -hiihtosukat – Suomalaiset vaatteet ja neuleet",
       "de": "Halti Tunturit Skisocken – Kleidung und Strick",
       "ja": "Halti ハルティ Tunturit スキーソックス｜衣類とニット | LaplandGifts",
       "es": "Calcetines de esquí Halti Tunturit – Ropa y punto",
@@ -2014,11 +2014,11 @@
   },
   {
     "path": "/product/north-outdoor-huuru-beanie",
-    "fallbackTitle": "North Outdoor Huuru merino beanie | LaplandGifts",
+    "fallbackTitle": "Huuru merino beanie – Finnish clothing and knitwear",
     "fallbackDescription": "North Outdoor knits this rib beanie in its own knitting mill in Oulu from 100 per cent mulesing free merino, 18.5 micron. The delivery area is on this page.",
     "fallbackTitleByLang": {
-      "en": "North Outdoor Huuru merino beanie | LaplandGifts",
-      "fi": "North Outdoor Huuru -merinopipo | LaplandGifts",
+      "en": "Huuru merino beanie – Finnish clothing and knitwear",
+      "fi": "Huuru -merinopipo – Suomalaiset vaatteet ja neuleet",
       "de": "North Outdoor Huuru Merinomütze – Kleidung und Strick",
       "ja": "North Outdoor ノースアウトドア Huuru メリノビーニー｜衣類とニット | LaplandGifts",
       "es": "Gorro de merino North Outdoor Huuru – Ropa y punto",
@@ -2047,11 +2047,11 @@
   },
   {
     "path": "/product/north-outdoor-pyry-scarf",
-    "fallbackTitle": "North Outdoor Pyry merino scarf | LaplandGifts",
+    "fallbackTitle": "Pyry merino scarf – Finnish clothing and knitwear",
     "fallbackDescription": "A wide, long brioche knit scarf in 100 per cent merino, knitted in Oulu. The price comes from the partner shop, where you also buy it. Delivery area is listed.",
     "fallbackTitleByLang": {
-      "en": "North Outdoor Pyry merino scarf | LaplandGifts",
-      "fi": "North Outdoor Pyry -merinokaulaliina | LaplandGifts",
+      "en": "Pyry merino scarf – Finnish clothing and knitwear",
+      "fi": "Pyry -merinokaulaliina – Suomalaiset vaatteet ja neuleet",
       "de": "North Outdoor Pyry Merinoschal – Kleidung und Strick",
       "ja": "North Outdoor ノースアウトドア Pyry メリノスカーフ｜衣類とニット | LaplandGifts",
       "es": "Bufanda de merino North Outdoor Pyry – Ropa y punto",
@@ -2080,12 +2080,12 @@
   },
   {
     "path": "/product/north-outdoor-honka-jumper",
-    "fallbackTitle": "North Outdoor Honka merino jumper, men's | LaplandGifts",
+    "fallbackTitle": "Honka merino jumper, men's – Finnish clothing and knitwear",
     "fallbackDescription": "A thick brioche knit jumper in 100 per cent merino with a relaxed cut and a dropped shoulder line. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
-      "en": "North Outdoor Honka merino jumper, men's | LaplandGifts",
+      "en": "Honka merino jumper, men's – Finnish clothing and knitwear",
       "fi": "North Outdoor Honka -merinoneulepusero, miesten",
-      "de": "North Outdoor Honka Merinopullover, Herren | LaplandGifts",
+      "de": "Honka Merinopullover, Herren – Kleidung und Strick",
       "ja": "North Outdoor ノースアウトドア Honka メリノセーター メンズ｜衣類とニット",
       "es": "Jersey de merino North Outdoor Honka, hombre – Ropa y punto",
       "pt-BR": "Suéter de merino North Outdoor Honka, masculino",
@@ -2377,10 +2377,10 @@
   },
   {
     "path": "/product/kuivalihakundi-poro-jerky",
-    "fallbackTitle": "Reindeer jerky Original 2 x 20 g | LaplandGifts",
+    "fallbackTitle": "Reindeer jerky Original 2 x – Finnish sweets and food gifts",
     "fallbackDescription": "Two 20 gram bags of reindeer jerky made from 100 per cent Finnish reindeer, oven dried and marinated with gluten free soy sauce, black pepper.",
     "fallbackTitleByLang": {
-      "en": "Reindeer jerky Original 2 x 20 g | LaplandGifts",
+      "en": "Reindeer jerky Original 2 x – Finnish sweets and food gifts",
       "fi": "Poro-Jerky Original 2 x 20 g – Suomalaiset herkut",
       "de": "Rentier-Trockenfleisch Original 2 x 20 g | LaplandGifts",
       "ja": "Kuivalihakundi トナカイ干し肉 オリジナル 2 x 20 g｜お菓子と食の贈り物",
@@ -2410,21 +2410,21 @@
   },
   {
     "path": "/product/finnish-flavours-palalaku-salmiakki",
-    "fallbackTitle": "Finnish Flavours Premium Palalaku salmiakki 150 g",
+    "fallbackTitle": "Premium Palalaku salmiakki – Finnish sweets and food gifts",
     "fallbackDescription": "A 150 gram bag of soft salmiakki liquorice, the ammonium chloride kind that splits visitors into two camps on the first piece. You buy it in the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Finnish Flavours Premium Palalaku salmiakki 150 g",
-      "fi": "Finnish Flavours Premium Palalaku salmiakki 150 g",
-      "de": "Finnish Flavours Premium Palalaku Salmiak 150 g",
+      "en": "Premium Palalaku salmiakki – Finnish sweets and food gifts",
+      "fi": "Premium Palalaku salmiakki 150 g – Suomalaiset herkut",
+      "de": "Premium Palalaku Salmiak – Süßes und kulinarische Geschenke",
       "ja": "Finnish Flavours プレミアム パララク サルミアッキ 150 g｜お菓子と食の贈り物",
-      "es": "Finnish Flavours Premium Palalaku salmiakki 150 g",
-      "pt-BR": "Finnish Flavours Premium Palalaku salmiakki 150 g",
+      "es": "Premium Palalaku salmiakki 150 g – Dulces y regalos gourmet",
+      "pt-BR": "Premium Palalaku salmiakki – Doces e presentes gastronômicos",
       "zh-CN": "Finnish Flavours 优选 Palalaku 咸甘草糖 150 g｜甜食与美食礼品",
       "ko": "Finnish Flavours 프리미엄 팔라라쿠 살미아키 150 g – 과자와 식품 선물",
-      "fr": "Finnish Flavours Premium Palalaku salmiakki 150 g",
-      "it": "Finnish Flavours Premium Palalaku salmiakki 150 g",
-      "nl": "Finnish Flavours Premium Palalaku salmiak 150 g",
-      "sv": "Finnish Flavours Premium Palalaku salmiak 150 g"
+      "fr": "Premium Palalaku salmiakki 150 g – Douceurs et gourmandises",
+      "it": "Premium Palalaku salmiakki – Dolci e regali gastronomici",
+      "nl": "Premium Palalaku salmiak 150 g – Lekkers en eetbare cadeaus",
+      "sv": "Premium Palalaku salmiak 150 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "A 150 gram bag of soft salmiakki liquorice, the ammonium chloride kind that splits visitors into two camps on the first piece. You buy it in the partner shop.",
@@ -2443,10 +2443,10 @@
   },
   {
     "path": "/product/meritalo-tyrnihillo",
-    "fallbackTitle": "Meritalo Finnish sea buckthorn jam 310 g | LaplandGifts",
+    "fallbackTitle": "Finnish sea buckthorn jam – Finnish sweets and food gifts",
     "fallbackDescription": "Sea buckthorn jam with 37 grams of berries per 100 grams, cooked from Finnish sea buckthorn on the Meritalo family farm in Salo. You buy it in the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Meritalo Finnish sea buckthorn jam 310 g | LaplandGifts",
+      "en": "Finnish sea buckthorn jam – Finnish sweets and food gifts",
       "fi": "Meritalo Suomalainen tyrnihillo 310 g – Suomalaiset herkut",
       "de": "Meritalo finnische Sanddornkonfitüre 310 g | LaplandGifts",
       "ja": "Meritalo メリタロ フィンランド産シーバックソーンジャム 310 g｜お菓子と食の贈り物",
@@ -2456,8 +2456,8 @@
       "ko": "Meritalo 메리탈로 핀란드 산자나무 잼 310 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Confiture d’argousier finlandaise Meritalo 310 g",
       "it": "Confettura finlandese di olivello spinoso Meritalo 310 g",
-      "nl": "Meritalo Finse duindoornjam 310 g | LaplandGifts",
-      "sv": "Meritalo finsk havtornssylt 310 g | LaplandGifts"
+      "nl": "Finse duindoornjam 310 g – Lekkers en eetbare cadeaus",
+      "sv": "finsk havtornssylt 310 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Sea buckthorn jam with 37 grams of berries per 100 grams, cooked from Finnish sea buckthorn on the Meritalo family farm in Salo. You buy it in the partner shop.",
@@ -2476,10 +2476,10 @@
   },
   {
     "path": "/product/kuivalihakundi-poro-jerky-200g",
-    "fallbackTitle": "Kuivalihakundi Reindeer jerky Original 200 g | LaplandGifts",
+    "fallbackTitle": "Reindeer jerky Original – Finnish sweets and food gifts",
     "fallbackDescription": "The gift sized sack of the same reindeer jerky, 200 grams. The price is read from the partner shop and the purchase is made there. Delivery area on this page.",
     "fallbackTitleByLang": {
-      "en": "Kuivalihakundi Reindeer jerky Original 200 g | LaplandGifts",
+      "en": "Reindeer jerky Original – Finnish sweets and food gifts",
       "fi": "Poro-Jerky Original 200 g – Suomalaiset herkut",
       "de": "Rentier-Trockenfleisch Original 200 g | LaplandGifts",
       "ja": "Kuivalihakundi トナカイ干し肉 オリジナル 200 g｜お菓子と食の贈り物 | LaplandGifts",
@@ -2487,9 +2487,9 @@
       "pt-BR": "Carne seca de rena Original 200 g | LaplandGifts",
       "zh-CN": "Kuivalihakundi 驯鹿肉干 原味 200 g｜甜食与美食礼品 | LaplandGifts",
       "ko": "Kuivalihakundi 순록 육포 오리지널 200 g – 과자와 식품 선물 | LaplandGifts",
-      "fr": "Viande de renne séchée Original 200 g | LaplandGifts",
+      "fr": "Viande de renne séchée Original – Douceurs et gourmandises",
       "it": "Carne di renna essiccata Original 200 g | LaplandGifts",
-      "nl": "Gedroogd rendiervlees Original 200 g | LaplandGifts",
+      "nl": "Gedroogd rendiervlees Original – Lekkers en eetbare cadeaus",
       "sv": "Torkat renkött Original 200 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
@@ -2517,7 +2517,7 @@
       "de": "Rinder-Trockenfleisch Smoked 40 g | LaplandGifts",
       "ja": "Kuivalihakundi ビーフジャーキー スモーク 40 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Cecina de vacuno Smoked 40 g – Dulces y regalos gourmet",
-      "pt-BR": "Kuivalihakundi Carne seca bovina Smoked 40 g | LaplandGifts",
+      "pt-BR": "Carne seca bovina Smoked – Doces e presentes gastronômicos",
       "zh-CN": "Kuivalihakundi 牛肉干 烟熏 40 g｜甜食与美食礼品 | LaplandGifts",
       "ko": "Kuivalihakundi 소고기 육포 스모크 40 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Bœuf séché Smoked 40 g – Douceurs et gourmandises",
@@ -2546,7 +2546,7 @@
     "fallbackDescription": "Milk chocolate over a crisp hazelnut nougat filling, the bar most Finnish households keep in a drawer. Fazer states it is made without palm oil.",
     "fallbackTitleByLang": {
       "en": "Fazer Geisha hazelnut nougat chocolate bar 121 g",
-      "fi": "Fazer Geisha hasselpähkinänougat-suklaalevy 121 g",
+      "fi": "Geisha hasselpähkinänougat-suklaalevy – Suomalaiset herkut",
       "de": "Fazer Geisha Haselnussnougat-Schokoladentafel 121 g",
       "ja": "Fazer ファッツェル ゲイシャ ヘーゼルナッツヌガー チョコレートバー 121 g｜お菓子と食の贈り物",
       "es": "Tableta Fazer Geisha de turrón de avellana 121 g",
@@ -2641,12 +2641,12 @@
   },
   {
     "path": "/product/kaapa-mushrooms-pakuri-powder",
-    "fallbackTitle": "Kääpä Mushrooms chaga extract powder 30 g | LaplandGifts",
+    "fallbackTitle": "chaga extract powder – Arctic berry powders and superfoods",
     "fallbackDescription": "A 30 gram jar of chaga extract powder from Kääpä Mushrooms, who harvest functional mushrooms in Nordic forests, meant for stirring into hot drinks.",
     "fallbackTitleByLang": {
-      "en": "Kääpä Mushrooms chaga extract powder 30 g | LaplandGifts",
-      "fi": "Kääpä Mushrooms pakuriuutejauhe 30 g | LaplandGifts",
-      "de": "Kääpä Mushrooms Chaga-Extraktpulver 30 g | LaplandGifts",
+      "en": "chaga extract powder – Arctic berry powders and superfoods",
+      "fi": "pakuriuutejauhe 30 g – Marjajauheet ja superfoodit",
+      "de": "Chaga-Extraktpulver 30 g – Arktische Beerenpulver",
       "ja": "Kääpä Mushrooms チャーガエキスパウダー 30 g｜北極圏のベリーパウダー | LaplandGifts",
       "es": "Polvo de extracto de chaga Kääpä Mushrooms 30 g",
       "pt-BR": "Pó de extrato de chaga Kääpä Mushrooms 30 g | LaplandGifts",
@@ -2654,8 +2654,8 @@
       "ko": "Kääpä Mushrooms 차가버섯 추출 분말 30 g – 북극 베리 파우더 | LaplandGifts",
       "fr": "Poudre d’extrait de chaga Kääpä Mushrooms 30 g",
       "it": "Polvere di estratto di chaga Kääpä Mushrooms 30 g",
-      "nl": "Kääpä Mushrooms chagaextractpoeder 30 g | LaplandGifts",
-      "sv": "Kääpä Mushrooms sprängtickeextrakt i pulver 30 g"
+      "nl": "chagaextractpoeder 30 g – Arctische bessenpoeders",
+      "sv": "sprängtickeextrakt i pulver 30 g – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
       "en": "A 30 gram jar of chaga extract powder from Kääpä Mushrooms, who harvest functional mushrooms in Nordic forests, meant for stirring into hot drinks.",
@@ -2674,12 +2674,12 @@
   },
   {
     "path": "/product/arctic-warriors-spruce-sprout-powder",
-    "fallbackTitle": "Arctic Warriors spruce sprout powder 40 g | LaplandGifts",
+    "fallbackTitle": "spruce sprout powder – Arctic berry powders and superfoods",
     "fallbackDescription": "Freeze dried spruce sprouts, hand picked over a two week window from organic state forests, and only every second year from the same forest. See where it ships.",
     "fallbackTitleByLang": {
-      "en": "Arctic Warriors spruce sprout powder 40 g | LaplandGifts",
-      "fi": "Arctic Warriors kuusenkerkkäjauhe 40 g | LaplandGifts",
-      "de": "Arctic Warriors Fichtensprossenpulver 40 g | LaplandGifts",
+      "en": "spruce sprout powder – Arctic berry powders and superfoods",
+      "fi": "kuusenkerkkäjauhe 40 g – Marjajauheet ja superfoodit",
+      "de": "Fichtensprossenpulver 40 g – Arktische Beerenpulver",
       "ja": "Arctic Warriors トウヒの新芽パウダー 40 g｜北極圏のベリーパウダー | LaplandGifts",
       "es": "Polvo de brotes de abeto Arctic Warriors 40 g | LaplandGifts",
       "pt-BR": "Pó de brotos de abeto Arctic Warriors 40 g | LaplandGifts",
@@ -2687,7 +2687,7 @@
       "ko": "Arctic Warriors 가문비 새순 파우더 40 g – 북극 베리 파우더 | LaplandGifts",
       "fr": "Poudre de pousses d’épicéa Arctic Warriors 40 g",
       "it": "Polvere di germogli di abete Arctic Warriors 40 g",
-      "nl": "Arctic Warriors sparrenscheutpoeder 40 g | LaplandGifts",
+      "nl": "sparrenscheutpoeder 40 g – Arctische bessenpoeders",
       "sv": "Arctic Warriors granskottspulver 40 g – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
@@ -2707,20 +2707,20 @@
   },
   {
     "path": "/product/arctic-warriors-nettle-powder",
-    "fallbackTitle": "Arctic Warriors nettle powder 150 g | LaplandGifts",
+    "fallbackTitle": "nettle powder 150 g – Arctic berry powders and superfoods",
     "fallbackDescription": "Nettle grown on organic farms in Lapland, freeze dried into a powder neutral enough to stir into soup or bread without arguing with the rest of the dish.",
     "fallbackTitleByLang": {
-      "en": "Arctic Warriors nettle powder 150 g | LaplandGifts",
-      "fi": "Arctic Warriors nokkosjauhe 150 g | LaplandGifts",
-      "de": "Arctic Warriors Brennnesselpulver 150 g | LaplandGifts",
+      "en": "nettle powder 150 g – Arctic berry powders and superfoods",
+      "fi": "nokkosjauhe 150 g – Marjajauheet ja superfoodit",
+      "de": "Brennnesselpulver 150 g – Arktische Beerenpulver",
       "ja": "Arctic Warriors イラクサパウダー 150 g｜北極圏のベリーパウダー | LaplandGifts",
-      "es": "Polvo de ortiga Arctic Warriors 150 g | LaplandGifts",
+      "es": "Polvo de ortiga Arctic Warriors – Polvos de bayas árticas",
       "pt-BR": "Pó de urtiga Arctic Warriors 150 g – Pós de frutas árticas",
       "zh-CN": "Arctic Warriors 荨麻粉 150 g｜北极浆果粉 | LaplandGifts",
       "ko": "Arctic Warriors 쐐기풀 파우더 150 g – 북극 베리 파우더 | LaplandGifts",
-      "fr": "Poudre d’ortie Arctic Warriors 150 g | LaplandGifts",
+      "fr": "Poudre d’ortie Arctic Warriors – Poudres de baies arctiques",
       "it": "Polvere di ortica Arctic Warriors 150 g | LaplandGifts",
-      "nl": "Arctic Warriors brandnetelpoeder 150 g | LaplandGifts",
+      "nl": "brandnetelpoeder 150 g – Arctische bessenpoeders",
       "sv": "Arctic Warriors nässelpulver 150 g – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
@@ -2740,12 +2740,12 @@
   },
   {
     "path": "/product/arctic-warriors-roseroot-elixir",
-    "fallbackTitle": "Arctic Warriors roseroot elixir 100 ml | LaplandGifts",
+    "fallbackTitle": "roseroot elixir 100 ml – Arctic berry powders and superfoods",
     "fallbackDescription": "Roseroot grows on the damp creek banks and rock faces of the Lapland fells, and Arctic Warriors extracts it into vegetable glycerol with nettle.",
     "fallbackTitleByLang": {
-      "en": "Arctic Warriors roseroot elixir 100 ml | LaplandGifts",
-      "fi": "Arctic Warriors ruusujuuri-nokkoseliksiiri 100 ml",
-      "de": "Arctic Warriors Rosenwurz-Elixier 100 ml | LaplandGifts",
+      "en": "roseroot elixir 100 ml – Arctic berry powders and superfoods",
+      "fi": "ruusujuuri-nokkoseliksiiri – Marjajauheet ja superfoodit",
+      "de": "Rosenwurz-Elixier 100 ml – Arktische Beerenpulver",
       "ja": "Arctic Warriors イワベンケイのエリキシル 100 ml｜北極圏のベリーパウダー",
       "es": "Elixir de raíz de rosa Arctic Warriors 100 ml | LaplandGifts",
       "pt-BR": "Elixir de raiz-de-ouro Arctic Warriors 100 ml | LaplandGifts",
@@ -2753,7 +2753,7 @@
       "ko": "Arctic Warriors 홍경천 엘릭서 100 ml – 북극 베리 파우더 | LaplandGifts",
       "fr": "Élixir de rhodiole Arctic Warriors 100 ml | LaplandGifts",
       "it": "Elisir di rodiola Arctic Warriors 100 ml | LaplandGifts",
-      "nl": "Arctic Warriors rozenwortelelixer 100 ml | LaplandGifts",
+      "nl": "rozenwortelelixer 100 ml – Arctische bessenpoeders",
       "sv": "Arctic Warriors rosenrotselixir 100 ml – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
@@ -2777,8 +2777,8 @@
     "fallbackDescription": "Sea buckthorn berry oil and seed oil together with olive oil, developed and made in Finland. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
       "en": "Omega7 SBA24 sea buckthorn and olive oil 150 ml",
-      "fi": "Omega7 SBA24 tyrni-oliiviöljy 150 ml | LaplandGifts",
-      "de": "Omega7 SBA24 Sanddorn- und Olivenöl 150 ml | LaplandGifts",
+      "fi": "SBA24 tyrni-oliiviöljy 150 ml – Marjajauheet ja superfoodit",
+      "de": "SBA24 Sanddorn- und Olivenöl 150 ml – Arktische Beerenpulver",
       "ja": "Omega7 SBA24 シーバックソーンとオリーブのオイル 150 ml｜北極圏のベリーパウダー",
       "es": "Omega7 SBA24 aceite de espino amarillo y oliva 150 ml",
       "pt-BR": "Omega7 SBA24 óleo de espinheiro-marítimo e azeite 150 ml",
@@ -2786,8 +2786,8 @@
       "ko": "Omega7 SBA24 산자나무와 올리브 오일 150 ml – 북극 베리 파우더 | LaplandGifts",
       "fr": "Omega7 SBA24 huile d’argousier et d’olive 150 ml",
       "it": "Omega7 SBA24 olio di olivello spinoso e oliva 150 ml",
-      "nl": "Omega7 SBA24 duindoorn- en olijfolie 150 ml | LaplandGifts",
-      "sv": "Omega7 SBA24 havtorns- och olivolja 150 ml | LaplandGifts"
+      "nl": "SBA24 duindoorn- en olijfolie – Arctische bessenpoeders",
+      "sv": "SBA24 havtorns- och olivolja 150 ml – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
       "en": "Sea buckthorn berry oil and seed oil together with olive oil, developed and made in Finland. The price comes from the partner shop, where you also buy it.",
@@ -2810,8 +2810,8 @@
     "fallbackDescription": "A non-alcoholic sparkling drink made from Finnish organic ingredients, so a toast in a cabin does not have to involve alcohol. You buy it in the partner shop.",
     "fallbackTitleByLang": {
       "en": "KAINO Drinks spruce sprout sparkling drink 0,2 l",
-      "fi": "KAINO Drinks kuusenkerkkä-kuohujuoma 0,2 l | LaplandGifts",
-      "de": "KAINO Drinks Fichtensprossen-Schaumgetränk 0,2 l",
+      "fi": "kuusenkerkkä-kuohujuoma 0,2 l – Marjajauheet ja superfoodit",
+      "de": "Fichtensprossen-Schaumgetränk 0,2 l – Arktische Beerenpulver",
       "ja": "KAINO Drinks トウヒの新芽のスパークリングドリンク 0.2 l｜北極圏のベリーパウダー",
       "es": "Bebida con gas de brotes de abeto KAINO Drinks 0,2 l",
       "pt-BR": "Bebida gaseificada de brotos de abeto KAINO Drinks 0,2 l",
@@ -2819,8 +2819,8 @@
       "ko": "KAINO Drinks 가문비 새순 스파클링 음료 0.2 l – 북극 베리 파우더 | LaplandGifts",
       "fr": "Boisson pétillante aux pousses d’épicéa KAINO Drinks 0,2 l",
       "it": "Bibita frizzante ai germogli di abete KAINO Drinks 0,2 l",
-      "nl": "KAINO Drinks bruisende sparrenscheutdrank 0,2 l",
-      "sv": "KAINO Drinks mousserande granskottsdryck 0,2 l"
+      "nl": "bruisende sparrenscheutdrank 0,2 l – Arctische bessenpoeders",
+      "sv": "mousserande granskottsdryck 0,2 l – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
       "en": "A non-alcoholic sparkling drink made from Finnish organic ingredients, so a toast in a cabin does not have to involve alcohol. You buy it in the partner shop.",
@@ -2839,19 +2839,19 @@
   },
   {
     "path": "/product/foodin-six-mushroom-blend",
-    "fallbackTitle": "Foodin six mushroom blend 40 g | LaplandGifts",
+    "fallbackTitle": "six mushroom blend – Arctic berry powders and superfoods",
     "fallbackDescription": "Chaga, reishi, lion’s mane, cordyceps, shiitake and maitake in one jar, ground for coffee or smoothies. One jar covers the whole functional mushroom shelf.",
     "fallbackTitleByLang": {
-      "en": "Foodin six mushroom blend 40 g | LaplandGifts",
-      "fi": "Foodin Kuuden sienen sekoitus 40 g | LaplandGifts",
+      "en": "six mushroom blend – Arctic berry powders and superfoods",
+      "fi": "Kuuden sienen sekoitus 40 g – Marjajauheet ja superfoodit",
       "de": "Foodin Sechs-Pilze-Mischung 40 g – Arktische Beerenpulver",
       "ja": "Foodin 6種きのこブレンド 40 g｜北極圏のベリーパウダー | LaplandGifts",
       "es": "Foodin mezcla de seis setas 40 g – Polvos de bayas árticas",
-      "pt-BR": "Foodin mistura de seis cogumelos 40 g | LaplandGifts",
+      "pt-BR": "mistura de seis cogumelos 40 g – Pós de frutas árticas",
       "zh-CN": "Foodin 六菇混合粉 40 g｜北极浆果粉 | LaplandGifts",
       "ko": "Foodin 여섯 가지 버섯 블렌드 40 g – 북극 베리 파우더 | LaplandGifts",
-      "fr": "Foodin mélange de six champignons 40 g | LaplandGifts",
-      "it": "Foodin miscela di sei funghi 40 g | LaplandGifts",
+      "fr": "mélange de six champignons 40 g – Poudres de baies arctiques",
+      "it": "miscela di sei funghi 40 g – Polveri di bacche artiche",
       "nl": "Foodin zes-paddenstoelenmix 40 g – Arctische bessenpoeders",
       "sv": "Foodin blandning av sex svampar 40 g – Arktiska bärpulver"
     },
@@ -2872,10 +2872,10 @@
   },
   {
     "path": "/product/foodin-chaga-tincture",
-    "fallbackTitle": "Foodin chaga tincture 50 ml | LaplandGifts",
+    "fallbackTitle": "chaga tincture 50 ml – Arctic berry powders and superfoods",
     "fallbackDescription": "Finnish chaga as drops instead of powder: a 50 ml bottle that needs no brewing. The travel size of the whole chaga idea. The delivery area is on this page.",
     "fallbackTitleByLang": {
-      "en": "Foodin chaga tincture 50 ml | LaplandGifts",
+      "en": "chaga tincture 50 ml – Arctic berry powders and superfoods",
       "fi": "Foodin Pakuri-tinktuura 50 ml – Marjajauheet ja superfoodit",
       "de": "Foodin Chaga-Tinktur 50 ml – Arktische Beerenpulver",
       "ja": "Foodin チャーガチンキ 50 ml｜北極圏のベリーパウダー | LaplandGifts",
@@ -2905,19 +2905,19 @@
   },
   {
     "path": "/product/kaavi-chaga-chunks",
-    "fallbackTitle": "Kaavi Porcini chaga chunks 100 g | LaplandGifts",
+    "fallbackTitle": "chaga chunks 100 g – Arctic berry powders and superfoods",
     "fallbackDescription": "Coarse chunks of Finnish birch chaga for slow brewing, the way it was drunk here long before anyone said superfood. One bag brews many pots. See where it ships.",
     "fallbackTitleByLang": {
-      "en": "Kaavi Porcini chaga chunks 100 g | LaplandGifts",
-      "fi": "Kaavi Porcini Pakurikääpärouhe 100 g | LaplandGifts",
+      "en": "chaga chunks 100 g – Arctic berry powders and superfoods",
+      "fi": "Pakurikääpärouhe 100 g – Marjajauheet ja superfoodit",
       "de": "Kaavi Porcini Chaga-Stücke 100 g – Arktische Beerenpulver",
       "ja": "Kaavi Porcini チャーガ塊 100 g｜北極圏のベリーパウダー | LaplandGifts",
-      "es": "Kaavi Porcini trozos de chaga 100 g | LaplandGifts",
+      "es": "trozos de chaga 100 g – Polvos de bayas árticas",
       "pt-BR": "Kaavi Porcini pedaços de chaga 100 g – Pós de frutas árticas",
       "zh-CN": "Kaavi Porcini 白桦茸块 100 g｜北极浆果粉 | LaplandGifts",
       "ko": "Kaavi Porcini 차가버섯 조각 100 g – 북극 베리 파우더 | LaplandGifts",
-      "fr": "Kaavi Porcini morceaux de chaga 100 g | LaplandGifts",
-      "it": "Kaavi Porcini pezzi di chaga 100 g | LaplandGifts",
+      "fr": "morceaux de chaga 100 g – Poudres de baies arctiques",
+      "it": "pezzi di chaga 100 g – Polveri di bacche artiche",
       "nl": "Kaavi Porcini chagastukken 100 g – Arctische bessenpoeders",
       "sv": "Kaavi Porcini Chagabitar 100 g – Arktiska bärpulver"
     },
@@ -2943,16 +2943,16 @@
     "fallbackTitleByLang": {
       "en": "Puhdistamo instant chaga extract powder 28 g | LaplandGifts",
       "fi": "Puhdistamo Pakuriuutejauhe, instant-pakuri 28 g",
-      "de": "Puhdistamo Instant-Chaga-Extraktpulver 28 g | LaplandGifts",
+      "de": "Instant-Chaga-Extraktpulver 28 g – Arktische Beerenpulver",
       "ja": "Puhdistamo インスタントチャーガエキス粉末 28 g｜北極圏のベリーパウダー | LaplandGifts",
       "es": "Puhdistamo polvo de extracto de chaga instantáneo 28 g",
-      "pt-BR": "Puhdistamo pó de extrato de chaga instantâneo 28 g",
+      "pt-BR": "pó de extrato de chaga instantâneo – Pós de frutas árticas",
       "zh-CN": "Puhdistamo 速溶白桦茸提取粉 28 g｜北极浆果粉 | LaplandGifts",
       "ko": "Puhdistamo 인스턴트 차가버섯 추출 분말 28 g – 북극 베리 파우더 | LaplandGifts",
       "fr": "Puhdistamo poudre d'extrait de chaga instantané 28 g",
       "it": "Puhdistamo polvere di estratto di chaga istantaneo 28 g",
-      "nl": "Puhdistamo instant chaga-extractpoeder 28 g | LaplandGifts",
-      "sv": "Puhdistamo Instant chagaextraktpulver 28 g | LaplandGifts"
+      "nl": "instant chaga-extractpoeder 28 g – Arctische bessenpoeders",
+      "sv": "Instant chagaextraktpulver 28 g – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
       "en": "Chaga that dissolves straight into hot water, no simmering. The 28 gram jar fits any luggage and survives the trip better than a bag of chunks.",
@@ -2971,19 +2971,19 @@
   },
   {
     "path": "/product/puhdistamo-conifer-extract",
-    "fallbackTitle": "Puhdistamo conifer extract 50 ml | LaplandGifts",
+    "fallbackTitle": "conifer extract 50 ml – Arctic berry powders and superfoods",
     "fallbackDescription": "An extract drawn from Finnish conifers, taken as drops. The forest smell of a Lapland hike in a bottle small enough for a coat pocket. Sold by the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Puhdistamo conifer extract 50 ml | LaplandGifts",
+      "en": "conifer extract 50 ml – Arctic berry powders and superfoods",
       "fi": "Puhdistamo Havupuu-uute 50 ml – Marjajauheet ja superfoodit",
       "de": "Puhdistamo Nadelbaum-Extrakt 50 ml – Arktische Beerenpulver",
       "ja": "Puhdistamo 針葉樹エキス 50 ml｜北極圏のベリーパウダー | LaplandGifts",
-      "es": "Puhdistamo extracto de coníferas 50 ml | LaplandGifts",
-      "pt-BR": "Puhdistamo extrato de coníferas 50 ml | LaplandGifts",
+      "es": "extracto de coníferas 50 ml – Polvos de bayas árticas",
+      "pt-BR": "extrato de coníferas 50 ml – Pós de frutas árticas",
       "zh-CN": "Puhdistamo 针叶树提取液 50 ml｜北极浆果粉 | LaplandGifts",
       "ko": "Puhdistamo 침엽수 추출액 50 ml – 북극 베리 파우더 | LaplandGifts",
-      "fr": "Puhdistamo extrait de conifères 50 ml | LaplandGifts",
-      "it": "Puhdistamo estratto di conifere 50 ml | LaplandGifts",
+      "fr": "extrait de conifères 50 ml – Poudres de baies arctiques",
+      "it": "estratto di conifere 50 ml – Polveri di bacche artiche",
       "nl": "Puhdistamo naaldboomextract 50 ml – Arctische bessenpoeders",
       "sv": "Puhdistamo Barrträdsextrakt 50 ml – Arktiska bärpulver"
     },
@@ -3070,10 +3070,10 @@
   },
   {
     "path": "/product/arabia-moomin-figurine-moomintroll",
-    "fallbackTitle": "Arabia Moomin mini figurine, Moomintroll | LaplandGifts",
+    "fallbackTitle": "Moomin mini figurine, Moomintroll – Finnish design gifts",
     "fallbackDescription": "A hand made ceramic figurine drawn up by Tuulikki Pietilä in the 1990s and sold in its own box. Small enough that it travels home in a coat pocket.",
     "fallbackTitleByLang": {
-      "en": "Arabia Moomin mini figurine, Moomintroll | LaplandGifts",
+      "en": "Moomin mini figurine, Moomintroll – Finnish design gifts",
       "fi": "Arabia Muumi-minifiguriini, Muumipeikko – Suomalainen design",
       "de": "Arabia Moomin-Minifigur, Moomintroll – Finnisches Design",
       "ja": "Arabia アラビア ムーミン ミニフィギュア ムーミントロール｜フィンランドデザイン | LaplandGifts",
@@ -3103,10 +3103,10 @@
   },
   {
     "path": "/product/fiskars-moominpappa-scissors",
-    "fallbackTitle": "Fiskars Moominpappa universal scissors | LaplandGifts",
+    "fallbackTitle": "Moominpappa universal scissors – Finnish design gifts",
     "fallbackDescription": "Fiskars orange handled scissors are in more Finnish kitchen drawers than any other tool. This pair is 21 cm in stainless steel with Moominpappa on the handle.",
     "fallbackTitleByLang": {
-      "en": "Fiskars Moominpappa universal scissors | LaplandGifts",
+      "en": "Moominpappa universal scissors – Finnish design gifts",
       "fi": "Fiskars Muumipappa-yleissakset – Suomalainen design",
       "de": "Fiskars Moominpapa Universalschere – Finnisches Design",
       "ja": "Fiskars フィスカース ムーミンパパ 万能はさみ｜フィンランドデザイン | LaplandGifts",
@@ -3143,12 +3143,12 @@
       "fi": "Rento Terva-saunasaippua 150 g – Suomalaiset käsityöt",
       "de": "Rento Teer-Saunaseife 150 g – Finnisches Handwerk",
       "ja": "Rento タールのサウナソープ 150 g｜フィンランドの手仕事 | LaplandGifts",
-      "es": "Jabón de sauna de alquitrán Rento 150 g | LaplandGifts",
-      "pt-BR": "Sabonete de sauna de alcatrão Rento 150 g | LaplandGifts",
+      "es": "Jabón de sauna de alquitrán Rento – Artesanía finlandesa",
+      "pt-BR": "Sabonete de sauna de alcatrão Rento – Artesanato finlandês",
       "zh-CN": "Rento 焦油桑拿皂 150 g｜芬兰手工艺 | LaplandGifts",
       "ko": "Rento 타르 사우나 비누 150 g – 핀란드 수공예 | LaplandGifts",
       "fr": "Savon de sauna au goudron Rento 150 g – Artisanat finlandais",
-      "it": "Sapone da sauna al catrame Rento 150 g | LaplandGifts",
+      "it": "Sapone da sauna al catrame Rento – Artigianato finlandese",
       "nl": "Rento teer-saunazeep 150 g – Fins ambacht | LaplandGifts",
       "sv": "Rento tjärbastutvål 150 g – Finskt hantverk | LaplandGifts"
     },
@@ -3181,7 +3181,7 @@
       "zh-CN": "Rento 桦木桑拿蜜 150 ml｜芬兰手工艺 | LaplandGifts",
       "ko": "Rento 자작나무 사우나 허니 150 ml – 핀란드 수공예 | LaplandGifts",
       "fr": "Miel de sauna au bouleau Rento 150 ml – Artisanat finlandais",
-      "it": "Miele da sauna alla betulla Rento 150 ml | LaplandGifts",
+      "it": "Miele da sauna alla betulla Rento – Artigianato finlandese",
       "nl": "Rento berken-saunahoning 150 ml – Fins ambacht",
       "sv": "Rento bastuhonung med björk 150 ml – Finskt hantverk"
     },
@@ -3209,12 +3209,12 @@
       "fi": "Rento Mustikka-saunahunaja 150 ml – Suomalaiset käsityöt",
       "de": "Rento Blaubeer-Saunahonig 150 ml – Finnisches Handwerk",
       "ja": "Rento ブルーベリーのサウナハニー 150 ml｜フィンランドの手仕事 | LaplandGifts",
-      "es": "Miel de sauna de arándano Rento 150 ml | LaplandGifts",
+      "es": "Miel de sauna de arándano Rento – Artesanía finlandesa",
       "pt-BR": "Mel de sauna de mirtilo Rento 150 ml – Artesanato finlandês",
       "zh-CN": "Rento 蓝莓桑拿蜜 150 ml｜芬兰手工艺 | LaplandGifts",
       "ko": "Rento 블루베리 사우나 허니 150 ml – 핀란드 수공예 | LaplandGifts",
-      "fr": "Miel de sauna à la myrtille Rento 150 ml | LaplandGifts",
-      "it": "Miele da sauna al mirtillo Rento 150 ml | LaplandGifts",
+      "fr": "Miel de sauna à la myrtille Rento – Artisanat finlandais",
+      "it": "Miele da sauna al mirtillo Rento – Artigianato finlandese",
       "nl": "Rento bosbes-saunahoning 150 ml – Fins ambacht",
       "sv": "Rento bastuhonung med blåbär 150 ml – Finskt hantverk"
     },
@@ -3268,11 +3268,11 @@
   },
   {
     "path": "/product/rento-linen-back-scrubber",
-    "fallbackTitle": "Rento linen terry back scrubber 14 x 70 cm | LaplandGifts",
+    "fallbackTitle": "linen terry back scrubber 14 x 70 cm – Finnish handicrafts",
     "fallbackDescription": "Linen terry, long enough to reach across your own back. The price is read from the partner shop and the purchase is made there. Delivery area on this page.",
     "fallbackTitleByLang": {
-      "en": "Rento linen terry back scrubber 14 x 70 cm | LaplandGifts",
-      "fi": "Rento pellavafrotee-selänpesin 14 x 70 cm | LaplandGifts",
+      "en": "linen terry back scrubber 14 x 70 cm – Finnish handicrafts",
+      "fi": "pellavafrotee-selänpesin 14 x 70 cm – Suomalaiset käsityöt",
       "de": "Rento Rückenschrubber aus Leinenfrottee 14 x 70 cm",
       "ja": "Rento リネンパイルのバックスクラバー 14 x 70 cm｜フィンランドの手仕事 | LaplandGifts",
       "es": "Cepillo de espalda de rizo de lino Rento 14 x 70 cm",
@@ -3305,7 +3305,7 @@
     "fallbackDescription": "The same linen terry as the back scrubber, in a mitt with a doubled palm. The cheapest thing in this section and the one people actually use every week.",
     "fallbackTitleByLang": {
       "en": "Rento linen terry wash mitt 14 x 24 cm – Finnish handicrafts",
-      "fi": "Rento pellavafrotee-pesukinnas 14 x 24 cm | LaplandGifts",
+      "fi": "pellavafrotee-pesukinnas 14 x 24 cm – Suomalaiset käsityöt",
       "de": "Rento Waschhandschuh aus Leinenfrottee 14 x 24 cm",
       "ja": "Rento リネンパイルのウォッシュミット 14 x 24 cm｜フィンランドの手仕事 | LaplandGifts",
       "es": "Manopla de baño de rizo de lino Rento 14 x 24 cm",
@@ -3347,8 +3347,8 @@
       "ko": "Emendo 사우나 향: 살미아키, 송진, 시수, 3 x 10 ml – 핀란드 수공예",
       "fr": "Parfums de sauna Emendo : salmiakki, résine de pin, sisu.",
       "it": "Profumi da sauna Emendo: salmiakki, resina di pino, sisu.",
-      "nl": "Emendo saunageuren: salmiak, dennenhars, sisu, 3 x 10 ml",
-      "sv": "Emendo bastudofter: salmiak, tallkåda, sisu, 3 x 10 ml"
+      "nl": "saunageuren: salmiak, dennenhars, sisu, 3 x – Fins ambacht",
+      "sv": "bastudofter: salmiak, tallkåda, sisu, 3 x – Finskt hantverk"
     },
     "fallbackDescriptionByLang": {
       "en": "Three scents on a wooden stand, and one of them is salmiakki. Few things are more Finnish than salmiakki and sauna, and this set puts them in the same ladle.",
@@ -3400,21 +3400,21 @@
   },
   {
     "path": "/product/fazer-super-salmiakki",
-    "fallbackTitle": "Fazer Super Salmiakki pastilles 80 g | LaplandGifts",
+    "fallbackTitle": "Super Salmiakki pastilles – Finnish sweets and food gifts",
     "fallbackDescription": "The hardest of the salmiakki classics, sold in the same tin-shaped box since the 1970s. The price is read from the partner shop and the purchase is made there.",
     "fallbackTitleByLang": {
-      "en": "Fazer Super Salmiakki pastilles 80 g | LaplandGifts",
+      "en": "Super Salmiakki pastilles – Finnish sweets and food gifts",
       "fi": "Fazer Super Salmiakki -pastillit 80 g – Suomalaiset herkut",
-      "de": "Fazer Super Salmiakki Pastillen 80 g | LaplandGifts",
+      "de": "Super Salmiakki Pastillen – Süßes und kulinarische Geschenke",
       "ja": "Fazer ファッツェル スーパーサルミアッキ 錠菓 80 g｜お菓子と食の贈り物 | LaplandGifts",
-      "es": "Pastillas Fazer Super Salmiakki 80 g | LaplandGifts",
+      "es": "Pastillas Fazer Super Salmiakki – Dulces y regalos gourmet",
       "pt-BR": "Pastilhas Fazer Super Salmiakki 80 g | LaplandGifts",
       "zh-CN": "Fazer Super Salmiakki 含片 80 g｜甜食与美食礼品 | LaplandGifts",
       "ko": "Fazer 파제르 슈퍼 살미아키 정과 80 g – 과자와 식품 선물 | LaplandGifts",
-      "fr": "Pastilles Fazer Super Salmiakki 80 g | LaplandGifts",
+      "fr": "Pastilles Fazer Super Salmiakki – Douceurs et gourmandises",
       "it": "Pastiglie Fazer Super Salmiakki 80 g | LaplandGifts",
-      "nl": "Fazer Super Salmiakki pastilles 80 g | LaplandGifts",
-      "sv": "Fazer Super Salmiakki pastiller 80 g | LaplandGifts"
+      "nl": "Super Salmiakki pastilles 80 g – Lekkers en eetbare cadeaus",
+      "sv": "Super Salmiakki pastiller 80 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "The hardest of the salmiakki classics, sold in the same tin-shaped box since the 1970s. The price is read from the partner shop and the purchase is made there.",
@@ -3433,12 +3433,12 @@
   },
   {
     "path": "/product/fazer-pantteri-salmiakki",
-    "fallbackTitle": "Fazer Pantteri salmiakki sweets 210 g | LaplandGifts",
+    "fallbackTitle": "Pantteri salmiakki sweets – Finnish sweets and food gifts",
     "fallbackDescription": "Soft menthol salmiakki that has been made for over fifty years. Milder than the pastilles, so this is the bag to bring to people who have never tried salmiakki.",
     "fallbackTitleByLang": {
-      "en": "Fazer Pantteri salmiakki sweets 210 g | LaplandGifts",
+      "en": "Pantteri salmiakki sweets – Finnish sweets and food gifts",
       "fi": "Fazer Pantteri -salmiakkikarkit 210 g – Suomalaiset herkut",
-      "de": "Fazer Pantteri Salmiakbonbons 210 g | LaplandGifts",
+      "de": "Pantteri Salmiakbonbons – Süßes und kulinarische Geschenke",
       "ja": "Fazer ファッツェル パンッテリ サルミアッキ 210 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Caramelos de salmiakki Fazer Pantteri 210 g | LaplandGifts",
       "pt-BR": "Balas de salmiakki Fazer Pantteri 210 g | LaplandGifts",
@@ -3446,8 +3446,8 @@
       "ko": "Fazer 파제르 판테리 살미아키 캔디 210 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Bonbons au salmiakki Fazer Pantteri 210 g | LaplandGifts",
       "it": "Caramelle al salmiakki Fazer Pantteri 210 g | LaplandGifts",
-      "nl": "Fazer Pantteri salmiaksnoep 210 g | LaplandGifts",
-      "sv": "Fazer Pantteri salmiakgodis 210 g | LaplandGifts"
+      "nl": "Pantteri salmiaksnoep 210 g – Lekkers en eetbare cadeaus",
+      "sv": "Pantteri salmiakgodis 210 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Soft menthol salmiakki that has been made for over fifty years. Milder than the pastilles, so this is the bag to bring to people who have never tried salmiakki.",
@@ -3471,7 +3471,7 @@
     "fallbackTitleByLang": {
       "en": "Halva Salmiakkiruutu 170 g – Finnish sweets and food gifts",
       "fi": "Halva Salmiakkiruutu 170 g – Suomalaiset herkut",
-      "de": "Halva Salmiakkiruutu 170 g | LaplandGifts",
+      "de": "Salmiakkiruutu 170 g – Süßes und kulinarische Geschenke",
       "ja": "Halva ハルヴァ サルミアッキルーツ 170 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Halva Salmiakkiruutu 170 g – Dulces y regalos gourmet",
       "pt-BR": "Halva Salmiakkiruutu 170 g – Doces e presentes gastronômicos",
@@ -3499,12 +3499,12 @@
   },
   {
     "path": "/product/sisu-xylitol-salmiakki",
-    "fallbackTitle": "Sisu Xylitol salmiakki pastilles 36 g | LaplandGifts",
+    "fallbackTitle": "Xylitol salmiakki pastilles – Finnish sweets and food gifts",
     "fallbackDescription": "Salmiakki sweetened with xylitol and carrying the Finnish Dental Association mark. The tin fits a coat pocket, which is why these end up in every Finnish car.",
     "fallbackTitleByLang": {
-      "en": "Sisu Xylitol salmiakki pastilles 36 g | LaplandGifts",
+      "en": "Xylitol salmiakki pastilles – Finnish sweets and food gifts",
       "fi": "Sisu Xylitol -salmiakkipastillit 36 g – Suomalaiset herkut",
-      "de": "Sisu Xylitol Salmiakpastillen 36 g | LaplandGifts",
+      "de": "Xylitol Salmiakpastillen – Süßes und kulinarische Geschenke",
       "ja": "Sisu シス キシリトール サルミアッキ 錠菓 36 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Pastillas de salmiakki Sisu Xylitol 36 g | LaplandGifts",
       "pt-BR": "Pastilhas de salmiakki Sisu Xylitol 36 g | LaplandGifts",
@@ -3512,8 +3512,8 @@
       "ko": "Sisu 시수 자일리톨 살미아키 정과 36 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Pastilles de salmiakki Sisu Xylitol 36 g | LaplandGifts",
       "it": "Pastiglie di salmiakki Sisu Xylitol 36 g | LaplandGifts",
-      "nl": "Sisu Xylitol salmiakpastilles 36 g | LaplandGifts",
-      "sv": "Sisu Xylitol salmiakpastiller 36 g | LaplandGifts"
+      "nl": "Xylitol salmiakpastilles 36 g – Lekkers en eetbare cadeaus",
+      "sv": "Xylitol salmiakpastiller 36 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Salmiakki sweetened with xylitol and carrying the Finnish Dental Association mark. The tin fits a coat pocket, which is why these end up in every Finnish car.",
@@ -3532,12 +3532,12 @@
   },
   {
     "path": "/product/leijona-tar-liquorice",
-    "fallbackTitle": "Leijona tar liquorice pastilles 32 g | LaplandGifts",
+    "fallbackTitle": "tar liquorice pastilles 32 g – Finnish sweets and food gifts",
     "fallbackDescription": "Liquorice flavoured with pine tar, made since 1933. The price is read from the partner shop and the purchase is made there. The delivery area is on this page.",
     "fallbackTitleByLang": {
-      "en": "Leijona tar liquorice pastilles 32 g | LaplandGifts",
+      "en": "tar liquorice pastilles 32 g – Finnish sweets and food gifts",
       "fi": "Leijona Tervalakritsi -pastillit 32 g – Suomalaiset herkut",
-      "de": "Leijona Teerlakritzpastillen 32 g | LaplandGifts",
+      "de": "Teerlakritzpastillen 32 g – Süßes und kulinarische Geschenke",
       "ja": "Leijona レイヨナ タールリコリス 錠菓 32 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Pastillas de regaliz de alquitrán Leijona 32 g",
       "pt-BR": "Pastilhas de alcaçuz de alcatrão Leijona 32 g | LaplandGifts",
@@ -3546,7 +3546,7 @@
       "fr": "Pastilles de réglisse au goudron Leijona 32 g | LaplandGifts",
       "it": "Pastiglie di liquirizia al catrame Leijona 32 g",
       "nl": "Leijona teerdrop pastilles 32 g – Lekkers en eetbare cadeaus",
-      "sv": "Leijona tjärlakritspastiller 32 g | LaplandGifts"
+      "sv": "tjärlakritspastiller 32 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Liquorice flavoured with pine tar, made since 1933. The price is read from the partner shop and the purchase is made there. The delivery area is on this page.",
@@ -3609,10 +3609,10 @@
       "pt-BR": "Karl Fazer chocolate ao leite claro 180 g | LaplandGifts",
       "zh-CN": "Karl Fazer 清爽牛奶巧克力 180 g｜甜食与美食礼品 | LaplandGifts",
       "ko": "Fazer 칼 파제르 라이트 밀크 초콜릿 180 g – 과자와 식품 선물 | LaplandGifts",
-      "fr": "Karl Fazer chocolat au lait clair 180 g | LaplandGifts",
+      "fr": "Karl Fazer chocolat au lait clair – Douceurs et gourmandises",
       "it": "Karl Fazer cioccolato al latte chiaro 180 g | LaplandGifts",
-      "nl": "Karl Fazer lichte melkchocolade 180 g | LaplandGifts",
-      "sv": "Karl Fazer ljus mjölkchoklad 180 g | LaplandGifts"
+      "nl": "Karl Fazer lichte melkchocolade – Lekkers en eetbare cadeaus",
+      "sv": "Karl Fazer ljus mjölkchoklad – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "A lighter, milder version of the blue bar. If the classic is too sweet for you, this is the one to take instead. The price is read from the partner shop.",
@@ -3631,10 +3631,10 @@
   },
   {
     "path": "/product/fazer-fazerina",
-    "fallbackTitle": "Fazer Fazerina orange truffle bar 99 g | LaplandGifts",
+    "fallbackTitle": "Fazerina orange truffle bar – Finnish sweets and food gifts",
     "fallbackDescription": "Orange truffle inside milk chocolate, made since 1953. Thinner than the blue bar and the one that survives a rucksack without melting into a block.",
     "fallbackTitleByLang": {
-      "en": "Fazer Fazerina orange truffle bar 99 g | LaplandGifts",
+      "en": "Fazerina orange truffle bar – Finnish sweets and food gifts",
       "fi": "Fazer Fazerina -suklaalevy 99 g – Suomalaiset herkut",
       "de": "Fazer Fazerina Orangentrüffeltafel 99 g | LaplandGifts",
       "ja": "Fazer ファッツェル ファッツェリーナ オレンジトリュフ 99 g｜お菓子と食の贈り物 | LaplandGifts",
@@ -3644,8 +3644,8 @@
       "ko": "Fazer 파제르 파제리나 오렌지 트러플 바 99 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Tablette de truffe à l’orange Fazer Fazerina 99 g",
       "it": "Tavoletta al tartufo di arancia Fazer Fazerina 99 g",
-      "nl": "Fazer Fazerina sinaasappeltruffelreep 99 g | LaplandGifts",
-      "sv": "Fazer Fazerina apelsintryffelkaka 99 g | LaplandGifts"
+      "nl": "Fazerina sinaasappeltruffelreep – Lekkers en eetbare cadeaus",
+      "sv": "Fazerina apelsintryffelkaka 99 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Orange truffle inside milk chocolate, made since 1953. Thinner than the blue bar and the one that survives a rucksack without melting into a block.",
@@ -3664,20 +3664,20 @@
   },
   {
     "path": "/product/fazer-jaffa-orange",
-    "fallbackTitle": "Fazer Jaffa orange cakes 300 g | LaplandGifts",
+    "fallbackTitle": "Jaffa orange cakes 300 g – Finnish sweets and food gifts",
     "fallbackDescription": "Sponge base, orange marmalade and dark chocolate on top. Not a biscuit and not a cake, which is the argument Finns have about it every single time.",
     "fallbackTitleByLang": {
-      "en": "Fazer Jaffa orange cakes 300 g | LaplandGifts",
-      "fi": "Fazer Jaffa Appelsiini -leivoskeksit 300 g | LaplandGifts",
-      "de": "Fazer Jaffa Orangenküchlein 300 g | LaplandGifts",
+      "en": "Jaffa orange cakes 300 g – Finnish sweets and food gifts",
+      "fi": "Jaffa Appelsiini -leivoskeksit 300 g – Suomalaiset herkut",
+      "de": "Jaffa Orangenküchlein – Süßes und kulinarische Geschenke",
       "ja": "Fazer ファッツェル ヤッファ オレンジケーキ 300 g｜お菓子と食の贈り物 | LaplandGifts",
-      "es": "Pastelitos de naranja Fazer Jaffa 300 g | LaplandGifts",
+      "es": "Pastelitos de naranja Fazer Jaffa – Dulces y regalos gourmet",
       "pt-BR": "Bolinhos de laranja Fazer Jaffa 300 g | LaplandGifts",
       "zh-CN": "Fazer Jaffa 香橙蛋糕 300 g｜甜食与美食礼品 | LaplandGifts",
       "ko": "Fazer 파제르 야파 오렌지 케이크 300 g – 과자와 식품 선물 | LaplandGifts",
-      "fr": "Gâteaux à l’orange Fazer Jaffa 300 g | LaplandGifts",
+      "fr": "Gâteaux à l’orange Fazer Jaffa – Douceurs et gourmandises",
       "it": "Tortine all’arancia Fazer Jaffa 300 g | LaplandGifts",
-      "nl": "Fazer Jaffa sinaasappelcakejes 300 g | LaplandGifts",
+      "nl": "Jaffa sinaasappelcakejes 300 g – Lekkers en eetbare cadeaus",
       "sv": "Fazer Jaffa apelsinkakor 300 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
@@ -3697,12 +3697,12 @@
   },
   {
     "path": "/product/north-outdoor-arctic-250-balaclava",
-    "fallbackTitle": "North Outdoor Arctic 250 merino balaclava | LaplandGifts",
+    "fallbackTitle": "Arctic 250 merino balaclava – Finnish clothing and knitwear",
     "fallbackDescription": "The warmest knit North Outdoor makes, shaped to sit under a helmet. The price is read from the partner shop and the purchase is made there. Delivery area shown.",
     "fallbackTitleByLang": {
-      "en": "North Outdoor Arctic 250 merino balaclava | LaplandGifts",
+      "en": "Arctic 250 merino balaclava – Finnish clothing and knitwear",
       "fi": "North Outdoor Arctic 250 -merinokypärämyssy | LaplandGifts",
-      "de": "North Outdoor Arctic 250 Merino-Sturmhaube | LaplandGifts",
+      "de": "Arctic 250 Merino-Sturmhaube – Kleidung und Strick",
       "ja": "North Outdoor ノースアウトドア Arctic 250 メリノ バラクラバ｜衣類とニット",
       "es": "Pasamontañas de merino North Outdoor Arctic 250",
       "pt-BR": "Balaclava de merino North Outdoor Arctic 250 | LaplandGifts",
@@ -3710,8 +3710,8 @@
       "ko": "North Outdoor 노스아웃도어 Arctic 250 메리노 발라클라바 – 의류와 니트",
       "fr": "Cagoule mérinos North Outdoor Arctic 250 | LaplandGifts",
       "it": "Passamontagna in merino North Outdoor Arctic 250",
-      "nl": "North Outdoor Arctic 250 merinobivakmuts | LaplandGifts",
-      "sv": "North Outdoor Arctic 250 merinobalaklava | LaplandGifts"
+      "nl": "Arctic 250 merinobivakmuts – Kleding en breigoed",
+      "sv": "Arctic 250 merinobalaklava – Kläder och stickat"
     },
     "fallbackDescriptionByLang": {
       "en": "The warmest knit North Outdoor makes, shaped to sit under a helmet. The price is read from the partner shop and the purchase is made there. Delivery area shown.",
@@ -3730,11 +3730,11 @@
   },
   {
     "path": "/product/north-outdoor-kevo-gloves",
-    "fallbackTitle": "North Outdoor Kevo merino gloves | LaplandGifts",
+    "fallbackTitle": "Kevo merino gloves – Finnish clothing and knitwear",
     "fallbackDescription": "Knitted from mulesing free merino in North Outdoor’s own knitting mill in Oulu. The price is read from the partner shop and the purchase is made there.",
     "fallbackTitleByLang": {
-      "en": "North Outdoor Kevo merino gloves | LaplandGifts",
-      "fi": "North Outdoor Kevo -merinosormikkaat | LaplandGifts",
+      "en": "Kevo merino gloves – Finnish clothing and knitwear",
+      "fi": "Kevo -merinosormikkaat – Suomalaiset vaatteet ja neuleet",
       "de": "North Outdoor Kevo Merinohandschuhe – Kleidung und Strick",
       "ja": "North Outdoor ノースアウトドア Kevo メリノグローブ｜衣類とニット | LaplandGifts",
       "es": "Guantes de merino North Outdoor Kevo – Ropa y punto",
@@ -3767,8 +3767,8 @@
     "fallbackDescription": "Merino fleece, thick enough to pull up over the nose while you wait for the lights to appear. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
       "en": "North Outdoor Heavyweight merino neck gaiter | LaplandGifts",
-      "fi": "North Outdoor Paksu merino -tuubihuivi | LaplandGifts",
-      "de": "North Outdoor Heavyweight Merino-Schlauchschal",
+      "fi": "Paksu merino -tuubihuivi – Suomalaiset vaatteet ja neuleet",
+      "de": "Heavyweight Merino-Schlauchschal – Kleidung und Strick",
       "ja": "North Outdoor ノースアウトドア Heavyweight メリノ ネックゲイター｜衣類とニット",
       "es": "Cuello de merino North Outdoor Heavyweight – Ropa y punto",
       "pt-BR": "Gola de merino North Outdoor Heavyweight – Roupas e tricô",
@@ -3776,8 +3776,8 @@
       "ko": "North Outdoor 노스아웃도어 Heavyweight 메리노 넥게이터 – 의류와 니트",
       "fr": "Tour de cou mérinos North Outdoor Heavyweight | LaplandGifts",
       "it": "Scaldacollo in merino North Outdoor Heavyweight",
-      "nl": "North Outdoor Heavyweight merinonekwarmer | LaplandGifts",
-      "sv": "North Outdoor Heavyweight merinohalskrage | LaplandGifts"
+      "nl": "Heavyweight merinonekwarmer – Kleding en breigoed",
+      "sv": "Heavyweight merinohalskrage – Kläder och stickat"
     },
     "fallbackDescriptionByLang": {
       "en": "Merino fleece, thick enough to pull up over the nose while you wait for the lights to appear. The price comes from the partner shop, where you also buy it.",
@@ -3796,12 +3796,12 @@
   },
   {
     "path": "/product/north-outdoor-sointu-cardigan",
-    "fallbackTitle": "North Outdoor Sointu merino cardigan | LaplandGifts",
+    "fallbackTitle": "Sointu merino cardigan – Finnish clothing and knitwear",
     "fallbackDescription": "A boxy merino cardigan that reads as indoor clothing but works as a mid layer. The one piece in this set you would wear to dinner after the safari.",
     "fallbackTitleByLang": {
-      "en": "North Outdoor Sointu merino cardigan | LaplandGifts",
-      "fi": "North Outdoor Sointu -merinoneuletakki | LaplandGifts",
-      "de": "North Outdoor Sointu Merino-Strickjacke | LaplandGifts",
+      "en": "Sointu merino cardigan – Finnish clothing and knitwear",
+      "fi": "Sointu -merinoneuletakki – Suomalaiset vaatteet ja neuleet",
+      "de": "Sointu Merino-Strickjacke – Kleidung und Strick",
       "ja": "North Outdoor ノースアウトドア Sointu メリノカーディガン｜衣類とニット",
       "es": "Cárdigan de merino North Outdoor Sointu – Ropa y punto",
       "pt-BR": "Cardigã de merino North Outdoor Sointu – Roupas e tricô",
@@ -3829,10 +3829,10 @@
   },
   {
     "path": "/product/north-outdoor-arctic-260-zip-neck",
-    "fallbackTitle": "North Outdoor Arctic 260 merino zip neck | LaplandGifts",
+    "fallbackTitle": "Arctic 260 merino zip neck – Finnish clothing and knitwear",
     "fallbackDescription": "A high collared zip neck in 100 per cent merino, thick enough to wear on its own indoors and to work as the mid layer outdoors. You buy it in the partner shop.",
     "fallbackTitleByLang": {
-      "en": "North Outdoor Arctic 260 merino zip neck | LaplandGifts",
+      "en": "Arctic 260 merino zip neck – Finnish clothing and knitwear",
       "fi": "North Outdoor Arctic 260 -merinovetoketjupoolo",
       "de": "North Outdoor Arctic 260 Merino-Troyer – Kleidung und Strick",
       "ja": "North Outdoor ノースアウトドア Arctic 260 メリノ ジップネック｜衣類とニット",
@@ -3842,8 +3842,8 @@
       "ko": "North Outdoor 노스아웃도어 Arctic 260 메리노 집업 – 의류와 니트",
       "fr": "Haut zippé mérinos North Outdoor Arctic 260 | LaplandGifts",
       "it": "Maglia con zip in merino North Outdoor Arctic 260",
-      "nl": "North Outdoor Arctic 260 merinotrui met rits | LaplandGifts",
-      "sv": "North Outdoor Arctic 260 merinotröja med dragkedja"
+      "nl": "Arctic 260 merinotrui met rits – Kleding en breigoed",
+      "sv": "Arctic 260 merinotröja med dragkedja – Kläder och stickat"
     },
     "fallbackDescriptionByLang": {
       "en": "A high collared zip neck in 100 per cent merino, thick enough to wear on its own indoors and to work as the mid layer outdoors. You buy it in the partner shop.",
@@ -3867,7 +3867,7 @@
     "fallbackTitleByLang": {
       "en": "Halti Hossa II merino base layer set, men's | LaplandGifts",
       "fi": "Halti Hossa II -merinoaluskerrasto, miesten | LaplandGifts",
-      "de": "Halti Hossa II Merino-Unterwäscheset, Herren | LaplandGifts",
+      "de": "Hossa II Merino-Unterwäscheset, Herren – Kleidung und Strick",
       "ja": "Halti ハルティ Hossa II メリノ ベースレイヤーセット メンズ｜衣類とニット | LaplandGifts",
       "es": "Conjunto de ropa interior de merino Halti Hossa II, hombre",
       "pt-BR": "Conjunto de segunda pele de merino Halti Hossa II, masculino",
@@ -3875,7 +3875,7 @@
       "ko": "Halti 할티 Hossa II 메리노 베이스레이어 세트, 남성 – 의류와 니트 | LaplandGifts",
       "fr": "Ensemble de sous-vêtements mérinos Halti Hossa II, homme",
       "it": "Set intimo in merino Halti Hossa II, uomo | LaplandGifts",
-      "nl": "Halti Hossa II merino onderkledingset, heren | LaplandGifts",
+      "nl": "Hossa II merino onderkledingset, heren – Kleding en breigoed",
       "sv": "Halti Hossa II merinounderställ, herr – Kläder och stickat"
     },
     "fallbackDescriptionByLang": {
@@ -3900,7 +3900,7 @@
     "fallbackTitleByLang": {
       "en": "Halti Hossa II merino base layer set, women's | LaplandGifts",
       "fi": "Halti Hossa II -merinoaluskerrasto, naisten | LaplandGifts",
-      "de": "Halti Hossa II Merino-Unterwäscheset, Damen | LaplandGifts",
+      "de": "Hossa II Merino-Unterwäscheset, Damen – Kleidung und Strick",
       "ja": "Halti ハルティ Hossa II メリノ ベースレイヤーセット ウィメンズ｜衣類とニット",
       "es": "Conjunto de ropa interior de merino Halti Hossa II, mujer",
       "pt-BR": "Conjunto de segunda pele de merino Halti Hossa II, feminino",
@@ -3908,7 +3908,7 @@
       "ko": "Halti 할티 Hossa II 메리노 베이스레이어 세트, 여성 – 의류와 니트 | LaplandGifts",
       "fr": "Ensemble sous-vêtement mérinos Halti Hossa II, femme",
       "it": "Set intimo in merino Halti Hossa II, donna | LaplandGifts",
-      "nl": "Halti Hossa II merino onderkledingset, dames | LaplandGifts",
+      "nl": "Hossa II merino onderkledingset, dames – Kleding en breigoed",
       "sv": "Halti Hossa II merinounderställ, dam – Kläder och stickat"
     },
     "fallbackDescriptionByLang": {
@@ -3933,7 +3933,7 @@
     "fallbackTitleByLang": {
       "en": "Halti HeatGrid midlayer jacket, men's | LaplandGifts",
       "fi": "Halti HeatGrid -välikerrostakki, miesten | LaplandGifts",
-      "de": "Halti HeatGrid Zwischenschichtjacke, Herren | LaplandGifts",
+      "de": "HeatGrid Zwischenschichtjacke, Herren – Kleidung und Strick",
       "ja": "Halti ハルティ HeatGrid ミドルレイヤージャケット メンズ｜衣類とニット | LaplandGifts",
       "es": "Chaqueta de capa intermedia Halti HeatGrid, hombre",
       "pt-BR": "Jaqueta de camada intermediária Halti HeatGrid, masculina",
@@ -3998,7 +3998,7 @@
     "fallbackDescription": "Waterproof glove with 120 g insulation, a leather palm and a snowlock cuff that stops snow packing in at the wrist when you fall. Bought in the partner shop.",
     "fallbackTitleByLang": {
       "en": "Halti Sykli ski gloves – Finnish clothing and knitwear",
-      "fi": "Halti Sykli -laskettelukäsineet | LaplandGifts",
+      "fi": "Sykli -laskettelukäsineet – Suomalaiset vaatteet ja neuleet",
       "de": "Halti Sykli Skihandschuhe – Kleidung und Strick",
       "ja": "Halti ハルティ Sykli スキーグローブ｜衣類とニット | LaplandGifts",
       "es": "Guantes de esquí Halti Sykli – Ropa y punto | LaplandGifts",
@@ -4027,10 +4027,10 @@
   },
   {
     "path": "/product/halti-merino-socks-2pack",
-    "fallbackTitle": "Halti merino wool socks, 2 pack | LaplandGifts",
+    "fallbackTitle": "merino wool socks, 2 pack – Finnish clothing and knitwear",
     "fallbackDescription": "Two pairs, because the pair you wore today is not dry tomorrow morning. Merino blend rather than pure wool, which survives repeated machine washing better.",
     "fallbackTitleByLang": {
-      "en": "Halti merino wool socks, 2 pack | LaplandGifts",
+      "en": "merino wool socks, 2 pack – Finnish clothing and knitwear",
       "fi": "Halti-merinovillasukat, 2 paria | LaplandGifts",
       "de": "Halti Merinowollsocken, 2er-Pack – Kleidung und Strick",
       "ja": "Halti ハルティ メリノウールソックス 2 足組｜衣類とニット | LaplandGifts",
@@ -4456,12 +4456,12 @@
   },
   {
     "path": "/product/sk-marimekko-unikko-crossbody",
-    "fallbackTitle": "Marimekko Neat Crossbody Unikko shoulder bag | LaplandGifts",
+    "fallbackTitle": "Neat Crossbody Unikko shoulder bag – Finnish design gifts",
     "fallbackDescription": "The Unikko poppy on a crossbody bag sized for a phone, a wallet and a pair of gloves. The price is read from the partner shop and the purchase is made there.",
     "fallbackTitleByLang": {
-      "en": "Marimekko Neat Crossbody Unikko shoulder bag | LaplandGifts",
-      "fi": "Marimekko Neat Crossbody Unikko -olkalaukku | LaplandGifts",
-      "de": "Marimekko Neat Crossbody Unikko Umhängetasche | LaplandGifts",
+      "en": "Neat Crossbody Unikko shoulder bag – Finnish design gifts",
+      "fi": "Neat Crossbody Unikko -olkalaukku – Suomalainen design",
+      "de": "Neat Crossbody Unikko Umhängetasche – Finnisches Design",
       "ja": "Marimekko マリメッコ Neat クロスボディ ウニッコ ショルダーバッグ｜フィンランドデザイン",
       "es": "Bolso bandolera Marimekko Neat Crossbody Unikko",
       "pt-BR": "Bolsa transversal Marimekko Neat Crossbody Unikko",
@@ -4494,7 +4494,7 @@
     "fallbackTitleByLang": {
       "en": "Moomin duvet cover set 150 x 210 cm, Sydänkäpyset",
       "fi": "Moomin Muumi pussilakanasetti 150 x 210 cm, Sydänkäpyset",
-      "de": "Moomin Bettwäscheset 150 x 210 cm, Sydänkäpyset",
+      "de": "Bettwäscheset 150 x 210 cm, Sydänkäpyset – Finnisches Design",
       "ja": "Moomin ムーミン 掛け布団カバーセット 150 x 210 cm、Sydänkäpyset｜フィンランドデザイン",
       "es": "Juego de funda nórdica Moomin 150 x 210 cm, Sydänkäpyset",
       "pt-BR": "Jogo de capa de edredom Moomin 150 x 210 cm, Sydänkäpyset",
@@ -4502,7 +4502,7 @@
       "ko": "Moomin 무민 이불 커버 세트 150 x 210 cm, Sydänkäpyset – 핀란드 디자인",
       "fr": "Parure de lit Moomin 150 x 210 cm, Sydänkäpyset",
       "it": "Set copripiumino Moomin 150 x 210 cm, Sydänkäpyset",
-      "nl": "Moomin dekbedovertrekset 150 x 210 cm, Sydänkäpyset",
+      "nl": "dekbedovertrekset 150 x 210 cm, Sydänkäpyset – Fins design",
       "sv": "Moomin bäddset 150 x 210 cm, Sydänkäpyset – Finsk design"
     },
     "fallbackDescriptionByLang": {
@@ -4526,7 +4526,7 @@
     "fallbackDescription": "Pure wool DK yarn from Novita, the mill that has supplied Finnish knitters since 1928. A 50 gram ball holds 112 metres, and the recommended needle is 4 mm.",
     "fallbackTitleByLang": {
       "en": "Novita Wonder Wool DK yarn 50 g – Finnish handicrafts",
-      "fi": "Novita Wonder Wool DK -villalanka 50 g | LaplandGifts",
+      "fi": "Wonder Wool DK -villalanka 50 g – Suomalaiset käsityöt",
       "de": "Novita Wonder Wool DK Garn 50 g – Finnisches Handwerk",
       "ja": "Novita ノビータ Wonder Wool DK 毛糸 50 g｜フィンランドの手仕事 | LaplandGifts",
       "es": "Lana Novita Wonder Wool DK 50 g – Artesanía finlandesa",
@@ -4555,12 +4555,12 @@
   },
   {
     "path": "/product/sk-aromageddon-sauna-scent",
-    "fallbackTitle": "Aromageddon sauna scent, Hankihorppy 15 ml | LaplandGifts",
+    "fallbackTitle": "sauna scent, Hankihorppy 15 ml – Finnish handicrafts",
     "fallbackDescription": "Mint and cocoa in a sauna scent, which sounds wrong until you have sat through a Finnish winter. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
-      "en": "Aromageddon sauna scent, Hankihorppy 15 ml | LaplandGifts",
-      "fi": "Aromageddon Hankihörppy -saunatuoksu 15 ml | LaplandGifts",
-      "de": "Aromageddon Saunaduft Hankihorppy 15 ml | LaplandGifts",
+      "en": "sauna scent, Hankihorppy 15 ml – Finnish handicrafts",
+      "fi": "Hankihörppy -saunatuoksu 15 ml – Suomalaiset käsityöt",
+      "de": "Saunaduft Hankihorppy 15 ml – Finnisches Handwerk",
       "ja": "Aromageddon アロマゲドン サウナアロマ Hankihorppy 15 ml｜フィンランドの手仕事",
       "es": "Esencia de sauna Aromageddon Hankihorppy 15 ml",
       "pt-BR": "Aroma para sauna Aromageddon Hankihorppy 15 ml",
@@ -4588,10 +4588,10 @@
   },
   {
     "path": "/product/sk-muurla-moomin-bottle",
-    "fallbackTitle": "Muurla Moomin glass bottle 1 l, Apples | LaplandGifts",
+    "fallbackTitle": "Moomin glass bottle 1 l, Apples – Finnish design gifts",
     "fallbackDescription": "A soda-glass bottle with a patent stopper, for water or juice on the table rather than a carton. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
-      "en": "Muurla Moomin glass bottle 1 l, Apples | LaplandGifts",
+      "en": "Moomin glass bottle 1 l, Apples – Finnish design gifts",
       "fi": "Muurla Muumi-lasipullo 1 l, Omenat – Suomalainen design",
       "de": "Muurla Moomin-Glasflasche 1 l, Äpfel – Finnisches Design",
       "ja": "Muurla ムールラ ムーミン ガラスボトル 1 l「りんご」｜フィンランドデザイン | LaplandGifts",
@@ -4732,7 +4732,7 @@
       "zh-CN": "Nordicbuddies 小不点保温瓶 0.55 l｜芬兰设计 | LaplandGifts",
       "ko": "Nordicbuddies 리틀 미이 보온병 0.55 l – 핀란드 디자인 | LaplandGifts",
       "fr": "Bouteille isotherme Petite Mu 0,55 l – Design finlandais",
-      "it": "Bottiglia termica Mimla la piccola 0,55 l | LaplandGifts",
+      "it": "Bottiglia termica Mimla la piccola – Design finlandese",
       "nl": "Nordicbuddies Kleine Mij thermosfles 0,55 l – Fins design",
       "sv": "Nordicbuddies Lilla My termosflaska 0,55 l – Finsk design"
     },
@@ -5083,11 +5083,11 @@
   },
   {
     "path": "/product/sk-marimekko-unikko-bath-towel",
-    "fallbackTitle": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
+    "fallbackTitle": "Unikko bath towel 70 × 150 cm – Finnish design gifts",
     "fallbackDescription": "Unikko on terry cotton, beige and white, in the full 70 by 150 size. The price is read from the partner shop and the purchase is made there. See where it ships.",
     "fallbackTitleByLang": {
-      "en": "Marimekko Unikko bath towel 70 × 150 cm | LaplandGifts",
-      "fi": "Marimekko Unikko -kylpypyyhe 70 × 150 cm | LaplandGifts",
+      "en": "Unikko bath towel 70 × 150 cm – Finnish design gifts",
+      "fi": "Unikko -kylpypyyhe 70 × 150 cm – Suomalainen design",
       "de": "Marimekko Unikko Badetuch 70 × 150 cm – Finnisches Design",
       "ja": "Marimekko マリメッコ ウニッコ バスタオル 70 × 150 cm｜フィンランドデザイン",
       "es": "Toalla de baño Marimekko Unikko 70 × 150 cm | LaplandGifts",
@@ -5116,10 +5116,10 @@
   },
   {
     "path": "/product/sk-marimekko-unikko-hand-towel",
-    "fallbackTitle": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+    "fallbackTitle": "Unikko hand towel 50 × 70 cm – Finnish design gifts",
     "fallbackDescription": "The same Unikko terry in hand-towel size, half the price of the bath one and the easier thing to fit in a case. The price is read from the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Marimekko Unikko hand towel 50 × 70 cm | LaplandGifts",
+      "en": "Unikko hand towel 50 × 70 cm – Finnish design gifts",
       "fi": "Marimekko Unikko -käsipyyhe 50 × 70 cm – Suomalainen design",
       "de": "Marimekko Unikko Handtuch 50 × 70 cm – Finnisches Design",
       "ja": "Marimekko マリメッコ ウニッコ ハンドタオル 50 × 70 cm｜フィンランドデザイン",
@@ -5281,10 +5281,10 @@
   },
   {
     "path": "/product/makia-kontio-hoodie",
-    "fallbackTitle": "Makia Kontio hooded sweatshirt | LaplandGifts",
+    "fallbackTitle": "Kontio hooded sweatshirt – Finnish clothing and knitwear",
     "fallbackDescription": "A regular fit hoodie in 100 per cent organic cotton, dyed after sewing. The price comes from the partner shop, where you also buy it. Delivery area is listed.",
     "fallbackTitleByLang": {
-      "en": "Makia Kontio hooded sweatshirt | LaplandGifts",
+      "en": "Kontio hooded sweatshirt – Finnish clothing and knitwear",
       "fi": "Makia Kontio -huppari – Suomalaiset vaatteet ja neuleet",
       "de": "Makia Kontio Kapuzenpullover – Kleidung und Strick",
       "ja": "Makia Kontio フーデッドスウェット｜衣類とニット | LaplandGifts",
@@ -5314,10 +5314,10 @@
   },
   {
     "path": "/product/makia-trademark-hoodie",
-    "fallbackTitle": "Makia Trademark hooded sweatshirt | LaplandGifts",
+    "fallbackTitle": "Trademark hooded sweatshirt – Finnish clothing and knitwear",
     "fallbackDescription": "Makia's plainest hoodie: regular fit, 100 per cent organic cotton and the small trademark on the chest. You buy it in the partner shop. Delivery area is listed.",
     "fallbackTitleByLang": {
-      "en": "Makia Trademark hooded sweatshirt | LaplandGifts",
+      "en": "Trademark hooded sweatshirt – Finnish clothing and knitwear",
       "fi": "Makia Trademark -huppari – Suomalaiset vaatteet ja neuleet",
       "de": "Makia Trademark Kapuzenpullover – Kleidung und Strick",
       "ja": "Makia Trademark フーデッドスウェット｜衣類とニット | LaplandGifts",
@@ -5347,12 +5347,12 @@
   },
   {
     "path": "/product/makia-moray-zip-knit",
-    "fallbackTitle": "Makia Moray zip knit cardigan | LaplandGifts",
+    "fallbackTitle": "Moray zip knit cardigan – Finnish clothing and knitwear",
     "fallbackDescription": "A regular fit zip cardigan knitted from 100 per cent merino wool. The price is read from the partner shop, where you buy it. The delivery area is on this page.",
     "fallbackTitleByLang": {
-      "en": "Makia Moray zip knit cardigan | LaplandGifts",
-      "fi": "Makia Moray -vetoketjuneule | LaplandGifts",
-      "de": "Makia Moray Strickjacke mit Reißverschluss | LaplandGifts",
+      "en": "Moray zip knit cardigan – Finnish clothing and knitwear",
+      "fi": "Moray -vetoketjuneule – Suomalaiset vaatteet ja neuleet",
+      "de": "Moray Strickjacke mit Reißverschluss – Kleidung und Strick",
       "ja": "Makia Moray ジップニットカーディガン｜衣類とニット | LaplandGifts",
       "es": "Chaqueta de punto con cremallera Makia Moray – Ropa y punto",
       "pt-BR": "Cardigã de tricô com zíper Makia Moray – Roupas e tricô",
@@ -5512,12 +5512,12 @@
   },
   {
     "path": "/product/halti-rockmoon-fleece-hoodie",
-    "fallbackTitle": "Halti Rockmoon men's hooded fleece | LaplandGifts",
+    "fallbackTitle": "Rockmoon men's hooded fleece – Finnish clothing and knitwear",
     "fallbackDescription": "A warm hooded fleece in double brushed stretch fabric, with windproof microfabric on the hood and shoulders where the cold gets in first. Delivery area shown.",
     "fallbackTitleByLang": {
-      "en": "Halti Rockmoon men's hooded fleece | LaplandGifts",
+      "en": "Rockmoon men's hooded fleece – Finnish clothing and knitwear",
       "fi": "Halti Rockmoon -fleecehuppari, miesten | LaplandGifts",
-      "de": "Halti Rockmoon Herren-Fleecejacke mit Kapuze | LaplandGifts",
+      "de": "Rockmoon Herren-Fleecejacke mit Kapuze – Kleidung und Strick",
       "ja": "Halti Rockmoon フード付きフリース メンズ｜衣類とニット | LaplandGifts",
       "es": "Forro polar con capucha Halti Rockmoon, hombre",
       "pt-BR": "Fleece com capuz Halti Rockmoon, masculino – Roupas e tricô",
@@ -5526,7 +5526,7 @@
       "fr": "Veste polaire à capuche Halti Rockmoon, homme | LaplandGifts",
       "it": "Pile con cappuccio Halti Rockmoon, uomo | LaplandGifts",
       "nl": "Halti Rockmoon fleecejack met capuchon, heren | LaplandGifts",
-      "sv": "Halti Rockmoon fleecejacka med huva, herr | LaplandGifts"
+      "sv": "Rockmoon fleecejacka med huva, herr – Kläder och stickat"
     },
     "fallbackDescriptionByLang": {
       "en": "A warm hooded fleece in double brushed stretch fabric, with windproof microfabric on the hood and shoulders where the cold gets in first. Delivery area shown.",
@@ -5710,11 +5710,11 @@
   },
   {
     "path": "/product/sk-muurla-moomin-lantern-tahtihetki",
-    "fallbackTitle": "Muurla Moomin lantern Tähtihetki 18 cm | LaplandGifts",
+    "fallbackTitle": "Moomin lantern Tähtihetki 18 cm – Finnish design gifts",
     "fallbackDescription": "A hand made lead free glass lantern from Muurla's Tähtihetki series with gold details, 15.5 cm across and 18 cm high. The price is read from the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Muurla Moomin lantern Tähtihetki 18 cm | LaplandGifts",
-      "fi": "Muurla Muumi-kynttilälyhty Tähtihetki 18 cm | LaplandGifts",
+      "en": "Moomin lantern Tähtihetki 18 cm – Finnish design gifts",
+      "fi": "Muumi-kynttilälyhty Tähtihetki 18 cm – Suomalainen design",
       "de": "Muurla Mumin Laterne Tähtihetki 18 cm – Finnisches Design",
       "ja": "Muurla ムーミン ランタン Tähtihetki 18 cm｜フィンランドデザイン | LaplandGifts",
       "es": "Farol Moomin Muurla Tähtihetki 18 cm – Diseño finlandés",
@@ -5743,12 +5743,12 @@
   },
   {
     "path": "/product/sk-hukka-soapstone-candle",
-    "fallbackTitle": "Hukka Jätkänkynttilä stone tealight holder | LaplandGifts",
+    "fallbackTitle": "Jätkänkynttilä stone tealight holder – Finnish design gifts",
     "fallbackDescription": "A stone tealight holder shaped like a jätkänkynttilä, the split log fire lumberjacks lit on the snow. The price is read from the partner shop, where you buy it.",
     "fallbackTitleByLang": {
-      "en": "Hukka Jätkänkynttilä stone tealight holder | LaplandGifts",
+      "en": "Jätkänkynttilä stone tealight holder – Finnish design gifts",
       "fi": "Hukka Jätkänkynttilä -kivinen tuikkukynttilänjalka",
-      "de": "Hukka Jätkänkynttilä Teelichthalter aus Stein | LaplandGifts",
+      "de": "Jätkänkynttilä Teelichthalter aus Stein – Finnisches Design",
       "ja": "Hukka Jätkänkynttilä 石のティーライトホルダー｜フィンランドデザイン | LaplandGifts",
       "es": "Portavelas de piedra Hukka Jätkänkynttilä – Diseño finlandés",
       "pt-BR": "Porta-velas de pedra Hukka Jätkänkynttilä – Design finlandês",
@@ -5776,12 +5776,12 @@
   },
   {
     "path": "/product/sk-muurla-moomin-enamel-mug-lumipyry",
-    "fallbackTitle": "Muurla Moomin enamel mug Lumipyry 3.7 dl | LaplandGifts",
+    "fallbackTitle": "Moomin enamel mug Lumipyry 3.7 dl – Finnish design gifts",
     "fallbackDescription": "A 3.7 dl enamel mug with a carbon steel core and a double enamel coating, printed with the Lumipyry snowstorm scene. The price is read from the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Muurla Moomin enamel mug Lumipyry 3.7 dl | LaplandGifts",
+      "en": "Moomin enamel mug Lumipyry 3.7 dl – Finnish design gifts",
       "fi": "Muurla Muumi-emalimuki Lumipyry 3,7 dl – Suomalainen design",
-      "de": "Muurla Mumin Emaillebecher Lumipyry 3,7 dl | LaplandGifts",
+      "de": "Mumin Emaillebecher Lumipyry 3,7 dl – Finnisches Design",
       "ja": "Muurla ムーミン ホーローマグ Lumipyry 3.7 dl｜フィンランドデザイン | LaplandGifts",
       "es": "Taza esmaltada Moomin Muurla Lumipyry 3,7 dl | LaplandGifts",
       "pt-BR": "Caneca esmaltada Moomin Muurla Lumipyry 3,7 dl",
@@ -5809,10 +5809,10 @@
   },
   {
     "path": "/product/sk-arabia-moomin-pitcher-moominhouse",
-    "fallbackTitle": "Arabia Moomin pitcher 1.0 l, Moominhouse | LaplandGifts",
+    "fallbackTitle": "Moomin pitcher 1.0 l, Moominhouse – Finnish design gifts",
     "fallbackDescription": "A one litre Arabia pitcher with the Moominhouse, the round stove shaped house Moominpappa built himself and never locks at night. Bought in the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Arabia Moomin pitcher 1.0 l, Moominhouse | LaplandGifts",
+      "en": "Moomin pitcher 1.0 l, Moominhouse – Finnish design gifts",
       "fi": "Arabia Muumi-kaadin 1,0 l, Muumitalo – Suomalainen design",
       "de": "Arabia Mumin Krug 1,0 l, Muminhaus – Finnisches Design",
       "ja": "Arabia ムーミン ピッチャー 1.0 l、ムーミンハウス｜フィンランドデザイン | LaplandGifts",
@@ -5842,10 +5842,10 @@
   },
   {
     "path": "/product/sk-moomin-duvet-set-merella",
-    "fallbackTitle": "Moomin duvet cover set 140 x 200 cm, Merellä | LaplandGifts",
+    "fallbackTitle": "duvet cover set 140 x 200 cm, Merellä – Finnish design gifts",
     "fallbackDescription": "A cotton duvet cover and pillowcase set with the Moomins at sea, 140 by 200 cm cover and 50 by 70 cm pillowcase, zip closure. The delivery area is on this page.",
     "fallbackTitleByLang": {
-      "en": "Moomin duvet cover set 140 x 200 cm, Merellä | LaplandGifts",
+      "en": "duvet cover set 140 x 200 cm, Merellä – Finnish design gifts",
       "fi": "Muumi-pussilakanasetti 140 x 200 cm, Merellä | LaplandGifts",
       "de": "Mumin Bettwäsche-Set 140 x 200 cm, Merellä | LaplandGifts",
       "ja": "Moomin ムーミン 布団カバーセット 140 x 200 cm、Merellä｜フィンランドデザイン",
@@ -6011,7 +6011,7 @@
     "fallbackDescription": "Carded wool socks from Finland's only traditional wool sock factory, knitted on 1950s machines in Helsinki. You buy it in the partner shop. Delivery area shown.",
     "fallbackTitleByLang": {
       "en": "Helsingin Villasukkatehdas wool socks – Finnish handicrafts",
-      "fi": "Helsingin Villasukkatehdas -villasukat | LaplandGifts",
+      "fi": "-villasukat – Suomalaiset käsityöt | LaplandGifts",
       "de": "Helsingin Villasukkatehdas Wollsocken – Finnisches Handwerk",
       "ja": "Helsingin Villasukkatehdas ウールソックス｜フィンランドの手仕事 | LaplandGifts",
       "es": "Calcetines de lana Helsingin Villasukkatehdas | LaplandGifts",
@@ -6053,8 +6053,8 @@
       "ko": "Halva Salmiakkikalat 짠 감초 물고기 230 g – 과자와 식품 선물",
       "fr": "Poissons de réglisse salée Halva Salmiakkikalat 230 g",
       "it": "Pesciolini di liquirizia salata Halva Salmiakkikalat 230 g",
-      "nl": "Halva Salmiakkikalat zoute dropvisjes 230 g | LaplandGifts",
-      "sv": "Halva Salmiakkikalat saltlakritsfiskar 230 g | LaplandGifts"
+      "nl": "Salmiakkikalat zoute dropvisjes – Lekkers en eetbare cadeaus",
+      "sv": "Salmiakkikalat saltlakritsfiskar – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Fish shaped salmiakki sweets from Halva, 230 grams, the bag that sits in every Finnish glove box. The price comes from the partner shop, where you also buy it.",
@@ -6073,12 +6073,12 @@
   },
   {
     "path": "/product/sk-kouvolan-lakritsi-500g",
-    "fallbackTitle": "Kouvolan Lakritsi liquorice pieces 500 g | LaplandGifts",
+    "fallbackTitle": "liquorice pieces 500 g – Finnish sweets and food gifts",
     "fallbackDescription": "Half a kilo of soft liquorice pieces from Kouvola, made to a recipe born in 1945 and fine tuned in 1960 by an English liquorice specialist. Delivery area shown.",
     "fallbackTitleByLang": {
-      "en": "Kouvolan Lakritsi liquorice pieces 500 g | LaplandGifts",
+      "en": "liquorice pieces 500 g – Finnish sweets and food gifts",
       "fi": "Kouvolan Lakritsi lakritsipalat 500 g – Suomalaiset herkut",
-      "de": "Kouvolan Lakritsi Lakritzstücke 500 g | LaplandGifts",
+      "de": "Lakritzstücke 500 g – Süßes und kulinarische Geschenke",
       "ja": "Kouvolan Lakritsi リコリスピース 500 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Trozos de regaliz Kouvolan Lakritsi 500 g | LaplandGifts",
       "pt-BR": "Pedaços de alcaçuz Kouvolan Lakritsi 500 g | LaplandGifts",
@@ -6086,8 +6086,8 @@
       "ko": "Kouvolan Lakritsi 감초 조각 500 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Morceaux de réglisse Kouvolan Lakritsi 500 g | LaplandGifts",
       "it": "Pezzi di liquirizia Kouvolan Lakritsi 500 g | LaplandGifts",
-      "nl": "Kouvolan Lakritsi dropstukken 500 g | LaplandGifts",
-      "sv": "Kouvolan Lakritsi lakritsbitar 500 g | LaplandGifts"
+      "nl": "dropstukken 500 g – Lekkers en eetbare cadeaus",
+      "sv": "lakritsbitar 500 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Half a kilo of soft liquorice pieces from Kouvola, made to a recipe born in 1945 and fine tuned in 1960 by an English liquorice specialist. Delivery area shown.",
@@ -6106,18 +6106,18 @@
   },
   {
     "path": "/product/sk-fazer-omar-chocolate-bar",
-    "fallbackTitle": "Fazer Omar chocolate bar 180 g | LaplandGifts",
+    "fallbackTitle": "Omar chocolate bar 180 g – Finnish sweets and food gifts",
     "fallbackDescription": "A limited 180 gram bar made for Omar's 60th anniversary: the mild creamy Omar toffee that has been sold since 1966. The price is read from the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Fazer Omar chocolate bar 180 g | LaplandGifts",
+      "en": "Omar chocolate bar 180 g – Finnish sweets and food gifts",
       "fi": "Fazer Omar-suklaalevy 180 g – Suomalaiset herkut",
-      "de": "Fazer Omar Schokoladentafel 180 g | LaplandGifts",
+      "de": "Omar Schokoladentafel – Süßes und kulinarische Geschenke",
       "ja": "Fazer Omar チョコレートバー 180 g｜お菓子と食の贈り物 | LaplandGifts",
-      "es": "Tableta de chocolate Fazer Omar 180 g | LaplandGifts",
+      "es": "Tableta de chocolate Fazer Omar – Dulces y regalos gourmet",
       "pt-BR": "Barra de chocolate Fazer Omar 180 g | LaplandGifts",
       "zh-CN": "Fazer Omar 巧克力排 180 g｜甜食与美食礼品 | LaplandGifts",
       "ko": "Fazer Omar 초콜릿 바 180 g – 과자와 식품 선물 | LaplandGifts",
-      "fr": "Tablette de chocolat Fazer Omar 180 g | LaplandGifts",
+      "fr": "Tablette de chocolat Fazer Omar – Douceurs et gourmandises",
       "it": "Tavoletta di cioccolato Fazer Omar 180 g | LaplandGifts",
       "nl": "Fazer Omar chocoladereep 180 g – Lekkers en eetbare cadeaus",
       "sv": "Fazer Omar chokladkaka 180 g – Sötsaker och matpresenter"
@@ -6176,7 +6176,7 @@
     "fallbackDescription": "Tyrkisk Peber's hot salmiakki in a new chewy pastille instead of the hard shell. The price is read from the partner shop and the purchase is made there.",
     "fallbackTitleByLang": {
       "en": "Fazer Tyrkisk Peber Chewy salmiakki pastilles 38 g",
-      "fi": "Fazer Tyrkisk Peber Chewy -salmiakkipastilli 38 g",
+      "fi": "Tyrkisk Peber Chewy -salmiakkipastilli – Suomalaiset herkut",
       "de": "Fazer Tyrkisk Peber Chewy Salmiakpastillen 38 g",
       "ja": "Fazer Tyrkisk Peber Chewy サルミアッキパスティル 38 g｜お菓子と食の贈り物",
       "es": "Pastillas de salmiakki Fazer Tyrkisk Peber Chewy 38 g",
@@ -6205,11 +6205,11 @@
   },
   {
     "path": "/product/sk-tyrkisk-peber-sour-foams",
-    "fallbackTitle": "Fazer Tyrkisk Peber Sour Foams 150 g | LaplandGifts",
+    "fallbackTitle": "Tyrkisk Peber Sour Foams – Finnish sweets and food gifts",
     "fallbackDescription": "Soft foam sweets with a mild Tyrkisk Peber heat and sour kiwi strawberry and lemon lime flavours, 150 grams. You buy it in the partner shop. See where it ships.",
     "fallbackTitleByLang": {
-      "en": "Fazer Tyrkisk Peber Sour Foams 150 g | LaplandGifts",
-      "fi": "Fazer Tyrkisk Peber Sour Foams -makeispussi 150 g",
+      "en": "Tyrkisk Peber Sour Foams – Finnish sweets and food gifts",
+      "fi": "Tyrkisk Peber Sour Foams -makeispussi – Suomalaiset herkut",
       "de": "Fazer Tyrkisk Peber Sour Foams Schaumbonbons 150 g",
       "ja": "Fazer Tyrkisk Peber Sour Foams フォームキャンディー 150 g｜お菓子と食の贈り物",
       "es": "Golosinas de espuma Fazer Tyrkisk Peber Sour Foams 150 g",
@@ -6252,7 +6252,7 @@
       "fr": "Dragées au chocolat Fazer Marianne Toffee 150 g",
       "it": "Confetti di cioccolato Fazer Marianne Toffee 150 g",
       "nl": "Fazer Marianne Toffee chocoladedragees 150 g | LaplandGifts",
-      "sv": "Fazer Marianne Toffee chokladdragéer 150 g | LaplandGifts"
+      "sv": "Marianne Toffee chokladdragéer – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "The Marianne drop series in a toffee version: a glossy crisp shell around a milk chocolate centre with at least 28 per cent cocoa, in a resealable 150 gram bag.",
@@ -6275,7 +6275,7 @@
     "fallbackDescription": "Bite sized wafers with a liquorice flavoured filling under a milk chocolate flavoured coating, 199 grams, no palm oil. The price is read from the partner shop.",
     "fallbackTitleByLang": {
       "en": "Fazer Fasupala Lakritsi wafer biscuits 199 g | LaplandGifts",
-      "fi": "Fazer Fasupala Lakritsi -vohvelikeksi 199 g | LaplandGifts",
+      "fi": "Fasupala Lakritsi -vohvelikeksi 199 g – Suomalaiset herkut",
       "de": "Fazer Fasupala Lakritsi Waffelkekse 199 g | LaplandGifts",
       "ja": "Fazer Fasupala Lakritsi ウエハースビスケット 199 g｜お菓子と食の贈り物",
       "es": "Galletas de barquillo Fazer Fasupala Lakritsi 199 g",
@@ -6283,9 +6283,9 @@
       "zh-CN": "Fazer Fasupala Lakritsi 威化饼干 199 g｜甜食与美食礼品 | LaplandGifts",
       "ko": "Fazer Fasupala Lakritsi 웨이퍼 비스킷 199 g – 과자와 식품 선물",
       "fr": "Gaufrettes Fazer Fasupala Lakritsi 199 g | LaplandGifts",
-      "it": "Wafer Fazer Fasupala Lakritsi 199 g | LaplandGifts",
-      "nl": "Fazer Fasupala Lakritsi wafelkoekjes 199 g | LaplandGifts",
-      "sv": "Fazer Fasupala Lakritsi rånkex 199 g | LaplandGifts"
+      "it": "Wafer Fazer Fasupala Lakritsi – Dolci e regali gastronomici",
+      "nl": "Fasupala Lakritsi wafelkoekjes – Lekkers en eetbare cadeaus",
+      "sv": "Fasupala Lakritsi rånkex 199 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Bite sized wafers with a liquorice flavoured filling under a milk chocolate flavoured coating, 199 grams, no palm oil. The price is read from the partner shop.",
@@ -6304,11 +6304,11 @@
   },
   {
     "path": "/product/sk-finnish-flavours-cloudberry-jam",
-    "fallbackTitle": "Finnish Flavours premium cloudberry jam 250 g | LaplandGifts",
+    "fallbackTitle": "premium cloudberry jam 250 g – Finnish sweets and food gifts",
     "fallbackDescription": "Cloudberry jam with 75 per cent Finnish cloudberries and 20 per cent sugar, 250 grams. The price is read from the partner shop and the purchase is made there.",
     "fallbackTitleByLang": {
-      "en": "Finnish Flavours premium cloudberry jam 250 g | LaplandGifts",
-      "fi": "Finnish Flavours premium-lakkahillo 250 g | LaplandGifts",
+      "en": "premium cloudberry jam 250 g – Finnish sweets and food gifts",
+      "fi": "premium-lakkahillo 250 g – Suomalaiset herkut | LaplandGifts",
       "de": "Finnish Flavours Premium-Moltebeerenkonfitüre 250 g",
       "ja": "Finnish Flavours プレミアム クラウドベリージャム 250 g｜お菓子と食の贈り物",
       "es": "Mermelada premium de mora de los pantanos Finnish Flavours.",
@@ -6317,8 +6317,8 @@
       "ko": "Finnish Flavours 프리미엄 클라우드베리 잼 250 g – 과자와 식품 선물",
       "fr": "Confiture de plaquebières premium Finnish Flavours 250 g",
       "it": "Confettura premium di camemoro Finnish Flavours 250 g",
-      "nl": "Finnish Flavours premium kruipbraamjam 250 g | LaplandGifts",
-      "sv": "Finnish Flavours premium hjortronsylt 250 g | LaplandGifts"
+      "nl": "premium kruipbraamjam 250 g – Lekkers en eetbare cadeaus",
+      "sv": "premium hjortronsylt 250 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Cloudberry jam with 75 per cent Finnish cloudberries and 20 per cent sugar, 250 grams. The price is read from the partner shop and the purchase is made there.",
@@ -6337,20 +6337,20 @@
   },
   {
     "path": "/product/sk-lapin-liha-smoked-reindeer-soup",
-    "fallbackTitle": "Lapin Liha smoked reindeer soup 400 g | LaplandGifts",
+    "fallbackTitle": "smoked reindeer soup 400 g – Finnish sweets and food gifts",
     "fallbackDescription": "A creamy soup with hot smoked and cold smoked reindeer, 400 grams, made by Lapin Liha in Rovaniemi's meat trade. The price is read from the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Lapin Liha smoked reindeer soup 400 g | LaplandGifts",
+      "en": "smoked reindeer soup 400 g – Finnish sweets and food gifts",
       "fi": "Lapin Liha savuporokeitto 400 g – Suomalaiset herkut",
-      "de": "Lapin Liha Räucherrentiersuppe 400 g | LaplandGifts",
+      "de": "Räucherrentiersuppe 400 g – Süßes und kulinarische Geschenke",
       "ja": "Lapin Liha スモークトナカイスープ 400 g｜お菓子と食の贈り物 | LaplandGifts",
-      "es": "Sopa de reno ahumado Lapin Liha 400 g | LaplandGifts",
+      "es": "Sopa de reno ahumado Lapin Liha – Dulces y regalos gourmet",
       "pt-BR": "Sopa de rena defumada Lapin Liha 400 g | LaplandGifts",
       "zh-CN": "Lapin Liha 烟熏驯鹿汤 400 g｜甜食与美食礼品 | LaplandGifts",
       "ko": "Lapin Liha 훈제 순록 수프 400 g – 과자와 식품 선물 | LaplandGifts",
-      "fr": "Soupe de renne fumé Lapin Liha 400 g | LaplandGifts",
+      "fr": "Soupe de renne fumé Lapin Liha – Douceurs et gourmandises",
       "it": "Zuppa di renna affumicata Lapin Liha 400 g | LaplandGifts",
-      "nl": "Lapin Liha gerookte rendiersoep 400 g | LaplandGifts",
+      "nl": "gerookte rendiersoep 400 g – Lekkers en eetbare cadeaus",
       "sv": "Lapin Liha rökt rensoppa 400 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
@@ -6370,12 +6370,12 @@
   },
   {
     "path": "/product/sk-vaasan-ruispalat-5pack",
-    "fallbackTitle": "Vaasan Ruispalat rye bread 5 x 330 g | LaplandGifts",
+    "fallbackTitle": "Ruispalat rye bread 5 x – Finnish sweets and food gifts",
     "fallbackDescription": "Five bags of Finland's best selling bread: torn whole grain rye rolls baked on a real sourdough from 100 per cent Finnish grain, six per 330 gram bag.",
     "fallbackTitleByLang": {
-      "en": "Vaasan Ruispalat rye bread 5 x 330 g | LaplandGifts",
+      "en": "Ruispalat rye bread 5 x – Finnish sweets and food gifts",
       "fi": "Vaasan Ruispalat 5 x 330 g – Suomalaiset herkut",
-      "de": "Vaasan Ruispalat Roggenbrot 5 x 330 g | LaplandGifts",
+      "de": "Ruispalat Roggenbrot 5 x – Süßes und kulinarische Geschenke",
       "ja": "Vaasan Ruispalat ライ麦パン 5 x 330 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Pan de centeno Vaasan Ruispalat 5 x 330 g | LaplandGifts",
       "pt-BR": "Pão de centeio Vaasan Ruispalat 5 x 330 g | LaplandGifts",
@@ -6383,8 +6383,8 @@
       "ko": "Vaasan Ruispalat 호밀빵 5 x 330 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Pain de seigle Vaasan Ruispalat 5 x 330 g | LaplandGifts",
       "it": "Pane di segale Vaasan Ruispalat 5 x 330 g | LaplandGifts",
-      "nl": "Vaasan Ruispalat roggebrood 5 x 330 g | LaplandGifts",
-      "sv": "Vaasan Ruispalat rågbröd 5 x 330 g | LaplandGifts"
+      "nl": "Ruispalat roggebrood 5 x 330 g – Lekkers en eetbare cadeaus",
+      "sv": "Ruispalat rågbröd 5 x 330 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Five bags of Finland's best selling bread: torn whole grain rye rolls baked on a real sourdough from 100 per cent Finnish grain, six per 330 gram bag.",
@@ -6403,11 +6403,11 @@
   },
   {
     "path": "/product/sk-poikain-parhaat-freeze-dried-blueberry",
-    "fallbackTitle": "Poikain Parhaat freeze dried blueberries 15 g | LaplandGifts",
+    "fallbackTitle": "freeze dried blueberries – Finnish sweets and food gifts",
     "fallbackDescription": "Whole Finnish forest blueberries, freeze dried and nothing else: 15 grams that weigh nothing in a suitcase and taste of August on a bog. Delivery area shown.",
     "fallbackTitleByLang": {
-      "en": "Poikain Parhaat freeze dried blueberries 15 g | LaplandGifts",
-      "fi": "Poikain Parhaat pakastekuivattu mustikka 15 g | LaplandGifts",
+      "en": "freeze dried blueberries – Finnish sweets and food gifts",
+      "fi": "pakastekuivattu mustikka 15 g – Suomalaiset herkut",
       "de": "Poikain Parhaat gefriergetrocknete Heidelbeeren 15 g",
       "ja": "Poikain Parhaat フリーズドライブルーベリー 15 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Arándanos liofilizados Poikain Parhaat 15 g | LaplandGifts",
@@ -6416,8 +6416,8 @@
       "ko": "Poikain Parhaat 동결건조 블루베리 15 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Myrtilles lyophilisées Poikain Parhaat 15 g | LaplandGifts",
       "it": "Mirtilli liofilizzati Poikain Parhaat 15 g | LaplandGifts",
-      "nl": "Poikain Parhaat gevriesdroogde bosbessen 15 g | LaplandGifts",
-      "sv": "Poikain Parhaat frystorkade blåbär 15 g | LaplandGifts"
+      "nl": "gevriesdroogde bosbessen 15 g – Lekkers en eetbare cadeaus",
+      "sv": "frystorkade blåbär 15 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Whole Finnish forest blueberries, freeze dried and nothing else: 15 grams that weigh nothing in a suitcase and taste of August on a bog. Delivery area shown.",
@@ -6436,20 +6436,20 @@
   },
   {
     "path": "/product/rj-arctic-warriors-blueberry-powder",
-    "fallbackTitle": "Arctic Warriors blueberry powder 45 g | LaplandGifts",
+    "fallbackTitle": "blueberry powder 45 g – Arctic berry powders and superfoods",
     "fallbackDescription": "Finnish blueberries dried whole with their juice and ground, nothing added, 45 grams. The price is read from the partner shop and the purchase is made there.",
     "fallbackTitleByLang": {
-      "en": "Arctic Warriors blueberry powder 45 g | LaplandGifts",
-      "fi": "Arctic Warriors mustikkajauhe 45 g | LaplandGifts",
-      "de": "Arctic Warriors Heidelbeerpulver 45 g | LaplandGifts",
+      "en": "blueberry powder 45 g – Arctic berry powders and superfoods",
+      "fi": "mustikkajauhe 45 g – Marjajauheet ja superfoodit",
+      "de": "Heidelbeerpulver 45 g – Arktische Beerenpulver",
       "ja": "Arctic Warriors ブルーベリーパウダー 45 g｜北極圏のベリーパウダー | LaplandGifts",
-      "es": "Polvo de arándano Arctic Warriors 45 g | LaplandGifts",
+      "es": "Polvo de arándano Arctic Warriors – Polvos de bayas árticas",
       "pt-BR": "Pó de mirtilo Arctic Warriors 45 g – Pós de frutas árticas",
       "zh-CN": "Arctic Warriors 蓝莓粉 45 g｜北极浆果粉 | LaplandGifts",
       "ko": "Arctic Warriors 블루베리 파우더 45 g – 북극 베리 파우더 | LaplandGifts",
       "fr": "Poudre de myrtille Arctic Warriors 45 g | LaplandGifts",
       "it": "Polvere di mirtillo Arctic Warriors 45 g | LaplandGifts",
-      "nl": "Arctic Warriors bosbessenpoeder 45 g | LaplandGifts",
+      "nl": "bosbessenpoeder 45 g – Arctische bessenpoeders",
       "sv": "Arctic Warriors blåbärspulver 45 g – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
@@ -6469,12 +6469,12 @@
   },
   {
     "path": "/product/rj-poikain-parhaat-blueberry-lemonade",
-    "fallbackTitle": "Poikain Parhaat blueberry lemonade 0.33 l | LaplandGifts",
+    "fallbackTitle": "blueberry lemonade 0.33 l – Finnish sweets and food gifts",
     "fallbackDescription": "An organic blueberry lemonade made in Vehmainen, Tampere, from real ingredients with no artificial flavours or colours, 0.33 litre bottle. Delivery area shown.",
     "fallbackTitleByLang": {
-      "en": "Poikain Parhaat blueberry lemonade 0.33 l | LaplandGifts",
-      "fi": "Poikain Parhaat mustikkalimonaadi 0,33 l | LaplandGifts",
-      "de": "Poikain Parhaat Heidelbeerlimonade 0,33 l | LaplandGifts",
+      "en": "blueberry lemonade 0.33 l – Finnish sweets and food gifts",
+      "fi": "mustikkalimonaadi 0,33 l – Suomalaiset herkut | LaplandGifts",
+      "de": "Heidelbeerlimonade 0,33 l – Süßes und kulinarische Geschenke",
       "ja": "Poikain Parhaat ブルーベリーレモネード 0.33 l｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Limonada de arándano Poikain Parhaat 0,33 l | LaplandGifts",
       "pt-BR": "Limonada de mirtilo Poikain Parhaat 0,33 l | LaplandGifts",
@@ -6482,8 +6482,8 @@
       "ko": "Poikain Parhaat 블루베리 레모네이드 0.33 l – 과자와 식품 선물 | LaplandGifts",
       "fr": "Limonade à la myrtille Poikain Parhaat 0,33 l | LaplandGifts",
       "it": "Limonata al mirtillo Poikain Parhaat 0,33 l | LaplandGifts",
-      "nl": "Poikain Parhaat bosbessenlimonade 0,33 l | LaplandGifts",
-      "sv": "Poikain Parhaat blåbärslemonad 0,33 l | LaplandGifts"
+      "nl": "bosbessenlimonade 0,33 l – Lekkers en eetbare cadeaus",
+      "sv": "blåbärslemonad 0,33 l – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "An organic blueberry lemonade made in Vehmainen, Tampere, from real ingredients with no artificial flavours or colours, 0.33 litre bottle. Delivery area shown.",
@@ -6502,19 +6502,19 @@
   },
   {
     "path": "/product/rj-nordic-koivu-birch-sap",
-    "fallbackTitle": "Nordic Koivu birch sap 500 ml | LaplandGifts",
+    "fallbackTitle": "birch sap 500 ml – Arctic berry powders and superfoods",
     "fallbackDescription": "Birch sap tapped in spring when the tree lifts the water it stored in its roots, bottled straight from the tree without heat treatment or preservatives, 500 ml.",
     "fallbackTitleByLang": {
-      "en": "Nordic Koivu birch sap 500 ml | LaplandGifts",
-      "fi": "Nordic Koivu koivunmahla 500 ml | LaplandGifts",
+      "en": "birch sap 500 ml – Arctic berry powders and superfoods",
+      "fi": "koivunmahla 500 ml – Marjajauheet ja superfoodit",
       "de": "Nordic Koivu Birkensaft 500 ml – Arktische Beerenpulver",
       "ja": "Nordic Koivu 白樺の樹液 500 ml｜北極圏のベリーパウダー | LaplandGifts",
-      "es": "Savia de abedul Nordic Koivu 500 ml | LaplandGifts",
+      "es": "Savia de abedul Nordic Koivu – Polvos de bayas árticas",
       "pt-BR": "Seiva de bétula Nordic Koivu 500 ml – Pós de frutas árticas",
       "zh-CN": "Nordic Koivu 桦树汁 500 ml｜北极浆果粉 | LaplandGifts",
       "ko": "Nordic Koivu 자작나무 수액 500 ml – 북극 베리 파우더 | LaplandGifts",
-      "fr": "Sève de bouleau Nordic Koivu 500 ml | LaplandGifts",
-      "it": "Linfa di betulla Nordic Koivu 500 ml | LaplandGifts",
+      "fr": "Sève de bouleau Nordic Koivu – Poudres de baies arctiques",
+      "it": "Linfa di betulla Nordic Koivu – Polveri di bacche artiche",
       "nl": "Nordic Koivu berkensap 500 ml – Arctische bessenpoeders",
       "sv": "Nordic Koivu björksav 500 ml – Arktiska bärpulver"
     },
@@ -6539,8 +6539,8 @@
     "fallbackDescription": "An alcohol free organic sparkling drink flavoured with spruce sprouts, the tender May shoots of the Finnish spruce, in a 0.75 litre bottle. Delivery area shown.",
     "fallbackTitleByLang": {
       "en": "KAINO Drinks spruce sprout organic sparkling 0.75 l",
-      "fi": "KAINO Drinks kuusenkerkkä-luomukuohujuoma 0,75 l",
-      "de": "KAINO Drinks Fichtenspitzen Bio-Schaumgetränk 0,75 l",
+      "fi": "kuusenkerkkä-luomukuohujuoma – Marjajauheet ja superfoodit",
+      "de": "Fichtenspitzen Bio-Schaumgetränk – Arktische Beerenpulver",
       "ja": "KAINO Drinks トウヒの新芽 オーガニックスパークリング 0.75 l｜北極圏のベリーパウダー",
       "es": "Espumoso ecológico de brotes de abeto KAINO Drinks 0,75 l",
       "pt-BR": "Espumante orgânico de brotos de abeto KAINO Drinks 0,75 l",
@@ -6549,7 +6549,7 @@
       "fr": "Pétillant bio aux pousses d'épicéa KAINO Drinks 0,75 l",
       "it": "Spumante analcolico biologico ai germogli di abete KAINO.",
       "nl": "KAINO Drinks sparrenscheuten biologische bruisdrank 0,75 l",
-      "sv": "KAINO Drinks granskott ekologisk mousserande dryck 0,75 l"
+      "sv": "granskott ekologisk mousserande dryck – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
       "en": "An alcohol free organic sparkling drink flavoured with spruce sprouts, the tender May shoots of the Finnish spruce, in a 0.75 litre bottle. Delivery area shown.",
@@ -6568,11 +6568,11 @@
   },
   {
     "path": "/product/rj-yrttipaja-chaga-powder",
-    "fallbackTitle": "Yrttipaja chaga powder 35 g | LaplandGifts",
+    "fallbackTitle": "chaga powder 35 g – Arctic berry powders and superfoods",
     "fallbackDescription": "Ground chaga, the black fungus that grows on birch trunks, for brewing as tea: a tablespoon per litre of water, simmered at least ten minutes and strained.",
     "fallbackTitleByLang": {
-      "en": "Yrttipaja chaga powder 35 g | LaplandGifts",
-      "fi": "Yrttipaja pakurikääpäjauhe 35 g | LaplandGifts",
+      "en": "chaga powder 35 g – Arctic berry powders and superfoods",
+      "fi": "pakurikääpäjauhe 35 g – Marjajauheet ja superfoodit",
       "de": "Yrttipaja Chagapulver 35 g – Arktische Beerenpulver",
       "ja": "Yrttipaja チャーガパウダー 35 g｜北極圏のベリーパウダー | LaplandGifts",
       "es": "Polvo de chaga Yrttipaja 35 g – Polvos de bayas árticas",
@@ -6601,12 +6601,12 @@
   },
   {
     "path": "/product/rj-forestly-mushroom-chips-chili",
-    "fallbackTitle": "Forestly Foods mushroom chips, chili 50 g | LaplandGifts",
+    "fallbackTitle": "mushroom chips, chili – Arctic berry powders and superfoods",
     "fallbackDescription": "Crisp chips made from organically grown shiitake mushrooms, gently cooked and seasoned with chili, salt and pepper, 50 grams. The delivery area is on this page.",
     "fallbackTitleByLang": {
-      "en": "Forestly Foods mushroom chips, chili 50 g | LaplandGifts",
-      "fi": "Forestly Foods sienisipsi, chili 50 g | LaplandGifts",
-      "de": "Forestly Foods Pilzchips, Chili 50 g | LaplandGifts",
+      "en": "mushroom chips, chili – Arctic berry powders and superfoods",
+      "fi": "sienisipsi, chili 50 g – Marjajauheet ja superfoodit",
+      "de": "Pilzchips, Chili 50 g – Arktische Beerenpulver",
       "ja": "Forestly Foods きのこチップス チリ 50 g｜北極圏のベリーパウダー | LaplandGifts",
       "es": "Chips de setas Forestly Foods, chile 50 g | LaplandGifts",
       "pt-BR": "Chips de cogumelo Forestly Foods, pimenta 50 g",
@@ -6614,7 +6614,7 @@
       "ko": "Forestly Foods 버섯 칩, 칠리 50 g – 북극 베리 파우더 | LaplandGifts",
       "fr": "Chips de champignons Forestly Foods, piment 50 g",
       "it": "Chips di funghi Forestly Foods, peperoncino 50 g",
-      "nl": "Forestly Foods paddenstoelchips, chili 50 g | LaplandGifts",
+      "nl": "paddenstoelchips, chili 50 g – Arctische bessenpoeders",
       "sv": "Forestly Foods svampchips, chili 50 g – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
@@ -6634,10 +6634,10 @@
   },
   {
     "path": "/product/sk-muurla-moomin-80v-tray",
-    "fallbackTitle": "Muurla Moomin 80 years tray 27 x 20 cm | LaplandGifts",
+    "fallbackTitle": "Moomin 80 years tray 27 x 20 cm – Finnish design gifts",
     "fallbackDescription": "A 27 by 20 cm tray from Muurla's Moomin 80 years series, dishwasher safe. The price comes from the partner shop, where you also buy it. Delivery area is listed.",
     "fallbackTitleByLang": {
-      "en": "Muurla Moomin 80 years tray 27 x 20 cm | LaplandGifts",
+      "en": "Moomin 80 years tray 27 x 20 cm – Finnish design gifts",
       "fi": "Muurla Muumi 80v -tarjotin 27 x 20 cm – Suomalainen design",
       "de": "Muurla Mumin 80 Jahre Tablett 27 x 20 cm – Finnisches Design",
       "ja": "Muurla ムーミン80周年トレイ 27 x 20 cm｜フィンランドデザイン | LaplandGifts",
@@ -6667,10 +6667,10 @@
   },
   {
     "path": "/product/sk-muurla-moomin-glass-box-yhdessa",
-    "fallbackTitle": "Muurla Moomin glass box Yhdessä 11.5 cm | LaplandGifts",
+    "fallbackTitle": "Moomin glass box Yhdessä 11.5 cm – Finnish design gifts",
     "fallbackDescription": "A heart shaped glass box from Muurla's Yhdessä, together, mini series, 11.5 by 10 by 5.5 cm, hand wash, delivered in its retail box. Bought in the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Muurla Moomin glass box Yhdessä 11.5 cm | LaplandGifts",
+      "en": "Moomin glass box Yhdessä 11.5 cm – Finnish design gifts",
       "fi": "Muurla Muumi-lasirasia Yhdessä 11,5 cm – Suomalainen design",
       "de": "Muurla Mumin Glasdose Yhdessä 11,5 cm – Finnisches Design",
       "ja": "Muurla ムーミン ガラスボックス Yhdessä 11.5 cm｜フィンランドデザイン",
@@ -6700,12 +6700,12 @@
   },
   {
     "path": "/product/sk-aurora-borealis-reindeer-tealight",
-    "fallbackTitle": "Aurora Borealis reindeer tealight holder 10 cm",
+    "fallbackTitle": "reindeer tealight holder 10 cm – Finnish design gifts",
     "fallbackDescription": "A polished metal tealight holder shaped as a reindeer, 10 cm tall. The price is read from the partner shop, where you buy it. The delivery area is on this page.",
     "fallbackTitleByLang": {
-      "en": "Aurora Borealis reindeer tealight holder 10 cm",
-      "fi": "Aurora Borealis poro-kynttilänjalka 10 cm | LaplandGifts",
-      "de": "Aurora Borealis Rentier-Teelichthalter 10 cm | LaplandGifts",
+      "en": "reindeer tealight holder 10 cm – Finnish design gifts",
+      "fi": "poro-kynttilänjalka 10 cm – Suomalainen design",
+      "de": "Rentier-Teelichthalter 10 cm – Finnisches Design",
       "ja": "Aurora Borealis トナカイ ティーライトホルダー 10 cm｜フィンランドデザイン",
       "es": "Portavelas reno Aurora Borealis 10 cm – Diseño finlandés",
       "pt-BR": "Porta-velas rena Aurora Borealis 10 cm – Design finlandês",
@@ -6713,7 +6713,7 @@
       "ko": "Aurora Borealis 순록 티라이트 홀더 10 cm – 핀란드 디자인 | LaplandGifts",
       "fr": "Photophore renne Aurora Borealis 10 cm – Design finlandais",
       "it": "Portalumino renna Aurora Borealis 10 cm – Design finlandese",
-      "nl": "Aurora Borealis waxinelichthouder rendier 10 cm",
+      "nl": "waxinelichthouder rendier 10 cm – Fins design | LaplandGifts",
       "sv": "Aurora Borealis värmeljushållare ren 10 cm – Finsk design"
     },
     "fallbackDescriptionByLang": {
@@ -6733,10 +6733,10 @@
   },
   {
     "path": "/product/sk-muurla-moomin-bottle-05l-marjat",
-    "fallbackTitle": "Muurla Moomin glass bottle 0.5 l, Berries | LaplandGifts",
+    "fallbackTitle": "Moomin glass bottle 0.5 l, Berries – Finnish design gifts",
     "fallbackDescription": "A half litre soda glass bottle with a tight swing top and the Berries print, dishwasher safe. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
-      "en": "Muurla Moomin glass bottle 0.5 l, Berries | LaplandGifts",
+      "en": "Moomin glass bottle 0.5 l, Berries – Finnish design gifts",
       "fi": "Muurla Muumi-lasipullo 0,5 l, Marjat – Suomalainen design",
       "de": "Muurla Mumin Glasflasche 0,5 l, Beeren – Finnisches Design",
       "ja": "Muurla ムーミン ガラスボトル 0.5 l、ベリー｜フィンランドデザイン | LaplandGifts",
@@ -6813,7 +6813,7 @@
       "fr": "Serviette de banc de sauna Emendo Moomin Amour 150 x 50 cm.",
       "it": "Telo da sauna Emendo Moomin Amore 150 x 50 cm, marrone",
       "nl": "Emendo Moomin Liefde saunahanddoek 150 x 50 cm, bruin",
-      "sv": "Emendo Muminkärlek bastuhandduk 150 x 50 cm, brun"
+      "sv": "Muminkärlek bastuhandduk 150 x 50 cm, brun – Finskt hantverk"
     },
     "fallbackDescriptionByLang": {
       "en": "A 150 by 50 cm linen and cotton sauna seat cover with Tove Jansson's original Moomin drawings, an official licensed product. The delivery area is on this page.",
@@ -6836,7 +6836,7 @@
     "fallbackDescription": "A jacquard woven cotton sauna seat cover, 50 by 150 cm, designed by Anna Säteri for Rento. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
       "en": "Rento Pino sauna seat cover 50 x 150 cm, grey | LaplandGifts",
-      "fi": "Rento Pino -laudeliina 50 x 150 cm, harmaa | LaplandGifts",
+      "fi": "Pino -laudeliina 50 x 150 cm, harmaa – Suomalaiset käsityöt",
       "de": "Rento Pino Saunatuch 50 x 150 cm, grau – Finnisches Handwerk",
       "ja": "Rento Pino サウナシートカバー 50 x 150 cm、グレー｜フィンランドの手仕事",
       "es": "Toalla de banco de sauna Rento Pino 50 x 150 cm, gris",
@@ -6869,7 +6869,7 @@
     "fallbackDescription": "Mini chocolate chip biscuits, 200 grams, in a Moomin tin that outlives the biscuits as a storage box. The price is read from the partner shop, where you buy it.",
     "fallbackTitleByLang": {
       "en": "Moomin chocolate chip biscuits in a tin 200 g | LaplandGifts",
-      "fi": "Muumi-suklaahippukeksit peltirasiassa 200 g | LaplandGifts",
+      "fi": "Muumi-suklaahippukeksit peltirasiassa – Suomalaiset herkut",
       "de": "Mumin Schokoladenkekse in der Dose 200 g | LaplandGifts",
       "ja": "Moomin ムーミン チョコチップビスケット 缶入り 200 g｜お菓子と食の贈り物 | LaplandGifts",
       "es": "Galletas con pepitas de chocolate Moomin en lata 200 g",
@@ -6878,8 +6878,8 @@
       "ko": "Moomin 무민 초콜릿 칩 비스킷 틴 200 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Biscuits aux pépites de chocolat Moomin en boîte 200 g",
       "it": "Biscotti con gocce di cioccolato Moomin in latta 200 g",
-      "nl": "Moomin chocolate chip koekjes in blik 200 g | LaplandGifts",
-      "sv": "Moomin Mumin chokladkakor i plåtburk 200 g | LaplandGifts"
+      "nl": "chocolate chip koekjes in blik – Lekkers en eetbare cadeaus",
+      "sv": "Mumin chokladkakor i plåtburk – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "Mini chocolate chip biscuits, 200 grams, in a Moomin tin that outlives the biscuits as a storage box. The price is read from the partner shop, where you buy it.",
@@ -6898,10 +6898,10 @@
   },
   {
     "path": "/product/sk-paulig-cafe-new-york-beans",
-    "fallbackTitle": "Paulig Café New York coffee beans 450 g | LaplandGifts",
+    "fallbackTitle": "Café New York coffee beans – Finnish sweets and food gifts",
     "fallbackDescription": "A medium dark bean coffee, 450 grams, Latin American arabica with Brazilian beans for sweetness and a fruity edge. The price is read from the partner shop.",
     "fallbackTitleByLang": {
-      "en": "Paulig Café New York coffee beans 450 g | LaplandGifts",
+      "en": "Café New York coffee beans – Finnish sweets and food gifts",
       "fi": "Paulig Café New York kahvipavut 450 g – Suomalaiset herkut",
       "de": "Paulig Café New York Kaffeebohnen 450 g | LaplandGifts",
       "ja": "Paulig Café New York コーヒー豆 450 g｜お菓子と食の贈り物 | LaplandGifts",
@@ -6911,8 +6911,8 @@
       "ko": "Paulig Café New York 커피 원두 450 g – 과자와 식품 선물 | LaplandGifts",
       "fr": "Café en grains Paulig Café New York 450 g | LaplandGifts",
       "it": "Caffè in grani Paulig Café New York 450 g | LaplandGifts",
-      "nl": "Paulig Café New York koffiebonen 450 g | LaplandGifts",
-      "sv": "Paulig Café New York kaffebönor 450 g | LaplandGifts"
+      "nl": "Café New York koffiebonen 450 g – Lekkers en eetbare cadeaus",
+      "sv": "Café New York kaffebönor 450 g – Sötsaker och matpresenter"
     },
     "fallbackDescriptionByLang": {
       "en": "A medium dark bean coffee, 450 grams, Latin American arabica with Brazilian beans for sweetness and a fruity edge. The price is read from the partner shop.",
@@ -6935,8 +6935,8 @@
     "fallbackDescription": "A non alcoholic sparkling drink made by hand from spruce sprouts in Finnish Lapland, 750 ml. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
       "en": "Korpihilla sparkling spruce sprout drink 750 ml",
-      "fi": "Korpihilla kuohuva kuusenkerkkäjuoma 750 ml | LaplandGifts",
-      "de": "Korpihilla Fichtenspitzen-Schaumgetränk 750 ml",
+      "fi": "kuohuva kuusenkerkkäjuoma – Marjajauheet ja superfoodit",
+      "de": "Fichtenspitzen-Schaumgetränk 750 ml – Arktische Beerenpulver",
       "ja": "Korpihilla トウヒの新芽スパークリング 750 ml｜北極圏のベリーパウダー | LaplandGifts",
       "es": "Espumoso de brotes de abeto Korpihilla 750 ml | LaplandGifts",
       "pt-BR": "Espumante de brotos de abeto Korpihilla 750 ml",
@@ -6944,8 +6944,8 @@
       "ko": "Korpihilla 가문비나무 새순 스파클링 750 ml – 북극 베리 파우더 | LaplandGifts",
       "fr": "Pétillant aux pousses d'épicéa Korpihilla 750 ml",
       "it": "Spumante analcolico ai germogli di abete Korpihilla 750 ml",
-      "nl": "Korpihilla bruisende sparrenscheutendrank 750 ml",
-      "sv": "Korpihilla mousserande granskottsdryck 750 ml | LaplandGifts"
+      "nl": "bruisende sparrenscheutendrank – Arctische bessenpoeders",
+      "sv": "mousserande granskottsdryck 750 ml – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
       "en": "A non alcoholic sparkling drink made by hand from spruce sprouts in Finnish Lapland, 750 ml. The price comes from the partner shop, where you also buy it.",
@@ -6964,12 +6964,12 @@
   },
   {
     "path": "/product/rj-raitaniemi-sea-buckthorn-powder",
-    "fallbackTitle": "Marjatila Raitaniemi sea buckthorn powder 100 g",
+    "fallbackTitle": "sea buckthorn powder – Arctic berry powders and superfoods",
     "fallbackDescription": "Sea buckthorn dried and ground whole, seeds included, on a Finnish berry farm, 100 grams. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
-      "en": "Marjatila Raitaniemi sea buckthorn powder 100 g",
-      "fi": "Marjatila Raitaniemi tyrnijauhe 100 g | LaplandGifts",
-      "de": "Marjatila Raitaniemi Sanddornpulver 100 g | LaplandGifts",
+      "en": "sea buckthorn powder – Arctic berry powders and superfoods",
+      "fi": "tyrnijauhe 100 g – Marjajauheet ja superfoodit",
+      "de": "Sanddornpulver 100 g – Arktische Beerenpulver | LaplandGifts",
       "ja": "Marjatila Raitaniemi シーバックソーンパウダー 100 g｜北極圏のベリーパウダー",
       "es": "Polvo de espino amarillo Marjatila Raitaniemi 100 g",
       "pt-BR": "Pó de espinheiro-marítimo Marjatila Raitaniemi 100 g",
@@ -6977,8 +6977,8 @@
       "ko": "Marjatila Raitaniemi 비타민나무 열매 파우더 100 g – 북극 베리 파우더",
       "fr": "Poudre d'argousier Marjatila Raitaniemi 100 g | LaplandGifts",
       "it": "Polvere di olivello spinoso Marjatila Raitaniemi 100 g",
-      "nl": "Marjatila Raitaniemi duindoornpoeder 100 g | LaplandGifts",
-      "sv": "Marjatila Raitaniemi havtornspulver 100 g | LaplandGifts"
+      "nl": "duindoornpoeder 100 g – Arctische bessenpoeders",
+      "sv": "havtornspulver 100 g – Arktiska bärpulver | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Sea buckthorn dried and ground whole, seeds included, on a Finnish berry farm, 100 grams. The price comes from the partner shop, where you also buy it.",
@@ -6997,21 +6997,21 @@
   },
   {
     "path": "/product/rj-raitaniemi-crowberry-powder",
-    "fallbackTitle": "Marjatila Raitaniemi crowberry powder 100 g | LaplandGifts",
+    "fallbackTitle": "crowberry powder 100 g – Arctic berry powders and superfoods",
     "fallbackDescription": "Finnish crowberry picked from the wild, dried whole and ground, nothing added, 100 grams. The price comes from the partner shop, where you also buy it.",
     "fallbackTitleByLang": {
-      "en": "Marjatila Raitaniemi crowberry powder 100 g | LaplandGifts",
-      "fi": "Marjatila Raitaniemi variksenmarjajauhe 100 g | LaplandGifts",
-      "de": "Marjatila Raitaniemi Krähenbeerenpulver 100 g | LaplandGifts",
+      "en": "crowberry powder 100 g – Arctic berry powders and superfoods",
+      "fi": "variksenmarjajauhe 100 g – Marjajauheet ja superfoodit",
+      "de": "Krähenbeerenpulver 100 g – Arktische Beerenpulver",
       "ja": "Marjatila Raitaniemi クロウベリーパウダー 100 g｜北極圏のベリーパウダー",
       "es": "Polvo de camarina Marjatila Raitaniemi 100 g | LaplandGifts",
-      "pt-BR": "Pó de camarinha Marjatila Raitaniemi 100 g | LaplandGifts",
+      "pt-BR": "Pó de camarinha Marjatila Raitaniemi – Pós de frutas árticas",
       "zh-CN": "Marjatila Raitaniemi 岩高兰粉 100 g｜北极浆果粉 | LaplandGifts",
       "ko": "Marjatila Raitaniemi 크로우베리 파우더 100 g – 북극 베리 파우더",
       "fr": "Poudre de camarine Marjatila Raitaniemi 100 g | LaplandGifts",
       "it": "Polvere di empetro Marjatila Raitaniemi 100 g | LaplandGifts",
-      "nl": "Marjatila Raitaniemi kraaiheidepoeder 100 g | LaplandGifts",
-      "sv": "Marjatila Raitaniemi kråkbärspulver 100 g | LaplandGifts"
+      "nl": "kraaiheidepoeder 100 g – Arctische bessenpoeders",
+      "sv": "kråkbärspulver 100 g – Arktiska bärpulver | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
       "en": "Finnish crowberry picked from the wild, dried whole and ground, nothing added, 100 grams. The price comes from the partner shop, where you also buy it.",
@@ -7034,8 +7034,8 @@
     "fallbackDescription": "Whole Finnish lingonberries, freeze dried and nothing else, 15 grams. The price comes from the partner shop, where you also buy it. Delivery area on this page.",
     "fallbackTitleByLang": {
       "en": "Poikain Parhaat freeze dried lingonberries 15 g",
-      "fi": "Poikain Parhaat pakastekuivattu puolukka 15 g | LaplandGifts",
-      "de": "Poikain Parhaat gefriergetrocknete Preiselbeeren 15 g",
+      "fi": "pakastekuivattu puolukka 15 g – Marjajauheet ja superfoodit",
+      "de": "gefriergetrocknete Preiselbeeren – Arktische Beerenpulver",
       "ja": "Poikain Parhaat フリーズドライ リンゴンベリー 15 g｜北極圏のベリーパウダー",
       "es": "Arándanos rojos liofilizados Poikain Parhaat 15 g",
       "pt-BR": "Lingonberries liofilizadas Poikain Parhaat 15 g",
@@ -7043,7 +7043,7 @@
       "ko": "Poikain Parhaat 동결건조 링곤베리 15 g – 북극 베리 파우더 | LaplandGifts",
       "fr": "Airelles rouges lyophilisées Poikain Parhaat 15 g",
       "it": "Mirtilli rossi liofilizzati Poikain Parhaat 15 g",
-      "nl": "Poikain Parhaat gevriesdroogde vossenbessen 15 g",
+      "nl": "gevriesdroogde vossenbessen 15 g – Arctische bessenpoeders",
       "sv": "Poikain Parhaat frystorkade lingon 15 g – Arktiska bärpulver"
     },
     "fallbackDescriptionByLang": {
@@ -7301,11 +7301,11 @@
       "en": "Where to buy Lapland crafts, in the shops themselves. 3 boutiques: Duodji Shop, Samekki, Siida Shop.",
       "fi": "Mistä Lapin käsityöt ostetaan, kaupoista itsestään. 3 putiikkia: Duodji Shop, Samekki, Siida Shop.",
       "de": "Wo Sie Handwerk aus Lappland kaufen, direkt in den Läden. 3 Boutiquen: Duodji Shop, Samekki, Siida Shop.",
-      "ja": "ラップランドの工芸品を買える店を、店ごとに。 3店: Duodji Shop, Samekki, Siida Shop.",
+      "ja": "ラップランドの工芸品を買える店を、店ごとに。 3店: Duodji Shop, Samekki, Siida Shop. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Dónde comprar artesanía lapona, en las propias tiendas. 3 tiendas: Duodji Shop, Samekki, Siida Shop.",
       "pt-BR": "Onde comprar artesanato lapão, nas próprias lojas. 3 lojas: Duodji Shop, Samekki, Siida Shop.",
-      "zh-CN": "在店里买到拉普兰手工艺品。 3 家店: Duodji Shop, Samekki, Siida Shop.",
-      "ko": "라플란드 공예품을 사는 곳, 가게에서 직접. 3곳: Duodji Shop, Samekki, Siida Shop.",
+      "zh-CN": "在店里买到拉普兰手工艺品。 3 家店: Duodji Shop, Samekki, Siida Shop. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。",
+      "ko": "라플란드 공예품을 사는 곳, 가게에서 직접. 3곳: Duodji Shop, Samekki, Siida Shop. 라플란드 공예품을 사는 곳, 가게에서 직접.",
       "fr": "Où acheter l'artisanat lapon, dans les boutiques elles-mêmes. 3 boutiques: Duodji Shop, Samekki, Siida Shop.",
       "it": "Dove comprare artigianato lappone, nei negozi stessi. 3 boutique: Duodji Shop, Samekki, Siida Shop.",
       "nl": "Waar u Laps handwerk koopt, in de winkels zelf. 3 boetieks: Duodji Shop, Samekki, Siida Shop.",
@@ -7315,7 +7315,7 @@
   {
     "path": "/boutiques/rovaniemi",
     "fallbackTitle": "Rovaniemi: Lapland boutiques | LaplandGifts",
-    "fallbackDescription": "Where to buy Lapland crafts, in the shops themselves. 7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
+    "fallbackDescription": "Where to buy Lapland crafts, in the shops themselves. 7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop.",
     "fallbackTitleByLang": {
       "en": "Rovaniemi: Lapland boutiques | LaplandGifts",
       "fi": "Rovaniemi: Lapin putiikit | LaplandGifts",
@@ -7331,18 +7331,18 @@
       "sv": "Rovaniemi: Butiker i Lappland | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Where to buy Lapland crafts, in the shops themselves. 7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "fi": "Mistä Lapin käsityöt ostetaan, kaupoista itsestään. 7 putiikkia: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "de": "Wo Sie Handwerk aus Lappland kaufen, direkt in den Läden. 7 Boutiquen: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
+      "en": "Where to buy Lapland crafts, in the shops themselves. 7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop.",
+      "fi": "Mistä Lapin käsityöt ostetaan, kaupoista itsestään. 7 putiikkia: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop.",
+      "de": "Wo Sie Handwerk aus Lappland kaufen, direkt in den Läden. 7 Boutiquen: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop.",
       "ja": "ラップランドの工芸品を買える店を、店ごとに。 7店: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "es": "Dónde comprar artesanía lapona, en las propias tiendas. 7 tiendas: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "pt-BR": "Onde comprar artesanato lapão, nas próprias lojas. 7 lojas: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
+      "es": "Dónde comprar artesanía lapona, en las propias tiendas. 7 tiendas: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop.",
+      "pt-BR": "Onde comprar artesanato lapão, nas próprias lojas. 7 lojas: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop.",
       "zh-CN": "在店里买到拉普兰手工艺品。 7 家店: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
       "ko": "라플란드 공예품을 사는 곳, 가게에서 직접. 7곳: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "fr": "Où acheter l'artisanat lapon, dans les boutiques elles-mêmes. 7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "it": "Dove comprare artigianato lappone, nei negozi stessi. 7 boutique: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "nl": "Waar u Laps handwerk koopt, in de winkels zelf. 7 boetieks: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska.",
-      "sv": "Var du köper lappländskt hantverk, i butikerna själva. 7 butiker: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop, Korundi Shop, Lahjapuoti Tiinuska."
+      "fr": "Où acheter l'artisanat lapon, dans les boutiques elles-mêmes. 7 boutiques: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop.",
+      "it": "Dove comprare artigianato lappone, nei negozi stessi. 7 boutique: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop.",
+      "nl": "Waar u Laps handwerk koopt, in de winkels zelf. 7 boetieks: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop, Christmas House Shop.",
+      "sv": "Var du köper lappländskt hantverk, i butikerna själva. 7 butiker: Lauri Handicrafts, Marttiini, Piece of Lapland, Rovaniemi Souvenirs Shop."
     }
   },
   {
@@ -7367,11 +7367,11 @@
       "en": "Handcrafted knives, jewellery and felt products since 1924. Reindeer bone, curly birch and Finnish steel. Rovaniemi.",
       "fi": "Käsintehtyjä puukkoja, koruja ja huopatuotteita vuodesta 1924. Poronluuta, visakoivua ja suomalaista terästä. Rovaniemi.",
       "de": "Handgefertigte Puukko-Messer, Schmuck und Filzwaren seit 1924. Rentierknochen, Maserbirke und finnischer Stahl. Rovaniemi.",
-      "ja": "1924年創業の手作りナイフ、ジュエリー、フェルト製品。トナカイの骨、カーリーバーチ、フィンランドの鋼を使用。 ロヴァニエミ.",
+      "ja": "1924年創業の手作りナイフ、ジュエリー、フェルト製品。トナカイの骨、カーリーバーチ、フィンランドの鋼を使用。 ロヴァニエミ. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Cuchillos, joyas y productos de fieltro hechos a mano desde 1924. Hueso de reno, abedul rizado y acero finlandés. Rovaniemi.",
       "pt-BR": "Facas, joias e produtos de feltro feitos à mão desde 1924. Osso de rena, bétula encaracolada e aço finlandês. Rovaniemi.",
-      "zh-CN": "自 1924 年以来手工制作的刀具、饰品和毛毡制品。驯鹿骨、卷纹桦木与芬兰钢。 Rovaniemi.",
-      "ko": "1924년부터 손으로 만든 칼, 장신구, 펠트 제품. 순록 뼈, 컬리 자작나무, 핀란드 강철. Rovaniemi.",
+      "zh-CN": "自 1924 年以来手工制作的刀具、饰品和毛毡制品。驯鹿骨、卷纹桦木与芬兰钢。 Rovaniemi. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。",
+      "ko": "1924년부터 손으로 만든 칼, 장신구, 펠트 제품. 순록 뼈, 컬리 자작나무, 핀란드 강철. Rovaniemi. 라플란드 공예품을 사는 곳, 가게에서 직접.",
       "fr": "Couteaux, bijoux et produits en feutre faits main depuis 1924. Os de renne, bouleau ronceux et acier finlandais. Rovaniemi.",
       "it": "Coltelli, gioielli e prodotti in feltro fatti a mano dal 1924. Osso di renna, betulla riccia e acciaio finlandese. Rovaniemi.",
       "nl": "Met de hand gemaakte messen, sieraden en viltproducten sinds 1924. Rendierbot, gevlamde berk en Fins staal. Rovaniemi.",
@@ -7400,11 +7400,11 @@
       "en": "World-renowned knives since 1928. Factory outlet and Brand Store, free engraving. Rovaniemi.",
       "fi": "Maailmankuuluja puukkoja vuodesta 1928. Tehtaanmyymälä ja Brand Store, ilmainen kaiverrus. Rovaniemi.",
       "de": "Weltbekannte Puukko-Messer seit 1928. Fabrikverkauf und Brand Store. Kostenfreie Gravur. Rovaniemi.",
-      "ja": "1928年創業の世界的に有名なナイフ。工場直営アウトレットとブランドストア。刻印サービス無料。 ロヴァニエミ.",
+      "ja": "1928年創業の世界的に有名なナイフ。工場直営アウトレットとブランドストア。刻印サービス無料。 ロヴァニエミ. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Cuchillos de fama mundial desde 1928. Tienda de fábrica y Brand Store. Grabado gratuito. Rovaniemi.",
       "pt-BR": "Facas mundialmente famosas desde 1928. Loja de fábrica e Brand Store. Gravação gratuita. Rovaniemi.",
-      "zh-CN": "自 1928 年以来享誉世界的刀具。工厂直销店与品牌专卖店。免费刻字。 Rovaniemi.",
-      "ko": "1928년부터 세계적으로 유명한 칼. 공장 직영점과 브랜드 매장. 각인 무료. Rovaniemi.",
+      "zh-CN": "自 1928 年以来享誉世界的刀具。工厂直销店与品牌专卖店。免费刻字。 Rovaniemi. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。",
+      "ko": "1928년부터 세계적으로 유명한 칼. 공장 직영점과 브랜드 매장. 각인 무료. Rovaniemi. 라플란드 공예품을 사는 곳, 가게에서 직접.",
       "fr": "Couteaux de renommée mondiale depuis 1928. Magasin d'usine et boutique de marque. Gravure offerte. Rovaniemi.",
       "it": "Coltelli di fama mondiale dal 1928. Spaccio aziendale e Brand Store. Incisione gratuita. Rovaniemi.",
       "nl": "Wereldberoemde messen sinds 1928. Fabriekswinkel en merkwinkel. Gratis graveren. Rovaniemi.",
@@ -7433,11 +7433,11 @@
       "en": "The world's northernmost ceramic factory in Posio since 1971. Ceramics, home decor and design. Posio.",
       "fi": "Maailman pohjoisin keramiikkatehdas Posiolla vuodesta 1971. Keramiikkaa, sisustusta ja designia. Posio.",
       "de": "Die nördlichste Keramikmanufaktur der Welt, in Posio seit 1971. Keramik, Wohnaccessoires und Design. Posio.",
-      "ja": "1971年創業、ポシオにある世界最北の陶器工房。陶器、インテリア、デザインアイテム。 ポシオ.",
+      "ja": "1971年創業、ポシオにある世界最北の陶器工房。陶器、インテリア、デザインアイテム。 ポシオ. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "La fábrica de cerámica más septentrional del mundo, en Posio desde 1971. Cerámica, decoración del hogar y diseño. Posio.",
       "pt-BR": "A fábrica de cerâmica mais ao norte do mundo, em Posio desde 1971. Cerâmica, decoração e design. Posio.",
-      "zh-CN": "自 1971 年起在波西奥运营的世界最北陶瓷工厂。陶瓷、家居装饰与设计。 Posio.",
-      "ko": "1971년부터 포시오에서 운영 중인 세계 최북단 도자기 공방. 도자기, 인테리어, 디자인. Posio.",
+      "zh-CN": "自 1971 年起在波西奥运营的世界最北陶瓷工厂。陶瓷、家居装饰与设计。 Posio. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。",
+      "ko": "1971년부터 포시오에서 운영 중인 세계 최북단 도자기 공방. 도자기, 인테리어, 디자인. Posio. 라플란드 공예품을 사는 곳, 가게에서 직접.",
       "fr": "La fabrique de céramique la plus au nord du monde, à Posio depuis 1971. Céramique, décoration et design. Posio.",
       "it": "La fabbrica di ceramiche più a nord del mondo, a Posio dal 1971. Ceramiche, décor e design. Posio.",
       "nl": "De noordelijkste keramiekfabriek ter wereld in Posio sinds 1971. Keramiek, woondecoratie en design. Posio.",
@@ -7466,11 +7466,11 @@
       "en": "Finland's widest selection of authentic Sámi crafts at the Sajos cultural centre. Inari, Sajos.",
       "fi": "Suomen laajin valikoima aitoja saamelaiskäsitöitä Sajos-kulttuurikeskuksessa. Inari, Sajos.",
       "de": "Finnlands größte Auswahl an authentischem Sámi-Handwerk im Kulturzentrum Sajos. Inari, Sajos.",
-      "ja": "Sajos文化センター内、フィンランド最大規模の本格的なサーミ工芸品セレクション。 イナリ, Sajos.",
+      "ja": "Sajos文化センター内、フィンランド最大規模の本格的なサーミ工芸品セレクション。 イナリ, Sajos. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "La selección más amplia de Finlandia de auténtica artesanía sami, en el centro cultural Sajos. Inari, Sajos.",
       "pt-BR": "A mais ampla seleção da Finlândia de autêntico artesanato sámi, no centro cultural Sajos. Inari, Sajos.",
-      "zh-CN": "位于 Sajos 文化中心。芬兰种类最齐全的正宗萨米手工艺品。 Inari, Sajos.",
-      "ko": "Sajos 문화 센터에 위치. 핀란드에서 가장 폭넓은 정통 사미 공예품 셀렉션. Inari, Sajos.",
+      "zh-CN": "位于 Sajos 文化中心。芬兰种类最齐全的正宗萨米手工艺品。 Inari, Sajos. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。",
+      "ko": "Sajos 문화 센터에 위치. 핀란드에서 가장 폭넓은 정통 사미 공예품 셀렉션. Inari, Sajos. 라플란드 공예품을 사는 곳, 가게에서 직접.",
       "fr": "La plus large sélection finlandaise d'artisanat sami authentique, au centre culturel Sajos. Inari, Sajos.",
       "it": "La più ampia selezione finlandese di autentico artigianato sami, al centro culturale Sajos. Inari, Sajos.",
       "nl": "De grootste selectie authentieke Sami-ambachten in Finland, in het culturele centrum Sajos. Inari, Sajos.",
@@ -7499,11 +7499,11 @@
       "en": "Handcrafted Sámi silver jewellery: rings, brooches and traditional duodji pieces. Inari.",
       "fi": "Käsintehtyä saamelaista hopeakorumuotoilua: sormukset, soljet ja perinteiset duodji-esineet. Inari.",
       "de": "Handgefertigter Sámi-Silberschmuck: Ringe, Broschen und traditionelle Duodji-Stücke. Inari.",
-      "ja": "手作りのサーミ銀細工：指輪、ブローチ、伝統的なドゥオッジ作品。 イナリ.",
+      "ja": "手作りのサーミ銀細工：指輪、ブローチ、伝統的なドゥオッジ作品。 イナリ. ラップランドの工芸品を買える店を、店ごとに。 このページの店はすべてラップランドの企業です。",
       "es": "Joyería sami en plata hecha a mano: anillos, broches y piezas duodji tradicionales. Inari.",
       "pt-BR": "Joias sámi em prata feitas à mão: anéis, broches e peças duodji tradicionais. Inari.",
-      "zh-CN": "手工制作的萨米银饰：戒指、胸针和传统杜奥吉(duodji)作品。 Inari.",
-      "ko": "손으로 만든 사미 은세공: 반지, 브로치, 전통 두오지 작품. Inari.",
+      "zh-CN": "手工制作的萨米银饰：戒指、胸针和传统杜奥吉(duodji)作品。 Inari. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。",
+      "ko": "손으로 만든 사미 은세공: 반지, 브로치, 전통 두오지 작품. Inari. 라플란드 공예품을 사는 곳, 가게에서 직접. 이 페이지의 모든 가게는 라플란드 기업입니다.",
       "fr": "Bijoux sami en argent faits main : bagues, broches et pièces duodji traditionnelles. Inari.",
       "it": "Gioielli sami in argento fatti a mano: anelli, spille e pezzi duodji tradizionali. Inari.",
       "nl": "Met de hand gemaakt Sami-zilverwerk: ringen, broches en traditionele duodji-stukken. Inari.",
@@ -7532,11 +7532,11 @@
       "en": "Souvenirs, Sámi crafts, wood carvings and aurora-themed products. Rovaniemi.",
       "fi": "Matkamuistoja, saamelaiskäsitöitä, puuveistoksia ja revontuliteemaisia tuotteita. Rovaniemi.",
       "de": "Souvenirs, Sámi-Handwerk, Holzschnitzereien und Produkte mit Polarlicht-Motiv. Rovaniemi.",
-      "ja": "北欧グッズ、サーミ工芸品、木彫り、オーロラをテーマにした商品。 ロヴァニエミ.",
+      "ja": "北欧グッズ、サーミ工芸品、木彫り、オーロラをテーマにした商品。 ロヴァニエミ. ラップランドの工芸品を買える店を、店ごとに。 このページの店はすべてラップランドの企業です。",
       "es": "Recuerdos, artesanía sami, tallas de madera y productos con temática de auroras boreales. Rovaniemi.",
       "pt-BR": "Lembranças, artesanato sámi, esculturas em madeira e produtos com tema de aurora boreal. Rovaniemi.",
-      "zh-CN": "纪念品、萨米工艺品、木雕，以及极光主题商品。 Rovaniemi.",
-      "ko": "기념품, 사미 공예품, 목각, 그리고 오로라 테마 상품. Rovaniemi.",
+      "zh-CN": "纪念品、萨米工艺品、木雕，以及极光主题商品。 Rovaniemi. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。 有的可以寄到家，有的需要到店，每个链接都通向企业自己的网站。",
+      "ko": "기념품, 사미 공예품, 목각, 그리고 오로라 테마 상품. Rovaniemi. 라플란드 공예품을 사는 곳, 가게에서 직접. 이 페이지의 모든 가게는 라플란드 기업입니다.",
       "fr": "Souvenirs, artisanat sami, sculptures sur bois et produits sur le thème de l'aurore boréale. Rovaniemi.",
       "it": "Souvenir, artigianato sami, sculture in legno e prodotti a tema aurora boreale. Rovaniemi.",
       "nl": "Souvenirs, Sami-ambacht, houtsnijwerk en producten met noorderlicht-thema. Rovaniemi.",
@@ -7565,11 +7565,11 @@
       "en": "Handcrafted reindeer-antler products in their own workshop, free engraving. On the Arctic Circle. Rovaniemi, Joulupukin Pajakylä.",
       "fi": "Käsintehtyjä poronsarvituotteita omassa pajassa, ilmainen kaiverrus. Napapiirillä. Rovaniemi, Joulupukin Pajakylä.",
       "de": "Handgefertigte Produkte aus Rentiergeweih in eigener Werkstatt. Kostenfreie Gravur. Polarkreis. Rovaniemi, Joulupukin Pajakylä.",
-      "ja": "自社工房で手作りするトナカイの角の製品。刻印サービス無料。北極圏。 ロヴァニエミ, Joulupukin Pajakylä.",
+      "ja": "自社工房で手作りするトナカイの角の製品。刻印サービス無料。北極圏。 ロヴァニエミ, Joulupukin Pajakylä. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Productos de asta de reno hechos a mano en su propio taller. Grabado gratuito. Círculo Polar Ártico. Rovaniemi, Joulupukin Pajakylä.",
       "pt-BR": "Produtos de chifre de rena feitos à mão no próprio ateliê. Gravação gratuita. Círculo Polar Ártico. Rovaniemi, Joulupukin Pajakylä.",
-      "zh-CN": "在自家工作坊手工制作的驯鹿角制品。免费刻字。北极圈。 Rovaniemi, Joulupukin Pajakylä.",
-      "ko": "자체 공방에서 손으로 만드는 순록 뿔 제품. 각인 무료. 북극권. Rovaniemi, Joulupukin Pajakylä.",
+      "zh-CN": "在自家工作坊手工制作的驯鹿角制品。免费刻字。北极圈。 Rovaniemi, Joulupukin Pajakylä. 在店里买到拉普兰手工艺品。",
+      "ko": "자체 공방에서 손으로 만드는 순록 뿔 제품. 각인 무료. 북극권. Rovaniemi, Joulupukin Pajakylä. 라플란드 공예품을 사는 곳, 가게에서 직접.",
       "fr": "Produits en bois de renne faits main dans leur propre atelier. Gravure offerte. Cercle polaire arctique. Rovaniemi, Joulupukin Pajakylä.",
       "it": "Prodotti in corno di renna fatti a mano nel proprio laboratorio. Incisione gratuita. Circolo Polare Artico. Rovaniemi, Joulupukin Pajakylä.",
       "nl": "Met de hand gemaakte producten van rendiergewei in eigen werkplaats. Gratis graveren. Poolcirkel. Rovaniemi, Joulupukin Pajakylä.",
@@ -7601,7 +7601,7 @@
       "ja": "サンタクロース村最大のお土産ショップ：ラップランド製品、ジュエリー、お菓子、認定証。 ロヴァニエミ, Joulupukin Pajakylä.",
       "es": "La mayor tienda de recuerdos del Pueblo de Papá Noel: productos de Laponia, joyas, golosinas y certificados. Rovaniemi, Joulupukin Pajakylä.",
       "pt-BR": "A maior loja de lembranças da Vila do Papai Noel: produtos da Lapônia, joias, guloseimas e certificados. Rovaniemi, Joulupukin Pajakylä.",
-      "zh-CN": "圣诞老人村最大的纪念品商店：拉普兰商品、饰品、美食与证书。 Rovaniemi, Joulupukin Pajakylä.",
+      "zh-CN": "圣诞老人村最大的纪念品商店：拉普兰商品、饰品、美食与证书。 Rovaniemi, Joulupukin Pajakylä. 在店里买到拉普兰手工艺品。",
       "ko": "산타클로스 마을 최대의 기념품점: 라플란드 상품, 장신구, 별미, 인증서. Rovaniemi, Joulupukin Pajakylä.",
       "fr": "La plus grande boutique de souvenirs du village du Père Noël : produits lapons, bijoux, gourmandises et certificats. Rovaniemi, Joulupukin Pajakylä.",
       "it": "Il più grande negozio di souvenir del Villaggio di Babbo Natale: prodotti lapponi, gioielli, dolci e certificati. Rovaniemi, Joulupukin Pajakylä.",
@@ -7631,11 +7631,11 @@
       "en": "Arctic art and design at the Korundi cultural centre. Unique gifts and high-end products. Rovaniemi.",
       "fi": "Arktista taidetta ja designia Korundi-kulttuuritalossa. Uniikkeja lahjoja ja korkeatasoisia tuotteita. Rovaniemi.",
       "de": "Arktische Kunst und Design im Kulturhaus Korundi. Einzigartige Geschenke und hochwertige Produkte. Rovaniemi.",
-      "ja": "Korundi文化センターで北極のアートとデザインを。世界に一つの贈り物と上質な商品。 ロヴァニエミ.",
+      "ja": "Korundi文化センターで北極のアートとデザインを。世界に一つの贈り物と上質な商品。 ロヴァニエミ. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Arte y diseño árticos en el centro cultural Korundi. Regalos únicos y productos de alta gama. Rovaniemi.",
       "pt-BR": "Arte e design árticos no centro cultural Korundi. Presentes únicos e produtos de alto padrão. Rovaniemi.",
-      "zh-CN": "在 Korundi 文化中心欣赏并选购北极艺术与设计。独特礼物与高端商品。 Rovaniemi.",
-      "ko": "Korundi 문화 센터의 북극 예술과 디자인. 독특한 선물과 고급 상품. Rovaniemi.",
+      "zh-CN": "在 Korundi 文化中心欣赏并选购北极艺术与设计。独特礼物与高端商品。 Rovaniemi. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。",
+      "ko": "Korundi 문화 센터의 북극 예술과 디자인. 독특한 선물과 고급 상품. Rovaniemi. 라플란드 공예품을 사는 곳, 가게에서 직접.",
       "fr": "Art et design arctiques au centre culturel Korundi. Cadeaux uniques et produits haut de gamme. Rovaniemi.",
       "it": "Arte e design artici al centro culturale Korundi. Regali unici e prodotti di alta gamma. Rovaniemi.",
       "nl": "Arctische kunst en design in het culturele centrum Korundi. Unieke geschenken en topproducten. Rovaniemi.",
@@ -7664,11 +7664,11 @@
       "en": "Jewellery, accessories and souvenirs by Finnish artisans at the foot of Levi slope. Levi.",
       "fi": "Suomalaisten käsityöläisten koruja, asusteita ja matkamuistoja Levin rinteen juurella. Levi.",
       "de": "Schmuck, Accessoires und Souvenirs finnischer Handwerker am Fuße der Piste in Levi. Levi.",
-      "ja": "レヴィのゲレンデの麓で、フィンランドの職人による宝飾、アクセサリー、北欧グッズを。 レヴィ.",
+      "ja": "レヴィのゲレンデの麓で、フィンランドの職人による宝飾、アクセサリー、北欧グッズを。 レヴィ. ラップランドの工芸品を買える店を、店ごとに。 このページの店はすべてラップランドの企業です。",
       "es": "Joyas, complementos y recuerdos de artesanos finlandeses al pie de la pista de Levi. Levi.",
       "pt-BR": "Joias, acessórios e lembranças de artesãos finlandeses ao pé da encosta de Levi. Levi.",
-      "zh-CN": "位于莱维滑雪坡脚下，芬兰工匠制作的饰品、配饰与纪念品。 Levi.",
-      "ko": "레비 슬로프 기슭, 핀란드 장인이 만든 장신구, 액세서리, 기념품. Levi.",
+      "zh-CN": "位于莱维滑雪坡脚下，芬兰工匠制作的饰品、配饰与纪念品。 Levi. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。 有的可以寄到家，有的需要到店，每个链接都通向企业自己的网站。",
+      "ko": "레비 슬로프 기슭, 핀란드 장인이 만든 장신구, 액세서리, 기념품. Levi. 라플란드 공예품을 사는 곳, 가게에서 직접. 이 페이지의 모든 가게는 라플란드 기업입니다.",
       "fr": "Bijoux, accessoires et souvenirs d'artisans finlandais, au pied des pistes de Levi. Levi.",
       "it": "Gioielli, accessori e souvenir di artigiani finlandesi ai piedi della pista di Levi. Levi.",
       "nl": "Sieraden, accessoires en souvenirs van Finse ambachtslieden aan de voet van de Levi-piste. Levi.",
@@ -7730,11 +7730,11 @@
       "en": "Gold jewellery, real gold and minerals from the heart of Lapland's gold-panning tradition. Sodankylä, Tankavaara.",
       "fi": "Kultakoruja, aitoa kultaa ja mineraaleja Lapin kullankaivuuperinteen keskuksesta. Sodankylä, Tankavaara.",
       "de": "Goldschmuck, echtes Gold und Mineralien aus dem Zentrum der lappländischen Goldwaschtradition. Sodankylä, Tankavaara.",
-      "ja": "ラップランドの砂金採取の伝統の中心地から、金のジュエリー、本物の金、鉱物をお届け。 ソダンキュラ, Tankavaara.",
+      "ja": "ラップランドの砂金採取の伝統の中心地から、金のジュエリー、本物の金、鉱物をお届け。 ソダンキュラ, Tankavaara. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Joyas de oro, oro auténtico y minerales desde el corazón de la tradición de búsqueda de oro de Laponia. Sodankylä, Tankavaara.",
       "pt-BR": "Joias de ouro, ouro de verdade e minerais do coração da tradição de garimpo de ouro da Lapônia. Sodankylä, Tankavaara.",
-      "zh-CN": "来自拉普兰淘金传统中心的金饰、真金与矿石。 Sodankylä, Tankavaara.",
-      "ko": "라플란드 사금 채취 전통의 중심지에서 만드는 금 장신구, 진짜 금과 광물. Sodankylä, Tankavaara.",
+      "zh-CN": "来自拉普兰淘金传统中心的金饰、真金与矿石。 Sodankylä, Tankavaara. 在店里买到拉普兰手工艺品。 本页每一家店都是拉普兰本地企业。",
+      "ko": "라플란드 사금 채취 전통의 중심지에서 만드는 금 장신구, 진짜 금과 광물. Sodankylä, Tankavaara. 라플란드 공예품을 사는 곳, 가게에서 직접.",
       "fr": "Bijoux en or, or véritable et minéraux issus du cœur de la tradition d'orpaillage de Laponie. Sodankylä, Tankavaara.",
       "it": "Gioielli in oro, oro vero e minerali dal cuore della tradizione lapponese della ricerca dell'oro. Sodankylä, Tankavaara.",
       "nl": "Gouden sieraden, echt goud en mineralen uit het hart van de Laplandse goudwastraditie. Sodankylä, Tankavaara.",
@@ -7763,7 +7763,7 @@
       "en": "A gift and souvenir shop at the Äkäslompolo crossroads, the largest of its kind in Ylläs. Founded in 1970. Ylläs, Äkäslompolo.",
       "fi": "Lahjatavaroiden ja tuliaisten erikoisliike Äkäslompolon risteyksessä, lajissaan Ylläksen suurin. Perustettu 1970. Ylläs, Äkäslompolo.",
       "de": "Fachgeschäft für Geschenke und Mitbringsel an der Kreuzung von Äkäslompolo, das größte seiner Art in Ylläs. 1970 gegründet. Ylläs, Äkäslompolo.",
-      "ja": "アカスロンポロの交差点にあるギフト・土産の専門店。ユッラス最大規模で、1970年創業です。 ユッラス, Äkäslompolo.",
+      "ja": "アカスロンポロの交差点にあるギフト・土産の専門店。ユッラス最大規模で、1970年創業です。 ユッラス, Äkäslompolo. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Tienda de regalos y recuerdos en el cruce de Äkäslompolo, la mayor de su tipo en Ylläs. Fundada en 1970. Ylläs, Äkäslompolo.",
       "pt-BR": "Loja de presentes e lembranças no cruzamento de Äkäslompolo, a maior do gênero em Ylläs. Fundada em 1970. Ylläs, Äkäslompolo.",
       "zh-CN": "位于 Äkäslompolo 十字路口的礼品与纪念品专门店，是 Ylläs 同类中最大的一家。1970 年创立。 Ylläs, Äkäslompolo.",
@@ -7799,10 +7799,10 @@
       "ja": "サーリセルカのショッピングセンターにある土産・ラップランドの味覚・テキスタイルの店。自家製ベリー加工品（ジャム、ゼリー、ソース、ジュース）も扱います。 サーリセルカ.",
       "es": "Recuerdos, delicias de Laponia y textiles en el centro comercial de Saariselkä. Productos propios de bayas: mermeladas, jaleas, salsas y zumos. Saariselkä.",
       "pt-BR": "Lembranças, iguarias da Lapônia e têxteis no centro comercial de Saariselkä. Produtos próprios de frutas silvestres: geleias, molhos e sucos. Saariselkä.",
-      "zh-CN": "位于 Saariselkä 购物中心的纪念品、拉普兰美味与纺织品商店。自制浆果制品：果酱、果冻、酱汁与果汁。 Saariselkä.",
+      "zh-CN": "位于 Saariselkä 购物中心的纪念品、拉普兰美味与纺织品商店。自制浆果制品：果酱、果冻、酱汁与果汁。 Saariselkä. 在店里买到拉普兰手工艺品。",
       "ko": "사리셀카 쇼핑센터에 있는 기념품·라플란드 먹거리·직물 매장입니다. 잼, 젤리, 소스, 주스 등 자체 베리 가공품도 있습니다. Saariselkä.",
-      "fr": "Souvenirs, spécialités de Laponie et textiles dans le centre commercial de Saariselkä. Produits maison à base de baies : confitures, gelées, sauces et jus. Saariselkä.",
-      "it": "Souvenir, specialità della Lapponia e tessuti nel centro commerciale di Saariselkä. Prodotti propri ai frutti di bosco: marmellate, gelatine, salse e succhi. Saariselkä.",
+      "fr": "Souvenirs, spécialités de Laponie et textiles dans le centre commercial de Saariselkä. Produits maison à base de baies : confitures, gelées, sauces et jus.",
+      "it": "Souvenir, specialità della Lapponia e tessuti nel centro commerciale di Saariselkä. Prodotti propri ai frutti di bosco: marmellate, gelatine, salse e succhi.",
       "nl": "Souvenirs, Laplandse lekkernijen en textiel in het winkelcentrum van Saariselkä. Eigen bessenproducten: jam, gelei, sauzen en sappen. Saariselkä.",
       "sv": "Souvenirer, lappländska delikatesser och textilier i Saariselkäs köpcentrum. Egna bärprodukter: sylt, gelé, såser och safter. Saariselkä."
     }
@@ -7829,10 +7829,10 @@
       "en": "A clothing shop in Enontekiö stocking Anar, Nanso, Rukka and Luhta, alongside jewellery and prints. Enontekiö.",
       "fi": "Vaatekauppa Enontekiöllä: Anar, Nanso, Rukka ja Luhta. Valikoimassa myös koruja ja printtejä. Enontekiö.",
       "de": "Bekleidungsgeschäft in Enontekiö mit Anar, Nanso, Rukka und Luhta, dazu Schmuck und Drucke. Enontekiö.",
-      "ja": "エノンテキオの衣料品店。Anar、Nanso、Rukka、Luhtaに加え、ジュエリーやプリント作品も扱います。 エノンテキオ.",
+      "ja": "エノンテキオの衣料品店。Anar、Nanso、Rukka、Luhtaに加え、ジュエリーやプリント作品も扱います。 エノンテキオ. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Tienda de ropa en Enontekiö con Anar, Nanso, Rukka y Luhta, además de joyas y láminas. Enontekiö.",
       "pt-BR": "Loja de roupas em Enontekiö com Anar, Nanso, Rukka e Luhta, além de joias e estampas. Enontekiö.",
-      "zh-CN": "Enontekiö 的服装店，经营 Anar、Nanso、Rukka 与 Luhta，另有饰品与版画。 Enontekiö.",
+      "zh-CN": "Enontekiö 的服装店，经营 Anar、Nanso、Rukka 与 Luhta，另有饰品与版画。 Enontekiö. 在店里买到拉普兰手工艺品。",
       "ko": "에논테키외의 의류 매장으로 Anar, Nanso, Rukka, Luhta를 갖추고 있으며 장신구와 프린트 작품도 취급합니다. Enontekiö.",
       "fr": "Magasin de vêtements à Enontekiö proposant Anar, Nanso, Rukka et Luhta, ainsi que des bijoux et des impressions. Enontekiö.",
       "it": "Negozio di abbigliamento a Enontekiö con Anar, Nanso, Rukka e Luhta, oltre a gioielli e stampe. Enontekiö.",
@@ -7865,7 +7865,7 @@
       "ja": "1987年創業、ロヴァニエミのギフトショップ。Aarikkaやムーミンの品、ジュエリー、テキスタイル、菓子をオンラインで販売しています。 ロヴァニエミ.",
       "es": "Tienda de regalos de Rovaniemi, fundada en 1987. Productos Aarikka y Moomin, joyas, textiles y dulces por internet. Rovaniemi.",
       "pt-BR": "Loja de presentes de Rovaniemi, fundada em 1987. Produtos Aarikka e Moomin, joias, têxteis e guloseimas pela internet. Rovaniemi.",
-      "zh-CN": "来自罗瓦涅米的礼品店，1987 年创立。Aarikka 与姆明商品、饰品、纺织品与零食，可在网店选购。 Rovaniemi.",
+      "zh-CN": "来自罗瓦涅米的礼品店，1987 年创立。Aarikka 与姆明商品、饰品、纺织品与零食，可在网店选购。 Rovaniemi. 在店里买到拉普兰手工艺品。",
       "ko": "1987년에 문을 연 로바니에미의 선물 가게입니다. Aarikka와 무민 제품, 장신구, 직물, 먹거리를 온라인으로 살 수 있습니다. Rovaniemi.",
       "fr": "Boutique de cadeaux de Rovaniemi, fondée en 1987. Articles Aarikka et Moomin, bijoux, textiles et gourmandises en ligne. Rovaniemi.",
       "it": "Negozio di regali di Rovaniemi, fondato nel 1987. Prodotti Aarikka e Moomin, gioielli, tessuti e dolci online. Rovaniemi.",
@@ -7898,7 +7898,7 @@
       "ja": "レヴィ中心部にあるLappituoteの店舗。土産、ジビエとベリーの保存食、トナカイの角、プーッコナイフ、ククサを扱います。 レヴィ, Sirkka.",
       "es": "Tienda de Lappituote en el centro de Levi: recuerdos, conservas de caza y bayas, asta de reno, cuchillos puukko y tazas kuksa. Levi, Sirkka.",
       "pt-BR": "Loja da Lappituote no centro de Levi: lembranças, conservas de caça e frutas silvestres, chifre de rena, facas puukko e canecas kuksa. Levi, Sirkka.",
-      "zh-CN": "Lappituote 位于 Levi 市中心的门店：纪念品、野味与浆果罐头、驯鹿角制品、芬兰传统刀与木杯。 Levi, Sirkka.",
+      "zh-CN": "Lappituote 位于 Levi 市中心的门店：纪念品、野味与浆果罐头、驯鹿角制品、芬兰传统刀与木杯。 Levi, Sirkka. 在店里买到拉普兰手工艺品。",
       "ko": "레비 중심가에 있는 Lappituote 매장입니다. 기념품, 사냥고기와 베리 저장식품, 순록 뿔 제품, 푸코 칼, 쿡사 컵을 취급합니다. Levi, Sirkka.",
       "fr": "Magasin Lappituote au centre de Levi : souvenirs, conserves de gibier et de baies, bois de renne, couteaux puukko et tasses kuksa. Levi, Sirkka.",
       "it": "Negozio Lappituote nel centro di Levi: souvenir, conserve di selvaggina e frutti di bosco, corno di renna, coltelli puukko e tazze kuksa. Levi, Sirkka.",
@@ -7928,10 +7928,10 @@
       "en": "Handmade by Juha Reinola from genuine northern materials: reindeer antler, curly birch, kelo pine, reindeer leather and birch bark. Utsjoki.",
       "fi": "Juha Reinolan käsin tekemiä tuotteita aidoista pohjoisen raaka-aineista: poronsarvea, visakoivua, kelopuuta, poronnahkaa ja tuohta. Utsjoki.",
       "de": "Von Juha Reinola handgefertigt aus echten Materialien des Nordens: Rentiergeweih, Maserbirke, Kelo-Kiefer, Rentierleder und Birkenrinde. Utsjoki.",
-      "ja": "ユハ・レイノラが北欧の本物の素材から手作りする品々。トナカイの角、カーリーバーチ、ケロ材、トナカイ革、白樺の樹皮を使用。 ウツヨキ.",
+      "ja": "ユハ・レイノラが北欧の本物の素材から手作りする品々。トナカイの角、カーリーバーチ、ケロ材、トナカイ革、白樺の樹皮を使用。 ウツヨキ. ラップランドの工芸品を買える店を、店ごとに。",
       "es": "Hecho a mano por Juha Reinola con materiales auténticos del norte: asta de reno, abedul rizado, pino kelo, cuero de reno y corteza de abedul. Utsjoki.",
       "pt-BR": "Feito à mão por Juha Reinola com materiais autênticos do norte: chifre de rena, bétula encaracolada, pinho kelo, couro de rena e casca de bétula. Utsjoki.",
-      "zh-CN": "由 Juha Reinola 用北方的天然材料手工制作：驯鹿角、卷纹桦木、枯立松、驯鹿皮与桦树皮。 Utsjoki.",
+      "zh-CN": "由 Juha Reinola 用北方的天然材料手工制作：驯鹿角、卷纹桦木、枯立松、驯鹿皮与桦树皮。 Utsjoki. 在店里买到拉普兰手工艺品。",
       "ko": "유하 레이놀라가 북방의 진짜 재료로 손수 만듭니다. 순록 뿔, 컬리 자작나무, 켈로 소나무, 순록 가죽, 자작나무 껍질을 씁니다. Utsjoki.",
       "fr": "Fait main par Juha Reinola à partir de matériaux authentiques du Nord : bois de renne, bouleau ronceux, pin kelo, cuir de renne et écorce de bouleau. Utsjoki.",
       "it": "Fatto a mano da Juha Reinola con materiali autentici del nord: corno di renna, betulla riccia, pino kelo, pelle di renna e corteccia di betulla. Utsjoki.",
@@ -7995,11 +7995,11 @@
       "en": "LaplandGifts terms of service: site usage, affiliate disclosure, and shopping terms.",
       "fi": "LaplandGiftsin käyttöehdot: sivuston käyttö, affiliate-ilmoitus ja ostosehdot.",
       "de": "Nutzungsbedingungen von LaplandGifts: Nutzung der Website, Affiliate-Hinweis und Einkaufsbedingungen.",
-      "ja": "LaplandGiftsの利用規約：サイトの利用、アフィリエイト開示、ショッピング条件について。",
+      "ja": "LaplandGiftsの利用規約：サイトの利用条件、アフィリエイト開示、ショッピングに関する条件、そして当サイトの責任の範囲と制限について説明します。",
       "es": "Términos de servicio de LaplandGifts: uso del sitio, divulgación de afiliados y condiciones de compra.",
       "pt-BR": "Termos de serviço do LaplandGifts: uso do site, divulgação de afiliados e condições de compra.",
-      "zh-CN": "LaplandGifts 服务条款：网站使用、联盟披露与购物条款。",
-      "ko": "LaplandGifts 이용약관: 사이트 이용, 제휴 고지, 쇼핑 약관 안내.",
+      "zh-CN": "LaplandGifts 服务条款：网站的使用条件、联盟营销披露、购物与订单相关条款，以及我们承担责任的范围、相关限制与适用法律的详细说明。",
+      "ko": "LaplandGifts 이용약관: 사이트 이용 조건, 제휴 마케팅 고지, 쇼핑 관련 약관, 그리고 저희가 지는 책임의 범위와 한계를 설명합니다.",
       "fr": "Conditions d'utilisation de LaplandGifts: utilisation du site, divulgation d'affiliation et conditions d'achat.",
       "it": "Termini di servizio di LaplandGifts: utilizzo del sito, divulgazione di affiliazione e condizioni di acquisto.",
       "nl": "Servicevoorwaarden van LaplandGifts: gebruik van de site, affiliate-vermelding en winkelvoorwaarden.",
@@ -8029,11 +8029,11 @@
       "en": "LaplandGifts cookie policy: analytics consent, affiliate tracking, and how to manage your preferences.",
       "fi": "LaplandGiftsin evästekäytäntö: analytiikan suostumus, affiliate-seuranta ja asetusten hallinta.",
       "de": "Cookie-Richtlinie von LaplandGifts: Analytics-Einwilligung, Affiliate-Tracking und Verwaltung Ihrer Einstellungen.",
-      "ja": "LaplandGiftsのクッキーポリシー：アナリティクスへの同意、アフィリエイト計測、設定の管理方法について。",
+      "ja": "LaplandGiftsのクッキーポリシー：アナリティクスへの同意、アフィリエイトのトラッキング、保存期間、そして設定をいつでも変更・撤回する方法を説明します。",
       "es": "Política de cookies de LaplandGifts: consentimiento de analítica, seguimiento de afiliados y gestión de sus preferencias.",
       "pt-BR": "Política de cookies do LaplandGifts: consentimento de análises, rastreamento de afiliados e gerenciamento de preferências.",
-      "zh-CN": "LaplandGifts Cookie 政策：分析同意、联盟跟踪以及如何管理您的偏好设置。",
-      "ko": "LaplandGifts 쿠키 정책: 분석 동의, 제휴 트래킹, 환경설정 관리 방법 안내.",
+      "zh-CN": "LaplandGifts Cookie 政策：网站分析同意、联盟跟踪 Cookie、各类 Cookie 的保存时间，以及如何随时管理、更改或撤回您的偏好设置。",
+      "ko": "LaplandGifts 쿠키 정책: 분석 동의, 제휴 트래킹, 쿠키 보관 기간, 그리고 언제든지 환경설정을 변경하거나 철회하는 방법을 안내합니다.",
       "fr": "Politique relative aux cookies de LaplandGifts: consentement analytique, suivi d'affiliation et gestion de vos préférences.",
       "it": "Informativa sui cookie di LaplandGifts: consenso per le analisi, tracciamento di affiliazione e gestione delle preferenze.",
       "nl": "Cookiebeleid van LaplandGifts: analytics-toestemming, affiliate-tracking en het beheren van uw voorkeuren.",
@@ -8044,7 +8044,7 @@
   {
     "path": "/unsubscribe",
     "fallbackTitle": "Unsubscribe | LaplandGifts",
-    "fallbackDescription": "Enter your email address to remove yourself from our newsletter list.",
+    "fallbackDescription": "Enter your email address to remove yourself from our newsletter list. Unsubscribing takes effect immediately.",
     "fallbackTitleByLang": {
       "en": "Unsubscribe | LaplandGifts",
       "fi": "Peruuta tilaus | LaplandGifts",
@@ -8060,18 +8060,18 @@
       "sv": "Avsluta prenumeration | LaplandGifts"
     },
     "fallbackDescriptionByLang": {
-      "en": "Enter your email address to remove yourself from our newsletter list.",
-      "fi": "Anna sähköpostiosoitteesi ja poistamme sinut uutiskirjelistalta.",
+      "en": "Enter your email address to remove yourself from our newsletter list. Unsubscribing takes effect immediately.",
+      "fi": "Anna sähköpostiosoitteesi ja poistamme sinut uutiskirjelistalta. Poisto tulee voimaan heti.",
       "de": "Geben Sie Ihre E-Mail-Adresse ein, um sich aus unserem Newsletter auszutragen.",
-      "ja": "メールアドレスを入力すると、ニュースレターの配信リストから削除されます。",
+      "ja": "メールアドレスを入力すると、ニュースレターの配信リストから削除されます。手続きはすぐに反映され、費用はかかりません。気が変わったら、いつでも同じアドレスで再登録できます。",
       "es": "Introduzca su dirección de correo electrónico para darse de baja de nuestro boletín.",
-      "pt-BR": "Digite seu endereço de e-mail para sair da nossa lista de newsletter.",
-      "zh-CN": "请输入您的电子邮箱地址，即可从我们的电子报列表中退订。",
-      "ko": "뉴스레터 목록에서 이메일을 제거하려면 주소를 입력하세요.",
+      "pt-BR": "Digite seu endereço de e-mail para sair da nossa lista de newsletter. O cancelamento vale imediatamente.",
+      "zh-CN": "请输入您订阅时使用的电子邮箱地址，即可从我们的电子报列表中退订。退订会立即生效，不需要登录，之后您也可以随时用同一个邮箱重新订阅。如需帮助，请通过页面底部的联系方式联系我们。",
+      "ko": "뉴스레터 목록에서 이메일을 제거하려면 구독할 때 사용한 주소를 입력하세요. 해지는 즉시 적용되고 로그인이 필요 없으며, 언제든 같은 주소로 다시 신청할 수 있습니다.",
       "fr": "Entrez votre adresse e-mail pour vous retirer de notre liste de diffusion.",
       "it": "Inserisca il Suo indirizzo e-mail per rimuoversi dalla lista della newsletter.",
-      "nl": "Vul uw e-mailadres in om u af te melden van onze nieuwsbrief.",
-      "sv": "Ange din e-postadress för att ta bort dig från vår nyhetsbrevslista."
+      "nl": "Vul uw e-mailadres in om u af te melden van onze nieuwsbrief. De afmelding gaat direct in.",
+      "sv": "Ange din e-postadress för att ta bort dig från vår nyhetsbrevslista. Avregistreringen gäller direkt."
     },
     "legal": true
   }

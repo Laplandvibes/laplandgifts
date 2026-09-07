@@ -608,10 +608,20 @@ const productRoutes = PRODUCTS.map((product) => {
     const cjk = lang === 'ja' || lang === 'zh-CN'
     const withCat = catName ? (cjk ? `${withBrand}｜${catName}` : `${withBrand} – ${catName}`) : null
     const nameCat = catName ? (cjk ? `${name}｜${catName}` : `${name} – ${catName}`) : null
+    // Long names ("Finnish Flavours Premium Palalaku salmiakki 150 g") left no room for the
+    // category: try the name without its brand prefix, then without the pack weight, so ten
+    // locales do not fall back to one identical bare name.
+    const brandRe = new RegExp('^' + product.brand.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s+', 'i')
+    const noBrand = name.replace(brandRe, '')
+    const noWeight = noBrand.replace(/\s+\d+(?:[.,]\d+)?\s?(?:g|kg|ml|cl|l)\b\.?$/i, '')
+    const shortCats = catName
+      ? [noBrand, noWeight].filter((x, i, arr) => x && x !== name && arr.indexOf(x) === i).map((x) => (cjk ? `${x}｜${catName}` : `${x} – ${catName}`))
+      : []
     return {
       title: fitTitle([
         ...(withCat ? [`${withCat} | ${BRAND}`, withCat] : []),
         ...(nameCat ? [`${nameCat} | ${BRAND}`, nameCat] : []),
+        ...shortCats.flatMap((x) => [`${x} | ${BRAND}`, x]),
         `${withBrand} | ${BRAND}`, `${name} | ${BRAND}`, withBrand, name,
       ]),
       description: fitDescription(leadingSentences(description), PRODUCT_TAILS[lang]),
@@ -779,11 +789,18 @@ const boutiqueTownRoutes = townsWithPages().map((town) =>
         title: `${t.townNames[town]}: ${t.hubTitle} | LaplandGifts`,
         // [LV-DESC-MIN 2026-09-06] the bare count line was 42–46 characters; lead with the
         // hub sentence like /boutiques does (the prerender clamps anything over 160).
-        description: `${t.hubLead} ${t.count(bs.length)}: ${bs.map((b) => b.name).join(', ')}.`,
+        description: extendBoutiqueDescription(`${t.hubLead} ${t.count(bs.length)}: ${bs.map((b) => b.name).join(', ')}.`, t),
       }
     }),
   ),
 )
+
+function extendBoutiqueDescription(desc, t) {
+  let out = desc
+  if (out.length < 70 && t.hubLead) out = `${out} ${t.hubLead}`
+  if (out.length < 70 && t.hubIntro) { for (const sen of sentences(t.hubIntro)) { if (out.length >= 70) break; if (sen && !out.includes(sen) && (out.length + sen.length + 1) <= DESC_MAX) out = `${out} ${sen}` } }
+  return out.length > DESC_MAX ? clampWords(out, DESC_MAX) : out
+}
 
 const boutiqueRoutes = BOUTIQUES.map((b) =>
   routeByLang(
@@ -794,7 +811,9 @@ const boutiqueRoutes = BOUTIQUES.map((b) =>
       const localized = boutiqueTitleBase(b.name, t.townNames[b.town], l)
       return {
         title: fitTitle([`${localized} | LaplandGifts`, localized, `${b.name}, ${t.townNames[b.town]} | LaplandGifts`]),
-        description: `${BOUTIQUE_COPY[l][b.slug].description} ${place}.`,
+        // [LV-DESC-MIN 2026-09-07] ja/zh/ko boutique blurbs are 30–50 characters; below 70 add the
+        // boutique hub's own lead sentence and, if still short, the first sentence of its intro.
+        description: extendBoutiqueDescription(`${BOUTIQUE_COPY[l][b.slug].description} ${place}.`, t),
       }
     }),
   ),

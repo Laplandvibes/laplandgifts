@@ -204,7 +204,7 @@ const ptBR: ChromeCopy = {
   unsubscribe: {
     title: 'Cancelar inscrição | LaplandGifts',
     h1: 'Cancelar inscrição',
-    body: 'Digite seu endereço de e-mail para sair da nossa lista de newsletter.',
+    body: 'Digite seu endereço de e-mail para sair da nossa lista de newsletter. O cancelamento vale imediatamente.',
     successH1: 'Inscrição cancelada',
     successBody: 'Você não vai receber mais e-mails nossos. Sentiremos sua falta.',
     submit: 'Cancelar inscrição',

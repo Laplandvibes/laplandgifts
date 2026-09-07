@@ -204,7 +204,7 @@ const nl: ChromeCopy = {
   unsubscribe: {
     title: 'Uitschrijven | LaplandGifts',
     h1: 'Uitschrijven',
-    body: 'Vul uw e-mailadres in om u af te melden van onze nieuwsbrief.',
+    body: 'Vul uw e-mailadres in om u af te melden van onze nieuwsbrief. De afmelding gaat direct in.',
     successH1: 'U bent uitgeschreven',
     successBody: 'U ontvangt geen e-mails meer van ons. Jammer dat u gaat.',
     submit: 'Uitschrijven',

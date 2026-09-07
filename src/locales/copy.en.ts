@@ -204,7 +204,7 @@ const en: ChromeCopy = {
   unsubscribe: {
     title: 'Unsubscribe | LaplandGifts',
     h1: 'Unsubscribe',
-    body: 'Enter your email address to remove yourself from our newsletter list.',
+    body: 'Enter your email address to remove yourself from our newsletter list. Unsubscribing takes effect immediately.',
     successH1: "You've been unsubscribed",
     successBody: "You won't receive any more emails from us. We're sorry to see you go.",
     submit: 'Unsubscribe',
