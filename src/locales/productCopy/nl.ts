@@ -1233,7 +1233,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'makia-mari-balaclava': {
     name: 'Makia Mari gebreide bivakmuts',
     description:
-      'Gebreide bivakmuts van een mix van wol, polyester, alpaca en elastaan. Bedekt oren, hals en wangen in één keer, en dat is het verschil tussen een sneeuwscootertocht en een sneeuwscootertocht die je om de verkeerde reden onthoudt.',
+      'Gebreide bivakmuts van een mix van wol, polyester, alpaca en elastaan. Bedekt oren, hals en wangen in één keer, en dat is het verschil tussen een sneeuwscootertocht en een sneeuwscootertocht die u om de verkeerde reden onthoudt.',
     specs: [
       'Mix van wol, polyester, alpaca en elastaan',
       'Eén maat',
@@ -1242,7 +1242,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'halti-pehmee-merino-beanie': {
     name: 'Halti Pehmee merino muts',
     description:
-      'Stadsmuts van 100 procent merinowol met dubbele boord, gemaakt in Finland. Halti noemt hem Pehmee, zacht, en het is de muts voor dagen waarop een skimuts eruit zou zien alsof je verkeerd bent afgeslagen.',
+      'Stadsmuts van 100 procent merinowol met dubbele boord, gemaakt in Finland. Halti noemt hem Pehmee, zacht, en het is de muts voor dagen waarop een skimuts eruit zou zien alsof u verkeerd bent afgeslagen.',
     specs: [
       '100 % merinowol',
       'Gemaakt in Finland',
@@ -1410,7 +1410,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-halva-salmiakkikalat': {
     name: 'Halva Salmiakkikalat zoute dropvisjes 230 g',
     description:
-      'Visvormige salmiaksnoepjes van Halva, 230 gram, de zak die in elk Fins dashboardkastje ligt. Stevige beet, intense zoute drop, en het eerste wat je een bezoeker geeft die zegt echt Finland te willen proeven.',
+      'Visvormige salmiaksnoepjes van Halva, 230 gram, de zak die in elk Fins dashboardkastje ligt. Stevige beet, intense zoute drop, en het eerste wat u een bezoeker geeft die zegt echt Finland te willen proeven.',
     specs: [
       '230 g',
     ],
@@ -1457,7 +1457,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'sk-tyrkisk-peber-sour-foams': {
     name: 'Fazer Tyrkisk Peber Sour Foams schuimsnoepjes 150 g',
     description:
-      'Zachte schuimsnoepjes met een milde Tyrkisk Peber-hitte en zure smaken van kiwi-aardbei en citroen-limoen, 150 gram. Een zachtere weg naar de peperdropfamilie, en de zak die je in gemengd gezelschap als eerste opent.',
+      'Zachte schuimsnoepjes met een milde Tyrkisk Peber-hitte en zure smaken van kiwi-aardbei en citroen-limoen, 150 gram. Een zachtere weg naar de peperdropfamilie, en de zak die u in gemengd gezelschap als eerste opent.',
     specs: [
       '150 g',
     ],
@@ -1567,7 +1567,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'rj-yrttipaja-chaga-powder': {
     name: 'Yrttipaja chagapoeder 35 g',
     description:
-      'Gemalen chaga, de zwarte zwam die op berkenstammen groeit, om als thee te zetten: een eetlepel per liter water, minstens tien minuten laten trekken op het vuur en zeven. 35 gram, de goedkoopste manier om pakuri te proberen voor je brokken koopt.',
+      'Gemalen chaga, de zwarte zwam die op berkenstammen groeit, om als thee te zetten: een eetlepel per liter water, minstens tien minuten laten trekken op het vuur en zeven. 35 gram, de goedkoopste manier om pakuri te proberen voordat u brokken koopt.',
     specs: [
       '35 g',
       '1 eetlepel per liter water, minstens 10 minuten zachtjes koken en zeven',
