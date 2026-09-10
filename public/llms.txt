@@ -22,4 +22,4 @@ English (default, no prefix), Finnish (/fi/), Swedish (/sv/), German (/de/), Spa
 
 - Hub: https://laplandvibes.com/
 - Sitemap: https://laplandgifts.com/sitemap.xml
-- Contact: info@laplandgifts.com
+- Contact: info@laplandvibes.com
