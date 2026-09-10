@@ -58,7 +58,7 @@ export default function Hero() {
       />
       <div className="absolute inset-0 bg-night/35 lg:hidden" aria-hidden="true" />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 md:py-28">
-        <div className="mx-auto max-w-2xl text-center lg:mx-0 lg:text-left">
+        <div className="mx-auto max-w-2xl xl:max-w-4xl text-center lg:mx-0 lg:text-left">
           <span className="text-sm font-medium uppercase tracking-widest text-amber">
             {s.home.heroKicker}
           </span>
