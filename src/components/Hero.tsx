@@ -82,7 +82,7 @@ export default function Hero() {
               pikselin ruudulle mutta ei 360:lle eikä 320:lle: suomen
               "suomalaiset lahjat" katkesi kolmannelle riville yksinäiseksi
               sanaksi. Mitattu selaimesta kymmenellä leveydellä, ei arvattu. */}
-          <h1 className="mt-5 font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl">
+          <h1 className="mt-5 font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)]">
             {s.home.heroTitle} <span className="block text-vibe-pink drop-shadow-[0_0_40px_rgba(236,72,153,0.8)]">{s.home.heroTitleAccent}</span>
           </h1>
           <p className="mt-6 max-w-xl xl:max-w-3xl text-lg leading-relaxed text-white/85 md:text-xl xl:text-2xl">
