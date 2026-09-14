@@ -464,7 +464,7 @@ export default function Specialties() {
             ))}
             <Link
               to={to('/shipping')}
-              className="mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-amber hover:underline"
+              className="lv-tap mt-4 inline-flex items-center gap-1.5 text-sm font-semibold text-amber hover:underline"
             >
               {t.shippingLink}
               <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -477,7 +477,7 @@ export default function Specialties() {
               <li>
                 <Link
                   to={to('/treats')}
-                  className="inline-flex items-center gap-1.5 font-semibold text-amber hover:underline"
+                  className="lv-tap inline-flex items-center gap-1.5 font-semibold text-amber hover:underline"
                 >
                   {t.moreTreats}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -486,7 +486,7 @@ export default function Specialties() {
               <li>
                 <Link
                   to={to('/gift-guides')}
-                  className="inline-flex items-center gap-1.5 font-semibold text-amber hover:underline"
+                  className="lv-tap inline-flex items-center gap-1.5 font-semibold text-amber hover:underline"
                 >
                   {t.moreGuides}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -495,7 +495,7 @@ export default function Specialties() {
               <li>
                 <Link
                   to={to('/superfoods')}
-                  className="inline-flex items-center gap-1.5 font-semibold text-amber hover:underline"
+                  className="lv-tap inline-flex items-center gap-1.5 font-semibold text-amber hover:underline"
                 >
                   {t.moreSuperfoods}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />

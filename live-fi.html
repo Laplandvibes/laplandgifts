@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="fi-FI">
+  <head>
+    <!-- 🔴 Merkistö ja viewport ovat headin ENSIMMÄISET tagit.
+         Viewport oli aiemmin vasta rivillä 122, eli kaikkien skriptilohkojen
+         jälkeen. Se rikkoi heron esilatauksen mitattavasti: esilatauslinkki
+         luodaan skriptissä ennen viewport-tagia, joten `imagesizes="100vw"`
+         laskettiin selaimen oletusleveyttä (980 px) vasten eikä puhelimen
+         390 pikseliä vasten. Selain esilatasi siis 2400 pikselin heron
+         jokaiselle puhelimelle, vaikka srcset tarjosi 800 pikselin version
+         (85 kt vs 15 kt). Todennettu Chromessa: sama sivu ilman
+         esilatausskriptiä valitsi hero-shop-800.avif:n.
+         Merkistö kuuluu samasta syystä ensimmäiseksi: ylhäällä olevissa
+         skripteissä on japanin- ja kiinankielisiä otsikoita, ja ne
+         jäsennettiin ennen kuin dokumentin merkistö oli julistettu. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LV-LOCALE-TITLE (managed by scripts/inject_locale_titles.mjs) -->
+    <script>
+      (function () {
+        try {
+          // 🔴 Sama taulukko on scripts/build-routes-json.mjs:n HOME-lohkossa.
+          // Root-reitillä on kaksi metalähdettä: tämä SPA-kuori ja prerenderin
+          // scripts/routes.json. Generaattori vertaa näitä ja kaatuu, jos ne
+          // eroavat, joten muuta molemmat tai älä kumpaakaan.
+          var T = {"en":"Finnish gifts and Lapland souvenirs | LaplandGifts","fi":"Lapin tuliaiset ja suomalaiset lahjat | LaplandGifts","de":"LaplandGifts: finnisches Design und Geschenke aus Lappland","ja":"フィンランドのお土産・ラップランドのギフト | LaplandGifts","es":"LaplandGifts: diseño finlandés y artesanía lapona","pt-br":"Presentes finlandeses e souvenirs da Lapônia | LaplandGifts","zh-cn":"LaplandGifts：芬兰设计与拉普兰手工艺，直送到家","kr":"핀란드 기념품과 라플란드 선물 | LaplandGifts","fr":"Souvenirs de Laponie et artisanat finlandais | LaplandGifts","it":"LaplandGifts: design finlandese e artigianato lappone","nl":"LaplandGifts: Fins design en Laplands ambacht thuisbezorgd","sv":"LaplandGifts: finsk design och lappländskt hantverk"};
+          var path = location.pathname || '/';
+          var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', br: 'pt-br', cn: 'zh-cn', kr: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv' };
+          // 🔴 Vain kielijuuret. Aiemmin tämä osui myös alasivuihin ja
+          // ylikirjoitti prerenderin kirjoittaman sivukohtaisen <title>:n
+          // etusivun otsikolla: JavaScriptin ajava indeksoija näki 300
+          // sivulla 12 otsikkoa. Alasivuilla kuoressa on jo oikea otsikko.
+          var loc = null;
+          if (path === '/') loc = 'en';
+          else {
+            for (var p in map) {
+              if (path === '/' + p || path === '/' + p + '/') { loc = map[p]; break; }
+            }
+          }
+          if (loc && T[loc]) document.title = T[loc];
+        } catch (e) { /* fail silent */ }
+      })();
+    </script>
+    <!-- /LV-LOCALE-TITLE -->
+    <!-- LV-SYNC-LOCALE-REDIRECT (managed by scripts/inject_sync_redirect.mjs) -->
+    <script>
+      (function () {
+        try {
+          var path = location.pathname || '/';
+          // Already on a locale prefix? — never override
+          var prefixes = ['/fi','/de','/ja','/es','/br','/cn','/kr','/fr','/it','/nl','/sv'];
+          for (var i = 0; i < prefixes.length; i++) {
+            if (path === prefixes[i] || path.indexOf(prefixes[i] + '/') === 0) return;
+          }
+          // Only redirect from bare root or sub-pages without a locale prefix
+          var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', 'pt-br': 'br', 'zh-cn': 'cn', ko: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv' };
+          var stored = null;
+          try { stored = localStorage.getItem('lv_locale_choice'); } catch (e) {}
+          var target = null;
+          if (stored) {
+            var k = stored.toLowerCase();
+            if (map[k]) target = '/' + map[k];
+            else if (k === 'en') return; // explicit EN choice — stay
+          }
+          if (!target) {
+            var langs = navigator.languages || [navigator.language || 'en'];
+            for (var j = 0; j < langs.length; j++) {
+              var l = (langs[j] || '').toLowerCase();
+              if (l.indexOf('en') === 0) return; // EN browser — stay on /
+              if (l.indexOf('fi') === 0) { target = '/fi'; break; }
+              if (l.indexOf('de') === 0) { target = '/de'; break; }
+              if (l.indexOf('ja') === 0) { target = '/ja'; break; }
+              if (l.indexOf('es') === 0) { target = '/es'; break; }
+              if (l.indexOf('pt') === 0) { target = '/br'; break; }
+              if (l.indexOf('zh') === 0) { target = '/cn'; break; }
+              if (l.indexOf('ko') === 0) { target = '/kr'; break; }
+              if (l.indexOf('fr') === 0) { target = '/fr'; break; }
+              if (l.indexOf('it') === 0) { target = '/it'; break; }
+              if (l.indexOf('nl') === 0) { target = '/nl'; break; }
+              if (l.indexOf('sv') === 0) { target = '/sv'; break; }
+            }
+          }
+          if (!target) return;
+          var dest = path === '/' ? target : target + path;
+          if (location.search) dest += location.search;
+          if (location.hash) dest += location.hash;
+          location.replace(dest);
+        } catch (err) { /* fail silent — fall through to React-based redirect */ }
+      })();
+    </script>
+    <!-- /LV-SYNC-LOCALE-REDIRECT -->
+
+    <!-- Fontit: yhteys auki heti ja tyylitiedosto rinnakkain sivun kanssa.
+         Aiemmin sama pyyntö lähti src/index.css:n @importista, jolloin selain
+         ehti ladata ensin koko sivuston CSS:n ja vasta sitten fonttitaulun ja
+         vasta sitten fontit — kolme peräkkäistä hyppyä ennen ensimmäistä
+         tekstiruutua. gstatic tarvitsee crossoriginin, koska itse fonttitiedosto
+         haetaan CORS-tilassa. -->
+
+    <!-- Heron esilataus, vain kielijuurilla. 🔴 Prerender monistaa tämän kuoren
+         jokaiselle 336 sivulle, joten staattisena preload-tagina tämä hakisi
+         87 kt:n hero-kuvan myös kategoria- ja tuotesivuilla, joilla heroa ei
+         ole lainkaan. Skripti ajetaan jäsennyksen aikana ennen sovelluskoodia,
+         joten lataus alkaa yhtä aikaisin kuin staattisella tagilla. Sama
+         polkulogiikka kuin yllä olevassa LV-LOCALE-TITLE-lohkossa. -->
+    <script>
+      (function () {
+        try {
+          var path = location.pathname || '/';
+          var roots = ['/', '/fi', '/de', '/ja', '/es', '/br', '/cn', '/kr', '/fr', '/it', '/nl', '/sv'];
+          var isRoot = false;
+          for (var i = 0; i < roots.length; i++) {
+            if (path === roots[i] || path === roots[i] + '/') { isRoot = true; break; }
+          }
+          if (!isRoot) return;
+          var l = document.createElement('link');
+          l.rel = 'preload';
+          l.as = 'image';
+          l.type = 'image/avif';
+          // 🔴 Esilatauksen on tarjottava SAMA srcset ja sizes kuin Hero.tsx:n
+          // <source>-tagin. Pelkkä href='/images/hero-shop.avif' esilatasi
+          // 2400 pikselin tiedoston, minkä jälkeen <img> valitsi ruudulle
+          // sopivan pienemmän version — eli kuva ladattiin kahdesti ja
+          // ensimmäinen lataus oli se raskain. Nämä leveydet tulevat
+          // scripts/build-image-variants.mjs:stä; jos ne muuttuvat, muuta
+          // molemmat.
+          l.setAttribute(
+            'imagesrcset',
+            '/images/hero-shop-800.avif 800w, /images/hero-shop-1200.avif 1200w, /images/hero-shop-1600.avif 1600w, /images/hero-shop.avif 2400w'
+          );
+          l.setAttribute('imagesizes', '100vw');
+          l.href = '/images/hero-shop.avif';
+          l.setAttribute('fetchpriority', 'high');
+          document.head.appendChild(l);
+        } catch (e) { /* fail silent */ }
+      })();
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=20260712" />
+    <link rel="alternate icon" href="/favicon.ico?v=20260712" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png?v=20260712" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta name="fcaeb1ff317969b" content="eef17352895674f08513a89d315fa5f6" />
+    <title>Lapin tuliaiset ja suomalaiset lahjat | LaplandGifts</title>
+    <meta name="description" content="Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka ne lähettävät." />
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Lapin tuliaiset ja suomalaiset lahjat | LaplandGifts" />
+    <meta property="og:description" content="Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka ne lähettävät." />
+    <meta property="og:url" content="https://laplandgifts.com/fi/" />
+    <meta property="og:image" content="https://laplandgifts.com/og-default.jpg?v=20260812" />
+    <meta property="og:site_name" content="LaplandGifts" />
+    <meta property="og:locale" content="fi_FI" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Lapin tuliaiset ja suomalaiset lahjat | LaplandGifts" />
+    <meta name="twitter:description" content="Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka ne lähettävät." />
+    <meta name="twitter:image" content="https://laplandgifts.com/og-default.jpg?v=20260812" />
+
+    <!-- GA4 with Consent Mode v2 — default DENIED until CookieBanner accepts -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('consent', 'default', {
+        analytics_storage: 'denied',
+        ad_storage: 'denied',
+        /* 🔴 Nama kaksi puuttuivat 12.8.2026 asti, vaikka laplandstoressa ne
+           olivat. Google suosittaa ETA-alueella kaikkia nelja; ilman niita
+           mainosdatan kaytto ja personointi jaavat oletusarvoonsa. */
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        wait_for_update: 500
+      });
+      gtag('js', new Date());
+      gtag('config', 'G-485H5Y4LHP', {
+        linker: {
+          domains: [
+            'laplandvibes.com',
+            'lapland.blog',
+            'laplandactivities.fi',
+            'laplandbars.com',
+            'laplandcarrental.com',
+            'laplandchristmas.com',
+            'laplanddeals.com',
+            'laplanddining.com',
+            'laplandfood.com',
+            'laplandgifts.com',
+            'laplandhoteldeals.com',
+            'laplandhuskysafaris.com',
+            'laplandkids.com',
+            'laplandluxuryvillas.com',
+            'laplandnature.com',
+            'laplandnightlife.com',
+            'laplandskiresorts.com',
+            'laplandsnowmobile.com',
+            'laplandstays.com',
+            'laplandstore.fi',
+            'laplandtours.online',
+            'laplandtransport.com',
+            'laplandvisit.com',
+            'laplandweddings.online',
+            'laplandwellness.com',
+            'laplandwork.com',
+            'stayinlapland.com'
+          ]
+        }
+      });
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-485H5Y4LHP"></script>
+    <!-- 🔴 GetYourGuiden kumppanianalytiikka EI ole enää täällä. Mitattu
+         12.8.2026: tämä tagi latautui ehdoitta ja lähetti GYG:lle kutsun
+         partner_id:llä ja sivun URLilla myös silloin, kun evästesuostumus oli
+         HYLÄTTY — ja kirjoitti partner_id:n localStorageen. Skripti ladataan
+         nyt vasta hyväksynnän jälkeen, ks. src/lib/consent.ts. -->
+    <!-- Umami Cloud — cookieless analytics, no consent gate needed (writes nothing to the browser) -->
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="82a192dc-23ba-471a-bda5-d36a836331ca"></script>
+    <script type="module" crossorigin src="/static/c3/index-D-hhLqbh.js"></script>
+    <link rel="modulepreload" crossorigin href="/static/c3/jsx-runtime-DotQH8AP.js">
+    <link rel="modulepreload" crossorigin href="/static/c3/createLucideIcon-COLfnycH.js">
+    <link rel="modulepreload" crossorigin href="/static/c3/arrow-right-B4D9Ly-v.js">
+    <link rel="modulepreload" crossorigin href="/static/c3/copy.en-BGiHG0gw.js">
+    <link rel="stylesheet" crossorigin href="/static/c3/index-D2xsACuu.css">
+      <link rel="canonical" href="https://laplandgifts.com/fi/" />
+    <link rel="alternate" hreflang="en" href="https://laplandgifts.com/" />
+    <link rel="alternate" hreflang="fi" href="https://laplandgifts.com/fi/" />
+    <link rel="alternate" hreflang="de" href="https://laplandgifts.com/de/" />
+    <link rel="alternate" hreflang="ja" href="https://laplandgifts.com/ja/" />
+    <link rel="alternate" hreflang="es" href="https://laplandgifts.com/es/" />
+    <link rel="alternate" hreflang="pt-BR" href="https://laplandgifts.com/br/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://laplandgifts.com/cn/" />
+    <link rel="alternate" hreflang="ko" href="https://laplandgifts.com/kr/" />
+    <link rel="alternate" hreflang="fr" href="https://laplandgifts.com/fr/" />
+    <link rel="alternate" hreflang="it" href="https://laplandgifts.com/it/" />
+    <link rel="alternate" hreflang="nl" href="https://laplandgifts.com/nl/" />
+    <link rel="alternate" hreflang="sv" href="https://laplandgifts.com/sv/" />
+    <link rel="alternate" hreflang="x-default" href="https://laplandgifts.com/" />
+      <meta name="twitter:site" content="@laplandvibes" />
+  </head>
+  <body>
+    <div id="root"><div id="lv-prerender" style="max-width:52rem;margin:0 auto;padding:12vh 1.5rem 4rem;color:inherit"><style>#lv-prerender a{color:inherit;text-decoration:none}</style><h1 style="font-family:var(--font-heading,inherit);font-size:clamp(1.75rem,5vw,2.75rem);line-height:1.15;margin:0 0 1rem;font-weight:700;letter-spacing:.01em">Lapin tuliaiset ja suomalaiset lahjat | LaplandGifts</h1><p style="font-size:1.05rem;line-height:1.6;margin:0 0 3rem;opacity:.85">Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka ne lähettävät.</p><nav aria-label="LaplandGifts pages" style="font-size:.8rem;opacity:.55;line-height:1.9"><ul style="list-style:none;padding:0;margin:.5rem 0 0;display:flex;flex-wrap:wrap;gap:.25rem 1.25rem"><li><a href="https://laplandgifts.com/fi/design/">Suomalainen design</a></li><li><a href="https://laplandgifts.com/fi/clothing/">Suomalaiset vaatteet ja neuleet</a></li><li><a href="https://laplandgifts.com/fi/handicrafts/">Suomalaiset käsityöt</a></li><li><a href="https://laplandgifts.com/fi/treats/">Suomalaiset herkut</a></li><li><a href="https://laplandgifts.com/fi/superfoods/">Marjajauheet ja superfoodit</a></li><li><a href="https://laplandgifts.com/fi/merch/">Lapland-paidat ja merch</a></li><li><a href="https://laplandgifts.com/fi/experiences/">Lapin elämyslahjat</a></li><li><a href="https://laplandgifts.com/fi/theme/moomin/">Muumit</a></li><li><a href="https://laplandgifts.com/fi/theme/arctic/">Lapin luonto</a></li><li><a href="https://laplandgifts.com/fi/theme/sauna/">Sauna</a></li><li><a href="https://laplandgifts.com/fi/brands/">Brändit</a></li><li><a href="https://laplandgifts.com/fi/luxury/">Lapin ylellisyys</a></li><li><a href="https://laplandgifts.com/fi/brand/aarikka/">Aarikka</a></li><li><a href="https://laplandgifts.com/fi/brand/foodin/">Foodin</a></li><li><a href="https://laplandgifts.com/fi/brand/kuivalihakundi/">Kuivalihakundi</a></li><li><a href="https://laplandgifts.com/fi/brand/halti/">Halti</a></li><li><a href="https://laplandgifts.com/fi/brand/north-outdoor/">North Outdoor</a></li><li><a href="https://laplandgifts.com/fi/brand/marttiini/">Marttiini</a></li><li><a href="https://laplandgifts.com/fi/brand/kupilka/">Kupilka</a></li><li><a href="https://laplandgifts.com/fi/brand/nordicbuddies/">Nordicbuddies</a></li><li><a href="https://laplandgifts.com/fi/brand/marimekko/">Marimekko</a></li><li><a href="https://laplandgifts.com/fi/brand/rento/">Rento</a></li><li><a href="https://laplandgifts.com/fi/brand/lapuan-kankurit/">Lapuan Kankurit</a></li><li><a href="https://laplandgifts.com/fi/brand/iittala/">Iittala</a></li><li><a href="https://laplandgifts.com/fi/brand/arctic-warriors/">Arctic Warriors</a></li><li><a href="https://laplandgifts.com/fi/brand/makia/">Makia</a></li><li><a href="https://laplandgifts.com/fi/brand/pentik/">Pentik</a></li><li><a href="https://laplandgifts.com/fi/brand/arabia/">Arabia</a></li><li><a href="https://laplandgifts.com/fi/brand/fazer/">Fazer</a></li><li><a href="https://laplandgifts.com/fi/brand/moomin/">Moomin</a></li><li><a href="https://laplandgifts.com/fi/brand/wild-about-lapland/">Wild About Lapland</a></li><li><a href="https://laplandgifts.com/fi/brand/meritalo/">Meritalo</a></li><li><a href="https://laplandgifts.com/fi/brand/nordqvist/">Nordqvist</a></li><li><a href="https://laplandgifts.com/fi/brand/puhdistamo/">Puhdistamo</a></li><li><a href="https://laplandgifts.com/fi/brand/emendo/">Emendo</a></li><li><a href="https://laplandgifts.com/fi/brand/moomin-arabia/">Moomin Arabia</a></li><li><a href="https://laplandgifts.com/fi/brand/kaino-drinks/">KAINO Drinks</a></li><li><a href="https://laplandgifts.com/fi/brand/omega7/">Omega7</a></li><li><a href="https://laplandgifts.com/fi/brand/kaapa-mushrooms/">Kääpä Mushrooms</a></li><li><a href="https://laplandgifts.com/fi/brand/halva/">Halva</a></li><li><a href="https://laplandgifts.com/fi/brand/kilpissafarit/">Kilpissafarit</a></li><li><a href="https://laplandgifts.com/fi/brand/kaavi-porcini/">Kaavi Porcini</a></li><li><a href="https://laplandgifts.com/fi/brand/tammer/">Tammer</a></li><li><a href="https://laplandgifts.com/fi/brand/finlayson/">Finlayson</a></li><li><a href="https://laplandgifts.com/fi/brand/finnish-flavours/">Finnish Flavours</a></li><li><a href="https://laplandgifts.com/fi/brand/aurora-borealis/">Aurora Borealis</a></li><li><a href="https://laplandgifts.com/fi/brand/fiskars/">Fiskars</a></li><li><a href="https://laplandgifts.com/fi/brand/arctic-power-berries/">Arctic Power Berries</a></li><li><a href="https://laplandgifts.com/fi/brand/golden-crown-levin-iglut/">Golden Crown Levin Iglut</a></li><li><a href="https://laplandgifts.com/fi/brand/sisu/">Sisu</a></li><li><a href="https://laplandgifts.com/fi/brand/kultakuume-com/">Kultakuume.com</a></li><li><a href="https://laplandgifts.com/fi/brand/muurla/">Muurla</a></li><li><a href="https://laplandgifts.com/fi/brand/novita/">Novita</a></li><li><a href="https://laplandgifts.com/fi/brand/mikebon/">Mikebon</a></li><li><a href="https://laplandgifts.com/fi/brand/aromageddon/">Aromageddon</a></li><li><a href="https://laplandgifts.com/fi/brand/leijona/">Leijona</a></li><li><a href="https://laplandgifts.com/fi/product/moomin-mystical-forest-wool-throw/">Muumi Mystical Forest -villatorkkupeitto 130 x 170 cm</a></li><li><a href="https://laplandgifts.com/fi/product/iittala-aalto-vase-160/">Iittala Alvar Aalto -maljakko 160 mm, kirkas</a></li><li><a href="https://laplandgifts.com/fi/product/iittala-kivi-candleholder/">Iittala Kivi -kynttilälyhty 60 mm, petrolinvihreä</a></li><li><a href="https://laplandgifts.com/fi/product/marimekko-unikko-mug/">Marimekko Unikko -muki 25 cl</a></li><li><a href="https://laplandgifts.com/fi/product/aarikka-prinsessa-candleholder/">Aarikka Prinsessa-kynttilänjalka</a></li><li><a href="https://laplandgifts.com/fi/product/aarikka-pore-glass-vase/">Aarikka Pore-lasimaljakko 16 cm, tummanvihreä</a></li><li><a href="https://laplandgifts.com/fi/product/halti-tokoi-dx-jacket/">Halti Tokoi DX -kuoritakki, miesten</a></li><li><a href="https://laplandgifts.com/fi/product/makia-merino-beanie/">Makia Merino -pipo</a></li><li><a href="https://laplandgifts.com/fi/product/makia-aurora-hoodie/">Makia Aurora -huppari</a></li><li><a href="https://laplandgifts.com/fi/product/halti-kroka-mitten/">Halti Kroka II -lapanen</a></li><li><a href="https://laplandgifts.com/fi/product/halti-tunturit-ski-socks/">Halti Tunturit -hiihtosukat</a></li><li><a href="https://laplandgifts.com/fi/product/north-outdoor-huuru-beanie/">North Outdoor Huuru -merinopipo</a></li><li><a href="https://laplandgifts.com/fi/product/north-outdoor-pyry-scarf/">North Outdoor Pyry -merinokaulaliina</a></li><li><a href="https://laplandgifts.com/fi/product/north-outdoor-honka-jumper/">North Outdoor Honka -merinoneulepusero, miesten</a></li><li><a href="https://laplandgifts.com/fi/product/marttiini-lapinleuku-255/">Marttiini Lapinleuku 255</a></li><li><a href="https://laplandgifts.com/fi/product/marttiini-napapiirin-puukko/">Marttiini Napapiirin puukko</a></li><li><a href="https://laplandgifts.com/fi/product/marttiini-ilves-131/">Marttiini Ilves 131</a></li><li><a href="https://laplandgifts.com/fi/product/kupilka-classic-cup-21/">Kupilka 21 -juomamuki 2,1 dl</a></li><li><a href="https://laplandgifts.com/fi/product/kupilka-bowl-55/">Kupilka 55 -retkikulho 5,5 dl</a></li><li><a href="https://laplandgifts.com/fi/product/kupilka-cutlery-set/">Kupilka-aterinsetti</a></li><li><a href="https://laplandgifts.com/fi/product/lapuan-kankurit-poro-towel/">Lapuan Kankurit PORO-pellavapyyhe 46 x 70 cm</a></li><li><a href="https://laplandgifts.com/fi/product/lapuan-kankurit-kaamos-blanket/">Lapuan Kankurit KAAMOS-villahuopa 100 x 150 cm</a></li><li><a href="https://laplandgifts.com/fi/product/pentik-posio-mug/">Pentik Posio-muki 0,3 l</a></li><li><a href="https://laplandgifts.com/fi/product/pentik-tunturiretki-studio-dish/">Pentik Tunturiretki Winter Studio -kolmiovati syvä 19 cm</a></li><li><a href="https://laplandgifts.com/fi/product/kuivalihakundi-poro-jerky/">Kuivalihakundi Poro-Jerky Original 2 x 20 g</a></li><li><a href="https://laplandgifts.com/fi/product/finnish-flavours-palalaku-salmiakki/">Finnish Flavours Premium Palalaku salmiakki 150 g</a></li><li><a href="https://laplandgifts.com/fi/product/meritalo-tyrnihillo/">Meritalo Suomalainen tyrnihillo 310 g</a></li><li><a href="https://laplandgifts.com/fi/product/kuivalihakundi-poro-jerky-200g/">Kuivalihakundi Poro-Jerky Original 200 g</a></li><li><a href="https://laplandgifts.com/fi/product/kuivalihakundi-beef-jerky-smoked/">Kuivalihakundi Beef Jerky Smoked 40 g</a></li><li><a href="https://laplandgifts.com/fi/product/fazer-geisha-chocolate-bar/">Fazer Geisha hasselpähkinänougat-suklaalevy 121 g</a></li><li><a href="https://laplandgifts.com/fi/product/nordqvist-moomin-forest-berry-tea/">Nordqvist Muumi metsämarjainen hibiskustee, 20 pussia</a></li><li><a href="https://laplandgifts.com/fi/product/nordqvist-cranberry-toffee-tea/">Nordqvist Karpalo-Suolakinuski-pussitee, 20 pussia</a></li><li><a href="https://laplandgifts.com/fi/product/moomin-wild-blueberry-coffee/">Moomin Muumipeikko Villimustikka-kahvi 250 g</a></li><li><a href="https://laplandgifts.com/fi/product/moomin-lingonberry-blueberry-dark-chocolate/">Moomin Muumipeikko-tummasuklaa, puolukka ja mustikka 70 g</a></li><li><a href="https://laplandgifts.com/fi/product/moomin-berry-picking-tea/">Moomin Muumi Marjaretki-tee, 20 pussia</a></li><li><a href="https://laplandgifts.com/fi/product/arctic-power-berries-blueberry-powder/">Luonnonmustikkajauhe 70 g</a></li><li><a href="https://laplandgifts.com/fi/product/arctic-power-berries-sea-buckthorn-powder/">Arctic Power Berries Tyrnijauhe 70 g</a></li><li><a href="https://laplandgifts.com/fi/product/kaapa-mushrooms-pakuri-powder/">Kääpä Mushrooms pakuriuutejauhe 30 g</a></li><li><a href="https://laplandgifts.com/fi/product/arctic-warriors-spruce-sprout-powder/">Arctic Warriors kuusenkerkkäjauhe 40 g</a></li><li><a href="https://laplandgifts.com/fi/product/arctic-warriors-nettle-powder/">Arctic Warriors nokkosjauhe 150 g</a></li><li><a href="https://laplandgifts.com/fi/product/arctic-warriors-roseroot-elixir/">Arctic Warriors ruusujuuri-nokkoseliksiiri 100 ml</a></li><li><a href="https://laplandgifts.com/fi/product/omega7-sea-buckthorn-olive-oil/">Omega7 SBA24 tyrni-oliiviöljy 150 ml</a></li><li><a href="https://laplandgifts.com/fi/product/kaino-spruce-sprout-sparkling/">KAINO Drinks kuusenkerkkä-kuohujuoma 0,2 l</a></li><li><a href="https://laplandgifts.com/fi/product/foodin-six-mushroom-blend/">Foodin Kuuden sienen sekoitus 40 g</a></li><li><a href="https://laplandgifts.com/fi/product/foodin-nordic-berry-powder/">Foodin Pohjolan marjat -marjajauhesekoitus 120 g</a></li><li><a href="https://laplandgifts.com/fi/product/foodin-chaga-tincture/">Foodin Pakuri-tinktuura 50 ml</a></li><li><a href="https://laplandgifts.com/fi/product/kaavi-chaga-chunks/">Kaavi Porcini Pakurikääpärouhe 100 g</a></li><li><a href="https://laplandgifts.com/fi/product/puhdistamo-instant-chaga/">Puhdistamo Pakuriuutejauhe, instant-pakuri 28 g</a></li><li><a href="https://laplandgifts.com/fi/product/puhdistamo-conifer-extract/">Puhdistamo Havupuu-uute 50 ml</a></li><li><a href="https://laplandgifts.com/fi/product/arabia-moomin-mug-snufkin/">Arabia Muumimuki, Nuuskamuikkunen</a></li><li><a href="https://laplandgifts.com/fi/product/arabia-moomin-mug-friendship/">Arabia Muumimuki, Ystävyys</a></li><li><a href="https://laplandgifts.com/fi/product/arabia-moomin-figurine-moomintroll/">Arabia Muumi-minifiguriini, Muumipeikko</a></li><li><a href="https://laplandgifts.com/fi/product/fiskars-moominpappa-scissors/">Fiskars Muumipappa-yleissakset</a></li><li><a href="https://laplandgifts.com/fi/product/rento-tar-sauna-soap/">Rento Terva-saunasaippua 150 g</a></li><li><a href="https://laplandgifts.com/fi/product/rento-birch-sauna-honey/">Rento Koivu-saunahunaja 150 ml</a></li><li><a href="https://laplandgifts.com/fi/product/rento-blueberry-sauna-honey/">Rento Mustikka-saunahunaja 150 ml</a></li><li><a href="https://laplandgifts.com/fi/product/rento-sauna-pillow/">Rento Pino -saunatyyny 50 x 22 cm</a></li><li><a href="https://laplandgifts.com/fi/product/rento-linen-back-scrubber/">Rento pellavafrotee-selänpesin 14 x 70 cm</a></li><li><a href="https://laplandgifts.com/fi/product/rento-linen-wash-mitt/">Rento pellavafrotee-pesukinnas 14 x 24 cm</a></li><li><a href="https://laplandgifts.com/fi/product/emendo-sauna-scents/">Emendo saunatuoksut: salmiakki, mäntypihka ja sisu.</a></li><li><a href="https://laplandgifts.com/fi/product/aurora-mini-kuksa/">Aurora Borealis Minikuksa nahkalenkillä, 4 cm</a></li><li><a href="https://laplandgifts.com/fi/product/fazer-super-salmiakki/">Fazer Super Salmiakki -pastillit 80 g</a></li><li><a href="https://laplandgifts.com/fi/product/fazer-pantteri-salmiakki/">Fazer Pantteri -salmiakkikarkit 210 g</a></li><li><a href="https://laplandgifts.com/fi/product/halva-salmiakkiruutu/">Halva Salmiakkiruutu 170 g</a></li><li><a href="https://laplandgifts.com/fi/product/sisu-xylitol-salmiakki/">Sisu Xylitol -salmiakkipastillit 36 g</a></li><li><a href="https://laplandgifts.com/fi/product/leijona-tar-liquorice/">Leijona Tervalakritsi -pastillit 32 g</a></li><li><a href="https://laplandgifts.com/fi/product/fazer-hazelnut-chocolate/">Karl Fazer kokonainen hasselpähkinä -suklaalevy 200 g</a></li><li><a href="https://laplandgifts.com/fi/product/fazer-light-milk-chocolate/">Karl Fazer vaalea maitosuklaa 180 g</a></li><li><a href="https://laplandgifts.com/fi/product/fazer-fazerina/">Fazer Fazerina -suklaalevy 99 g</a></li><li><a href="https://laplandgifts.com/fi/product/fazer-jaffa-orange/">Fazer Jaffa Appelsiini -leivoskeksit 300 g</a></li><li><a href="https://laplandgifts.com/fi/product/north-outdoor-arctic-250-balaclava/">North Outdoor Arctic 250 -merinokypärämyssy</a></li><li><a href="https://laplandgifts.com/fi/product/north-outdoor-kevo-gloves/">North Outdoor Kevo -merinosormikkaat</a></li><li><a href="https://laplandgifts.com/fi/product/north-outdoor-heavyweight-gaiter/">North Outdoor Paksu merino -tuubihuivi</a></li><li><a href="https://laplandgifts.com/fi/product/north-outdoor-sointu-cardigan/">North Outdoor Sointu -merinoneuletakki</a></li><li><a href="https://laplandgifts.com/fi/product/north-outdoor-arctic-260-zip-neck/">North Outdoor Arctic 260 -merinovetoketjupoolo</a></li><li><a href="https://laplandgifts.com/fi/product/halti-hossa-baselayer-men/">Halti Hossa II -merinoaluskerrasto, miesten</a></li><li><a href="https://laplandgifts.com/fi/product/halti-hossa-baselayer-women/">Halti Hossa II -merinoaluskerrasto, naisten</a></li><li><a href="https://laplandgifts.com/fi/product/halti-heatgrid-midlayer/">Halti HeatGrid -välikerrostakki, miesten</a></li><li><a href="https://laplandgifts.com/fi/product/halti-taival-dx-jacket/">Halti Taival DX 3L -kuoritakki, miesten</a></li><li><a href="https://laplandgifts.com/fi/product/halti-sykli-ski-gloves/">Halti Sykli -laskettelukäsineet</a></li><li><a href="https://laplandgifts.com/fi/product/halti-merino-socks-2pack/">Halti-merinovillasukat, 2 paria</a></li><li><a href="https://laplandgifts.com/fi/product/husky-farm-safari-rovaniemi/">Vierailu huskyfarmilla ja huskysafari kahdelle, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/product/reindeer-safari-rovaniemi/">Porosafari kahdelle, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/product/aurora-tour-kilpisjarvi/">Revontuliretki moottorikelkalla kahdelle, Kilpisjärvi</a></li><li><a href="https://laplandgifts.com/fi/product/glass-igloo-night-levi/">Igluyö kahdelle Levillä</a></li><li><a href="https://laplandgifts.com/fi/product/gold-panning-day-inari/">Kullankaivuupäivä neljälle, Inari</a></li><li><a href="https://laplandgifts.com/fi/product/nb-little-my-beanie/">Nordicbuddies Pikku Myy -neulepipo</a></li><li><a href="https://laplandgifts.com/fi/product/nb-moomintroll-mittens/">Nordicbuddies Muumipeikko-lapaset</a></li><li><a href="https://laplandgifts.com/fi/product/nb-moomintroll-love-socks/">Nordicbuddies Muumipeikko Love -retrosukat</a></li><li><a href="https://laplandgifts.com/fi/product/nb-moomin-classics-tee/">Nordicbuddies Moomin Classics -paksu t-paita</a></li><li><a href="https://laplandgifts.com/fi/product/nb-pippi-tee/">Nordicbuddies Peppi Pitkätossu -t-paita</a></li><li><a href="https://laplandgifts.com/fi/product/nb-moomintroll-hoodie/">Nordicbuddies Muumipeikko-huppari</a></li><li><a href="https://laplandgifts.com/fi/product/nb-kunnas-kalevala-tote/">Mauri Kunnas Koirien Kalevala -kangaskassi</a></li><li><a href="https://laplandgifts.com/fi/product/sk-marimekko-unikko-crossbody/">Marimekko Neat Crossbody Unikko -olkalaukku</a></li><li><a href="https://laplandgifts.com/fi/product/sk-moomin-duvet-set/">Moomin Muumi pussilakanasetti 150 x 210 cm, Sydänkäpyset</a></li><li><a href="https://laplandgifts.com/fi/product/sk-novita-wonder-wool/">Novita Wonder Wool DK -villalanka 50 g</a></li><li><a href="https://laplandgifts.com/fi/product/sk-aromageddon-sauna-scent/">Aromageddon Hankihörppy -saunatuoksu 15 ml</a></li><li><a href="https://laplandgifts.com/fi/product/sk-muurla-moomin-bottle/">Muurla Muumi-lasipullo 1 l, Omenat</a></li><li><a href="https://laplandgifts.com/fi/product/nb-kunnas-kalevala-beanie/">Nordicbuddies Koirien Kalevala -pipo</a></li><li><a href="https://laplandgifts.com/fi/product/nb-little-my-mittens/">Nordicbuddies Pikku Myy -lapaset</a></li><li><a href="https://laplandgifts.com/fi/product/nb-kunnas-santa-mug/">Nordicbuddies Joulupukki-takeaway-muki</a></li><li><a href="https://laplandgifts.com/fi/product/nb-little-my-thermal-bottle/">Nordicbuddies Pikku Myy -termospullo 0,55 l</a></li><li><a href="https://laplandgifts.com/fi/product/nb-little-my-neckpillow/">Nordicbuddies Pikku Myy -niskatyyny</a></li><li><a href="https://laplandgifts.com/fi/product/nb-moomintroll-love-cushion/">Nordicbuddies Muumipeikko Love -tyyny</a></li><li><a href="https://laplandgifts.com/fi/product/nb-little-my-poster/">Nordicbuddies Pikku Myy -juliste</a></li><li><a href="https://laplandgifts.com/fi/product/nb-moomin-novels-poster/">Nordicbuddies Muumikirjat-juliste</a></li><li><a href="https://laplandgifts.com/fi/product/sk-finland-beanie/">Tammer Finland-pipo, sinivalkoinen</a></li><li><a href="https://laplandgifts.com/fi/product/sk-finland-tube-scarf/">Tammer Suomi-putkihuivi</a></li><li><a href="https://laplandgifts.com/fi/product/sk-little-my-sauna-cushion/">Emendo Pikku Myy -saunatyyny</a></li><li><a href="https://laplandgifts.com/fi/product/sk-rento-sauna-hat/">Rento saunahattu, pellavafrotee</a></li><li><a href="https://laplandgifts.com/fi/product/sk-rento-birch-whisk/">Rento kuivattu saunavihta, koivu</a></li><li><a href="https://laplandgifts.com/fi/product/sk-suomi-hockey-jersey/">Mikebon Suomi-fanipaita</a></li><li><a href="https://laplandgifts.com/fi/product/sk-marimekko-unikko-bath-towel/">Marimekko Unikko -kylpypyyhe 70 × 150 cm</a></li><li><a href="https://laplandgifts.com/fi/product/sk-marimekko-unikko-hand-towel/">Marimekko Unikko -käsipyyhe 50 × 70 cm</a></li><li><a href="https://laplandgifts.com/fi/product/fl-taistelevat-metsot/">Taistelevat metsot -satiinipussilakanasetti, parivuoteen</a></li><li><a href="https://laplandgifts.com/fi/product/fl-lino-linen-duvet-set/">Finlayson Lino-pellavapussilakanasetti</a></li><li><a href="https://laplandgifts.com/fi/product/fl-elefantti-duvet-set/">Elefantti-pussilakanasetti, tummanvihreä</a></li><li><a href="https://laplandgifts.com/fi/product/fl-reino-bath-towel/">Finlayson Reino-kylpypyyhe 80 × 160 cm</a></li><li><a href="https://laplandgifts.com/fi/gift-guides/">Lapin lahjaoppaat</a></li><li><a href="https://laplandgifts.com/fi/finnish-specialties/">Finnish specialities: what to buy</a></li><li><a href="https://laplandgifts.com/fi/harvinaiset-muumimukit/">Harvinaiset muumimukit ja niiden arvo</a></li><li><a href="https://laplandgifts.com/fi/pakuri/">Pakuri: käyttö, tutkimus ja pohjoinen keruu</a></li><li><a href="https://laplandgifts.com/fi/shipping/">Toimitusalueet ja elintarvikesäännöt</a></li><li><a href="https://laplandgifts.com/fi/boutiques/">Lapin putiikit</a></li><li><a href="https://laplandgifts.com/fi/boutiques/inari/">Inari: Lapin putiikit</a></li><li><a href="https://laplandgifts.com/fi/boutiques/rovaniemi/">Rovaniemi: Lapin putiikit</a></li><li><a href="https://laplandgifts.com/fi/boutique/lauri-handicrafts/">Lauri Handicrafts, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/boutique/marttiini/">Marttiini, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/boutique/pentik/">Pentik, Posio</a></li><li><a href="https://laplandgifts.com/fi/boutique/duodji-shop/">Duodji Shop, Inari</a></li><li><a href="https://laplandgifts.com/fi/boutique/samekki/">Samekki, Inari</a></li><li><a href="https://laplandgifts.com/fi/boutique/piece-of-lapland/">Piece of Lapland, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/boutique/rovaniemi-souvenirs-shop/">Rovaniemi Souvenirs Shop, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/boutique/christmas-house-shop/">Christmas House Shop, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/boutique/korundi-shop/">Korundi Shop, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/boutique/shoppi-craft-design/">SHOPPI Craft &amp; Design, Levi</a></li><li><a href="https://laplandgifts.com/fi/boutique/siida-shop/">Siida Shop, Inari</a></li><li><a href="https://laplandgifts.com/fi/boutique/tankavaaran-kultakyla/">Tankavaaran Kultakylä, Sodankylä</a></li><li><a href="https://laplandgifts.com/fi/boutique/mailan-putiikki/">Mailan Putiikki, Ylläs</a></li><li><a href="https://laplandgifts.com/fi/boutique/kuukkeli-shop/">Kuukkeli Shop, Saariselkä</a></li><li><a href="https://laplandgifts.com/fi/boutique/mariellen-vaatehuone/">Mariellen Vaatehuone, Enontekiö</a></li><li><a href="https://laplandgifts.com/fi/boutique/lahjapuoti-tiinuska/">Lahjapuoti Tiinuska, Rovaniemi</a></li><li><a href="https://laplandgifts.com/fi/boutique/lappi-shop-levi/">Lappi Shop Levi, Levi</a></li><li><a href="https://laplandgifts.com/fi/boutique/utsjoki-handicraft/">Utsjoki Handicraft, Utsjoki</a></li><li><a href="https://laplandgifts.com/fi/privacy/">Tietosuojaseloste</a></li><li><a href="https://laplandgifts.com/fi/terms/">Käyttöehdot</a></li><li><a href="https://laplandgifts.com/fi/cookie-policy/">Evästekäytäntö</a></li></ul></nav><nav aria-label="LaplandGifts network" style="font-size:.8rem;opacity:.55;line-height:1.9"><ul style="list-style:none;padding:0;margin:.5rem 0 0;display:flex;flex-wrap:wrap;gap:.25rem 1.25rem"><li><a href="https://laplandvibes.com/">Pääsivu (verkoston keskus)</a></li><li><a href="https://laplandhoteldeals.com/">Käsin valitut hotellitarjoukset</a></li><li><a href="https://laplandstays.com/">Majoitus &amp; Mökit</a></li><li><a href="https://laplandluxuryvillas.com/">Yksityishuvilat &amp; luksusmajat</a></li><li><a href="https://stayinlapland.com/">Lasi-iglut, mökit, erämaahotellit</a></li><li><a href="https://laplandkids.com/">Perheresortit + joulupukin tapaaminen</a></li><li><a href="https://laplandfood.com/">Saamelaisruoka &amp; marjastus</a></li><li><a href="https://laplanddining.com/">Fine dining</a></li><li><a href="https://laplandbars.com/">Baarit &amp; Pubit</a></li><li><a href="https://laplandactivities.fi/">Käsin valitut Arktis-elämykset</a></li><li><a href="https://laplandtours.online/">Opastetut retket &amp; päiväretket</a></li><li><a href="https://laplandhuskysafaris.com/">Huskysafarit, operaattorit vertailussa</a></li><li><a href="https://laplandskiresorts.com/">Hiihtokeskukset vertailussa</a></li><li><a href="https://laplandsnowmobile.com/">Moottorikelkkasafarit &amp; vuokraus</a></li><li><a href="https://laplandwellness.com/">Saunat, kylpylät, revontuli-hyvinvointi</a></li><li><a href="https://laplandnightlife.com/">Yöelämä</a></li><li><a href="https://laplandnature.com/">Luonto &amp; Puistot</a></li><li><a href="https://laplandvisit.com/">Matkaopas</a></li><li><a href="https://laplandchristmas.com/">Joulu Lapissa, Joulupukin pajakylä, revontulet</a></li><li><a href="https://laplandweddings.online/">Arktiset häät &amp; vihkimiset</a></li><li><a href="https://laplandstore.fi/">Lappilaiset puodit &amp; tekijät</a></li><li><a href="https://lapland.blog/">Matkablogi</a></li><li><a href="https://laplanddeals.com/">Tarjoukset</a></li><li><a href="https://laplandtransport.com/">Liikenne</a></li><li><a href="https://laplandcarrental.com/">Autovuokraus</a></li><li><a href="https://laplandflights.fi/">Lennot Lappiin</a></li><li><a href="https://laplandwork.com/">Työ Lapissa</a></li></ul></nav></div></div>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "url": "https://cdn-pipeline-output.picsart.com/pipeline-output/26754e53-8fc5-4cda-b532-9d441aa04959.png",
+  "model": "gpt-image-2",
+  "results": [
+    {
+      "url": "https://cdn-pipeline-output.picsart.com/pipeline-output/26754e53-8fc5-4cda-b532-9d441aa04959.png",
+      "type": "image"
+    }
+  ],
+  "durationMs": 112350
+}
+i Downloading to output\26754e53-8fc5-4cda-b532-9d441aa04959.png...
+✓ Saved: output\26754e53-8fc5-4cda-b532-9d441aa04959.png
+i Saving to Picsart Drive...
+✓ Saved to Drive
+i Update available: 1.198.1 → 2.55.10    Run: gen-ai update

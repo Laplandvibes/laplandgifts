@@ -211,7 +211,7 @@ export default function ShopNav() {
             aria-expanded={open}
             aria-controls="shop-menu"
             aria-label={open ? n.closeMenu : n.openMenu}
-            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-white/25 px-4 text-sm font-semibold text-white xl:hidden"
+            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-white/25 px-4 text-sm font-semibold text-white xl:hidden justify-center min-w-11"
           >
             {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
             {n.menuLabel}

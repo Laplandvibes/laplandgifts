@@ -1,0 +1,206 @@
+
+> laplandgifts-new@0.0.0 prebuild
+> node scripts/sync-shared.mjs
+
+[sync-shared] 6 vendored file(s) already up to date with ../shared (or held, see below).
+
+> laplandgifts-new@0.0.0 build
+> node scripts/build-routes-json.mjs && node scripts/build-sitemap.mjs && tsc -b && vite build && node scripts/_prerender_routes.mjs --site=https://laplandgifts.com --siteName=LaplandGifts --twitter=@laplandvibes --defaultOg=/og-default.jpg?v=20260812 --routes=scripts/routes.json --crawlableBody
+
+[routes] 204 reittiä × 12 kieltä
+[routes] 106 metaa tavoiteikkunan (150–160) ulkopuolella:
+  alle tavoitteen: /design en desc 114
+  alle tavoitteen: /design fi desc 118
+  alle tavoitteen: /treats en desc 138
+  alle tavoitteen: /treats fi desc 128
+  alle tavoitteen: /merch en desc 129
+  alle tavoitteen: /merch fi desc 144
+  alle tavoitteen: /brands en desc 143
+  alle tavoitteen: /brands fi desc 145
+  alle tavoitteen: /luxury fi desc 149
+  alle tavoitteen: /brand/kuivalihakundi en desc 143
+  alle tavoitteen: /brand/nordicbuddies fi desc 146
+  alle tavoitteen: /brand/iittala en desc 139
+  alle tavoitteen: /brand/arctic-warriors en desc 140
+  alle tavoitteen: /brand/arctic-warriors fi desc 141
+  alle tavoitteen: /brand/fazer fi desc 141
+  alle tavoitteen: /brand/meritalo fi desc 147
+  alle tavoitteen: /brand/puhdistamo en desc 141
+  alle tavoitteen: /brand/kaapa-mushrooms fi desc 139
+  alle tavoitteen: /brand/halva en desc 143
+  alle tavoitteen: /brand/halva fi desc 141
+  alle tavoitteen: /brand/kilpissafarit en desc 144
+  alle tavoitteen: /brand/kaavi-porcini en desc 143
+  alle tavoitteen: /brand/aurora-borealis fi desc 148
+  alle tavoitteen: /brand/sisu en desc 147
+  alle tavoitteen: /brand/kultakuume-com en desc 147
+  alle tavoitteen: /brand/kultakuume-com fi desc 148
+  alle tavoitteen: /brand/muurla en desc 147
+  alle tavoitteen: /brand/aromageddon en desc 145
+  alle tavoitteen: /brand/aromageddon fi desc 139
+  alle tavoitteen: /brand/leijona en desc 145
+  alle tavoitteen: /product/iittala-aalto-vase-160 fi desc 141
+  alle tavoitteen: /product/makia-aurora-hoodie fi desc 149
+  alle tavoitteen: /product/pentik-posio-mug fi desc 141
+  alle tavoitteen: /product/kuivalihakundi-poro-jerky en desc 142
+  alle tavoitteen: /product/finnish-flavours-palalaku-salmiakki fi desc 144
+  alle tavoitteen: /product/fazer-geisha-chocolate-bar en desc 144
+  alle tavoitteen: /product/moomin-lingonberry-blueberry-dark-chocolate en desc 142
+  alle tavoitteen: /product/moomin-lingonberry-blueberry-dark-chocolate fi desc 146
+  alle tavoitteen: /product/arctic-power-berries-blueberry-powder fi desc 143
+  alle tavoitteen: /product/arctic-power-berries-sea-buckthorn-powder en desc 147
+  alle tavoitteen: /product/kaapa-mushrooms-pakuri-powder en desc 147
+  alle tavoitteen: /product/arctic-warriors-spruce-sprout-powder fi desc 147
+  alle tavoitteen: /product/arctic-warriors-roseroot-elixir en desc 144
+  alle tavoitteen: /product/arctic-warriors-roseroot-elixir fi desc 143
+  alle tavoitteen: /product/foodin-six-mushroom-blend fi desc 148
+  alle tavoitteen: /product/puhdistamo-instant-chaga en desc 143
+  alle tavoitteen: /product/arabia-moomin-figurine-moomintroll en desc 147
+  alle tavoitteen: /product/rento-sauna-pillow fi desc 142
+  alle tavoitteen: /product/halva-salmiakkiruutu en desc 149
+  alle tavoitteen: /product/fazer-fazerina en desc 147
+  alle tavoitteen: /product/fazer-jaffa-orange en desc 147
+  alle tavoitteen: /product/north-outdoor-sointu-cardigan en desc 147
+  alle tavoitteen: /product/north-outdoor-arctic-260-zip-neck fi desc 144
+  alle tavoitteen: /product/halti-hossa-baselayer-women en desc 147
+  alle tavoitteen: /product/halti-hossa-baselayer-women fi desc 149
+  alle tavoitteen: /product/halti-merino-socks-2pack fi desc 147
+  alle tavoitteen: /product/husky-farm-safari-rovaniemi fi desc 143
+  alle tavoitteen: /product/nb-moomintroll-love-socks en desc 148
+  alle tavoitteen: /product/sk-moomin-duvet-set fi desc 145
+  alle tavoitteen: /product/nb-kunnas-santa-mug en desc 143
+  alle tavoitteen: /product/sk-finland-beanie en desc 143
+  alle tavoitteen: /product/sk-finland-tube-scarf fi desc 142
+  alle tavoitteen: /product/fl-elefantti-duvet-set fi desc 148
+  alle tavoitteen: /product/fl-reino-bath-towel en desc 147
+  alle tavoitteen: /boutiques en desc 148
+  alle tavoitteen: /boutiques fi desc 146
+  alle tavoitteen: /boutiques/inari en desc 46
+  alle tavoitteen: /boutiques/inari fi desc 46
+  alle tavoitteen: /boutiques/rovaniemi en desc 143
+  alle tavoitteen: /boutiques/rovaniemi fi desc 143
+  alle tavoitteen: /boutique/lauri-handicrafts en desc 116
+  alle tavoitteen: /boutique/lauri-handicrafts fi desc 120
+  alle tavoitteen: /boutique/marttiini en desc 92
+  alle tavoitteen: /boutique/marttiini fi desc 101
+  alle tavoitteen: /boutique/pentik en desc 101
+  alle tavoitteen: /boutique/pentik fi desc 103
+  alle tavoitteen: /boutique/duodji-shop en desc 95
+  alle tavoitteen: /boutique/duodji-shop fi desc 91
+  alle tavoitteen: /boutique/samekki en desc 88
+  alle tavoitteen: /boutique/samekki fi desc 99
+  alle tavoitteen: /boutique/piece-of-lapland en desc 76
+  alle tavoitteen: /boutique/piece-of-lapland fi desc 92
+  alle tavoitteen: /boutique/rovaniemi-souvenirs-shop en desc 129
+  alle tavoitteen: /boutique/rovaniemi-souvenirs-shop fi desc 114
+  alle tavoitteen: /boutique/christmas-house-shop en desc 127
+  alle tavoitteen: /boutique/christmas-house-shop fi desc 124
+  alle tavoitteen: /boutique/korundi-shop en desc 100
+  alle tavoitteen: /boutique/korundi-shop fi desc 113
+  alle tavoitteen: /boutique/shoppi-craft-design en desc 89
+  alle tavoitteen: /boutique/shoppi-craft-design fi desc 92
+  alle tavoitteen: /boutique/siida-shop en desc 114
+  alle tavoitteen: /boutique/siida-shop fi desc 115
+  alle tavoitteen: /boutique/tankavaaran-kultakyla en desc 113
+  alle tavoitteen: /boutique/tankavaaran-kultakyla fi desc 104
+  alle tavoitteen: /boutique/mailan-putiikki en desc 126
+  alle tavoitteen: /boutique/mailan-putiikki fi desc 133
+  alle tavoitteen: /boutique/kuukkeli-shop en desc 143
+  alle tavoitteen: /boutique/kuukkeli-shop fi desc 146
+  alle tavoitteen: /boutique/mariellen-vaatehuone en desc 110
+  alle tavoitteen: /boutique/mariellen-vaatehuone fi desc 104
+  alle tavoitteen: /boutique/lahjapuoti-tiinuska en desc 132
+  alle tavoitteen: /boutique/lahjapuoti-tiinuska fi desc 135
+  alle tavoitteen: /boutique/lappi-shop-levi en desc 138
+  alle tavoitteen: /boutique/lappi-shop-levi fi desc 131
+  alle tavoitteen: /boutique/utsjoki-handicraft en desc 140
+  alle tavoitteen: /boutique/utsjoki-handicraft fi desc 140
+[sitemap] 2412 URLia (201 reittiä × 12 kieltä)
+[36mvite v8.0.3 [32mbuilding client environment for production...[36m[39m
+[2Ktransforming...✓ 3594 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                   12.83 kB │ gzip:   4.72 kB
+dist/static/c3/index-D2xsACuu.css                105.90 kB │ gzip:  16.66 kB
+dist/static/c3/arrow-right-BnQ-40Vk.js             0.15 kB │ gzip:   0.15 kB
+dist/static/c3/arrow-right-B4D9Ly-v.js             0.16 kB │ gzip:   0.16 kB
+dist/static/c3/arrow-up-right-D-KB7-va.js          0.16 kB │ gzip:   0.15 kB
+dist/static/c3/briefcase-B_g3pdqL.js               0.22 kB │ gzip:   0.19 kB
+dist/static/c3/circle-alert-BCu5enPn.js            0.25 kB │ gzip:   0.18 kB
+dist/static/c3/brandProducts-C6HEdCPf.js           0.32 kB │ gzip:   0.22 kB
+dist/static/c3/localePath-7JvYy8Sj.js              0.33 kB │ gzip:   0.25 kB
+dist/static/c3/ProductGridSection-zPmtWuju.js      0.44 kB │ gzip:   0.30 kB
+dist/static/c3/BuyButton-CLi2EYgD.js               0.68 kB │ gzip:   0.46 kB
+dist/static/c3/createLucideIcon-COLfnycH.js        1.38 kB │ gzip:   0.77 kB
+dist/static/c3/BoutiqueCard-TGv7M4KU.js            1.41 kB │ gzip:   0.64 kB
+dist/static/c3/Brands-CkLgsU26.js                  1.79 kB │ gzip:   0.84 kB
+dist/static/c3/Theme-DmU9vP4m.js                   1.95 kB │ gzip:   0.97 kB
+dist/static/c3/BoutiqueTown-ra3hg38h.js            2.35 kB │ gzip:   0.87 kB
+dist/static/c3/Luxury-BgJ1KpFe.js                  2.43 kB │ gzip:   1.05 kB
+dist/static/c3/occasionTheme-BIZpO13H.js           2.58 kB │ gzip:   1.14 kB
+dist/static/c3/GiftGuides-Dn5MKYKh.js              2.85 kB │ gzip:   1.23 kB
+dist/static/c3/Shipping-Dezvp52D.js                2.95 kB │ gzip:   1.00 kB
+dist/static/c3/Boutique-Bev_7nka.js                3.10 kB │ gzip:   1.16 kB
+dist/static/c3/Unsubscribe-BRsxJLVP.js             3.48 kB │ gzip:   1.59 kB
+dist/static/c3/Boutiques-Bz2xR3gZ.js               3.58 kB │ gzip:   1.24 kB
+dist/static/c3/Brand-PTsequIF.js                   4.14 kB │ gzip:   1.73 kB
+dist/static/c3/NotFound-BSECQqDR.js                5.03 kB │ gzip:   2.77 kB
+dist/static/c3/Product-BTN-Cz3J.js                 5.45 kB │ gzip:   2.11 kB
+dist/static/c3/themeProducts-_gbSVXOj.js           7.35 kB │ gzip:   2.65 kB
+dist/static/c3/themeCopy-BoL7qTtu.js               7.70 kB │ gzip:   3.63 kB
+dist/static/c3/copy.zhCN-DM7YwqBM.js              10.55 kB │ gzip:   5.23 kB
+dist/static/c3/copy.en-BGiHG0gw.js                11.10 kB │ gzip:   4.73 kB
+dist/static/c3/copy.fi-CWfMP7ZS.js                11.25 kB │ gzip:   4.77 kB
+dist/static/c3/copy.sv-KVkDUIRo.js                11.49 kB │ gzip:   4.83 kB
+dist/static/c3/copy.nl-BlVRHrru.js                11.84 kB │ gzip:   4.87 kB
+dist/static/c3/sortProducts-CvgfC5DH.js           11.92 kB │ gzip:   3.29 kB
+dist/static/c3/copy.ptBR-DLfkGVi0.js              12.33 kB │ gzip:   4.96 kB
+dist/static/c3/copy.it-DMvr4cnF.js                12.35 kB │ gzip:   4.91 kB
+dist/static/c3/copy.de-ogizgugO.js                12.55 kB │ gzip:   5.24 kB
+dist/static/c3/copy.es-sI-BMKu6.js                12.59 kB │ gzip:   5.03 kB
+dist/static/c3/copy.fr-CzPBdFBn.js                13.01 kB │ gzip:   5.13 kB
+dist/static/c3/copy.ko-DLRy4q-N.js                13.15 kB │ gzip:   5.43 kB
+dist/static/c3/MoominMugs-K1iXWFH5.js             13.18 kB │ gzip:   5.05 kB
+dist/static/c3/copy.ja-yilkdGGw.js                14.59 kB │ gzip:   5.65 kB
+dist/static/c3/Pakuri-DDXVjQzG.js                 15.24 kB │ gzip:   5.82 kB
+dist/static/c3/Category-6CBSfZqi.js               20.10 kB │ gzip:   6.77 kB
+dist/static/c3/Specialties-DI45LAi7.js            21.06 kB │ gzip:   7.97 kB
+dist/static/c3/Footer-L9WhnQwf.js                 30.37 kB │ gzip:  12.56 kB
+dist/static/c3/boutiqueCopy-BKr4caf1.js           37.13 kB │ gzip:  12.68 kB
+dist/static/c3/jsx-runtime-DotQH8AP.js            49.17 kB │ gzip:  17.32 kB
+dist/static/c3/Footer-BwwuknRP.js                 68.87 kB │ gzip:  23.51 kB
+dist/static/c3/Home-CK8Xvzbf.js                   76.73 kB │ gzip:  26.04 kB
+dist/static/c3/CookiePolicy-_JPySPPX.js           78.42 kB │ gzip:  26.27 kB
+dist/static/c3/Privacy-Az8L4iOk.js               109.35 kB │ gzip:  36.75 kB
+dist/static/c3/Terms-CuWnOhpI.js                 112.56 kB │ gzip:  43.05 kB
+dist/static/c3/ShopNav-BCHSL_y4.js               333.15 kB │ gzip: 119.98 kB
+dist/static/c3/index-D-hhLqbh.js               1,161.54 kB │ gzip: 382.10 kB
+
+[33m[33m[PLUGIN_TIMINGS] Warning:[0m Your build spent significant time in plugins. Here is a breakdown:
+  - @tailwindcss/vite:generate:build (34%)
+  - vite:prepare-out-dir (25%)
+  - vite:css-post (11%)
+  - rolldown:vite-resolve (10%)
+  - vite:asset (5%)
+See https://rolldown.rs/options/checks#plugintimings for more details.
+[39m
+[33m[plugin builtin:vite-reporter] 
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rolldownOptions.output.codeSplitting to improve chunking: https://rolldown.rs/reference/OutputOptions.codeSplitting
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.[39m
+[32m✓ built in 28.12s[39m
+[prerender] wrote 2448 files for 204 routes × 12 locales
+[prerender] sample:
+  en    /                                  → index.html
+  fi    /                                  → fi\index.html
+  de    /                                  → de\index.html
+  ja    /                                  → ja\index.html
+  es    /                                  → es\index.html
+  pt-BR /                                  → br\index.html
+[prerender] some routes fell back to EN (first 5):
+    no-meta: en /
+    no-meta: fi /
+    no-meta: de /
+    no-meta: ja /
+    no-meta: es /

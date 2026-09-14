@@ -66,7 +66,7 @@ export default function Brand() {
               href={brand.officialUrl}
               target="_blank"
               rel="noopener"
-              className="mt-4 inline-flex items-center gap-2 font-body text-sm text-pink underline-offset-4 hover:underline"
+              className="lv-tap mt-4 inline-flex items-center gap-2 font-body text-sm text-pink underline-offset-4 hover:underline"
             >
               {tb.officialSite(brand.name)}
               <ExternalLink className="h-4 w-4" aria-hidden="true" />

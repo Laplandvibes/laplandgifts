@@ -108,7 +108,7 @@ function FAQ() {
                         key={l.href}
                         href={l.href}
                         {...(l.external ? { rel: 'noopener' } : {})}
-                        className="inline-flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider text-amber hover:text-gray transition-colors"
+                        className="lv-tap inline-flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider text-amber hover:text-gray transition-colors"
                       >
                         {l.label(c)} <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                       </a>

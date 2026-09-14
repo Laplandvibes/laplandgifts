@@ -12,7 +12,7 @@ import { useLocalePath } from '../i18n/useLang'
 function Logo() {
   const lp = useLocalePath()
   return (
-    <Link to={lp('/')} className="flex items-center group">
+    <Link to={lp('/')} className="flex items-center group min-h-11">
       {/* 375px-budjetti: logo + hampurilainen ei saa ylittää 343px → logo
           kutistuu mobiilissa. Työpöydällä pääpalkissa on tilaa, joten
           sanamerkki saa kantaa palkin kokoa. */}

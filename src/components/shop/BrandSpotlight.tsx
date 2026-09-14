@@ -84,7 +84,7 @@ export default function BrandSpotlight({
           <BuyButton product={product} sid={`brand_${product.slug}`} lang={lang} />
           <Link
             to={to(`/product/${product.slug}`)}
-            className="inline-flex items-center gap-2 font-body text-sm text-pink"
+            className="lv-tap inline-flex items-center gap-2 font-body text-sm text-pink"
           >
             {t.product.viewProduct}
             <ArrowRight className="h-4 w-4" aria-hidden="true" />
