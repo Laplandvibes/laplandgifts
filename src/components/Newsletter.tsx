@@ -249,7 +249,7 @@ function Newsletter() {
               <span>
                 {c.consent}{' '}
                 <a
-                  href={to('/privacy')}
+                  href={to('/privacy/')}
                   target="_blank"
                   rel="noopener"
                   className="underline hover:text-amber"
