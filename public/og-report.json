@@ -1,12 +1,13 @@
 {
-  "version": "20260905",
+  "version": "20260921",
   "domain": "laplandgifts.com",
   "brand": "GIFTS",
   "tagline": "Finnish gifts and Lapland souvenirs",
-  "generated": "2026-09-21T08:31:06.393Z",
+  "generated": "2026-09-21T11:35:29.455Z",
   "staticFallbackSeason": "summer",
   "seasons": {
     "summer": {
+      "tagline": "Finnish gifts and Lapland souvenirs",
       "heroUrl": "https://laplandgifts.com/images/hero-shop.webp",
       "heroAlt": null,
       "heroSha": "8eddce5a57c3f811",
@@ -45,6 +46,7 @@
       "errors": []
     },
     "winter": {
+      "tagline": "Finnish gifts and Lapland souvenirs",
       "heroUrl": "https://laplandgifts.com/images/hero-shop.webp",
       "heroAlt": null,
       "heroSha": "8eddce5a57c3f811",
