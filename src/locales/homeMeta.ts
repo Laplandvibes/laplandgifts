@@ -37,7 +37,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       'Muumi- ja Arabia-designia, Marttiinin puukkoja, suomalaisia herkkuja, arktisia marjajauheita ja Lapin elämyslahjoja niistä kaupoista, jotka myös lähettävät ne.',
   },
   de: {
-    title: 'Finnisches Design und Geschenke aus Lappland',
+    title: 'Finnisches Design und Geschenke aus Lappland | LaplandGifts',
     description:
       'Finnisches Design, Handwerk aus Lappland, Delikatessen, Superfoods und Erlebnisgeschenke. Bestellt wird bei Partnershops, die nach Hause liefern.',
   },
@@ -52,7 +52,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       'フィンランドのお土産をオンラインで。ムーミンやイッタラのデザイン、ラップランドの手工芸品、フィンランドのお菓子、スーパーフード、体験ギフト。提携ショップからご自宅の国へ届きます。',
   },
   es: {
-    title: 'Diseño finlandés y artesanía lapona',
+    title: 'Diseño finlandés y artesanía lapona | LaplandGifts',
     description:
       'Diseño finlandés seleccionado, artesanía de Laponia, delicias, superalimentos y regalos de experiencias. Compre en tiendas asociadas que envían a su país.',
   },
@@ -62,7 +62,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       'Souvenirs da Lapônia e presentes finlandeses: Moomin e Iittala, facas Marttiini, doces e superalimentos. Compre em lojas parceiras que entregam no seu país.',
   },
   'zh-CN': {
-    title: '芬兰设计与拉普兰手工艺，直送到家',
+    title: '芬兰设计与拉普兰手工艺，直送到家 | LaplandGifts',
     description:
       '精选芬兰设计、拉普兰手工艺品、特色食品、超级食物和体验礼物。在合作商店下单，商品直接寄送到您所在的国家，行李里不必再挤出空间。',
   },
@@ -77,17 +77,17 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       'Que ramener de Laponie ? Souvenirs et artisanat finlandais : Moomin, Iittala, Marttiini, gourmandises, dans des boutiques en ligne qui livrent chez vous.',
   },
   it: {
-    title: 'Design finlandese e artigianato lappone',
+    title: 'Design finlandese e artigianato lappone | LaplandGifts',
     description:
       'Design finlandese selezionato, artigianato della Lapponia, specialità, superfood e regali esperienza. Ordini dai negozi partner che spediscono a casa Sua.',
   },
   nl: {
-    title: 'Fins design en Laplands ambacht thuisbezorgd',
+    title: 'Fins design en Laplands ambacht thuisbezorgd | LaplandGifts',
     description:
       'Geselecteerd Fins design, Laplands ambacht, lekkernijen, superfoods en beleveniscadeaus. Bestel bij partnerwinkels die naar uw eigen land bezorgen.',
   },
   sv: {
-    title: 'Finsk design och lappländskt hantverk',
+    title: 'Finsk design och lappländskt hantverk | LaplandGifts',
     description:
       'Utvald finsk design, lappländskt hantverk, delikatesser, superfoods och upplevelsepresenter. Beställ från partnerbutiker som levererar till ditt hemland.',
   },
