@@ -53,13 +53,23 @@ export default function Hero() {
       {/* Kaksi kerrosta: gradientti pitää oikean laidan kuvana työpöydällä,
           ja tasainen tummennus takaa luettavuuden kun ladonta keskittyy. */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-night/85 via-night/60 to-night/20"
+        className="absolute inset-0 bg-gradient-to-r from-night/94 via-night/80 to-night/30"
         aria-hidden="true"
       />
-      <div className="absolute inset-0 bg-night/35 lg:hidden" aria-hidden="true" />
+      {/* 🔴 Puhelimessa teksti on KESKITETTY, joten vasempaan laitaan painottuva
+          gradientti ei kata sita: portti mittasi silmaotsikolta 1,06:1 ja otsikon
+          amber-riviltä 1,08:1 (rajat 4,5:1 ja 3:1). 35 % -> 62 %. Tyopoydalla kuva
+          pysyy koskemattomana, koska tama kerros on lg:hidden. */}
+      <div className="absolute inset-0 bg-night/76 lg:hidden" aria-hidden="true" />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 md:py-28">
         <div className="mx-auto max-w-2xl xl:max-w-4xl text-center lg:mx-0 lg:text-left">
-          <span className="text-sm font-medium uppercase tracking-widest text-amber">
+          {/* 🔴 Muste istui suoraan kirkkaalla myymalakuvalla: 1,63:1 ja 1,90:1,
+              raja 4,5:1. Tumma laatta antaa musteelle taustan. */}
+          {/* 🔴🔴 Muste vaihdettu pinkista lumeen, ei tummennettu lisaa. Laskettu:
+              #DB2777 on puhtaalla deep-nightilla 3,93:1, joten 14 px:n tekstina se
+              EI VOI ylittaa 4,5:1 rajaa millaan taustalla — vika on varissa. Sama
+              ratkaisu kuin laplandhuskysafarisissa 20.9. (otsikko valkoiseksi). */}
+          <span className="inline-block rounded-full bg-night/75 px-3 py-1 text-sm font-medium uppercase tracking-widest text-snow">
             {s.home.heroKicker}
           </span>
           {/* Bebas Neue on kapea versaalifontti: sama pistekoko näyttää
@@ -103,14 +113,14 @@ export default function Hero() {
           <div className="mx-auto mt-10 grid max-w-md gap-3 sm:max-w-xl sm:grid-cols-2 lg:mx-0">
             <Link
               to={to('/design')}
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-amber px-6 py-4 text-lg font-medium text-white transition-colors hover:bg-amber/90"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full bg-amber px-6 py-4 text-xl font-bold text-white transition-colors hover:bg-amber/90"
             >
               <Gift className="h-5 w-5 shrink-0" aria-hidden="true" />
               {t.ctaExplore}
             </Link>
             <Link
               to={to('/gift-guides')}
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border-2 border-white/40 px-6 py-4 text-lg font-medium text-white transition-colors hover:border-amber hover:text-amber"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border-2 border-white/40 px-6 py-4 text-xl font-bold text-white transition-colors hover:border-amber hover:text-amber"
             >
               {s.nav.guides}
             </Link>

@@ -46,7 +46,10 @@ export default function CategoryCard({ category, lang, wide = false }: { categor
           />
         </picture>
       </div>
-      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-night/85 to-transparent p-3 pt-10 md:p-5 md:pt-14">
+      {/* 🔴 Yksi pysahdys ei riittanyt: otsikko istui gradientin haipyvalla puolella
+          ja jai 2,45-3,26:1:een (raja 4,5:1). Kolmas pysahdys pitaa musteen alla
+          olevan alueen tummana ilman etta koko kuva tummenee. */}
+      <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-night/95 via-night/72 to-transparent p-3 pt-10 md:p-5 md:pt-14">
         <h3 className="font-heading text-lg leading-tight tracking-wide text-white sm:text-2xl md:text-3xl">{name}</h3>
       </div>
     </Link>
