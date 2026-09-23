@@ -2182,7 +2182,7 @@ const ja: ShopCopy = over({
       icebreaker: '砕氷船クルーズ',
       snowmobile: 'スノーモービルサファリ',
       nature: '自然と国立公園',
-      sauna: 'サウナと氷穴泳ぎ',
+      sauna: 'サウナとアイススイミング',
       santa: 'サンタクロースと雪',
       kids: '子ども向け',
     },
