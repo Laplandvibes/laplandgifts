@@ -63,6 +63,11 @@
       "it": "Tazze Moomin, vetro Iittala, Marimekko e gioielli in legno Aarikka: il design finlandese che torna davvero a casa con Lei.",
       "nl": "Moomin-mokken, glas van Iittala, Marimekko en houten sieraden van Aarikka: het Finse design dat echt mee naar huis gaat.",
       "sv": "Moominmuggar, glas från Iittala, Marimekko och träsmycken från Aarikka: den finska design som faktiskt följer med hem."
+    },
+    "ogImage": "/og/design.jpg",
+    "ogCard": {
+      "hero": "/images/cat-design.webp",
+      "line": "Finnish design that travels home"
     }
   },
   {
@@ -96,6 +101,11 @@
       "it": "Giacche guscio Halti, streetwear Makia da Helsinki e maglieria in merino North Outdoor, lavorata nel proprio maglificio a Oulu. Area di consegna su ogni scheda.",
       "nl": "Shelljassen van Halti, streetwear van Makia uit Helsinki en merinobreigoed van North Outdoor, gebreid in de eigen breierij in Oulu. Bezorggebied op elke kaart.",
       "sv": "Skaljackor från Halti, streetwear från Makia i Helsingfors och merinostickat från North Outdoor, stickat i egen fabrik i Uleåborg. Priser hämtas från butikerna."
+    },
+    "ogImage": "/og/clothing.jpg",
+    "ogCard": {
+      "hero": "/images/cat-clothing.webp",
+      "line": "Knitwear and outdoor wear from Finland"
     }
   },
   {
@@ -129,6 +139,11 @@
       "it": "Coltelli Marttiini da Rovaniemi, stoviglie da campo Kupilka, lino Lapuan Kankurit da Lapua e ceramica Pentik da Posio: artigianato che si usa.",
       "nl": "Marttiini-messen uit Rovaniemi, kampeerservies van Kupilka, linnen van Lapuan Kankurit uit Lapua en keramiek van Pentik uit Posio: ambacht dat gebruikt wordt.",
       "sv": "Marttiinis knivar från Rovaniemi, Kupilkas friluftskärl, linne från Lapuan Kankurit i Lappo och keramik från Pentik i Posio: hantverk som används i stället för."
+    },
+    "ogImage": "/og/handicrafts.jpg",
+    "ogCard": {
+      "hero": "/images/cat-artisan-crafts.webp",
+      "line": "Finnish crafts that get used"
     }
   },
   {
@@ -162,6 +177,11 @@
       "it": "Dolci e regali gastronomici finlandesi: salmiakki, cioccolato Fazer, tè Nordqvist e Moomin, caffè Moomin.",
       "nl": "Fins lekkers en eetbare cadeaus: salmiak, chocolade van Fazer, thee van Nordqvist en Moomin, Moomin-koffie, gedroogd rendiervlees en duindoornjam.",
       "sv": "Finska sötsaker och matgåvor: salmiak, choklad från Fazer, te från Nordqvist och Moomin, Moomin-kaffe, torkat renkött och havtornssylt."
+    },
+    "ogImage": "/og/treats.jpg",
+    "ogCard": {
+      "hero": "/images/cat-treats.webp",
+      "line": "Salmiakki, chocolate, tea and jam"
     }
   },
   {

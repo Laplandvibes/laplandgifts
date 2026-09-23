@@ -1,0 +1,326 @@
+{
+  "design": {
+    "route": "/design",
+    "line": "Finnish design that travels home",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/cat-design.webp",
+        "bytes": 92916,
+        "sha256": "e7ed9211fb518e499823aa4358c22613ec4fe7795a41085c1f91ae73fe848ff4",
+        "heroSha": "8abde50ffeb5383a",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 14849,
+        "inkBox": [
+          375,
+          493,
+          825,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 141.6,
+        "centerSq": 150.4,
+        "photoRegion": 179.8,
+        "photoRegionRef": 179.8,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 453,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/cat-design.webp",
+        "bytes": 92916,
+        "sha256": "e7ed9211fb518e499823aa4358c22613ec4fe7795a41085c1f91ae73fe848ff4",
+        "heroSha": "8abde50ffeb5383a",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 14849,
+        "inkBox": [
+          375,
+          493,
+          825,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 141.6,
+        "centerSq": 150.4,
+        "photoRegion": 179.8,
+        "photoRegionRef": 179.8,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 453,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  },
+  "clothing": {
+    "route": "/clothing",
+    "line": "Knitwear and outdoor wear from Finland",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/cat-clothing.webp",
+        "bytes": 138400,
+        "sha256": "d38fec25160c21c99f34b1b30b327d150cb15bde948cc1e4f7bc7cf97f4555a6",
+        "heroSha": "928657e61bf52b8d",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 15821,
+        "inkBox": [
+          321,
+          493,
+          878,
+          597
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 132,
+        "centerSq": 125.6,
+        "photoRegion": 166.5,
+        "photoRegionRef": 166.5,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 561,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/cat-clothing.webp",
+        "bytes": 138400,
+        "sha256": "d38fec25160c21c99f34b1b30b327d150cb15bde948cc1e4f7bc7cf97f4555a6",
+        "heroSha": "928657e61bf52b8d",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 15821,
+        "inkBox": [
+          321,
+          493,
+          878,
+          597
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 132,
+        "centerSq": 125.6,
+        "photoRegion": 166.5,
+        "photoRegionRef": 166.5,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 561,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  },
+  "handicrafts": {
+    "route": "/handicrafts",
+    "line": "Finnish crafts that get used",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/cat-artisan-crafts.webp",
+        "bytes": 123411,
+        "sha256": "e81bc18714e3c291833665ad3891c9f3040bea468fdc6ef0fb7e4bd709b73783",
+        "heroSha": "6c3afd46f2e275cb",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 14178,
+        "inkBox": [
+          410,
+          493,
+          789,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 117.6,
+        "centerSq": 125.5,
+        "photoRegion": 147.2,
+        "photoRegionRef": 147.2,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 383,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/cat-artisan-crafts.webp",
+        "bytes": 123411,
+        "sha256": "e81bc18714e3c291833665ad3891c9f3040bea468fdc6ef0fb7e4bd709b73783",
+        "heroSha": "6c3afd46f2e275cb",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 14178,
+        "inkBox": [
+          410,
+          493,
+          789,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 117.6,
+        "centerSq": 125.5,
+        "photoRegion": 147.2,
+        "photoRegionRef": 147.2,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 383,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  },
+  "treats": {
+    "route": "/treats",
+    "line": "Salmiakki, chocolate, tea and jam",
+    "kaudet": {
+      "summer": {
+        "hero": "/images/cat-treats.webp",
+        "bytes": 148763,
+        "sha256": "2f38748489dcda67b470c0fcc686300730f835fd302b0cf66c115928fbd9e6db",
+        "heroSha": "054927eb2a840716",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 15052,
+        "inkBox": [
+          370,
+          493,
+          829,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 114.1,
+        "centerSq": 104.7,
+        "photoRegion": 142.3,
+        "photoRegionRef": 142.3,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 462,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": []
+      },
+      "winter": {
+        "hero": "/images/cat-treats.webp",
+        "bytes": 148763,
+        "sha256": "2f38748489dcda67b470c0fcc686300730f835fd302b0cf66c115928fbd9e6db",
+        "heroSha": "054927eb2a840716",
+        "bandH": 168,
+        "photoPct": 73.3,
+        "ink": 15052,
+        "inkBox": [
+          370,
+          493,
+          829,
+          603
+        ],
+        "safe": true,
+        "accentP10": 5.06,
+        "accentMed": 5.06,
+        "whiteP10": 17.08,
+        "whiteMed": 17.08,
+        "mean": 114.1,
+        "centerSq": 104.7,
+        "photoRegion": 142.3,
+        "photoRegionRef": 142.3,
+        "overlayPixels": 0,
+        "maxDiff": 0,
+        "fit": {
+          "size": 74,
+          "lines": 1,
+          "ts": 30,
+          "tagW": 462,
+          "fits": true,
+          "bandH": 168
+        },
+        "contrastOk": true,
+        "zeroOverlay": true,
+        "errors": [],
+        "samaKuinKesa": true
+      }
+    }
+  }
+}

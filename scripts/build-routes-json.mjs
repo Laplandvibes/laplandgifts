@@ -838,6 +838,26 @@ const routes = [
   ...legalRoutes,
 ]
 
+// ── sivukohtaiset jakokortit säilytetään (lv_permanent_rules §34) ──────────
+// `ogImage` + `ogCard` kirjoitetaan routes.jsoniin käsin: kortin kuva ja rivi
+// ovat toimituksellinen valinta (kontaktiarkki silmällä), eivät johdettavissa
+// datasta. 🔴 Tämä generaattori kirjoittaa tiedoston uusiksi joka buildissa,
+// joten ilman tätä lohkoa jokainen kortti katoaisi hiljaa seuraavassa
+// buildissa: og:image palaisi sivustokorttiin, public/og/-tiedostot jäisivät
+// orvoiksi, eikä mikään kaatuisi. Kentät periytyvät polun perusteella.
+const OG_KEYS = ['ogImage', 'ogImageByLang', 'ogCard']
+const ogByPath = new Map(existing.filter((r) => OG_KEYS.some((k) => r[k] !== undefined)).map((r) => [r.path, r]))
+for (const r of routes) {
+  const prev = ogByPath.get(r.path)
+  if (!prev || r.legal) continue
+  for (const k of OG_KEYS) if (prev[k] !== undefined) r[k] = prev[k]
+}
+const lostOg = [...ogByPath.keys()].filter((p) => !routes.some((r) => r.path === p))
+if (lostOg.length) {
+  console.error(`[routes] jakokortillinen reitti katosi datasta: ${lostOg.join(', ')}. Poista sen ogImage/ogCard käsin tai palauta reitti.`)
+  process.exit(1)
+}
+
 // ── portti: metat, jotka eivät mahdu näyttöikkunaan, ovat bugi ─────────────
 const warnings = []
 for (const r of routes) {
