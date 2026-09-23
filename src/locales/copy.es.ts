@@ -202,7 +202,7 @@ const es: ChromeCopy = {
     back: 'Volver al inicio',
   },
   unsubscribe: {
-    title: 'Cancelar suscripción | LaplandGifts',
+    title: 'Cancelar suscripción',
     h1: 'Cancelar suscripción',
     body: 'Introduzca su dirección de correo electrónico para darse de baja de nuestro boletín.',
     successH1: 'Suscripción cancelada',

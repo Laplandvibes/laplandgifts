@@ -202,7 +202,7 @@ const fi: ChromeCopy = {
     back: 'Takaisin etusivulle',
   },
   unsubscribe: {
-    title: 'Peruuta tilaus | LaplandGifts',
+    title: 'Peruuta tilaus',
     h1: 'Peruuta tilaus',
     body: 'Anna sähköpostiosoitteesi ja poistamme sinut uutiskirjelistalta. Poisto tulee voimaan heti.',
     successH1: 'Tilaus peruutettu',

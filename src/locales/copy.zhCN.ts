@@ -202,7 +202,7 @@ const zhCN: ChromeCopy = {
     back: '返回首页',
   },
   unsubscribe: {
-    title: '取消订阅 | LaplandGifts',
+    title: '取消订阅',
     h1: '取消订阅',
     body: '请输入您的电子邮箱地址，即可从我们的电子报列表中退订。',
     successH1: '已取消订阅',

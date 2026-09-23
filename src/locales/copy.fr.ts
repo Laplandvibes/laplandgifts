@@ -203,7 +203,7 @@ const fr: ChromeCopy = {
     back: "Retour à l'accueil",
   },
   unsubscribe: {
-    title: 'Désabonnement | LaplandGifts',
+    title: 'Désabonnement',
     h1: 'Se désabonner',
     body: 'Entrez votre adresse e-mail pour vous retirer de notre liste de diffusion.',
     successH1: 'Vous êtes désabonné(e)',

@@ -202,7 +202,7 @@ const ko: ChromeCopy = {
     back: '홈으로 돌아가기',
   },
   unsubscribe: {
-    title: '구독 해지 | LaplandGifts',
+    title: '구독 해지',
     h1: '구독 해지',
     body: '뉴스레터 목록에서 이메일을 제거하려면 구독할 때 사용한 주소를 입력하세요. 해지는 즉시 적용되고 로그인이 필요 없으며, 언제든 같은 주소로 다시 신청할 수 있습니다.',
     successH1: '구독이 해지되었습니다',

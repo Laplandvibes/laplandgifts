@@ -202,7 +202,7 @@ const de: ChromeCopy = {
     back: 'Zurück zur Startseite',
   },
   unsubscribe: {
-    title: 'Newsletter abbestellen | LaplandGifts',
+    title: 'Newsletter abbestellen',
     h1: 'Newsletter abbestellen',
     body: 'Geben Sie Ihre E-Mail-Adresse ein, um sich aus unserem Newsletter auszutragen.',
     successH1: 'Sie haben sich abgemeldet',

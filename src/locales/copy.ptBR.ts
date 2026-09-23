@@ -202,7 +202,7 @@ const ptBR: ChromeCopy = {
     back: 'Voltar para a página inicial',
   },
   unsubscribe: {
-    title: 'Cancelar inscrição | LaplandGifts',
+    title: 'Cancelar inscrição',
     h1: 'Cancelar inscrição',
     body: 'Digite seu endereço de e-mail para sair da nossa lista de newsletter. O cancelamento vale imediatamente.',
     successH1: 'Inscrição cancelada',

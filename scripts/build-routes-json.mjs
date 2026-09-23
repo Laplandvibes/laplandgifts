@@ -77,7 +77,7 @@ const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it',
 // footerin "Unsubscribe" osoitti aitoon 404:ään 22.8. asti — build ei kaatunut,
 // koska reitti oli olemassa Reactissa. Reitti ilman prerenderiä ei ole reitti.
 const LEGAL = new Set(['/privacy', '/terms', '/cookie-policy', '/unsubscribe'])
-const BRAND = 'LaplandGifts'
+// Otsikoissa ei ole sanamerkkipaatetta 22.9.2026 alkaen (Vesa: domain nayttaa sen jo).
 
 /** Hakukoneen näyttöikkuna: otsikko katkeaa n. 60 merkin jälkeen, kuvaus 160:n. */
 const TITLE_MAX = 60
@@ -530,7 +530,7 @@ const categoryRoutes = [...CATEGORIES]
       const c = SHOP_COPY[lang].category
       const name = c.names[cat.id]
       return {
-        title: fitTitle([`${name} | ${BRAND}`, name]),
+        title: fitTitle([name]),
         description: fitDescription(c.intro[cat.id], CATEGORY_TAILS[lang]),
       }
     }
@@ -547,7 +547,7 @@ const themeRoutes = THEMES.map((theme) => {
     const name = c.name[theme.id]
     const localized = themeTitleBase(name, lang)
     return {
-      title: fitTitle([`${localized} | ${BRAND}`, localized, `${name} | ${BRAND}`, name]),
+      title: fitTitle([localized, name]),
       description: fitDescription(c.intro[theme.id], CATEGORY_TAILS[lang]),
     }
   }
@@ -564,7 +564,7 @@ const luxuryRoute = (() => {
   const money = (lang, n) => new Intl.NumberFormat(lang === 'pt-BR' ? 'pt-BR' : lang, { style: 'currency', currency: lux[0]?.currency ?? 'EUR', maximumFractionDigits: 0 }).format(n)
   const lead = (lang) => LUXURY_COPY[lang].lead(lux.length, money(lang, Math.min(...lux.map((p) => p.priceFrom))), money(lang, Math.max(...lux.map((p) => p.priceFrom))))
   const build = (lang) => ({
-    title: fitTitle([`${LUXURY_COPY[lang].title} | ${BRAND}`, LUXURY_COPY[lang].title]),
+    title: fitTitle([LUXURY_COPY[lang].title]),
     description: fitDescription(leadingSentences(lead(lang)), CATEGORY_TAILS[lang]),
   })
   return route('/luxury', build)
@@ -572,7 +572,7 @@ const luxuryRoute = (() => {
 
 const brandHubRoute = (() => {
   const build = (lang) => ({
-    title: fitTitle([`${BRAND_COPY[lang].indexH1} | ${BRAND}`, BRAND_COPY[lang].indexH1]),
+    title: fitTitle([BRAND_COPY[lang].indexH1]),
     description: fitDescription(BRAND_COPY[lang].indexIntro, CATEGORY_TAILS[lang]),
   })
   return route('/brands', build)
@@ -584,7 +584,7 @@ const brandRoutes = BRANDS.map((brand) => {
     const localized = brandTitleBase(brand.name, lang)
     const short = brandTitleShort(brand.name, lang)
     return {
-      title: fitTitle([`${localized} | ${BRAND}`, localized, `${short} | ${BRAND}`, short, `${brand.name} | ${BRAND}`, brand.name]),
+      title: fitTitle([localized, short, brand.name]),
       description: fitDescription(leadingSentences(c.profile[brand.id]), CATEGORY_TAILS[lang]),
     }
   }
@@ -619,10 +619,10 @@ const productRoutes = PRODUCTS.map((product) => {
       : []
     return {
       title: fitTitle([
-        ...(withCat ? [`${withCat} | ${BRAND}`, withCat] : []),
-        ...(nameCat ? [`${nameCat} | ${BRAND}`, nameCat] : []),
-        ...shortCats.flatMap((x) => [`${x} | ${BRAND}`, x]),
-        `${withBrand} | ${BRAND}`, `${name} | ${BRAND}`, withBrand, name,
+        ...(withCat ? [withCat] : []),
+        ...(nameCat ? [nameCat] : []),
+        ...shortCats,
+        withBrand, name,
       ]),
       description: fitDescription(leadingSentences(description), PRODUCT_TAILS[lang]),
     }
@@ -652,12 +652,12 @@ const enFiOnly = (path, en, fi) => ({
 const giftGuides = enFiOnly(
   '/gift-guides',
   {
-    title: `Lapland gift guides | ${BRAND}`,
+    title: `Lapland gift guides`,
     description:
       'What to bring home from Lapland, sorted by who you are buying for and by budget. Every pick links to the shop that stocks it and states where it ships.',
   },
   {
-    title: `Lapin lahjaoppaat | ${BRAND}`,
+    title: `Lapin lahjaoppaat`,
     description:
       'Mitä Lapista kannattaa tuoda kotiin, jaoteltuna saajan ja budjetin mukaan. Jokainen poiminta vie kauppaan, joka tuotteen myy, ja kertoo toimitusalueen.',
   },
@@ -666,12 +666,12 @@ const giftGuides = enFiOnly(
 const shipping = enFiOnly(
   '/shipping',
   {
-    title: `Delivery areas and food rules | ${BRAND}`,
+    title: `Delivery areas and food rules`,
     description:
       'Which partner shop ships where, checked from their own delivery terms, plus the import rules that decide whether dried reindeer may be posted to your country.',
   },
   {
-    title: `Toimitusalueet ja elintarvikesäännöt | ${BRAND}`,
+    title: `Toimitusalueet ja elintarvikesäännöt`,
     description:
       'Mikä kumppanikauppa toimittaa minne, tarkistettuna niiden omista toimitusehdoista, ja tuontisäännöt jotka ratkaisevat saako poron kuivalihaa postittaa maahasi.',
   },
@@ -683,12 +683,12 @@ const shipping = enFiOnly(
 const moominMugs = enFiOnly(
   '/harvinaiset-muumimukit',
   {
-    title: 'Rare Arabia Moomin mugs and their value | LaplandGifts',
+    title: 'Rare Arabia Moomin mugs and their value',
     description:
       'Why retired designs, seasonal mugs and special editions raise the value of Arabia Moomin mugs, how the base stamp dates a mug, and where to buy current designs.',
   },
   {
-    title: 'Harvinaiset muumimukit ja niiden arvo | LaplandGifts',
+    title: 'Harvinaiset muumimukit ja niiden arvo',
     description:
       'Miksi lopetetut kuviot, kausimukit ja erikoiserät nostavat Arabian muumimukien arvoa, miten pohjaleima ajoittaa mukin ja mistä nykymalleja voi yhä ostaa.',
   },
@@ -701,12 +701,12 @@ const moominMugs = enFiOnly(
 const pakuri = enFiOnly(
   '/pakuri',
   {
-    title: 'Chaga: what it is and how to use it | LaplandGifts',
+    title: 'Chaga: what it is and how to use it',
     description:
       'What chaga (pakuri) is, how chunks, extract powder and tincture are used, what research says and does not, and why harvesting needs the landowner’s permission.',
   },
   {
-    title: 'Pakuri: käyttö, tutkimus ja pohjoinen keruu | LaplandGifts',
+    title: 'Pakuri: käyttö, tutkimus ja pohjoinen keruu',
     description:
       'Mitä pakuri eli pakurikääpä on, miten rouhetta, uutejauhetta ja tinktuuraa käytetään, mitä tutkimus sanoo ja mitä ei, ja miksi keruu vaatii maanomistajan luvan.',
   },
@@ -732,12 +732,12 @@ const deEnOnly = (path, en, deMeta) => ({
 const specialties = deEnOnly(
   '/finnish-specialties',
   {
-    title: `Finnish specialities: what to buy | ${BRAND}`,
+    title: `Finnish specialities: what to buy`,
     description:
       'Salmiakki, Fazer chocolate, rye bread, squeaky cheese and tar: which Finnish specialities are the real thing, which are tourist bait, and what ships abroad.',
   },
   {
-    title: `Finnische Spezialitäten: Was lohnt sich? | ${BRAND}`,
+    title: `Finnische Spezialitäten: Was lohnt sich?`,
     description:
       'Salmiakki, Fazer-Schokolade, Roggenbrot, Leipäjuusto und Terva: Was davon ist echt finnisch, was Touristenkram — und was übersteht den Versand nach Hause?',
   },
@@ -773,7 +773,7 @@ const boutiqueHubRoute = routeByLang(
     const t = SHOP_COPY[l].boutique
     const towns = TOWN_IDS.map((x) => t.townNames[x]).join(', ')
     return {
-      title: `${t.hubTitle} | LaplandGifts`,
+      title: `${t.hubTitle}`,
       description: `${t.hubLead} ${t.count(BOUTIQUES.length)}: ${towns}.`,
     }
   }),
@@ -786,7 +786,7 @@ const boutiqueTownRoutes = townsWithPages().map((town) =>
       const t = SHOP_COPY[l].boutique
       const bs = boutiquesByTown(town)
       return {
-        title: `${t.townNames[town]}: ${t.hubTitle} | LaplandGifts`,
+        title: `${t.townNames[town]}: ${t.hubTitle}`,
         // [LV-DESC-MIN 2026-09-06] the bare count line was 42–46 characters; lead with the
         // hub sentence like /boutiques does (the prerender clamps anything over 160).
         description: extendBoutiqueDescription(`${t.hubLead} ${t.count(bs.length)}: ${bs.map((b) => b.name).join(', ')}.`, t),
@@ -810,7 +810,7 @@ const boutiqueRoutes = BOUTIQUES.map((b) =>
       const place = `${t.townNames[b.town]}${b.district ? `, ${b.district}` : ''}`
       const localized = boutiqueTitleBase(b.name, t.townNames[b.town], l)
       return {
-        title: fitTitle([`${localized} | LaplandGifts`, localized, `${b.name}, ${t.townNames[b.town]} | LaplandGifts`]),
+        title: fitTitle([localized, `${b.name}, ${t.townNames[b.town]}`]),
         // [LV-DESC-MIN 2026-09-07] ja/zh/ko boutique blurbs are 30–50 characters; below 70 add the
         // boutique hub's own lead sentence and, if still short, the first sentence of its intro.
         description: extendBoutiqueDescription(`${BOUTIQUE_COPY[l][b.slug].description} ${place}.`, t),
