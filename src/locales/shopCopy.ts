@@ -2019,7 +2019,7 @@ const ptBR: ShopCopy = over({
   },
   boutique: {
     hubTitle: 'Boutiques da Lapônia',
-    hubLead: 'Onde comprar artesanato lapão, nas próprias lojas.',
+    hubLead: 'Onde comprar artesanato da Lapônia, nas próprias lojas.',
     hubIntro: 'Cada loja desta página é uma empresa da Lapônia. Algumas enviam para a sua casa, outras você visita pessoalmente, e cada link leva ao site da empresa.',
     townsH2: 'Por localidade',
     elsewhereH2: 'Em outros pontos da Lapônia',

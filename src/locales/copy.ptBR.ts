@@ -104,7 +104,7 @@ const ptBR: ChromeCopy = {
       {
         title: 'O ofício secreto',
         subtitle: 'Um guia interno da autêntica artesania da Lapônia',
-        description: 'Aprenda a reconhecer facas puukko realmente feitas à mão entre as falsificações de fábrica, entenda o significado cultural do duodji sámi, descubra as estações das frutas silvestres e domine as 5 regras de ouro para comprar artesanato lapão genuíno.',
+        description: 'Aprenda a reconhecer facas puukko realmente feitas à mão entre as falsificações de fábrica, entenda o significado cultural do duodji sámi, descubra as estações das frutas silvestres e domine as 5 regras de ouro para comprar artesanato genuíno da Lapônia.',
         topics: ['Facas puukko', 'Kuksas', 'Sámi duodji', 'Frutas silvestres', 'Regras do comprador'],
         pages: 9,
       },
@@ -180,7 +180,7 @@ const ptBR: ChromeCopy = {
     sub: 'Parte da rede LaplandVibes, continue explorando com os nossos sites parceiros.',
     items: [
       { label: 'Natal na Lapônia e Papai Noel', blurb: 'Aldeia do Papai Noel, viagens de Natal e dicas da temporada.', href: 'https://laplandchristmas.com/santa-village/' },
-      { label: 'Produtos feitos na Lapônia', blurb: 'Uma loja mais ampla de produtos lapões e design ártico.', href: 'https://laplandstore.fi' },
+      { label: 'Produtos feitos na Lapônia', blurb: 'Uma loja mais ampla de produtos da Lapônia e design ártico.', href: 'https://laplandstore.fi' },
       { label: 'Planeje sua viagem à Lapônia', blurb: 'Destinos, estações e dicas práticas para a Lapônia finlandesa.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },

@@ -1383,7 +1383,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'sk-lapin-puukko-gift-box': {
     name: 'Faca puukko da Lapônia com protetor de lâmina, caixa de presente',
     description:
-      'Puukko em estilo lapão com protetor de lâmina, entregue em caixa de presente. A loja o apresenta como a faca para passeios na floresta e tarefas do dia a dia, e como o tipo de objeto que passa de geração em geração em vez de ser trocado.',
+      'Puukko no estilo da Lapônia, com protetor de lâmina, entregue em caixa de presente. A loja o apresenta como a faca para passeios na floresta e tarefas do dia a dia, e como o tipo de objeto que passa de geração em geração em vez de ser trocado.',
     specs: [
       'Protetor de lâmina e caixa de presente',
     ],
@@ -1495,7 +1495,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'sk-lapin-liha-smoked-reindeer-soup': {
     name: 'Sopa de rena defumada Lapin Liha 400 g',
     description:
-      'Sopa cremosa com rena defumada a quente e a frio, 400 gramas, feita pela Lapin Liha. Aquecer numa panela; é o sabor de um almoço de cabana lapão numa embalagem que cabe na mala.',
+      'Sopa cremosa com rena defumada a quente e a frio, 400 gramas, feita pela Lapin Liha. Aquecer numa panela; é o sabor de um almoço de cabana na Lapônia, numa embalagem que cabe na mala.',
     specs: [
       '400 g',
       'Rena defumada a quente 3 % e rena defumada a frio 3 %',
