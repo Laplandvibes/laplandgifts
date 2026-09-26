@@ -227,9 +227,9 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Certificaten'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Marttiini Lapse mes 255',
+    name: 'Marttiini Lapinleuku 255',
     description:
-      'Het traditionele Lapse mes, 27 cm in totaal, met een roestvrij lemmet, een gelakt heft van vlamberken en een leren schede. Marttiini maakt zijn messen in Rovaniemi, en deze uitvoering van het model heeft een vingerbeschermer.',
+      'Het traditionele Laplandse mes (lapinleuku), 27 cm in totaal, met een roestvrij lemmet, een gelakt heft van vlamberken en een leren schede. Marttiini maakt zijn messen in Rovaniemi, en deze uitvoering van het model heeft een vingerbeschermer.',
     specs: [
       '16 cm',
       'Totale lengte 27 cm',

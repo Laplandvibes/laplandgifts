@@ -224,7 +224,7 @@ const fr: NavCopy = {
   secShort: {
     // Koko nimi: "Boutiques de Laponie". Sana on sama kuin englannissa.
     boutiques: 'Boutiques',
-    // Koko nimi: "Le luxe lapon".
+    // Koko nimi: "Le luxe de Laponie".
     luxury: 'Luxe',
     // Koko nimi: "Nos marques".
     brands: 'Marques',
@@ -257,7 +257,7 @@ const es: NavCopy = {
   secShort: {
     // Koko nimi: "Boutiques de Laponia". Sana on sama kuin englannissa.
     boutiques: 'Boutiques',
-    // Koko nimi: "Lujo lapón".
+    // Koko nimi: "Lujo de Laponia".
     luxury: 'Lujo',
     // Koko nimi: "Nuestras marcas".
     brands: 'Marcas',
@@ -290,7 +290,7 @@ const it: NavCopy = {
   secShort: {
     // Koko nimi: "Boutique della Lapponia".
     boutiques: 'Boutique',
-    // Koko nimi: "Il lusso lappone".
+    // Koko nimi: "Il lusso della Lapponia".
     luxury: 'Lusso',
     // Koko nimi: "I nostri marchi".
     brands: 'Marchi',

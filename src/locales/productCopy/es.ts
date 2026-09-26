@@ -227,9 +227,9 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Certificados'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Cuchillo lapón Marttiini 255',
+    name: 'Cuchillo tradicional de Laponia Marttiini 255',
     description:
-      'El cuchillo lapón tradicional, 27 cm en total, con hoja inoxidable, mango de abedul rizado barnizado y funda de cuero. Marttiini fabrica sus cuchillos en Rovaniemi, y esta versión del modelo lleva guardamanos.',
+      'El cuchillo tradicional de Laponia, 27 cm en total, con hoja inoxidable, mango de abedul rizado barnizado y funda de cuero. Marttiini fabrica sus cuchillos en Rovaniemi, y esta versión del modelo lleva guardamanos.',
     specs: [
       '16 cm',
       'Longitud total 27 cm',
@@ -1383,7 +1383,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'sk-lapin-puukko-gift-box': {
     name: 'Cuchillo puukko de Laponia con protector de hoja, caja de regalo',
     description:
-      'Puukko de estilo lapón con protector de hoja, entregado en caja de regalo. La tienda lo presenta como el cuchillo para excursiones al bosque y tareas cotidianas, y como el tipo de objeto que se hereda en lugar de reemplazarse.',
+      'Puukko al estilo de Laponia con protector de hoja, entregado en caja de regalo. La tienda lo presenta como el cuchillo para excursiones al bosque y tareas cotidianas, y como el tipo de objeto que se hereda en lugar de reemplazarse.',
     specs: [
       'Protector de hoja y caja de regalo',
     ],
@@ -1495,7 +1495,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'sk-lapin-liha-smoked-reindeer-soup': {
     name: 'Sopa de reno ahumado Lapin Liha 400 g',
     description:
-      'Sopa cremosa con reno ahumado en caliente y en frío, 400 gramos, elaborada por Lapin Liha. Se calienta en una olla; es el sabor de un almuerzo de cabaña lapona en un envase que cabe en una maleta.',
+      'Sopa cremosa con reno ahumado en caliente y en frío, 400 gramos, elaborada por Lapin Liha. Se calienta en una olla; es el sabor de un almuerzo en una cabaña de Laponia, en un envase que cabe en una maleta.',
     specs: [
       '400 g',
       'Reno ahumado en caliente 3 % y reno ahumado en frío 3 %',
@@ -1608,7 +1608,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'sk-aurora-borealis-reindeer-tealight': {
     name: 'Portavelas reno Aurora Borealis 10 cm',
     description:
-      'Portavelas de metal pulido con forma de reno, 10 cm de alto. El pequeño objeto lapón para el alféizar en diciembre, tan ligero que viaja en un sobre acolchado.',
+      'Portavelas de metal pulido con forma de reno, 10 cm de alto. El pequeño objeto de Laponia para el alféizar en diciembre, tan ligero que viaja en un sobre acolchado.',
     specs: [
       'Altura 10 cm',
       'Metal pulido',

@@ -227,9 +227,9 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Certificati'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Coltello lappone Marttiini 255',
+    name: 'Coltello tradizionale della Lapponia Marttiini 255',
     description:
-      'Il coltello lappone tradizionale, 27 cm in tutto, con lama inossidabile, manico in betulla fiammata verniciata e fodero in cuoio. Marttiini produce i suoi coltelli a Rovaniemi, e questa versione del modello ha la guardia.',
+      'Il coltello tradizionale della Lapponia, 27 cm in tutto, con lama inossidabile, manico in betulla fiammata verniciata e fodero in cuoio. Marttiini produce i suoi coltelli a Rovaniemi, e questa versione del modello ha la guardia.',
     specs: [
       '16 cm',
       'Lunghezza totale 27 cm',
@@ -472,7 +472,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'arctic-warriors-roseroot-elixir': {
     name: 'Elisir di rodiola Arctic Warriors 100 ml',
     description:
-      'La rodiola cresce sulle rive umide dei ruscelli e sulle pareti di roccia dei fjäll lapponi, e Arctic Warriors la estrae in glicerolo vegetale insieme all’ortica. Un cucchiaino va nel tè, nel porridge o nello yogurt.',
+      'La rodiola cresce sulle rive umide dei ruscelli e sulle pareti di roccia dei fjäll della Lapponia, e Arctic Warriors la estrae in glicerolo vegetale insieme all’ortica. Un cucchiaino va nel tè, nel porridge o nello yogurt.',
     specs: [
       '100 ml',
       'Rodiola e ortica',
@@ -1383,7 +1383,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'sk-lapin-puukko-gift-box': {
     name: 'Coltello puukko della Lapponia con proteggilama, confezione regalo',
     description:
-      'Puukko in stile lappone con proteggilama, consegnato in confezione regalo. Il negozio lo presenta come il coltello per le uscite nel bosco e le faccende quotidiane, e come il genere di oggetto che si tramanda invece di sostituirlo.',
+      'Puukko nello stile tipico della Lapponia con proteggilama, consegnato in confezione regalo. Il negozio lo presenta come il coltello per le uscite nel bosco e le faccende quotidiane, e come il genere di oggetto che si tramanda invece di sostituirlo.',
     specs: [
       'Proteggilama e confezione regalo',
     ],
@@ -1495,7 +1495,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'sk-lapin-liha-smoked-reindeer-soup': {
     name: 'Zuppa di renna affumicata Lapin Liha 400 g',
     description:
-      'Zuppa cremosa con renna affumicata a caldo e a freddo, 400 grammi, prodotta da Lapin Liha. Da scaldare in pentola; è il sapore di un pranzo in baita lappone in una confezione che sta in valigia.',
+      'Zuppa cremosa con renna affumicata a caldo e a freddo, 400 grammi, prodotta da Lapin Liha. Da scaldare in pentola; è il sapore di un pranzo in una baita della Lapponia in una confezione che sta in valigia.',
     specs: [
       '400 g',
       'Renna affumicata a caldo 3 % e renna affumicata a freddo 3 %',
@@ -1608,7 +1608,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'sk-aurora-borealis-reindeer-tealight': {
     name: 'Portalumino renna Aurora Borealis 10 cm',
     description:
-      'Portalumino in metallo lucido a forma di renna, alto 10 cm. Il piccolo oggetto lappone per il davanzale di dicembre, abbastanza leggero da spedire in una busta imbottita.',
+      'Portalumino in metallo lucido a forma di renna, alto 10 cm. Il piccolo oggetto della Lapponia per il davanzale di dicembre, abbastanza leggero da spedire in una busta imbottita.',
     specs: [
       'Altezza 10 cm',
       'Metallo lucido',
@@ -1711,7 +1711,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'rj-raitaniemi-crowberry-powder': {
     name: 'Polvere di empetro Marjatila Raitaniemi 100 g',
     description:
-      'Empetro finlandese raccolto allo stato selvatico, essiccato intero e macinato, senza aggiunte, 100 grammi. L\'empetro è la bacca nera che ricopre i pendii dei fjell lapponi e raramente arriva in un negozio, quindi questo è quanto di più vicino all\'assaggiarla.',
+      'Empetro finlandese raccolto allo stato selvatico, essiccato intero e macinato, senza aggiunte, 100 grammi. L\'empetro è la bacca nera che ricopre i pendii dei fjell della Lapponia e raramente arriva in un negozio, quindi questo è quanto di più vicino all\'assaggiarla.',
     specs: [
       '100 g',
       '100 % empetro finlandese, essiccato e macinato intero',

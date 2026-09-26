@@ -229,9 +229,9 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Certifikat'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Marttiini lappkniv 255',
+    name: 'Marttiini Lapinleuku 255',
     description:
-      'Den traditionella lappkniven, 27 cm totalt, med rostfritt blad, lackat masurbjörkskaft och läderslida. Marttiini tillverkar sina knivar i Rovaniemi, och den här versionen av modellen har fingerskydd.',
+      'Den traditionella lappländska kniven (lapinleuku), 27 cm totalt, med rostfritt blad, lackat masurbjörkskaft och läderslida. Marttiini tillverkar sina knivar i Rovaniemi, och den här versionen av modellen har fingerskydd.',
     specs: [
       '16 cm',
       'Total längd 27 cm',

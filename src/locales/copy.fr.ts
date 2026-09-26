@@ -28,7 +28,7 @@ const fr: ChromeCopy = {
       {
         name: 'Artisanat',
         tag: 'Fait main',
-        description: 'Couteaux puukko forgés à la main, kuksas sculptées, bijoux duodji sami et confitures de baies sauvages, directement des artisans lapons.',
+        description: 'Couteaux puukko forgés à la main, kuksas sculptées, bijoux duodji sami et confitures de baies sauvages, directement des artisans de Laponie.',
       },
       {
         name: 'Expériences et cartes-cadeaux',
@@ -44,7 +44,7 @@ const fr: ChromeCopy = {
       { title: 'Achetez pendant le voyage', description: "Un puukko qui vous plaît ? Une kuksa pour votre mère ? Commandez pendant que vous explorez, vous n'avez rien à transporter." },
       { title: 'Expédié depuis la Laponie', description: 'Vos cadeaux sont emballés avec soin et expédiés directement par des artisans finlandais et nos partenaires d\'impression en UE.',
       },
-      { title: 'À votre porte au retour', description: 'Vous rentrez chez vous et vos trésors lapons sont déjà sur le pas de la porte. Aucun stress de bagages, aucun souvenir cassé.' },
+      { title: 'À votre porte au retour', description: 'Vous rentrez chez vous et vos trésors de Laponie sont déjà sur le pas de la porte. Aucun stress de bagages, aucun souvenir cassé.' },
     ],
   },
   productGrid: {
@@ -104,8 +104,8 @@ const fr: ChromeCopy = {
     guides: [
       {
         title: "L'artisanat secret",
-        subtitle: "Le guide d'initié de l'artisanat lapon authentique",
-        description: "Apprenez à distinguer les vrais puukkos faits main des contrefaçons d'usine, comprenez la signification culturelle du duodji sami, découvrez les saisons des baies sauvages et maîtrisez les 5 règles d'or pour acheter de l'artisanat lapon authentique.",
+        subtitle: "Le guide d'initié de l'artisanat authentique de Laponie",
+        description: "Apprenez à distinguer les vrais puukkos faits main des contrefaçons d'usine, comprenez la signification culturelle du duodji sami, découvrez les saisons des baies sauvages et maîtrisez les 5 règles d'or pour acheter de l'artisanat authentique de Laponie.",
         topics: ['Couteaux puukko', 'Kuksas', 'Duodji sami', 'Baies sauvages', "Règles d'achat"],
         pages: 9,
       },
@@ -181,7 +181,7 @@ const fr: ChromeCopy = {
     sub: 'Membre du réseau LaplandVibes, continuez à explorer avec nos sites partenaires.',
     items: [
       { label: 'Noël en Laponie et Père Noël', blurb: 'Village du Père Noël, séjours de Noël et conseils de saison.', href: 'https://laplandchristmas.com/santa-village/' },
-      { label: 'Produits fabriqués en Laponie', blurb: 'Une boutique plus large de produits lapons et de design arctique.', href: 'https://laplandstore.fi' },
+      { label: 'Produits fabriqués en Laponie', blurb: 'Une boutique plus large de produits de Laponie et de design arctique.', href: 'https://laplandstore.fi' },
       { label: 'Planifiez votre voyage en Laponie', blurb: 'Destinations, saisons et conseils pratiques pour la Laponie finlandaise.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },

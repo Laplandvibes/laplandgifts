@@ -52,7 +52,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       'フィンランドのお土産をオンラインで。ムーミンやイッタラのデザイン、ラップランドの手工芸品、フィンランドのお菓子、スーパーフード、体験ギフト。提携ショップからご自宅の国へ届きます。',
   },
   es: {
-    title: 'Diseño finlandés y artesanía lapona',
+    title: 'Diseño finlandés y artesanía de Laponia',
     description:
       'Diseño finlandés seleccionado, artesanía de Laponia, delicias, superalimentos y regalos de experiencias. Compre en tiendas asociadas que envían a su país.',
   },
@@ -77,7 +77,7 @@ export const HOME_META: Record<Lang, { title: string; description: string }> = {
       'Que ramener de Laponie ? Souvenirs et artisanat finlandais : Moomin, Iittala, Marttiini, gourmandises, dans des boutiques en ligne qui livrent chez vous.',
   },
   it: {
-    title: 'Design finlandese e artigianato lappone',
+    title: 'Design finlandese e artigianato della Lapponia',
     description:
       'Design finlandese selezionato, artigianato della Lapponia, specialità, superfood e regali esperienza. Ordini dai negozi partner che spediscono a casa Sua.',
   },

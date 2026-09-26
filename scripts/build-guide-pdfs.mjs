@@ -179,7 +179,7 @@ const craft = `<!doctype html><html><head>${head}<title>The Secret Craft</title>
 <div class="page">
   <div class="kicker">Chapter 1</div><h2>Puukko, Finland's national tool</h2><div class="rule"></div>
   <img class="photo" style="height:58mm" src="${IMG('prod-marttiini-lapinleuku-255')}">
-  <p class="caption">A traditional Lapp knife: stainless blade, curly birch handle, leather sheath.</p>
+  <p class="caption">A traditional Lapland knife (lapinleuku): stainless blade, curly birch handle, leather sheath.</p>
   <p style="margin-top:3mm">The puukko is not just a knife. It's a Finnish cultural symbol with over a thousand years of history: a tool for building shelter, preparing food and crafting other tools. A handmade puukko from a master bladesmith is one of the finest gifts you can bring from Lapland, but the market is flooded with factory imitations. Five signs of the real thing:</p>
   <div class="item"><span class="num">1</span><div><b>The blade has character</b><p>A handforged blade shows subtle hammer marks, slight asymmetry and a carbon steel edge that develops a patina. Factory blades are perfectly uniform.</p></div></div>
   <div class="item"><span class="num">2</span><div><b>Curly birch handle</b><p>The best puukkos use visakoivu, curly birch with wavy grain. Each piece is unique. Factory handles use dyed straight-grained wood or plastic.</p></div></div>

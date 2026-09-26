@@ -28,7 +28,7 @@ const it: ChromeCopy = {
       {
         name: 'Artigianato',
         tag: 'Fatto a mano',
-        description: "Coltelli puukko forgiati a mano, kuksa intagliate, gioielli duodji sami e marmellate di bacche selvatiche, direttamente dagli artigiani lapponi.",
+        description: "Coltelli puukko forgiati a mano, kuksa intagliate, gioielli duodji sami e marmellate di bacche selvatiche, direttamente dagli artigiani della Lapponia.",
       },
       {
         name: 'Esperienze e carte regalo',
@@ -43,7 +43,7 @@ const it: ChromeCopy = {
     steps: [
       { title: 'Sceglie in vacanza', description: 'Ha trovato un puukko che adora? Una kuksa per la mamma? Ordini mentre esplora, non deve portare nulla.' },
       { title: 'Spediamo dalla Lapponia', description: 'I Suoi regali vengono confezionati con cura e spediti direttamente da artigiani finlandesi e dai nostri partner di stampa nell\'UE.' },
-      { title: 'L\'aspettano a casa', description: 'Rientra a casa e i Suoi tesori lapponi sono già sulla porta. Niente stress da bagaglio, niente souvenir rotti.' },
+      { title: 'L\'aspettano a casa', description: 'Rientra a casa e i Suoi tesori della Lapponia sono già sulla porta. Niente stress da bagaglio, niente souvenir rotti.' },
     ],
   },
   productGrid: {
@@ -103,8 +103,8 @@ const it: ChromeCopy = {
     guides: [
       {
         title: "L'artigianato segreto",
-        subtitle: "La guida dell'esperto all'autentico artigianato lappone",
-        description: "Impari a riconoscere i veri coltelli puukko fatti a mano dalle imitazioni industriali, comprenda il significato culturale del duodji sami, scopra le stagioni delle bacche selvatiche e padroneggi le 5 regole d'oro per acquistare autentico artigianato lappone.",
+        subtitle: "La guida dell'esperto all'autentico artigianato della Lapponia",
+        description: "Impari a riconoscere i veri coltelli puukko fatti a mano dalle imitazioni industriali, comprenda il significato culturale del duodji sami, scopra le stagioni delle bacche selvatiche e padroneggi le 5 regole d'oro per acquistare autentico artigianato della Lapponia.",
         topics: ['Coltelli puukko', 'Kuksa', 'Duodji sami', 'Bacche selvatiche', "Regole d'acquisto"],
         pages: 9,
       },
@@ -180,7 +180,7 @@ const it: ChromeCopy = {
     sub: 'Parte del network LaplandVibes, continui a esplorare con i nostri siti gemelli.',
     items: [
       { label: 'Natale in Lapponia e Babbo Natale', blurb: 'Villaggio di Babbo Natale, viaggi di Natale e consigli di stagione.', href: 'https://laplandchristmas.com/santa-village/' },
-      { label: 'Prodotti fatti in Lapponia', blurb: 'Una selezione più ampia di prodotti lapponi e design artico.', href: 'https://laplandstore.fi' },
+      { label: 'Prodotti fatti in Lapponia', blurb: 'Una selezione più ampia di prodotti della Lapponia e design artico.', href: 'https://laplandstore.fi' },
       { label: 'Pianifichi il Suo viaggio in Lapponia', blurb: 'Destinazioni, stagioni e consigli pratici per la Lapponia finlandese.', href: 'https://laplandvisit.com/itineraries/' },
     ],
   },

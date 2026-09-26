@@ -28,7 +28,7 @@ const es: ChromeCopy = {
       {
         name: 'Artesanía',
         tag: 'Hecho a mano',
-        description: 'Cuchillos puukko forjados a mano, copas kuksa talladas, joyería sami duodji y mermeladas de bayas silvestres, directo de los artesanos lapones.',
+        description: 'Cuchillos puukko forjados a mano, copas kuksa talladas, joyería sami duodji y mermeladas de bayas silvestres, directo de los artesanos de Laponia.',
       },
       {
         name: 'Experiencias y tarjetas de regalo',
@@ -43,7 +43,7 @@ const es: ChromeCopy = {
     steps: [
       { title: 'Explore en vacaciones', description: '¿Le encantó un cuchillo puukko? ¿Una kuksa para su madre? Encárguelo mientras viaja, no necesita cargar con nada.' },
       { title: 'Enviamos desde Laponia', description: 'Sus regalos se embalan con cuidado y se envían directamente desde artesanos finlandeses y nuestros socios de impresión en la UE.' },
-      { title: 'Le esperan en casa', description: 'Vuelva a casa y sus tesoros lapones ya están en la puerta. Sin estrés de equipaje, sin recuerdos rotos.' },
+      { title: 'Le esperan en casa', description: 'Vuelva a casa y sus tesoros de Laponia ya están en la puerta. Sin estrés de equipaje, sin recuerdos rotos.' },
     ],
   },
   productGrid: {
@@ -103,8 +103,8 @@ const es: ChromeCopy = {
     guides: [
       {
         title: 'El oficio secreto',
-        subtitle: 'Una guía de iniciado a la auténtica artesanía lapona',
-        description: 'Aprenda a distinguir los cuchillos puukko hechos a mano de las imitaciones de fábrica, comprenda el significado cultural del duodji sami, descubra las temporadas de bayas silvestres y domine las 5 reglas de oro para comprar artesanía lapona genuina.',
+        subtitle: 'Una guía de iniciado a la auténtica artesanía de Laponia',
+        description: 'Aprenda a distinguir los cuchillos puukko hechos a mano de las imitaciones de fábrica, comprenda el significado cultural del duodji sami, descubra las temporadas de bayas silvestres y domine las 5 reglas de oro para comprar artesanía genuina de Laponia.',
         topics: ['Cuchillos puukko', 'Copas kuksa', 'Sami duodji', 'Bayas silvestres', 'Reglas del comprador'],
         pages: 9,
       },

@@ -71,7 +71,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   },
   fr: {
     eyebrow: 'Le haut de la sélection',
-    title: 'Le luxe lapon',
+    title: 'Le luxe de Laponie',
     lead: (n, a, b) => `Les cadeaux les plus chers de Laponie sur une seule page : ${n} produits, ${a}–${b}. D’abord les expériences : orpaillage à Inari, une nuit en igloo de verre et un matin avec les rennes. Puis les bijoux Kalevala et quatre classiques fabriqués de la même façon depuis des décennies. Les prix sont ceux des boutiques partenaires.`,
     experiencesH2: 'Journées et nuits',
     objectsH2: 'Des classiques fabriqués de la même façon depuis des décennies',
@@ -81,7 +81,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   },
   es: {
     eyebrow: 'Lo más alto de la selección',
-    title: 'Lujo lapón',
+    title: 'Lujo de Laponia',
     lead: (n, a, b) => `Los regalos más caros de Laponia en una sola página: ${n} productos, ${a}–${b}. Primero las experiencias: bateo de oro en Inari, una noche en un iglú de cristal y una mañana con los renos. Después, las joyas Kalevala y cuatro clásicos hechos de la misma manera durante décadas. Los precios son los de las tiendas asociadas.`,
     experiencesH2: 'Días y noches',
     objectsH2: 'Clásicos hechos de la misma manera durante décadas',
@@ -91,7 +91,7 @@ export const LUXURY_COPY: Record<Lang, LuxuryCopy> = {
   },
   it: {
     eyebrow: 'La punta della selezione',
-    title: 'Il lusso lappone',
+    title: 'Il lusso della Lapponia',
     lead: (n, a, b) => `I regali più costosi della Lapponia in una sola pagina: ${n} prodotti, ${a}–${b}. Prima le esperienze: la ricerca dell’oro a Inari, una notte in un igloo di vetro e una mattina con le renne. Poi i gioielli Kalevala e quattro classici fatti allo stesso modo da decenni. I prezzi sono quelli dei negozi partner.`,
     experiencesH2: 'Giornate e notti',
     objectsH2: 'Classici fatti allo stesso modo da decenni',

@@ -643,11 +643,11 @@ export const PRODUCTS: Product[] = [
     category: 'handicrafts',
     brand: 'Marttiini',
     name: {
-      en: 'Marttiini Lapp knife 255',
+      en: 'Marttiini Lapinleuku 255',
       fi: 'Marttiini Lapinleuku 255',
     },
     description: {
-      en: 'The traditional Lapp knife, 27 cm overall, with a stainless blade, a varnished curly birch handle and a leather sheath. Marttiini makes its knives in Rovaniemi, and this version of the model has a finger guard.',
+      en: 'The traditional Lapland knife (lapinleuku), 27 cm overall, with a stainless blade, a varnished curly birch handle and a leather sheath. Marttiini makes its knives in Rovaniemi, and this version of the model has a finger guard.',
       fi: 'Perinteinen lapinleuku, kokonaispituus 27 cm, ruostumaton terä, lakattu visakoivukahva ja nahkatuppi. Marttiini valmistaa puukkonsa Rovaniemellä, ja tässä mallissa on sormisuojus.',
     },
     priceFrom: 120,

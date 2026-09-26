@@ -30,7 +30,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Corno di renna', 'Artigianato'],
   },
   'christmas-house-shop': {
-    description: 'Il più grande negozio di souvenir del Villaggio di Babbo Natale: prodotti lapponi, gioielli, dolci e certificati.',
+    description: 'Il più grande negozio di souvenir del Villaggio di Babbo Natale: prodotti della Lapponia, gioielli, dolci e certificati.',
     tags: ['Souvenir', 'Dolci'],
   },
   'korundi-shop': {
@@ -46,7 +46,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Duodji', 'Regali'],
   },
   'tankavaaran-kultakyla': {
-    description: 'Gioielli in oro, oro vero e minerali dal cuore della tradizione lapponese della ricerca dell\'oro.',
+    description: 'Gioielli in oro, oro vero e minerali dal cuore della tradizione della ricerca dell\'oro in Lapponia.',
     tags: ['Oro', 'Minerali'],
   },
   'mailan-putiikki': {

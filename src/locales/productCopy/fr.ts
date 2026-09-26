@@ -228,9 +228,9 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Certificats'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Couteau lapon Marttiini 255',
+    name: 'Couteau traditionnel de Laponie Marttiini 255',
     description:
-      'Le couteau lapon traditionnel, 27 cm au total, avec une lame inoxydable, un manche en bouleau madré verni et un étui en cuir. Marttiini fabrique ses couteaux à Rovaniemi, et cette version du modèle possède une garde.',
+      'Le couteau traditionnel de Laponie, 27 cm au total, avec une lame inoxydable, un manche en bouleau madré verni et un étui en cuir. Marttiini fabrique ses couteaux à Rovaniemi, et cette version du modèle possède une garde.',
     specs: [
       '16 cm',
       'Longueur totale 27 cm',
@@ -1384,7 +1384,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'sk-lapin-puukko-gift-box': {
     name: 'Puukko de Laponie avec protège-lame, coffret cadeau',
     description:
-      'Puukko de style lapon avec protège-lame, livré dans un coffret cadeau. La boutique le présente comme le couteau des sorties en forêt et des tâches du quotidien, et comme le genre d\'objet qui se transmet au lieu de se remplacer.',
+      'Puukko typique de Laponie avec protège-lame, livré dans un coffret cadeau. La boutique le présente comme le couteau des sorties en forêt et des tâches du quotidien, et comme le genre d\'objet qui se transmet au lieu de se remplacer.',
     specs: [
       'Protège-lame et coffret cadeau',
     ],
@@ -1496,7 +1496,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'sk-lapin-liha-smoked-reindeer-soup': {
     name: 'Soupe de renne fumé Lapin Liha 400 g',
     description:
-      'Soupe crémeuse au renne fumé à chaud et à froid, 400 grammes, fabriquée par Lapin Liha. À réchauffer dans une casserole ; c\'est le goût d\'un déjeuner de chalet lapon dans un sachet qui tient dans une valise.',
+      'Soupe crémeuse au renne fumé à chaud et à froid, 400 grammes, fabriquée par Lapin Liha. À réchauffer dans une casserole ; c\'est le goût d\'un déjeuner au chalet en Laponie, dans un sachet qui tient dans une valise.',
     specs: [
       '400 g',
       'Renne fumé à chaud 3 % et renne fumé à froid 3 %',

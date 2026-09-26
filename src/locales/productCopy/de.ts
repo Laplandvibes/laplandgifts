@@ -228,9 +228,9 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Zertifikate'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Marttiini Lappmesser 255',
+    name: 'Marttiini Lapinleuku 255',
     description:
-      'Das traditionelle Lappmesser, 27 cm lang, mit rostfreier Klinge, lackiertem Maserbirkengriff und Lederscheide. Marttiini fertigt seine Messer in Rovaniemi, und diese Ausführung des Modells hat einen Fingerschutz.',
+      'Das traditionelle lappländische Messer (Lapinleuku), 27 cm lang, mit rostfreier Klinge, lackiertem Maserbirkengriff und Lederscheide. Marttiini fertigt seine Messer in Rovaniemi, und diese Ausführung des Modells hat einen Fingerschutz.',
     specs: [
       '16 cm',
       'Gesamtlänge 27 cm',

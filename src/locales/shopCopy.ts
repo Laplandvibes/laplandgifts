@@ -1239,8 +1239,8 @@ const fr: ShopCopy = over({
   },
   boutique: {
     hubTitle: 'Boutiques de Laponie',
-    hubLead: 'Où acheter l\'artisanat lapon, dans les boutiques elles-mêmes.',
-    hubIntro: 'Chaque boutique de cette page est une entreprise laponne. Certaines expédient chez vous, d\'autres se visitent sur place, et chaque lien mène au site de l\'entreprise.',
+    hubLead: 'Où acheter l\'artisanat de Laponie, dans les boutiques elles-mêmes.',
+    hubIntro: 'Chaque boutique de cette page est une entreprise de Laponie. Certaines expédient chez vous, d\'autres se visitent sur place, et chaque lien mène au site de l\'entreprise.',
     townsH2: 'Par localité',
     elsewhereH2: 'Ailleurs en Laponie',
     filterAll: 'Toutes',
@@ -1263,7 +1263,7 @@ const fr: ShopCopy = over({
     duodjiBody: 'Le duodji est l\'artisanat sami, réalisé par des artisans samis avec des matériaux et des techniques traditionnels. Les imitations pour touristes copient l\'apparence sans l\'artisan ni la tradition. Cette différence compte pour la communauté dont il s\'agit, et un vendeur agréé peut vous dire qui a fabriqué la pièce.',
     duodjiAuthorized: 'Vendeur agréé de duodji sami',
     listingH2: 'Vous tenez une boutique en Laponie ?',
-    listingBody: 'L\'inscription est gratuite pour toute entreprise laponne. Dites-nous qui vous êtes, pourquoi votre visibilité est faible aujourd\'hui et ce qui changerait si les clients vous trouvaient.',
+    listingBody: 'L\'inscription est gratuite pour toute entreprise de Laponie. Dites-nous qui vous êtes, pourquoi votre visibilité est faible aujourd\'hui et ce qui changerait si les clients vous trouvaient.',
     listingCta: 'Nous contacter',
   },
 })
@@ -1434,8 +1434,8 @@ const es: ShopCopy = over({
   },
   boutique: {
     hubTitle: 'Boutiques de Laponia',
-    hubLead: 'Dónde comprar artesanía lapona, en las propias tiendas.',
-    hubIntro: 'Cada tienda de esta página es una empresa lapona. Algunas envían a su casa, otras se visitan en persona, y cada enlace lleva a la web de la empresa.',
+    hubLead: 'Dónde comprar artesanía de Laponia, en las propias tiendas.',
+    hubIntro: 'Cada tienda de esta página es una empresa de Laponia. Algunas envían a su casa, otras se visitan en persona, y cada enlace lleva a la web de la empresa.',
     townsH2: 'Por localidad',
     elsewhereH2: 'En otros puntos de Laponia',
     filterAll: 'Todas',
@@ -1458,7 +1458,7 @@ const es: ShopCopy = over({
     duodjiBody: 'El duodji es la artesanía sami, hecha por artesanos samis con materiales y técnicas tradicionales. Las imitaciones de souvenir copian el aspecto sin el artesano ni la tradición. La diferencia importa a la comunidad de cuya cultura se trata, y un vendedor autorizado puede decirle quién hizo la pieza.',
     duodjiAuthorized: 'Vendedor autorizado de duodji sami',
     listingH2: '¿Tiene una tienda en Laponia?',
-    listingBody: 'El listado es gratuito para cualquier empresa lapona. Cuéntenos quiénes son, por qué su visibilidad es baja ahora y qué cambiaría si los clientes les encontraran.',
+    listingBody: 'El listado es gratuito para cualquier empresa de Laponia. Cuéntenos quiénes son, por qué su visibilidad es baja ahora y qué cambiaría si los clientes les encontraran.',
     listingCta: 'Contactar',
   },
 })
@@ -1629,8 +1629,8 @@ const it: ShopCopy = over({
   },
   boutique: {
     hubTitle: 'Boutique della Lapponia',
-    hubLead: 'Dove comprare artigianato lappone, nei negozi stessi.',
-    hubIntro: 'Ogni negozio di questa pagina è un\'impresa lappone. Alcuni spediscono a casa, altri si visitano di persona, e ogni link porta al sito dell\'azienda.',
+    hubLead: 'Dove comprare artigianato della Lapponia, nei negozi stessi.',
+    hubIntro: 'Ogni negozio di questa pagina è un\'impresa della Lapponia. Alcuni spediscono a casa, altri si visitano di persona, e ogni link porta al sito dell\'azienda.',
     townsH2: 'Per località',
     elsewhereH2: 'Altrove in Lapponia',
     filterAll: 'Tutte',
@@ -1653,7 +1653,7 @@ const it: ShopCopy = over({
     duodjiBody: 'Il duodji è l\'artigianato sami, realizzato da artigiani sami con materiali e tecniche tradizionali. Le imitazioni da souvenir copiano l\'aspetto senza l\'artigiano e la tradizione. La differenza conta per la comunità della cui cultura si tratta, e un venditore autorizzato può dirvi chi ha realizzato il pezzo.',
     duodjiAuthorized: 'Venditore autorizzato di duodji sami',
     listingH2: 'Gestite un negozio in Lapponia?',
-    listingBody: 'L\'inserimento è gratuito per ogni impresa lappone. Raccontateci chi siete, perché la vostra visibilità è debole adesso e cosa cambierebbe se i clienti vi trovassero.',
+    listingBody: 'L\'inserimento è gratuito per ogni impresa della Lapponia. Raccontateci chi siete, perché la vostra visibilità è debole adesso e cosa cambierebbe se i clienti vi trovassero.',
     listingCta: 'Contattaci',
   },
 })
@@ -1824,8 +1824,8 @@ const nl: ShopCopy = over({
   },
   boutique: {
     hubTitle: 'Boetieks in Lapland',
-    hubLead: 'Waar u Laps handwerk koopt, in de winkels zelf.',
-    hubIntro: 'Elke winkel op deze pagina is een Laps bedrijf. Sommige verzenden naar u toe, andere bezoekt u ter plaatse, en elke link gaat naar de eigen site van het bedrijf.',
+    hubLead: 'Waar u handwerk uit Lapland koopt, in de winkels zelf.',
+    hubIntro: 'Elke winkel op deze pagina is een bedrijf uit Lapland. Sommige verzenden naar u toe, andere bezoekt u ter plaatse, en elke link gaat naar de eigen site van het bedrijf.',
     townsH2: 'Per plaats',
     elsewhereH2: 'Elders in Lapland',
     filterAll: 'Alle',
@@ -1848,7 +1848,7 @@ const nl: ShopCopy = over({
     duodjiBody: 'Duodji is Samisch handwerk, gemaakt door Samische makers met traditionele materialen en technieken. Souvenirimitaties kopiëren het uiterlijk zonder de maker en de traditie. Het verschil doet ertoe voor de gemeenschap om wier cultuur het gaat, en een erkende verkoper kan u vertellen wie het stuk heeft gemaakt.',
     duodjiAuthorized: 'Erkende verkoper van Samische duodji',
     listingH2: 'Heeft u een winkel in Lapland?',
-    listingBody: 'Een vermelding is gratis voor elk Laps bedrijf. Vertel ons wie u bent, waarom uw zichtbaarheid nu zwak is en wat er zou veranderen als klanten u vonden.',
+    listingBody: 'Een vermelding is gratis voor elk bedrijf in Lapland. Vertel ons wie u bent, waarom uw zichtbaarheid nu zwak is en wat er zou veranderen als klanten u vonden.',
     listingCta: 'Neem contact op',
   },
 })
