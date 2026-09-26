@@ -1,0 +1,6 @@
+{
+  "rootFiles": [
+    "_prerender_crawlable_body.mjs"
+  ],
+  "followImports": false
+}
