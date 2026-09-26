@@ -110,7 +110,7 @@ const de: ChromeCopy = {
       },
       {
         title: '7 Tage Lappland-Magie',
-        subtitle: 'Die einzige Reiseroute, die Sie je brauchen werden',
+        subtitle: 'Ihre Woche, Tag für Tag geplant',
         description: 'Eine vollständige Tag-für-Tag-Route von Rovaniemi nach Inari und zurück. Mit Nordlicht-Tipps, Husky-Safaris, Eisbrecher-Touren, realistischem Budgetplaner und kompletter arktischer Packliste.',
         topics: ['7-Tage-Route', 'Budgetplaner', 'Packliste', 'Saison-Guide', 'Lokale Tipps'],
         pages: 13,
@@ -150,7 +150,7 @@ const de: ChromeCopy = {
     items: [
       {
         q: 'Welche authentischen Souvenirs kann man in Lappland kaufen?',
-        a: 'Die echtesten Lappland-Souvenirs stammen aus lokaler Hand: ein Puukko (ein traditionelles finnisches Gürtelmesser), eine Kuksa (ein aus einer Birkenmaserknolle geschnitzter Becher), Waren aus Rentierleder, Wolltextilien sowie Wildsammelprodukte wie Moltebeerenmarmelade, Preiselbeerkonfitüre und Birkensaftprodukte. Sámi-Duodji-Handwerk (Silberschmuck, Geweiharbeiten und gewebte Bänder) gilt als das Wertvollste. Achten Sie auf den Namen des Herstellers oder ein Herkunftszertifikat statt auf Massenware aus Flughafenläden.',
+        a: 'Die echtesten Lappland-Souvenirs stammen aus lokaler Hand: ein Puukko (ein traditionelles finnisches Gürtelmesser), eine Kuksa (ein aus einer Birkenmaserknolle geschnitzter Becher), Waren aus Rentierleder, Wolltextilien sowie Wildsammelprodukte wie Moltebeerenmarmelade, Preiselbeerkonfitüre und Birkensaftprodukte. Sámi-Duodji-Handwerk (Silberschmuck, Geweiharbeiten und gewebte Bänder) gilt als das Wertvollste. Achten Sie auf den Namen des Herstellers oder ein Herkunftszertifikat.',
       },
       {
         q: 'Kann ich Sámi-Handwerk fair kaufen, und was ist das Sámi-Duodji-Zeichen?',

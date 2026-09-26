@@ -111,7 +111,7 @@ const fr: ChromeCopy = {
       },
       {
         title: '7 jours de magie en Laponie',
-        subtitle: 'Le seul itinéraire dont vous aurez besoin',
+        subtitle: 'Un programme jour par jour pour votre semaine',
         description: 'Un itinéraire complet jour par jour de Rovaniemi à Inari et retour. Inclut conseils pour les aurores boréales, safaris en traîneau de huskies, croisières en brise-glace, planificateur de budget réaliste et liste complète des bagages arctiques.',
         topics: ['Itinéraire 7 jours', 'Planificateur de budget', 'Liste de bagages', 'Guide saisonnier', 'Conseils locaux'],
         pages: 13,
@@ -151,7 +151,7 @@ const fr: ChromeCopy = {
     items: [
       {
         q: 'Quels sont les souvenirs authentiques à acheter en Laponie ?',
-        a: "Les souvenirs les plus authentiques de Laponie sont façonnés par des mains locales : un puukko (couteau de ceinture traditionnel finlandais), une kuksa (tasse taillée dans une loupe de bouleau), des articles en cuir de renne, des textiles en laine et des produits sauvages comme la confiture de plaquebières, la confiture d'airelles et les produits à base de sève de bouleau. L'artisanat sami duodji, bijoux en argent, travail du bois de renne et galons tissés, est le plus prisé. Cherchez le nom de l'artisan ou un certificat d'origine plutôt que des articles produits en série dans les boutiques d'aéroport.",
+        a: "Les souvenirs les plus authentiques de Laponie sont façonnés par des mains locales : un puukko (couteau de ceinture traditionnel finlandais), une kuksa (tasse taillée dans une loupe de bouleau), des articles en cuir de renne, des textiles en laine et des produits sauvages comme la confiture de plaquebières, la confiture d'airelles et les produits à base de sève de bouleau. L'artisanat sami duodji, bijoux en argent, travail du bois de renne et galons tissés, est le plus prisé. Cherchez le nom de l'artisan ou un certificat d'origine.",
       },
       {
         q: "Puis-je acheter de l'artisanat sami de façon éthique, et qu'est-ce que le label Sámi Duodji ?",

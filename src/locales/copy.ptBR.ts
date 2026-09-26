@@ -110,7 +110,7 @@ const ptBR: ChromeCopy = {
       },
       {
         title: '7 dias de magia na Lapônia',
-        subtitle: 'O único roteiro que você vai precisar',
+        subtitle: 'Um plano dia a dia para a sua semana',
         description: 'Uma rota completa dia a dia de Rovaniemi a Inari e de volta. Inclui dicas para ver aurora boreal, safáris de huskies, cruzeiros em quebra-gelo, planejador de orçamento realista e uma lista de bagagem ártica completa.',
         topics: ['Roteiro de 7 dias', 'Planejador de orçamento', 'Lista de bagagem', 'Guia sazonal', 'Dicas locais'],
         pages: 13,
@@ -150,7 +150,7 @@ const ptBR: ChromeCopy = {
     items: [
       {
         q: 'Quais são as lembranças autênticas para comprar na Lapônia?',
-        a: 'As lembranças mais genuínas da Lapônia são feitas por mãos locais: uma puukko (faca de cinto tradicional finlandesa), uma kuksa (caneca esculpida de um nó de bétula), artigos de couro de rena, têxteis de lã e alimentos silvestres como geleia de amora-ártica, conserva de airela e produtos da seiva de bétula. O artesanato sámi duodji, joias de prata, trabalhos em chifre e faixas tecidas, é o mais valorizado. Procure o nome do artesão ou um certificado de origem em vez de produtos em série vendidos nas lojas do aeroporto.',
+        a: 'As lembranças mais genuínas da Lapônia são feitas por mãos locais: uma puukko (faca de cinto tradicional finlandesa), uma kuksa (caneca esculpida de um nó de bétula), artigos de couro de rena, têxteis de lã e alimentos silvestres como geleia de amora-ártica, conserva de airela e produtos da seiva de bétula. O artesanato sámi duodji, joias de prata, trabalhos em chifre e faixas tecidas, é o mais valorizado. Procure o nome do artesão ou um certificado de origem.',
       },
       {
         q: 'Posso comprar artesanato sámi de forma ética e o que é o selo Sámi Duodji?',

@@ -110,7 +110,7 @@ const it: ChromeCopy = {
       },
       {
         title: '7 giorni di magia in Lapponia',
-        subtitle: 'L\'unico itinerario di cui avrà bisogno',
+        subtitle: 'Un programma giorno per giorno per la Sua settimana',
         description: 'Un percorso completo giorno per giorno da Rovaniemi a Inari e ritorno. Include consigli per l\'aurora boreale, safari con husky, crociere rompighiaccio, pianificatore di budget realistico e una lista bagagli artica completa.',
         topics: ['Itinerario 7 giorni', 'Pianificatore di budget', 'Lista bagagli', 'Guida stagionale', 'Consigli locali'],
         pages: 13,
@@ -150,7 +150,7 @@ const it: ChromeCopy = {
     items: [
       {
         q: 'Quali sono i souvenir autentici da acquistare in Lapponia?',
-        a: "I souvenir più autentici della Lapponia sono realizzati da mani locali: un puukko (coltello da cintura tradizionale finlandese), una kuksa (tazza intagliata da un nodo di betulla), articoli in pelle di renna, tessuti di lana e prodotti del bosco come marmellata di camemoro, conserva di mirtillo rosso e prodotti della linfa di betulla. L'artigianato sami duodji, gioielli d'argento, lavori in corno e nastri intrecciati, è il più pregiato. Cerchi il nome dell'artigiano o un certificato d'origine anziché articoli di produzione in serie venduti nei negozi dell'aeroporto.",
+        a: "I souvenir più autentici della Lapponia sono realizzati da mani locali: un puukko (coltello da cintura tradizionale finlandese), una kuksa (tazza intagliata da un nodo di betulla), articoli in pelle di renna, tessuti di lana e prodotti del bosco come marmellata di camemoro, conserva di mirtillo rosso e prodotti della linfa di betulla. L'artigianato sami duodji, gioielli d'argento, lavori in corno e nastri intrecciati, è il più pregiato. Cerchi il nome dell'artigiano o un certificato d'origine.",
       },
       {
         q: "Posso acquistare artigianato sami in modo etico, e cos'è il marchio Sámi Duodji?",

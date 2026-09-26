@@ -110,7 +110,7 @@ const en: ChromeCopy = {
       },
       {
         title: '7 Days of Lapland Magic',
-        subtitle: "The Only Itinerary You'll Ever Need",
+        subtitle: 'A day-by-day plan for your week',
         description: 'A complete day-by-day route from Rovaniemi to Inari and back. Includes northern lights tips, husky safaris, icebreaker cruises, realistic budget planner, and a full Arctic packing list.',
         topics: ['7-day itinerary', 'Budget planner', 'Packing list', 'Season guide', 'Local tips'],
         pages: 13,
@@ -150,7 +150,7 @@ const en: ChromeCopy = {
     items: [
       {
         q: 'What are authentic souvenirs to buy in Lapland?',
-        a: 'The most genuine Lapland souvenirs are made by local hands: a puukko (a traditional Finnish belt knife), a kuksa (a cup carved from a birch burl), reindeer-leather goods, wool textiles, and wild-foraged foods like cloudberry jam, lingonberry preserves and birch-sap products. Sámi duodji handicrafts, silver jewelry, antler work and woven bands are the most prized. Look for the maker’s name or a certificate of origin rather than mass-produced items sold in airport gift shops.',
+        a: 'The most genuine Lapland souvenirs are made by local hands: a puukko (a traditional Finnish belt knife), a kuksa (a cup carved from a birch burl), reindeer-leather goods, wool textiles, and wild-foraged foods like cloudberry jam, lingonberry preserves and birch-sap products. Sámi duodji handicrafts, silver jewelry, antler work and woven bands are the most prized. Look for the maker’s name or a certificate of origin.',
       },
       {
         q: 'Can I buy Sámi crafts ethically, and what is the Sámi Duodji mark?',

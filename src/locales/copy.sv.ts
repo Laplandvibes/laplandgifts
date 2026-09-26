@@ -110,7 +110,7 @@ const sv: ChromeCopy = {
       },
       {
         title: '7 dagar av lappländsk magi',
-        subtitle: 'Den enda reseplan du någonsin behöver',
+        subtitle: 'En plan dag för dag för din vecka',
         description: 'En komplett dag-för-dag-rutt från Rovaniemi till Inari och tillbaka. Med tips om norrsken, hundspannssafarier, isbrytarkryssningar, en realistisk budgetplanerare och en fullständig arktisk packlista.',
         topics: ['7-dagarsrutt', 'Budgetplanerare', 'Packlista', 'Säsongsguide', 'Lokala tips'],
         pages: 13,
@@ -150,7 +150,7 @@ const sv: ChromeCopy = {
     items: [
       {
         q: 'Vilka är de äkta souvenirerna att köpa i Lappland?',
-        a: 'De mest äkta Lapplandssouvenirerna är gjorda av lokala händer: en puukko (en traditionell finsk bältkniv), en kuksa (en kopp snidad ur en björkvril), varor i renläder, ulltextilier och vildplockad mat som hjortronsylt, lingonsylt och björksavsprodukter. Samiskt duodji-hantverk, silversmycken, hornarbeten och vävda band är det mest eftertraktade. Leta efter tillverkarens namn eller ett ursprungsintyg i stället för massproducerade saker i flygplatsens presentbutiker.',
+        a: 'De mest äkta Lapplandssouvenirerna är gjorda av lokala händer: en puukko (en traditionell finsk bältkniv), en kuksa (en kopp snidad ur en björkvril), varor i renläder, ulltextilier och vildplockad mat som hjortronsylt, lingonsylt och björksavsprodukter. Samiskt duodji-hantverk, silversmycken, hornarbeten och vävda band är det mest eftertraktade. Leta efter tillverkarens namn eller ett ursprungsintyg.',
       },
       {
         q: 'Kan jag köpa samiskt hantverk etiskt, och vad är märket Sámi Duodji?',
