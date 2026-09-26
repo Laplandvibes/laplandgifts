@@ -48,7 +48,7 @@ const NAMES = [
   'guide-craft', 'guide-itinerary', 'hero-shop', 'exp-aurora', 'exp-husky-selfdrive',
   'exp-reindeer-farm', 'exp-nature-snowshoe', 'exp-icebreaker', 'exp-santa-reindeer',
   'prod-marttiini-lapinleuku-255', 'prod-aurora-mini-kuksa',
-  'prod-arctic-power-berries-blueberry-powder',
+  'prod-rj-arctic-warriors-blueberry-powder',
 ]
 for (const n of NAMES) await prepare(n)
 const IMG = (name) => {
@@ -161,10 +161,9 @@ const craft = `<!doctype html><html><head>${head}<title>The Secret Craft</title>
 
 <div class="page">
   <div class="kicker">Introduction</div><h2>Why this guide?</h2><div class="rule"></div>
-  <p class="lead">Walk into any souvenir shop in Rovaniemi, Levi or Saariselkä and you'll find shelves full of "authentic Lapland" products: reindeer magnets, Viking-themed keychains, northern lights mugs with stock photos printed on them.</p>
-  <p>Here's the truth most tourists never learn: the vast majority of these products are mass-manufactured outside Finland. They have nothing to do with Lapland's living craft traditions.</p>
-  <p>Meanwhile, the real artisans, the bladesmiths, the kuksa carvers, the Sami duodji makers, work quietly in small workshops scattered across the Arctic. Their work isn't on the tourist strip. It's in villages you've never heard of, sold through word of mouth and small local shops.</p>
-  <p>This guide bridges that gap. In these pages you'll learn:</p>
+  <p class="lead">Lapland's craft tradition is alive: handforged puukko knives, kuksa cups carved from birch burl, and Sami duodji made by Sami artisans. Knowing what to look for is what turns a souvenir into something worth bringing home.</p>
+  <p>The makers, the bladesmiths, the kuksa carvers, the Sami duodji makers, work in small workshops scattered across the Arctic, and much of their work is sold through word of mouth and small local shops.</p>
+  <p>This guide shows you what to look for. In these pages you'll learn:</p>
   <ul class="plain">
     <li>How to tell a handforged puukko from a factory blade in 10 seconds</li>
     <li>Why a real kuksa cup costs 10x more than a fake, and why it's worth it</li>
@@ -185,7 +184,7 @@ const craft = `<!doctype html><html><head>${head}<title>The Secret Craft</title>
   <div class="item"><span class="num">2</span><div><b>Curly birch handle</b><p>The best puukkos use visakoivu, curly birch with wavy grain. Each piece is unique. Factory handles use dyed straight-grained wood or plastic.</p></div></div>
   <div class="item"><span class="num">3</span><div><b>The sheath is hand-stitched</b><p>Hand-stitched leather with a wet-molded fit means hours of work. Machine-stitched sheaths with glued seams are mass-produced.</p></div></div>
   <div class="item"><span class="num">4</span><div><b>The maker signs their work</b><p>Real bladesmiths stamp or engrave their name on the blade. No maker mark usually means factory-made.</p></div></div>
-  <div class="item"><span class="num">5</span><div><b>It costs what skilled labour costs</b><p>A genuine handmade puukko starts around 80 to 150 euros. At 20 euros in a tourist shop, it was made in a factory, likely outside Finland.</p></div></div>
+  <div class="item"><span class="num">5</span><div><b>It costs what skilled labour costs</b><p>A genuine handmade puukko starts around 80 to 150 euros. At 20 euros, it was made in a factory, likely outside Finland.</p></div></div>
   ${foot(3, 9)}
 </div>
 
@@ -222,8 +221,8 @@ const craft = `<!doctype html><html><head>${head}<title>The Secret Craft</title>
 
 <div class="page">
   <div class="kicker">Chapter 4</div><h2>The taste of the Arctic</h2><div class="rule"></div>
-  <img class="photo" style="height:50mm" src="${IMG('prod-arctic-power-berries-blueberry-powder')}">
-  <p class="caption">Wild bilberry, freeze dried: about 700 g of berries in one 70 g jar.</p>
+  <img class="photo" style="height:50mm;object-fit:contain;background:#fff" src="${IMG('prod-rj-arctic-warriors-blueberry-powder')}">
+  <p class="caption">Arctic Warriors, Narkaus near Rovaniemi: Finnish bilberries dried whole with their juice and ground, nothing added.</p>
   <p style="margin-top:3mm">Lapland's wild berries, game meats and freshwater fish grow in an extreme climate, midnight sun in summer and polar darkness in winter, which concentrates their flavour. The best food gifts are wild berry preserves, reindeer jerky and smoked Arctic char. But not everything labelled "Lapland" is the real thing.</p>
   <h3>Berry season calendar</h3>
   <div class="grid2">
@@ -267,7 +266,7 @@ const craft = `<!doctype html><html><head>${head}<title>The Secret Craft</title>
 </div>
 
 <div class="page closing">
-  <h2>Shop the real deal</h2>
+  <h2>Where to shop</h2>
   <p>Now you know how to spot authentic Lapland craftsmanship. Browse our curated collection at LaplandGifts.com: Finnish design, handicrafts, Arctic foods and winter gear, each one sold and shipped by the Finnish or Nordic shop behind it.</p>
   <div class="links">
     <p><b>laplandgifts.com</b> · gifts and souvenirs</p>
