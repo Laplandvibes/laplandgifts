@@ -1,18 +1,10 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- 🔴 Merkistö ja viewport ovat headin ENSIMMÄISET tagit.
-         Viewport oli aiemmin vasta rivillä 122, eli kaikkien skriptilohkojen
-         jälkeen. Se rikkoi heron esilatauksen mitattavasti: esilatauslinkki
-         luodaan skriptissä ennen viewport-tagia, joten `imagesizes="100vw"`
-         laskettiin selaimen oletusleveyttä (980 px) vasten eikä puhelimen
-         390 pikseliä vasten. Selain esilatasi siis 2400 pikselin heron
-         jokaiselle puhelimelle, vaikka srcset tarjosi 800 pikselin version
-         (85 kt vs 15 kt). Todennettu Chromessa: sama sivu ilman
-         esilatausskriptiä valitsi hero-shop-800.avif:n.
-         Merkistö kuuluu samasta syystä ensimmäiseksi: ylhäällä olevissa
-         skripteissä on japanin- ja kiinankielisiä otsikoita, ja ne
-         jäsennettiin ennen kuin dokumentin merkistö oli julistettu. -->
+    <!-- Merkistö ja viewport ovat headin ensimmäiset tagit. Heron esilatauslinkki luodaan
+         skriptissä, ja `imagesizes="100vw"` lasketaan viewportin mukaan vain, jos viewport
+         on jo julistettu; muuten puhelin valitsisi liian suuren version. Merkistö on ensin,
+         koska alla olevissa skripteissä on japanin- ja kiinankielisiä otsikoita. -->
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -21,20 +13,16 @@
     <script>
       (function () {
         try {
-          // 🔴 Sama taulukko on scripts/build-routes-json.mjs:n HOME-lohkossa.
+          // Sama taulukko on scripts/build-routes-json.mjs:n HOME-lohkossa.
           // Root-reitillä on kaksi metalähdettä: tämä SPA-kuori ja prerenderin
           // scripts/routes.json. Generaattori vertaa näitä ja kaatuu, jos ne
           // eroavat, joten muuta molemmat tai älä kumpaakaan.
           var T = {"en":"Finnish gifts and Lapland souvenirs","fi":"Lapin tuliaiset ja suomalaiset lahjat","de":"Finnisches Design und Geschenke aus Lappland","ja":"フィンランドのお土産・ラップランドのギフト","es":"Diseño finlandés y artesanía de Laponia","pt-br":"Presentes finlandeses e souvenirs da Lapônia","zh-cn":"芬兰设计与拉普兰手工艺，直送到家","kr":"핀란드 기념품과 라플란드 선물","fr":"Souvenirs de Laponie et artisanat finlandais","it":"Design finlandese e artigianato della Lapponia","nl":"Fins design en Laplands ambacht thuisbezorgd","sv":"Finsk design och lappländskt hantverk"};
           var path = location.pathname || '/';
           var map = { fi: 'fi', de: 'de', ja: 'ja', es: 'es', br: 'pt-br', cn: 'zh-cn', kr: 'kr', fr: 'fr', it: 'it', nl: 'nl', sv: 'sv' };
-          // 🔴 Vain kielijuuret. Aiemmin tämä osui myös alasivuihin ja
-          // ylikirjoitti prerenderin kirjoittaman sivukohtaisen title-elementin
-          // (sana kirjoitettu ilman kulmasulkeita: kirjaimellinen title-tagijono
-          // taman skriptin sisalla oli sivun ENSIMMAINEN "<"+"title>", jonka
-          // naiivit jasentimet poimivat otsikoksi ~800 URLilla, mitattu 30.8.)
-          // etusivun otsikolla: JavaScriptin ajava indeksoija näki 300
-          // sivulla 12 otsikkoa. Alasivuilla kuoressa on jo oikea otsikko.
+          // Vain kielijuuret: alasivuilla kuoressa on jo prerenderin kirjoittama
+          // sivukohtainen otsikko, jota ei ylikirjoiteta. (Sana title kirjoitetaan
+          // ilman kulmasulkeita, koska naiivit jäsentimet poimivat ensimmäisen osuman.)
           var loc = null;
           if (path === '/') loc = 'en';
           else {
@@ -95,19 +83,16 @@
     </script>
     <!-- /LV-SYNC-LOCALE-REDIRECT -->
 
-    <!-- Fontit: yhteys auki heti ja tyylitiedosto rinnakkain sivun kanssa.
-         Aiemmin sama pyyntö lähti src/index.css:n @importista, jolloin selain
-         ehti ladata ensin koko sivuston CSS:n ja vasta sitten fonttitaulun ja
-         vasta sitten fontit — kolme peräkkäistä hyppyä ennen ensimmäistä
-         tekstiruutua. gstatic tarvitsee crossoriginin, koska itse fonttitiedosto
+    <!-- Fontit: yhteys auki heti ja tyylitiedosto rinnakkain sivun kanssa. @import
+         src/index.css:ssä ketjuttaisi kolme hyppyä (CSS, fonttitaulu, fontit) ennen
+         ensimmäistä tekstiruutua. gstatic tarvitsee crossoriginin, koska itse fonttitiedosto
          haetaan CORS-tilassa. -->
 
-    <!-- Heron esilataus, vain kielijuurilla. 🔴 Prerender monistaa tämän kuoren
-         jokaiselle 336 sivulle, joten staattisena preload-tagina tämä hakisi
-         87 kt:n hero-kuvan myös kategoria- ja tuotesivuilla, joilla heroa ei
-         ole lainkaan. Skripti ajetaan jäsennyksen aikana ennen sovelluskoodia,
-         joten lataus alkaa yhtä aikaisin kuin staattisella tagilla. Sama
-         polkulogiikka kuin yllä olevassa LV-LOCALE-TITLE-lohkossa. -->
+    <!-- Heron esilataus, vain kielijuurilla. Prerender monistaa tämän kuoren jokaiselle
+         sivulle, joten staattinen preload-tagi hakisi hero-kuvan myös sivuilla, joilla heroa
+         ei ole. Skripti ajetaan jäsennyksen aikana ennen sovelluskoodia, joten lataus alkaa
+         yhtä aikaisin kuin staattisella tagilla. Sama polkulogiikka kuin yllä olevassa
+         LV-LOCALE-TITLE-lohkossa. -->
     <script>
       (function () {
         try {
@@ -122,13 +107,9 @@
           l.rel = 'preload';
           l.as = 'image';
           l.type = 'image/avif';
-          // 🔴 Esilatauksen on tarjottava SAMA srcset ja sizes kuin Hero.tsx:n
-          // <source>-tagin. Pelkkä href='/images/hero-shop.avif' esilatasi
-          // 2400 pikselin tiedoston, minkä jälkeen <img> valitsi ruudulle
-          // sopivan pienemmän version — eli kuva ladattiin kahdesti ja
-          // ensimmäinen lataus oli se raskain. Nämä leveydet tulevat
-          // scripts/build-image-variants.mjs:stä; jos ne muuttuvat, muuta
-          // molemmat.
+          // Esilatauksen on tarjottava sama srcset ja sizes kuin Hero.tsx:n
+          // <source>-tagin, muuten kuva ladataan kahdesti. Leveydet tulevat
+          // scripts/build-image-variants.mjs:stä; jos ne muuttuvat, muuta molemmat.
           l.setAttribute(
             'imagesrcset',
             '/images/hero-shop-800.avif 800w, /images/hero-shop-1200.avif 1200w, /images/hero-shop-1600.avif 1600w, /images/hero-shop.avif 2400w'
@@ -178,32 +159,25 @@
       gtag('consent', 'default', {
         analytics_storage: 'denied',
         ad_storage: 'denied',
-        /* 🔴 Nama kaksi puuttuivat 12.8.2026 asti, vaikka laplandstoressa ne
-           olivat. Google suosittaa ETA-alueella kaikkia nelja; ilman niita
-           mainosdatan kaytto ja personointi jaavat oletusarvoonsa. */
+        /* Consent Mode v2: ETA-alueella kaikki nelja oletuksena denied,
+           myos ad_user_data ja ad_personalization. */
         ad_user_data: 'denied',
         ad_personalization: 'denied',
         wait_for_update: 500
       });
-      /* 🔴 Palautus: jaettu CookieBanner kutsuu consent updatea VAIN accept-klikissa.
-         Ilman tata palaava, jo suostunut kavija jai ikuisesti denied-tilaan. */
+      /* Palautus: jaettu CookieBanner kutsuu consent updatea vain accept-klikissa,
+         joten jo suostuneen kavijan tila palautetaan tassa. */
       try {
         if (localStorage.getItem('laplandgifts_cookie_consent') === 'accepted') {
           gtag('consent', 'update', { analytics_storage: 'granted' });
         }
       } catch (e) { /* privaattitila: pysy denied-tilassa */ }
       gtag('js', new Date());
-      /* 🔴 Ala mittaa kehityskonetta eika Cloudflaren esikatselubuildeja tuotanto-
-         propertyyn. Mitattu 27.8.2026 hubin GA:sta: hostnamena esiintyi localhost
-         (/fi 96 katselua, /fi/media 81) ja SEITSEMAN eri *.pages.dev-esikatselua.
-         Sama portti jonka Umami saa data-domains-attribuutista; GA:n oma
-         IP-suodatin ei kata naita lainkaan. */
-      /* QA-liikenne pois mittareista (Vesa 17.9.2026, laplandstays-auditin kohta 6;
-         levitys koko verkostoon 17.9. illalla). Ei IP-listoja: kotiyhteyden osoite
-         vaihtuu ja puhelin on eri verkossa. ?w=qa kerran => lippu jaa selaimen
-         localStorageen ja GA + Umami ovat pois paalta talla selaimella pysyvasti;
-         ?w=live palauttaa. navigator.webdriver = Playwright/Puppeteer-portit, eivat
-         kavijoita. Poikkeus lv_measure=1: verify_funnel_live DEEP tarvitsee lahetykset. */
+      /* Kehityskone (localhost) ja Cloudflaren esikatselubuildit (*.pages.dev) eivat
+         mittaa tuotanto-propertyyn. Umamilla sama rajaus on data-domains-attribuutti. */
+      /* QA-liikenne pois mittareista: ?w=qa asettaa selaimeen lipun, jolla GA ja Umami
+         ovat pois paalta; ?w=live palauttaa. Automaatioselain (navigator.webdriver)
+         ohitetaan samoin, paitsi kun localStorage lv_measure=1. */
       var lvQa = false;
       try {
         var lvW = new URLSearchParams(location.search).get('w');
@@ -215,9 +189,8 @@
       } catch (e) {}
       var lvHost = location.hostname;
       if (lvQa || lvHost === 'localhost' || lvHost === '127.0.0.1' || lvHost === '[::1]' || lvHost.indexOf('.pages.dev') !== -1) {
-        /* GA:n virallinen opt-out. Pelkka gtagin neutralointi ei riita:
-           gtag/js?id=... lataa kontin joka tapauksessa (mitattu esikatselu-
-           hostilla: google_tag_manager sai avaimen vaikka gtag oli no-op). */
+        /* GA:n virallinen opt-out. Pelkka gtagin neutralointi ei riita, koska
+           gtag/js?id=... lataa kontin joka tapauksessa. */
         window['ga-disable-G-485H5Y4LHP'] = true;
         gtag = function () {};
       }
@@ -256,11 +229,8 @@
       });
     </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-485H5Y4LHP"></script>
-    <!-- 🔴 GetYourGuiden kumppanianalytiikka EI ole enää täällä. Mitattu
-         12.8.2026: tämä tagi latautui ehdoitta ja lähetti GYG:lle kutsun
-         partner_id:llä ja sivun URLilla myös silloin, kun evästesuostumus oli
-         HYLÄTTY — ja kirjoitti partner_id:n localStorageen. Skripti ladataan
-         nyt vasta hyväksynnän jälkeen, ks. src/lib/consent.ts. -->
+    <!-- GetYourGuiden kumppanianalytiikka ladataan vasta evästesuostumuksen jälkeen,
+         ks. src/lib/consent.ts. -->
     <!-- Umami Cloud — cookieless analytics, no consent gate needed (writes nothing to the browser) -->
     <script async src="https://cloud.umami.is/script.js" data-website-id="82a192dc-23ba-471a-bda5-d36a836331ca" data-domains="laplandgifts.com,www.laplandgifts.com" data-exclude-hash="true"></script>
   </head>
