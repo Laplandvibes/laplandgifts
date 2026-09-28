@@ -68,7 +68,10 @@ import { BOUTIQUES, TOWN_IDS, boutiquesByTown, townsWithPages } from '../src/dat
 import { BOUTIQUE_COPY } from '../src/locales/boutiqueCopy/index.ts'
 import { HOME_META } from '../src/locales/homeMeta.ts'
 // [LV-DUP 2026-09-06] localized title tails for brand/boutique/theme pages — see the module.
-import { brandTitleBase, brandTitleShort, boutiqueTitleBase, themeTitleBase } from '../src/locales/titleWords.ts'
+import {
+  brandTitleBase, brandTitleShort, boutiqueTitleBase, themeTitleBase,
+  colon, afterColon, initialCapital, titleWidth, TITLE_WIDTH_MAX,
+} from '../src/locales/titleWords.ts'
 
 const LANGS = ['en', 'fi', 'de', 'ja', 'es', 'pt-BR', 'zh-CN', 'ko', 'fr', 'it', 'nl', 'sv']
 // 🔴 /unsubscribe KUULUU TÄHÄN. Se on reitti (routes.tsx LEGAL_PATHS) ja sivu
@@ -180,9 +183,15 @@ function fitDescription(base, tails) {
   return underMax.length ? underMax[0].text : joinCjk(clampWords(base, DESC_MAX))
 }
 
-/** Ensimmäinen otsikkoehdokas, joka mahtuu näyttöikkunaan. */
+/**
+ * Ensimmäinen otsikkoehdokas, joka mahtuu näyttöikkunaan: enintään 60 merkkiä JA
+ * otsikkoportin 75 leveysyksikköä. 🔴 Pelkkä merkkiraja päästi japanin tuoteotsikoita
+ * 99 yksikön levyisinä läpi (CJK-merkki on kaksi yksikköä): 60 kanamerkkiä on kaksi
+ * kertaa se mitä Google näyttää.
+ */
+const fitsTitle = (c) => c.length <= TITLE_MAX && titleWidth(c) <= TITLE_WIDTH_MAX
 function fitTitle(candidates) {
-  return candidates.find((c) => c.length <= TITLE_MAX) ?? clampWords(candidates.at(-1), TITLE_MAX)
+  return candidates.find(fitsTitle) ?? clampWords(candidates.at(-1), TITLE_MAX)
 }
 
 const CATEGORY_TAILS = {
@@ -545,7 +554,7 @@ const themeRoutes = THEMES.map((theme) => {
   const build = (lang) => {
     const c = THEME_COPY[lang]
     const name = c.name[theme.id]
-    const localized = themeTitleBase(name, lang)
+    const localized = themeTitleBase(name, lang, theme.id)
     return {
       title: fitTitle([localized, name]),
       description: fitDescription(c.intro[theme.id], CATEGORY_TAILS[lang]),
@@ -602,27 +611,40 @@ const productRoutes = PRODUCTS.map((product) => {
     // Ehdokkaat pisimmästä lyhimpään. Kun kumppanibrändi ja oma brändi eivät
     // mahdu yhtä aikaa, oma brändi voittaa: se erottaa tuloksen kumppanin
     // omasta hakutuloksesta, jossa sama tuote on samalla nimellä.
-    // [LV-DUP 2026-09-06] localized category tail first: "Halva Salmiakkiruutu 170 g – makeiset"
+    // [LV-DUP 2026-09-06] localized category tail first: "Halva Salmiakkiruutu 170 g: makeiset"
     // was one title in ten locales when the product name carries no translatable word.
-    const catName = SHOP_COPY[lang]?.category?.names?.[product.category]
+    // [LV-TITLE-DASH 2026-09-28] "<tuote>: <kategoria>" (lv_permanent_rules §31), ei " – ":
+    // ajatusviiva on kielletty kaikissa kielissä. Kategorian alkukirjain kielen oman
+    // kaksoispistesäännön mukaan (afterColon), ja otsikko alkaa isolla myös silloin kun
+    // brändi on riisuttu nimen alusta ("linen terry back scrubber…" → "Linen…").
+    // Nimi, jossa on jo oma kaksoispiste ("Emendo saunatuoksut: salmiakki…"), ei saa
+    // kategoriaa kaksoispisteellä perään: kaksi kaksoispistettä samassa otsikossa ei ole
+    // otsikko. ja/zh-CN liittävät kategorian ｜-merkillä, joten niihin sääntö ei koske.
     const cjk = lang === 'ja' || lang === 'zh-CN'
-    const withCat = catName ? (cjk ? `${withBrand}｜${catName}` : `${withBrand} – ${catName}`) : null
-    const nameCat = catName ? (cjk ? `${name}｜${catName}` : `${name} – ${catName}`) : null
+    const catName = !cjk && /[:：]/.test(name) ? null : SHOP_COPY[lang]?.category?.names?.[product.category]
+    const withCategory = (x) => (cjk
+      ? `${x}｜${catName}`
+      : `${initialCapital(x, lang)}${colon(lang)}${afterColon(catName, lang)}`)
+    const withCat = catName ? withCategory(withBrand) : null
+    const nameCat = catName ? withCategory(name) : null
     // Long names ("Finnish Flavours Premium Palalaku salmiakki 150 g") left no room for the
-    // category: try the name without its brand prefix, then without the pack weight, so ten
-    // locales do not fall back to one identical bare name.
+    // category: try the name without its brand prefix, then without the pack size, so ten
+    // locales do not fall back to one identical bare name. 🔴 A multipack ("sisu, 3 x 10 ml")
+    // is one size: dropping only "10 ml" left "sisu, 3 x" in the nl and sv titles.
     const brandRe = new RegExp('^' + product.brand.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + '\\s+', 'i')
     const noBrand = name.replace(brandRe, '')
-    const noWeight = noBrand.replace(/\s+\d+(?:[.,]\d+)?\s?(?:g|kg|ml|cl|l)\b\.?$/i, '')
+    const noWeight = noBrand
+      .replace(/\s+(?:\d+\s?[x×]\s?)?\d+(?:[.,]\d+)?\s?(?:g|kg|ml|cl|l)\b\.?$/i, '')
+      .replace(/[\s,;]+$/, '')
     const shortCats = catName
-      ? [noBrand, noWeight].filter((x, i, arr) => x && x !== name && arr.indexOf(x) === i).map((x) => (cjk ? `${x}｜${catName}` : `${x} – ${catName}`))
+      ? [noBrand, noWeight].filter((x, i, arr) => x && x !== name && arr.indexOf(x) === i).map(withCategory)
       : []
     return {
       title: fitTitle([
         ...(withCat ? [withCat] : []),
         ...(nameCat ? [nameCat] : []),
         ...shortCats,
-        withBrand, name,
+        initialCapital(withBrand, lang), initialCapital(name, lang),
       ]),
       description: fitDescription(leadingSentences(description), PRODUCT_TAILS[lang]),
     }
@@ -739,7 +761,7 @@ const specialties = deEnOnly(
   {
     title: `Finnische Spezialitäten: Was lohnt sich?`,
     description:
-      'Salmiakki, Fazer-Schokolade, Roggenbrot, Leipäjuusto und Terva: Was davon ist echt finnisch, was Touristenkram — und was übersteht den Versand nach Hause?',
+      'Salmiakki, Fazer-Schokolade, Roggenbrot, Leipäjuusto und Terva: Was davon ist echt finnisch, was Touristenkram und was übersteht den Versand nach Hause?',
   },
 )
 
