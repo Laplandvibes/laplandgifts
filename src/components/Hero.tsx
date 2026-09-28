@@ -25,7 +25,16 @@ export default function Hero() {
   const t = COPY[lang].hero
   const s = SHOP_COPY[lang]
   return (
-    <section className="relative flex min-h-[78svh] items-center overflow-hidden">
+    // 🔴🔴 Puhelimessa ja tabletissa kuva on OMA NAUHANSA tekstin yläpuolella
+    // (Vesa 28.9.2026: "mobiilissa hero kuva ei näy ollenkaan ja tunnelma on
+    // todella synkkä"). Kuva on vaalea ja kirkas (lumiset ikkunat, vaalea pöytä),
+    // ja keskitetty valkoinen teksti sen päällä tarvitsi 21.9. alkaen kaksi
+    // päällekkäistä tummennusta (vaakagradientti + night/76), jotka yhdessä
+    // peittivät kuvasta 83–99 %. Nyt alle lg:n teksti on kuvan alla tummalla
+    // pohjalla (heroteksti-portin heromalli C), joten kuva näkyy kokonaan eikä
+    // kontrasti riipu valokuvasta. lg:stä ylöspäin ennallaan: kuva taustana,
+    // teksti vasemmalla gradientin päällä.
+    <section className="relative overflow-hidden bg-night lg:flex lg:min-h-[78svh] lg:items-center">
       {/* Heron kuva on sivun LCP-elementti: se ladataan korkealla prioriteetilla
           eikä laiskasti, ja index.html avaa sille esilatauksen jo ennen kuin
           React on käynnistynyt. */}
@@ -35,7 +44,7 @@ export default function Hero() {
           valitsee ruudun leveyden × näyttötiheyden mukaan. index.html:n
           esilataus tarjoaa saman srcSetin, muuten esilataus hakisi eri
           tiedoston kuin <img> ja kuva ladattaisiin kahdesti. */}
-      <picture className="absolute inset-0">
+      <picture className="block aspect-[16/9] w-full lg:absolute lg:inset-0 lg:aspect-auto">
         <source srcSet={imgSrcSet('hero-shop', 'avif')} sizes="100vw" type="image/avif" />
         <img
           src="/images/hero-shop.webp"
@@ -50,18 +59,14 @@ export default function Hero() {
           className="h-full w-full object-cover"
         />
       </picture>
-      {/* Kaksi kerrosta: gradientti pitää oikean laidan kuvana työpöydällä,
-          ja tasainen tummennus takaa luettavuuden kun ladonta keskittyy. */}
+      {/* Työpöydällä teksti on vasemmalla kuvan päällä: gradientti tummentaa
+          tekstin puolen ja pitää oikean laidan kuvana. Alle lg:n teksti ei ole
+          kuvan päällä, joten tummennusta ei tarvita lainkaan. */}
       <div
-        className="absolute inset-0 bg-gradient-to-r from-night/94 via-night/80 to-night/30"
+        className="absolute inset-0 hidden bg-gradient-to-r from-night/94 via-night/80 to-night/30 lg:block"
         aria-hidden="true"
       />
-      {/* 🔴 Puhelimessa teksti on KESKITETTY, joten vasempaan laitaan painottuva
-          gradientti ei kata sita: portti mittasi silmaotsikolta 1,06:1 ja otsikon
-          amber-riviltä 1,08:1 (rajat 4,5:1 ja 3:1). 35 % -> 62 %. Tyopoydalla kuva
-          pysyy koskemattomana, koska tama kerros on lg:hidden. */}
-      <div className="absolute inset-0 bg-night/76 lg:hidden" aria-hidden="true" />
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 py-20 md:py-28">
+      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-14 pt-10 md:pb-20 md:pt-14 lg:py-28">
         <div className="mx-auto max-w-2xl xl:max-w-4xl text-center lg:mx-0 lg:text-left">
           {/* 🔴 Muste istui suoraan kirkkaalla myymalakuvalla: 1,63:1 ja 1,90:1,
               raja 4,5:1. Tumma laatta antaa musteelle taustan. */}
