@@ -122,7 +122,10 @@ const SELECTION: Row[] = [
 
   // ── Joulupukki ────────────────────────────────────────────────────────
   [pick(CHRISTMAS_PICKS, 'Santa Claus Village'), 'exp-santavillage', 'santa', 'Santa Claus Village visit', 'Vierailu Joulupukin Pajakylässä'],
-  [pick(CHRISTMAS_PICKS, 'SnowHotel'), 'exp-snowhotel', 'santa', 'A night in a snow hotel', 'Yö lumihotellissa'],
+  // 🔴 Oli 28.9.2026 asti "A night in a snow hotel" / "Yö lumihotellissa":
+  // rivi on 37 euron, 3,5 tunnin kierros (GYG-polku …-arctic-snowhotel-tour-…),
+  // ei yöpyminen. Nimi lupasi majoituksen, jota lahjansaaja ei saisi.
+  [pick(CHRISTMAS_PICKS, 'SnowHotel'), 'exp-snowhotel', 'santa', 'Arctic SnowHotel visit', 'Vierailu Arctic SnowHotelissa'],
   [pick(HUSKY_PICKS, 'Santa Claus Village Husky Ride'), 'exp-santa-reindeer', 'santa', 'Husky ride at Santa Claus Village', 'Huskyajelu Joulupukin Pajakylässä'],
 
   // ── Lapsille ──────────────────────────────────────────────────────────

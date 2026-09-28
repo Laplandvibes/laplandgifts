@@ -18,7 +18,7 @@ import { mergeExcept, shipsTo } from '../data/shipping'
 import ThemePicks from '../components/shop/ThemePicks'
 import { useShippingCountry } from '../context/ShippingCountry'
 import { countryName } from '../data/countryNames'
-import { useLang, useLocalePath, stripLocale } from '../i18n/useLang'
+import { useLang, useLocalePath, stripLocale, type Lang } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
@@ -43,6 +43,79 @@ import { trackAffiliateClick } from '../lib/analytics'
 const CATEGORY_RAIL: Record<string, { partner: RailPartner; snapshot: PartnerSnapshot }> = {
   design: { partner: nordicnestRail, snapshot: nordicnestPicks },
   clothing: { partner: nordicbuddiesRail, snapshot: nordicbuddiesPicks },
+}
+
+/**
+ * Pakuri-oppaan nosto superfoodien sivulla. Opas on fi + en (Pakuri.tsx,
+ * EN_FI_ONLY), joten muilla kielillä nosto kertoo lukijan kielellä mitä
+ * oppaassa on, ja linkki sanoo oppaan olevan englanniksi.
+ *
+ * 🔴 28.9.2026 asti rivi oli `lang === 'fi' ? fi : en`: kymmenen kieltä näki
+ * englannin (gate:kielipuhtaus-dom /es/superfoods/), ja englanti päättyi
+ * rikki ("…what research says, Chaga guide."). 🔴 ja: パクリ on slangissa
+ * "kopio, varastettu", joten suomen sana kirjoitetaan latinaksi selitteen kanssa.
+ */
+const PAKURI_TEASER: Record<Lang, { lead: string; link: string; tail: string }> = {
+  en: {
+    lead: 'More on chaga: what pakuri is, how chunks, extract powder and tincture differ, and what research says. Read the ',
+    link: 'chaga guide',
+    tail: '.',
+  },
+  fi: {
+    lead: 'Pakurista pidemmin: mitä pakuri eli pakurikääpä on, miten rouhe, uutejauhe ja tinktuura eroavat ja mitä tutkimus sanoo. Lue ',
+    link: 'Pakuri-opas',
+    tail: '.',
+  },
+  sv: {
+    lead: 'Mer om chaga: vad pakuri är, hur bitar, extraktpulver och tinktur skiljer sig åt och vad forskningen säger. Läs ',
+    link: 'chagaguiden (på engelska)',
+    tail: '.',
+  },
+  de: {
+    lead: 'Mehr über Chaga: was Pakuri ist, wie sich Stücke, Extraktpulver und Tinktur unterscheiden und was die Forschung sagt. Lesen Sie den ',
+    link: 'Chaga-Ratgeber (auf Englisch)',
+    tail: '.',
+  },
+  fr: {
+    lead: 'Pour en savoir plus sur le chaga : ce qu’est le pakuri, ce qui distingue les morceaux, la poudre d’extrait et la teinture, et ce que dit la recherche. Lisez le ',
+    link: 'guide du chaga (en anglais)',
+    tail: '.',
+  },
+  es: {
+    lead: 'Más sobre el chaga: qué es el pakuri, en qué se diferencian los trozos, el extracto en polvo y la tintura, y qué dice la investigación. Lea la ',
+    link: 'guía del chaga (en inglés)',
+    tail: '.',
+  },
+  it: {
+    lead: 'Per saperne di più sul chaga: che cos’è il pakuri, come si distinguono pezzi, estratto in polvere e tintura e che cosa dice la ricerca. Legga la ',
+    link: 'guida al chaga (in inglese)',
+    tail: '.',
+  },
+  'pt-BR': {
+    lead: 'Mais sobre o chaga: o que é o pakuri, como pedaços, extrato em pó e tintura se diferenciam e o que diz a pesquisa. Leia o ',
+    link: 'guia do chaga (em inglês)',
+    tail: '.',
+  },
+  nl: {
+    lead: 'Meer over chaga: wat pakuri is, hoe stukjes, extractpoeder en tinctuur van elkaar verschillen en wat onderzoek zegt. Lees de ',
+    link: 'chagagids (in het Engels)',
+    tail: '.',
+  },
+  ja: {
+    lead: 'チャーガをもっと知りたい方へ。チャーガ（フィンランド語で pakuri）とは何か、塊・エキスパウダー・チンキの違い、研究でわかっていること。詳しくは',
+    link: 'チャーガガイド（英語）',
+    tail: 'をご覧ください。',
+  },
+  ko: {
+    lead: '차가버섯(핀란드어로 pakuri)이 무엇인지, 조각·추출 분말·팅크가 어떻게 다른지, 연구로 밝혀진 것은 무엇인지 궁금하다면 ',
+    link: '차가버섯 가이드(영어)',
+    tail: '를 읽어 보세요.',
+  },
+  'zh-CN': {
+    lead: '关于桦褐孔菌的更多内容：桦褐孔菌（芬兰语称 pakuri）是什么，块状、提取物粉末和酊剂有何不同，以及研究有哪些发现。请阅读',
+    link: '桦褐孔菌指南（英文）',
+    tail: '。',
+  },
 }
 
 export default function Category() {
@@ -240,21 +313,18 @@ export default function Category() {
 
               {/* Opassivun nosto: superfoodien tunnetuin hakusana on pakuri,
                   ja opas vastaa siihen tietointenttiin, jota kategoriasivu ei
-                  palvele. Sivu on fi+en-sisältöinen (Pakuri.tsx), joten
-                  teksti tulee kieliparista eikä 12-kielisestä copysta — sama
-                  malli kuin muumimukinosto lahjaoppaissa. */}
+                  palvele. Opas on fi+en (Pakuri.tsx); nosto on lukijan
+                  kielellä, ks. PAKURI_TEASER. */}
               {category.id === 'superfoods' && (
                 <p className="mt-10 text-sm text-muted">
-                  {lang === 'fi'
-                    ? 'Pakurista pidemmin: mitä pakuri eli pakurikääpä on, miten rouhe, uutejauhe ja tinktuura eroavat ja mitä tutkimus sanoo. Lue '
-                    : 'More on chaga: what pakuri is, how chunks, extract powder and tincture differ, and what research says, '}
+                  {PAKURI_TEASER[lang].lead}
                   <Link
                     to={to('/pakuri')}
                     className="font-medium text-amber underline-offset-2 hover:underline"
                   >
-                    {lang === 'fi' ? 'Pakuri-opas' : 'Chaga guide'}
+                    {PAKURI_TEASER[lang].link}
                   </Link>
-                  .
+                  {PAKURI_TEASER[lang].tail}
                 </p>
               )}
             </>

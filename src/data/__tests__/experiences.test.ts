@@ -12,7 +12,11 @@ import {
   TOURS_PICKS,
   VISIT_PICKS,
   NATURE_PICKS,
-  WELLNESS_PICKS, LUXURY_PICKS } from '../../shared/gyg/picks'
+  WELLNESS_PICKS, LUXURY_PICKS, PLACE_NAMES, gygDuration } from '../../shared/gyg/picks'
+import { LANG_PREFIX, type Lang } from '../../i18n/useLang'
+import { experienceName, experiencePlace } from '../../locales/experienceNames'
+
+const LANGS = Object.keys(LANG_PREFIX) as Lang[]
 
 const VERIFIED_PATHS = new Set(
   [
@@ -80,6 +84,48 @@ describe('elämyslahjat', () => {
       // Oma nimi on nimenomaan ERI kuin GYG:n myyntiotsikko: jos ne ovat
       // samat, rivi on jäänyt kääntämättä.
       expect(e.name.en, `${e.path}: nimi on yhä GYG:n otsikko`).not.toBe(e.title)
+    }
+  })
+
+  /**
+   * 🔴 Kortti valitsi nimen 28.9.2026 asti `lang === 'fi' ? fi : en`, joten
+   * kymmenen kieltä näki kaikki 25 nimeä englanniksi (gate:kielipuhtaus-dom,
+   * /de/experiences/ ja /kr/experiences/). Portti näkee vain pisimmät nimet;
+   * tämä testi vaatii jokaisen.
+   */
+  it('jokaisella elämyksellä on oma nimi kaikilla 12 kielellä', () => {
+    for (const e of GIFT_EXPERIENCES) {
+      const en = experienceName(e, 'en')
+      for (const lang of LANGS) {
+        const name = experienceName(e, lang)
+        expect(name.trim().length, `${lang}/${e.image}`).toBeGreaterThan(0)
+        if (lang !== 'en') expect(name, `${lang}/${e.image}: englanti varakielenä`).not.toBe(en)
+      }
+    }
+  })
+
+  it('paikkakunta ja kesto ovat lukijan kielellä', () => {
+    for (const e of GIFT_EXPERIENCES) {
+      expect(PLACE_NAMES[e.place], `${e.image}: paikkaa "${e.place}" ei ole PLACE_NAMESissa`).toBeDefined()
+      for (const lang of LANGS) {
+        expect(experiencePlace(e, lang).length, `${lang}/${e.image}`).toBeGreaterThan(0)
+        if (e.duration) {
+          expect(gygDuration(e, lang), `${lang}/${e.image}: kesto "${e.duration}" ei jäsenny`).toBeDefined()
+        }
+      }
+    }
+  })
+
+  /**
+   * 🔴 "A night in a snow hotel" / "Yö lumihotellissa" oli 37 euron, 3,5 tunnin
+   * Arctic SnowHotel -kierroksen nimi (GYG-polku `…-arctic-snowhotel-tour-…`).
+   * Lyhyt kierros ei lupaa yöpymistä millään kielellä.
+   */
+  it('alle vuorokauden kierros ei lupaa yöpymistä', () => {
+    for (const e of GIFT_EXPERIENCES) {
+      if (/day/.test(e.duration ?? '')) continue
+      expect(e.name.en, e.image).not.toMatch(/\b(night in|overnight|stay)\b/i)
+      expect(e.name.fi, e.image).not.toMatch(/(^|\s)(yö|yöpyminen|majoitus)(\s|$)/i)
     }
   })
 

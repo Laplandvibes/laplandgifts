@@ -1,10 +1,18 @@
 import { describe, expect, it } from 'vitest'
 import { PRODUCTS, productsByCategory } from '../products'
 import { CATEGORIES } from '../categories'
-import { SUBGROUP_ORDER, groupProducts, subgroupLabel, subgroupOf } from '../subgroups'
-import type { Lang } from '../../i18n/useLang'
+import {
+  SUBGROUP_LABELS,
+  SUBGROUP_NOTES,
+  SUBGROUP_ORDER,
+  groupProducts,
+  subgroupLabel,
+  subgroupOf,
+} from '../subgroups'
+import { LANG_PREFIX, type Lang } from '../../i18n/useLang'
 
 const CATEGORY_IDS = CATEGORIES.map((c) => c.id)
+const LANGS = Object.keys(LANG_PREFIX) as Lang[]
 
 describe('kategorioiden alaryhmät', () => {
   /**
@@ -37,11 +45,31 @@ describe('kategorioiden alaryhmät', () => {
     }
   })
 
-  it('jokaisella käytössä olevalla ryhmällä on nimi en ja fi', () => {
+  /**
+   * 🔴 Taulukossa oli 28.9.2026 asti vain en ja fi, ja `subgroupLabel` putoaa
+   * englantiin, joten hyllyjen otsikot olivat englantia kymmenellä kielellä
+   * (gate:kielipuhtaus-dom: /cn/handicrafts/ "Wood and camp tableware").
+   * Siksi testi lukee taulukon omat rivit eikä varakieleen putoavaa funktiota.
+   */
+  it('jokaisella käytössä olevalla ryhmällä on oma nimi kaikilla 12 kielellä', () => {
     const used = new Set(PRODUCTS.map((p) => subgroupOf(p.slug)))
     for (const id of used) {
-      for (const lang of ['en', 'fi'] as Lang[]) {
-        expect(subgroupLabel(id, lang).trim().length, `${id} (${lang})`).toBeGreaterThan(0)
+      for (const lang of LANGS) {
+        expect(SUBGROUP_LABELS[lang]?.[id]?.trim(), `${id} (${lang})`).toBeTruthy()
+        expect(subgroupLabel(id, lang), `${id} (${lang})`).toBe(SUBGROUP_LABELS[lang]?.[id])
+      }
+    }
+  })
+
+  it('jokaisella hyllyn saatteella on käännös kaikilla 12 kielellä', () => {
+    const en = SUBGROUP_NOTES.en ?? {}
+    expect(Object.keys(en).length).toBeGreaterThan(0)
+    for (const [id, text] of Object.entries(en)) {
+      for (const lang of LANGS) {
+        if (lang === 'en') continue
+        const own = SUBGROUP_NOTES[lang]?.[id]
+        expect(own?.trim(), `${id} (${lang})`).toBeTruthy()
+        expect(own, `${id} (${lang}): englanti varakielenä`).not.toBe(text)
       }
     }
   })

@@ -4,6 +4,7 @@ import type { GiftExperience } from '../../data/experiences'
 import { AFFILIATE_REL } from '../../data/partners'
 import type { Lang } from '../../i18n/useLang'
 import { SHOP_COPY } from '../../locales/shopCopy'
+import { experienceDuration, experienceName, experiencePlace } from '../../locales/experienceNames'
 import AiDisclosure from '../AiDisclosure'
 
 /**
@@ -14,6 +15,8 @@ import AiDisclosure from '../AiDisclosure'
  */
 export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; lang: Lang }) {
   const t = SHOP_COPY[lang].experience
+  // Nimi, paikka ja kesto lukijan kielellä (28.9.2026 asti fi tai en kaikille).
+  const duration = experienceDuration(pick, lang)
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-line bg-card">
       {/* Kortissa on aina kuva. Ilman sitä kortti oli pelkkä tekstilaatikko
@@ -48,20 +51,20 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
       <div className="flex flex-1 flex-col gap-3 p-5">
         <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-muted">
           <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
-          {pick.place}
+          {experiencePlace(pick, lang)}
         </span>
         {/* Sama kuin ProductCardissa: retken nimi on sekakirjaiminen lause
             ("Rovaniemi: Husky Sledge Ride"), ei osion otsikko, joten se ladotaan
             leipätekstifontilla eikä versaalilla Bebas Neuella. */}
         <h3 className="font-body text-lg font-semibold leading-snug tracking-normal text-gray">
-          {lang === 'fi' ? pick.name.fi : pick.name.en}
+          {experienceName(pick, lang)}
         </h3>
         {/* Hinta on GetYourGuiden oma "alkaen"-hinta lukupäivänä, ei meidän.
             Rivi ilman hintaa renderöityy ilman hintaa, ei arvauksella. */}
         {pick.price && (
           <p className="text-sm font-semibold text-gray">{t.priceNote(pick.price)}</p>
         )}
-        {pick.duration && <p className="text-sm text-muted">{t.duration(pick.duration)}</p>}
+        {duration && <p className="text-sm text-muted">{t.duration(duration)}</p>}
         {/* Oma sid: pickin oma sid on kuratoivan sivuston mukaan nimetty
             (hub_home_pick_*, kids_home_pick_*), joten giftsin GYG-tuotto
             raportoitui muiden sivustojen placement-nimille eikä sitä voinut

@@ -51,6 +51,11 @@ export default function Product() {
   const category = categoryById(product.category)
   /** Kaksikielinen kenttä nykyisellä kielellä. Muut kielet saavat englannin. */
   const pick = (v: { en: string; fi: string }) => (lang === 'fi' ? v.fi : v.en)
+  // Ainesosat ja allergeenit ovat kaupan omalta tuotesivulta (details.sourceUrl)
+  // vain suomeksi ja englanniksi, eikä niitä käännetä: allergeenitieto on
+  // turvallisuustietoa. Muilla kielillä englanti merkitään kieleltään, jotta
+  // selain, ruudunlukija ja kielipuhtausportti tietävät sen (28.9.2026).
+  const supplierLang = lang === 'fi' || lang === 'en' ? undefined : 'en'
   const name = productName(product, lang)
   const description = productDescription(product, lang)
   const details = product.details
@@ -222,7 +227,7 @@ export default function Product() {
                   {details.ingredients && (
                     <div className="mt-6">
                       <h3 className="font-semibold text-gray">{t.product.ingredientsH3}</h3>
-                      <p className="mt-1 break-words text-sm text-gray/90">
+                      <p className="mt-1 break-words text-sm text-gray/90" lang={supplierLang}>
                         {pick(details.ingredients)}
                       </p>
                     </div>
@@ -233,7 +238,7 @@ export default function Product() {
                   {details.allergens && (
                     <div className="mt-4 rounded-xl border border-amber/40 bg-amber/10 p-4">
                       <h3 className="font-semibold text-gray">{t.product.allergensH3}</h3>
-                      <p className="mt-1 break-words text-sm text-gray">
+                      <p className="mt-1 break-words text-sm text-gray" lang={supplierLang}>
                         {pick(details.allergens)}
                       </p>
                     </div>
