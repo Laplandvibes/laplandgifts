@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { BRAND_COPY } from '../locales/brandCopy'
 import { LUXURY_COPY } from '../locales/luxuryCopy'
 import { Link, useLocation } from 'react-router-dom'
-import { Globe, Menu, X } from 'lucide-react'
+import { ChevronDown, Globe, Menu, X } from 'lucide-react'
 import Logo from './Logo'
 import LangSwitcher from './LangSwitcher'
 import ProductSearch from './ProductSearch'
@@ -93,7 +93,11 @@ export default function ShopNav() {
    * silmälle mistä on kyse. Kaikki kentät ovat 16 pikselin tekstiä: pienempi
    * saa iOS Safarin zoomaamaan koko sivun kenttään kosketettaessa.
    */
-  const countrySelect = (wrapClass: string, selectClass: string, visibleLabel = false) => (
+  // 🔴 Oma nuoli, ei selaimen (Vesa 28.9.2026: "v väkänen miten sattuu"):
+  // selaimen oma nuoli istui täysleveän kentän oikeassa reunassa kaukana
+  // tekstistä, ja sen paikka vaihtui selaimen mukaan. `appearance-none` +
+  // ChevronDown samalla tavalla kuin kielivalitsimen lipun vieressä.
+  const countrySelect = (wrapClass: string, selectClass: string, visibleLabel = false, boxClass = '') => (
     <label className={`min-w-0 items-center gap-2 ${wrapClass}`}>
       {visibleLabel ? (
         <span className="shrink-0 text-sm font-semibold text-white/60">{t.shipping.selectorLabel}</span>
@@ -103,18 +107,24 @@ export default function ShopNav() {
           <Globe className="h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
         </>
       )}
-      <select
-        value={country}
-        onChange={(e) => setCountry(e.target.value)}
-        className={`min-w-0 rounded-full border border-white/20 bg-white/10 text-white ${selectClass}`}
-      >
-        <option value="">
-          {visibleLabel ? t.shipping.selectorAll : t.shipping.selectorLabel}
-        </option>
-        {COUNTRIES.map((c) => (
-          <option key={c} value={c}>{c}</option>
-        ))}
-      </select>
+      <span className={`relative min-w-0 ${boxClass}`}>
+        <select
+          value={country}
+          onChange={(e) => setCountry(e.target.value)}
+          className={`min-w-0 appearance-none truncate rounded-full border border-white/20 bg-white/10 pl-4 pr-10 text-white ${selectClass}`}
+        >
+          <option value="">
+            {visibleLabel ? t.shipping.selectorAll : t.shipping.selectorLabel}
+          </option>
+          {COUNTRIES.map((c) => (
+            <option key={c} value={c}>{c}</option>
+          ))}
+        </select>
+        <ChevronDown
+          className="pointer-events-none absolute right-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-white/70"
+          aria-hidden="true"
+        />
+      </span>
     </label>
   )
 
@@ -175,7 +185,18 @@ export default function ShopNav() {
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3">
           {/* Logo sisältää jo oman Linkin etusivulle. Ylimääräinen Link-kääre
               tuottaisi sisäkkäiset <a>-elementit, mikä on epävalidia HTML:ää. */}
-          <div className="shrink-0">
+          {/* 🔴 Verkostonappi sanamerkin vasemmalla puolella alle xl:n, sama
+              paikka kuin storessa ja hubissa (Vesa 28.9.2026: "vajaa kun
+              verkostoa ei ole"). Se oli puhelimessa vain Valikko-paneelin
+              sisällä. Alle 640 px:n napista näkyy ruudukkokuvake ja nuoli
+              (44 × 44), xl:stä ylöspäin nappi on kategoriarivin oikeassa reunassa. */}
+          <div className="flex shrink-0 items-center gap-3">
+            {/* Ei `lv-eco-compact`-käärettä: sen `> span {display:inline}`
+                ohittaa verkoston säännön, joka piilottaa tekstin alle 640 px:n,
+                jolloin 120 px:n nappi työnsi Valikon toiselle riville. */}
+            <div className="xl:hidden">
+              <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
+            </div>
             <Logo />
           </div>
 
@@ -192,8 +213,12 @@ export default function ShopNav() {
               `order-last w-full` pakottaa valitsimet siistiksi omaksi
               rivikseen ja jättää ylimmälle riville logon ja valikkonapin.
               lg:stä ylöspäin pari palaa oikeaan reunaan samalle riville. */}
-          <div className="order-last flex w-full min-w-0 items-center gap-2 lg:order-none lg:ml-auto lg:w-auto">
-            {countrySelect('flex flex-1 lg:flex-none', 'h-11 w-full px-3 text-base lg:h-9 lg:w-auto lg:max-w-none')}
+          {/* Toimitusmaa on sisältönsä levyinen, ei koko rivin (Vesa 28.9.2026:
+              "toimitusmaa osio on aika leveä"); kielivalitsin rivin toisessa
+              päässä. max-w pitää pitkän maan nimen ("Alankomaat", "Yhdysvallat")
+              rivillä, truncate hoitaa loput. */}
+          <div className="order-last flex w-full min-w-0 items-center justify-between gap-2 lg:order-none lg:ml-auto lg:w-auto lg:justify-start">
+            {countrySelect('flex lg:flex-none', 'h-11 w-auto max-w-[13rem] text-base lg:h-9 lg:max-w-none')}
             <LangSwitcher />
           </div>
 
@@ -214,7 +239,10 @@ export default function ShopNav() {
             className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-white/25 px-4 text-sm font-semibold text-white xl:hidden justify-center min-w-11"
           >
             {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
-            {n.menuLabel}
+            {/* Alle 360 px:n pelkkä kuvake: verkostonappi, sanamerkki ja
+                "Valikko" vievät 334 px, ja 320 px:n ruudulla nappi rivittyi
+                omalle rivilleen (palkki 173 px). Nimi säilyy aria-labelissa. */}
+            <span className="max-[359px]:sr-only">{n.menuLabel}</span>
           </button>
         </div>
 
@@ -357,15 +385,8 @@ export default function ShopNav() {
                 </Link>
               ))}
             </nav>
-            {/* Verkostovalikko. Se asui aiemmin tummassa apupalkissa, joka on
-                nyt poistettu; työpöydällä se on kategoriarivin oikeassa
-                reunassa, mobiilissa täällä. Ilman tätä koko muu verkosto
-                katoaisi puhelimelta. */}
-            <div className="mx-auto max-w-7xl border-t border-white/10 px-4 py-3">
-              <div className="lv-eco-compact">
-                <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
-              </div>
-            </div>
+            {/* Verkostovalikko ei ole enää paneelissa: alle xl:n se on ylärivillä
+                sanamerkin vieressä (28.9.2026), joten kaksoiskappale pois. */}
             {/* Sama valitsin kuin ylärivillä, mutta näkyvällä labelilla ja
                 täysleveänä. Kaksoiskappale on tarkoituksellinen: kapealla
                 ruudulla ylärivin valitsin on pieni, ja tämä on se paikka josta
@@ -373,8 +394,9 @@ export default function ShopNav() {
                 text-base = 16 px: pienempi koko saa iOS:n zoomaamaan kenttään. */}
             {countrySelect(
               'mx-auto flex max-w-7xl flex-wrap border-t border-white/10 px-4 py-3 lg:hidden',
-              'min-h-11 flex-1 px-4 text-base',
+              'min-h-11 w-full text-base',
               true,
+              'flex-1',
             )}
           </div>
         )}
