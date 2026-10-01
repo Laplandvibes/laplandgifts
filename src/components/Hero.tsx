@@ -24,7 +24,9 @@ export default function Hero() {
   const to = useLocalePath()
   const t = COPY[lang].hero
   const s = SHOP_COPY[lang]
-  const keepAll = lang === 'ja' || lang === 'ko' ? ' [word-break:keep-all]' : ''
+  // Luokka erillisenä sanana: `${…}` kiinni edelliseen luokkaan piilottaa sen Tailwindin
+  // lähdeskannerilta (xl:text-2xl jäi generoimatta).
+  const keepAll = lang === 'ja' || lang === 'ko' ? '[word-break:keep-all]' : ''
   return (
     // 🔴🔴 Puhelimessa ja tabletissa kuva on OMA NAUHANSA tekstin yläpuolella
     // (Vesa 28.9.2026: "mobiilissa hero kuva ei näy ollenkaan ja tunnelma on
@@ -94,10 +96,10 @@ export default function Hero() {
           {/* ja/ko: rivi katkeaa vain sanan rajalta (keep-all). Japanin otsikossa
               sallitut katkokohdat ovat datassa nollalevyisinä välilyönteinä (U+200B);
               ilman niitä 360 px:ssä otsikko katkesi "ラップラン / ド". */}
-          <h1 className={`font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)]${keepAll}`}>
+          <h1 className={`font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)] ${keepAll}`}>
             {s.home.heroTitle} <span className="block text-vibe-pink drop-shadow-[0_0_40px_rgba(236,72,153,0.8)]">{s.home.heroTitleAccent}</span>
           </h1>
-          <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/85 [text-wrap:pretty] md:text-xl lg:mx-0 xl:max-w-3xl xl:text-2xl${lang === 'ko' ? keepAll : ''}`}>
+          <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/85 [text-wrap:pretty] md:text-xl lg:mx-0 xl:max-w-3xl xl:text-2xl ${lang === 'ko' ? keepAll : ''}`}>
             {s.home.heroLead}
           </p>
           {/* 🔴 Napit ovat ruudukossa, eivät flex-rivissä (Vesa 1.8.).
