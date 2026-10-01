@@ -224,6 +224,12 @@
 .lv-eco-compact [role="status"] { display: none; }
 .lv-eco-compact .lv-eco-ring { animation: none; box-shadow: none; }
 
+/* Sama kuplan piilotus ylärivin verkostonapille alle xl:n (ShopNav). Kupla avautui
+   768–1279 px:ssä toimitusmaavalitsimen päälle ja peitti sen. Ei `.lv-eco-compact`-
+   kääreen tekstisääntöä, joka työnsi Valikko-napin toiselle riville. */
+.lv-eco-nohint [role="status"] { display: none; }
+.lv-eco-nohint .lv-eco-ring { animation: none; box-shadow: none; }
+
 /* 🔴 Verkostonapin tekstilabel takaisin näkyviin kaikilla leveyksillä.
    shared/EcosystemMenu.tsx piilottaa sen luokalla `hidden sm:inline`, joten
    alle 640 pikselin nappi oli pelkkä ruudukkoikoni ja nuoli: 58 × 30 pikselin
@@ -265,6 +271,14 @@
 :focus-visible {
   outline: 2px solid var(--color-amber);
   outline-offset: 2px;
+}
+
+/* Yläpalkin valitsimissa rengas on valkoinen. Chrome merkitsee valitsimen
+   :focus-visible-tilaan myös kosketuksesta, ja puhelimessa rengas jää näkyviin
+   valintalistan sulkeuduttua. Pinkki rengas toimitusmaan ympärillä näytti
+   virheeltä (Vesa 1.10.2026). Näppäimistön käyttäjälle rengas näkyy yhä. */
+header select:focus-visible {
+  outline-color: rgb(255 255 255 / 0.85);
 }
 
 /* Tuotekuvien vakiosuhde, jotta grid ei hypi latauksen aikana.

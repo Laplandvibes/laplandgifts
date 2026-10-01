@@ -24,6 +24,7 @@ export default function Hero() {
   const to = useLocalePath()
   const t = COPY[lang].hero
   const s = SHOP_COPY[lang]
+  const keepAll = lang === 'ja' || lang === 'ko' ? ' [word-break:keep-all]' : ''
   return (
     // 🔴🔴 Puhelimessa ja tabletissa kuva on OMA NAUHANSA tekstin yläpuolella
     // (Vesa 28.9.2026: "mobiilissa hero kuva ei näy ollenkaan ja tunnelma on
@@ -68,15 +69,8 @@ export default function Hero() {
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-14 pt-10 md:pb-20 md:pt-14 lg:py-28">
         <div className="mx-auto max-w-2xl xl:max-w-4xl text-center lg:mx-0 lg:text-left">
-          {/* 🔴 Muste istui suoraan kirkkaalla myymalakuvalla: 1,63:1 ja 1,90:1,
-              raja 4,5:1. Tumma laatta antaa musteelle taustan. */}
-          {/* 🔴🔴 Muste vaihdettu pinkista lumeen, ei tummennettu lisaa. Laskettu:
-              #DB2777 on puhtaalla deep-nightilla 3,93:1, joten 14 px:n tekstina se
-              EI VOI ylittaa 4,5:1 rajaa millaan taustalla — vika on varissa. Sama
-              ratkaisu kuin laplandhuskysafarisissa 20.9. (otsikko valkoiseksi). */}
-          <span className="inline-block rounded-full bg-night/75 px-3 py-1 text-sm font-medium uppercase tracking-widest text-snow">
-            {s.home.heroKicker}
-          </span>
+          {/* Ei yläotsikkoa otsikon yllä: toimituslupaus on ingressissä. Erillinen
+              harvennettu versaalirivi toisti saman asian kuin ingressi (Vesa 1.10.2026). */}
           {/* Bebas Neue on kapea versaalifontti: sama pistekoko näyttää
               selvästi pienemmältä kuin Playfairilla, joten koot ovat isot.
               tracking-wide avaa versaalit luettaviksi.
@@ -97,10 +91,13 @@ export default function Hero() {
               pikselin ruudulle mutta ei 360:lle eikä 320:lle: suomen
               "suomalaiset lahjat" katkesi kolmannelle riville yksinäiseksi
               sanaksi. Mitattu selaimesta kymmenellä leveydellä, ei arvattu. */}
-          <h1 className="mt-5 font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)]">
+          {/* ja/ko: rivi katkeaa vain sanan rajalta (keep-all). Japanin otsikossa
+              sallitut katkokohdat ovat datassa nollalevyisinä välilyönteinä (U+200B);
+              ilman niitä 360 px:ssä otsikko katkesi "ラップラン / ド". */}
+          <h1 className={`font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)]${keepAll}`}>
             {s.home.heroTitle} <span className="block text-vibe-pink drop-shadow-[0_0_40px_rgba(236,72,153,0.8)]">{s.home.heroTitleAccent}</span>
           </h1>
-          <p className="mt-6 max-w-xl xl:max-w-3xl text-lg leading-relaxed text-white/85 md:text-xl xl:text-2xl">
+          <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/85 [text-wrap:pretty] md:text-xl lg:mx-0 xl:max-w-3xl xl:text-2xl${lang === 'ko' ? keepAll : ''}`}>
             {s.home.heroLead}
           </p>
           {/* 🔴 Napit ovat ruudukossa, eivät flex-rivissä (Vesa 1.8.).

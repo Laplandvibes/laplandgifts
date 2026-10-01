@@ -194,7 +194,9 @@ export default function ShopNav() {
             {/* Ei `lv-eco-compact`-käärettä: sen `> span {display:inline}`
                 ohittaa verkoston säännön, joka piilottaa tekstin alle 640 px:n,
                 jolloin 120 px:n nappi työnsi Valikon toiselle riville. */}
-            <div className="xl:hidden">
+            {/* `lv-eco-nohint`: vinkkikupla avautui 768–1279 px:ssä toimitusmaavalitsimen
+                päälle (index.css). */}
+            <div className="lv-eco-nohint xl:hidden">
               <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
             </div>
             <Logo />

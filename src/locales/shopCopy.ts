@@ -24,7 +24,6 @@ export interface ShopCopy {
    * mobiiliruudun.
    */
   home: {
-    heroKicker: string
     heroTitle: string
     heroTitleAccent: string
     heroLead: string
@@ -262,11 +261,10 @@ const fmt = (value: number, currency: string, locale: string) =>
 const en: ShopCopy = {
   nav: { shop: 'Shop', guides: 'Gift guides', shipping: 'Delivery', allProducts: 'All products' },
   home: {
-    heroKicker: 'Shipped from Finland to your door',
     heroTitle: 'Finnish gifts and',
     heroTitleAccent: 'Lapland souvenirs',
     heroLead:
-      'Finnish design and handicrafts, sweets and berry powders, gathered in one place and shipped to where you live. Whether you are here on holiday or ordering from the other side of the world, each product is sold and sent by a Finnish or Nordic shop, not by us.',
+      'Finnish design and handicrafts, sweets and berry powders, delivered to your door. Each product is sold and shipped by a Finnish or Nordic shop.',
     categoriesH2: 'What to buy in Lapland',
     categoriesSub:
       'Finnish design, clothing, handicrafts, sweets, berry powders, our own merch and experience gifts. Each category opens the shop that actually ships the item.',
@@ -457,11 +455,10 @@ const en: ShopCopy = {
 const fi: ShopCopy = {
   nav: { shop: 'Kauppa', guides: 'Lahjaoppaat', shipping: 'Toimitus', allProducts: 'Kaikki tuotteet' },
   home: {
-    heroKicker: 'Suomesta suoraan kotiovelle',
     heroTitle: 'Lapin tuliaiset ja',
     heroTitleAccent: 'suomalaiset lahjat',
     heroLead:
-      'Suomalaista designia ja käsitöitä, herkkuja ja marjajauheita yhdessä paikassa, toimitettuna sinne missä asut. Olitpa täällä lomalla tai tilaamassa toiselta puolelta maailmaa, jokaisen tuotteen myy ja lähettää suomalainen tai pohjoismainen kauppa, emme me.',
+      'Suomalaista designia ja käsitöitä, herkkuja ja marjajauheita suoraan kotiovellesi. Jokaisen tuotteen myy ja lähettää suomalainen tai pohjoismainen kauppa.',
     categoriesH2: 'Mitä Lapista kannattaa ostaa',
     categoriesSub:
       'Suomalaista designia, vaatteita, käsitöitä, herkkuja, marjajauheita, omaa merchiä ja elämyslahjoja. Jokainen kategoria avaa sen kaupan, joka tuotteen oikeasti lähettää.',
@@ -685,11 +682,10 @@ const over = (o: Over): ShopCopy => ({ ...en, ...o })
 const de: ShopCopy = over({
   nav: { shop: 'Shop', guides: 'Geschenkideen', shipping: 'Versand', allProducts: 'Alle Produkte' },
   home: {
-    heroKicker: 'Aus Finnland direkt vor Ihre Tür',
     heroTitle: 'Finnische Geschenke und',
     heroTitleAccent: 'Souvenirs aus Lappland',
     heroLead:
-      'Finnisches Design und Handwerk, Süßigkeiten und Beerenpulver, an einem Ort gesammelt und dorthin geliefert, wo Sie wohnen. Ob Sie hier Urlaub machen oder von der anderen Seite der Welt bestellen: Jedes Produkt wird von einem finnischen oder nordischen Shop verkauft und verschickt, nicht von uns.',
+      'Finnisches Design und Handwerk, Süßigkeiten und Beerenpulver bis an Ihre Haustür. Jedes Produkt wird von einem finnischen oder nordischen Shop verkauft und verschickt.',
     categoriesH2: 'Was man in Lappland kauft',
     categoriesSub:
       'Finnisches Design, Kleidung, Handwerk, Süßes, Beerenpulver, unser eigenes Merch und Erlebnisgeschenke. Jede Kategorie öffnet den Shop, der die Ware tatsächlich verschickt.',
@@ -880,11 +876,10 @@ const de: ShopCopy = over({
 const sv: ShopCopy = over({
   nav: { shop: 'Butik', guides: 'Presenttips', shipping: 'Frakt', allProducts: 'Alla produkter' },
   home: {
-    heroKicker: 'Från Finland hem till dörren',
     heroTitle: 'Finska presenter och',
     heroTitleAccent: 'souvenirer från Lappland',
     heroLead:
-      'Finsk design och finskt hantverk, godis och bärpulver samlade på ett ställe och skickade dit du bor. Oavsett om du är här på semester eller beställer från andra sidan jorden säljs och skickas varje produkt av en finsk eller nordisk butik, inte av oss.',
+      'Finsk design och finskt hantverk, godis och bärpulver direkt hem till dörren. Varje produkt säljs och skickas av en finsk eller nordisk butik.',
     categoriesH2: 'Vad man köper i Lappland',
     categoriesSub:
       'Finsk design, kläder, hantverk, godis, bärpulver, vår egen merch och upplevelsepresenter. Varje kategori öppnar den butik som faktiskt skickar varan.',
@@ -1076,11 +1071,10 @@ const sv: ShopCopy = over({
 const fr: ShopCopy = over({
   nav: { shop: 'Boutique', guides: 'Idées cadeaux', shipping: 'Livraison', allProducts: 'Tous les produits' },
   home: {
-    heroKicker: 'De la Finlande jusqu’à votre porte',
     heroTitle: 'Cadeaux finlandais et',
     heroTitleAccent: 'souvenirs de Laponie',
     heroLead:
-      'Design et artisanat finlandais, confiseries et poudres de baies, réunis au même endroit et livrés là où vous habitez. Que vous soyez ici en vacances ou que vous commandiez de l’autre bout du monde, chaque produit est vendu et expédié par une boutique finlandaise ou nordique, pas par nous.',
+      'Design et artisanat finlandais, confiseries et poudres de baies, livrés jusqu’à votre porte. Chaque produit est vendu et expédié par une boutique finlandaise ou nordique.',
     categoriesH2: 'Que rapporter de Laponie',
     categoriesSub:
       'Design finlandais, vêtements, artisanat, douceurs, poudres de baies, notre propre merch et des expériences à offrir. Chaque catégorie ouvre la boutique qui expédie réellement l’article.',
@@ -1271,11 +1265,10 @@ const fr: ShopCopy = over({
 const es: ShopCopy = over({
   nav: { shop: 'Tienda', guides: 'Ideas de regalo', shipping: 'Envíos', allProducts: 'Todos los productos' },
   home: {
-    heroKicker: 'De Finlandia hasta su puerta',
     heroTitle: 'Regalos finlandeses y',
     heroTitleAccent: 'souvenirs de Laponia',
     heroLead:
-      'Diseño y artesanía de Finlandia, dulces y polvos de bayas, reunidos en un solo sitio y enviados donde vive. Tanto si está aquí de vacaciones como si compra desde el otro lado del mundo, cada producto lo vende y lo envía una tienda finlandesa o nórdica, no nosotros.',
+      'Diseño y artesanía de Finlandia, dulces y bayas en polvo, enviados hasta la puerta de su casa. Cada producto lo vende y lo envía una tienda finlandesa o nórdica.',
     categoriesH2: 'Qué comprar en Laponia',
     categoriesSub:
       'Diseño finlandés, ropa, artesanía, dulces, polvos de bayas, nuestra propia merch y experiencias para regalar. Cada categoría abre la tienda que realmente envía el artículo.',
@@ -1466,11 +1459,10 @@ const es: ShopCopy = over({
 const it: ShopCopy = over({
   nav: { shop: 'Negozio', guides: 'Idee regalo', shipping: 'Spedizioni', allProducts: 'Tutti i prodotti' },
   home: {
-    heroKicker: 'Dalla Finlandia fino alla tua porta',
     heroTitle: 'Regali finlandesi e',
     heroTitleAccent: 'souvenir dalla Lapponia',
     heroLead:
-      'Design e artigianato finlandesi, dolci e polveri di bacche, raccolti in un unico posto e spediti dove vivi. Che tu sia qui in vacanza o stia ordinando dall’altra parte del mondo, ogni prodotto è venduto e spedito da un negozio finlandese o nordico, non da noi.',
+      'Design e artigianato finlandesi, dolci e bacche in polvere, consegnati direttamente a casa tua. Ogni prodotto è venduto e spedito da un negozio finlandese o nordico.',
     categoriesH2: 'Cosa comprare in Lapponia',
     categoriesSub:
       'Design finlandese, abbigliamento, artigianato, dolci, polveri di bacche, il nostro merch e le esperienze da regalare. Ogni categoria apre il negozio che spedisce davvero l’articolo.',
@@ -1661,11 +1653,10 @@ const it: ShopCopy = over({
 const nl: ShopCopy = over({
   nav: { shop: 'Winkel', guides: 'Cadeautips', shipping: 'Verzending', allProducts: 'Alle producten' },
   home: {
-    heroKicker: 'Vanuit Finland tot aan uw deur',
     heroTitle: 'Finse cadeaus en',
     heroTitleAccent: 'souvenirs uit Lapland',
     heroLead:
-      'Fins design en Fins ambacht, snoep en bessenpoeders, op één plek verzameld en bezorgd waar u woont. Of u hier nu op vakantie bent of vanaf de andere kant van de wereld bestelt: elk product wordt verkocht en verstuurd door een Finse of Noordse winkel, niet door ons.',
+      'Fins design en handwerk, snoep en bessenpoeder, tot aan uw voordeur bezorgd. Elk product wordt verkocht en verstuurd door een Finse of Noordse winkel.',
     categoriesH2: 'Wat u in Lapland koopt',
     categoriesSub:
       'Fins design, kleding, ambacht, lekkers, bessenpoeders, onze eigen merch en belevenissen om cadeau te doen. Elke categorie opent de winkel die het artikel echt verstuurt.',
@@ -1856,11 +1847,10 @@ const nl: ShopCopy = over({
 const ptBR: ShopCopy = over({
   nav: { shop: 'Loja', guides: 'Ideias de presente', shipping: 'Entrega', allProducts: 'Todos os produtos' },
   home: {
-    heroKicker: 'Da Finlândia direto para a sua porta',
     heroTitle: 'Presentes finlandeses e',
     heroTitleAccent: 'souvenires da Lapônia',
     heroLead:
-      'Design e artesanato finlandeses, doces e pós de frutas, reunidos em um só lugar e enviados para onde você mora. Esteja você aqui de férias ou comprando do outro lado do mundo, cada produto é vendido e enviado por uma loja finlandesa ou nórdica, não por nós.',
+      'Design e artesanato finlandeses, doces e frutas silvestres em pó, entregues na sua porta. Cada produto é vendido e enviado por uma loja finlandesa ou nórdica.',
     categoriesH2: 'O que comprar na Lapônia',
     categoriesSub:
       'Design finlandês, roupas, artesanato, doces, pós de frutas, nossa própria merch e experiências para presentear. Cada categoria abre a loja que de fato envia o produto.',
@@ -2051,11 +2041,10 @@ const ptBR: ShopCopy = over({
 const ja: ShopCopy = over({
   nav: { shop: 'ショップ', guides: 'ギフトガイド', shipping: '配送', allProducts: 'すべての商品' },
   home: {
-    heroKicker: 'フィンランドからご自宅まで',
-    heroTitle: 'フィンランドの贈り物と',
-    heroTitleAccent: 'ラップランドのおみやげ',
+    heroTitle: 'フィンランド\u200Bの\u200B贈り物と',
+    heroTitleAccent: 'ラップランド\u200Bの\u200Bおみやげ',
     heroLead:
-      'フィンランドのデザインと手仕事、お菓子とベリーパウダーをひとつの場所に集め、お住まいの国までお届けします。旅行でこちらに来ている方も、地球の反対側から注文する方も、商品を販売し発送するのはフィンランドまたは北欧のショップであり、当サイトではありません。',
+      'フィンランドのデザインと手仕事、お菓子とベリーパウダーが、ご自宅まで届きます。販売と発送を行うのは、フィンランドまたは北欧のショップです。',
     categoriesH2: 'ラップランドで買うもの',
     categoriesSub:
       'フィンランドのデザイン、衣類、手仕事、お菓子、ベリーパウダー、当サイトのグッズ、そして体験ギフト。各カテゴリーから、実際に発送するショップへ進めます。',
@@ -2246,11 +2235,10 @@ const ja: ShopCopy = over({
 const zhCN: ShopCopy = over({
   nav: { shop: '商店', guides: '礼物指南', shipping: '配送', allProducts: '全部商品' },
   home: {
-    heroKicker: '从芬兰直接送到家门口',
     heroTitle: '芬兰礼物与',
     heroTitleAccent: '拉普兰纪念品',
     heroLead:
-      '芬兰设计与手工艺、糖果与浆果粉，集中在一处，寄到你居住的地方。无论你是在这里度假，还是从地球另一端下单，每件商品都由芬兰或北欧的商店销售和寄出，而不是由我们。',
+      '芬兰设计与手工艺、糖果与浆果粉，直接寄到你家门口。每件商品都由芬兰或北欧的商店销售并寄出。',
     categoriesH2: '在拉普兰买什么',
     categoriesSub:
       '芬兰设计、服装、手工艺、甜食、浆果粉、我们自己的周边，以及可以送人的体验。每个分类都会打开真正发货的那家商店。',
@@ -2441,11 +2429,10 @@ const zhCN: ShopCopy = over({
 const ko: ShopCopy = over({
   nav: { shop: '스토어', guides: '선물 가이드', shipping: '배송', allProducts: '전체 상품' },
   home: {
-    heroKicker: '핀란드에서 집 앞까지',
     heroTitle: '핀란드 선물과',
     heroTitleAccent: '라플란드 기념품',
     heroLead:
-      '핀란드의 디자인과 수공예, 과자와 베리 파우더를 한곳에 모아 사시는 곳까지 보내드립니다. 이곳에 여행 중이든 지구 반대편에서 주문하든, 모든 상품은 핀란드 또는 북유럽 상점이 판매하고 발송합니다. 저희가 아닙니다.',
+      '핀란드 디자인과 수공예품, 과자와 베리 파우더를 집 앞에서 받아 보세요. 모든 상품은 핀란드나 북유럽의 상점이 직접 판매하고 발송합니다.',
     categoriesH2: '라플란드에서 무엇을 살까',
     categoriesSub:
       '핀란드 디자인, 의류, 수공예, 과자, 베리 파우더, 저희 굿즈, 그리고 선물할 수 있는 체험. 각 카테고리는 실제로 상품을 보내는 상점으로 이어집니다.',
