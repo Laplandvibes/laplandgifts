@@ -182,7 +182,7 @@ export default function ShopNav() {
           headeria, joten se on jo rullautunut pois kun header kiinnittyy. */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-night/95 text-white backdrop-blur">
         {/* ── RIVI 1: sanamerkki, haku, toimitusmaa ja kieli ─────────────── */}
-        <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3">
+        <div className="lv-navrivi mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3">
           {/* Logo sisältää jo oman Linkin etusivulle. Ylimääräinen Link-kääre
               tuottaisi sisäkkäiset <a>-elementit, mikä on epävalidia HTML:ää. */}
           {/* 🔴 Verkostonappi sanamerkin vasemmalla puolella alle xl:n, sama
@@ -190,7 +190,7 @@ export default function ShopNav() {
               verkostoa ei ole"). Se oli puhelimessa vain Valikko-paneelin
               sisällä. Alle 640 px:n napista näkyy ruudukkokuvake ja nuoli
               (44 × 44), xl:stä ylöspäin nappi on kategoriarivin oikeassa reunassa. */}
-          <div className="flex shrink-0 items-center gap-3">
+          <div className="lv-navvasen flex shrink-0 items-center gap-3">
             {/* Ei `lv-eco-compact`-käärettä: sen `> span {display:inline}`
                 ohittaa verkoston säännön, joka piilottaa tekstin alle 640 px:n,
                 jolloin 120 px:n nappi työnsi Valikon toiselle riville. */}
@@ -199,7 +199,9 @@ export default function ShopNav() {
             <div className="lv-eco-nohint xl:hidden">
               <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
             </div>
-            <Logo />
+            <div className="lv-wm-paikka">
+              <Logo nav />
+            </div>
           </div>
 
           {/* Haku keskellä ylintä riviä, kuten verkkokaupoissa yleensä. Alle
