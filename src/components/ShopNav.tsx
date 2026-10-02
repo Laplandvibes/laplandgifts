@@ -182,7 +182,7 @@ export default function ShopNav() {
           headeria, joten se on jo rullautunut pois kun header kiinnittyy. */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-night/95 text-white backdrop-blur">
         {/* ── RIVI 1: sanamerkki, haku, toimitusmaa ja kieli ─────────────── */}
-        <div className="lv-navrivi mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3">
+        <div className="lv-navrivi mx-auto flex max-w-screen-2xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 xl:h-16 xl:flex-nowrap xl:px-8 xl:py-0">
           {/* Logo sisältää jo oman Linkin etusivulle. Ylimääräinen Link-kääre
               tuottaisi sisäkkäiset <a>-elementit, mikä on epävalidia HTML:ää. */}
           {/* 🔴 Verkostonappi sanamerkin vasemmalla puolella alle xl:n, sama
@@ -190,13 +190,15 @@ export default function ShopNav() {
               verkostoa ei ole"). Se oli puhelimessa vain Valikko-paneelin
               sisällä. Alle 640 px:n napista näkyy ruudukkokuvake ja nuoli
               (44 × 44), xl:stä ylöspäin nappi on kategoriarivin oikeassa reunassa. */}
-          <div className="lv-navvasen flex shrink-0 items-center gap-3">
+          <div className="lv-navvasen flex shrink-0 items-center gap-3 xl:gap-5">
             {/* Ei `lv-eco-compact`-käärettä: sen `> span {display:inline}`
                 ohittaa verkoston säännön, joka piilottaa tekstin alle 640 px:n,
                 jolloin 120 px:n nappi työnsi Valikon toiselle riville. */}
             {/* `lv-eco-nohint`: vinkkikupla avautui 768–1279 px:ssä toimitusmaavalitsimen
                 päälle (index.css). */}
-            <div className="lv-eco-nohint xl:hidden">
+            {/* Verkostonappi sanamerkin vasemmalla myös työpöydällä, kuten verkoston muilla sivustoilla (ennen xl:stä
+                kategoriarivin oikeassa reunassa). */}
+            <div className="lv-eco-nohint">
               <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
             </div>
             <div className="lv-wm-paikka">
@@ -252,7 +254,7 @@ export default function ShopNav() {
 
         {/* ── RIVI 2: kategoriat ja toissijaiset linkit, vain lg+ ────────── */}
         <div className="hidden border-t border-white/10 lg:block">
-          <div className="mx-auto flex max-w-7xl items-center gap-x-6 px-4">
+          <div className="mx-auto flex max-w-screen-2xl items-center gap-x-6 px-4 xl:px-8">
             <nav
               aria-label={n.shopNavLabel}
               className="flex items-center gap-x-6 xl:gap-x-8"
@@ -320,9 +322,6 @@ export default function ShopNav() {
                   </Link>
                 ))}
               </nav>
-              <div className="lv-eco-compact shrink-0">
-                <EcosystemMenu lang={lang} currentDomain="laplandgifts.com" variant="dark" />
-              </div>
             </div>
           </div>
         </div>
