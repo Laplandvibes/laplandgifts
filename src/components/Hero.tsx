@@ -5,6 +5,22 @@ import { imgSrcSet } from '../lib/img'
 import { COPY } from '../locales/copy'
 import { SHOP_COPY } from '../locales/shopCopy'
 
+/* ── Otsikko kahdella rivillä jokaisella kielellä tietokoneella (Vesa 3.10.2026: "tehdään turhaan kolmirivisiä") ──
+ * Mitattu livenä 3.10. (12 kieltä × 1280/1536/1920): 8 löydöstä, de/pt-BR/it/sv 3 riviä 1536–1920 px:llä
+ * ("Finska presenter och / souvenirer / från Lappland") ja ja 4 riviä kaikilla leveyksillä. Koko kasvoi näytön
+ * mukana (96–115 px), palsta pysyi 896 px:ssä. Rivijako on datassa (valkoinen heroTitle | pinkki accent), joten
+ * sm:stä ylöspäin koko on pienempi kahdesta: suunniteltu --h1-max tai koko jolla pidempi rivi mahtuu palstaan
+ * (100cqi / rivin leveys em-yksiköinä). Palsta pysyy ennallaan: teksti ei siirry kuvan vaaleaan oikeaan laitaan.
+ * Malli: hubin Hero.tsx (laplandvibes cadea06). */
+const CJK_CHAR = /[぀-ヿ㐀-鿿가-힯＀-￯]/
+/** Rivin leveysarvio em-yksiköinä: Bebas Neuen versaali ~0,36–0,39 em, arvio 0,4 jättää varaa; CJK-merkki 1,05 em;
+ *  nollalevyinen katkokohta (U+200B, japanin datassa) 0. tracking-wide lisää 0,025 em jokaiseen merkkiin. */
+const emWidth = (s: string): number =>
+  [...s].reduce((w, ch) => {
+    if (ch.charCodeAt(0) === 0x200b) return w
+    return w + 0.025 + (CJK_CHAR.test(ch) ? 1.05 : ch === ' ' ? 0.25 : 0.4)
+  }, 0)
+
 /**
  * Kaupallinen hero: kuva kantaa, teksti on lyhyt ja molemmat CTA:t vievät
  * kauppaan reitittimen Linkillä, eivät ankkuriin saman sivun sisällä.
@@ -27,6 +43,7 @@ export default function Hero() {
   // Luokka erillisenä sanana: `${…}` kiinni edelliseen luokkaan piilottaa sen Tailwindin
   // lähdeskannerilta (xl:text-2xl jäi generoimatta).
   const keepAll = lang === 'ja' || lang === 'ko' ? '[word-break:keep-all]' : ''
+  const h1Em = Math.max(emWidth(s.home.heroTitle), emWidth(s.home.heroTitleAccent))
   return (
     // 🔴🔴 Puhelimessa ja tabletissa kuva on OMA NAUHANSA tekstin yläpuolella
     // (Vesa 28.9.2026: "mobiilissa hero kuva ei näy ollenkaan ja tunnelma on
@@ -70,7 +87,8 @@ export default function Hero() {
         aria-hidden="true"
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-14 pt-10 md:pb-20 md:pt-14 lg:py-28">
-        <div className="mx-auto max-w-2xl xl:max-w-4xl text-center lg:mx-0 lg:text-left">
+        {/* @container: otsikon koko lasketaan tämän palstan leveydestä (100cqi). */}
+        <div className="@container mx-auto max-w-2xl xl:max-w-4xl text-center lg:mx-0 lg:text-left">
           {/* Ei yläotsikkoa otsikon yllä: toimituslupaus on ingressissä. Erillinen
               harvennettu versaalirivi toisti saman asian kuin ingressi (Vesa 1.10.2026). */}
           {/* Bebas Neue on kapea versaalifontti: sama pistekoko näyttää
@@ -96,7 +114,13 @@ export default function Hero() {
           {/* ja/ko: rivi katkeaa vain sanan rajalta (keep-all). Japanin otsikossa
               sallitut katkokohdat ovat datassa nollalevyisinä välilyönteinä (U+200B);
               ilman niitä 360 px:ssä otsikko katkesi "ラップラン / ド". */}
-          <h1 className={`font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:text-5xl md:text-7xl lg:text-8xl xl:text-[clamp(96px,1.5vw_+_76.8px,115.2px)] ${keepAll}`}>
+          {/* Puhelin (< 640) pitää kiinteän clamp-koon; sm+ = min(suunniteltu --h1-max, palstaan mahtuva).
+              lg (1024–1279): rivi korkeintaan 85 % palstasta (--h1-fit). Täysleveä pinkki rivi ulottui 1024 px:llä
+              kuvan vaaleaan ikkunaan, ja heroteksti-portti mittasi de/ja/sv:n korostusrivistä 10–13 % rajan alle. */}
+          <h1
+            className={`font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:[--h1-max:3rem] md:[--h1-max:4.5rem] lg:[--h1-max:6rem] xl:[--h1-max:clamp(96px,1.5vw_+_76.8px,115.2px)] lg:[--h1-fit:0.85] xl:[--h1-fit:1] sm:[font-size:min(var(--h1-max),calc(100cqi*var(--h1-fit,1)/var(--h1-em)))] ${keepAll}`}
+            style={{ ['--h1-em' as string]: h1Em.toFixed(2) }}
+          >
             {s.home.heroTitle} <span className="block text-vibe-pink drop-shadow-[0_0_40px_rgba(236,72,153,0.8)]">{s.home.heroTitleAccent}</span>
           </h1>
           <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/85 [text-wrap:pretty] md:text-xl lg:mx-0 xl:max-w-3xl xl:text-2xl ${lang === 'ko' ? keepAll : ''}`}>
