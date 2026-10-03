@@ -267,7 +267,7 @@ export default function ShopNav() {
                   to={c.to}
                   aria-current={active ? 'page' : undefined}
                   title={c.full}
-                  className={`relative inline-flex min-h-11 items-center whitespace-nowrap text-[15px] font-medium transition-colors hover:text-vibe-pink ${
+                  className={`relative inline-flex min-h-11 items-center whitespace-nowrap text-sm font-medium transition-colors hover:text-vibe-pink ${
                     active ? 'text-vibe-pink' : 'text-white/85'
                   }`}
                 >
@@ -314,7 +314,7 @@ export default function ShopNav() {
                     // 44 pikselin rivin sisään kahdelle 12 pikselin riville,
                     // jotka asettuvat lähes kiinni toisiinsa. Juuri se luki
                     // päällekkäisyytenä (Vesa 16.8.).
-                    className={`inline-flex min-h-11 items-center whitespace-nowrap text-xs font-semibold uppercase tracking-[0.14em] transition-colors hover:text-vibe-pink ${
+                    className={`inline-flex min-h-11 items-center whitespace-nowrap text-sm font-medium transition-colors hover:text-vibe-pink ${
                       here === s.slug ? 'text-vibe-pink' : 'text-white/55'
                     }`}
                   >
