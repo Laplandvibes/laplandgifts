@@ -9,7 +9,7 @@ import ExperienceCard from '../components/shop/ExperienceCard'
 import { categoryBySlug } from '../data/categories'
 import { productsByCategory } from '../data/products'
 import { GIFT_EXPERIENCES, EXPERIENCE_GROUPS, experiencesByGroup } from '../data/experiences'
-import { GYG_PRICE_AS_OF } from '../shared/gyg/picks'
+import { GYG_PRICE_AS_OF, gygFreshPrice } from '../shared/gyg/picks'
 import { groupProducts, subgroupLabel, subgroupNote } from '../data/subgroups'
 import { themesForCategory } from '../data/themeProducts'
 import { byShippingBreadth } from '../data/sortProducts'
@@ -248,9 +248,13 @@ export default function Category() {
               {/* Hinnan lukupäivä kerran sivun lopussa, ei jokaisessa kortissa.
                   Kortissa se luki muodossa "Alkaen 198 € GetYourGuidessa,
                   hinta luettu 2026-07-29", mikä on asiakkaalle kohinaa. */}
-              <p className="mt-10 border-t border-line pt-5 text-xs text-muted">
-                {tx.priceAsOf(GYG_PRICE_AS_OF)}
-              </p>
+              {/* Vain kun jokin kortti näyttää hinnan: yli 7 vrk vanha hinta ei näy
+                  (Vesa 4.10.2026), eikä lukupäivää kerrota hinnoille joita ei ole. */}
+              {GIFT_EXPERIENCES.some((p) => gygFreshPrice(p)) && (
+                <p className="mt-10 border-t border-line pt-5 text-xs text-muted">
+                  {tx.priceAsOf(GYG_PRICE_AS_OF)}
+                </p>
+              )}
             </>
           ) : (
             <>

@@ -1,5 +1,5 @@
 import { ArrowUpRight, MapPin } from 'lucide-react'
-import { gygHref } from '../../shared/gyg/picks'
+import { gygFreshPrice, gygHref } from '../../shared/gyg/picks'
 import type { GiftExperience } from '../../data/experiences'
 import { AFFILIATE_REL } from '../../data/partners'
 import type { Lang } from '../../i18n/useLang'
@@ -17,6 +17,8 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
   const t = SHOP_COPY[lang].experience
   // Nimi, paikka ja kesto lukijan kielellä (28.9.2026 asti fi tai en kaikille).
   const duration = experienceDuration(pick, lang)
+  // Yli 7 vrk vanha GYG-hinta ei näy (Vesa 4.10.2026, shared/gyg/picks.ts).
+  const price = gygFreshPrice(pick)
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-line bg-card">
       {/* Kortissa on aina kuva. Ilman sitä kortti oli pelkkä tekstilaatikko
@@ -61,8 +63,8 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
         </h3>
         {/* Hinta on GetYourGuiden oma "alkaen"-hinta lukupäivänä, ei meidän.
             Rivi ilman hintaa renderöityy ilman hintaa, ei arvauksella. */}
-        {pick.price && (
-          <p className="text-sm font-semibold text-gray">{t.priceNote(pick.price)}</p>
+        {price && (
+          <p className="text-sm font-semibold text-gray">{t.priceNote(price)}</p>
         )}
         {duration && <p className="text-sm text-muted">{t.duration(duration)}</p>}
         {/* Oma sid: pickin oma sid on kuratoivan sivuston mukaan nimetty
