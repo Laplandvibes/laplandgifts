@@ -229,9 +229,9 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, '认证'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Marttiini 拉普刀 255',
+    name: 'Marttiini 拉普兰刀 255',
     description:
-      '传统的拉普刀，全长 27 cm，不锈钢刀身，上漆的卷纹桦木刀柄，皮革刀鞘。Marttiini 在罗瓦涅米制刀，这一版带有护手。',
+      '传统的拉普兰刀，全长 27 cm，不锈钢刀身，上漆的卷纹桦木刀柄，皮革刀鞘。Marttiini 在罗瓦涅米制刀，这一版带有护手。',
     specs: [
       '16 cm',
       '总长 27 cm',

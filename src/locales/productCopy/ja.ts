@@ -229,7 +229,7 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, '認証'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'マルッティーニ ラップナイフ 255',
+    name: 'マルッティーニ ラップランドナイフ 255',
     description:
       '伝統的なラップランドのナイフ、全長 27 cm。ステンレスの刃、ニスを塗ったカーリーバーチの柄、革のシースが付きます。マルッティーニはロヴァニエミでナイフを作っており、このモデルには指ガードが付いています。',
     specs: [

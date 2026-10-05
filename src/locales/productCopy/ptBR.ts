@@ -227,9 +227,9 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, undefined, undefined, undefined, undefined, 'Certificados'],
   },
   'marttiini-lapinleuku-255': {
-    name: 'Faca lapã Marttiini 255',
+    name: 'Faca tradicional da Lapônia Marttiini 255',
     description:
-      'A faca lapã tradicional, 27 cm no total, com lâmina inoxidável, cabo de bétula flamejada envernizado e bainha de couro. A Marttiini faz suas facas em Rovaniemi, e esta versão do modelo tem guarda-mão.',
+      'A faca tradicional da Lapônia, 27 cm no total, com lâmina inoxidável, cabo de bétula flamejada envernizado e bainha de couro. A Marttiini faz suas facas em Rovaniemi, e esta versão do modelo tem guarda-mão.',
     specs: [
       '16 cm',
       'Comprimento total 27 cm',
