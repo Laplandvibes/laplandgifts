@@ -37,13 +37,17 @@ const LOCALES = [
   { hreflang: 'sv', prefix: '/sv' },
 ]
 
-const routes = JSON.parse(readFileSync('scripts/routes.json', 'utf8')).filter((r) => !r.legal)
+// The legal pages (privacy, terms, cookie policy) are indexable and listed, as on the rest of the network.
+// /unsubscribe/ is a utility page: "noindex, follow" (scripts/noindex-routes.mjs), so it is not listed.
+const NOT_LISTED = new Set(['/unsubscribe'])
+const routes = JSON.parse(readFileSync('scripts/routes.json', 'utf8')).filter((r) => !NOT_LISTED.has(r.path))
 const today = process.env.SITEMAP_DATE || new Date().toISOString().slice(0, 10)
 
 const url = (prefix, path) => `${SITE}${prefix}${path === '/' ? '' : path}/`
 
 const priority = (path) => {
   if (path === '/') return '1.0'
+  if (path === '/privacy' || path === '/terms' || path === '/cookie-policy') return '0.3'
   if (path.startsWith('/product/')) return '0.7'
   if (path === '/gift-guides' || path === '/shipping') return '0.6'
   return '0.9'
