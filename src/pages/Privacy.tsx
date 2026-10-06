@@ -76,7 +76,7 @@ export default function Privacy() {
       </header>
 
       <main className="max-w-3xl mx-auto px-4 py-16" id="main-content" tabIndex={-1}>
-        <PrivacyContent siteName="LaplandGifts" lang={lang} />
+        <PrivacyContent siteName="LaplandGifts" lang={lang} variant="shop" />
       </main>
 
       <Footer />
