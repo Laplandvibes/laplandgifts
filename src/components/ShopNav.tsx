@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { BRAND_COPY } from '../locales/brandCopy'
 import { LUXURY_COPY } from '../locales/luxuryCopy'
 import { Link, useLocation } from 'react-router-dom'
@@ -84,6 +84,13 @@ export default function ShopNav() {
   const { country, setCountry } = useShippingCountry()
   const { pathname } = useLocation()
   const [open, setOpen] = useState(false)
+  // LV-VALIKKO-VAAKA (8.10.2026): Escape sulkee valikkopaneelin.
+  useEffect(() => {
+    if (!open) return
+    const onKey = (e: KeyboardEvent) => { if (e.key === 'Escape') setOpen(false) }
+    document.addEventListener('keydown', onKey)
+    return () => document.removeEventListener('keydown', onKey)
+  }, [open])
 
   const here = stripLocale(pathname).replace(/\/$/, '') || '/'
 
@@ -339,7 +346,9 @@ export default function ShopNav() {
         {open && (
           <div
             id="shop-menu"
-            className="max-h-[calc(100svh-7rem)] overflow-y-auto border-t border-white/10 bg-night xl:hidden"
+            // LV-VALIKKO-VAAKA (8.10.2026): ylärivi on alle xl:n kaksirivinen (120 px), ei 112: paneelin alareuna
+            // jäi vaakapuhelimessa 8 px ruudun alle. dvh seuraa selaimen palkkeja; z-[45] verkostovihjeen yli.
+            className="max-h-[calc(100vh_-_7.5rem)] supports-[height:100dvh]:max-h-[calc(100dvh_-_7.5rem)] overflow-y-auto overscroll-contain relative z-[45] border-t border-white/10 bg-night xl:hidden"
           >
             {/* Haku on paneelin ensimmäinen elementti: mobiilissa kategorian
                 arvaaminen on työläämpää kuin työpöydällä, koska koko listaa ei
@@ -347,7 +356,7 @@ export default function ShopNav() {
             <div className="mx-auto max-w-7xl border-b border-white/10 px-4 py-3 lg:hidden">
               <ProductSearch variant="panel" onNavigate={() => setOpen(false)} />
             </div>
-            <nav aria-label={n.shopNavLabel} className="mx-auto max-w-7xl px-4 py-2 lg:hidden">
+            <nav aria-label={n.shopNavLabel} className="mx-auto max-w-7xl px-4 py-2 lg:hidden sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6">
               {categories.map((c) => (
                 <Link
                   key={c.key}
@@ -369,7 +378,7 @@ export default function ShopNav() {
                 asettuisi kiinni paneelin omaan yläviivaan. */}
             <nav
               aria-label={n.utilityNavLabel}
-              className="mx-auto max-w-7xl border-t border-white/10 px-4 py-2 lg:border-t-0"
+              className="mx-auto max-w-7xl border-t border-white/10 px-4 py-2 lg:border-t-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6"
             >
               {secondary.map((s) => (
                 <Link
