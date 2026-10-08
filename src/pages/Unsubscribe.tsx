@@ -61,9 +61,11 @@ export default function Unsubscribe() {
 
   return (
     <>
+      {/* Kuvaus tulee VAIN esirenderöinnistä (scripts/routes.json, käsin käännetty 12 kielellä). Tämä JSX kirjoitti
+          8.10.2026 asti englanninkielisen kuvauksen kaikille kielille ja canonicalin ilman loppukauttaviivaa staattisen
+          rinnalle (gate:og-js, ristiriita). Canonical = sama polku kuin esirenderöinnissä. */}
       <title>{t.title}</title>
-      <meta name="description" content="Unsubscribe from LaplandGifts and the #LaplandVibes newsletter." />
-      <link rel="canonical" href={`https://laplandgifts.com${to('/unsubscribe')}`} />
+      <link rel="canonical" href={`https://laplandgifts.com${to('/unsubscribe/')}`} />
       <meta name="robots" content="noindex, follow" />
 
       <div className="min-h-screen bg-sand flex items-center justify-center px-4">
