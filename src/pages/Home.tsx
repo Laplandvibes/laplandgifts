@@ -76,7 +76,7 @@ export default function Home() {
       {/* Per-kieli-canonical: kovakoodattu juuri ylikirjoitti prerenderin oikean
           /fi/-canonicalin ajonaikaisesti kaikilla 12 kielellä (nature-bugin sisarcase). */}
       <link rel="canonical" href={`https://laplandgifts.com/${LANG_PREFIX[lang] ? `${LANG_PREFIX[lang]}/` : ''}`} />
-      <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+      <meta name="robots" content="index, follow, max-image-preview:large" />
 
       <div className="min-h-screen bg-white">
         <ShopNav />
