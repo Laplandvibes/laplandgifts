@@ -144,7 +144,7 @@ export default function Luxury() {
             {tl.note}
           </p>
         </div>
-        <PageCredits images={GIFT_EXPERIENCES.filter((e) => Number.parseFloat(e.price ?? '0') >= 250).map((e) => e.image)} />
+        <PageCredits images={['exp-aurora-photo', ...GIFT_EXPERIENCES.filter((e) => Number.parseFloat(e.price ?? '0') >= 250).map((e) => e.image)]} />
       </main>
       <Footer />
     </>

@@ -15,10 +15,11 @@ import type { Lang } from '../i18n/useLang'
  * sanat nousevat leikkausmaskista porrastetusti kerran, ladattaessa. Kaikki
  * on transform/opacity/filter-animaatiota (ei layoutia), ja
  * prefers-reduced-motion näyttää ensimmäisen kohtauksen paikallaan.
- * Kuvat ovat sivuston omia AI-kuvia (exp-*), ei stockia.
+ * Ensimmäinen kohtaus on aito valokuva (exp-aurora-photo, 9.10.2026 asti tekoälykuva); sen lähdemerkintä on
+ * sivun krediittirivillä (Luxury.tsx PageCredits). Kaksi muuta ovat kumppanin omia tuotekuvia.
  */
 /** Samat kolme asiaa kuin sivun elämystuotteet: revontuliretki, lasi-igluyö,
- *  kullanhuuhdontapäivä. Kuvat ovat tuotteiden omia (kumppanin tai AI). */
+ *  kullanhuuhdontapäivä. Kuvat ovat tuotteiden omia (kumppanin) tai aito valokuva (exp-aurora-photo). */
 const SCENES = ['exp-aurora-photo', 'prod-glass-igloo-night-levi', 'prod-gold-panning-day-inari'] as const
 
 interface Props {
