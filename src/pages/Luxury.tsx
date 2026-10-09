@@ -2,6 +2,7 @@ import ShopNav from '../components/ShopNav'
 import Footer from '../components/Footer'
 import LuxuryHero from '../components/LuxuryHero'
 import ExperienceCard from '../components/shop/ExperienceCard'
+import PageCredits from '../components/PageCredits'
 import { GIFT_EXPERIENCES } from '../data/experiences'
 import ProductGridSection from '../components/shop/ProductGridSection'
 import { PRODUCTS } from '../data/products'
@@ -139,10 +140,11 @@ export default function Luxury() {
             </section>
           )}
 
-          <p className="mt-12 border-t border-line pt-5 font-body text-xs text-muted">
+          <p className="mt-12 border-t border-line pt-5 font-body text-sm text-muted">
             {tl.note}
           </p>
         </div>
+        <PageCredits images={GIFT_EXPERIENCES.filter((e) => Number.parseFloat(e.price ?? '0') >= 250).map((e) => e.image)} />
       </main>
       <Footer />
     </>

@@ -25,6 +25,11 @@ import { trackAffiliateClick } from '../lib/analytics'
 import HomeAdSlots from '../shared/HomeAdSlots'
 import { AD_SLOTS } from '../data/adSlots'
 import { AppPromoHero } from '../components/AppPromo'
+import PageCredits from '../components/PageCredits'
+import { CATEGORIES } from '../data/categories'
+
+/** Open-licence photographs shown on the home page: hero, the seven category cards, the two guide covers. */
+const HOME_PHOTOS = ['hero-shop', ...CATEGORIES.map((c) => c.image), 'guide-craft', 'guide-itinerary']
 
 /**
  * ETUSIVUN JÄRJESTYS — miksi mikäkin on missä (Vesa 5.9.2026: "koko etusivu on
@@ -121,6 +126,7 @@ export default function Home() {
           <Newsletter />
           <FAQ />
           <RelatedSites />
+          <PageCredits images={HOME_PHOTOS} />
         </main>
 
         <Footer />

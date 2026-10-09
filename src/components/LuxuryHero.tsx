@@ -56,7 +56,7 @@ export default function LuxuryHero({ eyebrow, title, lead, captions }: Props) {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-night/60 to-transparent" aria-hidden="true" />
 
       <div className="relative mx-auto flex min-h-[72svh] max-w-7xl flex-col justify-end px-4 pb-14 pt-32 md:min-h-[78svh] md:pb-20">
-        <p className="lux-rise mb-4 font-body text-xs uppercase tracking-[0.28em] text-amber" style={{ animationDelay: '150ms' }}>
+        <p className="lux-rise mb-4 inline-block self-start rounded-md bg-night/75 px-2.5 py-1 font-body text-xs uppercase tracking-[0.28em] text-[#FCD34D]" style={{ animationDelay: '150ms' }}>
           {eyebrow}
         </p>
         <h1 className="font-heading text-6xl leading-[0.92] tracking-wide sm:text-7xl md:text-8xl lg:text-9xl" aria-label={title}>

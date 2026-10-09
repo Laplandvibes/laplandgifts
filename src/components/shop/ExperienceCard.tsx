@@ -5,7 +5,7 @@ import { AFFILIATE_REL } from '../../data/partners'
 import type { Lang } from '../../i18n/useLang'
 import { SHOP_COPY } from '../../locales/shopCopy'
 import { experienceDuration, experienceName, experiencePlace } from '../../locales/experienceNames'
-import AiDisclosure from '../AiDisclosure'
+import PhotoMark from '../PhotoMark'
 
 /**
  * Elämyskortti. Linkki rakennetaan aina gygHref():llä, joka reitittää
@@ -22,9 +22,12 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
   return (
     <article className="flex flex-col overflow-hidden rounded-2xl border border-line bg-card">
       {/* Kortissa on aina kuva. Ilman sitä kortti oli pelkkä tekstilaatikko
-          eikä erottunut mistään (Vesa 1.8.). Kuva on AI-generoitu: verkoston
-          linjaus on, ettei GetYourGuiden kuvia oteta, koska ne kuuluvat
-          retkien jarjestajille eivatka kumppanillemme. */}
+          eikä erottunut mistään (Vesa 1.8.). 9.10.2026 alkaen kuva on aito
+          valokuva avoimella lisenssillä (oli tekoälykuva, Vesa 4.10.), ja
+          lähdemerkintä on kuvan päällä (PhotoMark) ja sivun krediittirivillä
+          (PageCredits). Verkoston linjaus on yhä, ettei GetYourGuiden omia
+          kuvia oteta, koska ne kuuluvat retkien järjestäjille. Kuva näyttää
+          saman toiminnan Lapissa, ei kyseisen järjestäjän omaa kuvaa. */}
       <div className="category-media relative overflow-hidden bg-sand-deep">
         <picture>
           <source
@@ -44,11 +47,7 @@ export default function ExperienceCard({ pick, lang }: { pick: GiftExperience; l
             className="h-full w-full object-cover"
           />
         </picture>
-        {/* EU AI Act art. 50. This card names a real, bookable tour at a real
-            place, and the art is photorealistic — without the mark a reader
-            reads it as a photograph of that place, which is exactly the
-            deep-fake test in art. 3(60). */}
-        <AiDisclosure lang={lang} />
+        <PhotoMark image={pick.image} />
       </div>
       <div className="flex flex-1 flex-col gap-3 p-5">
         <span className="inline-flex items-center gap-1.5 text-xs font-semibold uppercase tracking-widest text-muted">

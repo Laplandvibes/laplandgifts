@@ -6,7 +6,6 @@ import type { Lang } from '../i18n/useLang'
  * Oma tiedosto eikä `shopCopy.ts`:n lisäys, koska nämä ovat lakisääteisiä
  * merkintöjä eivätkä markkinointicopya: ne muuttuvat sääntelyn mukana, ja
  * on hyödyllistä nähdä yhdellä silmäyksellä mitä sivusto lupaa ja kertoo.
- * Sama syy kuin `AiDisclosure.tsx`:n omalla käännöstaulullaan.
  *
  * Kaikki kolme ovat 13.8.2026 compliance-auditin havaintoja.
  */

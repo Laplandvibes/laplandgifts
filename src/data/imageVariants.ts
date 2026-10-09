@@ -9,49 +9,66 @@ export interface ImageVariant {
 
 export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
   "cat-artisan-crafts": {
-    "full": 800,
+    "full": 2560,
     "w": [
-      480
+      480,
+      800,
+      1200,
+      1920
     ]
   },
   "cat-clothing": {
-    "full": 1200,
+    "full": 2560,
     "w": [
       480,
-      800
+      800,
+      1200,
+      1920
     ]
   },
   "cat-design": {
-    "full": 1200,
+    "full": 2560,
     "w": [
       480,
-      800
+      800,
+      1200,
+      1920
     ]
   },
   "cat-gift-experiences": {
-    "full": 800,
+    "full": 2560,
     "w": [
-      480
+      480,
+      800,
+      1200,
+      1920
     ]
   },
   "cat-pod-merch": {
-    "full": 800,
+    "full": 2560,
     "w": [
-      480
+      480,
+      800,
+      1200,
+      1920
     ]
   },
   "cat-superfoods": {
-    "full": 1200,
+    "full": 2560,
     "w": [
       480,
-      800
+      800,
+      1200,
+      1920
     ]
   },
   "cat-treats": {
-    "full": 1200,
+    "full": 2560,
     "w": [
       480,
-      800
+      800,
+      1200,
+      1920
     ]
   },
   "exp-aurora-photo": {
@@ -69,9 +86,10 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-aurora": {
-    "full": 800,
+    "full": 1600,
     "w": [
-      480
+      480,
+      800
     ]
   },
   "exp-husky-kennel": {
@@ -89,15 +107,17 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-husky": {
-    "full": 800,
+    "full": 1600,
     "w": [
-      480
+      480,
+      800
     ]
   },
   "exp-icebreaker": {
-    "full": 800,
+    "full": 1600,
     "w": [
-      480
+      480,
+      800
     ]
   },
   "exp-kids-husky-short": {
@@ -115,9 +135,10 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-korouoma": {
-    "full": 800,
+    "full": 1600,
     "w": [
-      480
+      480,
+      800
     ]
   },
   "exp-nature-park": {
@@ -128,7 +149,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-nature-snowshoe": {
-    "full": 1600,
+    "full": 1200,
     "w": [
       480,
       800
@@ -156,9 +177,10 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-reindeer": {
-    "full": 800,
+    "full": 1600,
     "w": [
-      480
+      480,
+      800
     ]
   },
   "exp-santa-reindeer": {
@@ -169,9 +191,10 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-santavillage": {
-    "full": 800,
+    "full": 1600,
     "w": [
-      480
+      480,
+      800
     ]
   },
   "exp-sauna-icehole": {
@@ -182,7 +205,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-sauna-jacuzzi": {
-    "full": 1600,
+    "full": 1280,
     "w": [
       480,
       800
@@ -196,9 +219,10 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-snowhotel": {
-    "full": 800,
+    "full": 1600,
     "w": [
-      480
+      480,
+      800
     ]
   },
   "exp-snowmobile-night": {
@@ -216,17 +240,19 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "exp-snowmobile": {
-    "full": 800,
+    "full": 1600,
     "w": [
-      480
+      480,
+      800
     ]
   },
   "hero-shop": {
-    "full": 2400,
+    "full": 2560,
     "w": [
       800,
       1200,
-      1600
+      1600,
+      1920
     ]
   },
   "prod-arabia-moomin-figurine-moomintroll": {

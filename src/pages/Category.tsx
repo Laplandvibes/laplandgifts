@@ -20,6 +20,8 @@ import { useShippingCountry } from '../context/ShippingCountry'
 import { countryName } from '../data/countryNames'
 import { useLang, useLocalePath, stripLocale, type Lang } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
+import PhotoMark from '../components/PhotoMark'
+import PageCredits from '../components/PageCredits'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
 import ProductRail, { type RailPartner } from '../shared/ads/ProductRail'
@@ -183,7 +185,9 @@ export default function Category() {
               style={{ objectPosition: category.focal ?? "center" }}
             />
           </picture>
+          <PhotoMark image={category.image} />
           <div className="absolute inset-0 bg-night/55" aria-hidden="true" />
+          <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-night/35 to-transparent" aria-hidden="true" />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-8">
               <h1 className="font-heading text-5xl tracking-wide text-white md:text-7xl">
@@ -349,6 +353,7 @@ export default function Category() {
             />
           </div>
         )}
+        <PageCredits images={isExperiences ? [category.image, ...GIFT_EXPERIENCES.map((p) => p.image)] : [category.image]} />
       </main>
       <Footer />
     </>

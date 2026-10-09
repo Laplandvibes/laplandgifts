@@ -2,6 +2,7 @@ import { Gift } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
+import PhotoMark from './PhotoMark'
 import { COPY } from '../locales/copy'
 import { SHOP_COPY } from '../locales/shopCopy'
 
@@ -64,26 +65,29 @@ export default function Hero() {
           valitsee ruudun leveyden × näyttötiheyden mukaan. index.html:n
           esilataus tarjoaa saman srcSetin, muuten esilataus hakisi eri
           tiedoston kuin <img> ja kuva ladattaisiin kahdesti. */}
-      <picture className="block aspect-[16/9] w-full lg:absolute lg:inset-0 lg:aspect-auto">
+      <div className="relative aspect-[16/9] w-full lg:absolute lg:inset-0 lg:aspect-auto">
+      <picture className="block h-full w-full">
         <source srcSet={imgSrcSet('hero-shop', 'avif')} sizes="100vw" type="image/avif" />
         <img
           src="/images/hero-shop.webp"
           srcSet={imgSrcSet('hero-shop', 'webp')}
           sizes="100vw"
           alt=""
-          width={2400}
-          height={1340}
+          width={2560}
+          height={1709}
           loading="eager"
           fetchPriority="high"
           decoding="async"
           className="h-full w-full object-cover"
         />
       </picture>
+        <PhotoMark image="hero-shop" />
+      </div>
       {/* Työpöydällä teksti on vasemmalla kuvan päällä: gradientti tummentaa
           tekstin puolen ja pitää oikean laidan kuvana. Alle lg:n teksti ei ole
           kuvan päällä, joten tummennusta ei tarvita lainkaan. */}
       <div
-        className="absolute inset-0 hidden bg-gradient-to-r from-night/94 via-night/80 to-night/30 lg:block"
+        className="absolute inset-0 hidden bg-gradient-to-r from-night/94 via-night/88 to-night/55 lg:block"
         aria-hidden="true"
       />
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-14 pt-10 md:pb-20 md:pt-14 lg:py-28">

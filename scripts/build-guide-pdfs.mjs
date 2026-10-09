@@ -13,8 +13,8 @@
  * craft 9, days 13. Skripti KAATUU jos sivumäärä ei täsmää — sama lupaus on
  * kahdessa paikassa, joten muuta molemmat tai älä kumpaakaan.
  *
- * Kuvat ovat sivuston omia (public/images/): AI-generoidut elämyskuvat ja
- * kumppanien tuotekuvat. Fontit ladataan Google Fontsista renderöinnin aikana
+ * Kuvat ovat sivuston omia (public/images/): avoimen lisenssin valokuvat (9.10.2026 asti
+ * tekoälykuvat; lähdemerkinnät loppusivulla, PHOTO_CREDITS) ja kumppanien tuotekuvat. Fontit ladataan Google Fontsista renderöinnin aikana
  * ja upotetaan PDF:ään, joten lopputulos ei riipu lukijan koneen fonteista.
  *
  * Ajo:  node scripts/build-guide-pdfs.mjs
@@ -54,6 +54,30 @@ for (const n of NAMES) await prepare(n)
 const IMG = (name) => {
   if (!prepared.has(name)) throw new Error(`kuvaa ${name} ei ole esikäsitelty — lisää NAMES-listaan`)
   return prepared.get(name)
+}
+
+/* 🔴 Kuvien lähdemerkinnät (9.10.2026, Vesa 4.10.: tekoälykuvat aidoiksi valokuviksi). Oppaiden kuvat ovat nyt
+   avoimen lisenssin valokuvia, joten CC BY / BY-SA vaatii tekijän, lisenssin ja lähteen näkyviin oppaassakin.
+   Sama kuitti kuin laplandgifts/src/data/photoCredits.ts; jos kuva vaihtuu, vaihda rivi molempiin. */
+const PHOTO_CREDITS = {
+  "guide-craft": { title: "Puukko 1939-1940.jpg", author: "5snake5", license: "CC0 1.0", licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/", url: "https://commons.wikimedia.org/wiki/File:Puukko_1939-1940.jpg" },
+  "guide-itinerary": { title: "Pink Skies", author: "Timo Newton-Syms", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/", url: "https://www.flickr.com/photos/timo_w2s/6964047409/" },
+  "hero-shop": { title: "High Angle Shot of Gifts", author: "Leeloo The First", license: "Pexels", licenseUrl: "https://www.pexels.com/license/", url: "https://www.pexels.com/photo/high-angle-shot-of-gifts-5802138/" },
+  "exp-santa-reindeer": { title: "Lapland 2019", author: "John Dickinson", license: "Public Domain Mark 1.0", licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/", url: "https://www.flickr.com/photos/chorley-photos/49344429527/" },
+  "exp-aurora": { title: "Northern Lights (24798830390).jpg", author: "Timo Newton-Syms", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/", url: "https://commons.wikimedia.org/wiki/File:Northern_Lights_(24798830390).jpg" },
+  "exp-reindeer-farm": { title: "reindeer herd Lapland", author: "Heather Sunderland", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0/", url: "https://www.flickr.com/photos/rukakuusamo/5725028351/" },
+  "exp-nature-snowshoe": { title: "Pinus sylvestris, Saariselkä, Laponie 2019 (46344164795).jpg", author: "Nicolas Buffler", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/", url: "https://commons.wikimedia.org/wiki/File:Pinus_sylvestris,_Saariselk\u00e4,_Laponie_2019_(46344164795).jpg" },
+  "exp-husky-selfdrive": { title: "Saija 2014-184-0 (15422561003).jpg", author: "Markus Trienke", license: "CC BY-SA 2.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/", url: "https://commons.wikimedia.org/wiki/File:Saija_2014-184-0_(15422561003).jpg" },
+  "exp-icebreaker": { title: "rompighiaccio in lapponia", author: "arcticroute.com", license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0/", url: "https://www.flickr.com/photos/arcticroute/2108613838/" },
+}
+const creditsHtml = (names) => {
+  const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;')
+  const parts = names.map((n) => {
+    const c = PHOTO_CREDITS[n]
+    if (!c) throw new Error('lähdemerkintä puuttuu: ' + n)
+    return `<a href="${c.url}">${esc(c.title)}</a>: ${esc(c.author)}, <a href="${c.licenseUrl}">${c.license}</a>${c.cropped ? ' (cropped)' : ''}`
+  })
+  return `<p class="credits">Photos: ${parts.join('; ')}.</p>`
 }
 
 const CSS = `
@@ -120,6 +144,8 @@ const CSS = `
   .closing .links p { margin-bottom: 2.5mm; font-size: 10.5pt; }
   .closing .links b { color: #F59E0B; font-weight: 600; }
   .closing .fine { font-size: 8pt; color: rgba(249,250,251,0.45); margin-top: 14mm; }
+  .closing .credits { font-size: 6.5pt; line-height: 1.45; color: rgba(249,250,251,0.6); margin-top: 8mm; max-width: 170mm; }
+  .closing .credits a { color: inherit; text-decoration: underline; }
   .season { border-left: 3pt solid #F59E0B; padding-left: 4mm; margin-bottom: 5mm; }
   .season b { font-size: 11pt; color: #0F172A; }
   .season .when { font-size: 8pt; font-weight: 700; letter-spacing: 0.14em; color: #B45309;
@@ -276,6 +302,7 @@ const craft = `<!doctype html><html><head>${head}<title>The Secret Craft</title>
     <p><b>lapland.blog</b> · travel stories</p>
   </div>
   <p>Sign up for the newsletter at laplandgifts.com to hear when new finds arrive.</p>
+  ${creditsHtml(['guide-craft'])}
   <p class="fine">© 2026 Lapeso Oy. All rights reserved. · #LaplandVibes</p>
 </div>
 </body></html>`
@@ -429,6 +456,7 @@ ${dayPage(10, 13, 7, 'Souvenirs and departure', 'hero-shop', 50, `
     <p><b>laplanddining.com</b> · where to eat</p>
     <p><b>laplandgifts.com</b> · gifts from the shops that ship them home</p>
   </div>
+  ${creditsHtml(['guide-itinerary', 'exp-santa-reindeer', 'exp-aurora', 'exp-reindeer-farm', 'exp-nature-snowshoe', 'exp-husky-selfdrive', 'exp-icebreaker', 'hero-shop'])}
   <p class="fine">© 2026 Lapeso Oy. All rights reserved. · #LaplandVibes</p>
 </div>
 </body></html>`

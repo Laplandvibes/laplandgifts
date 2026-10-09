@@ -4,6 +4,7 @@ import type { Lang } from '../../i18n/useLang'
 import { useLocalePath } from '../../i18n/useLang'
 import { imgSrcSet } from '../../lib/img'
 import { SHOP_COPY } from '../../locales/shopCopy'
+import PhotoMark from '../PhotoMark'
 
 /** 1 palsta < 640 px, 2 palstaa 640–1023 px, 3 palstaa 1024 px:stä ylöspäin. */
 const CATEGORY_SIZES = '(min-width: 1024px) 420px, 46vw'
@@ -45,6 +46,8 @@ export default function CategoryCard({ category, lang, wide = false }: { categor
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           />
         </picture>
+        {/* Source line top right: the title sits bottom left, and the card is a link (text only, links in the page credit line). */}
+        <PhotoMark image={category.image} pos="top" />
       </div>
       {/* 🔴 Yksi pysahdys ei riittanyt: otsikko istui gradientin haipyvalla puolella
           ja jai 2,45-3,26:1:een (raja 4,5:1). Kolmas pysahdys pitaa musteen alla

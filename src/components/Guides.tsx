@@ -1,5 +1,6 @@
 import { ArrowRight, FileText } from 'lucide-react'
 import { useLang } from '../i18n/useLang'
+import PhotoMark from './PhotoMark'
 import { COPY } from '../locales/copy'
 
 /**
@@ -78,7 +79,7 @@ function Guides() {
             >
               {/* Kansi. 8:5 pitää kortit samankorkuisina riippumatta siitä
                   kuinka pitkä kuvausteksti on. */}
-              <div className="aspect-[8/5] overflow-hidden bg-sand-deep">
+              <div className="relative aspect-[8/5] overflow-hidden bg-sand-deep">
                 <picture>
                   <source type="image/avif" srcSet={`/images/${COVERS[i]}.avif`} />
                   <img
@@ -91,6 +92,7 @@ function Guides() {
                     className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.03]"
                   />
                 </picture>
+                <PhotoMark image={COVERS[i]} />
               </div>
 
               <div className="flex flex-1 flex-col p-5 md:p-7">

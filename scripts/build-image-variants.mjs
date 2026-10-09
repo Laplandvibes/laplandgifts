@@ -24,8 +24,8 @@ const DIR = 'public/images'
 
 /** Leveydet per kuvaperhe. Alkuperäinen jää aina suurimmaksi vaihtoehdoksi. */
 const PLAN = [
-  { match: /^hero-/, widths: [800, 1200, 1600] },
-  { match: /^cat-/, widths: [480, 800] },
+  { match: /^hero-/, widths: [800, 1200, 1600, 1920] },
+  { match: /^cat-/, widths: [480, 800, 1200, 1920] },
   // 640 on mukana DPR 3:n takia: kortin kuvapaikka on 147–174 CSS-pikseliä,
   // eli kolminkertaisella näyttötiheydellä tarvitaan ~500 px. Ilman 640:tä
   // selain hyppäsi suoraan 800:aan.
