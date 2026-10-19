@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 import { trailingSlashLinks } from "./src/shared/router/trailingSlashPlugin";
+import { cjkOtsikot } from "./src/shared/cjk/cjkOtsikotPlugin";
 export default defineConfig({
-  plugins: [trailingSlashLinks(), react(), tailwindcss()],
+  plugins: [cjkOtsikot(), trailingSlashLinks(), react(), tailwindcss()],
   resolve: {
     dedupe: ['react', 'react-dom', 'react-router', 'react-router-dom'],
   },
