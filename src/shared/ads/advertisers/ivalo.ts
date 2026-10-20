@@ -63,7 +63,7 @@ const ivalo: AdSpec = {
       headline: 'IVALO.COM, el marketplace de marcas de diseño independientes',
       sub: 'Bautizado con el nombre de Ivalo, en Laponia, reúne marcas de diseño europeas independientes en un solo lugar. Ropa y accesorios que no verá en cada esquina.',
       trust: ['Marcas independientes', 'Selección curada', 'Entrega a domicilio'],
-      cta: 'Descubre las marcas',
+      cta: 'Descubra las marcas',
       poweredBy: 'Compras en IVALO.COM',
     },
     'pt-BR': {
@@ -101,7 +101,7 @@ const ivalo: AdSpec = {
     it: {
       eyebrow: 'Marchi di design europei',
       headline: 'IVALO.COM, il marketplace dei marchi di design indipendenti',
-      sub: 'Battezzato col nome di Ivalo, in Lapponia, il marketplace riunisce marchi di design europei indipendenti in un unico posto. Abiti e accessori che non incontri a ogni angolo.',
+      sub: 'Battezzato col nome di Ivalo, in Lapponia, il marketplace riunisce marchi di design europei indipendenti in un unico posto. Abiti e accessori che non si incontrano a ogni angolo.',
       trust: ['Marchi indipendenti', 'Selezione curata', 'Consegna a casa'],
       cta: 'Scopri i marchi',
       poweredBy: 'Shopping su IVALO.COM',
