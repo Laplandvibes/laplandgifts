@@ -41,7 +41,7 @@ export default function BoutiqueCard({ boutique }: { boutique: Boutique }) {
       {/* 🔴 Putiikin nimi on DM Sansilla (font-body) eikä Bebasilla: Bebas on
           versaali ja "SAMEKKI, SÁMI DUODJI" olisi lukukelvoton. Sama päätös
           kuin giftsin tuotenimissä 1.8. */}
-      <h3 className="font-body text-base font-semibold leading-snug tracking-normal text-gray sm:text-lg">
+      <h3 className="font-body text-base font-semibold leading-snug tracking-normal text-gray sm:text-lg" translate="no">
         {boutique.name}
       </h3>
 
