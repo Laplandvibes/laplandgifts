@@ -6,7 +6,7 @@
  * 🔴 Kaksi asiaa, jotka on helppo rikkoa:
  *
  * 1. Legal-reittien metat (/privacy, /terms, /cookie-policy) on käännetty
- *    käsin kaikille 12 kielelle. Ne luetaan olemassa olevasta routes.jsonista
+ *    käsin kaikille 12 kielelle. Ne luetaan yhteisestä src/locales/legalMeta.jsonista
  *    ja kirjoitetaan takaisin sellaisenaan. Generaattori EI kirjoita niitä
  *    uusiksi. Jos ne katoavat, kolme sivua menettää natiivit metansa 11
  *    kielellä eikä sitä huomaa mistään, koska prerender ei kaadu vaan putoaa
@@ -767,9 +767,16 @@ const specialties = deEnOnly(
 
 // ── legal säilytetään sellaisenaan ─────────────────────────────────────────
 const existing = JSON.parse(readFileSync('scripts/routes.json', 'utf8'))
+const legalMeta = JSON.parse(readFileSync(new URL('../src/locales/legalMeta.json', import.meta.url), 'utf8'))
 const legalRoutes = existing
   .filter((r) => LEGAL.has(r.path))
-  .map((r) => ({ ...r, legal: true }))
+  .map((r) => {
+    const meta = legalMeta[r.path]
+    if (!meta) return { ...r, legal: true }
+    return { ...r, legal: true, fallbackTitle: meta.en.title, fallbackDescription: meta.en.description,
+      fallbackTitleByLang: Object.fromEntries(Object.entries(meta).map(([lang, value]) => [lang, value.title])),
+      fallbackDescriptionByLang: Object.fromEntries(Object.entries(meta).map(([lang, value]) => [lang, value.description])) }
+  })
 
 if (legalRoutes.length !== LEGAL.size) {
   console.error(

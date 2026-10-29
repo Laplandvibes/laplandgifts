@@ -1,0 +1,152 @@
+{
+  "/privacy": {
+    "en": {
+      "title": "Privacy Policy",
+      "description": "How LaplandGifts (LaPeso Oy) handles your data: Google Analytics 4 with Consent Mode v2, newsletter via Resend/Supabase, and affiliate tracking."
+    },
+    "fi": {
+      "title": "Tietosuojaseloste",
+      "description": "Näin LaplandGifts (LaPeso Oy) käsittelee tietojasi: Google Analytics 4 ja Consent Mode v2, uutiskirje Resendin/Supabasen kautta sekä affiliate-seuranta."
+    },
+    "de": {
+      "title": "Datenschutzerklärung",
+      "description": "So verarbeitet LaplandGifts (LaPeso Oy) Ihre Daten: Google Analytics 4 mit Consent Mode v2, Newsletter über Resend/Supabase und Affiliate-Tracking."
+    },
+    "ja": {
+      "title": "プライバシーポリシー",
+      "description": "LaplandGifts（LaPeso Oy）のデータ取り扱い：Consent Mode v2対応のGoogle Analytics 4、Resend/Supabase経由のニュースレター、アフィリエイト計測、わかりやすく解説。"
+    },
+    "es": {
+      "title": "Política de privacidad",
+      "description": "Cómo LaplandGifts (LaPeso Oy) trata sus datos: Google Analytics 4 con Consent Mode v2, newsletter vía Resend/Supabase y seguimiento de afiliados."
+    },
+    "pt-BR": {
+      "title": "Política de privacidade",
+      "description": "Como o LaplandGifts (LaPeso Oy) trata seus dados: Google Analytics 4 com Consent Mode v2, newsletter via Resend/Supabase e rastreamento de afiliados."
+    },
+    "zh-CN": {
+      "title": "隐私政策",
+      "description": "LaplandGifts（LaPeso Oy）如何处理您的数据：Google Analytics 4 与 Consent Mode v2、通过 Resend/Supabase 的订阅邮件以及联盟跟踪，清晰说明。"
+    },
+    "ko": {
+      "title": "개인정보 처리방침",
+      "description": "LaplandGifts(LaPeso Oy)의 데이터 처리 방식: Consent Mode v2 기반 Google Analytics 4, Resend/Supabase 뉴스레터, 제휴 트래킹, 알기 쉽게 설명합니다."
+    },
+    "fr": {
+      "title": "Politique de confidentialité",
+      "description": "Comment LaplandGifts (LaPeso Oy) traite vos données : Google Analytics 4 avec Consent Mode v2, newsletter via Resend/Supabase et suivi d'affiliation."
+    },
+    "it": {
+      "title": "Informativa sulla privacy",
+      "description": "Come LaplandGifts (LaPeso Oy) tratta i Suoi dati: Google Analytics 4 con Consent Mode v2, newsletter via Resend/Supabase e tracciamento di affiliazione."
+    },
+    "nl": {
+      "title": "Privacybeleid",
+      "description": "Hoe LaplandGifts (LaPeso Oy) uw gegevens verwerkt: Google Analytics 4 met Consent Mode v2, nieuwsbrief via Resend/Supabase en affiliate-tracking."
+    },
+    "sv": {
+      "title": "Integritetspolicy",
+      "description": "Så hanterar LaplandGifts (LaPeso Oy) dina uppgifter: Google Analytics 4 med Consent Mode v2, nyhetsbrev via Resend/Supabase och affiliate-spårning."
+    }
+  },
+  "/terms": {
+    "en": {
+      "title": "Terms of Use",
+      "description": "LaplandGifts terms of service: site usage, affiliate disclosure, and shopping terms."
+    },
+    "fi": {
+      "title": "Käyttöehdot",
+      "description": "LaplandGiftsin käyttöehdot: sivuston käyttö, affiliate-ilmoitus ja ostosehdot."
+    },
+    "de": {
+      "title": "Nutzungsbedingungen",
+      "description": "Nutzungsbedingungen von LaplandGifts: Nutzung der Website, Affiliate-Hinweis und Einkaufsbedingungen."
+    },
+    "ja": {
+      "title": "利用規約",
+      "description": "LaplandGiftsの利用規約：サイトの利用条件、アフィリエイト開示、ショッピングに関する条件、そして当サイトの責任の範囲と制限について説明します。"
+    },
+    "es": {
+      "title": "Términos de uso",
+      "description": "Términos de servicio de LaplandGifts: uso del sitio, divulgación de afiliados y condiciones de compra."
+    },
+    "pt-BR": {
+      "title": "Termos de uso",
+      "description": "Termos de serviço do LaplandGifts: uso do site, divulgação de afiliados e condições de compra."
+    },
+    "zh-CN": {
+      "title": "使用条款",
+      "description": "LaplandGifts 服务条款：网站的使用条件、联盟营销披露、购物与订单相关条款，以及我们承担责任的范围、相关限制与适用法律的详细说明。"
+    },
+    "ko": {
+      "title": "이용약관",
+      "description": "LaplandGifts 이용약관: 사이트 이용 조건, 제휴 마케팅 고지, 쇼핑 관련 약관, 그리고 저희가 지는 책임의 범위와 한계를 설명합니다."
+    },
+    "fr": {
+      "title": "Conditions d'utilisation",
+      "description": "Conditions d'utilisation de LaplandGifts: utilisation du site, divulgation d'affiliation et conditions d'achat."
+    },
+    "it": {
+      "title": "Termini di utilizzo",
+      "description": "Termini di servizio di LaplandGifts: utilizzo del sito, divulgazione di affiliazione e condizioni di acquisto."
+    },
+    "nl": {
+      "title": "Gebruiksvoorwaarden",
+      "description": "Servicevoorwaarden van LaplandGifts: gebruik van de site, affiliate-vermelding en winkelvoorwaarden."
+    },
+    "sv": {
+      "title": "Användarvillkor",
+      "description": "LaplandGifts användarvillkor: användning av webbplatsen, affiliate-information och köpvillkor."
+    }
+  },
+  "/cookie-policy": {
+    "en": {
+      "title": "Cookie Policy",
+      "description": "LaplandGifts cookie policy: analytics consent, affiliate tracking, and how to manage your preferences."
+    },
+    "fi": {
+      "title": "Evästekäytäntö",
+      "description": "LaplandGiftsin evästekäytäntö: analytiikan suostumus, affiliate-seuranta ja asetusten hallinta."
+    },
+    "de": {
+      "title": "Cookie-Richtlinie",
+      "description": "Cookie-Richtlinie von LaplandGifts: Analytics-Einwilligung, Affiliate-Tracking und Verwaltung Ihrer Einstellungen."
+    },
+    "ja": {
+      "title": "Cookieポリシー",
+      "description": "LaplandGiftsのクッキーポリシー：アナリティクスへの同意、アフィリエイトのトラッキング、保存期間、そして設定をいつでも変更・撤回する方法を説明します。"
+    },
+    "es": {
+      "title": "Política de cookies y consentimiento",
+      "description": "Política de cookies de LaplandGifts: consentimiento de analítica, seguimiento de afiliados y gestión de sus preferencias."
+    },
+    "pt-BR": {
+      "title": "Política de cookies",
+      "description": "Política de cookies do LaplandGifts: consentimento de análises, rastreamento de afiliados e gerenciamento de preferências."
+    },
+    "zh-CN": {
+      "title": "Cookie 政策",
+      "description": "LaplandGifts Cookie 政策：网站分析同意、联盟跟踪 Cookie、各类 Cookie 的保存时间，以及如何随时管理、更改或撤回您的偏好设置。"
+    },
+    "ko": {
+      "title": "쿠키 정책",
+      "description": "LaplandGifts 쿠키 정책: 분석 동의, 제휴 트래킹, 쿠키 보관 기간, 그리고 언제든지 환경설정을 변경하거나 철회하는 방법을 안내합니다."
+    },
+    "fr": {
+      "title": "Politique des cookies",
+      "description": "Politique relative aux cookies de LaplandGifts: consentement analytique, suivi d'affiliation et gestion de vos préférences."
+    },
+    "it": {
+      "title": "Politica sui cookie",
+      "description": "Informativa sui cookie di LaplandGifts: consenso per le analisi, tracciamento di affiliazione e gestione delle preferenze."
+    },
+    "nl": {
+      "title": "Cookiebeleid",
+      "description": "Cookiebeleid van LaplandGifts: analytics-toestemming, affiliate-tracking en het beheren van uw voorkeuren."
+    },
+    "sv": {
+      "title": "Cookiepolicy",
+      "description": "LaplandGifts cookiepolicy: samtycke till analys, affiliate-spårning och hur du hanterar dina inställningar."
+    }
+  }
+}
