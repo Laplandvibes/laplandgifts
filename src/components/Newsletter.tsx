@@ -1,11 +1,9 @@
 import { useEffect, useRef, useState } from 'react'
 import { Mail, ArrowRight, Download, BookOpen, Map } from 'lucide-react'
 import { trackNewsletterSignup } from '../lib/analytics'
-import { Link } from 'react-router-dom'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import type { Lang } from '../i18n/useLang'
 import { COPY } from '../locales/copy'
-import { NEWSLETTER_PRIVACY } from '../locales/complianceCopy'
 import FounderByline from '../shared/FounderByline';
 
 // Uutiskirjeen kieliohje sivun kielestä (ei <html lang>:sta, joka on esirenderöinnissä aina 'en').
@@ -282,14 +280,10 @@ function Newsletter() {
           <p className="text-red-500 mt-3 text-sm">{t.errorMsg}</p>
         )}
 
-        {/* Tietosuoja-asetuksen 13 art.: käsittelystä on kerrottava
-            keruuhetkellä, ei vasta alatunnisteen linkin takana. */}
+        {/* Tietosuoja-asetuksen 13 art.: käsittelystä kerrotaan keruuhetkellä suostumusrivin linkillä;
+            tässä toistettu "Näin käsittelemme tietojasi" -linkki poistettu 1.11.2026. */}
         <p className="text-gray/40 text-xs mt-4">
-          {t.spamNote}{' '}
-          {NEWSLETTER_PRIVACY[lang].lead}{' '}
-          <Link to={to('/privacy')} className="underline hover:text-amber">
-            {NEWSLETTER_PRIVACY[lang].link}
-          </Link>
+          {t.spamNote}
         </p>
       </div>
     </section>
