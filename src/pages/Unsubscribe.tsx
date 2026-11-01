@@ -70,7 +70,7 @@ export default function Unsubscribe() {
 
       <div className="min-h-screen bg-sand flex items-center justify-center px-4">
         <div className="max-w-md w-full text-center">
-          <p className="text-3xl font-black mb-2">
+          <p translate="no" className="notranslate text-3xl font-black mb-2">
             <span className="text-amber">#</span>
             <span className="text-gray">LAPLAND</span>
             <span className="text-amber">GIFTS</span>

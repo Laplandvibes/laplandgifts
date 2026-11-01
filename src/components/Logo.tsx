@@ -22,8 +22,8 @@ function Logo({ nav = false }: { nav?: boolean }) {
       {/* 375px-budjetti: logo + hampurilainen ei saa ylittää 343px → logo
           kutistuu mobiilissa. Työpöydällä pääpalkissa on tilaa, joten
           sanamerkki saa kantaa palkin kokoa. */}
-      <span
-        className={`font-logo text-2xl leading-none tracking-wide sm:text-3xl ${nav ? '' : 'lg:text-4xl'} ${nav ? 'lv-wm' : ''}`}
+      <span translate="no"
+        className={`notranslate font-logo text-2xl leading-none tracking-wide sm:text-3xl ${nav ? '' : 'lg:text-4xl'} ${nav ? 'lv-wm' : ''}`}
         data-lv-sanamerkki={nav ? '' : undefined}
         style={nav ? WM_STYLE : undefined}
       >
