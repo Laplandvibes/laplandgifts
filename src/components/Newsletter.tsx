@@ -20,6 +20,12 @@ const NL_EMAIL_LABEL: Record<string, string> = {
   es: 'Correo electrónico', pt: 'E-mail', zh: '电子邮箱', ko: '이메일 주소',
   fr: 'Adresse e-mail', it: 'Indirizzo e-mail', nl: 'E-mailadres', sv: 'E-postadress',
 };
+// Esimerkkiosoite kentän taustalle (4.11.2026): näyttää muodon, ei toista otsikkoa.
+const NL_EMAIL_EXAMPLE: Record<string, string> = {
+  en: 'name@example.com', fi: 'nimi@esimerkki.fi', de: 'name@beispiel.de', ja: 'name@example.com',
+  es: 'nombre@ejemplo.es', pt: 'nome@exemplo.com.br', zh: 'name@example.com', ko: 'name@example.com',
+  fr: 'nom@exemple.fr', it: 'nome@esempio.it', nl: 'naam@voorbeeld.nl', sv: 'namn@exempel.se',
+};
 const nlLang = (l?: string): string => {
   const x = (l || 'en').toLowerCase();
   return x === 'br' ? 'pt' : x === 'cn' ? 'zh' : x === 'kr' ? 'ko' : x === 'jp' ? 'ja' : x.split('-')[0];
@@ -218,7 +224,11 @@ function Newsletter() {
           </div>
         ) : (
           <><FounderByline tone="light" />
-          <form style={{ background: '#0F172A', color: '#F9FAFB', padding: 16, borderRadius: 16 }} onSubmit={handleSubmit}
+          {/* 4.11.2026 (Vesa: kenttä "leijuu" eikä "anna esimerkkiä taustalle"): Codexin 28.10. tumma laatikko pois, otsikko kentän yllä, kenttä ja nappi samalla rivillä, esimerkkiosoite kentässä. */}
+          {/* 🔴 Tämän osion tausta on VAALEA (#F9FAFB + 10 % pinkki sävy), toisin kuin muiden sivustojen pinkki
+              liukuväri: otsikko, kieliohje ja suostumus ovat sivuston omaa tummaa mustetta (text-gray #1F2937),
+              kentän reuna slate-500 (4,8:1 valkoista vasten) ja Tilaa-nappi tumma deep-night. */}
+          <form onSubmit={handleSubmit}
             onInvalidCapture={(e) => {
               if (blockedTracked.current) return
               blockedTracked.current = true
@@ -226,26 +236,35 @@ function Newsletter() {
               const el = e.target as HTMLInputElement
               track('nl_blocked', { ...funnelData, reason: el.type === 'checkbox' ? 'consent' : 'email' })
             }}
-            className="flex flex-col gap-3 max-w-md mx-auto"
+            className="max-w-lg mx-auto text-left"
           >
+            <label htmlFor="nl-inline-email" className="block text-gray font-semibold text-sm mb-2">
+              {NL_EMAIL_LABEL[nlLang(lang)] ?? NL_EMAIL_LABEL.en}
+            </label>
+            {NL_LANG_NOTICE[nlLang(lang)] && (
+              <p id="nl-inline-email-lang" className="text-gray text-[13px] leading-relaxed -mt-1 mb-2">
+                {NL_LANG_NOTICE[nlLang(lang)]}
+              </p>
+            )}
             <div className="flex flex-col sm:flex-row gap-3">
-              <div className="flex-1 relative">
-                <Mail className="absolute left-4 bottom-4 w-5 h-5 text-slate-500" />
-                <div style={{display:'flex',flexDirection:'column',gap:8,flex:'1 1 0%',minWidth:0,textAlign:'left',fontSize:14,color:'#F9FAFB'}}><label htmlFor="nl-inline-email">{NL_EMAIL_LABEL[nlLang(lang)] ?? NL_EMAIL_LABEL.en}</label>{NL_LANG_NOTICE[nlLang(lang)] && <span id="nl-inline-email-lang" style={{fontSize:13,lineHeight:1.5}}>{NL_LANG_NOTICE[nlLang(lang)]}</span>}<input
+              <div className="relative flex-1 min-w-0">
+                <Mail aria-hidden className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-500 pointer-events-none" />
+                <input
                   id="nl-inline-email"
-                  aria-describedby={NL_LANG_NOTICE[nlLang(lang)] ? 'nl-inline-email-lang' : undefined} autoComplete="email" style={{ background: '#FFFFFF', color: '#1F2937', WebkitTextFillColor: '#1F2937', border: '1px solid #64748B' }}
+                  aria-describedby={NL_LANG_NOTICE[nlLang(lang)] ? 'nl-inline-email-lang' : undefined} autoComplete="email"
                   type="email"
                   value={email}
+                  placeholder={NL_EMAIL_EXAMPLE[nlLang(lang)] ?? NL_EMAIL_EXAMPLE.en}
                   onFocus={trackStart}
                   onChange={(e) => setEmail(e.target.value)}
                   required
-                  className="w-full pl-12 pr-4 py-4 rounded-full border border-gray/20 bg-white text-gray focus:outline-none focus:border-amber focus:ring-2 focus:ring-amber/20 transition-colors"
-                /></div>
+                  className="w-full h-14 bg-white text-slate-900 border border-slate-500 rounded-full pl-11 pr-4 text-base placeholder:text-slate-500 focus:outline-none focus:border-amber focus:ring-4 focus:ring-amber/20 transition-shadow disabled:opacity-60"
+                />
               </div>
-              <button style={{ backgroundColor: '#BE185D', color: '#FFFFFF', alignSelf: 'end', minHeight: 48 }}
+              <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="inline-flex items-center justify-center gap-2 bg-amber text-white px-8 py-4 rounded-full font-medium text-lg hover:bg-amber/90 transition-colors shadow-lg shadow-amber/25 disabled:opacity-50 whitespace-nowrap"
+                className="h-14 shrink-0 bg-deep-night hover:bg-[#1E293B] text-white font-bold px-7 rounded-full shadow-lg transition-colors text-base whitespace-nowrap inline-flex items-center justify-center gap-2 disabled:opacity-50"
               >
                 {status === 'loading' ? t.submitting : t.submit}
                 <ArrowRight className="w-5 h-5" />
@@ -253,7 +272,7 @@ function Newsletter() {
             </div>
             {/* Suostumus kysytään erikseen eikä johdeta tilaamisesta:
                 esivalittu ruutu ei ole GDPR:n tarkoittama suostumus. */}
-            <label style={{color:"#F9FAFB"}} className="flex items-start gap-2.5 text-left text-xs text-gray/60 leading-relaxed cursor-pointer">
+            <label className="mt-4 flex items-start gap-2.5 text-left text-xs text-gray leading-relaxed cursor-pointer">
               <input
                 type="checkbox"
                 checked={consented}
@@ -262,12 +281,13 @@ function Newsletter() {
                 required
                 className="mt-0.5 w-4 h-4 shrink-0 rounded border-gray/30 accent-amber focus:outline-none focus:ring-2 focus:ring-amber/20"
               />
-              <span style={{color:"#F9FAFB"}}>
+              <span>
                 {c.consent}{' '}
-                <a style={{color:"#BAE6FD",textDecoration:"underline"}}                   href={to('/privacy/')}
+                <a
+                  href={to('/privacy/')}
                   target="_blank"
                   rel="noopener"
-                  className="underline hover:text-amber"
+                  className="font-semibold text-gray underline underline-offset-2"
                 >
                   {c.privacy}
                 </a>
