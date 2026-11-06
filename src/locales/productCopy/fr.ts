@@ -581,7 +581,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specs: ['Diamètre 4 cm'],
   },
   'pahkataide-kuksa-bear': {
-    name: 'Kuksa Pahkataide en bouleau madré avec incrustation en os à motif d’ours',
+    name: 'Kuksa Pahkataide en bouleau madré avec un ours en os',
     description:
       'Une kuksa en bouleau madré, dont la poignée porte une incrustation en os à motif d’ours. Pahkataide traite ses tasses à l’huile d’œillette, qui protège le bois. On ne la lave jamais au liquide vaisselle : un rinçage suffit, et le café quotidien forme en surface un film qui la protège davantage.',
     specs: [
@@ -857,7 +857,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Carte cadeau'],
   },
   'korouoma-waterfalls-rovaniemi': {
-    name: 'Excursion aux cascades gelées de Korouoma pour deux, au départ de Rovaniemi',
+    name: 'Cascades gelées de Korouoma pour deux, depuis Rovaniemi',
     description:
       'En hiver, les ruisseaux qui dévalent les parois du canyon de Korouoma gèlent en cascades de glace bleue. Cette excursion guidée d’une journée part de Rovaniemi pour le canyon, à Posio, à environ 110 km. La marche est facile, en raquettes si la neige l’exige, et un déjeuner léger est servi en route.',
     specs: [
@@ -872,9 +872,9 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Langue du guide', 'Carte cadeau'],
   },
   'amethyst-mine-snowshoe-luosto': {
-    name: 'Randonnée en raquettes jusqu’à la mine d’améthyste de Luosto pour deux',
+    name: 'Raquettes jusqu’à la mine d’améthyste de Luosto pour deux',
     description:
-      'Une journée guidée au départ de Rovaniemi dans le parc national de Pyhä-Luosto : d’abord en raquettes à travers le parc, puis en train des neiges jusqu’à la mine d’améthyste au sommet du Lampivaara. À la mine, chacun peut creuser lui-même, et l’améthyste que vous trouvez est à vous.',
+      'Une journée guidée au départ de Rovaniemi jusqu’à la mine d’améthyste au sommet du Lampivaara, dans le parc national de Pyhä-Luosto. On traverse d’abord le parc en raquettes, puis un train des neiges monte jusqu’à la mine. À la mine, chacun peut creuser lui-même, et l’améthyste que vous trouvez est à vous.',
     specs: [
       'Randonnée guidée en raquettes et visite de la mine d’améthyste pour deux, avec transport, collation à la halte et tout l’équipement. Vêtements chauds et chaussures disponibles en prêt',
       'Environ 7 heures',
@@ -887,7 +887,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Langue du guide', 'Carte cadeau'],
   },
   'midnight-sun-canoe-rovaniemi': {
-    name: 'Sortie en canoë sous le soleil de minuit pour deux, Rovaniemi',
+    name: 'Canoë sous le soleil de minuit pour deux, Rovaniemi',
     description:
       'Une sortie guidée en canoë le soir près de Rovaniemi, dans la lumière du soleil de minuit, qui se termine par une collation autour d’un feu. Le guide explique les bases avant le départ, aucune expérience n’est donc nécessaire. Les sorties ont lieu l’été, de juin à août.',
     specs: [
@@ -932,7 +932,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, 'Durée', 'Participants', 'Lieu', 'Saison', 'Limite d’âge', 'Carte cadeau'],
   },
   'wilderness-cabin-ivalo': {
-    name: 'Deux nuits en pension complète dans une cabane en pleine nature pour deux, Ivalo',
+    name: 'Deux nuits en pension complète en cabane pour deux, Ivalo',
     description:
       'Deux nuits pour deux dans une cabane au bord de la rivière Ivalojoki, à côté de la région sauvage de Hammastunturi, avec son propre sauna au bord de l’eau. Tous les repas, du dîner le jour d’arrivée au déjeuner le jour du départ, sont compris, cuisinés avec des produits de Laponie comme le renne, le poisson et les baies, ainsi que le transfert aller-retour depuis Ivalo. En semaine, de la mi-juin à fin octobre.',
     specs: [

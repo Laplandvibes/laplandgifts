@@ -580,7 +580,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specs: ['Diametro 4 cm'],
   },
   'pahkataide-kuksa-bear': {
-    name: 'Kuksa Pahkataide in betulla fiammata con intarsio in osso, orso',
+    name: 'Kuksa Pahkataide in betulla fiammata con orso in osso',
     description:
       'Una kuksa in betulla fiammata con un intarsio in osso sul manico che raffigura un orso. Pahkataide tratta le sue tazze con olio di papavero, che protegge il legno. Non si lava mai con il detersivo: basta sciacquarla, e il caffè di ogni giorno forma in superficie una pellicola che la protegge ancora di più.',
     specs: [
@@ -856,7 +856,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Stagione', 'Carta regalo'],
   },
   'korouoma-waterfalls-rovaniemi': {
-    name: 'Escursione alle cascate ghiacciate di Korouoma per due, da Rovaniemi',
+    name: 'Cascate ghiacciate di Korouoma per due, da Rovaniemi',
     description:
       'In inverno i ruscelli che scendono lungo le pareti del canyon di Korouoma gelano in cascate di ghiaccio azzurro. L’escursione guidata di un giorno parte da Rovaniemi per il canyon, a Posio, a circa 110 km. La camminata è facile, con le ciaspole se la neve lo richiede, e lungo il percorso viene servito un pranzo leggero.',
     specs: [
@@ -873,7 +873,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'amethyst-mine-snowshoe-luosto': {
     name: 'Ciaspolata alla miniera di ametista di Luosto per due',
     description:
-      'Una giornata guidata da Rovaniemi nel parco nazionale di Pyhä-Luosto: prima con le ciaspole attraverso il parco, poi con un trenino delle nevi fino alla miniera di ametista in cima al Lampivaara. Nella miniera ognuno può scavare da sé, e l’ametista che trova resta sua.',
+      'Una giornata guidata da Rovaniemi alla miniera di ametista in cima al Lampivaara, nel parco nazionale di Pyhä-Luosto. Prima si attraversa il parco con le ciaspole, poi un trenino delle nevi sale fino alla miniera. Nella miniera ognuno può scavare da sé, e l’ametista che trova resta sua.',
     specs: [
       'Ciaspolata guidata e visita alla miniera di ametista per due, con trasferimenti, spuntino alla sosta e tutta l’attrezzatura. Si possono prendere in prestito indumenti caldi e scarponi',
       'Circa 7 ore',
@@ -931,7 +931,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specLabels: [undefined, 'Durata', 'Partecipanti', 'Luogo', 'Stagione', 'Limite di età', 'Carta regalo'],
   },
   'wilderness-cabin-ivalo': {
-    name: 'Due notti in pensione completa in una baita nella natura per due, Ivalo',
+    name: 'Due notti in pensione completa in baita per due, Ivalo',
     description:
       'Due notti per due in una baita sulla riva del fiume Ivalojoki, accanto alla natura selvaggia di Hammastunturi, con una sauna tutta sua in riva all’acqua. Tutti i pasti, dalla cena del giorno di arrivo al pranzo del giorno di partenza, sono compresi e preparati con prodotti della Lapponia come renna, pesce e bacche. Compreso anche il trasferimento da Ivalo e ritorno. Dal lunedì al venerdì, da metà giugno a fine ottobre.',
     specs: [

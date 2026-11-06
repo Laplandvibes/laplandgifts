@@ -3500,7 +3500,7 @@ export const PRODUCTS: Product[] = [
       fi: 'Lumikenkäretki Luoston ametistikaivokselle kahdelle',
     },
     description: {
-      en: 'A guided day out from Rovaniemi to Pyhä-Luosto national park: first on snowshoes through the park, then by snow train to the amethyst mine at the top of Lampivaara fell. At the mine everyone can dig for themselves, and an amethyst you find is yours to keep.',
+      en: 'A guided day out from Rovaniemi to the amethyst mine at the top of Lampivaara fell, in Pyhä-Luosto national park. You first cross the park on snowshoes, then a snow train takes you up to the mine. At the mine everyone can dig for themselves, and an amethyst you find is yours to keep.',
       fi: 'Opastettu päiväretki Rovaniemeltä Pyhä-Luoston kansallispuistoon: ensin lumikengillä puiston halki, sitten lumijunalla Lampivaaran huipulle ametistikaivokselle. Kaivoksella jokainen pääsee kaivamaan itse, ja löydetyn ametistin saa pitää.',
     },
     priceFrom: 400,

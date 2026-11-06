@@ -856,7 +856,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Cadeaukaart'],
   },
   'korouoma-waterfalls-rovaniemi': {
-    name: 'Tocht naar de bevroren watervallen van Korouoma voor twee, vanuit Rovaniemi',
+    name: 'Bevroren watervallen van Korouoma voor twee, Rovaniemi',
     description:
       'In de winter bevriezen de beekjes langs de wanden van de Korouoma-kloof tot watervallen van blauw ijs. Deze begeleide dagtocht vertrekt vanuit Rovaniemi naar de kloof in Posio, zo’n 110 km verderop. De wandeling is makkelijk, op sneeuwschoenen als de sneeuw daarom vraagt, en onderweg is er een lichte lunch.',
     specs: [
@@ -873,7 +873,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'amethyst-mine-snowshoe-luosto': {
     name: 'Sneeuwschoentocht naar de amethistmijn van Luosto voor twee',
     description:
-      'Een begeleide dag vanuit Rovaniemi naar het nationaal park Pyhä-Luosto: eerst op sneeuwschoenen door het park, dan met een sneeuwtrein naar de amethistmijn op de top van de Lampivaara. In de mijn mag iedereen zelf graven, en een amethist die u vindt mag u houden.',
+      'Een begeleide dag vanuit Rovaniemi naar de amethistmijn op de top van de Lampivaara, in het nationaal park Pyhä-Luosto. Eerst gaat u op sneeuwschoenen door het park, daarna brengt een sneeuwtrein u naar de mijn. In de mijn mag iedereen zelf graven, en een amethist die u vindt mag u houden.',
     specs: [
       'Begeleide sneeuwschoentocht en bezoek aan de amethistmijn voor twee, met vervoer, een snack bij de rustplaats en alle uitrusting. Warme kleding en schoenen zijn te leen',
       'Ongeveer 7 uur',
@@ -901,7 +901,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Taal van de gids', 'Cadeaukaart'],
   },
   'halti-snowmobile-kilpisjarvi': {
-    name: 'Met de sneeuwscooter naar de top van de Halti voor twee, Kilpisjärvi',
+    name: 'Met de sneeuwscooter de Halti op voor twee, Kilpisjärvi',
     description:
       'De Halti is het hoogste punt van Finland, pal op de grens met Noorwegen. Deze begeleide sneeuwscootertocht vanuit Kilpisjärvi gaat door de wildernis van Käsivarsi naar grenspaal 303B, in totaal zo’n 110 km, en op de top kunt u het gastenboek van de Halti tekenen. De tocht loopt van 10 tot 16 uur, en ervaring met sneeuwscooterrijden is vereist.',
     specs: [

@@ -891,7 +891,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Geschenkkarte'],
   },
   'korouoma-waterfalls-rovaniemi': {
-    name: 'Ausflug zu den gefrorenen Wasserfällen von Korouoma für zwei, ab Rovaniemi',
+    name: 'Gefrorene Wasserfälle von Korouoma für zwei, ab Rovaniemi',
     description:
       'Im Winter gefrieren die Bäche, die an den Wänden der Korouoma-Schlucht hinabrinnen, zu Fällen aus blauem Eis. Der geführte Tagesausflug startet in Rovaniemi und führt rund 110 km nach Posio. Die Wanderung ist leicht, bei viel Schnee auf Schneeschuhen, und unterwegs gibt es ein leichtes Mittagessen.',
     specs: [
@@ -908,7 +908,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'amethyst-mine-snowshoe-luosto': {
     name: 'Schneeschuhtour zur Amethystmine von Luosto für zwei',
     description:
-      'Ein geführter Tagesausflug von Rovaniemi in den Nationalpark Pyhä-Luosto: zuerst auf Schneeschuhen durch den Park, dann mit einem Schneezug zur Amethystmine auf dem Gipfel des Lampivaara. In der Mine darf jeder selbst graben, und einen gefundenen Amethyst dürfen Sie behalten.',
+      'Ein geführter Tagesausflug von Rovaniemi zur Amethystmine auf dem Gipfel des Lampivaara im Nationalpark Pyhä-Luosto. Zuerst geht es auf Schneeschuhen durch den Park, dann mit einem Schneezug hinauf zur Mine. In der Mine darf jeder selbst graben, und einen gefundenen Amethyst dürfen Sie behalten.',
     specs: [
       'Geführte Schneeschuhtour und Besuch der Amethystmine für zwei, mit Transfer, Imbiss an der Raststelle und der gesamten Ausrüstung. Warme Kleidung und Schuhe können ausgeliehen werden',
       'Etwa 7 Stunden',
@@ -966,7 +966,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Altersgrenze', 'Geschenkkarte'],
   },
   'wilderness-cabin-ivalo': {
-    name: 'Zwei Nächte mit Vollpension in einer Wildnishütte für zwei, Ivalo',
+    name: 'Zwei Nächte Wildnishütte mit Vollpension für zwei, Ivalo',
     description:
       'Zwei Nächte zu zweit in einer Hütte am Ufer des Flusses Ivalojoki, neben der Wildnis von Hammastunturi, mit eigener Ufersauna. Alle Mahlzeiten vom Abendessen am Anreisetag bis zum Mittagessen am Abreisetag sind inbegriffen, gekocht mit Zutaten aus Lappland wie Rentier, Fisch und Beeren, ebenso der Transfer ab Ivalo und zurück. Werktags von Mitte Juni bis Ende Oktober.',
     specs: [

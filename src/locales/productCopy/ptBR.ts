@@ -580,7 +580,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specs: ['Diâmetro 4 cm'],
   },
   'pahkataide-kuksa-bear': {
-    name: 'Kuksa Pahkataide de bétula flamejada com incrustação de osso, urso',
+    name: 'Kuksa Pahkataide de bétula flamejada com urso em osso',
     description:
       'Uma kuksa de bétula flamejada, com uma incrustação de osso no cabo que traz um urso. A Pahkataide trata suas canecas com óleo de papoula, que protege a madeira. Ela nunca é lavada com detergente: basta enxaguar, e o café de todo dia forma na superfície uma película que a protege ainda mais.',
     specs: [
@@ -856,7 +856,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Cartão-presente'],
   },
   'korouoma-waterfalls-rovaniemi': {
-    name: 'Passeio às cachoeiras congeladas de Korouoma para dois, saindo de Rovaniemi',
+    name: 'Cachoeiras congeladas de Korouoma para dois, Rovaniemi',
     description:
       'No inverno, os riachos que descem pelas paredes do cânion de Korouoma congelam em quedas de gelo azul. Este passeio guiado de um dia sai de Rovaniemi rumo ao cânion, em Posio, a cerca de 110 km. A caminhada é fácil, com raquetes de neve quando a neve pede, e um almoço leve é servido no caminho.',
     specs: [
@@ -871,9 +871,9 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma do guia', 'Cartão-presente'],
   },
   'amethyst-mine-snowshoe-luosto': {
-    name: 'Caminhada com raquetes de neve até a mina de ametista de Luosto para dois',
+    name: 'Raquetes de neve até a mina de ametista de Luosto para dois',
     description:
-      'Um dia guiado saindo de Rovaniemi para o Parque Nacional de Pyhä-Luosto: primeiro com raquetes de neve pelo parque, depois em um trenzinho de neve até a mina de ametista no alto do Lampivaara. Na mina, cada um pode cavar por conta própria, e a ametista que você encontrar é sua.',
+      'Um dia guiado saindo de Rovaniemi até a mina de ametista no alto do Lampivaara, no Parque Nacional de Pyhä-Luosto. Primeiro se atravessa o parque com raquetes de neve, depois um trenzinho de neve sobe até a mina. Na mina, cada um pode cavar por conta própria, e a ametista que você encontrar é sua.',
     specs: [
       'Caminhada guiada com raquetes de neve e visita à mina de ametista para dois, com transporte, lanche na parada e todo o equipamento. Dá para pegar emprestadas roupas quentes e botas',
       'Cerca de 7 horas',
@@ -886,7 +886,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma do guia', 'Cartão-presente'],
   },
   'midnight-sun-canoe-rovaniemi': {
-    name: 'Passeio de canoa sob o sol da meia-noite para dois, Rovaniemi',
+    name: 'Canoa sob o sol da meia-noite para dois, Rovaniemi',
     description:
       'Uma remada guiada no fim do dia perto de Rovaniemi, na luz do sol da meia-noite, que termina com um lanche ao redor de uma fogueira. O guia ensina o básico antes da saída, então não é preciso experiência. Os passeios acontecem no verão, de junho a agosto.',
     specs: [
@@ -931,7 +931,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idade mínima', 'Cartão-presente'],
   },
   'wilderness-cabin-ivalo': {
-    name: 'Duas noites com pensão completa em uma cabana na natureza para dois, Ivalo',
+    name: 'Duas noites com pensão completa em cabana para dois, Ivalo',
     description:
       'Duas noites para dois em uma cabana à beira do rio Ivalojoki, ao lado da região selvagem de Hammastunturi, com sauna própria à beira d’água. Todas as refeições, do jantar no dia da chegada ao almoço no dia da partida, estão incluídas e são preparadas com produtos da Lapônia como rena, peixe e frutas silvestres. Também estão incluídos o traslado de Ivalo e a volta. De segunda a sexta, de meados de junho ao fim de outubro.',
     specs: [

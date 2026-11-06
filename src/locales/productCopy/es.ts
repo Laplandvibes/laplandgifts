@@ -580,7 +580,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specs: ['Diámetro 4 cm'],
   },
   'pahkataide-kuksa-bear': {
-    name: 'Kuksa Pahkataide de abedul rizado con incrustación de hueso con un oso',
+    name: 'Kuksa Pahkataide de abedul rizado con oso en hueso',
     description:
       'Una kuksa de abedul rizado con una incrustación de hueso en el asa con un motivo de oso. Pahkataide trata sus tazas con aceite de amapola, que protege la madera. Nunca se lava con detergente: basta con enjuagarla, y el café diario forma en la superficie una película que la protege aún más.',
     specs: [
@@ -856,7 +856,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Tarjeta regalo'],
   },
   'korouoma-waterfalls-rovaniemi': {
-    name: 'Excursión a las cascadas heladas de Korouoma para dos, desde Rovaniemi',
+    name: 'Cascadas heladas de Korouoma para dos, desde Rovaniemi',
     description:
       'En invierno, los arroyos que bajan por las paredes del cañón de Korouoma se congelan en cascadas de hielo azul. Esta excursión guiada de un día sale de Rovaniemi hacia el cañón, en Posio, a unos 110 km. La caminata es fácil, con raquetas de nieve si hace falta, y por el camino se sirve un almuerzo ligero.',
     specs: [
@@ -871,9 +871,9 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Idioma del guía', 'Tarjeta regalo'],
   },
   'amethyst-mine-snowshoe-luosto': {
-    name: 'Excursión con raquetas a la mina de amatista de Luosto para dos',
+    name: 'Raquetas hasta la mina de amatista de Luosto para dos',
     description:
-      'Un día guiado desde Rovaniemi al parque nacional de Pyhä-Luosto: primero con raquetas de nieve por el parque y después en un tren de nieve hasta la mina de amatista, en la cima del Lampivaara. En la mina cada uno puede excavar por su cuenta, y la amatista que encuentre es suya.',
+      'Un día guiado desde Rovaniemi hasta la mina de amatista de la cima del Lampivaara, en el parque nacional de Pyhä-Luosto. Primero se cruza el parque con raquetas de nieve y después un tren de nieve sube hasta la mina. En la mina cada uno puede excavar por su cuenta, y la amatista que encuentre es suya.',
     specs: [
       'Excursión guiada con raquetas y visita a la mina de amatista para dos, con transporte, tentempié en la parada y todo el equipo. Se puede pedir prestada ropa de abrigo y botas',
       'Unas 7 horas',
@@ -901,7 +901,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Idioma del guía', 'Tarjeta regalo'],
   },
   'halti-snowmobile-kilpisjarvi': {
-    name: 'Subida en moto de nieve a la cima del Halti para dos, Kilpisjärvi',
+    name: 'En moto de nieve a la cima del Halti para dos, Kilpisjärvi',
     description:
       'El Halti es el punto más alto de Finlandia, justo en la frontera con Noruega. Esta excursión guiada en moto de nieve desde Kilpisjärvi cruza la zona salvaje de Käsivarsi hasta el hito fronterizo 303B, unos 110 km en total, y en la cima se puede firmar el libro de visitas del Halti. La salida es de 10 a 16 h, y se exige experiencia previa conduciendo moto de nieve.',
     specs: [
@@ -931,7 +931,7 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Límite de edad', 'Tarjeta regalo'],
   },
   'wilderness-cabin-ivalo': {
-    name: 'Dos noches con pensión completa en una cabaña en plena naturaleza para dos, Ivalo',
+    name: 'Dos noches con pensión completa en cabaña para dos, Ivalo',
     description:
       'Dos noches para dos en una cabaña a orillas del río Ivalojoki, junto a la zona salvaje de Hammastunturi, con sauna propia en la orilla. Todas las comidas, de la cena del día de llegada al almuerzo del día de salida, están incluidas y se preparan con productos de Laponia como reno, pescado y bayas. También están incluidos el traslado desde Ivalo y la vuelta. De lunes a viernes, de mediados de junio a finales de octubre.',
     specs: [
