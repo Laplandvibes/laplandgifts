@@ -51,7 +51,15 @@ Only the files listed below are vendored, on purpose — this is a refresh, not 
 - ads/rails/scandinavianoutdoor.ts
 - ads/rails/sukkamestarit.ts
 - ads/rails/suomikauppa.ts
+- appPromo/AppPromo.tsx
+- appPromo/copy.ts
+- appPromo/screens.ts
 - appStats.ts
+- cjk/cjkJsxDevRuntime.ts
+- cjk/cjkJsxRuntime.ts
+- cjk/cjkOtsikotPlugin.ts
+- cjk/fraasit.ts
+- cjk/otsikko.ts
 - gyg/picks.ts
 - router/trailingSlashPlugin.ts
 - router/trailingSlashRouter.tsx
