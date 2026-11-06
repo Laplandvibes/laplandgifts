@@ -342,31 +342,45 @@ const JOBS = [
     'gold-panning-day-inari',
     'https://cdn.elamyslahjat.fi/storage/photos/products/116437/23910.jpg',
   ],
-  // Era 6.8.2026: superfoodit Ruohonjuuresta (Vesa: "enemman taytetta").
-  [
-    'foodin-six-mushroom-blend',
-    'https://www.ruohonjuuri.fi/cdn/shop/files/aeccde427cd2f1d756e4b8c6b9d60a58.jpg?v=1745627672&width=1024',
-  ],
-  [
-    'foodin-nordic-berry-powder',
-    'https://www.ruohonjuuri.fi/cdn/shop/files/FOODIN-6430055218824-2.jpg?v=1720009193&width=1024',
-  ],
-  [
-    'foodin-chaga-tincture',
-    'https://www.ruohonjuuri.fi/cdn/shop/products/d0d569ab77caa10fbc8498ae081b033d.png?v=1597236923&width=1024',
-  ],
-  [
-    'kaavi-chaga-chunks',
-    'https://www.ruohonjuuri.fi/cdn/shop/files/KAAVI-6430060220430-2.jpg?v=1726726998&width=1024',
-  ],
-  [
-    'puhdistamo-instant-chaga',
-    'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220386-1.jpg?v=1699372704&width=1024',
-  ],
-  [
-    'puhdistamo-conifer-extract',
-    'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220645-1.jpg?v=1699374709&width=1024',
-  ],
+  // Erä 6.11.2026: seitsemän uutta Lapin elämyslahjakorttia (5 → 12). Sama
+  // lähde ja sama sääntö: og:image ilman query-parametreja = 1904-2500 px.
+  ['korouoma-waterfalls-rovaniemi', 'https://cdn.elamyslahjat.fi/storage/photos/products/106205/16183.jpg'],
+  ['amethyst-mine-snowshoe-luosto', 'https://cdn.elamyslahjat.fi/storage/photos/products/106206/16184.jpg'],
+  ['midnight-sun-canoe-rovaniemi', 'https://cdn.elamyslahjat.fi/storage/photos/products/106233/16273.jpg'],
+  ['halti-snowmobile-kilpisjarvi', 'https://cdn.elamyslahjat.fi/storage/photos/products/119538/50222.jpg'],
+  ['fell-ice-fishing-kilpisjarvi', 'https://cdn.elamyslahjat.fi/storage/photos/products/119536/50209.jpg'],
+  ['wilderness-cabin-ivalo', 'https://cdn.elamyslahjat.fi/storage/photos/products/117821/36023.jpg'],
+  ['katka-snowmobile-levi', 'https://cdn.elamyslahjat.fi/storage/photos/products/1844220/54897.jpg'],
+  // Erä 6.11.2026: käsintehdyt kuksat provisiollisista kaupoista (Adtraction-syötteet).
+  ['pahkataide-kuksa-bear', 'https://scandinavianoutdoor.imgix.net/dynamic/productimages/sizes/full/7c6c56e1-6737-4581-be87-b0b805740c4c.jpeg?w=1200&auto=format'],
+  ['pahkataide-curly-birch-kuksa', 'https://scandinavianoutdoor.imgix.net/dynamic/productimages/sizes/full/acda2d7a-3e09-4966-a37f-4430f70b80b7.jpeg?w=1200&auto=format'],
+  ['koivumaa-kuksa-reindeer-bone', 'https://media.partioaitta.fi/detail/200085333196_c_luukuksa_2reikaenen_kuksa_e_koivumaa_110.jpg'],
+  ['koivumaa-burl-kuksa', 'https://media.partioaitta.fi/detail/200085333202_d_isokuksa_1reikaenen_kuksa_e_koivumaa_110.jpg'],
+  // Era 6.8.2026: superfoodit Ruohonjuuresta (Vesa: "enemman taytetta").
+  [
+    'foodin-six-mushroom-blend',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/aeccde427cd2f1d756e4b8c6b9d60a58.jpg?v=1745627672&width=1024',
+  ],
+  [
+    'foodin-nordic-berry-powder',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/FOODIN-6430055218824-2.jpg?v=1720009193&width=1024',
+  ],
+  [
+    'foodin-chaga-tincture',
+    'https://www.ruohonjuuri.fi/cdn/shop/products/d0d569ab77caa10fbc8498ae081b033d.png?v=1597236923&width=1024',
+  ],
+  [
+    'kaavi-chaga-chunks',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/KAAVI-6430060220430-2.jpg?v=1726726998&width=1024',
+  ],
+  [
+    'puhdistamo-instant-chaga',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220386-1.jpg?v=1699372704&width=1024',
+  ],
+  [
+    'puhdistamo-conifer-extract',
+    'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220645-1.jpg?v=1699374709&width=1024',
+  ],
   // Era 24.8.2026: Nordicbuddiesin Love-retrosukat loppuivat kaupasta. Kaupan
   // oma feed (Daisycon 20538, luettu 24.8.) kertoo kolmesta samannimisesta
   // listauksesta vain YHDEN olevan varastossa: -2 eli vaaleansininen MOOMIN20H,

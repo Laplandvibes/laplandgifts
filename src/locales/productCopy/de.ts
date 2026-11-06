@@ -720,6 +720,49 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Eine Kuksa von 4 cm, gedacht für einen Schnaps statt für Kaffee, mit einer Lederschlaufe für den Gürtel. Die kleinste und günstigste Art, diese Form zu besitzen.',
     specs: ['Durchmesser 4 cm'],
   },
+  'pahkataide-kuksa-bear': {
+    name: 'Pahkataide Kuksa aus Maserbirke mit Bären-Knocheneinlage',
+    description:
+      'Eine Kuksa aus Maserbirke, mit einer Knocheneinlage am Griff, die einen Bären zeigt. Pahkataide behandelt seine Becher mit Mohnöl, das das Holz schützt. Sie wird nie mit Spülmittel gewaschen: Ausspülen reicht, und täglicher Kaffee bildet einen Film, der die Oberfläche zusätzlich schützt.',
+    specs: [
+      'Maserbirke, Knocheneinlage am Griff',
+      'Mit Wasser ausspülen, kein Spülmittel',
+      'Hergestellt in Finnland',
+    ],
+    specLabels: [undefined, undefined, 'Herkunft'],
+  },
+  'pahkataide-curly-birch-kuksa': {
+    name: 'Pahkataide Kuksa aus Maserbirke',
+    description:
+      'Eine schlichte Kuksa aus Maserbirke, mit demselben Holz und derselben Mohnölbehandlung wie Pahkataides Becher mit Einlage, nur ohne Verzierung. Die Maserung macht jedes Stück anders, und sie fasst etwa 1,5 dl.',
+    specs: [
+      'Maserbirke',
+      'Etwa 1,5 dl, jedes Stück ein Unikat',
+      'Mit Wasser ausspülen, kein Spülmittel',
+      'Hergestellt in Finnland',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Herkunft'],
+  },
+  'koivumaa-kuksa-reindeer-bone': {
+    name: 'Kuksa E. Koivumaa Kuksa aus Birkenmaser mit Rentierknochen',
+    description:
+      'Eine Kuksa, auf traditionelle Weise aus einer Birkenmaser gefertigt, mit zwei Fingerlöchern im Griff und einer Verzierung aus Rentierknochen. Maserholz verbrennt die Lippen nicht, deshalb ist sie der klassische Becher für heißen Kaffee am Feuer. Mit schwarzem Kaffee einweihen und danach nur ausspülen.',
+    specs: [
+      'Birkenmaser, Verzierung aus Rentierknochen am Griff',
+      'Etwa 1,5 dl, zwei Löcher im Griff',
+      'Mit Wasser ausspülen, kein Spülmittel und keine Spülmaschine',
+    ],
+  },
+  'koivumaa-burl-kuksa': {
+    name: 'Kuksa E. Koivumaa Kuksa aus Birkenmaser, ein Loch',
+    description:
+      'Die schlichte Ausführung der Maserkuksa desselben Herstellers: Birkenmaser, traditionell gefertigt, ein Fingerloch im Griff, etwa 1,5 dl. Mit schwarzem Kaffee einweihen, dessen Öl die offenen Poren des Holzes verschließt, und niemals in die Spülmaschine.',
+    specs: [
+      'Birkenmaser',
+      'Etwa 1,5 dl, ein Loch im Griff',
+      'Mit Wasser ausspülen, kein Spülmittel und keine Spülmaschine',
+    ],
+  },
   'fazer-super-salmiakki': {
     name: 'Fazer Super Salmiakki Pastillen 80 g',
     description:
@@ -846,6 +889,111 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Gültig 3 Jahre',
     ],
     specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Geschenkkarte'],
+  },
+  'korouoma-waterfalls-rovaniemi': {
+    name: 'Ausflug zu den gefrorenen Wasserfällen von Korouoma für zwei, ab Rovaniemi',
+    description:
+      'Im Winter gefrieren die Bäche, die an den Wänden der Korouoma-Schlucht hinabrinnen, zu Fällen aus blauem Eis. Der geführte Tagesausflug startet in Rovaniemi und führt rund 110 km nach Posio. Die Wanderung ist leicht, bei viel Schnee auf Schneeschuhen, und unterwegs gibt es ein leichtes Mittagessen.',
+    specs: [
+      'Geführter Ausflug zu den gefrorenen Wasserfällen von Korouoma für zwei, mit Transfer, leichtem Mittagessen und Imbiss. Abholung im Umkreis von 10 km um das Zentrum von Rovaniemi',
+      'Etwa 7 Stunden inklusive Transfer',
+      '2 Personen',
+      'Korouoma-Schlucht, Posio. Abfahrt in Rovaniemi',
+      'Wintermonate, November bis April',
+      'Englisch',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Sprache der Führung', 'Geschenkkarte'],
+  },
+  'amethyst-mine-snowshoe-luosto': {
+    name: 'Schneeschuhtour zur Amethystmine von Luosto für zwei',
+    description:
+      'Ein geführter Tagesausflug von Rovaniemi in den Nationalpark Pyhä-Luosto: zuerst auf Schneeschuhen durch den Park, dann mit einem Schneezug zur Amethystmine auf dem Gipfel des Lampivaara. In der Mine darf jeder selbst graben, und einen gefundenen Amethyst dürfen Sie behalten.',
+    specs: [
+      'Geführte Schneeschuhtour und Besuch der Amethystmine für zwei, mit Transfer, Imbiss an der Raststelle und der gesamten Ausrüstung. Warme Kleidung und Schuhe können ausgeliehen werden',
+      'Etwa 7 Stunden',
+      '2 Personen',
+      'Lampivaara, Luosto. Abfahrt in Rovaniemi',
+      'Wintermonate, Dezember bis April',
+      'Englisch',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Sprache der Führung', 'Geschenkkarte'],
+  },
+  'midnight-sun-canoe-rovaniemi': {
+    name: 'Kanutour in der Mitternachtssonne für zwei, Rovaniemi',
+    description:
+      'Eine geführte Abendpaddeltour bei Rovaniemi im Licht der Mitternachtssonne, zum Abschluss ein Imbiss am offenen Feuer. Der Guide erklärt vor dem Start die Grundlagen, Paddelerfahrung ist also nicht nötig. Die Touren finden im Sommer statt, von Juni bis August.',
+    specs: [
+      'Geführte Kanutour für zwei mit Ausrüstung, Paddel- und Sicherheitseinweisung, einem Imbiss am Feuer und Transfer im Umkreis von 10 km um Rovaniemi',
+      'Etwa 3 Stunden',
+      '2 Personen',
+      'Rovaniemi. Der genaue Ort wird bei der Buchung bestätigt',
+      'Sommermonate, Juni bis August',
+      'Englisch',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Sprache der Führung', 'Geschenkkarte'],
+  },
+  'halti-snowmobile-kilpisjarvi': {
+    name: 'Mit dem Schneemobil auf den Halti für zwei, Kilpisjärvi',
+    description:
+      'Der Halti ist der höchste Punkt Finnlands, direkt an der Grenze zu Norwegen. Die geführte Schneemobiltour ab Kilpisjärvi durchquert die Wildnis von Käsivarsi bis zum Grenzstein 303B, insgesamt rund 110 km, und oben können Sie sich ins Gipfelbuch des Halti eintragen. Gefahren wird von 10 bis 16 Uhr, und Fahrerfahrung mit dem Schneemobil ist Voraussetzung.',
+    specs: [
+      'Geführte Schneemobiltour von etwa 110 km für zwei, Schneemobilkleidung (Overall, Stiefel, Helm), warmer Saft und Gebäck, Trassengenehmigung, Mehrwertsteuer und Versicherungen',
+      'Etwa 6 Stunden',
+      '2 Personen',
+      'Kilpisjärvi',
+      '1. März bis 10. Mai, wetterabhängig',
+      'Fahrer ab 18 Jahren, Mitfahrt im Schlitten ab 8 Jahren. Fahrerfahrung ist erforderlich',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Altersgrenze', 'Geschenkkarte'],
+  },
+  'fell-ice-fishing-kilpisjarvi': {
+    name: 'Eisangeln im Fjell für zwei, Kilpisjärvi',
+    description:
+      'Ein Guide bringt Sie mit dem Schneemobil ins Fjell bei Kilpisjärvi, insgesamt rund 15 km, wo Sie auf einem Rentierfell sitzend durch ein Eisloch angeln. Seesaibling oder Forelle können anbeißen, die Angelausrüstung wird gestellt. Die Tour dauert von 11.15 bis 14.15 Uhr.',
+    specs: [
+      'Geführte Tour von etwa 15 km für zwei, Schneemobilkleidung (Overall, Stiefel, Helm), Angelausrüstung, warmer Saft und Gebäck, Mehrwertsteuer und Versicherungen',
+      'Etwa 3 Stunden',
+      '2 Personen',
+      'Kilpisjärvi',
+      '20. November bis 10. Mai, wetterabhängig',
+      'Fahrer ab 18 Jahren, Mitfahrt im Schlitten ab 8 Jahren',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Altersgrenze', 'Geschenkkarte'],
+  },
+  'wilderness-cabin-ivalo': {
+    name: 'Zwei Nächte mit Vollpension in einer Wildnishütte für zwei, Ivalo',
+    description:
+      'Zwei Nächte zu zweit in einer Hütte am Ufer des Flusses Ivalojoki, neben der Wildnis von Hammastunturi, mit eigener Ufersauna. Alle Mahlzeiten vom Abendessen am Anreisetag bis zum Mittagessen am Abreisetag sind inbegriffen, gekocht mit Zutaten aus Lappland wie Rentier, Fisch und Beeren, ebenso der Transfer ab Ivalo und zurück. Werktags von Mitte Juni bis Ende Oktober.',
+    specs: [
+      '2 Nächte für zwei in einer Wildnishütte, freie Nutzung einer separaten Ufersauna, Vollpension mit Nachmittagskaffee am Feuer und Transfer ab dem Zentrum oder dem Flughafen von Ivalo und zurück',
+      '2 Nächte',
+      '2 Personen',
+      'Am Ufer des Ivalojoki. Der genaue Ort wird bei der Buchung bestätigt',
+      'Montag bis Freitag, 15. Juni bis 30. Oktober',
+      'Finnisch und Englisch',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Sprache', 'Geschenkkarte'],
+  },
+  'katka-snowmobile-levi': {
+    name: 'Schneemobilsafari in die Wildnis von Kätkä, Levi',
+    description:
+      'Eine Schneemobilsafari von rund 30 km ab Levi in die Wildnis am Kätkätunturi. Die Pause findet im Hanhipirtti statt, einem Wildniscafé in einer alten Hütte voller Retro-Gegenstände, bevor es zurück nach Levi geht. Schneemobilerfahrung ist nicht nötig, und die Geschenkkarte gilt für eine Person ab 13 Jahren.',
+    specs: [
+      'Geführte Schneemobilsafari von etwa 30 km für eine Person, mit Pause im Wildniscafé Hanhipirtti. Winterkleidung ist inbegriffen',
+      'Etwa 2 bis 3 Stunden',
+      '1 Person ab 13 Jahren',
+      'Levi. Abfahrt: Leviraitti 13, Sirkka',
+      'Winter, Dezember bis März',
+      'Englisch und Finnisch',
+      'Gültig 3 Jahre',
+    ],
+    specLabels: [undefined, 'Dauer', 'Teilnehmer', 'Ort', 'Saison', 'Sprache', 'Geschenkkarte'],
   },
   'foodin-six-mushroom-blend': {
     name: 'Foodin Sechs-Pilze-Mischung 40 g',

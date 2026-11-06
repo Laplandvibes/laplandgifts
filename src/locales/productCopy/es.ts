@@ -579,6 +579,49 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       'Un kuksa de 4 cm pensado para un chupito y no para el café, con un lazo de cuero para el cinturón. La forma más pequeña y barata de tener esta pieza.',
     specs: ['Diámetro 4 cm'],
   },
+  'pahkataide-kuksa-bear': {
+    name: 'Kuksa Pahkataide de abedul rizado con incrustación de hueso con un oso',
+    description:
+      'Una kuksa de abedul rizado con una incrustación de hueso en el asa con un motivo de oso. Pahkataide trata sus tazas con aceite de amapola, que protege la madera. Nunca se lava con detergente: basta con enjuagarla, y el café diario forma en la superficie una película que la protege aún más.',
+    specs: [
+      'Abedul rizado, incrustación de hueso en el asa',
+      'Enjuagar con agua, sin detergente',
+      'Fabricada en Finlandia',
+    ],
+    specLabels: [undefined, undefined, 'Origen'],
+  },
+  'pahkataide-curly-birch-kuksa': {
+    name: 'Kuksa Pahkataide de abedul rizado',
+    description:
+      'Una kuksa sencilla de abedul rizado, con la misma madera y el mismo acabado de aceite de amapola que las tazas con incrustación de Pahkataide, sin adorno. La veta hace que cada pieza sea distinta, y cabe en ella aproximadamente 1,5 dl.',
+    specs: [
+      'Abedul rizado',
+      'Unos 1,5 dl, cada pieza es única',
+      'Enjuagar con agua, sin detergente',
+      'Fabricada en Finlandia',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Origen'],
+  },
+  'koivumaa-kuksa-reindeer-bone': {
+    name: 'Kuksa E. Koivumaa de nudo de abedul con hueso de reno',
+    description:
+      'Una kuksa tallada a la manera tradicional en un nudo de abedul, con dos agujeros para los dedos en el asa y un adorno de hueso de reno. El nudo no quema los labios, y por eso es la taza clásica para el café caliente junto al fuego. Se cura con café solo y después basta con enjuagarla.',
+    specs: [
+      'Nudo de abedul, adorno de hueso de reno en el asa',
+      'Unos 1,5 dl, dos agujeros en el asa',
+      'Enjuagar con agua, sin detergente ni lavavajillas',
+    ],
+  },
+  'koivumaa-burl-kuksa': {
+    name: 'Kuksa E. Koivumaa de nudo de abedul, un agujero',
+    description:
+      'La versión sencilla de la kuksa de nudo del mismo artesano: nudo de abedul tallado a la manera tradicional, un agujero para los dedos en el asa, unos 1,5 dl. Se cura con café solo, cuyo aceite sella los poros abiertos de la madera, y nunca va al lavavajillas.',
+    specs: [
+      'Nudo de abedul',
+      'Unos 1,5 dl, un agujero en el asa',
+      'Enjuagar con agua, sin detergente ni lavavajillas',
+    ],
+  },
   'fazer-super-salmiakki': {
     name: 'Pastillas Fazer Super Salmiakki 80 g',
     description:
@@ -811,6 +854,111 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       'Válida 3 años',
     ],
     specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Tarjeta regalo'],
+  },
+  'korouoma-waterfalls-rovaniemi': {
+    name: 'Excursión a las cascadas heladas de Korouoma para dos, desde Rovaniemi',
+    description:
+      'En invierno, los arroyos que bajan por las paredes del cañón de Korouoma se congelan en cascadas de hielo azul. Esta excursión guiada de un día sale de Rovaniemi hacia el cañón, en Posio, a unos 110 km. La caminata es fácil, con raquetas de nieve si hace falta, y por el camino se sirve un almuerzo ligero.',
+    specs: [
+      'Excursión guiada a las cascadas heladas de Korouoma para dos, con transporte, almuerzo ligero y tentempié. Recogida en un radio de 10 km del centro de Rovaniemi',
+      'Unas 7 horas con el transporte',
+      '2 personas',
+      'Cañón de Korouoma, Posio. Salida desde Rovaniemi',
+      'Meses de invierno, de noviembre a abril',
+      'Inglés',
+      'Válida 3 años',
+    ],
+    specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Idioma del guía', 'Tarjeta regalo'],
+  },
+  'amethyst-mine-snowshoe-luosto': {
+    name: 'Excursión con raquetas a la mina de amatista de Luosto para dos',
+    description:
+      'Un día guiado desde Rovaniemi al parque nacional de Pyhä-Luosto: primero con raquetas de nieve por el parque y después en un tren de nieve hasta la mina de amatista, en la cima del Lampivaara. En la mina cada uno puede excavar por su cuenta, y la amatista que encuentre es suya.',
+    specs: [
+      'Excursión guiada con raquetas y visita a la mina de amatista para dos, con transporte, tentempié en la parada y todo el equipo. Se puede pedir prestada ropa de abrigo y botas',
+      'Unas 7 horas',
+      '2 personas',
+      'Lampivaara, Luosto. Salida desde Rovaniemi',
+      'Meses de invierno, de diciembre a abril',
+      'Inglés',
+      'Válida 3 años',
+    ],
+    specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Idioma del guía', 'Tarjeta regalo'],
+  },
+  'midnight-sun-canoe-rovaniemi': {
+    name: 'Paseo en canoa bajo el sol de medianoche para dos, Rovaniemi',
+    description:
+      'Un paseo guiado en canoa por la tarde-noche cerca de Rovaniemi, con la luz del sol de medianoche, que termina con un tentempié junto a una hoguera. El guía explica lo básico antes de salir, así que no hace falta experiencia. Las salidas son en verano, de junio a agosto.',
+    specs: [
+      'Paseo guiado en canoa para dos con el equipo, instrucciones de remo y de seguridad, un tentempié junto al fuego y transporte en un radio de 10 km de Rovaniemi',
+      'Unas 3 horas',
+      '2 personas',
+      'Rovaniemi. El lugar exacto se confirma al reservar',
+      'Meses de verano, de junio a agosto',
+      'Inglés',
+      'Válida 3 años',
+    ],
+    specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Idioma del guía', 'Tarjeta regalo'],
+  },
+  'halti-snowmobile-kilpisjarvi': {
+    name: 'Subida en moto de nieve a la cima del Halti para dos, Kilpisjärvi',
+    description:
+      'El Halti es el punto más alto de Finlandia, justo en la frontera con Noruega. Esta excursión guiada en moto de nieve desde Kilpisjärvi cruza la zona salvaje de Käsivarsi hasta el hito fronterizo 303B, unos 110 km en total, y en la cima se puede firmar el libro de visitas del Halti. La salida es de 10 a 16 h, y se exige experiencia previa conduciendo moto de nieve.',
+    specs: [
+      'Excursión guiada en moto de nieve de unos 110 km para dos, ropa de moto de nieve (mono, botas, casco), zumo caliente y un dulce, permiso de pista, IVA y seguros',
+      'Unas 6 horas',
+      '2 personas',
+      'Kilpisjärvi',
+      'Del 1 de marzo al 10 de mayo, si el tiempo lo permite',
+      '18 años para conducir, 8 años en el trineo. Se exige experiencia previa',
+      'Válida 3 años',
+    ],
+    specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Límite de edad', 'Tarjeta regalo'],
+  },
+  'fell-ice-fishing-kilpisjarvi': {
+    name: 'Pesca en el hielo en las montañas para dos, Kilpisjärvi',
+    description:
+      'Un guía os lleva en moto de nieve a las montañas cerca de Kilpisjärvi, unos 15 km en total, donde se pesca por un agujero en el hielo sentados sobre una piel de reno. Pueden picar salvelinos o truchas, y el equipo de pesca está incluido. La salida es de 11:15 a 14:15 h.',
+    specs: [
+      'Excursión guiada de unos 15 km para dos, ropa de moto de nieve (mono, botas, casco), equipo de pesca, zumo caliente y un dulce, IVA y seguros',
+      'Unas 3 horas',
+      '2 personas',
+      'Kilpisjärvi',
+      'Del 20 de noviembre al 10 de mayo, si el tiempo lo permite',
+      '18 años para conducir, 8 años en el trineo',
+      'Válida 3 años',
+    ],
+    specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Límite de edad', 'Tarjeta regalo'],
+  },
+  'wilderness-cabin-ivalo': {
+    name: 'Dos noches con pensión completa en una cabaña en plena naturaleza para dos, Ivalo',
+    description:
+      'Dos noches para dos en una cabaña a orillas del río Ivalojoki, junto a la zona salvaje de Hammastunturi, con sauna propia en la orilla. Todas las comidas, de la cena del día de llegada al almuerzo del día de salida, están incluidas y se preparan con productos de Laponia como reno, pescado y bayas. También están incluidos el traslado desde Ivalo y la vuelta. De lunes a viernes, de mediados de junio a finales de octubre.',
+    specs: [
+      '2 noches para dos en una cabaña en plena naturaleza, uso libre de una sauna aparte en la orilla, pensión completa con café de la tarde junto al fuego y traslado desde el centro o el aeropuerto de Ivalo y vuelta',
+      '2 noches',
+      '2 personas',
+      'A orillas del río Ivalojoki. El lugar exacto se confirma al reservar',
+      'De lunes a viernes, del 15 de junio al 30 de octubre',
+      'Finés e inglés',
+      'Válida 3 años',
+    ],
+    specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Idioma', 'Tarjeta regalo'],
+  },
+  'katka-snowmobile-levi': {
+    name: 'Safari en moto de nieve por la zona salvaje de Kätkä, Levi',
+    description:
+      'Un safari en moto de nieve de unos 30 km desde Levi hasta la zona salvaje del Kätkätunturi. La parada es en Hanhipirtti, un café en plena naturaleza instalado en una vieja cabaña llena de objetos retro, antes de volver a Levi. No hace falta experiencia previa, y la tarjeta regalo es para una persona de 13 años o más.',
+    specs: [
+      'Safari guiado en moto de nieve de unos 30 km para una persona, con parada en el café Hanhipirtti. Incluye ropa de invierno',
+      'De 2 a 3 horas',
+      '1 persona de 13 años o más',
+      'Levi. Salida desde Leviraitti 13, Sirkka',
+      'Invierno, de diciembre a marzo',
+      'Inglés y finés',
+      'Válida 3 años',
+    ],
+    specLabels: [undefined, 'Duración', 'Participantes', 'Ubicación', 'Temporada', 'Idioma', 'Tarjeta regalo'],
   },
   'foodin-six-mushroom-blend': {
     name: 'Foodin mezcla de seis setas 40 g',

@@ -8,7 +8,8 @@ import ProductGridSection from '../components/shop/ProductGridSection'
 import ExperienceCard from '../components/shop/ExperienceCard'
 import { categoryBySlug } from '../data/categories'
 import { productsByCategory } from '../data/products'
-import { GIFT_EXPERIENCES, EXPERIENCE_GROUPS, experiencesByGroup } from '../data/experiences'
+import { GIFT_EXPERIENCES, EXPERIENCE_GROUPS, experiencesByGroup, TOP_RATED_TOUR_IDS } from '../data/experiences'
+import GygTopRated from '../components/shop/GygTopRated'
 import { GYG_PRICE_AS_OF, gygFreshPrice } from '../shared/gyg/picks'
 import { groupProducts, subgroupLabel, subgroupNote } from '../data/subgroups'
 import { themesForCategory } from '../data/themeProducts'
@@ -229,6 +230,10 @@ export default function Category() {
                   <ProductGridSection products={visible} lang={lang} emptyMessage={emptyMessage} />
                 </section>
               )}
+              {/* GetYourGuiden suosikit (6.11.2026): GYG:n oma upotus näyttää
+                  järjestäjien kuvat, arvosanat ja päivän hinnat. Piilossa kunnes
+                  upotus on piirtynyt (evästesuostumus), ks. GygTopRated. */}
+              <GygTopRated tourIds={TOP_RATED_TOUR_IDS} lang={lang} />
               {/* 🔴 Ryhmitelty, ei yhtenä listana (Vesa 2.8.: "kyllä pitää olla
                   ihan useita kymmeniä täällä ja kategorioittain"). 24 korttia
                   peräkkäin on luettelo; kahdeksan otsikoitua ryhmää on

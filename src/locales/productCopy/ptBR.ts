@@ -579,6 +579,49 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Um kuksa de 4 cm pensado para uma dose e não para café, com uma alça de couro para o cinto. O jeito menor e mais barato de ter esse formato.',
     specs: ['Diâmetro 4 cm'],
   },
+  'pahkataide-kuksa-bear': {
+    name: 'Kuksa Pahkataide de bétula flamejada com incrustação de osso, urso',
+    description:
+      'Uma kuksa de bétula flamejada, com uma incrustação de osso no cabo que traz um urso. A Pahkataide trata suas canecas com óleo de papoula, que protege a madeira. Ela nunca é lavada com detergente: basta enxaguar, e o café de todo dia forma na superfície uma película que a protege ainda mais.',
+    specs: [
+      'Bétula flamejada, incrustação de osso no cabo',
+      'Enxaguar com água, sem detergente',
+      'Feita na Finlândia',
+    ],
+    specLabels: [undefined, undefined, 'Origem'],
+  },
+  'pahkataide-curly-birch-kuksa': {
+    name: 'Kuksa Pahkataide de bétula flamejada',
+    description:
+      'Uma kuksa simples de bétula flamejada, com a mesma madeira e o mesmo acabamento de óleo de papoula das canecas com incrustação da Pahkataide, sem decoração. Os veios deixam cada peça diferente, e ela comporta cerca de 1,5 dl.',
+    specs: [
+      'Bétula flamejada',
+      'Cerca de 1,5 dl, cada peça é única',
+      'Enxaguar com água, sem detergente',
+      'Feita na Finlândia',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Origem'],
+  },
+  'koivumaa-kuksa-reindeer-bone': {
+    name: 'Kuksa E. Koivumaa de nó de bétula com osso de rena',
+    description:
+      'Uma kuksa entalhada de forma tradicional em um nó de bétula, com dois furos para os dedos no cabo e um enfeite de osso de rena. O nó não queima os lábios, e por isso ela é a caneca clássica para café quente perto do fogo. Deve ser preparada com café preto; depois, basta enxaguar.',
+    specs: [
+      'Nó de bétula, enfeite de osso de rena no cabo',
+      'Cerca de 1,5 dl, dois furos no cabo',
+      'Enxaguar com água, sem detergente nem lava-louças',
+    ],
+  },
+  'koivumaa-burl-kuksa': {
+    name: 'Kuksa E. Koivumaa de nó de bétula, um furo',
+    description:
+      'A versão simples da kuksa de nó do mesmo artesão: nó de bétula entalhado de forma tradicional, um furo para os dedos no cabo, cerca de 1,5 dl. Deve ser preparada com café preto, cujo óleo fecha os poros abertos da madeira, e nunca vai à lava-louças.',
+    specs: [
+      'Nó de bétula',
+      'Cerca de 1,5 dl, um furo no cabo',
+      'Enxaguar com água, sem detergente nem lava-louças',
+    ],
+  },
   'fazer-super-salmiakki': {
     name: 'Pastilhas Fazer Super Salmiakki 80 g',
     description:
@@ -811,6 +854,111 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Válido por 3 anos',
     ],
     specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Cartão-presente'],
+  },
+  'korouoma-waterfalls-rovaniemi': {
+    name: 'Passeio às cachoeiras congeladas de Korouoma para dois, saindo de Rovaniemi',
+    description:
+      'No inverno, os riachos que descem pelas paredes do cânion de Korouoma congelam em quedas de gelo azul. Este passeio guiado de um dia sai de Rovaniemi rumo ao cânion, em Posio, a cerca de 110 km. A caminhada é fácil, com raquetes de neve quando a neve pede, e um almoço leve é servido no caminho.',
+    specs: [
+      'Passeio guiado às cachoeiras congeladas de Korouoma para dois, com transporte, almoço leve e lanche. Busca em um raio de 10 km do centro de Rovaniemi',
+      'Cerca de 7 horas com o transporte',
+      '2 pessoas',
+      'Cânion de Korouoma, Posio. Saída de Rovaniemi',
+      'Meses de inverno, de novembro a abril',
+      'Inglês',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma do guia', 'Cartão-presente'],
+  },
+  'amethyst-mine-snowshoe-luosto': {
+    name: 'Caminhada com raquetes de neve até a mina de ametista de Luosto para dois',
+    description:
+      'Um dia guiado saindo de Rovaniemi para o Parque Nacional de Pyhä-Luosto: primeiro com raquetes de neve pelo parque, depois em um trenzinho de neve até a mina de ametista no alto do Lampivaara. Na mina, cada um pode cavar por conta própria, e a ametista que você encontrar é sua.',
+    specs: [
+      'Caminhada guiada com raquetes de neve e visita à mina de ametista para dois, com transporte, lanche na parada e todo o equipamento. Dá para pegar emprestadas roupas quentes e botas',
+      'Cerca de 7 horas',
+      '2 pessoas',
+      'Lampivaara, Luosto. Saída de Rovaniemi',
+      'Meses de inverno, de dezembro a abril',
+      'Inglês',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma do guia', 'Cartão-presente'],
+  },
+  'midnight-sun-canoe-rovaniemi': {
+    name: 'Passeio de canoa sob o sol da meia-noite para dois, Rovaniemi',
+    description:
+      'Uma remada guiada no fim do dia perto de Rovaniemi, na luz do sol da meia-noite, que termina com um lanche ao redor de uma fogueira. O guia ensina o básico antes da saída, então não é preciso experiência. Os passeios acontecem no verão, de junho a agosto.',
+    specs: [
+      'Passeio guiado de canoa para dois com equipamento, orientação de remada e segurança, lanche junto à fogueira e transporte em um raio de 10 km de Rovaniemi',
+      'Cerca de 3 horas',
+      '2 pessoas',
+      'Rovaniemi. O local exato é confirmado na reserva',
+      'Meses de verão, de junho a agosto',
+      'Inglês',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma do guia', 'Cartão-presente'],
+  },
+  'halti-snowmobile-kilpisjarvi': {
+    name: 'De snowmobile até o topo do Halti para dois, Kilpisjärvi',
+    description:
+      'O Halti é o ponto mais alto da Finlândia, bem na fronteira com a Noruega. Este passeio guiado de snowmobile saindo de Kilpisjärvi atravessa a região selvagem de Käsivarsi até o marco de fronteira 303B, cerca de 110 km no total, e no topo dá para assinar o livro de visitas do Halti. O passeio vai das 10h às 16h, e é exigida experiência prévia pilotando snowmobile.',
+    specs: [
+      'Passeio guiado de snowmobile de cerca de 110 km para dois, roupa de snowmobile (macacão, botas, capacete), suco quente e um doce, licença de trilha, IVA e seguros',
+      'Cerca de 6 horas',
+      '2 pessoas',
+      'Kilpisjärvi',
+      'De 1º de março a 10 de maio, se o tempo permitir',
+      '18 anos para pilotar, 8 anos no trenó. Experiência prévia exigida',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idade mínima', 'Cartão-presente'],
+  },
+  'fell-ice-fishing-kilpisjarvi': {
+    name: 'Pesca no gelo nas montanhas para dois, Kilpisjärvi',
+    description:
+      'Um guia leva vocês de snowmobile às montanhas perto de Kilpisjärvi, cerca de 15 km no total, onde se pesca por um buraco no gelo sentados em uma pele de rena. Salvelino ou truta podem morder a isca, e o equipamento de pesca está incluído. O passeio vai das 11h15 às 14h15.',
+    specs: [
+      'Passeio guiado de cerca de 15 km para dois, roupa de snowmobile (macacão, botas, capacete), equipamento de pesca, suco quente e um doce, IVA e seguros',
+      'Cerca de 3 horas',
+      '2 pessoas',
+      'Kilpisjärvi',
+      'De 20 de novembro a 10 de maio, conforme o tempo',
+      '18 anos para pilotar, 8 anos no trenó',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idade mínima', 'Cartão-presente'],
+  },
+  'wilderness-cabin-ivalo': {
+    name: 'Duas noites com pensão completa em uma cabana na natureza para dois, Ivalo',
+    description:
+      'Duas noites para dois em uma cabana à beira do rio Ivalojoki, ao lado da região selvagem de Hammastunturi, com sauna própria à beira d’água. Todas as refeições, do jantar no dia da chegada ao almoço no dia da partida, estão incluídas e são preparadas com produtos da Lapônia como rena, peixe e frutas silvestres. Também estão incluídos o traslado de Ivalo e a volta. De segunda a sexta, de meados de junho ao fim de outubro.',
+    specs: [
+      '2 noites para dois em uma cabana na natureza, uso livre de uma sauna separada à beira d’água, pensão completa com café da tarde junto à fogueira e traslado do centro ou do aeroporto de Ivalo e volta',
+      '2 noites',
+      '2 pessoas',
+      'À beira do rio Ivalojoki. O local exato é confirmado na reserva',
+      'De segunda a sexta, de 15 de junho a 30 de outubro',
+      'Finlandês e inglês',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma', 'Cartão-presente'],
+  },
+  'katka-snowmobile-levi': {
+    name: 'Safári de snowmobile pela região selvagem de Kätkä, Levi',
+    description:
+      'Um safári de snowmobile de cerca de 30 km saindo de Levi rumo à região selvagem do Kätkätunturi. A parada é no Hanhipirtti, um café no meio da natureza instalado em uma cabana antiga cheia de objetos retrô, antes da volta a Levi. Não é preciso experiência com snowmobile, e o cartão-presente vale para uma pessoa a partir de 13 anos.',
+    specs: [
+      'Safári guiado de snowmobile de cerca de 30 km para uma pessoa, com parada no café Hanhipirtti. Roupas de inverno incluídas',
+      'Cerca de 2 a 3 horas',
+      '1 pessoa a partir de 13 anos',
+      'Levi. Saída da Leviraitti 13, Sirkka',
+      'Inverno, de dezembro a março',
+      'Inglês e finlandês',
+      'Válido por 3 anos',
+    ],
+    specLabels: [undefined, 'Duração', 'Participantes', 'Local', 'Temporada', 'Idioma', 'Cartão-presente'],
   },
   'foodin-six-mushroom-blend': {
     name: 'Foodin mistura de seis cogumelos 40 g',

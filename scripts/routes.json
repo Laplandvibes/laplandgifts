@@ -418,7 +418,7 @@
   {
     "path": "/luxury",
     "fallbackTitle": "Lapland luxury",
-    "fallbackDescription": "Lapland's most expensive gifts on one page: 9 items, €80–€1,490. Experiences first: gold panning in Inari, a night in a glass igloo and a morning with reindeer.",
+    "fallbackDescription": "Lapland's most expensive gifts on one page: 10 items, €80–€1,490. Every price is read from the partner shop on the date shown. Delivery area on every card.",
     "fallbackTitleByLang": {
       "en": "Lapland luxury",
       "fi": "Lapin luxus",
@@ -434,18 +434,18 @@
       "sv": "Lyx från Lappland"
     },
     "fallbackDescriptionByLang": {
-      "en": "Lapland's most expensive gifts on one page: 9 items, €80–€1,490. Experiences first: gold panning in Inari, a night in a glass igloo and a morning with reindeer.",
-      "fi": "Lapin kalleimmat lahjat yhdellä sivulla: 9 tuotetta, 80 €–1 490 €. Ensin elämykset: kullanhuuhdonta Inarissa, yö lasi-iglussa ja aamu porojen kanssa.",
-      "de": "Lapplands teuerste Geschenke auf einer Seite: 9 Produkte, 80 €–1.490 €. Jeder Preis wird am angegebenen Datum im Partnershop abgelesen. Liefergebiete angegeben.",
-      "ja": "ラップランドで最も高価なギフトを1ページに：9点、€80–€1,490。まずは体験。イナリでの砂金採り、グラスイグルーでの一夜、トナカイと過ごす朝。その次に、Kalevalaのジュエリーと、何十年も同じ作り方で作られてきた4つの定番。価格はパートナーショップのものです。価格はすべて提携ショップから取得しています。",
-      "es": "Los regalos más caros de Laponia en una sola página: 9 productos, 80 €–1490 €. Cada precio se consulta en la tienda asociada. Zona de entrega en cada tarjeta.",
-      "pt-BR": "Os presentes mais caros da Lapônia em uma só página: 9 produtos, € 80–€ 1.490. Os preços vêm das lojas parceiras. A área de entrega é indicada em cada cartão.",
-      "zh-CN": "拉普兰最贵的礼物集中在一页：9 件，€80–€1,490。先是体验：在伊纳里淘金、玻璃冰屋的一夜、与驯鹿共度的早晨。然后是Kalevala珠宝和四件几十年来做法不变的经典之作。价格以合作商店为准。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
-      "ko": "라플란드에서 가장 비싼 선물을 한 페이지에: 9개, €80–€1,490. 먼저 체험: 이나리 사금 채취, 유리 이글루에서의 하룻밤, 순록과 함께하는 아침. 그다음 Kalevala 주얼리와 수십 년째 같은 방식으로 만드는 네 가지 클래식. 가격은 파트너 상점 기준입니다.",
-      "fr": "Les cadeaux les plus chers de Laponie sur une seule page : 9 produits, 80 €–1 490 €. Chaque prix est relevé auprès de la boutique partenaire à la date indiquée.",
-      "it": "I regali più costosi della Lapponia in una sola pagina: 9 prodotti, 80 €–1490 €. Ogni prezzo è rilevato dal negozio partner. Area di consegna su ogni scheda.",
-      "nl": "De duurste cadeaus van Lapland op één pagina: 9 producten, € 80–€ 1.490. Elke prijs is overgenomen van de partnerwinkel, met datum. Bezorggebied op elke kaart.",
-      "sv": "Lapplands dyraste presenter på en sida: 9 produkter, 80 €–1 490 €. Först upplevelserna: guldvaskning i Enare, en natt i glasigloo och en morgon med renarna."
+      "en": "Lapland's most expensive gifts on one page: 10 items, €80–€1,490. Every price is read from the partner shop on the date shown. Delivery area on every card.",
+      "fi": "Lapin kalleimmat lahjat yhdellä sivulla: 10 tuotetta, 80 €–1 490 €. Ensin elämykset: kullanhuuhdonta Inarissa, yö lasi-iglussa ja aamu porojen kanssa.",
+      "de": "Lapplands teuerste Geschenke auf einer Seite: 10 Produkte, 80 €–1.490 €. Jeder Preis stammt aus dem Partnershop und ist datiert. Liefergebiet auf jeder Karte.",
+      "ja": "ラップランドで最も高価なギフトを1ページに：10点、€80–€1,490。まずは体験。イナリでの砂金採り、グラスイグルーでの一夜、トナカイと過ごす朝。その次に、Kalevalaのジュエリーと、何十年も同じ作り方で作られてきた4つの定番。価格はパートナーショップのものです。価格はすべて提携ショップから取得しています。",
+      "es": "Los regalos más caros de Laponia en una sola página: 10 productos, 80 €–1490 €. Cada precio se consulta en la tienda asociada. Zona de entrega en cada tarjeta.",
+      "pt-BR": "Os presentes mais caros da Lapônia em uma só página: 10 produtos, € 80–€ 1.490. Os preços vêm das lojas parceiras. A área de entrega é indicada em cada cartão.",
+      "zh-CN": "拉普兰最贵的礼物集中在一页：10 件，€80–€1,490。先是体验：在伊纳里淘金、玻璃冰屋的一夜、与驯鹿共度的早晨。然后是Kalevala珠宝和四件几十年来做法不变的经典之作。价格以合作商店为准。每件商品的价格均取自合作商店，并注明读取日期。每张卡片上都标注了配送区域。",
+      "ko": "라플란드에서 가장 비싼 선물을 한 페이지에: 10개, €80–€1,490. 먼저 체험: 이나리 사금 채취, 유리 이글루에서의 하룻밤, 순록과 함께하는 아침. 그다음 Kalevala 주얼리와 수십 년째 같은 방식으로 만드는 네 가지 클래식. 가격은 파트너 상점 기준입니다.",
+      "fr": "Les cadeaux les plus chers de Laponie sur une seule page : 10 produits, 80 €–1 490 €. Chaque prix est relevé auprès de la boutique partenaire et daté.",
+      "it": "I regali più costosi della Lapponia in una sola pagina: 10 prodotti, 80 €–1490 €. Ogni prezzo è rilevato dal negozio partner. Area di consegna su ogni scheda.",
+      "nl": "De duurste cadeaus van Lapland op één pagina: 10 producten, € 80–€ 1.490. Elke prijs is overgenomen van de partnerwinkel, met datum. Bezorggebied op elke kaart.",
+      "sv": "Lapplands dyraste presenter på en sida: 10 produkter, 80 €–1 490 €. Först upplevelserna: guldvaskning i Enare, en natt i glasigloo och en morgon med renarna."
     }
   },
   {
@@ -3419,6 +3419,138 @@
     }
   },
   {
+    "path": "/product/pahkataide-kuksa-bear",
+    "fallbackTitle": "Pahkataide curly birch kuksa with a bear bone inlay",
+    "fallbackDescription": "A kuksa made from curly birch, with a bone inlay on the handle carrying a bear motif. Pahkataide treats its cups with poppy seed oil to protect the wood.",
+    "fallbackTitleByLang": {
+      "en": "Pahkataide curly birch kuksa with a bear bone inlay",
+      "fi": "Pahkataide Visaluukuksa Karhu: suomalaiset käsityöt",
+      "de": "Pahkataide Kuksa aus Maserbirke mit Bären-Knocheneinlage",
+      "ja": "Pahkataide パフカタイデ カーリーバーチのククサ 骨の象嵌入り（クマ）",
+      "es": "Kuksa Pahkataide de abedul rizado con incrustación de.",
+      "pt-BR": "Kuksa Pahkataide de bétula flamejada com incrustação de.",
+      "zh-CN": "Pahkataide 卷纹桦木库克萨，骨片镶嵌熊图案｜芬兰手工艺",
+      "ko": "Pahkataide 파흐카타이데 무늬자작나무 쿡사, 곰 뼈 상감: 핀란드 수공예",
+      "fr": "Kuksa Pahkataide en bouleau madré avec incrustation en os.",
+      "it": "Kuksa Pahkataide in betulla fiammata con intarsio in osso.",
+      "nl": "Kuksa van vlamberken met benen inleg, beer: Fins ambacht",
+      "sv": "Kåsa i masurbjörk med beninläggning, björn: finskt hantverk"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A kuksa made from curly birch, with a bone inlay on the handle carrying a bear motif. Pahkataide treats its cups with poppy seed oil to protect the wood.",
+      "fi": "Visakoivusta tehty kuksa, jonka kahvassa on luu-upotus karhukuvalla. Pahkataide käsittelee kuksansa unikkoöljyllä, joka suojaa puuta. Myyjänä kumppanin kauppa.",
+      "de": "Eine Kuksa aus Maserbirke, mit einer Knocheneinlage am Griff, die einen Bären zeigt. Pahkataide behandelt seine Becher mit Mohnöl, das das Holz schützt.",
+      "ja": "カーリーバーチで作られたククサ。持ち手にはクマを描いた骨の象嵌があります。パフカタイデはカップをケシ油で仕上げ、木を保護しています。洗剤では洗わず、すすぐだけで十分。毎日のコーヒーが表面に膜をつくり、さらに守ってくれます。価格は提携ショップのもので、ご購入もそちらで行います。配送エリアはこのページに記載しています。",
+      "es": "Una kuksa de abedul rizado con una incrustación de hueso en el asa que lleva un oso. Pahkataide trata sus tazas con aceite de amapola, que protege la madera.",
+      "pt-BR": "Uma kuksa de bétula flamejada, com uma incrustação de osso no cabo que traz um urso. A Pahkataide trata suas canecas com óleo de papoula, que protege a madeira.",
+      "zh-CN": "用卷纹桦木制成的库克萨，手柄上镶有刻着熊的骨片。Pahkataide 用罂粟籽油处理杯子，以保护木材。切勿用洗洁精清洗：冲洗即可，每天用来喝咖啡会在表面形成一层膜，进一步保护木杯。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "무늬자작나무로 만든 쿡사로, 손잡이에 곰을 새긴 뼈 상감이 있습니다. 파흐카타이데는 나무를 보호하는 양귀비씨 오일로 컵을 마감합니다. 세제로는 절대 씻지 않고 헹구기만 하면 되며, 매일 마시는 커피가 표면에 막을 만들어 더 잘 보호해 줍니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
+      "fr": "Une kuksa en bouleau madré, dont la poignée porte une incrustation en os gravée d’un ours. Le prix est celui de la boutique partenaire, où vous achetez.",
+      "it": "Una kuksa in betulla fiammata con un intarsio in osso sul manico che raffigura un orso. Il prezzo proviene dal negozio partner, dove si effettua l'acquisto.",
+      "nl": "Een kuksa van vlamberken hout met op het handvat een inleg van been met een beer erop. De prijs is overgenomen van de partnerwinkel en de aankoop gebeurt daar.",
+      "sv": "En kåsa i masurbjörk, med en beninläggning på handtaget som bär ett björnmotiv. Pahkataide behandlar sina kåsor med vallmoolja som skyddar träet."
+    }
+  },
+  {
+    "path": "/product/pahkataide-curly-birch-kuksa",
+    "fallbackTitle": "Pahkataide curly birch kuksa: Finnish handicrafts",
+    "fallbackDescription": "A plain kuksa made from curly birch, the same wood and the same poppy seed oil finish as Pahkataide’s inlaid cups, without the decoration. Delivery area shown.",
+    "fallbackTitleByLang": {
+      "en": "Pahkataide curly birch kuksa: Finnish handicrafts",
+      "fi": "Pahkataide Visakuksa: suomalaiset käsityöt",
+      "de": "Pahkataide Kuksa aus Maserbirke: finnisches Handwerk",
+      "ja": "Pahkataide パフカタイデ カーリーバーチのククサ｜フィンランドの手仕事",
+      "es": "Kuksa Pahkataide de abedul rizado: artesanía finlandesa",
+      "pt-BR": "Kuksa Pahkataide de bétula flamejada: artesanato finlandês",
+      "zh-CN": "Pahkataide 卷纹桦木库克萨｜芬兰手工艺",
+      "ko": "Pahkataide 파흐카타이데 무늬자작나무 쿡사: 핀란드 수공예",
+      "fr": "Kuksa Pahkataide en bouleau madré : artisanat finlandais",
+      "it": "Kuksa Pahkataide in betulla fiammata: artigianato finlandese",
+      "nl": "Pahkataide kuksa van vlamberken: Fins ambacht",
+      "sv": "Pahkataide kåsa i masurbjörk: finskt hantverk"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A plain kuksa made from curly birch, the same wood and the same poppy seed oil finish as Pahkataide’s inlaid cups, without the decoration. Delivery area shown.",
+      "fi": "Pelkistetty kuksa visakoivusta, sama puu ja sama unikkoöljykäsittely kuin Pahkataiteen upotuskuksissa, ilman koristetta. Hinta on luettu kumppanin kaupasta.",
+      "de": "Eine schlichte Kuksa aus Maserbirke, mit demselben Holz und derselben Mohnölbehandlung wie Pahkataides Becher mit Einlage, nur ohne Verzierung.",
+      "ja": "装飾のないシンプルなカーリーバーチのククサ。象嵌入りのカップと同じ木、同じケシ油仕上げです。木目のため一つひとつ表情が異なり、容量は約 1.5 dl。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Una kuksa sencilla de abedul rizado, con la misma madera y el mismo acabado de aceite de amapola que las tazas con incrustación de Pahkataide, sin adorno.",
+      "pt-BR": "Uma kuksa simples de bétula flamejada, com a mesma madeira e o mesmo acabamento de óleo de papoula das canecas com incrustação da Pahkataide, sem decoração.",
+      "zh-CN": "一只朴素的卷纹桦木库克萨，木材和罂粟籽油处理与 Pahkataide 的镶嵌款相同，只是没有装饰。木纹让每一只都不一样，容量约 1.5 dl。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "장식 없는 단순한 무늬자작나무 쿡사로, 파흐카타이데의 상감 컵과 같은 나무와 같은 양귀비씨 오일 마감입니다. 나뭇결 때문에 하나하나 모양이 다르며, 용량은 약 1.5 dl입니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 있습니다.",
+      "fr": "Une kuksa sobre en bouleau madré, même bois et même finition à l’huile d’œillette que les tasses incrustées de Pahkataide, sans décor. Vendu par le partenaire.",
+      "it": "Una kuksa essenziale in betulla fiammata, con lo stesso legno e la stessa finitura all’olio di papavero delle tazze intarsiate di Pahkataide, senza decorazione.",
+      "nl": "Een eenvoudige kuksa van vlamberken, hetzelfde hout en dezelfde afwerking met maanzaadolie als de bekers met inleg van Pahkataide, zonder versiering.",
+      "sv": "En enkel kåsa i masurbjörk, samma trä och samma behandling med vallmoolja som Pahkataides kåsor med inläggning, utan dekor. Du köper varan i partnerbutiken."
+    }
+  },
+  {
+    "path": "/product/koivumaa-kuksa-reindeer-bone",
+    "fallbackTitle": "Birch burl kuksa with reindeer bone: Finnish handicrafts",
+    "fallbackDescription": "A kuksa carved from birch burl in the traditional way, with two finger holes in the handle and a reindeer bone ornament. The delivery area is on this page.",
+    "fallbackTitleByLang": {
+      "en": "Birch burl kuksa with reindeer bone: Finnish handicrafts",
+      "fi": "Luukuksa, kaksireikäinen: suomalaiset käsityöt",
+      "de": "Kuksa E. Koivumaa Kuksa aus Birkenmaser mit Rentierknochen",
+      "ja": "ククサ・E・コイヴマー 白樺のこぶのククサ トナカイの骨飾り付き",
+      "es": "De nudo de abedul con hueso de reno: artesanía finlandesa",
+      "pt-BR": "De nó de bétula com osso de rena: artesanato finlandês",
+      "zh-CN": "Kuksa E. Koivumaa 桦木瘤库克萨，驯鹿骨装饰｜芬兰手工艺",
+      "ko": "쿡사 E. 코이부마 자작나무 옹이 쿡사, 순록 뼈 장식: 핀란드 수공예",
+      "fr": "En loupe de bouleau avec os de renne : artisanat finlandais",
+      "it": "Kuksa E. Koivumaa in radica di betulla con osso di renna",
+      "nl": "Kuksa van berkenknol met rendierbot: Fins ambacht",
+      "sv": "Kåsa av björkvril med renben: finskt hantverk"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A kuksa carved from birch burl in the traditional way, with two finger holes in the handle and a reindeer bone ornament. The delivery area is on this page.",
+      "fi": "Koivun pahkasta perinteisellä tavalla tehty kuksa, kahvassa kaksi reikää ja poronluinen koriste. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
+      "de": "Eine Kuksa, auf traditionelle Weise aus einer Birkenmaser gefertigt, mit zwei Fingerlöchern im Griff und einer Verzierung aus Rentierknochen.",
+      "ja": "白樺のこぶから伝統的な方法で作られたククサ。持ち手に指を通す穴が二つと、トナカイの骨の飾りがあります。こぶの木は唇を熱くしないので、たき火のそばで熱いコーヒーを飲む定番のカップです。最初はブラックコーヒーでならし、その後はすすぐだけ。価格は提携ショップのもので、ご購入もそちらで行います。配送エリアはこのページに記載。",
+      "es": "Una kuksa tallada a la manera tradicional en un nudo de abedul, con dos agujeros para los dedos en el asa y un adorno de hueso de reno.",
+      "pt-BR": "Uma kuksa entalhada de forma tradicional em um nó de bétula, com dois furos para os dedos no cabo e um enfeite de osso de rena. Área de entrega nesta página.",
+      "zh-CN": "用桦木瘤按传统方法制成的库克萨，手柄上有两个指孔和一块驯鹿骨装饰。木瘤不烫嘴，因此是在篝火旁喝热咖啡的经典杯子。先用黑咖啡开杯，之后只需冲洗。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "자작나무 옹이를 전통 방식으로 깎아 만든 쿡사로, 손잡이에 손가락 구멍 두 개와 순록 뼈 장식이 있습니다. 옹이 나무는 입술을 데우지 않아 모닥불 옆에서 뜨거운 커피를 마시는 전통 컵입니다. 블랙커피로 길들인 뒤에는 헹구기만 하면 됩니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
+      "fr": "Une kuksa taillée dans une loupe de bouleau selon la tradition, avec deux trous pour les doigts dans la poignée et un ornement en os de renne.",
+      "it": "Una kuksa ricavata in modo tradizionale da una radica di betulla, con due fori per le dita nel manico e un ornamento in osso di renna. Venduto dal partner.",
+      "nl": "Een kuksa op traditionele wijze uit een berkenknol gemaakt, met twee vingergaten in het handvat en een versiering van rendierbot. Gekocht bij de partnerwinkel.",
+      "sv": "En kåsa tillverkad av björkvril på traditionellt sätt, med två fingerhål i handtaget och en dekor av renben. Priset hämtas från partnerbutiken, där köpet sker."
+    }
+  },
+  {
+    "path": "/product/koivumaa-burl-kuksa",
+    "fallbackTitle": "Birch burl kuksa, one hole: Finnish handicrafts",
+    "fallbackDescription": "The plain version of the same maker’s burl kuksa: birch burl carved in the traditional way, one finger hole in the handle, about 1.5 dl. Delivery area shown.",
+    "fallbackTitleByLang": {
+      "en": "Birch burl kuksa, one hole: Finnish handicrafts",
+      "fi": "Isokuksa, yksireikäinen: suomalaiset käsityöt",
+      "de": "Kuksa aus Birkenmaser, ein Loch: finnisches Handwerk",
+      "ja": "ククサ・E・コイヴマー 白樺のこぶのククサ 穴一つ｜フィンランドの手仕事",
+      "es": "De nudo de abedul, un agujero: artesanía finlandesa",
+      "pt-BR": "De nó de bétula, um furo: artesanato finlandês",
+      "zh-CN": "Kuksa E. Koivumaa 桦木瘤库克萨，单孔｜芬兰手工艺",
+      "ko": "쿡사 E. 코이부마 자작나무 옹이 쿡사, 구멍 하나: 핀란드 수공예",
+      "fr": "En loupe de bouleau, un trou : artisanat finlandais",
+      "it": "In radica di betulla, un foro: artigianato finlandese",
+      "nl": "Kuksa van berkenknol, één gat: Fins ambacht",
+      "sv": "Kåsa av björkvril, ett hål: finskt hantverk"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "The plain version of the same maker’s burl kuksa: birch burl carved in the traditional way, one finger hole in the handle, about 1.5 dl. Delivery area shown.",
+      "fi": "Saman tekijän pahkakuksa pelkistettynä: koivun pahkaa perinteisellä tavalla, kahvassa yksi reikä, vetoisuus noin 1,5 dl. Hinta on luettu kumppanin kaupasta.",
+      "de": "Die schlichte Ausführung derselben Maserkuksa: Birkenmaser, traditionell gefertigt, ein Fingerloch im Griff, etwa 1,5 dl. Der Preis stammt aus dem Partnershop.",
+      "ja": "同じ作り手による、こぶのククサのシンプル版。伝統的な方法で作った白樺のこぶ、持ち手の穴は一つ、容量は約 1.5 dl。最初はブラックコーヒーでならします。コーヒーの油分が木の開いた気孔をふさぎます。食洗機には決して入れないでください。価格は提携ショップのもので、ご購入もそちらで行います。配送エリアはこのページに記載。",
+      "es": "La versión sencilla de la kuksa de nudo del mismo artesano: nudo de abedul tallado a la manera tradicional, un agujero para los dedos en el asa, unos 1,5 dl.",
+      "pt-BR": "A versão simples da kuksa de nó do mesmo artesão: nó de bétula entalhado de forma tradicional, um furo para os dedos no cabo, cerca de 1,5 dl.",
+      "zh-CN": "同一制作者的木瘤库克萨的朴素款：按传统方法制作的桦木瘤，手柄上一个指孔，容量约 1.5 dl。先用黑咖啡开杯，咖啡的油脂会封住木材张开的毛孔；切勿放入洗碗机。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "같은 제작자의 옹이 쿡사를 단순하게 만든 버전입니다. 전통 방식으로 깎은 자작나무 옹이, 손잡이에 손가락 구멍 하나, 용량 약 1.5 dl. 블랙커피로 길들이면 커피의 기름이 나무의 열린 기공을 막아 주며, 식기세척기에는 절대 넣지 않습니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
+      "fr": "La version sobre de la kuksa en loupe du même artisan : loupe de bouleau taillée selon la tradition, un trou pour les doigts dans la poignée, environ 1,5 dl.",
+      "it": "La versione essenziale della kuksa in radica dello stesso artigiano: radica di betulla lavorata in modo tradizionale, un foro per le dita nel manico.",
+      "nl": "De eenvoudige versie van de knolkuksa van dezelfde maker: berkenknol op traditionele wijze bewerkt, één vingergat in het handvat, ongeveer 1,5 dl.",
+      "sv": "Den enkla versionen av samma tillverkares vrilkåsa: björkvril på traditionellt sätt, ett fingerhål i handtaget, cirka 1,5 dl. Du köper varan i partnerbutiken."
+    }
+  },
+  {
     "path": "/product/fazer-super-salmiakki",
     "fallbackTitle": "Super Salmiakki pastilles: Finnish sweets and food gifts",
     "fallbackDescription": "The hardest of the salmiakki classics, sold in the same tin-shaped box since the 1970s. The price is read from the partner shop and the purchase is made there.",
@@ -4241,6 +4373,237 @@
       "it": "Una giornata in una concessione aurifera attiva a Inari per un gruppo di quattro: prima la storia. Il prezzo è rilevato dal negozio partner, dove si acquista.",
       "nl": "Een dag op een werkende goudclaim in Inari voor een groep van vier: eerst de geschiedenis, dan met de hand wassen en een blik op het machinale graven.",
       "sv": "En dag på en aktiv guldinmutning i Inari för ett sällskap på fyra: först historien, sedan vaskning för hand och en titt på maskinell grävning."
+    }
+  },
+  {
+    "path": "/product/korouoma-waterfalls-rovaniemi",
+    "fallbackTitle": "Korouoma frozen waterfalls trip for two, from Rovaniemi",
+    "fallbackDescription": "In winter the streams running down the walls of the Korouoma canyon freeze into falls of blue ice. The price comes from the partner shop, where you also buy it.",
+    "fallbackTitleByLang": {
+      "en": "Korouoma frozen waterfalls trip for two, from Rovaniemi",
+      "fi": "Korouoman jäätyneet vesiputoukset -retki kahdelle, Rovaniemi",
+      "de": "Ausflug zu den gefrorenen Wasserfällen von Korouoma für.",
+      "ja": "コロウオマの凍った滝ツアー 2名、ロヴァニエミ発｜ラップランドの体験ギフト",
+      "es": "Excursión a las cascadas heladas de Korouoma para dos.",
+      "pt-BR": "Passeio às cachoeiras congeladas de Korouoma para dois.",
+      "zh-CN": "Wild About Lapland 双人科罗乌奥马冰瀑之旅，罗瓦涅米出发｜拉普兰体验礼物",
+      "ko": "코로우오마 얼음 폭포 투어 2인, 로바니에미 출발: 라플란드 체험 선물",
+      "fr": "Excursion aux cascades gelées de Korouoma pour deux.",
+      "it": "Escursione alle cascate ghiacciate di Korouoma per due.",
+      "nl": "Tocht naar de bevroren watervallen van Korouoma voor twee.",
+      "sv": "Tur till Korouomas frusna vattenfall för två, från Rovaniemi"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "In winter the streams running down the walls of the Korouoma canyon freeze into falls of blue ice. The price comes from the partner shop, where you also buy it.",
+      "fi": "Talvella Korouoman rotkolaakson seinämiltä valuvat purot jäätyvät sinertäviksi jääputouksiksi. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
+      "de": "Im Winter gefrieren die Bäche, die an den Wänden der Korouoma-Schlucht hinabrinnen, zu Fällen aus blauem Eis. Preis vom Partnershop, dort erfolgt der Kauf.",
+      "ja": "冬になると、コロウオマ渓谷の岩壁を流れ落ちる小川が青い氷の滝に変わります。ガイド付きの日帰りツアーはロヴァニエミを出発し、約 110 km 離れたポシオの渓谷へ向かいます。歩きは易しく、雪が深ければスノーシューを使い、途中で軽い昼食をとります。価格は提携ショップから取得し、ご購入も同じショップで行います。",
+      "es": "En invierno, los arroyos que bajan por las paredes del cañón de Korouoma se congelan en cascadas de hielo azul. El precio se consulta en la tienda asociada.",
+      "pt-BR": "No inverno, os riachos que descem pelas paredes do cânion de Korouoma congelam em quedas de gelo azul. O preço vem da loja parceira, onde você também compra.",
+      "zh-CN": "冬天，顺着科罗乌奥马峡谷岩壁流下的溪水会冻成一道道蓝色冰瀑。这趟向导带领的一日游从罗瓦涅米出发，前往约 110 km 外波西奥的峡谷。步行难度不高，积雪深时穿雪鞋，途中享用一份简单午餐。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "겨울이면 코로우오마 협곡의 절벽을 타고 흐르는 개울이 푸른 얼음 폭포로 얼어붙습니다. 가이드와 함께하는 당일 투어는 로바니에미에서 출발해 약 110 km 떨어진 포시오의 협곡으로 향합니다. 걷기는 어렵지 않고 눈이 깊으면 스노슈를 신으며, 가는 길에 가벼운 점심을 먹습니다.",
+      "fr": "En hiver, les ruisseaux qui dévalent les parois du canyon de Korouoma gèlent en cascades de glace bleue. Le prix est relevé auprès de la boutique partenaire.",
+      "it": "In inverno i ruscelli che scendono lungo le pareti del canyon di Korouoma gelano in cascate di ghiaccio azzurro. L'area di consegna è indicata in questa pagina.",
+      "nl": "In de winter bevriezen de beekjes langs de wanden van de Korouoma-kloof tot watervallen van blauw ijs. De prijs komt van de partnerwinkel, waar u het ook koopt.",
+      "sv": "På vintern fryser bäckarna som rinner nerför Korouomakanjonens väggar till fall av blå is. Priset är hämtat från partnerbutiken och köpet görs i samma butik."
+    }
+  },
+  {
+    "path": "/product/amethyst-mine-snowshoe-luosto",
+    "fallbackTitle": "Snowshoe trip to the Luosto amethyst mine for two",
+    "fallbackDescription": "A guided day out from Rovaniemi to Pyhä-Luosto national park: first on snowshoes through the park. The price comes from the partner shop, where you also buy it.",
+    "fallbackTitleByLang": {
+      "en": "Snowshoe trip to the Luosto amethyst mine for two",
+      "fi": "Lumikenkäretki Luoston ametistikaivokselle kahdelle",
+      "de": "Schneeschuhtour zur Amethystmine von Luosto für zwei",
+      "ja": "Wild About Lapland ルオストのアメジスト鉱山へのスノーシューツアー 2名",
+      "es": "Excursión con raquetas a la mina de amatista de Luosto para.",
+      "pt-BR": "Caminhada com raquetes de neve até a mina de ametista de.",
+      "zh-CN": "Wild About Lapland 双人雪鞋徒步前往卢奥斯托紫水晶矿｜拉普兰体验礼物",
+      "ko": "Wild About Lapland 루오스토 자수정 광산 스노슈 투어 2인: 라플란드 체험 선물",
+      "fr": "Randonnée en raquettes jusqu’à la mine d’améthyste de.",
+      "it": "Ciaspolata alla miniera di ametista di Luosto per due",
+      "nl": "Sneeuwschoentocht naar de amethistmijn van Luosto voor twee",
+      "sv": "Snöskotur till ametistgruvan i Luosto för två"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A guided day out from Rovaniemi to Pyhä-Luosto national park: first on snowshoes through the park. The price comes from the partner shop, where you also buy it.",
+      "fi": "Opastettu päiväretki Rovaniemeltä Pyhä-Luoston kansallispuistoon: ensin lumikengillä puiston halki, sitten lumijunalla Lampivaaran huipulle ametistikaivokselle.",
+      "de": "Ein geführter Tagesausflug von Rovaniemi in den Nationalpark Pyhä-Luosto: zuerst auf Schneeschuhen durch den Park. Preis vom Partnershop, dort erfolgt der Kauf.",
+      "ja": "ロヴァニエミからピュハ・ルオスト国立公園へ向かうガイド付きの一日。まずスノーシューで公園を歩き、続いてスノートレインでランピヴァーラの山頂にあるアメジスト鉱山へ。鉱山では誰でも自分で掘ることができ、見つけたアメジストは持ち帰れます。価格は提携ショップから取得し、ご購入もそちらで。配送エリアはこのページに記載しています。",
+      "es": "Un día guiado desde Rovaniemi al parque nacional de Pyhä-Luosto: primero con raquetas de nieve por el parque y después en un tren de nieve hasta la mina de.",
+      "pt-BR": "Um dia guiado saindo de Rovaniemi para o Parque Nacional de Pyhä-Luosto: primeiro com raquetes de neve pelo parque. O preço é consultado na loja parceira.",
+      "zh-CN": "从罗瓦涅米出发，在向导带领下前往皮哈-卢奥斯托国家公园：先穿雪鞋穿越公园，再乘雪地小火车到朗皮瓦拉山顶的紫水晶矿。在矿里每个人都可以亲手挖掘，找到的紫水晶可以带走。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "로바니에미에서 출발해 퓌해-루오스토 국립공원에서 보내는 가이드 투어입니다. 먼저 스노슈를 신고 공원을 걷고, 이어서 눈 기차를 타고 람피바라 정상의 자수정 광산으로 갑니다. 광산에서는 누구나 직접 캐 볼 수 있고, 찾은 자수정은 가져갈 수 있습니다. 구매는 제휴 상점에서 이루어집니다.",
+      "fr": "Une journée guidée au départ de Rovaniemi dans le parc national de Pyhä-Luosto : d’abord en raquettes à travers le parc. Achat dans la boutique partenaire.",
+      "it": "Una giornata guidata da Rovaniemi nel parco nazionale di Pyhä-Luosto: prima con le ciaspole attraverso il parco. L'area di consegna è indicata in questa pagina.",
+      "nl": "Een begeleide dag vanuit Rovaniemi naar Nationaal Park Pyhä-Luosto: eerst op sneeuwschoenen door het park. De prijs komt van de partnerwinkel, waar u bestelt.",
+      "sv": "En guidad dagstur från Rovaniemi till Pyhä-Luosto nationalpark: först på snöskor genom parken, sedan med snötåg upp till ametistgruvan på toppen av Lampivaara."
+    }
+  },
+  {
+    "path": "/product/midnight-sun-canoe-rovaniemi",
+    "fallbackTitle": "Midnight sun canoe trip for two, Rovaniemi",
+    "fallbackDescription": "A guided evening paddle near Rovaniemi in the light of the midnight sun, ending with a snack by an open fire. The price is read from the partner shop.",
+    "fallbackTitleByLang": {
+      "en": "Midnight sun canoe trip for two, Rovaniemi",
+      "fi": "Kanoottiretki keskiyön auringossa kahdelle, Rovaniemi",
+      "de": "Kanutour in der Mitternachtssonne für zwei, Rovaniemi",
+      "ja": "白夜のカヌーツアー 2名、ロヴァニエミ｜ラップランドの体験ギフト",
+      "es": "Paseo en canoa bajo el sol de medianoche para dos, Rovaniemi",
+      "pt-BR": "Passeio de canoa sob o sol da meia-noite para dois.",
+      "zh-CN": "Wild About Lapland 双人午夜阳光独木舟之旅，罗瓦涅米｜拉普兰体验礼物",
+      "ko": "Wild About Lapland 백야 카누 투어 2인, 로바니에미: 라플란드 체험 선물",
+      "fr": "Sortie en canoë sous le soleil de minuit pour deux.",
+      "it": "Gita in canoa sotto il sole di mezzanotte per due, Rovaniemi",
+      "nl": "Kanotocht onder de middernachtszon voor twee, Rovaniemi",
+      "sv": "Kanottur i midnattssolen för två, Rovaniemi"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A guided evening paddle near Rovaniemi in the light of the midnight sun, ending with a snack by an open fire. The price is read from the partner shop.",
+      "fi": "Opastettu iltamelonta Rovaniemen lähellä keskiyön auringon valossa, ja lopuksi välipala avotulella. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä.",
+      "de": "Eine geführte Abendpaddeltour bei Rovaniemi im Licht der Mitternachtssonne, zum Abschluss ein Imbiss am offenen Feuer. Das Liefergebiet steht auf dieser Seite.",
+      "ja": "ロヴァニエミ近郊で、真夜中の太陽の光の中を漕ぐガイド付きの夜のカヌーツアー。最後はたき火を囲んで軽食をとります。出発前にガイドが基本を教えるので、経験は不要です。ツアーは夏の 6 月から 8 月に行われます。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "es": "Un paseo guiado en canoa al atardecer cerca de Rovaniemi, con la luz del sol de medianoche, que termina con un tentempié junto a una hoguera.",
+      "pt-BR": "Uma remada guiada no fim do dia perto de Rovaniemi, na luz do sol da meia-noite, que termina com um lanche ao redor de uma fogueira. Comprado na loja parceira.",
+      "zh-CN": "在罗瓦涅米附近，于午夜阳光下由向导带领划独木舟，最后围着篝火吃些小吃。出发前向导会讲解基本要领，无需划船经验。行程在夏季 6 月至 8 月进行。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "로바니에미 근교에서 한밤의 태양 아래 노를 젓는 가이드 동반 저녁 카누 투어로, 마지막에는 모닥불 옆에서 간식을 먹습니다. 출발 전에 가이드가 기본을 알려 주므로 경험이 없어도 됩니다. 투어는 여름인 6월부터 8월까지 진행됩니다. 가격은 제휴 상점 기준이며 구매도 그곳에서 이루어집니다.",
+      "fr": "Une sortie guidée en canoë le soir près de Rovaniemi, dans la lumière du soleil de minuit, qui se termine par une collation autour d’un feu.",
+      "it": "Una pagaiata serale guidata vicino a Rovaniemi nella luce del sole di mezzanotte, che si chiude con uno spuntino accanto al fuoco. Acquisto nel negozio partner.",
+      "nl": "Een begeleide avondtocht per kano bij Rovaniemi in het licht van de middernachtszon, afgesloten met een snack bij een kampvuur. Verkocht door de partnerwinkel.",
+      "sv": "En guidad kvällspaddling nära Rovaniemi i midnattssolens ljus, som avslutas med mellanmål vid en öppen eld. Priset hämtas från partnerbutiken, där köpet sker."
+    }
+  },
+  {
+    "path": "/product/halti-snowmobile-kilpisjarvi",
+    "fallbackTitle": "Snowmobile trip to the top of Halti for two, Kilpisjärvi",
+    "fallbackDescription": "Halti is the highest point in Finland, right on the Norwegian border. The price comes from the partner shop, where you also buy it. Delivery area on this page.",
+    "fallbackTitleByLang": {
+      "en": "Snowmobile trip to the top of Halti for two, Kilpisjärvi",
+      "fi": "Haltin huiputus moottorikelkoilla kahdelle, Kilpisjärvi",
+      "de": "Mit dem Schneemobil auf den Halti für zwei, Kilpisjärvi",
+      "ja": "Kilpissafarit スノーモービルでハルティ山頂へ 2名、キルピスヤルヴィ",
+      "es": "Subida en moto de nieve a la cima del Halti para dos.",
+      "pt-BR": "De snowmobile até o topo do Halti para dois, Kilpisjärvi",
+      "zh-CN": "Kilpissafarit 双人雪地摩托登顶哈尔蒂，基尔皮斯耶尔维｜拉普兰体验礼物",
+      "ko": "스노모빌로 오르는 할티 정상 2인, 킬피스야르비: 라플란드 체험 선물",
+      "fr": "Ascension du Halti en motoneige pour deux, Kilpisjärvi",
+      "it": "In motoslitta sulla cima dell’Halti per due, Kilpisjärvi",
+      "nl": "Met de sneeuwscooter naar de top van de Halti voor twee.",
+      "sv": "Med snöskoter upp på Halti för två, Kilpisjärvi"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Halti is the highest point in Finland, right on the Norwegian border. The price comes from the partner shop, where you also buy it. Delivery area on this page.",
+      "fi": "Halti on Suomen korkein kohta, aivan Norjan rajalla. Hinta on luettu kumppanin kaupasta, ja osto tapahtuu siellä. Toimitusalue näkyy tällä sivulla.",
+      "de": "Der Halti ist der höchste Punkt Finnlands, direkt an der Grenze zu Norwegen. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein. Liefergebiet angegeben.",
+      "ja": "ハルティはフィンランドで最も高い地点で、ノルウェーとの国境にあります。キルピスヤルヴィ発のガイド付きスノーモービルツアーは、カシヴァルシの原野を越えて国境標識 303B まで走り、全行程は約 110 km。山頂ではハルティの記帳ノートに名前を書けます。価格は提携ショップから取得し、ご購入も同じショップで行います。",
+      "es": "El Halti es el punto más alto de Finlandia, justo en la frontera con Noruega. El precio se consulta en la tienda asociada, donde también se hace la compra.",
+      "pt-BR": "O Halti é o ponto mais alto da Finlândia, bem na fronteira com a Noruega. O preço vem da loja parceira, onde você também compra. Área de entrega nesta página.",
+      "zh-CN": "哈尔蒂是芬兰的最高点，就在与挪威的边境上。这趟从基尔皮斯耶尔维出发、由向导带领的雪地摩托之旅穿越卡西瓦尔西荒野，抵达 303B 号界碑，全程约 110 km，到达山顶后可以在哈尔蒂留言簿上签名。行程时间为 10 点至 16 点，须有驾驶雪地摩托的经验。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "할티는 핀란드에서 가장 높은 지점으로, 노르웨이 국경 바로 위에 있습니다. 킬피스야르비에서 출발하는 스노모빌 가이드 투어는 카시바르시 황야를 지나 국경 표지 303B까지 가며 전체 거리는 약 110 km입니다. 정상에서는 할티 방명록에 이름을 남길 수 있습니다. 배송 지역을 표시합니다.",
+      "fr": "Le Halti est le point culminant de la Finlande, juste à la frontière norvégienne. Le prix vient de la boutique partenaire, où se fait aussi votre achat.",
+      "it": "L’Halti è il punto più alto della Finlandia, proprio al confine con la Norvegia. Acquisto nel negozio partner. L'area di consegna è indicata in questa pagina.",
+      "nl": "De Halti is het hoogste punt van Finland, pal op de grens met Noorwegen. De prijs komt van de partnerwinkel, waar u het ook koopt. Bezorggebied op deze pagina.",
+      "sv": "Halti är Finlands högsta punkt, precis vid gränsen mot Norge. Priset är hämtat från partnerbutiken och köpet görs i samma butik. Leveransområdet finns på sidan."
+    }
+  },
+  {
+    "path": "/product/fell-ice-fishing-kilpisjarvi",
+    "fallbackTitle": "Ice fishing trip on the fells for two, Kilpisjärvi",
+    "fallbackDescription": "A guide takes you by snowmobile into the fells near Kilpisjärvi, about 15 km in all, where you fish through a hole in the ice sitting on a reindeer hide.",
+    "fallbackTitleByLang": {
+      "en": "Ice fishing trip on the fells for two, Kilpisjärvi",
+      "fi": "Kilpissafarit Pilkkiretki tunturiin kahdelle, Kilpisjärvi",
+      "de": "Kilpissafarit Eisangeln im Fjell für zwei, Kilpisjärvi",
+      "ja": "山の湖での氷上釣り 2名、キルピスヤルヴィ｜ラップランドの体験ギフト",
+      "es": "Pesca en el hielo en las montañas para dos, Kilpisjärvi",
+      "pt-BR": "Pesca no gelo nas montanhas para dois, Kilpisjärvi",
+      "zh-CN": "Kilpissafarit 双人高山冰钓之旅，基尔皮斯耶尔维｜拉普兰体验礼物",
+      "ko": "Kilpissafarit 툰투리 얼음낚시 2인, 킬피스야르비: 라플란드 체험 선물",
+      "fr": "Pêche sur glace dans les fjells pour deux, Kilpisjärvi",
+      "it": "Pesca nel ghiaccio sui fjell per due, Kilpisjärvi",
+      "nl": "Kilpissafarit IJsvissen op de fjells voor twee, Kilpisjärvi",
+      "sv": "Kilpissafarit Pimpeltur på fjället för två, Kilpisjärvi"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A guide takes you by snowmobile into the fells near Kilpisjärvi, about 15 km in all, where you fish through a hole in the ice sitting on a reindeer hide.",
+      "fi": "Opas vie moottorikelkoilla tunturiin Kilpisjärven lähelle, koko matka noin 15 kilometriä, ja perillä pilkitään porontaljalla istuen. Toimitusalue näkyy sivulla.",
+      "de": "Ein Guide bringt Sie mit dem Schneemobil ins Fjell bei Kilpisjärvi, insgesamt rund 15 km, wo Sie auf einem Rentierfell sitzend durch ein Eisloch angeln.",
+      "ja": "ガイドがスノーモービルでキルピスヤルヴィ近くの山あいへ案内します（全行程約 15 km）。トナカイの毛皮に座り、氷に開けた穴から釣り糸を垂らします。イワナやマスがかかることもあり、釣り道具は用意されています。ツアーは 11 時 15 分から 14 時 15 分までです。価格は提携ショップから取得し、ご購入もそちらで。",
+      "es": "Un guía os lleva en moto de nieve a las montañas cerca de Kilpisjärvi, unos 15 km en total. El precio procede de la tienda asociada, donde también se compra.",
+      "pt-BR": "Um guia leva vocês de snowmobile às montanhas perto de Kilpisjärvi, cerca de 15 km no total, onde se pesca por um buraco no gelo sentado em uma pele de rena.",
+      "zh-CN": "向导开雪地摩托带您进入基尔皮斯耶尔维附近的山地，全程约 15 km，坐在驯鹿皮上从冰洞垂钓。可能钓到红点鲑或鳟鱼，钓具由主办方提供。行程时间为 11:15 至 14:15。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "가이드가 스노모빌로 킬피스야르비 근처 툰투리로 안내합니다(전체 거리 약 15 km). 순록 가죽 위에 앉아 얼음 구멍으로 낚싯줄을 내립니다. 곤들매기나 송어가 물 수도 있으며 낚시 도구는 제공됩니다. 투어는 11시 15분부터 14시 15분까지입니다. 구매는 제휴 상점에서 이루어집니다.",
+      "fr": "Un guide vous emmène en motoneige dans les fjells près de Kilpisjärvi, environ 15 km au total, où l’on pêche par un trou dans la glace. Vendu par le partenaire.",
+      "it": "Una guida vi porta in motoslitta sui fjell vicino a Kilpisjärvi, circa 15 km in tutto, dove si pesca da un buco nel ghiaccio seduti su una pelle di renna.",
+      "nl": "Een gids brengt u per sneeuwscooter de fjells in bij Kilpisjärvi, in totaal zo’n 15 km, waar u op een rendiervacht zittend door een wak in het ijs vist.",
+      "sv": "En guide tar er med snöskoter upp på fjället nära Kilpisjärvi, totalt cirka 15 km, där ni pimplar genom en isvak sittande på en renfäll. Leveransområdet anges."
+    }
+  },
+  {
+    "path": "/product/wilderness-cabin-ivalo",
+    "fallbackTitle": "Two nights full board in a wilderness cabin for two, Ivalo",
+    "fallbackDescription": "Two nights for two in a cabin on the bank of the Ivalo river, next to the Hammastunturi wilderness, with a shore sauna of its own. Bought in the partner shop.",
+    "fallbackTitleByLang": {
+      "en": "Two nights full board in a wilderness cabin for two, Ivalo",
+      "fi": "Kaksi yötä täysihoidolla erämökissä kahdelle, Ivalo",
+      "de": "Zwei Nächte mit Vollpension in einer Wildnishütte für zwei.",
+      "ja": "原野のキャビンで 3 食付き 2 泊 2名、イヴァロ｜ラップランドの体験ギフト",
+      "es": "Dos noches con pensión completa en una cabaña en plena.",
+      "pt-BR": "Duas noites com pensão completa em uma cabana na natureza.",
+      "zh-CN": "Hentan Helmi 双人荒野小屋全膳两晚，伊瓦洛｜拉普兰体验礼物",
+      "ko": "Hentan Helmi 황야 오두막 삼식 포함 2박 2인, 이발로: 라플란드 체험 선물",
+      "fr": "Deux nuits en pension complète dans une cabane en pleine.",
+      "it": "Due notti in pensione completa in una baita nella natura.",
+      "nl": "Twee nachten volpension in een wildernishut voor twee, Ivalo",
+      "sv": "Två nätter med helpension i en ödemarksstuga för två, Ivalo"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "Two nights for two in a cabin on the bank of the Ivalo river, next to the Hammastunturi wilderness, with a shore sauna of its own. Bought in the partner shop.",
+      "fi": "Kaksi yötä kahdelle erämökissä Ivalojoen rannalla, Hammastunturin erämaan vieressä, ja oma rantasauna vapaassa käytössä. Hinta on luettu kumppanin kaupasta.",
+      "de": "Zwei Nächte zu zweit in einer Hütte am Ufer des Flusses Ivalojoki, neben der Wildnis von Hammastunturi, mit eigener Ufersauna. Verkauf durch den Partnershop.",
+      "ja": "イヴァロ川のほとり、ハンマストゥントゥリの原野に隣接するキャビンに 2 名で 2 泊。専用の湖畔サウナが付いています。到着日の夕食から出発日の昼食まで全食付きで、トナカイ、魚、ベリーなどラップランドの食材で調理されます。イヴァロからの往復送迎も含まれます。6 月中旬から 10 月末までの平日に利用できます。",
+      "es": "Dos noches para dos en una cabaña a orillas del río Ivalojoki, junto a la zona salvaje de Hammastunturi, con sauna propia en la orilla.",
+      "pt-BR": "Duas noites para dois em uma cabana à beira do rio Ivalojoki, ao lado da região selvagem de Hammastunturi, com sauna própria à beira d’água.",
+      "zh-CN": "两人在伊瓦洛河畔、紧邻哈马斯通图里荒野的小屋住两晚，并可自由使用独立的河畔桑拿。从抵达当天的晚餐到离开当天的午餐全部包含，用驯鹿肉、鱼和浆果等拉普兰食材烹制，伊瓦洛往返接送也包含在内。适用于 6 月中旬至 10 月底的工作日。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "함마스툰투리 황야와 맞닿은 이발로강 강가의 오두막에서 2인이 2박을 보내며, 전용 강변 사우나를 자유롭게 씁니다. 도착일 저녁부터 출발일 점심까지 모든 식사가 포함되며 순록, 생선, 베리 같은 라플란드 식재료로 요리합니다. 이발로 왕복 이동도 포함됩니다. 제휴 상점에서 구매합니다.",
+      "fr": "Deux nuits pour deux dans une cabane au bord de la rivière Ivalojoki, à côté de la région sauvage de Hammastunturi, avec son propre sauna au bord de l’eau.",
+      "it": "Due notti per due in una baita sulla riva del fiume Ivalojoki, accanto alla natura selvaggia di Hammastunturi, con una sauna tutta sua in riva all’acqua.",
+      "nl": "Twee nachten voor twee in een hut aan de oever van de rivier de Ivalojoki, naast de wildernis van Hammastunturi, met een eigen oeversauna.",
+      "sv": "Två nätter för två i en stuga vid Ivalo älv, intill Hammastunturi ödemark, med egen strandbastu. Priset kommer från partnerbutiken, där du också handlar."
+    }
+  },
+  {
+    "path": "/product/katka-snowmobile-levi",
+    "fallbackTitle": "Snowmobile safari to the Kätkä wilderness, Levi",
+    "fallbackDescription": "A snowmobile safari of about 30 km from Levi into the Kätkätunturi wilderness. The price is read from the partner shop and the purchase is made there.",
+    "fallbackTitleByLang": {
+      "en": "Snowmobile safari to the Kätkä wilderness, Levi",
+      "fi": "Tokka Safaris Moottorikelkkasafari Kätkän erämaahan, Levi",
+      "de": "Schneemobilsafari in die Wildnis von Kätkä, Levi",
+      "ja": "カトカの原野へのスノーモービルサファリ、レヴィ｜ラップランドの体験ギフト",
+      "es": "Safari en moto de nieve por la zona salvaje de Kätkä, Levi",
+      "pt-BR": "Safári de snowmobile pela região selvagem de Kätkä, Levi",
+      "zh-CN": "Tokka Safaris 卡特卡荒野雪地摩托之旅，莱维｜拉普兰体验礼物",
+      "ko": "Tokka Safaris 캇카 황야 스노모빌 사파리, 레비: 라플란드 체험 선물",
+      "fr": "Safari en motoneige dans la nature sauvage de Kätkä, Levi",
+      "it": "Safari in motoslitta nella natura selvaggia di Kätkä, Levi",
+      "nl": "Sneeuwscootersafari naar de wildernis van Kätkä, Levi",
+      "sv": "Tokka Safaris Snöskotersafari till Kätkä ödemark, Levi"
+    },
+    "fallbackDescriptionByLang": {
+      "en": "A snowmobile safari of about 30 km from Levi into the Kätkätunturi wilderness. The price is read from the partner shop and the purchase is made there.",
+      "fi": "Noin 30 kilometrin moottorikelkkasafari Leviltä Kätkätunturin erämaahan. Hinta tulee kumppanin kaupasta, josta tuote myös ostetaan. Toimitusalue näkyy sivulla.",
+      "de": "Eine Schneemobilsafari von rund 30 km ab Levi in die Wildnis am Kätkätunturi. Der Preis kommt aus dem Partnershop, dort kaufen Sie ein. Liefergebiet angegeben.",
+      "ja": "レヴィからカトカトゥントゥリの原野へ向かう約 30 km のスノーモービルサファリ。途中、レトロな品々であふれる古い小屋の原野カフェ、ハンヒピルッティで休憩してからレヴィへ戻ります。スノーモービルの経験は不要で、ギフトカードは 13 歳以上の 1 名用です。価格は提携ショップから取得し、ご購入も同じショップで行います。",
+      "es": "Un safari en moto de nieve de unos 30 km desde Levi hasta la zona salvaje del Kätkätunturi. El precio procede de la tienda asociada, donde también se compra.",
+      "pt-BR": "Um safári de snowmobile de cerca de 30 km saindo de Levi rumo à região selvagem do Kätkätunturi. O preço vem da loja parceira, onde você também compra.",
+      "zh-CN": "从莱维出发、约 30 km 的雪地摩托之旅，深入卡特卡通图里荒野。途中在 Hanhipirtti 歇脚，这是一间摆满复古物件的老木屋荒野咖啡馆，之后返回莱维。无需雪地摩托经验，礼品卡供一位 13 岁及以上的人使用。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "레비에서 캇카툰투리 황야까지 약 30 km를 달리는 스노모빌 사파리입니다. 레트로 소품으로 가득한 오래된 오두막 카페 한히피르티에서 쉬었다가 레비로 돌아옵니다. 스노모빌 경험은 필요 없으며, 기프트 카드는 13세 이상 1인용입니다. 가격은 구매가 이루어지는 제휴 상점에서 확인합니다.",
+      "fr": "Un safari en motoneige d’environ 30 km au départ de Levi, dans la nature sauvage du Kätkätunturi. Le prix est celui de la boutique partenaire, où vous achetez.",
+      "it": "Un safari in motoslitta di circa 30 km da Levi nella natura selvaggia del Kätkätunturi. Il prezzo proviene dal negozio partner, dove si effettua l'acquisto.",
+      "nl": "Een sneeuwscootersafari van zo’n 30 km vanuit Levi de wildernis van de Kätkätunturi in. De prijs is overgenomen van de partnerwinkel en de aankoop gebeurt daar.",
+      "sv": "En snöskotersafari på cirka 30 km från Levi ut i ödemarken vid Kätkätunturi. Priset hämtas från partnerbutiken, där köpet sker. Leveransområdet finns på sidan."
     }
   },
   {

@@ -142,7 +142,13 @@ describe('katalogin eheys', () => {
           `${c}: ${label} ${key} on ${n}/${items.length} tuotteella (${Math.round(share * 100)} %), raja ${MAX_SHARE * 100} %`,
         ).toBeLessThanOrEqual(MAX_SHARE)
       }
-      if (items.length > LARGE_CATEGORY) {
+      // 🔴 Elämykset poikkeavat (6.11.2026, erä 5 → 12): kategorian tuotteet ovat
+      // vain sen lahjakorttihylly, ja hyllyn ainoa komissiollinen lähde on
+      // Elämyslahjat.fi (Adtraction). Saman sivun toinen puolisko on 25+
+      // GetYourGuide-elämystä, jotka eivät ole PRODUCTS-rivejä. Sääntö "ei yhden
+      // toimijan luetteloa" täyttyy hyllyn sisällä valmistajina: viisi eri
+      // järjestäjää, kukaan yli puolta (valmistajakatto pätee yhä alla).
+      if (items.length > LARGE_CATEGORY && !(isPartnerCheck && c === 'experiences')) {
         expect(
           counts.size,
           `${c}: ${items.length} tuotetta mutta vain ${counts.size} eri ${label}`,

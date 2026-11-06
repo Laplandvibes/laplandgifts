@@ -279,6 +279,37 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     shows: "Snowmobiles with their lights on crossing a frozen lake at dusk, ski slopes lit on the far shore, Ruka",
     changes: "resized 3072x1728 to 1600x900; no crop (ShareAlike)", checks: CHECKS,
   },
+  // 6.11.2026: museot ja arkkitehtuuri -ryhmä. Varattu claim.mjs:llä 6.11. (Arktikumin
+  // ulkokuvat olivat jo activitiesilla ja hubilla, Korundin julkisivu visitillä).
+  "exp-culture-arktikum": {
+    source: "Wikimedia Commons", title: "Rovaniemi, Finland (49988045952).jpg", author: "Ninara",
+    license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0/",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Rovaniemi,_Finland_(49988045952).jpg", sourceId: "Rovaniemi, Finland (49988045952).jpg",
+    taken: "2020-06-05", retrieved: "2026-11-06",
+    cropped: true,
+    shows: "Skin-covered kayaks hanging on a green wall in the exhibition hall of Arktikum, Rovaniemi",
+    changes: "cropped from 4743x3162 (left 0, top 791, 2917x1944) to leave out a background exhibit photo with brand logos; resized to 1600x1066",
+    checks: "name, 64×36 pixel and photographer+day check against all repos 6.11.2026 (claim.mjs); faces and lettering checked at 100 %",
+  },
+  "exp-culture-korundi": {
+    source: "Wikimedia Commons", title: "2011 0406 Korundi aula 02.jpg", author: "Rovaniemen taidemuseo / Arto Liiti",
+    license: "CC BY-SA 3.0", licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:2011_0406_Korundi_aula_02.jpg", sourceId: "2011 0406 Korundi aula 02.jpg",
+    taken: "2011-04-06", retrieved: "2026-11-06",
+    shows: "The lobby corridor of the Korundi house of culture in Rovaniemi, with weathering-steel walls under a glass roof",
+    changes: "resized 3000x2020 to 1600x1078; no crop (ShareAlike)",
+    checks: "name, 64×36 pixel and photographer+day check against all repos 6.11.2026 (claim.mjs); the visit site uses a different Korundi photo from 27.4.2011",
+  },
+  "exp-culture-aalto": {
+    source: "Wikimedia Commons", title: "Lappia-talo Rovaniemi 2022-09-14 02.jpg", author: "Leonhard Lenz",
+    license: "CC0 1.0", licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
+    sourceUrl: "https://commons.wikimedia.org/wiki/File:Lappia-talo_Rovaniemi_2022-09-14_02.jpg", sourceId: "Lappia-talo Rovaniemi 2022-09-14 02.jpg",
+    taken: "2022-09-14", retrieved: "2026-11-06",
+    cropped: true,
+    shows: "The wave-shaped roofline of Lappia House, designed by Alvar Aalto, in Rovaniemi",
+    changes: "cropped from the 1920x1285 rendition (left 0, top 160, 1650x1100) to leave out a theatre poster with a face; resized to 1600x1067",
+    checks: "name, 64×36 pixel and photographer+day check against all repos 6.11.2026 (claim.mjs); faces and lettering checked at 100 %",
+  },
   "exp-korouoma": {
     source: "Wikimedia Commons", title: "Korouoma Canyon, Posio, Lapland (51140735748).jpg", author: "Nina R",
     license: "CC BY 2.0", licenseUrl: "https://creativecommons.org/licenses/by/2.0/",

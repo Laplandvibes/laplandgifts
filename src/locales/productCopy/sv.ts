@@ -581,6 +581,49 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'En kåsa på 4 cm avsedd för en snaps snarare än kaffe, med en läderögla för bältet. Det minsta och billigaste sättet att äga formen.',
     specs: ['Diameter 4 cm'],
   },
+  'pahkataide-kuksa-bear': {
+    name: 'Pahkataide kåsa i masurbjörk med björn i beninläggning',
+    description:
+      'En kåsa i masurbjörk, med en beninläggning på handtaget som bär ett björnmotiv. Pahkataide behandlar sina kåsor med vallmoolja som skyddar träet. Den diskas aldrig med diskmedel: det räcker att skölja, och kaffe varje dag bygger upp en hinna som skyddar ytan ytterligare.',
+    specs: [
+      'Masurbjörk, beninläggning på handtaget',
+      'Skölj med vatten, inget diskmedel',
+      'Tillverkad i Finland',
+    ],
+    specLabels: [undefined, undefined, 'Ursprung'],
+  },
+  'pahkataide-curly-birch-kuksa': {
+    name: 'Pahkataide kåsa i masurbjörk',
+    description:
+      'En enkel kåsa i masurbjörk, samma trä och samma behandling med vallmoolja som Pahkataides kåsor med inläggning, utan dekor. Ådringen gör varje exemplar olika, och den rymmer ungefär 1,5 dl.',
+    specs: [
+      'Masurbjörk',
+      'Cirka 1,5 dl, varje exemplar är unikt',
+      'Skölj med vatten, inget diskmedel',
+      'Tillverkad i Finland',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Ursprung'],
+  },
+  'koivumaa-kuksa-reindeer-bone': {
+    name: 'Kuksa E. Koivumaa kåsa av björkvril med renben',
+    description:
+      'En kåsa tillverkad av björkvril på traditionellt sätt, med två fingerhål i handtaget och en dekor av renben. Björkvril bränner inte läpparna, och därför är det den klassiska koppen för varmt kaffe vid elden. Kör in den med svart kaffe och skölj den sedan bara.',
+    specs: [
+      'Björkvril, dekor av renben på handtaget',
+      'Cirka 1,5 dl, två hål i handtaget',
+      'Skölj med vatten, inget diskmedel och ingen diskmaskin',
+    ],
+  },
+  'koivumaa-burl-kuksa': {
+    name: 'Kuksa E. Koivumaa kåsa av björkvril, ett hål',
+    description:
+      'Den enkla versionen av samma tillverkares vrilkåsa: björkvril på traditionellt sätt, ett fingerhål i handtaget, cirka 1,5 dl. Kör in den med svart kaffe, vars fett tätar träets öppna porer, och lägg den aldrig i diskmaskinen.',
+    specs: [
+      'Björkvril',
+      'Cirka 1,5 dl, ett hål i handtaget',
+      'Skölj med vatten, inget diskmedel och ingen diskmaskin',
+    ],
+  },
   'fazer-super-salmiakki': {
     name: 'Fazer Super Salmiakki pastiller 80 g',
     description:
@@ -813,6 +856,111 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Giltigt i 3 år',
     ],
     specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Presentkort'],
+  },
+  'korouoma-waterfalls-rovaniemi': {
+    name: 'Tur till Korouomas frusna vattenfall för två, från Rovaniemi',
+    description:
+      'På vintern fryser bäckarna som rinner nerför Korouomakanjonens väggar till fall av blå is. Den guidade dagsturen utgår från Rovaniemi till kanjonen i Posio, cirka 110 km bort. Vandringen är lätt, med snöskor när snön kräver det, och en lätt lunch serveras på vägen.',
+    specs: [
+      'Guidad tur till Korouomas frusna vattenfall för två, med transport, lätt lunch och mellanmål. Hämtning inom 10 km från Rovaniemi centrum',
+      'Cirka 7 timmar inklusive transport',
+      '2 personer',
+      'Korouomakanjonen, Posio. Avresa från Rovaniemi',
+      'Vintermånaderna, november till april',
+      'Engelska',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Guidningens språk', 'Presentkort'],
+  },
+  'amethyst-mine-snowshoe-luosto': {
+    name: 'Tur på snöskor till ametistgruvan i Luosto för två',
+    description:
+      'En guidad dagstur från Rovaniemi till Pyhä-Luosto nationalpark: först på snöskor genom parken, sedan med snötåg upp till ametistgruvan på toppen av Lampivaara. I gruvan får alla gräva själva, och en ametist du hittar får du behålla.',
+    specs: [
+      'Guidad tur på snöskor och besök i ametistgruvan för två, med transport, mellanmål vid rastplatsen och all utrustning. Varma kläder och skor kan lånas',
+      'Cirka 7 timmar',
+      '2 personer',
+      'Lampivaara, Luosto. Avresa från Rovaniemi',
+      'Vintermånaderna, december till april',
+      'Engelska',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Guidningens språk', 'Presentkort'],
+  },
+  'midnight-sun-canoe-rovaniemi': {
+    name: 'Kanottur i midnattssolen för två, Rovaniemi',
+    description:
+      'En guidad kvällspaddling nära Rovaniemi i midnattssolens ljus, som avslutas med mellanmål vid en öppen eld. Guiden går igenom grunderna före start, så ingen paddelvana behövs. Turerna går på sommaren, juni till augusti.',
+    specs: [
+      'Guidad kanottur för två med utrustning, paddel- och säkerhetsgenomgång, mellanmål vid elden och transport inom 10 km från Rovaniemi',
+      'Cirka 3 timmar',
+      '2 personer',
+      'Rovaniemi. Den exakta platsen bekräftas vid bokningen',
+      'Sommarmånaderna, juni till augusti',
+      'Engelska',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Guidningens språk', 'Presentkort'],
+  },
+  'halti-snowmobile-kilpisjarvi': {
+    name: 'Med snöskoter upp på Halti för två, Kilpisjärvi',
+    description:
+      'Halti är Finlands högsta punkt, precis vid gränsen mot Norge. Den guidade snöskoterturen från Kilpisjärvi korsar Käsivarsis ödemark till gränsröset 303B, totalt cirka 110 km, och på toppen kan du skriva ditt namn i Haltis gästbok. Turen körs klockan 10–16, och tidigare vana att köra snöskoter krävs.',
+    specs: [
+      'Guidad snöskotertur på cirka 110 km för två, skoterkläder (overall, kängor, hjälm), varm saft och bakverk, ledtillstånd, moms och försäkringar',
+      'Cirka 6 timmar',
+      '2 personer',
+      'Kilpisjärvi',
+      '1 mars till 10 maj, om vädret tillåter',
+      '18 år för att köra, 8 år i släden. Tidigare körvana krävs',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Åldersgräns', 'Presentkort'],
+  },
+  'fell-ice-fishing-kilpisjarvi': {
+    name: 'Pimpeltur i fjällen för två, Kilpisjärvi',
+    description:
+      'En guide tar er med snöskoter upp i fjällen nära Kilpisjärvi, totalt cirka 15 km, där ni pimplar genom en isvak sittande på en renfäll. Röding eller öring kan nappa, och fiskeutrustningen ingår. Turen går klockan 11.15–14.15.',
+    specs: [
+      'Guidad tur på cirka 15 km för två, skoterkläder (overall, kängor, hjälm), fiskeutrustning, varm saft och bakverk, moms och försäkringar',
+      'Cirka 3 timmar',
+      '2 personer',
+      'Kilpisjärvi',
+      '20 november till 10 maj, om vädret tillåter',
+      '18 år för att köra, 8 år i släden',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Åldersgräns', 'Presentkort'],
+  },
+  'wilderness-cabin-ivalo': {
+    name: 'Två nätter med helpension i en ödemarksstuga för två, Ivalo',
+    description:
+      'Två nätter för två i en stuga vid Ivalo älv, intill Hammastunturi ödemark, med egen strandbastu. Alla måltider från middagen på ankomstdagen till lunchen på avresedagen ingår, lagade på råvaror från Lappland som ren, fisk och bär, liksom transport från Ivalo och tillbaka. Vardagar från mitten av juni till slutet av oktober.',
+    specs: [
+      '2 nätter för två i en ödemarksstuga, fri tillgång till en separat strandbastu, helpension med eftermiddagskaffe vid elden och transport från Ivalo centrum eller flygplats och tillbaka',
+      '2 nätter',
+      '2 personer',
+      'Vid Ivalo älv. Den exakta platsen bekräftas vid bokningen',
+      'Måndag till fredag, 15 juni till 30 oktober',
+      'Finska och engelska',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Språk', 'Presentkort'],
+  },
+  'katka-snowmobile-levi': {
+    name: 'Snöskotersafari till Kätkäs ödemark, Levi',
+    description:
+      'En snöskotersafari på cirka 30 km från Levi ut i ödemarken vid Kätkätunturi. Pausen hålls på Hanhipirtti, ett ödemarkskafé i en gammal stuga full av retroföremål, innan färden tillbaka till Levi. Ingen tidigare skotervana behövs, och presentkortet gäller en person från 13 år.',
+    specs: [
+      'Guidad snöskotersafari på cirka 30 km för en person, med paus på ödemarkskaféet Hanhipirtti. Vinterkläder ingår',
+      'Cirka 2 till 3 timmar',
+      '1 person från 13 år',
+      'Levi. Avresa från Leviraitti 13, Sirkka',
+      'Vinter, december till mars',
+      'Engelska och finska',
+      'Giltigt i 3 år',
+    ],
+    specLabels: [undefined, 'Längd', 'Deltagare', 'Plats', 'Säsong', 'Språk', 'Presentkort'],
   },
   'foodin-six-mushroom-blend': {
     name: 'Foodin blandning av sex svampar 40 g',

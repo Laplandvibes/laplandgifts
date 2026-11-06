@@ -12,7 +12,7 @@ import {
   TOURS_PICKS,
   VISIT_PICKS,
   NATURE_PICKS,
-  WELLNESS_PICKS, LUXURY_PICKS, PLACE_NAMES, gygDuration } from '../../shared/gyg/picks'
+  WELLNESS_PICKS, LUXURY_PICKS, CULTURE_PICKS, PLACE_NAMES, gygDuration } from '../../shared/gyg/picks'
 import { LANG_PREFIX, type Lang } from '../../i18n/useLang'
 import { experienceName, experiencePlace } from '../../locales/experienceNames'
 
@@ -29,7 +29,7 @@ const VERIFIED_PATHS = new Set(
     TOURS_PICKS,
     VISIT_PICKS,
     NATURE_PICKS,
-    WELLNESS_PICKS, LUXURY_PICKS].flatMap((list) => list.map((p) => p.path))
+    WELLNESS_PICKS, LUXURY_PICKS, CULTURE_PICKS].flatMap((list) => list.map((p) => p.path))
 )
 
 describe('elämyslahjat', () => {

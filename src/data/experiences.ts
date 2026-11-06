@@ -9,7 +9,7 @@ import {
   WELLNESS_PICKS,
   KIDS_PICKS,
   TOURS_PICKS,
-  type GygPick, LUXURY_PICKS } from '../shared/gyg/picks'
+  type GygPick, LUXURY_PICKS, CULTURE_PICKS } from '../shared/gyg/picks'
 
 /**
  * Lahjaksi ostettavat elämykset.
@@ -44,10 +44,12 @@ import {
  * 3. RYHMÄT. Kortit olivat yhtenä listana. Nyt ne ovat kahdeksassa ryhmässä,
  *    joten lahjan etsijä löytää sen mitä hakee.
  *
- * 🔴 EI MUKANA: ruokailut sekä taide ja kulttuuri. Vesa pyysi nekin, mutta
- * `picks.ts`:ssä ei ole niistä yhtään verifioitua riviä, eikä GYG-polkua saa
- * arvata — väärä ID vie hiljaa väärään kaupunkiin. Ne vaativat oman
- * verifiointikierroksen GetYourGuideen.
+ * 🔴 Taide ja kulttuuri on mukana 6.11.2026 alkaen (ryhmä `culture`, kolme
+ * CULTURE_PICKS-riviä). Ruokailut (DINING_PICKS) EIVÄT vielä ole: tuotteet
+ * ovat olemassa, mutta niille ei löytynyt valokuvaa, joka näyttäisi juuri sen
+ * illallisen tai paikan (lasi-iglu, kota, erämaaillallinen), eikä korttia
+ * tehdä ilman kuvaa eikä vieraalla kuvalla. GYG_PICKSin polkua ei edelleenkään
+ * saa arvata: väärä ID vie hiljaa väärään kaupunkiin.
  */
 
 export type ExperienceGroup =
@@ -57,6 +59,7 @@ export type ExperienceGroup =
   | 'snowmobile'
   | 'icebreaker'
   | 'nature'
+  | 'culture'
   | 'sauna'
   | 'santa'
   | 'kids'
@@ -115,6 +118,16 @@ const SELECTION: Row[] = [
   [pick(NATURE_PICKS, 'Snowshoeing Tour in Urho Kekkonen'), 'exp-nature-snowshoe', 'nature', 'Snowshoe hike in Urho Kekkonen national park', 'Lumikenkäretki Urho Kekkosen kansallispuistossa'],
   [pick(VISIT_PICKS, 'Riisitunturi'), 'exp-nature-park', 'nature', 'Riisitunturi national park day trip', 'Päiväretki Riisitunturin kansallispuistoon'],
 
+  // ── Museot ja arkkitehtuuri (6.11.2026) ───────────────────────────────
+  // Vesa pyysi taidetta ja kulttuuria jo 2.8.2026, mutta picks.ts:ssä ei silloin
+  // ollut yhtään verifioitua riviä. CULTURE_PICKS on nyt olemassa; kolme sen
+  // viidestä avattu selaimessa 6.11.2026 (otsikko + oma osoite). Inarin
+  // kulttuuripäivä (t1005215) ohjautuu sijaintisivulle ja kullanhuuhdonta
+  // (t1243827) on Workerin GYG_LOCATION-listalla, joten ne jäävät pois.
+  [pick(CULTURE_PICKS, 'Arktikum'), 'exp-culture-arktikum', 'culture', 'Arktikum science centre and museum ticket', 'Arktikumin tiedekeskuksen ja museon pääsylippu'],
+  [pick(CULTURE_PICKS, 'Korundi'), 'exp-culture-korundi', 'culture', 'Korundi art museum ticket', 'Taidemuseo Korundin pääsylippu'],
+  [pick(CULTURE_PICKS, 'Alvar Aalto'), 'exp-culture-aalto', 'culture', 'Alvar Aalto architecture tour with pick-up', 'Alvar Aallon arkkitehtuurikierros noutoineen'],
+
   // ── Sauna ja hyvinvointi ──────────────────────────────────────────────
   [pick(WELLNESS_PICKS, 'Traditional Sauna and Ice Swimming'), 'exp-sauna-icehole', 'sauna', 'Traditional sauna and an ice dip', 'Perinteinen sauna ja avanto'],
   [pick(WELLNESS_PICKS, 'smoke & ice sauna'), 'exp-sauna-smoke', 'sauna', 'Smoke sauna and ice sauna, side by side', 'Savusauna ja jääsauna vierekkäin'],
@@ -152,6 +165,7 @@ export const EXPERIENCE_GROUPS: ExperienceGroup[] = [
   'snowmobile',
   'icebreaker',
   'nature',
+  'culture',
   'sauna',
   'santa',
   'kids',
@@ -160,3 +174,27 @@ export const EXPERIENCE_GROUPS: ExperienceGroup[] = [
 export function experiencesByGroup(group: ExperienceGroup): GiftExperience[] {
   return GIFT_EXPERIENCES.filter((e) => e.group === group)
 }
+
+/**
+ * GetYourGuiden suosikkiupotuksen tuotteet (components/shop/GygTopRated.tsx),
+ * 6.11.2026 (Vesa: "getyourguidesta parhaat tuotteet sinne"). Valittu heinäkuun
+ * katalogin (_gyg-catalog/catalog.json) arvosanan ja arvostelumäärän mukaan,
+ * yksi per elämystyyppi, ja jokainen avattu selaimessa 6.11.2026: tuotesivu
+ * aukeaa omaan osoitteeseensa ja otsikko on tuotteen. Pois jätetty
+ * jäänmurtajaristeily t209241, koska se lähtee Ruotsin Axelsvikistä. Upotus
+ * näyttää GYG:n omat kuvat, arvosanat ja päivän hinnat, joten tunnukset eivät
+ * tarvitse omaa kuvaa eikä hintaa.
+ *
+ * 🔴 Tarkista lista ennen talvea (1.12.) ja kesää (1.6.): kausituote voi
+ * kadota, ja silloin upotus näyttää vähemmän kortteja.
+ */
+export const TOP_RATED_TOUR_IDS: string[] = [
+  '1026632', // Rovaniemi: revontuliretki, kuvat ja takuu (4,9 / 2 529 arviota 29.7.)
+  '495118', // Rovaniemi: Korouoman jääputoukset, vaellus ja grilli (4,9 / 1 662)
+  '699161', // Rovaniemi: kelkkasafari uusilla kelkoilla (4,7 / 2 278)
+  '1118860', // Rovaniemi: huskysafari kuljetuksin ja grillillä (4,9 / 220)
+  '472249', // Rovaniemi: porotila ja valokuvaaja (4,9 / 294)
+  '540471', // Rovaniemi: perinteinen sauna ja avanto (4,9 / 466)
+  '1070807', // Rovaniemi: Invisible Forest Spa, sauna ja ulkoallas (4,7 / 456)
+  '301148', // Rovaniemi: porot, huskyt ja Joulupukin Pajakylä (4,6 / 2 413)
+]

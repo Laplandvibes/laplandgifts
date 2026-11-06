@@ -53,9 +53,31 @@ export const LUXURY_OBJECT_SLUGS: string[] = [
   'fl-lino-linen-duvet-set',
 ]
 
-/** Sivun ja reittimetan yhteinen valinta: elämykset hintarajalla, esineet listalta. */
+/**
+ * Elämykset, jotka kelpaavat luksussivulle: nekin KÄSIN VALITTU (6.11.2026).
+ *
+ * 🔴 Hintaraja 80 € toimi niin kauan kuin lahjakortteja oli viisi ja kaikki
+ * olivat 270-1 490 €. Kun erä nousi kahteentoista, sama raja olisi nostanut
+ * luksussivulle 135 euron kelkkasafarin ja 230 euron kanoottiretken. Sama
+ * periaate kuin esineillä (Vesa 5.9.: hinta ei ole ylellisyyden mitta).
+ * Ensimmäiset viisi ovat ne, jotka sivulla oli ennen 6.11.; uutena vain
+ * täysihoidollinen erämökki, koska se on ainoa uusista, joka on yöpyminen
+ * palveluineen eikä retki.
+ */
+export const LUXURY_EXPERIENCE_SLUGS: string[] = [
+  'gold-panning-day-inari',
+  'glass-igloo-night-levi',
+  'reindeer-safari-rovaniemi',
+  'husky-farm-safari-rovaniemi',
+  'aurora-tour-kilpisjarvi',
+  'wilderness-cabin-ivalo',
+]
+
+/** Sivun ja reittimetan yhteinen valinta: elämykset ja esineet käsin valituilta listoilta. */
 export function luxuryProducts(products: Product[]): Product[] {
-  const experiences = products.filter((p) => p.category === 'experiences' && p.priceFrom >= LUXURY_MIN_PRICE)
+  const experiences = products.filter(
+    (p) => p.category === 'experiences' && LUXURY_EXPERIENCE_SLUGS.includes(p.slug) && p.priceFrom >= LUXURY_MIN_PRICE,
+  )
   const objects = LUXURY_OBJECT_SLUGS.map((slug) => products.find((p) => p.slug === slug)).filter((p): p is Product => Boolean(p))
   return [...experiences, ...objects]
 }

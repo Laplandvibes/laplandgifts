@@ -579,6 +579,49 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Een kuksa van 4 cm bedoeld voor een borrel in plaats van koffie, met een leren lus voor aan de riem. De kleinste en goedkoopste manier om deze vorm te bezitten.',
     specs: ['Diameter 4 cm'],
   },
+  'pahkataide-kuksa-bear': {
+    name: 'Pahkataide kuksa van vlamberken met benen beerinleg',
+    description:
+      'Een kuksa van vlamberkenhout met op het handvat een benen inleg met een beer als motief. Pahkataide behandelt zijn bekers met maanzaadolie, die het hout beschermt. De kuksa wordt nooit met afwasmiddel gewassen: omspoelen is genoeg, en dagelijkse koffie vormt een laagje dat het oppervlak extra beschermt.',
+    specs: [
+      'Vlamberken, benen inleg op het handvat',
+      'Omspoelen met water, geen afwasmiddel',
+      'Gemaakt in Finland',
+    ],
+    specLabels: [undefined, undefined, 'Herkomst'],
+  },
+  'pahkataide-curly-birch-kuksa': {
+    name: 'Pahkataide kuksa van vlamberken',
+    description:
+      'Een eenvoudige kuksa van vlamberken, hetzelfde hout en dezelfde afwerking met maanzaadolie als de bekers met inleg van Pahkataide, zonder versiering. De nerf maakt elk exemplaar anders, en er gaat ongeveer 1,5 dl in.',
+    specs: [
+      'Vlamberken',
+      'Ongeveer 1,5 dl, elk exemplaar is uniek',
+      'Omspoelen met water, geen afwasmiddel',
+      'Gemaakt in Finland',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Herkomst'],
+  },
+  'koivumaa-kuksa-reindeer-bone': {
+    name: 'Kuksa E. Koivumaa kuksa van berkenknol met rendierbot',
+    description:
+      'Een kuksa op traditionele wijze uit een berkenknol gemaakt, met twee vingergaten in het handvat en een versiering van rendierbot. Knolhout verbrandt de lippen niet, en daarom is dit de klassieke beker voor hete koffie bij het vuur. Inwijden met zwarte koffie en daarna alleen omspoelen.',
+    specs: [
+      'Berkenknol, versiering van rendierbot op het handvat',
+      'Ongeveer 1,5 dl, twee gaten in het handvat',
+      'Omspoelen met water, geen afwasmiddel en geen vaatwasser',
+    ],
+  },
+  'koivumaa-burl-kuksa': {
+    name: 'Kuksa E. Koivumaa kuksa van berkenknol, één gat',
+    description:
+      'De eenvoudige versie van de knolkuksa van dezelfde maker: berkenknol op traditionele wijze bewerkt, één vingergat in het handvat, ongeveer 1,5 dl. Inwijden met zwarte koffie, waarvan de olie de open poriën van het hout dicht, en nooit in de vaatwasser.',
+    specs: [
+      'Berkenknol',
+      'Ongeveer 1,5 dl, één gat in het handvat',
+      'Omspoelen met water, geen afwasmiddel en geen vaatwasser',
+    ],
+  },
   'fazer-super-salmiakki': {
     name: 'Fazer Super Salmiakki pastilles 80 g',
     description:
@@ -811,6 +854,111 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       '3 jaar geldig',
     ],
     specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Cadeaukaart'],
+  },
+  'korouoma-waterfalls-rovaniemi': {
+    name: 'Tocht naar de bevroren watervallen van Korouoma voor twee, vanuit Rovaniemi',
+    description:
+      'In de winter bevriezen de beekjes langs de wanden van de Korouoma-kloof tot watervallen van blauw ijs. Deze begeleide dagtocht vertrekt vanuit Rovaniemi naar de kloof in Posio, zo’n 110 km verderop. De wandeling is makkelijk, op sneeuwschoenen als de sneeuw daarom vraagt, en onderweg is er een lichte lunch.',
+    specs: [
+      'Begeleide tocht naar de bevroren watervallen van Korouoma voor twee, met vervoer, lichte lunch en een snack. Ophalen binnen 10 km van het centrum van Rovaniemi',
+      'Ongeveer 7 uur inclusief vervoer',
+      '2 personen',
+      'Korouoma-kloof, Posio. Vertrek vanuit Rovaniemi',
+      'Wintermaanden, november tot april',
+      'Engels',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Taal van de gids', 'Cadeaukaart'],
+  },
+  'amethyst-mine-snowshoe-luosto': {
+    name: 'Sneeuwschoentocht naar de amethistmijn van Luosto voor twee',
+    description:
+      'Een begeleide dag vanuit Rovaniemi naar het nationaal park Pyhä-Luosto: eerst op sneeuwschoenen door het park, dan met een sneeuwtrein naar de amethistmijn op de top van de Lampivaara. In de mijn mag iedereen zelf graven, en een amethist die u vindt mag u houden.',
+    specs: [
+      'Begeleide sneeuwschoentocht en bezoek aan de amethistmijn voor twee, met vervoer, een snack bij de rustplaats en alle uitrusting. Warme kleding en schoenen zijn te leen',
+      'Ongeveer 7 uur',
+      '2 personen',
+      'Lampivaara, Luosto. Vertrek vanuit Rovaniemi',
+      'Wintermaanden, december tot april',
+      'Engels',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Taal van de gids', 'Cadeaukaart'],
+  },
+  'midnight-sun-canoe-rovaniemi': {
+    name: 'Kanotocht onder de middernachtszon voor twee, Rovaniemi',
+    description:
+      'Een begeleide avondtocht per kano bij Rovaniemi in het licht van de middernachtszon, afgesloten met een snack bij een open vuur. De gids legt vooraf de basis van het pagaaien uit, dus ervaring is niet nodig. De tochten worden in de zomer gehouden, van juni tot augustus.',
+    specs: [
+      'Begeleide kanotocht voor twee met uitrusting, pagaai- en veiligheidsinstructie, een snack bij het vuur en vervoer binnen 10 km van Rovaniemi',
+      'Ongeveer 3 uur',
+      '2 personen',
+      'Rovaniemi. De exacte locatie wordt bij het boeken bevestigd',
+      'Zomermaanden, juni tot augustus',
+      'Engels',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Taal van de gids', 'Cadeaukaart'],
+  },
+  'halti-snowmobile-kilpisjarvi': {
+    name: 'Met de sneeuwscooter naar de top van de Halti voor twee, Kilpisjärvi',
+    description:
+      'De Halti is het hoogste punt van Finland, pal op de grens met Noorwegen. Deze begeleide sneeuwscootertocht vanuit Kilpisjärvi gaat door de wildernis van Käsivarsi naar grenspaal 303B, in totaal zo’n 110 km, en op de top kunt u het gastenboek van de Halti tekenen. De tocht loopt van 10 tot 16 uur, en ervaring met sneeuwscooterrijden is vereist.',
+    specs: [
+      'Begeleide sneeuwscootertocht van ongeveer 110 km voor twee, sneeuwscooterkleding (overall, laarzen, helm), warm sap en gebak, routevergunning, btw en verzekeringen',
+      'Ongeveer 6 uur',
+      '2 personen',
+      'Kilpisjärvi',
+      '1 maart tot 10 mei, afhankelijk van het weer',
+      '18 jaar om te rijden, 8 jaar in de slee. Rijervaring vereist',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Leeftijdsgrens', 'Cadeaukaart'],
+  },
+  'fell-ice-fishing-kilpisjarvi': {
+    name: 'IJsvissen op de fjälls voor twee, Kilpisjärvi',
+    description:
+      'Een gids brengt u per sneeuwscooter de fjälls in bij Kilpisjärvi, in totaal zo’n 15 km, waar u op een rendiervacht zittend door een wak in het ijs vist. Er kan een beekridder of forel bijten, en het vistuig is inbegrepen. De tocht loopt van 11.15 tot 14.15 uur.',
+    specs: [
+      'Begeleide tocht van ongeveer 15 km voor twee, sneeuwscooterkleding (overall, laarzen, helm), vistuig, warm sap en gebak, btw en verzekeringen',
+      'Ongeveer 3 uur',
+      '2 personen',
+      'Kilpisjärvi',
+      '20 november tot 10 mei, afhankelijk van het weer',
+      '18 jaar om te rijden, 8 jaar in de slee',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Leeftijdsgrens', 'Cadeaukaart'],
+  },
+  'wilderness-cabin-ivalo': {
+    name: 'Twee nachten volpension in een wildernishut voor twee, Ivalo',
+    description:
+      'Twee nachten voor twee in een hut aan de oever van de rivier de Ivalojoki, naast de wildernis van Hammastunturi, met een eigen oeversauna. Alle maaltijden, van het diner op de aankomstdag tot de lunch op de vertrekdag, zijn inbegrepen en bereid met producten uit Lapland zoals rendier, vis en bessen, net als het vervoer vanuit Ivalo en terug. Doordeweeks van half juni tot eind oktober.',
+    specs: [
+      '2 nachten voor twee in een wildernishut, vrij gebruik van een aparte oeversauna, volpension met middagkoffie bij het vuur en vervoer vanaf het centrum of de luchthaven van Ivalo en terug',
+      '2 nachten',
+      '2 personen',
+      'Aan de oever van de Ivalojoki. De exacte locatie wordt bij het boeken bevestigd',
+      'Maandag tot vrijdag, 15 juni tot 30 oktober',
+      'Fins en Engels',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Taal', 'Cadeaukaart'],
+  },
+  'katka-snowmobile-levi': {
+    name: 'Sneeuwscootersafari naar de wildernis van Kätkä, Levi',
+    description:
+      'Een sneeuwscootersafari van zo’n 30 km vanuit Levi de wildernis van de Kätkätunturi in. De pauze is in Hanhipirtti, een café in de wildernis, in een oude hut vol retrospullen, voordat u terugrijdt naar Levi. Ervaring met sneeuwscooters is niet nodig, en de cadeaukaart geldt voor één persoon vanaf 13 jaar.',
+    specs: [
+      'Begeleide sneeuwscootersafari van ongeveer 30 km voor één persoon, met een pauze in het wildernis-café Hanhipirtti. Winterkleding inbegrepen',
+      'Ongeveer 2 tot 3 uur',
+      '1 persoon vanaf 13 jaar',
+      'Levi. Vertrek vanaf Leviraitti 13, Sirkka',
+      'Winter, december tot maart',
+      'Engels en Fins',
+      '3 jaar geldig',
+    ],
+    specLabels: [undefined, 'Duur', 'Deelnemers', 'Locatie', 'Seizoen', 'Taal', 'Cadeaukaart'],
   },
   'foodin-six-mushroom-blend': {
     name: 'Foodin zes-paddenstoelenmix 40 g',

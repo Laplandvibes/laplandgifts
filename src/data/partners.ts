@@ -286,6 +286,22 @@ export const PARTNERS: Record<string, Partner> = {
     shipsTo: 'worldwide',
     verifiedAt: '2026-08-03',
   },
+  partioaitta: {
+    id: 'partioaitta',
+    name: 'Partioaitta',
+    // Adtraction-ohjelma hyväksytty 3.8.2026 (5,4 %, eväste 14 vrk). Worker-reitti
+    // go/partioaitta mitattu GETillä 6.11.2026: 302 → in.partioaitta.fi/t/t?
+    // a=1465938056&as=2086870803&epi=laplandgifts_com_<sid>&url=<dest>.
+    // Tuotteet poimittu Adtractionin tuotesyötteestä (pfid 2195) 6.11.2026,
+    // hinta ja kuva tarkistettu tuotesivun omasta datasta.
+    network: 'adtraction',
+    workerRoute: 'partioaitta',
+    baseUrl: 'https://www.partioaitta.fi',
+    // Toimitusehdot 6.11.2026 (/asiakaspalvelu/toimitusehdot/): "Toimitamme
+    // tilauksia EU-alueelle".
+    shipsTo: 'eu',
+    verifiedAt: '2026-11-06',
+  },
   pod: {
     id: 'pod',
     name: 'LaplandVibes Store',

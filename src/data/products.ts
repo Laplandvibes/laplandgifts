@@ -2261,6 +2261,155 @@ export const PRODUCTS: Product[] = [
     },
   },
 
+  // ── Erä 6.11.2026: käsintehdyt kuksat provisiollisista kaupoista ────────────
+  // Vesa 6.11.: "etsi lisää tuotteita kategorioihin … adtractionista". Puu ja
+  // retkiastiat -hyllyssä oli neljä tuotetta, joista kolme muovikomposiittia.
+  // Nämä neljä ovat puuta ja tulevat Adtraction-syötteistä (Scandinavian Outdoor
+  // pfid 409, Partioaitta pfid 2195) 6.11.2026; hinta tarkistettu tuotesivulta.
+  // 🔴 Alkuperä: vain Pahkataide sanoo "Valmistettu Suomessa". Koivumaan sivu
+  // puhuu "aidosta Lapin kuksasta" mutta ei kerro valmistusmaata, joten sitä
+  // ei väitetä. Kumpaakaan ei kutsuta saamelaiseksi (duodji-sääntö).
+  {
+    slug: 'pahkataide-kuksa-bear',
+    category: 'handicrafts',
+    brand: 'Pahkataide',
+    name: {
+      en: 'Pahkataide curly birch kuksa with a bear bone inlay',
+      fi: 'Pahkataide Visaluukuksa Karhu',
+    },
+    description: {
+      en: 'A kuksa made from curly birch, with a bone inlay on the handle carrying a bear motif. Pahkataide treats its cups with poppy seed oil to protect the wood. It is never washed with detergent: a rinse is enough, and daily coffee builds a film on the surface that protects it further.',
+      fi: 'Visakoivusta tehty kuksa, jonka kahvassa on luu-upotus, jossa on karhukuvio. Pahkataide käsittelee kuksansa unikkoöljyllä, joka suojaa puuta. Sitä ei koskaan pestä pesuaineella: huuhtelu riittää, ja päivittäinen kahvi muodostaa pintaan suojaavan kalvon.',
+    },
+    priceFrom: 79,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-pahkataide-kuksa-bear',
+    imageIsPartner: true,
+    partnerId: 'scandinavianoutdoor',
+    partnerProductUrl: 'https://scandinavianoutdoor.fi/pahkataide/varusteet/ruokailu-ja-astiat/astiat/visaluukuksa-karhu/',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Curly birch, bone inlay on the handle', fi: 'Visakoivu, kahvassa luu-upotus' } },
+        {
+          key: 'care',
+          value: { en: 'Rinse with water, no detergent', fi: 'Huuhtelu vedellä, ei pesuaineita' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Origin', fi: 'Alkuperä' },
+          value: { en: 'Made in Finland', fi: 'Valmistettu Suomessa' },
+        },
+      ],
+      sourceUrl: 'https://scandinavianoutdoor.fi/pahkataide/varusteet/ruokailu-ja-astiat/astiat/visaluukuksa-karhu/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'pahkataide-curly-birch-kuksa',
+    category: 'handicrafts',
+    brand: 'Pahkataide',
+    name: {
+      en: 'Pahkataide curly birch kuksa',
+      fi: 'Pahkataide Visakuksa',
+    },
+    description: {
+      en: 'A plain kuksa made from curly birch, the same wood and the same poppy seed oil finish as Pahkataide’s inlaid cups, without the decoration. The grain makes every piece look different, and it holds roughly 1.5 dl.',
+      fi: 'Pelkistetty kuksa visakoivusta, sama puu ja sama unikkoöljykäsittely kuin Pahkataiteen upotuskuksissa, ilman koristetta. Syykuvio tekee jokaisesta kappaleesta erinäköisen, ja vetoisuus on noin 1,5 dl.',
+    },
+    priceFrom: 54.9,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-pahkataide-curly-birch-kuksa',
+    imageIsPartner: true,
+    partnerId: 'scandinavianoutdoor',
+    partnerProductUrl: 'https://scandinavianoutdoor.fi/pahkataide/varusteet/ruokailu-ja-astiat/astiat/visakuksa/',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Curly birch', fi: 'Visakoivu' } },
+        { key: 'size', value: { en: 'About 1.5 dl, every piece is unique', fi: 'Noin 1,5 dl, jokainen kappale on yksilö' } },
+        {
+          key: 'care',
+          value: { en: 'Rinse with water, no detergent', fi: 'Huuhtelu vedellä, ei pesuaineita' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Origin', fi: 'Alkuperä' },
+          value: { en: 'Made in Finland', fi: 'Valmistettu Suomessa' },
+        },
+      ],
+      sourceUrl: 'https://scandinavianoutdoor.fi/pahkataide/varusteet/ruokailu-ja-astiat/astiat/visakuksa/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'koivumaa-kuksa-reindeer-bone',
+    category: 'handicrafts',
+    brand: 'Kuksa E. Koivumaa',
+    name: {
+      en: 'Kuksa E. Koivumaa birch burl kuksa with reindeer bone',
+      fi: 'Kuksa E. Koivumaa Luukuksa, kaksireikäinen',
+    },
+    description: {
+      en: 'A kuksa carved from birch burl in the traditional way, with two finger holes in the handle and a reindeer bone ornament. Burl does not burn the lips, which is why it is the classic cup for hot coffee by the fire. Break it in with black coffee and afterwards just rinse it.',
+      fi: 'Koivun pahkasta perinteisellä tavalla tehty kuksa, kahvassa kaksi sormireikää ja poronluinen koriste. Pahka ei polta huulia, ja siksi se on nuotiokahvin perinteinen astia. Kuksa otetaan käyttöön mustalla kahvilla, ja sen jälkeen riittää pelkkä huuhtelu.',
+    },
+    priceFrom: 89.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-koivumaa-kuksa-reindeer-bone',
+    imageIsPartner: true,
+    partnerId: 'partioaitta',
+    partnerProductUrl: 'https://www.partioaitta.fi/kuksa-e-koivumaa-kuksa-luukuksa-2-reikanen-1003546/',
+    details: {
+      specs: [
+        {
+          key: 'material',
+          value: { en: 'Birch burl, reindeer bone ornament on the handle', fi: 'Koivun pahka, kahvassa poronluinen koriste' },
+        },
+        { key: 'size', value: { en: 'About 1.5 dl, two holes in the handle', fi: 'Noin 1,5 dl, kahvassa kaksi reikää' } },
+        {
+          key: 'care',
+          value: { en: 'Rinse with water, no detergent or dishwasher', fi: 'Huuhtelu vedellä, ei pesuainetta eikä astianpesukonetta' },
+        },
+      ],
+      sourceUrl: 'https://www.partioaitta.fi/kuksa-e-koivumaa-kuksa-luukuksa-2-reikanen-1003546/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'koivumaa-burl-kuksa',
+    category: 'handicrafts',
+    brand: 'Kuksa E. Koivumaa',
+    name: {
+      en: 'Kuksa E. Koivumaa birch burl kuksa, one hole',
+      fi: 'Kuksa E. Koivumaa Isokuksa, yksireikäinen',
+    },
+    description: {
+      en: 'The plain version of the same maker’s burl kuksa: birch burl carved in the traditional way, one finger hole in the handle, about 1.5 dl. Break it in with black coffee, whose oil seals the open pores of the wood, and never put it in the dishwasher.',
+      fi: 'Saman tekijän pahkakuksa pelkistettynä: koivun pahkasta perinteisellä tavalla tehty, kahvassa yksi sormireikä, vetoisuus noin 1,5 dl. Kuksa otetaan käyttöön mustalla kahvilla, jonka rasva tiivistää puun avoimet huokoset. Astianpesukoneeseen sitä ei laiteta koskaan.',
+    },
+    priceFrom: 59.95,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-koivumaa-burl-kuksa',
+    imageIsPartner: true,
+    partnerId: 'partioaitta',
+    partnerProductUrl: 'https://www.partioaitta.fi/kuksa-e-koivumaa-kuksa-isokuksa-1-reikanen-1003547/',
+    details: {
+      specs: [
+        { key: 'material', value: { en: 'Birch burl', fi: 'Koivun pahka' } },
+        { key: 'size', value: { en: 'About 1.5 dl, one hole in the handle', fi: 'Noin 1,5 dl, kahvassa yksi reikä' } },
+        {
+          key: 'care',
+          value: { en: 'Rinse with water, no detergent or dishwasher', fi: 'Huuhtelu vedellä, ei pesuainetta eikä astianpesukonetta' },
+        },
+      ],
+      sourceUrl: 'https://www.partioaitta.fi/kuksa-e-koivumaa-kuksa-isokuksa-1-reikanen-1003547/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+
   // ───────────────────────────────────────────────────────────────────────
   // Erä 2.8.2026 — SUOMALAISET MAKEISKLASSIKOT (Vesa: "herkkuja on todella
   // vähän"). Yhdeksän tuotetta, jotka suomalainen tunnistaa nimeltä ja jotka
@@ -3265,6 +3414,473 @@ export const PRODUCTS: Product[] = [
       ],
       sourceUrl: 'https://www.elamyslahjat.fi/lahjat/kultakuume-kullankaivuumatka-4/',
       fetchedAt: '2026-08-03',
+    },
+  },
+
+  // ── experiences: Elämyslahjat.fi-lahjakortit, erä 2026-11-06 (5 → 12) ──────
+  // Vesa 6.11.2026: "adtractionista lisää elämyslahjoja". Valittu Elämyslahjatin
+  // /lappi/-sivun 74 tuotteesta: jokainen tuotesivu avattu 6.11., hinta luettu
+  // sivun omasta hintakentästä ja sijainti titlestä. Kuusamon/Rukan ja
+  // Pudasjärven tuotteet jätetty pois (eivät ole Lappia). Pois myös sivut,
+  // jotka ovat ristiriidassa itsensä kanssa (Kumputunturi: 5 h vs 2-3 h,
+  // Icekarting: 140 vs 145 cm) ja karhuyö, jonka kohde on itärajalla eikä
+  // Lapissa. Kesä ja syksy mukana tarkoituksella (kanootti, erämökki).
+  {
+    slug: 'korouoma-waterfalls-rovaniemi',
+    category: 'experiences',
+    brand: 'Wild About Lapland',
+    name: {
+      en: 'Korouoma frozen waterfalls trip for two, from Rovaniemi',
+      fi: 'Korouoman jäätyneet vesiputoukset -retki kahdelle, Rovaniemi',
+    },
+    description: {
+      en: 'In winter the streams running down the walls of the Korouoma canyon freeze into falls of blue ice. This guided day trip leaves Rovaniemi for the canyon in Posio, about 110 km away. The walk is easy, on snowshoes when the snow calls for them, and a light lunch is served on the way.',
+      fi: 'Talvella Korouoman rotkolaakson seinämiltä valuvat purot jäätyvät sinertäviksi jääputouksiksi. Opastettu päiväretki lähtee Rovaniemeltä Posiolle, noin 110 kilometrin päähän. Kävely on helppoa, tarvittaessa lumikengillä, ja matkalla syödään kevyt lounas.',
+    },
+    priceFrom: 300,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-korouoma-waterfalls-rovaniemi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/korouoma-jaa-vesiputoukset/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Guided trip to the frozen waterfalls of Korouoma for two, with transport, a light lunch and a snack. Pick-up within 10 km of central Rovaniemi',
+            fi: 'Opastettu retki Korouoman jäätyneille vesiputouksille kahdelle, kuljetukset, kevyt lounas ja välipala. Nouto 10 km:n säteellä Rovaniemen keskustasta',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: 'About 7 hours including transport', fi: 'Noin 7 tuntia kuljetuksineen' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: {
+            en: 'Korouoma canyon, Posio. Departure from Rovaniemi',
+            fi: 'Korouoman rotkolaakso, Posio. Lähtö Rovaniemeltä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: { en: 'Winter months, November to April', fi: 'Talvikuukausina, marras-huhtikuu' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Guidance language', fi: 'Opastuskieli' },
+          value: { en: 'English', fi: 'Englanti' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/korouoma-jaa-vesiputoukset/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'amethyst-mine-snowshoe-luosto',
+    category: 'experiences',
+    brand: 'Wild About Lapland',
+    name: {
+      en: 'Snowshoe trip to the Luosto amethyst mine for two',
+      fi: 'Lumikenkäretki Luoston ametistikaivokselle kahdelle',
+    },
+    description: {
+      en: 'A guided day out from Rovaniemi to Pyhä-Luosto national park: first on snowshoes through the park, then by snow train to the amethyst mine at the top of Lampivaara fell. At the mine everyone can dig for themselves, and an amethyst you find is yours to keep.',
+      fi: 'Opastettu päiväretki Rovaniemeltä Pyhä-Luoston kansallispuistoon: ensin lumikengillä puiston halki, sitten lumijunalla Lampivaaran huipulle ametistikaivokselle. Kaivoksella jokainen pääsee kaivamaan itse, ja löydetyn ametistin saa pitää.',
+    },
+    priceFrom: 400,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-amethyst-mine-snowshoe-luosto',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/lumikenka-retki-kaivokselle/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Guided snowshoe trip and amethyst mine visit for two, with transport, a snack at the rest stop and all the gear. Warm clothes and boots can be borrowed',
+            fi: 'Opastettu lumikenkäretki ja kaivosvierailu kahdelle, kuljetukset, välipala taukopaikalla ja kaikki varusteet. Lämpimiä vaatteita ja kenkiä voi lainata',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: 'About 7 hours', fi: 'Noin 7 tuntia' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: {
+            en: 'Lampivaara, Luosto. Departure from Rovaniemi',
+            fi: 'Lampivaara, Luosto. Lähtö Rovaniemeltä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: { en: 'Winter months, December to April', fi: 'Talvikuukausina, joulu–huhtikuu' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Guidance language', fi: 'Opastuskieli' },
+          value: { en: 'English', fi: 'Englanti' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/lumikenka-retki-kaivokselle/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'midnight-sun-canoe-rovaniemi',
+    category: 'experiences',
+    brand: 'Wild About Lapland',
+    name: {
+      en: 'Midnight sun canoe trip for two, Rovaniemi',
+      fi: 'Kanoottiretki keskiyön auringossa kahdelle, Rovaniemi',
+    },
+    description: {
+      en: 'A guided evening paddle near Rovaniemi in the light of the midnight sun, ending with a snack by an open fire. The guide teaches the basics before setting off, so no paddling experience is needed. The trips run in summer, from June to August.',
+      fi: 'Opastettu iltamelonta Rovaniemen lähellä keskiyön auringon valossa, ja lopuksi välipala avotulella. Opas opettaa melonnan perusteet ennen lähtöä, joten aiempaa kokemusta ei tarvita. Retkiä järjestetään kesällä, kesä–elokuussa.',
+    },
+    priceFrom: 230,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-midnight-sun-canoe-rovaniemi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/kanootti-keski-yo/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Guided canoe trip for two with the gear, a paddling and safety briefing, a snack by the fire and transport within 10 km of Rovaniemi',
+            fi: 'Opastettu kanoottiretki kahdelle: varusteet, melonta- ja turvallisuusopastus, välipala avotulella ja kuljetus 10 km:n säteellä Rovaniemeltä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: 'About 3 hours', fi: 'Noin 3 tuntia' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: {
+            en: 'Rovaniemi. The exact location is confirmed at booking',
+            fi: 'Rovaniemi. Tarkka sijainti varmistuu varauksen yhteydessä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: { en: 'Summer months, June to August', fi: 'Kesäkuukausina, kesä–elokuu' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Guidance language', fi: 'Opastuskieli' },
+          value: { en: 'English', fi: 'Englanti' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/kanootti-keski-yo/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'halti-snowmobile-kilpisjarvi',
+    category: 'experiences',
+    brand: 'Kilpissafarit',
+    name: {
+      en: 'Snowmobile trip to the top of Halti for two, Kilpisjärvi',
+      fi: 'Haltin huiputus moottorikelkoilla kahdelle, Kilpisjärvi',
+    },
+    description: {
+      en: 'Halti is the highest point in Finland, right on the Norwegian border. This guided snowmobile trip from Kilpisjärvi crosses the Käsivarsi wilderness to border marker 303B, about 110 km in all, and at the top you can sign the Halti guestbook. The day runs from 10.00 to 16.00, and previous snowmobile driving experience is required.',
+      fi: 'Halti on Suomen korkein kohta, aivan Norjan rajalla. Opastettu moottorikelkkaretki lähtee Kilpisjärveltä Käsivarren erämaan halki rajapyykille 303B, yhteensä noin 110 kilometriä, ja huipulla voi kirjoittaa nimensä Haltin vieraskirjaan. Retki ajetaan klo 10–16, ja aiempi moottorikelkan ajokokemus vaaditaan.',
+    },
+    priceFrom: 420,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-halti-snowmobile-kilpisjarvi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/haltitunturin-huiputus-2lle/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Guided snowmobile trip of about 110 km for two, snowmobile clothing (overall, boots, helmet), warm juice and a pastry, the trail permit, VAT and insurance',
+            fi: 'Opastettu noin 110 km:n moottorikelkkaretki kahdelle, kelkkailuvarustus (haalari, kengät, kypärä), lämmin mehu ja leivonnainen, uralupa, arvonlisävero ja vakuutukset',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: 'About 6 hours', fi: 'Noin 6 tuntia' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: { en: 'Kilpisjärvi', fi: 'Kilpisjärvi' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: { en: '1 March to 10 May, weather permitting', fi: 'Maaliskuun 1. päivästä toukokuun 10. päivään, säävaraus' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Age limit', fi: 'Ikäraja' },
+          value: {
+            en: '18 to drive a snowmobile, 8 in the sled. Previous driving experience is required',
+            fi: 'Kelkan kuljettajalla vähintään 18 vuotta, rekikyydissä 8 vuotta. Aiempi ajokokemus vaaditaan',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/haltitunturin-huiputus-2lle/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'fell-ice-fishing-kilpisjarvi',
+    category: 'experiences',
+    brand: 'Kilpissafarit',
+    name: {
+      en: 'Ice fishing trip on the fells for two, Kilpisjärvi',
+      fi: 'Pilkkiretki tunturiin kahdelle, Kilpisjärvi',
+    },
+    description: {
+      en: 'A guide takes you by snowmobile into the fells near Kilpisjärvi, about 15 km in all, where you fish through a hole in the ice sitting on a reindeer hide. Arctic char or trout may bite, and the fishing gear is provided. The trip runs from 11.15 to 14.15.',
+      fi: 'Opas vie moottorikelkoilla tunturiin Kilpisjärven lähelle, koko matka noin 15 kilometriä, ja perillä pilkitään porontaljalla istuen. Saaliiksi voi tulla rautu tai taimen, ja kalastusvälineet kuuluvat hintaan. Retki ajetaan klo 11.15–14.15.',
+    },
+    priceFrom: 280,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-fell-ice-fishing-kilpisjarvi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/pilkkiretki-tunturiin-2lle/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Guided trip of about 15 km for two, snowmobile clothing (overall, boots, helmet), fishing gear, warm juice and a pastry, VAT and insurance',
+            fi: 'Opastettu noin 15 km:n retki kahdelle, kelkkailuvarustus (haalari, kengät, kypärä), kalastusvälineet, lämmin mehu ja leivonnainen, arvonlisävero ja vakuutukset',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: 'About 3 hours', fi: 'Noin 3 tuntia' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: { en: 'Kilpisjärvi', fi: 'Kilpisjärvi' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: { en: '20 November to 10 May, weather permitting', fi: 'Marraskuun 20. päivästä toukokuun 10. päivään, säävaraus' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Age limit', fi: 'Ikäraja' },
+          value: { en: '18 to drive a snowmobile, 8 in the sled', fi: 'Kelkan kuljettajalla vähintään 18 vuotta, rekikyydissä 8 vuotta' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/pilkkiretki-tunturiin-2lle/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'wilderness-cabin-ivalo',
+    category: 'experiences',
+    brand: 'Hentan Helmi',
+    name: {
+      en: 'Two nights full board in a wilderness cabin for two, Ivalo',
+      fi: 'Kaksi yötä täysihoidolla erämökissä kahdelle, Ivalo',
+    },
+    description: {
+      en: 'Two nights for two in a cabin on the bank of the Ivalo river, next to the Hammastunturi wilderness, with a shore sauna of its own. Every meal from dinner on arrival to lunch on departure is included, cooked with Lapland produce such as reindeer, fish and berries, and so is transport from Ivalo and back. Weekdays from mid-June to the end of October.',
+      fi: 'Kaksi yötä kahdelle erämökissä Ivalojoen rannalla, Hammastunturin erämaan vieressä, ja oma rantasauna vapaassa käytössä. Hintaan kuuluvat kaikki ateriat tulopäivän päivällisestä lähtöpäivän lounaaseen, valmistettuina Lapin raaka-aineista kuten porosta, kalasta ja marjoista, sekä kuljetus Ivalosta ja takaisin. Arkipäivinä kesäkuun puolivälistä lokakuun loppuun.',
+    },
+    priceFrom: 950,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-wilderness-cabin-ivalo',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl:
+      'https://www.elamyslahjat.fi/lahjat/taysihoidollinen-majoitus-eramokissa-kahdelle-arkena-2-vrk-ivalo/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: '2 nights for two in a wilderness cabin, free use of a separate shore sauna, full board with afternoon coffee by the fire, and transport from Ivalo centre or airport and back',
+            fi: '2 yötä kahdelle erämökissä, erillinen rantasauna vapaassa käytössä, täysihoito ja iltapäiväkahvit nuotiolla sekä kuljetus Ivalon keskustasta tai lentokentältä ja takaisin',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: '2 nights', fi: '2 yötä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '2 people', fi: '2 henkilöä' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: {
+            en: 'On the bank of the Ivalo river. The exact location is confirmed at booking',
+            fi: 'Ivalojoen rannalla. Tarkka sijainti varmistuu varauksen yhteydessä',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: { en: 'Monday to Friday, 15 June to 30 October', fi: 'Maanantaista perjantaihin, kesäkuun 15. päivästä lokakuun 30. päivään' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Language', fi: 'Kieli' },
+          value: { en: 'Finnish and English', fi: 'Suomi ja englanti' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl:
+        'https://www.elamyslahjat.fi/lahjat/taysihoidollinen-majoitus-eramokissa-kahdelle-arkena-2-vrk-ivalo/',
+      fetchedAt: '2026-11-06',
+    },
+  },
+  {
+    slug: 'katka-snowmobile-levi',
+    category: 'experiences',
+    brand: 'Tokka Safaris',
+    name: {
+      en: 'Snowmobile safari to the Kätkä wilderness, Levi',
+      fi: 'Moottorikelkkasafari Kätkän erämaahan, Levi',
+    },
+    description: {
+      en: 'A snowmobile safari of about 30 km from Levi into the Kätkätunturi wilderness. The stop is at Hanhipirtti, a wilderness café in an old cabin full of retro objects, before the ride back to Levi. No previous snowmobile experience is needed, and the gift card is for one person aged 13 or over.',
+      fi: 'Noin 30 kilometrin moottorikelkkasafari Leviltä Kätkätunturin erämaahan. Tauko pidetään Hanhipirtissä, erämaakahvilassa, joka toimii vanhassa retroesineitä täynnä olevassa tuvassa, ja sen jälkeen ajetaan takaisin Leville. Aiempaa kelkkailukokemusta ei tarvita, ja lahjakortti on yhdelle vähintään 13-vuotiaalle.',
+    },
+    priceFrom: 135,
+    currency: 'EUR',
+    priceCheckedAt: '2026-11-06',
+    image: 'prod-katka-snowmobile-levi',
+    imageIsPartner: true,
+    partnerId: 'elamyslahjat',
+    partnerProductUrl: 'https://www.elamyslahjat.fi/lahjat/seikkailu-kaetkaen-eraemaassa-levi/',
+    details: {
+      specs: [
+        {
+          key: 'contents',
+          value: {
+            en: 'Guided snowmobile safari of about 30 km for one, with a stop at the Hanhipirtti wilderness café. Winter clothing is included',
+            fi: 'Opastettu noin 30 km:n moottorikelkkasafari yhdelle, tauko Hanhipirtin erämaakahvilassa. Talvivaatteet sisältyvät',
+          },
+        },
+        {
+          key: 'other',
+          label: { en: 'Duration', fi: 'Kesto' },
+          value: { en: 'About 2 to 3 hours', fi: 'Noin 2–3 tuntia' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Participants', fi: 'Osallistujat' },
+          value: { en: '1 person aged 13 or over', fi: '1 henkilö, vähintään 13-vuotias' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Location', fi: 'Sijainti' },
+          value: { en: 'Levi. Departure from Leviraitti 13, Sirkka', fi: 'Levi. Lähtö osoitteesta Leviraitti 13, Sirkka' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Season', fi: 'Sesonki' },
+          value: { en: 'Winter, December to March', fi: 'Talvikaudella, joulu–maaliskuu' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Language', fi: 'Kieli' },
+          value: { en: 'English and Finnish', fi: 'Englanti ja suomi' },
+        },
+        {
+          key: 'other',
+          label: { en: 'Gift card', fi: 'Lahjakortti' },
+          value: { en: 'Valid for 3 years', fi: 'Voimassa 3 vuotta' },
+        },
+      ],
+      sourceUrl: 'https://www.elamyslahjat.fi/lahjat/seikkailu-kaetkaen-eraemaassa-levi/',
+      fetchedAt: '2026-11-06',
     },
   },
   // ── Nordicbuddies (Daisycon 20538, 7 %) ────────────────────────────────

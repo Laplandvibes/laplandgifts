@@ -92,6 +92,27 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       800
     ]
   },
+  "exp-culture-aalto": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-culture-arktikum": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
+  "exp-culture-korundi": {
+    "full": 1600,
+    "w": [
+      480,
+      800
+    ]
+  },
   "exp-husky-kennel": {
     "full": 1600,
     "w": [
@@ -255,6 +276,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       1920
     ]
   },
+  "prod-amethyst-mine-snowshoe-luosto": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-arabia-moomin-figurine-moomintroll": {
     "full": 800,
     "w": [
@@ -373,6 +402,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-fazer-super-salmiakki": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-fell-ice-fishing-kilpisjarvi": {
     "full": 800,
     "w": [
       320,
@@ -514,6 +551,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-snowmobile-kilpisjarvi": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-sykli-ski-gloves": {
     "full": 800,
     "w": [
@@ -602,6 +647,36 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-kaino-spruce-sprout-sparkling": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-katka-snowmobile-levi": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-koivumaa-burl-kuksa": {
+    "full": 600,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-koivumaa-kuksa-reindeer-bone": {
+    "full": 600,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-korouoma-waterfalls-rovaniemi": {
     "full": 800,
     "w": [
       320,
@@ -763,6 +838,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
   },
   "prod-meritalo-tyrnihillo": {
     "full": 750,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-midnight-sun-canoe-rovaniemi": {
+    "full": 800,
     "w": [
       320,
       480,
@@ -1002,6 +1085,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-omega7-sea-buckthorn-olive-oil": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-pahkataide-curly-birch-kuksa": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-pahkataide-kuksa-bear": {
     "full": 800,
     "w": [
       320,
@@ -1518,6 +1617,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-vaasan-ruispalat-5pack": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-wilderness-cabin-ivalo": {
     "full": 800,
     "w": [
       320,
