@@ -35,7 +35,9 @@ describe('luksusvalikoima', () => {
   it('🔴 esineet ovat käsin valittuja klassikoita, eivät vaatteita eivätkä hintasuodattimen tulos', () => {
     // Vesa 5.9.2026: "onko tää läppä että luxus sivulla on joku makia huppari
     // luxus tuotteena?" Hinta ei ole ylellisyyden mitta.
-    expect(LUXURY_OBJECT_SLUGS.length).toBe(4)
+    // 6.11.2026: 4 → 5, Iittalan Birds by Toikka -vuosilintu 2026 (suupuhallettu Iittalan
+    // lasitehtaalla Suomessa). Uusi esine lisätään tähän käsin, ei hinnan perusteella.
+    expect(LUXURY_OBJECT_SLUGS.length).toBe(5)
     for (const slug of LUXURY_OBJECT_SLUGS) {
       const p = PRODUCTS.find((x) => x.slug === slug)
       expect(p, `tuntematon esine ${slug}`).toBeTruthy()

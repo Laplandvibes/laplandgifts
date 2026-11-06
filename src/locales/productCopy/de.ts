@@ -1915,4 +1915,594 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Ernährung'],
   },
+  // Talvi- ja joulutuotteet 6.11.2026
+  'iittala-glass-baubles-red': {
+    name: 'Iittala Weihnachtskugeln aus Glas 80 mm, rot, 5 Stück',
+    description:
+      'Ein Set aus 5 roten Weihnachtskugeln aus mundgeblasenem Glas von Iittala, jede mit 80 mm Durchmesser und an einem Seidenband zum Aufhängen. Weil jede Kugel mit dem Mund geblasen wird, unterscheiden sich Form und Rotton leicht von Kugel zu Kugel. Hängen Sie sie an den Baum oder an einen Zweig in einer Vase, oder verwenden Sie sie für ein Tischarrangement.',
+    specs: [
+      '5 Kugeln',
+      'Durchmesser 8 cm',
+      'Mundgeblasenes Glas',
+      'Rot',
+      '0,706 kg brutto',
+      '32741-01, EAN 6411923679978',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Artikelnummer und EAN'],
+  },
+  'iittala-toikka-annual-bird-2026': {
+    name: 'Iittala Birds by Toikka Jahresvogel 2026, Lakla',
+    description:
+      'Lakla ist der Jahresvogel 2026 der Serie Birds by Toikka von Iittala, ein orangefarbener Vogel aus mundgeblasenem Glas, entworfen von Oiva Toikka. Iittala bringt jedes Jahr einen neuen Jahresvogel mit eigenem Muster und eigener Farbkombination heraus, und die Jahresvögel sind bei Sammlern beliebt geworden. Jeder Vogel wird von Glasbläsern in der Glashütte von Iittala in Finnland geblasen, daher können kleine Luftblasen und Unterschiede in der Wandstärke vorkommen.',
+    specs: [
+      'Länge 22 cm, Breite 10 cm, Höhe 14 cm',
+      'Mundgeblasenes Glas',
+      'Orange',
+      'Hergestellt in der Glashütte von Iittala in Finnland',
+      'Mit einem feuchten Tuch reinigen',
+      '657373-01, EAN 6411923689199',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Artikelnummer und EAN'],
+  },
+  'marimekko-siirtolapuutarha-baubles': {
+    name: 'Marimekko Siirtolapuutarha Weihnachtskugeln 2025, 2 Stück',
+    description:
+      'Die Siirtolapuutarha-Weihnachtskugeln 2025 von Marimekko sind zwei Kugeln aus Steinzeug mit Maija Louekaris Muster in Weiß, Schwarz und Grün. Siirtolapuutarha ist das finnische Wort für Schrebergarten. Jede Kugel ist 7 cm breit und 7 cm hoch, und Marimekko empfiehlt, sie nicht nur an den Baum, sondern auch ins Fenster zu hängen.',
+    specs: [
+      '2 Kugeln',
+      'Breite 7 cm, Höhe 7 cm',
+      'Steinzeug',
+      'Weiß, Schwarz und Grün',
+      'Maija Louekari',
+      '650181-01, EAN 6411255039983',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Designerin', 'Artikelnummer und EAN'],
+  },
+  'arabia-moomin-love-baubles': {
+    name: 'Arabia Mumin-Weihnachtskugeln Love, gold, 5 cm, 2 Stück',
+    description:
+      'Zwei Mumin-Weihnachtskugeln aus Vitro-Porzellan von Arabia, 5 cm groß, mit Tove Janssons Motiv Love, das Mumintroll und Snorkfräulein zeigt. Das Motiv ist zu einem Sinnbild für Liebe und enge Beziehungen geworden. Hängen Sie die Kugeln an den Baum oder an einen Dekozweig, oder machen Sie sie zum Teil einer festlichen Tischdekoration.',
+    specs: [
+      '2 Kugeln',
+      'Breite 5 cm, Höhe 5 cm',
+      'Vitro-Porzellan',
+      'Gold',
+      'Tove Jansson',
+      '699561-01, EAN 6411801029079',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustration', 'Artikelnummer und EAN'],
+  },
+  'sk-muurla-moomin-bauble-pyjamas': {
+    name: 'Muurla Mumin-Weihnachtskugel aus Glas 9 cm, Pyjama',
+    description:
+      'Eine handgefertigte Weihnachtskugel aus Glas aus der Mumin-Kollektion von Muurla, 9 cm im Durchmesser, mit dem Motiv Pyjama. Muurla beschreibt die Szene als gemütliches Faulenzen im Schlafanzug bei Kerzenschein, und ein Satinband zum Aufhängen liegt der Packung bei.',
+    specs: [
+      'Durchmesser 9 cm',
+      'Glas, handgefertigt',
+      'Satinband inklusive',
+    ],
+    specLabels: [undefined, undefined, 'Aufhängung'],
+  },
+  'sk-muurla-moomin-baubles-snow': {
+    name: 'Muurla Mumin-Weihnachtskugeln 5 cm, Lumipyry, 4 Stück',
+    description:
+      'Eine Packung mit 4 Mumin-Weihnachtskugeln von Muurla, jede 5 cm im Durchmesser, mit dem Schneesturm-Motiv Lumipyry und Satinbändern zum Aufhängen. Muurla setzt das Motiv in die Zeit kurz nach einem Schneesturm, mit hohen Schneewehen, einer schlafenden Landschaft und Schneelaternen, die darauf warten, gebaut zu werden.',
+    specs: [
+      'Durchmesser 5 cm',
+      '4 Kugeln, Satinbänder inklusive',
+    ],
+  },
+  'sk-muurla-moomin-led-ball': {
+    name: 'Muurla Mumin LED-Glaskugel 11 cm, Tähtihetki',
+    description:
+      'Eine Dekokugel aus Glas aus Muurlas Mumin-Kollektion Tähtihetki, 11 cm im Durchmesser, mit einer Lichterkette aus 10 LEDs im Inneren. Sie hat einen Ein-/Ausschalter, läuft mit CR2032-Lithium-Knopfzellen, die nicht im Lieferumfang enthalten sind, und ist nur für den Innenbereich bestimmt. Die Kollektion Tähtihetki hat goldene Details, und ein Satinband zum Aufhängen liegt der Packung bei.',
+    specs: [
+      'Durchmesser 11 cm',
+      'Glas, LED-Lichterkette mit 10 LEDs',
+      'CR2032-Lithium-Knopfzellen, nicht enthalten. Ein-/Ausschalter',
+      'Nur für den Innenbereich. CE-zertifiziert',
+      'Entworfen in Finnland',
+    ],
+    specLabels: [undefined, undefined, 'Stromversorgung', 'Verwendung', 'Design'],
+  },
+  'sk-muurla-moomin-led-candle-tree': {
+    name: 'Muurla Mumin LED-Kerze 12,5 cm, Unter der Fichte',
+    description:
+      'Eine batteriebetriebene LED-Kerze aus Muurlas Kollektion Moomin Originals, 12,5 cm hoch, mit einem Bild aus Tove Janssons Buch Sturm im Mumintal. Sie besteht aus Paraffinwachs und ist so geformt, dass sie wie eine echte Stearinkerze aussieht, und ihr warmes Licht bringt das Bild zur Geltung. Sie hat die Stufen Ein, Aus und 6-Stunden-Timer, benötigt 2 AA-Batterien, die nicht enthalten sind, und ist nur für den Innenbereich bestimmt.',
+    specs: [
+      'Durchmesser 10 cm, Höhe 12,5 cm',
+      'Paraffinwachs',
+      '2 x AA-Batterien, nicht enthalten',
+      'Ein, Aus und 6-Stunden-Timer',
+      'Nur für den Innenbereich',
+      'Tove Jansson, aus Sturm im Mumintal',
+    ],
+    specLabels: [undefined, undefined, 'Stromversorgung', 'Funktionen', 'Verwendung', 'Illustration'],
+  },
+  'arabia-moomin-plates-winter-night': {
+    name: 'Arabia Mumin-Teller 19 cm, Büro & Winternacht, 2 Stück',
+    description:
+      'Zwei Mumin-Teller von Arabia aus weißem Vitro-Porzellan, 19 cm, mit den Motiven Büro und Winternacht, passend zu früheren Bechern. Das Büro-Bild erschien erstmals 1996 auf einem Mumin-Becher von Arabia und geht auf Comicstrips zurück, in denen Schreiben, Zeichnen und Malen immer wiederkehren. Winternacht greift das Bild eines Bechers von 2006 auf, auf dem der Mumintroll auf einem Brückengeländer sitzt, in einer Szene aus Tove Janssons Winter im Mumintal von 1957.',
+    specs: [
+      'Durchmesser 19,4 cm, Höhe 2,8 cm',
+      'Vitro-Porzellan',
+      '2 Teller, Büro und Winternacht',
+      'Spülmaschinen-, mikrowellen- und backofenfest',
+      'Tove Jansson',
+      '566802-01, EAN 6411801011432',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustration', 'Artikelnummer und EAN'],
+  },
+  'arabia-moomin-plates-winter-fire': {
+    name: 'Arabia Mumin-Teller 19 cm, Winterfeuer & Segeln, 2 Stück',
+    description:
+      'Zwei Mumin-Teller von Arabia aus Vitro-Porzellan, 19 cm, einer mit dem Bild Winterfeuer, einer mit Segeln, beide nach Tove Janssons Illustrationen. Das Paar stellt eine Winterszene neben eine Segelszene und ist für den Alltag ebenso gedacht wie für festliche Mahlzeiten.',
+    specs: [
+      '2 Teller, Winterfeuer und Segeln',
+      'Vitro-Porzellan',
+      'Mehrfarbig',
+      '0,886 kg brutto',
+      'Tove Jansson',
+      '629239-01, EAN 6411801015065',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustration', 'Artikelnummer und EAN'],
+  },
+  'sk-muurla-moomin-snowfall-mug': {
+    name: 'Muurla Mumin Emaillebecher 2,5 dl, Schneefall',
+    description:
+      'Ein Mumin-Emaillebecher von Muurla mit 2,5 dl und dem Motiv Schneefall, das den ersten Schnee im Mumintal und die Zeit der Schneespiele zeigt. Muurla fertigt sein Emailgeschirr mit einem Kern aus Kohlenstoffstahl und zwei Emailleschichten, daher eignet sich der Becher für Wanderung, Hütte oder Boot ebenso wie für den Tisch. Er ist für heiße und kalte Getränke geeignet und spülmaschinenfest, aber nicht für die Mikrowelle.',
+    specs: [
+      '2,5 dl',
+      'Kohlenstoffstahl, doppelte Emaillierung',
+      'Spülmaschinenfest. Nicht für die Mikrowelle',
+    ],
+  },
+  'sk-muurla-moomin-gifts-mug': {
+    name: 'Muurla Mumin Emaillebecher 3,7 dl, Geschenke',
+    description:
+      'Ein Mumin-Emaillebecher von Muurla mit 3,7 dl und dem Motiv Geschenke, einem Weihnachtsbild über das Schenken an die Menschen, die einem nahestehen. Unter der Emaille steckt ein Kern aus Kohlenstoffstahl mit doppelter Beschichtung, wodurch der Becher robust genug für draußen ist und nicht nur für den Tisch taugt. Er ist für heiße und kalte Getränke geeignet und darf in die Spülmaschine, aber nicht in die Mikrowelle.',
+    specs: [
+      '3,7 dl',
+      'Kohlenstoffstahl, doppelte Emaillierung',
+      'Spülmaschinenfest. Nicht für die Mikrowelle',
+    ],
+  },
+  'rj-pesonen-beeswax-candle': {
+    name: 'Pesosen Mehiläistarhat Tischkerze aus Bienenwachs, groß',
+    description:
+      'Pesosen Mehiläistarhat fertigt diese große Tischkerze von Hand aus Bienenwachs, das ihr auch Farbe und Duft gibt. Esa von der Imkerei hält seit 29 Jahren Bienen, 13 davon beruflich, und die Bienenstöcke stehen zwischen Feldern, Wäldern und kleinen Gewässern rund um Sastamala und Hämeenkyrö. Die Imkerei macht ihre Kerzen aus dem, was die eigenen Bienenvölker liefern, und sie brennen lange mit einer hellen, ruhigen Flamme.',
+    specs: [
+      'Bienenwachs',
+      'Groß',
+      'Handgefertigt',
+      'Sastamala und Hämeenkyrö',
+    ],
+    specLabels: [undefined, undefined, 'Herstellung', 'Bienenstände'],
+  },
+  'rj-pesonen-honeycomb-candle': {
+    name: 'Pesosen Mehiläistarhat Wabenkerze aus Bienenwachs, groß',
+    description:
+      'Eine große, von Hand aus Bienenwachs gefertigte Wabenkerze von Pesosen Mehiläistarhat mit einer Brenndauer von 30 Stunden. Farbe und Duft kommen vom Wachs, und die Imkerei macht ihre Kerzen aus dem, was die eigenen Bienenvölker rund um Sastamala und Hämeenkyrö liefern. Esa von der Imkerei hält seit 29 Jahren Bienen und betreut sie seit 13 Jahren beruflich.',
+    specs: [
+      'Bienenwachs',
+      'Groß',
+      '30 h',
+      'Handgefertigt',
+      'Sastamala und Hämeenkyrö',
+    ],
+    specLabels: [undefined, undefined, 'Brenndauer', 'Herstellung', 'Bienenstände'],
+  },
+  'sk-moomin-mistletoe-candle': {
+    name: 'Havi Mumin-Tischkerze 7 x 12 cm, Mistel, beige',
+    description:
+      'Eine beige Mumin-Tischkerze von Havi mit dem Muster Mistel, 7 x 12 cm groß und mit einer Brenndauer von 55 Stunden. Das Muster ist im Siebdruck auf die Kerze gedruckt.',
+    specs: [
+      '7 x 12 cm',
+      'Beige',
+      '55 h',
+      'Siebdruck',
+      'Havi Oy, Riihimäki',
+    ],
+    specLabels: [undefined, undefined, 'Brenndauer', 'Dekor', 'Inverkehrbringer'],
+  },
+  'iittala-kastehelmi-tealight': {
+    name: 'Iittala Kastehelmi Teelichthalter 64 mm, klar',
+    description:
+      'Ein Kastehelmi-Teelichthalter aus klarem Glas von Iittala, 64 mm im Durchmesser, aus der Serie, die Oiva Toikka 1964 für Iittala entwarf. Kastehelmi ist das finnische Wort für Tautropfen, und Iittala hat die Serie 2010 neu aufgelegt. Den Halter gibt es auch in anderen Farben, und Iittala schlägt vor, ihn einzeln oder in Gruppen mit verschiedenen Farben zu verwenden.',
+    specs: [
+      'Durchmesser 6,4 cm',
+      'Glas',
+      'Klar',
+      'Nur Handwäsche',
+      'Oiva Toikka, Iittala Kastehelmi',
+      '13167-01, EAN 6411920059766',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Designer und Kollektion', 'Artikelnummer und EAN'],
+  },
+  'sk-fazer-christmas-box': {
+    name: 'Fazer Weihnachtsbox 2026',
+    description:
+      'Die Weihnachtsbox 2026 von Fazer mit 6 Packungen saisonaler Schokolade, Süßigkeiten und Pfefferkuchen. Darin stecken Karl Fazer Pralinen, eine Karl Fazer Pfefferkuchen-Schokoladentafel, Remix Xmas + Choco, Dumle Winter Mix Toffees, Vihreät kuulat Birnen-Geleebonbons und Marianne Pfefferkuchen mit Minzschokolade.',
+    specs: [
+      'Karl Fazer Pralinen 250 g, Karl Fazer Pfefferkuchen-Schokoladentafel 200 g, Remix Xmas + Choco Süßigkeitenmischung 300 g, Dumle Winter Mix Toffeemischung 180 g, Vihreät kuulat Birnen-Geleebonbons 260 g, Marianne Pfefferkuchen mit Minzschokolade 175 g',
+      'Milchschokolade mit mindestens 30 % Kakao',
+      'Enthält Weizen (Gluten), Soja und Milch (Laktose). Kann Roggen, Gerste, Hafer, Ei, Nüsse und Mandeln enthalten',
+      'Energie 1845 kJ / 441 kcal, Fett 17 g, davon gesättigte Fettsäuren 9,4 g, Kohlenhydrate 67 g, davon Zucker 53 g, Eiweiß 4,6 g, Salz 0,36 g',
+    ],
+    specLabels: [undefined, 'Hinweise auf dem Etikett', 'Allergene', 'Nährwerte je 100 g'],
+  },
+  'sk-karl-fazer-advent-calendar': {
+    name: 'Karl Fazer Adventskalender 200 g',
+    description:
+      'Ein Karl Fazer Adventskalender mit 200 g Pralinen in mehreren Geschmacksrichtungen hinter den Türchen. Das letzte Türchen ist mit Fazer Blue gefüllt, der Karl Fazer Milchschokolade, die Fazer seit 1922 herstellt. Fazer bezieht seinen Kakao im Rahmen des Programms Fazer Cocoa Vision.',
+    specs: [
+      '200 g',
+      'Pralinen in mehreren Geschmacksrichtungen, das letzte Türchen mit Fazer Blue Milchschokolade gefüllt',
+      'Milchschokolade mit mindestens 30 % Kakao',
+      'Enthält Milch, Soja und Gerste (Gluten). Kann Nüsse, Mandeln, Weizen, Roggen und Hafer enthalten',
+      'Energie 2315 kJ / 554 kcal, Fett 34 g, davon gesättigte Fettsäuren 20 g, Kohlenhydrate 53 g, davon Zucker 51 g, Eiweiß 9,6 g, Salz 0,31 g',
+    ],
+    specLabels: [undefined, undefined, 'Hinweise auf dem Etikett', 'Allergene', 'Nährwerte je 100 g'],
+  },
+  'sk-fazer-christmas-chocolates': {
+    name: 'Fazer Joulusuklaa Weihnachtspralinen 295 g',
+    description:
+      'Fazer Joulusuklaa Pralinen, 295 g, mit einer milden Milchschokoladenhülle um eine Trüffelfüllung mit echten Pfefferkuchenkrümeln. Fazer empfiehlt sie für weihnachtliche Zusammenkünfte, zum Beispiel zu Glögg, dem nordischen Glühgetränk.',
+    specs: [
+      '295 g',
+      'Milchschokoladenhülle, Trüffelfüllung mit Pfefferkuchenkrümeln',
+      'Milchschokolade mit mindestens 30 % Kakao',
+      'Enthält Milch, Weizen, Gerste (Gluten) und Soja. Kann Nüsse, Mandeln, Roggen und Hafer enthalten',
+      'Energie 2274 kJ / 545 kcal, Fett 33 g, davon gesättigte Fettsäuren 19 g, Kohlenhydrate 53 g, davon Zucker 51 g, Eiweiß 8,2 g, Salz 0,24 g',
+    ],
+    specLabels: [undefined, undefined, 'Hinweise auf dem Etikett', 'Allergene', 'Nährwerte je 100 g'],
+  },
+  'sk-karl-fazer-gingerbread-bar': {
+    name: 'Karl Fazer Winter Edition Pfefferkuchenschokolade 200 g',
+    description:
+      'Eine 200-g-Tafel Karl Fazer Winter Edition, die zarte Milchschokolade mit knusprigem Pfefferkuchen verbindet. Fazer stellt Karl Fazer Milchschokolade seit 1922 her, und diese Pfefferkuchentafel ist die Weihnachtsedition.',
+    specs: [
+      '200 g',
+      'Milchschokolade mit knusprigem Pfefferkuchen',
+      'Milchschokolade mit mindestens 30 % Kakao',
+      'Enthält Milch, Weizen (Gluten) und Soja. Kann Nüsse, Mandeln, Roggen und Hafer enthalten',
+      'Energie 2205 kJ / 527 kcal, Fett 30 g, davon gesättigte Fettsäuren 18 g, Kohlenhydrate 55 g, davon Zucker 48 g, Eiweiß 8,5 g, Salz 0,22 g',
+    ],
+    specLabels: [undefined, undefined, 'Hinweise auf dem Etikett', 'Allergene', 'Nährwerte je 100 g'],
+  },
+  'sk-fazer-glogg-balls': {
+    name: 'Fazer Glögikuulat Geleekugeln 260 g',
+    description:
+      'Eine 260-g-Schachtel Fazer Glögikuulat, weiche, süße Geleekugeln, benannt nach Glögg, dem nordischen Glühgetränk. Sie enthalten kein Gluten, keine Gelatine und keine Laktose und sind für Veganer geeignet. In der Schachtel liegt ein Rezept, mit dem man daraus ein warmes Getränk macht.',
+    specs: [
+      '260 g',
+      'Glutenfrei, gelatinefrei, laktosefrei, vegan',
+      'Energie 1353 kJ / 322 kcal, Fett 0 g, davon gesättigte Fettsäuren 0 g, Kohlenhydrate 79 g, davon Zucker 64 g, Eiweiß 0 g, Salz 0,28 g',
+    ],
+    specLabels: [undefined, 'Ernährung', 'Nährwerte je 100 g'],
+  },
+  'sk-halva-christmas-liquorice': {
+    name: 'Halva Weihnachts-Lakritzmischung 250 g',
+    description:
+      'Die weihnachtliche Lakritzmischung von Halva, 250 g Lakritz in 3 weihnachtlichen Sorten, verpackt in einer roségoldfarbenen Schachtel. Darin sind Lakritzblüten mit Apfelkuchengeschmack, Lakritz mit Glögg-Füllung und Lakritz mit Pfefferkuchenfüllung. Halva stellt die Mischung in Pitäjänmäki in Helsinki her.',
+    specs: [
+      '250 g',
+      'Lakritzblüten mit Apfelkuchengeschmack, Lakritz mit Glögg-Füllung, Lakritz mit Pfefferkuchenfüllung',
+      'Hergestellt in Pitäjänmäki, Helsinki',
+      'Enthält Weizen (Gluten)',
+      'Energie 1419 kJ / 334 kcal, Fett 0,7 g, davon gesättigte Fettsäuren 0,3 g, Kohlenhydrate 79 g, davon Zucker 53 g, Eiweiß 2,9 g, Salz 0,15 g',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Allergene', 'Nährwerte je 100 g'],
+  },
+  'sk-halva-salmiakki-calendar': {
+    name: 'Halva Salmiak-Adventskalender 200 g',
+    description:
+      'Ein Adventskalender von Halva mit 200 g Salmiak, dem finnischen salzigen Lakritz, ausgewählt aus Halvas eigenem Sortiment. Hinter den Türchen stecken Vanhat Autot, Salmiakfische, salzige Totenköpfe, Pommix, Salmiakherzen, Salmiakschwerter, Salmiakkiruutu-Quadrate und harter Jauhix-Salmiak.',
+    specs: [
+      '200 g',
+      'Vanhat Autot Salmiak, Salmiakfisch, salziger Totenkopf, Pommix Salmiak, Salmiakherz, Salmiakschwert, Salmiakkiruutu, Jauhix Salmiak',
+      'Energie 1406 kJ / 331 kcal, Fett 0,5 g, davon gesättigte Fettsäuren 0,1 g, Kohlenhydrate 80 g, davon Zucker 59 g, Eiweiß 2,7 g, Salz 0,03 g',
+    ],
+    specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
+  },
+  'kuivalihakundi-advent-calendar': {
+    name: 'Kuivalihakundi Jerky-Adventskalender 2026, 24 Türchen',
+    description:
+      'Der Adventskalender 2026 von Kuivalihakundi enthält 24 verschiedene Jerky-Sorten, hinter jedem der 24 Türchen einen 20-g-Beutel. Es gibt Rind, Huhn, fetteres und magereres Schweinefleisch, in Grundsorten und in einigen, die nur für diesen Kalender gemacht wurden, alle aus der eigenen Fabrik des Unternehmens in Jokela, Finnland. Das Jerky hält sich auch nach dem Öffnen bei Raumtemperatur, der Kalender steht auf dem Tisch oder hängt mit seinen Aufhängelöchern an der Wand, und er ist eine limitierte Auflage.',
+    specs: [
+      '24 x 20 g Beutel Jerky, hinter jedem Türchen eine andere Sorte',
+      'Rind, Huhn, fetteres und magereres Schweinefleisch',
+      'Hergestellt in der eigenen Fabrik von Kuivalihakundi in Jokela, Finnland',
+      'Hält sich bei Raumtemperatur, auch nach dem Öffnen',
+      'Steht auf dem Tisch oder hängt an seinen Aufhängelöchern an der Wand',
+    ],
+    specLabels: [undefined, 'Fleischsorten', undefined, undefined, 'Aufhängung'],
+  },
+  'halti-crostie-merino-beanie': {
+    name: 'Halti Crostie Merinomütze',
+    description:
+      'Eine eng anliegende Halti-Mütze für Langlauf, Winterläufe und anderen Sport in der Kälte, in Finnland entworfen und hergestellt. Die Hälfte ist mit Stormwall® gefüttert, einer winddichten und atmungsaktiven Schicht, die Stirn und Ohren vor dem Wind schützt. Das Strickmaterial selbst ist eine weiche Merinowollmischung, die warm hält und trotzdem atmet.',
+    specs: [
+      'Strick aus einer Mischung von Merinowolle und Acryl, 50 % Merinowolle, 50 % Acryl. Zur Hälfte mit Stormwall® gefüttert',
+      'S, M, L',
+      '0,2 kg',
+      'Mehrere Farben: Crocus Petal, Black, White, Fudge Maroon Red, Veiled Pink',
+      'Mit ähnlichen Farben waschen, liegend trocknen',
+      'In Finnland entworfen und hergestellt, Avainlippu-Produkt (Schlüsselflagge)',
+    ],
+  },
+  'halti-vuolle-mohair-beanie': {
+    name: 'Halti Vuolle Mohairmütze',
+    description:
+      'Eine flauschige Halti-Mütze aus Mohair, Merinowolle und Polyamid, doppellagig für zusätzliche Wärme und mit hohem Umschlag. Die Mischung macht sie leicht und trotzdem warm, und ein separates Futter gibt es nicht. Einheitsgröße, in Snow White oder Black.',
+    specs: [
+      'Mohairmischung, 50 % Mohair, 32 % Polyamid, 18 % Merinowolle. Kein separates Futter',
+      'Einheitsgröße',
+      'Snow White oder Black',
+      'Mit ähnlichen Farben waschen, liegend trocknen',
+      'Doppellagige Konstruktion, hoher Umschlag',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Ausstattung'],
+  },
+  'halti-tiilo-mittens': {
+    name: 'Halti Tiilo II Fäustlinge',
+    description:
+      'Wattierte Halti-Fäustlinge für Outdoor-Aktivitäten im Winter, aus wasser- und winddichtem DrymaxX®-Gewebe mit 60 g Microtherm®-Wattierung im Inneren. Die Handfläche ist aus griffigem Kunstleder, dazu kommen ein Innenbündchen in Rippstrick und eine verstellbare Weitenregulierung am Handgelenk. Schwarz, Größen 7 bis 12.',
+    specs: [
+      'DrymaxX® Polyester mit Membran, 100 % Polyester. Bündchen in Rippstrick, 100 % Polyester. Handfläche aus Kunstleder, 100 % Polyurethan',
+      '60 g Microtherm®-Wattierung',
+      '7, 8, 9, 10, 11, 12',
+      'Schwarz',
+      'Separat waschen',
+    ],
+    specLabels: [undefined, 'Isolierung', undefined, undefined, undefined],
+  },
+  'halti-warm-merino-socks': {
+    name: 'Halti warme Merinosocken',
+    description:
+      'Halti-Socken aus Merinowolle in dickem Frotteestrick, in Finnland gefertigt und nahtlos, daher sitzen sie gut in Ski-, Winter- und Snowboardschuhen. Der Frottee schließt Luft ein und wärmt, und der Schaft in Rippstrick rutscht nicht herunter. Tragen Sie sie allein oder über einem dünnen Paar Socken.',
+    specs: [
+      'Merinowollmischung, 62 % Merinowolle, 36 % Polyamid, 2 % Elasthan',
+      '34-36, 37-39, 40-42, 43-45, 46-48',
+      'Dark Sea Green oder Asphalt',
+      '0,1 kg',
+      'Hergestellt in Finnland, Avainlippu-Produkt (Schlüsselflagge)',
+      'Dicker Frotteestrick, nahtlos, Schaft in Rippstrick, der nicht herunterrutscht',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Ausstattung'],
+  },
+  'north-outdoor-kaisla-beanie': {
+    name: 'North Outdoor Kaisla Merinomütze, Coffee',
+    description:
+      'Eine dicke Mütze im Patentstrick aus 100 Prozent mulesingfreier Merinowolle, gestrickt in der eigenen Strickerei von North Outdoor in Oulu. North Outdoor empfiehlt sie vom Herbst bis zum Spätwinter, für Stadtspaziergänge ebenso wie für Naturpfade. Einheitsgröße, in der Farbe Coffee.',
+    specs: [
+      '100 % Merinowolle, mulesingfrei, Patentstrick',
+      'Einheitsgröße',
+      'Coffee',
+      'Hergestellt in der eigenen Strickerei von North Outdoor in Oulu, Finnland',
+    ],
+  },
+  'north-outdoor-polku-neck-tube': {
+    name: 'North Outdoor Polku Merino-Schlauchschal, Coffee',
+    description:
+      'Ein dicker Schlauchschal aus 100 Prozent mulesingfreier Merinowolle, dicht im 1x1-Rippmuster gestrickt. Er ist hoch genug, um ihn als Schal zu tragen, als Kapuze hochzuziehen oder damit das Gesicht zu bedecken. Einheitsgröße, in der Farbe Coffee.',
+    specs: [
+      '100 % Merinowolle, mulesingfrei, 1x1-Rippstrick',
+      'Einheitsgröße',
+      'Coffee',
+      'Schal, Kapuze oder Gesichtsschutz',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Verwendung'],
+  },
+  'north-outdoor-hirsi-socks': {
+    name: 'North Outdoor Hirsi Merinowollsocken, Almond',
+    description:
+      'Leichte Merinowollsocken aus der eigenen Strickerei von North Outdoor in Oulu. Sie bestehen zu 80 Prozent aus mulesingfreier Merinowolle und zu 20 Prozent aus Polyamid für mehr Haltbarkeit. Am besten eignen sie sich für drinnen, allein oder über einem anderen Paar Socken. Sie vertragen eine schonende Maschinenwäsche, auch wenn sie selten eine brauchen.',
+    specs: [
+      '80 % Merinowolle, mulesingfrei, 20 % Polyamid',
+      '35-38, 39-42, 43-46',
+      'Almond',
+      'Hergestellt in der eigenen Strickerei von North Outdoor in Oulu, Finnland',
+      'Schonende Maschinenwäsche',
+    ],
+  },
+  'north-outdoor-avery-mittens': {
+    name: 'North Outdoor Avery Wollfleece-Fäustlinge, Latte',
+    description:
+      'Fäustlinge aus einer leichten italienischen Wollfleece-Mischung mit 63 Prozent recycelter Wolle, innen mit 100 Prozent Merinowolle gefüttert. Das Merinofutter leitet Feuchtigkeit ab und hält die Wärme, und die eng anliegende, aber flexible Passform lässt Ihnen das Gefühl beim Greifen. Größen S und M, in der Farbe Latte.',
+    specs: [
+      'Italienische Wollfleece-Mischung, 63 % recycelte Wolle. Futter 100 % Merinowolle',
+      'S, M',
+      'Latte',
+      'Draußen und in der Stadt',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Verwendung'],
+  },
+  'makia-alvar-beanie': {
+    name: 'Makia Alvar Merinomütze',
+    description:
+      'Eine Mütze von Makia aus 100 Prozent Merinowolle, hergestellt in Finnland. Die Wolle ist mulesingfrei, und die Mütze gibt es in einer Einheitsgröße.',
+    specs: [
+      '100 % Merinowolle, mulesingfrei',
+      'Einheitsgröße',
+      'Hergestellt in Finnland',
+    ],
+  },
+  'makia-stellar-scarf': {
+    name: 'Makia Stellar Merinoschal',
+    description:
+      'Ein Schal von Makia aus 100 Prozent Merinowolle. Es gibt ihn in einer Einheitsgröße.',
+    specs: [
+      '100 % Merinowolle',
+      'Einheitsgröße',
+    ],
+  },
+  'makia-freja-mittens': {
+    name: 'Makia Freja gesteppte Fäustlinge',
+    description:
+      'Gesteppte Fäustlinge von Makia, gefüttert mit Sorona® Kunstdaune, einer teilweise pflanzenbasierten Isolierung, die atmet und die Wärme hält. Eine Wassersäule von 3000 mm hilft, die Hände bei leichtem Regen trocken zu halten. Größen S und M.',
+    specs: [
+      'Sorona® Kunstdaune, teilweise pflanzenbasiert',
+      '3000 mm',
+      'S, M',
+    ],
+    specLabels: ['Isolierung', 'Wassersäule', undefined],
+  },
+  'makia-sibelius-beanie': {
+    name: 'Makia Sibelius Merinomütze',
+    description:
+      'Die Mütze Sibelius von Makia, aus 100 Prozent Merinowolle. Es gibt sie in einer Einheitsgröße.',
+    specs: [
+      '100 % Merinowolle',
+      'Einheitsgröße',
+    ],
+  },
+  'nb-moomin-christmas-sockbox': {
+    name: 'Mumin-Weihnachtsgeschenkbox mit Socken, EU 36-42',
+    description:
+      'Eine fertig gepackte Mumin-Weihnachtsgeschenkbox mit zwei Paar Socken, in einer Einheitsgröße für EU 36 bis 42. Die Socken bestehen überwiegend aus Baumwolle mit Polyester, Nylon und etwas Elasthan, und es ist ein offizielles Mumin-Produkt.',
+    specs: [
+      '60 % Baumwolle, 33 % Polyester, 4 % Nylon, 2 % Elasthan, 1 % Elastodien',
+      'Einheitsgröße, EU 36-42',
+      '2 Paar Socken in einer Geschenkbox',
+      'Offizielles Moomin-Produkt',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Lizenz'],
+  },
+  'nb-moomin-christmas-box-men': {
+    name: 'Mumin-Weihnachtsgeschenkbox mit Herrensocken, EU 40-45',
+    description:
+      'Eine fertig gepackte Mumin-Weihnachtsgeschenkbox mit zwei Paar Herrensocken in Größe EU 40 bis 45. Nach Erfahrung von Nordicbuddies passen sie auch größeren Füßen. Die Socken bestehen überwiegend aus Baumwolle mit Polyester, Nylon und etwas Elasthan, und es ist ein offizielles Mumin-Produkt.',
+    specs: [
+      '60 % Baumwolle, 33 % Polyester, 4 % Nylon, 2 % Elasthan, 1 % Elastodien',
+      'Einheitsgröße, EU 40-45',
+      '2 Paar Socken in einer Geschenkbox',
+      'Offizielles Moomin-Produkt',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Lizenz'],
+  },
+  'nb-moomintroll-fleece-mittens': {
+    name: 'Mumintroll Fleece-Fäustlinge',
+    description:
+      'Mumintroll-Fäustlinge aus Fleece, hergestellt aus 100 Prozent recyceltem Polyester, mit Acrylfutter. Sie sind dehnbar, sodass eine Größe den meisten passt, und sie sind ein offizielles Mumin-Produkt.',
+    specs: [
+      '100 % recyceltes Polyester',
+      '100 % Acryl',
+      'Einheitsgröße, dehnbar, passt den meisten',
+      'Offizielles Moomin-Produkt',
+    ],
+    specLabels: [undefined, 'Futter', undefined, 'Lizenz'],
+  },
+  'nb-moomintroll-chunky-beanie': {
+    name: 'Flauschige dicke Mumintroll-Mütze, rosa',
+    description:
+      'Eine flauschige, dicke Mumintroll-Mütze in Rosa, in einer Erwachsenengröße, die allen passt. Das Material ist eine Mischung aus Polyester, Nylon, Acryl, Wolle und Elasthan, und sie ist ein offizielles Mumin-Produkt.',
+    specs: [
+      'Polyester, Nylon, Acryl, Wolle und Elasthan',
+      'Erwachsene, Einheitsgröße',
+      'Rosa',
+      'Offizielles Moomin-Produkt',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Lizenz'],
+  },
+  'sk-nordqvist-tea-calendar': {
+    name: 'Nordqvist Tee-Adventskalender, 27 Beutel',
+    description:
+      'Ein würfelförmiger Tee-Adventskalender von Nordqvist mit 25 Türchen und 27 Teebeuteln, denn hinter dem letzten Türchen stecken drei. Die Beutel enthalten Schwarztee, Grüntee und Rooibos sowie Hibiskusmischungen, darunter weihnachtliche Sorten wie Pfefferkuchen, Glögg und Zimt.',
+    specs: [
+      '25 Türchen, 27 Teebeutel. Hinter dem letzten Türchen stecken 3 Beutel',
+      'Schwarztee, Grüntee und Rooibos, Hibiskusmischungen',
+      'Nordqvist Oy, Nurmijärvi',
+      '6413440000433',
+    ],
+    specLabels: [undefined, 'Teesorten', 'Inverkehrbringer', 'EAN'],
+  },
+  'sk-nordqvist-moomin-tea-calendar': {
+    name: 'Nordqvist Mumin-Tee-Adventskalender, 24 Beutel, flieder',
+    description:
+      'Ein fliederfarbener Mumin-Tee-Adventskalender von Nordqvist mit 24 Pyramidenteebeuteln in 12 Sorten, je zwei von jeder. Schwarz- und Grüntee stehen neben koffeinfreiem Rooibos, und jede Sorte hat ihren eigenen Namen, von Olet Ihana (Du bist wunderbar) bis Muumimamman Voimajuoma (Muminmamas Kraftgetränk). Der Deckel öffnet sich so, dass der Kalender aufrecht stehen bleibt, und er ist Rainforest-Alliance-zertifiziert.',
+    specs: [
+      '24 Pyramidenteebeutel, 12 Sorten, je 2',
+      '41,5 g',
+      'Flieder',
+      'Rainforest Alliance',
+      'Nordqvist Oy, Nurmijärvi',
+      '6413440000679',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Zertifizierung', 'Inverkehrbringer', 'EAN'],
+  },
+  'sk-nordic-glogg-concentrate': {
+    name: 'Poikain Parhaat Nordic Glögg Konzentrat 0,5 l',
+    description:
+      'Ein alkoholfreies (0 %) Glögg-Konzentrat, von Hand gemacht aus finnischem Saft von schwarzen und roten Johannisbeeren und echten Gewürzen. Es wird im Verhältnis 1+3 gemischt. Poikain Parhaat beschreibt es als beerenreich und warm gewürzt, einen Glögg mit traditionellem Geschmack.',
+    specs: [
+      '0,5 l',
+      '1+3',
+      '0 %',
+      'Saft von schwarzen und roten Johannisbeeren aus Finnland',
+      'Energie 47,7 kcal / 199,58 kJ, Fett 0,2 g, davon gesättigte Fettsäuren 0,2 g, Kohlenhydrate 11 g, davon Zucker 11 g, Eiweiß 0,3 g, Salz 0,2 g',
+      'Poikain Parhaat Oy Ltd, Tampere',
+    ],
+    specLabels: [undefined, 'Mischverhältnis', 'Alkohol', undefined, 'Nährwerte je 100 ml', 'Inverkehrbringer'],
+  },
+  'rj-christmas-coffee': {
+    name: 'Gran Palomar Weihnachtskaffee 200 g',
+    description:
+      'Gran Palomar Weihnachtskaffee von Cafetoria Roastery, ein Bio-Kaffee aus fairem Handel, gewürzt mit Bio-Zimt und Bio-Kardamom. Er wird in einer 200-g-Packung geliefert.',
+    specs: [
+      '200 g',
+      'Bio-Zimt und Bio-Kardamom',
+      'Fairer Handel, Bio',
+      'Cafetoria Roastery Oy',
+    ],
+    specLabels: [undefined, 'Gewürze', 'Zertifizierung', 'Rösterei'],
+  },
+  'sk-emendo-santa-sauna-scent': {
+    name: 'Emendo offizieller Weihnachtsmann-Saunaduft 500 ml',
+    description:
+      'Der offizielle Saunaduft des Weihnachtsmanns von Emendo, 500 ml mit 100 % echten ätherischen Ölen und ohne synthetische Duftstoffe. Mischen Sie etwa ½ dl in einen Eimer mit etwa 3 l Wasser und verwenden Sie die Mischung wie normales Aufgusswasser.',
+    specs: [
+      '500 ml',
+      'Enthält 100 % ätherische Öle, keine synthetischen Duftstoffe (Parfum)',
+      'Etwa ½ dl in einem Eimer mit etwa 3 l Wasser',
+      '©Santa Claus Foundation™',
+      '6417892057458',
+    ],
+    specLabels: [undefined, 'Zusammensetzung', 'Anwendung', 'Lizenz', 'EAN'],
+  },
+  'sk-emendo-christmas-sauna-set': {
+    name: 'Emendo Jouluhetki Sauna-Geschenkset',
+    description:
+      'Jouluhetki, auf Finnisch Weihnachtsmoment, ist ein Sauna-Geschenkset von Emendo mit Seife an einer Kordel, Saunaduft und Duschschwamm. Es wird fertig als Geschenk verpackt geliefert.',
+    specs: [
+      'Seife an einer Kordel, Saunaduft, Duschschwamm',
+      '6417892041280',
+    ],
+    specLabels: [undefined, 'EAN'],
+  },
+  'sk-emendo-gingerbread-glogg-scent': {
+    name: 'Emendo Saunadüfte Pfefferkuchen und Glögg, 2 x 10 ml',
+    description:
+      'Zwei Saunadüfte von Emendo, Pfefferkuchen und Glögg, je 10 ml und aus echten, 100-prozentigen ätherischen Ölen hergestellt. Geben Sie 2 bis 6 Tropfen in eine Kelle Wasser und geben Sie die Mischung auf die Steine.',
+    specs: [
+      '2 x 10 ml',
+      'Pfefferkuchen, Glögg',
+      'Aus 100 % ätherischen Ölen hergestellt',
+      '2 bis 6 Tropfen in einer Kelle Wasser',
+      '6417892021060',
+    ],
+    specLabels: [undefined, 'Düfte', 'Zusammensetzung', 'Anwendung', 'EAN'],
+  },
+  'sk-aromageddon-gingerbread-scent': {
+    name: 'Aromageddon Saunaduft Piparipyörre 15 ml',
+    description:
+      'Piparipyörre von Aromageddon, auf Deutsch etwa Pfefferkuchenwirbel, bringt einen warmen, würzigen Zimtduft mit einer Pfefferkuchennote in die Sauna. Geben Sie 2 bis 4 Tropfen in eine Kelle Wasser und verwenden Sie den Duft immer verdünnt, nie pur direkt auf den Ofen gegossen.',
+    specs: [
+      '15 ml',
+      'Zimt mit einer Pfefferkuchennote',
+      '2 bis 4 Tropfen in einer Kelle Wasser, immer verdünnt',
+      'Aromageddon Oy, Espoo',
+    ],
+    specLabels: [undefined, 'Duft', 'Anwendung', 'Inverkehrbringer'],
+  },
 }

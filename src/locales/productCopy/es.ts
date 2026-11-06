@@ -1880,4 +1880,594 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Dieta'],
   },
+  // Talvi- ja joulutuotteet 6.11.2026
+  'iittala-glass-baubles-red': {
+    name: 'Esferas navideñas de vidrio Iittala 80 mm, rojas, 5 uds.',
+    description:
+      'Un set de 5 esferas navideñas rojas de vidrio soplado a boca de Iittala, de 80 mm de diámetro cada una, que se cuelgan de una cinta de seda. Cada esfera está soplada a boca, así que la forma y el tono de rojo varían un poco de una a otra. Se pueden colgar en el árbol o en una rama dentro de un florero, o usar en un centro de mesa.',
+    specs: [
+      '5 esferas',
+      'Diámetro 8 cm',
+      'Vidrio soplado a boca',
+      'Rojo',
+      '0,706 kg bruto',
+      '32741-01, EAN 6411923679978',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Referencia y EAN'],
+  },
+  'iittala-toikka-annual-bird-2026': {
+    name: 'Pájaro del año Iittala Birds by Toikka 2026, Lakla',
+    description:
+      'Lakla es el pájaro del año 2026 de la serie Birds by Toikka de Iittala, un pájaro naranja de vidrio soplado a boca diseñado por Oiva Toikka. Cada año Iittala lanza un nuevo pájaro del año con su propio diseño y su propia combinación de colores, y estos pájaros se han hecho populares entre los coleccionistas. Cada pájaro es soplado por los vidrieros de la fábrica de Iittala en Finlandia, por lo que pueden aparecer pequeñas burbujas de aire y diferencias de grosor.',
+    specs: [
+      'Longitud 22 cm, anchura 10 cm, altura 14 cm',
+      'Vidrio soplado a boca',
+      'Naranja',
+      'Fabricado en la fábrica de vidrio de Iittala en Finlandia',
+      'Limpiar con un paño húmedo',
+      '657373-01, EAN 6411923689199',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Referencia y EAN'],
+  },
+  'marimekko-siirtolapuutarha-baubles': {
+    name: 'Esferas navideñas Marimekko Siirtolapuutarha 2025, 2 uds.',
+    description:
+      'Las bolas Siirtolapuutarha 2025 de Marimekko son dos esferas navideñas de gres con el estampado de Maija Louekari en blanco, negro y verde. Siirtolapuutarha significa «huerto urbano» en finlandés. Cada bola mide 7 cm de ancho y 7 cm de alto, y Marimekko propone colgarlas también en una ventana, no solo en el árbol.',
+    specs: [
+      '2 esferas',
+      'Anchura 7 cm, altura 7 cm',
+      'Gres',
+      'Blanco, negro y verde',
+      'Maija Louekari',
+      '650181-01, EAN 6411255039983',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Diseñadora', 'Referencia y EAN'],
+  },
+  'arabia-moomin-love-baubles': {
+    name: 'Esferas navideñas Arabia Moomin Love, doradas, 5 cm, 2 uds.',
+    description:
+      'Dos esferas navideñas Moomin de 5 cm en vitroporcelana de Arabia, con el motivo Love («amor») de Tove Jansson. El motivo muestra a Moomintroll y a la Señorita Snork, y se ha convertido en símbolo del amor y de las relaciones cercanas. Se pueden colgar en el árbol o en una rama decorativa, o usar para decorar una mesa de fiesta.',
+    specs: [
+      '2 esferas',
+      'Anchura 5 cm, altura 5 cm',
+      'Vitroporcelana',
+      'Dorado',
+      'Tove Jansson',
+      '699561-01, EAN 6411801029079',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Ilustración', 'Referencia y EAN'],
+  },
+  'sk-muurla-moomin-bauble-pyjamas': {
+    name: 'Esfera navideña de vidrio Moomin Muurla 9 cm, Pyjamat',
+    description:
+      'Una esfera navideña de vidrio hecha a mano de la gama Moomin de Muurla, de 9 cm de diámetro, con el motivo Pyjamat («pijamas»). Muurla describe la escena como un rato de descanso en pijama a la luz de las velas, y el paquete incluye una cinta de raso para colgarla.',
+    specs: [
+      'Diámetro 9 cm',
+      'Vidrio, hecho a mano',
+      'Cinta de raso incluida',
+    ],
+    specLabels: [undefined, undefined, 'Para colgar'],
+  },
+  'sk-muurla-moomin-baubles-snow': {
+    name: 'Esferas navideñas Moomin Muurla 5 cm, Lumipyry, 4 uds.',
+    description:
+      'Un paquete de 4 esferas navideñas Moomin de Muurla, de 5 cm de diámetro, con el motivo Lumipyry («tormenta de nieve») y cintas de raso para colgarlas. Muurla sitúa la escena justo después de una tormenta de nieve, con grandes montones de nieve, un paisaje dormido y farolillos de nieve todavía por construir.',
+    specs: [
+      'Diámetro 5 cm',
+      '4 esferas, cintas de raso incluidas',
+    ],
+  },
+  'sk-muurla-moomin-led-ball': {
+    name: 'Esfera LED de vidrio Moomin Muurla 11 cm, Tähtihetki',
+    description:
+      'Una esfera decorativa de vidrio de la gama Moomin Tähtihetki de Muurla, de 11 cm de diámetro, con una tira de 10 luces LED en su interior. Tiene interruptor de encendido y apagado, funciona con pilas de botón de litio CR2032, que no se incluyen, y es solo para uso en interiores. La gama Tähtihetki tiene detalles dorados, y el paquete incluye una cinta de raso para colgarla.',
+    specs: [
+      'Diámetro 11 cm',
+      'Vidrio, tira de luces LED con 10 LED',
+      'Pilas de botón de litio CR2032, no incluidas. Interruptor de encendido y apagado',
+      'Solo para interiores. Con certificación CE',
+      'Diseñado en Finlandia',
+    ],
+    specLabels: [undefined, undefined, 'Alimentación', 'Uso', 'Diseño'],
+  },
+  'sk-muurla-moomin-led-candle-tree': {
+    name: 'Vela LED Moomin Muurla 12,5 cm, Kuusen alla',
+    description:
+      'Una vela LED a pilas de la gama Moomin Originals de Muurla, de 12,5 cm de alto, con una ilustración del libro de Tove Jansson Farlig midsommar. El nombre finlandés del modelo, Kuusen alla, significa «bajo el abeto». Es de cera de parafina y está moldeada para parecer una vela de estearina de verdad, y su luz de tono cálido realza la ilustración. Tiene modos de encendido, apagado y temporizador de 6 horas, funciona con 2 pilas AA que no se incluyen y es solo para uso en interiores.',
+    specs: [
+      'Diámetro 10 cm, altura 12,5 cm',
+      'Cera de parafina',
+      '2 x pilas AA, no incluidas',
+      'Encendido, apagado y temporizador de 6 horas',
+      'Solo para interiores',
+      'Tove Jansson, del libro Farlig midsommar',
+    ],
+    specLabels: [undefined, undefined, 'Alimentación', 'Funciones', 'Uso', 'Ilustración'],
+  },
+  'arabia-moomin-plates-winter-night': {
+    name: '2 platos Arabia Moomin 19 cm, Office & Winter Night',
+    description:
+      'Dos platos Moomin de 19 cm de Arabia en vitroporcelana blanca, Office y Winter Night, pensados para acompañar a las tazas que salieron antes. La imagen de Office («oficina») apareció por primera vez en una taza Moomin de Arabia en 1996 y se basa en tiras cómicas en las que se repiten la escritura, el dibujo y la pintura. Winter Night («noche de invierno») repite la imagen de una taza de 2006, con Moomintroll sentado en la barandilla de un puente en una escena de Trollvinter, el libro de Tove Jansson de 1957.',
+    specs: [
+      'Diámetro 19,4 cm, altura 2,8 cm',
+      'Vitroporcelana',
+      '2 platos, Office y Winter Night',
+      'Aptos para lavavajillas, microondas y horno',
+      'Tove Jansson',
+      '566802-01, EAN 6411801011432',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Ilustración', 'Referencia y EAN'],
+  },
+  'arabia-moomin-plates-winter-fire': {
+    name: '2 platos Arabia Moomin 19 cm, Winter Bonfire & Sailing',
+    description:
+      'Dos platos Moomin de 19 cm de Arabia en vitroporcelana, uno con la imagen Winter Bonfire («hoguera de invierno») y otro con Sailing («navegando»). Los dos llevan ilustraciones de Tove Jansson. El par combina una escena de invierno con una de navegación y está pensado tanto para las comidas de diario como para las de fiesta.',
+    specs: [
+      '2 platos, Winter Bonfire y Sailing',
+      'Vitroporcelana',
+      'Multicolor',
+      '0,886 kg bruto',
+      'Tove Jansson',
+      '629239-01, EAN 6411801015065',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Ilustración', 'Referencia y EAN'],
+  },
+  'sk-muurla-moomin-snowfall-mug': {
+    name: 'Taza esmaltada Moomin Muurla 2,5 dl, Lumisade',
+    description:
+      'Taza esmaltada Moomin de Muurla de 2,5 dl con el motivo Lumisade («nevada»), la primera nieve en el valle de los Moomin y la hora de jugar con ella. Muurla fabrica sus piezas esmaltadas sobre un núcleo de acero al carbono con dos capas de esmalte, así que la taza sirve para la mesa y también para una excursión, la cabaña o un barco. Admite bebidas calientes y frías y es apta para lavavajillas, pero no para microondas.',
+    specs: [
+      '2,5 dl',
+      'Acero al carbono, doble esmaltado',
+      'Apta para lavavajillas. No apta para microondas',
+    ],
+  },
+  'sk-muurla-moomin-gifts-mug': {
+    name: 'Taza esmaltada Moomin Muurla 3,7 dl, Lahjat',
+    description:
+      'Una taza esmaltada Moomin de Muurla de 3,7 dl con el motivo Lahjat («regalos»), una imagen navideña sobre hacer regalos a los seres queridos. Bajo el esmalte hay un núcleo de acero al carbono con doble capa, lo que hace la taza lo bastante resistente para usarla al aire libre además de en la mesa. Admite bebidas calientes y frías y va al lavavajillas, pero no al microondas.',
+    specs: [
+      '3,7 dl',
+      'Acero al carbono, doble esmaltado',
+      'Apta para lavavajillas. No apta para microondas',
+    ],
+  },
+  'rj-pesonen-beeswax-candle': {
+    name: 'Vela de mesa de cera de abeja Pesosen Mehiläistarhat, grande',
+    description:
+      'Pesosen Mehiläistarhat hace a mano esta vela de mesa grande con cera de abeja, que también le da su color y su aroma. Esa, del apiario, lleva 29 años trabajando con abejas, 13 de ellos como profesional, y las colmenas están entre campos, bosques y pequeños cursos de agua en la zona de Sastamala y Hämeenkyrö. El apiario hace sus velas con lo que producen sus propias colmenas, y arden mucho tiempo con una llama brillante y constante.',
+    specs: [
+      'Cera de abeja',
+      'Grande',
+      'Hecha a mano',
+      'Sastamala y Hämeenkyrö',
+    ],
+    specLabels: [undefined, undefined, 'Fabricación', 'Apiarios'],
+  },
+  'rj-pesonen-honeycomb-candle': {
+    name: 'Vela de panal Pesosen Mehiläistarhat, cera de abeja, grande',
+    description:
+      'Una vela de panal grande hecha a mano con cera de abeja por Pesosen Mehiläistarhat, con una duración de 30 horas. El color y el aroma vienen de la cera, y el apiario hace sus velas con lo que producen sus propias colmenas en la zona de Sastamala y Hämeenkyrö. Esa, del apiario, lleva 29 años trabajando con abejas y 13 cuidándolas como profesional.',
+    specs: [
+      'Cera de abeja',
+      'Grande',
+      '30 h',
+      'Hecha a mano',
+      'Sastamala y Hämeenkyrö',
+    ],
+    specLabels: [undefined, undefined, 'Tiempo de combustión', 'Fabricación', 'Apiarios'],
+  },
+  'sk-moomin-mistletoe-candle': {
+    name: 'Vela de mesa Moomin Havi 7 x 12 cm, Misteli, beige',
+    description:
+      'Una vela de mesa Moomin beige de Havi con el diseño Misteli («muérdago»), de 7 x 12 cm y con 55 horas de combustión. El diseño está impreso en la vela por serigrafía.',
+    specs: [
+      '7 x 12 cm',
+      'Beige',
+      '55 h',
+      'Serigrafiada',
+      'Havi Oy, Riihimäki',
+    ],
+    specLabels: [undefined, undefined, 'Tiempo de combustión', 'Decoración', 'Comercializado por'],
+  },
+  'iittala-kastehelmi-tealight': {
+    name: 'Portavelas tealight Iittala Kastehelmi 64 mm, transparente',
+    description:
+      'Un portavelas tealight Kastehelmi de Iittala en vidrio transparente, de 64 mm de diámetro, de la serie que Oiva Toikka diseñó para Iittala en 1964. Kastehelmi significa «gota de rocío» en finlandés, e Iittala relanzó la serie en 2010. El portavelas también se fabrica en otros colores, e Iittala propone usarlo solo o en grupo, combinando colores distintos.',
+    specs: [
+      'Diámetro 6,4 cm',
+      'Vidrio',
+      'Transparente',
+      'Lavar solo a mano',
+      'Oiva Toikka, Iittala Kastehelmi',
+      '13167-01, EAN 6411920059766',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Diseñador y colección', 'Referencia y EAN'],
+  },
+  'sk-fazer-christmas-box': {
+    name: 'Caja navideña Fazer 2026',
+    description:
+      'La caja navideña de Fazer para 2026 trae 6 paquetes de chocolates, golosinas y galletas de jengibre de temporada. Contiene bombones Karl Fazer, una barra de chocolate Karl Fazer con galleta de jengibre, Remix Xmas + Choco, toffees Dumle Winter Mix, gomitas de pera Vihreät kuulat y galletas de jengibre Marianne con chocolate y menta.',
+    specs: [
+      'Bombones Karl Fazer 250 g, barra de chocolate Karl Fazer con galleta de jengibre 200 g, mezcla de golosinas Remix Xmas + Choco 300 g, mezcla de toffees Dumle Winter Mix 180 g, gomitas de pera Vihreät kuulat 260 g, galletas de jengibre Marianne con chocolate y menta 175 g',
+      'Chocolate con leche con un mínimo de 30 % de cacao',
+      'Contiene trigo (gluten), soja y leche (lactosa). Puede contener centeno, cebada, avena, huevo, frutos secos y almendras',
+      'Energía 1845 kJ / 441 kcal, grasas 17 g de las cuales saturadas 9,4 g, carbohidratos 67 g de los cuales azúcares 53 g, proteínas 4,6 g, sal 0,36 g',
+    ],
+    specLabels: [undefined, 'Indicaciones de la etiqueta', 'Alérgenos', 'Información nutricional por 100 g'],
+  },
+  'sk-karl-fazer-advent-calendar': {
+    name: 'Calendario de Adviento Karl Fazer 200 g',
+    description:
+      'Un calendario de Adviento Karl Fazer con 200 g de bombones de varios sabores detrás de sus ventanitas. La última ventanita está llena de Fazer Blue, el chocolate con leche Karl Fazer que Fazer elabora desde 1922. Fazer obtiene su cacao a través de su programa Fazer Cocoa Vision.',
+    specs: [
+      '200 g',
+      'Bombones de varios sabores, la última ventanita llena de chocolate con leche Fazer Blue',
+      'Chocolate con leche con un mínimo de 30 % de cacao',
+      'Contiene leche, soja y cebada (gluten). Puede contener frutos secos, almendras, trigo, centeno y avena',
+      'Energía 2315 kJ / 554 kcal, grasas 34 g de las cuales saturadas 20 g, carbohidratos 53 g de los cuales azúcares 51 g, proteínas 9,6 g, sal 0,31 g',
+    ],
+    specLabels: [undefined, undefined, 'Indicaciones de la etiqueta', 'Alérgenos', 'Información nutricional por 100 g'],
+  },
+  'sk-fazer-christmas-chocolates': {
+    name: 'Bombones navideños Fazer Joulusuklaa 295 g',
+    description:
+      'Bombones Fazer Joulusuklaa de 295 g, con una suave cobertura de chocolate con leche y un relleno de trufa con migas de galleta de jengibre de verdad. Fazer los recomienda para las reuniones navideñas, por ejemplo con glögg, la bebida caliente y especiada de los países nórdicos.',
+    specs: [
+      '295 g',
+      'Cobertura de chocolate con leche, relleno de trufa con migas de galleta de jengibre',
+      'Chocolate con leche con un mínimo de 30 % de cacao',
+      'Contiene leche, trigo, cebada (gluten) y soja. Puede contener frutos secos, almendras, centeno y avena',
+      'Energía 2274 kJ / 545 kcal, grasas 33 g de las cuales saturadas 19 g, carbohidratos 53 g de los cuales azúcares 51 g, proteínas 8,2 g, sal 0,24 g',
+    ],
+    specLabels: [undefined, undefined, 'Indicaciones de la etiqueta', 'Alérgenos', 'Información nutricional por 100 g'],
+  },
+  'sk-karl-fazer-gingerbread-bar': {
+    name: 'Karl Fazer Winter Edition con galleta de jengibre 200 g',
+    description:
+      'Una barra Karl Fazer Winter Edition de 200 g que combina chocolate con leche suave y galleta de jengibre crujiente. Fazer elabora el chocolate con leche Karl Fazer desde 1922, y esta barra con galleta de jengibre es su edición navideña.',
+    specs: [
+      '200 g',
+      'Chocolate con leche con galleta de jengibre crujiente',
+      'Chocolate con leche con un mínimo de 30 % de cacao',
+      'Contiene leche, trigo (gluten) y soja. Puede contener frutos secos, almendras, centeno y avena',
+      'Energía 2205 kJ / 527 kcal, grasas 30 g de las cuales saturadas 18 g, carbohidratos 55 g de los cuales azúcares 48 g, proteínas 8,5 g, sal 0,22 g',
+    ],
+    specLabels: [undefined, undefined, 'Indicaciones de la etiqueta', 'Alérgenos', 'Información nutricional por 100 g'],
+  },
+  'sk-fazer-glogg-balls': {
+    name: 'Gomitas Fazer Glögikuulat 260 g',
+    description:
+      'Una caja de 260 g de Fazer Glögikuulat, bolitas de gomita blandas y dulces que llevan el nombre del glögg, la bebida caliente y especiada nórdica. No contienen gluten, gelatina ni lactosa y son aptas para veganos. La caja incluye una receta para convertirlas en una bebida caliente.',
+    specs: [
+      '260 g',
+      'Sin gluten, sin gelatina, sin lactosa, vegano',
+      'Energía 1353 kJ / 322 kcal, grasas 0 g de las cuales saturadas 0 g, carbohidratos 79 g de los cuales azúcares 64 g, proteínas 0 g, sal 0,28 g',
+    ],
+    specLabels: [undefined, 'Dieta', 'Información nutricional por 100 g'],
+  },
+  'sk-halva-christmas-liquorice': {
+    name: 'Mezcla navideña de regaliz Halva 250 g',
+    description:
+      'La mezcla navideña de regaliz de Halva reúne 250 g de regaliz en 3 sabores navideños, en una caja de color oro rosa. Lleva flores de regaliz con sabor a pastel de manzana, regaliz relleno de glögg y regaliz relleno de galleta de jengibre. Halva elabora la mezcla en Pitäjänmäki, en Helsinki.',
+    specs: [
+      '250 g',
+      'Flores de regaliz con sabor a pastel de manzana, regaliz relleno de glögg, regaliz relleno de galleta de jengibre',
+      'Elaborado en Pitäjänmäki, Helsinki',
+      'Contiene trigo (gluten)',
+      'Energía 1419 kJ / 334 kcal, grasas 0,7 g de las cuales saturadas 0,3 g, carbohidratos 79 g de los cuales azúcares 53 g, proteínas 2,9 g, sal 0,15 g',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Alérgenos', 'Información nutricional por 100 g'],
+  },
+  'sk-halva-salmiakki-calendar': {
+    name: 'Calendario de Adviento de salmiakki Halva 200 g',
+    description:
+      'Un calendario de Adviento de Halva con una selección de 200 g de salmiakki, el regaliz salado finlandés, de la gama de Halva. Tras las ventanitas hay Vanhat Autot, peces de salmiakki, calaveras saladas, Pommix, corazones de salmiakki, espadas de salmiakki, cuadraditos Salmiakkiruutu y salmiakki duro Jauhix.',
+    specs: [
+      '200 g',
+      'Salmiakki Vanhat Autot, pez de salmiakki, calavera salada, salmiakki Pommix, corazón de salmiakki, espada de salmiakki, Salmiakkiruutu, salmiakki Jauhix',
+      'Energía 1406 kJ / 331 kcal, grasas 0,5 g de las cuales saturadas 0,1 g, carbohidratos 80 g de los cuales azúcares 59 g, proteínas 2,7 g, sal 0,03 g',
+    ],
+    specLabels: [undefined, undefined, 'Información nutricional por 100 g'],
+  },
+  'kuivalihakundi-advent-calendar': {
+    name: 'Calendario de Adviento de cecina Kuivalihakundi 2026',
+    description:
+      'El calendario de Adviento 2026 de Kuivalihakundi trae 24 sabores distintos de cecina, una bolsa de 20 g detrás de cada una de sus 24 ventanas. Hay res, pollo, cerdo graso y cerdo más magro, en sabores básicos y en otros creados solo para este calendario, todo de la fábrica propia de la empresa en Jokela, Finlandia. La cecina se conserva a temperatura ambiente incluso después de abrirla. El calendario se puede poner de pie sobre una mesa o colgar en la pared por sus orificios, y es una edición limitada.',
+    specs: [
+      '24 bolsas de cecina de 20 g, un sabor distinto detrás de cada ventana',
+      'Res, pollo, cerdo graso y cerdo más magro',
+      'Elaborada en la fábrica propia de Kuivalihakundi en Jokela, Finlandia',
+      'Se conserva a temperatura ambiente, también después de abrirla',
+      'Se pone de pie sobre una mesa o se cuelga en la pared por sus orificios',
+    ],
+    specLabels: [undefined, 'Carnes', undefined, undefined, 'Para colgar'],
+  },
+  'halti-crostie-merino-beanie': {
+    name: 'Gorro de merino Halti Crostie',
+    description:
+      'Un gorro Halti ajustado para esquí de fondo, para correr en invierno y para otros deportes con frío, diseñado y fabricado en Finlandia. La mitad del gorro va forrada con Stormwall®, una capa cortavientos y transpirable que protege la frente y las orejas del viento. El tejido de punto es una suave mezcla de lana merina que abriga y a la vez transpira.',
+    specs: [
+      'Punto de mezcla de lana merina y acrílico, 50 % lana merina, 50 % acrílico. Medio forro de Stormwall®',
+      'S, M, L',
+      '0,2 kg',
+      'Varios colores: Crocus Petal, Black, White, Fudge Maroon Red, Veiled Pink',
+      'Lavar con colores similares, secar en plano',
+      'Diseñado y fabricado en Finlandia, producto con el sello Avainlippu (Key Flag)',
+    ],
+  },
+  'halti-vuolle-mohair-beanie': {
+    name: 'Gorro de mohair Halti Vuolle',
+    description:
+      'Un gorro Halti esponjoso de mezcla de mohair, lana merina y poliamida, con doble capa para abrigar más y una vuelta alta. La mezcla lo hace ligero pero cálido, y no lleva forro aparte. Talla única, en Snow White o Black.',
+    specs: [
+      'Mezcla de mohair, 50 % mohair, 32 % poliamida, 18 % lana merina. Sin forro aparte',
+      'Talla única',
+      'Snow White o Black',
+      'Lavar con colores similares, secar en plano',
+      'Doble capa, vuelta alta',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Características'],
+  },
+  'halti-tiilo-mittens': {
+    name: 'Manoplas Halti Tiilo II',
+    description:
+      'Manoplas Halti con aislamiento para el aire libre en invierno, de tejido DrymaxX® impermeable y cortavientos con 60 g de guata Microtherm® por dentro. La palma es de cuero sintético con buen agarre, y llevan un puño interior de canalé y un ajuste regulable en la muñeca. Negras, tallas de la 7 a la 12.',
+    specs: [
+      'Poliéster DrymaxX® con membrana, 100 % poliéster. Puño de canalé, 100 % poliéster. Palma de cuero sintético, 100 % poliuretano',
+      'Guata Microtherm® de 60 g',
+      '7, 8, 9, 10, 11, 12',
+      'Negro',
+      'Lavar por separado',
+    ],
+    specLabels: [undefined, 'Aislamiento', undefined, undefined, undefined],
+  },
+  'halti-warm-merino-socks': {
+    name: 'Calcetines cálidos de lana merina Halti',
+    description:
+      'Calcetines Halti de lana merina en punto de rizo grueso, fabricados en Finlandia y sin costuras. Por eso se ajustan bien en botas de esquí, calzado de invierno y botas de snowboard. El rizo retiene el aire y da calor, y la caña de canalé no se baja. Úselos solos o encima de unos calcetines finos.',
+    specs: [
+      'Mezcla de lana merina, 62 % lana merina, 36 % poliamida, 2 % elastano',
+      '34-36, 37-39, 40-42, 43-45, 46-48',
+      'Dark Sea Green o Asphalt',
+      '0,1 kg',
+      'Fabricado en Finlandia, producto con el sello Avainlippu (Key Flag)',
+      'Punto de rizo grueso, sin costuras, caña de canalé que no se baja',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Características'],
+  },
+  'north-outdoor-kaisla-beanie': {
+    name: 'Gorro de merino North Outdoor Kaisla, café',
+    description:
+      'Un gorro grueso de punto inglés en 100 % lana merina libre de mulesing, tejido en la propia fábrica de punto de North Outdoor en Oulu. North Outdoor lo recomienda desde el otoño hasta el final del invierno, tanto para pasear por la ciudad como por senderos en la naturaleza. Talla única, en color café.',
+    specs: [
+      '100 % lana merina, libre de mulesing, punto inglés',
+      'Talla única',
+      'Café',
+      'Fabricado en la propia fábrica de punto de North Outdoor en Oulu, Finlandia',
+    ],
+  },
+  'north-outdoor-polku-neck-tube': {
+    name: 'Cuello tubular de merino North Outdoor Polku, café',
+    description:
+      'Un cuello tubular grueso de 100 % lana merina libre de mulesing, tejido en un canalé 1x1 denso. Es lo bastante alto para llevarlo como bufanda, subirlo como capucha o cubrirse la cara. Talla única, en color café.',
+    specs: [
+      '100 % lana merina, libre de mulesing, canalé 1x1',
+      'Talla única',
+      'Café',
+      'Bufanda, capucha o protección para la cara',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Uso'],
+  },
+  'north-outdoor-hirsi-socks': {
+    name: 'Calcetines de lana merina North Outdoor Hirsi, almendra',
+    description:
+      'Calcetines ligeros de lana merina de la propia fábrica de punto de North Outdoor en Oulu. Llevan un 80 % de merino libre de mulesing y un 20 % de poliamida, que les da resistencia. Rinden al máximo en casa, solos o encima de otro par de calcetines. Admiten un lavado suave a máquina, aunque rara vez lo necesitan.',
+    specs: [
+      '80 % lana merina, libre de mulesing, 20 % poliamida',
+      '35-38, 39-42, 43-46',
+      'Almendra',
+      'Fabricado en la propia fábrica de punto de North Outdoor en Oulu, Finlandia',
+      'Lavado suave a máquina',
+    ],
+  },
+  'north-outdoor-avery-mittens': {
+    name: 'Manoplas de polar de lana North Outdoor Avery, latte',
+    description:
+      'Manoplas de una mezcla ligera de polar de lana italiano con un 63 % de lana reciclada, forradas por dentro con 100 % lana merina. El forro de merino aleja la humedad y conserva el calor, y el ajuste ceñido pero flexible permite sentir bien lo que se agarra. Tallas S y M, en color latte.',
+    specs: [
+      'Mezcla italiana de polar de lana, 63 % lana reciclada. Forro 100 % lana merina',
+      'S, M',
+      'Latte',
+      'Para el aire libre y la ciudad',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Uso'],
+  },
+  'makia-alvar-beanie': {
+    name: 'Gorro de merino Makia Alvar',
+    description:
+      'Un gorro Makia de 100 % lana merina, fabricado en Finlandia. La lana es libre de mulesing, y el gorro es de talla única.',
+    specs: [
+      '100 % lana merina, libre de mulesing',
+      'Talla única',
+      'Fabricado en Finlandia',
+    ],
+  },
+  'makia-stellar-scarf': {
+    name: 'Bufanda de merino Makia Stellar',
+    description:
+      'Una bufanda Makia de 100 % lana merina. Es de talla única.',
+    specs: [
+      '100 % lana merina',
+      'Talla única',
+    ],
+  },
+  'makia-freja-mittens': {
+    name: 'Manoplas acolchadas Makia Freja',
+    description:
+      'Manoplas acolchadas Makia con relleno de plumón sintético Sorona®, un aislamiento en parte de origen vegetal que transpira y conserva el calor. Su columna de agua de 3000 mm ayuda a mantener las manos secas con lluvia ligera. Tallas S y M.',
+    specs: [
+      'Plumón sintético Sorona®, en parte de origen vegetal',
+      '3000 mm',
+      'S, M',
+    ],
+    specLabels: ['Relleno', 'Columna de agua', undefined],
+  },
+  'makia-sibelius-beanie': {
+    name: 'Gorro de merino Makia Sibelius',
+    description:
+      'El gorro Sibelius de Makia, hecho de 100 % lana merina. Es de talla única.',
+    specs: [
+      '100 % lana merina',
+      'Talla única',
+    ],
+  },
+  'nb-moomin-christmas-sockbox': {
+    name: 'Caja regalo navideña de calcetines Moomin, EU 36-42',
+    description:
+      'Una caja regalo navideña Moomin ya preparada, con dos pares de calcetines en talla única, apta para las tallas EU 36 a 42. Los calcetines son sobre todo de algodón, con poliéster, nailon y un poco de elastano, y se trata de un producto Moomin oficial.',
+    specs: [
+      '60 % algodón, 33 % poliéster, 4 % nailon, 2 % elastano, 1 % elastodieno',
+      'Talla única, EU 36-42',
+      '2 pares de calcetines en caja regalo',
+      'Producto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licencia'],
+  },
+  'nb-moomin-christmas-box-men': {
+    name: 'Caja regalo navideña de calcetines Moomin, hombre, EU 40-45',
+    description:
+      'Una caja regalo navideña Moomin ya preparada, con dos pares de calcetines de hombre en tallas EU 40 a 45. Según la experiencia de Nordicbuddies, también sirven para pies más grandes. Los calcetines son sobre todo de algodón, con poliéster, nailon y un poco de elastano, y se trata de un producto Moomin oficial.',
+    specs: [
+      '60 % algodón, 33 % poliéster, 4 % nailon, 2 % elastano, 1 % elastodieno',
+      'Talla única, EU 40-45',
+      '2 pares de calcetines en caja regalo',
+      'Producto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licencia'],
+  },
+  'nb-moomintroll-fleece-mittens': {
+    name: 'Manoplas polares de Moomintroll',
+    description:
+      'Manoplas de Moomintroll en tejido polar de poliéster 100 % reciclado, forradas de acrílico. Son elásticas, así que una talla le queda a la mayoría, y son un producto Moomin oficial.',
+    specs: [
+      '100 % poliéster reciclado',
+      '100 % acrílico',
+      'Talla única, elástica, le queda a la mayoría',
+      'Producto Moomin oficial',
+    ],
+    specLabels: [undefined, 'Forro', undefined, 'Licencia'],
+  },
+  'nb-moomintroll-chunky-beanie': {
+    name: 'Gorro grueso y esponjoso de Moomintroll, rosa',
+    description:
+      'Un gorro de Moomintroll grueso y esponjoso, en rosa y en una talla única de adulto que le queda a todos. El material mezcla poliéster, nailon, acrílico, lana y elastano, y el gorro es un producto Moomin oficial.',
+    specs: [
+      'Poliéster, nailon, acrílico, lana y elastano',
+      'Adulto, talla única',
+      'Rosa',
+      'Producto Moomin oficial',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licencia'],
+  },
+  'sk-nordqvist-tea-calendar': {
+    name: 'Calendario de Adviento de té Nordqvist, 27 bolsitas',
+    description:
+      'Un calendario de Adviento de té de Nordqvist con forma de cubo, 25 ventanitas y 27 bolsitas de té, ya que la última contiene tres. Hay té negro, verde y rooibos y mezclas de hibisco, y entre ellos sabores navideños como galleta de jengibre, glögg y canela.',
+    specs: [
+      '25 ventanitas, 27 bolsitas de té. La última ventanita guarda 3 bolsitas',
+      'Té negro, verde y rooibos, mezclas de hibisco',
+      'Nordqvist Oy, Nurmijärvi',
+      '6413440000433',
+    ],
+    specLabels: [undefined, 'Tés', 'Comercializado por', 'EAN'],
+  },
+  'sk-nordqvist-moomin-tea-calendar': {
+    name: 'Calendario de té Moomin Nordqvist, 24 bolsitas, lila',
+    description:
+      'Un calendario de Adviento de té Moomin de Nordqvist en color lila, con 24 bolsitas piramidales de 12 sabores, dos de cada uno. Hay té negro y verde junto a rooibos sin cafeína, y cada sabor tiene su propio nombre, desde Olet Ihana («eres un encanto») hasta Muumimamman Voimajuoma («la bebida energética de Mamá Moomin»). La tapa se abre de forma que el calendario queda de pie, y tiene la certificación Rainforest Alliance.',
+    specs: [
+      '24 bolsitas piramidales, 12 sabores, 2 de cada uno',
+      '41,5 g',
+      'Lila',
+      'Rainforest Alliance',
+      'Nordqvist Oy, Nurmijärvi',
+      '6413440000679',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Certificación', 'Comercializado por', 'EAN'],
+  },
+  'sk-nordic-glogg-concentrate': {
+    name: 'Concentrado de glögg Poikain Parhaat Nordic 0,5 l',
+    description:
+      'Un concentrado de glögg sin alcohol (0 %) hecho a mano con jugo de grosella negra y roja de Finlandia y especias auténticas, para mezclar 1+3. Poikain Parhaat lo describe como un glögg con abundantes bayas y un especiado cálido, de sabor tradicional.',
+    specs: [
+      '0,5 l',
+      '1+3',
+      '0 %',
+      'Jugo de grosella negra y grosella roja de Finlandia',
+      'Energía 47,7 kcal / 199,58 kJ, grasas 0,2 g de las cuales saturadas 0,2 g, carbohidratos 11 g de los cuales azúcares 11 g, proteínas 0,3 g, sal 0,2 g',
+      'Poikain Parhaat Oy Ltd, Tampere',
+    ],
+    specLabels: [undefined, 'Proporción de mezcla', 'Alcohol', undefined, 'Información nutricional por 100 ml', 'Comercializado por'],
+  },
+  'rj-christmas-coffee': {
+    name: 'Café navideño Gran Palomar 200 g',
+    description:
+      'El café navideño Gran Palomar del tostador Cafetoria Roastery es un café orgánico de comercio justo aromatizado con canela y cardamomo orgánicos. Viene en un paquete de 200 g.',
+    specs: [
+      '200 g',
+      'Canela y cardamomo orgánicos',
+      'Comercio justo, orgánico',
+      'Cafetoria Roastery Oy',
+    ],
+    specLabels: [undefined, 'Especias', 'Certificación', 'Tostador'],
+  },
+  'sk-emendo-santa-sauna-scent': {
+    name: 'Aroma de sauna oficial de Papá Noel Emendo 500 ml',
+    description:
+      'Aroma de sauna oficial de Papá Noel de Emendo, 500 ml, con 100 % de aceites esenciales auténticos y sin fragancias sintéticas. Mezcle unos ½ dl en un balde con unos 3 l de agua y úselo como el agua normal de la sauna.',
+    specs: [
+      '500 ml',
+      'Contiene 100 % de aceites esenciales, sin fragancias sintéticas (parfum)',
+      'Unos ½ dl en un balde de unos 3 l de agua',
+      '©Santa Claus Foundation™',
+      '6417892057458',
+    ],
+    specLabels: [undefined, 'Composición', 'Uso', 'Licencia', 'EAN'],
+  },
+  'sk-emendo-christmas-sauna-set': {
+    name: 'Set de regalo para sauna Emendo Jouluhetki',
+    description:
+      'Jouluhetki, «momento navideño» en finlandés, es un set de regalo para sauna de Emendo con un jabón con cuerda, aroma de sauna y esponja de baño. Viene ya preparado para regalar.',
+    specs: [
+      'Jabón con cuerda, aroma de sauna, esponja de baño',
+      '6417892041280',
+    ],
+    specLabels: [undefined, 'EAN'],
+  },
+  'sk-emendo-gingerbread-glogg-scent': {
+    name: 'Aromas de sauna Emendo, pan de jengibre y glögg, 2 x 10 ml',
+    description:
+      'Dos aromas de sauna de Emendo, pan de jengibre y glögg, de 10 ml cada uno y elaborados con 100 % de aceites esenciales auténticos. Agregue de 2 a 6 gotas a un cucharón de agua y eche el agua sobre las piedras.',
+    specs: [
+      '2 x 10 ml',
+      'Pan de jengibre, glögg',
+      'Elaborado con 100 % de aceites esenciales',
+      'De 2 a 6 gotas en un cucharón de agua',
+      '6417892021060',
+    ],
+    specLabels: [undefined, 'Aromas', 'Composición', 'Uso', 'EAN'],
+  },
+  'sk-aromageddon-gingerbread-scent': {
+    name: 'Esencia de sauna Aromageddon Piparipyörre 15 ml',
+    description:
+      'Piparipyörre («remolino de jengibre») de Aromageddon da a la sauna un aroma cálido y especiado a canela con un toque de galleta de jengibre. Agregue de 2 a 4 gotas a un cucharón de agua y use la esencia siempre diluida, nunca directamente sobre la estufa.',
+    specs: [
+      '15 ml',
+      'Canela con un toque de galleta de jengibre',
+      'De 2 a 4 gotas en un cucharón de agua, siempre diluida',
+      'Aromageddon Oy, Espoo',
+    ],
+    specLabels: [undefined, 'Aroma', 'Uso', 'Comercializado por'],
+  },
 }

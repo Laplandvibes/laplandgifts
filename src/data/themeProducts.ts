@@ -1,5 +1,5 @@
 import { PRODUCTS } from './products'
-import { subgroupOf } from './subgroups'
+import { subgroupOf, SUBGROUP_THEME } from './subgroups'
 import { THEMES, type Theme, type ThemeId } from './themes'
 import type { CategoryId, Product } from './types'
 
@@ -35,6 +35,10 @@ export function themesForCategory(cat: CategoryId): Array<{ theme: Theme; items:
   }))
     .filter((x) => x.items.length >= 4)
     .filter((x) => new Set(x.items.map((p) => subgroupOf(p.slug))).size > 1)
+    // 🔴 4. ehto (6.11.2026): jos teemalla on tällä sivulla oma hylly
+    // (SUBGROUP_THEME, esim. Joulukoristeet), nosto toistaisi sen tuotteet heti
+    // hyllyn yläpuolella. Hylly kantaa silloin linkin teemasivulle itse.
+    .filter((x) => !x.items.some((p) => SUBGROUP_THEME[subgroupOf(p.slug)] === x.theme.id))
     .sort((a, b) => b.items.length - a.items.length)
     // 🔴 3. ehto: teema ei saa toistaa jo näytettyä. Herkkusivulla Muumit-
     // teeman neljä tuotetta ovat Muumi-brändättyjä marjatuotteita eli

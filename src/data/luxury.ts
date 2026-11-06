@@ -45,6 +45,9 @@ export const LUXURY_HERO_SLUGS: string[] = [
  */
 export const LUXURY_OBJECT_SLUGS: string[] = [
   'iittala-aalto-vase-160',
+  // 6.11.2026: Toikan vuosilintu, Birds by Toikka -sarjan lintu suupuhalletaan Iittalan
+  // lasitehtaalla Suomessa (kaupan tuotesivu). Myydään Nordic Nestissä komissiolla.
+  'iittala-toikka-annual-bird-2026',
   'marttiini-lapinleuku-255',
   // 5.9. ilta: Lapuan Kankureiden huopa ja Arabian villatorkku olivat provisiottomia
   // suoralinkkejä (Vesa: pois). Tilalla Unikko (painettu vuodesta 1964) ja Finlaysonin

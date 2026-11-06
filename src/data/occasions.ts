@@ -21,16 +21,17 @@ import type { Product } from './types'
  * se hyppää uudestaan samaan. `occasions.test.ts` vahtii nyt monipuolisuuden.
  */
 export const OCCASION_PICKS: string[][] = [
-  // Joulu: kynttilä, lämmin tekstiili ja kolme herkkua, joista jokainen kestää
-  // postimatkan. Hintahaarukka 4–140 €, jotta listalla on sekä pikkupaketti
-  // että päälahja.
+  // Joulu: kynttilälyhty, lämmin asuste ja jouluiset herkut, joista jokainen kestää
+  // postimatkan. 6.11.2026 poiminnat vaihdettiin aidosti jouluisiin tuotteisiin
+  // (Fazerin jouluboksi, Muumi-joulusukat, teejoulukalenteri, Halvan joululakut):
+  // ennen lista oli ympärivuotisia tuotteita joulun otsikon alla.
   [
     'iittala-kivi-candleholder',
-    'nb-hattifatteners-cushion',
+    'nb-moomin-christmas-sockbox',
     'halti-kroka-mitten',
-    'nordqvist-moomin-forest-berry-tea',
-    'sk-marianne-toffee-rae',
-    'finnish-flavours-palalaku-salmiakki',
+    'sk-nordqvist-moomin-tea-calendar',
+    'sk-fazer-christmas-box',
+    'sk-halva-christmas-liquorice',
   ],
   // Häät: kodin esineitä, jotka kestävät vuosia. 5.9.2026: Aarikan kynttilänjalka ja
   // Lapuan Kankureiden huopa vaihtuivat poro-kynttilänjalkaan ja Unikko-pyyhkeeseen,

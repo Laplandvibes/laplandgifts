@@ -1,5 +1,6 @@
 import type { CategoryId } from './types'
 import type { Lang } from '../i18n/useLang'
+import type { ThemeId } from './themes'
 import { PRODUCTS } from './products'
 import type { Product } from './types'
 
@@ -26,7 +27,8 @@ export type SubgroupId = string
 
 /** Ryhmien järjestys kategoriaa kohden. Määrää myös renderöintijärjestyksen. */
 export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
-  design: ['tableware', 'textiles', 'candles', 'objects'],
+  // Joulukoristeet ja joulun herkut ensin joulusesongin ajan (lisätty 6.11.2026).
+  design: ['ornaments', 'tableware', 'textiles', 'candles', 'objects'],
   // 🔴 Vaatteet ryhmitellään BRÄNDIN mukaan (Vesa 6.8.: "eihän täällä ole
   // kategorisoitu brändin mukaan ollenkaan, ja en löydä enempää niitä makia
   // tuotteita"). Vaatetuskategoriassa brändi on se, millä ostaja navigoi:
@@ -39,7 +41,7 @@ export const SUBGROUP_ORDER: Record<CategoryId, SubgroupId[]> = {
   // uutuudet (Suomikaupan created_at 2026-08) ja loput (Vesa 5.9.: 'missä
   // analyysi uutuustuotteista', 'erikoisuuksia, jotain mitä ihan suomalaisetkin
   // haluaa maistaa').
-  treats: ['specialties', 'salmiakki', 'chocolate', 'novelties', 'savoury', 'drinks'],
+  treats: ['christmastreats', 'specialties', 'salmiakki', 'chocolate', 'novelties', 'savoury', 'drinks'],
   // `drinks` on mukana myös täällä: Kainon kuusenkerkkäjuoma on superfoodi
   // mutta muodoltaan juoma, ei jauhe eikä öljy. Sama ryhmätunnus voi esiintyä
   // useassa kategoriassa — nimi tulee samasta taulukosta, joten se lukee
@@ -65,7 +67,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   en: {
     tableware: 'Tableware and glass',
     textiles: 'Textiles',
-    candles: 'Candleholders',
+    candles: 'Candles and candleholders',
+    ornaments: 'Christmas decorations',
+    christmastreats: 'Christmas treats and calendars',
     objects: 'Small objects',
     sauna: 'Sauna',
     brandhalti: 'Halti',
@@ -94,7 +98,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   fi: {
     tableware: 'Astiat ja lasi',
     textiles: 'Tekstiilit',
-    candles: 'Kynttilänjalat',
+    candles: 'Kynttilät ja kynttilänjalat',
+    ornaments: 'Joulukoristeet',
+    christmastreats: 'Joulun herkut ja kalenterit',
     objects: 'Pienesineet',
     sauna: 'Sauna',
     brandhalti: 'Halti',
@@ -123,7 +129,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   sv: {
     tableware: 'Porslin och glas',
     textiles: 'Textilier',
-    candles: 'Ljushållare',
+    candles: 'Ljus och ljushållare',
+    ornaments: 'Julpynt',
+    christmastreats: 'Julgodsaker och kalendrar',
     objects: 'Småsaker',
     sauna: 'Bastu',
     brandhalti: 'Halti',
@@ -152,7 +160,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   de: {
     tableware: 'Geschirr und Glas',
     textiles: 'Textilien',
-    candles: 'Kerzenhalter',
+    candles: 'Kerzen und Kerzenhalter',
+    ornaments: 'Weihnachtsschmuck',
+    christmastreats: 'Weihnachtliche Leckereien und Adventskalender',
     objects: 'Kleinigkeiten',
     sauna: 'Sauna',
     brandhalti: 'Halti',
@@ -181,7 +191,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   fr: {
     tableware: 'Vaisselle et verrerie',
     textiles: 'Textiles',
-    candles: 'Bougeoirs',
+    candles: 'Bougies et bougeoirs',
+    ornaments: 'Décorations de Noël',
+    christmastreats: 'Douceurs de Noël et calendriers de l’Avent',
     objects: 'Petits objets',
     sauna: 'Sauna',
     brandhalti: 'Halti',
@@ -210,7 +222,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   es: {
     tableware: 'Vajilla y cristalería',
     textiles: 'Textiles',
-    candles: 'Portavelas',
+    candles: 'Velas y portavelas',
+    ornaments: 'Adornos navideños',
+    christmastreats: 'Dulces navideños y calendarios de Adviento',
     objects: 'Objetos pequeños',
     sauna: 'Sauna',
     brandhalti: 'Halti',
@@ -239,7 +253,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   it: {
     tableware: 'Stoviglie e vetro',
     textiles: 'Tessili',
-    candles: 'Portacandele',
+    candles: 'Candele e portacandele',
+    ornaments: 'Decorazioni natalizie',
+    christmastreats: 'Dolci natalizi e calendari dell\'Avvento',
     objects: 'Piccoli oggetti',
     sauna: 'Sauna',
     brandhalti: 'Halti',
@@ -268,7 +284,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   'pt-BR': {
     tableware: 'Louças e vidros',
     textiles: 'Têxteis',
-    candles: 'Porta-velas',
+    candles: 'Velas e porta-velas',
+    ornaments: 'Enfeites de Natal',
+    christmastreats: 'Doces de Natal e calendários do Advento',
     objects: 'Pequenos objetos',
     sauna: 'Sauna',
     brandhalti: 'Halti',
@@ -297,7 +315,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   nl: {
     tableware: 'Servies en glas',
     textiles: 'Textiel',
-    candles: 'Kaarshouders',
+    candles: 'Kaarsen en kandelaars',
+    ornaments: 'Kerstdecoratie',
+    christmastreats: 'Kerstlekkernijen en adventskalenders',
     objects: 'Kleinigheden',
     sauna: 'Sauna',
     brandhalti: 'Halti',
@@ -326,7 +346,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   ja: {
     tableware: '食器とガラス',
     textiles: 'テキスタイル',
-    candles: 'キャンドルホルダー',
+    candles: 'キャンドルとキャンドルホルダー',
+    ornaments: 'クリスマスの飾り',
+    christmastreats: 'クリスマスのお菓子とアドベントカレンダー',
     objects: '小物',
     sauna: 'サウナ用品',
     brandhalti: 'Halti',
@@ -355,7 +377,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   ko: {
     tableware: '식기와 유리 제품',
     textiles: '텍스타일',
-    candles: '캔들 홀더',
+    candles: '캔들과 캔들 홀더',
+    ornaments: '크리스마스 장식',
+    christmastreats: '크리스마스 간식과 캘린더',
     objects: '소품',
     sauna: '사우나 용품',
     brandhalti: 'Halti',
@@ -384,7 +408,9 @@ const LABELS: Record<Lang, Record<SubgroupId, string>> = {
   'zh-CN': {
     tableware: '餐具与玻璃器皿',
     textiles: '纺织品',
-    candles: '烛台',
+    candles: '蜡烛与烛台',
+    ornaments: '圣诞装饰',
+    christmastreats: '圣诞零食与倒数日历',
     objects: '小物件',
     sauna: '桑拿用品',
     brandhalti: 'Halti',
@@ -605,10 +631,73 @@ const MAP: Record<string, SubgroupId> = {
   // katalogin täydennys 2026-09-05
   // katalogin täydennys 2026-09-05
   'sk-poikain-parhaat-puolukka': 'berry',
+  // talvi- ja joulutuotteet 2026-11-06
+  'iittala-glass-baubles-red': 'ornaments',
+  'iittala-toikka-annual-bird-2026': 'ornaments',
+  'marimekko-siirtolapuutarha-baubles': 'ornaments',
+  'arabia-moomin-love-baubles': 'ornaments',
+  'sk-muurla-moomin-bauble-pyjamas': 'ornaments',
+  'sk-muurla-moomin-baubles-snow': 'ornaments',
+  'sk-muurla-moomin-led-ball': 'ornaments',
+  'sk-muurla-moomin-led-candle-tree': 'ornaments',
+  'arabia-moomin-plates-winter-night': 'tableware',
+  'arabia-moomin-plates-winter-fire': 'tableware',
+  'sk-muurla-moomin-snowfall-mug': 'tableware',
+  'sk-muurla-moomin-gifts-mug': 'tableware',
+  'rj-pesonen-beeswax-candle': 'candles',
+  'rj-pesonen-honeycomb-candle': 'candles',
+  'sk-moomin-mistletoe-candle': 'candles',
+  'iittala-kastehelmi-tealight': 'candles',
+  'halti-crostie-merino-beanie': 'brandhalti',
+  'halti-vuolle-mohair-beanie': 'brandhalti',
+  'halti-tiilo-mittens': 'brandhalti',
+  'halti-warm-merino-socks': 'brandhalti',
+  'north-outdoor-kaisla-beanie': 'brandnorthoutdoor',
+  'north-outdoor-polku-neck-tube': 'brandnorthoutdoor',
+  'north-outdoor-hirsi-socks': 'brandnorthoutdoor',
+  'north-outdoor-avery-mittens': 'brandnorthoutdoor',
+  'makia-alvar-beanie': 'brandmakia',
+  'makia-stellar-scarf': 'brandmakia',
+  'makia-freja-mittens': 'brandmakia',
+  'makia-sibelius-beanie': 'brandmakia',
+  'nb-moomin-christmas-sockbox': 'brandnordicbuddies',
+  'nb-moomin-christmas-box-men': 'brandnordicbuddies',
+  'nb-moomintroll-fleece-mittens': 'brandnordicbuddies',
+  'nb-moomintroll-chunky-beanie': 'brandnordicbuddies',
+  'sk-fazer-christmas-box': 'christmastreats',
+  'sk-karl-fazer-advent-calendar': 'christmastreats',
+  'sk-fazer-christmas-chocolates': 'christmastreats',
+  'sk-karl-fazer-gingerbread-bar': 'christmastreats',
+  'sk-fazer-glogg-balls': 'christmastreats',
+  'sk-halva-christmas-liquorice': 'christmastreats',
+  'sk-halva-salmiakki-calendar': 'christmastreats',
+  'kuivalihakundi-advent-calendar': 'christmastreats',
+  'sk-nordqvist-tea-calendar': 'drinks',
+  'sk-nordqvist-moomin-tea-calendar': 'drinks',
+  'sk-nordic-glogg-concentrate': 'drinks',
+  'rj-christmas-coffee': 'drinks',
+  'sk-emendo-santa-sauna-scent': 'sauna',
+  'sk-emendo-christmas-sauna-set': 'sauna',
+  'sk-emendo-gingerbread-glogg-scent': 'sauna',
+  'sk-aromageddon-gingerbread-scent': 'sauna',
 }
 
 export function subgroupOf(slug: string): SubgroupId {
   return MAP[slug] ?? 'other'
+}
+
+/**
+ * Hylly, joka on teeman oma hylly kategoriasivulla (6.11.2026).
+ *
+ * 🔴 Miksi: joulunosto kategoriasivun kärjessä näytti neljä tuotetta, joista
+ * kolme toistui heti alla Joulukoristeet-hyllyssä (sama vika kuin Sauna-
+ * nostossa 12.8.: samat tuotteet kahdesti). Pelkkä noston poisto olisi vienyt
+ * ainoan reitin joulusivulle. Siksi teeman oma hylly kantaa linkin teemasivulle,
+ * ja themesForCategory jättää noston pois sivuilta, joilla tällainen hylly on.
+ */
+export const SUBGROUP_THEME: Partial<Record<SubgroupId, ThemeId>> = {
+  ornaments: 'christmas',
+  christmastreats: 'christmas',
 }
 
 export function subgroupLabel(id: SubgroupId, lang: Lang): string {

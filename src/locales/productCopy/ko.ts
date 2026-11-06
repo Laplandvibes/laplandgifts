@@ -1881,4 +1881,594 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '식단'],
   },
+  // Talvi- ja joulutuotteet 6.11.2026
+  'iittala-glass-baubles-red': {
+    name: '이딸라 유리 크리스마스 볼 80 mm, 레드, 5개',
+    description:
+      '입으로 불어 만든 이딸라의 빨간 유리 크리스마스 볼 5개 세트로, 지름은 각각 80 mm입니다. 실크 리본으로 매달아 겁니다. 하나하나 입으로 불어 만들기 때문에 모양과 빨간색의 색감이 볼마다 조금씩 다릅니다. 트리나 꽃병에 꽂은 나뭇가지에 걸거나 테이블 장식으로 활용해 보세요.',
+    specs: [
+      '크리스마스 볼 5개',
+      '지름 8 cm',
+      '입으로 불어 만든 유리',
+      '레드',
+      '총중량 0.706 kg',
+      '32741-01, EAN 6411923679978',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '품번과 EAN'],
+  },
+  'iittala-toikka-annual-bird-2026': {
+    name: '이딸라 Birds by Toikka 2026 Lakla',
+    description:
+      'Lakla는 이딸라 Birds by Toikka 시리즈의 2026년 애뉴얼 버드입니다. 오이바 토이까가 디자인한 주황색 유리 새로, 입으로 불어 만듭니다. 이딸라는 해마다 고유한 무늬와 색 조합을 지닌 새 애뉴얼 버드를 내놓으며, 애뉴얼 버드는 수집가들 사이에서 인기를 얻었습니다. 핀란드의 이딸라 유리 공장에서 유리 장인이 한 마리씩 불어 만들기 때문에 작은 기포나 두께 차이가 있을 수 있습니다.',
+    specs: [
+      '길이 22 cm, 너비 10 cm, 높이 14 cm',
+      '입으로 불어 만든 유리',
+      '오렌지',
+      '핀란드 이딸라 유리 공장에서 제조',
+      '젖은 천으로 닦아서 관리',
+      '657373-01, EAN 6411923689199',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '품번과 EAN'],
+  },
+  'marimekko-siirtolapuutarha-baubles': {
+    name: '마리메꼬 시르톨라푸타르하 크리스마스 볼 2025, 2개',
+    description:
+      '마리메꼬의 2025년 시르톨라푸타르하 볼은 마이야 로우에카리의 패턴을 입힌 석기 크리스마스 볼 한 쌍입니다. 패턴 색상은 화이트, 블랙, 그린입니다. Siirtolapuutarha는 핀란드어로 시민 텃밭을 뜻합니다. 볼 하나는 너비 7 cm, 높이 7 cm이고, 마리메꼬는 트리뿐 아니라 창가에 걸어 두는 것도 권합니다.',
+    specs: [
+      '크리스마스 볼 2개',
+      '너비 7 cm, 높이 7 cm',
+      '석기',
+      '화이트, 블랙, 그린',
+      '마이야 로우에카리',
+      '650181-01, EAN 6411255039983',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '디자이너', '품번과 EAN'],
+  },
+  'arabia-moomin-love-baubles': {
+    name: '아라비아 무민 볼 Love, 골드, 5 cm, 2개',
+    description:
+      '아라비아의 5 cm 비트로 포슬린 무민 크리스마스 볼 두 개로, 토베 얀손의 Love 그림이 들어가 있습니다. 무민트롤과 스노크메이든이 함께 있는 이 그림은 사랑과 가까운 관계를 상징하게 되었습니다. 트리나 장식용 나뭇가지에 걸거나 특별한 날의 식탁 장식으로 쓰세요.',
+    specs: [
+      '크리스마스 볼 2개',
+      '너비 5 cm, 높이 5 cm',
+      '비트로 포슬린',
+      '골드',
+      '토베 얀손',
+      '699561-01, EAN 6411801029079',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '원화', '품번과 EAN'],
+  },
+  'sk-muurla-moomin-bauble-pyjamas': {
+    name: '무울라 무민 유리 크리스마스 볼 9 cm, 파자마',
+    description:
+      '무울라 무민 컬렉션의 수공예 유리 크리스마스 볼로, 지름 9 cm에 파자마 그림이 들어가 있습니다. 무울라는 이 장면을 촛불 아래에서 파자마 차림으로 느긋하게 쉬는 모습이라고 설명합니다. 걸 때 쓰는 새틴 리본이 함께 들어 있습니다.',
+    specs: [
+      '지름 9 cm',
+      '유리, 수공예',
+      '새틴 리본 포함',
+    ],
+    specLabels: [undefined, undefined, '걸이'],
+  },
+  'sk-muurla-moomin-baubles-snow': {
+    name: '무울라 무민 볼 5 cm, Lumipyry, 4개',
+    description:
+      '지름 5 cm의 무울라 무민 크리스마스 볼 4개 세트로, Lumipyry(눈보라) 그림과 걸이용 새틴 리본이 들어 있습니다. 무울라는 이 그림을 눈보라가 막 지나간 뒤의 풍경이라고 설명합니다. 눈이 높이 쌓이고 자연은 잠들어 있으며, 이제 눈 랜턴을 쌓을 때입니다.',
+    specs: [
+      '지름 5 cm',
+      '크리스마스 볼 4개, 새틴 리본 포함',
+    ],
+  },
+  'sk-muurla-moomin-led-ball': {
+    name: '무울라 무민 LED 볼 11 cm, Tähtihetki',
+    description:
+      '무울라 무민 Tähtihetki 컬렉션의 유리 장식 볼로, 지름 11 cm이며 안에 LED 10개짜리 조명 줄이 들어 있습니다. 전원 스위치가 있고, 별매인 CR2032 리튬 코인 전지로 작동하며, 실내 전용입니다. Tähtihetki 컬렉션에는 금색 디테일이 들어가며, 걸이용 새틴 리본이 함께 들어 있습니다.',
+    specs: [
+      '지름 11 cm',
+      '유리, LED 10개가 달린 조명 줄',
+      'CR2032 리튬 코인 전지, 별매. 전원 스위치',
+      '실내 전용. CE 인증',
+      '핀란드에서 디자인',
+    ],
+    specLabels: [undefined, undefined, '전원', '사용', '디자인'],
+  },
+  'sk-muurla-moomin-led-candle-tree': {
+    name: '무울라 무민 LED 캔들 12.5 cm, 가문비 아래',
+    description:
+      '무울라 무민 Originals 컬렉션의 건전지식 LED 캔들로, 높이는 12.5 cm입니다. 가문비나무 아래(Kuusen alla) 그림은 토베 얀손의 책 Farlig midsommar에서 가져왔습니다. 파라핀 왁스로 만들어 진짜 스테아린 초처럼 보이도록 만들었고, 따뜻한 색의 빛이 그림을 돋보이게 합니다. 켜기, 끄기, 6시간 타이머 기능이 있고, 별매인 AA 건전지 2개로 작동하며, 실내 전용입니다.',
+    specs: [
+      '지름 10 cm, 높이 12.5 cm',
+      '파라핀 왁스',
+      'AA 건전지 2개, 별매',
+      '켜기, 끄기, 6시간 타이머',
+      '실내 전용',
+      '토베 얀손, 책 Farlig midsommar에서',
+    ],
+    specLabels: [undefined, undefined, '전원', '기능', '사용', '원화'],
+  },
+  'arabia-moomin-plates-winter-night': {
+    name: '아라비아 무민 접시 19 cm, 사무실과 겨울밤',
+    description:
+      '아라비아의 19 cm 무민 접시 두 개 세트로, 흰색 비트로 포슬린에 사무실과 겨울밤 그림이 들어가 있습니다. 앞서 나온 머그와 짝을 이루도록 만들었습니다. 사무실 그림은 1996년 아라비아 무민 머그에 처음 실렸고, 글쓰기와 그리기, 칠하기가 되풀이되는 만화에서 따왔습니다. 겨울밤은 2006년 머그의 그림을 다시 쓴 것으로, 토베 얀손이 1957년에 펴낸 Trollvinter의 한 장면, 다리 난간에 앉은 무민트롤이 담겨 있습니다.',
+    specs: [
+      '지름 19.4 cm, 높이 2.8 cm',
+      '비트로 포슬린',
+      '접시 2개, 사무실과 겨울밤',
+      '식기세척기, 전자레인지, 오븐 사용 가능',
+      '토베 얀손',
+      '566802-01, EAN 6411801011432',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '원화', '품번과 EAN'],
+  },
+  'arabia-moomin-plates-winter-fire': {
+    name: '아라비아 무민 접시 19 cm, 겨울 모닥불과 항해',
+    description:
+      '아라비아의 19 cm 비트로 포슬린 무민 접시 두 개로, 하나는 겨울 모닥불, 다른 하나는 항해 그림입니다. 둘 다 토베 얀손의 그림이며, 겨울 장면과 항해 장면을 나란히 놓은 이 세트는 평소 식사에도 특별한 날의 식사에도 쓰도록 만들었습니다.',
+    specs: [
+      '접시 2개, 겨울 모닥불과 항해',
+      '비트로 포슬린',
+      '멀티컬러',
+      '총중량 0.886 kg',
+      '토베 얀손',
+      '629239-01, EAN 6411801015065',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '원화', '품번과 EAN'],
+  },
+  'sk-muurla-moomin-snowfall-mug': {
+    name: '무울라 무민 에나멜 머그 2.5 dl, 눈 내리는 날',
+    description:
+      '무울라의 2.5 dl 무민 에나멜 머그로, 눈 내리는 날 그림이 들어가 있습니다. 무민 골짜기에 첫눈이 내려 눈놀이를 할 때가 된 장면입니다. 무울라의 에나멜 제품은 탄소강 심에 에나멜을 두 겹 입혀 만들기 때문에, 이 머그는 식탁뿐 아니라 하이킹, 별장, 보트에서도 쓰기 좋습니다. 뜨거운 음료와 찬 음료 모두 담을 수 있고, 식기세척기는 되지만 전자레인지는 안 됩니다.',
+    specs: [
+      '2.5 dl',
+      '탄소강, 이중 에나멜 코팅',
+      '식기세척기 사용 가능. 전자레인지 사용 불가',
+    ],
+  },
+  'sk-muurla-moomin-gifts-mug': {
+    name: '무울라 무민 에나멜 머그 3.7 dl, 선물',
+    description:
+      '무울라의 3.7 dl 무민 에나멜 머그로, 가까운 사람들에게 선물을 주는 크리스마스 그림이 들어가 있습니다. 에나멜 아래에는 이중 코팅한 탄소강 심이 있어 식탁에서뿐 아니라 야외에서도 쓸 만큼 튼튼합니다. 뜨거운 음료와 찬 음료 모두 담을 수 있고, 식기세척기는 되지만 전자레인지는 안 됩니다.',
+    specs: [
+      '3.7 dl',
+      '탄소강, 이중 에나멜 코팅',
+      '식기세척기 사용 가능. 전자레인지 사용 불가',
+    ],
+  },
+  'rj-pesonen-beeswax-candle': {
+    name: 'Pesosen Mehiläistarhat 밀랍 캔들',
+    description:
+      '양봉장 Pesosen Mehiläistarhat에서 밀랍으로 손수 만든 큰 테이블 캔들입니다. 색과 향도 밀랍에서 나옵니다. 양봉장의 에사는 29년째 벌을 쳐 왔고 그중 13년은 전업으로 해 왔으며, 벌통은 사스타말라와 해메엔퀴뢰 일대의 들판과 숲, 작은 물길 사이에 있습니다. 양봉장은 자기 벌통에서 나온 것으로 캔들을 만들며, 캔들은 밝고 안정적인 불꽃으로 오래 탑니다.',
+    specs: [
+      '밀랍',
+      '대형',
+      '수공예',
+      '사스타말라와 해메엔퀴뢰',
+    ],
+    specLabels: [undefined, undefined, '제작 방식', '양봉장'],
+  },
+  'rj-pesonen-honeycomb-candle': {
+    name: 'Pesosen Mehiläistarhat 벌집 캔들',
+    description:
+      '양봉장 Pesosen Mehiläistarhat에서 밀랍으로 손수 만든 큰 벌집 캔들로, 연소 시간은 30시간입니다. 색과 향은 밀랍에서 나오며, 양봉장은 사스타말라와 해메엔퀴뢰 일대의 자기 벌통에서 나온 것으로 캔들을 만듭니다. 양봉장의 에사는 29년째 벌을 쳐 왔고 13년 동안 전업으로 돌봐 왔습니다.',
+    specs: [
+      '밀랍',
+      '대형',
+      '30 h',
+      '수공예',
+      '사스타말라와 해메엔퀴뢰',
+    ],
+    specLabels: [undefined, undefined, '연소 시간', '제작 방식', '양봉장'],
+  },
+  'sk-moomin-mistletoe-candle': {
+    name: '하비 무민 캔들 7 x 12 cm, 겨우살이, 베이지',
+    description:
+      '하비의 베이지색 무민 테이블 캔들로, 겨우살이 무늬에 크기는 7 x 12 cm, 연소 시간은 55시간입니다. 무늬는 실크스크린으로 캔들에 인쇄했습니다.',
+    specs: [
+      '7 x 12 cm',
+      '베이지',
+      '55 h',
+      '실크스크린 인쇄',
+      'Havi Oy, 리히매키',
+    ],
+    specLabels: [undefined, undefined, '연소 시간', '장식', '판매사'],
+  },
+  'iittala-kastehelmi-tealight': {
+    name: '이딸라 카스테헬미 티라이트 홀더 64 mm, 투명',
+    description:
+      '이딸라 카스테헬미 시리즈의 투명 유리 티라이트 홀더로, 지름은 64 mm입니다. 카스테헬미는 오이바 토이까가 1964년 이딸라를 위해 디자인한 시리즈로 핀란드어로 이슬방울을 뜻하며, 이딸라는 2010년에 이 시리즈를 다시 선보였습니다. 다른 색으로도 나오며, 이딸라는 하나만 두거나 여러 색을 함께 모아 쓰기를 권합니다.',
+    specs: [
+      '지름 6.4 cm',
+      '유리',
+      '투명',
+      '손세척만 가능',
+      '오이바 토이까, Iittala Kastehelmi',
+      '13167-01, EAN 6411920059766',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '디자이너와 컬렉션', '품번과 EAN'],
+  },
+  'sk-fazer-christmas-box': {
+    name: '파제르 크리스마스 박스 2026',
+    description:
+      '파제르의 2026년 크리스마스 박스로, 시즌 초콜릿과 사탕, 진저브레드 6팩이 들어 있습니다. 칼 파제르 초콜릿, 칼 파제르 진저브레드 초콜릿 바, Remix Xmas + Choco, Dumle Winter Mix 토피, Vihreät kuulat 배 젤리, Marianne 민트 초콜릿 진저브레드 쿠키로 구성됩니다.',
+    specs: [
+      '칼 파제르 초콜릿 250 g, 칼 파제르 진저브레드 초콜릿 바 200 g, Remix Xmas + Choco 캔디 믹스 300 g, Dumle Winter Mix 토피 믹스 180 g, Vihreät kuulat 배 젤리 260 g, Marianne 민트 초콜릿 진저브레드 쿠키 175 g',
+      '코코아 30% 이상 밀크 초콜릿',
+      '밀(글루텐), 대두, 우유(유당) 함유. 호밀, 보리, 귀리, 달걀, 견과류, 아몬드가 들어 있을 수 있음',
+      '열량 1845 kJ / 441 kcal, 지방 17 g 그중 포화지방 9.4 g, 탄수화물 67 g 그중 당류 53 g, 단백질 4.6 g, 소금 0.36 g',
+    ],
+    specLabels: [undefined, '포장 표시 사항', '알레르기 유발 성분', '100 g당 영양성분'],
+  },
+  'sk-karl-fazer-advent-calendar': {
+    name: '칼 파제르 어드벤트 캘린더 200 g',
+    description:
+      '문 뒤에 여러 맛의 초콜릿 프랄린 200 g이 들어 있는 칼 파제르 어드벤트 캘린더입니다. 마지막 문에는 파제르가 1922년부터 만들어 온 칼 파제르 밀크 초콜릿, 파제르 블루가 가득 들어 있습니다. 파제르는 Fazer Cocoa Vision 프로그램에 따라 코코아를 조달합니다.',
+    specs: [
+      '200 g',
+      '여러 맛의 초콜릿 프랄린, 마지막 문에는 파제르 블루 밀크 초콜릿',
+      '코코아 30% 이상 밀크 초콜릿',
+      '우유, 대두, 보리(글루텐) 함유. 견과류, 아몬드, 밀, 호밀, 귀리가 들어 있을 수 있음',
+      '열량 2315 kJ / 554 kcal, 지방 34 g 그중 포화지방 20 g, 탄수화물 53 g 그중 당류 51 g, 단백질 9.6 g, 소금 0.31 g',
+    ],
+    specLabels: [undefined, undefined, '포장 표시 사항', '알레르기 유발 성분', '100 g당 영양성분'],
+  },
+  'sk-fazer-christmas-chocolates': {
+    name: '파제르 Joulusuklaa 초콜릿 295 g',
+    description:
+      '파제르 Joulusuklaa 초콜릿 295 g으로, 부드러운 밀크 초콜릿 껍질 안에 진짜 진저브레드 가루가 든 트러플 필링이 있습니다. 파제르는 크리스마스 모임에서, 예를 들어 북유럽의 따뜻한 향신료 음료인 글뢰그와 함께 즐기기를 권합니다.',
+    specs: [
+      '295 g',
+      '밀크 초콜릿 껍질, 진저브레드 가루가 든 트러플 필링',
+      '코코아 30% 이상 밀크 초콜릿',
+      '우유, 밀, 보리(글루텐), 대두 함유. 견과류, 아몬드, 호밀, 귀리가 들어 있을 수 있음',
+      '열량 2274 kJ / 545 kcal, 지방 33 g 그중 포화지방 19 g, 탄수화물 53 g 그중 당류 51 g, 단백질 8.2 g, 소금 0.24 g',
+    ],
+    specLabels: [undefined, undefined, '포장 표시 사항', '알레르기 유발 성분', '100 g당 영양성분'],
+  },
+  'sk-karl-fazer-gingerbread-bar': {
+    name: '칼 파제르 진저브레드 초콜릿 Winter Edition',
+    description:
+      '부드러운 밀크 초콜릿과 바삭한 진저브레드를 합친 칼 파제르 Winter Edition 200 g 바입니다. 파제르는 1922년부터 칼 파제르 밀크 초콜릿을 만들어 왔고, 이 진저브레드 바는 그 크리스마스 에디션입니다.',
+    specs: [
+      '200 g',
+      '바삭한 진저브레드가 든 밀크 초콜릿',
+      '코코아 30% 이상 밀크 초콜릿',
+      '우유, 밀(글루텐), 대두 함유. 견과류, 아몬드, 호밀, 귀리가 들어 있을 수 있음',
+      '열량 2205 kJ / 527 kcal, 지방 30 g 그중 포화지방 18 g, 탄수화물 55 g 그중 당류 48 g, 단백질 8.5 g, 소금 0.22 g',
+    ],
+    specLabels: [undefined, undefined, '포장 표시 사항', '알레르기 유발 성분', '100 g당 영양성분'],
+  },
+  'sk-fazer-glogg-balls': {
+    name: '파제르 Glögikuulat 젤리 260 g',
+    description:
+      '파제르 Glögikuulat 260 g 상자로, 북유럽의 따뜻한 향신료 음료 글뢰그에서 이름을 딴 부드럽고 달콤한 젤리 볼입니다. 글루텐, 젤라틴, 유당이 들어 있지 않고 비건도 먹을 수 있습니다. 상자에는 젤리로 따뜻한 음료를 만드는 레시피가 들어 있습니다.',
+    specs: [
+      '260 g',
+      '글루텐 프리, 젤라틴 프리, 유당 프리, 비건',
+      '열량 1353 kJ / 322 kcal, 지방 0 g 그중 포화지방 0 g, 탄수화물 79 g 그중 당류 64 g, 단백질 0 g, 소금 0.28 g',
+    ],
+    specLabels: [undefined, '식이', '100 g당 영양성분'],
+  },
+  'sk-halva-christmas-liquorice': {
+    name: '할바 크리스마스 감초 믹스 250 g',
+    description:
+      '할바의 크리스마스 감초 믹스로, 크리스마스 맛 3가지의 감초 250 g이 로즈골드색 상자에 담겨 있습니다. 사과 파이 맛 감초 꽃, 글뢰그 필링 감초, 진저브레드 필링 감초가 들어 있습니다. 할바는 이 믹스를 헬싱키 피태얀매키에서 만듭니다.',
+    specs: [
+      '250 g',
+      '사과 파이 맛 감초 꽃, 글뢰그 필링 감초, 진저브레드 필링 감초',
+      '헬싱키 피태얀매키에서 제조',
+      '밀(글루텐) 함유',
+      '열량 1419 kJ / 334 kcal, 지방 0.7 g 그중 포화지방 0.3 g, 탄수화물 79 g 그중 당류 53 g, 단백질 2.9 g, 소금 0.15 g',
+    ],
+    specLabels: [undefined, undefined, undefined, '알레르기 유발 성분', '100 g당 영양성분'],
+  },
+  'sk-halva-salmiakki-calendar': {
+    name: '할바 살미아키 어드벤트 캘린더 200 g',
+    description:
+      '핀란드의 짠 감초 살미아키 200 g을 할바의 자체 제품 중에서 골라 담은 어드벤트 캘린더입니다. 문 뒤에는 Vanhat Autot, 살미아키 물고기, 짠맛 해골, Pommix, 살미아키 하트, 살미아키 칼, 네모난 살미아키루투, 단단한 Jauhix 살미아키가 들어 있습니다.',
+    specs: [
+      '200 g',
+      'Vanhat Autot 살미아키, 살미아키 물고기, 짠맛 해골, Pommix 살미아키, 살미아키 하트, 살미아키 칼, 살미아키루투, Jauhix 살미아키',
+      '열량 1406 kJ / 331 kcal, 지방 0.5 g 그중 포화지방 0.1 g, 탄수화물 80 g 그중 당류 59 g, 단백질 2.7 g, 소금 0.03 g',
+    ],
+    specLabels: [undefined, undefined, '100 g당 영양성분'],
+  },
+  'kuivalihakundi-advent-calendar': {
+    name: '쿠이발리하쿤디 육포 어드벤트 캘린더 2026, 24칸',
+    description:
+      '쿠이발리하쿤디의 2026년 어드벤트 캘린더로, 24개의 문 뒤마다 20 g 육포 한 봉지가 들어 있으며 24가지 맛이 모두 다릅니다. 소고기, 닭고기, 기름진 돼지고기, 기름기 적은 돼지고기가 기본 맛과 이 캘린더만을 위한 맛으로 들어 있으며, 모두 핀란드 요켈라에 있는 회사 자체 공장에서 만들었습니다. 육포는 개봉 후에도 실온에서 보관할 수 있고, 캘린더는 테이블에 세우거나 걸이 구멍으로 벽에 걸 수 있으며, 한정 수량입니다.',
+    specs: [
+      '육포 24 x 20 g 봉지, 문마다 다른 맛',
+      '소고기, 닭고기, 기름진 돼지고기, 기름기 적은 돼지고기',
+      '핀란드 요켈라의 쿠이발리하쿤디 자체 공장에서 제조',
+      '개봉 후에도 실온 보관 가능',
+      '테이블에 세우거나 걸이 구멍으로 벽에 걸 수 있음',
+    ],
+    specLabels: [undefined, '육류', undefined, undefined, '걸이'],
+  },
+  'halti-crostie-merino-beanie': {
+    name: '할티 Crostie 메리노 비니',
+    description:
+      '크로스컨트리 스키, 겨울 달리기 같은 추운 날 운동을 위해 머리에 꼭 맞게 만든 할티 비니로, 핀란드에서 디자인하고 만들었습니다. 비니의 절반에는 방풍과 통기가 되는 Stormwall® 안감을 대어 이마와 귀를 바람으로부터 지켜 줍니다. 겉감은 부드러운 메리노 울 혼방 니트라 따뜻하면서도 통기가 잘 됩니다.',
+    specs: [
+      '메리노 울과 아크릴 혼방 니트, 메리노 울 50%, 아크릴 50%. 절반에 Stormwall® 안감',
+      'S, M, L',
+      '0.2 kg',
+      '여러 색상: Crocus Petal, Black, White, Fudge Maroon Red, Veiled Pink',
+      '비슷한 색끼리 세탁, 눕혀서 건조',
+      '핀란드에서 디자인하고 제조, Avainlippu(Key Flag) 마크 제품',
+    ],
+  },
+  'halti-vuolle-mohair-beanie': {
+    name: '할티 Vuolle 모헤어 비니',
+    description:
+      '모헤어, 메리노 울, 폴리아미드 혼방으로 만든 할티의 보송보송한 비니로, 이중 구조라 더 따뜻하고 접어 올린 단이 높습니다. 혼방 소재 덕분에 가볍지만 따뜻하며, 별도 안감은 없습니다. 원사이즈이고 색상은 Snow White와 Black입니다.',
+    specs: [
+      '모헤어 혼방, 모헤어 50%, 폴리아미드 32%, 메리노 울 18%. 별도 안감 없음',
+      '원사이즈',
+      'Snow White 또는 Black',
+      '비슷한 색끼리 세탁, 눕혀서 건조',
+      '이중 구조, 접어 올린 단이 높음',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '특징'],
+  },
+  'halti-tiilo-mittens': {
+    name: '할티 Tiilo II 벙어리장갑',
+    description:
+      '겨울 야외 활동을 위한 할티의 보온 벙어리장갑입니다. 방수와 방풍이 되는 DrymaxX® 원단에 60 g Microtherm® 충전재를 넣었습니다. 손바닥은 그립이 좋은 인조 가죽이고, 립 니트 안쪽 손목단과 조절 가능한 손목 조임이 있습니다. 블랙, 사이즈 7부터 12까지입니다.',
+    specs: [
+      '멤브레인이 있는 DrymaxX® 폴리에스터, 폴리에스터 100%. 립 니트 손목단, 폴리에스터 100%. 인조 가죽 손바닥, 폴리우레탄 100%',
+      '60 g Microtherm® 충전재',
+      '7, 8, 9, 10, 11, 12',
+      '블랙',
+      '단독 세탁',
+    ],
+    specLabels: [undefined, '충전재', undefined, undefined, undefined],
+  },
+  'halti-warm-merino-socks': {
+    name: '할티 따뜻한 메리노 울 양말',
+    description:
+      '두꺼운 테리 니트로 짠 할티 메리노 울 양말로, 핀란드에서 만들었습니다. 솔기가 없어 스키 부츠, 겨울 신발, 스노보드 부츠 안에서도 편하게 맞습니다. 테리 조직이 공기를 머금어 따뜻하고, 립 니트 양말목은 흘러내리지 않습니다. 단독으로 신거나 얇은 양말 위에 겹쳐 신으세요.',
+    specs: [
+      '메리노 울 혼방, 메리노 울 62%, 폴리아미드 36%, 엘라스테인 2%',
+      '34-36, 37-39, 40-42, 43-45, 46-48',
+      'Dark Sea Green 또는 Asphalt',
+      '0.1 kg',
+      '핀란드 제조, Avainlippu(Key Flag) 마크 제품',
+      '두꺼운 테리 니트, 무봉제, 흘러내리지 않는 립 니트 양말목',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '특징'],
+  },
+  'north-outdoor-kaisla-beanie': {
+    name: '노스아웃도어 Kaisla 메리노 비니, 커피',
+    description:
+      '뮬싱 프리 메리노 울 100퍼센트로 짠 도톰한 브리오슈 니트 비니로, 오울루에 있는 노스아웃도어 자체 편직 공장에서 만듭니다. 노스아웃도어는 가을부터 늦겨울까지, 도시 산책에도 자연 속 산길에도 쓰기를 권합니다. 원사이즈, 커피 색입니다.',
+    specs: [
+      '메리노 울 100%, 뮬싱 프리, 브리오슈 니트',
+      '원사이즈',
+      '커피',
+      '핀란드 오울루의 노스아웃도어 자체 편직 공장에서 제조',
+    ],
+  },
+  'north-outdoor-polku-neck-tube': {
+    name: '노스아웃도어 Polku 메리노 넥게이터, 커피',
+    description:
+      '뮬싱 프리 메리노 울 100퍼센트를 촘촘한 1x1 립으로 짠 도톰한 넥게이터입니다. 길이가 넉넉해 머플러처럼 두르거나 후드처럼 끌어올리거나 얼굴을 가릴 수 있습니다. 원사이즈, 커피 색입니다.',
+    specs: [
+      '메리노 울 100%, 뮬싱 프리, 1x1 립 니트',
+      '원사이즈',
+      '커피',
+      '머플러, 후드, 얼굴 가리개',
+    ],
+    specLabels: [undefined, undefined, undefined, '용도'],
+  },
+  'north-outdoor-hirsi-socks': {
+    name: '노스아웃도어 Hirsi 메리노 울 양말, 아몬드',
+    description:
+      '오울루의 노스아웃도어 자체 편직 공장에서 만든 가벼운 메리노 울 양말입니다. 뮬싱 프리 메리노 80퍼센트에 내구성을 위한 폴리아미드 20퍼센트를 섞었습니다. 실내에서 가장 진가를 발휘하며, 단독으로 신거나 다른 양말 위에 겹쳐 신습니다. 세탁기의 약한 코스로 빨 수 있지만 세탁할 일은 드뭅니다.',
+    specs: [
+      '메리노 울 80%, 뮬싱 프리, 폴리아미드 20%',
+      '35-38, 39-42, 43-46',
+      '아몬드',
+      '핀란드 오울루의 노스아웃도어 자체 편직 공장에서 제조',
+      '세탁기 약한 코스',
+    ],
+  },
+  'north-outdoor-avery-mittens': {
+    name: '노스아웃도어 Avery 울 플리스 벙어리장갑, 라테',
+    description:
+      '재활용 울 63퍼센트가 든 가벼운 이탈리아산 울 플리스 혼방 벙어리장갑으로, 안감은 메리노 울 100퍼센트입니다. 메리노 안감이 습기를 내보내고 온기를 지키며, 꼭 맞으면서도 유연한 핏이라 물건을 쥐는 감각이 살아 있습니다. 사이즈 S와 M, 라테 색입니다.',
+    specs: [
+      '이탈리아산 울 플리스 혼방, 재활용 울 63%. 안감 메리노 울 100%',
+      'S, M',
+      '라테',
+      '야외와 도시',
+    ],
+    specLabels: [undefined, undefined, undefined, '용도'],
+  },
+  'makia-alvar-beanie': {
+    name: '마키아 Alvar 메리노 비니',
+    description:
+      '메리노 울 100퍼센트로 된 마키아 비니로, 핀란드에서 제조했습니다. 울은 뮬싱 프리이며 원사이즈입니다.',
+    specs: [
+      '메리노 울 100%, 뮬싱 프리',
+      '원사이즈',
+      '핀란드 제조',
+    ],
+  },
+  'makia-stellar-scarf': {
+    name: '마키아 Stellar 메리노 스카프',
+    description:
+      '메리노 울 100퍼센트로 만든 마키아 스카프입니다. 원사이즈입니다.',
+    specs: [
+      '메리노 울 100%',
+      '원사이즈',
+    ],
+  },
+  'makia-freja-mittens': {
+    name: '마키아 Freja 퀼팅 벙어리장갑',
+    description:
+      'Sorona® 인조 다운을 채운 마키아의 퀼팅 벙어리장갑입니다. 일부를 식물 유래 원료로 만든 이 충전재는 통기가 되면서 온기를 지킵니다. 3000 mm 내수압이 가벼운 비에도 손을 마른 상태로 지켜 줍니다. 사이즈 S와 M입니다.',
+    specs: [
+      'Sorona® 인조 다운, 일부 식물 유래',
+      '3000 mm',
+      'S, M',
+    ],
+    specLabels: ['충전재', '내수압', undefined],
+  },
+  'makia-sibelius-beanie': {
+    name: '마키아 Sibelius 메리노 비니',
+    description:
+      '메리노 울 100퍼센트로 만든 마키아의 Sibelius 비니입니다. 원사이즈입니다.',
+    specs: [
+      '메리노 울 100%',
+      '원사이즈',
+    ],
+  },
+  'nb-moomin-christmas-sockbox': {
+    name: '무민 크리스마스 양말 박스, EU 36-42',
+    description:
+      '양말 두 켤레가 든 무민 크리스마스 선물 상자로, 원사이즈이며 EU 36부터 42까지 맞습니다. 양말은 주로 면이고 폴리에스터, 나일론, 약간의 엘라스테인이 섞였으며, 무민 공식 제품입니다.',
+    specs: [
+      '면 60%, 폴리에스터 33%, 나일론 4%, 엘라스테인 2%, 엘라스토디엔 1%',
+      '원사이즈, EU 36-42',
+      '선물 상자에 담긴 양말 2켤레',
+      '무민 공식 제품',
+    ],
+    specLabels: [undefined, undefined, undefined, '라이선스'],
+  },
+  'nb-moomin-christmas-box-men': {
+    name: '무민 크리스마스 남성 양말 박스, EU 40-45',
+    description:
+      '남성 양말 두 켤레가 든 무민 크리스마스 선물 상자로, 사이즈는 EU 40부터 45까지입니다. Nordicbuddies는 경험상 더 큰 발에도 맞는다고 말합니다. 양말은 주로 면이고 폴리에스터, 나일론, 약간의 엘라스테인이 섞였으며, 무민 공식 제품입니다.',
+    specs: [
+      '면 60%, 폴리에스터 33%, 나일론 4%, 엘라스테인 2%, 엘라스토디엔 1%',
+      '원사이즈, EU 40-45',
+      '선물 상자에 담긴 양말 2켤레',
+      '무민 공식 제품',
+    ],
+    specLabels: [undefined, undefined, undefined, '라이선스'],
+  },
+  'nb-moomintroll-fleece-mittens': {
+    name: '무민트롤 플리스 벙어리장갑',
+    description:
+      '재활용 폴리에스터 100퍼센트 플리스로 만든 무민트롤 벙어리장갑으로, 안감은 아크릴입니다. 잘 늘어나서 원사이즈로 대부분 맞으며, 무민 공식 제품입니다.',
+    specs: [
+      '재활용 폴리에스터 100%',
+      '아크릴 100%',
+      '원사이즈, 신축성 있음, 대부분 맞음',
+      '무민 공식 제품',
+    ],
+    specLabels: [undefined, '안감', undefined, '라이선스'],
+  },
+  'nb-moomintroll-chunky-beanie': {
+    name: '무민트롤 복슬복슬 청키 비니, 핑크',
+    description:
+      '보송보송하고 도톰한 핑크색 무민트롤 비니로, 성인용 원사이즈입니다. 소재는 폴리에스터, 나일론, 아크릴, 울, 엘라스테인 혼방이며 무민 공식 제품입니다.',
+    specs: [
+      '폴리에스터, 나일론, 아크릴, 울, 엘라스테인',
+      '성인, 원사이즈',
+      '핑크',
+      '무민 공식 제품',
+    ],
+    specLabels: [undefined, undefined, undefined, '라이선스'],
+  },
+  'sk-nordqvist-tea-calendar': {
+    name: '노르드크비스트 티 어드벤트 캘린더, 27 티백',
+    description:
+      '노르드크비스트의 정육면체 모양 티 캘린더로, 문 25개에 티백 27개가 들어 있으며 마지막 문에는 세 개가 들어 있습니다. 티백은 홍차, 녹차, 루이보스, 히비스커스 블렌드이고, 진저브레드, 글뢰그, 시나몬 같은 크리스마스 맛도 있습니다.',
+    specs: [
+      '문 25개, 티백 27개. 마지막 문에 티백 3개',
+      '홍차, 녹차, 루이보스, 히비스커스 블렌드',
+      'Nordqvist Oy, 누르미야르비',
+      '6413440000433',
+    ],
+    specLabels: [undefined, '차 종류', '판매사', 'EAN'],
+  },
+  'sk-nordqvist-moomin-tea-calendar': {
+    name: '노르드크비스트 무민 티 캘린더, 24 티백, 라일락',
+    description:
+      '노르드크비스트의 라일락색 무민 티 캘린더로, 12가지 맛 피라미드 티백이 두 개씩 모두 24개 들어 있습니다. 홍차와 녹차, 카페인 없는 루이보스가 함께 들어 있으며, 맛마다 Olet Ihana(당신은 사랑스러워요)부터 Muumimamman Voimajuoma(무민마마의 힘이 나는 음료)까지 이름이 붙어 있습니다. 뚜껑은 캘린더가 똑바로 선 채로 열리며, Rainforest Alliance 인증을 받았습니다.',
+    specs: [
+      '피라미드 티백 24개, 12가지 맛, 맛마다 2개',
+      '41.5 g',
+      '라일락',
+      'Rainforest Alliance',
+      'Nordqvist Oy, 누르미야르비',
+      '6413440000679',
+    ],
+    specLabels: [undefined, undefined, undefined, '인증', '판매사', 'EAN'],
+  },
+  'sk-nordic-glogg-concentrate': {
+    name: 'Poikain Parhaat 글뢰그 원액 0.5 l',
+    description:
+      '핀란드산 블랙커런트와 레드커런트 주스, 진짜 향신료로 손수 만든 무알코올(0%) Nordic 글뢰그 원액입니다. 1+3으로 희석하며, Poikain Parhaat는 베리 맛이 풍부하고 따뜻한 향신료 향이 나는 전통적인 맛의 글뢰그라고 소개합니다.',
+    specs: [
+      '0.5 l',
+      '1+3',
+      '0%',
+      '핀란드산 블랙커런트와 레드커런트 주스',
+      '열량 47.7 kcal / 199.58 kJ, 지방 0.2 g 그중 포화지방 0.2 g, 탄수화물 11 g 그중 당류 11 g, 단백질 0.3 g, 소금 0.2 g',
+      'Poikain Parhaat Oy Ltd, 탐페레',
+    ],
+    specLabels: [undefined, '희석 비율', '알코올', undefined, '100 ml당 영양성분', '판매사'],
+  },
+  'rj-christmas-coffee': {
+    name: 'Gran Palomar 크리스마스 커피 200 g',
+    description:
+      'Cafetoria Roastery의 Gran Palomar 크리스마스 커피는 유기농 공정무역 커피입니다. 유기농 시나몬과 카다멈으로 향을 냈고, 200 g 포장입니다.',
+    specs: [
+      '200 g',
+      '유기농 시나몬과 카다멈',
+      '공정무역, 유기농',
+      'Cafetoria Roastery Oy',
+    ],
+    specLabels: [undefined, '향신료', '인증', '로스터리'],
+  },
+  'sk-emendo-santa-sauna-scent': {
+    name: 'Emendo 산타클로스 공식 사우나 향 500 ml',
+    description:
+      'Emendo의 산타클로스 공식 사우나 향으로, 500 ml에 100퍼센트 순수 에센셜 오일이 들어 있고 합성 향료는 없습니다. 물 약 3 l가 든 양동이에 약 ½ dl를 섞어 보통 사우나 물처럼 쓰세요.',
+    specs: [
+      '500 ml',
+      '100% 에센셜 오일 함유, 합성 향료(parfum) 없음',
+      '물 약 3 l가 든 양동이에 약 ½ dl',
+      '©Santa Claus Foundation™',
+      '6417892057458',
+    ],
+    specLabels: [undefined, '성분', '사용법', '라이선스', 'EAN'],
+  },
+  'sk-emendo-christmas-sauna-set': {
+    name: 'Emendo Jouluhetki 사우나 선물 세트',
+    description:
+      '핀란드어로 크리스마스의 순간을 뜻하는 Jouluhetki는 Emendo의 사우나 선물 세트입니다. 끈 달린 비누, 사우나 향, 샤워볼이 들어 있으며, 선물용으로 포장되어 나옵니다.',
+    specs: [
+      '끈 달린 비누, 사우나 향, 샤워볼',
+      '6417892041280',
+    ],
+    specLabels: [undefined, 'EAN'],
+  },
+  'sk-emendo-gingerbread-glogg-scent': {
+    name: 'Emendo 사우나 향 2종, 진저브레드와 글뢰그',
+    description:
+      '진저브레드와 글뢰그 두 가지 Emendo 사우나 향으로, 각 10 ml이며 100퍼센트 순수 에센셜 오일로 만들었습니다. 물을 담은 국자에 2방울에서 6방울을 떨어뜨려 돌 위에 끼얹으세요.',
+    specs: [
+      '2 x 10 ml',
+      '진저브레드, 글뢰그',
+      '100% 에센셜 오일로 제조',
+      '물 한 국자에 2방울에서 6방울',
+      '6417892021060',
+    ],
+    specLabels: [undefined, '향', '성분', '사용법', 'EAN'],
+  },
+  'sk-aromageddon-gingerbread-scent': {
+    name: '아로마게돈 사우나 향 Piparipyörre 15 ml',
+    description:
+      '진저브레드 소용돌이라는 뜻의 아로마게돈 Piparipyörre는 따뜻하고 스파이시한 시나몬 향을 사우나에 더합니다. 진저브레드의 느낌도 함께 납니다. 물을 담은 국자에 2방울에서 4방울을 떨어뜨리고, 항상 희석해서 쓰며 사우나 스토브에 바로 붓지 마세요.',
+    specs: [
+      '15 ml',
+      '진저브레드 노트가 있는 시나몬',
+      '물 한 국자에 2방울에서 4방울, 항상 희석',
+      'Aromageddon Oy, 에스포',
+    ],
+    specLabels: [undefined, '향', '사용법', '판매사'],
+  },
 }

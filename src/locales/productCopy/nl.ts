@@ -1880,4 +1880,594 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Dieet'],
   },
+  // Talvi- ja joulutuotteet 6.11.2026
+  'iittala-glass-baubles-red': {
+    name: 'Iittala glazen kerstballen 80 mm, rood, 5 stuks',
+    description:
+      'Een set van 5 rode kerstballen van mondgeblazen glas van Iittala, elk 80 mm in doorsnee en opgehangen aan een zijden lint. Omdat elke bal met de mond geblazen is, verschillen de vorm en de tint rood licht van bal tot bal. Hang ze in de kerstboom of aan een tak in een vaas, of gebruik ze in een tafelstuk.',
+    specs: [
+      '5 kerstballen',
+      'Diameter 8 cm',
+      'Mondgeblazen glas',
+      'Rood',
+      '0,706 kg bruto',
+      '32741-01, EAN 6411923679978',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Artikelnummer en EAN'],
+  },
+  'iittala-toikka-annual-bird-2026': {
+    name: 'Iittala Birds by Toikka jaarvogel 2026, Lakla',
+    description:
+      'Lakla is de jaarvogel 2026 in de serie Birds by Toikka van Iittala, een oranje vogel van mondgeblazen glas, ontworpen door Oiva Toikka. Iittala brengt elk jaar een nieuwe jaarvogel uit met een eigen patroon en een eigen kleurencombinatie, en de jaarvogels zijn populair geworden bij verzamelaars. Elke vogel wordt geblazen door glasblazers in de glasfabriek van Iittala in Finland, dus kleine luchtbelletjes en verschillen in dikte kunnen voorkomen.',
+    specs: [
+      'Lengte 22 cm, breedte 10 cm, hoogte 14 cm',
+      'Mondgeblazen glas',
+      'Oranje',
+      'Gemaakt in de glasfabriek van Iittala in Finland',
+      'Schoonmaken met een vochtige doek',
+      '657373-01, EAN 6411923689199',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Artikelnummer en EAN'],
+  },
+  'marimekko-siirtolapuutarha-baubles': {
+    name: 'Marimekko Siirtolapuutarha kerstballen 2025, 2 stuks',
+    description:
+      'De Siirtolapuutarha-kerstballen 2025 van Marimekko zijn twee kerstballen van steengoed met het dessin van Maija Louekari in wit, zwart en groen. Siirtolapuutarha is Fins voor volkstuin. Elke bal is 7 cm breed en 7 cm hoog, en Marimekko raadt aan ze niet alleen in de kerstboom maar ook voor het raam te hangen.',
+    specs: [
+      '2 kerstballen',
+      'Breedte 7 cm, hoogte 7 cm',
+      'Steengoed',
+      'Wit, zwart en groen',
+      'Maija Louekari',
+      '650181-01, EAN 6411255039983',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Ontwerper', 'Artikelnummer en EAN'],
+  },
+  'arabia-moomin-love-baubles': {
+    name: 'Arabia Moomin kerstballen Love, goud, 5 cm, 2 stuks',
+    description:
+      'Twee Moomin-kerstballen van 5 cm in vitroporselein van Arabia, versierd met Tove Janssons motief Love met Moomintroll en de Snorkjuffrouw. Het motief is uitgegroeid tot een symbool van liefde en hechte relaties. Hang ze in de kerstboom of aan een decoratietak, of gebruik ze als onderdeel van een feestelijk gedekte tafel.',
+    specs: [
+      '2 kerstballen',
+      'Breedte 5 cm, hoogte 5 cm',
+      'Vitroporselein',
+      'Goud',
+      'Tove Jansson',
+      '699561-01, EAN 6411801029079',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustratie', 'Artikelnummer en EAN'],
+  },
+  'sk-muurla-moomin-bauble-pyjamas': {
+    name: 'Muurla Moomin glazen kerstbal 9 cm, Pyjama',
+    description:
+      'Een handgemaakte glazen kerstbal uit de Moomin-collectie van Muurla, 9 cm in doorsnee, met het motief Pyjama. Muurla beschrijft de scène als lekker luieren in pyjama bij kaarslicht, en een satijnen lint om hem op te hangen zit in de verpakking.',
+    specs: [
+      'Diameter 9 cm',
+      'Glas, handgemaakt',
+      'Satijnen lint inbegrepen',
+    ],
+    specLabels: [undefined, undefined, 'Ophanging'],
+  },
+  'sk-muurla-moomin-baubles-snow': {
+    name: 'Muurla Moomin kerstballen 5 cm, Lumipyry, 4 stuks',
+    description:
+      'Een verpakking met 4 Moomin-kerstballen van Muurla, elk 5 cm in doorsnee, met het sneeuwstormmotief Lumipyry en satijnen linten om ze op te hangen. Muurla plaatst het motief vlak na een sneeuwstorm, met hoge sneeuwhopen, een slapend landschap en sneeuwlantaarns die erop wachten gebouwd te worden.',
+    specs: [
+      'Diameter 5 cm',
+      '4 kerstballen, satijnen linten inbegrepen',
+    ],
+  },
+  'sk-muurla-moomin-led-ball': {
+    name: 'Muurla Moomin glazen LED-bal 11 cm, Tähtihetki',
+    description:
+      'Een glazen decoratiebal uit de Moomin-collectie Tähtihetki van Muurla, 11 cm in doorsnee, met binnenin een lichtsnoer met 10 LED\'s. Hij heeft een aan/uit-schakelaar, werkt op CR2032-lithiumknoopcellen die niet zijn inbegrepen en is alleen bedoeld voor binnen. De collectie Tähtihetki heeft gouden details, en een satijnen lint om hem op te hangen zit in de verpakking.',
+    specs: [
+      'Diameter 11 cm',
+      'Glas, LED-lichtsnoer met 10 LED\'s',
+      'CR2032-lithiumknoopcellen, niet inbegrepen. Aan/uit-schakelaar',
+      'Alleen voor binnen. CE-gecertificeerd',
+      'Ontworpen in Finland',
+    ],
+    specLabels: [undefined, undefined, 'Stroomvoorziening', 'Gebruik', 'Ontwerp'],
+  },
+  'sk-muurla-moomin-led-candle-tree': {
+    name: 'Muurla Moomin LED-kaars 12,5 cm, Onder de spar',
+    description:
+      'Een LED-kaars op batterijen uit de collectie Moomin Originals van Muurla, 12,5 cm hoog, met een illustratie uit Tove Janssons boek Farlig midsommar. Hij is gemaakt van paraffinewas en zo gevormd dat hij op een echte stearinekaars lijkt, en zijn warme licht laat de afbeelding goed uitkomen. Hij heeft de standen aan, uit en een timer van 6 uur, werkt op 2 AA-batterijen die niet zijn inbegrepen en is alleen bedoeld voor binnen.',
+    specs: [
+      'Diameter 10 cm, hoogte 12,5 cm',
+      'Paraffinewas',
+      '2 x AA-batterijen, niet inbegrepen',
+      'Aan, uit en timer van 6 uur',
+      'Alleen voor binnen',
+      'Tove Jansson, uit Farlig midsommar',
+    ],
+    specLabels: [undefined, undefined, 'Stroomvoorziening', 'Functies', 'Gebruik', 'Illustratie'],
+  },
+  'arabia-moomin-plates-winter-night': {
+    name: 'Arabia Moomin borden 19 cm, Kantoor & Winternacht, 2 stuks',
+    description:
+      'Twee Moomin-borden van 19 cm in wit vitroporselein van Arabia, Kantoor en Winternacht, gemaakt om te passen bij de eerder verschenen mokken. De afbeelding Kantoor verscheen voor het eerst in 1996 op een Moomin-mok van Arabia en is gebaseerd op strips waarin schrijven, tekenen en schilderen steeds terugkomen. Winternacht herhaalt de afbeelding van een mok uit 2006, met Moomintroll op een brugleuning, in een scène uit Tove Janssons boek Trollvinter uit 1957.',
+    specs: [
+      'Diameter 19,4 cm, hoogte 2,8 cm',
+      'Vitroporselein',
+      '2 borden, Kantoor en Winternacht',
+      'Geschikt voor vaatwasser, magnetron en oven',
+      'Tove Jansson',
+      '566802-01, EAN 6411801011432',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustratie', 'Artikelnummer en EAN'],
+  },
+  'arabia-moomin-plates-winter-fire': {
+    name: 'Arabia Moomin borden 19 cm, Wintervuur & Zeilen, 2 stuks',
+    description:
+      'Twee Moomin-borden van 19 cm in vitroporselein van Arabia, één met Wintervuur en één met Zeilen, beide naar illustraties van Tove Jansson. Het paar zet een winterscène naast een zeilscène en is bedoeld voor zowel alledaagse als feestelijke maaltijden.',
+    specs: [
+      '2 borden, Wintervuur en Zeilen',
+      'Vitroporselein',
+      'Meerkleurig',
+      '0,886 kg bruto',
+      'Tove Jansson',
+      '629239-01, EAN 6411801015065',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustratie', 'Artikelnummer en EAN'],
+  },
+  'sk-muurla-moomin-snowfall-mug': {
+    name: 'Muurla Moomin emaillen mok 2,5 dl, Sneeuwval',
+    description:
+      'Een emaillen Moomin-mok van 2,5 dl van Muurla met het motief Sneeuwval, de eerste sneeuw in de Moominvallei en tijd om in de sneeuw te spelen. Muurla maakt zijn emaillewaren met een kern van koolstofstaal en twee lagen email, dus de mok is even geschikt voor een wandeling, de hut of de boot als voor op tafel. Hij is geschikt voor warme en koude dranken en mag in de vaatwasser, maar niet in de magnetron.',
+    specs: [
+      '2,5 dl',
+      'Koolstofstaal, dubbele emaillelaag',
+      'Vaatwasserbestendig. Niet voor de magnetron',
+    ],
+  },
+  'sk-muurla-moomin-gifts-mug': {
+    name: 'Muurla Moomin emaillen mok 3,7 dl, Cadeaus',
+    description:
+      'Een emaillen Moomin-mok van 3,7 dl van Muurla met het motief Cadeaus, een kerstafbeelding over cadeaus geven aan de mensen die u dierbaar zijn. Onder de emaillelaag zit een kern van koolstofstaal met een dubbele laag, waardoor de mok stevig genoeg is voor buiten en niet alleen voor op tafel. Hij is geschikt voor warme en koude dranken en mag in de vaatwasser, maar niet in de magnetron.',
+    specs: [
+      '3,7 dl',
+      'Koolstofstaal, dubbele emaillelaag',
+      'Vaatwasserbestendig. Niet voor de magnetron',
+    ],
+  },
+  'rj-pesonen-beeswax-candle': {
+    name: 'Pesosen Mehiläistarhat tafelkaars van bijenwas, groot',
+    description:
+      'Pesosen Mehiläistarhat maakt deze grote tafelkaars met de hand van bijenwas, die hem ook zijn kleur en geur geeft. Esa van de imkerij houdt al 29 jaar bijen, waarvan 13 jaar beroepsmatig, en de bijenkasten staan tussen akkers, bossen en kleine waterlopen rond Sastamala en Hämeenkyrö. De imkerij maakt haar kaarsen van wat de eigen bijenvolken opleveren, en ze branden lang met een heldere, rustige vlam.',
+    specs: [
+      'Bijenwas',
+      'Groot',
+      'Handgemaakt',
+      'Sastamala en Hämeenkyrö',
+    ],
+    specLabels: [undefined, undefined, 'Vervaardiging', 'Bijenstanden'],
+  },
+  'rj-pesonen-honeycomb-candle': {
+    name: 'Pesosen Mehiläistarhat honingraatkaars van bijenwas, groot',
+    description:
+      'Een grote honingraatkaars, met de hand gemaakt van bijenwas door Pesosen Mehiläistarhat, met een brandduur van 30 uur. Kleur en geur komen van de was, en de imkerij maakt haar kaarsen van wat de eigen bijenvolken rond Sastamala en Hämeenkyrö opleveren. Esa van de imkerij houdt al 29 jaar bijen en doet dat al 13 jaar beroepsmatig.',
+    specs: [
+      'Bijenwas',
+      'Groot',
+      '30 uur',
+      'Handgemaakt',
+      'Sastamala en Hämeenkyrö',
+    ],
+    specLabels: [undefined, undefined, 'Brandduur', 'Vervaardiging', 'Bijenstanden'],
+  },
+  'sk-moomin-mistletoe-candle': {
+    name: 'Havi Moomin tafelkaars 7 x 12 cm, Maretak, beige',
+    description:
+      'Een beige Moomin-tafelkaars van Havi met het dessin Maretak, 7 x 12 cm en met een brandduur van 55 uur. Het dessin is met zeefdruk op de kaars aangebracht.',
+    specs: [
+      '7 x 12 cm',
+      'Beige',
+      '55 uur',
+      'Zeefdruk',
+      'Havi Oy, Riihimäki',
+    ],
+    specLabels: [undefined, undefined, 'Brandduur', 'Decoratie', 'Op de markt gebracht door'],
+  },
+  'iittala-kastehelmi-tealight': {
+    name: 'Iittala Kastehelmi waxinelichthouder 64 mm, helder',
+    description:
+      'Een Kastehelmi-waxinelichthouder van helder glas van Iittala, 64 mm in doorsnee, uit de serie die Oiva Toikka in 1964 voor Iittala ontwierp. Kastehelmi is Fins voor dauwdruppel, en Iittala bracht de serie in 2010 opnieuw uit. De houder is ook in andere kleuren verkrijgbaar, en Iittala stelt voor hem los te gebruiken of in een groep met verschillende kleuren.',
+    specs: [
+      'Diameter 6,4 cm',
+      'Glas',
+      'Helder',
+      'Alleen handwas',
+      'Oiva Toikka, Iittala Kastehelmi',
+      '13167-01, EAN 6411920059766',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Ontwerper en collectie', 'Artikelnummer en EAN'],
+  },
+  'sk-fazer-christmas-box': {
+    name: 'Fazer kerstbox 2026',
+    description:
+      'De kerstbox van Fazer voor 2026 met 6 verpakkingen seizoenschocolade, snoep en gemberkoekjes. Erin zitten Karl Fazer-bonbons, een Karl Fazer-chocoladereep met gemberkoek, Remix Xmas + Choco, Dumle Winter Mix-toffees, Vihreät kuulat-geleesnoepjes met peer en Marianne-gemberkoekjes met muntchocolade.',
+    specs: [
+      'Karl Fazer-bonbons 250 g, Karl Fazer-chocoladereep met gemberkoek 200 g, Remix Xmas + Choco snoepmix 300 g, Dumle Winter Mix toffeemix 180 g, Vihreät kuulat geleesnoepjes met peer 260 g, Marianne gemberkoekjes met muntchocolade 175 g',
+      'Melkchocolade met minstens 30 % cacao',
+      'Bevat tarwe (gluten), soja en melk (lactose). Kan rogge, gerst, haver, ei, noten en amandelen bevatten',
+      'Energie 1845 kJ / 441 kcal, vet 17 g, waarvan verzadigd 9,4 g, koolhydraten 67 g, waarvan suikers 53 g, eiwit 4,6 g, zout 0,36 g',
+    ],
+    specLabels: [undefined, 'Vermeldingen op het etiket', 'Allergenen', 'Voedingswaarde per 100 g'],
+  },
+  'sk-karl-fazer-advent-calendar': {
+    name: 'Karl Fazer adventskalender 200 g',
+    description:
+      'Een Karl Fazer-adventskalender met 200 g chocoladebonbons in verschillende smaken achter de deurtjes. Het laatste deurtje is gevuld met Fazer Blue, de Karl Fazer-melkchocolade die Fazer sinds 1922 maakt. Fazer betrekt zijn cacao via het programma Fazer Cocoa Vision.',
+    specs: [
+      '200 g',
+      'Chocoladebonbons in verschillende smaken, laatste deurtje gevuld met Fazer Blue-melkchocolade',
+      'Melkchocolade met minstens 30 % cacao',
+      'Bevat melk, soja en gerst (gluten). Kan noten, amandelen, tarwe, rogge en haver bevatten',
+      'Energie 2315 kJ / 554 kcal, vet 34 g, waarvan verzadigd 20 g, koolhydraten 53 g, waarvan suikers 51 g, eiwit 9,6 g, zout 0,31 g',
+    ],
+    specLabels: [undefined, undefined, 'Vermeldingen op het etiket', 'Allergenen', 'Voedingswaarde per 100 g'],
+  },
+  'sk-fazer-christmas-chocolates': {
+    name: 'Fazer Joulusuklaa kerstbonbons 295 g',
+    description:
+      'Fazer Joulusuklaa-bonbons, 295 g, met een milde melkchocoladeschil rond een truffelvulling met echte kruimels gemberkoek. Fazer raadt ze aan voor kerstbijeenkomsten, bijvoorbeeld bij glögg, de Noordse warme kruidendrank.',
+    specs: [
+      '295 g',
+      'Melkchocoladeschil, truffelvulling met kruimels gemberkoek',
+      'Melkchocolade met minstens 30 % cacao',
+      'Bevat melk, tarwe, gerst (gluten) en soja. Kan noten, amandelen, rogge en haver bevatten',
+      'Energie 2274 kJ / 545 kcal, vet 33 g, waarvan verzadigd 19 g, koolhydraten 53 g, waarvan suikers 51 g, eiwit 8,2 g, zout 0,24 g',
+    ],
+    specLabels: [undefined, undefined, 'Vermeldingen op het etiket', 'Allergenen', 'Voedingswaarde per 100 g'],
+  },
+  'sk-karl-fazer-gingerbread-bar': {
+    name: 'Karl Fazer Winter Edition reep met gemberkoek 200 g',
+    description:
+      'Een reep Karl Fazer Winter Edition van 200 g die zachte melkchocolade combineert met knapperige gemberkoek. Fazer maakt Karl Fazer-melkchocolade sinds 1922, en deze reep met gemberkoek is de kersteditie.',
+    specs: [
+      '200 g',
+      'Melkchocolade met knapperige gemberkoek',
+      'Melkchocolade met minstens 30 % cacao',
+      'Bevat melk, tarwe (gluten) en soja. Kan noten, amandelen, rogge en haver bevatten',
+      'Energie 2205 kJ / 527 kcal, vet 30 g, waarvan verzadigd 18 g, koolhydraten 55 g, waarvan suikers 48 g, eiwit 8,5 g, zout 0,22 g',
+    ],
+    specLabels: [undefined, undefined, 'Vermeldingen op het etiket', 'Allergenen', 'Voedingswaarde per 100 g'],
+  },
+  'sk-fazer-glogg-balls': {
+    name: 'Fazer Glögikuulat geleesnoepjes 260 g',
+    description:
+      'Een doos van 260 g Fazer Glögikuulat, zachte en zoete geleeballetjes, genoemd naar glögg, de Noordse warme kruidendrank. Ze bevatten geen gluten, gelatine of lactose en zijn geschikt voor veganisten. In de doos zit een recept om er een warme drank van te maken.',
+    specs: [
+      '260 g',
+      'Glutenvrij, gelatinevrij, lactosevrij, veganistisch',
+      'Energie 1353 kJ / 322 kcal, vet 0 g, waarvan verzadigd 0 g, koolhydraten 79 g, waarvan suikers 64 g, eiwit 0 g, zout 0,28 g',
+    ],
+    specLabels: [undefined, 'Dieet', 'Voedingswaarde per 100 g'],
+  },
+  'sk-halva-christmas-liquorice': {
+    name: 'Halva kerstdropmix 250 g',
+    description:
+      'De kerstdropmix van Halva, 250 g drop in 3 kerstsmaken, verpakt in een roségoudkleurige doos. Er zitten dropbloemetjes met appeltaartsmaak in, drop gevuld met glögg en drop gevuld met gemberkoek. Halva maakt de mix in Pitäjänmäki in Helsinki.',
+    specs: [
+      '250 g',
+      'Dropbloemetjes met appeltaartsmaak, drop gevuld met glögg, drop gevuld met gemberkoek',
+      'Gemaakt in Pitäjänmäki, Helsinki',
+      'Bevat tarwe (gluten)',
+      'Energie 1419 kJ / 334 kcal, vet 0,7 g, waarvan verzadigd 0,3 g, koolhydraten 79 g, waarvan suikers 53 g, eiwit 2,9 g, zout 0,15 g',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Allergenen', 'Voedingswaarde per 100 g'],
+  },
+  'sk-halva-salmiakki-calendar': {
+    name: 'Halva salmiak-adventskalender 200 g',
+    description:
+      'Een adventskalender van Halva met 200 g salmiak, de Finse zoute drop, gekozen uit het eigen assortiment van Halva. Achter de deurtjes zitten Vanhat Autot, salmiakvisjes, zoute doodshoofdjes, Pommix, salmiakhartjes, salmiakzwaarden, Salmiakkiruutu-blokjes en harde Jauhix-salmiak.',
+    specs: [
+      '200 g',
+      'Vanhat Autot-salmiak, salmiakvisje, zout doodshoofdje, Pommix-salmiak, salmiakhartje, salmiakzwaard, Salmiakkiruutu, Jauhix-salmiak',
+      'Energie 1406 kJ / 331 kcal, vet 0,5 g, waarvan verzadigd 0,1 g, koolhydraten 80 g, waarvan suikers 59 g, eiwit 2,7 g, zout 0,03 g',
+    ],
+    specLabels: [undefined, undefined, 'Voedingswaarde per 100 g'],
+  },
+  'kuivalihakundi-advent-calendar': {
+    name: 'Kuivalihakundi jerky-adventskalender 2026, 24 deurtjes',
+    description:
+      'De adventskalender 2026 van Kuivalihakundi bevat 24 verschillende smaken jerky, achter elk van de 24 deurtjes een zakje van 20 g. Er is rund, kip, vetter en magerder varkensvlees, in basissmaken en in enkele die alleen voor deze kalender gemaakt zijn, allemaal uit de eigen fabriek van het bedrijf in Jokela, Finland. De jerky blijft ook na opening goed op kamertemperatuur, de kalender staat op tafel of hangt aan de muur via de ophanggaten, en het is een beperkte oplage.',
+    specs: [
+      '24 x 20 g zakjes jerky, achter elk deurtje een andere smaak',
+      'Rund, kip, vetter en magerder varkensvlees',
+      'Gemaakt in de eigen fabriek van Kuivalihakundi in Jokela, Finland',
+      'Blijft goed op kamertemperatuur, ook na opening',
+      'Staat op tafel of hangt aan de muur via de ophanggaten',
+    ],
+    specLabels: [undefined, 'Vleessoorten', undefined, undefined, 'Ophanging'],
+  },
+  'halti-crostie-merino-beanie': {
+    name: 'Halti Crostie merinomuts',
+    description:
+      'Een goed aansluitende muts van Halti voor langlaufen, hardlopen in de winter en andere sport in de kou, ontworpen en gemaakt in Finland. De helft is gevoerd met Stormwall®, een winddichte en ademende laag die voorhoofd en oren tegen de wind beschermt. Het breisel zelf is een zachte mix met merinowol die warm blijft en toch ademt.',
+    specs: [
+      'Breisel van een mix van merinowol en acryl, 50 % merinowol, 50 % acryl. Voor de helft gevoerd met Stormwall®',
+      'S, M, L',
+      '0,2 kg',
+      'Meerdere kleuren: Crocus Petal, Black, White, Fudge Maroon Red, Veiled Pink',
+      'Wassen met vergelijkbare kleuren, liggend drogen',
+      'Ontworpen en gemaakt in Finland, Avainlippu-product (Sleutelvlag)',
+    ],
+  },
+  'halti-vuolle-mohair-beanie': {
+    name: 'Halti Vuolle mohair muts',
+    description:
+      'Een pluizige muts van Halti in een mix van mohair, merinowol en polyamide, dubbellaags voor extra warmte en met een hoge omslag. Door de mix is hij licht maar warm, en er is geen aparte voering. Eén maat, in Snow White of Black.',
+    specs: [
+      'Mohairmix, 50 % mohair, 32 % polyamide, 18 % merinowol. Geen aparte voering',
+      'Eén maat',
+      'Snow White of Black',
+      'Wassen met vergelijkbare kleuren, liggend drogen',
+      'Dubbellaagse constructie, hoge omslag',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Kenmerken'],
+  },
+  'halti-tiilo-mittens': {
+    name: 'Halti Tiilo II wanten',
+    description:
+      'Gevoerde wanten van Halti voor buitenactiviteiten in de winter, van water- en winddicht DrymaxX®-materiaal met 60 g Microtherm®-vulling. De handpalm is van kunstleer met goede grip, en er zijn een binnenmanchet in ribbreisel en een verstelbare sluiting om de pols. Zwart, maten 7 tot 12.',
+    specs: [
+      'DrymaxX®-polyester met membraan, 100 % polyester. Manchet in ribbreisel, 100 % polyester. Handpalm van kunstleer, 100 % polyurethaan',
+      '60 g Microtherm®-vulling',
+      '7, 8, 9, 10, 11, 12',
+      'Zwart',
+      'Apart wassen',
+    ],
+    specLabels: [undefined, 'Isolatie', undefined, undefined, undefined],
+  },
+  'halti-warm-merino-socks': {
+    name: 'Halti warme merinosokken',
+    description:
+      'Sokken van merinowol van Halti in dik badstofbreisel, gemaakt in Finland en naadloos, zodat ze goed zitten in ski-, winter- en snowboardschoenen. De badstof houdt lucht vast voor warmte, en de geribde schacht blijft op zijn plaats. Draag ze los of over een dun paar sokken.',
+    specs: [
+      'Merinowolmix, 62 % merinowol, 36 % polyamide, 2 % elastaan',
+      '34-36, 37-39, 40-42, 43-45, 46-48',
+      'Dark Sea Green of Asphalt',
+      '0,1 kg',
+      'Gemaakt in Finland, Avainlippu-product (Sleutelvlag)',
+      'Dik badstofbreisel, naadloos, geribde schacht die blijft zitten',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Kenmerken'],
+  },
+  'north-outdoor-kaisla-beanie': {
+    name: 'North Outdoor Kaisla merinomuts, Coffee',
+    description:
+      'Een dikke muts in patentsteek van 100 procent mulesingvrije merinowol, gebreid in de eigen breierij van North Outdoor in Oulu. North Outdoor raadt hem aan van de herfst tot de late winter, voor stadswandelingen en voor natuurpaden. Eén maat, in de kleur Coffee.',
+    specs: [
+      '100 % merinowol, mulesingvrij, patentsteek',
+      'Eén maat',
+      'Coffee',
+      'Gemaakt in de eigen breierij van North Outdoor in Oulu, Finland',
+    ],
+  },
+  'north-outdoor-polku-neck-tube': {
+    name: 'North Outdoor Polku merinonekwarmer, Coffee',
+    description:
+      'Een dikke nekwarmer van 100 procent mulesingvrije merinowol, gebreid in een dichte 1x1-rib. Hij is hoog genoeg om als sjaal te dragen, als capuchon op te trekken of over het gezicht te trekken. Eén maat, in de kleur Coffee.',
+    specs: [
+      '100 % merinowol, mulesingvrij, 1x1-ribbreisel',
+      'Eén maat',
+      'Coffee',
+      'Sjaal, capuchon of gezichtsbescherming',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Gebruik'],
+  },
+  'north-outdoor-hirsi-socks': {
+    name: 'North Outdoor Hirsi merinowollen sokken, Almond',
+    description:
+      'Lichte sokken van merinowol uit de eigen breierij van North Outdoor in Oulu. Ze bestaan voor 80 procent uit mulesingvrije merinowol en voor 20 procent uit polyamide voor slijtvastheid. Ze komen het best tot hun recht binnenshuis, los of over een ander paar sokken. Ze kunnen op een fijnwasprogramma in de machine, al hebben ze dat zelden nodig.',
+    specs: [
+      '80 % merinowol, mulesingvrij, 20 % polyamide',
+      '35-38, 39-42, 43-46',
+      'Almond',
+      'Gemaakt in de eigen breierij van North Outdoor in Oulu, Finland',
+      'Fijnwas in de machine',
+    ],
+  },
+  'north-outdoor-avery-mittens': {
+    name: 'North Outdoor Avery wanten van wolfleece, Latte',
+    description:
+      'Wanten van een lichte Italiaanse wolfleecemix met 63 procent gerecyclede wol, aan de binnenkant gevoerd met 100 procent merinowol. De merinovoering voert vocht af en houdt de warmte vast, en de nauwsluitende maar soepele pasvorm laat uw gevoel bij het vastpakken intact. Maten S en M, in de kleur Latte.',
+    specs: [
+      'Italiaanse wolfleecemix, 63 % gerecyclede wol. Voering 100 % merinowol',
+      'S, M',
+      'Latte',
+      'Buiten en in de stad',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Gebruik'],
+  },
+  'makia-alvar-beanie': {
+    name: 'Makia Alvar merinomuts',
+    description:
+      'Een muts van Makia van 100 procent merinowol, gemaakt in Finland. De wol is mulesingvrij, en de muts is er in één maat.',
+    specs: [
+      '100 % merinowol, mulesingvrij',
+      'Eén maat',
+      'Gemaakt in Finland',
+    ],
+  },
+  'makia-stellar-scarf': {
+    name: 'Makia Stellar merinosjaal',
+    description:
+      'Een sjaal van Makia van 100 procent merinowol. Hij is er in één maat.',
+    specs: [
+      '100 % merinowol',
+      'Eén maat',
+    ],
+  },
+  'makia-freja-mittens': {
+    name: 'Makia Freja gewatteerde wanten',
+    description:
+      'Gewatteerde wanten van Makia, gevuld met Sorona® imitatiedons, een deels plantaardige isolatie die ademt en de warmte vasthoudt. Een waterkolom van 3000 mm helpt uw handen droog te houden bij lichte regen. Maten S en M.',
+    specs: [
+      'Sorona® imitatiedons, deels plantaardig',
+      '3000 mm',
+      'S, M',
+    ],
+    specLabels: ['Isolatie', 'Waterkolom', undefined],
+  },
+  'makia-sibelius-beanie': {
+    name: 'Makia Sibelius merinomuts',
+    description:
+      'De Sibelius-muts van Makia, gemaakt van 100 procent merinowol. Hij is er in één maat.',
+    specs: [
+      '100 % merinowol',
+      'Eén maat',
+    ],
+  },
+  'nb-moomin-christmas-sockbox': {
+    name: 'Moomin kerstcadeaudoos met sokken, EU 36-42',
+    description:
+      'Een kant-en-klare Moomin-kerstcadeaudoos met twee paar sokken, in één maat voor EU 36 tot 42. De sokken zijn grotendeels van katoen met polyester, nylon en een beetje elastaan, en het is een officieel Moomin-product.',
+    specs: [
+      '60 % katoen, 33 % polyester, 4 % nylon, 2 % elastaan, 1 % elastodieen',
+      'Eén maat, EU 36-42',
+      '2 paar sokken in een cadeaudoos',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licentie'],
+  },
+  'nb-moomin-christmas-box-men': {
+    name: 'Moomin kerstcadeaudoos met herensokken, EU 40-45',
+    description:
+      'Een kant-en-klare Moomin-kerstcadeaudoos met twee paar herensokken in maat EU 40 tot 45. Nordicbuddies weet uit ervaring dat ze ook grotere voeten passen. De sokken zijn grotendeels van katoen met polyester, nylon en een beetje elastaan, en het is een officieel Moomin-product.',
+    specs: [
+      '60 % katoen, 33 % polyester, 4 % nylon, 2 % elastaan, 1 % elastodieen',
+      'Eén maat, EU 40-45',
+      '2 paar sokken in een cadeaudoos',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licentie'],
+  },
+  'nb-moomintroll-fleece-mittens': {
+    name: 'Moomintroll wanten van fleece',
+    description:
+      'Moomintroll-wanten van fleece, gemaakt van 100 procent gerecycled polyester, met een voering van acryl. Ze rekken mee, dus één maat past de meesten, en het is een officieel Moomin-product.',
+    specs: [
+      '100 % gerecycled polyester',
+      '100 % acryl',
+      'Eén maat, rekbaar, past de meesten',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, 'Voering', undefined, 'Licentie'],
+  },
+  'nb-moomintroll-chunky-beanie': {
+    name: 'Pluizige dikke Moomintroll-muts, roze',
+    description:
+      'Een pluizige, dikke Moomintroll-muts in roze, in één volwassenmaat die iedereen past. Het materiaal is een mix van polyester, nylon, acryl, wol en elastaan, en het is een officieel Moomin-product.',
+    specs: [
+      'Polyester, nylon, acryl, wol en elastaan',
+      'Volwassenen, één maat',
+      'Roze',
+      'Officieel Moomin-product',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licentie'],
+  },
+  'sk-nordqvist-tea-calendar': {
+    name: 'Nordqvist thee-adventskalender, 27 theezakjes',
+    description:
+      'Een kubusvormige thee-adventskalender van Nordqvist met 25 deurtjes en 27 theezakjes, want achter het laatste deurtje zitten er drie. De zakjes bevatten zwarte, groene en rooibosthee en hibiscusmelanges, met kerstsmaken als gemberkoek, glögg en kaneel ertussen.',
+    specs: [
+      '25 deurtjes, 27 theezakjes. Achter het laatste deurtje zitten 3 zakjes',
+      'Zwarte, groene en rooibosthee, hibiscusmelanges',
+      'Nordqvist Oy, Nurmijärvi',
+      '6413440000433',
+    ],
+    specLabels: [undefined, 'Theesoorten', 'Op de markt gebracht door', 'EAN'],
+  },
+  'sk-nordqvist-moomin-tea-calendar': {
+    name: 'Nordqvist Moomin thee-adventskalender, 24 zakjes, lila',
+    description:
+      'Een lila Moomin-thee-adventskalender van Nordqvist met 24 piramidetheezakjes in 12 smaken, twee van elk. Zwarte en groene thee staan naast cafeïnevrije rooibos, en elke smaak heeft een eigen naam, van Olet Ihana (Je bent geweldig) tot Muumimamman Voimajuoma (Moominmamma\'s krachtdrank). Het deksel gaat zo open dat de kalender rechtop blijft staan, en hij is Rainforest Alliance-gecertificeerd.',
+    specs: [
+      '24 piramidetheezakjes, 12 smaken, van elk 2',
+      '41,5 g',
+      'Lila',
+      'Rainforest Alliance',
+      'Nordqvist Oy, Nurmijärvi',
+      '6413440000679',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Certificering', 'Op de markt gebracht door', 'EAN'],
+  },
+  'sk-nordic-glogg-concentrate': {
+    name: 'Poikain Parhaat Nordic glögg-concentraat 0,5 l',
+    description:
+      'Een alcoholvrij (0 %) glöggconcentraat, met de hand gemaakt van Fins sap van zwarte en rode bessen en echte specerijen. U mengt het in de verhouding 1+3. Poikain Parhaat omschrijft het als rijk aan bessen en warm gekruid, een glögg met een traditionele smaak.',
+    specs: [
+      '0,5 l',
+      '1+3',
+      '0 %',
+      'Sap van zwarte en rode bessen uit Finland',
+      'Energie 47,7 kcal / 199,58 kJ, vet 0,2 g, waarvan verzadigd 0,2 g, koolhydraten 11 g, waarvan suikers 11 g, eiwit 0,3 g, zout 0,2 g',
+      'Poikain Parhaat Oy Ltd, Tampere',
+    ],
+    specLabels: [undefined, 'Mengverhouding', 'Alcohol', undefined, 'Voedingswaarde per 100 ml', 'Op de markt gebracht door'],
+  },
+  'rj-christmas-coffee': {
+    name: 'Gran Palomar kerstkoffie 200 g',
+    description:
+      'Gran Palomar-kerstkoffie van Cafetoria Roastery, een biologische fairtradekoffie, gekruid met biologische kaneel en kardemom. Hij zit in een verpakking van 200 g.',
+    specs: [
+      '200 g',
+      'Biologische kaneel en kardemom',
+      'Fairtrade, biologisch',
+      'Cafetoria Roastery Oy',
+    ],
+    specLabels: [undefined, 'Specerijen', 'Certificering', 'Branderij'],
+  },
+  'sk-emendo-santa-sauna-scent': {
+    name: 'Emendo officiële Kerstman-saunageur 500 ml',
+    description:
+      'De officiële saunageur van de Kerstman van Emendo, 500 ml met 100 procent echte etherische oliën en zonder synthetische geurstoffen. Meng ongeveer ½ dl in een emmer met ongeveer 3 l water en gebruik het zoals gewoon opgietwater.',
+    specs: [
+      '500 ml',
+      'Bevat 100 % etherische oliën, geen synthetische geurstof (parfum)',
+      'Ongeveer ½ dl in een emmer met ongeveer 3 l water',
+      '©Santa Claus Foundation™',
+      '6417892057458',
+    ],
+    specLabels: [undefined, 'Samenstelling', 'Gebruik', 'Licentie', 'EAN'],
+  },
+  'sk-emendo-christmas-sauna-set': {
+    name: 'Emendo Jouluhetki sauna-cadeauset',
+    description:
+      'Jouluhetki, Fins voor kerstmoment, is een sauna-cadeauset van Emendo met een zeep aan een koord, een saunageur en een douchespons. De set wordt kant-en-klaar als cadeau verpakt geleverd.',
+    specs: [
+      'Zeep aan een koord, saunageur, douchespons',
+      '6417892041280',
+    ],
+    specLabels: [undefined, 'EAN'],
+  },
+  'sk-emendo-gingerbread-glogg-scent': {
+    name: 'Emendo saunageuren gemberkoek en glögg, 2 x 10 ml',
+    description:
+      'Twee saunageuren van Emendo, gemberkoek en glögg, elk 10 ml en gemaakt van 100 procent echte etherische oliën. Doe 2 tot 6 druppels in een schep water en giet dit op de stenen.',
+    specs: [
+      '2 x 10 ml',
+      'Gemberkoek, glögg',
+      'Gemaakt van 100 % etherische oliën',
+      '2 tot 6 druppels in een schep water',
+      '6417892021060',
+    ],
+    specLabels: [undefined, 'Geuren', 'Samenstelling', 'Gebruik', 'EAN'],
+  },
+  'sk-aromageddon-gingerbread-scent': {
+    name: 'Aromageddon saunageur Piparipyörre 15 ml',
+    description:
+      'Piparipyörre van Aromageddon, vrij vertaald gemberkoekwerveling, brengt een warme, kruidige kaneelgeur met een vleugje gemberkoek in de sauna. Doe 2 tot 4 druppels in een schep water en gebruik het altijd verdund, nooit rechtstreeks op de kachel gegoten.',
+    specs: [
+      '15 ml',
+      'Kaneel met een vleugje gemberkoek',
+      '2 tot 4 druppels in een schep water, altijd verdund',
+      'Aromageddon Oy, Espoo',
+    ],
+    specLabels: [undefined, 'Geur', 'Gebruik', 'Op de markt gebracht door'],
+  },
 }

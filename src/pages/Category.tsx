@@ -11,7 +11,9 @@ import { productsByCategory } from '../data/products'
 import { GIFT_EXPERIENCES, EXPERIENCE_GROUPS, experiencesByGroup, TOP_RATED_TOUR_IDS } from '../data/experiences'
 import GygTopRated from '../components/shop/GygTopRated'
 import { GYG_PRICE_AS_OF, gygFreshPrice } from '../shared/gyg/picks'
-import { groupProducts, subgroupLabel, subgroupNote } from '../data/subgroups'
+import { ArrowRight } from 'lucide-react'
+import { groupProducts, subgroupLabel, subgroupNote, SUBGROUP_THEME } from '../data/subgroups'
+import { THEME_COPY } from '../locales/themeCopy'
 import { themesForCategory } from '../data/themeProducts'
 import { byShippingBreadth } from '../data/sortProducts'
 import { PARTNERS } from '../data/partners'
@@ -306,6 +308,9 @@ export default function Category() {
                   const label = subgroupLabel(g.id, lang)
                   // Hyllyn otsake vain herkuilla: mikä hylly on ja miksi.
                   const note = category.id === 'treats' ? subgroupNote(g.id, lang) : undefined
+                  // Teeman oma hylly (Joulukoristeet, Joulun herkut) vie teemasivulle,
+                  // koska sivun kärjen teemanosto jätetään silloin pois (themesForCategory).
+                  const shelfTheme = SUBGROUP_THEME[g.id]
                   return (
                     <section key={g.id} className="mb-12 last:mb-0">
                       {label && (
@@ -319,6 +324,15 @@ export default function Category() {
                         lang={lang}
                         emptyMessage={emptyMessage}
                       />
+                      {shelfTheme && (
+                        <Link
+                          to={to(`/theme/${shelfTheme}`)}
+                          className="mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-card px-5 py-2.5 font-body text-sm text-gray transition-colors hover:border-pink hover:text-pink"
+                        >
+                          {THEME_COPY[lang].seeAll[shelfTheme]}
+                          <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                        </Link>
+                      )}
                     </section>
                   )
                 })

@@ -292,6 +292,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-arabia-moomin-love-baubles": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-arabia-moomin-mug-friendship": {
     "full": 480,
     "w": [
@@ -299,6 +307,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-arabia-moomin-mug-snufkin": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-arabia-moomin-plates-winter-fire": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-arabia-moomin-plates-winter-night": {
     "full": 800,
     "w": [
       320,
@@ -495,6 +519,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-crostie-merino-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-heatgrid-midlayer": {
     "full": 800,
     "w": [
@@ -575,6 +607,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-tiilo-mittens": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-tokoi-dx-jacket": {
     "full": 800,
     "w": [
@@ -592,6 +632,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-halti-viiri-fleece-gloves": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-vuolle-mohair-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-warm-merino-socks": {
     "full": 800,
     "w": [
       320,
@@ -623,7 +679,31 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-iittala-glass-baubles-red": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-iittala-kastehelmi-tealight": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-iittala-kivi-candleholder": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-iittala-toikka-annual-bird-2026": {
     "full": 800,
     "w": [
       320,
@@ -677,6 +757,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-korouoma-waterfalls-rovaniemi": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-kuivalihakundi-advent-calendar": {
     "full": 800,
     "w": [
       320,
@@ -740,6 +828,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-makia-alvar-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-makia-aurora-hoodie": {
     "full": 800,
     "w": [
@@ -749,6 +845,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-makia-form-jacket": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-freja-mittens": {
     "full": 800,
     "w": [
       320,
@@ -796,7 +900,31 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-makia-sibelius-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-stellar-scarf": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-makia-trademark-hoodie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-marimekko-siirtolapuutarha-baubles": {
     "full": 800,
     "w": [
       320,
@@ -932,6 +1060,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-nb-moomin-christmas-box-men": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-moomin-christmas-sockbox": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-nb-moomin-classics-beanie": {
     "full": 800,
     "w": [
@@ -949,6 +1093,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-nb-moomin-novels-poster": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-moomintroll-chunky-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-moomintroll-fleece-mittens": {
     "full": 800,
     "w": [
       320,
@@ -1036,7 +1196,23 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-north-outdoor-avery-mittens": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-north-outdoor-heavyweight-gaiter": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-north-outdoor-hirsi-socks": {
     "full": 800,
     "w": [
       320,
@@ -1060,7 +1236,23 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-north-outdoor-kaisla-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-north-outdoor-kevo-gloves": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-north-outdoor-polku-neck-tube": {
     "full": 800,
     "w": [
       320,
@@ -1204,6 +1396,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-rj-christmas-coffee": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-rj-forestly-mushroom-chips-chili": {
     "full": 800,
     "w": [
@@ -1229,6 +1429,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-rj-nordic-koivu-birch-sap": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-pesonen-beeswax-candle": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-pesonen-honeycomb-candle": {
     "full": 800,
     "w": [
       320,
@@ -1296,6 +1512,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320
     ]
   },
+  "prod-sk-aromageddon-gingerbread-scent": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-aromageddon-sauna-scent": {
     "full": 800,
     "w": [
@@ -1312,6 +1536,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-emendo-christmas-sauna-set": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-emendo-gingerbread-glogg-scent": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-emendo-moomin-sauna-seat-cover": {
     "full": 800,
     "w": [
@@ -1320,7 +1560,39 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-emendo-santa-sauna-scent": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-fasupala-lakritsi": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-fazer-christmas-box": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-fazer-christmas-chocolates": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-fazer-glogg-balls": {
     "full": 800,
     "w": [
       320,
@@ -1368,6 +1640,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-halva-christmas-liquorice": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-halva-salmiakki-calendar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-halva-salmiakkikalat": {
     "full": 800,
     "w": [
@@ -1385,6 +1673,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-hukka-soapstone-candle": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-karl-fazer-advent-calendar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-karl-fazer-gingerbread-bar": {
     "full": 800,
     "w": [
       320,
@@ -1486,12 +1790,34 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-moomin-mistletoe-candle": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-muurla-moomin-80v-tray": {
     "full": 800,
     "w": [
       320,
       480,
       640
+    ]
+  },
+  "prod-sk-muurla-moomin-bauble-pyjamas": {
+    "full": 517,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-sk-muurla-moomin-baubles-snow": {
+    "full": 514,
+    "w": [
+      320,
+      480
     ]
   },
   "prod-sk-muurla-moomin-bottle-05l-marjat": {
@@ -1516,6 +1842,13 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       480
     ]
   },
+  "prod-sk-muurla-moomin-gifts-mug": {
+    "full": 600,
+    "w": [
+      320,
+      480
+    ]
+  },
   "prod-sk-muurla-moomin-glass-box-yhdessa": {
     "full": 514,
     "w": [
@@ -1528,6 +1861,51 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     "w": [
       320,
       480
+    ]
+  },
+  "prod-sk-muurla-moomin-led-ball": {
+    "full": 514,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-sk-muurla-moomin-led-candle-tree": {
+    "full": 582,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-sk-muurla-moomin-snowfall-mug": {
+    "full": 600,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-sk-nordic-glogg-concentrate": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-nordqvist-moomin-tea-calendar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-nordqvist-tea-calendar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
     ]
   },
   "prod-sk-novita-wonder-wool": {

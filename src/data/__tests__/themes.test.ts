@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest'
 import { PRODUCTS } from '../products'
 import { THEMES, themeById } from '../themes'
 import { productsByTheme, themesForCategory } from '../themeProducts'
+import { SUBGROUP_THEME, subgroupOf } from '../subgroups'
 import { THEME_COPY } from '../../locales/themeCopy'
 import { LANG_PREFIX, type Lang } from '../../i18n/useLang'
 
@@ -46,6 +47,20 @@ describe('teemat', () => {
       for (const { theme, items } of themesForCategory(cat)) {
         expect(items.length, `${cat}/${theme.id}`).toBeGreaterThanOrEqual(4)
       }
+    }
+  })
+
+  it('nosto ei toista teeman omaa hyllyä, ja hylly vie teemasivulle', () => {
+    // 6.11.2026: joulunosto näytti design-sivulla kolme samaa tuotetta kuin
+    // heti alla oleva Joulukoristeet-hylly. Teeman oma hylly kantaa linkin.
+    for (const cat of ['design', 'clothing', 'handicrafts', 'treats', 'superfoods'] as const) {
+      for (const { theme, items } of themesForCategory(cat)) {
+        const own = items.filter((p) => SUBGROUP_THEME[subgroupOf(p.slug)] === theme.id)
+        expect(own.map((p) => p.slug), `${cat}/${theme.id}`).toEqual([])
+      }
+    }
+    for (const themeId of Object.values(SUBGROUP_THEME)) {
+      expect(THEMES.some((t) => t.id === themeId), `hyllyn teema ${themeId}`).toBe(true)
     }
   })
 

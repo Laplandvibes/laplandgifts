@@ -1882,4 +1882,594 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '饮食'],
   },
+  // Talvi- ja joulutuotteet 6.11.2026
+  'iittala-glass-baubles-red': {
+    name: 'Iittala 玻璃圣诞球 80 mm，红色，5 只',
+    description:
+      'Iittala 的一套 5 只红色口吹玻璃圣诞球，每只直径 80 mm，用丝带悬挂。每一只都是口吹而成，所以形状和红色的深浅会略有不同。可以挂在圣诞树上、插在花瓶里的树枝上，也可以用来布置餐桌。',
+    specs: [
+      '5 只',
+      '直径 8 cm',
+      '口吹玻璃',
+      '红色',
+      '毛重 0.706 kg',
+      '32741-01, EAN 6411923679978',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '货号与 EAN'],
+  },
+  'iittala-toikka-annual-bird-2026': {
+    name: 'Birds by Toikka 2026 年度鸟 Lakla',
+    description:
+      'Lakla 是 Iittala Birds by Toikka 系列的 2026 年度鸟，一只由奥伊瓦·托伊卡设计的橙色口吹玻璃鸟。Iittala 每年推出一只新的年度鸟，各有自己的图案和配色，年度鸟也已成为受收藏者欢迎的藏品。每只鸟都由芬兰 Iittala 玻璃厂的吹制师傅吹制，因此可能会有细小的气泡和厚薄差异。',
+    specs: [
+      '长 22 cm，宽 10 cm，高 14 cm',
+      '口吹玻璃',
+      '橙色',
+      '在芬兰 Iittala 玻璃厂制造',
+      '用湿布擦拭',
+      '657373-01, EAN 6411923689199',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '货号与 EAN'],
+  },
+  'marimekko-siirtolapuutarha-baubles': {
+    name: 'Marimekko Siirtolapuutarha 圣诞球',
+    description:
+      'Marimekko 2025 年的 Siirtolapuutarha 圣诞球是一对炻器球，印有 Maija Louekari 设计的白、黑、绿图案。Siirtolapuutarha 在芬兰语中意为“市民菜园”。每只宽 7 cm、高 7 cm，Marimekko 建议除了挂在圣诞树上，也可以挂在窗边。',
+    specs: [
+      '2 只',
+      '宽 7 cm，高 7 cm',
+      '炻器',
+      '白色、黑色和绿色',
+      'Maija Louekari',
+      '650181-01, EAN 6411255039983',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '设计师', '货号与 EAN'],
+  },
+  'arabia-moomin-love-baubles': {
+    name: 'Arabia 姆明圣诞球 Love，金色，5 cm，2 只',
+    description:
+      'Arabia 的两只 5 cm 玻化瓷姆明圣诞球，饰有托芙·扬松的 Love 图案，画的是姆明和可儿。这个图案已成为爱与亲密关系的象征。可以挂在圣诞树或装饰枝条上，也可以用来点缀节日餐桌。',
+    specs: [
+      '2 只',
+      '宽 5 cm，高 5 cm',
+      '玻化瓷',
+      '金色',
+      '托芙·扬松',
+      '699561-01, EAN 6411801029079',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '原画', '货号与 EAN'],
+  },
+  'sk-muurla-moomin-bauble-pyjamas': {
+    name: 'Muurla 姆明玻璃圣诞球 9 cm，Pyjamat',
+    description:
+      'Muurla 姆明系列的手工玻璃圣诞球，直径 9 cm，图案为 Pyjamat（睡衣）。Muurla 把这个场景描述为在烛光旁穿着睡衣闲适放松，包装内附悬挂用的缎带。',
+    specs: [
+      '直径 9 cm',
+      '玻璃，手工制作',
+      '附缎带',
+    ],
+    specLabels: [undefined, undefined, '悬挂'],
+  },
+  'sk-muurla-moomin-baubles-snow': {
+    name: 'Muurla 姆明圣诞球 5 cm，Lumipyry，4 只',
+    description:
+      'Muurla 的 4 只装姆明圣诞球，每只直径 5 cm，图案为 Lumipyry（暴风雪），附悬挂用的缎带。Muurla 把画面设定在暴风雪刚过的时刻，积雪很深，大地沉睡，雪灯笼正等着人去堆。',
+    specs: [
+      '直径 5 cm',
+      '4 只，附缎带',
+    ],
+  },
+  'sk-muurla-moomin-led-ball': {
+    name: 'Muurla 姆明 LED 玻璃球 Tähtihetki',
+    description:
+      'Muurla 姆明 Tähtihetki 系列的玻璃装饰球，直径 11 cm，内置一串 10 颗 LED 的灯串。球上有电源开关，使用 CR2032 锂纽扣电池（不含在包装内），仅限室内使用。Tähtihetki（星光时刻）系列带有金色细节，包装内附悬挂用的缎带。',
+    specs: [
+      '直径 11 cm',
+      '玻璃，含 10 颗 LED 的灯串',
+      'CR2032 锂纽扣电池，不含在包装内。电源开关',
+      '仅限室内使用。CE 认证',
+      '芬兰设计',
+    ],
+    specLabels: [undefined, undefined, '电源', '使用', '设计'],
+  },
+  'sk-muurla-moomin-led-candle-tree': {
+    name: 'Muurla 姆明 LED 蜡烛 Kuusen alla',
+    description:
+      'Muurla 姆明 Originals 系列的电池式 LED 蜡烛，高 12.5 cm，图案取自托芙·扬松的《Farlig midsommar》。图案名 Kuusen alla 意为“在云杉下”。蜡烛由石蜡制成，外形仿照真正的硬脂蜡烛，暖色调的光让画面更加鲜明。可设为开、关或 6 小时定时，使用 2 节 AA 电池（不含在包装内），仅限室内使用。',
+    specs: [
+      '直径 10 cm，高 12.5 cm',
+      '石蜡',
+      '2 节 AA 电池，不含在包装内',
+      '开、关和 6 小时定时',
+      '仅限室内使用',
+      '托芙·扬松，取自《Farlig midsommar》',
+    ],
+    specLabels: [undefined, undefined, '电源', '功能', '使用', '原画'],
+  },
+  'arabia-moomin-plates-winter-night': {
+    name: 'Arabia 姆明餐盘 19 cm，办公室与冬夜，2 只',
+    description:
+      'Arabia 的两只 19 cm 白色玻化瓷姆明餐盘，图案为“办公室”和“冬夜”，与此前推出的马克杯配套。“办公室”画面于 1996 年首次出现在 Arabia 姆明马克杯上，取材自经常出现写作、画画和上色的连环漫画。“冬夜”沿用 2006 年马克杯上的画面，描绘姆明坐在桥栏杆上，出自托芙·扬松 1957 年出版的《Trollvinter》。',
+    specs: [
+      '直径 19.4 cm，高 2.8 cm',
+      '玻化瓷',
+      '2 只餐盘，办公室和冬夜',
+      '可用洗碗机、微波炉和烤箱',
+      '托芙·扬松',
+      '566802-01, EAN 6411801011432',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '原画', '货号与 EAN'],
+  },
+  'arabia-moomin-plates-winter-fire': {
+    name: 'Arabia 姆明餐盘 19 cm，冬日篝火与扬帆，2 只',
+    description:
+      'Arabia 的两只 19 cm 玻化瓷姆明餐盘，一只是“冬日篝火”，一只是“扬帆”，都出自托芙·扬松的画作。这一对把冬天的场景和航海的场景放在一起，既适合日常用餐，也适合节日餐桌。',
+    specs: [
+      '2 只餐盘，冬日篝火和扬帆',
+      '玻化瓷',
+      '多色',
+      '毛重 0.886 kg',
+      '托芙·扬松',
+      '629239-01, EAN 6411801015065',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '原画', '货号与 EAN'],
+  },
+  'sk-muurla-moomin-snowfall-mug': {
+    name: 'Muurla 姆明搪瓷杯 Lumisade 2.5 dl',
+    description:
+      'Muurla 的 2.5 dl 姆明搪瓷杯，图案为 Lumisade（降雪），姆明谷下了初雪，正是玩雪的时候。Muurla 的搪瓷制品以碳钢为芯，外覆双层搪瓷，所以这只杯子既能上餐桌，也适合徒步、度假小屋和船上使用。冷热饮品皆可，可用洗碗机，但不能放进微波炉。',
+    specs: [
+      '2.5 dl',
+      '碳钢，双层搪瓷',
+      '可用洗碗机。不可用于微波炉',
+    ],
+  },
+  'sk-muurla-moomin-gifts-mug': {
+    name: 'Muurla 姆明搪瓷杯 Lahjat 3.7 dl',
+    description:
+      'Muurla 的 3.7 dl 姆明搪瓷杯，图案为 Lahjat（礼物），一幅关于给身边的人送礼物的圣诞画面。搪瓷下面是碳钢芯，外覆双层搪瓷，因此杯子很结实，既能上餐桌，也能在户外使用。冷热饮品皆可，可以放进洗碗机，但不能放进微波炉。',
+    specs: [
+      '3.7 dl',
+      '碳钢，双层搪瓷',
+      '可用洗碗机。不可用于微波炉',
+    ],
+  },
+  'rj-pesonen-beeswax-candle': {
+    name: 'Pesosen Mehiläistarhat 蜂蜡蜡烛，大号',
+    description:
+      'Pesosen Mehiläistarhat 用蜂蜡手工制作的大号桌用蜡烛，颜色和香气也都来自蜂蜡本身。蜂场的 Esa 已经养蜂 29 年，其中 13 年是专业养蜂，蜂箱位于萨斯塔马拉和海门屈罗一带的田野、森林和小水域之间。蜂场用自家蜂箱的产出制作蜡烛，蜡烛燃烧时间长，火焰明亮而稳定。',
+    specs: [
+      '蜂蜡',
+      '大号',
+      '手工制作',
+      '萨斯塔马拉和海门屈罗',
+    ],
+    specLabels: [undefined, undefined, '工艺', '蜂场'],
+  },
+  'rj-pesonen-honeycomb-candle': {
+    name: 'Pesosen Mehiläistarhat 蜂巢蜡烛，大号',
+    description:
+      'Pesosen Mehiläistarhat 用蜂蜡手工制作的大号蜂巢蜡烛，燃烧时间 30 小时。颜色和香气来自蜂蜡，蜂场用萨斯塔马拉和海门屈罗一带自家蜂箱的产出制作蜡烛。蜂场的 Esa 已经养蜂 29 年，其中专业养护蜜蜂 13 年。',
+    specs: [
+      '蜂蜡',
+      '大号',
+      '30 h',
+      '手工制作',
+      '萨斯塔马拉和海门屈罗',
+    ],
+    specLabels: [undefined, undefined, '燃烧时间', '工艺', '蜂场'],
+  },
+  'sk-moomin-mistletoe-candle': {
+    name: 'Havi 姆明蜡烛 7 x 12 cm，槲寄生，米色',
+    description:
+      'Havi 的米色姆明桌用蜡烛，饰有槲寄生图案，尺寸 7 x 12 cm，燃烧时间 55 小时。图案以丝网印刷印在蜡烛上。',
+    specs: [
+      '7 x 12 cm',
+      '米色',
+      '55 h',
+      '丝网印刷',
+      'Havi Oy，里希迈基',
+    ],
+    specLabels: [undefined, undefined, '燃烧时间', '装饰', '经销商'],
+  },
+  'iittala-kastehelmi-tealight': {
+    name: 'Iittala Kastehelmi 烛台 64 mm，透明',
+    description:
+      'Iittala 的透明玻璃 Kastehelmi 茶蜡烛台，直径 64 mm，出自奥伊瓦·托伊卡 1964 年为 Iittala 设计的系列。Kastehelmi 在芬兰语中意为“露珠”，Iittala 于 2010 年重新推出了这个系列。烛台也有其他颜色，Iittala 建议单独使用，或把不同颜色组合在一起。',
+    specs: [
+      '直径 6.4 cm',
+      '玻璃',
+      '透明',
+      '仅可手洗',
+      '奥伊瓦·托伊卡，Iittala Kastehelmi',
+      '13167-01, EAN 6411920059766',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '设计师与系列', '货号与 EAN'],
+  },
+  'sk-fazer-christmas-box': {
+    name: 'Fazer 圣诞礼盒 2026',
+    description:
+      'Fazer 2026 年的圣诞礼盒，内含 6 包应季巧克力、糖果和姜饼。盒里有 Karl Fazer 夹心巧克力、Karl Fazer 姜饼巧克力排、Remix Xmas + Choco、Dumle Winter Mix 太妃糖、Vihreät kuulat 梨味软糖，以及 Marianne 薄荷巧克力姜饼饼干。',
+    specs: [
+      'Karl Fazer 夹心巧克力 250 g，Karl Fazer 姜饼巧克力排 200 g，Remix Xmas + Choco 什锦糖 300 g，Dumle Winter Mix 什锦太妃糖 180 g，Vihreät kuulat 梨味软糖 260 g，Marianne 薄荷巧克力姜饼饼干 175 g',
+      '牛奶巧克力可可含量至少 30 %',
+      '含小麦（麸质）、大豆和牛奶（乳糖）。可能含有黑麦、大麦、燕麦、鸡蛋、坚果和杏仁',
+      '能量 1845 kJ / 441 kcal，脂肪 17 g 其中饱和脂肪 9.4 g，碳水化合物 67 g 其中糖 53 g，蛋白质 4.6 g，盐 0.36 g',
+    ],
+    specLabels: [undefined, '标签说明', '过敏原', '每 100 g 营养成分'],
+  },
+  'sk-karl-fazer-advent-calendar': {
+    name: 'Karl Fazer 圣诞倒数日历 200 g',
+    description:
+      'Karl Fazer 圣诞倒数日历，小门后面是多种口味的夹心巧克力，共 200 g。最后一扇门里装满 Fazer Blue，也就是 Fazer 自 1922 年起生产的 Karl Fazer 牛奶巧克力。Fazer 按照 Fazer Cocoa Vision 计划采购可可。',
+    specs: [
+      '200 g',
+      '多种口味的夹心巧克力，最后一扇门里是 Fazer Blue 牛奶巧克力',
+      '牛奶巧克力可可含量至少 30 %',
+      '含牛奶、大豆和大麦（麸质）。可能含有坚果、杏仁、小麦、黑麦和燕麦',
+      '能量 2315 kJ / 554 kcal，脂肪 34 g 其中饱和脂肪 20 g，碳水化合物 53 g 其中糖 51 g，蛋白质 9.6 g，盐 0.31 g',
+    ],
+    specLabels: [undefined, undefined, '标签说明', '过敏原', '每 100 g 营养成分'],
+  },
+  'sk-fazer-christmas-chocolates': {
+    name: 'Fazer Joulusuklaa 圣诞巧克力 295 g',
+    description:
+      'Fazer Joulusuklaa 夹心巧克力 295 g，柔和的牛奶巧克力外壳里是松露夹心，拌有真正的姜饼碎。Fazer 推荐在圣诞聚会时享用，比如搭配北欧的香料热饮 glögi。',
+    specs: [
+      '295 g',
+      '牛奶巧克力外壳，松露夹心含姜饼碎',
+      '牛奶巧克力可可含量至少 30 %',
+      '含牛奶、小麦、大麦（麸质）和大豆。可能含有坚果、杏仁、黑麦和燕麦',
+      '能量 2274 kJ / 545 kcal，脂肪 33 g 其中饱和脂肪 19 g，碳水化合物 53 g 其中糖 51 g，蛋白质 8.2 g，盐 0.24 g',
+    ],
+    specLabels: [undefined, undefined, '标签说明', '过敏原', '每 100 g 营养成分'],
+  },
+  'sk-karl-fazer-gingerbread-bar': {
+    name: 'Karl Fazer Winter Edition 巧克力排',
+    description:
+      'Karl Fazer Winter Edition 巧克力排 200 g，柔滑的牛奶巧克力配上酥脆的姜饼。Fazer 自 1922 年起生产 Karl Fazer 牛奶巧克力，这款姜饼巧克力排是它的圣诞版。',
+    specs: [
+      '200 g',
+      '牛奶巧克力配酥脆姜饼',
+      '牛奶巧克力可可含量至少 30 %',
+      '含牛奶、小麦（麸质）和大豆。可能含有坚果、杏仁、黑麦和燕麦',
+      '能量 2205 kJ / 527 kcal，脂肪 30 g 其中饱和脂肪 18 g，碳水化合物 55 g 其中糖 48 g，蛋白质 8.5 g，盐 0.22 g',
+    ],
+    specLabels: [undefined, undefined, '标签说明', '过敏原', '每 100 g 营养成分'],
+  },
+  'sk-fazer-glogg-balls': {
+    name: 'Fazer Glögikuulat 软糖 260 g',
+    description:
+      'Fazer Glögikuulat 是一盒 260 g 的软糖球，柔软香甜，名字来自北欧的香料热饮 glögi。不含麸质、明胶和乳糖，也适合纯素食者。盒内附有用它们做热饮的食谱。',
+    specs: [
+      '260 g',
+      '无麸质，无明胶，无乳糖，纯素',
+      '能量 1353 kJ / 322 kcal，脂肪 0 g 其中饱和脂肪 0 g，碳水化合物 79 g 其中糖 64 g，蛋白质 0 g，盐 0.28 g',
+    ],
+    specLabels: [undefined, '饮食', '每 100 g 营养成分'],
+  },
+  'sk-halva-christmas-liquorice': {
+    name: 'Halva 圣诞甘草糖什锦 250 g',
+    description:
+      'Halva 圣诞甘草糖什锦，250 g 甘草糖，3 种圣诞口味，装在玫瑰金色的盒子里。里面有苹果派味的甘草糖花、热红酒味夹心甘草糖和姜饼味夹心甘草糖。Halva 在赫尔辛基的皮泰扬迈基生产这款什锦糖。',
+    specs: [
+      '250 g',
+      '苹果派味甘草糖花、热红酒味夹心甘草糖、姜饼味夹心甘草糖',
+      '产于赫尔辛基皮泰扬迈基',
+      '含小麦（麸质）',
+      '能量 1419 kJ / 334 kcal，脂肪 0.7 g 其中饱和脂肪 0.3 g，碳水化合物 79 g 其中糖 53 g，蛋白质 2.9 g，盐 0.15 g',
+    ],
+    specLabels: [undefined, undefined, undefined, '过敏原', '每 100 g 营养成分'],
+  },
+  'sk-halva-salmiakki-calendar': {
+    name: 'Halva 咸甘草糖倒数日历 200 g',
+    description:
+      'Halva 圣诞倒数日历，装有 200 g 咸甘草糖（salmiakki，芬兰的咸味甘草糖），全部选自 Halva 自家的产品。小门后面有 Vanhat Autot、咸甘草鱼、咸味骷髅、Pommix、咸甘草心、咸甘草剑、Salmiakkiruutu 方块糖和 Jauhix 硬质咸甘草糖。',
+    specs: [
+      '200 g',
+      'Vanhat Autot 咸甘草糖、咸甘草鱼、咸味骷髅、Pommix 咸甘草糖、咸甘草心、咸甘草剑、Salmiakkiruutu、Jauhix 咸甘草糖',
+      '能量 1406 kJ / 331 kcal，脂肪 0.5 g 其中饱和脂肪 0.1 g，碳水化合物 80 g 其中糖 59 g，蛋白质 2.7 g，盐 0.03 g',
+    ],
+    specLabels: [undefined, undefined, '每 100 g 营养成分'],
+  },
+  'kuivalihakundi-advent-calendar': {
+    name: 'Kuivalihakundi 肉干倒数日历 2026',
+    description:
+      'Kuivalihakundi 2026 年的圣诞倒数日历装有 24 种不同口味的肉干，24 扇小门后各有一袋 20 g。有牛肉、鸡肉、肥猪肉和较瘦的猪肉，既有基本口味，也有专为这款日历做的口味，全部出自该公司在芬兰约克拉的自有工厂。肉干开封后也可以常温保存，日历可以立在桌上，也可以借助挂孔挂在墙上，而且是限量批次。',
+    specs: [
+      '24 x 20 g 肉干，每扇门后口味不同',
+      '牛肉、鸡肉、肥猪肉和较瘦的猪肉',
+      '产于 Kuivalihakundi 位于芬兰约克拉的自有工厂',
+      '常温保存，开封后亦可',
+      '可立在桌上，或借挂孔挂在墙上',
+    ],
+    specLabels: [undefined, '肉类', undefined, undefined, '悬挂'],
+  },
+  'halti-crostie-merino-beanie': {
+    name: 'Halti Crostie 美利奴毛线帽',
+    description:
+      'Halti 的贴合款毛线帽，适合越野滑雪、冬季跑步和其他寒冷天气下的运动，在芬兰设计和制造。帽子一半衬有 Stormwall®，这层防风透气的材料能为额头和耳朵挡风。针织本身是柔软的美利奴羊毛混纺，保暖又透气。',
+    specs: [
+      '美利奴羊毛与腈纶混纺针织，50 % 美利奴羊毛，50 % 腈纶。一半衬有 Stormwall®',
+      'S, M, L',
+      '0.2 kg',
+      '多种颜色：Crocus Petal, Black, White, Fudge Maroon Red, Veiled Pink',
+      '与同色衣物一起洗涤，平铺晾干',
+      '芬兰设计和制造，Avainlippu（钥匙旗）产品',
+    ],
+  },
+  'halti-vuolle-mohair-beanie': {
+    name: 'Halti Vuolle 马海毛毛线帽',
+    description:
+      'Halti 的蓬松毛线帽，用马海毛、美利奴羊毛和锦纶混纺而成，双层结构更保暖，翻边较高。混纺让它轻盈又保暖，没有单独的内衬。均码，颜色有 Snow White 和 Black。',
+    specs: [
+      '马海毛混纺，50 % 马海毛，32 % 锦纶，18 % 美利奴羊毛。无单独内衬',
+      '均码',
+      'Snow White 或 Black',
+      '与同色衣物一起洗涤，平铺晾干',
+      '双层结构，高翻边',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, '细节'],
+  },
+  'halti-tiilo-mittens': {
+    name: 'Halti Tiilo II 连指手套',
+    description:
+      'Halti 的保暖连指手套，适合冬季户外活动，面料为防水防风的 DrymaxX®，内填 60 g Microtherm® 保暖棉。掌心为抓握力好的合成皮革，配有罗纹针织内袖口和可调节的腕部收紧带。黑色，尺码 7 到 12。',
+    specs: [
+      '带膜的 DrymaxX® 涤纶，100 % 涤纶。罗纹针织袖口，100 % 涤纶。合成皮革掌心，100 % 聚氨酯',
+      '60 g Microtherm® 保暖棉',
+      '7, 8, 9, 10, 11, 12',
+      '黑色',
+      '单独洗涤',
+    ],
+    specLabels: [undefined, '填充', undefined, undefined, undefined],
+  },
+  'halti-warm-merino-socks': {
+    name: 'Halti 保暖美利奴羊毛袜',
+    description:
+      '芬兰制造的 Halti 美利奴羊毛袜，厚毛圈针织，无缝设计，穿进滑雪靴、冬靴和单板滑雪靴都很合脚。毛圈能锁住空气保暖，罗纹袜筒不易下滑。可以单穿，也可以套在薄袜外面。',
+    specs: [
+      '美利奴羊毛混纺，62 % 美利奴羊毛，36 % 锦纶，2 % 氨纶',
+      '34-36, 37-39, 40-42, 43-45, 46-48',
+      'Dark Sea Green 或 Asphalt',
+      '0.1 kg',
+      '芬兰制造，Avainlippu（钥匙旗）产品',
+      '厚毛圈针织，无缝，罗纹袜筒不易下滑',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '细节'],
+  },
+  'north-outdoor-kaisla-beanie': {
+    name: 'North Outdoor Kaisla 美利奴帽，咖啡色',
+    description:
+      '厚实的英式罗纹毛线帽，采用 100% 不使用剪皮法的美利奴羊毛，在 North Outdoor 位于奥卢的自有针织厂织成。North Outdoor 推荐从秋天戴到冬末，城市散步和自然步道都适合。均码，颜色为咖啡色。',
+    specs: [
+      '100 % 美利奴羊毛，不使用剪皮法，英式罗纹针织',
+      '均码',
+      '咖啡色',
+      '在 North Outdoor 位于芬兰奥卢的自有针织厂制造',
+    ],
+  },
+  'north-outdoor-polku-neck-tube': {
+    name: 'North Outdoor Polku 美利奴围脖，咖啡色',
+    description:
+      '厚实的围脖，采用 100% 不使用剪皮法的美利奴羊毛，织成紧密的 1x1 罗纹。高度足够，可以当围巾、拉起来当兜帽，或用来遮住脸。均码，颜色为咖啡色。',
+    specs: [
+      '100 % 美利奴羊毛，不使用剪皮法，1x1 罗纹针织',
+      '均码',
+      '咖啡色',
+      '围巾、兜帽或面罩',
+    ],
+    specLabels: [undefined, undefined, undefined, '用法'],
+  },
+  'north-outdoor-hirsi-socks': {
+    name: 'North Outdoor Hirsi 美利奴羊毛袜，杏仁色',
+    description:
+      '轻薄的美利奴羊毛袜，出自 North Outdoor 位于奥卢的自有针织厂，含 80% 不使用剪皮法的美利奴羊毛和 20% 增加耐穿度的锦纶。它们最适合在室内穿，可以单穿，也可以套在另一双袜子外面。可以用轻柔程序机洗，不过很少需要洗。',
+    specs: [
+      '80 % 美利奴羊毛，不使用剪皮法，20 % 锦纶',
+      '35-38, 39-42, 43-46',
+      '杏仁色',
+      '在 North Outdoor 位于芬兰奥卢的自有针织厂制造',
+      '轻柔程序机洗',
+    ],
+  },
+  'north-outdoor-avery-mittens': {
+    name: 'North Outdoor Avery 羊毛连指手套，拿铁色',
+    description:
+      '连指手套采用轻盈的意大利羊毛抓绒混纺面料，含 63% 再生羊毛，内衬为 100% 美利奴羊毛。美利奴内衬能排走湿气、留住温暖，贴合又有弹性的版型让手保有抓握的手感。尺码 S 和 M，颜色为拿铁色。',
+    specs: [
+      '意大利羊毛抓绒混纺，63 % 再生羊毛。内衬 100 % 美利奴羊毛',
+      'S, M',
+      '拿铁色',
+      '户外与城市',
+    ],
+    specLabels: [undefined, undefined, undefined, '适用'],
+  },
+  'makia-alvar-beanie': {
+    name: 'Makia Alvar 美利奴毛线帽',
+    description:
+      'Makia 的 100% 美利奴羊毛毛线帽，芬兰制造。羊毛不使用剪皮法，帽子为均码。',
+    specs: [
+      '100 % 美利奴羊毛，不使用剪皮法',
+      '均码',
+      '芬兰制造',
+    ],
+  },
+  'makia-stellar-scarf': {
+    name: 'Makia Stellar 美利奴围巾',
+    description:
+      'Makia 的围巾，采用 100% 美利奴羊毛制成。均码。',
+    specs: [
+      '100 % 美利奴羊毛',
+      '均码',
+    ],
+  },
+  'makia-freja-mittens': {
+    name: 'Makia Freja 绗缝连指手套',
+    description:
+      'Makia 的绗缝连指手套，填充 Sorona® 仿羽绒，这种部分来自植物的保暖材料透气又保暖。3000 mm 的防水指数有助于在小雨中保持双手干爽。尺码 S 和 M。',
+    specs: [
+      'Sorona® 仿羽绒，部分来自植物',
+      '3000 mm',
+      'S, M',
+    ],
+    specLabels: ['填充', '防水指数', undefined],
+  },
+  'makia-sibelius-beanie': {
+    name: 'Makia Sibelius 美利奴毛线帽',
+    description:
+      'Makia 的 Sibelius 毛线帽，采用 100% 美利奴羊毛制成。均码。',
+    specs: [
+      '100 % 美利奴羊毛',
+      '均码',
+    ],
+  },
+  'nb-moomin-christmas-sockbox': {
+    name: '姆明圣诞袜礼盒，EU 36-42',
+    description:
+      '现成的姆明圣诞礼盒，内含两双袜子，均码，适合 EU 36 至 42。袜子以棉为主，另含涤纶、尼龙和少量氨纶，为姆明官方产品。',
+    specs: [
+      '60 % 棉、33 % 涤纶、4 % 尼龙、2 % 氨纶、1 % 弹性二烯',
+      '均码，EU 36-42',
+      '2 双袜子，礼盒装',
+      '姆明官方产品',
+    ],
+    specLabels: [undefined, undefined, undefined, '授权'],
+  },
+  'nb-moomin-christmas-box-men': {
+    name: '姆明男士圣诞袜礼盒，EU 40-45',
+    description:
+      '现成的姆明圣诞礼盒，内含两双男袜，尺码 EU 40 至 45。Nordicbuddies 根据经验表示，脚更大一些也能穿。袜子以棉为主，另含涤纶、尼龙和少量氨纶，为姆明官方产品。',
+    specs: [
+      '60 % 棉、33 % 涤纶、4 % 尼龙、2 % 氨纶、1 % 弹性二烯',
+      '均码，EU 40-45',
+      '2 双袜子，礼盒装',
+      '姆明官方产品',
+    ],
+    specLabels: [undefined, undefined, undefined, '授权'],
+  },
+  'nb-moomintroll-fleece-mittens': {
+    name: '姆明抓绒连指手套',
+    description:
+      '姆明连指手套，抓绒面料由 100% 再生涤纶制成，内衬为腈纶。手套有弹性，均码适合大多数人，为姆明官方产品。',
+    specs: [
+      '100 % 再生涤纶',
+      '100 % 腈纶',
+      '均码，有弹性，适合大多数人',
+      '姆明官方产品',
+    ],
+    specLabels: [undefined, '内衬', undefined, '授权'],
+  },
+  'nb-moomintroll-chunky-beanie': {
+    name: '姆明蓬松粗针织帽，粉色',
+    description:
+      '蓬松厚实的粉色姆明毛线帽，成人均码，人人可戴。材质混合了涤纶、尼龙、腈纶、羊毛和氨纶，为姆明官方产品。',
+    specs: [
+      '涤纶、尼龙、腈纶、羊毛和氨纶',
+      '成人，均码',
+      '粉色',
+      '姆明官方产品',
+    ],
+    specLabels: [undefined, undefined, undefined, '授权'],
+  },
+  'sk-nordqvist-tea-calendar': {
+    name: 'Nordqvist 茶包圣诞倒数日历，27 包',
+    description:
+      'Nordqvist 的立方体茶包圣诞倒数日历，有 25 扇小门、27 个茶包，因为最后一扇门里有三包。茶包包括红茶、绿茶、路易波士茶和洛神花混合茶，其中还有姜饼、热红酒和肉桂等圣诞风味。',
+    specs: [
+      '25 扇门，27 个茶包。最后一扇门里有 3 包',
+      '红茶、绿茶、路易波士茶，洛神花混合茶',
+      'Nordqvist Oy，努尔米耶尔维',
+      '6413440000433',
+    ],
+    specLabels: [undefined, '茶类', '经销商', 'EAN'],
+  },
+  'sk-nordqvist-moomin-tea-calendar': {
+    name: 'Nordqvist 姆明茶包圣诞倒数日历，24 包，淡紫色',
+    description:
+      'Nordqvist 的淡紫色姆明茶包圣诞倒数日历，内有 24 个金字塔茶包，共 12 种口味，每种两包。红茶和绿茶之外还有不含咖啡因的路易波士茶，每种口味都有自己的名字，从 Olet Ihana（你真可爱）到 Muumimamman Voimajuoma（姆明妈妈的能量饮）。盖子打开后日历仍能立着，并获得雨林联盟认证。',
+    specs: [
+      '24 个金字塔茶包，12 种口味，每种 2 包',
+      '41.5 g',
+      '淡紫色',
+      'Rainforest Alliance',
+      'Nordqvist Oy，努尔米耶尔维',
+      '6413440000679',
+    ],
+    specLabels: [undefined, undefined, undefined, '认证', '经销商', 'EAN'],
+  },
+  'sk-nordic-glogg-concentrate': {
+    name: 'Poikain Parhaat Nordic 香料热饮浓缩液',
+    description:
+      '无酒精（0 %）的北欧香料热饮 glögi 浓缩液，用芬兰黑加仑和红加仑原汁以及真正的香料手工制成，按 1+3 调配。Poikain Parhaat 形容它浆果味浓郁、香料温暖，是传统口味的 glögi。',
+    specs: [
+      '0.5 l',
+      '1+3',
+      '0 %',
+      '黑加仑和红加仑原汁来自芬兰',
+      '能量 47.7 kcal / 199.58 kJ，脂肪 0.2 g 其中饱和脂肪 0.2 g，碳水化合物 11 g 其中糖 11 g，蛋白质 0.3 g，盐 0.2 g',
+      'Poikain Parhaat Oy Ltd，坦佩雷',
+    ],
+    specLabels: [undefined, '调配比例', '酒精', undefined, '每 100 ml 营养成分', '经销商'],
+  },
+  'rj-christmas-coffee': {
+    name: 'Gran Palomar 圣诞咖啡 200 g',
+    description:
+      'Cafetoria Roastery 的 Gran Palomar 圣诞咖啡是有机公平贸易咖啡，以有机肉桂和小豆蔻调味。包装为 200 g。',
+    specs: [
+      '200 g',
+      '有机肉桂和小豆蔻',
+      '公平贸易，有机',
+      'Cafetoria Roastery Oy',
+    ],
+    specLabels: [undefined, '香料', '认证', '烘焙'],
+  },
+  'sk-emendo-santa-sauna-scent': {
+    name: 'Emendo 圣诞老人官方桑拿香氛 500 ml',
+    description:
+      'Emendo 的圣诞老人官方桑拿香氛，500 ml，含真正的 100% 精油，不含合成香精。在一桶约 3 l 的水中加入约 ½ dl，和平时泼在桑拿石上的水一样使用。',
+    specs: [
+      '500 ml',
+      '含 100 % 精油，不含合成香精（parfum）',
+      '约 ½ dl 加入一桶约 3 l 的水中',
+      '©Santa Claus Foundation™',
+      '6417892057458',
+    ],
+    specLabels: [undefined, '成分', '用法', '授权', 'EAN'],
+  },
+  'sk-emendo-christmas-sauna-set': {
+    name: 'Emendo Jouluhetki 桑拿礼盒',
+    description:
+      'Emendo 的 Jouluhetki 桑拿礼盒，内含挂绳香皂、桑拿香氛和沐浴球。Jouluhetki 在芬兰语中意为“圣诞时光”。礼盒已包装好，可以直接送人。',
+    specs: [
+      '挂绳香皂、桑拿香氛、沐浴球',
+      '6417892041280',
+    ],
+    specLabels: [undefined, 'EAN'],
+  },
+  'sk-emendo-gingerbread-glogg-scent': {
+    name: 'Emendo 桑拿香氛，姜饼与热红酒，2 x 10 ml',
+    description:
+      'Emendo 的两款桑拿香氛，姜饼和热红酒，各 10 ml，采用真正的 100% 精油制成。在一勺水中加入 2 到 6 滴，然后泼到桑拿石上。',
+    specs: [
+      '2 x 10 ml',
+      '姜饼、热红酒',
+      '采用 100 % 精油制成',
+      '一勺水中加 2 到 6 滴',
+      '6417892021060',
+    ],
+    specLabels: [undefined, '香型', '成分', '用法', 'EAN'],
+  },
+  'sk-aromageddon-gingerbread-scent': {
+    name: 'Aromageddon 桑拿香氛 Piparipyörre',
+    description:
+      'Aromageddon 的 Piparipyörre（姜饼漩涡）为桑拿房带来温暖辛香的肉桂气息，并带有一丝姜饼香。在一勺水中加入 2 到 4 滴，务必稀释后使用，切勿直接倒在桑拿炉上。',
+    specs: [
+      '15 ml',
+      '肉桂，带姜饼香调',
+      '一勺水中加 2 到 4 滴，务必稀释',
+      'Aromageddon Oy，埃斯波',
+    ],
+    specLabels: [undefined, '香型', '用法', '经销商'],
+  },
 }

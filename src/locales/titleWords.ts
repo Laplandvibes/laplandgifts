@@ -139,11 +139,18 @@ const THEME_WORD: Record<TitleLang, string> = {
  * bedlinen, posters), the sauna ones its products (whisks, hats, scents, honey, cushions).
  */
 const THEME_TITLE: Partial<Record<TitleLang, Partial<Record<string, string>>>> = {
-  en: { moomin: 'Moomin gifts: mugs, mittens and posters', sauna: 'Sauna gifts and accessories' },
-  fi: { moomin: 'Muumituotteet ja -lahjat', sauna: 'Saunatarvikkeet ja -lahjat' },
-  it: { moomin: 'Moomin: tazze, muffole e poster', sauna: 'Sauna: accessori e idee regalo' },
-  sv: { moomin: 'Muminmuggar, vantar och affischer', sauna: 'Bastutillbehör och presenttips' },
-  ko: { moomin: '무민 굿즈와 선물 아이디어' },
+  en: { moomin: 'Moomin gifts: mugs, mittens and posters', sauna: 'Sauna gifts and accessories', christmas: 'Finnish Christmas gifts and treats', winter: 'Winter gifts: wool, merino and candles' },
+  fi: { moomin: 'Muumituotteet ja -lahjat', sauna: 'Saunatarvikkeet ja -lahjat', christmas: 'Joululahjat ja joulukalenterit', winter: 'Talven lahjat: villasukat, pipot ja kynttilät' },
+  sv: { moomin: 'Muminmuggar, vantar och affischer', sauna: 'Bastutillbehör och presenttips', christmas: 'Finska julklappar, julgodis och adventskalendrar', winter: 'Vinterpresenter: ullstrumpor, mössor och ljus' },
+  de: { christmas: 'Finnische Weihnachten: Geschenke und Leckereien', winter: 'Wintergeschenke: Wolle, Merino und Kerzen' },
+  fr: { christmas: 'Noël en Finlande : cadeaux, douceurs et calendriers', winter: 'Cadeaux d’hiver : laine, mérinos et bougies' },
+  es: { christmas: 'Navidad en Finlandia: regalos, dulces y calendarios', winter: 'Regalos de invierno: lana, merino y velas' },
+  it: { moomin: 'Moomin: tazze, muffole e poster', sauna: 'Sauna: accessori e idee regalo', christmas: 'Natale finlandese: regali, dolci e calendari dell\'Avvento', winter: 'Regali invernali: lana, merino e candele' },
+  'pt-BR': { christmas: 'Natal na Finlândia: presentes, doces e calendários', winter: 'Presentes de inverno: lã, merino e velas' },
+  nl: { christmas: 'Kerst in Finland: Finse cadeaus en lekkernijen', winter: 'Wintercadeaus: wol, merino en kaarsen' },
+  ja: { christmas: 'フィンランドのクリスマスギフトとお菓子、ムーミンの飾り', winter: '冬のギフト：メリノのビーニー、ウールソックス、キャンドル' },
+  ko: { moomin: '무민 굿즈와 선물 아이디어', christmas: '핀란드 크리스마스 선물과 간식', winter: '겨울 선물: 울, 메리노, 캔들' },
+  'zh-CN': { christmas: '芬兰圣诞礼物：零食、倒数日历和姆明装饰', winter: '冬季礼物：美利奴毛线帽、羊毛袜和蜡烛' },
 }
 
 const NO_SPACE = new Set<TitleLang>(['ja', 'zh-CN'])

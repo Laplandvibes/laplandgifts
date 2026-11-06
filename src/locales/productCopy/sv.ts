@@ -1882,4 +1882,594 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Kost'],
   },
+  // Talvi- ja joulutuotteet 6.11.2026
+  'iittala-glass-baubles-red': {
+    name: 'Iittala julgranskulor i glas 80 mm, röd, 5 st',
+    description:
+      'Ett set med 5 röda julgranskulor i munblåst glas från Iittala, var och en 80 mm i diameter och upphängd i ett sidenband. Varje kula är munblåst, så formen och den röda nyansen skiljer sig något från kula till kula. Häng dem i granen eller på en kvist i en vas, eller använd dem i ett bordsarrangemang.',
+    specs: [
+      '5 julgranskulor',
+      'Diameter 8 cm',
+      'Munblåst glas',
+      'Röd',
+      '0,706 kg brutto',
+      '32741-01, EAN 6411923679978',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Artikelnummer och EAN'],
+  },
+  'iittala-toikka-annual-bird-2026': {
+    name: 'Iittala Birds by Toikka årsfågel 2026, Lakla',
+    description:
+      'Lakla är årsfågeln 2026 i Iittalas serie Birds by Toikka, en orange fågel i munblåst glas formgiven av Oiva Toikka. Iittala släpper varje år en ny årsfågel med eget mönster och egen färgkombination, och årsfåglarna har blivit populära bland samlare. Varje fågel blåses av glasblåsare vid Iittalas glasbruk i Finland, så små luftbubblor och skillnader i tjocklek kan förekomma.',
+    specs: [
+      'Längd 22 cm, bredd 10 cm, höjd 14 cm',
+      'Munblåst glas',
+      'Orange',
+      'Tillverkad vid Iittalas glasbruk i Finland',
+      'Rengörs med fuktig trasa',
+      '657373-01, EAN 6411923689199',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Artikelnummer och EAN'],
+  },
+  'marimekko-siirtolapuutarha-baubles': {
+    name: 'Marimekko Siirtolapuutarha julgranskulor 2025, 2 st',
+    description:
+      'Marimekkos Siirtolapuutarha-kulor för 2025 är ett par julgranskulor i stengods med Maija Louekaris mönster i vitt, svart och grönt. Siirtolapuutarha är finska för koloniträdgård. Varje kula är 7 cm bred och 7 cm hög, och Marimekko föreslår att man hänger dem i ett fönster lika väl som i granen.',
+    specs: [
+      '2 julgranskulor',
+      'Bredd 7 cm, höjd 7 cm',
+      'Stengods',
+      'Vitt, svart och grönt',
+      'Maija Louekari',
+      '650181-01, EAN 6411255039983',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Formgivare', 'Artikelnummer och EAN'],
+  },
+  'arabia-moomin-love-baubles': {
+    name: 'Arabia Mumin julgranskulor Kärlek, guld, 5 cm, 2 st',
+    description:
+      'Två julgranskulor på 5 cm i vitroporslin från Arabia, dekorerade med Tove Janssons Muminmotiv Kärlek med Mumintrollet och Snorkfröken. Motivet har kommit att stå för kärlek och nära relationer. Häng dem i granen eller på en dekorationskvist, eller använd dem som en del av en festdukning.',
+    specs: [
+      '2 julgranskulor',
+      'Bredd 5 cm, höjd 5 cm',
+      'Vitroporslin',
+      'Guld',
+      'Tove Jansson',
+      '699561-01, EAN 6411801029079',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustration', 'Artikelnummer och EAN'],
+  },
+  'sk-muurla-moomin-bauble-pyjamas': {
+    name: 'Muurla Mumin julgranskula i glas 9 cm, Pyjamas',
+    description:
+      'En handgjord julgranskula i glas ur Muurlas Muminsortiment, 9 cm i diameter, med motivet Pyjamas. Muurla beskriver scenen som att koppla av i pyjamas i skenet av levande ljus, och ett satinband för upphängning ingår i förpackningen.',
+    specs: [
+      'Diameter 9 cm',
+      'Glas, handgjord',
+      'Satinband ingår',
+    ],
+    specLabels: [undefined, undefined, 'Upphängning'],
+  },
+  'sk-muurla-moomin-baubles-snow': {
+    name: 'Muurla Mumin julgranskulor 5 cm, Lumipyry, 4 st',
+    description:
+      'En förpackning med 4 julgranskulor ur Muurlas Muminsortiment, 5 cm i diameter, med motivet Lumipyry (snöstorm) och satinband för upphängning. Muurla förlägger motivet till tiden strax efter en snöstorm, med höga drivor, ett sovande landskap och snölyktor som väntar på att byggas.',
+    specs: [
+      'Diameter 5 cm',
+      '4 julgranskulor, satinband ingår',
+    ],
+  },
+  'sk-muurla-moomin-led-ball': {
+    name: 'Muurla Mumin LED-glaskula 11 cm, Tähtihetki',
+    description:
+      'En dekorationskula i glas ur Muurlas Muminserie Tähtihetki, 11 cm i diameter, med en ljusslinga med 10 lysdioder inuti. Den har strömbrytare, drivs med CR2032-litiumknappcellsbatterier som inte ingår och är endast för inomhusbruk. Serien Tähtihetki har gulddetaljer, och ett satinband för upphängning ingår i förpackningen.',
+    specs: [
+      'Diameter 11 cm',
+      'Glas, LED-ljusslinga med 10 lysdioder',
+      'CR2032-litiumknappcellsbatterier, ingår inte. På/av-knapp',
+      'Endast inomhus. CE-certifierad',
+      'Formgiven i Finland',
+    ],
+    specLabels: [undefined, undefined, 'Strömförsörjning', 'Användning', 'Formgivning'],
+  },
+  'sk-muurla-moomin-led-candle-tree': {
+    name: 'Muurla Mumin LED-ljus 12,5 cm, Kuusen alla',
+    description:
+      'Ett batteridrivet LED-ljus ur Muurlas serie Moomin Originals, 12,5 cm högt, med en illustration ur Tove Janssons bok Farlig midsommar. Motivets namn Kuusen alla betyder under granen. Ljuset är gjort av paraffinvax och format för att likna ett riktigt stearinljus, och det varma skenet lyfter fram bilden. Det har lägena på, av och timer på 6 timmar, drivs med 2 AA-batterier som inte ingår och är endast för inomhusbruk.',
+    specs: [
+      'Diameter 10 cm, höjd 12,5 cm',
+      'Paraffinvax',
+      '2 x AA-batterier, ingår inte',
+      'På, av och timer på 6 timmar',
+      'Endast inomhus',
+      'Tove Jansson, ur Farlig midsommar',
+    ],
+    specLabels: [undefined, undefined, 'Strömförsörjning', 'Funktioner', 'Användning', 'Illustration'],
+  },
+  'arabia-moomin-plates-winter-night': {
+    name: 'Arabia Mumintallrikar 19 cm, Kontor & Vinternatt, 2 st',
+    description:
+      'Två Mumintallrikar på 19 cm i vitt vitroporslin från Arabia, Kontor och Vinternatt, gjorda för att passa till muggarna som släppts tidigare. Bilden Kontor dök först upp på en Muminmugg från Arabia 1996 och bygger på serier där skrivande, tecknande och målande återkommer. Vinternatt återger bilden från en mugg från 2006, där Mumintrollet sitter på ett broräcke i en scen ur Tove Janssons Trollvinter från 1957.',
+    specs: [
+      'Diameter 19,4 cm, höjd 2,8 cm',
+      'Vitroporslin',
+      '2 tallrikar, Kontor och Vinternatt',
+      'Tål diskmaskin, mikrovågsugn och ugn',
+      'Tove Jansson',
+      '566802-01, EAN 6411801011432',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustration', 'Artikelnummer och EAN'],
+  },
+  'arabia-moomin-plates-winter-fire': {
+    name: 'Arabia Mumintallrikar 19 cm, Talvinuotio & Purjehtien, 2 st',
+    description:
+      'Två Mumintallrikar på 19 cm i vitroporslin från Arabia med bilderna Talvinuotio och Purjehtien, båda efter Tove Janssons illustrationer. Talvinuotio betyder vinterbrasa och Purjehtien segling, så paret ställer en vinterscen bredvid en seglingsscen. Tallrikarna är tänkta för vardagsmåltider lika väl som för fest.',
+    specs: [
+      '2 tallrikar, Talvinuotio och Purjehtien',
+      'Vitroporslin',
+      'Flerfärgad',
+      '0,886 kg brutto',
+      'Tove Jansson',
+      '629239-01, EAN 6411801015065',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Illustration', 'Artikelnummer och EAN'],
+  },
+  'sk-muurla-moomin-snowfall-mug': {
+    name: 'Muurla Mumin emaljmugg Lumisade 2,5 dl',
+    description:
+      'En emaljmugg på 2,5 dl ur Muurlas Muminsortiment med motivet Lumisade (snöfall), den första snön i Mumindalen och dags för snölekar. Muurlas emaljprodukter har en kärna av kolstål med dubbel emaljering, så muggen passar på vandringen, i stugan eller i båten lika väl som på bordet. Den tål varma och kalla drycker och går i diskmaskinen, men inte i mikrovågsugnen.',
+    specs: [
+      '2,5 dl',
+      'Kolstål med dubbel emaljering',
+      'Tål diskmaskin. Ej för mikrovågsugn',
+    ],
+  },
+  'sk-muurla-moomin-gifts-mug': {
+    name: 'Muurla Mumin emaljmugg Presenter 3,7 dl',
+    description:
+      'En emaljmugg på 3,7 dl ur Muurlas Muminsortiment med motivet Presenter, en julbild om att ge gåvor till dem som står en nära. Under emaljen finns en kärna av kolstål med dubbel beläggning, vilket gör muggen tålig nog för utomhusbruk lika väl som för bordet. Den tål varma och kalla drycker och går i diskmaskinen, men inte i mikrovågsugnen.',
+    specs: [
+      '3,7 dl',
+      'Kolstål med dubbel emaljering',
+      'Tål diskmaskin. Ej för mikrovågsugn',
+    ],
+  },
+  'rj-pesonen-beeswax-candle': {
+    name: 'Pesosen Mehiläistarhat bordsljus i bivax, stort',
+    description:
+      'Pesosen Mehiläistarhat gör det här stora bordsljuset för hand av bivax, som också ger det dess färg och doft. Esa på biodlingen har hållit bin i 29 år, varav 13 yrkesmässigt, och kuporna står bland åkrar, skogar och små vattendrag kring Sastamala och Tavastkyro. Biodlingen gör sina ljus av det som de egna kuporna ger, och de brinner länge med en klar, stadig låga.',
+    specs: [
+      'Bivax',
+      'Stort',
+      'Handgjort',
+      'Sastamala och Tavastkyro',
+    ],
+    specLabels: [undefined, undefined, 'Tillverkning', 'Bigårdar'],
+  },
+  'rj-pesonen-honeycomb-candle': {
+    name: 'Pesosen Mehiläistarhat bikakeljus i bivax, stort',
+    description:
+      'Ett stort bikakeljus gjort för hand av bivax hos Pesosen Mehiläistarhat, med en brinntid på 30 timmar. Färgen och doften kommer från vaxet, och biodlingen gör sina ljus av det som de egna kuporna kring Sastamala och Tavastkyro ger. Esa på biodlingen har hållit bin i 29 år och skött dem yrkesmässigt i 13 år.',
+    specs: [
+      'Bivax',
+      'Stort',
+      '30 h',
+      'Handgjort',
+      'Sastamala och Tavastkyro',
+    ],
+    specLabels: [undefined, undefined, 'Brinntid', 'Tillverkning', 'Bigårdar'],
+  },
+  'sk-moomin-mistletoe-candle': {
+    name: 'Havi Mumin bordsljus 7 x 12 cm, Mistel, beige',
+    description:
+      'Ett beige bordsljus från Havi med Muminmönstret Mistel, 7 x 12 cm och med en brinntid på 55 timmar. Mönstret är screentryckt på ljuset.',
+    specs: [
+      '7 x 12 cm',
+      'Beige',
+      '55 h',
+      'Screentryckt',
+      'Havi Oy, Riihimäki',
+    ],
+    specLabels: [undefined, undefined, 'Brinntid', 'Dekor', 'Marknadsförs av'],
+  },
+  'iittala-kastehelmi-tealight': {
+    name: 'Iittala Kastehelmi värmeljushållare 64 mm, klar',
+    description:
+      'En klar värmeljushållare i glas ur Iittalas Kastehelmi, 64 mm i diameter, från serien som Oiva Toikka formgav för Iittala 1964. Kastehelmi är finska för daggdroppe, och Iittala återlanserade serien 2010. Hållaren tillverkas också i andra färger, och Iittala föreslår att man använder den ensam eller i grupp med olika färger.',
+    specs: [
+      'Diameter 6,4 cm',
+      'Glas',
+      'Klar',
+      'Endast handdisk',
+      'Oiva Toikka, Iittala Kastehelmi',
+      '13167-01, EAN 6411920059766',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Formgivare och kollektion', 'Artikelnummer och EAN'],
+  },
+  'sk-fazer-christmas-box': {
+    name: 'Fazer julbox 2026',
+    description:
+      'Fazers julbox för 2026 med 6 förpackningar choklad, godis och pepparkakor för säsongen. Den innehåller Karl Fazer-konfekt, en Karl Fazer-chokladkaka med pepparkaka, Remix Xmas + Choco, Dumle Winter Mix-kolor, Vihreät kuulat-geléer med päronsmak och Marianne-pepparkakor med mintchoklad.',
+    specs: [
+      'Karl Fazer-konfekt 250 g, Karl Fazer-chokladkaka med pepparkaka 200 g, Remix Xmas + Choco godisblandning 300 g, Dumle Winter Mix kolablandning 180 g, Vihreät kuulat geléer med päronsmak 260 g, Marianne pepparkakor med mintchoklad 175 g',
+      'Mjölkchoklad med minst 30 % kakao',
+      'Innehåller vete (gluten), soja och mjölk (laktos). Kan innehålla råg, korn, havre, ägg, nötter och mandel',
+      'Energi 1845 kJ / 441 kcal, fett 17 g varav mättat 9,4 g, kolhydrat 67 g varav sockerarter 53 g, protein 4,6 g, salt 0,36 g',
+    ],
+    specLabels: [undefined, 'Anteckningar på etiketten', 'Allergener', 'Näringsvärde per 100 g'],
+  },
+  'sk-karl-fazer-advent-calendar': {
+    name: 'Karl Fazer adventskalender 200 g',
+    description:
+      'En Karl Fazer-adventskalender med 200 g chokladpraliner i flera smaker bakom luckorna. Den sista luckan är fylld med Fazers Blå, den Karl Fazer-mjölkchoklad som Fazer har gjort sedan 1922. Fazer köper sin kakao via programmet Fazer Cocoa Vision.',
+    specs: [
+      '200 g',
+      'Chokladpraliner i flera smaker, sista luckan fylld med Fazers Blå mjölkchoklad',
+      'Mjölkchoklad med minst 30 % kakao',
+      'Innehåller mjölk, soja och korn (gluten). Kan innehålla nötter, mandel, vete, råg och havre',
+      'Energi 2315 kJ / 554 kcal, fett 34 g varav mättat 20 g, kolhydrat 53 g varav sockerarter 51 g, protein 9,6 g, salt 0,31 g',
+    ],
+    specLabels: [undefined, undefined, 'Anteckningar på etiketten', 'Allergener', 'Näringsvärde per 100 g'],
+  },
+  'sk-fazer-christmas-chocolates': {
+    name: 'Fazer Joulusuklaa chokladpraliner 295 g',
+    description:
+      'Fazer Joulusuklaa-praliner, 295 g, med ett milt skal av mjölkchoklad runt en tryffelfyllning med äkta pepparkakssmulor. Fazer föreslår dem till julens sammankomster, till exempel tillsammans med glögg.',
+    specs: [
+      '295 g',
+      'Skal av mjölkchoklad, tryffelfyllning med pepparkakssmulor',
+      'Mjölkchoklad med minst 30 % kakao',
+      'Innehåller mjölk, vete, korn (gluten) och soja. Kan innehålla nötter, mandel, råg och havre',
+      'Energi 2274 kJ / 545 kcal, fett 33 g varav mättat 19 g, kolhydrat 53 g varav sockerarter 51 g, protein 8,2 g, salt 0,24 g',
+    ],
+    specLabels: [undefined, undefined, 'Anteckningar på etiketten', 'Allergener', 'Näringsvärde per 100 g'],
+  },
+  'sk-karl-fazer-gingerbread-bar': {
+    name: 'Karl Fazer Winter Edition chokladkaka med pepparkaka 200 g',
+    description:
+      'En Karl Fazer Winter Edition-kaka på 200 g som förenar mjuk mjölkchoklad med knaprig pepparkaka. Fazer har gjort Karl Fazer-mjölkchoklad sedan 1922, och den här pepparkaksvarianten är julutgåvan.',
+    specs: [
+      '200 g',
+      'Mjölkchoklad med knaprig pepparkaka',
+      'Mjölkchoklad med minst 30 % kakao',
+      'Innehåller mjölk, vete (gluten) och soja. Kan innehålla nötter, mandel, råg och havre',
+      'Energi 2205 kJ / 527 kcal, fett 30 g varav mättat 18 g, kolhydrat 55 g varav sockerarter 48 g, protein 8,5 g, salt 0,22 g',
+    ],
+    specLabels: [undefined, undefined, 'Anteckningar på etiketten', 'Allergener', 'Näringsvärde per 100 g'],
+  },
+  'sk-fazer-glogg-balls': {
+    name: 'Fazer Glögikuulat gelégodis 260 g',
+    description:
+      'En ask på 260 g Fazer Glögikuulat, mjuka och söta gelékulor uppkallade efter glögg. De innehåller varken gluten, gelatin eller laktos och passar veganer. I asken finns ett recept på hur man gör en varm dryck av dem.',
+    specs: [
+      '260 g',
+      'Glutenfri, gelatinfri, laktosfri, vegansk',
+      'Energi 1353 kJ / 322 kcal, fett 0 g varav mättat 0 g, kolhydrat 79 g varav sockerarter 64 g, protein 0 g, salt 0,28 g',
+    ],
+    specLabels: [undefined, 'Kost', 'Näringsvärde per 100 g'],
+  },
+  'sk-halva-christmas-liquorice': {
+    name: 'Halva jullakritsblandning 250 g',
+    description:
+      'Halvas jullakritsblandning, 250 g lakrits i 3 julsmaker, förpackad i en roséguldfärgad ask. Där finns lakritsblommor med smak av äppelpaj, lakrits fylld med glögg och lakrits fylld med pepparkaka. Halva gör blandningen i Sockenbacka i Helsingfors.',
+    specs: [
+      '250 g',
+      'Lakritsblommor med äppelpajsmak, lakrits med glöggfyllning, lakrits med pepparkaksfyllning',
+      'Tillverkad i Sockenbacka, Helsingfors',
+      'Innehåller vete (gluten)',
+      'Energi 1419 kJ / 334 kcal, fett 0,7 g varav mättat 0,3 g, kolhydrat 79 g varav sockerarter 53 g, protein 2,9 g, salt 0,15 g',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Allergener', 'Näringsvärde per 100 g'],
+  },
+  'sk-halva-salmiakki-calendar': {
+    name: 'Halva adventskalender med salmiak 200 g',
+    description:
+      'En adventskalender från Halva med 200 g salmiak, finsk saltlakrits, ur Halvas eget sortiment. Bakom luckorna finns Vanhat Autot, salmiakfiskar, salta dödskallar, Pommix, salmiakhjärtan, salmiaksvärd, Salmiakkiruutu-rutor och hård Jauhix-salmiak.',
+    specs: [
+      '200 g',
+      'Vanhat Autot-salmiak, salmiakfisk, salt dödskalle, Pommix-salmiak, salmiakhjärta, salmiaksvärd, Salmiakkiruutu, Jauhix-salmiak',
+      'Energi 1406 kJ / 331 kcal, fett 0,5 g varav mättat 0,1 g, kolhydrat 80 g varav sockerarter 59 g, protein 2,7 g, salt 0,03 g',
+    ],
+    specLabels: [undefined, undefined, 'Näringsvärde per 100 g'],
+  },
+  'kuivalihakundi-advent-calendar': {
+    name: 'Kuivalihakundi adventskalender med jerky 2026, 24 luckor',
+    description:
+      'Kuivalihakundis adventskalender för 2026 innehåller 24 olika smaker av torkat kött, en påse på 20 g bakom var och en av de 24 luckorna. Där finns nötkött, kyckling, fett fläskkött och magrare fläskkött, i grundsmaker och i några som gjorts bara för den här kalendern, allt från företagets egen fabrik i Jokela i Finland. Köttet håller sig i rumstemperatur även efter öppning, kalendern står på ett bord eller hängs upp på väggen med hjälp av upphängningshålen, och den tillverkas i en begränsad upplaga.',
+    specs: [
+      '24 x 20 g påsar med torkat kött, en annan smak bakom varje lucka',
+      'Nötkött, kyckling, fett fläskkött och magrare fläskkött',
+      'Tillverkad i Kuivalihakundis egen fabrik i Jokela, Finland',
+      'Håller sig i rumstemperatur, även efter öppning',
+      'Står på ett bord eller hängs på väggen i upphängningshålen',
+    ],
+    specLabels: [undefined, 'Kött', undefined, undefined, 'Upphängning'],
+  },
+  'halti-crostie-merino-beanie': {
+    name: 'Halti Crostie merinomössa',
+    description:
+      'En tättsittande Halti-mössa för längdskidåkning, vinterlöpning och annan träning i kyla, formgiven och tillverkad i Finland. Halva mössan är fodrad med Stormwall®, ett vindtätt och andningsbart lager som skyddar pannan och öronen mot vinden. Själva stickningen är en mjuk merinoullsblandning som håller värmen men andas.',
+    specs: [
+      'Stickad blandning av merinoull och akryl, 50 % merinoull, 50 % akryl. Till hälften fodrad med Stormwall®',
+      'S, M, L',
+      '0,2 kg',
+      'Flera färger: Crocus Petal, Black, White, Fudge Maroon Red, Veiled Pink',
+      'Tvätta med liknande färger, torka plant',
+      'Formgiven och tillverkad i Finland, Avainlippu-produkt (Nyckelflaggan)',
+    ],
+  },
+  'halti-vuolle-mohair-beanie': {
+    name: 'Halti Vuolle mohairmössa',
+    description:
+      'En fluffig Halti-mössa i en blandning av mohair, merinoull och polyamid, med dubbla lager för extra värme och en hög uppvikning. Blandningen gör den lätt men varm, och något separat foder finns inte. En storlek, i Snow White eller Black.',
+    specs: [
+      'Mohairblandning, 50 % mohair, 32 % polyamid, 18 % merinoull. Inget separat foder',
+      'En storlek',
+      'Snow White eller Black',
+      'Tvätta med liknande färger, torka plant',
+      'Dubbla lager, hög uppvikning',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, 'Egenskaper'],
+  },
+  'halti-tiilo-mittens': {
+    name: 'Halti Tiilo II tumvantar',
+    description:
+      'Vadderade Halti-tumvantar för friluftsliv på vintern, gjorda av vatten- och vindtätt DrymaxX®-tyg med 60 g Microtherm®-vaddering inuti. Handflatan är av syntetläder med bra grepp, och vantarna har en ribbstickad innermudd och en justerbar åtdragning vid handleden. Svarta, storlek 7 till 12.',
+    specs: [
+      'DrymaxX®-polyester med membran, 100 % polyester. Ribbstickad mudd, 100 % polyester. Handflata i syntetläder, 100 % polyuretan',
+      '60 g Microtherm®-vaddering',
+      '7, 8, 9, 10, 11, 12',
+      'Svart',
+      'Tvättas separat',
+    ],
+    specLabels: [undefined, 'Isolering', undefined, undefined, undefined],
+  },
+  'halti-warm-merino-socks': {
+    name: 'Halti varma merinostrumpor',
+    description:
+      'Halti-strumpor i merinoull med tjock frottéstickning, tillverkade i Finland och sömlösa, så de sitter bra i pjäxor, vinterskor och snowboardkängor. Frottén binder luft och värmer, och det ribbstickade skaftet stannar uppe. Använd dem ensamma eller över ett par tunna strumpor.',
+    specs: [
+      'Merinoullsblandning, 62 % merinoull, 36 % polyamid, 2 % elastan',
+      '34-36, 37-39, 40-42, 43-45, 46-48',
+      'Dark Sea Green eller Asphalt',
+      '0,1 kg',
+      'Tillverkad i Finland, Avainlippu-produkt (Nyckelflaggan)',
+      'Tjock frottéstickning, sömlös, ribbstickat skaft som stannar uppe',
+    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Egenskaper'],
+  },
+  'north-outdoor-kaisla-beanie': {
+    name: 'North Outdoor Kaisla merinomössa, kaffe',
+    description:
+      'En grov mössa i patentstickning av 100 procent mulesingfri merinoull, stickad i North Outdoors eget stickeri i Uleåborg. North Outdoor föreslår den från hösten till senvintern, på stadspromenader lika väl som på naturstigar. En storlek, i färgen kaffe.',
+    specs: [
+      '100 % merinoull, mulesingfri, patentstickning',
+      'En storlek',
+      'Kaffe',
+      'Tillverkad i North Outdoors eget stickeri i Uleåborg, Finland',
+    ],
+  },
+  'north-outdoor-polku-neck-tube': {
+    name: 'North Outdoor Polku tubhalsduk i merino, kaffe',
+    description:
+      'En grov tubhalsduk i 100 procent mulesingfri merinoull, stickad i tät 1x1-ribbstickning. Den är tillräckligt hög för att bäras som halsduk, dras upp som huva eller dras över ansiktet. En storlek, i färgen kaffe.',
+    specs: [
+      '100 % merinoull, mulesingfri, 1x1-ribbstickning',
+      'En storlek',
+      'Kaffe',
+      'Halsduk, huva eller ansiktsskydd',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Användning'],
+  },
+  'north-outdoor-hirsi-socks': {
+    name: 'North Outdoor Hirsi merinoullstrumpor, mandel',
+    description:
+      'Lätta merinoullstrumpor från North Outdoors eget stickeri i Uleåborg, 80 procent mulesingfri merino och 20 procent polyamid för hållbarheten. De gör sig bäst inomhus, ensamma eller över ett annat par strumpor. De tål skonsam maskintvätt, även om de sällan behöver det.',
+    specs: [
+      '80 % merinoull, mulesingfri, 20 % polyamid',
+      '35-38, 39-42, 43-46',
+      'Mandel',
+      'Tillverkad i North Outdoors eget stickeri i Uleåborg, Finland',
+      'Skonsam maskintvätt',
+    ],
+  },
+  'north-outdoor-avery-mittens': {
+    name: 'North Outdoor Avery tumvantar i ullfleece, latte',
+    description:
+      'Tumvantar i en lätt italiensk ullfleeceblandning med 63 procent återvunnen ull, fodrade invändigt med 100 procent merinoull. Merinofodret leder bort fukt och håller värmen, och den tätt men smidigt sittande passformen bevarar känslan i greppet. Storlek S och M, i färgen latte.',
+    specs: [
+      'Italiensk ullfleeceblandning, 63 % återvunnen ull. Foder 100 % merinoull',
+      'S, M',
+      'Latte',
+      'Utomhus och i stan',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Användning'],
+  },
+  'makia-alvar-beanie': {
+    name: 'Makia Alvar merinomössa',
+    description:
+      'En Makia-mössa i 100 procent merinoull, tillverkad i Finland. Ullen är mulesingfri, och mössan finns i en storlek.',
+    specs: [
+      '100 % merinoull, mulesingfri',
+      'En storlek',
+      'Tillverkad i Finland',
+    ],
+  },
+  'makia-stellar-scarf': {
+    name: 'Makia Stellar merinohalsduk',
+    description:
+      'En halsduk från Makia i 100 procent merinoull. Den finns i en storlek.',
+    specs: [
+      '100 % merinoull',
+      'En storlek',
+    ],
+  },
+  'makia-freja-mittens': {
+    name: 'Makia Freja quiltade tumvantar',
+    description:
+      'Quiltade Makia-tumvantar fyllda med Sorona®-syntetdun, en delvis växtbaserad isolering som andas och håller värmen. En vattenpelare på 3000 mm hjälper till att hålla händerna torra i lätt regn. Storlek S och M.',
+    specs: [
+      'Sorona®-syntetdun, delvis växtbaserat',
+      '3000 mm',
+      'S, M',
+    ],
+    specLabels: ['Fyllning', 'Vattenpelare', undefined],
+  },
+  'makia-sibelius-beanie': {
+    name: 'Makia Sibelius merinomössa',
+    description:
+      'Mössan Sibelius från Makia, gjord av 100 procent merinoull. Den finns i en storlek.',
+    specs: [
+      '100 % merinoull',
+      'En storlek',
+    ],
+  },
+  'nb-moomin-christmas-sockbox': {
+    name: 'Mumin julpresentask med strumpor, EU 36-42',
+    description:
+      'En färdig julpresentask med Muminstrumpor, två par i en storlek som passar EU 36 till 42. Strumporna är mest bomull med polyester, nylon och lite elastan, och det här är en officiell Muminprodukt.',
+    specs: [
+      '60 % bomull, 33 % polyester, 4 % nylon, 2 % elastan, 1 % elastodien',
+      'En storlek, EU 36-42',
+      '2 par strumpor i presentask',
+      'Officiell Muminprodukt',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licens'],
+  },
+  'nb-moomin-christmas-box-men': {
+    name: 'Mumin julpresentask med herrstrumpor, EU 40-45',
+    description:
+      'En färdig julpresentask med Muminstrumpor, två par herrstrumpor i storlek EU 40 till 45. Enligt Nordicbuddies erfarenhet passar de också större fötter. Strumporna är mest bomull med polyester, nylon och lite elastan, och det här är en officiell Muminprodukt.',
+    specs: [
+      '60 % bomull, 33 % polyester, 4 % nylon, 2 % elastan, 1 % elastodien',
+      'En storlek, EU 40-45',
+      '2 par strumpor i presentask',
+      'Officiell Muminprodukt',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licens'],
+  },
+  'nb-moomintroll-fleece-mittens': {
+    name: 'Mumintrollet fleecevantar',
+    description:
+      'Vantar med Mumintrollet i fleece av 100 procent återvunnen polyester, med foder i akryl. De är töjbara, så en storlek passar de flesta, och de är en officiell Muminprodukt.',
+    specs: [
+      '100 % återvunnen polyester',
+      '100 % akryl',
+      'En storlek, töjbar, passar de flesta',
+      'Officiell Muminprodukt',
+    ],
+    specLabels: [undefined, 'Foder', undefined, 'Licens'],
+  },
+  'nb-moomintroll-chunky-beanie': {
+    name: 'Mumintrollet fluffig grovstickad mössa, rosa',
+    description:
+      'En fluffig och grov mössa med Mumintrollet, i rosa och i en vuxenstorlek som passar alla. Materialet är en blandning av polyester, nylon, akryl, ull och elastan, och det är en officiell Muminprodukt.',
+    specs: [
+      'Polyester, nylon, akryl, ull och elastan',
+      'Vuxen, en storlek',
+      'Rosa',
+      'Officiell Muminprodukt',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Licens'],
+  },
+  'sk-nordqvist-tea-calendar': {
+    name: 'Nordqvist adventskalender med te, 27 tepåsar',
+    description:
+      'En kubformad adventskalender med te från Nordqvist, med 25 luckor och 27 tepåsar, eftersom den sista luckan rymmer tre. Påsarna innehåller svart te, grönt te, rooibos och hibiskusblandningar, och bland dem finns julsmaker som pepparkaka, glögg och kanel.',
+    specs: [
+      '25 luckor, 27 tepåsar. Den sista luckan rymmer 3 påsar',
+      'Svart, grönt och rooibos-te, hibiskusblandningar',
+      'Nordqvist Oy, Nurmijärvi',
+      '6413440000433',
+    ],
+    specLabels: [undefined, 'Tesorter', 'Marknadsförs av', 'EAN'],
+  },
+  'sk-nordqvist-moomin-tea-calendar': {
+    name: 'Nordqvist Mumin adventskalender med te, 24 påsar, lila',
+    description:
+      'En lila adventskalender med te och Muminmotiv från Nordqvist, med 24 pyramidtepåsar i 12 smaker, två av varje. Svart och grönt te finns tillsammans med koffeinfri rooibos, och varje smak har ett eget namn, från Olet Ihana (Du är härlig) till Muumimamman Voimajuoma (Muminmammas kraftdryck). Locket öppnas så att kalendern står upprätt, och den är Rainforest Alliance-certifierad.',
+    specs: [
+      '24 pyramidtepåsar, 12 smaker, 2 av varje',
+      '41,5 g',
+      'Lila',
+      'Rainforest Alliance',
+      'Nordqvist Oy, Nurmijärvi',
+      '6413440000679',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Certifiering', 'Marknadsförs av', 'EAN'],
+  },
+  'sk-nordic-glogg-concentrate': {
+    name: 'Poikain Parhaat Nordic glöggkoncentrat 0,5 l',
+    description:
+      'Ett alkoholfritt (0 %) glöggkoncentrat gjort för hand av finsk svart- och rödvinbärssaft och äkta kryddor, som blandas 1+3. Poikain Parhaat beskriver det som bärrikt och varmt kryddat, en glögg med traditionell smak.',
+    specs: [
+      '0,5 l',
+      '1+3',
+      '0 %',
+      'Svart- och rödvinbärssaft från Finland',
+      'Energi 47,7 kcal / 199,58 kJ, fett 0,2 g varav mättat 0,2 g, kolhydrat 11 g varav sockerarter 11 g, protein 0,3 g, salt 0,2 g',
+      'Poikain Parhaat Oy Ltd, Tampere',
+    ],
+    specLabels: [undefined, 'Blandningsförhållande', 'Alkohol', undefined, 'Näringsvärde per 100 ml', 'Marknadsförs av'],
+  },
+  'rj-christmas-coffee': {
+    name: 'Gran Palomar julkaffe 200 g',
+    description:
+      'Gran Palomar julkaffe från Cafetoria Roastery, ett ekologiskt och rättvisemärkt kaffe kryddat med ekologisk kanel och kardemumma. Det säljs i förpackning om 200 g.',
+    specs: [
+      '200 g',
+      'Ekologisk kanel och kardemumma',
+      'Rättvis handel, ekologiskt',
+      'Cafetoria Roastery Oy',
+    ],
+    specLabels: [undefined, 'Kryddor', 'Certifiering', 'Rosteri'],
+  },
+  'sk-emendo-santa-sauna-scent': {
+    name: 'Emendo Jultomtens officiella bastudoft 500 ml',
+    description:
+      'Jultomtens officiella bastudoft från Emendo, 500 ml med 100 procent äkta eteriska oljor och utan syntetiska doftämnen. Blanda ungefär ½ dl i en bastuhink med cirka 3 l vatten och använd blandningen som vanligt bastuvatten.',
+    specs: [
+      '500 ml',
+      'Innehåller 100 % eteriska oljor, inga syntetiska doftämnen (parfum)',
+      'Cirka ½ dl i en bastuhink med cirka 3 l vatten',
+      '©Santa Claus Foundation™',
+      '6417892057458',
+    ],
+    specLabels: [undefined, 'Sammansättning', 'Användning', 'Licens', 'EAN'],
+  },
+  'sk-emendo-christmas-sauna-set': {
+    name: 'Emendo Jouluhetki presentset för bastun',
+    description:
+      'Jouluhetki, finska för julstund, är ett presentset för bastun från Emendo med en tvål på snöre, en bastudoft och en duschpuff. Det levereras färdigförpackat som present.',
+    specs: [
+      'Tvål på snöre, bastudoft, duschpuff',
+      '6417892041280',
+    ],
+    specLabels: [undefined, 'EAN'],
+  },
+  'sk-emendo-gingerbread-glogg-scent': {
+    name: 'Emendo bastudofter pepparkaka och glögg, 2 x 10 ml',
+    description:
+      'Två bastudofter från Emendo, pepparkaka och glögg, 10 ml vardera och gjorda av 100 procent äkta eteriska oljor. Tillsätt 2 till 6 droppar i en skopa vatten och kasta det på stenarna.',
+    specs: [
+      '2 x 10 ml',
+      'Pepparkaka, glögg',
+      'Gjorda av 100 % eteriska oljor',
+      '2 till 6 droppar i en skopa vatten',
+      '6417892021060',
+    ],
+    specLabels: [undefined, 'Dofter', 'Sammansättning', 'Användning', 'EAN'],
+  },
+  'sk-aromageddon-gingerbread-scent': {
+    name: 'Aromageddon bastudoft Piparipyörre 15 ml',
+    description:
+      'Aromageddons Piparipyörre, ungefär pepparkaksvirvel, för in en varm och kryddig kaneldoft med en ton av pepparkaka i bastun. Tillsätt 2 till 4 droppar i en skopa vatten och använd den alltid utspädd, häll den aldrig direkt på aggregatet.',
+    specs: [
+      '15 ml',
+      'Kanel med en ton av pepparkaka',
+      '2 till 4 droppar i en skopa vatten, alltid utspädd',
+      'Aromageddon Oy, Espoo',
+    ],
+    specLabels: [undefined, 'Doft', 'Användning', 'Marknadsförs av'],
+  },
 }
