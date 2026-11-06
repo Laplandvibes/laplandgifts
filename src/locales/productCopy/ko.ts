@@ -39,27 +39,19 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: '이딸라 키비 캔들홀더 60 mm, 파인 그린',
+    name: '이딸라 키비 캔들홀더 60 mm, 그레이',
     description:
       '헤이키 오르볼라가 디자인한 압착 유리 캔들홀더, 높이 6 cm. 티라이트 하나를 색의 덩어리로 바꿔 놓습니다. 이딸라를 가장 싸게 손에 넣는 방법이고 기내 수하물도 견딥니다.',
     specs: [
       '6.5 x 6.5 cm, 높이 6 cm',
       '유리',
-      '그린',
-      '총중량 0.33 kg',
+      '그레이',
+      '총중량 0.338 kg',
       '손세척만 가능',
       '헤이키 오르볼라, Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '디자이너와 컬렉션',
-      '품번과 EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '디자이너와 컬렉션', '품번과 EAN'],
   },
   'marimekko-unikko-mug': {
     name: '마리메꼬 우니꼬 머그 25 cl',
@@ -398,13 +390,13 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specLabels: [undefined, undefined, '사용된 고기의 양', '100 g당 영양성분'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: '파제르 게이샤 헤이즐넛 누가 초콜릿 바 121 g',
+    name: '파제르 게이샤 초콜릿 바 37 g, 5개',
     description:
-      '바삭한 헤이즐넛 누가 필링을 밀크 초콜릿으로 감싼 바. 핀란드 가정 대부분이 서랍에 하나쯤 넣어 둡니다. 파제르는 팜유를 쓰지 않는다고 표기합니다.',
+      '37 g짜리 게이샤 바 다섯 개가 한 묶음입니다. 파제르 밀크 초콜릿이 바삭한 헤이즐넛 누가 필링을 감싸고 있습니다. 파제르는 이 초콜릿을 팜유 없이 만든다고 표기합니다.',
     specs: [
-      '121 g',
+      '5 x 37 g',
       '코코아 30% 이상 밀크 초콜릿, 헤이즐넛 11%가 든 누가 필링',
-      '열량 550 kcal / 2302 kJ, 지방 35 g, 포화지방 17 g, 탄수화물 51 g, 당류 49 g, 단백질 8 g, 소금 0.19 g',
+      '열량 550 kcal / 2303 kJ, 지방 35 g, 포화지방 17 g, 탄수화물 51 g, 당류 49 g, 단백질 8 g, 소금 0.19 g',
     ],
     specLabels: [undefined, undefined, '100 g당 영양성분'],
   },
@@ -743,11 +735,11 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specLabels: [undefined, '세트 구성', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: '할티 HeatGrid 중간 레이어 재킷, 남성',
+    name: '할티 HeatGrid 중간 레이어 재킷, 여성',
     description:
-      '셸 아래에서 부피를 늘리지 않으면서 공기를 가두는 와플 편물. 메리노와 파카 사이에 들어가는 층이고, 이것을 빼먹는 바람에 사람들이 춥게 돌아옵니다.',
+      '부드러운 와플 니트로 만든 가볍고 기능적인 할티 중간 레이어로, 통기성이 있고 피부의 습기를 밖으로 내보냅니다. 앞쪽 풀 지퍼, 스탠드 칼라, 지퍼 주머니, 신축성 있는 소매 끝과 밑단을 갖추고 있습니다.',
     specs: [
-      '안쪽 와플 편물 재활용 폴리에스터 95% / 엘라스테인 5%; 저지 편물 재활용 폴리에스터 92% / 엘라스테인 8%',
+      '안쪽 와플 니트 재활용 폴리에스터 95% / 엘라스테인 5%; 저지 니트 재활용 폴리에스터 92% / 엘라스테인 8%',
       '비슷한 색과 함께 뒤집어 세탁하고, 세탁 전에 지퍼를 잠그세요',
     ],
   },
@@ -1133,10 +1125,10 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: '리틀 미이 벙어리장갑',
     description:
-      '무민 장갑과 짝을 이루는 버건디. 플리스 안감도 가격도 같습니다. 손목 부분이 2센티미터 짧고, 무민이 조금 무르다고 느끼는 사람에게 어울리는 캐릭터입니다.',
+      '손등마다 리틀 미이의 얼굴이 들어간 빨간색 니트 벙어리장갑이며, 안감은 아크릴입니다. 신축성이 있어 원 사이즈로 대부분의 사람에게 맞고, 무민 공식 제품입니다.',
     specs: [
-      '아크릴 100%, 플리스 안감',
-      '성인용, 높이 22 cm, 엄지 위 너비 9.5 cm',
+      '비스코스 49%, 폴리에스터 31%, 나일론 20%; 안감 아크릴 100%',
+      '원 사이즈, 신축성 있음',
       '무민 공식 제품',
     ],
     specLabels: [undefined, undefined, '라이선스'],
@@ -1277,16 +1269,17 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '무늬'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: '마리메꼬 우니꼬 핸드 타월 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: '마리메꼬 피에니 우니꼬 앞치마',
     description:
-      '같은 우니꼬 테리를 핸드 타월 크기로. 목욕 타월의 절반 가격이고 여행 가방에 넣기도 훨씬 쉽습니다. 베이지와 흰색, 유기농 면 65%와 재생 35%.',
+      '유기농 면으로 만든 마리메꼬 앞치마로, 피에니 우니꼬 무늬가 플럼, 크랜베리, 오프화이트, 로즈 색으로 들어가 있습니다. 앞주머니, 허리에 묶는 끈, 스냅 단추로 조절하는 목끈이 달려 있습니다.',
     specs: [
-      '50 × 70 cm',
-      '테리 면, 유기농 65%와 재생 35%',
-      '우니꼬, 베이지와 흰색',
+      '유기농 면 100%',
+      '너비 84 cm, 길이 85 cm',
+      '세탁기 60 °C',
+      '피에니 우니꼬, 플럼, 크랜베리, 오프화이트, 로즈',
     ],
-    specLabels: [undefined, undefined, '무늬'],
+    specLabels: [undefined, undefined, undefined, '무늬'],
   },
   'fl-taistelevat-metsot': {
     name: 'Taistelevat metsot 새틴 이불커버 세트, 더블',
@@ -1423,11 +1416,11 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: '무민 Classics 비니',
     description:
-      'Moomin Classics 컬렉션의 성인용 비니로 재생 폴리에스터와 아크릴, 베이지, 원 사이즈입니다. 무민 공식 제품이며, 그것이 시장 좌판 버전과 구분되는 선입니다.',
+      'Moomin Classics 컬렉션의 성인용 비니로, 재생 폴리에스터 100퍼센트에 브라운, 원 사이즈입니다. 무민 공식 제품이라는 점이 시장 좌판 제품과 다른 점입니다.',
     specs: [
-      '재생 폴리에스터와 아크릴',
+      '재생 폴리에스터 100%',
       '성인용, 원 사이즈',
-      '베이지',
+      '브라운',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1653,11 +1646,11 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specLabels: [undefined, undefined, '조리'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Vaasan Ruispalat 호밀빵 5 x 330 g',
+    name: 'Vaasan Ruispalat 호밀빵 660 g 12개',
     description:
-      '핀란드에서 가장 많이 팔리는 빵 다섯 봉지: 100퍼센트 핀란드산 곡물을 진짜 사워도우로 구운 뜯어 먹는 통호밀 롤로, 330그램 한 봉지에 여섯 개, 식이섬유 12퍼센트. 해외의 핀란드인들이 방문객에게 가져다 달라고 부탁하는 것입니다.',
+      'Vaasan Ruispalat은 100퍼센트 핀란드산 곡물을 진짜 사워도우로 구운 통호밀빵입니다. 660그램 봉지에 12개가 들어 있습니다. Vaasan은 이 빵을 핀란드에서 가장 인기 있는 빵이라고 소개하며, 식이섬유가 12퍼센트입니다.',
     specs: [
-      '5 x 330 g, 봉지당 6개',
+      '660 g, 12개',
       '통호밀이 곡물의 87 %, 식이섬유 12 %',
     ],
   },

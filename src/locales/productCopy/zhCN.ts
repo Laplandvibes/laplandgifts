@@ -40,27 +40,19 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'Iittala Kivi 烛台 60 mm，松绿色',
+    name: 'Iittala Kivi 烛台 60 mm，灰色',
     description:
       '海基·奥尔沃拉设计的压制玻璃烛台，高 6 cm，把一支茶蜡变成一块颜色。这是拥有一件 Iittala 最便宜的方式，而且经得起手提行李。',
     specs: [
       '6.5 x 6.5 cm，高 6 cm',
       '玻璃',
-      '绿色',
-      '毛重 0.33 kg',
+      '灰色',
+      '毛重 0.338 kg',
       '仅可手洗',
       '海基·奥尔沃拉，Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      '设计师与系列',
-      '货号与 EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, '设计师与系列', '货号与 EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'Marimekko Unikko 马克杯 25 cl',
@@ -399,13 +391,13 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specLabels: [undefined, undefined, '用肉量', '每 100 g 营养成分'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'Fazer Geisha 榛子牛轧糖巧克力排 121 g',
+    name: 'Fazer Geisha 巧克力棒 37 g，5条装',
     description:
-      '牛奶巧克力包着酥脆的榛子牛轧糖夹心，多数芬兰家庭抽屉里都有这一块。Fazer 标明不使用棕榈油。',
+      '五条装 Geisha 巧克力棒，每条 37 g，Fazer 牛奶巧克力包裹着酥脆的榛子牛轧糖夹心。Fazer 标明这款巧克力不使用棕榈油。',
     specs: [
-      '121 g',
+      '5 x 37 g',
       '可可含量至少 30 % 的牛奶巧克力，榛子牛轧糖夹心含 11 % 榛子',
-      '能量 550 kcal / 2302 kJ，脂肪 35 g，饱和脂肪 17 g，碳水化合物 51 g，糖 49 g，蛋白质 8 g，盐 0.19 g',
+      '能量 550 kcal / 2303 kJ，脂肪 35 g，饱和脂肪 17 g，碳水化合物 51 g，糖 49 g，蛋白质 8 g，盐 0.19 g',
     ],
     specLabels: [undefined, undefined, '每 100 g 营养成分'],
   },
@@ -744,9 +736,9 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specLabels: [undefined, '套装内容', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'Halti HeatGrid 中层夹克，男款',
+    name: 'Halti HeatGrid 中层夹克，女款',
     description:
-      '华夫格针织在外壳下能兜住空气而不增加体积。这是美利奴和大衣之间的一层，把它省掉，人就会冻着回来。',
+      'Halti 的轻量技术型中层夹克，采用柔软的华夫格针织面料，透气并能将湿气从皮肤排出。配有全长前拉链、立领、拉链口袋，以及弹性袖口和下摆。',
     specs: [
       '内侧华夫格针织 95 % 再生涤纶 / 5 % 氨纶；平纹针织 92 % 再生涤纶 / 8 % 氨纶',
       '与同色衣物反面洗涤，洗前拉好拉链',
@@ -1134,10 +1126,10 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: '小不点连指手套',
     description:
-      '与姆明手套配对的酒红款，同样的抓绒内里，同样的价格。筒口短两厘米，而这个角色适合觉得姆明太好说话的人。',
+      '红色针织连指手套，每只手背上都有小不点的脸，内衬为腈纶。手套有弹性，均码适合大多数人，而且是姆明官方产品。',
     specs: [
-      '100 % 腈纶，抓绒内里',
-      '成人款，高 22 cm，拇指上方宽 9.5 cm',
+      '49 % 粘胶纤维，31 % 涤纶，20 % 锦纶；内衬 100 % 腈纶',
+      '均码，有弹性',
       '姆明官方产品',
     ],
     specLabels: [undefined, undefined, '授权'],
@@ -1278,16 +1270,17 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '图案'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'Marimekko Unikko 方巾 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'Marimekko Pieni Unikko 围裙',
     description:
-      '同样的 Unikko 毛圈棉，方巾尺寸，价格是浴巾的一半，塞进行李箱也容易得多。米色配白色，65 % 有机棉与 35 % 再生棉。',
+      'Marimekko 有机棉围裙，Pieni Unikko 图案采用梅子色、蔓越莓色、米白色和玫瑰色。带前袋和腰部系带，颈带可用按扣调节。',
     specs: [
-      '50 × 70 cm',
-      '毛圈棉，65 % 有机与 35 % 再生',
-      'Unikko，米色与白色',
+      '100 % 有机棉',
+      '宽 84 cm，长 85 cm',
+      '机洗 60 °C',
+      'Pieni Unikko，梅子色、蔓越莓色、米白色和玫瑰色',
     ],
-    specLabels: [undefined, undefined, '图案'],
+    specLabels: [undefined, undefined, undefined, '图案'],
   },
   'fl-taistelevat-metsot': {
     name: 'Taistelevat metsot 缎纹被套组，双人床',
@@ -1424,11 +1417,11 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: '姆明 Classics 毛线帽',
     description:
-      'Moomin Classics系列成人毛线帽，再生聚酯与腈纶，米色，均码。姆明官方正版产品，这正是它与集市摊位货的分界线。',
+      'Moomin Classics 系列成人毛线帽，100 % 再生聚酯，棕色，均码。姆明官方正版产品，这正是它有别于集市摊位货的地方。',
     specs: [
-      '再生聚酯与腈纶',
+      '100 % 再生聚酯',
       '成人，均码',
-      '米色',
+      '棕色',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1654,11 +1647,11 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specLabels: [undefined, undefined, '烹调'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Vaasan Ruispalat 黑麦面包 5 x 330 g',
+    name: 'Vaasan Ruispalat 黑麦面包 660 g',
     description:
-      '芬兰最畅销面包的五袋装：用100%芬兰谷物和真正的酸面团烤制的撕开式全麦黑麦小面包，每袋330克六个，膳食纤维12%。海外芬兰人会请来访者带的东西。',
+      'Vaasan Ruispalat 是用真正的酸面团烤制的全麦黑麦面包，原料为100%芬兰谷物，每袋660克，共12块。Vaasan 称它为芬兰最受欢迎的面包，膳食纤维含量为12%。',
     specs: [
-      '5 x 330 g，每袋6个',
+      '660 g，12块',
       '全麦黑麦占谷物的87 %，膳食纤维12 %',
     ],
   },

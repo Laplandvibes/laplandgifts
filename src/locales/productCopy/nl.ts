@@ -38,27 +38,19 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'Iittala Kivi waxinelichthouder 60 mm, dennengroen',
+    name: 'Iittala Kivi waxinelichthouder 60 mm, grijs',
     description:
       'Een geperste glazen waxinelichthouder van Heikki Orvola, 6 cm hoog, die van één waxinelichtje een blok kleur maakt. Het is de goedkoopste manier om een stuk Iittala te bezitten en hij overleeft de handbagage.',
     specs: [
       '6,5 x 6,5 cm, hoogte 6 cm',
       'Glas',
-      'Groen',
-      '0,33 kg bruto',
+      'Grijs',
+      '0,338 kg bruto',
       'Alleen met de hand wassen',
       'Heikki Orvola, Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Ontwerper en collectie',
-      'Artikelnummer en EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Ontwerper en collectie', 'Artikelnummer en EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'Marimekko Unikko mok 25 cl',
@@ -397,13 +389,13 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Vleesgebruik', 'Voedingswaarde per 100 g'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'Fazer Geisha chocoladereep met hazelnootnougat 121 g',
+    name: 'Fazer Geisha chocoladerepen 37 g, 5 stuks',
     description:
-      'Melkchocolade over een knapperige vulling van hazelnootnougat, de reep die de meeste Finse huishoudens in een la hebben liggen. Fazer geeft aan dat hij zonder palmolie gemaakt is.',
+      'Vijf Geisha-repen van 37 g, waarbij Fazer-melkchocolade een knapperige vulling van hazelnootnougat omhult. Fazer geeft aan dat de chocolade zonder palmolie gemaakt is.',
     specs: [
-      '121 g',
+      '5 x 37 g',
       'Melkchocolade met minstens 30 % cacao, hazelnootnougatvulling met 11 % hazelnoten',
-      'Energie 550 kcal / 2302 kJ, vet 35 g, verzadigd 17 g, koolhydraten 51 g, suikers 49 g, eiwit 8 g, zout 0,19 g',
+      'Energie 550 kcal / 2303 kJ, vet 35 g, verzadigd 17 g, koolhydraten 51 g, suikers 49 g, eiwit 8 g, zout 0,19 g',
     ],
     specLabels: [undefined, undefined, 'Voedingswaarde per 100 g'],
   },
@@ -742,9 +734,9 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, 'Inhoud van de set', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'Halti HeatGrid tussenlaagjas, heren',
+    name: 'Halti HeatGrid tussenlaagjas, dames',
     description:
-      'Wafelbreisel dat lucht vasthoudt zonder volume toe te voegen onder een shell. Dit is de laag tussen de merino en de parka, en hem weglaten is de reden dat mensen verkleumd terugkomen.',
+      'Een lichte, technische tussenlaag van Halti in zacht wafelbreisel dat ademt en vocht van de huid afvoert. Hij heeft een doorlopende rits aan de voorkant, een opstaande kraag, zakken met rits en elastische manchetten en zoom.',
     specs: [
       'Wafelbreisel aan de binnenkant 95 % gerecycled polyester / 5 % elastaan; jerseybreisel 92 % gerecycled polyester / 8 % elastaan',
       'Binnenstebuiten wassen met gelijke kleuren, ritsen sluiten voor het wassen',
@@ -1132,10 +1124,10 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Kleine Mij wanten',
     description:
-      'Het bordeauxrode paar bij de Moomin-wanten, dezelfde fleecevoering en dezelfde prijs. De boord is twee centimeter korter, en het personage past bij wie Moomin net iets te meegaand vindt.',
+      'Rode gebreide wanten met het gezicht van Kleine Mij op de rug van elke hand, gevoerd met acryl. Ze rekken mee, dus één maat past bij de meeste handen, en ze zijn een officieel Moomin-product.',
     specs: [
-      '100 % acryl, fleecevoering',
-      'Volwassenen, hoogte 22 cm, breedte boven de duim 9,5 cm',
+      '49 % viscose, 31 % polyester, 20 % nylon; voering 100 % acryl',
+      'Eén maat, rekbaar',
       'Officieel Moomin-product',
     ],
     specLabels: [undefined, undefined, 'Licentie'],
@@ -1276,16 +1268,17 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Dessin'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'Marimekko Unikko handdoek 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'Marimekko Pieni Unikko schort',
     description:
-      'Dezelfde Unikko-badstof in handdoekformaat, half zo duur als het badlaken en een stuk makkelijker in een koffer te krijgen. Beige en wit, 65 % biologisch katoen en 35 % gerecycled.',
+      'Een schort van Marimekko in biologisch katoen met het Pieni Unikko-dessin in pruim, cranberry, gebroken wit en roze. Het heeft een zak aan de voorkant, strikbanden in de taille en een nekband die met drukknopen verstelbaar is.',
     specs: [
-      '50 × 70 cm',
-      'Badstof katoen, 65 % biologisch en 35 % gerecycled',
-      'Unikko, beige en wit',
+      '100 % biologisch katoen',
+      'Breedte 84 cm, lengte 85 cm',
+      'Machinewas 60 °C',
+      'Pieni Unikko, pruim, cranberry, gebroken wit en roze',
     ],
-    specLabels: [undefined, undefined, 'Dessin'],
+    specLabels: [undefined, undefined, undefined, 'Dessin'],
   },
   'fl-taistelevat-metsot': {
     name: 'Taistelevat metsot satijnen dekbedovertrekset, tweepersoons',
@@ -1422,11 +1415,11 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: 'Moomin Classics muts',
     description:
-      'Muts voor volwassenen uit de collectie Moomin Classics van gerecycled polyester en acryl, beige, één maat. Een officieel Moomin-product, en dat is de lijn die hem van de marktkraamversie scheidt.',
+      'Muts voor volwassenen uit de collectie Moomin Classics, gemaakt van 100 procent gerecycled polyester, bruin, één maat. Een officieel Moomin-product, en dat onderscheidt hem van de versie van de marktkraam.',
     specs: [
-      'Gerecycled polyester en acryl',
+      '100 % gerecycled polyester',
       'Volwassenen, één maat',
-      'Beige',
+      'Bruin',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1652,11 +1645,11 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Bereiding'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Vaasan Ruispalat roggebrood 5 x 330 g',
+    name: 'Vaasan Ruispalat roggebrood 660 g, 12 stuks',
     description:
-      'Vijf zakken van het best verkochte brood van Finland: gescheurde volkorenroggebroodjes gebakken op echt zuurdesem van 100 procent Fins graan, zes per zak van 330 gram, 12 procent vezels. Wat Finnen in het buitenland bezoekers vragen mee te nemen.',
+      'Vaasan Ruispalat is volkorenroggebrood, gebakken op echt zuurdesem van 100 procent Fins graan, 12 stuks in een zak van 660 gram. Vaasan presenteert het als het populairste brood van Finland, en het bevat 12 procent vezels.',
     specs: [
-      '5 x 330 g, 6 broodjes per zak',
+      '660 g, 12 stuks',
       'Volkorenrogge 87 % van het graan, vezels 12 %',
     ],
   },

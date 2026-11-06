@@ -38,27 +38,19 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'Porta-velas Iittala Kivi 60 mm, verde pinho',
+    name: 'Porta-velas Iittala Kivi 60 mm, cinza',
     description:
       'Um porta-velas de vidro prensado de Heikki Orvola, com 6 cm de altura, que transforma uma vela rechaud em um bloco de cor. É o jeito mais barato de ter uma peça da Iittala e sobrevive à bagagem de mão.',
     specs: [
       '6,5 x 6,5 cm, altura 6 cm',
       'Vidro',
-      'Verde',
-      '0,33 kg bruto',
+      'Cinza',
+      '0,338 kg bruto',
       'Somente lavagem à mão',
       'Heikki Orvola, Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Designer e coleção',
-      'Código do artigo e EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Designer e coleção', 'Código do artigo e EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'Caneca Marimekko Unikko 25 cl',
@@ -397,13 +389,13 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Carne utilizada', 'Informação nutricional por 100 g'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'Barra Fazer Geisha de torrone de avelã 121 g',
+    name: 'Barras de chocolate Fazer Geisha 37 g, pacote com 5',
     description:
-      'Chocolate ao leite sobre um recheio crocante de torrone de avelã, a barra que a maioria das casas finlandesas guarda numa gaveta. A Fazer informa que é feita sem óleo de palma.',
+      'Cinco barras Geisha de 37 g, com o chocolate ao leite da Fazer envolvendo um recheio crocante de torrone de avelã. A Fazer informa que o chocolate é feito sem óleo de palma.',
     specs: [
-      '121 g',
+      '5 x 37 g',
       'Chocolate ao leite com pelo menos 30 % de cacau, recheio de torrone com 11 % de avelãs',
-      'Energia 550 kcal / 2302 kJ, gorduras 35 g, saturadas 17 g, carboidratos 51 g, açúcares 49 g, proteínas 8 g, sal 0,19 g',
+      'Energia 550 kcal / 2303 kJ, gorduras 35 g, saturadas 17 g, carboidratos 51 g, açúcares 49 g, proteínas 8 g, sal 0,19 g',
     ],
     specLabels: [undefined, undefined, 'Informação nutricional por 100 g'],
   },
@@ -742,9 +734,9 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, 'Conteúdo do conjunto', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'Jaqueta de camada intermediária Halti HeatGrid, masculina',
+    name: 'Jaqueta de camada intermediária Halti HeatGrid, feminina',
     description:
-      'Malha waffle que retém ar sem acrescentar volume sob uma shell. Esta é a camada entre o merino e a parca, e deixá-la de fora é o motivo pelo qual as pessoas voltam com frio.',
+      'Uma camada intermediária Halti leve e técnica, em malha waffle macia que respira e afasta a umidade da pele. Tem zíper frontal inteiro, gola alta, bolsos com zíper e punhos e barra com elástico.',
     specs: [
       'Malha waffle no avesso 95 % poliéster reciclado / 5 % elastano; malha jersey 92 % poliéster reciclado / 8 % elastano',
       'Lavar do avesso com cores parecidas, fechar os zíperes antes da lavagem',
@@ -1132,10 +1124,10 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Luvas Pequena My',
     description:
-      'O par bordô que acompanha as luvas do Moomin, mesmo forro de fleece e mesmo preço. O punho é dois centímetros mais curto, e o personagem serve a quem acha o Moomin conciliador demais.',
+      'Luvas vermelhas de tricô com o rosto da Pequena My no dorso de cada mão, forradas com acrílico. Como esticam, o tamanho único serve na maioria das mãos, e elas são um produto Moomin oficial.',
     specs: [
-      '100 % acrílico, forro de fleece',
-      'Adulto, altura 22 cm, largura acima do polegar 9,5 cm',
+      '49 % viscose, 31 % poliéster, 20 % náilon; forro 100 % acrílico',
+      'Tamanho único, elásticas',
       'Produto Moomin oficial',
     ],
     specLabels: [undefined, undefined, 'Licença'],
@@ -1276,16 +1268,17 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Estampa'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'Toalha de rosto Marimekko Unikko 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'Avental Marimekko Pieni Unikko',
     description:
-      'O mesmo atoalhado Unikko em tamanho de rosto, metade do preço da de banho e bem mais fácil de caber na mala. Bege e branco, 65 % algodão orgânico e 35 % reciclado.',
+      'Um avental Marimekko de algodão orgânico com a estampa Pieni Unikko em ameixa, cranberry, off-white e rosa. Tem bolso frontal, tiras para amarrar na cintura e alça de pescoço regulável com botões de pressão.',
     specs: [
-      '50 × 70 cm',
-      'Algodão atoalhado, 65 % orgânico e 35 % reciclado',
-      'Unikko, bege e branco',
+      '100 % algodão orgânico',
+      'Largura 84 cm, comprimento 85 cm',
+      'Lavagem à máquina 60 °C',
+      'Pieni Unikko, ameixa, cranberry, off-white e rosa',
     ],
-    specLabels: [undefined, undefined, 'Estampa'],
+    specLabels: [undefined, undefined, undefined, 'Estampa'],
   },
   'fl-taistelevat-metsot': {
     name: 'Jogo de capa de edredom de cetim Taistelevat metsot, casal',
@@ -1422,11 +1415,11 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: 'Gorro Moomin Classics',
     description:
-      'Gorro adulto da coleção Moomin Classics em poliéster reciclado e acrílico, bege, tamanho único. Um produto Moomin oficial, e essa é a linha que o separa da versão de barraca de feira.',
+      'Gorro adulto da coleção Moomin Classics em poliéster 100 por cento reciclado, marrom, tamanho único. Um produto Moomin oficial, e é isso que o diferencia da versão de barraca de feira.',
     specs: [
-      'Poliéster reciclado e acrílico',
+      '100 % poliéster reciclado',
       'Adulto, tamanho único',
-      'Bege',
+      'Marrom',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1652,11 +1645,11 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Preparo'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Pão de centeio Vaasan Ruispalat 5 x 330 g',
+    name: 'Pão de centeio Vaasan Ruispalat 660 g, 12 unidades',
     description:
-      'Cinco sacos do pão mais vendido da Finlândia: pãezinhos de centeio integral rasgados, assados com fermento natural de verdade a partir de cereais finlandeses 100 por cento, seis por saco de 330 gramas, 12 por cento de fibras. O que os finlandeses no exterior pedem que os visitantes tragam.',
+      'O Vaasan Ruispalat é um pão de centeio integral feito com fermento natural de verdade e cereais 100 por cento finlandeses. O saco de 660 gramas traz 12 unidades. A Vaasan o apresenta como o pão mais popular da Finlândia, e ele tem 12 por cento de fibras.',
     specs: [
-      '5 x 330 g, 6 pãezinhos por saco',
+      '660 g, 12 unidades',
       'Centeio integral 87 % do cereal, fibras 12 %',
     ],
   },

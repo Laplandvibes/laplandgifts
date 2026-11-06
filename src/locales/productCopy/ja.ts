@@ -40,27 +40,19 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'イッタラ キビ キャンドルホルダー 60 mm パイングリーン',
+    name: 'イッタラ キビ キャンドルホルダー 60 mm グレー',
     description:
       'ヘイッキ・オルヴォラによるプレスガラスのキャンドルホルダー、高さ 6 cm。ティーライトひとつを色の塊に変えます。イッタラをいちばん手軽に手に入れる方法で、機内持ち込みにも耐えます。',
     specs: [
       '6.5 x 6.5 cm、高さ 6 cm',
       'ガラス',
-      'グリーン',
-      '総重量 0.33 kg',
+      'グレー',
+      '総重量 0.338 kg',
       '手洗いのみ',
       'ヘイッキ・オルヴォラ、イッタラ キビ',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'デザイナーとコレクション',
-      '品番と EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'デザイナーとコレクション', '品番と EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'マリメッコ ウニッコ マグ 25 cl',
@@ -399,13 +391,13 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specLabels: [undefined, undefined, '使用する肉の量', '100 g あたりの栄養成分'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'ファッツェル ゲイシャ ヘーゼルナッツヌガー チョコレートバー 121 g',
+    name: 'ファッツェル ゲイシャ チョコレートバー 37 g×5本',
     description:
-      'さくっとしたヘーゼルナッツヌガーをミルクチョコレートで包んだ板チョコ。フィンランドの多くの家庭が引き出しに常備しています。ファッツェルはパーム油不使用と表示しています。',
+      '37 gのゲイシャバーが五本入ったパックです。ファッツェルのミルクチョコレートが、さくっとしたヘーゼルナッツヌガーのフィリングを包んでいます。ファッツェルはこのチョコレートをパーム油不使用と表示しています。',
     specs: [
-      '121 g',
+      '5 x 37 g',
       'カカオ 30 % 以上のミルクチョコレート、ヘーゼルナッツ 11 % のヌガーフィリング',
-      'エネルギー 550 kcal / 2302 kJ、脂質 35 g、飽和脂肪酸 17 g、炭水化物 51 g、糖類 49 g、たんぱく質 8 g、食塩相当量 0.19 g',
+      'エネルギー 550 kcal / 2303 kJ、脂質 35 g、飽和脂肪酸 17 g、炭水化物 51 g、糖類 49 g、たんぱく質 8 g、食塩相当量 0.19 g',
     ],
     specLabels: [undefined, undefined, '100 g あたりの栄養成分'],
   },
@@ -744,9 +736,9 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specLabels: [undefined, 'セット内容', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'ハルティ HeatGrid ミドルレイヤージャケット メンズ',
+    name: 'ハルティ HeatGrid ミドルレイヤージャケット 女性用',
     description:
-      'シェルの下でかさばらずに空気を抱えるワッフル編み。メリノとパルカの間に入る層で、これを省くから寒い思いをして帰ることになります。',
+      '柔らかなワッフル編みを使った、軽くて機能的なハルティのミドルレイヤーです。通気性があり、湿気を肌から逃がします。フロントはフルジップで、スタンドカラー、ファスナー付きポケット、伸縮性のある袖口と裾を備えています。',
     specs: [
       '裏面のワッフル編みはリサイクルポリエステル 95 % / エラスタン 5 %、ジャージー編みはリサイクルポリエステル 92 % / エラスタン 8 %',
       '同系色と一緒に裏返して洗い、洗う前にファスナーを閉めてください',
@@ -1134,10 +1126,10 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'リトルミイ ミトン',
     description:
-      'ムーミンのミトンと対になるワインレッド。フリースの裏地も価格も同じです。袖口は 2 センチ短く、ムーミンは少し人が良すぎると思う人向けのキャラクターです。',
+      '手の甲にリトルミイの顔をあしらった、赤いニットのミトンです。裏地はアクリルです。伸縮性があるのでフリーサイズでほとんどの方の手に合い、ムーミン公式製品です。',
     specs: [
-      'アクリル 100 %、フリース裏地',
-      '大人用、高さ 22 cm、親指の上の幅 9.5 cm',
+      'ビスコース 49 %、ポリエステル 31 %、ナイロン 20 %、裏地はアクリル 100 %',
+      'フリーサイズ、伸縮性あり',
       'ムーミン公式製品',
     ],
     specLabels: [undefined, undefined, 'ライセンス'],
@@ -1278,16 +1270,17 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '柄'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'マリメッコ ウニッコ ハンドタオル 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'マリメッコ ピエニ ウニッコ エプロン',
     description:
-      '同じウニッコのパイル地をハンドタオルのサイズで。バスタオルの半額で、スーツケースにもずっと収めやすい大きさです。ベージュと白、オーガニックコットン 65 % とリサイクル 35 %。',
+      'オーガニックコットンを使ったマリメッコのエプロンで、ピエニ ウニッコ柄がプラム、クランベリー、オフホワイト、ローズの色合いで描かれています。フロントポケット、腰で結ぶひも、スナップボタンで調節できる首ひもが付いています。',
     specs: [
-      '50 × 70 cm',
-      'パイル地コットン、オーガニック 65 % とリサイクル 35 %',
-      'ウニッコ、ベージュと白',
+      'オーガニックコットン 100 %',
+      '幅 84 cm、丈 85 cm',
+      '洗濯機 60 °C',
+      'ピエニ ウニッコ、プラム、クランベリー、オフホワイト、ローズ',
     ],
-    specLabels: [undefined, undefined, '柄'],
+    specLabels: [undefined, undefined, undefined, '柄'],
   },
   'fl-taistelevat-metsot': {
     name: 'Taistelevat metsot サテン掛け布団カバーセット、ダブル',
@@ -1424,11 +1417,11 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: 'ムーミン Classics ビーニー',
     description:
-      'Moomin Classicsコレクションの大人用ビーニー。リサイクルポリエステルとアクリル、ベージュ、フリーサイズ。ムーミン公式商品であり、それが市場の屋台の品と一線を画す点です。',
+      'Moomin Classicsコレクションの大人用ビーニー。リサイクルポリエステル100パーセント、ブラウン、フリーサイズ。ムーミン公式商品である点が、市場の屋台で見かける品との違いです。',
     specs: [
-      'リサイクルポリエステルとアクリル',
+      'リサイクルポリエステル 100 %',
       '大人用、フリーサイズ',
-      'ベージュ',
+      'ブラウン',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1654,12 +1647,12 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specLabels: [undefined, undefined, '調理'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Vaasan Ruispalat ライ麦パン 5 x 330 g',
+    name: 'Vaasan Ruispalat ライ麦パン 660 g',
     description:
-      'フィンランドで最も売れているパンの5袋セット。フィンランド産穀物100パーセントを本物のサワードウで焼いた、ちぎり分けの全粒ライ麦ロールで、330グラムの袋に6個、食物繊維12パーセント。海外在住のフィンランド人が訪問者に頼む土産です。',
+      'Vaasan Ruispalatは、フィンランド産穀物100パーセントを本物のサワードウで焼いた全粒ライ麦パンです。660グラムの袋に12個入っています。Vaasanはフィンランドで最も人気のあるパンとうたっており、食物繊維は12パーセントです。',
     specs: [
-      '5 x 330 g、1袋6個',
-      '全粒ライ麦は穀物の87 %、食物繊維12 %',
+      '660 g、12個',
+      '全粒ライ麦は穀物の 87 %、食物繊維 12 %',
     ],
   },
   'sk-poikain-parhaat-freeze-dried-blueberry': {

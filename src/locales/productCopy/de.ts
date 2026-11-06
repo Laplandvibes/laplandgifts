@@ -39,27 +39,19 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'Iittala Kivi Teelichthalter 60 mm, tannengrün',
+    name: 'Iittala Kivi Teelichthalter 60 mm, grau',
     description:
       'Ein gepresster Teelichthalter aus Glas von Heikki Orvola, 6 cm hoch, der aus einem Teelicht einen Farbblock macht. Es ist die günstigste Art, ein Stück Iittala zu besitzen, und er übersteht das Handgepäck.',
     specs: [
       '6,5 x 6,5 cm, Höhe 6 cm',
       'Glas',
-      'Grün',
-      '0,33 kg brutto',
+      'Grau',
+      '0,338 kg brutto',
       'Nur Handwäsche',
       'Heikki Orvola, Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Designer und Kollektion',
-      'Artikelnummer und EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Designer und Kollektion', 'Artikelnummer und EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'Marimekko Unikko Becher 25 cl',
@@ -420,13 +412,13 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Fleischeinsatz', 'Nährwerte je 100 g'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'Fazer Geisha Haselnussnougat-Schokoladentafel 121 g',
+    name: 'Fazer Geisha Schokoriegel 37 g, 5er-Pack',
     description:
-      'Milchschokolade über einer knusprigen Haselnussnougatfüllung, die Tafel, die die meisten finnischen Haushalte in einer Schublade haben. Fazer gibt an, dass sie ohne Palmöl hergestellt wird.',
+      'Fünf Geisha-Riegel à 37 g, bei denen Fazer-Milchschokolade eine knusprige Haselnussnougatfüllung umhüllt. Fazer gibt an, dass die Schokolade ohne Palmöl hergestellt wird.',
     specs: [
-      '121 g',
+      '5 x 37 g',
       'Milchschokolade mit mindestens 30 % Kakao, Haselnussnougatfüllung mit 11 % Haselnüssen',
-      'Energie 550 kcal / 2302 kJ, Fett 35 g, gesättigte Fettsäuren 17 g, Kohlenhydrate 51 g, Zucker 49 g, Eiweiß 8 g, Salz 0,19 g',
+      'Energie 550 kcal / 2303 kJ, Fett 35 g, gesättigte Fettsäuren 17 g, Kohlenhydrate 51 g, Zucker 49 g, Eiweiß 8 g, Salz 0,19 g',
     ],
     specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
   },
@@ -597,9 +589,9 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, 'Inhalt des Sets', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'Halti HeatGrid Zwischenschichtjacke, Herren',
+    name: 'Halti HeatGrid Zwischenschichtjacke, Damen',
     description:
-      'Waffelstrick, der Luft einschließt, ohne unter einer Wetterjacke aufzutragen. Das ist die Schicht zwischen Merino und Parka, und dass sie fehlt, ist der Grund, warum Leute frierend zurückkommen.',
+      'Eine leichte, technische Zwischenschichtjacke von Halti aus weichem, atmungsaktivem Waffelstrick, der Feuchtigkeit von der Haut wegleitet. Sie hat einen durchgehenden Frontreißverschluss, einen Stehkragen, Reißverschlusstaschen sowie elastische Bündchen an Ärmeln und Saum.',
     specs: [
       'Waffelstrick 95 % recyceltes Polyester / 5 % Elasthan; Jerseystrick 92 % recyceltes Polyester / 8 % Elasthan',
       'Auf links mit ähnlichen Farben waschen, Reißverschlüsse vor dem Waschen schließen',
@@ -1167,11 +1159,11 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Kleine My Fäustlinge',
     description:
-      'Das weinrote Gegenstück zu den Moomintroll-Fäustlingen, gleiches Fleecefutter und gleicher Preis. Der Schaft ist zwei Zentimeter kürzer, und die Figur passt zu allen, denen Moomintroll etwas zu verträglich ist.',
+      'Rote Strickfäustlinge mit dem Gesicht der Kleinen My auf jedem Handrücken, mit Acryl gefüttert. Sie sind dehnbar, sodass eine Größe den meisten passt, und sie sind ein offizielles Mumin-Produkt.',
     specs: [
-      '100 % Acryl, Fleecefutter',
-      'Erwachsene, Höhe 22 cm, Breite über dem Daumen 9,5 cm',
-      'Offizielles Moomin-Produkt',
+      '49 % Viskose, 31 % Polyester, 20 % Nylon; Futter 100 % Acryl',
+      'Einheitsgröße, dehnbar',
+      'Offizielles Mumin-Produkt',
     ],
     specLabels: [undefined, undefined, 'Lizenz'],
   },
@@ -1311,16 +1303,17 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Muster'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'Marimekko Unikko Handtuch 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'Marimekko Pieni Unikko Schürze',
     description:
-      'Dasselbe Unikko-Frottee in Handtuchgröße, halb so teuer wie das Badetuch und deutlich leichter im Koffer unterzubringen. Beige und weiß, 65 % Bio-Baumwolle und 35 % recycelt.',
+      'Eine Marimekko-Schürze aus Bio-Baumwolle mit dem Muster Pieni Unikko in Pflaume, Cranberry, Naturweiß und Rosé. Sie hat eine Fronttasche, Bindebänder an der Taille und einen Nackenträger, der sich mit Druckknöpfen verstellen lässt.',
     specs: [
-      '50 × 70 cm',
-      'Frottee-Baumwolle, 65 % bio und 35 % recycelt',
-      'Unikko, beige und weiß',
+      '100 % Bio-Baumwolle',
+      'Breite 84 cm, Länge 85 cm',
+      'Maschinenwäsche 60 °C',
+      'Pieni Unikko, Pflaume, Cranberry, Naturweiß und Rosé',
     ],
-    specLabels: [undefined, undefined, 'Muster'],
+    specLabels: [undefined, undefined, undefined, 'Muster'],
   },
   'fl-taistelevat-metsot': {
     name: 'Taistelevat metsot Satin-Bettwäsche-Set, Doppelbett',
@@ -1457,11 +1450,11 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: 'Mumin Classics Mütze',
     description:
-      'Erwachsenenmütze aus der Kollektion Moomin Classics aus recyceltem Polyester und Acryl, beige, Einheitsgröße. Ein offizielles Mumin-Produkt, und das ist die Linie, die sie von der Marktstandversion trennt.',
+      'Erwachsenenmütze aus der Kollektion Moomin Classics aus 100 Prozent recyceltem Polyester, braun, Einheitsgröße. Ein offizielles Mumin-Produkt, und genau das unterscheidet sie von der Version vom Marktstand.',
     specs: [
-      'Recyceltes Polyester und Acryl',
+      '100 % recyceltes Polyester',
       'Erwachsene, Einheitsgröße',
-      'Beige',
+      'Braun',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1687,11 +1680,11 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Zubereitung'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Vaasan Ruispalat Roggenbrot 5 x 330 g',
+    name: 'Vaasan Ruispalat Roggenbrot 660 g, 12 Stück',
     description:
-      'Fünf Beutel von Finnlands meistverkauftem Brot: gerissene Vollkornroggenbrötchen auf echtem Sauerteig aus 100 Prozent finnischem Getreide, sechs pro 330-Gramm-Beutel, 12 Prozent Ballaststoffe. Das, was Auslandsfinnen sich von Besuchern mitbringen lassen.',
+      'Vaasan Ruispalat ist Vollkornroggenbrot, mit echtem Sauerteig gebacken, aus 100 Prozent finnischem Getreide, 12 Stück im 660-Gramm-Beutel. Vaasan bezeichnet es als Finnlands beliebtestes Brot, und es enthält 12 Prozent Ballaststoffe.',
     specs: [
-      '5 x 330 g, 6 Brötchen pro Beutel',
+      '660 g, 12 Stück',
       'Vollkornroggen 87 % des Getreides, Ballaststoffe 12 %',
     ],
   },

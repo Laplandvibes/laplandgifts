@@ -39,27 +39,19 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'Photophore Iittala Kivi 60 mm, vert sapin',
+    name: 'Photophore Iittala Kivi 60 mm, gris',
     description:
       'Un photophore en verre pressé de Heikki Orvola, 6 cm de haut, qui transforme une bougie chauffe-plat en bloc de couleur. C’est la façon la moins chère de posséder une pièce Iittala et il survit au bagage à main.',
     specs: [
       '6,5 x 6,5 cm, hauteur 6 cm',
       'Verre',
-      'Vert',
-      '0,33 kg brut',
+      'Gris',
+      '0,338 kg brut',
       'Lavage à la main uniquement',
       'Heikki Orvola, Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Designer et collection',
-      'Référence et EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Designer et collection', 'Référence et EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'Mug Marimekko Unikko 25 cl',
@@ -398,13 +390,13 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Viande utilisée', 'Valeurs nutritionnelles pour 100 g'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'Tablette Fazer Geisha nougat de noisette 121 g',
+    name: 'Barres chocolatées Fazer Geisha 37 g, lot de 5',
     description:
-      'Du chocolat au lait sur une garniture croquante au nougat de noisette, la tablette que la plupart des foyers finlandais gardent dans un tiroir. Fazer indique qu’elle est fabriquée sans huile de palme.',
+      'Cinq barres Geisha de 37 g, où le chocolat au lait Fazer enrobe une garniture croquante au nougat de noisette. Fazer indique que le chocolat est fabriqué sans huile de palme.',
     specs: [
-      '121 g',
+      '5 x 37 g',
       'Chocolat au lait avec au moins 30 % de cacao, garniture au nougat de noisette contenant 11 % de noisettes',
-      'Énergie 550 kcal / 2302 kJ, matières grasses 35 g, acides gras saturés 17 g, glucides 51 g, sucres 49 g, protéines 8 g, sel 0,19 g',
+      'Énergie 550 kcal / 2303 kJ, matières grasses 35 g, acides gras saturés 17 g, glucides 51 g, sucres 49 g, protéines 8 g, sel 0,19 g',
     ],
     specLabels: [undefined, undefined, 'Valeurs nutritionnelles pour 100 g'],
   },
@@ -743,12 +735,12 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, 'Contenu de l’ensemble', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'Veste couche intermédiaire Halti HeatGrid, homme',
+    name: 'Veste de couche intermédiaire Halti HeatGrid, femme',
     description:
-      'Un tricot gaufré qui piège l’air sans ajouter de volume sous une coquille. C’est la couche entre le mérinos et la parka, et l’oublier explique pourquoi les gens reviennent gelés.',
+      'Une couche intermédiaire Halti légère et technique, en tricot gaufré doux qui respire et évacue l’humidité de la peau. Elle est dotée d’un zip intégral sur le devant, d’un col montant, de poches zippées, ainsi que de poignets et d’un bas élastiqués.',
     specs: [
       'Tricot gaufré à l’envers 95 % polyester recyclé / 5 % élasthanne ; tricot jersey 92 % polyester recyclé / 8 % élasthanne',
-      'Laver sur l’envers avec des couleurs similaires, fermer les fermetures avant le lavage',
+      'Laver sur l’envers avec des couleurs similaires, fermer les fermetures à glissière avant le lavage',
     ],
   },
   'halti-taival-dx-jacket': {
@@ -1133,10 +1125,10 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Moufles Petite Mu',
     description:
-      'La paire bordeaux qui répond aux moufles Moumine, même doublure polaire et même prix. Le poignet est deux centimètres plus court, et le personnage convient à qui trouve Moumine un peu trop accommodant.',
+      'Moufles rouges en tricot avec le visage de la Petite Mu sur le dos de chaque main, doublées d’acrylique. Elles sont extensibles, si bien que la taille unique convient à la plupart des mains, et il s’agit d’un produit Moomin officiel.',
     specs: [
-      '100 % acrylique, doublure polaire',
-      'Adulte, hauteur 22 cm, largeur au-dessus du pouce 9,5 cm',
+      '49 % viscose, 31 % polyester, 20 % nylon ; doublure 100 % acrylique',
+      'Taille unique, extensibles',
       'Produit Moomin officiel',
     ],
     specLabels: [undefined, undefined, 'Licence'],
@@ -1277,16 +1269,17 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Motif'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'Serviette Marimekko Unikko 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'Tablier Marimekko Pieni Unikko',
     description:
-      'La même éponge Unikko en taille serviette, à moitié prix du drap de bain et bien plus facile à caser dans une valise. Beige et blanc, 65 % coton biologique et 35 % recyclé.',
+      'Un tablier Marimekko en coton biologique au motif Pieni Unikko, dans les tons prune, canneberge, blanc cassé et rose. Il comporte une poche avant, des liens à nouer à la taille et une lanière de cou réglable par boutons-pression.',
     specs: [
-      '50 × 70 cm',
-      'Coton éponge, 65 % bio et 35 % recyclé',
-      'Unikko, beige et blanc',
+      '100 % coton biologique',
+      'Largeur 84 cm, longueur 85 cm',
+      'Lavage en machine 60 °C',
+      'Pieni Unikko, prune, canneberge, blanc cassé et rose',
     ],
-    specLabels: [undefined, undefined, 'Motif'],
+    specLabels: [undefined, undefined, undefined, 'Motif'],
   },
   'fl-taistelevat-metsot': {
     name: 'Parure de couette en satin Taistelevat metsot, deux places',
@@ -1423,11 +1416,11 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: 'Bonnet Moomin Classics',
     description:
-      'Bonnet adulte de la collection Moomin Classics en polyester recyclé et acrylique, beige, taille unique. Un produit Moomin officiel, et c\'est la ligne qui le sépare de la version des étals de marché.',
+      'Bonnet adulte de la collection Moomin Classics en polyester 100 pour cent recyclé, marron, taille unique. Un produit Moomin officiel, et c’est ce qui le distingue de la version des étals de marché.',
     specs: [
-      'Polyester recyclé et acrylique',
+      '100 % polyester recyclé',
       'Adulte, taille unique',
-      'Beige',
+      'Marron',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1653,11 +1646,11 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Préparation'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Pain de seigle Vaasan Ruispalat 5 x 330 g',
+    name: 'Pain de seigle Vaasan Ruispalat 660 g, 12 pièces',
     description:
-      'Cinq sachets du pain le plus vendu de Finlande : petits pains de seigle complet déchirés, cuits sur un vrai levain à partir de céréales finlandaises à 100 pour cent, six par sachet de 330 grammes, 12 pour cent de fibres. Ce que les Finlandais expatriés demandent aux visiteurs d\'apporter.',
+      'Le Vaasan Ruispalat est un pain de seigle complet au véritable levain, fait de céréales 100 pour cent finlandaises. Le sachet de 660 grammes compte 12 pièces. Vaasan le présente comme le pain le plus populaire de Finlande, et il contient 12 pour cent de fibres.',
     specs: [
-      '5 x 330 g, 6 petits pains par sachet',
+      '660 g, 12 pièces',
       'Seigle complet 87 % des céréales, fibres 12 %',
     ],
   },

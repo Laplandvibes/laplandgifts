@@ -38,27 +38,19 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'Portacandela Iittala Kivi 60 mm, verde pino',
+    name: 'Portacandela Iittala Kivi 60 mm, grigio',
     description:
       'Un portacandela in vetro pressato di Heikki Orvola, alto 6 cm, che trasforma un lumino in un blocco di colore. È il modo più economico per possedere un pezzo Iittala e sopravvive al bagaglio a mano.',
     specs: [
       '6,5 x 6,5 cm, altezza 6 cm',
       'Vetro',
-      'Verde',
-      '0,33 kg lordo',
+      'Grigio',
+      '0,338 kg lordo',
       'Solo lavaggio a mano',
       'Heikki Orvola, Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Designer e collezione',
-      'Codice articolo ed EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Designer e collezione', 'Codice articolo ed EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'Tazza Marimekko Unikko 25 cl',
@@ -397,13 +389,13 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Carne impiegata', 'Valori nutrizionali per 100 g'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'Tavoletta Fazer Geisha al torrone di nocciole 121 g',
+    name: 'Barrette di cioccolato Fazer Geisha 37 g, 5 pezzi',
     description:
-      'Cioccolato al latte sopra un ripieno croccante di torrone di nocciole, la tavoletta che la maggior parte delle case finlandesi tiene in un cassetto. Fazer dichiara che è prodotta senza olio di palma.',
+      'Cinque barrette Geisha da 37 g, con il cioccolato al latte Fazer che avvolge un ripieno croccante di torrone di nocciole. Fazer dichiara che il cioccolato è prodotto senza olio di palma.',
     specs: [
-      '121 g',
+      '5 x 37 g',
       'Cioccolato al latte con almeno 30 % di cacao, ripieno di torrone con 11 % di nocciole',
-      'Energia 550 kcal / 2302 kJ, grassi 35 g, saturi 17 g, carboidrati 51 g, zuccheri 49 g, proteine 8 g, sale 0,19 g',
+      'Energia 550 kcal / 2303 kJ, grassi 35 g, saturi 17 g, carboidrati 51 g, zuccheri 49 g, proteine 8 g, sale 0,19 g',
     ],
     specLabels: [undefined, undefined, 'Valori nutrizionali per 100 g'],
   },
@@ -742,9 +734,9 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specLabels: [undefined, 'Contenuto del set', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'Giacca strato intermedio Halti HeatGrid, uomo',
+    name: 'Giacca di strato intermedio Halti HeatGrid, donna',
     description:
-      'Una maglia a nido d’ape che intrappola aria senza aggiungere volume sotto un guscio. Questo è lo strato tra il merino e il parka, e lasciarlo fuori è il motivo per cui la gente torna infreddolita.',
+      'Uno strato intermedio Halti leggero e tecnico, in morbida maglia a nido d’ape che traspira e allontana l’umidità dalla pelle. Ha una cerniera frontale intera, collo alto, tasche con cerniera, polsini e fondo elasticizzati.',
     specs: [
       'Maglia a nido d’ape sul rovescio 95 % poliestere riciclato / 5 % elastan; maglia jersey 92 % poliestere riciclato / 8 % elastan',
       'Lavare al rovescio con colori simili, chiudere le cerniere prima del lavaggio',
@@ -1132,10 +1124,10 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Muffole Mimla la piccola',
     description:
-      'Il paio bordeaux che fa il paio con le muffole di Moomin, stessa fodera in pile e stesso prezzo. Il polsino è due centimetri più corto, e il personaggio va a chi trova Moomin un po’ troppo accomodante.',
+      'Muffole rosse in maglia con il viso di Mimla la piccola sul dorso di ogni mano, foderate in acrilico. Sono elastiche, quindi la taglia unica va bene alla maggior parte delle persone, e sono un prodotto Moomin ufficiale.',
     specs: [
-      '100 % acrilico, fodera in pile',
-      'Adulto, altezza 22 cm, larghezza sopra il pollice 9,5 cm',
+      '49 % viscosa, 31 % poliestere, 20 % nylon; fodera 100 % acrilico',
+      'Taglia unica, elasticizzate',
       'Prodotto Moomin ufficiale',
     ],
     specLabels: [undefined, undefined, 'Licenza'],
@@ -1276,16 +1268,17 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Fantasia'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'Asciugamano Marimekko Unikko 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'Grembiule Marimekko Pieni Unikko',
     description:
-      'La stessa spugna Unikko in misura asciugamano, a metà prezzo del telo bagno e molto più facile da far stare in valigia. Beige e bianco, 65 % cotone biologico e 35 % riciclato.',
+      'Un grembiule Marimekko in cotone biologico con la fantasia Pieni Unikko nei toni prugna, mirtillo rosso, bianco naturale e rosa. Ha una tasca frontale, lacci da annodare in vita e un laccetto per il collo regolabile con bottoni a pressione.',
     specs: [
-      '50 × 70 cm',
-      'Spugna di cotone, 65 % biologico e 35 % riciclato',
-      'Unikko, beige e bianco',
+      '100 % cotone biologico',
+      'Larghezza 84 cm, lunghezza 85 cm',
+      'Lavaggio in lavatrice 60 °C',
+      'Pieni Unikko, prugna, mirtillo rosso, bianco naturale e rosa',
     ],
-    specLabels: [undefined, undefined, 'Fantasia'],
+    specLabels: [undefined, undefined, undefined, 'Fantasia'],
   },
   'fl-taistelevat-metsot': {
     name: 'Set copripiumino in raso Taistelevat metsot, matrimoniale',
@@ -1422,11 +1415,11 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: 'Berretto Moomin Classics',
     description:
-      'Berretto da adulto della collezione Moomin Classics in poliestere riciclato e acrilico, beige, taglia unica. Un prodotto Moomin ufficiale, ed è la linea che lo separa dalla versione da bancarella.',
+      'Berretto da adulto della collezione Moomin Classics in poliestere riciclato al 100 per cento, marrone, taglia unica. Un prodotto Moomin ufficiale, ed è questo che lo distingue dalla versione da bancarella.',
     specs: [
-      'Poliestere riciclato e acrilico',
+      '100 % poliestere riciclato',
       'Adulto, taglia unica',
-      'Beige',
+      'Marrone',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1652,11 +1645,11 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Preparazione'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Pane di segale Vaasan Ruispalat 5 x 330 g',
+    name: 'Pane di segale Vaasan Ruispalat 660 g, 12 pezzi',
     description:
-      'Cinque sacchetti del pane più venduto in Finlandia: panini di segale integrale strappati, cotti con vero lievito madre da cereali finlandesi al 100 per cento, sei per sacchetto da 330 grammi, 12 per cento di fibre. Quello che i finlandesi all\'estero chiedono ai visitatori di portare.',
+      'Vaasan Ruispalat è un pane di segale integrale fatto con vero lievito madre e cereali finlandesi al 100 per cento. Il sacchetto da 660 grammi contiene 12 pezzi. Vaasan lo definisce il pane più popolare della Finlandia, e ha il 12 per cento di fibre.',
     specs: [
-      '5 x 330 g, 6 panini per sacchetto',
+      '660 g, 12 pezzi',
       'Segale integrale 87 % del cereale, fibre 12 %',
     ],
   },

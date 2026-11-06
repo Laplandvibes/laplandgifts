@@ -29,3 +29,30 @@
 # scripts/routes.json). Jos lisäät reitin jota prerender ei kata — dynaamisen
 # :slugin, /unsubscriben, admin-sivun — se alkaa 404:ätä. Aja portti uudelleen:
 #   node scripts/audit_catchall_safety.mjs <tämä-hakemisto>
+
+# 6.11.2026: Marimekko Unikko -käsipyyhe poistui Suomikaupasta (404). Tilalle saman
+# hyllyn Marimekko Pieni Unikko -esiliina; vanha tuotesivu ohjataan sille pysyvästi.
+/product/sk-marimekko-unikko-hand-towel/ /product/sk-marimekko-pieni-unikko-apron/ 301
+/product/sk-marimekko-unikko-hand-towel /product/sk-marimekko-pieni-unikko-apron/ 301
+/fi/product/sk-marimekko-unikko-hand-towel/ /fi/product/sk-marimekko-pieni-unikko-apron/ 301
+/fi/product/sk-marimekko-unikko-hand-towel /fi/product/sk-marimekko-pieni-unikko-apron/ 301
+/de/product/sk-marimekko-unikko-hand-towel/ /de/product/sk-marimekko-pieni-unikko-apron/ 301
+/de/product/sk-marimekko-unikko-hand-towel /de/product/sk-marimekko-pieni-unikko-apron/ 301
+/ja/product/sk-marimekko-unikko-hand-towel/ /ja/product/sk-marimekko-pieni-unikko-apron/ 301
+/ja/product/sk-marimekko-unikko-hand-towel /ja/product/sk-marimekko-pieni-unikko-apron/ 301
+/es/product/sk-marimekko-unikko-hand-towel/ /es/product/sk-marimekko-pieni-unikko-apron/ 301
+/es/product/sk-marimekko-unikko-hand-towel /es/product/sk-marimekko-pieni-unikko-apron/ 301
+/br/product/sk-marimekko-unikko-hand-towel/ /br/product/sk-marimekko-pieni-unikko-apron/ 301
+/br/product/sk-marimekko-unikko-hand-towel /br/product/sk-marimekko-pieni-unikko-apron/ 301
+/cn/product/sk-marimekko-unikko-hand-towel/ /cn/product/sk-marimekko-pieni-unikko-apron/ 301
+/cn/product/sk-marimekko-unikko-hand-towel /cn/product/sk-marimekko-pieni-unikko-apron/ 301
+/kr/product/sk-marimekko-unikko-hand-towel/ /kr/product/sk-marimekko-pieni-unikko-apron/ 301
+/kr/product/sk-marimekko-unikko-hand-towel /kr/product/sk-marimekko-pieni-unikko-apron/ 301
+/fr/product/sk-marimekko-unikko-hand-towel/ /fr/product/sk-marimekko-pieni-unikko-apron/ 301
+/fr/product/sk-marimekko-unikko-hand-towel /fr/product/sk-marimekko-pieni-unikko-apron/ 301
+/it/product/sk-marimekko-unikko-hand-towel/ /it/product/sk-marimekko-pieni-unikko-apron/ 301
+/it/product/sk-marimekko-unikko-hand-towel /it/product/sk-marimekko-pieni-unikko-apron/ 301
+/nl/product/sk-marimekko-unikko-hand-towel/ /nl/product/sk-marimekko-pieni-unikko-apron/ 301
+/nl/product/sk-marimekko-unikko-hand-towel /nl/product/sk-marimekko-pieni-unikko-apron/ 301
+/sv/product/sk-marimekko-unikko-hand-towel/ /sv/product/sk-marimekko-pieni-unikko-apron/ 301
+/sv/product/sk-marimekko-unikko-hand-towel /sv/product/sk-marimekko-pieni-unikko-apron/ 301

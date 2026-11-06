@@ -517,7 +517,7 @@ const MAP: Record<string, SubgroupId> = {
   'nb-little-my-neckpillow': 'textiles',
   'nb-moomintroll-love-cushion': 'textiles',
   'sk-marimekko-unikko-bath-towel': 'textiles',
-  'sk-marimekko-unikko-hand-towel': 'textiles',
+  'sk-marimekko-pieni-unikko-apron': 'textiles',
   'fl-taistelevat-metsot': 'textiles',
   'fl-lino-linen-duvet-set': 'textiles',
   'fl-elefantti-duvet-set': 'textiles',

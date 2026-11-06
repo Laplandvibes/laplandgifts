@@ -197,14 +197,16 @@ export const PARTNERS: Record<string, Partner> = {
     id: 'pentik',
     name: 'Pentik',
     network: 'direct',
-    // 🔴 en.pentik.com, ei www.pentik.com. Suomenkielinen kauppa toimittaa vain
-    // Manner-Suomeen ja ohjaa EU-tilaukset nimenomaan englanninkieliseen
-    // kauppaan; EU:n ulkopuolelle tilataan sähköpostilla Kuusamon myymälästä.
-    // Linkki menee siis siihen kauppaan joka oikeasti toimittaa ostajalle.
-    baseUrl: 'https://en.pentik.com',
+    // 🔴 6.11.2026: en.pentik.com antaa tuotesivuille 404 (myös vanhoille
+    // linkeillemme), vaikka sen products.json yhä listaa tuotteet. Englanninkielinen
+    // kauppa on nyt www.pentik.com/en/, samat tuotteet ja hinnat, ja tuotesivu
+    // sanoo "Shipping to all EU countries" (luettu 6.11.2026). Aiemmin (1.8.):
+    // suomenkielinen kauppa toimitti vain Manner-Suomeen ja EU-tilaukset ohjattiin
+    // englanninkieliseen; EU:n ulkopuolelle tilataan sähköpostilla Kuusamosta.
+    baseUrl: 'https://www.pentik.com',
     // Shipping and Payment 1.8.2026: Manner-Suomi + 26 nimettyä EU-maata.
     shipsTo: 'eu',
-    verifiedAt: '2026-08-01',
+    verifiedAt: '2026-11-06',
   },
   suomikauppa: {
     id: 'suomikauppa',

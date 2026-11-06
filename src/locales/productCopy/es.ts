@@ -38,27 +38,19 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'Portavelas Iittala Kivi 60 mm, verde pino',
+    name: 'Portavelas Iittala Kivi 60 mm, gris',
     description:
       'Un portavelas de vidrio prensado de Heikki Orvola, de 6 cm de alto, que convierte una vela de té en un bloque de color. Es la forma más barata de tener una pieza de Iittala y sobrevive al equipaje de mano.',
     specs: [
       '6,5 x 6,5 cm, altura 6 cm',
       'Vidrio',
-      'Verde',
-      '0,33 kg bruto',
+      'Gris',
+      '0,338 kg bruto',
       'Solo lavado a mano',
       'Heikki Orvola, Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Diseñador y colección',
-      'Referencia y EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Diseñador y colección', 'Referencia y EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'Taza Marimekko Unikko 25 cl',
@@ -397,13 +389,13 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Carne empleada', 'Información nutricional por 100 g'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'Tableta Fazer Geisha de turrón de avellana 121 g',
+    name: 'Barritas de chocolate Fazer Geisha 37 g, paquete de 5',
     description:
-      'Chocolate con leche sobre un relleno crujiente de turrón de avellana, la tableta que la mayoría de los hogares finlandeses guarda en un cajón. Fazer indica que está hecha sin aceite de palma.',
+      'Cinco barritas Geisha de 37 g en las que el chocolate con leche de Fazer envuelve un relleno crujiente de turrón de avellana. Fazer indica que el chocolate está hecho sin aceite de palma.',
     specs: [
-      '121 g',
+      '5 x 37 g',
       'Chocolate con leche con al menos 30 % de cacao, relleno de turrón de avellana con 11 % de avellanas',
-      'Energía 550 kcal / 2302 kJ, grasas 35 g, saturadas 17 g, hidratos de carbono 51 g, azúcares 49 g, proteínas 8 g, sal 0,19 g',
+      'Energía 550 kcal / 2303 kJ, grasas 35 g, saturadas 17 g, hidratos de carbono 51 g, azúcares 49 g, proteínas 8 g, sal 0,19 g',
     ],
     specLabels: [undefined, undefined, 'Información nutricional por 100 g'],
   },
@@ -742,9 +734,9 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, 'Contenido del conjunto', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'Chaqueta de capa intermedia Halti HeatGrid, hombre',
+    name: 'Chaqueta de capa intermedia Halti HeatGrid, mujer',
     description:
-      'Un tejido de gofre que atrapa el aire sin añadir volumen bajo una shell. Esta es la capa entre el merino y el parka, y dejarla fuera es la razón de que la gente vuelva con frío.',
+      'Una capa intermedia Halti ligera y técnica, en tejido de gofre suave que transpira y aleja la humedad de la piel. Tiene cremallera frontal completa, cuello alto, bolsillos con cremallera, puños elásticos y dobladillo elástico.',
     specs: [
       'Tejido de gofre por el revés 95 % poliéster reciclado / 5 % elastano; tejido de punto jersey 92 % poliéster reciclado / 8 % elastano',
       'Lavar del revés con colores similares, cerrar las cremalleras antes del lavado',
@@ -1132,10 +1124,10 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Manoplas Pequeña My',
     description:
-      'El par burdeos que acompaña a las manoplas de Moomin, mismo forro polar y mismo precio. La caña es dos centímetros más corta, y el personaje va bien a quien encuentra a Moomin demasiado conciliador.',
+      'Manoplas rojas de punto con la cara de la Pequeña My en el dorso de cada mano, forradas de acrílico. Son elásticas, así que una sola talla sirve para la mayoría, y son un producto Moomin oficial.',
     specs: [
-      '100 % acrílico, forro polar',
-      'Adulto, altura 22 cm, ancho sobre el pulgar 9,5 cm',
+      '49 % viscosa, 31 % poliéster, 20 % nailon; forro 100 % acrílico',
+      'Talla única, elásticas',
       'Producto Moomin oficial',
     ],
     specLabels: [undefined, undefined, 'Licencia'],
@@ -1276,16 +1268,17 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Estampado'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'Toalla de manos Marimekko Unikko 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'Delantal Marimekko Pieni Unikko',
     description:
-      'El mismo rizo Unikko en tamaño de manos, la mitad de precio que la de baño y bastante más fácil de meter en la maleta. Beige y blanco, 65 % algodón orgánico y 35 % reciclado.',
+      'Un delantal de Marimekko en algodón orgánico con el estampado Pieni Unikko en tonos ciruela, arándano rojo, blanco hueso y rosa. Tiene un bolsillo delantero, cintas para atar a la cintura y una tira para el cuello que se ajusta con botones de presión.',
     specs: [
-      '50 × 70 cm',
-      'Algodón de rizo, 65 % orgánico y 35 % reciclado',
-      'Unikko, beige y blanco',
+      '100 % algodón orgánico',
+      'Ancho 84 cm, largo 85 cm',
+      'Lavado a máquina 60 °C',
+      'Pieni Unikko, ciruela, arándano rojo, blanco hueso y rosa',
     ],
-    specLabels: [undefined, undefined, 'Estampado'],
+    specLabels: [undefined, undefined, undefined, 'Estampado'],
   },
   'fl-taistelevat-metsot': {
     name: 'Juego de funda nórdica de satén Taistelevat metsot, cama doble',
@@ -1422,11 +1415,11 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: 'Gorro Moomin Classics',
     description:
-      'Gorro de adulto de la colección Moomin Classics en poliéster reciclado y acrílico, beige, talla única. Un producto Moomin oficial, y esa es la línea que lo separa de la versión del puesto de mercado.',
+      'Gorro de adulto de la colección Moomin Classics en poliéster 100 por ciento reciclado, marrón, talla única. Un producto Moomin oficial, y eso es lo que lo distingue de la versión del puesto de mercadillo.',
     specs: [
-      'Poliéster reciclado y acrílico',
+      '100 % poliéster reciclado',
       'Adulto, talla única',
-      'Beige',
+      'Marrón',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1652,11 +1645,11 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Preparación'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Pan de centeno Vaasan Ruispalat 5 x 330 g',
+    name: 'Pan de centeno Vaasan Ruispalat 660 g, 12 piezas',
     description:
-      'Cinco bolsas del pan más vendido de Finlandia: panecillos de centeno integral partidos, horneados con masa madre auténtica a partir de cereal finlandés al 100 por ciento, seis por bolsa de 330 gramos, 12 por ciento de fibra. Lo que los finlandeses en el extranjero piden a sus visitas que les traigan.',
+      'Vaasan Ruispalat es un pan de centeno integral de auténtica masa madre, hecho con cereal 100 por ciento finlandés. La bolsa de 660 gramos trae 12 piezas. Vaasan lo presenta como el pan más popular de Finlandia, y tiene un 12 por ciento de fibra.',
     specs: [
-      '5 x 330 g, 6 panecillos por bolsa',
+      '660 g, 12 piezas',
       'Centeno integral 87 % del cereal, fibra 12 %',
     ],
   },

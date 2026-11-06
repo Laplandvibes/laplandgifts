@@ -40,27 +40,19 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
   },
   'iittala-kivi-candleholder': {
-    name: 'Iittala Kivi värmeljushållare 60 mm, tallgrön',
+    name: 'Iittala Kivi värmeljushållare 60 mm, grå',
     description:
       'En pressad värmeljushållare i glas av Heikki Orvola, 6 cm hög, som gör ett värmeljus till ett färgblock. Det är det billigaste sättet att äga en bit Iittala och den klarar handbagaget.',
     specs: [
       '6,5 x 6,5 cm, höjd 6 cm',
       'Glas',
-      'Grön',
-      '0,33 kg brutto',
+      'Grå',
+      '0,338 kg brutto',
       'Endast handdisk',
       'Heikki Orvola, Iittala Kivi',
-      '636883-01, EAN 6411923683937',
+      '1003-03, EAN 6411920039676',
     ],
-    specLabels: [
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      undefined,
-      'Formgivare och kollektion',
-      'Artikelnummer och EAN',
-    ],
+    specLabels: [undefined, undefined, undefined, undefined, undefined, 'Formgivare och kollektion', 'Artikelnummer och EAN'],
   },
   'marimekko-unikko-mug': {
     name: 'Marimekko Unikko mugg 25 cl',
@@ -399,13 +391,13 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Åtgång av kött', 'Näringsvärde per 100 g'],
   },
   'fazer-geisha-chocolate-bar': {
-    name: 'Fazer Geisha chokladkaka med hasselnötsnougat 121 g',
+    name: 'Fazer Geisha chokladbitar 37 g, 5-pack',
     description:
-      'Mjölkchoklad över en spröd hasselnötsnougatfyllning, den kaka de flesta finska hushåll har i en låda. Fazer uppger att den är tillverkad utan palmolja.',
+      'Fem Geishabitar på 37 g där Fazers mjölkchoklad omsluter en spröd fyllning av hasselnötsnougat. Fazer uppger att chokladen är tillverkad utan palmolja.',
     specs: [
-      '121 g',
+      '5 x 37 g',
       'Mjölkchoklad med minst 30 % kakao, hasselnötsnougatfyllning med 11 % hasselnötter',
-      'Energi 550 kcal / 2302 kJ, fett 35 g, mättat 17 g, kolhydrat 51 g, sockerarter 49 g, protein 8 g, salt 0,19 g',
+      'Energi 550 kcal / 2303 kJ, fett 35 g, mättat 17 g, kolhydrat 51 g, sockerarter 49 g, protein 8 g, salt 0,19 g',
     ],
     specLabels: [undefined, undefined, 'Näringsvärde per 100 g'],
   },
@@ -744,11 +736,11 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, 'Setets innehåll', undefined],
   },
   'halti-heatgrid-midlayer': {
-    name: 'Halti HeatGrid mellanlagerjacka, herr',
+    name: 'Halti HeatGrid mellanlagerjacka, dam',
     description:
-      'Vaffelstickning som fångar luft utan att bygga volym under ett skal. Det här är lagret mellan merinon och parkasen, och att hoppa över det är anledningen till att folk kommer tillbaka frusna.',
+      'En lätt, teknisk mellanlagerjacka från Halti i mjuk våffelstickning som andas och leder bort fukt från huden. Den har hellång dragkedja fram, ståkrage, fickor med dragkedja samt resår i ärmslut och nederkant.',
     specs: [
-      'Vaffelstickning på insidan 95 % återvunnen polyester / 5 % elastan; jerseystickning 92 % återvunnen polyester / 8 % elastan',
+      'Våffelstickning på insidan 95 % återvunnen polyester / 5 % elastan; jerseystickning 92 % återvunnen polyester / 8 % elastan',
       'Tvätta ut och in med liknande färger, stäng dragkedjorna före tvätt',
     ],
   },
@@ -1134,11 +1126,11 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
   'nb-little-my-mittens': {
     name: 'Lilla My-vantar',
     description:
-      'Det vinröda paret till Moominvantarna, samma fleecefoder och samma pris. Skaftet är två centimeter kortare, och figuren passar den som tycker att Moomintrollet är lite väl medgörligt.',
+      'Röda stickade vantar med Lilla Mys ansikte på varje handrygg, fodrade med akryl. De är töjbara, så en storlek passar de flesta, och de är en officiell Muminprodukt.',
     specs: [
-      '100 % akryl, fleecefoder',
-      'Vuxen, höjd 22 cm, bredd ovanför tummen 9,5 cm',
-      'Officiell Moominprodukt',
+      '49 % viskos, 31 % polyester, 20 % nylon; foder 100 % akryl',
+      'En storlek, töjbara',
+      'Officiell Muminprodukt',
     ],
     specLabels: [undefined, undefined, 'Licens'],
   },
@@ -1278,16 +1270,17 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Mönster'],
   },
-  'sk-marimekko-unikko-hand-towel': {
-    name: 'Marimekko Unikko handduk 50 × 70 cm',
+  'sk-marimekko-pieni-unikko-apron': {
+    name: 'Marimekko Pieni Unikko förkläde',
     description:
-      'Samma Unikko-frotté i handduksstorlek, halva badhanddukens pris och betydligt lättare att få ner i väskan. Beige och vitt, 65 % ekologisk bomull och 35 % återvunnen.',
+      'Ett förkläde från Marimekko i ekologisk bomull med mönstret Pieni Unikko i plommon, tranbär, naturvitt och rosa. Det har en ficka framtill, knytband i midjan och ett nackband som justeras med tryckknappar.',
     specs: [
-      '50 × 70 cm',
-      'Frottébomull, 65 % ekologisk och 35 % återvunnen',
-      'Unikko, beige och vitt',
+      '100 % ekologisk bomull',
+      'Bredd 84 cm, längd 85 cm',
+      'Maskintvätt 60 °C',
+      'Pieni Unikko, plommon, tranbär, naturvitt och rosa',
     ],
-    specLabels: [undefined, undefined, 'Mönster'],
+    specLabels: [undefined, undefined, undefined, 'Mönster'],
   },
   'fl-taistelevat-metsot': {
     name: 'Taistelevat metsot satinpåslakansset, dubbelsäng',
@@ -1424,11 +1417,11 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
   'nb-moomin-classics-beanie': {
     name: 'Mumin Classics mössa',
     description:
-      'Vuxenmössa ur kollektionen Moomin Classics i återvunnen polyester och akryl, beige, en storlek. En officiell Muminprodukt, och det är linjen som skiljer den från torgståndsversionen.',
+      'Vuxenmössa ur kollektionen Moomin Classics i 100 procent återvunnen polyester, brun, en storlek. En officiell Muminprodukt, och det är just det som skiljer den från versionen på torgstånd.',
     specs: [
-      'Återvunnen polyester och akryl',
+      '100 % återvunnen polyester',
       'Vuxen, en storlek',
-      'Beige',
+      'Brun',
     ],
   },
   'nb-snufkin-mens-socks': {
@@ -1654,11 +1647,11 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specLabels: [undefined, undefined, 'Tillagning'],
   },
   'sk-vaasan-ruispalat-5pack': {
-    name: 'Vaasan Ruispalat rågbröd 5 x 330 g',
+    name: 'Vaasan Ruispalat rågbröd 660 g, 12 st',
     description:
-      'Fem påsar av Finlands mest sålda bröd: rivna fullkornsrågbitar bakade på äkta surdeg av 100 procent finsk spannmål, sex per 330-gramspåse, 12 procent fiber. Det utlandsfinländare ber besökare ta med.',
+      'Vaasan Ruispalat är ett fullkornsrågbröd bakat på äkta surdeg av 100 procent finsk spannmål, 12 bitar i en påse på 660 gram. Vaasan kallar det Finlands populäraste bröd, och det innehåller 12 procent fiber.',
     specs: [
-      '5 x 330 g, 6 bitar per påse',
+      '660 g, 12 bitar',
       'Fullkornsråg 87 % av spannmålen, fiber 12 %',
     ],
   },
