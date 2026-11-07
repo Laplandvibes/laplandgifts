@@ -28,18 +28,18 @@ export default function Boutiques() {
       <ShopNav />
       <main className="bg-sand" id="main-content" tabIndex={-1}>
         <header className="mx-auto max-w-7xl px-4 pt-10 pb-6">
-          <h1 className="font-heading text-5xl tracking-wide text-night md:text-6xl">
+          <h1 className="font-heading text-5xl tracking-wide text-night text-center lg:text-left md:text-6xl">
             {t.hubTitle}
           </h1>
-          <p className="mt-2 text-lg text-gray">{t.hubLead}</p>
-          <p className="mt-3 max-w-2xl text-muted">{t.hubIntro}</p>
+          <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-2 text-lg text-gray">{t.hubLead}</p>
+          <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-3 max-w-2xl text-muted">{t.hubIntro}</p>
           {/* Luku luetaan datasta. Copyyn kirjoitettu luku ajautui storessa
               erilleen todellisuudesta: badge lupasi 16 kun putiikkeja oli 15. */}
-          <p className="mt-1 text-sm text-muted">{t.count(BOUTIQUES.length)}</p>
+          <p className="mt-1 text-sm text-muted text-center lg:text-left">{t.count(BOUTIQUES.length)}</p>
         </header>
 
         <div className="mx-auto max-w-7xl px-4">
-          <div className="flex flex-wrap gap-2" role="group" aria-label={t.hubTitle}>
+          <div className="flex flex-wrap justify-center gap-2 lg:justify-start" role="group" aria-label={t.hubTitle}>
             {(['all', 'online', 'physical'] as Filter[]).map((f) => (
               <button
                 key={f}
@@ -65,8 +65,8 @@ export default function Boutiques() {
         </div>
 
         <section className="mx-auto max-w-7xl px-4 py-12">
-          <h2 className="font-heading text-3xl tracking-wide text-night">{t.townsH2}</h2>
-          <ul className="mt-4 flex flex-wrap gap-3">
+          <h2 className="font-heading text-3xl tracking-wide text-night text-center lg:text-left">{t.townsH2}</h2>
+          <ul className="mt-4 flex flex-wrap justify-center gap-3 lg:justify-start">
             {townsWithPages().map((town) => (
               <li key={town}>
                 <Link

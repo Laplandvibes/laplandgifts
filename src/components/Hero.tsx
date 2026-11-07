@@ -90,7 +90,7 @@ export default function Hero() {
           >
             {s.home.heroTitle} <span className="block text-amber">{s.home.heroTitleAccent}</span>
           </h1>
-          <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed text-gray/80 [text-wrap:pretty] md:text-xl lg:mx-0 ${lang === 'ko' ? keepAll : ''}`}>
+          <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed text-gray/80 [text-wrap:pretty] max-lg:w-fit max-lg:text-left md:text-xl lg:mx-0 ${lang === 'ko' ? keepAll : ''}`}>
             {s.home.heroLead}
           </p>
           {/* 🔴 Napit ovat ruudukossa, eivät flex-rivissä (Vesa 1.8.).

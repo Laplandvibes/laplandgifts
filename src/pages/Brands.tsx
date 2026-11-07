@@ -27,11 +27,11 @@ export default function Brands() {
       <ShopNav />
       <main className="bg-sand" id="main-content" tabIndex={-1}>
         <div className="mx-auto max-w-7xl px-4 py-10 md:py-14">
-          <header className="mb-10 max-w-3xl">
-            <h1 className="font-heading text-5xl tracking-wide text-gray md:text-6xl">
+          <header className="mx-auto mb-10 max-w-3xl lg:mx-0">
+            <h1 className="font-heading text-5xl tracking-wide text-gray text-center lg:text-left md:text-6xl">
               {tb.indexH1}
             </h1>
-            <p className="mt-3 text-base leading-relaxed text-muted">{tb.indexIntro}</p>
+            <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-3 text-base leading-relaxed text-muted">{tb.indexIntro}</p>
           </header>
 
           <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">

@@ -17,12 +17,12 @@ function RelatedSites() {
     <section id="related" className="py-14 md:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4">
         <div className="mb-8 md:mb-12">
-          <div className="flex items-center gap-2 mb-3">
+          <div className="flex items-center justify-center gap-2 mb-3 lg:justify-start">
             <Compass className="w-5 h-5 text-amber" />
             <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
           </div>
-          <h2 className="font-heading text-3xl md:text-5xl leading-none tracking-wide text-gray mb-3">{t.h2}</h2>
-          <p className="text-muted text-[15px] md:text-base leading-relaxed max-w-xl">{t.sub}</p>
+          <h2 className="font-heading text-3xl md:text-5xl leading-none tracking-wide text-gray mb-3 text-center lg:text-left">{t.h2}</h2>
+          <p className="text-muted text-[15px] md:text-base leading-relaxed max-w-xl mx-auto w-fit lg:mx-0 lg:w-auto">{t.sub}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

@@ -38,8 +38,8 @@ export default function Shipping() {
       <ShopNav />
       <main className="bg-sand py-12 md:py-16" id="main-content" tabIndex={-1}>
         <div className="mx-auto max-w-4xl px-4">
-          <h1 className="font-heading text-5xl tracking-wide text-gray md:text-7xl">{t.shipping.title}</h1>
-          <p className="mt-4 text-muted">{t.product.checkoutNote}</p>
+          <h1 className="font-heading text-5xl tracking-wide text-gray text-center lg:text-left md:text-7xl">{t.shipping.title}</h1>
+          <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-4 text-muted">{t.product.checkoutNote}</p>
 
           {/* 🔴 Taulukko mahtuu nyt 320 pikselin ruudulle: solujen vaakatäyte
               on mobiilissa 12 px eikä 20 px. Aiemmin kolmas sarake
@@ -92,8 +92,8 @@ export default function Shipping() {
           </div>
 
           <section className="mt-12">
-            <h2 className="font-heading text-3xl tracking-wide text-gray">{t.shipping.foodRules.title}</h2>
-            <p className="mt-2 text-muted">{t.shipping.foodRules.intro}</p>
+            <h2 className="font-heading text-3xl tracking-wide text-gray text-center lg:text-left">{t.shipping.foodRules.title}</h2>
+            <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-2 text-muted">{t.shipping.foodRules.intro}</p>
             <dl className="mt-6 divide-y divide-line rounded-2xl border border-line bg-card">
               {t.shipping.foodRules.rows.map((r) => (
                 <div key={r.area} className="grid gap-1 px-5 py-4 sm:grid-cols-[12rem_1fr] sm:gap-4">

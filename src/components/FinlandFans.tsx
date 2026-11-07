@@ -27,13 +27,14 @@ export default function FinlandFans() {
       <div className="pointer-events-none absolute inset-x-0 top-[36%] h-[22%] bg-white/[0.07]" aria-hidden="true" />
       <div className="pointer-events-none absolute inset-y-0 left-[27%] w-[12%] bg-white/[0.07] md:w-[8%]" aria-hidden="true" />
       <div className="relative mx-auto max-w-7xl px-4 py-12 md:py-16">
-        <h2 id="finland-fans-h2" className="font-heading text-4xl leading-none tracking-wide md:text-6xl">
+        <h2 id="finland-fans-h2" className="font-heading text-4xl leading-none tracking-wide text-center lg:text-left md:text-6xl">
           {subgroupLabel('finlandtheme', lang)}
         </h2>
-        <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-white/85 md:text-lg">
+        <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-3 max-w-2xl text-[15px] leading-relaxed text-white/85 md:text-lg">
           {FINLAND_FAN_COPY[lang].lead}
         </p>
-        <div className="mt-8">
+        {/* Tabletilla 6 korttia kolmessa palstassa (8 jättäisi viimeiselle riville tyhjän paikan), ks. ProductGrid. */}
+        <div className="mt-8 md:max-xl:[&_.grid>*:nth-child(n+7)]:hidden">
           <ProductGridSection products={items} lang={lang} emptyMessage="" />
         </div>
       </div>

@@ -57,10 +57,10 @@ export default function LuxuryHero({ eyebrow, title, lead, captions }: Props) {
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-night/60 to-transparent" aria-hidden="true" />
 
       <div className="relative mx-auto flex min-h-[72svh] max-w-7xl flex-col justify-end px-4 pb-14 pt-32 md:min-h-[78svh] md:pb-20">
-        <p className="lux-rise mb-4 inline-block self-start rounded-md bg-night/75 px-2.5 py-1 font-body text-xs uppercase tracking-[0.28em] text-[#FCD34D]" style={{ animationDelay: '150ms' }}>
+        <p className="lux-rise mb-4 inline-block self-center rounded-md lg:self-start bg-night/75 px-2.5 py-1 font-body text-xs uppercase tracking-[0.28em] text-[#FCD34D]" style={{ animationDelay: '150ms' }}>
           {eyebrow}
         </p>
-        <h1 className="font-heading text-6xl leading-[0.92] tracking-wide sm:text-7xl md:text-8xl lg:text-9xl" aria-label={title}>
+        <h1 className="font-heading text-6xl leading-[0.92] tracking-wide text-center lg:text-left sm:text-7xl md:text-8xl lg:text-9xl" aria-label={title}>
           {words.map((w, i) => (
             <span key={i} className="lux-word inline-block overflow-hidden align-bottom">
               <span className="lux-word-inner inline-block" style={{ animationDelay: `${250 + i * 110}ms` }}>
@@ -70,14 +70,14 @@ export default function LuxuryHero({ eyebrow, title, lead, captions }: Props) {
             </span>
           ))}
         </h1>
-        <p className="lux-rise mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg" style={{ animationDelay: '700ms' }}>
+        <p className="lux-rise mx-auto w-fit lg:mx-0 lg:w-auto mt-6 max-w-2xl text-base leading-relaxed text-white/80 md:text-lg" style={{ animationDelay: '700ms' }}>
           {lead}
         </p>
         {/* Kohtauksen kuvateksti: kolme päällekkäistä riviä, joista yksi kerrallaan
             on terävä. Sama 21 s kierto kuin kuvilla. */}
         <div className="lux-rise relative mt-8 h-7 text-sm font-medium text-white/85 md:text-base" style={{ animationDelay: '900ms' }} aria-live="off">
           {captions.map((c, i) => (
-            <span key={i} className="lux-caption absolute inset-x-0 top-0 flex items-center gap-3" style={{ animationDelay: `${i * 7}s` }}>
+            <span key={i} className="lux-caption absolute inset-x-0 top-0 flex items-center justify-center gap-3 lg:justify-start" style={{ animationDelay: `${i * 7}s` }}>
               <span className="inline-block h-px w-8 bg-amber" aria-hidden="true" />
               {c}
             </span>

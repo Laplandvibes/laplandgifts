@@ -58,10 +58,10 @@ function GiftGuide() {
   return (
     <section id="gift-guide" className="bg-sand py-14 md:py-24">
       <div className="mx-auto max-w-7xl px-4">
-        <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-4">
+        <div className="flex flex-col items-center gap-4 text-center lg:flex-row lg:flex-wrap lg:items-end lg:justify-between lg:text-left">
           <div>
             <h2 className="font-heading text-4xl leading-none tracking-wide text-gray md:text-6xl">{t.h2}</h2>
-            <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-muted md:text-base">{t.sub}</p>
+            <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-3 max-w-xl text-left text-[15px] leading-relaxed text-muted md:text-base">{t.sub}</p>
           </div>
           <Link
             to={to('/gift-guides')}

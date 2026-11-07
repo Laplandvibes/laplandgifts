@@ -63,12 +63,12 @@ function Guides() {
     <section id="guides" className="bg-sand py-14 md:py-20">
       <div className="mx-auto max-w-5xl px-4">
         <div className="mb-8 md:mb-12">
-          <div className="mb-3 flex items-center gap-2">
+          <div className="mb-3 flex items-center justify-center gap-2 lg:justify-start">
             <FileText className="h-5 w-5 text-amber" />
             <span className="text-sm font-medium uppercase tracking-widest text-amber">{t.kicker}</span>
           </div>
-          <h2 className="mb-3 font-heading text-3xl leading-none tracking-wide text-gray md:text-5xl">{t.h2}</h2>
-          <p className="max-w-xl text-[15px] leading-relaxed text-muted md:text-base">{t.sub}</p>
+          <h2 className="mb-3 font-heading text-3xl leading-none tracking-wide text-gray text-center lg:text-left md:text-5xl">{t.h2}</h2>
+          <p className="mx-auto w-fit lg:mx-0 lg:w-auto max-w-xl text-[15px] leading-relaxed text-muted md:text-base">{t.sub}</p>
         </div>
 
         <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8">

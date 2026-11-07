@@ -221,10 +221,10 @@ export default function Category() {
           />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-8">
-              <h1 className="font-heading text-5xl tracking-wide text-white md:text-7xl">
+              <h1 className="font-heading text-5xl tracking-wide text-white text-center lg:text-left md:text-7xl">
                 {t.names[category.id]}
               </h1>
-              <p className="mt-3 max-w-2xl text-white/85">{t.intro[category.id]}</p>
+              <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-3 max-w-2xl text-white/85">{t.intro[category.id]}</p>
             </div>
           </div>
         </header>
@@ -232,7 +232,7 @@ export default function Category() {
         <div className="mx-auto max-w-7xl px-4 py-10 md:py-14">
           {/* Suodatin näkyviin (Vesa 5.9.: "superfoodeja on 3?" — selaimessa oli
               US valittuna, 17 muuta olivat piilossa eikä sivu sanonut sitä). */}
-          <p className="mb-6 text-sm text-muted">
+          <p className="mb-6 text-sm text-muted text-center lg:text-left">
             {country && !isExperiences && visible.length < all.length ? (
               <>
                 {t.filteredCount(visible.length, all.length, countryName(country, lang))}
@@ -253,10 +253,10 @@ export default function Category() {
                   toimitettava lahjakortti on worldwide eikä siksi katoa. */}
               {visible.length > 0 && (
                 <section className="mb-12">
-                  <h2 className="mb-2 font-heading text-3xl tracking-wide text-gray">
+                  <h2 className="mb-2 font-heading text-3xl tracking-wide text-gray text-center lg:text-left">
                     {tx.voucherH2}
                   </h2>
-                  <p className="mb-5 max-w-2xl text-sm text-muted">{tx.voucherNote}</p>
+                  <p className="mx-auto w-fit lg:mx-0 lg:w-auto mb-5 max-w-2xl text-sm text-muted">{tx.voucherNote}</p>
                   <ProductGridSection products={visible} lang={lang} emptyMessage={emptyMessage} />
                 </section>
               )}
@@ -273,7 +273,7 @@ export default function Category() {
                 if (!rows.length) return null
                 return (
                   <section key={g} className="mb-12 last:mb-0">
-                    <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
+                    <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray text-center lg:text-left">
                       {tx.groups[g]}
                     </h2>
                     <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
@@ -340,11 +340,11 @@ export default function Category() {
                   return (
                     <section key={g.id} className="mb-12 last:mb-0">
                       {label && (
-                        <h2 className={`${note ? 'mb-2' : 'mb-5'} font-heading text-3xl tracking-wide text-gray`}>
+                        <h2 className={`${note ? 'mb-2' : 'mb-5'} font-heading text-3xl tracking-wide text-gray text-center lg:text-left`}>
                           {label}
                         </h2>
                       )}
-                      {note && <p className="mb-5 max-w-2xl text-sm text-muted">{note}</p>}
+                      {note && <p className="mx-auto w-fit lg:mx-0 lg:w-auto mb-5 max-w-2xl text-sm text-muted">{note}</p>}
                       <ProductGridSection
                         products={g.items}
                         lang={lang}
@@ -353,7 +353,7 @@ export default function Category() {
                       {shelfTheme && (
                         <Link
                           to={to(`/theme/${shelfTheme}`)}
-                          className="mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-card px-5 py-2.5 font-body text-sm text-gray transition-colors hover:border-pink hover:text-pink"
+                          className="mx-auto mt-5 flex w-fit items-center gap-2 rounded-full border border-line bg-card px-5 py-2.5 font-body text-sm text-gray transition-colors hover:border-pink hover:text-pink lg:mx-0"
                         >
                           {THEME_COPY[lang].seeAll[shelfTheme]}
                           <ArrowRight className="h-4 w-4" aria-hidden="true" />

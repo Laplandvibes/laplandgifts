@@ -47,10 +47,10 @@ export default function HowItWorks() {
         </div>
 
         <div className="px-4 py-12 sm:px-8 md:py-16 lg:col-span-7 lg:px-12 lg:py-20 xl:px-16">
-          <h2 id="how-it-works-h2" className="font-heading text-4xl leading-none tracking-wide md:text-6xl">
+          <h2 id="how-it-works-h2" className="font-heading text-4xl leading-none tracking-wide text-center lg:text-left md:text-6xl">
             {v.h2}
           </h2>
-          <p className="mt-4 max-w-xl text-[15px] leading-relaxed text-white/75 md:text-lg">{v.sub}</p>
+          <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-4 max-w-xl text-[15px] leading-relaxed text-white/75 md:text-lg">{v.sub}</p>
           <ol className="mt-10 space-y-7 md:mt-12 md:space-y-9">
             {v.steps.map((s, i) => (
               <li key={i} className="grid grid-cols-[3rem_1fr] gap-4 md:grid-cols-[4.5rem_1fr] md:gap-6">
@@ -69,8 +69,8 @@ export default function HowItWorks() {
 
       <div id="shipping" className="scroll-mt-24 border-t border-white/10">
         <div className="mx-auto max-w-7xl px-4 py-12 sm:px-8 md:py-16">
-          <h2 className="font-heading text-3xl leading-none tracking-wide md:text-5xl">{p.h2}</h2>
-          <p className="mt-3 max-w-xl text-[15px] leading-relaxed text-white/75 md:text-base">{p.sub}</p>
+          <h2 className="font-heading text-3xl leading-none tracking-wide text-center lg:text-left md:text-5xl">{p.h2}</h2>
+          <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-3 max-w-xl text-[15px] leading-relaxed text-white/75 md:text-base">{p.sub}</p>
           <ul className="mt-8 grid gap-x-8 gap-y-8 sm:grid-cols-2 md:mt-10 lg:grid-cols-4">
             {p.items.map((item) => (
               <li key={item.title} className="border-l-2 border-amber pl-4">

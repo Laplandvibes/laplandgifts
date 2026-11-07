@@ -44,8 +44,8 @@ export default function ThemePicks({
 
   return (
     <section className="mb-12">
-      <p className="mb-1 font-body text-xs uppercase tracking-[0.18em] text-muted">{tt.eyebrow}</p>
-      <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">{name}</h2>
+      <p className="mb-1 font-body text-xs uppercase tracking-[0.18em] text-muted text-center lg:text-left">{tt.eyebrow}</p>
+      <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray text-center lg:text-left">{name}</h2>
       <div className="grid grid-cols-2 gap-5 lg:grid-cols-4">
         {picks.map((p) => (
           <ProductCard key={p.slug} product={p} lang={lang} />
@@ -53,7 +53,7 @@ export default function ThemePicks({
       </div>
       <Link
         to={to(`/theme/${themeId}`)}
-        className="mt-5 inline-flex items-center gap-2 rounded-full border border-line bg-card px-5 py-2.5 font-body text-sm text-gray transition-colors hover:border-pink hover:text-pink"
+        className="mx-auto mt-5 flex w-fit items-center gap-2 rounded-full border border-line bg-card px-5 py-2.5 font-body text-sm text-gray transition-colors hover:border-pink hover:text-pink lg:mx-0"
       >
         {tt.seeAll[themeId]}
         <ArrowRight className="h-4 w-4" aria-hidden="true" />

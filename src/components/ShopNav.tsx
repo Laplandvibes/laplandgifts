@@ -67,14 +67,13 @@ const COUNTRIES = [...EU_COUNTRIES, 'GB', 'US', 'CA', 'JP', 'KR', 'AU', 'CH', 'N
  * ylipäätään listata — ilman sitä lukija näkee tuotteita, joita hänelle ei
  * toimiteta. Sama koskee kielivalitsinta.
  *
- * Mahtuminen ratkaistiin rivityksellä eikä piilottamalla: apupalkki on
- * `flex-wrap`, joten kapeimmilla ruuduilla valitsinpari putoaa toiselle
- * riville. Kaksi riviä on aina parempi kuin kadonnut ydintoiminto.
- *
- * Lahjaopas- ja toimituslinkit ovat apupalkissa vain md+:sta ylöspäin, mutta
- * ne asuvat myös valikkopaneelissa omana ryhmänään, ja valikkonapissa lukee
- * nyt "Valikko" — pelkkä hampurilaisikoni ei kertonut, että sen takana on
- * sivuja ja asetuksia.
+ * 🔴🔴 LEVEYDET 7.11.2026 (Vesa tabletilla: "navi aivan kamala", "navi on tosi outo ja epäselvä"):
+ *   < 768   ylärivi [verkosto][sanamerkki][kieli][☰] + toimitusmaanauha "Toimitusmaa [Kaikki maat ▾]".
+ *   768+    ylärivi [verkosto][sanamerkki][toimitusmaa][kieli][Valikko] + kategoriarivi.
+ *   1024+   haku ylärivin keskelle; 1280+ toissijaiset linkit kategoriarivin oikeaan reunaan.
+ * Ennen alle 1024 px:n toimitusmaa ja kieli olivat omalla rivillään eri reunoissa (palkki 121 px)
+ * eivätkä kategoriat näkyneet tabletilla lainkaan. Valikko avautuu himmennetyn sivun päälle.
+ * Mittari: scripts/audit_tabletti.mjs (768/820/1024 px, 12 kieltä).
  */
 export default function ShopNav() {
   const lang = useLang()
@@ -109,16 +108,18 @@ export default function ShopNav() {
       {visibleLabel ? (
         <span className="shrink-0 text-sm font-semibold text-white/60">{t.shipping.selectorLabel}</span>
       ) : (
-        <>
-          <span className="sr-only">{t.shipping.selectorLabel}</span>
-          <Globe className="h-4 w-4 shrink-0 text-white/70" aria-hidden="true" />
-        </>
+        <span className="sr-only">{t.shipping.selectorLabel}</span>
       )}
       <span className={`relative min-w-0 ${boxClass}`}>
+        {/* Maapallo pillerin SISÄLLÄ (7.11.2026): pillerin vieressä se oli 24 px:n irrallinen kuvake sanamerkin ja
+            valitsimen välissä, ja sanamerkki jäi tabletilla 12 px välinsä keskeltä (gate:nav-sanamerkki). */}
+        {!visibleLabel && (
+          <Globe className="pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-white/70" aria-hidden="true" />
+        )}
         <select
           value={country}
           onChange={(e) => setCountry(e.target.value)}
-          className={`min-w-0 appearance-none truncate rounded-full border border-white/20 bg-white/10 pl-4 pr-10 text-white ${selectClass}`}
+          className={`min-w-0 appearance-none truncate rounded-full border border-white/20 bg-white/10 ${visibleLabel ? 'pl-4 pr-10' : 'pl-9 pr-9'} text-white ${selectClass}`}
         >
           <option value="">
             {visibleLabel ? t.shipping.selectorAll : t.shipping.selectorLabel}
@@ -189,7 +190,7 @@ export default function ShopNav() {
           headeria, joten se on jo rullautunut pois kun header kiinnittyy. */}
       <header className="sticky top-0 z-50 border-b border-white/10 bg-night/95 text-white backdrop-blur">
         {/* ── RIVI 1: sanamerkki, haku, toimitusmaa ja kieli ─────────────── */}
-        <div className="lv-navrivi mx-auto flex max-w-screen-2xl flex-wrap items-center gap-x-4 gap-y-2 px-4 py-3 xl:h-16 xl:flex-nowrap xl:px-8 xl:py-0">
+        <div className="lv-navrivi mx-auto flex h-16 max-w-screen-2xl items-center gap-x-4 px-4 xl:px-8">
           {/* Logo sisältää jo oman Linkin etusivulle. Ylimääräinen Link-kääre
               tuottaisi sisäkkäiset <a>-elementit, mikä on epävalidia HTML:ää. */}
           {/* 🔴 Verkostonappi sanamerkin vasemmalla puolella alle xl:n, sama
@@ -219,52 +220,54 @@ export default function ShopNav() {
             <ProductSearch />
           </div>
 
-          {/* 🔴 Mobiilissa valitsinpari on OMA rivinsä, ei rivityksen armoilla.
-              Kun logo, molemmat valitsimet ja valikkonappi olivat samassa
-              wrapissa, 390 pikselin ruudulla syntyi kolme epätasaista riviä ja
-              sticky-header vei 153 px eli lähes viidenneksen näytöstä.
-              `order-last w-full` pakottaa valitsimet siistiksi omaksi
-              rivikseen ja jättää ylimmälle riville logon ja valikkonapin.
-              lg:stä ylöspäin pari palaa oikeaan reunaan samalle riville. */}
-          {/* Toimitusmaa on sisältönsä levyinen, ei koko rivin (Vesa 28.9.2026:
-              "toimitusmaa osio on aika leveä"); kielivalitsin rivin toisessa
-              päässä. max-w pitää pitkän maan nimen ("Alankomaat", "Yhdysvallat")
-              rivillä, truncate hoitaa loput. */}
-          <div className="order-last flex w-full min-w-0 items-center justify-between gap-2 lg:order-none lg:ml-auto lg:w-auto lg:justify-start">
-            {countrySelect('flex lg:flex-none', 'h-11 w-auto max-w-[13rem] text-base lg:h-9 lg:max-w-none')}
+          {/* 🔴🔴 OIKEA RYHMÄ: toimitusmaa (768 px:stä), kieli ja Valikko YHDESSÄ ryhmässä samalla rivillä kuin
+              sanamerkki (Vesa 7.11.2026 tabletilla: "navi aivan kamala" ja "navi on tosi outo ja epäselvä").
+              Ennen toimitusmaa ja kieli olivat alle 1024 px:n omalla toisella rivillään eri reunoissa, ja palkki
+              oli 121 px korkea. Nyt sama rakenne kuin hubissa: [verkosto] [sanamerkki keskellä] [ohjaimet] [Valikko].
+              Ryhmällä on oma gap, koska .lv-navrivi nollaa sarakevälin alle 1024 px:n (LV-NAV-SANAMERKKI). */}
+          <div className="flex shrink-0 items-center gap-2 lg:ml-auto lg:gap-3">
+            {/* Toimitusmaa on sisältönsä levyinen (Vesa 28.9.2026: "toimitusmaa osio on aika leveä"). Alle 768 px:n
+                se on omalla nauhallaan palkin alla (ks. alla), koska ylärivillä ei ole sille tilaa. */}
+            {/* max-w 13rem: 11rem katkaisi tabletilla "Toimitusm…" (7.11.2026); pisin nimi on saksan "Lieferung nach". */}
+            {countrySelect('hidden md:flex md:flex-none', 'h-11 w-auto max-w-[13rem] text-base lg:h-9 lg:max-w-none')}
             <LangSwitcher />
+            {/* 🔴 Napissa lukee "Valikko". Pelkkä hampurilaisikoni ei kerro, että sen takana ovat kategoriat ja
+                oppaat. Näkyy xl:ään asti: 1024–1279 pikselissä toissijaiset linkit eivät mahdu kategoriariville. */}
+            <button
+              type="button"
+              onClick={() => setOpen((v) => !v)}
+              aria-expanded={open}
+              aria-controls="shop-menu"
+              aria-label={open ? n.closeMenu : n.openMenu}
+              className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center gap-2 rounded-full border border-white/25 px-3 text-sm font-semibold text-white sm:px-4 xl:hidden"
+            >
+              {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
+              {/* Alle 640 px:n pelkkä kuvake: kielivalitsin tuli ylöriville, eikä 390 px:n ruudulle mahdu
+                  verkostonappi, sanamerkki, kieli ja "Valikko". Nimi säilyy aria-labelissa. */}
+              <span className="max-sm:sr-only">{n.menuLabel}</span>
+            </button>
           </div>
-
-          {/* 🔴 Napissa lukee "Valikko". Pelkkä hampurilaisikoni ei kerro, että
-              sen takana ovat kategoriat, lahjaopas- ja toimitussivu — eli
-              kaikki mihin mobiilissa pääsee.
-
-              Näkyy xl:ään asti, ei enää vain lg:hen: 1024–1279 pikselissä
-              toissijaiset linkit ja verkostovalikko eivät mahdu kategoriariville
-              (ks. rivi 2), joten tämä nappi on niiden ainoa reitti siinä
-              välissä. */}
-          <button
-            type="button"
-            onClick={() => setOpen((v) => !v)}
-            aria-expanded={open}
-            aria-controls="shop-menu"
-            aria-label={open ? n.closeMenu : n.openMenu}
-            className="ml-auto inline-flex min-h-11 shrink-0 items-center gap-2 rounded-full border border-white/25 px-4 text-sm font-semibold text-white xl:hidden justify-center min-w-11"
-          >
-            {open ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
-            {/* Alle 360 px:n pelkkä kuvake: verkostonappi, sanamerkki ja
-                "Valikko" vievät 334 px, ja 320 px:n ruudulla nappi rivittyi
-                omalle rivilleen (palkki 173 px). Nimi säilyy aria-labelissa. */}
-            <span className="max-[359px]:sr-only">{n.menuLabel}</span>
-          </button>
         </div>
 
-        {/* ── RIVI 2: kategoriat ja toissijaiset linkit, vain lg+ ────────── */}
-        <div className="hidden border-t border-white/10 lg:block">
-          <div className="mx-auto flex max-w-screen-2xl items-center gap-x-6 px-4 xl:px-8">
+        {/* ── PUHELIN (< 768 px): toimitusmaa omana nauhanaan, nimi näkyvissä ──────────────────────────────
+            Vesa 1.8.: toimitusmaa näkyy joka leveydellä, koska se suodattaa katalogin (EU-rajatut kumppanit).
+            Ennen se oli nimetön pilleri vasemmassa reunassa ja kieli oikeassa ("outo ja epäselvä"); nyt
+            lukija näkee mitä valitsee: "Toimitusmaa  [Kaikki maat ▾]" keskellä. */}
+        {countrySelect(
+          'flex justify-center border-t border-white/10 px-4 py-1.5 md:hidden',
+          'h-11 w-auto max-w-[13rem] text-base',
+          true,
+        )}
+
+        {/* ── RIVI 2: kategoriat 768 px:stä (ennen 1024), toissijaiset linkit xl+ ──────────────────────
+            Tabletilla kategoriat olivat vain Valikon takana, joten kaupan ainoa reitti tuotteisiin oli
+            piilossa (Vesa 7.11.2026). Rivi mahtuu 768 px:iin jokaisella kielellä: väli 20 px alle xl:n. */}
+        <div className="hidden border-t border-white/10 md:block">
+          {/* Tabletilla rivi keskelle sanamerkin akselille; lg:stä vasen reuna kuten ennen. */}
+          <div className="mx-auto flex max-w-screen-2xl items-center justify-center gap-x-6 px-4 lg:justify-start xl:px-8">
             <nav
               aria-label={n.shopNavLabel}
-              className="flex items-center gap-x-6 xl:gap-x-8"
+              className="flex min-w-0 items-center gap-x-5 lg:gap-x-6 xl:gap-x-8"
             >
             {categories.map((c) => {
               const active = here === c.slug
@@ -356,7 +359,7 @@ export default function ShopNav() {
             <div className="mx-auto max-w-7xl border-b border-white/10 px-4 py-3 lg:hidden">
               <ProductSearch variant="panel" onNavigate={() => setOpen(false)} />
             </div>
-            <nav aria-label={n.shopNavLabel} className="mx-auto max-w-7xl px-4 py-2 lg:hidden sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6">
+            <nav aria-label={n.shopNavLabel} className="mx-auto max-w-7xl px-4 py-2 sm:grid sm:grid-cols-2 sm:gap-x-6 md:hidden">
               {categories.map((c) => (
                 <Link
                   key={c.key}
@@ -373,12 +376,11 @@ export default function ShopNav() {
                 </Link>
               ))}
             </nav>
-            {/* `lg:border-t-0`: lg:stä ylöspäin kategoriat piiloutuvat ja tästä
-                tulee paneelin ensimmäinen elementti, jolloin oma yläviiva
-                asettuisi kiinni paneelin omaan yläviivaan. */}
+            {/* `md:border-t-0`: 768 px:stä ylöspäin kategoriat ovat palkin toisella rivillä eivätkä paneelissa,
+                jolloin tämä tulee haun alle (sillä on oma alaviiva) tai lg:stä paneelin ensimmäiseksi. */}
             <nav
               aria-label={n.utilityNavLabel}
-              className="mx-auto max-w-7xl border-t border-white/10 px-4 py-2 lg:border-t-0 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-6"
+              className="mx-auto max-w-7xl border-t border-white/10 px-4 py-2 sm:grid sm:grid-cols-2 sm:gap-x-6 md:border-t-0"
             >
               {secondary.map((s) => (
                 <Link
@@ -397,22 +399,20 @@ export default function ShopNav() {
                 </Link>
               ))}
             </nav>
-            {/* Verkostovalikko ei ole enää paneelissa: alle xl:n se on ylärivillä
-                sanamerkin vieressä (28.9.2026), joten kaksoiskappale pois. */}
-            {/* Sama valitsin kuin ylärivillä, mutta näkyvällä labelilla ja
-                täysleveänä. Kaksoiskappale on tarkoituksellinen: kapealla
-                ruudulla ylärivin valitsin on pieni, ja tämä on se paikka josta
-                toimitusmaa oikeasti vaihdetaan.
-                text-base = 16 px: pienempi koko saa iOS:n zoomaamaan kenttään. */}
-            {countrySelect(
-              'mx-auto flex max-w-7xl flex-wrap border-t border-white/10 px-4 py-3 lg:hidden',
-              'min-h-11 w-full text-base',
-              true,
-              'flex-1',
-            )}
+            {/* Verkostovalikko ja toimitusmaa eivät ole paneelissa: molemmat näkyvät palkissa joka leveydellä
+                (toimitusmaa puhelimessa omalla nauhallaan), joten kaksoiskappaleet pois (7.11.2026). */}
           </div>
         )}
       </header>
+      {/* Auki olevan valikon alla sivu himmenee ja klikkaus sulkee valikon. Ennen paneeli aukesi sivun päälle
+          ilman taustaa, ja sen alta näkyi puolikas kategoriakortti (Vesa 7.11.2026: "outo ja epäselvä"). */}
+      {open && (
+        <div
+          aria-hidden="true"
+          onClick={() => setOpen(false)}
+          className="fixed inset-0 z-40 bg-night/60 backdrop-blur-[2px] xl:hidden"
+        />
+      )}
 
       {/* ── 3. MURUPOLKU ──────────────────────────────────────────────────
           Sticky-palkin alapuolella ja sen ulkopuolella: rullaa pois kuten muukin

@@ -95,7 +95,7 @@ export default function Luxury() {
 
           {experiences.length > 0 && (
             <section className="mb-14">
-              <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
+              <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray text-center lg:text-left">
                 {tl.experiencesH2}
               </h2>
               <ProductGridSection
@@ -129,7 +129,7 @@ export default function Luxury() {
 
           {objects.length > 0 && (
             <section>
-              <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray">
+              <h2 className="mb-5 font-heading text-3xl tracking-wide text-gray text-center lg:text-left">
                 {tl.objectsH2}
               </h2>
               <ProductGridSection

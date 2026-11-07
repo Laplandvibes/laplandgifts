@@ -254,7 +254,7 @@ export default function Product() {
 
           {related.length > 0 && (
             <section className="mt-16">
-              <h2 className="mb-6 font-heading text-2xl text-gray">{t.product.related}</h2>
+              <h2 className="mb-6 font-heading text-2xl text-gray text-center lg:text-left">{t.product.related}</h2>
               <div className="grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 lg:grid-cols-4">
                 {related.map((p) => (
                   <ProductCard key={p.slug} product={p} lang={lang} />

@@ -63,10 +63,10 @@ export default function ProductGrid() {
     <section id="products" className="bg-card py-16 md:py-24">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
       <div className="mx-auto max-w-7xl px-4">
-        <div className="flex flex-wrap items-end justify-between gap-4">
+        <div className="flex flex-col items-center gap-4 text-center lg:flex-row lg:flex-wrap lg:items-end lg:justify-between lg:text-left">
           <div>
             <h2 className="font-heading text-4xl tracking-wide text-gray md:text-6xl">{t.featuredH2}</h2>
-            <p className="mt-3 max-w-2xl text-muted">{t.featuredSub}</p>
+            <p className="mx-auto w-fit lg:mx-0 lg:w-auto mt-3 max-w-2xl text-left text-muted">{t.featuredSub}</p>
           </div>
           <Link
             to={to('/design')}
@@ -78,7 +78,9 @@ export default function ProductGrid() {
         {/* Kaksi palstaa myös kapealla, ks. ProductGridSection. Sama porrastus
             kuin kategoriasivun ruudukossa ja kortin `sizes`-attribuutissa:
             2 / 3 (768 px) / 4 (1280 px). */}
-        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 xl:grid-cols-4">
+        {/* Tabletilla (768–1279) kolme palstaa: 8 korttia jättäisi viimeiselle riville tyhjän paikan, joten näkyvissä 6
+            (Vesa 7.11.2026 tabletilla). Puhelimessa 8 = 4 × 2 ja xl:stä 8 = 2 × 4. */}
+        <div className="mt-10 grid grid-cols-2 gap-3 sm:gap-5 md:grid-cols-3 xl:grid-cols-4 md:max-xl:[&>*:nth-child(n+7)]:hidden">
           {products.map((p) => (
             <ProductCard key={p.slug} product={p} lang={lang} />
           ))}
