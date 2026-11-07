@@ -67,8 +67,11 @@ export default function Theme() {
             />
           </picture>
           <PhotoMark image={theme.image} />
-          <div className="absolute inset-0 bg-night/55" aria-hidden="true" />
-          <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-night/35 to-transparent" aria-hidden="true" />
+          {/* Sama yksi alhaalta nouseva tummennus kuin kategoriasivulla (7.11.2026), ks. Category.tsx. */}
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/65 via-50% to-night/15 md:via-night/50 md:via-40% md:to-transparent"
+            aria-hidden="true"
+          />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-8">
               <h1 className="font-heading text-5xl tracking-wide text-white md:text-7xl">

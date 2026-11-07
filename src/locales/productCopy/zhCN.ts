@@ -2465,4 +2465,252 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, '香型', '用法', '经销商'],
   },
+  // Vaatevalikoiman laajennus 7.11.2026
+  'makia-glacier-parka': {
+    name: 'Makia Glacier 派克大衣',
+    description:
+      'Makia 的长款冬季派克大衣，常规版型，内衬为 100% 再生涤纶。面料含 73% 棉和 27% 再生锦纶，5000 mm 的防水指数有助于挡住偶尔的降雨。腰部内侧有抽绳，可调节松紧。',
+    specs: [
+      '面料 73 % 棉，27 % 再生锦纶。内衬 100 % 再生涤纶',
+      '5000 mm',
+      '黑色',
+      'S到XXL',
+    ],
+    specLabels: [undefined, '防水指数', undefined, undefined],
+  },
+  'makia-maren-parka': {
+    name: 'Makia Maren 棉服外套',
+    description:
+      'Makia 的宽松中长款棉服外套，填充 100% 再生涤纶制成的 Sorona® 仿羽绒。Sorona® 部分来自植物，透气又保暖。需要时可以用腰带调节松紧。',
+    specs: [
+      '填充 100 % Sorona® 再生涤纶仿羽绒',
+      '宽松，中长款，腰部配腰带',
+      '深酒红色',
+      'XS到XXL',
+    ],
+    specLabels: [undefined, '版型', undefined, undefined],
+  },
+  'makia-helsinki-parka': {
+    name: 'Makia Helsinki 派克大衣',
+    description:
+      'Makia 的经典冬季派克大衣，常规版型，口袋空间充足，帽子上的人造毛可以拆下。它以 Makia 的经典款 Raglan Parka 为基础，填充为 100% 再生涤纶制成的 Sorona® 仿羽绒。Sorona® 部分来自植物，透气又保暖。',
+    specs: [
+      '填充 100 % Sorona® 再生涤纶仿羽绒',
+      '可拆卸人造毛',
+      '深绿色',
+      'S到XXL',
+    ],
+    specLabels: [undefined, '帽子', undefined, undefined],
+  },
+  'makia-else-parka': {
+    name: 'Makia Else 派克大衣',
+    description:
+      'Makia 的中长款冬季派克大衣，常规版型，帽子内衬为可拆卸的人造毛。填充为 100% 再生涤纶制成的 Sorona® 仿羽绒，腰部设有隐藏式调节扣，可调整松紧。',
+    specs: [
+      '填充 100 % Sorona® 再生涤纶仿羽绒',
+      '可拆卸人造毛内衬',
+      '米白色',
+      'XS到XXL',
+    ],
+    specLabels: [undefined, '帽子', undefined, undefined],
+  },
+  'makia-frost-knit': {
+    name: 'Makia Frost 针织毛衣',
+    description:
+      'Makia 的常规版型针织毛衣，采用涤纶混纺，配色为渐变色。尺码 S 到 XXL。',
+    specs: [
+      '涤纶混纺',
+      '渐变色',
+      'S到XXL',
+    ],
+    specLabels: [undefined, '配色', undefined],
+  },
+  'makia-salla-knit': {
+    name: 'Makia Salla 美利奴高领毛衣',
+    description:
+      'Makia 的常规版型高领毛衣，用 100% 美利奴羊毛织成。衣身和袖子饰有镂空（ajour）针织细节。尺码 XS 到 XXL。',
+    specs: [
+      '100 % 美利奴羊毛',
+      '衣身和袖子饰有镂空针织细节',
+      'XS到XXL',
+    ],
+    specLabels: [undefined, '细节', undefined],
+  },
+  'makia-saarni-knit': {
+    name: 'Makia Saarni 美利奴毛衣',
+    description:
+      'Makia 的常规版型毛衣，用 100% 美利奴羊毛织成。尺码 S 到 XXL。',
+    specs: [
+      '100 % 美利奴羊毛',
+      'S到XXL',
+    ],
+  },
+  'makia-siina-knit': {
+    name: 'Makia Siina 羊毛混纺毛衣',
+    description:
+      'Makia 的常规版型宽袖毛衣，用羊毛混纺织成。羊毛混纺让这件毛衣摸起来更厚实。尺码 XS 到 XXL。',
+    specs: [
+      '羊毛混纺',
+      '宽袖',
+      'XS到XXL',
+    ],
+    specLabels: [undefined, '袖子', undefined],
+  },
+  'halti-ascloud-ski-jacket-women': {
+    name: 'Halti Ascloud 女款滑雪棉服',
+    description:
+      'Halti 的女款滑雪棉服，采用 Microtherm® 保暖填充，配有固定式防雪裙和带拉链的雪卡袋。面料防水指数 10000 mm，透气指数 10000 g/m²/24 h。帽子和下摆可调节，袖子里有莱卡内袖口，Halti 将其设计为城市与雪场两用。',
+    specs: [
+      'Matt Memory，65 % 再生涤纶，35 % 涤纶',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1.0 kg',
+      '34, 36, 38, 40, 42, 44, 46',
+      '多种颜色：Crocus Petal, Seedpearl White, Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, '防水指数', '透气指数', undefined, undefined, undefined],
+  },
+  'halti-ascale-ii-ski-jacket-men': {
+    name: 'Halti Ascale II 男款滑雪棉服',
+    description:
+      'Halti 的男款滑雪棉服，采用 160 g Microtherm® Arcty 保暖填充，配有固定式防雪裙和带拉链的雪卡袋。哑光面料经过 Rudolf BIONIC-FINISH® 防泼水处理，防水指数 10000 mm，透气指数 10000 g/m²/24 h。袖子里有莱卡内袖口，内侧有全长防风门襟，Halti 将其设计为既可搭配滑雪裤，也可搭配牛仔裤。',
+    specs: [
+      'Waterproof Taslan，50 % 再生涤纶，50 % 涤纶',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1.0 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, '防水指数', '透气指数', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-women': {
+    name: 'Halti Carvey II DX 女款滑雪裤',
+    description:
+      'Halti 的女款防水滑雪裤，采用 4 向弹力 DrymaxX® 面料，全部接缝压胶，背带可拆卸。DrymaxX® 面料防水指数 15000 mm，透气指数 15000 g/m²/24 h，直筒剪裁介于修身和宽松之间。腰围可调节，裤脚经过加固，还配有防雪脚套、带拉链的插手袋，以及带防泼水拉链的大腿口袋。',
+    specs: [
+      'DrymaxX® NN，4 向弹力，50 % 再生涤纶，50 % 涤纶。Stretch Cordura，96 % 涤纶，4 % 氨纶。无单独内衬',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0.8 kg',
+      '34, 36, 38, 40, 42, 44, 46, 48',
+      '多种颜色：Dark Sea Green, Black, Seedpearl White, Vivid Purple, Lemon Pepper Beige',
+    ],
+    specLabels: [undefined, '防水指数', '透气指数', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-men': {
+    name: 'Halti Carvey II DX 男款滑雪裤',
+    description:
+      'Halti 的男款防水滑雪裤，采用 4 向弹力 DrymaxX® 面料，全部接缝压胶，背带可拆卸。裤子经过 DWR 防泼水处理，DrymaxX® 面料防水指数 15000 mm，透气指数 15000 g/m²/24 h。滑雪版型为直筒剪裁，介于修身和宽松之间，配有可调节腰围、加固裤脚、防雪脚套、带拉链的插手袋，以及带防泼水拉链的大腿口袋。',
+    specs: [
+      'DrymaxX® NN，4 向弹力，50 % 再生涤纶，50 % 涤纶。Stretch Cordura，96 % 涤纶，4 % 氨纶',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0.9 kg',
+      'XS, S, M, L, XL, XXL, XXXL, 4XL',
+      '多种颜色：Dress Blues, Black, Dark Sea Green, Tea Green, Halti Red, Electric Blue Lemonade',
+    ],
+    specLabels: [undefined, '防水指数', '透气指数', undefined, undefined, undefined],
+  },
+  'halti-kevo-2-winter-boots-men': {
+    name: 'Halti Kevo 2 DX 男款冬靴',
+    description:
+      'Halti 的男款系带冬靴，采用防水透气的 DrymaxX® 膜袜套结构和保暖织物内衬。鞋面为易清洁的水性 PU 合成革，搭配轻盈缓震的 Phylon 中底和抓地力好的橡胶大底。Halti 为冬季长时间的户外活动设计了这双鞋，符合人体工学的鞋垫可以取出。',
+    specs: [
+      '合成革，80 % 聚氨酯，20 % 再生涤纶。致密网眼织物，100 % 再生涤纶。DrymaxX® 膜',
+      'Phylon 中底，橡胶大底，可拆卸人体工学 EVA 鞋垫',
+      '1.1 kg',
+      '38, 39, 40, 41, 42, 43, 44, 45, 46',
+      'Otter Brown',
+      '用湿海绵和中性肥皂清洁。在室温或不超过 40 °C 的环境下晾干，切勿放在暖气片上或高温桑拿房内烘干',
+    ],
+    specLabels: [undefined, '鞋底', undefined, undefined, undefined, undefined],
+  },
+  'halti-metso-mid-winter-boots-men': {
+    name: 'Halti Metso Mid DX 男款冬靴',
+    description:
+      'Halti 的男款系带冬靴，采用 Thinsulate™ 保暖材料、保暖绒毛织物内衬和防水的 DrymaxX® 膜袜套结构。鞋面结合了绒面革、PU 革和柔软织物，可拆卸的缓震 Comfort+ 鞋垫符合人体工学。Halti 将其主要用途定为休闲，TPR 橡胶大底在各种路面上都能提供抓地力。',
+    specs: [
+      '绒面革，100 % 皮革。PU 革，50 % 涤纶，50 % 聚氨酯。柔软织物，100 % 涤纶',
+      'TPR 大底，可拆卸人体工学 Comfort+ 鞋垫',
+      '1.1 kg',
+      '40, 41, 42, 43, 44, 45, 46, 47',
+      'Apple Cinnamon Brown',
+      '用湿海绵和中性肥皂清洁。在室温或不超过 40 °C 的环境下晾干，切勿放在暖气片上或高温桑拿房内烘干。存放在干燥通风处',
+    ],
+    specLabels: [undefined, '鞋底', undefined, undefined, undefined, undefined],
+  },
+  'halti-skene-winter-boots-women': {
+    name: 'Halti Skene DX 女款冬靴',
+    description:
+      'Halti 的女款冬靴，内侧拉链方便穿脱，鞋带可调节松紧。DrymaxX® 膜袜套结构和保暖绒毛织物内衬让双脚在多变的天气中保持干爽温暖，保暖鞋垫能隔绝来自下方的寒气。轻盈的 Phylon 中底增加舒适度，橡胶大底在冬季路面上抓地牢靠。',
+    specs: [
+      'Poly pongee，100 % 涤纶。绒面革，100 % 皮革。DrymaxX® 膜',
+      'Phylon 中底，橡胶大底，保暖 EVA 鞋垫',
+      '0.8 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Fog Beige, Glacier Grey',
+      '用湿海绵和中性肥皂清洁。在室温或不超过 40 °C 的环境下晾干，切勿放在暖气片上或高温桑拿房内烘干',
+    ],
+    specLabels: [undefined, '鞋底', undefined, undefined, undefined, undefined],
+  },
+  'halti-sletta-zip-winter-boots-women': {
+    name: 'Halti Sletta Zip DX 女款冬靴',
+    description:
+      'Halti 的柔软中筒女款冬靴，配有拉链、抓绒内衬、Thinsulate™ 保暖棉和防水的 DrymaxX® 膜。橡胶材质的 Halti GripmaxX Arctic 大底专为雪地和雪泥路面设计，上方是轻盈缓震的 Phylon 中底。袜套式结构让鞋更合脚，Thermo 鞋垫可以取出。',
+    specs: [
+      '光滑的塔夫绸类织物，柔软绗缝鞋面和绒面革加固，100 % 涤纶。绒面革，100 % 皮革',
+      'Halti GripmaxX Arctic 橡胶大底，Phylon 中底，可拆卸 Thermo 鞋垫',
+      '0.7 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Apple Cinnamon Brown, Black/White',
+      '用湿海绵和中性肥皂清洁。在室温或不超过 40 °C 的环境下晾干，切勿放在暖气片上或高温桑拿房内烘干',
+    ],
+    specLabels: [undefined, '鞋底', undefined, undefined, undefined, undefined],
+  },
+  'sk-suomi-foam-finger': {
+    name: 'Suomi 球迷助威泡沫手 23 x 45 cm',
+    description:
+      'Happy Orange Suomi 助威系列的泡沫手，尺寸 23 x 45 cm。适合在比赛、活动和其他想在人群中脱颖而出的场合使用。蓝色的手上印有 FINLAND 字样和芬兰国旗。',
+    specs: [
+      '23 x 45 cm',
+      '蓝底印有 FINLAND 和芬兰国旗',
+      '6430080071500',
+    ],
+    specLabels: [undefined, '图案', 'EAN'],
+  },
+  'sk-suomi-drawstring-bag': {
+    name: 'Suomi 芬兰国旗抽绳背包',
+    description:
+      'Tammer 的抽绳背包，印有芬兰国旗。适合去看比赛、随助威团出行，也可以当作伴手礼、纪念品或礼物。',
+    specs: [
+      '芬兰国旗',
+      '6410413343443',
+    ],
+    specLabels: ['图案', 'EAN'],
+  },
+  'sk-suomi-braces': {
+    name: 'Suomi 背带，蓝色',
+    description:
+      '蓝色 H 型背带，宽 3.5 cm，带子上印有 SUOMI、FINLAND 字样和芬兰国旗。背后用两个全金属夹扣固定，夹得很牢。由 Suomikauppa.fi 设计、Helsingin Olkain 制造，带有 Avainlippu（钥匙旗）标志。',
+    specs: [
+      '宽 3.5 cm',
+      '蓝色，印有 SUOMI、FINLAND 和芬兰国旗',
+      'H 型，背后两个全金属夹扣',
+      'Suomikauppa.fi 设计，Helsingin Olkain 制造',
+      'Avainlippu（钥匙旗）',
+    ],
+    specLabels: [undefined, undefined, '固定方式', '设计与制造', '标志'],
+  },
+  'sk-suomi-spiky-wig': {
+    name: 'Suomi 球迷刺猬头假发',
+    description:
+      'Happy Orange Suomi 助威系列的刺猬头假发，适合比赛、活动和其他想要引人注目的场合。蓝白相间的尖刺从印有芬兰国旗的蓝色发带上竖起。',
+    specs: [
+      '蓝白相间',
+      '发带上印有芬兰国旗',
+      '6430080071456',
+    ],
+    specLabels: [undefined, '图案', 'EAN'],
+  },
 }

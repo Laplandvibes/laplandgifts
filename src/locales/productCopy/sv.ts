@@ -2465,4 +2465,252 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Doft', 'Användning', 'Marknadsförs av'],
   },
+  // Vaatevalikoiman laajennus 7.11.2026
+  'makia-glacier-parka': {
+    name: 'Makia Glacier parkas',
+    description:
+      'En längre vinterparkas från Makia med normal passform och foder i 100 procent återvunnen polyester. Yttertyget består av 73 procent bomull och 27 procent återvunnen nylon, och vattenpelaren på 5000 mm hjälper till att hålla enstaka regnskurar ute. Med en dragsko på insidan av midjan justerar du passformen.',
+    specs: [
+      'Yttertyg 73 % bomull, 27 % återvunnen nylon. Foder 100 % återvunnen polyester',
+      '5000 mm',
+      'Svart',
+      'S till XXL',
+    ],
+    specLabels: [undefined, 'Vattenpelare', undefined, undefined],
+  },
+  'makia-maren-parka': {
+    name: 'Makia Maren vadderad parkas',
+    description:
+      'En ledig, halvlång vadderad parkas från Makia, fylld med Sorona®-syntetdun av 100 procent återvunnen polyester. Sorona® är delvis växtbaserat, andas och håller värmen. Med bältet i midjan kan du justera passformen vid behov.',
+    specs: [
+      'Fyllning 100 % återvunnen polyester, Sorona®-syntetdun',
+      'Ledig, halvlång, bälte i midjan',
+      'Mörkt vinröd',
+      'XS till XXL',
+    ],
+    specLabels: [undefined, 'Passform', undefined, undefined],
+  },
+  'makia-helsinki-parka': {
+    name: 'Makia Helsinki parkas',
+    description:
+      'En klassisk vinterparkas från Makia med normal passform, gott om fickutrymme och en huva med avtagbar fuskpäls. Den bygger på Makias klassiska Raglan Parka, och vadderingen är Sorona®-syntetdun av 100 procent återvunnen polyester. Sorona® är delvis växtbaserat, andas och håller värmen.',
+    specs: [
+      'Vaddering 100 % återvunnen polyester, Sorona®-syntetdun',
+      'Avtagbar fuskpäls',
+      'Mörkgrön',
+      'S till XXL',
+    ],
+    specLabels: [undefined, 'Huva', undefined, undefined],
+  },
+  'makia-else-parka': {
+    name: 'Makia Else parkas',
+    description:
+      'En halvlång vinterparkas från Makia med normal passform och en huva med avtagbart fuskpälsfoder. Fyllningen är Sorona®-syntetdun av 100 procent återvunnen polyester, och med en dold justering i midjan ställer du in passformen.',
+    specs: [
+      'Fyllning 100 % återvunnen polyester, Sorona®-syntetdun',
+      'Avtagbart fuskpälsfoder',
+      'Naturvit',
+      'XS till XXL',
+    ],
+    specLabels: [undefined, 'Huva', undefined, undefined],
+  },
+  'makia-frost-knit': {
+    name: 'Makia Frost stickad tröja',
+    description:
+      'En stickad tröja från Makia med normal passform, i en polyesterblandning och med tonade färger. Storlek S till XXL.',
+    specs: [
+      'Polyesterblandning',
+      'Tonade färger',
+      'S till XXL',
+    ],
+    specLabels: [undefined, 'Färgsättning', undefined],
+  },
+  'makia-salla-knit': {
+    name: 'Makia Salla polotröja i merinoull',
+    description:
+      'En polotröja från Makia med normal passform, stickad i 100 procent merinoull. Över kroppen och ärmarna löper ajourstickade detaljer i genombrutet hålmönster. Storlek XS till XXL.',
+    specs: [
+      '100 % merinoull',
+      'Ajourstickade detaljer på kroppen och ärmarna',
+      'XS till XXL',
+    ],
+    specLabels: [undefined, 'Detaljer', undefined],
+  },
+  'makia-saarni-knit': {
+    name: 'Makia Saarni merinotröja',
+    description:
+      'En tröja från Makia med normal passform, stickad i 100 procent merinoull. Storlek S till XXL.',
+    specs: [
+      '100 % merinoull',
+      'S till XXL',
+    ],
+  },
+  'makia-siina-knit': {
+    name: 'Makia Siina tröja i ullblandning',
+    description:
+      'En tröja med vida ärmar och normal passform från Makia, stickad i en ullblandning. Ullblandningen gör att stickningen känns tjockare. Storlek XS till XXL.',
+    specs: [
+      'Ullblandning',
+      'Vida',
+      'XS till XXL',
+    ],
+    specLabels: [undefined, 'Ärmar', undefined],
+  },
+  'halti-ascloud-ski-jacket-women': {
+    name: 'Halti Ascloud vadderad skidjacka, dam',
+    description:
+      'En vadderad skidjacka för dam från Halti med Microtherm®-isolering, fast snölås och liftkortsficka med dragkedja. Ytterskalet har en vattenpelare på 10000 mm och en andningsförmåga på 10000 g/m²/24 h. Huva och nederkant går att justera, ärmarna har inre lycramuddar, och Halti har gjort jackan för stan lika väl som för backen.',
+    specs: [
+      'Matt Memory, 65 % återvunnen polyester, 35 % polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1,0 kg',
+      '34, 36, 38, 40, 42, 44, 46',
+      'Flera färger: Crocus Petal, Seedpearl White, Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, 'Vattenpelare', 'Andningsförmåga', undefined, undefined, undefined],
+  },
+  'halti-ascale-ii-ski-jacket-men': {
+    name: 'Halti Ascale II vadderad skidjacka, herr',
+    description:
+      'En vadderad skidjacka för herr från Halti med 160 g isolering av Microtherm® Arcty, fast snölås och liftkortsficka med dragkedja. Det matta ytterskalet är vattenavvisande behandlat med Rudolf BIONIC-FINISH® och har en vattenpelare på 10000 mm och en andningsförmåga på 10000 g/m²/24 h. Jackan har inre lycramuddar och en hellång inre vindslå, och Halti har gjort den för att bäras till skidbyxor eller jeans.',
+    specs: [
+      'Waterproof Taslan, 50 % återvunnen polyester, 50 % polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1,0 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, 'Vattenpelare', 'Andningsförmåga', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-women': {
+    name: 'Halti Carvey II DX skidbyxor, dam',
+    description:
+      'Vattentäta skidbyxor för dam från Halti i DrymaxX® med 4-vägsstretch, helt tejpade sömmar och avtagbara hängslen. DrymaxX®-materialet har en vattenpelare på 15000 mm och en andningsförmåga på 15000 g/m²/24 h, och det raka snittet ligger mittemellan åtsittande och ledigt. Midjan går att justera, benslutet är förstärkt, och byxorna har snölås, handfickor med dragkedja och en lårficka med vattenavvisande dragkedja.',
+    specs: [
+      'DrymaxX® NN med 4-vägsstretch, 50 % återvunnen polyester, 50 % polyester. Stretch Cordura, 96 % polyester, 4 % elastan. Inget separat foder',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0,8 kg',
+      '34, 36, 38, 40, 42, 44, 46, 48',
+      'Flera färger: Dark Sea Green, Black, Seedpearl White, Vivid Purple, Lemon Pepper Beige',
+    ],
+    specLabels: [undefined, 'Vattenpelare', 'Andningsförmåga', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-men': {
+    name: 'Halti Carvey II DX skidbyxor, herr',
+    description:
+      'Vattentäta skidbyxor för herr från Halti i DrymaxX® med 4-vägsstretch, helt tejpade sömmar och avtagbara hängslen. De har en vattenavvisande DWR-behandling, och DrymaxX®-materialet har en vattenpelare på 15000 mm och en andningsförmåga på 15000 g/m²/24 h. Skidpassformen har ett rakt snitt mittemellan åtsittande och ledigt, med justerbar midja, förstärkta benslut, snölås, handfickor med dragkedja och en lårficka med vattenavvisande dragkedja.',
+    specs: [
+      'DrymaxX® NN med 4-vägsstretch, 50 % återvunnen polyester, 50 % polyester. Stretch Cordura, 96 % polyester, 4 % elastan',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0,9 kg',
+      'XS, S, M, L, XL, XXL, XXXL, 4XL',
+      'Flera färger: Dress Blues, Black, Dark Sea Green, Tea Green, Halti Red, Electric Blue Lemonade',
+    ],
+    specLabels: [undefined, 'Vattenpelare', 'Andningsförmåga', undefined, undefined, undefined],
+  },
+  'halti-kevo-2-winter-boots-men': {
+    name: 'Halti Kevo 2 DX vinterkängor, herr',
+    description:
+      'Snörade vinterkängor för herr från Halti med vattentät och andningsbar DrymaxX®-membransocka och varmt textilfoder. Ovandelen i lättskött syntetläder av vattenbaserat PU sitter på en lätt, stötdämpande mellansula i Phylon och en yttersula i gummi med bra grepp. Halti har gjort dem för långa vinterturer, och den anatomiskt formade innersulan går att ta ur.',
+    specs: [
+      'Syntetläder, 80 % polyuretan, 20 % återvunnen polyester. Tät nättextil, 100 % återvunnen polyester. DrymaxX®-membran',
+      'Mellansula i Phylon, yttersula i gummi, uttagbar anatomisk innersula i EVA',
+      '1,1 kg',
+      '38, 39, 40, 41, 42, 43, 44, 45, 46',
+      'Otter Brown',
+      'Rengör med en fuktig svamp och mild tvål. Torka i rumstemperatur eller i högst 40 °C, aldrig på ett element eller i en varm bastu',
+    ],
+    specLabels: [undefined, 'Sula', undefined, undefined, undefined, undefined],
+  },
+  'halti-metso-mid-winter-boots-men': {
+    name: 'Halti Metso Mid DX vinterkängor, herr',
+    description:
+      'Snörade vinterkängor för herr från Halti med Thinsulate™-isolering, varmt foder i textilpäls och vattentät DrymaxX®-membransocka. Ovandelen kombinerar mocka, PU-läder och mjuk textil, och den uttagbara, stötdämpande innersulan Comfort+ är anatomiskt formad. Halti anger fritid som främsta användningsområde, och yttersulan i TPR-gummi greppar på olika underlag.',
+    specs: [
+      'Mocka, 100 % läder. PU-läder, 50 % polyester, 50 % polyuretan. Mjuk textil, 100 % polyester',
+      'Yttersula i TPR, uttagbar anatomisk innersula Comfort+',
+      '1,1 kg',
+      '40, 41, 42, 43, 44, 45, 46, 47',
+      'Apple Cinnamon Brown',
+      'Rengör med en fuktig svamp och mild tvål. Torka i rumstemperatur eller i högst 40 °C, aldrig på ett element eller i en varm bastu. Förvara torrt och luftigt',
+    ],
+    specLabels: [undefined, 'Sula', undefined, undefined, undefined, undefined],
+  },
+  'halti-skene-winter-boots-women': {
+    name: 'Halti Skene DX vinterkängor, dam',
+    description:
+      'Vinterkängor för dam från Halti med dragkedja på insidan som gör dem lätta att ta på och snörning som justerar passformen. En DrymaxX®-membransocka och ett varmt foder i textilpäls håller fötterna torra och varma i växlande väder, och den värmeisolerande innersulan stänger ute kylan underifrån. Den lätta mellansulan i Phylon ger komfort, och gummisulan greppar på vintriga underlag.',
+    specs: [
+      'Poly pongee, 100 % polyester. Mocka, 100 % läder. DrymaxX®-membran',
+      'Mellansula i Phylon, yttersula i gummi, värmeisolerande innersula i EVA',
+      '0,8 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Fog Beige, Glacier Grey',
+      'Rengör med en fuktig svamp och mild tvål. Torka i rumstemperatur eller i högst 40 °C, aldrig på ett element eller i en varm bastu',
+    ],
+    specLabels: [undefined, 'Sula', undefined, undefined, undefined, undefined],
+  },
+  'halti-sletta-zip-winter-boots-women': {
+    name: 'Halti Sletta Zip DX vinterstövlar, dam',
+    description:
+      'Mjuka, halvhöga vinterstövlar för dam från Halti med dragkedja, fleecefoder, Thinsulate™-vadd och vattentätt DrymaxX®-membran. Gummisulan Halti GripmaxX Arctic är gjord för snö och slask och sitter på en lätt, stötdämpande mellansula i Phylon. Den sockliknande konstruktionen förbättrar passformen, och innersulan Thermo går att ta ur.',
+    specs: [
+      'Slät, taftliknande textil med mjukt quiltat skaft och förstärkningar i mocka, 100 % polyester. Mocka, 100 % läder',
+      'Yttersula i gummi Halti GripmaxX Arctic, mellansula i Phylon, uttagbar innersula Thermo',
+      '0,7 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Apple Cinnamon Brown, Black/White',
+      'Rengör med en fuktig svamp och mild tvål. Torka i rumstemperatur eller i högst 40 °C, aldrig på ett element eller i en varm bastu',
+    ],
+    specLabels: [undefined, 'Sula', undefined, undefined, undefined, undefined],
+  },
+  'sk-suomi-foam-finger': {
+    name: 'Suomi supporterhand i skum, 23 x 45 cm',
+    description:
+      'En supporterhand i skum på 23 x 45 cm ur Happy Oranges Suomi-serie. Den är gjord för matcher, evenemang och andra tillfällen när du vill synas i mängden. Den blå handen bär texten FINLAND och Finlands flagga.',
+    specs: [
+      '23 x 45 cm',
+      'FINLAND och Finlands flagga på blå botten',
+      '6430080071500',
+    ],
+    specLabels: [undefined, 'Motiv', 'EAN'],
+  },
+  'sk-suomi-drawstring-bag': {
+    name: 'Suomi gympapåse, Finlands flagga',
+    description:
+      'En gympapåse från Tammer med Finlands flagga. Den passar på matchresor och i hejarklacken och fungerar också som souvenir, minnessak eller present.',
+    specs: [
+      'Finlands flagga',
+      '6410413343443',
+    ],
+    specLabels: ['Motiv', 'EAN'],
+  },
+  'sk-suomi-braces': {
+    name: 'Suomi hängslen, blå',
+    description:
+      'Blå hängslen med H-rygg, 3,5 cm breda, med texterna SUOMI och FINLAND samt Finlands flagga längs bandet. Baktill fästs de med två clips helt i metall som sitter stadigt. Suomikauppa.fi har formgett dem och Helsingin Olkain tillverkat dem, och de bär märket Avainlippu (Nyckelflaggan).',
+    specs: [
+      '3,5 cm breda',
+      'Blå med SUOMI, FINLAND och Finlands flagga',
+      'H-rygg, två clips helt i metall baktill',
+      'Formgivna av Suomikauppa.fi, tillverkade av Helsingin Olkain',
+      'Avainlippu (Nyckelflaggan)',
+    ],
+    specLabels: [undefined, undefined, 'Fäste', 'Formgivning och tillverkning', 'Märkning'],
+  },
+  'sk-suomi-spiky-wig': {
+    name: 'Suomi taggig supporterperuk',
+    description:
+      'En taggig supporterperuk ur Happy Oranges Suomi-serie, gjord för matcher, evenemang och andra tillfällen när du vill sticka ut. Blå och vita taggar reser sig från ett blått pannband med Finlands flagga.',
+    specs: [
+      'Blå och vit',
+      'Finlands flagga på pannbandet',
+      '6430080071456',
+    ],
+    specLabels: [undefined, 'Motiv', 'EAN'],
+  },
 }

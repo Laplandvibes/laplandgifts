@@ -1,12 +1,12 @@
 import ShopNav from '../components/ShopNav'
 import Hero from '../components/Hero'
 import ProductCategories from '../components/ProductCategories'
-import ValueProp from '../components/ValueProp'
+import HowItWorks from '../components/HowItWorks'
+import FinlandFans from '../components/FinlandFans'
 import ProductGrid from '../components/ProductGrid'
 import GiftGuide from '../components/GiftGuide'
 import Guides from '../components/Guides'
 import Newsletter from '../components/Newsletter'
-import ShippingInfo from '../components/ShippingInfo'
 import FAQ from '../components/FAQ'
 import RelatedSites from '../components/RelatedSites'
 import Footer from '../components/Footer'
@@ -29,7 +29,7 @@ import PageCredits from '../components/PageCredits'
 import { CATEGORIES } from '../data/categories'
 
 /** Open-licence photographs shown on the home page: hero, the seven category cards, the two guide covers. */
-const HOME_PHOTOS = ['hero-shop', ...CATEGORIES.map((c) => c.image), 'guide-craft', 'guide-itinerary']
+const HOME_PHOTOS = ['hero-lahjat', ...CATEGORIES.map((c) => c.image), 'hero-teno', 'guide-craft', 'guide-itinerary']
 
 /**
  * ETUSIVUN JÄRJESTYS — miksi mikäkin on missä (Vesa 5.9.2026: "koko etusivu on
@@ -41,6 +41,8 @@ const HOME_PHOTOS = ['hero-shop', ...CATEGORIES.map((c) => c.image), 'guide-craf
  *
  *   1  Hero            mikä tämä on, yhdellä lauseella
  *   2  ProductGrid     tavara ensin (Vesa 1.8.: sivun pitää alkaa tuotteista)
+ *   2b Suomi-fanit     Suomen sinisellä, heti nostojen jälkeen (Vesa 7.11.:
+ *                      "nostaa aina tunteita"); ennen vaatesivun viimeinen hylly
  *   3  Categories      hakemisto: mitä Lapista kannattaa ostaa, seitsemän ovea
  *   4  Kumppanit       Keloa — maksettu pääkumppani, KERRAN. Ennen tässä oli
  *                      lisäksi jaettu pääkumppanibanneri samasta yrityksestä,
@@ -52,8 +54,9 @@ const HOME_PHOTOS = ['hero-shop', ...CATEGORIES.map((c) => c.image), 'guide-craf
  *   6  Lahjaopas       lukija joka ei tiedä mitä ostaa: tilaisuus → tuote
  *   7  Ivalo           design-muoti, 12 kielellä
  *   8  Kalevala        korut, 12 kielellä (Vesa 3.9.)
- *   9  Näin ostaminen  epäilijälle: miten osto oikeasti tapahtuu
- *  10  Mitä teemme     samaan luottamuslohkoon — yksi lukema, ei kaksi hajallaan
+ *   9  Näin ostaminen  epäilijälle: miten osto oikeasti tapahtuu, ja
+ *  10  Mitä teemme     samassa tummassa lohkossa omalla Tenojoen kuvalla
+ *                      (HowItWorks, 7.11.: kaksi ikoniosiota olivat "ei mitään fiilistä")
  *  11  Appi            verkoston sovellus luottamuslohkon jälkeen, ei ennen
  *                      tuotteita (kaupan etusivu ei ala toisen tuotteen
  *                      mainoksella)
@@ -89,6 +92,7 @@ export default function Home() {
         <main id="main-content" tabIndex={-1}>
           <Hero />
           <ProductGrid />
+          <FinlandFans />
           <ProductCategories />
 
           {/* Kumppanit: Keloa-kortti (sponsors[0]). Tyhjät kortit ja premium-
@@ -115,8 +119,7 @@ export default function Home() {
             />
           </div>
 
-          <ValueProp />
-          <ShippingInfo />
+          <HowItWorks />
 
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <AppPromoHero />

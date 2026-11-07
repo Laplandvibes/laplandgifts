@@ -112,10 +112,10 @@
           // scripts/build-image-variants.mjs:stä; jos ne muuttuvat, muuta molemmat.
           l.setAttribute(
             'imagesrcset',
-            '/images/hero-shop-800.avif 800w, /images/hero-shop-1200.avif 1200w, /images/hero-shop-1600.avif 1600w, /images/hero-shop-1920.avif 1920w, /images/hero-shop.avif 2560w'
+            '/images/hero-lahjat-800.avif 800w, /images/hero-lahjat-1200.avif 1200w, /images/hero-lahjat-1600.avif 1600w, /images/hero-lahjat-1920.avif 1920w, /images/hero-lahjat.avif 2312w'
           );
-          l.setAttribute('imagesizes', '100vw');
-          l.href = '/images/hero-shop.avif';
+          l.setAttribute('imagesizes', '(min-width: 1024px) 50vw, 100vw');
+          l.href = '/images/hero-lahjat.avif';
           l.setAttribute('fetchpriority', 'high');
           document.head.appendChild(l);
         } catch (e) { /* fail silent */ }

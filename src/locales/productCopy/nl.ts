@@ -2463,4 +2463,252 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Geur', 'Gebruik', 'Op de markt gebracht door'],
   },
+  // Vaatevalikoiman laajennus 7.11.2026
+  'makia-glacier-parka': {
+    name: 'Makia Glacier parka',
+    description:
+      'Een langere winterparka van Makia met normale pasvorm en een voering van 100 procent gerecycled polyester. De buitenstof bestaat voor 73 procent uit katoen en voor 27 procent uit gerecycled nylon, en een waterkolom van 5000 mm helpt een enkele regenbui buiten te houden. Met een koord aan de binnenkant van de taille past u de pasvorm aan.',
+    specs: [
+      'Buitenstof 73 % katoen, 27 % gerecycled nylon. Voering 100 % gerecycled polyester',
+      '5000 mm',
+      'Zwart',
+      'S tot XXL',
+    ],
+    specLabels: [undefined, 'Waterkolom', undefined, undefined],
+  },
+  'makia-maren-parka': {
+    name: 'Makia Maren pufferjas',
+    description:
+      'Een ruime, halflange pufferjas van Makia, gevuld met imitatiedons van 100 procent gerecycled Sorona®-polyester. Sorona® is deels plantaardig, ademt en houdt de warmte vast. Met de ceintuur in de taille stelt u de pasvorm desgewenst bij.',
+    specs: [
+      'Vulling 100 % Sorona®-imitatiedons van gerecycled polyester',
+      'Ruim, halflang, ceintuur in de taille',
+      'Donker wijnrood',
+      'XS tot XXL',
+    ],
+    specLabels: [undefined, 'Pasvorm', undefined, undefined],
+  },
+  'makia-helsinki-parka': {
+    name: 'Makia Helsinki parka',
+    description:
+      'Een klassieke winterparka van Makia met normale pasvorm, veel zakruimte en een capuchon met afneembaar imitatiebont. Het ontwerp is gebaseerd op de klassieke Raglan Parka van Makia, en de vulling is imitatiedons van 100 procent gerecycled Sorona®-polyester. Sorona® is deels plantaardig, ademt en houdt de warmte vast.',
+    specs: [
+      'Vulling 100 % Sorona®-imitatiedons van gerecycled polyester',
+      'Afneembaar imitatiebont',
+      'Donkergroen',
+      'S tot XXL',
+    ],
+    specLabels: [undefined, 'Capuchon', undefined, undefined],
+  },
+  'makia-else-parka': {
+    name: 'Makia Else parka',
+    description:
+      'Een halflange winterparka van Makia met normale pasvorm en een capuchon met een afneembare voering van imitatiebont. De vulling is imitatiedons van 100 procent gerecycled Sorona®-polyester, en via een verborgen verstelling in de taille past u de pasvorm aan.',
+    specs: [
+      'Vulling 100 % Sorona®-imitatiedons van gerecycled polyester',
+      'Afneembare voering van imitatiebont',
+      'Gebroken wit',
+      'XS tot XXL',
+    ],
+    specLabels: [undefined, 'Capuchon', undefined, undefined],
+  },
+  'makia-frost-knit': {
+    name: 'Makia Frost gebreide trui',
+    description:
+      'Een gebreide trui van Makia met normale pasvorm, gemaakt van een polyestermix en afgewerkt met een kleurverloop. Maten S tot XXL.',
+    specs: [
+      'Polyestermix',
+      'Kleurverloop',
+      'S tot XXL',
+    ],
+    specLabels: [undefined, 'Kleurstelling', undefined],
+  },
+  'makia-salla-knit': {
+    name: 'Makia Salla coltrui van merinowol',
+    description:
+      'Een coltrui van Makia met normale pasvorm, gebreid van 100 procent merinowol. Over lijf en mouwen lopen details in ajourbreisel (opengewerkt breiwerk). Maten XS tot XXL.',
+    specs: [
+      '100 % merinowol',
+      'Ajourbreisel op lijf en mouwen',
+      'XS tot XXL',
+    ],
+    specLabels: [undefined, 'Details', undefined],
+  },
+  'makia-saarni-knit': {
+    name: 'Makia Saarni merinotrui',
+    description:
+      'Een trui van Makia met normale pasvorm, gebreid van 100 procent merinowol. Maten S tot XXL.',
+    specs: [
+      '100 % merinowol',
+      'S tot XXL',
+    ],
+  },
+  'makia-siina-knit': {
+    name: 'Makia Siina trui van wolmix',
+    description:
+      'Een trui van Makia met wijde mouwen en normale pasvorm, gebreid van een wolmix. Door de wolmix voelt het breisel dikker aan. Maten XS tot XXL.',
+    specs: [
+      'Wolmix',
+      'Wijd',
+      'XS tot XXL',
+    ],
+    specLabels: [undefined, 'Mouwen', undefined],
+  },
+  'halti-ascloud-ski-jacket-women': {
+    name: 'Halti Ascloud gewatteerde skijas, dames',
+    description:
+      'Een gewatteerde skijas voor dames van Halti, met Microtherm®-isolatie, een vaste sneeuwvanger en een skipaszak met rits. De buitenstof heeft een waterdichtheid van 10000 mm en een ademend vermogen van 10000 g/m²/24 h. Capuchon en zoom zijn verstelbaar, de mouwen hebben binnenmanchetten van Lycra, en Halti ontwierp de jas voor zowel de stad als de piste.',
+    specs: [
+      'Matt Memory, 65 % gerecycled polyester, 35 % polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1,0 kg',
+      '34, 36, 38, 40, 42, 44, 46',
+      'Meerdere kleuren: Crocus Petal, Seedpearl White, Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, 'Waterdichtheid', 'Ademend vermogen', undefined, undefined, undefined],
+  },
+  'halti-ascale-ii-ski-jacket-men': {
+    name: 'Halti Ascale II gewatteerde skijas, heren',
+    description:
+      'Een gewatteerde skijas voor heren van Halti, met 160 g Microtherm® Arcty-isolatie, een vaste sneeuwvanger en een skipaszak met rits. De matte buitenstof heeft een waterafstotende Rudolf BIONIC-FINISH®-behandeling, een waterdichtheid van 10000 mm en een ademend vermogen van 10000 g/m²/24 h. Binnenin zitten manchetten van Lycra en een stormklep over de volle lengte, en Halti ontwierp de jas zo dat hij zowel bij een skibroek als bij een spijkerbroek past.',
+    specs: [
+      'Waterproof Taslan, 50 % gerecycled polyester, 50 % polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1,0 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, 'Waterdichtheid', 'Ademend vermogen', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-women': {
+    name: 'Halti Carvey II DX skibroek, dames',
+    description:
+      'Een waterdichte skibroek voor dames van Halti in DrymaxX®-stof die in 4 richtingen rekt, met alle naden getapet en afneembare bretels. De DrymaxX®-stof heeft een waterdichtheid van 15000 mm en een ademend vermogen van 15000 g/m²/24 h, en de rechte snit zit tussen aansluitend en ruim in. De taille is verstelbaar, de zomen van de pijpen zijn versterkt, en de broek heeft sneeuwvangers, steekzakken met rits en een dijzak met een waterafstotende rits.',
+    specs: [
+      'DrymaxX® NN, rekt in 4 richtingen, 50 % gerecycled polyester, 50 % polyester. Stretch Cordura, 96 % polyester, 4 % elastaan. Geen aparte voering',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0,8 kg',
+      '34, 36, 38, 40, 42, 44, 46, 48',
+      'Meerdere kleuren: Dark Sea Green, Black, Seedpearl White, Vivid Purple, Lemon Pepper Beige',
+    ],
+    specLabels: [undefined, 'Waterdichtheid', 'Ademend vermogen', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-men': {
+    name: 'Halti Carvey II DX skibroek, heren',
+    description:
+      'Een waterdichte skibroek voor heren van Halti in DrymaxX®-stof die in 4 richtingen rekt, met alle naden getapet en afneembare bretels. De broek heeft een waterafstotende DWR-behandeling, en de DrymaxX®-stof heeft een waterdichtheid van 15000 mm en een ademend vermogen van 15000 g/m²/24 h. De rechte skisnit zit tussen aansluitend en ruim in, met een verstelbare taille, versterkte zomen, sneeuwvangers, steekzakken met rits en een dijzak met een waterafstotende rits.',
+    specs: [
+      'DrymaxX® NN, rekt in 4 richtingen, 50 % gerecycled polyester, 50 % polyester. Stretch Cordura, 96 % polyester, 4 % elastaan',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0,9 kg',
+      'XS, S, M, L, XL, XXL, XXXL, 4XL',
+      'Meerdere kleuren: Dress Blues, Black, Dark Sea Green, Tea Green, Halti Red, Electric Blue Lemonade',
+    ],
+    specLabels: [undefined, 'Waterdichtheid', 'Ademend vermogen', undefined, undefined, undefined],
+  },
+  'halti-kevo-2-winter-boots-men': {
+    name: 'Halti Kevo 2 DX winterschoenen, heren',
+    description:
+      'Winterschoenen met veters voor heren van Halti, met een waterdichte, ademende DrymaxX®-membraansok en een warme textielvoering. Het bovenwerk is makkelijk te reinigen kunstleer van PU op waterbasis, op een lichte, schokdempende Phylon-tussenzool en een rubberen loopzool met goede grip. Halti ontwierp ze voor lange wintertochten, en de anatomisch gevormde binnenzool is uitneembaar.',
+    specs: [
+      'Kunstleer, 80 % polyurethaan, 20 % gerecycled polyester. Dicht meshtextiel, 100 % gerecycled polyester. DrymaxX®-membraan',
+      'Phylon-tussenzool, rubberen loopzool, uitneembare anatomische EVA-binnenzool',
+      '1,1 kg',
+      '38, 39, 40, 41, 42, 43, 44, 45, 46',
+      'Otter Brown',
+      'Reinigen met een vochtige spons en milde zeep. Laten drogen bij kamertemperatuur of bij maximaal 40 °C, nooit op een radiator of in een hete sauna',
+    ],
+    specLabels: [undefined, 'Zool', undefined, undefined, undefined, undefined],
+  },
+  'halti-metso-mid-winter-boots-men': {
+    name: 'Halti Metso Mid DX winterschoenen, heren',
+    description:
+      'Winterschoenen met veters voor heren van Halti, met Thinsulate™-isolatie, een warme voering van textielpluche en een waterdichte DrymaxX®-membraansok. Het bovenwerk combineert suède, PU-leer en zacht textiel, en de uitneembare, schokdempende Comfort+-binnenzool is anatomisch gevormd. Volgens Halti zijn ze vooral bedoeld voor vrijetijdsgebruik, en de rubberen TPR-loopzool heeft grip op verschillende ondergronden.',
+    specs: [
+      'Suède, 100 % leer. PU-leer, 50 % polyester, 50 % polyurethaan. Zacht textiel, 100 % polyester',
+      'TPR-loopzool, uitneembare anatomische Comfort+-binnenzool',
+      '1,1 kg',
+      '40, 41, 42, 43, 44, 45, 46, 47',
+      'Apple Cinnamon Brown',
+      'Reinigen met een vochtige spons en milde zeep. Laten drogen bij kamertemperatuur of bij maximaal 40 °C, nooit op een radiator of in een hete sauna. Droog en luchtig bewaren',
+    ],
+    specLabels: [undefined, 'Zool', undefined, undefined, undefined, undefined],
+  },
+  'halti-skene-winter-boots-women': {
+    name: 'Halti Skene DX winterschoenen, dames',
+    description:
+      'Winterschoenen voor dames van Halti met een rits aan de binnenzijde, zodat ze makkelijk aan te trekken zijn, en veters om de pasvorm aan te passen. Een DrymaxX®-membraansok en een warme voering van textielpluche houden de voeten droog en warm bij wisselend weer, en de thermische binnenzool houdt de kou van onderen tegen. De lichte Phylon-tussenzool zorgt voor comfort en de rubberen loopzool heeft grip op winterse ondergrond.',
+    specs: [
+      'Poly pongee, 100 % polyester. Suède, 100 % leer. DrymaxX®-membraan',
+      'Phylon-tussenzool, rubberen loopzool, thermische EVA-binnenzool',
+      '0,8 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Fog Beige, Glacier Grey',
+      'Reinigen met een vochtige spons en milde zeep. Laten drogen bij kamertemperatuur of bij maximaal 40 °C, nooit op een radiator of in een hete sauna',
+    ],
+    specLabels: [undefined, 'Zool', undefined, undefined, undefined, undefined],
+  },
+  'halti-sletta-zip-winter-boots-women': {
+    name: 'Halti Sletta Zip DX winterlaarzen, dames',
+    description:
+      'Zachte, halfhoge winterlaarzen voor dames van Halti, met rits, fleecevoering, Thinsulate™-vulling en een waterdicht DrymaxX®-membraan. De rubberen Halti GripmaxX Arctic-loopzool is ontworpen voor sneeuw en sneeuwbrij, met daarboven een lichte, schokdempende Phylon-tussenzool. De sokachtige constructie draagt bij aan een goede pasvorm, en de Thermo-binnenzool is uitneembaar.',
+    specs: [
+      'Glad, taftachtig textiel met een zacht doorgestikt bovenwerk en versterkingen van suède, 100 % polyester. Suède, 100 % leer',
+      'Rubberen loopzool Halti GripmaxX Arctic, Phylon-tussenzool, uitneembare Thermo-binnenzool',
+      '0,7 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Apple Cinnamon Brown, Black/White',
+      'Reinigen met een vochtige spons en milde zeep. Laten drogen bij kamertemperatuur of bij maximaal 40 °C, nooit op een radiator of in een hete sauna',
+    ],
+    specLabels: [undefined, 'Zool', undefined, undefined, undefined, undefined],
+  },
+  'sk-suomi-foam-finger': {
+    name: 'Suomi schuimhand voor supporters, 23 x 45 cm',
+    description:
+      'Een schuimhand van 23 x 45 cm voor supporters, uit de Suomi-lijn van Happy Orange. Hij is gemaakt voor wedstrijden, evenementen en andere gelegenheden waarbij u in de menigte wilt opvallen. Op de blauwe hand staan het woord FINLAND en de Finse vlag.',
+    specs: [
+      '23 x 45 cm',
+      'FINLAND en de Finse vlag op blauw',
+      '6430080071500',
+    ],
+    specLabels: [undefined, 'Motief', 'EAN'],
+  },
+  'sk-suomi-drawstring-bag': {
+    name: 'Suomi rugzak met trekkoord, Finse vlag',
+    description:
+      'Een rugzak met trekkoord van Tammer, met de Finse vlag erop. Hij is handig op weg naar wedstrijden en met de supportersgroep, en is ook geschikt als souvenir, aandenken of cadeau.',
+    specs: [
+      'Finse vlag',
+      '6410413343443',
+    ],
+    specLabels: ['Motief', 'EAN'],
+  },
+  'sk-suomi-braces': {
+    name: 'Suomi bretels, blauw',
+    description:
+      'Blauwe bretels met H-rug, 3,5 cm breed, met SUOMI, FINLAND en de Finse vlag op de band. Op de rug worden ze vastgezet met twee volledig metalen clips die stevig houden. Suomikauppa.fi ontwierp ze en Helsingin Olkain maakte ze, en ze dragen het Avainlippu-keurmerk (Sleutelvlag).',
+    specs: [
+      '3,5 cm breed',
+      'Blauw met SUOMI, FINLAND en de Finse vlag',
+      'H-rug, twee volledig metalen clips op de rug',
+      'Ontworpen door Suomikauppa.fi, gemaakt door Helsingin Olkain',
+      'Avainlippu (Sleutelvlag)',
+    ],
+    specLabels: [undefined, undefined, 'Sluiting', 'Ontwerp en vervaardiging', 'Keurmerk'],
+  },
+  'sk-suomi-spiky-wig': {
+    name: 'Suomi stekelpruik voor supporters',
+    description:
+      'Een stekelpruik uit de Suomi-supporterslijn van Happy Orange, voor wedstrijden, evenementen en andere gelegenheden waarbij u wilt opvallen. Blauwe en witte stekels steken omhoog uit een blauwe hoofdband met de Finse vlag.',
+    specs: [
+      'Blauw en wit',
+      'Finse vlag op de hoofdband',
+      '6430080071456',
+    ],
+    specLabels: [undefined, 'Motief', 'EAN'],
+  },
 }

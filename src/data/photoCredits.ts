@@ -61,14 +61,6 @@ const CHECKS =
   'name, 64×36 pixel and photographer+day sibling check against all 29 repos 4.–9.10.2026; plates, faces and lettering checked at 100 %'
 
 export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
-  "cat-design": {
-    source: "Pexels", title: "Cups on a Round Wooden Board", author: "Jordan Benton",
-    license: "Pexels", licenseUrl: "https://www.pexels.com/license/",
-    sourceUrl: "https://www.pexels.com/photo/cups-on-a-round-wooden-board-4119134/", sourceId: "pexels:4119134",
-    taken: "2020-04-09", retrieved: WHEN,
-    shows: "Speckled enamel mugs and a green ceramic vase on a round wooden board",
-    changes: "resized 6538×4359 → 2560×1707, AVIF + WebP; no crop", checks: CHECKS,
-  },
   "cat-clothing": {
     source: "Pexels", title: "Close-up Photo of Folded Knitted Sweaters", author: "Vlada Karpovich",
     license: "Pexels", licenseUrl: "https://www.pexels.com/license/",
@@ -374,6 +366,33 @@ export const PHOTO_CREDITS: Record<string, PhotoCredit> = {
     shows: "A wood-fired hot tub with a chimney on a snowy lakeshore in winter sun",
     changes: "original 1280x960 re-encoded at full size (AVIF + WebP); no resize, no crop (ShareAlike)", checks: CHECKS,
   },
+}
+
+/**
+ * LaplandVibesin omat valokuvat (heinä- ja lokakuun 2026 reissut). Ei lisenssiä eikä tekijää linkitettävänä:
+ * PhotoMark näyttää "Kuva: LaplandVibes", PageCredits ohittaa ne. Paikka ja master-tiedosto tänne, jotta kuvan
+ * alkuperä löytyy koodista (inventaario: _reissu-2026-10/KUVA-INVENTAARIO.md, varaus: _kuvavaihto-20261004/ledger.tsv).
+ * 🔴 Kuvan saa ottaa tänne vasta kun claim.mjs on varannut sen laplandgiftsille.
+ */
+export const OWN_PHOTOS: Record<string, { place: string; taken: string; master: string; shows: string }> = {
+  'hero-teno': {
+    place: 'Tenojoki', taken: '2026-10-13', master: '2026-10-13_inari-utsjoki-nuorgam-karigasniemi/20261013_143139.jpg',
+    shows: 'Frosted ground, two pines and the Teno river valley in October sun, road 970 between Utsjoki and Karigasniemi',
+  },
+  'cat-design': {
+    place: 'Pentikmäki, Posio', taken: '2026-10-10', master: '2026-10-10_ruka-posio-ranua-kemijarvi/20261010_125314.jpg',
+    shows: 'Pentik ceramic plates, vases and candle holders on white shelves at Pentikmäki in Posio',
+  },
+}
+
+/** Own photograph for an image name or a served path (same normalisation as creditFor). */
+export function ownPhotoFor(nameOrSrc: string | undefined) {
+  if (!nameOrSrc) return undefined
+  return OWN_PHOTOS[imageBase(nameOrSrc)]
+}
+
+function imageBase(nameOrSrc: string): string {
+  return nameOrSrc.split('?')[0].replace(/^\/images\//, '').replace(/\.(avif|webp|jpe?g)$/, '').replace(/-(?:320|480|640|800|1200|1600|1920)$/, '')
 }
 
 /** Credit for an image name or a served path: query string, extension and -480/-800 size suffix are ignored. */

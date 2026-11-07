@@ -42,9 +42,32 @@ export function byShippingBreadth(products: Product[]): Product[] {
  * kärkeen — sitä ei toimiteta Suomen ulkopuolelle.
  */
 export function pickHighlights(products: Product[], n: number): Product[] {
-  return products
+  const order = (a: Ranked, b: Ranked) => a.k - b.k || b.p.priceFrom - a.p.priceFrom || a.i - b.i
+  const sorted = products
     .map((p, i) => ({ p, i, k: BREADTH[PARTNERS[p.partnerId]?.shipsTo] ?? 3 }))
-    .sort((a, b) => a.k - b.k || b.p.priceFrom - a.p.priceFrom || a.i - b.i)
-    .slice(0, n)
-    .map((x) => x.p)
+    .sort(order)
+  // 🔴 Yksi tuote per brändi ensin (Vesa 7.11.2026: vaatesivun Talvi-nosto oli
+  // neljä Makian tuotetta, koska Makia toimittaa kaikkialle ja on kallein, ja samat
+  // neljä toistuivat heti alla Makian hyllyssä). Vasta jos brändejä on liian vähän,
+  // loput täytetään samasta järjestyksestä. Valitut järjestetään lopuksi samalla
+  // avaimella, joten toimituslaajuus ratkaisee yhä kärjen.
+  const picked: Ranked[] = []
+  const brands = new Set<string>()
+  for (const x of sorted) {
+    if (picked.length === n) break
+    if (brands.has(x.p.brand)) continue
+    brands.add(x.p.brand)
+    picked.push(x)
+  }
+  for (const x of sorted) {
+    if (picked.length === n) break
+    if (!picked.includes(x)) picked.push(x)
+  }
+  return picked.sort(order).map((x) => x.p)
+}
+
+interface Ranked {
+  p: Product
+  i: number
+  k: number
 }

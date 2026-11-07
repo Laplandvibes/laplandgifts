@@ -63,6 +63,17 @@ describe('toimitusjärjestys', () => {
     }
   })
 
+  it('pickHighlights ei nosta samaa brändiä kahdesti, kun brändejä riittää', () => {
+    // Vesa 7.11.2026: vaatesivun Talvi-nostossa oli neljä Makian tuotetta.
+    for (const cat of ['design', 'clothing', 'handicrafts', 'treats', 'superfoods'] as const) {
+      const rows = productsByCategory(cat)
+      const picks = pickHighlights(rows, 4)
+      const brands = new Set(rows.map((p) => p.brand))
+      if (brands.size < 4) continue
+      expect(new Set(picks.map((p) => p.brand)).size, cat).toBe(picks.length)
+    }
+  })
+
   it('jokainen tuotteita listaava sivu käyttää järjestystä', () => {
     // 🔴 Staattinen portti, koska tämä unohtui kahdesti: korjasin ensin vain
     // kategoriasivun, ja Vesa löysi etusivun; sitten löytyi vielä tuotesivun
@@ -75,6 +86,7 @@ describe('toimitusjärjestys', () => {
       'pages/GiftGuides.tsx',
       'pages/Theme.tsx',
       'components/shop/ThemePicks.tsx',
+      'components/FinlandFans.tsx',
     ]
     for (const rel of surfaces) {
       const src = readFileSync(join(__dirname, '..', '..', rel), 'utf8')

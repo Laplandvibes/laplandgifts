@@ -27,7 +27,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "cat-design": {
-    "full": 2560,
+    "full": 2252,
     "w": [
       480,
       800,
@@ -267,6 +267,15 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       800
     ]
   },
+  "hero-lahjat": {
+    "full": 2312,
+    "w": [
+      800,
+      1200,
+      1600,
+      1920
+    ]
+  },
   "hero-shop": {
     "full": 2560,
     "w": [
@@ -274,6 +283,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       1200,
       1600,
       1920
+    ]
+  },
+  "hero-teno": {
+    "full": 1920,
+    "w": [
+      800,
+      1200,
+      1600
     ]
   },
   "prod-amethyst-mine-snowshoe-luosto": {
@@ -519,6 +536,38 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-ascale-ii-ski-jacket-men": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-ascloud-ski-jacket-women": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-carvey-ii-ski-pants-men": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-carvey-ii-ski-pants-women": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-crostie-merino-beanie": {
     "full": 800,
     "w": [
@@ -551,6 +600,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-kevo-2-winter-boots-men": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-kroka-mitten": {
     "full": 800,
     "w": [
@@ -567,6 +624,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-halti-metso-mid-winter-boots-men": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-halti-pehmee-merino-beanie": {
     "full": 800,
     "w": [
@@ -576,6 +641,22 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-halti-rockmoon-fleece-hoodie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-skene-winter-boots-women": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-halti-sletta-zip-winter-boots-women": {
     "full": 800,
     "w": [
       320,
@@ -844,6 +925,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-makia-else-parka": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-makia-form-jacket": {
     "full": 800,
     "w": [
@@ -860,7 +949,39 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-makia-frost-knit": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-glacier-parka": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-helsinki-parka": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-makia-kontio-hoodie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-maren-parka": {
     "full": 800,
     "w": [
       320,
@@ -900,7 +1021,31 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-makia-saarni-knit": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-salla-knit": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-makia-sibelius-beanie": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-makia-siina-knit": {
     "full": 800,
     "w": [
       320,
@@ -1964,6 +2109,29 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-suomi-braces": {
+    "full": 500,
+    "w": [
+      320,
+      480
+    ]
+  },
+  "prod-sk-suomi-drawstring-bag": {
+    "full": 700,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-suomi-foam-finger": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-suomi-hockey-jersey": {
     "full": 360,
     "w": [
@@ -1971,6 +2139,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-suomi-propeller-cap": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-suomi-spiky-wig": {
     "full": 800,
     "w": [
       320,

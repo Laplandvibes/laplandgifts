@@ -680,6 +680,27 @@ const MAP: Record<string, SubgroupId> = {
   'sk-emendo-christmas-sauna-set': 'sauna',
   'sk-emendo-gingerbread-glogg-scent': 'sauna',
   'sk-aromageddon-gingerbread-scent': 'sauna',
+  // vaatevalikoiman laajennus 2026-11-07
+  'makia-glacier-parka': 'brandmakia',
+  'makia-maren-parka': 'brandmakia',
+  'makia-helsinki-parka': 'brandmakia',
+  'makia-else-parka': 'brandmakia',
+  'makia-frost-knit': 'brandmakia',
+  'makia-salla-knit': 'brandmakia',
+  'makia-saarni-knit': 'brandmakia',
+  'makia-siina-knit': 'brandmakia',
+  'halti-ascloud-ski-jacket-women': 'brandhalti',
+  'halti-ascale-ii-ski-jacket-men': 'brandhalti',
+  'halti-carvey-ii-ski-pants-women': 'brandhalti',
+  'halti-carvey-ii-ski-pants-men': 'brandhalti',
+  'halti-kevo-2-winter-boots-men': 'brandhalti',
+  'halti-metso-mid-winter-boots-men': 'brandhalti',
+  'halti-skene-winter-boots-women': 'brandhalti',
+  'halti-sletta-zip-winter-boots-women': 'brandhalti',
+  'sk-suomi-foam-finger': 'finlandtheme',
+  'sk-suomi-drawstring-bag': 'finlandtheme',
+  'sk-suomi-braces': 'finlandtheme',
+  'sk-suomi-spiky-wig': 'finlandtheme',
 }
 
 export function subgroupOf(slug: string): SubgroupId {

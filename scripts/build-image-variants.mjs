@@ -42,7 +42,7 @@ const PLAN = [
 // Vain data-tiedostoissa oikeasti viitatut kuvat. Kansiossa on myös vanhoja
 // V1-aikaisia tiedostoja, joita mikään sivu ei renderöi; niille ei tehdä
 // variantteja, jottei repoon kerry käyttämätöntä binääriä.
-const used = new Set(['hero-shop'])
+const used = new Set(['hero-shop', 'hero-lahjat', 'hero-teno'])
 // 🔴 experiences.ts PUUTTUI TÄSTÄ LISTASTA (lisätty 2.8.2026). Se oli
 // varsinainen syy siihen, että elämyskuvat jäivät ilman variantteja:
 // skripti ei lukenut tiedostoa lainkaan, joten kuvat eivät päätyneet

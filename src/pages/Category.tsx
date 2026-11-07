@@ -15,7 +15,7 @@ import { ArrowRight } from 'lucide-react'
 import { groupProducts, subgroupLabel, subgroupNote, SUBGROUP_THEME } from '../data/subgroups'
 import { THEME_COPY } from '../locales/themeCopy'
 import { themesForCategory } from '../data/themeProducts'
-import { byShippingBreadth } from '../data/sortProducts'
+import { byShippingBreadth, pickHighlights } from '../data/sortProducts'
 import { PARTNERS } from '../data/partners'
 import { mergeExcept, shipsTo } from '../data/shipping'
 import ThemePicks from '../components/shop/ThemePicks'
@@ -161,6 +161,25 @@ export default function Category() {
   // auttaisi lainkaan.
   const emptyMessage = all.length === 0 ? t.emptyCategory : t.emptyForCountry
 
+  // Teemanostot (enintään kaksi) ja niiden kortit. Samat kortit, jotka ThemePicks
+  // piirtää, joten hylly osaa siirtää ne loppuunsa.
+  const lifts = country ? [] : themesForCategory(category.id).slice(0, 2)
+  const lifted = new Set(lifts.flatMap(({ items }) => pickHighlights(items, 4).map((p) => p.slug)))
+  /**
+   * Hyllyn järjestys (Vesa 7.11.2026: "miksi on samoja kuvia ja samoja aiheita
+   * kaksi makialta? eikö saada monipuolisempaa tarjontaa eikä vain pipoja?").
+   * - Vaatteissa hylly on brändin hylly, ja kallein ensin nostaa takit,
+   *   laskettelu-asut ja kengät pipojen edelle. Hyllyn sisällä kaikilla on sama
+   *   kauppa, joten toimitusjärjestys ei muutu.
+   * - Teemanostossa jo näkynyt kortti siirtyy hyllynsä loppuun, ettei sama
+   *   tuote ole heti noston alla toista kertaa. Mitään ei piiloteta, ja rivit
+   *   pysyvät täysinä.
+   */
+  const shelfOrder = (items: typeof visible) => {
+    const sorted = category.id === 'clothing' ? [...items].sort((a, b) => b.priceFrom - a.priceFrom) : items
+    return [...sorted.filter((p) => !lifted.has(p.slug)), ...sorted.filter((p) => lifted.has(p.slug))]
+  }
+
   return (
     <>
       <ShopNav />
@@ -189,8 +208,17 @@ export default function Category() {
             />
           </picture>
           <PhotoMark image={category.image} />
-          <div className="absolute inset-0 bg-night/55" aria-hidden="true" />
-          <div className="absolute inset-0 bg-gradient-to-t from-night/80 via-night/35 to-transparent" aria-hidden="true" />
+          {/* 🔴 Yksi tummennus, alhaalta (Vesa 7.11.2026: "onhan nämä hero osiot lähes
+              kaikkialla ihan poor?"). Ennen kuvan päällä oli KAKSI kerrosta: koko
+              kuvan peittävä night/55 ja sen päällä alhaalta night/80-liukuväri.
+              Yhdessä ne himmensivät kuvan yläreunaakin yli puolella, vaikka teksti
+              on vain alaosassa, ja jokainen kategoriakuva näytti likaiselta. Nyt
+              tummennus on vain tekstin kohdalla. Puhelimessa teksti vie suuremman
+              osan kaistasta, joten liukuväri nousee siellä korkeammalle. */}
+          <div
+            className="absolute inset-0 bg-gradient-to-t from-night/90 via-night/65 via-50% to-night/15 md:via-night/50 md:via-40% md:to-transparent"
+            aria-hidden="true"
+          />
           <div className="absolute inset-0 flex items-end">
             <div className="mx-auto w-full max-w-7xl px-4 pb-8">
               <h1 className="font-heading text-5xl tracking-wide text-white md:text-7xl">
@@ -288,13 +316,11 @@ export default function Category() {
                   nosteta, koska maavalinnan tehnyt lukija näkee jo pelkkää
                   itselleen toimitettavaa. */}
               {!country &&
-                themesForCategory(category.id)
-                  .slice(0, 2)
-                  .map(({ theme, items }) => (
+                lifts.map(({ theme, items }) => (
                     <ThemePicks key={theme.id} themeId={theme.id} items={items} lang={lang} />
                   ))}
               {(() => {
-                const groups = groupProducts(category.id, visible)
+                const groups = groupProducts(category.id, visible).map((g) => ({ ...g, items: shelfOrder(g.items) }))
                 if (!visible.length || groups.length <= 1) {
                   return (
                     <ProductGridSection

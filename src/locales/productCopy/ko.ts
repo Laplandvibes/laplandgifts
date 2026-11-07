@@ -2464,4 +2464,252 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, '향', '사용법', '판매사'],
   },
+  // Vaatevalikoiman laajennus 7.11.2026
+  'makia-glacier-parka': {
+    name: '마키아 Glacier 파카',
+    description:
+      '레귤러 핏에 재활용 폴리에스터 100% 안감을 댄 마키아의 긴 기장 겨울 파카입니다. 겉감은 면 73%와 재활용 나일론 27%이며, 내수압 5000 mm로 가끔 내리는 비를 막아 줍니다. 허리 안쪽의 끈으로 핏을 조절할 수 있습니다.',
+    specs: [
+      '겉감 면 73%, 재활용 나일론 27%. 안감 재활용 폴리에스터 100%',
+      '5000 mm',
+      '블랙',
+      'S부터 XXL까지',
+    ],
+    specLabels: [undefined, '내수압', undefined, undefined],
+  },
+  'makia-maren-parka': {
+    name: '마키아 Maren 패딩 코트',
+    description:
+      '재활용 폴리에스터 100% Sorona® 인조 다운을 채운 마키아의 여유 있는 중간 기장 패딩 코트입니다. Sorona®는 일부 식물 유래 소재로, 통기성이 있고 온기를 잘 유지합니다. 필요하면 허리 벨트로 핏을 조절할 수 있습니다.',
+    specs: [
+      '충전재 Sorona® 재활용 폴리에스터 인조 다운 100%',
+      '릴랙스 핏, 중간 기장, 허리 벨트',
+      '다크 와인 레드',
+      'XS부터 XXL까지',
+    ],
+    specLabels: [undefined, '핏', undefined, undefined],
+  },
+  'makia-helsinki-parka': {
+    name: '마키아 Helsinki 파카',
+    description:
+      '레귤러 핏에 넉넉한 포켓과 인조 퍼를 떼어 낼 수 있는 후드를 갖춘 마키아의 클래식 겨울 파카입니다. 마키아의 클래식 Raglan Parka를 바탕으로 했으며, 충전재는 재활용 폴리에스터 100% Sorona® 인조 다운입니다. Sorona®는 일부 식물 유래 소재로, 통기성이 있고 온기를 잘 유지합니다.',
+    specs: [
+      '충전재 Sorona® 재활용 폴리에스터 인조 다운 100%',
+      '탈착식 인조 퍼',
+      '다크 그린',
+      'S부터 XXL까지',
+    ],
+    specLabels: [undefined, '후드', undefined, undefined],
+  },
+  'makia-else-parka': {
+    name: '마키아 Else 파카',
+    description:
+      '레귤러 핏에 탈착식 인조 퍼 안감을 댄 후드가 달린 마키아의 중간 기장 겨울 파카입니다. 충전재는 재활용 폴리에스터 100% Sorona® 인조 다운이며, 허리에 숨겨진 조절 장치로 핏을 맞출 수 있습니다.',
+    specs: [
+      '충전재 Sorona® 재활용 폴리에스터 인조 다운 100%',
+      '탈착식 인조 퍼 안감',
+      '오프화이트',
+      'XS부터 XXL까지',
+    ],
+    specLabels: [undefined, '후드', undefined, undefined],
+  },
+  'makia-frost-knit': {
+    name: '마키아 Frost 니트 스웨터',
+    description:
+      '폴리에스터 혼방으로 짠 마키아의 레귤러 핏 니트 스웨터로, 그러데이션 배색으로 마무리했습니다. 사이즈는 S부터 XXL까지입니다.',
+    specs: [
+      '폴리에스터 혼방',
+      '그러데이션',
+      'S부터 XXL까지',
+    ],
+    specLabels: [undefined, '배색', undefined],
+  },
+  'makia-salla-knit': {
+    name: '마키아 Salla 메리노 터틀넥 니트',
+    description:
+      '메리노 울 100%로 짠 마키아의 레귤러 핏 터틀넥 니트입니다. 몸판과 소매에 아주르(비침 무늬) 니트 디테일이 들어가 있습니다. 사이즈는 XS부터 XXL까지입니다.',
+    specs: [
+      '메리노 울 100%',
+      '몸판과 소매에 아주르 니트 디테일',
+      'XS부터 XXL까지',
+    ],
+    specLabels: [undefined, '디테일', undefined],
+  },
+  'makia-saarni-knit': {
+    name: '마키아 Saarni 메리노 니트',
+    description:
+      '메리노 울 100%로 짠 마키아의 레귤러 핏 스웨터입니다. 사이즈는 S부터 XXL까지입니다.',
+    specs: [
+      '메리노 울 100%',
+      'S부터 XXL까지',
+    ],
+  },
+  'makia-siina-knit': {
+    name: '마키아 Siina 울 혼방 니트',
+    description:
+      '울 혼방으로 짠 마키아의 레귤러 핏 니트로, 소매가 넓습니다. 울 혼방이라 니트가 한층 도톰하게 느껴집니다. 사이즈는 XS부터 XXL까지입니다.',
+    specs: [
+      '울 혼방',
+      '와이드',
+      'XS부터 XXL까지',
+    ],
+    specLabels: [undefined, '소매', undefined],
+  },
+  'halti-ascloud-ski-jacket-women': {
+    name: '할티 Ascloud 여성 스키 패딩 재킷',
+    description:
+      'Microtherm® 보온재, 고정식 파우더 스커트, 지퍼 달린 리프트권 포켓을 갖춘 할티의 여성용 스키 패딩 재킷입니다. 겉감의 내수압은 10000 mm, 투습도는 10000 g/m²/24 h입니다. 후드와 밑단은 조절할 수 있고 소매 안쪽에는 라이크라 커프스가 있으며, 할티는 이 재킷을 슬로프는 물론 도심에서도 입을 수 있게 만들었습니다.',
+    specs: [
+      'Matt Memory, 재활용 폴리에스터 65%, 폴리에스터 35%',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1.0 kg',
+      '34, 36, 38, 40, 42, 44, 46',
+      '여러 색상: Crocus Petal, Seedpearl White, Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, '내수압', '투습도', undefined, undefined, undefined],
+  },
+  'halti-ascale-ii-ski-jacket-men': {
+    name: '할티 Ascale II 남성 스키 패딩 재킷',
+    description:
+      '160 g Microtherm® Arcty 보온재를 넣은 할티의 남성용 스키 패딩 재킷입니다. 고정식 파우더 스커트와 지퍼 달린 리프트권 포켓이 있고, 무광 겉감에는 Rudolf BIONIC-FINISH® 발수 가공을 했습니다. 내수압은 10000 mm, 투습도는 10000 g/m²/24 h입니다. 소매 안쪽의 라이크라 커프스와 전체 길이에 걸친 안쪽 스톰 플랩을 갖췄으며, 할티는 스키 팬츠에도 청바지에도 어울리게 만들었습니다.',
+    specs: [
+      'Waterproof Taslan, 재활용 폴리에스터 50%, 폴리에스터 50%',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1.0 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, '내수압', '투습도', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-women': {
+    name: '할티 Carvey II DX 여성 스키 팬츠',
+    description:
+      '4방향 스트레치 DrymaxX® 원단으로 만든 할티의 여성용 방수 스키 팬츠로, 모든 솔기를 테이핑했고 탈착식 멜빵이 있습니다. DrymaxX® 원단의 내수압은 15000 mm, 투습도는 15000 g/m²/24 h이며, 스트레이트 컷은 슬림 핏과 릴랙스 핏의 중간입니다. 허리는 조절할 수 있고 밑단은 보강했으며, 스노 게이터, 지퍼 달린 핸드 포켓, 발수 지퍼가 달린 허벅지 포켓가 있습니다.',
+    specs: [
+      'DrymaxX® NN, 4방향 스트레치, 재활용 폴리에스터 50%, 폴리에스터 50%. Stretch Cordura, 폴리에스터 96%, 엘라스테인 4%. 별도 안감 없음',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0.8 kg',
+      '34, 36, 38, 40, 42, 44, 46, 48',
+      '여러 색상: Dark Sea Green, Black, Seedpearl White, Vivid Purple, Lemon Pepper Beige',
+    ],
+    specLabels: [undefined, '내수압', '투습도', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-men': {
+    name: '할티 Carvey II DX 남성 스키 팬츠',
+    description:
+      '4방향 스트레치 DrymaxX® 원단으로 만든 할티의 남성용 방수 스키 팬츠로, 모든 솔기를 테이핑했고 탈착식 멜빵이 있습니다. DWR 발수 가공을 했으며, DrymaxX® 원단의 내수압은 15000 mm, 투습도는 15000 g/m²/24 h입니다. 스키 핏의 스트레이트 컷은 슬림 핏과 릴랙스 핏의 중간이며, 조절식 허리, 보강된 밑단, 스노 게이터, 지퍼 달린 핸드 포켓, 발수 지퍼가 달린 허벅지 포켓를 갖췄습니다.',
+    specs: [
+      'DrymaxX® NN, 4방향 스트레치, 재활용 폴리에스터 50%, 폴리에스터 50%. Stretch Cordura, 폴리에스터 96%, 엘라스테인 4%',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0.9 kg',
+      'XS, S, M, L, XL, XXL, XXXL, 4XL',
+      '여러 색상: Dress Blues, Black, Dark Sea Green, Tea Green, Halti Red, Electric Blue Lemonade',
+    ],
+    specLabels: [undefined, '내수압', '투습도', undefined, undefined, undefined],
+  },
+  'halti-kevo-2-winter-boots-men': {
+    name: '할티 Kevo 2 DX 남성 윈터 부츠',
+    description:
+      '방수와 투습이 되는 DrymaxX® 멤브레인 삭스 구조와 따뜻한 텍스타일 안감을 갖춘 할티의 남성용 레이스업 윈터 부츠입니다. 갑피는 수성 PU로 만든 관리하기 쉬운 합성 가죽이며, 가볍고 쿠션감 있는 Phylon 미드솔과 접지력 좋은 고무 아웃솔을 조합했습니다. 할티는 겨울철 긴 야외 활동을 위해 이 부츠를 만들었으며, 발 모양에 맞춘 인솔은 뺄 수 있습니다.',
+    specs: [
+      '합성 가죽, 폴리우레탄 80%, 재활용 폴리에스터 20%. 촘촘한 메시 원단, 재활용 폴리에스터 100%. DrymaxX® 멤브레인',
+      'Phylon 미드솔, 고무 아웃솔, 발 모양에 맞춘 탈착식 EVA 인솔',
+      '1.1 kg',
+      '38, 39, 40, 41, 42, 43, 44, 45, 46',
+      'Otter Brown',
+      '젖은 스펀지와 중성 비누로 닦으세요. 실온 또는 40 °C 이하에서 말리고, 난방기 위나 뜨거운 사우나 안에서는 절대 말리지 마세요',
+    ],
+    specLabels: [undefined, '밑창', undefined, undefined, undefined, undefined],
+  },
+  'halti-metso-mid-winter-boots-men': {
+    name: '할티 Metso Mid DX 남성 윈터 부츠',
+    description:
+      'Thinsulate™ 보온재와 따뜻한 텍스타일 파일 안감을 갖춘 할티의 남성용 레이스업 윈터 부츠입니다. 방수 DrymaxX® 멤브레인 삭스 구조가 발을 감싸고, 갑피는 스웨이드, PU 가죽, 부드러운 텍스타일을 조합했으며, 탈착식 충격 흡수 Comfort+ 인솔은 발 모양에 맞춘 형태입니다. 할티가 안내하는 주 용도는 레저이며, TPR 고무 아웃솔은 다양한 노면에서 접지력을 발휘합니다.',
+    specs: [
+      '스웨이드, 가죽 100%. PU 가죽, 폴리에스터 50%, 폴리우레탄 50%. 부드러운 텍스타일, 폴리에스터 100%',
+      'TPR 아웃솔, 발 모양에 맞춘 탈착식 Comfort+ 인솔',
+      '1.1 kg',
+      '40, 41, 42, 43, 44, 45, 46, 47',
+      'Apple Cinnamon Brown',
+      '젖은 스펀지와 중성 비누로 닦으세요. 실온 또는 40 °C 이하에서 말리고, 난방기 위나 뜨거운 사우나 안에서는 절대 말리지 마세요. 건조하고 통풍이 잘되는 곳에 보관하세요',
+    ],
+    specLabels: [undefined, '밑창', undefined, undefined, undefined, undefined],
+  },
+  'halti-skene-winter-boots-women': {
+    name: '할티 Skene DX 여성 윈터 부츠',
+    description:
+      '안쪽 지퍼로 쉽게 신고 끈으로 핏을 조절하는 할티의 여성용 윈터 부츠입니다. DrymaxX® 멤브레인 삭스 구조와 따뜻한 텍스타일 파일 안감이 변덕스러운 날씨에도 발을 보송하고 따뜻하게 지켜 주며, 보온 인솔이 아래에서 올라오는 냉기를 막아 줍니다. 가벼운 Phylon 미드솔이 착용감을 높이고, 고무 아웃솔은 겨울철 노면에서 접지력을 발휘합니다.',
+    specs: [
+      'Poly pongee, 폴리에스터 100%. 스웨이드, 가죽 100%. DrymaxX® 멤브레인',
+      'Phylon 미드솔, 고무 아웃솔, 보온 EVA 인솔',
+      '0.8 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Fog Beige, Glacier Grey',
+      '젖은 스펀지와 중성 비누로 닦으세요. 실온 또는 40 °C 이하에서 말리고, 난방기 위나 뜨거운 사우나 안에서는 절대 말리지 마세요',
+    ],
+    specLabels: [undefined, '밑창', undefined, undefined, undefined, undefined],
+  },
+  'halti-sletta-zip-winter-boots-women': {
+    name: '할티 Sletta Zip DX 여성 윈터 부츠',
+    description:
+      '지퍼, 플리스 안감, Thinsulate™ 충전재, 방수 DrymaxX® 멤브레인을 갖춘 할티의 부드러운 여성용 미드컷 부츠입니다. 고무 소재의 Halti GripmaxX Arctic 아웃솔은 눈과 질척하게 녹은 눈에 맞게 설계되었고, 그 위에 가볍고 충격을 흡수하는 Phylon 미드솔이 있습니다. 양말 같은 구조가 발에 잘 맞도록 돕고, Thermo 인솔은 뺄 수 있습니다.',
+    specs: [
+      '매끄러운 태피터 타입 원단에 부드러운 퀼팅 갑피와 스웨이드 보강, 폴리에스터 100%. 스웨이드, 가죽 100%',
+      'Halti GripmaxX Arctic 고무 아웃솔, Phylon 미드솔, 탈착식 Thermo 인솔',
+      '0.7 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Apple Cinnamon Brown, Black/White',
+      '젖은 스펀지와 중성 비누로 닦으세요. 실온 또는 40 °C 이하에서 말리고, 난방기 위나 뜨거운 사우나 안에서는 절대 말리지 마세요',
+    ],
+    specLabels: [undefined, '밑창', undefined, undefined, undefined, undefined],
+  },
+  'sk-suomi-foam-finger': {
+    name: 'Suomi 응원용 폼 핑거 23 x 45 cm',
+    description:
+      'Happy Orange의 Suomi 응원 라인에서 나온 23 x 45 cm 응원용 폼 핑거입니다. 경기, 행사 등 관중 속에서 눈에 띄고 싶은 자리를 위해 만들었습니다. 파란 손에 FINLAND 글자와 핀란드 국기가 들어가 있습니다.',
+    specs: [
+      '23 x 45 cm',
+      '파란 바탕에 FINLAND와 핀란드 국기',
+      '6430080071500',
+    ],
+    specLabels: [undefined, '디자인', 'EAN'],
+  },
+  'sk-suomi-drawstring-bag': {
+    name: 'Suomi 스트링 백팩, 핀란드 국기',
+    description:
+      '핀란드 국기가 들어간 Tammer의 스트링 백팩입니다. 경기 원정길이나 응원단 활동에 알맞고, 기념품이나 소장품, 선물로도 좋습니다.',
+    specs: [
+      '핀란드 국기',
+      '6410413343443',
+    ],
+    specLabels: ['디자인', 'EAN'],
+  },
+  'sk-suomi-braces': {
+    name: 'Suomi 멜빵, 파란색',
+    description:
+      '폭 3.5 cm의 파란색 H형 멜빵으로, 끈을 따라 SUOMI와 FINLAND 글자, 핀란드 국기가 들어가 있습니다. 뒤쪽은 단단히 물리는 올메탈 클립 두 개로 고정합니다. Suomikauppa.fi가 디자인하고 Helsingin Olkain이 제작했으며, Avainlippu(키 플래그) 마크가 있습니다.',
+    specs: [
+      '폭 3.5 cm',
+      '파란색 바탕에 SUOMI와 FINLAND 글자, 핀란드 국기',
+      'H형, 뒤쪽에 올메탈 클립 두 개',
+      '디자인 Suomikauppa.fi, 제작 Helsingin Olkain',
+      'Avainlippu(키 플래그)',
+    ],
+    specLabels: [undefined, undefined, '고정 방식', '디자인과 제작', '마크'],
+  },
+  'sk-suomi-spiky-wig': {
+    name: 'Suomi 응원용 스파이크 가발',
+    description:
+      'Happy Orange의 Suomi 응원 라인에서 나온 뾰족머리 가발로, 경기, 행사 등 눈에 띄고 싶은 자리를 위해 만들었습니다. 핀란드 국기가 들어간 파란 헤어밴드에서 파란색과 흰색의 뾰족한 머리카락이 솟아 있습니다.',
+    specs: [
+      '파란색과 흰색',
+      '헤어밴드에 핀란드 국기',
+      '6430080071456',
+    ],
+    specLabels: [undefined, '디자인', 'EAN'],
+  },
 }

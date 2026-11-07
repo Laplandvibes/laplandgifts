@@ -2,7 +2,6 @@ import { Gift } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
-import PhotoMark from './PhotoMark'
 import { COPY } from '../locales/copy'
 import { SHOP_COPY } from '../locales/shopCopy'
 
@@ -46,88 +45,52 @@ export default function Hero() {
   const keepAll = lang === 'ja' || lang === 'ko' ? '[word-break:keep-all]' : ''
   const h1Em = Math.max(emWidth(s.home.heroTitle), emWidth(s.home.heroTitleAccent))
   return (
-    // 🔴🔴 Puhelimessa ja tabletissa kuva on OMA NAUHANSA tekstin yläpuolella
-    // (Vesa 28.9.2026: "mobiilissa hero kuva ei näy ollenkaan ja tunnelma on
-    // todella synkkä"). Kuva on vaalea ja kirkas (lumiset ikkunat, vaalea pöytä),
-    // ja keskitetty valkoinen teksti sen päällä tarvitsi 21.9. alkaen kaksi
-    // päällekkäistä tummennusta (vaakagradientti + night/76), jotka yhdessä
-    // peittivät kuvasta 83–99 %. Nyt alle lg:n teksti on kuvan alla tummalla
-    // pohjalla (heroteksti-portin heromalli C), joten kuva näkyy kokonaan eikä
-    // kontrasti riipu valokuvasta. lg:stä ylöspäin ennallaan: kuva taustana,
-    // teksti vasemmalla gradientin päällä.
-    <section className="relative overflow-hidden bg-night lg:flex lg:min-h-[78svh] lg:items-center">
-      {/* Heron kuva on sivun LCP-elementti: se ladataan korkealla prioriteetilla
-          eikä laiskasti, ja index.html avaa sille esilatauksen jo ennen kuin
-          React on käynnistynyt. */}
-      {/* 🔴 Hero on LCP-elementti, ja se latasi 2400 pikselin tiedoston 390
-          pikselin ruudulle: 85 kt siitä että kuva venytettiin 6-kertaiseksi
-          alaspäin. Nyt tarjolla on 800/1200/1600 pikselin versiot ja selain
-          valitsee ruudun leveyden × näyttötiheyden mukaan. index.html:n
-          esilataus tarjoaa saman srcSetin, muuten esilataus hakisi eri
-          tiedoston kuin <img> ja kuva ladattaisiin kahdesti. */}
-      <div className="relative aspect-[16/9] w-full lg:absolute lg:inset-0 lg:aspect-auto">
-      <picture className="block h-full w-full">
-        <source srcSet={imgSrcSet('hero-shop', 'avif')} sizes="100vw" type="image/avif" />
-        <img
-          src="/images/hero-shop.webp"
-          srcSet={imgSrcSet('hero-shop', 'webp')}
-          sizes="100vw"
-          alt=""
-          width={2560}
-          height={1709}
-          loading="eager"
-          fetchPriority="high"
-          decoding="async"
-          className="h-full w-full object-cover"
-        />
-      </picture>
-        <PhotoMark image="hero-shop" />
+    // 🔴🔴 VALOISA HERO (Vesa 7.11.2026: "ei mitään revontuli heroa kauppaan, valoja päälle" ja
+    // "kaupassa aidot kuvat ei ole ihan niin tärkeitä, jos saadaan laadukas tekoäly kuva heroon niin
+    // sekin käy"). Ennen hero oli tumma: kuva taustana ja valkoinen teksti 94/88/55 %:n tummennuksen
+    // päällä ("eikö etusivun hero osion kuvan päällä ole liikaa overlayta?"). Nyt teksti on vaalealla
+    // pohjalla ja kuva sen vieressä ilman yhtään tummennusta: työpöydällä kaksi palstaa, puhelimessa
+    // kuva omana nauhanaan tekstin yläpuolella (heroteksti-portin heromalli C). Kontrasti ei riipu
+    // kuvasta lainkaan.
+    // Kuva on tekoälyllä tehty asetelma (seedream-5.0-pro 7.11.2026, alkuperäinen ja kehote
+    // _reissu-2026-07/_ai-originals-backup/laplandgifts/): nimettömät lahjapaketit, villalapanen,
+    // kahvi, lakat ja kynttilä talviaamun ikkunan ääressä. Ei kumppanin tuotetta, ei tekstiä, ei
+    // tiettyä oikeaa paikkaa (kuvasäännöt, 01-kuvat.md §0 ja §6.5).
+    <section className="relative overflow-hidden bg-sand lg:grid lg:min-h-[74svh] lg:grid-cols-2">
+      {/* Heron kuva on sivun LCP-elementti: korkea prioriteetti, ei laiskaa latausta, ja index.html
+          esilataa saman srcSetin samalla sizes-arvolla, ettei kuvaa ladata kahdesti. */}
+      <div className="relative aspect-[16/10] w-full lg:order-2 lg:aspect-auto">
+        <picture className="absolute inset-0 block">
+          <source srcSet={imgSrcSet('hero-lahjat', 'avif')} sizes="(min-width: 1024px) 50vw, 100vw" type="image/avif" />
+          <img
+            src="/images/hero-lahjat.webp"
+            srcSet={imgSrcSet('hero-lahjat', 'webp')}
+            sizes="(min-width: 1024px) 50vw, 100vw"
+            alt=""
+            width={2312}
+            height={1736}
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover"
+            style={{ objectPosition: '55% 60%' }}
+          />
+        </picture>
       </div>
-      {/* Työpöydällä teksti on vasemmalla kuvan päällä: gradientti tummentaa
-          tekstin puolen ja pitää oikean laidan kuvana. Alle lg:n teksti ei ole
-          kuvan päällä, joten tummennusta ei tarvita lainkaan. */}
-      <div
-        className="absolute inset-0 hidden bg-gradient-to-r from-night/94 via-night/88 to-night/55 lg:block"
-        aria-hidden="true"
-      />
-      <div className="relative z-10 mx-auto w-full max-w-7xl px-4 pb-14 pt-10 md:pb-20 md:pt-14 lg:py-28">
+      <div className="relative z-10 flex items-center lg:order-1">
+        <div className="mx-auto w-full max-w-2xl px-4 pb-14 pt-10 md:pb-20 md:pt-14 lg:ml-auto lg:mr-0 lg:max-w-[42rem] lg:py-24 lg:pl-8 lg:pr-12 xl:pr-16">
         {/* @container: otsikon koko lasketaan tämän palstan leveydestä (100cqi). */}
-        <div className="@container mx-auto max-w-2xl xl:max-w-4xl text-center lg:mx-0 lg:text-left">
-          {/* Ei yläotsikkoa otsikon yllä: toimituslupaus on ingressissä. Erillinen
-              harvennettu versaalirivi toisti saman asian kuin ingressi (Vesa 1.10.2026). */}
-          {/* Bebas Neue on kapea versaalifontti: sama pistekoko näyttää
-              selvästi pienemmältä kuin Playfairilla, joten koot ovat isot.
-              tracking-wide avaa versaalit luettaviksi.
-
-              🔴 Koot on mitoitettu otsikon pituuden mukaan, ei toisin päin.
-              Hakusanaotsikko on 35 merkkiä siinä missä vanha fraasi oli 26,
-              ja tekstilohko on `max-w-2xl` eli 672 px. text-9xl (128 px)
-              katkaisi uuden otsikon kolmelle riville sekä 1440 että 375
-              pikselissä. Nyt rivejä on kaksi ja katkos osuu accentin eteen.
-
-              🔴 Accent on `block`, eli rivinvaihto on pakotettu eikä jätetty
-              rivityksen päätettäväksi. Ilman sitä katkos vaelsi leveyden
-              mukaan: 640–767 pikselissä ensimmäiselle riville mahtui vielä
-              "…and Lapland", jolloin amberia jäi alariville yksi sana. Nyt
-              ylärivi on aina valkoinen ja alarivi aina amber.
-
-              🔴 Pienin koko on clamp eikä porras, koska 48 px riitti 375
-              pikselin ruudulle mutta ei 360:lle eikä 320:lle: suomen
-              "suomalaiset lahjat" katkesi kolmannelle riville yksinäiseksi
-              sanaksi. Mitattu selaimesta kymmenellä leveydellä, ei arvattu. */}
-          {/* ja/ko: rivi katkeaa vain sanan rajalta (keep-all). Japanin otsikossa
-              sallitut katkokohdat ovat datassa nollalevyisinä välilyönteinä (U+200B);
-              ilman niitä 360 px:ssä otsikko katkesi "ラップラン / ド". */}
+        <div className="@container text-center lg:text-left">
           {/* Puhelin (< 640) pitää kiinteän clamp-koon; sm+ = min(suunniteltu --h1-max, palstaan mahtuva).
-              lg (1024–1279): rivi korkeintaan 85 % palstasta (--h1-fit). Täysleveä pinkki rivi ulottui 1024 px:llä
-              kuvan vaaleaan ikkunaan, ja heroteksti-portti mittasi de/ja/sv:n korostusrivistä 10–13 % rajan alle. */}
+              Rivijako on datassa (tumma heroTitle | pinkki accent), joten otsikko on kahdella rivillä
+              jokaisella kielellä (Vesa 3.10.2026). ja/ko: rivi katkeaa vain sanan rajalta (keep-all). */}
           <h1
-            className={`font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-white sm:[--h1-max:3rem] md:[--h1-max:4.5rem] lg:[--h1-max:6rem] xl:[--h1-max:clamp(96px,1.5vw_+_76.8px,115.2px)] lg:[--h1-fit:0.85] xl:[--h1-fit:1] sm:[font-size:min(var(--h1-max),calc(100cqi*var(--h1-fit,1)/var(--h1-em)))] ${keepAll}`}
+            className={`font-heading text-[clamp(2.25rem,11.5vw,2.75rem)] tracking-wide text-night sm:[--h1-max:3rem] md:[--h1-max:4.5rem] lg:[--h1-max:5rem] xl:[--h1-max:clamp(80px,1.5vw_+_60px,96px)] sm:[font-size:min(var(--h1-max),calc(100cqi/var(--h1-em)))] ${keepAll}`}
             style={{ ['--h1-em' as string]: h1Em.toFixed(2) }}
           >
-            {s.home.heroTitle} <span className="block text-vibe-pink drop-shadow-[0_0_40px_rgba(236,72,153,0.8)]">{s.home.heroTitleAccent}</span>
+            {s.home.heroTitle} <span className="block text-amber">{s.home.heroTitleAccent}</span>
           </h1>
-          <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed text-white/85 [text-wrap:pretty] md:text-xl lg:mx-0 xl:max-w-3xl xl:text-2xl ${lang === 'ko' ? keepAll : ''}`}>
+          <p className={`mx-auto mt-6 max-w-xl text-lg leading-relaxed text-gray/80 [text-wrap:pretty] md:text-xl lg:mx-0 ${lang === 'ko' ? keepAll : ''}`}>
             {s.home.heroLead}
           </p>
           {/* 🔴 Napit ovat ruudukossa, eivät flex-rivissä (Vesa 1.8.).
@@ -152,11 +115,12 @@ export default function Hero() {
             </Link>
             <Link
               to={to('/gift-guides')}
-              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border-2 border-white/40 px-6 py-4 text-xl font-bold text-white transition-colors hover:border-amber hover:text-amber"
+              className="inline-flex min-h-12 w-full items-center justify-center gap-2 rounded-full border-2 border-night/25 px-6 py-4 text-xl font-bold text-night transition-colors hover:border-amber hover:text-amber"
             >
               {s.nav.guides}
             </Link>
           </div>
+        </div>
         </div>
       </div>
     </section>

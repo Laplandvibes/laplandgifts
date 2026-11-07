@@ -1,4 +1,4 @@
-import { creditFor, CREDIT_WORDS } from '../data/photoCredits'
+import { creditFor, ownPhotoFor, CREDIT_WORDS } from '../data/photoCredits'
 import { useLang } from '../i18n/useLang'
 
 /**
@@ -13,8 +13,20 @@ import { useLang } from '../i18n/useLang'
 export default function PhotoMark({ image, pos = 'bottom' }: { image: string; pos?: 'bottom' | 'top' }) {
   const lang = useLang()
   const credit = creditFor(image)
-  if (!credit) return null
+  const own = credit ? undefined : ownPhotoFor(image)
   const w = CREDIT_WORDS[lang] ?? CREDIT_WORDS.en
+  const plate = `pointer-events-none absolute right-0 z-10 max-w-full bg-night/80 px-1.5 py-[2px] text-[9px] leading-tight text-white sm:text-[10px] ${
+    pos === 'top' ? 'top-0 rounded-bl' : 'bottom-0 rounded-tl'
+  }`
+  // Oma valokuva: ei lisenssiä, mutta lukija näkee että kuva on meidän eikä kuvapankin.
+  if (own) {
+    return (
+      <span className={plate}>
+        {w.photo}: <span translate="no">LaplandVibes</span>, <span translate="no">{own.place}</span>
+      </span>
+    )
+  }
+  if (!credit) return null
   return (
     <span
       className={`pointer-events-none absolute right-0 z-10 max-w-full bg-night/80 px-1.5 py-[2px] text-[9px] leading-tight text-white sm:text-[10px] ${

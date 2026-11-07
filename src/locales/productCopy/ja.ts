@@ -2465,4 +2465,252 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, '香り', '使い方', '販売者'],
   },
+  // Vaatevalikoiman laajennus 7.11.2026
+  'makia-glacier-parka': {
+    name: 'Makia Glacier ウィンターコート',
+    description:
+      'Makia の丈長めのウィンターコートで、レギュラーフィットにリサイクルポリエステル 100 パーセントの裏地を合わせています。表地は綿 73 パーセントとリサイクルナイロン 27 パーセントで、耐水圧は 5000 mm で、ときおりの雨なら防げます。ウエストの内側にあるコードでフィットを調節できます。',
+    specs: [
+      '表地 綿 73 %、リサイクルナイロン 27 %。裏地 リサイクルポリエステル 100 %',
+      '5000 mm',
+      'ブラック',
+      'SからXXL',
+    ],
+    specLabels: [undefined, '耐水圧', undefined, undefined],
+  },
+  'makia-maren-parka': {
+    name: 'Makia Maren 中綿コート',
+    description:
+      'Makia のゆったりしたミドル丈の中綿コートで、リサイクルポリエステル 100 パーセントの Sorona® フェイクダウンを詰めています。Sorona® は一部が植物由来で、通気性があり、暖かさを保ちます。必要に応じて、ウエストのベルトでフィットを調節できます。',
+    specs: [
+      '中綿 Sorona® フェイクダウン（リサイクルポリエステル 100 %）',
+      'ゆったり、ミドル丈、ウエストにベルト',
+      'ダークワインレッド',
+      'XSからXXL',
+    ],
+    specLabels: [undefined, 'フィット', undefined, undefined],
+  },
+  'makia-helsinki-parka': {
+    name: 'Makia Helsinki ウィンターコート',
+    description:
+      'レギュラーフィットでポケットがたっぷりあり、フェイクファーを取り外せるフードが付いた Makia の定番ウィンターコートです。Makia のクラシックな Raglan Parka をもとにしたモデルで、中綿はリサイクルポリエステル 100 パーセントの Sorona® フェイクダウンです。Sorona® は一部が植物由来で、通気性があり、暖かさを保ちます。',
+    specs: [
+      '中綿 Sorona® フェイクダウン（リサイクルポリエステル 100 %）',
+      '取り外し可能なフェイクファー',
+      'ダークグリーン',
+      'SからXXL',
+    ],
+    specLabels: [undefined, 'フード', undefined, undefined],
+  },
+  'makia-else-parka': {
+    name: 'Makia Else ウィンターコート',
+    description:
+      'レギュラーフィットで、取り外せるフェイクファーの裏地付きフードを備えた、Makia のミドル丈ウィンターコートです。中綿はリサイクルポリエステル 100 パーセントの Sorona® フェイクダウンで、ウエストの隠しアジャスターでフィットを調節できます。',
+    specs: [
+      '中綿 Sorona® フェイクダウン（リサイクルポリエステル 100 %）',
+      '取り外し可能なフェイクファーの裏地',
+      'オフホワイト',
+      'XSからXXL',
+    ],
+    specLabels: [undefined, 'フード', undefined, undefined],
+  },
+  'makia-frost-knit': {
+    name: 'Makia Frost ニットセーター',
+    description:
+      'ポリエステル混紡で編んだ、グラデーション配色の Makia のレギュラーフィットのニットセーターです。サイズは S から XXL です。',
+    specs: [
+      'ポリエステル混紡',
+      'グラデーション',
+      'SからXXL',
+    ],
+    specLabels: [undefined, '配色', undefined],
+  },
+  'makia-salla-knit': {
+    name: 'Makia Salla メリノタートルネック',
+    description:
+      'メリノウール 100 パーセントで編んだ Makia のレギュラーフィットのタートルネックセーターです。身頃と袖には、アジュール（透かし編み）のディテールが入っています。サイズは XS から XXL です。',
+    specs: [
+      'メリノウール 100 %',
+      '身頃と袖にアジュール（透かし編み）のディテール',
+      'XSからXXL',
+    ],
+    specLabels: [undefined, 'ディテール', undefined],
+  },
+  'makia-saarni-knit': {
+    name: 'Makia Saarni メリノニット',
+    description:
+      'メリノウール 100 パーセントで編んだ Makia のレギュラーフィットのセーターです。サイズは S から XXL です。',
+    specs: [
+      'メリノウール 100 %',
+      'SからXXL',
+    ],
+  },
+  'makia-siina-knit': {
+    name: 'Makia Siina ウール混ニット',
+    description:
+      'ウール混紡で編んだ Makia のレギュラーフィットのセーターで、袖はワイドです。ウール混紡のおかげで、厚みのある手ざわりに仕上がっています。サイズは XS から XXL です。',
+    specs: [
+      'ウール混紡',
+      'ワイド',
+      'XSからXXL',
+    ],
+    specLabels: [undefined, '袖', undefined],
+  },
+  'halti-ascloud-ski-jacket-women': {
+    name: 'Halti Ascloud 中綿スキージャケット 女性用',
+    description:
+      'Microtherm® 中綿、固定式パウダースカート、ファスナー付きパスポケットを備えた Halti の女性用スキージャケットです。表地は耐水圧 10000 mm、透湿性 10000 g/m²/24 h です。フードと裾は調節でき、袖にはライクラのインナーカフが付いています。Halti はゲレンデだけでなく街でも着られるように作っています。',
+    specs: [
+      'Matt Memory、リサイクルポリエステル 65 %、ポリエステル 35 %',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1.0 kg',
+      '34, 36, 38, 40, 42, 44, 46',
+      '複数色：Crocus Petal, Seedpearl White, Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, '耐水圧', '透湿性', undefined, undefined, undefined],
+  },
+  'halti-ascale-ii-ski-jacket-men': {
+    name: 'Halti Ascale II 中綿スキージャケット メンズ',
+    description:
+      '160 g の Microtherm® Arcty 中綿を入れた、Halti のメンズスキージャケットです。固定式パウダースカートとファスナー付きパスポケットを備え、マットな表地には Rudolf BIONIC-FINISH® の撥水加工が施されています。耐水圧は 10000 mm、透湿性は 10000 g/m²/24 h です。ライクラのインナーカフと、全長にわたる内側のストームフラップも付いています。Halti はスキーパンツにもジーンズにも合わせられるように作っています。',
+    specs: [
+      'Waterproof Taslan、リサイクルポリエステル 50 %、ポリエステル 50 %',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1.0 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, '耐水圧', '透湿性', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-women': {
+    name: 'Halti Carvey II DX スキーパンツ 女性用',
+    description:
+      '4 方向ストレッチの DrymaxX® 素材を使った、Halti の女性用防水スキーパンツです。全ての縫い目にシームテープ処理を施し、取り外せるサスペンダーが付いています。DrymaxX® 素材は耐水圧 15000 mm、透湿性 15000 g/m²/24 h で、ストレートカットはタイトとルーズの中間のシルエットです。ウエストは調節でき、裾は補強され、スノーカフ、ファスナー付きハンドポケット、撥水ファスナー付きの太ももポケットを備えています。',
+    specs: [
+      'DrymaxX® NN、4 方向ストレッチ、リサイクルポリエステル 50 %、ポリエステル 50 %。Stretch Cordura、ポリエステル 96 %、エラスタン 4 %。独立した裏地なし',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0.8 kg',
+      '34, 36, 38, 40, 42, 44, 46, 48',
+      '複数色：Dark Sea Green, Black, Seedpearl White, Vivid Purple, Lemon Pepper Beige',
+    ],
+    specLabels: [undefined, '耐水圧', '透湿性', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-men': {
+    name: 'Halti Carvey II DX スキーパンツ メンズ',
+    description:
+      '4 方向ストレッチの DrymaxX® 素材を使った、Halti のメンズ防水スキーパンツです。全ての縫い目にシームテープ処理を施し、取り外せるサスペンダーが付いています。DWR 撥水加工済みで、DrymaxX® 素材は耐水圧 15000 mm、透湿性 15000 g/m²/24 h です。スキー向けのストレートカットはタイトとルーズの中間で、調節できるウエスト、補強された裾、スノーカフ、ファスナー付きハンドポケット、撥水ファスナー付きの太ももポケットを備えています。',
+    specs: [
+      'DrymaxX® NN、4 方向ストレッチ、リサイクルポリエステル 50 %、ポリエステル 50 %。Stretch Cordura、ポリエステル 96 %、エラスタン 4 %',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0.9 kg',
+      'XS, S, M, L, XL, XXL, XXXL, 4XL',
+      '複数色：Dress Blues, Black, Dark Sea Green, Tea Green, Halti Red, Electric Blue Lemonade',
+    ],
+    specLabels: [undefined, '耐水圧', '透湿性', undefined, undefined, undefined],
+  },
+  'halti-kevo-2-winter-boots-men': {
+    name: 'Halti Kevo 2 DX スノーブーツ メンズ',
+    description:
+      '防水透湿の DrymaxX® メンブレンによるソックス構造と、暖かいテキスタイル裏地を備えた Halti のメンズ冬用レースアップブーツです。アッパーは水性 PU を使ったお手入れしやすい合成皮革で、軽くクッション性のある Phylon ミッドソールと、グリップのよいラバーアウトソールを組み合わせています。Halti は冬の長い外歩き向けに作っており、アナトミカル形状のインソールは取り外せます。',
+    specs: [
+      '合成皮革、ポリウレタン 80 %、リサイクルポリエステル 20 %。目の詰まったメッシュ生地、リサイクルポリエステル 100 %。DrymaxX® メンブレン',
+      'Phylon ミッドソール、ラバーアウトソール、取り外し可能なアナトミカル EVA インソール',
+      '1.1 kg',
+      '38, 39, 40, 41, 42, 43, 44, 45, 46',
+      'Otter Brown',
+      '湿らせたスポンジと中性の石けんで汚れを落としてください。室温または 40 °C 以下で乾かし、暖房器具の上や熱いサウナの中では絶対に乾かさないでください',
+    ],
+    specLabels: [undefined, 'ソール', undefined, undefined, undefined, undefined],
+  },
+  'halti-metso-mid-winter-boots-men': {
+    name: 'Halti Metso Mid DX スノーブーツ メンズ',
+    description:
+      'Thinsulate™ 保温材と暖かいテキスタイルのパイル裏地を備えた、Halti のメンズ冬用レースアップブーツです。防水の DrymaxX® メンブレンがソックス状に足を包み、アッパーはスエード、PU レザー、柔らかいテキスタイルの組み合わせです。取り外せる衝撃吸収の Comfort+ インソールはアナトミカル形状です。Halti は主な用途をレジャーとしており、TPR ラバーアウトソールはさまざまな路面でグリップします。',
+    specs: [
+      'スエード、レザー 100 %。PU レザー、ポリエステル 50 %、ポリウレタン 50 %。柔らかいテキスタイル、ポリエステル 100 %',
+      'TPR アウトソール、取り外し可能なアナトミカル Comfort+ インソール',
+      '1.1 kg',
+      '40, 41, 42, 43, 44, 45, 46, 47',
+      'Apple Cinnamon Brown',
+      '湿らせたスポンジと中性の石けんで汚れを落としてください。室温または 40 °C 以下で乾かし、暖房器具の上や熱いサウナの中では絶対に乾かさないでください。乾燥した風通しのよい場所で保管してください',
+    ],
+    specLabels: [undefined, 'ソール', undefined, undefined, undefined, undefined],
+  },
+  'halti-skene-winter-boots-women': {
+    name: 'Halti Skene DX スノーブーツ 女性用',
+    description:
+      'Halti の女性用スノーブーツで、内側のファスナーで履きやすく、靴ひもでフィットを調節できます。DrymaxX® メンブレンのソックス構造と暖かいテキスタイルのパイル裏地が、変わりやすい天候でも足をドライで暖かく保ち、断熱インソールが下からの冷えを防ぎます。軽い Phylon ミッドソールが履き心地を高め、ラバーアウトソールは冬の路面でグリップします。',
+    specs: [
+      'Poly pongee、ポリエステル 100 %。スエード、レザー 100 %。DrymaxX® メンブレン',
+      'Phylon ミッドソール、ラバーアウトソール、断熱 EVA インソール',
+      '0.8 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Fog Beige, Glacier Grey',
+      '湿らせたスポンジと中性の石けんで汚れを落としてください。室温または 40 °C 以下で乾かし、暖房器具の上や熱いサウナの中では絶対に乾かさないでください',
+    ],
+    specLabels: [undefined, 'ソール', undefined, undefined, undefined, undefined],
+  },
+  'halti-sletta-zip-winter-boots-women': {
+    name: 'Halti Sletta Zip DX スノーブーツ 女性用',
+    description:
+      'ファスナー、フリース裏地、Thinsulate™ 中綿、防水 DrymaxX® メンブレンを備えた Halti の柔らかな女性用ミドル丈ブーツです。ラバー製の Halti GripmaxX Arctic アウトソールは雪やシャーベット状の雪道向けに設計され、その上に軽く衝撃を吸収する Phylon ミッドソールを重ねています。ソックスのような構造で足になじみやすく、Thermo インソールは取り外せます。',
+    specs: [
+      'なめらかなタフタ調の生地、柔らかいキルティングのアッパーとスエードの補強、ポリエステル 100 %。スエード、レザー 100 %',
+      'Halti GripmaxX Arctic ラバーアウトソール、Phylon ミッドソール、取り外し可能な Thermo インソール',
+      '0.7 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Apple Cinnamon Brown, Black/White',
+      '湿らせたスポンジと中性の石けんで汚れを落としてください。室温または 40 °C 以下で乾かし、暖房器具の上や熱いサウナの中では絶対に乾かさないでください',
+    ],
+    specLabels: [undefined, 'ソール', undefined, undefined, undefined, undefined],
+  },
+  'sk-suomi-foam-finger': {
+    name: 'Suomi 応援フォームフィンガー 23 x 45 cm',
+    description:
+      'Happy Orange の Suomi 応援シリーズの、23 x 45 cm のフォームフィンガーです。試合やイベントなど、大勢の観客の中で目立ちたい場面のために作られています。青い手には FINLAND の文字とフィンランド国旗が入っています。',
+    specs: [
+      '23 x 45 cm',
+      '青地に FINLAND の文字とフィンランド国旗',
+      '6430080071500',
+    ],
+    specLabels: [undefined, 'デザイン', 'EAN'],
+  },
+  'sk-suomi-drawstring-bag': {
+    name: 'Suomi ナップサック（フィンランド国旗）',
+    description:
+      'フィンランド国旗をあしらった Tammer のナップサックです。試合への遠征や応援団での使用に向いていて、おみやげや記念の品、ギフトにもなります。',
+    specs: [
+      'フィンランド国旗',
+      '6410413343443',
+    ],
+    specLabels: ['デザイン', 'EAN'],
+  },
+  'sk-suomi-braces': {
+    name: 'Suomi サスペンダー（青）',
+    description:
+      '幅 3.5 cm の青い H 型サスペンダーで、ベルトに SUOMI と FINLAND の文字、フィンランド国旗が入っています。背中側は、しっかり留まるオールメタルのクリップ二つで固定します。Suomikauppa.fi がデザインし、Helsingin Olkain が製造したもので、Avainlippu（キーフラッグ）マークが付いています。',
+    specs: [
+      '幅 3.5 cm',
+      '青地に SUOMI と FINLAND の文字、フィンランド国旗',
+      'H 型、背中側にオールメタルのクリップ二つ',
+      'デザイン Suomikauppa.fi、製造 Helsingin Olkain',
+      'Avainlippu（キーフラッグ）',
+    ],
+    specLabels: [undefined, undefined, '留め具', 'デザインと製造', 'マーク'],
+  },
+  'sk-suomi-spiky-wig': {
+    name: 'Suomi 応援ツンツンウィッグ',
+    description:
+      'Happy Orange の Suomi 応援シリーズのツンツンウィッグで、試合やイベントなど、目立ちたい場面のために作られています。フィンランド国旗の入った青いヘッドバンドから、青と白のツンツンした毛束が立ち上がっています。',
+    specs: [
+      '青と白',
+      'ヘッドバンドにフィンランド国旗',
+      '6430080071456',
+    ],
+    specLabels: [undefined, 'デザイン', 'EAN'],
+  },
 }

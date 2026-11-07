@@ -32,7 +32,7 @@ export interface ShopCopy {
     featuredH2: string
     featuredSub: string
     /**
-     * Kolmivaiheinen "näin ostaminen etenee" (components/ValueProp.tsx).
+     * Kolmivaiheinen "näin ostaminen etenee" (components/HowItWorks.tsx, ylempi osa).
      *
      * 🔴 Tekstit asuvat täällä eivätkä ChromeCopyssa samasta syystä kuin heron
      * rivit: ChromeCopyn `valueProp` kuvaa kauppaa jota meillä ei ole. Se lupasi
@@ -44,7 +44,7 @@ export interface ShopCopy {
      */
     valueProp: { h2: string; sub: string; steps: Array<{ title: string; description: string }> }
     /**
-     * "Mitä LaplandGifts tekee" (components/ShippingInfo.tsx, id="shipping").
+     * "Mitä LaplandGifts tekee" (components/HowItWorks.tsx, alempi osa, id="shipping").
      *
      * 🔴 Sama tausta: ChromeCopyn `shipping`-lohko oli otsikoitu
      * "Lupauksemme" ja alaotsikoitu "Mitä voit odottaa, kun LaplandGifts-kauppa

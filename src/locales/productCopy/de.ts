@@ -2498,4 +2498,252 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Duft', 'Anwendung', 'Inverkehrbringer'],
   },
+  // Vaatevalikoiman laajennus 7.11.2026
+  'makia-glacier-parka': {
+    name: 'Makia Glacier Parka',
+    description:
+      'Ein längerer Winterparka von Makia in normaler Passform, gefüttert mit 100 Prozent recyceltem Polyester. Das Obermaterial besteht zu 73 Prozent aus Baumwolle und zu 27 Prozent aus recyceltem Nylon, und die Wassersäule von 5000 mm hilft, gelegentlichen Regen abzuhalten. Mit einem Kordelzug innen an der Taille lässt sich die Weite regulieren.',
+    specs: [
+      'Obermaterial 73 % Baumwolle, 27 % recyceltes Nylon. Futter 100 % recyceltes Polyester',
+      '5000 mm',
+      'Schwarz',
+      'S bis XXL',
+    ],
+    specLabels: [undefined, 'Wassersäule', undefined, undefined],
+  },
+  'makia-maren-parka': {
+    name: 'Makia Maren Stepp-Parka',
+    description:
+      'Ein lässiger, halblanger Steppmantel von Makia, gefüllt mit Sorona®-Kunstdaune aus 100 Prozent recyceltem Polyester. Sorona® ist teilweise pflanzenbasiert, atmungsaktiv und hält die Wärme. Mit dem Gürtel an der Taille lässt sich die Passform bei Bedarf anpassen.',
+    specs: [
+      'Füllung 100 % recyceltes Polyester, Sorona®-Kunstdaune',
+      'Lässig, halblang, Gürtel an der Taille',
+      'Dunkles Weinrot',
+      'XS bis XXL',
+    ],
+    specLabels: [undefined, 'Passform', undefined, undefined],
+  },
+  'makia-helsinki-parka': {
+    name: 'Makia Helsinki Parka',
+    description:
+      'Ein klassischer Winterparka von Makia in normaler Passform, mit viel Platz in den Taschen und einer Kapuze mit abnehmbarem Kunstfell. Er baut auf Makias klassischem Raglan Parka auf, und die Wattierung ist Sorona®-Kunstdaune aus 100 Prozent recyceltem Polyester. Sorona® ist teilweise pflanzenbasiert, atmungsaktiv und hält die Wärme.',
+    specs: [
+      'Wattierung 100 % recyceltes Polyester, Sorona®-Kunstdaune',
+      'Abnehmbares Kunstfell',
+      'Dunkelgrün',
+      'S bis XXL',
+    ],
+    specLabels: [undefined, 'Kapuze', undefined, undefined],
+  },
+  'makia-else-parka': {
+    name: 'Makia Else Parka',
+    description:
+      'Ein halblanger Winterparka von Makia in normaler Passform, mit einer Kapuze, deren Kunstfellfutter sich abnehmen lässt. Die Füllung ist Sorona®-Kunstdaune aus 100 Prozent recyceltem Polyester, und mit einer verdeckten Weitenregulierung an der Taille stellen Sie die Passform ein.',
+    specs: [
+      'Füllung 100 % recyceltes Polyester, Sorona®-Kunstdaune',
+      'Abnehmbares Kunstfellfutter',
+      'Naturweiß',
+      'XS bis XXL',
+    ],
+    specLabels: [undefined, 'Kapuze', undefined, undefined],
+  },
+  'makia-frost-knit': {
+    name: 'Makia Frost Strickpullover',
+    description:
+      'Ein Strickpullover von Makia in normaler Passform aus einer Polyestermischung, gestaltet mit einem Farbverlauf. Größen S bis XXL.',
+    specs: [
+      'Polyestermischung',
+      'Farbverlauf',
+      'S bis XXL',
+    ],
+    specLabels: [undefined, 'Farbgebung', undefined],
+  },
+  'makia-salla-knit': {
+    name: 'Makia Salla Merino-Rollkragenpullover',
+    description:
+      'Ein Rollkragenpullover von Makia in normaler Passform, gestrickt aus 100 Prozent Merinowolle. Über Rumpf und Ärmel ziehen sich Details in Ajourstrick, einem durchbrochenen Lochmuster. Größen XS bis XXL.',
+    specs: [
+      '100 % Merinowolle',
+      'Ajour-Strickdetails am Rumpf und an den Ärmeln',
+      'XS bis XXL',
+    ],
+    specLabels: [undefined, 'Details', undefined],
+  },
+  'makia-saarni-knit': {
+    name: 'Makia Saarni Merinopullover',
+    description:
+      'Ein Pullover von Makia in normaler Passform, gestrickt aus 100 Prozent Merinowolle. Größen S bis XXL.',
+    specs: [
+      '100 % Merinowolle',
+      'S bis XXL',
+    ],
+  },
+  'makia-siina-knit': {
+    name: 'Makia Siina Pullover aus Wollmischung',
+    description:
+      'Ein Pullover mit weiten Ärmeln von Makia in normaler Passform, gestrickt aus einer Wollmischung. Durch die Wollmischung fühlt sich der Strick dicker an. Größen XS bis XXL.',
+    specs: [
+      'Wollmischung',
+      'Weit',
+      'XS bis XXL',
+    ],
+    specLabels: [undefined, 'Ärmel', undefined],
+  },
+  'halti-ascloud-ski-jacket-women': {
+    name: 'Halti Ascloud Ski-Steppjacke, Damen',
+    description:
+      'Eine Ski-Steppjacke für Damen von Halti mit Microtherm®-Isolierung, festem Schneefang und Skipasstasche mit Reißverschluss. Das Obermaterial hat eine Wassersäule von 10000 mm und eine Atmungsaktivität von 10000 g/m²/24 h. Kapuze und Saum lassen sich regulieren, die Ärmel haben Innenbündchen aus Lycra, und Halti hat die Jacke für die Stadt ebenso entworfen wie für die Piste.',
+    specs: [
+      'Matt Memory, 65 % recyceltes Polyester, 35 % Polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1,0 kg',
+      '34, 36, 38, 40, 42, 44, 46',
+      'Mehrere Farben: Crocus Petal, Seedpearl White, Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, 'Wassersäule', 'Atmungsaktivität', undefined, undefined, undefined],
+  },
+  'halti-ascale-ii-ski-jacket-men': {
+    name: 'Halti Ascale II Ski-Steppjacke, Herren',
+    description:
+      'Eine Ski-Steppjacke für Herren von Halti mit einer Isolierung aus 160 g Microtherm® Arcty, festem Schneefang und Skipasstasche mit Reißverschluss. Das matte Obermaterial ist mit Rudolf BIONIC-FINISH® wasserabweisend ausgerüstet und hat eine Wassersäule von 10000 mm sowie eine Atmungsaktivität von 10000 g/m²/24 h. Dazu kommen Innenbündchen aus Lycra und eine durchgehende innere Windleiste, und Halti hat die Jacke so entworfen, dass sie zur Skihose ebenso passt wie zur Jeans.',
+    specs: [
+      'Waterproof Taslan, 50 % recyceltes Polyester, 50 % Polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1,0 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, 'Wassersäule', 'Atmungsaktivität', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-women': {
+    name: 'Halti Carvey II DX Skihose, Damen',
+    description:
+      'Wasserdichte Skihose für Damen von Halti aus DrymaxX® 4-Wege-Stretch, mit vollständig verklebten Nähten und abnehmbaren Hosenträgern. Das DrymaxX®-Material hat eine Wassersäule von 15000 mm und eine Atmungsaktivität von 15000 g/m²/24 h, und der gerade Schnitt liegt zwischen eng anliegend und locker. Der Bund ist verstellbar, die Beinabschlüsse sind verstärkt, und dazu kommen Schneefänge, Eingrifftaschen mit Reißverschluss und eine Oberschenkeltasche mit wasserabweisendem Reißverschluss.',
+    specs: [
+      'DrymaxX® NN 4-Wege-Stretch, 50 % recyceltes Polyester, 50 % Polyester. Stretch Cordura, 96 % Polyester, 4 % Elasthan. Kein separates Futter',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0,8 kg',
+      '34, 36, 38, 40, 42, 44, 46, 48',
+      'Mehrere Farben: Dark Sea Green, Black, Seedpearl White, Vivid Purple, Lemon Pepper Beige',
+    ],
+    specLabels: [undefined, 'Wassersäule', 'Atmungsaktivität', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-men': {
+    name: 'Halti Carvey II DX Skihose, Herren',
+    description:
+      'Wasserdichte Skihose für Herren von Halti aus DrymaxX® 4-Wege-Stretch, mit vollständig verklebten Nähten und abnehmbaren Hosenträgern. Sie hat eine wasserabweisende DWR-Ausrüstung, und das DrymaxX®-Material hat eine Wassersäule von 15000 mm und eine Atmungsaktivität von 15000 g/m²/24 h. Der gerade Skischnitt liegt zwischen eng anliegend und locker, und dazu kommen ein verstellbarer Bund, verstärkte Beinabschlüsse, Schneefänge, Eingrifftaschen mit Reißverschluss und eine Oberschenkeltasche mit wasserabweisendem Reißverschluss.',
+    specs: [
+      'DrymaxX® NN 4-Wege-Stretch, 50 % recyceltes Polyester, 50 % Polyester. Stretch Cordura, 96 % Polyester, 4 % Elasthan',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0,9 kg',
+      'XS, S, M, L, XL, XXL, XXXL, 4XL',
+      'Mehrere Farben: Dress Blues, Black, Dark Sea Green, Tea Green, Halti Red, Electric Blue Lemonade',
+    ],
+    specLabels: [undefined, 'Wassersäule', 'Atmungsaktivität', undefined, undefined, undefined],
+  },
+  'halti-kevo-2-winter-boots-men': {
+    name: 'Halti Kevo 2 DX Winterschuhe, Herren',
+    description:
+      'Schnür-Winterschuhe für Herren von Halti mit wasserdichter, atmungsaktiver DrymaxX®-Membransocke und warmem Textilfutter. Das Obermaterial ist pflegeleichtes Kunstleder aus wasserbasiertem PU, darunter sitzen eine leichte, dämpfende Phylon-Zwischensohle und eine griffige Gummilaufsohle. Halti hat sie für lange Ausflüge im Winter entwickelt, und die anatomisch geformte Einlegesohle ist herausnehmbar.',
+    specs: [
+      'Kunstleder, 80 % Polyurethan, 20 % recyceltes Polyester. Dichtes Mesh-Textil, 100 % recyceltes Polyester. DrymaxX®-Membran',
+      'Phylon-Zwischensohle, Gummilaufsohle, herausnehmbare anatomische EVA-Einlegesohle',
+      '1,1 kg',
+      '38, 39, 40, 41, 42, 43, 44, 45, 46',
+      'Otter Brown',
+      'Mit einem feuchten Schwamm und milder Seife reinigen. Bei Raumtemperatur oder bei höchstens 40 °C trocknen, nie auf der Heizung oder in der heißen Sauna',
+    ],
+    specLabels: [undefined, 'Sohle', undefined, undefined, undefined, undefined],
+  },
+  'halti-metso-mid-winter-boots-men': {
+    name: 'Halti Metso Mid DX Winterschuhe, Herren',
+    description:
+      'Schnür-Winterschuhe für Herren von Halti mit Thinsulate™-Isolierung, warmem Webpelzfutter und wasserdichter DrymaxX®-Membransocke. Das Obermaterial kombiniert Veloursleder, PU-Leder und weiches Textil, und die herausnehmbare, stoßdämpfende Comfort+-Einlegesohle ist anatomisch geformt. Als Haupteinsatzbereich nennt Halti die Freizeit, und die TPR-Gummilaufsohle greift auf verschiedenen Untergründen.',
+    specs: [
+      'Veloursleder, 100 % Leder. PU-Leder, 50 % Polyester, 50 % Polyurethan. Weiches Textil, 100 % Polyester',
+      'TPR-Laufsohle, herausnehmbare anatomische Comfort+-Einlegesohle',
+      '1,1 kg',
+      '40, 41, 42, 43, 44, 45, 46, 47',
+      'Apple Cinnamon Brown',
+      'Mit einem feuchten Schwamm und milder Seife reinigen. Bei Raumtemperatur oder bei höchstens 40 °C trocknen, nie auf der Heizung oder in der heißen Sauna. Trocken und luftig lagern',
+    ],
+    specLabels: [undefined, 'Sohle', undefined, undefined, undefined, undefined],
+  },
+  'halti-skene-winter-boots-women': {
+    name: 'Halti Skene DX Winterschuhe, Damen',
+    description:
+      'Winterschuhe für Damen von Halti mit Reißverschluss an der Innenseite zum leichten Anziehen und Schnürung zum Einstellen der Passform. Eine DrymaxX®-Membransocke und ein warmes Webpelzfutter halten die Füße bei wechselhaftem Wetter trocken und warm, und die wärmeisolierende Einlegesohle schirmt die Kälte von unten ab. Die leichte Phylon-Zwischensohle sorgt für Komfort, und die Gummilaufsohle greift auf winterlichen Untergründen.',
+    specs: [
+      'Poly Pongee, 100 % Polyester. Veloursleder, 100 % Leder. DrymaxX®-Membran',
+      'Phylon-Zwischensohle, Gummilaufsohle, wärmeisolierende EVA-Einlegesohle',
+      '0,8 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Fog Beige, Glacier Grey',
+      'Mit einem feuchten Schwamm und milder Seife reinigen. Bei Raumtemperatur oder bei höchstens 40 °C trocknen, nie auf der Heizung oder in der heißen Sauna',
+    ],
+    specLabels: [undefined, 'Sohle', undefined, undefined, undefined, undefined],
+  },
+  'halti-sletta-zip-winter-boots-women': {
+    name: 'Halti Sletta Zip DX Winterstiefel, Damen',
+    description:
+      'Weiche, halbhohe Winterstiefel für Damen von Halti mit Reißverschluss, Fleecefutter, Thinsulate™-Wattierung und wasserdichter DrymaxX®-Membran. Die Gummilaufsohle Halti GripmaxX Arctic ist für Schnee und Matsch ausgelegt und sitzt auf einer leichten, stoßdämpfenden Phylon-Zwischensohle. Die sockenartige Konstruktion verbessert die Passform, und die Thermo-Einlegesohle ist herausnehmbar.',
+    specs: [
+      'Glattes, taftartiges Textil mit weichem, gestepptem Schaft und Verstärkungen aus Veloursleder, 100 % Polyester. Veloursleder, 100 % Leder',
+      'Gummilaufsohle Halti GripmaxX Arctic, Phylon-Zwischensohle, herausnehmbare Thermo-Einlegesohle',
+      '0,7 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Apple Cinnamon Brown, Black/White',
+      'Mit einem feuchten Schwamm und milder Seife reinigen. Bei Raumtemperatur oder bei höchstens 40 °C trocknen, nie auf der Heizung oder in der heißen Sauna',
+    ],
+    specLabels: [undefined, 'Sohle', undefined, undefined, undefined, undefined],
+  },
+  'sk-suomi-foam-finger': {
+    name: 'Suomi Fan-Schaumstoffhand 23 x 45 cm',
+    description:
+      'Eine Fan-Schaumstoffhand im Format 23 x 45 cm aus der Suomi-Fankollektion von Happy Orange. Sie ist für Spiele, Events und andere Anlässe gemacht, bei denen Sie in der Menge auffallen möchten. Die blaue Hand zeigt den Schriftzug FINLAND und die finnische Flagge.',
+    specs: [
+      '23 x 45 cm',
+      'FINLAND und die finnische Flagge auf Blau',
+      '6430080071500',
+    ],
+    specLabels: [undefined, 'Motiv', 'EAN'],
+  },
+  'sk-suomi-drawstring-bag': {
+    name: 'Suomi Turnbeutel, finnische Flagge',
+    description:
+      'Ein Turnbeutel von Tammer mit der finnischen Flagge. Er ist praktisch für die Fahrt zum Spiel und für Fanclubs und eignet sich auch als Mitbringsel, Andenken oder Geschenk.',
+    specs: [
+      'Finnische Flagge',
+      '6410413343443',
+    ],
+    specLabels: ['Motiv', 'EAN'],
+  },
+  'sk-suomi-braces': {
+    name: 'Suomi Hosenträger, blau',
+    description:
+      'Blaue Hosenträger in H-Form, 3,5 cm breit, mit SUOMI, FINLAND und der finnischen Flagge auf dem Band. Hinten werden sie mit zwei Ganzmetall-Clips befestigt, die sicher halten. Entworfen wurden sie von Suomikauppa.fi, hergestellt von Helsingin Olkain, und sie tragen das Avainlippu-Zeichen (Schlüsselflagge).',
+    specs: [
+      '3,5 cm breit',
+      'Blau mit SUOMI, FINLAND und der finnischen Flagge',
+      'H-Form, hinten zwei Ganzmetall-Clips',
+      'Design Suomikauppa.fi, Herstellung Helsingin Olkain',
+      'Avainlippu (Schlüsselflagge)',
+    ],
+    specLabels: [undefined, undefined, 'Befestigung', 'Design und Herstellung', 'Kennzeichnung'],
+  },
+  'sk-suomi-spiky-wig': {
+    name: 'Suomi Fan-Stachelperücke',
+    description:
+      'Eine Fan-Stachelperücke aus der Suomi-Fankollektion von Happy Orange, für Spiele, Events und andere Anlässe, bei denen Sie auffallen möchten. Blaue und weiße Stacheln ragen aus einem blauen Stirnband mit der finnischen Flagge empor.',
+    specs: [
+      'Blau und Weiß',
+      'Finnische Flagge auf dem Stirnband',
+      '6430080071456',
+    ],
+    specLabels: [undefined, 'Motiv', 'EAN'],
+  },
 }

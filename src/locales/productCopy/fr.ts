@@ -2464,4 +2464,252 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Parfum', 'Utilisation', 'Commercialisé par'],
   },
+  // Vaatevalikoiman laajennus 7.11.2026
+  'makia-glacier-parka': {
+    name: 'Parka Makia Glacier',
+    description:
+      'Une parka d’hiver longue de Makia, de coupe classique, avec une doublure 100 % polyester recyclé. Le tissu extérieur se compose de 73 % de coton et de 27 % de nylon recyclé, et sa colonne d’eau de 5000 mm aide à tenir à distance les averses occasionnelles. Un cordon de serrage intérieur à la taille permet de régler l’ajustement.',
+    specs: [
+      'Tissu extérieur 73 % coton, 27 % nylon recyclé. Doublure 100 % polyester recyclé',
+      '5000 mm',
+      'Noir',
+      'S à XXL',
+    ],
+    specLabels: [undefined, 'Colonne d’eau', undefined, undefined],
+  },
+  'makia-maren-parka': {
+    name: 'Parka matelassée Makia Maren',
+    description:
+      'Une parka matelassée mi-longue à la coupe décontractée, signée Makia, garnie de duvet synthétique Sorona® en polyester 100 % recyclé. Le Sorona® est en partie d’origine végétale, il respire et retient la chaleur. Une ceinture à la taille permet d’ajuster la coupe si besoin.',
+    specs: [
+      'Garnissage 100 % polyester recyclé, duvet synthétique Sorona®',
+      'Décontractée, mi-longue, ceinture à la taille',
+      'Bordeaux foncé',
+      'XS à XXL',
+    ],
+    specLabels: [undefined, 'Coupe', undefined, undefined],
+  },
+  'makia-helsinki-parka': {
+    name: 'Parka Makia Helsinki',
+    description:
+      'Une parka d’hiver traditionnelle de Makia, de coupe classique, avec des poches spacieuses et une capuche à fausse fourrure amovible. Elle reprend les éléments de la Raglan Parka, un classique de Makia, et son rembourrage est en duvet synthétique Sorona® 100 % polyester recyclé. Le Sorona® est en partie d’origine végétale, il respire et retient la chaleur.',
+    specs: [
+      'Rembourrage 100 % polyester recyclé, duvet synthétique Sorona®',
+      'Fausse fourrure amovible',
+      'Vert foncé',
+      'S à XXL',
+    ],
+    specLabels: [undefined, 'Capuche', undefined, undefined],
+  },
+  'makia-else-parka': {
+    name: 'Parka Makia Else',
+    description:
+      'Une parka d’hiver mi-longue de Makia, de coupe classique, avec une capuche doublée de fausse fourrure amovible. Le garnissage est en duvet synthétique Sorona® 100 % polyester recyclé, et un réglage dissimulé à la taille permet d’ajuster la coupe.',
+    specs: [
+      'Garnissage 100 % polyester recyclé, duvet synthétique Sorona®',
+      'Doublure en fausse fourrure amovible',
+      'Blanc cassé',
+      'XS à XXL',
+    ],
+    specLabels: [undefined, 'Capuche', undefined, undefined],
+  },
+  'makia-frost-knit': {
+    name: 'Pull en maille Makia Frost',
+    description:
+      'Un pull en maille Makia de coupe classique, en mélange de polyester, aux couleurs en dégradé. Tailles du S au XXL.',
+    specs: [
+      'Mélange de polyester',
+      'Dégradé',
+      'S à XXL',
+    ],
+    specLabels: [undefined, 'Coloris', undefined],
+  },
+  'makia-salla-knit': {
+    name: 'Pull col roulé en mérinos Makia Salla',
+    description:
+      'Un pull col roulé Makia de coupe classique, tricoté en laine mérinos 100 %. Des détails en maille ajourée parcourent le corps et les manches. Tailles du XS au XXL.',
+    specs: [
+      '100 % laine mérinos',
+      'Détails en maille ajourée sur le corps et les manches',
+      'XS à XXL',
+    ],
+    specLabels: [undefined, 'Détails', undefined],
+  },
+  'makia-saarni-knit': {
+    name: 'Pull en mérinos Makia Saarni',
+    description:
+      'Un pull Makia de coupe classique, tricoté en laine mérinos 100 %. Tailles du S au XXL.',
+    specs: [
+      '100 % laine mérinos',
+      'S à XXL',
+    ],
+  },
+  'makia-siina-knit': {
+    name: 'Pull en laine mélangée Makia Siina',
+    description:
+      'Un pull Makia à manches larges et de coupe classique, tricoté dans un mélange de laine. Ce mélange donne à la maille un toucher plus épais. Tailles du XS au XXL.',
+    specs: [
+      'Laine mélangée',
+      'Larges',
+      'XS à XXL',
+    ],
+    specLabels: [undefined, 'Manches', undefined],
+  },
+  'halti-ascloud-ski-jacket-women': {
+    name: 'Doudoune de ski Halti Ascloud, femme',
+    description:
+      'Une doudoune de ski Halti pour femme avec isolation Microtherm®, jupe pare-neige fixe et poche zippée pour le forfait. Le tissu extérieur offre une imperméabilité de 10000 mm et une respirabilité de 10000 g/m²/24 h. La capuche et le bas se règlent, les manches ont des poignets intérieurs en Lycra, et Halti l’a pensée pour la ville comme pour les pistes.',
+    specs: [
+      'Matt Memory, 65 % polyester recyclé, 35 % polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1,0 kg',
+      '34, 36, 38, 40, 42, 44, 46',
+      'Plusieurs coloris : Crocus Petal, Seedpearl White, Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, 'Imperméabilité', 'Respirabilité', undefined, undefined, undefined],
+  },
+  'halti-ascale-ii-ski-jacket-men': {
+    name: 'Doudoune de ski Halti Ascale II, homme',
+    description:
+      'Une doudoune de ski Halti pour homme avec isolation Microtherm® Arcty de 160 g, jupe pare-neige fixe et poche zippée pour le forfait. Le tissu extérieur mat reçoit un traitement déperlant Rudolf BIONIC-FINISH® et offre une imperméabilité de 10000 mm et une respirabilité de 10000 g/m²/24 h. Elle dispose de poignets intérieurs en Lycra et un rabat anti-vent intérieur sur toute la longueur, et Halti l’a pensée pour se porter avec un pantalon de ski comme avec un jean.',
+    specs: [
+      'Waterproof Taslan, 50 % polyester recyclé, 50 % polyester',
+      '10000 mm',
+      '10000 g/m²/24 h',
+      '1,0 kg',
+      'S, M, L, XL, XXL, XXXL',
+      'Dark Sea Green, Black',
+    ],
+    specLabels: [undefined, 'Imperméabilité', 'Respirabilité', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-women': {
+    name: 'Pantalon de ski Halti Carvey II DX, femme',
+    description:
+      'Un pantalon de ski imperméable Halti pour femme en DrymaxX® stretch 4 directions, aux coutures entièrement étanchées et à bretelles amovibles. Le tissu DrymaxX® offre une imperméabilité de 15000 mm et une respirabilité de 15000 g/m²/24 h, et sa coupe droite se situe entre ajustée et ample. La taille est réglable, les bas de jambe sont renforcés, et il dispose de guêtres pare-neige, de poches latérales zippées et d’une poche cuisse à zip déperlant.',
+    specs: [
+      'DrymaxX® NN stretch 4 directions, 50 % polyester recyclé, 50 % polyester. Stretch Cordura, 96 % polyester, 4 % élasthanne. Sans doublure séparée',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0,8 kg',
+      '34, 36, 38, 40, 42, 44, 46, 48',
+      'Plusieurs coloris : Dark Sea Green, Black, Seedpearl White, Vivid Purple, Lemon Pepper Beige',
+    ],
+    specLabels: [undefined, 'Imperméabilité', 'Respirabilité', undefined, undefined, undefined],
+  },
+  'halti-carvey-ii-ski-pants-men': {
+    name: 'Pantalon de ski Halti Carvey II DX, homme',
+    description:
+      'Un pantalon de ski imperméable Halti pour homme en DrymaxX® stretch 4 directions, aux coutures entièrement étanchées et à bretelles amovibles. Il reçoit un traitement déperlant DWR, et le tissu DrymaxX® offre une imperméabilité de 15000 mm et une respirabilité de 15000 g/m²/24 h. Sa coupe ski est droite, entre ajustée et ample, avec taille réglable, bas de jambe renforcés, guêtres pare-neige, poches latérales zippées et poche cuisse à zip déperlant.',
+    specs: [
+      'DrymaxX® NN stretch 4 directions, 50 % polyester recyclé, 50 % polyester. Stretch Cordura, 96 % polyester, 4 % élasthanne',
+      '15000 mm',
+      '15000 g/m²/24 h',
+      '0,9 kg',
+      'XS, S, M, L, XL, XXL, XXXL, 4XL',
+      'Plusieurs coloris : Dress Blues, Black, Dark Sea Green, Tea Green, Halti Red, Electric Blue Lemonade',
+    ],
+    specLabels: [undefined, 'Imperméabilité', 'Respirabilité', undefined, undefined, undefined],
+  },
+  'halti-kevo-2-winter-boots-men': {
+    name: 'Chaussures d’hiver Halti Kevo 2 DX, homme',
+    description:
+      'Des chaussures d’hiver Halti à lacets pour homme, avec un chausson imperméable et respirant à membrane DrymaxX® et une doublure textile chaude. La tige en cuir synthétique facile à nettoyer, fabriqué avec du PU à base d’eau, repose sur une semelle intermédiaire en Phylon légère et amortissante et sur une semelle extérieure en caoutchouc qui accroche bien. Halti les a conçues pour les longues sorties en hiver, et la semelle intérieure de forme anatomique est amovible.',
+    specs: [
+      'Cuir synthétique, 80 % polyuréthane, 20 % polyester recyclé. Textile mesh dense, 100 % polyester recyclé. Membrane DrymaxX®',
+      'Semelle intermédiaire en Phylon, semelle extérieure en caoutchouc, semelle intérieure anatomique amovible en EVA',
+      '1,1 kg',
+      '38, 39, 40, 41, 42, 43, 44, 45, 46',
+      'Otter Brown',
+      'Nettoyer avec une éponge humide et un savon doux. Sécher à température ambiante ou à 40 °C maximum, jamais sur un radiateur ni dans un sauna chaud',
+    ],
+    specLabels: [undefined, 'Semelle', undefined, undefined, undefined, undefined],
+  },
+  'halti-metso-mid-winter-boots-men': {
+    name: 'Chaussures d’hiver Halti Metso Mid DX, homme',
+    description:
+      'Des chaussures d’hiver Halti à lacets pour homme, avec isolation Thinsulate™, doublure chaude en fourrure synthétique et chausson DrymaxX® étanche. La tige associe daim, cuir PU et textile doux, et la semelle intérieure Comfort+, amovible et amortissante, est de forme anatomique. Halti les destine avant tout aux loisirs, et la semelle extérieure en caoutchouc TPR accroche sur différents types de sols.',
+    specs: [
+      'Daim, 100 % cuir. Cuir PU, 50 % polyester, 50 % polyuréthane. Textile doux, 100 % polyester',
+      'Semelle extérieure en TPR, semelle intérieure anatomique amovible Comfort+',
+      '1,1 kg',
+      '40, 41, 42, 43, 44, 45, 46, 47',
+      'Apple Cinnamon Brown',
+      'Nettoyer avec une éponge humide et un savon doux. Sécher à température ambiante ou à 40 °C maximum, jamais sur un radiateur ni dans un sauna chaud. Ranger au sec dans un endroit aéré',
+    ],
+    specLabels: [undefined, 'Semelle', undefined, undefined, undefined, undefined],
+  },
+  'halti-skene-winter-boots-women': {
+    name: 'Chaussures d’hiver Halti Skene DX, femme',
+    description:
+      'Des chaussures d’hiver Halti pour femme, avec un zip côté intérieur pour les enfiler facilement et des lacets pour ajuster le chaussant. Un chausson à membrane DrymaxX® et une doublure chaude en fourrure synthétique gardent les pieds au sec et au chaud par temps changeant, et la semelle intérieure thermique bloque le froid venant du sol. La semelle intermédiaire légère en Phylon ajoute du confort et la semelle extérieure en caoutchouc accroche sur les surfaces hivernales.',
+    specs: [
+      'Poly pongee, 100 % polyester. Daim, 100 % cuir. Membrane DrymaxX®',
+      'Semelle intermédiaire en Phylon, semelle extérieure en caoutchouc, semelle intérieure thermique en EVA',
+      '0,8 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Fog Beige, Glacier Grey',
+      'Nettoyer avec une éponge humide et un savon doux. Sécher à température ambiante ou à 40 °C maximum, jamais sur un radiateur ni dans un sauna chaud',
+    ],
+    specLabels: [undefined, 'Semelle', undefined, undefined, undefined, undefined],
+  },
+  'halti-sletta-zip-winter-boots-women': {
+    name: 'Bottes d’hiver Halti Sletta Zip DX, femme',
+    description:
+      'Des bottes d’hiver Halti pour femme, souples et mi-hautes, avec zip, doublure polaire, ouate Thinsulate™ et membrane DrymaxX® imperméable. La semelle extérieure en caoutchouc Halti GripmaxX Arctic est conçue pour la neige et la neige fondue, et repose sur une semelle intermédiaire en Phylon légère et amortissante. La construction façon chaussette améliore le chaussant, et la semelle intérieure Thermo est amovible.',
+    specs: [
+      'Textile lisse de type taffetas avec tige matelassée souple et renforts en daim, 100 % polyester. Daim, 100 % cuir',
+      'Semelle extérieure en caoutchouc Halti GripmaxX Arctic, semelle intermédiaire en Phylon, semelle intérieure Thermo amovible',
+      '0,7 kg',
+      '36, 37, 38, 39, 40, 41, 42',
+      'Apple Cinnamon Brown, Black/White',
+      'Nettoyer avec une éponge humide et un savon doux. Sécher à température ambiante ou à 40 °C maximum, jamais sur un radiateur ni dans un sauna chaud',
+    ],
+    specLabels: [undefined, 'Semelle', undefined, undefined, undefined, undefined],
+  },
+  'sk-suomi-foam-finger': {
+    name: 'Main en mousse de supporter Suomi 23 x 45 cm',
+    description:
+      'Une main en mousse de supporter de 23 x 45 cm, issue de la gamme Suomi de Happy Orange. Elle est faite pour les matchs, les événements et les autres occasions où vous voulez vous faire remarquer dans la foule. La main bleue porte l’inscription FINLAND et le drapeau finlandais.',
+    specs: [
+      '23 x 45 cm',
+      'FINLAND et le drapeau finlandais sur fond bleu',
+      '6430080071500',
+    ],
+    specLabels: [undefined, 'Motif', 'EAN'],
+  },
+  'sk-suomi-drawstring-bag': {
+    name: 'Sac à dos à cordon Suomi, drapeau finlandais',
+    description:
+      'Un sac à dos à cordon de Tammer orné du drapeau finlandais. Il accompagne bien les déplacements au match et les groupes de supporters, et fait aussi un souvenir à rapporter, à garder ou à offrir.',
+    specs: [
+      'Drapeau finlandais',
+      '6410413343443',
+    ],
+    specLabels: ['Motif', 'EAN'],
+  },
+  'sk-suomi-braces': {
+    name: 'Bretelles Suomi, bleues',
+    description:
+      'Des bretelles bleues à dos en H, larges de 3,5 cm, avec SUOMI, FINLAND et le drapeau finlandais le long de la bande. Au dos, elles se fixent par deux pinces entièrement en métal qui tiennent bien. Elles ont été conçues par Suomikauppa.fi et fabriquées par Helsingin Olkain, et portent le label Avainlippu (Key Flag).',
+    specs: [
+      '3,5 cm de large',
+      'Bleu avec SUOMI, FINLAND et le drapeau finlandais',
+      'Dos en H, deux pinces entièrement métalliques à l’arrière',
+      'Conception Suomikauppa.fi, fabrication Helsingin Olkain',
+      'Avainlippu (Key Flag)',
+    ],
+    specLabels: [undefined, undefined, 'Fixation', 'Conception et fabrication', 'Label'],
+  },
+  'sk-suomi-spiky-wig': {
+    name: 'Perruque hérissée de supporter Suomi',
+    description:
+      'Une perruque hérissée de la gamme Suomi de Happy Orange, pour les matchs, les événements et les autres occasions où vous voulez vous démarquer. Des pics bleus et blancs se dressent sur un bandeau bleu orné du drapeau finlandais.',
+    specs: [
+      'Bleu et blanc',
+      'Drapeau finlandais sur le bandeau',
+      '6430080071456',
+    ],
+    specLabels: [undefined, 'Motif', 'EAN'],
+  },
 }
