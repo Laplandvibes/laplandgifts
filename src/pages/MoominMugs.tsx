@@ -243,16 +243,16 @@ export default function MoominMugs() {
       <ShopNav />
       <main className="bg-sand pb-14 md:pb-20" id="main-content" tabIndex={-1}>
         <header className="border-b border-line bg-card">
-          <div className="mx-auto max-w-4xl px-4 py-10 md:py-14">
+          <div className="mx-auto max-w-4xl px-4 py-10 md:py-14 max-lg:text-center">
             <h1 className="font-heading text-5xl tracking-wide text-gray md:text-7xl">{t.h1}</h1>
-            <p className="mt-4 max-w-3xl leading-relaxed text-muted">{t.lead}</p>
+            <p className="mt-4 max-w-3xl leading-relaxed text-muted max-lg:mx-auto max-lg:w-fit max-lg:text-left">{t.lead}</p>
           </div>
         </header>
 
         <div className="mx-auto max-w-4xl px-4">
           {/* ── Miksi arvokas ─────────────────────────────────────────── */}
           <section className="mt-10 md:mt-14">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.whyTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.whyTitle}</h2>
             <div className="mt-5 grid gap-4 sm:grid-cols-2">
               {t.why.map((w) => (
                 <div key={w.title} className="rounded-2xl border border-line bg-card p-5">
@@ -265,7 +265,7 @@ export default function MoominMugs() {
 
           {/* ── Tunnistaminen ─────────────────────────────────────────── */}
           <section className="mt-12">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.idTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.idTitle}</h2>
             <p className="mt-2 max-w-3xl text-muted">{t.idIntro}</p>
             <ol className="mt-6 space-y-4">
               {t.idSteps.map((s, i) => (
@@ -287,7 +287,7 @@ export default function MoominMugs() {
 
           {/* ── Arvot: suuruusluokat, ei keksittyjä täsmähintoja ──────── */}
           <section className="mt-12">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.valueTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.valueTitle}</h2>
             {t.valueBody.map((p) => (
               <p key={p.slice(0, 24)} className="mt-4 max-w-3xl leading-relaxed text-muted">
                 {p}
@@ -297,7 +297,7 @@ export default function MoominMugs() {
 
           {/* ── Osto-CTA: Nordic Nest ensisijaisena ───────────────────── */}
           <section className="mt-12 rounded-3xl border border-line bg-card p-6 md:p-9">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.buyTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.buyTitle}</h2>
             <p className="mt-3 max-w-3xl leading-relaxed text-muted">{t.buyIntro}</p>
             <div className="mt-6">
               <PartnerLink

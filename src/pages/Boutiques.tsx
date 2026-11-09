@@ -39,14 +39,14 @@ export default function Boutiques() {
         </header>
 
         <div className="mx-auto max-w-7xl px-4">
-          <div className="flex flex-wrap justify-center gap-2 lg:justify-start" role="group" aria-label={t.hubTitle}>
+          <div className="flex flex-nowrap overflow-x-auto [justify-content:safe_center] gap-2 sm:flex-wrap sm:overflow-visible sm:justify-center lg:justify-start" role="group" aria-label={t.hubTitle}>
             {(['all', 'online', 'physical'] as Filter[]).map((f) => (
               <button
                 key={f}
                 type="button"
                 onClick={() => setFilter(f)}
                 aria-pressed={filter === f}
-                className={`inline-flex min-h-11 items-center rounded-full px-4 text-sm font-medium transition-colors ${
+                className={`inline-flex min-h-11 shrink-0 items-center whitespace-nowrap rounded-full px-4 text-sm font-medium transition-colors ${
                   filter === f
                     ? 'bg-night text-white'
                     : 'border border-line bg-card text-gray hover:border-amber'

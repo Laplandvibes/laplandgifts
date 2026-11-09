@@ -26,7 +26,7 @@ export default function Boutique() {
     <>
       <ShopNav />
       <main className="bg-sand" id="main-content" tabIndex={-1}>
-        <div className="mx-auto max-w-3xl px-4 pt-8 pb-4">
+        <div className="mx-auto max-w-3xl px-4 pt-8 pb-4 max-lg:text-center">
           <Link
             to={localePath('/boutiques')}
             className="inline-flex min-h-11 items-center text-sm text-muted hover:text-amber hover:underline"
@@ -35,7 +35,7 @@ export default function Boutique() {
           </Link>
         </div>
 
-        <header className="mx-auto max-w-3xl px-4 pb-6">
+        <header className="mx-auto max-w-3xl px-4 pb-6 max-lg:text-center">
           <span className="text-[11px] font-semibold uppercase tracking-widest text-muted">
             {t.townNames[boutique.town]}
             {boutique.district ? `, ${boutique.district}` : ''}
@@ -45,7 +45,7 @@ export default function Boutique() {
           <h1 className="mt-1 font-body text-3xl font-semibold text-gray sm:text-4xl">
             {boutique.name}
           </h1>
-          <div className="mt-3 flex flex-wrap gap-1.5">
+          <div className="mt-3 flex flex-wrap gap-1.5 max-lg:justify-center">
             {boutique.hasOnlineStore && (
               <span className="rounded bg-finland/10 px-2 py-0.5 text-[11px] font-semibold uppercase tracking-widest text-finland">
                 {t.onlineBadge}
@@ -64,9 +64,9 @@ export default function Boutique() {
           </div>
         </header>
 
-        <section className="mx-auto max-w-3xl px-4 pb-8">
-          <p className="text-lg leading-relaxed text-gray">{c.description}</p>
-          <div className="mt-4 flex flex-wrap gap-1.5">
+        <section className="mx-auto max-w-3xl px-4 pb-8 max-lg:text-center">
+          <p className="text-lg leading-relaxed text-gray max-lg:mx-auto max-lg:w-fit max-lg:text-left">{c.description}</p>
+          <div className="mt-4 flex flex-wrap gap-1.5 max-lg:justify-center">
             {c.tags.map((tag) => (
               <span key={tag} className="rounded-full border border-line bg-card px-3 py-1 text-sm text-gray">
                 {tag}

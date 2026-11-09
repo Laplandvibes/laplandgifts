@@ -18,7 +18,7 @@ export default function ProductGridSection({
 }) {
   if (products.length === 0) {
     return (
-      <p className="rounded-2xl border border-line bg-card px-6 py-10 text-center text-muted">
+      <p className="rounded-2xl border border-line bg-card px-6 py-10 text-center text-muted max-lg:text-left">
         {emptyMessage}
       </p>
     )

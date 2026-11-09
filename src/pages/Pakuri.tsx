@@ -245,16 +245,16 @@ export default function Pakuri() {
       <ShopNav />
       <main className="bg-sand pb-14 md:pb-20" id="main-content" tabIndex={-1}>
         <header className="border-b border-line bg-card">
-          <div className="mx-auto max-w-4xl px-4 py-10 md:py-14">
+          <div className="mx-auto max-w-4xl px-4 py-10 md:py-14 max-lg:text-center">
             <h1 className="font-heading text-5xl tracking-wide text-gray md:text-7xl">{t.h1}</h1>
-            <p className="mt-4 max-w-3xl leading-relaxed text-muted">{t.lead}</p>
+            <p className="mt-4 max-w-3xl leading-relaxed text-muted max-lg:mx-auto max-lg:w-fit max-lg:text-left">{t.lead}</p>
           </div>
         </header>
 
         <div className="mx-auto max-w-4xl px-4">
           {/* ── Mikä pakuri on ────────────────────────────────────────── */}
           <section className="mt-10 md:mt-14">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.whatTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.whatTitle}</h2>
             <div className="mt-5 grid gap-4 sm:grid-cols-3">
               {t.what.map((w) => (
                 <div key={w.title} className="rounded-2xl border border-line bg-card p-5">
@@ -267,7 +267,7 @@ export default function Pakuri() {
 
           {/* ── Käyttö: kolme muotoa ──────────────────────────────────── */}
           <section className="mt-12">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.useTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.useTitle}</h2>
             <p className="mt-2 max-w-3xl text-muted">{t.useIntro}</p>
             <ol className="mt-6 space-y-4">
               {t.useSteps.map((s, i) => (
@@ -289,7 +289,7 @@ export default function Pakuri() {
 
           {/* ── Tutkimus: rehellisesti, ei terveysväitteitä ───────────── */}
           <section className="mt-12">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.researchTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.researchTitle}</h2>
             {t.researchBody.map((p) => (
               <p key={p.slice(0, 24)} className="mt-4 max-w-3xl leading-relaxed text-muted">
                 {p}
@@ -299,7 +299,7 @@ export default function Pakuri() {
 
           {/* ── Pohjoinen keruu ───────────────────────────────────────── */}
           <section className="mt-12">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.northTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.northTitle}</h2>
             {t.northBody.map((p) => (
               <p key={p.slice(0, 24)} className="mt-4 max-w-3xl leading-relaxed text-muted">
                 {p}
@@ -309,7 +309,7 @@ export default function Pakuri() {
 
           {/* ── Osto-CTA: Ruohonjuuri ensisijaisena ───────────────────── */}
           <section className="mt-12 rounded-3xl border border-line bg-card p-6 md:p-9">
-            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl">{t.buyTitle}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-gray md:text-4xl text-center lg:text-left">{t.buyTitle}</h2>
             <p className="mt-3 max-w-3xl leading-relaxed text-muted">{t.buyIntro}</p>
             <div className="mt-6">
               <RuohonjuuriLink

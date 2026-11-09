@@ -35,7 +35,7 @@ export default function BoutiqueTown() {
     <>
       <ShopNav />
       <main className="bg-sand" id="main-content" tabIndex={-1}>
-        <header className="mx-auto max-w-7xl px-4 pt-10 pb-6">
+        <header className="mx-auto max-w-7xl px-4 pt-10 pb-6 max-lg:text-center">
           <h1 className="font-heading text-5xl tracking-wide text-night md:text-6xl">
             {t.townNames[town]}
           </h1>
@@ -44,7 +44,7 @@ export default function BoutiqueTown() {
 
         {online.length > 0 && (
           <section className="mx-auto max-w-7xl px-4 pb-10">
-            <h2 className="font-heading text-3xl tracking-wide text-night">{t.shopAtH2}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-night text-center lg:text-left">{t.shopAtH2}</h2>
             <ul className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {online.map((b) => <li key={b.slug}><BoutiqueCard boutique={b} /></li>)}
             </ul>
@@ -53,7 +53,7 @@ export default function BoutiqueTown() {
 
         {physicalOnly.length > 0 && (
           <section className="mx-auto max-w-7xl px-4 pb-10">
-            <h2 className="font-heading text-3xl tracking-wide text-night">{t.visitH2}</h2>
+            <h2 className="font-heading text-3xl tracking-wide text-night text-center lg:text-left">{t.visitH2}</h2>
             <ul className="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {physicalOnly.map((b) => <li key={b.slug}><BoutiqueCard boutique={b} /></li>)}
             </ul>

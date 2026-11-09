@@ -374,9 +374,9 @@ export default function Specialties() {
       <ShopNav />
       <main className="bg-sand pb-14 md:pb-20" id="main-content" tabIndex={-1}>
         <header className="border-b border-line bg-card">
-          <div className="mx-auto max-w-4xl px-4 py-10 md:py-14">
+          <div className="mx-auto max-w-4xl px-4 py-10 md:py-14 max-lg:text-center">
             <h1 className="font-heading text-5xl tracking-wide text-gray md:text-7xl">{t.h1}</h1>
-            <p className="mt-4 max-w-2xl text-lg text-muted">{t.lead}</p>
+            <p className="mt-4 max-w-2xl text-lg text-muted max-lg:mx-auto max-lg:w-fit max-lg:text-left">{t.lead}</p>
           </div>
         </header>
 
@@ -389,7 +389,7 @@ export default function Specialties() {
             ))}
           </section>
 
-          <h2 className="mt-12 font-heading text-4xl tracking-wide text-gray">{t.itemsH2}</h2>
+          <h2 className="mt-12 font-heading text-4xl tracking-wide text-gray text-center lg:text-left">{t.itemsH2}</h2>
 
           {ITEMS.map((item) => {
             const c = t.items[item.id]
@@ -415,7 +415,7 @@ export default function Specialties() {
                     {c.travel}
                   </p>
                   {(buyHref || item.productSlug) && (
-                    <div className="mt-5 flex flex-wrap items-center gap-3">
+                    <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
                       {buyHref && item.buy && c.buyLabel && (
                         <a
                           href={buyHref}
@@ -424,7 +424,7 @@ export default function Specialties() {
                           onClick={() =>
                             trackAffiliateClick('suomikauppa', `guide:${item.buy!.sid}`, buyHref)
                           }
-                          className="inline-flex min-h-11 items-center gap-2 rounded-full bg-[#063092] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#04205f]"
+                          className="inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[#063092] px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-[#04205f]"
                         >
                           {c.buyLabel}
                           <ArrowUpRight className="h-4 w-4" aria-hidden="true" />
@@ -433,7 +433,7 @@ export default function Specialties() {
                       {item.productSlug && c.productLabel && (
                         <Link
                           to={to(`/product/${item.productSlug}`)}
-                          className="inline-flex min-h-11 items-center gap-1.5 rounded-full border border-line bg-white px-5 py-2.5 text-sm font-semibold text-gray transition-colors hover:bg-sand-deep"
+                          className="inline-flex min-h-11 items-center justify-center gap-1.5 rounded-full border border-line bg-white px-5 py-2.5 text-sm font-semibold text-gray transition-colors hover:bg-sand-deep"
                         >
                           {c.productLabel}
                           <ArrowRight className="h-4 w-4" aria-hidden="true" />
@@ -447,7 +447,7 @@ export default function Specialties() {
           })}
 
           <section className="mt-14">
-            <h2 className="font-heading text-4xl tracking-wide text-gray">{t.touristH2}</h2>
+            <h2 className="font-heading text-4xl tracking-wide text-gray text-center lg:text-left">{t.touristH2}</h2>
             {t.tourist.map((p) => (
               <p key={p.slice(0, 24)} className="mt-4 leading-relaxed text-gray/90">
                 {p}
@@ -456,7 +456,7 @@ export default function Specialties() {
           </section>
 
           <section className="mt-12">
-            <h2 className="font-heading text-4xl tracking-wide text-gray">{t.shippingH2}</h2>
+            <h2 className="font-heading text-4xl tracking-wide text-gray text-center lg:text-left">{t.shippingH2}</h2>
             {t.shipping.map((p) => (
               <p key={p.slice(0, 24)} className="mt-4 leading-relaxed text-gray/90">
                 {p}
