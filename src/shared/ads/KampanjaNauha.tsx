@@ -71,7 +71,8 @@ export default function KampanjaNauha({
             <li
               key={r}
               style={{
-                fontSize: '16px', lineHeight: 1.4, color: ink, padding: '0.375rem 0',
+                // balance: rivi jakautuu tasan eikä jätä normaalihintaa yksin kolmannelle riville puhelimella.
+                fontSize: '16px', lineHeight: 1.4, color: ink, padding: '0.375rem 0', textWrap: 'balance',
                 borderTop: `1px solid ${dark ? 'rgba(249,250,251,0.12)' : 'rgba(15,23,42,0.10)'}`,
               }}
             >
@@ -80,7 +81,7 @@ export default function KampanjaNauha({
           ))}
         </ul>
       )}
-      <p style={{ margin: '0.625rem 0 0', fontSize: '16px', lineHeight: 1.5, color: soft }}>{t.ehdot}</p>
+      <p style={{ margin: '0.625rem 0 0', fontSize: '16px', lineHeight: 1.5, color: soft, textWrap: 'pretty' }}>{t.ehdot}</p>
       {linkki && (
         <a
           href={linkki}
