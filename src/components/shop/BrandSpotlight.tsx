@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { ArrowRight } from 'lucide-react'
 import BuyButton from './BuyButton'
+import KampanjaNauha from '../../shared/ads/KampanjaNauha'
 import ShippingBadge from './ShippingBadge'
 import type { Product } from '../../data/types'
 import { PARTNERS } from '../../data/partners'
@@ -82,6 +83,7 @@ export default function BrandSpotlight({
           </div>
           {/* sid erottaa brändisivun myynnin muista pinnoista raportissa. */}
           <BuyButton product={product} sid={`brand_${product.slug}`} lang={lang} />
+          <KampanjaNauha mainostaja={product.partnerId} lang={lang} />
           <Link
             to={to(`/product/${product.slug}`)}
             className="lv-tap inline-flex items-center gap-2 font-body text-sm text-pink"

@@ -5,6 +5,7 @@ import ShopNav from '../components/ShopNav'
 // kuin Home.tsx ja Category.tsx käyttävät).
 import Footer from '../components/Footer'
 import BuyButton from '../components/shop/BuyButton'
+import KampanjaNauha from '../shared/ads/KampanjaNauha'
 import ShippingBadge from '../components/shop/ShippingBadge'
 import ProductCard from '../components/shop/ProductCard'
 import { productBySlug, productsByCategory } from '../data/products'
@@ -178,6 +179,8 @@ export default function Product() {
                   tuotteeseen. Worker katkaisee domain+sidin 50 merkkiin —
                   sids.test.ts vahtii ettei katkaisu sulauta kahta tuotetta. */}
               <BuyButton product={product} sid={`p_${product.slug}`} lang={lang} />
+              {/* Kumppanin määräaikainen kampanja (shared/ads/kampanjat.ts): näkyy vain aikaikkunassa. */}
+              <KampanjaNauha mainostaja={product.partnerId} lang={lang} />
               <p className="text-sm text-muted">{t.product.checkoutNote}</p>
 
               {PAKURI_GUIDE_SLUGS.has(product.slug) && (

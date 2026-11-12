@@ -8,6 +8,7 @@ import ShopNav from '../components/ShopNav'
 import Footer from '../components/Footer'
 import { AFFILIATE_REL, PARTNERS, partnerHref } from '../data/partners'
 import { trackAffiliateClick } from '../lib/analytics'
+import KampanjaNauha from '../shared/ads/KampanjaNauha'
 import { useLang, useLocalePath } from '../i18n/useLang'
 
 /**
@@ -321,6 +322,8 @@ export default function Pakuri() {
                 <ArrowUpRight className="h-5 w-5" aria-hidden="true" />
               </RuohonjuuriLink>
             </div>
+            {/* Ruohonjuuren määräaikainen kampanja (shared/ads/kampanjat.ts): näkyy vain aikaikkunassa. */}
+            <KampanjaNauha mainostaja="ruohonjuuri" lang={lang} marginTop="1.25rem" />
             <ul className="mt-5 space-y-2 text-sm text-muted">
               <li>
                 {t.buyChunksLabel}{' '}
