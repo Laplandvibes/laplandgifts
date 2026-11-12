@@ -1,9 +1,9 @@
 {
-  "version": "efb55012",
+  "version": "80ee5ec0",
   "domain": "laplandgifts.com",
   "brand": "GIFTS",
   "tagline": "Finnish gifts and Lapland souvenirs",
-  "generated": "2026-10-09T10:29:24.589Z",
+  "generated": "2026-11-12T10:32:33.721Z",
   "staticFallbackSeason": "winter",
   "seasons": {
     "summer": {
@@ -11,18 +11,20 @@
       "heroUrl": "https://laplandgifts.com/images/hero-shop.webp",
       "heroAlt": null,
       "heroSha": "114ca7fc109c9839",
-      "bytes": 107781,
-      "sha256": "3e3f9c19f2cd14ffd2900f234e564fc4eb87bdce5a997115e2925fe5ac188d96",
+      "bytes": 105061,
+      "sha256": "5532a0d31e2db9b2286fbcca632247c108c0323c4325691ed275f11250202c62",
       "bandH": 168,
       "photoPct": 73.3,
       "ink": 15300,
       "inkBox": [
         357,
-        493,
+        26,
         843,
-        603
+        136
       ],
       "safe": true,
+      "palkki": "yla",
+      "xVapaa": true,
       "accentP10": 5.06,
       "accentMed": 5.06,
       "whiteP10": 17.08,
@@ -50,18 +52,20 @@
       "heroUrl": "https://laplandgifts.com/images/hero-shop.webp",
       "heroAlt": null,
       "heroSha": "114ca7fc109c9839",
-      "bytes": 107781,
-      "sha256": "3e3f9c19f2cd14ffd2900f234e564fc4eb87bdce5a997115e2925fe5ac188d96",
+      "bytes": 105061,
+      "sha256": "5532a0d31e2db9b2286fbcca632247c108c0323c4325691ed275f11250202c62",
       "bandH": 168,
       "photoPct": 73.3,
       "ink": 15300,
       "inkBox": [
         357,
-        493,
+        26,
         843,
-        603
+        136
       ],
       "safe": true,
+      "palkki": "yla",
+      "xVapaa": true,
       "accentP10": 5.06,
       "accentMed": 5.06,
       "whiteP10": 17.08,

@@ -5,19 +5,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/cat-design.webp",
-        "bytes": 120676,
-        "sha256": "ea8f06df5be726f928d46c1238c6ea583e950b90fdda2ba79dd4d07ea5be3e80",
+        "bytes": 117647,
+        "sha256": "41569110a63b2a221e62cb6278fa9953e880ea5f502e3553a2a085a09d0c227d",
         "heroSha": "f7e2c3f29dae9755",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 14849,
         "inkBox": [
           375,
-          493,
+          26,
           825,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -42,19 +44,21 @@
       },
       "winter": {
         "hero": "/images/cat-design.webp",
-        "bytes": 120676,
-        "sha256": "ea8f06df5be726f928d46c1238c6ea583e950b90fdda2ba79dd4d07ea5be3e80",
+        "bytes": 117647,
+        "sha256": "41569110a63b2a221e62cb6278fa9953e880ea5f502e3553a2a085a09d0c227d",
         "heroSha": "f7e2c3f29dae9755",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 14849,
         "inkBox": [
           375,
-          493,
+          26,
           825,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -86,19 +90,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/cat-clothing.webp",
-        "bytes": 142046,
-        "sha256": "8f6f9a6f5d8d16eb673fc4fe04aa64b12758133513fb76852c18f45687739574",
+        "bytes": 139056,
+        "sha256": "7c45ba394d65615b05ad8e4cd1567107b6a51481ab82c605d3a33b98067abe6a",
         "heroSha": "b72a56e6048c91c3",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 15821,
         "inkBox": [
           321,
-          493,
+          26,
           878,
-          597
+          130
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -123,19 +129,21 @@
       },
       "winter": {
         "hero": "/images/cat-clothing.webp",
-        "bytes": 142046,
-        "sha256": "8f6f9a6f5d8d16eb673fc4fe04aa64b12758133513fb76852c18f45687739574",
+        "bytes": 139056,
+        "sha256": "7c45ba394d65615b05ad8e4cd1567107b6a51481ab82c605d3a33b98067abe6a",
         "heroSha": "b72a56e6048c91c3",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 15821,
         "inkBox": [
           321,
-          493,
+          26,
           878,
-          597
+          130
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -167,19 +175,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/cat-artisan-crafts.webp",
-        "bytes": 137155,
-        "sha256": "0ca7d0282ee52cf0944d923ed496e3e22f41eaa77ca6e52cb22c7501dcbeed11",
+        "bytes": 133755,
+        "sha256": "61707c7be457a6dab14533e0dea2c93d7770d731babd599e18cb38081e6170f3",
         "heroSha": "ed0b07c79c777c04",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 14178,
         "inkBox": [
           410,
-          493,
+          26,
           789,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -204,19 +214,21 @@
       },
       "winter": {
         "hero": "/images/cat-artisan-crafts.webp",
-        "bytes": 137155,
-        "sha256": "0ca7d0282ee52cf0944d923ed496e3e22f41eaa77ca6e52cb22c7501dcbeed11",
+        "bytes": 133755,
+        "sha256": "61707c7be457a6dab14533e0dea2c93d7770d731babd599e18cb38081e6170f3",
         "heroSha": "ed0b07c79c777c04",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 14178,
         "inkBox": [
           410,
-          493,
+          26,
           789,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -248,19 +260,21 @@
     "kaudet": {
       "summer": {
         "hero": "/images/cat-treats.webp",
-        "bytes": 143013,
-        "sha256": "3408bd95c80326eca5d15b5fa25a15c70335a34cf9139465da46844b2addad25",
+        "bytes": 139933,
+        "sha256": "eb3ca1e270a4f22baa439ddc7fa6549f12cccd7ad2280ce84e42969a6d8dbbe0",
         "heroSha": "903406cc1efd886f",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 15052,
         "inkBox": [
           370,
-          493,
+          26,
           829,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
@@ -285,19 +299,21 @@
       },
       "winter": {
         "hero": "/images/cat-treats.webp",
-        "bytes": 143013,
-        "sha256": "3408bd95c80326eca5d15b5fa25a15c70335a34cf9139465da46844b2addad25",
+        "bytes": 139933,
+        "sha256": "eb3ca1e270a4f22baa439ddc7fa6549f12cccd7ad2280ce84e42969a6d8dbbe0",
         "heroSha": "903406cc1efd886f",
         "bandH": 168,
         "photoPct": 73.3,
         "ink": 15052,
         "inkBox": [
           370,
-          493,
+          26,
           829,
-          603
+          136
         ],
         "safe": true,
+        "palkki": "yla",
+        "xVapaa": true,
         "accentP10": 5.06,
         "accentMed": 5.06,
         "whiteP10": 17.08,
