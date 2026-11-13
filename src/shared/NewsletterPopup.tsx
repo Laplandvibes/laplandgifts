@@ -67,6 +67,14 @@ const withSlash = (href: string) => href.replace(/^([^?#]*[^/?#])(?=[?#]|$)/, '$
  * promise is gone on every locale (same debt as the 2026-08-02 welcome-email
  * truth audit).
  *
+ * Per-site dress (Vesa 2026-09-23: "tekstit ja värimaailma sivustokohtaisiksi"
+ * → "kyllä, vie kaikille"). `theme` sets the card, top strip, photo ring,
+ * focus ring, checkbox and CTA from the site's OWN palette, measured from its
+ * live homepage. `copy` gives the founder note per language in the site's own
+ * topic. The `#LAPLAND` wordmark stays network pink everywhere: it is the
+ * network mark, not site chrome. A site that passes neither looks exactly as
+ * before.
+ *
  * Both images must exist in each consuming site's public/ dir
  * (`/vesa-founder.webp`, `/vesa-lapland.webp`). If the avatar 404s the popup
  * degrades gracefully to the pre-founder layout (no broken-image icon).
@@ -181,6 +189,44 @@ export interface NewsletterPopupDict {
 
 type SupportedLang = 'en' | 'fi' | 'de' | 'ja' | 'es' | 'pt-BR' | 'zh-CN' | 'ko' | 'fr' | 'it' | 'nl' | 'sv';
 
+/**
+ * Per-site colour dress. Every value is a hex colour taken from the site's own
+ * homepage (measured 2026-09-23), never invented. Omitted keys fall back to the
+ * network pink, so a site that passes nothing renders exactly as before.
+ */
+export interface NewsletterPopupTheme {
+  /** Card background. Network default: deep-night #0F172A. */
+  surface?: string;
+  /** Photo ring, top strip start, focus ring, checkbox. Default #EC4899. */
+  accent?: string;
+  /** CTA fill and top strip end. Default #DB2777. */
+  cta?: string;
+  /** CTA label. Must reach 4.5:1 against `cta` (checked when the theme is chosen). */
+  onCta?: string;
+}
+
+/**
+ * Site-specific founder note per language (Vesa 2026-09-23). A missing
+ * language falls back to the built-in network note in THAT language, never to
+ * English, so a partial map cannot put English on /fi.
+ */
+export type NewsletterPopupCopy = Partial<Record<SupportedLang, { headline?: string; description: string; /** Button label; default the network's own. */ submit?: string }>>;
+
+const DEFAULT_THEME: Required<NewsletterPopupTheme> = {
+  surface: '#0F172A',
+  accent: '#EC4899',
+  cta: '#DB2777',
+  onCta: '#FFFFFF',
+};
+
+/** `#RRGGBB` + alpha → `rgba()`; any other value is returned as-is. */
+function withAlpha(hex: string, alpha: number): string {
+  const m = /^#([0-9a-f]{6})$/i.exec(hex);
+  if (!m) return hex;
+  const n = parseInt(m[1], 16);
+  return `rgba(${n >> 16},${(n >> 8) & 255},${n & 255},${alpha})`;
+}
+
 interface NewsletterPopupProps {
   /**
    * Per-site identifier. Used for the localStorage key and the analytics
@@ -200,6 +246,13 @@ interface NewsletterPopupProps {
   description?: string;
   /** Optional translation dictionary, see NewsletterPopupDict. */
   dict?: NewsletterPopupDict;
+  /** Per-site colour dress, see NewsletterPopupTheme. */
+  theme?: NewsletterPopupTheme;
+  /**
+   * Per-site founder note per language, see NewsletterPopupCopy. Used when
+   * `headline`/`description` are not passed; those two still win if given.
+   */
+  copy?: NewsletterPopupCopy;
   /**
    * Current site locale. If provided AND `headline`/`description` are NOT
    * overridden, the popup picks built-in localized copy + dict.
@@ -238,6 +291,24 @@ interface NewsletterPopupProps {
   founderImage?: string;
   /** Trip photo shown on the success view. Must exist in the site's public/. */
   thanksImage?: string;
+}
+
+/**
+ * Tuliko kävijä tähän istuntoon maksetusta somemainoksesta? `paid_social` = omat merkinnät, `paid` = Metan automaattiset
+ * URL-parametrit (utm_source=fb|ig&utm_medium=paid), jotka korvasivat omat 3/4 mainoksessa (mitattu Umamista 10.11.2026).
+ */
+export function paidSocialVisit(): boolean {
+  try {
+    const KEY = 'lv_paid_social';
+    const medium = new URLSearchParams(window.location.search).get('utm_medium');
+    if (medium === 'paid_social' || medium === 'paid') {
+      sessionStorage.setItem(KEY, '1');
+      return true;
+    }
+    return sessionStorage.getItem(KEY) === '1';
+  } catch {
+    return false;
+  }
 }
 
 function readStored(key: string): StoredState | null {
@@ -425,7 +496,7 @@ const LOCALE_DICTS: Record<SupportedLang, Required<NewsletterPopupDict>> = {
   ja: {
     successHeadline: 'あと少しです。',
     successBody: 'いまお送りしたメールから登録を確認してください。',
-    alreadyHeadline: 'すでに登録済みです!',
+    alreadyHeadline: 'すでに登録済みです！',
     alreadyBody: 'すでにご登録いただいています。お伝えしたいことがあるときにご連絡します。',
     emailPlaceholder: 'メールアドレス',
     submit: '参加します！',
@@ -435,7 +506,7 @@ const LOCALE_DICTS: Record<SupportedLang, Required<NewsletterPopupDict>> = {
     closeLabel: '閉じる',
     trust: '本当に価値のある時だけお届けします。いつでも解除可能。メールアドレスを第三者と共有しません。',
     errorGeneric: '登録に失敗しました。もう一度お試しください。',
-    socialLead: 'それまでの間、ラップランドの旅の投稿はこちら:',
+    socialLead: 'それまでの間、ラップランドの旅の投稿はこちら：',
     founderAlt: 'LaplandVibes創業者のヴェサ',
     consent: `入力したメールアドレス宛に、LaplandVibesがニュースレター（旅のヒント、シーズン情報、キャンペーン情報）を送ることに同意します。私は18歳以上です。`,
     privacy: `プライバシーポリシー`,
@@ -443,7 +514,7 @@ const LOCALE_DICTS: Record<SupportedLang, Required<NewsletterPopupDict>> = {
   es: {
     successHeadline: 'Ya casi.',
     successBody: 'Confirme su suscripción desde el correo que acabamos de enviarle.',
-    alreadyHeadline: '¡Ya estaba en la lista!',
+    alreadyHeadline: '¡Usted ya estaba en la lista!',
     alreadyBody: 'Su suscripción ya estaba activa. Sabrá de mí cuando haya algo que contar.',
     emailPlaceholder: 'Su correo electrónico',
     submit: '¡Me apunto!',
@@ -646,6 +717,11 @@ const FOUNDER_STYLES = `
 @media (prefers-reduced-motion: reduce) {
   .lv-founder-avatar { animation: lv-founder-fade 0.4s ease-out both; }
 }
+.lv-nl-email:focus {
+  outline: none;
+  border-color: var(--lv-nl-focus-border);
+  box-shadow: 0 0 0 2px var(--lv-nl-focus-ring);
+}
 @media (max-height: 600px) and (min-width: 560px) {
   .lv-nl-overlay.lv-nl-overlay { padding: 12px 16px; align-items: center; }
   .lv-nl-card.lv-nl-card { max-width: 44rem; }
@@ -734,6 +810,8 @@ export default function NewsletterPopup({
   description,
   dict,
   lang,
+  theme,
+  copy,
   onSubscribed,
   delaySeconds = 90,
   scrollPercent = 75,
@@ -748,8 +826,25 @@ export default function NewsletterPopup({
   // didn't override headline/description. Prevents EN copy on /fi /cn etc.
   const safeLang: SupportedLang = (lang && LOCALE_HEADLINES[lang]) ? lang : 'en';
   const localized = LOCALE_HEADLINES[safeLang];
-  const resolvedHeadline = headline ?? localized.headline;
-  const resolvedDescription = description ?? localized.description;
+  const siteCopy = copy?.[safeLang];
+  const resolvedHeadline = headline ?? siteCopy?.headline ?? localized.headline;
+  const resolvedDescription = description ?? siteCopy?.description ?? localized.description;
+  // Per-site dress (2026-09-23). Without `theme` every value below equals the
+  // old pink literal, so a site that passes no theme renders as before.
+  const T = { ...DEFAULT_THEME, ...(theme ?? {}) };
+  const stripBg = theme
+    ? `linear-gradient(90deg, ${T.accent} 0%, ${T.cta} 100%)`
+    : 'linear-gradient(90deg, #EC4899 0%, #DB2777 50%, #BE185D 100%)';
+  const socialHoverBg = theme ? T.cta : '#EC4899';
+  const socialHoverFg = theme ? T.onCta : '#F9FAFB';
+  const ctaShadow = withAlpha(theme ? T.cta : T.accent, 0.25);
+  const cardStyle = {
+    background: T.surface,
+    border: `1px solid ${withAlpha(T.accent, 0.4)}`,
+    '--lv-nl-focus-border': withAlpha(T.accent, 0.6),
+    '--lv-nl-focus-ring': withAlpha(T.accent, 0.25),
+    '--lv-nl-accent': T.accent,
+  } as React.CSSProperties;
   const D = { ...LOCALE_DICTS[safeLang], ...(dict ?? {}) };
   const storageKey = `${siteId}_newsletter_popup`;
   // Per-session "already shown" guard (sessionStorage). Once the popup has
@@ -808,6 +903,10 @@ export default function NewsletterPopup({
     // Already shown once this session → do not re-arm on this (or any later)
     // page view. This is what stops it appearing on every page as you browse.
     try { if (sessionStorage.getItem(sessionShownKey)) return; } catch { /* private mode */ }
+    // Maksetusta somemainoksesta tullut kävijä ei saa ikkunaa koko istunnon aikana (Vesa 6.11.2026:
+    // mainoskävijälle aukesi evästeikkunan jälkeen koko ruudun uutiskirje). Tieto säilyy istunnon ajan,
+    // koska UTM-kysely katoaa osoitteesta ensimmäisen sisälinkin jälkeen.
+    if (paidSocialVisit()) return;
 
     let fired = false;
     let pending = false;
@@ -989,13 +1088,13 @@ export default function NewsletterPopup({
         role="dialog"
         aria-modal="true"
         aria-labelledby="lv-newsletter-popup-title"
-        className="lv-nl-card relative my-auto max-w-md w-full bg-deep-night rounded-2xl shadow-2xl"
-        style={{ border: '1px solid rgba(236,72,153,0.40)' }}
+        className="lv-nl-card relative my-auto max-w-md w-full rounded-2xl shadow-2xl"
+        style={cardStyle}
       >
-        {/* Pink accent strip */}
+        {/* Accent strip: the site's own colours, network pink by default */}
         <div
           className="lv-nl-strip h-1 w-full rounded-t-2xl"
-          style={{ background: 'linear-gradient(90deg, #EC4899 0%, #DB2777 50%, #BE185D 100%)' }}
+          style={{ background: stripBg }}
           aria-hidden="true"
         />
 
@@ -1043,8 +1142,8 @@ export default function NewsletterPopup({
                   rel="noopener"
                   aria-label="TikTok: @laplandvibes"
                   style={socialButtonStyle}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = '#EC4899'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.10)'; }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = socialHoverBg; e.currentTarget.style.color = socialHoverFg; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.10)'; e.currentTarget.style.color = '#F9FAFB'; }}
                 >
                   <TikTokIcon />
                 </a>
@@ -1054,8 +1153,8 @@ export default function NewsletterPopup({
                   rel="noopener"
                   aria-label="Instagram: @laplandvibesofficial"
                   style={socialButtonStyle}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = '#EC4899'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.10)'; }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = socialHoverBg; e.currentTarget.style.color = socialHoverFg; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.10)'; e.currentTarget.style.color = '#F9FAFB'; }}
                 >
                   <InstagramIcon />
                 </a>
@@ -1065,8 +1164,8 @@ export default function NewsletterPopup({
                   rel="noopener"
                   aria-label="Facebook: LaplandVibes"
                   style={socialButtonStyle}
-                  onMouseEnter={(e) => { e.currentTarget.style.background = '#EC4899'; }}
-                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.10)'; }}
+                  onMouseEnter={(e) => { e.currentTarget.style.background = socialHoverBg; e.currentTarget.style.color = socialHoverFg; }}
+                  onMouseLeave={(e) => { e.currentTarget.style.background = 'rgba(255,255,255,0.10)'; e.currentTarget.style.color = '#F9FAFB'; }}
                 >
                   <FacebookIcon />
                 </a>
@@ -1093,7 +1192,7 @@ export default function NewsletterPopup({
                     height: '128px',
                     borderRadius: '9999px',
                     overflow: 'hidden',
-                    boxShadow: '0 0 0 3px #EC4899, 0 0 40px rgba(236,72,153,0.55)',
+                    boxShadow: `0 0 0 3px ${T.accent}, 0 0 40px ${withAlpha(T.accent, 0.55)}`,
                   }}
                 >
                   <img
@@ -1167,7 +1266,7 @@ export default function NewsletterPopup({
                   // defines the `snow` colour token in tailwind.config, which
                   // made the input render as pure white-on-white and invisible.
                   style={{ background: '#FFFFFF', color: '#1F2937', WebkitTextFillColor: '#1F2937', border: '1px solid #64748B' }}
-                  className="lv-nl-email w-full px-5 py-3 rounded-full border border-white/15 focus:border-vibe-pink/60 focus:outline-none focus:ring-2 focus:ring-vibe-pink/25 disabled:opacity-50 placeholder:text-slate-500"
+                  className="lv-nl-email w-full px-5 py-3 rounded-full border border-white/15 disabled:opacity-50 placeholder:text-slate-500"
                 /></div>
                 {/* [LV-CONSENT-V2 2026-08-14] Pakollinen suostumus + ikävahvistus.
                     Esivalitsematon: GDPR:n mukaan esivalittu ruutu ei ole suostumus. */}
@@ -1178,11 +1277,13 @@ export default function NewsletterPopup({
                     onChange={(e) => setConsented(e.target.checked)}
                     required
                     disabled={status === 'loading'}
-                    className="mt-0.5 w-4 h-4 shrink-0 accent-vibe-pink cursor-pointer"
+                    className="mt-0.5 w-4 h-4 shrink-0 cursor-pointer"
+                    style={{ accentColor: T.accent }}
                   />
                   <span style={{color:"#F9FAFB"}} className="text-white/70 text-xs leading-relaxed">
                     {D.consent}{' '}
-                    <a style={{color:"#BAE6FD",textDecoration:"underline"}}                       href={withSlash(localizedPrivacyHref(privacyHref, location.pathname))}
+                    <a style={{color:"#BAE6FD",textDecoration:"underline"}} 
+                      href={withSlash(localizedPrivacyHref(privacyHref, location.pathname))}
                       target="_blank"
                       rel="noopener"
                       onClick={(e) => e.stopPropagation()}
@@ -1195,8 +1296,12 @@ export default function NewsletterPopup({
                 <button
                   type="submit"
                   disabled={status === 'loading'}
-                  className="lv-nl-submit w-full px-6 py-3 rounded-full hover:bg-pink-600 text-white font-semibold text-sm transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed shadow-lg shadow-vibe-pink/25 cursor-pointer"
-                  style={{ backgroundColor: '#DB2777' }}
+                  className="lv-nl-submit w-full px-6 py-3 rounded-full font-semibold text-sm transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed cursor-pointer"
+                  style={{
+                    backgroundColor: T.cta,
+                    color: T.onCta,
+                    boxShadow: `0 10px 15px -3px ${ctaShadow}, 0 4px 6px -4px ${ctaShadow}`,
+                  }}
                 >
                   {status === 'loading' ? (
                     <>
@@ -1204,7 +1309,7 @@ export default function NewsletterPopup({
                     </>
                   ) : (
                     <>
-                      <Send className="w-4 h-4" /> {D.submit}
+                      <Send className="w-4 h-4" /> {siteCopy?.submit ?? D.submit}
                     </>
                   )}
                 </button>
