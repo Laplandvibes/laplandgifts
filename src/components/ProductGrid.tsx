@@ -56,7 +56,9 @@ export default function ProductGrid() {
       '@type': 'ListItem',
       position: i + 1,
       name: productName(p, lang),
-      url: `https://laplandgifts.com${to(`/product/${p.slug}`)}`,
+      // Loppukauttaviiva kuten kanoninen ja sivukartta: kauttaviivaton tuoteosoite ohjautuu 308 (mitattu 13.11.2026,
+      // lv-ops scripts/audit_jsonld_osoitteet.mjs).
+      url: `https://laplandgifts.com${to(`/product/${p.slug}`)}`.replace(/\/?$/, '/'),
     })),
   }
   return (
