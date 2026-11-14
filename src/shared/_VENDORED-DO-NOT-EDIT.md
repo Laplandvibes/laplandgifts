@@ -30,6 +30,7 @@ Only the files listed below are vendored, on purpose — this is a refresh, not 
 - adSlotsCopy.ts
 - ads/AdUnit.tsx
 - ads/KalevalaRail.tsx
+- ads/KampanjaNauha.tsx
 - ads/ProductRail.tsx
 - ads/advertisers/ivalo.ts
 - ads/advertisers/kultaCenter.ts
@@ -44,6 +45,7 @@ Only the files listed below are vendored, on purpose — this is a refresh, not 
 - ads/data/scandinavianoutdoorPicks.ts
 - ads/data/sukkamestaritPicks.ts
 - ads/data/suomikauppaPicks.ts
+- ads/kampanjat.ts
 - ads/rails/finlayson.ts
 - ads/rails/ivalo.ts
 - ads/rails/nanso.ts
