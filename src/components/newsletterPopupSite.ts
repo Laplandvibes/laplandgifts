@@ -42,13 +42,21 @@ export const POPUP_THEME: NewsletterPopupTheme = {
  * pilkku sivulauseen edessä, puuttuva objekti). Portti
  * `scripts/check_finnish_copy.py` (lv-ops) lukee tämän lohkon nimellä
  * `GIFTS_FI_COPY`: älä nimeä vakiota uudelleen päivittämättä porttia.
- * 🔴 Lupaus "luen takarajat marraskuussa ja lähetän ne" on aikaan sidottu:
- * se pitää lunastaa kampanjalla tai teksti vaihtaa ennen joulua.
+ * 🔴 14.11.2026 kuvaus vaihdettu (Vesa: "korjaa"). Elokuun teksti lupasi lukea
+ * kauppojen takarajat marraskuussa ja lähettää ne, ja sanoi, ettei niitä ole
+ * vielä julkaistu. Takarajakampanjaa ei tehty, joten lupaus olisi jäänyt
+ * katteettomaksi (giftsin kautta liittyneitä suomenkielisiä tilaajia oli 0,
+ * eli kukaan ei ollut saanut sitä). Nyt teksti kertoo vain sen, mikä pitää:
+ * takaraja on kaupan oma, ja uutiskirje on lahjaputken kolme aihetta
+ * (`GIFTS_MESSAGES` päivät 3/7/12). Jos putken aiheet muuttuvat, muuta tämä.
+ * Otsikko on joulun sesonkiin: vaihda se tammikuussa. Natiiviluettu 14.11.
+ * ("Joululahjan takaraja"; viestimäärää ei luvata). Rivitys mitattu 360–1280 px:
+ * viimeiselle riville jää aina vähintään kaksi sanaa ("omalta" pois tästä syystä).
  */
 const GIFTS_FI_COPY = {
   headline: 'Milloin lahja pitää tilata?',
   description:
-    'Vesa tässä. Kaupoilla on omat takarajansa joulun toimituksille, eikä niitä ole vielä julkaistu. Luen ne marraskuussa kauppojen omilta sivuilta ja lähetän ne sinulle. Sitä ennen kerron, mitä täältä kannattaa ostaa ja kenelle.',
+    'Vesa tässä. Joululahjan takaraja vaihtelee kaupoittain, joten katso se kaupan sivulta ennen tilaamista. Uutiskirjeessä kerron, mitkä lahjat on tehty Suomessa, miten valitset muumimukin ja mitä elämyslahjasta kannattaa tarkistaa.',
 };
 
 /**
