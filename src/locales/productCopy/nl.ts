@@ -78,7 +78,7 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
   'halti-tokoi-dx-jacket': {
     name: 'Halti Tokoi DX shelljas, heren',
     description:
-      'Een weerbestendige shell met alle naden getapet, een lichte voering en een verstelbare capuchon, ruim genoeg gesneden om er een wollen trui onder te dragen. Halti levert alleen binnen de Europese Unie.',
+      'Een weerbestendige shell met alle naden getapet, een lichte voering en een verstelbare capuchon, ruim genoeg gesneden om er een wollen trui onder te dragen. Halti levert alleen op het Finse vasteland.',
     specs: [
       'DrymaxX Sleek Twill, een waterdichte en winddichte 2-laags stof met DrymaxX-membraan. Samenstelling 50 % gerecycled polyester en 50 % polyester',
       'Zachte polyester voering, 100 % gerecycled polyester',

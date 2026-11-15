@@ -1955,15 +1955,15 @@
       "en": "A weatherproof shell with every seam taped, a light lining and an adjustable hood, cut loosely enough to layer a wool jumper underneath. Delivery area shown.",
       "fi": "Kuoritakki, jonka kaikki saumat on teipattu ja jossa on kevyt vuori ja säädettävä huppu. Väljä leikkaus jättää alle tilaa villapaidalle. Toimitusalue kerrotaan.",
       "de": "Eine wetterfeste Jacke mit vollständig verklebten Nähten, leichtem Futter und verstellbarer Kapuze, weit genug geschnitten. Verkauf durch den Partnershop.",
-      "ja": "全ての縫い目をシームテープで処理した耐候シェル。軽い裏地と調節可能なフードが付き、ウールのセーターを下に着られるゆとりがあります。ハルティは EU 域内のみ配送します。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
+      "ja": "全ての縫い目をシームテープで処理した耐候シェル。軽い裏地と調節可能なフードが付き、ウールのセーターを下に着られるゆとりがあります。ハルティはフィンランド本土のみ配送します。価格は提携ショップから取得し、ご購入も同じショップで行います。配送エリアはこのページに記載しています。",
       "es": "Una shell resistente al tiempo con todas las costuras selladas, forro ligero y capucha ajustable. El precio es el de la tienda asociada, donde se compra.",
       "pt-BR": "Uma shell resistente ao tempo com todas as costuras seladas, forro leve e capuz ajustável, com corte folgado o suficiente para levar um suéter de lã por baixo.",
-      "zh-CN": "全部接缝压胶的防风雨外壳，配轻薄内衬和可调帽子，版型宽松到里面能穿一件羊毛衫。Halti 只在欧盟境内配送。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
-      "ko": "모든 솔기를 테이핑한 방수방풍 셸에 가벼운 안감과 조절 가능한 후드가 달렸고, 안에 울 스웨터를 입을 만큼 넉넉하게 재단했습니다. 할티는 유럽연합 안으로만 배송합니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
+      "zh-CN": "全部接缝压胶的防风雨外壳，配轻薄内衬和可调帽子，版型宽松到里面能穿一件羊毛衫。Halti 只在芬兰本土配送。价格取自合作商店，购买同样在该商店完成。本页面标注了配送区域。",
+      "ko": "모든 솔기를 테이핑한 방수방풍 셸에 가벼운 안감과 조절 가능한 후드가 달렸고, 안에 울 스웨터를 입을 만큼 넉넉하게 재단했습니다. 할티는 핀란드 본토로만 배송합니다. 가격은 제휴 상점에서 확인하며 구매도 해당 상점에서 이루어집니다. 배송 지역은 이 페이지에 표시되어 있습니다.",
       "fr": "Une coquille résistante aux intempéries, toutes coutures étanchées, avec une doublure légère et une capuche réglable. Vous achetez dans la boutique partenaire.",
       "it": "Un guscio resistente alle intemperie con tutte le cuciture nastrate, una fodera leggera e un cappuccio regolabile. Il prezzo è rilevato dal negozio partner.",
       "nl": "Een weerbestendige shell met alle naden getapet, een lichte voering en een verstelbare capuchon, ruim genoeg gesneden om er een wollen trui onder te dragen.",
-      "sv": "Ett vädertåligt skal med tejpade sömmar, lätt foder och justerbar huva, klippt tillräckligt rymligt för en ylletröja under. Halti levererar endast inom EU."
+      "sv": "Ett vädertåligt skal med tejpade sömmar, lätt foder och justerbar huva, klippt tillräckligt rymligt för en ylletröja under. Du köper varan i partnerbutiken."
     }
   },
   {
@@ -10536,7 +10536,7 @@
   {
     "path": "/boutique/lahjapuoti-tiinuska",
     "fallbackTitle": "Lahjapuoti Tiinuska, Rovaniemi: gift shop",
-    "fallbackDescription": "A gift shop from Rovaniemi, founded in 1987. Aarikka and Moomin products, jewellery, textiles and treats, ordered online. Rovaniemi.",
+    "fallbackDescription": "A Rovaniemi gift shop founded in 1987, with shops on Rovakatu and in the Sampokeskus shopping centre.",
     "fallbackTitleByLang": {
       "en": "Lahjapuoti Tiinuska, Rovaniemi: gift shop",
       "fi": "Lahjapuoti Tiinuska, Rovaniemi: lahjakauppa",
@@ -10552,18 +10552,18 @@
       "sv": "Lahjapuoti Tiinuska, Rovaniemi: presentbutik"
     },
     "fallbackDescriptionByLang": {
-      "en": "A gift shop from Rovaniemi, founded in 1987. Aarikka and Moomin products, jewellery, textiles and treats, ordered online. Rovaniemi.",
-      "fi": "Vuonna 1987 perustettu lahjapuoti Rovaniemeltä. Aarikkaa ja Muumi-tuotteita, koruja, tekstiilejä ja herkkuja verkkokaupasta. Rovaniemi.",
-      "de": "Geschenkeladen aus Rovaniemi, gegründet 1987. Aarikka- und Moomin-Artikel, Schmuck, Textilien und Leckereien im Onlineshop. Rovaniemi.",
-      "ja": "1987年創業、ロヴァニエミのギフトショップ。Aarikkaやムーミンの品、ジュエリー、テキスタイル、菓子をオンラインで販売しています。 ロヴァニエミ.",
-      "es": "Tienda de regalos de Rovaniemi, fundada en 1987. Productos Aarikka y Moomin, joyas, textiles y dulces por internet. Rovaniemi.",
-      "pt-BR": "Loja de presentes de Rovaniemi, fundada em 1987. Produtos Aarikka e Moomin, joias, têxteis e guloseimas pela internet. Rovaniemi.",
-      "zh-CN": "来自罗瓦涅米的礼品店，1987 年创立。Aarikka 与姆明商品、饰品、纺织品与零食，可在网店选购。 Rovaniemi. 在店里买到拉普兰手工艺品。",
-      "ko": "1987년에 문을 연 로바니에미의 선물 가게입니다. Aarikka와 무민 제품, 장신구, 직물, 먹거리를 온라인으로 살 수 있습니다. Rovaniemi.",
-      "fr": "Boutique de cadeaux de Rovaniemi, fondée en 1987. Articles Aarikka et Moomin, bijoux, textiles et gourmandises en ligne. Rovaniemi.",
-      "it": "Negozio di regali di Rovaniemi, fondato nel 1987. Prodotti Aarikka e Moomin, gioielli, tessuti e dolci online. Rovaniemi.",
-      "nl": "Cadeauwinkel uit Rovaniemi, opgericht in 1987. Aarikka en Moomin, sieraden, textiel en lekkers via de webwinkel. Rovaniemi.",
-      "sv": "Presentbutik från Rovaniemi, grundad 1987. Aarikka och Moomin, smycken, textilier och godsaker via nätbutiken. Rovaniemi."
+      "en": "A Rovaniemi gift shop founded in 1987, with shops on Rovakatu and in the Sampokeskus shopping centre.",
+      "fi": "Vuonna 1987 perustettu rovaniemeläinen lahjapuoti, jolla on myymälät Rovakadulla ja Sampokeskuksessa.",
+      "de": "Geschenkeladen aus Rovaniemi, gegründet 1987, mit Läden in der Rovakatu und im Einkaufszentrum Sampokeskus.",
+      "ja": "1987年創業、ロヴァニエミのギフトショップ。Rovakatu通りとショッピングセンターSampokeskusに店舗があります。Aarikkaやムーミンの品、ジュエリー、テキスタイル、菓子をオンラインでも販売しています。 ロヴァニエミ.",
+      "es": "Tienda de regalos de Rovaniemi, fundada en 1987, con locales en la calle Rovakatu y en el centro comercial Sampokeskus.",
+      "pt-BR": "Loja de presentes de Rovaniemi, fundada em 1987, com lojas na rua Rovakatu e no shopping Sampokeskus.",
+      "zh-CN": "来自罗瓦涅米的礼品店，1987 年创立，在 Rovakatu 街和 Sampokeskus 购物中心设有门店。Aarikka 与姆明商品、饰品、纺织品与零食，也可在网店选购。 Rovaniemi.",
+      "ko": "1987년에 문을 연 로바니에미의 선물 가게로, Rovakatu 거리와 Sampokeskus 쇼핑센터에 매장이 있습니다. Aarikka와 무민 제품, 장신구, 직물, 먹거리를 온라인으로도 살 수 있습니다. Rovaniemi.",
+      "fr": "Boutique de cadeaux de Rovaniemi, fondée en 1987, avec des magasins dans la rue Rovakatu et au centre commercial Sampokeskus.",
+      "it": "Negozio di regali di Rovaniemi, fondato nel 1987, con punti vendita in via Rovakatu e nel centro commerciale Sampokeskus.",
+      "nl": "Cadeauwinkel uit Rovaniemi, opgericht in 1987, met winkels aan de Rovakatu en in winkelcentrum Sampokeskus.",
+      "sv": "Presentbutik i Rovaniemi, grundad 1987, med butiker på Rovakatu och i köpcentret Sampokeskus."
     }
   },
   {

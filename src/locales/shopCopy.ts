@@ -255,8 +255,24 @@ export function approxEur(value: number, currency: string): number | null {
   return rate ? Math.round(value * rate) : null
 }
 
-const fmt = (value: number, currency: string, locale: string) =>
-  new Intl.NumberFormat(locale, { style: 'currency', currency, maximumFractionDigits: 0 }).format(value)
+/**
+ * 🔴 Sentit näkyvät aina, kun hinta ei ole tasaluku. Pyöristys kokonaisiin
+ * euroihin näytti 15.11.2026 mitattuna 124 luettelohintaa 174 desimaalihinnasta
+ * kauppaa kalliimpana, pahimmillaan 18 % (Palalaku 3,77 € → "alk. 4 €"), ja
+ * luettelo ei saa näyttää kauppaa kalliimpaa hintaa. Tasaluku pysyy ilman senttejä.
+ */
+/**
+ * Sitova välilyönti hinnan monisanaisessa etuliitteessä ja CJK-päätteessä: ainoa
+ * katkokohta jää etuliitteen ja summan väliin ("à partir de / 19,90 €"), ei keskelle
+ * etuliitettä ("à partir / de 19,90 €") eikä summan ja päätteen väliin ("€19.90 / から").
+ * Mitattu 15.11.2026: fr ja pt-BR rivittyivät 320 px:n korteissa keskeltä etuliitettä.
+ */
+const NB = '\u00a0'
+
+const fmt = (value: number, currency: string, locale: string) => {
+  const d = Number.isInteger(value) ? 0 : 2
+  return new Intl.NumberFormat(locale, { style: 'currency', currency, minimumFractionDigits: d, maximumFractionDigits: d }).format(value)
+}
 
 const en: ShopCopy = {
   nav: { shop: 'Shop', guides: 'Gift guides', shipping: 'Delivery', allProducts: 'All products' },
@@ -401,9 +417,9 @@ const en: ShopCopy = {
   },
   shipping: {
     worldwide: 'Ships worldwide',
-    euOnly: 'Ships to Europe only',
+    euOnly: 'Ships within the EU only',
     fiOnly: 'Ships within Finland only',
-    zoneShort: { worldwide: 'Worldwide', eu: 'Europe only', fi: 'Finland only' },
+    zoneShort: { worldwide: 'Worldwide', eu: 'EU only', fi: 'Finland only' },
     exceptShort: (zone, count) => `${zone}, ${count} ${count === 1 ? 'exception' : 'exceptions'}`,
     exceptNote: (countries) => `Not available for shipment to: ${countries.join(', ')}.`,
     selectorLabel: 'Deliver to',
@@ -596,9 +612,9 @@ const fi: ShopCopy = {
   },
   shipping: {
     worldwide: 'Toimitus maailmanlaajuisesti',
-    euOnly: 'Toimitus vain Eurooppaan',
+    euOnly: 'Toimitus vain EU-maihin',
     fiOnly: 'Toimitus vain Suomeen',
-    zoneShort: { worldwide: 'Koko maailma', eu: 'Vain Eurooppa', fi: 'Vain Suomi' },
+    zoneShort: { worldwide: 'Koko maailma', eu: 'Vain EU', fi: 'Vain Suomi' },
     exceptShort: (zone, count) => `${zone}, pl. ${count} ${count === 1 ? 'maa' : 'maata'}`,
     // 🔴 "Ei toimiteta näihin maihin:" eikä "Ei toimiteta Yhdysvaltoihin,
     // Australiaan ja ...": kaksoispistelista pitää maiden nimet perusmuodossa,
@@ -824,9 +840,9 @@ const de: ShopCopy = over({
   },
   shipping: {
     worldwide: 'Weltweiter Versand',
-    euOnly: 'Versand nur nach Europa',
+    euOnly: 'Versand nur innerhalb der EU',
     fiOnly: 'Versand nur innerhalb Finnlands',
-    zoneShort: { worldwide: 'Weltweit', eu: 'Nur Europa', fi: 'Nur Finnland' },
+    zoneShort: { worldwide: 'Weltweit', eu: 'Nur EU', fi: 'Nur Finnland' },
     exceptShort: (zone, count) => `${zone}, ${count} ${count === 1 ? 'Ausnahme' : 'Ausnahmen'}`,
     exceptNote: (countries) => `Kein Versand in diese Länder: ${countries.join(', ')}.`,
     selectorLabel: 'Lieferung nach',
@@ -1019,9 +1035,9 @@ const sv: ShopCopy = over({
   },
   shipping: {
     worldwide: 'Frakt över hela världen',
-    euOnly: 'Frakt endast inom Europa',
+    euOnly: 'Frakt endast inom EU',
     fiOnly: 'Frakt endast inom Finland',
-    zoneShort: { worldwide: 'Hela världen', eu: 'Endast Europa', fi: 'Endast Finland' },
+    zoneShort: { worldwide: 'Hela världen', eu: 'Endast EU', fi: 'Endast Finland' },
     // Ruotsissa "undantag" on sama yksikössä ja monikossa, joten ei ternaaria.
     exceptShort: (zone, count) => `${zone}, ${count} undantag`,
     exceptNote: (countries) => `Skickas inte till dessa länder: ${countries.join(', ')}.`,
@@ -1163,7 +1179,7 @@ const fr: ShopCopy = over({
     buyAt: (partner) => `Acheter chez ${partner}`,
     priceFrom: (value, currency) => {
       const eur = approxEur(value, currency)
-      return eur ? `à partir de ${fmt(value, currency, 'fr-FR')} (environ ${eur} €)` : `à partir de ${fmt(value, currency, 'fr-FR')}`
+      return eur ? `à${NB}partir${NB}de ${fmt(value, currency, 'fr-FR')} (environ ${eur} €)` : `à${NB}partir${NB}de ${fmt(value, currency, 'fr-FR')}`
     },
     priceNote: (date, partner) => `Prix relevé chez ${partner} le ${date}. C’est la boutique qui fixe le prix final.`,
     checkoutNote: 'Vous finalisez l’achat dans la boutique partenaire. Nous ne gérons ni votre paiement ni votre livraison.',
@@ -1215,9 +1231,9 @@ const fr: ShopCopy = over({
   },
   shipping: {
     worldwide: 'Livraison dans le monde entier',
-    euOnly: 'Livraison en Europe uniquement',
+    euOnly: 'Livraison dans l’UE uniquement',
     fiOnly: 'Livraison en Finlande uniquement',
-    zoneShort: { worldwide: 'Monde entier', eu: 'Europe uniquement', fi: 'Finlande uniquement' },
+    zoneShort: { worldwide: 'Monde entier', eu: 'UE uniquement', fi: 'Finlande uniquement' },
     exceptShort: (zone, count) => `${zone}, ${count} ${count === 1 ? 'exception' : 'exceptions'}`,
     exceptNote: (countries) => `Pas de livraison vers ces pays : ${countries.join(', ')}.`,
     selectorLabel: 'Livrer en',
@@ -1410,9 +1426,9 @@ const es: ShopCopy = over({
   },
   shipping: {
     worldwide: 'Envío a todo el mundo',
-    euOnly: 'Envío solo a Europa',
+    euOnly: 'Envío solo dentro de la UE',
     fiOnly: 'Envío solo dentro de Finlandia',
-    zoneShort: { worldwide: 'Todo el mundo', eu: 'Solo Europa', fi: 'Solo Finlandia' },
+    zoneShort: { worldwide: 'Todo el mundo', eu: 'Solo UE', fi: 'Solo Finlandia' },
     exceptShort: (zone, count) => `${zone}, ${count} ${count === 1 ? 'excepción' : 'excepciones'}`,
     exceptNote: (countries) => `No se envía a estos países: ${countries.join(', ')}.`,
     selectorLabel: 'Enviar a',
@@ -1605,9 +1621,9 @@ const it: ShopCopy = over({
   },
   shipping: {
     worldwide: 'Spedizione in tutto il mondo',
-    euOnly: 'Spedizione solo in Europa',
+    euOnly: 'Spedizione solo nell’UE',
     fiOnly: 'Spedizione solo in Finlandia',
-    zoneShort: { worldwide: 'Tutto il mondo', eu: 'Solo Europa', fi: 'Solo Finlandia' },
+    zoneShort: { worldwide: 'Tutto il mondo', eu: 'Solo UE', fi: 'Solo Finlandia' },
     exceptShort: (zone, count) => `${zone}, ${count} ${count === 1 ? 'eccezione' : 'eccezioni'}`,
     exceptNote: (countries) => `Non si spedisce in questi paesi: ${countries.join(', ')}.`,
     selectorLabel: 'Consegna in',
@@ -1800,9 +1816,9 @@ const nl: ShopCopy = over({
   },
   shipping: {
     worldwide: 'Verzending wereldwijd',
-    euOnly: 'Verzending alleen binnen Europa',
+    euOnly: 'Verzending alleen binnen de EU',
     fiOnly: 'Verzending alleen binnen Finland',
-    zoneShort: { worldwide: 'Wereldwijd', eu: 'Alleen Europa', fi: 'Alleen Finland' },
+    zoneShort: { worldwide: 'Wereldwijd', eu: 'Alleen EU', fi: 'Alleen Finland' },
     exceptShort: (zone, count) => `${zone}, ${count} ${count === 1 ? 'uitzondering' : 'uitzonderingen'}`,
     exceptNote: (countries) => `Wordt niet verzonden naar deze landen: ${countries.join(', ')}.`,
     selectorLabel: 'Bezorgen in',
@@ -1943,7 +1959,7 @@ const ptBR: ShopCopy = over({
     buyAt: (partner) => `Comprar na ${partner}`,
     priceFrom: (value, currency) => {
       const eur = approxEur(value, currency)
-      return eur ? `a partir de ${fmt(value, currency, 'pt-BR')} (cerca de ${eur} €)` : `a partir de ${fmt(value, currency, 'pt-BR')}`
+      return eur ? `a${NB}partir${NB}de ${fmt(value, currency, 'pt-BR')} (cerca de ${eur} €)` : `a${NB}partir${NB}de ${fmt(value, currency, 'pt-BR')}`
     },
     priceNote: (date, partner) => `Preço lido na ${partner} em ${date}. A loja define o preço final.`,
     checkoutNote: 'Você conclui a compra na loja parceira. Nós não cuidamos do seu pagamento nem da entrega.',
@@ -1995,9 +2011,9 @@ const ptBR: ShopCopy = over({
   },
   shipping: {
     worldwide: 'Envio para o mundo todo',
-    euOnly: 'Envio somente para a Europa',
+    euOnly: 'Envio somente para a UE',
     fiOnly: 'Envio somente dentro da Finlândia',
-    zoneShort: { worldwide: 'Mundo todo', eu: 'Somente Europa', fi: 'Somente Finlândia' },
+    zoneShort: { worldwide: 'Mundo todo', eu: 'Somente UE', fi: 'Somente Finlândia' },
     exceptShort: (zone, count) => `${zone}, ${count} ${count === 1 ? 'exceção' : 'exceções'}`,
     exceptNote: (countries) => `Não enviamos para estes países: ${countries.join(', ')}.`,
     selectorLabel: 'Entregar em',
@@ -2138,7 +2154,7 @@ const ja: ShopCopy = over({
     buyAt: (partner) => `${partner} で購入`,
     priceFrom: (value, currency) => {
       const eur = approxEur(value, currency)
-      return eur ? `${fmt(value, currency, 'ja-JP')} から（約 ${eur} ユーロ）` : `${fmt(value, currency, 'ja-JP')} から`
+      return eur ? `${fmt(value, currency, 'ja-JP')}${NB}から（約 ${eur} ユーロ）` : `${fmt(value, currency, 'ja-JP')}${NB}から`
     },
     priceNote: (date, partner) => `価格は ${date} に ${partner} で確認したものです。最終的な価格はショップが決めます。`,
     checkoutNote: 'ご購入の手続きはパートナーショップで完了します。当サイトは支払いも配送も取り扱いません。',
@@ -2190,9 +2206,9 @@ const ja: ShopCopy = over({
   },
   shipping: {
     worldwide: '世界各国へ配送',
-    euOnly: 'ヨーロッパのみ配送',
+    euOnly: 'EU域内のみ配送',
     fiOnly: 'フィンランド国内のみ配送',
-    zoneShort: { worldwide: '世界各国', eu: 'ヨーロッパのみ', fi: 'フィンランドのみ' },
+    zoneShort: { worldwide: '世界各国', eu: 'EU域内のみ', fi: 'フィンランドのみ' },
     exceptShort: (zone, count) => `${zone}、${count} か国を除く`,
     exceptNote: (countries) => `次の国へは配送されません：${countries.join('、')}。`,
     selectorLabel: '配送先',
@@ -2333,7 +2349,7 @@ const zhCN: ShopCopy = over({
     buyAt: (partner) => `在 ${partner} 购买`,
     priceFrom: (value, currency) => {
       const eur = approxEur(value, currency)
-      return eur ? `${fmt(value, currency, 'zh-CN')} 起（约 ${eur} 欧元）` : `${fmt(value, currency, 'zh-CN')} 起`
+      return eur ? `${fmt(value, currency, 'zh-CN')}${NB}起（约 ${eur} 欧元）` : `${fmt(value, currency, 'zh-CN')}${NB}起`
     },
     priceNote: (date, partner) => `价格于 ${date} 在 ${partner} 核对。最终价格由商店决定。`,
     checkoutNote: '你在合作商店完成购买。我们不处理你的付款和配送。',
@@ -2385,9 +2401,9 @@ const zhCN: ShopCopy = over({
   },
   shipping: {
     worldwide: '寄往世界各地',
-    euOnly: '仅寄往欧洲',
+    euOnly: '仅寄往欧盟国家',
     fiOnly: '仅在芬兰境内配送',
-    zoneShort: { worldwide: '全球', eu: '仅欧洲', fi: '仅芬兰' },
+    zoneShort: { worldwide: '全球', eu: '仅欧盟', fi: '仅芬兰' },
     exceptShort: (zone, count) => `${zone}，${count} 个国家除外`,
     exceptNote: (countries) => `不寄往以下国家：${countries.join('、')}。`,
     selectorLabel: '配送至',
@@ -2580,9 +2596,9 @@ const ko: ShopCopy = over({
   },
   shipping: {
     worldwide: '전 세계 배송',
-    euOnly: '유럽으로만 배송',
+    euOnly: 'EU 국가로만 배송',
     fiOnly: '핀란드 내에서만 배송',
-    zoneShort: { worldwide: '전 세계', eu: '유럽만', fi: '핀란드만' },
+    zoneShort: { worldwide: '전 세계', eu: 'EU 국가만', fi: '핀란드만' },
     exceptShort: (zone, count) => `${zone}, ${count}개국 제외`,
     exceptNote: (countries) => `다음 국가로는 배송되지 않습니다: ${countries.join(', ')}.`,
     selectorLabel: '배송 국가',

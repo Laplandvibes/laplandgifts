@@ -62,7 +62,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Ropa', 'Joyas'],
   },
   'lahjapuoti-tiinuska': {
-    description: 'Tienda de regalos de Rovaniemi, fundada en 1987. Productos Aarikka y Moomin, joyas, textiles y dulces por internet.',
+    description: 'Tienda de regalos de Rovaniemi, fundada en 1987, con locales en la calle Rovakatu y en el centro comercial Sampokeskus. Productos Aarikka y Moomin, joyas, textiles y dulces, también por internet.',
     tags: ['Diseño', 'Regalos'],
   },
   'lappi-shop-levi': {

@@ -571,7 +571,8 @@ const luxuryRoute = (() => {
   // (sivu suodattaa lisäksi toimitusmaan mukaan, jota metassa ei ole).
   const lux = luxuryProducts(PRODUCTS)
   const money = (lang, n) => new Intl.NumberFormat(lang === 'pt-BR' ? 'pt-BR' : lang, { style: 'currency', currency: lux[0]?.currency ?? 'EUR', maximumFractionDigits: 0 }).format(n)
-  const lead = (lang) => LUXURY_COPY[lang].lead(lux.length, money(lang, Math.min(...lux.map((p) => p.priceFrom))), money(lang, Math.max(...lux.map((p) => p.priceFrom))))
+  // Haarukka kattaa kaikki tuotteet: ala alas, yläraja ylös (sama kuin Luxury.tsx, 15.11.2026).
+  const lead = (lang) => LUXURY_COPY[lang].lead(lux.length, money(lang, Math.floor(Math.min(...lux.map((p) => p.priceFrom)))), money(lang, Math.ceil(Math.max(...lux.map((p) => p.priceFrom)))))
   const build = (lang) => ({
     title: fitTitle([LUXURY_COPY[lang].title]),
     description: fitDescription(leadingSentences(lead(lang)), CATEGORY_TAILS[lang]),

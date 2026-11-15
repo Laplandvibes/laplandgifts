@@ -62,7 +62,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Vaatteet', 'Korut'],
   },
   'lahjapuoti-tiinuska': {
-    description: 'Vuonna 1987 perustettu lahjapuoti Rovaniemeltä. Aarikkaa ja Muumi-tuotteita, koruja, tekstiilejä ja herkkuja verkkokaupasta.',
+    description: 'Vuonna 1987 perustettu rovaniemeläinen lahjapuoti, jolla on myymälät Rovakadulla ja Sampokeskuksessa. Aarikkaa ja Muumi-tuotteita, koruja, tekstiilejä ja herkkuja, myös verkkokaupasta.',
     tags: ['Design', 'Lahjat'],
   },
   'lappi-shop-levi': {

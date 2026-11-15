@@ -62,7 +62,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['衣料品', 'ジュエリー'],
   },
   'lahjapuoti-tiinuska': {
-    description: '1987年創業、ロヴァニエミのギフトショップ。Aarikkaやムーミンの品、ジュエリー、テキスタイル、菓子をオンラインで販売しています。',
+    description: '1987年創業、ロヴァニエミのギフトショップ。Rovakatu通りとショッピングセンターSampokeskusに店舗があります。Aarikkaやムーミンの品、ジュエリー、テキスタイル、菓子をオンラインでも販売しています。',
     tags: ['デザイン', 'ギフト'],
   },
   'lappi-shop-levi': {

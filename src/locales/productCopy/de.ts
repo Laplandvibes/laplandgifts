@@ -79,7 +79,7 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
   'halti-tokoi-dx-jacket': {
     name: 'Halti Tokoi DX Wetterjacke, Herren',
     description:
-      'Eine wetterfeste Jacke mit vollständig verklebten Nähten, leichtem Futter und verstellbarer Kapuze, weit genug geschnitten, um einen Wollpullover darunter zu tragen. Halti liefert nur innerhalb der EU.',
+      'Eine wetterfeste Jacke mit vollständig verklebten Nähten, leichtem Futter und verstellbarer Kapuze, weit genug geschnitten, um einen Wollpullover darunter zu tragen. Halti liefert nur aufs finnische Festland.',
     specs: [
       'DrymaxX Sleek Twill, ein wasser- und winddichtes 2-Lagen-Gewebe mit DrymaxX-Membran. Materialanteil 50 % recyceltes Polyester und 50 % Polyester',
       'Weiches Polyesterfutter, 100 % recyceltes Polyester',

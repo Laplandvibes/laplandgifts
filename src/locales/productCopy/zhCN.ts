@@ -80,7 +80,7 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
   'halti-tokoi-dx-jacket': {
     name: 'Halti Tokoi DX 冲锋衣，男款',
     description:
-      '全部接缝压胶的防风雨外壳，配轻薄内衬和可调帽子，版型宽松到里面能穿一件羊毛衫。Halti 只在欧盟境内配送。',
+      '全部接缝压胶的防风雨外壳，配轻薄内衬和可调帽子，版型宽松到里面能穿一件羊毛衫。Halti 只在芬兰本土配送。',
     specs: [
       'DrymaxX Sleek Twill，带 DrymaxX 膜的防水防风 2 层面料。材质成分为 50 % 再生涤纶和 50 % 涤纶',
       '柔软涤纶内衬，100 % 再生涤纶',

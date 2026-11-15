@@ -184,8 +184,8 @@ export const PRODUCTS: Product[] = [
       fi: 'Halti Tokoi DX -kuoritakki, miesten',
     },
     description: {
-      en: 'A weatherproof shell with every seam taped, a light lining and an adjustable hood, cut loosely enough to layer a wool jumper underneath. Halti delivers within the EU only.',
-      fi: 'Kuoritakki, jonka kaikki saumat on teipattu ja jossa on kevyt vuori ja säädettävä huppu. Väljä leikkaus jättää alle tilaa villapaidalle. Halti toimittaa vain EU:n sisälle.',
+      en: 'A weatherproof shell with every seam taped, a light lining and an adjustable hood, cut loosely enough to layer a wool jumper underneath. Halti delivers to mainland Finland only.',
+      fi: 'Kuoritakki, jonka kaikki saumat on teipattu ja jossa on kevyt vuori ja säädettävä huppu. Väljä leikkaus jättää alle tilaa villapaidalle. Halti toimittaa vain Manner-Suomeen.',
     },
     priceFrom: 250,
     currency: 'EUR',
@@ -1123,9 +1123,13 @@ export const PRODUCTS: Product[] = [
       en: 'A 150 gram bag of soft salmiakki liquorice, the ammonium chloride kind that splits visitors into two camps on the first piece. Suomikauppa posts groceries well beyond Finland.',
       fi: '150 gramman pussi pehmeää salmiakkilakritsia, sitä ammoniumkloridilla suolattua lajia, joka jakaa vieraat kahteen leiriin ensimmäisestä palasta. Suomikauppa postittaa elintarvikkeita myös Suomen ulkopuolelle.',
     },
-    priceFrom: 6.58,
+    // 15.11.2026: 3,77 € on Suomikaupan poistomyyntierä (tunniste "Hävikki",
+    // parasta ennen 27.11.2026, normaalihinta 6,58 €). Luettelo ei saa näyttää
+    // kauppaa kalliimpaa hintaa, mutta kun erä loppuu, hinta palaa 6,58:aan:
+    // lue tuote uudelleen 28.11. ja palauta normaalihinta, jos erä on poissa.
+    priceFrom: 3.77,
     currency: 'EUR',
-    priceCheckedAt: '2026-11-06',
+    priceCheckedAt: '2026-11-15',
     image: 'prod-finnish-flavours-palalaku-salmiakki',
     imageIsPartner: true,
     partnerId: 'suomikauppa',

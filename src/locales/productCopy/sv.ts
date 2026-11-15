@@ -80,7 +80,7 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
   'halti-tokoi-dx-jacket': {
     name: 'Halti Tokoi DX skaljacka, herr',
     description:
-      'Ett vädertåligt skal med tejpade sömmar, lätt foder och justerbar huva, klippt tillräckligt rymligt för en ylletröja under. Halti levererar endast inom EU.',
+      'Ett vädertåligt skal med tejpade sömmar, lätt foder och justerbar huva, klippt tillräckligt rymligt för en ylletröja under. Halti levererar endast till Finlands fastland.',
     specs: [
       'DrymaxX Sleek Twill, ett vatten- och vindtätt 2-lagerstyg med DrymaxX-membran. Materialinnehåll 50 % återvunnen polyester och 50 % polyester',
       'Mjukt polyesterfoder, 100 % återvunnen polyester',

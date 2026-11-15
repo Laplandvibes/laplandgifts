@@ -73,7 +73,7 @@ export default function Luxury() {
         <LuxuryHero
           eyebrow={tl.eyebrow}
           title={tl.title}
-          lead={tl.lead(visible.length, fmtMoney(Math.min(...visible.map((p) => p.priceFrom))), fmtMoney(Math.max(...visible.map((p) => p.priceFrom))))}
+          lead={tl.lead(visible.length, fmtMoney(Math.floor(Math.min(...visible.map((p) => p.priceFrom)))), fmtMoney(Math.ceil(Math.max(...visible.map((p) => p.priceFrom)))))}
           captions={tl.scenes}
           lang={lang}
         />

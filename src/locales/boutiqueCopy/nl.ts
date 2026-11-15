@@ -62,7 +62,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['Kleding', 'Sieraden'],
   },
   'lahjapuoti-tiinuska': {
-    description: 'Cadeauwinkel uit Rovaniemi, opgericht in 1987. Aarikka en Moomin, sieraden, textiel en lekkers via de webwinkel.',
+    description: 'Cadeauwinkel uit Rovaniemi, opgericht in 1987, met winkels aan de Rovakatu en in winkelcentrum Sampokeskus. Aarikka en Moomin, sieraden, textiel en lekkers, ook via de webwinkel.',
     tags: ['Design', 'Cadeaus'],
   },
   'lappi-shop-levi': {

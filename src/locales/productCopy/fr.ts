@@ -79,7 +79,7 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
   'halti-tokoi-dx-jacket': {
     name: 'Veste coquille Halti Tokoi DX, homme',
     description:
-      'Une coquille résistante aux intempéries, toutes coutures étanchées, avec une doublure légère et une capuche réglable, coupée assez large pour porter un pull en laine dessous. Halti livre uniquement dans l’Union européenne.',
+      'Une coquille résistante aux intempéries, toutes coutures étanchées, avec une doublure légère et une capuche réglable, coupée assez large pour porter un pull en laine dessous. Halti livre uniquement en Finlande continentale.',
     specs: [
       'DrymaxX Sleek Twill, un tissu 2 couches imperméable et coupe-vent avec membrane DrymaxX. Composition 50 % polyester recyclé et 50 % polyester',
       'Doublure polyester douce, 100 % polyester recyclé',

@@ -62,7 +62,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['服装', '饰品'],
   },
   'lahjapuoti-tiinuska': {
-    description: '来自罗瓦涅米的礼品店，1987 年创立。Aarikka 与姆明商品、饰品、纺织品与零食，可在网店选购。',
+    description: '来自罗瓦涅米的礼品店，1987 年创立，在 Rovakatu 街和 Sampokeskus 购物中心设有门店。Aarikka 与姆明商品、饰品、纺织品与零食，也可在网店选购。',
     tags: ['设计', '礼品'],
   },
   'lappi-shop-levi': {

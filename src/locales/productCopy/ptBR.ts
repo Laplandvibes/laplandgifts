@@ -78,7 +78,7 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
   'halti-tokoi-dx-jacket': {
     name: 'Jaqueta shell Halti Tokoi DX, masculina',
     description:
-      'Uma shell resistente ao tempo com todas as costuras seladas, forro leve e capuz ajustável, com corte folgado o suficiente para levar um suéter de lã por baixo. A Halti entrega apenas dentro da União Europeia.',
+      'Uma shell resistente ao tempo com todas as costuras seladas, forro leve e capuz ajustável, com corte folgado o suficiente para levar um suéter de lã por baixo. A Halti entrega apenas na Finlândia continental.',
     specs: [
       'DrymaxX Sleek Twill, um tecido de 2 camadas impermeável e corta-vento com membrana DrymaxX. Composição 50 % poliéster reciclado e 50 % poliéster',
       'Forro macio de poliéster, 100 % poliéster reciclado',

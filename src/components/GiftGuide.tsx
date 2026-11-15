@@ -43,9 +43,11 @@ const PRICES: Record<Lang, (min: string, max: string) => string> = {
   ko: (a, b) => `가격 ${a}–${b}`,
 }
 
+/** Sentit näkyvät, kun hinta ei ole tasaluku (sama sääntö kuin shopCopy.ts:n fmt, 15.11.2026). */
 function money(n: number, currency: string, lang: Lang) {
+  const d = Number.isInteger(n) ? 0 : 2
   return new Intl.NumberFormat(lang === 'pt-BR' ? 'pt-BR' : lang, {
-    style: 'currency', currency, maximumFractionDigits: 0,
+    style: 'currency', currency, minimumFractionDigits: d, maximumFractionDigits: d,
   }).format(n)
 }
 
@@ -97,7 +99,8 @@ function GiftGuide() {
                   </h3>
                   <p className="mt-2 text-[14px] text-muted md:mt-3 md:text-[15px]">
                     {/* "6–140 €", ei "6 €–140 €": valuutta kerran, haarukan lopussa. */}
-                    {prices(String(Math.round(Math.min(...priceList))), money(Math.max(...priceList), cur, lang))}
+                    {/* Haarukka kattaa kaikki tuotteet: ala alas, yläraja ylös kokonaiseen euroon. */}
+                    {prices(String(Math.floor(Math.min(...priceList))), money(Math.ceil(Math.max(...priceList)), cur, lang))}
                   </p>
                 </div>
 

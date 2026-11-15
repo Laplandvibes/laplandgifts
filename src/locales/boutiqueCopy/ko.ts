@@ -62,7 +62,7 @@ const copy: Record<string, BoutiqueCopy> = {
     tags: ['의류', '장신구'],
   },
   'lahjapuoti-tiinuska': {
-    description: '1987년에 문을 연 로바니에미의 선물 가게입니다. Aarikka와 무민 제품, 장신구, 직물, 먹거리를 온라인으로 살 수 있습니다.',
+    description: '1987년에 문을 연 로바니에미의 선물 가게로, Rovakatu 거리와 Sampokeskus 쇼핑센터에 매장이 있습니다. Aarikka와 무민 제품, 장신구, 직물, 먹거리를 온라인으로도 살 수 있습니다.',
     tags: ['디자인', '선물'],
   },
   'lappi-shop-levi': {

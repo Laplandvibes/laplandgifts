@@ -78,7 +78,7 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
   'halti-tokoi-dx-jacket': {
     name: 'Giacca guscio Halti Tokoi DX, uomo',
     description:
-      'Un guscio resistente alle intemperie con tutte le cuciture nastrate, una fodera leggera e un cappuccio regolabile, tagliato abbastanza largo da portarci sotto un maglione di lana. Halti consegna solo all’interno dell’Unione europea.',
+      'Un guscio resistente alle intemperie con tutte le cuciture nastrate, una fodera leggera e un cappuccio regolabile, tagliato abbastanza largo da portarci sotto un maglione di lana. Halti consegna solo nella Finlandia continentale.',
     specs: [
       'DrymaxX Sleek Twill, un tessuto a 2 strati impermeabile e antivento con membrana DrymaxX. Composizione 50 % poliestere riciclato e 50 % poliestere',
       'Fodera morbida in poliestere, 100 % poliestere riciclato',

@@ -165,13 +165,16 @@ export const BOUTIQUES: Boutique[] = [
     url: 'https://www.mariellenvaatehuone.fi/',
     hasOnlineStore: false, hasPhysicalStore: true, giftsCategory: 'clothing',
     verifiedAt: '2026-08-07' },
-  // Yhteystiedoissa on vain puhelin ja sähköposti, ei käyntiosoitetta, joten
-  // kivijalkaa EI väitetä. Verkkokauppa on yksiselitteinen: ostoskori,
-  // ilmainen toimitus yli 120 €, toimitus 1-5 arkipäivää.
+  // 🔴 Myymälä KYLLÄ (luettu 15.11.2026 tiinuska.fi/pages.php?page=yhteystiedot):
+  // kaksi myymälää, Rovakatu 28 ja "Tiinuska side alley" Sampokeskuksen
+  // 1. kerroksessa, kummallekin aukioloajat ja yrityksellä myymäläpäällikkö.
+  // 7.8. merkintä "ei käyntiosoitetta" oli väärä, ja appi jätti Tiinuskan siksi
+  // pois paikan päällä olevista lahjakaupoista. Verkkokauppa on lisäksi.
+  // Aukioloaikoja ei kirjata (ks. Boutique.address).
   { slug: 'lahjapuoti-tiinuska', name: 'Lahjapuoti Tiinuska', town: 'rovaniemi',
     url: 'https://www.tiinuska.fi/',
-    hasOnlineStore: true, hasPhysicalStore: false, giftsCategory: 'design',
-    verifiedAt: '2026-08-07' },
+    hasOnlineStore: true, hasPhysicalStore: true, giftsCategory: 'design',
+    verifiedAt: '2026-11-15' },
   // Lappituote on tukkuri jonka kuluttajatilaus on kirjautumisen takana;
   // listattu on sen Levin vähittäismyymälä, jolla on oma sivu ja osoite.
   { slug: 'lappi-shop-levi', name: 'Lappi Shop Levi', town: 'levi',
