@@ -91,6 +91,40 @@ export const KAMPANJAT: readonly Kampanja[] = [
       },
     },
   },
+  // ── Telia, Wolt+ 12 kk 5G-liittymiin ───────────────────────────────────────
+  // Lähde: Adtractionin ja Telian kumppaniviesti 18.11.2026 ("Telian nykyinen Wolt+ kylkiäiskampanja
+  // jatkuu 26.11.2026 asti", kuvaus: "kaikkiin 5G-liittymiimme sisältyy nyt asiakasetuna Wolt+-jäsenyys
+  // 12 kk 0 € (arvo 71,88 €). Lisäetuna uusiin liittymiin tai numeronsiirtoihin toiselta operaattorilta
+  // liittymien avausmaksu 5 € (norm. 8,99 €).") + kumppanin oma sivu, luettu 18.11.2026: "Kampanja on
+  // voimassa 12.–26.11.2026", "Olet oikeutettu etuun, jos tilaat uuden määräaikaisen liittymän uudella
+  // puhelinnumerolla tai vaihdat numerosi Telialle toiselta operaattorilta", "Edut eivät koske nykyisen
+  // Telian liittymän päivityksiä tai numeronsiirtoja Telia Dot -liittymistä", "Edut saat vain tämän sivun
+  // kautta verkkokaupastamme", voucher sähköpostiin viikon päästä aktivoinnista, liittymät 12 kk
+  // määräaikaisia. Edut saa vain kampanjasivulta ⇒ landing, ja sijoitus vie mainoksen napin sinne.
+  // Vain fi: ehdot on julkaistu suomeksi (Telian EN-linkki vie yleiselle englanninkieliselle etusivulle).
+  // Sijoitukset: stayinlaplandin ja laplandworkin TeliaAd (SettlingInAds.tsx).
+  {
+    mainostaja: 'telia',
+    showFrom: Date.UTC(2026, 10, 17, 22), // 18.11.2026 klo 00.00 Suomen aikaa
+    showUntil: Date.UTC(2026, 10, 26, 22), // 27.11.2026 klo 00.00 Suomen aikaa
+    landing: 'https://www.telia.fi/kampanjat/liittymat/liittymaedut',
+    teksti: {
+      fi: {
+        otsikko: 'Telian liittymäedut 26.11. asti',
+        rivit: [
+          `Wolt+-jäsenyys 12${NBSP}kuukaudeksi 0${NBSP}€ (arvo 71,88${NBSP}€) kaikkiin Telian 5G-liittymiin`,
+          `Avausmaksu 5${NBSP}€ (normaalisti 8,99${NBSP}€) uusiin liittymiin ja numeronsiirtoihin toiselta operaattorilta`,
+        ],
+        ehdot:
+          `Kampanja on voimassa 26.11.2026 asti, ja edut saa vain Telian kampanjasivun kautta verkkokaupasta. ` +
+          `Edut koskevat uutta 12${NBSP}kuukauden määräaikaista liittymää uudella numerolla tai toiselta ` +
+          `operaattorilta siirretyllä numerolla, eivät nykyisen Telia-liittymän päivitystä eivätkä numeronsiirtoa ` +
+          `Telia Dot -liittymästä. Wolt+-etukoodi tulee sähköpostiin noin viikon kuluttua liittymän aktivoinnista, ` +
+          `jos liittymä on silloin käytössä, sopimus voimassa ja ensimmäinen lasku maksettu. ` +
+          `Ehdot on tarkistettu Telian sivulta 18.11.2026.`,
+      },
+    },
+  },
 ]
 
 const kieliavain = (lang?: string) => (lang || '').split('-')[0]
