@@ -18,6 +18,7 @@ import { countryNames } from '../data/countryNames'
 import { categoryById } from '../data/categories'
 import { useLang, useLocalePath } from '../i18n/useLang'
 import { imgSrcSet } from '../lib/img'
+import { lukupaiva } from '../lib/lukupaiva'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
 import { productName, productDescription, specValue, specLabel } from '../locales/productCopy'
@@ -166,7 +167,7 @@ export default function Product() {
                 </p>
               )}
               <p className="text-sm text-muted">
-                {t.product.priceNote(product.priceCheckedAt, partner.name)}
+                {t.product.priceNote(lukupaiva(product.priceCheckedAt, lang), partner.name)}
               </p>
               {/* Auditti 13.8.2026: yksikään sivu ei kertonut sisältyykö alv
                   hintaan tai tuleeko EU:n ulkopuolelle tullia. Teksti on
@@ -248,7 +249,7 @@ export default function Product() {
                   )}
 
                   <p className="mt-4 text-xs text-muted">
-                    {t.product.detailsSource(partner.name, details.fetchedAt)}
+                    {t.product.detailsSource(partner.name, lukupaiva(details.fetchedAt, lang))}
                   </p>
                 </section>
               )}
