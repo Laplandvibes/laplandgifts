@@ -309,6 +309,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-arabia-moomin-friends-forever-mug-plate": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-arabia-moomin-love-baubles": {
     "full": 800,
     "w": [
@@ -339,23 +347,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-arabia-moomin-plates-winter-night": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-arctic-warriors-nettle-powder": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-arctic-warriors-roseroot-elixir": {
     "full": 800,
     "w": [
       320,
@@ -410,23 +402,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-fazer-hazelnut-chocolate": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-fazer-jaffa-orange": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-fazer-light-milk-chocolate": {
     "full": 800,
     "w": [
       320,
@@ -464,12 +440,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320,
       480,
       640
-    ]
-  },
-  "prod-fiskars-moominpappa-scissors": {
-    "full": 480,
-    "w": [
-      320
     ]
   },
   "prod-fl-elefantti-duvet-set": {
@@ -901,14 +871,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-leijona-tar-liquorice": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-makia-alvar-beanie": {
     "full": 800,
     "w": [
@@ -1109,14 +1071,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-meritalo-tyrnihillo": {
-    "full": 750,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-midnight-sun-canoe-rovaniemi": {
     "full": 800,
     "w": [
@@ -1125,7 +1079,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-nb-hattifatteners-cushion": {
+  "prod-nb-hattifatteners-celebration-socks": {
     "full": 800,
     "w": [
       320,
@@ -1133,7 +1087,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-nb-hattifatteners-retro-socks": {
+  "prod-nb-hattifatteners-cushion": {
     "full": 800,
     "w": [
       320,
@@ -1181,14 +1135,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-nb-little-my-neckpillow": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-nb-little-my-poster": {
     "full": 800,
     "w": [
@@ -1198,6 +1144,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-nb-little-my-thermal-bottle": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-nb-moomin-adventure-neckpillow": {
     "full": 800,
     "w": [
       320,
@@ -1469,14 +1423,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-puhdistamo-instant-chaga": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-reindeer-safari-rovaniemi": {
     "full": 800,
     "w": [
@@ -1533,6 +1479,13 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-rj-arctic-warriors-angelica-elixir": {
+    "full": 600,
+    "w": [
+      320,
+      480
+    ]
+  },
   "prod-rj-arctic-warriors-blueberry-powder": {
     "full": 800,
     "w": [
@@ -1550,6 +1503,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-rj-forestly-mushroom-chips-chili": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-rj-kaino-blackcurrant-leaf-sparkling-075": {
     "full": 800,
     "w": [
       320,
@@ -1597,7 +1558,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-rj-poikain-parhaat-blueberry-lemonade": {
+  "prod-rj-puhdistamo-chaga-extract": {
     "full": 800,
     "w": [
       320,
@@ -1785,6 +1746,20 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-finnish-flavours-lingonberry-jam": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-fiskars-snorkmaiden-kids-scissors": {
+    "full": 480,
+    "w": [
+      320
+    ]
+  },
   "prod-sk-halva-christmas-liquorice": {
     "full": 800,
     "w": [
@@ -1793,7 +1768,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-halva-salmiakki-calendar": {
+  "prod-sk-halva-salmiakkikalat": {
     "full": 800,
     "w": [
       320,
@@ -1801,7 +1776,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-halva-salmiakkikalat": {
+  "prod-sk-halva-vanhat-autot-advent-calendar": {
     "full": 800,
     "w": [
       320,
@@ -1833,7 +1808,31 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-karl-fazer-blueberry-truffle-chocolates": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-karl-fazer-gingerbread-bar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-karl-fazer-hazelnut-crunch-bar": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-karl-fazer-milk-chocolate-bar": {
     "full": 800,
     "w": [
       320,
@@ -1904,14 +1903,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-marimekko-unikko-crossbody": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-sk-moomin-chocolate-chip-biscuit-tin": {
     "full": 800,
     "w": [
       320,
@@ -2107,6 +2098,13 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       320,
       480,
       640
+    ]
+  },
+  "prod-sk-sisu-kaamos-salty-liquorice": {
+    "full": 600,
+    "w": [
+      320,
+      480
     ]
   },
   "prod-sk-suomi-braces": {

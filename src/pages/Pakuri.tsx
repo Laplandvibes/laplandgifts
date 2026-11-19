@@ -32,7 +32,8 @@ import { useLang, useLocalePath } from '../i18n/useLang'
  * (200 + oikea title + pakuri-sisältö bodyssä):
  *   - /collections/pakuri-ja-muut-sienet  "Pakuri ja muut funktionaaliset sienet"
  *   - /products/kaavi-porcini-pakurikaaparouhe-100-g
- *   - /products/puhdistamo-pakuriuutejauhe-instant-pakuri-28-g
+ *   - /products/kaapa-mushrooms-pakuriuutejauhe-30-g-kaapa-mushrooms (19.11.2026: Puhdistamon
+ *     instant-pakuri loppui kaupasta, tilalle sama käyttötapa eli kuumaan juomaan sekoitettava uutejauhe)
  */
 
 const RJ = PARTNERS.ruohonjuuri
@@ -40,7 +41,7 @@ const RJ = PARTNERS.ruohonjuuri
 /** Verifioidut kohdesivut (luettu ja testattu 15.8.2026). */
 const RJ_COLLECTION = 'https://www.ruohonjuuri.fi/collections/pakuri-ja-muut-sienet'
 const RJ_CHUNKS = 'https://www.ruohonjuuri.fi/products/kaavi-porcini-pakurikaaparouhe-100-g'
-const RJ_INSTANT = 'https://www.ruohonjuuri.fi/products/puhdistamo-pakuriuutejauhe-instant-pakuri-28-g'
+const RJ_INSTANT = 'https://www.ruohonjuuri.fi/products/kaapa-mushrooms-pakuriuutejauhe-30-g-kaapa-mushrooms'
 
 interface Copy {
   h1: string
@@ -127,12 +128,12 @@ const fi: Copy = {
   buyChunksLabel: 'Haudutettavaksi:',
   buyChunks: 'Kaavi Porcini pakurikääpärouhe 100 g',
   buyInstantLabel: 'Kuumaan veteen:',
-  buyInstant: 'Puhdistamo instant-pakuri 28 g',
+  buyInstant: 'Kääpä Mushrooms pakuriuutejauhe 30 g',
   ownCatalog: 'Neljä pakurituotetta on myös omassa katalogissamme:',
   ownCatalogLinks: [
     { slug: 'kaapa-mushrooms-pakuri-powder', label: 'Kääpä Mushrooms uutejauhe' },
     { slug: 'kaavi-chaga-chunks', label: 'Kaavi Porcini rouhe' },
-    { slug: 'puhdistamo-instant-chaga', label: 'Puhdistamo instant' },
+    { slug: 'rj-puhdistamo-chaga-extract', label: 'Puhdistamon pakuriuute' },
     { slug: 'foodin-chaga-tincture', label: 'Foodin tinktuura' },
   ],
   categoryNote: 'Muut pohjoiset luonnontuotteet eli marjajauheet, kuusenkerkkä ja yrtit löytyvät kategoriasta',
@@ -199,12 +200,12 @@ const en: Copy = {
   buyChunksLabel: 'For simmering:',
   buyChunks: 'Kaavi Porcini chaga chunks 100 g',
   buyInstantLabel: 'For hot water:',
-  buyInstant: 'Puhdistamo instant chaga 28 g',
+  buyInstant: 'Kääpä Mushrooms chaga extract powder 30 g',
   ownCatalog: 'Four chaga products are also in our own catalogue:',
   ownCatalogLinks: [
     { slug: 'kaapa-mushrooms-pakuri-powder', label: 'Kääpä Mushrooms extract powder' },
     { slug: 'kaavi-chaga-chunks', label: 'Kaavi Porcini chunks' },
-    { slug: 'puhdistamo-instant-chaga', label: 'Puhdistamo instant' },
+    { slug: 'rj-puhdistamo-chaga-extract', label: 'Puhdistamo extract' },
     { slug: 'foodin-chaga-tincture', label: 'Foodin tincture' },
   ],
   categoryNote: 'The rest of our northern wild foods ( berry powders, spruce sprouts and herbs ) live in the category',

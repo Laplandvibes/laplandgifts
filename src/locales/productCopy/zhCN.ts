@@ -354,17 +354,16 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, '每 100 g 营养成分', '经销商'],
   },
-  'meritalo-tyrnihillo': {
-    name: 'Meritalo 芬兰沙棘果酱 310 g',
+  'sk-finnish-flavours-lingonberry-jam': {
+    name: 'Finnish Flavours 芬兰越橘果酱 400 g',
     description:
-      '每 100 克含 37 克浆果的沙棘果酱，用芬兰沙棘在芬兰西南部萨洛的 Meritalo 家庭农场熬煮，而不是在拉普兰。沙棘偏酸而不甜，所以配奶酪比抹在薄饼上更耐吃。',
+      '在芬兰制作的越橘果酱，原料是在芬兰森林里采摘的浆果，越橘占整罐的 45%。芬兰人吃野味炖肉、肉丸和菠菜薄饼时会配这种果酱，它也可以和一袋驯鹿肉干装进同一份礼物。',
     specs: [
-      '310 g',
-      '浆果为芬兰产。由家族企业在芬兰西南部萨洛的 Meritalo 自家农场制作',
-      '能量 781 kJ / 187 kcal，脂肪 1.9 g 其中饱和脂肪 0.3 g，碳水化合物 41 g 其中糖 41 g，蛋白质 0.3 g，盐 0.01 g',
-      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+      '400 g',
+      '芬兰制造，原料为 100 % 芬兰浆果',
+      '能量 633 kJ / 151 kcal，脂肪 0.2 g 其中饱和脂肪 0 g，碳水化合物 39 g 其中糖 39 g，蛋白质 0.2 g，盐 0.01 g',
     ],
-    specLabels: [undefined, undefined, '每 100 g 营养成分', '经销商'],
+    specLabels: [undefined, undefined, '每 100 g 营养成分'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: '驯鹿肉干 原味 200 g',
@@ -463,14 +462,17 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, '用量', '每 100 g 营养成分'],
   },
-  'arctic-warriors-roseroot-elixir': {
-    name: 'Arctic Warriors 红景天酊 100 ml',
+  'rj-arctic-warriors-angelica-elixir': {
+    name: 'Arctic Warriors 欧白芷根精华液 100 ml',
     description:
-      '红景天长在拉普兰山地潮湿的溪岸和岩壁上，Arctic Warriors 把它连同荨麻一起萃取进植物甘油。一茶匙可以加进茶、麦片粥或酸奶。',
+      '用欧白芷（芬兰语 väinönputki）的根制成的精华液，出自芬兰公司 Arctic Warriors。Ruohonjuuri 标注它为芬兰制造、纯素、无麸质，厂商建议用量为每天 1 茶匙。',
     specs: [
       '100 ml',
-      '红景天和荨麻',
+      '欧白芷根精华液（Angelica archangelica）',
+      '芬兰，Avainlippu（钥匙旗）标志',
+      '每天 1 茶匙',
     ],
+    specLabels: [undefined, undefined, undefined, '用量'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 沙棘与橄榄油 150 ml',
@@ -518,11 +520,17 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specs: ['图利基·皮耶蒂莱，1990 年代', '手工陶瓷，附专属包装盒'],
     specLabels: ['设计', '工艺'],
   },
-  'fiskars-moominpappa-scissors': {
-    name: 'Fiskars 姆明爸爸多用途剪刀',
+  'sk-fiskars-snorkmaiden-kids-scissors': {
+    name: 'Fiskars 可儿儿童剪刀 13 cm',
     description:
-      '橙色手柄的 Fiskars 剪刀，出现在芬兰厨房抽屉里的次数比任何其他工具都多。这一把长 21 cm，不锈钢材质，手柄上是姆明爸爸。',
-    specs: ['21 cm', '不锈钢'],
+      'Fiskars 姆明系列的儿童剪刀，长 13 cm，刀尖是圆头。可儿的图案嵌在手柄材料本身里，而不是印在表面。不锈钢刀片由一颗可以拧紧的螺丝固定，剪刀可以放进洗碗机。',
+    specs: [
+      '13 cm',
+      '不锈钢，硬度 HRC 57',
+      '可用洗碗机',
+      '圆头，专为儿童设计',
+    ],
+    specLabels: [undefined, undefined, undefined, '刀尖'],
   },
   'rento-tar-sauna-soap': {
     name: 'Rento 焦油桑拿皂 150 g',
@@ -641,23 +649,36 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specs: ['36 g', '木糖醇。带有芬兰牙医协会标志'],
     specLabels: [undefined, '甜味剂'],
   },
-  'leijona-tar-liquorice': {
-    name: 'Leijona 焦油甘草含片 32 g',
+  'sk-sisu-kaamos-salty-liquorice': {
+    name: 'Sisu Kaamos 咸甘草软糖 80 g',
     description:
-      '用松焦油调味的甘草糖，自 1933 年起生产。焦油是一种芬兰味道，会进到糖果、桑拿皂甚至冰淇淋里，而这是最便宜的尝试方式。',
-    specs: ['32 g'],
+      '柔软的 Sisu 软糖，甘草和咸甘草的味道都很浓。咸甘草（salmiakki）是芬兰人用氯化铵调味的咸味甘草糖。Kaamos 在芬兰语里指极夜，也就是极北地区太阳不升到地平线以上的那几个星期。',
+    specs: [
+      '80 g',
+      '能量 1160 kJ / 277 kcal，脂肪 0.6 g 其中饱和脂肪 0.2 g，碳水化合物 52 g 其中糖 45 g，蛋白质 1.2 g，盐 5.5 g',
+      'Cloetta Suomi Oy, PL 406, 20101 Turku',
+    ],
+    specLabels: [undefined, '每 100 g 营养成分', '经销商'],
   },
-  'fazer-hazelnut-chocolate': {
-    name: 'Karl Fazer 整粒榛子牛奶巧克力 200 g',
+  'sk-karl-fazer-hazelnut-crunch-bar': {
+    name: 'Karl Fazer 榛子碎牛奶巧克力 180 g',
     description:
-      '牛奶巧克力里嵌着整粒榛子的那块蓝色巧克力。Fazer 自 1922 年起一直用同样的蓝色包装纸，所以芬兰人出国带的就是它。',
-    specs: ['200 g'],
+      '自 1922 年起生产的 Fazer Blue 牛奶巧克力，整块都混有榛子碎。牛奶巧克力的可可含量至少 30%，Fazer 按照 Fazer Cocoa Vision 计划采购可可。',
+    specs: [
+      '180 g',
+      '能量 2387 kJ / 566 kcal，脂肪 38 g 其中饱和脂肪 19 g，碳水化合物 46 g 其中糖 45 g，蛋白质 10 g，盐 0.28 g',
+    ],
+    specLabels: [undefined, '每 100 g 营养成分'],
   },
-  'fazer-light-milk-chocolate': {
-    name: 'Karl Fazer 清爽牛奶巧克力 180 g',
+  'sk-karl-fazer-milk-chocolate-bar': {
+    name: 'Karl Fazer 牛奶巧克力 180 g，Fazer Blue',
     description:
-      '蓝色经典款更清淡温和的版本。如果你觉得经典款太甜，就带这一块。',
-    specs: ['180 g'],
+      '芬兰人称之为 Fazerin Sininen 的巧克力排，也就是 Fazer Blue：自 1922 年起用真正的牛奶制作的牛奶巧克力，蓝色包装上印着 Karl Fazer 的金色签名。Fazer 按照 Fazer Cocoa Vision 计划采购可可。',
+    specs: [
+      '180 g',
+      '能量 2260 kJ / 550 kcal，脂肪 33 g 其中饱和脂肪 21 g，碳水化合物 49 g 其中糖 48 g，蛋白质 11 g，盐 0.35 g',
+    ],
+    specLabels: [undefined, '每 100 g 营养成分'],
   },
   'fazer-fazerina': {
     name: 'Fazer Fazerina 香橙松露巧克力排 99 g',
@@ -973,11 +994,18 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specs: ['100 g', '小火慢煮成茶'],
     specLabels: [undefined, '用法'],
   },
-  'puhdistamo-instant-chaga': {
-    name: 'Puhdistamo 速溶白桦茸提取粉 28 g',
+  'rj-puhdistamo-chaga-extract': {
+    name: 'Puhdistamo 白桦茸提取液 50 ml',
     description:
-      '无需熬煮、直接溶于热水的白桦茸。28 克小罐放进任何行李都行，比一袋原块更经得起旅途。',
-    specs: ['28 g'],
+      '野生白桦茸的双重提取液，白桦茸由 Puhdistamo 培训过的采集者手工采摘，主要来自芬兰拉普兰。提取时同时使用水和乙醇，提取液浓缩至六倍。厂商建议用量为每天两次、每次 15 滴，一瓶约可用 65 次。标签注明，白桦茸不得与抗生素或抗凝血药同时使用。',
+    specs: [
+      '50 ml',
+      '野生白桦茸（Inonotus obliquus），手工采摘，主要来自芬兰拉普兰',
+      '用水和乙醇双重提取，浓缩 6 倍',
+      '每天两次，每次 15 滴，每瓶约 65 次',
+      '不得与抗生素、抗凝血药、青霉素或静脉注射葡萄糖同时使用。不建议对菌菇过敏者使用',
+    ],
+    specLabels: [undefined, undefined, '提取', '用量', '警示'],
   },
   'puhdistamo-conifer-extract': {
     name: 'Puhdistamo 针叶树提取液 50 ml',
@@ -1156,15 +1184,16 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '保温'],
   },
-  'nb-little-my-neckpillow': {
-    name: '小不点颈枕',
+  'nb-moomin-adventure-neckpillow': {
+    name: '姆明 Adventure 颈枕',
     description:
-      '柔软外套下是记忆棉，给赫尔辛基到罗瓦涅米的夜车，或者回程的飞机。小到能扣在包上，而旅行枕只有这一种是真会一直带着的。',
+      '超柔软的石油蓝外套上，印着在帐篷之间露营的姆明一家。适合坐夜车去罗瓦涅米，或搭飞机回家时使用。',
     specs: [
-      '记忆棉，柔软外套',
-      '姆明官方产品',
+      '超柔软外套',
+      '石油蓝和多色',
+      '姆明官方授权产品',
     ],
-    specLabels: [undefined, '授权'],
+    specLabels: [undefined, undefined, '授权'],
   },
   'nb-moomintroll-love-cushion': {
     name: '姆明 Love 抱枕',
@@ -1433,14 +1462,17 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '60 %棉、33 %聚酯、4 %尼龙、2 %氨纶、1 %弹性二烯',
     ],
   },
-  'nb-hattifatteners-retro-socks': {
-    name: '溜溜女款复古袜',
+  'nb-hattifatteners-celebration-socks': {
+    name: '溜溜 Celebration 女士运动袜',
     description:
-      '印有溜溜的复古风格袜子，欧码36到42，67%棉。弹性足够，一个尺码适合大多数人，也是姆明读者打开袜子抽屉时最先拿起的一双。',
+      'Nordicbuddies 的姆明袜，图案是举杯庆祝的溜溜，EU 36 至 42。这双袜子为运动而设计：压缩设计让穿着更贴合，面料透气，袜底加厚，还有脚踝保护。',
     specs: [
-      '欧码36-42',
-      '67 %棉、25 %聚酯、4 %弹性二烯、3 %尼龙、1 %氨纶',
+      'EU 36-42',
+      '67 % 棉、25 % 涤纶、4 % 弹性二烯、3 % 尼龙、1 % 氨纶',
+      '压缩设计更贴合，透气面料，加厚袜底，脚踝保护',
+      '姆明官方授权产品',
     ],
+    specLabels: [undefined, undefined, '细节', '授权'],
   },
   'sk-suomi-propeller-cap': {
     name: 'Suomi 球迷螺旋桨帽',
@@ -1675,16 +1707,17 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '100 %芬兰蓝莓，连汁整颗干燥',
     ],
   },
-  'rj-poikain-parhaat-blueberry-lemonade': {
-    name: 'Poikain Parhaat 蓝莓柠檬水 0.33 l',
+  'rj-kaino-blackcurrant-leaf-sparkling-075': {
+    name: 'KAINO Drinks 黑加仑叶有机气泡饮 0.75 l',
     description:
-      '在坦佩雷的韦赫迈宁用真材实料制作的有机蓝莓柠檬水，不含人工香精和色素，0.33升瓶装。芬兰试吃桌上放在咸甘草旁边的那瓶饮料。',
+      '无酒精气泡饮，风味来自芬兰有机黑加仑叶，0.75 升瓶装，适合举杯。KAINO Drinks 在坦佩雷的韦赫迈宁生产，不添加人工香料或色素。',
     specs: [
-      '0.33 l',
-      '产于坦佩雷的韦赫迈宁',
-      '有机，无人工香精或色素',
+      '0.75 l',
+      '产于芬兰坦佩雷的韦赫迈宁',
+      '有机（欧盟有机标志）、纯素、无酒精',
+      '价格包含 0.10 欧元瓶子押金',
     ],
-    specLabels: [undefined, undefined, '添加剂'],
+    specLabels: [undefined, undefined, '标识', '瓶子押金'],
   },
   'rj-nordic-koivu-birch-sap': {
     name: 'Nordic Koivu 桦树汁 500 ml',
@@ -1803,16 +1836,16 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '设计'],
   },
-  'sk-moomin-chocolate-chip-biscuit-tin': {
-    name: '姆明巧克力豆饼干铁盒装 200 g',
+  'sk-karl-fazer-blueberry-truffle-chocolates': {
+    name: 'Karl Fazer Blueberry Truffle 牛奶巧克力 250 g',
     description:
-      '迷你巧克力豆饼干200克，装在姆明铁盒里，饼干吃完后铁盒还能当收纳盒。巧克力块占饼干的16%，其中可可固形物不低于40%。',
+      '一盒 250 克的 Karl Fazer 独立包装牛奶巧克力，柔软的松露夹心里有蓝莓干碎块和蓝莓香料。整盒拿来就能直接送人。',
     specs: [
-      '200 g',
-      '巧克力块16 %，巧克力中可可固形物不低于40 %',
-      '收藏铁盒，可作收纳盒',
+      '250 g',
+      '独立包装的蓝莓松露夹心牛奶巧克力',
+      '能量 2281 kJ / 547 kcal，脂肪 33 g 其中饱和脂肪 19 g，碳水化合物 53 g 其中糖 52 g，蛋白质 8.2 g，盐 0.23 g',
     ],
-    specLabels: [undefined, undefined, '包装'],
+    specLabels: [undefined, undefined, '每 100 g 营养成分'],
   },
   'sk-paulig-cafe-new-york-beans': {
     name: 'Paulig Café New York 咖啡豆 450 g',
@@ -1979,17 +2012,17 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '电源', '功能', '使用', '原画'],
   },
-  'arabia-moomin-plates-winter-night': {
-    name: 'Arabia 姆明餐盘 19 cm，办公室与冬夜，2 只',
+  'arabia-moomin-friends-forever-mug-plate': {
+    name: 'Arabia 姆明 Friends Forever 马克杯和餐盘，2 件',
     description:
-      'Arabia 的两只 19 cm 白色玻化瓷姆明餐盘，图案为“办公室”和“冬夜”，与此前推出的马克杯配套。“办公室”画面于 1996 年首次出现在 Arabia 姆明马克杯上，取材自经常出现写作、画画和上色的连环漫画。“冬夜”沿用 2006 年马克杯上的画面，描绘姆明坐在桥栏杆上，出自托芙·扬松 1957 年出版的《Trollvinter》。',
+      'Moomin Arabia 出品的玻化瓷姆明马克杯和餐盘，两件都带有托芙·扬松以友谊为主题的插画。合在一起是一人份的早餐餐具，也可以作为送给朋友的礼物。',
     specs: [
-      '直径 19.4 cm，高 2.8 cm',
+      '1 只马克杯和 1 只餐盘',
       '玻化瓷',
-      '2 只餐盘，办公室和冬夜',
-      '可用洗碗机、微波炉和烤箱',
+      '多色',
+      '毛重 0.83 kg',
       '托芙·扬松',
-      '566802-01, EAN 6411801011432',
+      '700063-01, EAN 6411801028676',
     ],
     specLabels: [undefined, undefined, undefined, undefined, '原画', '货号与 EAN'],
   },
@@ -2154,14 +2187,14 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, '过敏原', '每 100 g 营养成分'],
   },
-  'sk-halva-salmiakki-calendar': {
-    name: 'Halva 咸甘草糖倒数日历 200 g',
+  'sk-halva-vanhat-autot-advent-calendar': {
+    name: 'Halva Vanhat Autot 圣诞倒数日历 200 g',
     description:
-      'Halva 圣诞倒数日历，装有 200 g 咸甘草糖（salmiakki，芬兰的咸味甘草糖），全部选自 Halva 自家的产品。小门后面有 Vanhat Autot、咸甘草鱼、咸味骷髅、Pommix、咸甘草心、咸甘草剑、Salmiakkiruutu 方块糖和 Jauhix 硬质咸甘草糖。',
+      '芬兰糖果商 Halva 推出的圣诞倒数日历，小门后面共有 200 g 咸甘草糖和水果糖，以 Halva 的 Vanhat Autot（意为“老爷车”）糖果为主题。',
     specs: [
       '200 g',
-      'Vanhat Autot 咸甘草糖、咸甘草鱼、咸味骷髅、Pommix 咸甘草糖、咸甘草心、咸甘草剑、Salmiakkiruutu、Jauhix 咸甘草糖',
-      '能量 1406 kJ / 331 kcal，脂肪 0.5 g 其中饱和脂肪 0.1 g，碳水化合物 80 g 其中糖 59 g，蛋白质 2.7 g，盐 0.03 g',
+      '咸甘草糖和水果糖',
+      '能量 1370 kJ / 322 kcal，脂肪 0.5 g 其中饱和脂肪 0.2 g，碳水化合物 77 g 其中糖 57 g，蛋白质 3 g，盐 0.37 g',
     ],
     specLabels: [undefined, undefined, '每 100 g 营养成分'],
   },
@@ -2243,13 +2276,13 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
   },
   'north-outdoor-polku-neck-tube': {
-    name: 'North Outdoor Polku 美利奴围脖，咖啡色',
+    name: 'North Outdoor Polku 美利奴围脖，杏仁色',
     description:
-      '厚实的围脖，采用 100% 不使用剪皮法的美利奴羊毛，织成紧密的 1x1 罗纹。高度足够，可以当围巾、拉起来当兜帽，或用来遮住脸。均码，颜色为咖啡色。',
+      '厚实的围脖，采用 100% 不使用剪皮法的美利奴羊毛，织成紧密的 1x1 罗纹。高度足够，可以当围巾、拉起来当兜帽，或用来遮住脸。均码，颜色为杏仁色。',
     specs: [
       '100 % 美利奴羊毛，不使用剪皮法，1x1 罗纹针织',
       '均码',
-      '咖啡色',
+      '杏仁色',
       '围巾、兜帽或面罩',
     ],
     specLabels: [undefined, undefined, undefined, '用法'],

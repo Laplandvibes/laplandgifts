@@ -352,17 +352,16 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Voedingswaarde per 100 g', 'Op de markt gebracht door'],
   },
-  'meritalo-tyrnihillo': {
-    name: 'Meritalo Finse duindoornjam 310 g',
+  'sk-finnish-flavours-lingonberry-jam': {
+    name: 'Finnish Flavours Finse vossenbessenjam 400 g',
     description:
-      'Duindoornjam met 37 gram bessen per 100 gram, gekookt van Finse duindoorn op de familieboerderij Meritalo in Salo, in het zuidwesten van Finland en niet in Lapland. Duindoorn is zuur en niet zoet, dus hij komt beter tot zijn recht naast kaas dan op een pannenkoek.',
+      'Vossenbessenjam uit Finland, gemaakt van bessen die in Finse bossen zijn geplukt, met 45 procent vossenbes in de pot. Finnen eten hem bij wildstoof, gehaktballetjes en spinaziepannenkoekjes, en hij past in hetzelfde cadeau als een zak gedroogd rendiervlees.',
     specs: [
-      '310 g',
-      'De bessen zijn Fins. Gemaakt door een familiebedrijf op de thuisboerderij Meritalo in Salo, in het zuidwesten van Finland',
-      'Energie 781 kJ / 187 kcal, vet 1,9 g waarvan verzadigd 0,3 g, koolhydraten 41 g waarvan suikers 41 g, eiwit 0,3 g, zout 0,01 g',
-      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+      '400 g',
+      'Gemaakt in Finland van 100 % Finse bessen',
+      'Energie 633 kJ / 151 kcal, vet 0,2 g, waarvan verzadigd 0 g, koolhydraten 39 g, waarvan suikers 39 g, eiwit 0,2 g, zout 0,01 g',
     ],
-    specLabels: [undefined, undefined, 'Voedingswaarde per 100 g', 'Op de markt gebracht door'],
+    specLabels: [undefined, undefined, 'Voedingswaarde per 100 g'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Gedroogd rendiervlees Original 200 g',
@@ -461,14 +460,17 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosering', 'Voedingswaarde per 100 g'],
   },
-  'arctic-warriors-roseroot-elixir': {
-    name: 'Arctic Warriors rozenwortelelixer 100 ml',
+  'rj-arctic-warriors-angelica-elixir': {
+    name: 'Arctic Warriors engelwortelelixer 100 ml',
     description:
-      'Rozenwortel groeit op de vochtige beekoevers en rotswanden van de Laplandse fjälls, en Arctic Warriors trekt hem samen met brandnetel in plantaardige glycerol. Een theelepel gaat in thee, pap of yoghurt.',
+      'Een elixer van de wortel van de grote engelwortel, in het Fins väinönputki, van het Finse bedrijf Arctic Warriors. Ruohonjuuri vermeldt dat het in Finland gemaakt, veganistisch en glutenvrij is, en de fabrikant geeft als dosering één theelepel per dag.',
     specs: [
       '100 ml',
-      'Rozenwortel en brandnetel',
+      'Engelwortelelixer (Angelica archangelica)',
+      'Finland, Avainlippu-keurmerk (Sleutelvlag)',
+      'Eén theelepel per dag',
     ],
+    specLabels: [undefined, undefined, undefined, 'Dosering'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 duindoorn- en olijfolie 150 ml',
@@ -516,11 +518,17 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: ['Tuulikki Pietilä, jaren 1990', 'Handgemaakt keramiek, verkocht in een eigen doosje'],
     specLabels: ['Ontwerper', 'Vervaardiging'],
   },
-  'fiskars-moominpappa-scissors': {
-    name: 'Fiskars Moominpappa universele schaar',
+  'sk-fiskars-snorkmaiden-kids-scissors': {
+    name: 'Fiskars Snorkjuffrouw kinderschaar 13 cm',
     description:
-      'Fiskars-scharen met oranje handvat liggen in meer Finse keukenlades dan welk ander gereedschap ook. Deze schaar is 21 cm in roestvrij staal met Moominpappa op het handvat.',
-    specs: ['21 cm', 'Roestvrij staal'],
+      'Een kinderschaar uit de Moomin-serie van Fiskars, 13 cm lang met afgeronde punten. Snorkjuffrouw zit in het materiaal van het handvat zelf en is niet op het oppervlak gedrukt. De roestvrijstalen bladen worden bijeengehouden door een schroef die u kunt aandraaien, en de schaar mag in de vaatwasser.',
+    specs: [
+      '13 cm',
+      'Roestvrij staal, hardheid HRC 57',
+      'Vaatwasserbestendig',
+      'Afgerond, ontworpen voor kinderen',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Bladpunten'],
   },
   'rento-tar-sauna-soap': {
     name: 'Rento teer-saunazeep 150 g',
@@ -639,23 +647,36 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: ['36 g', 'Xylitol. Draagt het keurmerk van de Finse tandartsenvereniging'],
     specLabels: [undefined, 'Zoetstof'],
   },
-  'leijona-tar-liquorice': {
-    name: 'Leijona teerdrop pastilles 32 g',
+  'sk-sisu-kaamos-salty-liquorice': {
+    name: 'Sisu Kaamos zoute droppastilles 80 g',
     description:
-      'Drop op smaak gebracht met dennenteer, gemaakt sinds 1933. Teer is een Finse smaak die in snoep, saunazeep en zelfs ijs terechtkomt, en dit is de goedkoopste manier om hem te proberen.',
-    specs: ['32 g'],
+      'Zachte Sisu-pastilles met een sterke smaak van drop en salmiak, de zoute drop die Finnen op smaak brengen met ammoniumchloride. Kaamos is het Finse woord voor de poolnacht, de weken in het hoge noorden waarin de zon niet boven de horizon uitkomt.',
+    specs: [
+      '80 g',
+      'Energie 1160 kJ / 277 kcal, vet 0,6 g, waarvan verzadigd 0,2 g, koolhydraten 52 g, waarvan suikers 45 g, eiwit 1,2 g, zout 5,5 g',
+      'Cloetta Suomi Oy, PL 406, 20101 Turku',
+    ],
+    specLabels: [undefined, 'Voedingswaarde per 100 g', 'Op de markt gebracht door'],
   },
-  'fazer-hazelnut-chocolate': {
-    name: 'Karl Fazer melkchocolade met hele hazelnoten 200 g',
+  'sk-karl-fazer-hazelnut-crunch-bar': {
+    name: 'Karl Fazer melkchocolade met gehakte hazelnoten 180 g',
     description:
-      'De blauwe reep met hele hazelnoten in melkchocolade. Fazer gebruikt sinds 1922 hetzelfde blauwe papier, en daarom is dit de reep die Finnen mee naar het buitenland nemen.',
-    specs: ['200 g'],
+      'Fazer Blue-melkchocolade, gemaakt sinds 1922, met gehakte hazelnoten door de hele reep. De melkchocolade bevat minstens 30 procent cacao, en Fazer betrekt de cacao via het programma Fazer Cocoa Vision.',
+    specs: [
+      '180 g',
+      'Energie 2387 kJ / 566 kcal, vet 38 g, waarvan verzadigd 19 g, koolhydraten 46 g, waarvan suikers 45 g, eiwit 10 g, zout 0,28 g',
+    ],
+    specLabels: [undefined, 'Voedingswaarde per 100 g'],
   },
-  'fazer-light-milk-chocolate': {
-    name: 'Karl Fazer lichte melkchocolade 180 g',
+  'sk-karl-fazer-milk-chocolate-bar': {
+    name: 'Karl Fazer melkchocolade 180 g, Fazer Blue',
     description:
-      'Een lichtere, mildere versie van de blauwe reep. Als de klassieke u te zoet is, neem dan deze.',
-    specs: ['180 g'],
+      'De reep die Finnen Fazerin Sininen noemen, Fazer Blue: melkchocolade die sinds 1922 met echte melk wordt gemaakt, in de blauwe wikkel met de gouden handtekening van Karl Fazer. Fazer betrekt de cacao via het programma Fazer Cocoa Vision.',
+    specs: [
+      '180 g',
+      'Energie 2260 kJ / 550 kcal, vet 33 g, waarvan verzadigd 21 g, koolhydraten 49 g, waarvan suikers 48 g, eiwit 11 g, zout 0,35 g',
+    ],
+    specLabels: [undefined, 'Voedingswaarde per 100 g'],
   },
   'fazer-fazerina': {
     name: 'Fazer Fazerina sinaasappeltruffelreep 99 g',
@@ -971,11 +992,18 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: ['100 g', 'Laten trekken als langzaam gezette thee'],
     specLabels: [undefined, 'Gebruik'],
   },
-  'puhdistamo-instant-chaga': {
-    name: 'Puhdistamo instant chaga-extractpoeder 28 g',
+  'rj-puhdistamo-chaga-extract': {
+    name: 'Puhdistamo chaga-extract 50 ml',
     description:
-      'Chaga die direct oplost in heet water, zonder trekken. De pot van 28 gram past in elke bagage en doorstaat de reis beter dan een zak stukken.',
-    specs: ['28 g'],
+      'Een dubbel extract van wilde chaga, die de opgeleide plukkers van Puhdistamo met de hand verzamelen, vooral in Fins Lapland. Bij de extractie worden zowel water als ethanol gebruikt, en het extract is zesvoudig geconcentreerd. De dosering van de fabrikant is 15 druppels twee keer per dag, zodat het flesje goed is voor ongeveer 65 doses, en volgens het etiket mag chaga niet samen met antibiotica of bloedverdunners worden gebruikt.',
+    specs: [
+      '50 ml',
+      'Wilde chaga (Inonotus obliquus), met de hand geplukt, vooral in Fins Lapland',
+      'Dubbele extractie met water en ethanol, 6 keer geconcentreerd',
+      '15 druppels twee keer per dag, ongeveer 65 doses per flesje',
+      'Mag niet samen met antibiotica, bloedverdunners, penicilline of intraveneuze glucose worden gebruikt. Niet aanbevolen bij een allergie voor paddenstoelen',
+    ],
+    specLabels: [undefined, undefined, 'Extractie', 'Dosering', 'Waarschuwing'],
   },
   'puhdistamo-conifer-extract': {
     name: 'Puhdistamo naaldboomextract 50 ml',
@@ -1154,15 +1182,16 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Houdt warm'],
   },
-  'nb-little-my-neckpillow': {
-    name: 'Kleine Mij nekkussen',
+  'nb-moomin-adventure-neckpillow': {
+    name: 'Moomin Adventure nekkussen',
     description:
-      'Traagschuim onder een zachte hoes, voor de nachttrein Helsinki–Rovaniemi of de vlucht terug. Klein genoeg om aan de tas te klikken, en dat is het enige soort reiskussen dat iemand echt houdt.',
+      'Een nekkussen met een superzachte hoes in petrolblauw, bedrukt met de Moomins op kampeertocht tussen hun tenten. Handig in de nachttrein naar Rovaniemi of op de vlucht naar huis.',
     specs: [
-      'Traagschuim, zachte hoes',
+      'Superzachte hoes',
+      'Petrol en meerkleurig',
       'Officieel Moomin-product',
     ],
-    specLabels: [undefined, 'Licentie'],
+    specLabels: [undefined, undefined, 'Licentie'],
   },
   'nb-moomintroll-love-cushion': {
     name: 'Moomin Love kussen',
@@ -1431,14 +1460,17 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       '60 % katoen, 33 % polyester, 4 % nylon, 2 % elastaan, 1 % elastodieen',
     ],
   },
-  'nb-hattifatteners-retro-socks': {
-    name: 'Hattifnatten retrosokken, dames',
+  'nb-hattifatteners-celebration-socks': {
+    name: 'Hattifnatten Celebration sportsokken voor dames',
     description:
-      'Sokken in retrostijl met de Hattifnatten, EU 36 tot 42, 67 procent katoen. Rekbaar genoeg dat één maat de meesten past, en het eerste wat een Moomin-lezer pakt als de sokkenla open staat.',
+      'Moomin-sokken van Nordicbuddies met de Hattifnatten die het glas heffen, EU 36 tot 42. Ze zijn gemaakt om in te bewegen: compressie voor een betere pasvorm, ademend materiaal, een dikkere zoollaag en enkelbescherming.',
     specs: [
       'EU 36-42',
       '67 % katoen, 25 % polyester, 4 % elastodieen, 3 % nylon, 1 % elastaan',
+      'Compressie voor een betere pasvorm, ademend materiaal, dikkere zoollaag, enkelbescherming',
+      'Officieel Moomin-product',
     ],
+    specLabels: [undefined, undefined, 'Kenmerken', 'Licentie'],
   },
   'sk-suomi-propeller-cap': {
     name: 'Suomi supporterspet met propeller',
@@ -1673,16 +1705,17 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       '100 % Finse bosbes, heel gedroogd met het sap',
     ],
   },
-  'rj-poikain-parhaat-blueberry-lemonade': {
-    name: 'Poikain Parhaat bosbessenlimonade 0,33 l',
+  'rj-kaino-blackcurrant-leaf-sparkling-075': {
+    name: 'KAINO Drinks zwartebessenblad biologische bruisdrank 0,75 l',
     description:
-      'Biologische bosbessenlimonade gemaakt in Vehmainen, Tampere, van echte ingrediënten zonder kunstmatige smaak- of kleurstoffen, fles van 0,33 liter. De frisdrank naast de salmiak op een Finse proeftafel.',
+      'Een alcoholvrije bruisdrank die zijn smaak haalt uit Finse biologische zwartebessenbladeren, in een fles van 0,75 liter om mee te toosten. KAINO Drinks maakt hem in Vehmainen, Tampere, zonder kunstmatige smaak- of kleurstoffen.',
     specs: [
-      '0,33 l',
-      'Gemaakt in Vehmainen, Tampere',
-      'Biologisch, geen kunstmatige smaak- of kleurstoffen',
+      '0,75 l',
+      'Gemaakt in Vehmainen, Tampere, Finland',
+      'Biologisch (Europees biologisch logo), veganistisch, alcoholvrij',
+      'In de prijs zit € 0,10 statiegeld',
     ],
-    specLabels: [undefined, undefined, 'Toevoegingen'],
+    specLabels: [undefined, undefined, 'Vermeldingen', 'Statiegeld'],
   },
   'rj-nordic-koivu-birch-sap': {
     name: 'Nordic Koivu berkensap 500 ml',
@@ -1801,16 +1834,16 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Ontwerp'],
   },
-  'sk-moomin-chocolate-chip-biscuit-tin': {
-    name: 'Moomin chocolate chip koekjes in blik 200 g',
+  'sk-karl-fazer-blueberry-truffle-chocolates': {
+    name: 'Karl Fazer Blueberry Truffle melkchocoladebonbons 250 g',
     description:
-      'Mini chocolate chip koekjes, 200 gram, in een Moomin-blik dat de koekjes overleeft als opbergdoos. De chocoladestukjes zijn 16 procent van het koekje en bevatten minstens 40 procent cacaobestanddelen.',
+      'Een doos van 250 gram met los verpakte Karl Fazer-melkchocoladebonbons. De zachte truffelvulling bevat stukjes gedroogde bosbes en bosbessenaroma. De doos kunt u zo cadeau geven.',
     specs: [
-      '200 g',
-      'Chocoladestukjes 16 %, in de chocolade minstens 40 % cacaobestanddelen',
-      'Verzamelblik, herbruikbaar als opbergdoos',
+      '250 g',
+      'Verpakte melkchocoladebonbons met bosbessentruffelvulling',
+      'Energie 2281 kJ / 547 kcal, vet 33 g, waarvan verzadigd 19 g, koolhydraten 53 g, waarvan suikers 52 g, eiwit 8,2 g, zout 0,23 g',
     ],
-    specLabels: [undefined, undefined, 'Verpakking'],
+    specLabels: [undefined, undefined, 'Voedingswaarde per 100 g'],
   },
   'sk-paulig-cafe-new-york-beans': {
     name: 'Paulig Café New York koffiebonen 450 g',
@@ -1977,17 +2010,17 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Stroomvoorziening', 'Functies', 'Gebruik', 'Illustratie'],
   },
-  'arabia-moomin-plates-winter-night': {
-    name: 'Arabia Moomin borden 19 cm, Kantoor & Winternacht, 2 stuks',
+  'arabia-moomin-friends-forever-mug-plate': {
+    name: 'Arabia Moomin Friends Forever mok en bord, 2 stuks',
     description:
-      'Twee Moomin-borden van 19 cm in wit vitroporselein van Arabia, Kantoor en Winternacht, gemaakt om te passen bij de eerder verschenen mokken. De afbeelding Kantoor verscheen voor het eerst in 1996 op een Moomin-mok van Arabia en is gebaseerd op strips waarin schrijven, tekenen en schilderen steeds terugkomen. Winternacht herhaalt de afbeelding van een mok uit 2006, met Moomintroll op een brugleuning, in een scène uit Tove Janssons boek Trollvinter uit 1957.',
+      'Een Moomin-mok en -bord van Moomin Arabia in vitroporselein, beide met illustraties van Tove Jansson rond het thema vriendschap. Samen vormen ze een ontbijtset voor één persoon, of een cadeau voor een vriend.',
     specs: [
-      'Diameter 19,4 cm, hoogte 2,8 cm',
+      '1 mok en 1 bord',
       'Vitroporselein',
-      '2 borden, Kantoor en Winternacht',
-      'Geschikt voor vaatwasser, magnetron en oven',
+      'Meerkleurig',
+      '0,83 kg bruto',
       'Tove Jansson',
-      '566802-01, EAN 6411801011432',
+      '700063-01, EAN 6411801028676',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Illustratie', 'Artikelnummer en EAN'],
   },
@@ -2152,14 +2185,14 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, 'Allergenen', 'Voedingswaarde per 100 g'],
   },
-  'sk-halva-salmiakki-calendar': {
-    name: 'Halva salmiak-adventskalender 200 g',
+  'sk-halva-vanhat-autot-advent-calendar': {
+    name: 'Halva Vanhat Autot adventskalender 200 g',
     description:
-      'Een adventskalender van Halva met 200 g salmiak, de Finse zoute drop, gekozen uit het eigen assortiment van Halva. Achter de deurtjes zitten Vanhat Autot, salmiakvisjes, zoute doodshoofdjes, Pommix, salmiakhartjes, salmiakzwaarden, Salmiakkiruutu-blokjes en harde Jauhix-salmiak.',
+      'Een adventskalender van de Finse snoepfabrikant Halva, met 200 g salmiak- en fruitsnoepjes achter de deurtjes, in het thema van Halva\'s Vanhat Autot-snoepjes (Oude Auto\'s).',
     specs: [
       '200 g',
-      'Vanhat Autot-salmiak, salmiakvisje, zout doodshoofdje, Pommix-salmiak, salmiakhartje, salmiakzwaard, Salmiakkiruutu, Jauhix-salmiak',
-      'Energie 1406 kJ / 331 kcal, vet 0,5 g, waarvan verzadigd 0,1 g, koolhydraten 80 g, waarvan suikers 59 g, eiwit 2,7 g, zout 0,03 g',
+      'Salmiak- en fruitsnoepjes',
+      'Energie 1370 kJ / 322 kcal, vet 0,5 g, waarvan verzadigd 0,2 g, koolhydraten 77 g, waarvan suikers 57 g, eiwit 3 g, zout 0,37 g',
     ],
     specLabels: [undefined, undefined, 'Voedingswaarde per 100 g'],
   },
@@ -2241,13 +2274,13 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
   },
   'north-outdoor-polku-neck-tube': {
-    name: 'North Outdoor Polku merinonekwarmer, Coffee',
+    name: 'North Outdoor Polku merinonekwarmer, Almond',
     description:
-      'Een dikke nekwarmer van 100 procent mulesingvrije merinowol, gebreid in een dichte 1x1-rib. Hij is hoog genoeg om als sjaal te dragen, als capuchon op te trekken of over het gezicht te trekken. Eén maat, in de kleur Coffee.',
+      'Een dikke nekwarmer van 100 procent mulesingvrije merinowol, gebreid in een dichte 1x1-rib. Hij is hoog genoeg om als sjaal te dragen, als capuchon op te trekken of over het gezicht te trekken. Eén maat, in de kleur Almond.',
     specs: [
       '100 % merinowol, mulesingvrij, 1x1-ribbreisel',
       'Eén maat',
-      'Coffee',
+      'Almond',
       'Sjaal, capuchon of gezichtsbescherming',
     ],
     specLabels: [undefined, undefined, undefined, 'Gebruik'],

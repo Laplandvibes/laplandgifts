@@ -36,7 +36,7 @@ const PAKURI_GUIDE_SLUGS = new Set([
   'kaapa-mushrooms-pakuri-powder',
   'foodin-chaga-tincture',
   'kaavi-chaga-chunks',
-  'puhdistamo-instant-chaga',
+  'rj-puhdistamo-chaga-extract',
   'foodin-six-mushroom-blend',
 ])
 

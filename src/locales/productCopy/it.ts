@@ -352,17 +352,16 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Valori nutrizionali per 100 g', 'Commercializzato da'],
   },
-  'meritalo-tyrnihillo': {
-    name: 'Confettura finlandese di olivello spinoso Meritalo 310 g',
+  'sk-finnish-flavours-lingonberry-jam': {
+    name: 'Confettura finlandese di mirtilli rossi Finnish Flavours 400 g',
     description:
-      'Confettura di olivello spinoso con 37 grammi di bacche ogni 100 grammi, cotta con olivello spinoso finlandese nella fattoria di famiglia Meritalo a Salo, nel sud-ovest della Finlandia e non in Lapponia. L’olivello spinoso è aspro più che dolce, quindi rende di più accanto a un formaggio che su una crêpe.',
+      'Confettura di mirtilli rossi prodotta in Finlandia con bacche raccolte nei boschi finlandesi. I mirtilli rossi sono il 45 per cento del contenuto del vasetto. È la confettura che i finlandesi servono con gli spezzatini di selvaggina, le polpette e le crespelle agli spinaci, e trova posto nello stesso regalo insieme a un sacchetto di carne di renna essiccata.',
     specs: [
-      '310 g',
-      'Le bacche sono finlandesi. Prodotta da un’azienda familiare nella fattoria Meritalo a Salo, nel sud-ovest della Finlandia',
-      'Energia 781 kJ / 187 kcal, grassi 1,9 g di cui saturi 0,3 g, carboidrati 41 g di cui zuccheri 41 g, proteine 0,3 g, sale 0,01 g',
-      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+      '400 g',
+      'Prodotta in Finlandia con il 100 % di bacche finlandesi',
+      'Energia 633 kJ / 151 kcal, grassi 0,2 g di cui saturi 0 g, carboidrati 39 g di cui zuccheri 39 g, proteine 0,2 g, sale 0,01 g',
     ],
-    specLabels: [undefined, undefined, 'Valori nutrizionali per 100 g', 'Commercializzata da'],
+    specLabels: [undefined, undefined, 'Valori nutrizionali per 100 g'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Carne di renna essiccata Original 200 g',
@@ -461,14 +460,17 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosaggio', 'Valori nutrizionali per 100 g'],
   },
-  'arctic-warriors-roseroot-elixir': {
-    name: 'Elisir di rodiola Arctic Warriors 100 ml',
+  'rj-arctic-warriors-angelica-elixir': {
+    name: 'Elisir di radice di angelica Arctic Warriors 100 ml',
     description:
-      'La rodiola cresce sulle rive umide dei ruscelli e sulle pareti di roccia dei fjäll della Lapponia, e Arctic Warriors la estrae in glicerolo vegetale insieme all’ortica. Un cucchiaino va nel tè, nel porridge o nello yogurt.',
+      'Un elisir di radice di angelica (in finlandese väinönputki) di Arctic Warriors, azienda finlandese. Il negozio Ruohonjuuri lo indica come prodotto in Finlandia, vegano e senza glutine, e la dose del produttore è un cucchiaino al giorno.',
     specs: [
       '100 ml',
-      'Rodiola e ortica',
+      'Elisir di radice di angelica (Angelica archangelica)',
+      'Finlandia, marchio Avainlippu (Key Flag)',
+      'Un cucchiaino al giorno',
     ],
+    specLabels: [undefined, undefined, undefined, 'Dosaggio'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 olio di olivello spinoso e oliva 150 ml',
@@ -516,11 +518,17 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specs: ['Tuulikki Pietilä, anni 1990', 'Ceramica fatta a mano, venduta nella sua scatola'],
     specLabels: ['Designer', 'Produzione'],
   },
-  'fiskars-moominpappa-scissors': {
-    name: 'Forbici universali Fiskars Papà Moomin',
+  'sk-fiskars-snorkmaiden-kids-scissors': {
+    name: 'Forbici per bambini Fiskars Snorkmaiden 13 cm',
     description:
-      'Le forbici Fiskars dal manico arancione stanno in più cassetti di cucina finlandesi di qualsiasi altro attrezzo. Questo paio misura 21 cm in acciaio inossidabile con Papà Moomin sul manico.',
-    specs: ['21 cm', 'Acciaio inossidabile'],
+      'Forbici per bambini della linea Moomin di Fiskars, lunghe 13 cm e con le punte arrotondate. Snorkmaiden è inserita nel materiale stesso dell’impugnatura invece di essere stampata in superficie. Le lame in acciaio inossidabile sono tenute da una vite che si può stringere, e le forbici vanno in lavastoviglie.',
+    specs: [
+      '13 cm',
+      'Acciaio inossidabile, durezza HRC 57',
+      'Lavabili in lavastoviglie',
+      'Arrotondate, pensate per i bambini',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Punte'],
   },
   'rento-tar-sauna-soap': {
     name: 'Sapone da sauna al catrame Rento 150 g',
@@ -639,23 +647,36 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specs: ['36 g', 'Xilitolo. Porta il marchio dell’Associazione dentistica finlandese'],
     specLabels: [undefined, 'Dolcificante'],
   },
-  'leijona-tar-liquorice': {
-    name: 'Pastiglie di liquirizia al catrame Leijona 32 g',
+  'sk-sisu-kaamos-salty-liquorice': {
+    name: 'Pastiglie di liquirizia salata Sisu Kaamos 80 g',
     description:
-      'Liquirizia aromatizzata al catrame di pino, prodotta dal 1933. Il catrame è un gusto finlandese che finisce nelle caramelle, nel sapone da sauna e perfino nel gelato, e questo è il modo più economico per provarlo.',
-    specs: ['32 g'],
+      'Pastiglie Sisu morbide dal gusto deciso di liquirizia e salmiakki, la liquirizia salata che in Finlandia si insaporisce con cloruro di ammonio. Kaamos è la parola finlandese per la notte polare, le settimane dell’estremo nord in cui il sole non sale sopra l’orizzonte.',
+    specs: [
+      '80 g',
+      'Energia 1160 kJ / 277 kcal, grassi 0,6 g di cui saturi 0,2 g, carboidrati 52 g di cui zuccheri 45 g, proteine 1,2 g, sale 5,5 g',
+      'Cloetta Suomi Oy, PL 406, 20101 Turku',
+    ],
+    specLabels: [undefined, 'Valori nutrizionali per 100 g', 'Commercializzato da'],
   },
-  'fazer-hazelnut-chocolate': {
-    name: 'Karl Fazer cioccolato al latte con nocciole intere 200 g',
+  'sk-karl-fazer-hazelnut-crunch-bar': {
+    name: 'Karl Fazer cioccolato al latte con granella di nocciole 180 g',
     description:
-      'La tavoletta blu con nocciole intere nel cioccolato al latte. Fazer usa lo stesso incarto blu dal 1922, ed è per questo che è quella che i finlandesi portano all’estero.',
-    specs: ['200 g'],
+      'Il cioccolato al latte Fazer Blue, prodotto dal 1922, con granella di nocciole in tutta la tavoletta. Il cioccolato al latte contiene almeno il 30 per cento di cacao, e Fazer si rifornisce di cacao nell’ambito del suo programma Fazer Cocoa Vision.',
+    specs: [
+      '180 g',
+      'Energia 2387 kJ / 566 kcal, grassi 38 g di cui saturi 19 g, carboidrati 46 g di cui zuccheri 45 g, proteine 10 g, sale 0,28 g',
+    ],
+    specLabels: [undefined, 'Valori nutrizionali per 100 g'],
   },
-  'fazer-light-milk-chocolate': {
-    name: 'Karl Fazer cioccolato al latte chiaro 180 g',
+  'sk-karl-fazer-milk-chocolate-bar': {
+    name: 'Karl Fazer cioccolato al latte 180 g, Fazer Blue',
     description:
-      'Una versione più chiara e più delicata della tavoletta blu. Se la classica vi sembra troppo dolce, prendete questa.',
-    specs: ['180 g'],
+      'La tavoletta che i finlandesi chiamano Fazerin Sininen, Fazer Blue: cioccolato al latte fatto con latte vero dal 1922, nell’incarto blu con la firma dorata di Karl Fazer. Fazer si rifornisce di cacao nell’ambito del suo programma Fazer Cocoa Vision.',
+    specs: [
+      '180 g',
+      'Energia 2260 kJ / 550 kcal, grassi 33 g di cui saturi 21 g, carboidrati 49 g di cui zuccheri 48 g, proteine 11 g, sale 0,35 g',
+    ],
+    specLabels: [undefined, 'Valori nutrizionali per 100 g'],
   },
   'fazer-fazerina': {
     name: 'Tavoletta al tartufo di arancia Fazer Fazerina 99 g',
@@ -971,11 +992,18 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     specs: ['100 g', 'Sobbollire come un tè a lunga infusione'],
     specLabels: [undefined, 'Uso'],
   },
-  'puhdistamo-instant-chaga': {
-    name: 'Puhdistamo polvere di estratto di chaga istantaneo 28 g',
+  'rj-puhdistamo-chaga-extract': {
+    name: 'Puhdistamo estratto di chaga 50 ml',
     description:
-      'Chaga che si scioglie direttamente in acqua calda, senza bollitura. Il barattolo da 28 grammi sta in qualsiasi bagaglio e viaggia meglio di un sacchetto di pezzi.',
-    specs: ['28 g'],
+      'Un doppio estratto di chaga selvatico che i raccoglitori formati da Puhdistamo staccano a mano, soprattutto nella Lapponia finlandese. Per l’estrazione si usano sia acqua sia etanolo, e l’estratto è concentrato sei volte. La dose del produttore è di 15 gocce due volte al giorno, così il flacone basta per circa 65 assunzioni. Secondo l’etichetta il chaga non deve essere usato insieme ad antibiotici o anticoagulanti.',
+    specs: [
+      '50 ml',
+      'Chaga selvatico (Inonotus obliquus), raccolto a mano soprattutto nella Lapponia finlandese',
+      'Doppia estrazione con acqua ed etanolo, concentrato 6 volte',
+      '15 gocce due volte al giorno, circa 65 assunzioni per flacone',
+      'Non deve essere usato insieme ad antibiotici, anticoagulanti, penicillina o glucosio per via endovenosa. Sconsigliato alle persone allergiche ai funghi',
+    ],
+    specLabels: [undefined, undefined, 'Estrazione', 'Dosaggio', 'Avvertenza'],
   },
   'puhdistamo-conifer-extract': {
     name: 'Puhdistamo estratto di conifere 50 ml',
@@ -1154,15 +1182,16 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Tiene al caldo'],
   },
-  'nb-little-my-neckpillow': {
-    name: 'Cuscino da viaggio Mimla la piccola',
+  'nb-moomin-adventure-neckpillow': {
+    name: 'Cuscino da viaggio Moomin Adventure',
     description:
-      'Memory foam sotto una fodera morbida, per il treno notturno Helsinki–Rovaniemi o il volo di ritorno. Abbastanza piccolo da agganciarlo alla borsa, l’unico tipo di cuscino da viaggio che poi si tiene davvero.',
+      'Un cuscino da viaggio per il collo con fodera morbidissima blu petrolio e la stampa dei Moomin in campeggio tra le loro tende. Adatto al treno notturno per Rovaniemi o al volo di ritorno.',
     specs: [
-      'Memory foam, fodera morbida',
+      'Fodera morbidissima',
+      'Petrolio e multicolore',
       'Prodotto Moomin ufficiale',
     ],
-    specLabels: [undefined, 'Licenza'],
+    specLabels: [undefined, undefined, 'Licenza'],
   },
   'nb-moomintroll-love-cushion': {
     name: 'Cuscino Moomin Love',
@@ -1431,14 +1460,17 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
       '60 % cotone, 33 % poliestere, 4 % nylon, 2 % elastan, 1 % elastodiene',
     ],
   },
-  'nb-hattifatteners-retro-socks': {
-    name: 'Calze retrò da donna Hattifatteners',
+  'nb-hattifatteners-celebration-socks': {
+    name: 'Calze sportive da donna Hattifatteners Celebration',
     description:
-      'Calze in stile retrò con gli Hattifatteners, EU 36-42, cotone al 67 per cento. Abbastanza elastiche perché una taglia vada bene quasi a tutte, e la prima cosa che una lettrice dei Moomin prende quando il cassetto delle calze è aperto.',
+      'Calze Moomin di Nordicbuddies con gli Hattifatteners che brindano, EU 36-42. Sono fatte per muoversi: compressione per una migliore vestibilità, tessuto traspirante, uno strato più spesso sotto la pianta e protezione per la caviglia.',
     specs: [
       'EU 36-42',
       '67 % cotone, 25 % poliestere, 4 % elastodiene, 3 % nylon, 1 % elastan',
+      'Compressione per una migliore vestibilità, tessuto traspirante, pianta più spessa, protezione per la caviglia',
+      'Prodotto Moomin ufficiale',
     ],
+    specLabels: [undefined, undefined, 'Caratteristiche', 'Licenza'],
   },
   'sk-suomi-propeller-cap': {
     name: 'Cappellino con elica da tifoso Suomi',
@@ -1673,16 +1705,17 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
       '100 % mirtillo finlandese, essiccato intero con il succo',
     ],
   },
-  'rj-poikain-parhaat-blueberry-lemonade': {
-    name: 'Limonata al mirtillo Poikain Parhaat 0,33 l',
+  'rj-kaino-blackcurrant-leaf-sparkling-075': {
+    name: 'Spumante analcolico biologico alle foglie di ribes nero KAINO Drinks 0,75 l',
     description:
-      'Limonata biologica al mirtillo prodotta a Vehmainen, Tampere, con ingredienti veri senza aromi né coloranti artificiali, bottiglia da 0,33 litri. La bibita da mettere accanto al salmiakki su un tavolo di degustazione finlandese.',
+      'Una bevanda frizzante analcolica che prende il suo sapore da foglie di ribes nero biologiche finlandesi, in bottiglia da 0,75 litri per il brindisi. KAINO Drinks la produce a Vehmainen, Tampere, senza aromi né coloranti artificiali.',
     specs: [
-      '0,33 l',
-      'Prodotta a Vehmainen, Tampere',
-      'Biologica, senza aromi né coloranti artificiali',
+      '0,75 l',
+      'Prodotta a Vehmainen, Tampere, Finlandia',
+      'Biologica (logo biologico dell’UE), vegana, analcolica',
+      'Il prezzo include una cauzione di 0,10 € sulla bottiglia',
     ],
-    specLabels: [undefined, undefined, 'Additivi'],
+    specLabels: [undefined, undefined, 'Certificazioni', 'Cauzione'],
   },
   'rj-nordic-koivu-birch-sap': {
     name: 'Linfa di betulla Nordic Koivu 500 ml',
@@ -1801,16 +1834,16 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Design'],
   },
-  'sk-moomin-chocolate-chip-biscuit-tin': {
-    name: 'Biscotti con gocce di cioccolato Moomin in latta 200 g',
+  'sk-karl-fazer-blueberry-truffle-chocolates': {
+    name: 'Cioccolatini al latte Karl Fazer Blueberry Truffle 250 g',
     description:
-      'Mini biscotti con gocce di cioccolato, 200 grammi, in una latta Moomin che sopravvive ai biscotti come scatola. Le gocce sono il 16 per cento del biscotto e contengono almeno il 40 per cento di sostanza secca di cacao.',
+      'Una scatola da 250 grammi di cioccolatini al latte Karl Fazer incartati singolarmente, con un morbido ripieno tartufato che contiene pezzetti di mirtillo essiccato e aroma di mirtillo. La scatola è pronta da regalare così com’è.',
     specs: [
-      '200 g',
-      'Gocce di cioccolato 16 %, nel cioccolato almeno 40 % di sostanza secca di cacao',
-      'Latta da collezione, riutilizzabile come scatola',
+      '250 g',
+      'Cioccolatini al latte incartati, ripieno tartufato al mirtillo',
+      'Energia 2281 kJ / 547 kcal, grassi 33 g di cui saturi 19 g, carboidrati 53 g di cui zuccheri 52 g, proteine 8,2 g, sale 0,23 g',
     ],
-    specLabels: [undefined, undefined, 'Confezione'],
+    specLabels: [undefined, undefined, 'Valori nutrizionali per 100 g'],
   },
   'sk-paulig-cafe-new-york-beans': {
     name: 'Caffè in grani Paulig Café New York 450 g',
@@ -1977,17 +2010,17 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Alimentazione', 'Funzioni', 'Uso', 'Illustrazione'],
   },
-  'arabia-moomin-plates-winter-night': {
-    name: '2 piatti Arabia Moomin 19 cm, Office & Winter Night',
+  'arabia-moomin-friends-forever-mug-plate': {
+    name: 'Tazza e piatto Moomin Friends Forever Arabia, 2 pezzi',
     description:
-      'Due piatti Moomin da 19 cm di Arabia in vitroporcellana bianca, Office e Winter Night, pensati per accompagnare le tazze uscite in precedenza. L\'immagine di Office («ufficio») è apparsa per la prima volta su una tazza Moomin di Arabia nel 1996 e si ispira ai fumetti in cui ritornano la scrittura, il disegno e la pittura. Winter Night («notte d\'inverno») riprende l\'immagine di una tazza del 2006, con Moomintroll seduto sul parapetto di un ponte in una scena di Trollvinter, il libro di Tove Jansson del 1957.',
+      'Una tazza e un piatto di Moomin Arabia in vitroporcellana, entrambi con illustrazioni di Tove Jansson sul tema dell’amicizia. Insieme formano un servizio da colazione per una persona, o un regalo tra amici.',
     specs: [
-      'Diametro 19,4 cm, altezza 2,8 cm',
+      '1 tazza e 1 piatto',
       'Vitroporcellana',
-      '2 piatti, Office e Winter Night',
-      'Adatti a lavastoviglie, microonde e forno',
+      'Multicolore',
+      '0,83 kg lordo',
       'Tove Jansson',
-      '566802-01, EAN 6411801011432',
+      '700063-01, EAN 6411801028676',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Illustrazione', 'Codice articolo ed EAN'],
   },
@@ -2152,14 +2185,14 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, 'Allergeni', 'Valori nutrizionali per 100 g'],
   },
-  'sk-halva-salmiakki-calendar': {
-    name: 'Calendario dell\'Avvento al salmiakki Halva 200 g',
+  'sk-halva-vanhat-autot-advent-calendar': {
+    name: 'Calendario dell’Avvento Vanhat Autot Halva 200 g',
     description:
-      'Un calendario dell\'Avvento di Halva con 200 g di salmiakki, la liquirizia salata finlandese, in una selezione dalla gamma Halva. Dietro le finestrelle ci sono Vanhat Autot, pesciolini al salmiakki, teschi salati, Pommix, cuori al salmiakki, spade al salmiakki, quadratini Salmiakkiruutu e salmiakki duro Jauhix.',
+      'Un calendario dell’Avvento della ditta dolciaria finlandese Halva, con 200 g di caramelle al salmiakki e alla frutta dietro le finestrelle, ispirato alle sue caramelle Vanhat Autot (auto d’epoca).',
     specs: [
       '200 g',
-      'Salmiakki Vanhat Autot, pesciolino al salmiakki, teschio salato, salmiakki Pommix, cuore al salmiakki, spada al salmiakki, Salmiakkiruutu, salmiakki Jauhix',
-      'Energia 1406 kJ / 331 kcal, grassi 0,5 g di cui saturi 0,1 g, carboidrati 80 g di cui zuccheri 59 g, proteine 2,7 g, sale 0,03 g',
+      'Caramelle al salmiakki e alla frutta',
+      'Energia 1370 kJ / 322 kcal, grassi 0,5 g di cui saturi 0,2 g, carboidrati 77 g di cui zuccheri 57 g, proteine 3 g, sale 0,37 g',
     ],
     specLabels: [undefined, undefined, 'Valori nutrizionali per 100 g'],
   },
@@ -2241,13 +2274,13 @@ export const PRODUCT_COPY_IT: ProductCopyMap = {
     ],
   },
   'north-outdoor-polku-neck-tube': {
-    name: 'Scaldacollo in merino North Outdoor Polku, caffè',
+    name: 'Scaldacollo in merino North Outdoor Polku, mandorla',
     description:
-      'Uno scaldacollo spesso in 100 % lana merino senza mulesing, lavorato a coste 1x1 fitte. È abbastanza alto da portarlo come sciarpa, tirarlo su come cappuccio o usarlo per coprire il viso. Taglia unica, color caffè.',
+      'Uno scaldacollo spesso in 100 % lana merino senza mulesing, lavorato a coste 1x1 fitte. È abbastanza alto da portarlo come sciarpa, tirarlo su come cappuccio o usarlo per coprire il viso. Taglia unica, color mandorla.',
     specs: [
       '100 % lana merino, senza mulesing, maglia a coste 1x1',
       'Taglia unica',
-      'Caffè',
+      'Mandorla',
       'Sciarpa, cappuccio o protezione per il viso',
     ],
     specLabels: [undefined, undefined, undefined, 'Uso'],

@@ -353,17 +353,16 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, '100 g당 영양성분', '판매원'],
   },
-  'meritalo-tyrnihillo': {
-    name: '메리탈로 핀란드 산자나무 잼 310 g',
+  'sk-finnish-flavours-lingonberry-jam': {
+    name: 'Finnish Flavours 핀란드 링곤베리 잼 400 g',
     description:
-      '100 그램당 열매 37 그램이 들어간 산자나무 잼으로, 라플란드가 아니라 핀란드 남서부 살로의 메리탈로 가족 농장에서 핀란드산 산자나무 열매로 졸였습니다. 달기보다 시큼해서 팬케이크보다 치즈 옆에서 더 오래 갑니다.',
+      '핀란드 숲에서 딴 베리로 핀란드에서 만든 링곤베리 잼으로, 병 내용물의 45퍼센트가 링곤베리입니다. 핀란드 사람들이 야생 고기 스튜, 미트볼, 시금치 팬케이크에 곁들이는 잼이며, 순록 육포 한 봉지와 함께 한 선물로 묶기 좋습니다.',
     specs: [
-      '310 g',
-      '열매는 핀란드산. 핀란드 남서부 살로의 메리탈로 농장에서 가족 기업이 제조',
-      '열량 781 kJ / 187 kcal, 지방 1.9 g 그중 포화지방 0.3 g, 탄수화물 41 g 그중 당류 41 g, 단백질 0.3 g, 소금 0.01 g',
-      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+      '400 g',
+      '핀란드산 베리 100 %로 핀란드에서 제조',
+      '열량 633 kJ / 151 kcal, 지방 0.2 g 그중 포화지방 0 g, 탄수화물 39 g 그중 당류 39 g, 단백질 0.2 g, 소금 0.01 g',
     ],
-    specLabels: [undefined, undefined, '100 g당 영양성분', '판매원'],
+    specLabels: [undefined, undefined, '100 g당 영양성분'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: '순록 육포 오리지널 200 g',
@@ -462,14 +461,17 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, '섭취량', '100 g당 영양성분'],
   },
-  'arctic-warriors-roseroot-elixir': {
-    name: 'Arctic Warriors 홍경천 엘릭서 100 ml',
+  'rj-arctic-warriors-angelica-elixir': {
+    name: 'Arctic Warriors 안젤리카 뿌리 엘릭서 100 ml',
     description:
-      '홍경천은 라플란드 산지의 축축한 개울가와 바위 벽에서 자랍니다. Arctic Warriors는 이것을 쐐기풀과 함께 식물성 글리세롤에 추출합니다. 한 티스푼을 차나 죽, 요구르트에 넣으면 됩니다.',
+      '핀란드어로 väinönputki라고 부르는 안젤리카의 뿌리로 만든 엘릭서로, 핀란드 회사 Arctic Warriors의 제품입니다. Ruohonjuuri는 이 제품을 핀란드산, 비건, 글루텐 프리로 표시하며, 제조사가 권하는 섭취량은 하루 1 티스푼입니다.',
     specs: [
       '100 ml',
-      '홍경천과 쐐기풀',
+      '안젤리카 뿌리 엘릭서(Angelica archangelica)',
+      '핀란드, Avainlippu(Key Flag) 마크',
+      '하루 1 티스푼',
     ],
+    specLabels: [undefined, undefined, undefined, '섭취량'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 산자나무와 올리브 오일 150 ml',
@@ -517,11 +519,17 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specs: ['툴리키 피에틸래, 1990년대', '수제 도자, 전용 상자에 담겨 판매'],
     specLabels: ['디자인', '제작'],
   },
-  'fiskars-moominpappa-scissors': {
-    name: '피스카스 무민파파 만능 가위',
+  'sk-fiskars-snorkmaiden-kids-scissors': {
+    name: '피스카스 스노크메이든 어린이 가위 13 cm',
     description:
-      '주황색 손잡이의 피스카스 가위는 다른 어떤 도구보다 많은 핀란드 부엌 서랍에 들어 있습니다. 이 가위는 21 cm 스테인리스강이고 손잡이에 무민파파가 그려져 있습니다.',
-    specs: ['21 cm', '스테인리스강'],
+      '피스카스 무민 시리즈의 어린이용 가위로, 길이 13 cm에 끝이 둥급니다. 스노크메이든 그림은 표면에 인쇄한 것이 아니라 손잡이 소재 자체에 들어가 있습니다. 스테인리스 스틸 날은 다시 조일 수 있는 나사로 고정되어 있고, 식기세척기에 넣어도 됩니다.',
+    specs: [
+      '13 cm',
+      '스테인리스 스틸, 경도 HRC 57',
+      '식기세척기 사용 가능',
+      '둥근 형태, 어린이용으로 설계',
+    ],
+    specLabels: [undefined, undefined, undefined, '날 끝'],
   },
   'rento-tar-sauna-soap': {
     name: 'Rento 타르 사우나 비누 150 g',
@@ -640,23 +648,36 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specs: ['36 g', '자일리톨. 핀란드 치과의사협회 마크 부착'],
     specLabels: [undefined, '감미료'],
   },
-  'leijona-tar-liquorice': {
-    name: '레이요나 타르 감초 정과 32 g',
+  'sk-sisu-kaamos-salty-liquorice': {
+    name: '시수 Kaamos 짠 감초 파스틸 80 g',
     description:
-      '소나무 타르로 향을 낸 감초로 1933년부터 만들어 왔습니다. 타르는 사탕에도, 사우나 비누에도, 심지어 아이스크림에도 들어가는 핀란드의 맛이고, 이것이 가장 싸게 시험해 보는 방법입니다.',
-    specs: ['32 g'],
+      '감초와 살미아키 맛이 진한 부드러운 시수 파스틸입니다. 살미아키는 핀란드 사람들이 염화암모늄으로 맛을 내는 짠 감초입니다. Kaamos는 극야를 뜻하는 핀란드어로, 북쪽 끝에서 해가 지평선 위로 떠오르지 않는 몇 주를 가리킵니다.',
+    specs: [
+      '80 g',
+      '열량 1160 kJ / 277 kcal, 지방 0.6 g 그중 포화지방 0.2 g, 탄수화물 52 g 그중 당류 45 g, 단백질 1.2 g, 소금 5.5 g',
+      'Cloetta Suomi Oy, PL 406, 20101 Turku',
+    ],
+    specLabels: [undefined, '100 g당 영양성분', '판매원'],
   },
-  'fazer-hazelnut-chocolate': {
-    name: '칼 파제르 통헤이즐넛 밀크 초콜릿 200 g',
+  'sk-karl-fazer-hazelnut-crunch-bar': {
+    name: '칼 파제르 헤이즐넛 크런치 밀크 초콜릿 180 g',
     description:
-      '밀크 초콜릿 안에 헤이즐넛이 통째로 박힌 파란 초콜릿. 파제르는 1922년부터 같은 파란 포장지를 써 왔고, 그래서 핀란드 사람들이 외국에 들고 가는 것도 이것입니다.',
-    specs: ['200 g'],
+      '1922년부터 만들어 온 파제르 블루 밀크 초콜릿에 다진 헤이즐넛을 판 전체에 넣었습니다. 밀크 초콜릿의 코코아 함량은 30퍼센트 이상이며, 파제르는 Fazer Cocoa Vision 프로그램에 따라 코코아를 조달합니다.',
+    specs: [
+      '180 g',
+      '열량 2387 kJ / 566 kcal, 지방 38 g 그중 포화지방 19 g, 탄수화물 46 g 그중 당류 45 g, 단백질 10 g, 소금 0.28 g',
+    ],
+    specLabels: [undefined, '100 g당 영양성분'],
   },
-  'fazer-light-milk-chocolate': {
-    name: '칼 파제르 라이트 밀크 초콜릿 180 g',
+  'sk-karl-fazer-milk-chocolate-bar': {
+    name: '칼 파제르 밀크 초콜릿 180 g, 파제르 블루',
     description:
-      '파란 초콜릿을 더 가볍고 순하게 만든 버전입니다. 클래식이 너무 달다면 이쪽을 가져가세요.',
-    specs: ['180 g'],
+      '핀란드 사람들이 Fazerin Sininen, 곧 파제르 블루라고 부르는 초콜릿입니다. 1922년부터 진짜 우유로 만들어 온 밀크 초콜릿으로, 파란 포장지에 칼 파제르의 금색 서명이 들어가 있습니다. 파제르는 Fazer Cocoa Vision 프로그램에 따라 코코아를 조달합니다.',
+    specs: [
+      '180 g',
+      '열량 2260 kJ / 550 kcal, 지방 33 g 그중 포화지방 21 g, 탄수화물 49 g 그중 당류 48 g, 단백질 11 g, 소금 0.35 g',
+    ],
+    specLabels: [undefined, '100 g당 영양성분'],
   },
   'fazer-fazerina': {
     name: '파제르 파제리나 오렌지 트러플 바 99 g',
@@ -972,11 +993,18 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specs: ['100 g', '약한 불로 오래 우려 차로'],
     specLabels: [undefined, '사용법'],
   },
-  'puhdistamo-instant-chaga': {
-    name: 'Puhdistamo 인스턴트 차가버섯 추출 분말 28 g',
+  'rj-puhdistamo-chaga-extract': {
+    name: 'Puhdistamo 차가버섯 추출액 50 ml',
     description:
-      '끓이지 않고 뜨거운 물에 바로 녹는 차가버섯. 28 g 병은 어떤 짐에도 들어가고 조각 봉지보다 여행을 잘 견딥니다.',
-    specs: ['28 g'],
+      'Puhdistamo가 교육한 채취자들이 주로 핀란드 라플란드에서 손으로 따는 야생 차가버섯을 이중 추출한 추출액입니다. 추출에는 물과 에탄올을 모두 쓰고, 추출액은 6배로 농축합니다. 제조사가 권하는 섭취량은 하루 두 번 15방울씩으로, 한 병이면 약 65회 쓸 수 있습니다. 라벨에는 차가버섯을 항생제나 혈액응고 억제제와 함께 사용해서는 안 된다고 적혀 있습니다.',
+    specs: [
+      '50 ml',
+      '야생 차가버섯(Inonotus obliquus), 주로 핀란드 라플란드에서 손으로 채취',
+      '물과 에탄올로 이중 추출, 6배 농축',
+      '하루 두 번 15방울씩, 한 병에 약 65회분',
+      '항생제, 혈액응고 억제제, 페니실린, 정맥 주사용 포도당과 함께 사용해서는 안 됩니다. 버섯 알레르기가 있는 사람에게는 권장하지 않습니다',
+    ],
+    specLabels: [undefined, undefined, '추출', '섭취량', '주의'],
   },
   'puhdistamo-conifer-extract': {
     name: 'Puhdistamo 침엽수 추출액 50 ml',
@@ -1155,15 +1183,16 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '보온'],
   },
-  'nb-little-my-neckpillow': {
-    name: '리틀 미이 목베개',
+  'nb-moomin-adventure-neckpillow': {
+    name: '무민 Adventure 목베개',
     description:
-      '부드러운 커버 아래는 메모리폼. 헬싱키–로바니에미 야간열차나 돌아가는 비행기용입니다. 가방에 걸 수 있을 만큼 작고, 실제로 계속 들고 다니게 되는 여행용 베개는 이런 것뿐입니다.',
+      '아주 부드러운 페트롤 블루 커버에 텐트 사이에서 캠핑하는 무민 가족을 프린트한 목베개입니다. 로바니에미로 가는 야간열차나 집으로 돌아가는 비행기에서 쓰기 좋습니다.',
     specs: [
-      '메모리폼, 부드러운 커버',
+      '아주 부드러운 커버',
+      '페트롤과 멀티컬러',
       '무민 공식 제품',
     ],
-    specLabels: [undefined, '라이선스'],
+    specLabels: [undefined, undefined, '라이선스'],
   },
   'nb-moomintroll-love-cushion': {
     name: '무민 Love 쿠션',
@@ -1432,14 +1461,17 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '면 60 %, 폴리에스터 33 %, 나일론 4 %, 엘라스테인 2 %, 엘라스토디엔 1 %',
     ],
   },
-  'nb-hattifatteners-retro-socks': {
-    name: '해티패트너 여성 레트로 양말',
+  'nb-hattifatteners-celebration-socks': {
+    name: '해티패트너 Celebration 여성용 액티브 삭스',
     description:
-      '해티패트너가 그려진 레트로 스타일 양말, EU 36부터 42, 면 67퍼센트. 한 사이즈로 대부분에게 맞을 만큼 잘 늘어나며, 양말 서랍이 열려 있으면 무민 독자가 가장 먼저 집어 드는 한 켤레입니다.',
+      '해티패트너들이 잔을 들어 건배하는 Nordicbuddies의 무민 양말로, 사이즈는 EU 36에서 42입니다. 활동할 때 신도록 만든 양말이라 착용감을 높이는 압박 기능, 통기성 좋은 소재, 더 두꺼운 바닥층, 발목 보호 기능을 갖췄습니다.',
     specs: [
       'EU 36-42',
-      '면 67 %, 폴리에스터 25 %, 엘라스토디엔 4 %, 나일론 3 %, 엘라스테인 1 %',
+      '면 67%, 폴리에스터 25%, 엘라스토디엔 4%, 나일론 3%, 엘라스테인 1%',
+      '착용감을 높이는 압박 기능, 통기성 좋은 소재, 더 두꺼운 바닥층, 발목 보호',
+      '무민 공식 제품',
     ],
+    specLabels: [undefined, undefined, '특징', '라이선스'],
   },
   'sk-suomi-propeller-cap': {
     name: 'Suomi 응원 프로펠러 모자',
@@ -1674,16 +1706,17 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '100 % 핀란드산 블루베리, 즙째 통째로 건조',
     ],
   },
-  'rj-poikain-parhaat-blueberry-lemonade': {
-    name: 'Poikain Parhaat 블루베리 레모네이드 0.33 l',
+  'rj-kaino-blackcurrant-leaf-sparkling-075': {
+    name: 'KAINO Drinks 블랙커런트 잎 유기농 스파클링 0.75 l',
     description:
-      '탐페레 베흐마이넨에서 인공 향료나 색소 없이 진짜 재료로 만든 유기농 블루베리 레모네이드, 0.33리터 병입니다. 핀란드 시식 테이블에서 살미아키 옆에 놓을 청량음료입니다.',
+      '핀란드산 유기농 블랙커런트 잎으로 맛을 낸 무알코올 스파클링 음료로, 건배하기 좋은 0.75리터 병입니다. KAINO Drinks가 탐페레 베흐마이넨에서 인공 향료나 색소 없이 만듭니다.',
     specs: [
-      '0.33 l',
-      '탐페레 베흐마이넨 제조',
-      '유기농, 인공 향료나 색소 없음',
+      '0.75 l',
+      '핀란드 탐페레 베흐마이넨 제조',
+      '유기농(유럽연합 유기농 로고), 비건, 무알코올',
+      '가격에 병 보증금 0.10유로 포함',
     ],
-    specLabels: [undefined, undefined, '첨가물'],
+    specLabels: [undefined, undefined, '표시', '병 보증금'],
   },
   'rj-nordic-koivu-birch-sap': {
     name: 'Nordic Koivu 자작나무 수액 500 ml',
@@ -1802,16 +1835,16 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '디자인'],
   },
-  'sk-moomin-chocolate-chip-biscuit-tin': {
-    name: '무민 초콜릿 칩 비스킷 틴 200 g',
+  'sk-karl-fazer-blueberry-truffle-chocolates': {
+    name: '칼 파제르 Blueberry Truffle 밀크 초콜릿 250 g',
     description:
-      '무민 틴에 담긴 미니 초콜릿 칩 비스킷 200그램으로, 틴은 비스킷을 다 먹은 뒤 보관함으로 남습니다. 초콜릿 조각은 비스킷의 16퍼센트이며 코코아 고형분이 40퍼센트 이상입니다.',
+      '개별 포장된 칼 파제르 밀크 초콜릿이 250그램 들어 있는 상자입니다. 부드러운 트러플 필링에 말린 블루베리 조각과 블루베리 향료가 들어 있습니다. 상자 그대로 선물하면 됩니다.',
     specs: [
-      '200 g',
-      '초콜릿 조각 16 %, 초콜릿의 코코아 고형분 40 % 이상',
-      '수집용 틴, 보관함으로 재사용 가능',
+      '250 g',
+      '블루베리 트러플 필링이 든 개별 포장 밀크 초콜릿',
+      '열량 2281 kJ / 547 kcal, 지방 33 g 그중 포화지방 19 g, 탄수화물 53 g 그중 당류 52 g, 단백질 8.2 g, 소금 0.23 g',
     ],
-    specLabels: [undefined, undefined, '포장'],
+    specLabels: [undefined, undefined, '100 g당 영양성분'],
   },
   'sk-paulig-cafe-new-york-beans': {
     name: 'Paulig Café New York 커피 원두 450 g',
@@ -1978,17 +2011,17 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '전원', '기능', '사용', '원화'],
   },
-  'arabia-moomin-plates-winter-night': {
-    name: '아라비아 무민 접시 19 cm, 사무실과 겨울밤',
+  'arabia-moomin-friends-forever-mug-plate': {
+    name: '아라비아 무민 Friends Forever 머그와 접시, 2개',
     description:
-      '아라비아의 19 cm 무민 접시 두 개 세트로, 흰색 비트로 포슬린에 사무실과 겨울밤 그림이 들어가 있습니다. 앞서 나온 머그와 짝을 이루도록 만들었습니다. 사무실 그림은 1996년 아라비아 무민 머그에 처음 실렸고, 글쓰기와 그리기, 칠하기가 되풀이되는 만화에서 따왔습니다. 겨울밤은 2006년 머그의 그림을 다시 쓴 것으로, 토베 얀손이 1957년에 펴낸 Trollvinter의 한 장면, 다리 난간에 앉은 무민트롤이 담겨 있습니다.',
+      'Moomin Arabia의 비트로 포슬린 무민 머그와 접시로, 둘 다 우정을 주제로 한 토베 얀손의 그림이 들어가 있습니다. 함께 쓰면 한 사람을 위한 아침 식사 세트가 되고, 친구에게 주는 선물로도 좋습니다.',
     specs: [
-      '지름 19.4 cm, 높이 2.8 cm',
+      '머그 1개와 접시 1개',
       '비트로 포슬린',
-      '접시 2개, 사무실과 겨울밤',
-      '식기세척기, 전자레인지, 오븐 사용 가능',
+      '멀티컬러',
+      '총중량 0.83 kg',
       '토베 얀손',
-      '566802-01, EAN 6411801011432',
+      '700063-01, EAN 6411801028676',
     ],
     specLabels: [undefined, undefined, undefined, undefined, '원화', '품번과 EAN'],
   },
@@ -2153,14 +2186,14 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, '알레르기 유발 성분', '100 g당 영양성분'],
   },
-  'sk-halva-salmiakki-calendar': {
-    name: '할바 살미아키 어드벤트 캘린더 200 g',
+  'sk-halva-vanhat-autot-advent-calendar': {
+    name: '할바 Vanhat Autot 어드벤트 캘린더 200 g',
     description:
-      '핀란드의 짠 감초 살미아키 200 g을 할바의 자체 제품 중에서 골라 담은 어드벤트 캘린더입니다. 문 뒤에는 Vanhat Autot, 살미아키 물고기, 짠맛 해골, Pommix, 살미아키 하트, 살미아키 칼, 네모난 살미아키루투, 단단한 Jauhix 살미아키가 들어 있습니다.',
+      '핀란드 제과 회사 할바의 어드벤트 캘린더로, 문 뒤에 살미아키와 과일 캔디가 모두 200 g 들어 있습니다. 할바의 Vanhat Autot(올드카) 캔디를 테마로 했습니다.',
     specs: [
       '200 g',
-      'Vanhat Autot 살미아키, 살미아키 물고기, 짠맛 해골, Pommix 살미아키, 살미아키 하트, 살미아키 칼, 살미아키루투, Jauhix 살미아키',
-      '열량 1406 kJ / 331 kcal, 지방 0.5 g 그중 포화지방 0.1 g, 탄수화물 80 g 그중 당류 59 g, 단백질 2.7 g, 소금 0.03 g',
+      '살미아키와 과일 캔디',
+      '열량 1370 kJ / 322 kcal, 지방 0.5 g 그중 포화지방 0.2 g, 탄수화물 77 g 그중 당류 57 g, 단백질 3 g, 소금 0.37 g',
     ],
     specLabels: [undefined, undefined, '100 g당 영양성분'],
   },
@@ -2242,13 +2275,13 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
   },
   'north-outdoor-polku-neck-tube': {
-    name: '노스아웃도어 Polku 메리노 넥게이터, 커피',
+    name: '노스아웃도어 Polku 메리노 넥게이터, 아몬드',
     description:
-      '뮬싱 프리 메리노 울 100퍼센트를 촘촘한 1x1 립으로 짠 도톰한 넥게이터입니다. 길이가 넉넉해 머플러처럼 두르거나 후드처럼 끌어올리거나 얼굴을 가릴 수 있습니다. 원사이즈, 커피 색입니다.',
+      '뮬싱 프리 메리노 울 100퍼센트를 촘촘한 1x1 립으로 짠 도톰한 넥게이터입니다. 길이가 넉넉해 머플러처럼 두르거나 후드처럼 끌어올리거나 얼굴을 가릴 수 있습니다. 원사이즈, 아몬드 색입니다.',
     specs: [
       '메리노 울 100%, 뮬싱 프리, 1x1 립 니트',
       '원사이즈',
-      '커피',
+      '아몬드',
       '머플러, 후드, 얼굴 가리개',
     ],
     specLabels: [undefined, undefined, undefined, '용도'],

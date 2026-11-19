@@ -152,10 +152,6 @@ const JOBS = [
     'https://arcticwarriors.fi/wp-content/uploads/2024/03/AW-pakkaukset-nokkonen-150g.png',
   ],
   [
-    'arctic-warriors-roseroot-elixir',
-    'https://arcticwarriors.fi/wp-content/uploads/2023/10/AW-pullot-ruusujuuri-nokkoseliksiiri-100ml.png',
-  ],
-  [
     'omega7-sea-buckthorn-olive-oil',
     'https://www.ruohonjuuri.fi/cdn/shop/files/Omega_tyrni_oliivioljy_150ml_lippu.jpg?v=1780470364&width=1200',
   ],
@@ -226,20 +222,8 @@ const JOBS = [
     'https://suomikauppa.fi/cdn/shop/files/06420900004795_C1N1_1d55897d-d6d6-46b3-8ca8-53b90bd41b39.jpg?v=1710934436&width=1920',
   ],
   [
-    'fazer-hazelnut-chocolate',
-    'https://suomikauppa.fi/cdn/shop/files/06411401015151_C1C1.jpg?v=1708161765&width=1920',
-  ],
-  [
-    'fazer-light-milk-chocolate',
-    'https://suomikauppa.fi/cdn/shop/files/06416453095045_C3C1.jpg?v=1759735890&width=1920',
-  ],
-  [
     'fazer-fazerina',
     'https://suomikauppa.fi/cdn/shop/files/06416453056107_C3C1.jpg?v=1758091757&width=1920',
-  ],
-  [
-    'leijona-tar-liquorice',
-    'https://suomikauppa.fi/cdn/shop/products/06420256000052_A1C1.jpg?v=1678735482&width=1920',
   ],
   [
     'fazer-jaffa-orange',
@@ -261,10 +245,6 @@ const JOBS = [
   [
     'arabia-moomin-mug-friendship',
     'https://suomikauppa.fi/cdn/shop/products/6411801005578.jpg?v=1635501278&width=1920',
-  ],
-  [
-    'fiskars-moominpappa-scissors',
-    'https://suomikauppa.fi/cdn/shop/products/Muumipappa-akset.jpg?v=1635498594&width=1920',
   ],
   [
     'fiskars-moominmamma-scissors',
@@ -374,10 +354,6 @@ const JOBS = [
     'https://www.ruohonjuuri.fi/cdn/shop/files/KAAVI-6430060220430-2.jpg?v=1726726998&width=1024',
   ],
   [
-    'puhdistamo-instant-chaga',
-    'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220386-1.jpg?v=1699372704&width=1024',
-  ],
-  [
     'puhdistamo-conifer-extract',
     'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220645-1.jpg?v=1699374709&width=1024',
   ],
@@ -420,7 +396,6 @@ const JOBS = [
   ['sk-vaasan-ruispalat-5pack', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/4_378585eb-5a41-49d7-86d1-5c835caef54b.png?v=1788338772'], // suomikauppa.fi/products/5-pack-vaasan-ruispalat-330-g-6-kpl-revitty-taysjyvaruisleipa
   ['sk-poikain-parhaat-freeze-dried-blueberry', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/pk_mustikka.png?v=1762782832'], // suomikauppa.fi/products/poikain-parhaat-pakastekuivattu-mustikka-15g
   ['rj-arctic-warriors-blueberry-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/ARTIC-6430055010527-1.jpg?v=1733221029'], // www.ruohonjuuri.fi/products/arctic-warriors-mustikkajauhe-45-g
-  ['rj-poikain-parhaat-blueberry-lemonade', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/7d32e4cd5d994599869546b1795bf1df.jpg?v=1713573567'], // www.ruohonjuuri.fi/products/poikain-parhaat-mustikkalimonaadi-033-l
   ['rj-nordic-koivu-birch-sap', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/NORDIC-6420610341012-2.jpg?v=1614686271'], // www.ruohonjuuri.fi/products/nordic-koivu-koivunmahla-500-ml
   ['rj-kaino-spruce-sprout-sparkling-075', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/949fd7453d59a6b987eb5c21252f61ae.jpg?v=1713573422'], // www.ruohonjuuri.fi/products/kaino-drinks-kuusenkerkka-luomukuohujuoma-075-l
   ['rj-yrttipaja-chaga-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/0f44bd83691bab32db064f7f80709c07.jpg?v=1713833450'], // www.ruohonjuuri.fi/products/yrttipaja-pakurikaapa-jauhe-35-g
@@ -432,7 +407,6 @@ const JOBS = [
   ['nb-snufkin-mens-socks', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/SNUFKIN17E_2.png?v=1784265009'], // www.nordicbuddies.com/products/snufkin-mens-socks-1
   ['sk-moomin-duvet-set-merella', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/5904209606658.jpg?v=1707814575'], // suomikauppa.fi/products/muumi-merella-pussilakanasetti-140cmx200cm-50cmx70cm
   ['sk-suomi-propeller-cap', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/108007SuomiKannatusPropellilippis.png?v=1680585294'], // suomikauppa.fi/products/suomi-kannatus-propellilippis
-  ['nb-hattifatteners-retro-socks', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/HATT17H_9acaa216-e902-464a-ac7f-badb5f94c92a.png?v=1779878415'], // www.nordicbuddies.com/products/hattifatteners-womens-retro-socks-1
   ['sk-muurla-moomin-80v-tray', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114971794.png?v=1737010853'], // suomikauppa.fi/products/muurla-muumi-80v-tarjotin-27cmx20cm
   ['sk-muurla-moomin-glass-box-yhdessa', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114971961.png?v=1737011998'], // suomikauppa.fi/products/muurla-muumi-lasirasia-yhdessa-11-5cm
   // ── provisiottomien tilalle 2026-09-05 ilta (Vesa: Moomin Shop, Aarikka, Lapuan Kankurit pois) ──
@@ -441,12 +415,26 @@ const JOBS = [
   ['nb-hattifatteners-cushion', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/HATT77A-1.png?v=1784100355'], // www.nordicbuddies.com/products/hattifatteners-cushion
   ['sk-emendo-moomin-sauna-seat-cover', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/EmendoRakkausmuumilaudeliina_ruskea150x50cm.jpg?v=1761576031'], // suomikauppa.fi/products/emendo-rakkausmuumi-laudeliina-ruskea
   ['sk-rento-pino-sauna-seat-cover', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/6410413148451-scaled.jpg?v=1635499650'], // suomikauppa.fi/products/rento-pino-laudeliina-50x150-cm-harmaa
-  ['sk-moomin-chocolate-chip-biscuit-tin', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Moominkeksit.jpg?v=1762943561'], // suomikauppa.fi/products/muumi-suklaahippukeksi-peltirasiassa-200g
   ['sk-paulig-cafe-new-york-beans', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06411300169788_H1N1_8e32dd29-2c17-46f3-b8b4-2f5d4e5a4b19.png?v=1763457986'], // suomikauppa.fi/products/paulig-cafe-new-york-450g-papukahvi-rfa
   ['rj-korpihilla-spruce-sprout-sparkling-750', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/05e612632a389a5732a9964cf5a6f7d6.jpg?v=1618960800'], // www.ruohonjuuri.fi/products/korpihilla-kuohuva-kuusenkerkka-kuohujuoma-750-ml
   ['rj-raitaniemi-sea-buckthorn-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/RAITA-6420616473090-2.jpg?v=1613737307'], // www.ruohonjuuri.fi/products/marjatila-raitaniemi-tyrnijauhe-100-g
   ['rj-raitaniemi-crowberry-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/dc7478f35effde50e770b9ca83cda190.jpg?v=1729679541'], // www.ruohonjuuri.fi/products/marjatila-raitaniemi-variksenmarjajauhe-100g
   ['sk-poikain-parhaat-puolukka', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/pk_puolukka.png?v=1762782835'], // suomikauppa.fi/products/poikain-parhaat-pakastekuivattu-puolukka-15g (slug lyhyt: Workerin 50 merkin sid-katkaisu)
+  // ── 19.11.2026: loppuneiden ja poistettujen 14 tuotteen korvaajat (Vesa: "Hyväksy kaikki") ──
+  ['sk-finnish-flavours-lingonberry-jam', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Finnish_Flavours_Suomalainen_puolukkahillo_400g.png?v=1764266840'], // suomikauppa.fi/products/finnish-flavours-suomalainen-puolukkahillo-400g
+  ['sk-fiskars-snorkmaiden-kids-scissors', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/niiskuneitisakset.jpg?v=1701428757'], // suomikauppa.fi/products/fiskars-niiskuneiti-lasten-sakset
+  ['sk-sisu-kaamos-salty-liquorice', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06420256914304_H1N1.jpg?v=1790749489'], // suomikauppa.fi/products/sisu-kaamos-suolalakritsi-pastilli-80g
+  ['sk-karl-fazer-hazelnut-crunch-bar', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453014428_C1C1.jpg?v=1710934094'], // suomikauppa.fi/products/fazer-hasselpahkinarouhe-maitosuklaa-200g
+  ['sk-karl-fazer-milk-chocolate-bar', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453095014_C3C1_64f1cce3-0bba-4a48-9f48-111275a764e8.jpg?v=1770183436'], // suomikauppa.fi/products/karl-fazer-maitosuklaa-suklaalevy-180g
+  ['sk-karl-fazer-blueberry-truffle-chocolates', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453053144_C1L1.jpg?v=1747385000'], // suomikauppa.fi/products/karl-fazer-mustikkatryffelitaytteisia-maitosuklaakonvehteja-250g
+  ['rj-arctic-warriors-angelica-elixir', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/1ab252a43ba41eaad58b35b72e1f4579.jpg?v=1729754086'], // www.ruohonjuuri.fi/products/arctic-warriors-vainonputkenjuurieliksiiri-100-ml
+  ['rj-puhdistamo-chaga-extract', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/PUHDIS-6430039220348-1.jpg?v=1699377132'], // www.ruohonjuuri.fi/products/puhdistamo-pakuriuute-50-ml
+  ['rj-kaino-blackcurrant-leaf-sparkling-075', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/548470cbd92787df95eb20cc51a52d9f.jpg?v=1713573414'], // www.ruohonjuuri.fi/products/kaino-drinks-mustaherukanlehti-luomukuohujuoma-075-l
+  ['north-outdoor-polku-neck-tube', 'https://cdn.shopify.com/s/files/1/0619/0933/6273/files/N34012R12_northoutdoor-merino-wool-clothing_1.png?v=1786015166'], // northoutdoor.com/products/polku-merinotuubihuivi-uni-manteli (tuotekuva, ei mallikuvaa)
+  ['nb-hattifatteners-celebration-socks', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/HATT17I_3219b096-d428-445e-80f0-066f59bd1515.png?v=1793022804'], // www.nordicbuddies.com/products/hattifatteners-celebration-womens-active-socks
+  ['arabia-moomin-friends-forever-mug-plate', 'https://prod.nordicnest.dev/assets/blobs/moomin-arabia-ystavat-ikuisesti-muumi-muki-ja-lautanen-2-osaa/700063-01_01_ProductImageMain-2546bbd79b.png'], // www.nordicnest.fi og:image, variantId 700063-01
+  ['nb-moomin-adventure-neckpillow', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/mooin69b_3b0dec9c-7bf5-4291-af51-1d3dd5ca4cd2.jpg?v=1728829283'], // www.nordicbuddies.com/products/moomin-adventure-neckpillow
+  ['sk-halva-vanhat-autot-advent-calendar', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06420900015258_C1R1.jpg?v=1781669940'], // suomikauppa.fi/products/halva-vanhat-autot-salmiakki-ja-hedelmakarkki-joulukalenteri-200-g
 ]
 
 const only = new Set(process.argv.slice(2))

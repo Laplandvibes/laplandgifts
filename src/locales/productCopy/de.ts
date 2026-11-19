@@ -375,17 +375,16 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Nährwerte je 100 g', 'Inverkehrbringer'],
   },
-  'meritalo-tyrnihillo': {
-    name: 'Meritalo finnische Sanddornkonfitüre 310 g',
+  'sk-finnish-flavours-lingonberry-jam': {
+    name: 'Finnish Flavours Finnische Preiselbeerkonfitüre 400 g',
     description:
-      'Sanddornkonfitüre mit 37 Gramm Beeren je 100 Gramm, aus finnischem Sanddorn auf dem Familienhof Meritalo in Salo im Südwesten Finnlands gekocht, nicht in Lappland. Sanddorn ist eher herb als süß und kommt daher neben Käse weiter als auf dem Pfannkuchen.',
+      'Preiselbeerkonfitüre, in Finnland aus Beeren hergestellt, die in finnischen Wäldern gepflückt wurden. Preiselbeeren machen 45 Prozent des Glasinhalts aus. In Finnland isst man sie zu Wildgeschnetzeltem, Fleischbällchen und Spinatpfannkuchen, und sie passt in dasselbe Geschenk wie eine Tüte Rentier-Trockenfleisch.',
     specs: [
-      '310 g',
-      'Die Beeren stammen aus Finnland. Hergestellt von einem Familienbetrieb auf dem Hof Meritalo in Salo, Südwestfinnland',
-      'Energie 781 kJ / 187 kcal, Fett 1,9 g davon gesättigte Fettsäuren 0,3 g, Kohlenhydrate 41 g davon Zucker 41 g, Eiweiß 0,3 g, Salz 0,01 g',
-      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+      '400 g',
+      'Hergestellt in Finnland aus 100 % finnischen Beeren',
+      'Energie 633 kJ / 151 kcal, Fett 0,2 g, davon gesättigte Fettsäuren 0 g, Kohlenhydrate 39 g, davon Zucker 39 g, Eiweiß 0,2 g, Salz 0,01 g',
     ],
-    specLabels: [undefined, undefined, 'Nährwerte je 100 g', 'Inverkehrbringer'],
+    specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Rentier-Trockenfleisch Original 200 g',
@@ -484,14 +483,17 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosierung', 'Nährwerte je 100 g'],
   },
-  'arctic-warriors-roseroot-elixir': {
-    name: 'Arctic Warriors Rosenwurz-Elixier 100 ml',
+  'rj-arctic-warriors-angelica-elixir': {
+    name: 'Arctic Warriors Angelikawurzel-Elixier 100 ml',
     description:
-      'Rosenwurz wächst an den feuchten Bachufern und Felswänden der lappländischen Fjells, und Arctic Warriors extrahiert sie zusammen mit Brennnessel in pflanzliches Glycerin. Ein Teelöffel kommt in Tee, Porridge oder Joghurt.',
+      'Ein Elixier aus Angelikawurzel, der Wurzel der Engelwurz (finnisch väinönputki), von der finnischen Firma Arctic Warriors. Laut dem Händler Ruohonjuuri ist es in Finnland hergestellt, vegan und glutenfrei, und die Dosierung des Herstellers ist ein Teelöffel am Tag.',
     specs: [
       '100 ml',
-      'Rosenwurz und Brennnessel',
+      'Angelikawurzel-Elixier (Angelica archangelica)',
+      'Finnland, Avainlippu-Zeichen (Schlüsselflagge)',
+      'Ein Teelöffel am Tag',
     ],
+    specLabels: [undefined, undefined, undefined, 'Dosierung'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 Sanddorn- und Olivenöl 150 ml',
@@ -657,11 +659,17 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specs: ['Tuulikki Pietilä, 1990er Jahre', 'Handgefertigte Keramik, in einer eigenen Schachtel verkauft'],
     specLabels: ['Design', 'Herstellung'],
   },
-  'fiskars-moominpappa-scissors': {
-    name: 'Fiskars Moominpapa Universalschere',
+  'sk-fiskars-snorkmaiden-kids-scissors': {
+    name: 'Fiskars Snorkfräulein Kinderschere 13 cm',
     description:
-      'Fiskars-Scheren mit orangefarbenem Griff liegen in mehr finnischen Küchenschubladen als jedes andere Werkzeug. Diese hier misst 21 cm, ist aus Edelstahl und trägt Moominpapa auf dem Griff.',
-    specs: ['21 cm', 'Edelstahl'],
+      'Kinderschere aus der Mumin-Serie von Fiskars, 13 cm lang, mit abgerundeten Spitzen. Das Snorkfräulein ist direkt in das Griffmaterial eingearbeitet und nicht auf die Oberfläche gedruckt. Die Klingen aus Edelstahl werden von einer Schraube gehalten, die sich nachziehen lässt, und die Schere ist spülmaschinenfest.',
+    specs: [
+      '13 cm',
+      'Edelstahl, Härte HRC 57',
+      'Spülmaschinenfest',
+      'Abgerundet, für Kinder entwickelt',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Klingenspitzen'],
   },
   'rento-tar-sauna-soap': {
     name: 'Rento Teer-Saunaseife 150 g',
@@ -780,23 +788,36 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specs: ['36 g', 'Xylit. Trägt das Zeichen des finnischen Zahnärzteverbands'],
     specLabels: [undefined, 'Süßungsmittel'],
   },
-  'leijona-tar-liquorice': {
-    name: 'Leijona Teerlakritzpastillen 32 g',
+  'sk-sisu-kaamos-salty-liquorice': {
+    name: 'Sisu Kaamos Salzlakritzpastillen 80 g',
     description:
-      'Lakritz mit Kiefernteer, seit 1933 hergestellt. Teer ist ein finnischer Geschmack, der in Süßigkeiten, Saunaseife und sogar Eis landet, und das hier ist die günstigste Art, ihn zu probieren.',
-    specs: ['32 g'],
+      'Weiche Sisu-Pastillen mit kräftigem Geschmack nach Lakritz und Salmiak, dem salzigen Lakritz, das in Finnland mit Ammoniumchlorid gewürzt wird. Kaamos ist das finnische Wort für die Polarnacht, die Wochen im hohen Norden, in denen die Sonne nicht über den Horizont steigt.',
+    specs: [
+      '80 g',
+      'Energie 1160 kJ / 277 kcal, Fett 0,6 g, davon gesättigte Fettsäuren 0,2 g, Kohlenhydrate 52 g, davon Zucker 45 g, Eiweiß 1,2 g, Salz 5,5 g',
+      'Cloetta Suomi Oy, PL 406, 20101 Turku',
+    ],
+    specLabels: [undefined, 'Nährwerte je 100 g', 'Inverkehrbringer'],
   },
-  'fazer-hazelnut-chocolate': {
-    name: 'Karl Fazer Vollmilchschokolade mit ganzen Haselnüssen 200 g',
+  'sk-karl-fazer-hazelnut-crunch-bar': {
+    name: 'Karl Fazer Milchschokolade mit gehackten Haselnüssen 180 g',
     description:
-      'Die blaue Tafel mit ganzen Haselnüssen in Milchschokolade. Fazer verwendet seit 1922 dasselbe blaue Papier, und deshalb ist sie die Tafel, die Finnen ins Ausland mitnehmen.',
-    specs: ['200 g'],
+      'Die Milchschokolade Fazer Blue, die Fazer seit 1922 herstellt, hier mit gehackten Haselnüssen in der ganzen Tafel. Die Milchschokolade enthält mindestens 30 Prozent Kakao, und Fazer bezieht den Kakao im Rahmen seines Programms Fazer Cocoa Vision.',
+    specs: [
+      '180 g',
+      'Energie 2387 kJ / 566 kcal, Fett 38 g, davon gesättigte Fettsäuren 19 g, Kohlenhydrate 46 g, davon Zucker 45 g, Eiweiß 10 g, Salz 0,28 g',
+    ],
+    specLabels: [undefined, 'Nährwerte je 100 g'],
   },
-  'fazer-light-milk-chocolate': {
-    name: 'Karl Fazer helle Milchschokolade 180 g',
+  'sk-karl-fazer-milk-chocolate-bar': {
+    name: 'Karl Fazer Milchschokolade 180 g, Fazer Blue',
     description:
-      'Eine hellere, mildere Fassung der blauen Tafel. Wenn Ihnen die klassische zu süß ist, nehmen Sie diese.',
-    specs: ['180 g'],
+      'Die Tafel, die Finnen Fazerin Sininen nennen, also Fazer Blue: Milchschokolade aus echter Milch, seit 1922 hergestellt, im blauen Papier mit Karl Fazers goldener Unterschrift. Fazer bezieht den Kakao im Rahmen seines Programms Fazer Cocoa Vision.',
+    specs: [
+      '180 g',
+      'Energie 2260 kJ / 550 kcal, Fett 33 g, davon gesättigte Fettsäuren 21 g, Kohlenhydrate 49 g, davon Zucker 48 g, Eiweiß 11 g, Salz 0,35 g',
+    ],
+    specLabels: [undefined, 'Nährwerte je 100 g'],
   },
   'fazer-fazerina': {
     name: 'Fazer Fazerina Orangentrüffeltafel 99 g',
@@ -1006,11 +1027,18 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specs: ['100 g', 'Als langsam gebrühter Tee köcheln'],
     specLabels: [undefined, 'Verwendung'],
   },
-  'puhdistamo-instant-chaga': {
-    name: 'Puhdistamo Instant-Chaga-Extraktpulver 28 g',
+  'rj-puhdistamo-chaga-extract': {
+    name: 'Puhdistamo Chaga-Extrakt 50 ml',
     description:
-      'Chaga, der sich direkt in heißem Wasser löst, ohne Köcheln. Das 28-Gramm-Glas passt in jedes Gepäck und übersteht die Reise besser als ein Beutel Stücke.',
-    specs: ['28 g'],
+      'Ein Doppelextrakt aus wildem Chaga, den von Puhdistamo geschulte Sammler von Hand ernten, größtenteils in Finnisch-Lappland. Für die Extraktion werden Wasser und Ethanol verwendet, und der Extrakt ist sechsfach konzentriert. Die Dosierung des Herstellers beträgt zweimal täglich 15 Tropfen, damit reicht die Flasche für etwa 65 Anwendungen. Laut Packungshinweis darf Chaga nicht zusammen mit Antibiotika oder Blutverdünnern eingenommen werden.',
+    specs: [
+      '50 ml',
+      'Wilder Chaga (Inonotus obliquus), größtenteils in Finnisch-Lappland von Hand geerntet',
+      'Doppelextraktion mit Wasser und Ethanol, 6-fach konzentriert',
+      'Zweimal täglich 15 Tropfen, etwa 65 Anwendungen pro Flasche',
+      'Darf nicht zusammen mit Antibiotika, Blutverdünnern, Penicillin oder intravenöser Glukose eingenommen werden. Nicht empfohlen bei Pilzallergie',
+    ],
+    specLabels: [undefined, undefined, 'Extraktion', 'Dosierung', 'Warnhinweis'],
   },
   'puhdistamo-conifer-extract': {
     name: 'Puhdistamo Nadelbaum-Extrakt 50 ml',
@@ -1189,15 +1217,16 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Hält warm'],
   },
-  'nb-little-my-neckpillow': {
-    name: 'Kleine My Nackenkissen',
+  'nb-moomin-adventure-neckpillow': {
+    name: 'Moomin Adventure Nackenkissen',
     description:
-      'Memory-Schaum unter einem weichen Bezug, für den Nachtzug Helsinki–Rovaniemi oder den Rückflug. Klein genug, um es an die Tasche zu clippen, und das ist die einzige Art Reisekissen, die man tatsächlich behält.',
+      'Ein Nackenkissen mit superweichem Bezug in Petrol, bedruckt mit den Mumins, die zwischen ihren Zelten campen. Es passt in den Nachtzug nach Rovaniemi oder auf den Heimflug.',
     specs: [
-      'Memory-Schaum, weicher Bezug',
+      'Superweicher Bezug',
+      'Petrol und mehrfarbig',
       'Offizielles Moomin-Produkt',
     ],
-    specLabels: [undefined, 'Lizenz'],
+    specLabels: [undefined, undefined, 'Lizenz'],
   },
   'nb-moomintroll-love-cushion': {
     name: 'Moomintroll Love Kissen',
@@ -1466,14 +1495,17 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       '60 % Baumwolle, 33 % Polyester, 4 % Nylon, 2 % Elasthan, 1 % Elastodien',
     ],
   },
-  'nb-hattifatteners-retro-socks': {
-    name: 'Hattifnatten Damen-Retrosocken',
+  'nb-hattifatteners-celebration-socks': {
+    name: 'Hattifnatten Celebration Damen-Sportsocken',
     description:
-      'Socken im Retrostil mit den Hattifnatten, EU 36 bis 42, 67 Prozent Baumwolle. Dehnbar genug, dass eine Größe den meisten passt, und das Erste, was eine Mumin-Leserin aus der offenen Sockenschublade zieht.',
+      'Mumin-Socken von Nordicbuddies, auf denen die Hattifnatten anstoßen, EU 36 bis 42. Sie sind für Bewegung gemacht: Kompression für besseren Sitz, atmungsaktives Material, eine dickere Sohlenschicht und Knöchelschutz.',
     specs: [
       'EU 36-42',
       '67 % Baumwolle, 25 % Polyester, 4 % Elastodien, 3 % Nylon, 1 % Elasthan',
+      'Kompression für besseren Sitz, atmungsaktives Material, dickere Sohlenschicht, Knöchelschutz',
+      'Offizielles Moomin-Produkt',
     ],
+    specLabels: [undefined, undefined, 'Eigenschaften', 'Lizenz'],
   },
   'sk-suomi-propeller-cap': {
     name: 'Suomi Fan-Propellerkappe',
@@ -1708,16 +1740,17 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       '100 % finnische Heidelbeere, ganz mit dem Saft getrocknet',
     ],
   },
-  'rj-poikain-parhaat-blueberry-lemonade': {
-    name: 'Poikain Parhaat Heidelbeerlimonade 0,33 l',
+  'rj-kaino-blackcurrant-leaf-sparkling-075': {
+    name: 'KAINO Drinks Johannisbeerblatt Bio-Schaumgetränk 0,75 l',
     description:
-      'Bio-Heidelbeerlimonade aus Vehmainen, Tampere, aus echten Zutaten ohne künstliche Aromen oder Farbstoffe, 0,33-Liter-Flasche. Das Erfrischungsgetränk neben dem Salmiak auf einem finnischen Verkostungstisch.',
+      'Ein alkoholfreies Schaumgetränk, das seinen Geschmack finnischen Bio-Blättern der Schwarzen Johannisbeere verdankt, in der 0,75-Liter-Flasche zum Anstoßen. KAINO Drinks stellt es in Vehmainen, Tampere, ohne künstliche Aromen und Farbstoffe her.',
     specs: [
-      '0,33 l',
-      'Hergestellt in Vehmainen, Tampere',
-      'Bio, keine künstlichen Aromen oder Farbstoffe',
+      '0,75 l',
+      'Hergestellt in Vehmainen, Tampere, Finnland',
+      'Bio (EU-Bio-Logo), vegan, alkoholfrei',
+      'Im Preis sind 0,10 € Pfand enthalten',
     ],
-    specLabels: [undefined, undefined, 'Zusatzstoffe'],
+    specLabels: [undefined, undefined, 'Kennzeichnung', 'Pfand'],
   },
   'rj-nordic-koivu-birch-sap': {
     name: 'Nordic Koivu Birkensaft 500 ml',
@@ -1836,16 +1869,16 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Design'],
   },
-  'sk-moomin-chocolate-chip-biscuit-tin': {
-    name: 'Mumin Schokoladenkekse in der Dose 200 g',
+  'sk-karl-fazer-blueberry-truffle-chocolates': {
+    name: 'Karl Fazer Blueberry Truffle Milchschokoladen-Pralinen 250 g',
     description:
-      'Mini-Schokoladenkekse, 200 Gramm, in einer Mumin-Dose, die die Kekse als Aufbewahrungsdose überlebt. Die Schokoladenstücke machen 16 Prozent des Kekses aus und enthalten mindestens 40 Prozent Kakaotrockenmasse.',
+      'Eine 250-Gramm-Schachtel einzeln verpackter Karl Fazer Milchschokoladen-Pralinen mit weicher Trüffelfüllung, die Stückchen getrockneter Heidelbeeren und Heidelbeeraroma enthält. Die Schachtel lässt sich so, wie sie ist, verschenken.',
     specs: [
-      '200 g',
-      'Schokoladenstücke 16 %, in der Schokolade mindestens 40 % Kakaotrockenmasse',
-      'Sammeldose, als Aufbewahrungsdose weiterverwendbar',
+      '250 g',
+      'Einzeln verpackte Milchschokoladen-Pralinen mit Heidelbeer-Trüffelfüllung',
+      'Energie 2281 kJ / 547 kcal, Fett 33 g, davon gesättigte Fettsäuren 19 g, Kohlenhydrate 53 g, davon Zucker 52 g, Eiweiß 8,2 g, Salz 0,23 g',
     ],
-    specLabels: [undefined, undefined, 'Verpackung'],
+    specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
   },
   'sk-paulig-cafe-new-york-beans': {
     name: 'Paulig Café New York Kaffeebohnen 450 g',
@@ -2012,17 +2045,17 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Stromversorgung', 'Funktionen', 'Verwendung', 'Illustration'],
   },
-  'arabia-moomin-plates-winter-night': {
-    name: 'Arabia Mumin-Teller 19 cm, Büro & Winternacht, 2 Stück',
+  'arabia-moomin-friends-forever-mug-plate': {
+    name: 'Arabia Mumin-Becher und -Teller Friends Forever, 2-teilig',
     description:
-      'Zwei Mumin-Teller von Arabia aus weißem Vitro-Porzellan, 19 cm, mit den Motiven Büro und Winternacht, passend zu früheren Bechern. Das Büro-Bild erschien erstmals 1996 auf einem Mumin-Becher von Arabia und geht auf Comicstrips zurück, in denen Schreiben, Zeichnen und Malen immer wiederkehren. Winternacht greift das Bild eines Bechers von 2006 auf, auf dem der Mumintroll auf einem Brückengeländer sitzt, in einer Szene aus Tove Janssons Winter im Mumintal von 1957.',
+      'Becher und Teller von Moomin Arabia aus Vitro-Porzellan, beide mit Illustrationen von Tove Jansson zum Thema Freundschaft. Zusammen ergeben sie ein Frühstücksgeschirr für eine Person oder ein Geschenk unter Freunden.',
     specs: [
-      'Durchmesser 19,4 cm, Höhe 2,8 cm',
+      '1 Becher und 1 Teller',
       'Vitro-Porzellan',
-      '2 Teller, Büro und Winternacht',
-      'Spülmaschinen-, mikrowellen- und backofenfest',
+      'Mehrfarbig',
+      '0,83 kg brutto',
       'Tove Jansson',
-      '566802-01, EAN 6411801011432',
+      '700063-01, EAN 6411801028676',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Illustration', 'Artikelnummer und EAN'],
   },
@@ -2187,14 +2220,14 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, 'Allergene', 'Nährwerte je 100 g'],
   },
-  'sk-halva-salmiakki-calendar': {
-    name: 'Halva Salmiak-Adventskalender 200 g',
+  'sk-halva-vanhat-autot-advent-calendar': {
+    name: 'Halva Vanhat Autot Adventskalender 200 g',
     description:
-      'Ein Adventskalender von Halva mit 200 g Salmiak, dem finnischen salzigen Lakritz, ausgewählt aus Halvas eigenem Sortiment. Hinter den Türchen stecken Vanhat Autot, Salmiakfische, salzige Totenköpfe, Pommix, Salmiakherzen, Salmiakschwerter, Salmiakkiruutu-Quadrate und harter Jauhix-Salmiak.',
+      'Ein Adventskalender des finnischen Süßwarenherstellers Halva im Stil seiner Süßigkeiten Vanhat Autot (Alte Autos). Hinter den Türchen stecken 200 g Salmiak- und Fruchtgummis.',
     specs: [
       '200 g',
-      'Vanhat Autot Salmiak, Salmiakfisch, salziger Totenkopf, Pommix Salmiak, Salmiakherz, Salmiakschwert, Salmiakkiruutu, Jauhix Salmiak',
-      'Energie 1406 kJ / 331 kcal, Fett 0,5 g, davon gesättigte Fettsäuren 0,1 g, Kohlenhydrate 80 g, davon Zucker 59 g, Eiweiß 2,7 g, Salz 0,03 g',
+      'Salmiak- und Fruchtgummis',
+      'Energie 1370 kJ / 322 kcal, Fett 0,5 g, davon gesättigte Fettsäuren 0,2 g, Kohlenhydrate 77 g, davon Zucker 57 g, Eiweiß 3 g, Salz 0,37 g',
     ],
     specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
   },
@@ -2276,13 +2309,13 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
   },
   'north-outdoor-polku-neck-tube': {
-    name: 'North Outdoor Polku Merino-Schlauchschal, Coffee',
+    name: 'North Outdoor Polku Merino-Schlauchschal, Almond',
     description:
-      'Ein dicker Schlauchschal aus 100 Prozent mulesingfreier Merinowolle, dicht im 1x1-Rippmuster gestrickt. Er ist hoch genug, um ihn als Schal zu tragen, als Kapuze hochzuziehen oder damit das Gesicht zu bedecken. Einheitsgröße, in der Farbe Coffee.',
+      'Ein dicker Schlauchschal aus 100 Prozent mulesingfreier Merinowolle, dicht im 1x1-Rippmuster gestrickt. Er ist hoch genug, um ihn als Schal zu tragen, als Kapuze hochzuziehen oder damit das Gesicht zu bedecken. Einheitsgröße, in der Farbe Almond.',
     specs: [
       '100 % Merinowolle, mulesingfrei, 1x1-Rippstrick',
       'Einheitsgröße',
-      'Coffee',
+      'Almond',
       'Schal, Kapuze oder Gesichtsschutz',
     ],
     specLabels: [undefined, undefined, undefined, 'Verwendung'],

@@ -22,8 +22,9 @@ import { trackAffiliateClick } from '../lib/analytics'
  * 🔴 Jokainen ostolinkki kulkee data/partners.ts:n partnerHrefin kautta
  * (go.laplandvibes.com/go/suomikauppa + dest), ja jokainen dest-URL on
  * verifioitu 14.8.2026: 200 + oikea tuotenimi + varastossa. Loppuunmyytyjä
- * ei linkitetä (lakkahillo oli 14.8. loppu koko Suomikaupasta — siksi
- * leipäjuusto-osio kertoo sen rehellisesti eikä linkitä hillopurkkia).
+ * ei linkitetä. 19.11.2026: tyrnihillo ja Tervaleijona loppuivat kaupasta;
+ * leipäjuusto-osio linkittää nyt lakkahillon (varastossa) ja terva-osio
+ * tervasaippuan (varastossa), molemmat katalogissa.
  *
  * 🔴 Ei täsmähintoja tekstissä: opas ei ole katalogisivu eikä sillä ole
  * priceCheckedAt-vahtia. Hinta jää kaupan kerrottavaksi (sama periaate kuin
@@ -67,13 +68,13 @@ const ITEMS: Item[] = [
   },
   {
     id: 'leipajuusto',
-    // Tuoretuote: ei postilinkkiä. Tyrnihillo on rehellinen postitettava
-    // vaihtoehto ja sama purkki on katalogissa.
+    // Juusto on tuoretuote: ei postilinkkiä. Lakkahillo postitetaan, ja sama
+    // purkki on katalogissa (tyrnihillo loppui kaupasta 11/2026).
     buy: {
-      sid: 'de_spezialitaeten_tyrnihillo',
-      dest: 'https://suomikauppa.fi/products/meritalo-suomalainen-tyrnihillo-310g',
+      sid: 'de_spezialitaeten_lakkahillo',
+      dest: 'https://suomikauppa.fi/products/finnish-flavours-suomalainen-premium-lakkahillo-250g',
     },
-    productSlug: 'meritalo-tyrnihillo',
+    productSlug: 'sk-finnish-flavours-cloudberry-jam',
   },
   { id: 'korvapuusti' },
   {
@@ -89,10 +90,10 @@ const ITEMS: Item[] = [
   {
     id: 'terva',
     buy: {
-      sid: 'de_spezialitaeten_terva_lakritz',
-      dest: 'https://suomikauppa.fi/products/tervaleijona-lakritsi-32g',
+      sid: 'de_spezialitaeten_terva_saippua',
+      dest: 'https://suomikauppa.fi/products/rento-terva-saunasaippua-150-g',
     },
-    productSlug: 'leijona-tar-liquorice',
+    productSlug: 'rento-tar-sauna-soap',
   },
 ]
 
@@ -170,10 +171,10 @@ const de: PageCopy = {
       kicker: 'In Finnland essen, nicht verschicken',
       body: [
         'Leipäjuusto ist ein flacher, gebackener Frischkäse, der beim Kauen quietscht, daher der Spitzname „Quietschkäse“. Serviert wird er lauwarm mit Moltebeeren-Marmelade (lakkahillo), und diese Kombination ist der beste einzelne Grund, in Lappland ein Café zu betreten.',
-        'Als Bestellung nach Deutschland taugt beides nur bedingt: der Käse ist ein Frischprodukt, und Moltebeeren-Marmelade ist selbst beim finnischen Versandhändler regelmäßig ausverkauft, die Beere wächst wild im Moor und wird praktisch nur von Hand gepflückt. Eine haltbare, lieferbare Alternative aus demselben Regal: Sanddorn-Marmelade von Meritalo, herb statt süß, gut zu Käse.',
+        'Der Käse ist ein Frischprodukt und lässt sich nicht verschicken, die Moltebeeren-Marmelade dagegen schon. Allerdings ist sie selbst beim finnischen Versandhändler zeitweise ausverkauft, denn die Beere wächst wild im Moor und wird praktisch nur von Hand gepflückt.',
       ],
-      travel: 'Käse: nur vor Ort. Marmelade: oft ausverkauft, Sanddorn als Alternative.',
-      buyLabel: 'Meritalo Sanddorn-Marmelade bei Suomikauppa',
+      travel: 'Käse: nur vor Ort. Moltebeeren-Marmelade: per Post, zeitweise ausverkauft.',
+      buyLabel: 'Finnish Flavours Moltebeeren-Marmelade bei Suomikauppa',
       productLabel: 'Produktdetails im Shop ansehen',
     },
     korvapuusti: {
@@ -221,9 +222,9 @@ const de: PageCopy = {
         'Holzteer aus Kiefern ist ein alter finnischer Werkstoff, und ein Aroma: rauchig, harzig, irgendwo zwischen Lagerfeuer und Sauna. Es steckt in Bonbons, Sirup, Eis und Seife, und wie Salmiakki trennt es Besucher zuverlässig in zwei Lager.',
         'Tervaleijona-Pastillen sind der klassische Einstieg im Taschenformat. Teerseife wiederum riecht nach finnischer Sauna und ist das seltene Souvenir, das täglich benutzt wird statt zu verstauben.',
       ],
-      travel: 'Pastillen und Seife reisen und versenden sich problemlos.',
-      buyLabel: 'Tervaleijona bei Suomikauppa',
-      productLabel: 'Teer-Lakritz im Shop ansehen',
+      travel: 'Pastillen und Seife lassen sich problemlos mitnehmen und verschicken.',
+      buyLabel: 'Rento Teerseife bei Suomikauppa',
+      productLabel: 'Teerseife im Shop ansehen',
     },
   },
   touristH2: 'Und was ist Touristenkram?',
@@ -289,10 +290,10 @@ const en: PageCopy = {
       kicker: 'Eat it in Finland, do not post it',
       body: [
         'Leipäjuusto is a flat, baked fresh cheese that squeaks when you chew, hence the nickname "squeaky cheese". It is served warm with cloudberry jam (lakkahillo), and that combination is the single best reason to walk into a Lapland café.',
-        'As a mail order it is a poor fit: the cheese is a fresh product, and cloudberry jam is regularly sold out even at the Finnish export grocer, the berry grows wild in bogs and is picked by hand. A shelf-stable alternative from the same aisle: Meritalo sea buckthorn jam, tart rather than sweet, good with cheese.',
+        'The cheese is a fresh product and does not travel. The cloudberry jam can be posted, although even the Finnish export grocer sells out of it from time to time: the berry grows wild in bogs and is picked by hand.',
       ],
-      travel: 'Cheese: only in Finland. Jam: often sold out, sea buckthorn is the alternative.',
-      buyLabel: 'Meritalo sea buckthorn jam at Suomikauppa',
+      travel: 'Cheese: only in Finland. Cloudberry jam: by post, sometimes sold out.',
+      buyLabel: 'Finnish Flavours cloudberry jam at Suomikauppa',
       productLabel: 'See product details in the shop',
     },
     korvapuusti: {
@@ -341,8 +342,8 @@ const en: PageCopy = {
         'Tervaleijona pastilles are the classic pocket-sized introduction. Tar soap smells of a Finnish sauna and is that rare souvenir that gets used daily instead of gathering dust.',
       ],
       travel: 'Pastilles and soap travel and ship without any trouble.',
-      buyLabel: 'Tervaleijona at Suomikauppa',
-      productLabel: 'See tar liquorice in the shop',
+      buyLabel: 'Rento tar soap at Suomikauppa',
+      productLabel: 'See tar soap in the shop',
     },
   },
   touristH2: 'So what is tourist bait?',

@@ -69,8 +69,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd is the Helsinki family company that owns and supervises the rights to Tove Jansson\'s Moomin characters, which first appeared in the 1945 book The Moomins and the Great Flood. The company stopped making goods itself decades ago: every item sold as a Moomin product comes from a licensee, and the network runs to more than 800 of them worldwide. On the gift side the most recognisable line is Arabia\'s ceramic Moomin mugs, a series that began in 1990 and now covers over a hundred designs.',
       'wild-about-lapland':
         'Wild About Lapland is an activity operator based in Rovaniemi, with its office at Rovakatu 24. Every tour is capped at eight participants, and the programme runs year round: northern lights trips, snowmobile safaris and reindeer and husky visits in winter, canoeing and hiking in summer. Founder and lead guide Theo Turner is a former Royal Marines commando and outdoor instructor, and the company carries the Sustainable Travel Finland label.',
-      'meritalo':
-        'Meritalo is a Finnish family berry processor founded in 1995 by Susanna and Olavi Lindstedt, who moved from Helsinki to Ylönkylä in the Salo area of Southwest Finland. The company states that all of its products are made at its own premises there, using 100% Finnish berries and fruit bought from Finnish growers and picked in Finnish forests. The range is built around jams and jellies, juices and birch sap, and includes a 310 g sea buckthorn jam alongside strawberry, lingonberry and apple products.',
       'nordqvist':
         'Nordqvist is a Finnish tea company founded in 1979, which started as a Helsinki shop selling flavoured and loose-leaf teas and later moved into importing and wholesale. Its teas are flavoured and packed at the company\'s own 3,000 square metre factory in Nurmijärvi, opened in 2018. The range covers long-running blends such as Keisarin Morsian and Tiikerin Päiväuni alongside a Moomin-themed tea line sold in bags, loose leaf and tins.',
       'puhdistamo':
@@ -113,8 +111,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy is a family-run textile printing and embroidery company founded in 1994 and based in Petikko, Vantaa. It handles design, graphic execution, production and logistics itself, and states on its own site that production takes place in Finland. Its main customers are souvenir and gift retailers, and it also runs a consumer webshop whose ranges include Lapland, Finland and Moomin themed shirts and hoodies.',
       'aromageddon':
         'Aromageddon is a sauna scent range from Aromageddon Oy, a company registered in Helsinki, which dates the idea to a sauna session in summer 2024. The line covers six 15 ml scents at 7.90 euros each plus three gift sets, and the themes come from drinks and sweets rather than forest or birch: whisky, beer, ice mint, peppermint candy, cinnamon and mint cocoa. The company publishes a CLP safety data sheet for every scent on its own site, and the drink-themed versions carry the flavour note without alcohol.',
-      'leijona':
-        'Leijona is a Finnish pastille brand owned by Cloetta, best known for Leijona Tervalakritsi, a sugar-coated liquorice pastille flavoured with tar. It was developed by pharmacist Yrjö Jalander, founder of the Oulu confectionery company Merijal, and reached the market in 1933. Alongside the 32 g pastille boxes the current range includes 180 g candy bags, and the brand is run by Cloetta Suomi Oy from Turku.',
     },
   },
   fi: {
@@ -161,8 +157,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd on helsinkiläinen perheyhtiö, joka omistaa ja valvoo Tove Janssonin muumihahmojen oikeuksia; hahmot esiteltiin ensi kerran vuoden 1945 kirjassa Muumit ja suuri tuhotulva. Yhtiö ei valmista tuotteita itse, vaan kaikki muumituotteet tekevät lisenssinsaajat, joita on yli 800 eri puolilla maailmaa. Lahjatuotteista tunnetuimpia ovat Arabian keramiikkamukit, joiden sarja alkoi vuonna 1990.',
       'wild-about-lapland':
         'Wild About Lapland on rovaniemeläinen ohjelmapalveluyritys, jonka toimisto sijaitsee osoitteessa Rovakatu 24. Yritys rajaa jokaisen retken enintään kahdeksaan osallistujaan ja järjestää ohjelmaa ympäri vuoden: talvella revontuliretkiä, moottorikelkkasafareita sekä poro- ja huskyvierailuja, kesällä melontaa ja vaelluksia. Perustaja ja pääopas Theo Turner on entinen Royal Marines -kommando ja ulkoilualan ohjaaja, ja yrityksellä on Sustainable Travel Finland -merkki.',
-      'meritalo':
-        'Meritalo on suomalainen marjanjalostaja, jonka Susanna ja Olavi Lindstedt perustivat vuonna 1995 muutettuaan Helsingistä Ylönkylään Salon seudulle. Yritys kertoo valmistavansa kaikki tuotteensa omissa tiloissaan Ylönkylässä ja käyttävänsä sataprosenttisesti suomalaisia marjoja ja hedelmiä, jotka tulevat suomalaisilta viljelijöiltä ja metsistä. Valikoiman runko ovat hillot ja hyytelöt, mehut ja mahla.',
       'nordqvist':
         'Nordqvist on vuonna 1979 perustettu suomalainen teetalo, joka aloitti Helsingissä maustettuihin ja irtoteihin erikoistuneena myymälänä ja laajeni myöhemmin maahantuontiin ja tukkukauppaan. Teet maustetaan ja pakataan yhtiön omalla, vuonna 2018 käyttöön otetulla 3 000 neliön tehtaalla Nurmijärvellä. Valikoimassa ovat muun muassa klassikkosekoitukset Keisarin Morsian ja Tiikerin Päiväuni sekä Muumi-teemainen teesarja pusseina, irtoteenä ja teerasiassa.',
       'puhdistamo':
@@ -205,8 +199,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy on vuonna 1994 perustettu vantaalainen perheyritys, joka painaa ja brodeeraa tekstiilejä. Yritys hoitaa suunnittelun, graafisen toteutuksen, tuotannon ja logistiikan itse ja kertoo omilla sivuillaan tuotannon tapahtuvan Suomessa. Pääasiakkaita ovat matkamuisto- ja lahjatavarakauppiaat, minkä lisäksi yritys ylläpitää kuluttajaverkkokauppaa, jonka mallistoihin kuuluu muun muassa Lappi-, Suomi- ja muumiaiheisia paitoja.',
       'aromageddon':
         'Aromageddon on helsinkiläisen Aromageddon Oy:n saunatuoksusarja, jonka idea syntyi yrityksen oman kertomuksen mukaan kesällä 2024 saunassa. Valikoimaan kuuluu kuusi 15 millilitran tuoksua ja kolme lahjapakkausta, ja aiheet tulevat juomista ja makeisista: viski, olut, jääminttu, piparminttukarkki, kaneli ja minttukaakao. Yritys julkaisee omilla sivuillaan käyttöturvallisuustiedotteen jokaisesta tuoksusta, ja juoma-aiheiset versiot antavat tuoksun ilman alkoholia.',
-      'leijona':
-        'Leijona on Cloettan pastillibrändi, jonka tunnetuin tuote on tervan makuinen Leijona Tervalakritsi. Pastillin kehitti apteekkari Yrjö Jalander, oululaisen Merijalin perustaja, ja se tuli markkinoille vuonna 1933. Valikoimaan kuuluu nykyisin pastillien lisäksi makeispusseja, ja brändiä hallinnoi turkulainen Cloetta Suomi Oy.',
     },
   },
   de: {
@@ -253,8 +245,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd ist das Helsinkier Familienunternehmen, das die Rechte an Tove Janssons Moomin-Figuren besitzt und verwaltet. Die Figuren erschienen erstmals 1945 im Buch The Moomins and the Great Flood. Das Unternehmen stellt seit Jahrzehnten selbst keine Waren mehr her: Jeder als Moomin-Produkt verkaufte Artikel stammt von einem Lizenznehmer, und das Netz umfasst weltweit mehr als 800 davon. Im Geschenkbereich ist die bekannteste Linie Arabias Moomin-Keramikbecher, eine Serie, die 1990 begann und heute über hundert Designs umfasst.',
       'wild-about-lapland':
         'Wild About Lapland ist ein Aktivitätenanbieter mit Sitz in Rovaniemi, dessen Büro sich an der Rovakatu 24 befindet. Jede Tour ist auf acht Teilnehmer begrenzt, und das Programm läuft ganzjährig: Nordlichtfahrten, Schneemobilsafaris sowie Besuche bei Rentieren und Huskys im Winter, Kanufahren und Wandern im Sommer. Gründer und leitender Guide Theo Turner ist ehemaliger Kommandosoldat der Royal Marines und Outdoor-Ausbilder, und das Unternehmen trägt das Label Sustainable Travel Finland.',
-      'meritalo':
-        'Meritalo ist ein finnischer Familienbetrieb der Beerenverarbeitung, gegründet 1995 von Susanna und Olavi Lindstedt, die von Helsinki nach Ylönkylä in der Gegend von Salo in Südwestfinnland zogen. Das Unternehmen gibt an, dass alle seine Produkte dort in den eigenen Räumlichkeiten hergestellt werden, aus 100 % finnischen Beeren und Früchten, die von finnischen Erzeugern gekauft und in finnischen Wäldern gepflückt werden. Das Sortiment ist um Marmeladen und Gelees, Säfte und Birkensaft herum aufgebaut und umfasst eine 310-g-Sanddornmarmelade neben Produkten aus Erdbeere, Preiselbeere und Apfel.',
       'nordqvist':
         'Nordqvist ist ein finnisches Teeunternehmen, gegründet 1979, das als Geschäft in Helsinki mit aromatisierten und losen Tees begann und später in Import und Großhandel einstieg. Seine Tees werden in der 3.000 Quadratmeter großen unternehmenseigenen Fabrik in Nurmijärvi aromatisiert und abgepackt, die 2018 eröffnet wurde. Das Sortiment umfasst langjährige Mischungen wie Keisarin Morsian und Tiikerin Päiväuni sowie eine Teelinie mit Moomin-Motiven, die als Beutel, loser Tee und in Dosen verkauft wird.',
       'puhdistamo':
@@ -297,8 +287,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy ist ein familiengeführtes Unternehmen für Textildruck und Stickerei, gegründet 1994 und ansässig in Petikko in Vantaa. Es übernimmt Design, grafische Umsetzung, Produktion und Logistik selbst und gibt auf seiner eigenen Website an, dass die Produktion in Finnland stattfindet. Seine Hauptkunden sind Souvenir- und Geschenkhändler, und es betreibt außerdem einen Webshop für Verbraucher, dessen Sortiment Shirts und Hoodies mit Lappland-, Finnland- und Moomin-Motiven umfasst.',
       'aromageddon':
         'Aromageddon ist eine Saunaduftserie von Aromageddon Oy, einem in Helsinki registrierten Unternehmen, das die Idee auf einen Saunagang im Sommer 2024 datiert. Die Linie umfasst sechs Düfte zu je 15 ml für 7,90 Euro pro Stück sowie drei Geschenksets, und die Themen stammen aus Getränken und Süßigkeiten statt aus Wald oder Birke: Whisky, Bier, Eisminze, Pfefferminzbonbon, Zimt und Minzkakao. Das Unternehmen veröffentlicht auf seiner eigenen Website für jeden Duft ein CLP-Sicherheitsdatenblatt, und die getränkeinspirierten Varianten tragen die Geschmacksnote ohne Alkohol.',
-      'leijona':
-        'Leijona ist eine finnische Pastillenmarke im Besitz von Cloetta, am bekanntesten für Leijona Tervalakritsi, eine zuckerüberzogene Lakritzpastille mit Teergeschmack. Sie wurde von dem Apotheker Yrjö Jalander entwickelt, dem Gründer des Süßwarenunternehmens Merijal aus Oulu, und kam 1933 auf den Markt. Neben den Pastillendosen mit 32 g umfasst das aktuelle Sortiment Bonbontüten mit 180 g, und die Marke wird von der Cloetta Suomi Oy aus Turku geführt.',
     },
   },
   sv: {
@@ -345,8 +333,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd är det familjeföretag i Helsingfors som äger och övervakar rättigheterna till Tove Janssons muminfigurer, som först dök upp i boken Småtrollen och den stora översvämningen från 1945. Företaget slutade själv tillverka varor för decennier sedan: varje vara som säljs som en muminprodukt kommer från en licenstagare, och nätverket omfattar över 800 av dem världen över. På presentsidan är den mest igenkännbara serien Arabias muminmuggar i keramik, en serie som startade 1990 och i dag omfattar över hundra motiv.',
       'wild-about-lapland':
         'Wild About Lapland är en aktivitetsarrangör med bas i Rovaniemi, med kontor på Rovakatu 24. Varje tur har högst åtta deltagare, och programmet pågår året runt: norrskensturer, snöskotersafarier och besök hos renar och huskyhundar på vintern, kanotpaddling och vandring på sommaren. Grundaren och huvudguiden Theo Turner är tidigare kommandosoldat i Royal Marines och friluftsinstruktör, och företaget bär märkningen Sustainable Travel Finland.',
-      'meritalo':
-        'Meritalo är en finländsk familjeägd bärförädlare som grundades 1995 av Susanna och Olavi Lindstedt, som flyttade från Helsingfors till Ylönkylä i Salotrakten i sydvästra Finland. Företaget uppger att alla dess produkter tillverkas i de egna lokalerna där, av 100 % finländska bär och frukter som köps av finländska odlare och plockas i finländska skogar. Sortimentet bygger på sylt och gelé, saft och björksav, och omfattar en havtornssylt på 310 g vid sidan av produkter av jordgubbe, lingon och äpple.',
       'nordqvist':
         'Nordqvist är ett finländskt teföretag som grundades 1979 och som började som en butik i Helsingfors med smaksatt te och te i lösvikt, och som senare gick in i import och partihandel. Teerna smaksätts och packas i företagets egen fabrik på 3 000 kvadratmeter i Nurmijärvi, som öppnade 2018. Sortimentet omfattar långlivade blandningar som Keisarin Morsian och Tiikerin Päiväuni vid sidan av en teserie med mumintema som säljs i påsar, som lösvikt och i burkar.',
       'puhdistamo':
@@ -389,8 +375,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy är ett familjedrivet företag inom textiltryck och brodyr som grundades 1994 och har sin bas i Petikko i Vanda. Det sköter formgivning, grafiskt utförande, produktion och logistik själv, och uppger på sin egen webbplats att produktionen sker i Finland. Dess huvudsakliga kunder är souvenir- och presentbutiker, och det driver också en webbutik för konsumenter vars sortiment omfattar tröjor och huvtröjor med Lappland-, Finland- och mumintema.',
       'aromageddon':
         'Aromageddon är ett sortiment bastudofter från Aromageddon Oy, ett företag registrerat i Helsingfors, som daterar idén till ett bastubad sommaren 2024. Serien omfattar sex dofter på 15 ml för 7,90 euro styck plus tre presentförpackningar, och temana kommer från drycker och godis i stället för skog eller björk: whisky, öl, ismint, pepparmintsgodis, kanel och mintkakao. Företaget publicerar ett CLP-säkerhetsdatablad för varje doft på sin egen webbplats, och de dryckestemade versionerna bär smaknoten utan alkohol.',
-      'leijona':
-        'Leijona är ett finländskt pastillvarumärke som ägs av Cloetta och som är mest känt för Leijona Tervalakritsi, en sockrad lakritspastill med tjärsmak. Den utvecklades av apotekaren Yrjö Jalander, grundare av konfektyrföretaget Merijal i Uleåborg, och kom ut på marknaden 1933. Vid sidan av pastillaskarna på 32 g omfattar det nuvarande sortimentet godispåsar på 180 g, och varumärket drivs av Cloetta Suomi Oy från Åbo.',
     },
   },
   fr: {
@@ -437,8 +421,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd est l\'entreprise familiale d\'Helsinki qui détient et supervise les droits sur les personnages des Moumines de Tove Jansson, apparus pour la première fois dans le livre de 1945 The Moomins and the Great Flood. L\'entreprise a cessé de fabriquer elle-même des produits il y a des décennies : chaque article vendu comme produit Moumine provient d\'un licencié, et le réseau en compte plus de 800 dans le monde. Côté cadeaux, la ligne la plus reconnaissable est celle des mugs Moumine en céramique d\'Arabia, une série lancée en 1990 et qui compte aujourd\'hui plus d\'une centaine de motifs.',
       'wild-about-lapland':
         'Wild About Lapland est un opérateur d\'activités basé à Rovaniemi, dont le bureau se trouve au Rovakatu 24. Chaque excursion est limitée à huit participants et le programme se déroule toute l\'année : sorties aurores boréales, safaris en motoneige et visites de rennes et de huskies en hiver, canoë et randonnée en été. Le fondateur et guide principal Theo Turner est un ancien commando des Royal Marines et instructeur de plein air, et l\'entreprise détient le label Sustainable Travel Finland.',
-      'meritalo':
-        'Meritalo est une entreprise familiale finlandaise de transformation de baies fondée en 1995 par Susanna et Olavi Lindstedt, qui ont quitté Helsinki pour Ylönkylä, dans la région de Salo, au sud-ouest de la Finlande. L\'entreprise indique que tous ses produits sont fabriqués dans ses propres locaux sur place, à partir de baies et de fruits 100 % finlandais achetés à des producteurs finlandais et cueillis dans les forêts finlandaises. La gamme s\'articule autour de confitures et de gelées, de jus et de sève de bouleau, et comprend une confiture d\'argousier de 310 g aux côtés de produits à la fraise, à l\'airelle rouge et à la pomme.',
       'nordqvist':
         'Nordqvist est une entreprise de thé finlandaise fondée en 1979, qui a débuté comme une boutique d\'Helsinki vendant des thés aromatisés et en vrac avant de se tourner vers l\'importation et la vente en gros. Ses thés sont aromatisés et conditionnés dans l\'usine de 3 000 mètres carrés de l\'entreprise à Nurmijärvi, ouverte en 2018. La gamme comprend des mélanges de longue date comme Keisarin Morsian et Tiikerin Päiväuni ainsi qu\'une ligne de thés sur le thème des Moomins, vendue en sachets, en vrac et en boîtes métalliques.',
       'puhdistamo':
@@ -481,8 +463,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy est une entreprise familiale d\'impression textile et de broderie fondée en 1994 et basée à Petikko, à Vantaa. Elle assure elle-même la conception, l\'exécution graphique, la production et la logistique, et indique sur son propre site que la production a lieu en Finlande. Ses principaux clients sont les détaillants de souvenirs et de cadeaux, et elle exploite aussi une boutique en ligne grand public dont les gammes comprennent des t-shirts et des sweats à capuche sur les thèmes de la Laponie, de la Finlande et des Moomins.',
       'aromageddon':
         'Aromageddon est une gamme de parfums de sauna d\'Aromageddon Oy, une société immatriculée à Helsinki, qui fait remonter l\'idée à une séance de sauna à l\'été 2024. La ligne comprend six parfums de 15 ml à 7,90 euros pièce plus trois coffrets cadeaux, et les thèmes viennent des boissons et des sucreries plutôt que de la forêt ou du bouleau : whisky, bière, menthe glacée, bonbon à la menthe poivrée, cannelle et cacao à la menthe. L\'entreprise publie une fiche de données de sécurité CLP pour chaque parfum sur son propre site, et les versions sur le thème des boissons portent la note aromatique sans alcool.',
-      'leijona':
-        'Leijona est une marque finlandaise de pastilles détenue par Cloetta, surtout connue pour Leijona Tervalakritsi, une pastille de réglisse enrobée de sucre et aromatisée au goudron. Elle a été mise au point par le pharmacien Yrjö Jalander, fondateur de la confiserie Merijal à Oulu, et est arrivée sur le marché en 1933. À côté des boîtes de pastilles de 32 g, la gamme actuelle comprend des sachets de bonbons de 180 g, et la marque est gérée par Cloetta Suomi Oy depuis Turku.',
     },
   },
   es: {
@@ -529,8 +509,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd es la empresa familiar de Helsinki que posee y supervisa los derechos de los personajes Moomin de Tove Jansson, que aparecieron por primera vez en el libro de 1945 Los Moomin y la gran inundación. La empresa dejó de fabricar productos ella misma hace décadas: todo artículo vendido como producto Moomin procede de un licenciatario, y la red suma más de 800 en todo el mundo. En el ámbito del regalo, la línea más reconocible son las tazas de cerámica Moomin de Arabia, una serie que empezó en 1990 y que hoy abarca más de cien diseños.',
       'wild-about-lapland':
         'Wild About Lapland es un operador de actividades con sede en Rovaniemi y oficina en Rovakatu 24. Cada excursión admite un máximo de ocho participantes y el programa funciona todo el año: salidas para ver auroras boreales, safaris en moto de nieve y visitas a renos y huskies en invierno, piragüismo y senderismo en verano. Su fundador y guía principal, Theo Turner, es antiguo comando de los Royal Marines e instructor de actividades al aire libre, y la empresa cuenta con el sello Sustainable Travel Finland.',
-      'meritalo':
-        'Meritalo es una empresa familiar finlandesa de elaboración de bayas fundada en 1995 por Susanna y Olavi Lindstedt, que se mudaron de Helsinki a Ylönkylä, en la zona de Salo, en el suroeste de Finlandia. La empresa afirma que todos sus productos se elaboran en sus propias instalaciones allí, con un 100 % de bayas y frutas finlandesas compradas a productores finlandeses y recogidas en los bosques del país. La gama se organiza en torno a mermeladas y jaleas, zumos y savia de abedul, e incluye una mermelada de espino amarillo de 310 g junto a productos de fresa, arándano rojo y manzana.',
       'nordqvist':
         'Nordqvist es una empresa finlandesa de té fundada en 1979, que empezó como una tienda de Helsinki dedicada a la venta de tés aromatizados y a granel y que después pasó a la importación y la venta al por mayor. Sus tés se aromatizan y se envasan en la fábrica propia de la empresa en Nurmijärvi, de 3.000 metros cuadrados, inaugurada en 2018. La gama incluye mezclas de larga trayectoria como Keisarin Morsian y Tiikerin Päiväuni junto a una línea de tés con temática de los Moomin, vendida en bolsitas, a granel y en latas.',
       'puhdistamo':
@@ -573,8 +551,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy es una empresa familiar de estampación y bordado textil fundada en 1994 y con sede en Petikko, Vantaa. Se encarga ella misma del diseño, la ejecución gráfica, la producción y la logística, e indica en su propio sitio web que la producción tiene lugar en Finlandia. Sus principales clientes son minoristas de souvenirs y regalos, y también gestiona una tienda online para consumidores cuyas gamas incluyen camisetas y sudaderas con temas de Laponia, Finlandia y los Moomin.',
       'aromageddon':
         'Aromageddon es una gama de aromas para sauna de Aromageddon Oy, una empresa registrada en Helsinki, que sitúa el origen de la idea en una sesión de sauna del verano de 2024. La línea abarca seis aromas de 15 ml a 7,90 euros cada uno más tres sets de regalo, y los temas vienen de bebidas y dulces en lugar del bosque o el abedul: whisky, cerveza, menta helada, caramelo de menta, canela y cacao con menta. La empresa publica en su propio sitio web una ficha de datos de seguridad CLP de cada aroma, y las versiones inspiradas en bebidas llevan la nota de sabor sin alcohol.',
-      'leijona':
-        'Leijona es una marca finlandesa de pastillas propiedad de Cloetta, conocida sobre todo por Leijona Tervalakritsi, una pastilla de regaliz recubierta de azúcar y aromatizada con alquitrán. La desarrolló el farmacéutico Yrjö Jalander, fundador de la empresa de confitería Merijal, de Oulu, y llegó al mercado en 1933. Junto a las cajas de pastillas de 32 g, la gama actual incluye bolsas de caramelos de 180 g, y la marca la gestiona Cloetta Suomi Oy desde Turku.',
     },
   },
   it: {
@@ -621,8 +597,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd è l\'azienda familiare di Helsinki che possiede e sorveglia i diritti sui personaggi Moomin di Tove Jansson, apparsi per la prima volta nel libro del 1945 The Moomins and the Great Flood. L\'azienda ha smesso di produrre articoli in proprio decenni fa: ogni articolo venduto come prodotto Moomin proviene da un licenziatario, e la rete ne conta oltre 800 in tutto il mondo. Sul fronte dei regali la linea più riconoscibile sono le tazze in ceramica Moomin di Arabia, una serie iniziata nel 1990 che oggi comprende oltre cento design.',
       'wild-about-lapland':
         'Wild About Lapland è un operatore di attività con sede a Rovaniemi, con ufficio in Rovakatu 24. Ogni escursione ha un limite di otto partecipanti e il programma si svolge tutto l\'anno: uscite per l\'aurora boreale, safari in motoslitta e visite a renne e husky in inverno, canoa ed escursioni a piedi in estate. Il fondatore e guida principale Theo Turner è un ex commando dei Royal Marines e istruttore outdoor, e l\'azienda possiede il marchio Sustainable Travel Finland.',
-      'meritalo':
-        'Meritalo è un\'azienda familiare finlandese di trasformazione delle bacche, fondata nel 1995 da Susanna e Olavi Lindstedt, che si trasferirono da Helsinki a Ylönkylä, nella zona di Salo, nel sud-ovest della Finlandia. L\'azienda dichiara che tutti i suoi prodotti sono realizzati nei propri stabilimenti in loco, con il 100% di bacche e frutta finlandesi acquistate da coltivatori finlandesi e raccolte nei boschi finlandesi. La gamma ruota attorno a confetture e gelatine, succhi e linfa di betulla, e comprende una confettura di olivello spinoso da 310 g accanto a prodotti a base di fragola, mirtillo rosso e mela.',
       'nordqvist':
         'Nordqvist è un\'azienda finlandese del tè fondata nel 1979, nata come negozio di Helsinki che vendeva tè aromatizzati e in foglia sfusa e passata in seguito all\'importazione e al commercio all\'ingrosso. I suoi tè vengono aromatizzati e confezionati nello stabilimento di proprietà dell\'azienda a Nurmijärvi, di 3.000 metri quadrati, aperto nel 2018. La gamma comprende miscele di lunga data come Keisarin Morsian e Tiikerin Päiväuni accanto a una linea di tè a tema Moomin venduta in bustine, in foglia sfusa e in latta.',
       'puhdistamo':
@@ -665,8 +639,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy è un\'azienda familiare di stampa e ricamo su tessuto fondata nel 1994 e con sede a Petikko, a Vantaa. Cura internamente progettazione, esecuzione grafica, produzione e logistica, e dichiara sul proprio sito che la produzione avviene in Finlandia. I suoi clienti principali sono i rivenditori di souvenir e articoli da regalo, e gestisce anche un negozio online per i consumatori le cui gamme comprendono magliette e felpe a tema Lapponia, Finlandia e Moomin.',
       'aromageddon':
         'Aromageddon è una gamma di profumi per la sauna di Aromageddon Oy, azienda registrata a Helsinki, che fa risalire l\'idea a una sessione di sauna dell\'estate 2024. La linea comprende sei profumi da 15 ml a 7,90 euro ciascuno più tre confezioni regalo, e i temi vengono da bevande e dolci anziché dal bosco o dalla betulla: whisky, birra, menta ghiacciata, caramella alla menta piperita, cannella e cacao alla menta. L\'azienda pubblica sul proprio sito una scheda di sicurezza CLP per ogni profumo, e le versioni a tema bevande portano la nota aromatica senza alcol.',
-      'leijona':
-        'Leijona è un marchio finlandese di pastiglie di proprietà di Cloetta, conosciuto soprattutto per Leijona Tervalakritsi, una pastiglia di liquirizia ricoperta di zucchero e aromatizzata al catrame. Fu sviluppata dal farmacista Yrjö Jalander, fondatore dell\'azienda dolciaria Merijal di Oulu, e arrivò sul mercato nel 1933. Accanto alle scatole di pastiglie da 32 g, la gamma attuale comprende sacchetti di caramelle da 180 g, e il marchio è gestito da Cloetta Suomi Oy da Turku.',
     },
   },
   nl: {
@@ -713,8 +685,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd is het familiebedrijf uit Helsinki dat de rechten op de Moomin-figuren van Tove Jansson bezit en beheert. De figuren verschenen voor het eerst in het boek The Moomins and the Great Flood uit 1945. Het bedrijf maakt al decennia zelf geen artikelen meer: elk artikel dat als Moomin-product wordt verkocht, komt van een licentiehouder, en dat netwerk telt er wereldwijd meer dan 800. Aan de cadeaukant is de bekendste lijn de keramische Moomin-mokken van Arabia, een serie die in 1990 begon en nu meer dan honderd ontwerpen omvat.',
       'wild-about-lapland':
         'Wild About Lapland is een activiteitenaanbieder in Rovaniemi, met kantoor aan Rovakatu 24. Elke tour heeft maximaal acht deelnemers en het programma loopt het hele jaar door: noorderlichttochten, sneeuwscootersafari\'s en bezoeken aan rendieren en husky\'s in de winter, kanoën en wandelen in de zomer. Oprichter en hoofdgids Theo Turner is een voormalig Royal Marines-commando en buitensportinstructeur, en het bedrijf draagt het label Sustainable Travel Finland.',
-      'meritalo':
-        'Meritalo is een Fins familiebedrijf dat bessen verwerkt, in 1995 opgericht door Susanna en Olavi Lindstedt, die vanuit Helsinki naar Ylönkylä in de regio Salo in Zuidwest-Finland verhuisden. Het bedrijf stelt dat al zijn producten daar in de eigen productieruimte worden gemaakt, met 100% Finse bessen en vruchten die bij Finse telers worden gekocht en in Finse bossen worden geplukt. Het assortiment is opgebouwd rond jams en gelei, sappen en berkensap, en omvat een duindoornjam van 310 g naast producten met aardbei, rode bosbes en appel.',
       'nordqvist':
         'Nordqvist is een Fins theebedrijf dat in 1979 werd opgericht en begon als een winkel in Helsinki met gearomatiseerde thee en losse thee, en later overging op import en groothandel. De theeën worden gearomatiseerd en verpakt in de eigen fabriek van 3.000 vierkante meter in Nurmijärvi, geopend in 2018. Het assortiment omvat al lang bestaande melanges zoals Keisarin Morsian en Tiikerin Päiväuni, naast een Moomin-theelijn die in zakjes, los en in blik wordt verkocht.',
       'puhdistamo':
@@ -757,8 +727,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy is een familiebedrijf in textieldruk en borduurwerk, opgericht in 1994 en gevestigd in Petikko, Vantaa. Het verzorgt het ontwerp, de grafische uitvoering, de productie en de logistiek zelf, en geeft op zijn eigen site aan dat de productie in Finland plaatsvindt. De belangrijkste klanten zijn souvenir- en cadeauwinkels, en het bedrijf heeft ook een consumentenwebshop met onder meer shirts en hoodies met Lapland-, Finland- en Moomin-thema\'s.',
       'aromageddon':
         'Aromageddon is een reeks saunageuren van Aromageddon Oy, een in Helsinki geregistreerd bedrijf dat het idee terugvoert op een saunasessie in de zomer van 2024. De lijn omvat zes geuren van 15 ml voor 7,90 euro per stuk plus drie cadeausets, en de thema\'s komen uit dranken en snoep in plaats van bos of berk: whisky, bier, ijsmunt, pepermuntsnoep, kaneel en muntcacao. Het bedrijf publiceert voor elke geur een CLP-veiligheidsinformatieblad op zijn eigen site, en de versies met drankthema dragen de smaaknoot zonder alcohol.',
-      'leijona':
-        'Leijona is een Fins pastillemerk van Cloetta, vooral bekend van Leijona Tervalakritsi, een met suiker omhulde droppastille met teersmaak. Het werd ontwikkeld door apotheker Yrjö Jalander, oprichter van het snoepbedrijf Merijal uit Oulu, en kwam in 1933 op de markt. Naast de pastilledoosjes van 32 g omvat het huidige assortiment snoepzakken van 180 g, en het merk wordt vanuit Turku beheerd door Cloetta Suomi Oy.',
     },
   },
   'pt-BR': {
@@ -805,8 +773,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'A Moomin Characters Oy Ltd é a empresa familiar de Helsinque que detém e supervisiona os direitos sobre os personagens Moomin de Tove Jansson, que apareceram pela primeira vez no livro de 1945 The Moomins and the Great Flood. A empresa parou de fabricar produtos por conta própria há décadas: todo item vendido como produto Moomin vem de um licenciado, e a rede chega a mais de 800 deles no mundo todo. No lado dos presentes, a linha mais reconhecível são as canecas de cerâmica Moomin da Arabia, uma série que começou em 1990 e hoje reúne mais de cem modelos.',
       'wild-about-lapland':
         'A Wild About Lapland é uma operadora de atividades sediada em Rovaniemi, com escritório na Rovakatu 24. Cada passeio tem no máximo oito participantes, e a programação funciona o ano todo: saídas para ver a aurora boreal, safáris de snowmobile e visitas a renas e huskies no inverno, canoagem e caminhadas no verão. O fundador e guia principal, Theo Turner, é ex-comando dos Royal Marines e instrutor de atividades ao ar livre, e a empresa tem o selo Sustainable Travel Finland.',
-      'meritalo':
-        'A Meritalo é uma processadora familiar finlandesa de frutas silvestres fundada em 1995 por Susanna e Olavi Lindstedt, que se mudaram de Helsinque para Ylönkylä, na região de Salo, no sudoeste da Finlândia. A empresa afirma que todos os seus produtos são feitos nas próprias instalações ali, com 100% de frutas silvestres e frutas finlandesas compradas de produtores finlandeses e colhidas em florestas da Finlândia. A linha se concentra em geleias e compotas, sucos e seiva de bétula, e inclui uma geleia de espinheiro-marítimo de 310 g ao lado de produtos de morango, airela e maçã.',
       'nordqvist':
         'A Nordqvist é uma empresa finlandesa de chá fundada em 1979, que começou como uma loja em Helsinque vendendo chás aromatizados e a granel e depois passou à importação e ao atacado. Seus chás são aromatizados e embalados na fábrica própria da empresa em Nurmijärvi, de 3.000 metros quadrados, inaugurada em 2018. A linha abrange misturas antigas como Keisarin Morsian e Tiikerin Päiväuni, além de uma linha de chás com tema dos Moomins vendida em sachês, folhas soltas e latas.',
       'puhdistamo':
@@ -849,8 +815,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'A Mikebon Oy é uma empresa familiar de estamparia e bordado têxtil fundada em 1994 e sediada em Petikko, Vantaa. Ela cuida internamente do design, da execução gráfica, da produção e da logística, e afirma no próprio site que a produção acontece na Finlândia. Seus principais clientes são lojas de souvenires e presentes, e ela também mantém uma loja online para consumidores cujas linhas incluem camisetas e moletons com temas da Lapônia, da Finlândia e dos Moomins.',
       'aromageddon':
         'Aromageddon é uma linha de aromas para sauna da Aromageddon Oy, empresa registrada em Helsinque, que situa a origem da ideia em uma sessão de sauna no verão de 2024. A linha tem seis aromas de 15 ml a 7,90 euros cada, mais três kits de presente, e os temas vêm de bebidas e doces em vez de floresta ou bétula: uísque, cerveja, menta gelada, bala de hortelã-pimenta, canela e cacau com menta. A empresa publica no próprio site uma ficha de dados de segurança CLP para cada aroma, e as versões com tema de bebida trazem a nota de sabor sem álcool.',
-      'leijona':
-        'Leijona é uma marca finlandesa de pastilhas da Cloetta, mais conhecida pela Leijona Tervalakritsi, uma pastilha de alcaçuz com cobertura de açúcar e sabor de alcatrão. Foi desenvolvida pelo farmacêutico Yrjö Jalander, fundador da empresa de doces Merijal, de Oulu, e chegou ao mercado em 1933. Além das caixas de pastilhas de 32 g, a linha atual inclui sacos de balas de 180 g, e a marca é gerida pela Cloetta Suomi Oy, de Turku.',
     },
   },
   ja: {
@@ -897,8 +861,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltdは、Tove Janssonのムーミンのキャラクターの権利を所有・管理するヘルシンキの家族経営会社である。ムーミンは1945年の書籍『小さなトロールと大きな洪水』で初めて登場した。同社は数十年前に自社での商品製造をやめており、ムーミン製品として販売されるすべての商品はライセンシーによるもので、そのネットワークは世界で800社を超える。ギフト分野で最も広く知られているのはArabiaの陶製ムーミンマグで、1990年に始まり、現在では100を超えるデザインがある。',
       'wild-about-lapland':
         'Wild About Lapland はロヴァニエミを拠点とするアクティビティ事業者で、オフィスは Rovakatu 24 にあります。すべてのツアーは参加者8名までに制限され、プログラムは通年で運営されています。冬はオーロラツアー、スノーモービルサファリ、トナカイとハスキーの訪問、夏はカヌーとハイキングです。創業者でメインガイドの Theo Turner は元英国海兵隊コマンドーでアウトドアインストラクターであり、同社は Sustainable Travel Finland ラベルを取得しています。',
-      'meritalo':
-        'Meritalo は1995年に Susanna と Olavi Lindstedt が創業したフィンランドの家族経営のベリー加工会社で、二人はヘルシンキから南西フィンランド・サロ地域のユロンキュラへ移り住みました。同社によれば、製品はすべて現地の自社施設で作られ、フィンランドの生産者から購入しフィンランドの森で摘まれた100%フィンランド産のベリーと果物を使っています。製品はジャムとゼリー、ジュース、白樺樹液が中心で、310 g のシーバックソーンジャムのほか、いちご、リンゴンベリー、りんごの製品があります。',
       'nordqvist':
         'Nordqvist は1979年創業のフィンランドの紅茶会社で、フレーバーティーとリーフティーを売るヘルシンキの店として始まり、のちに輸入と卸売へ広がりました。紅茶の着香と包装は、2018年に開設されたヌルミヤルヴィの3,000平方メートルの自社工場で行われています。製品には Keisarin Morsian や Tiikerin Päiväuni といった長く続くブレンドのほか、ティーバッグ、リーフ、缶入りで売られるムーミンをテーマにした紅茶シリーズがあります。',
       'puhdistamo':
@@ -941,8 +903,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy は1994年に創業した家族経営のテキスタイルプリント・刺繍会社で、ヴァンターのペティッコを拠点としています。デザイン、グラフィックの制作、生産、物流を自社で行っており、自社サイトでは生産はフィンランドで行っているとしています。主な取引先はみやげ物とギフトの小売店で、消費者向けのウェブショップも運営しており、その品ぞろえにはラップランド、フィンランド、ムーミンをテーマにしたシャツやパーカーがあります。',
       'aromageddon':
         'Aromageddon はヘルシンキで登記された Aromageddon Oy のサウナ用フレグランスのシリーズで、同社は着想を2024年夏のサウナのひとときにさかのぼるとしています。ラインナップは15 mlの香り6種類が各7.90ユーロ、それにギフトセット3種類で、テーマは森や白樺ではなく飲み物と菓子から取られています。ウイスキー、ビール、アイスミント、ペパーミントキャンディ、シナモン、ミントココアです。同社は自社サイトですべての香りについて CLP の安全データシートを公開しており、飲み物をテーマにした種類はアルコールを含まずに風味の印象を持たせています。',
-      'leijona':
-        'Leijona は Cloetta が所有するフィンランドのパスティーユのブランドで、砂糖でコーティングしタールの風味をつけたリコリスのパスティーユ Leijona Tervalakritsi でよく知られています。開発したのはオウルの菓子会社 Merijal の創業者で薬剤師の Yrjö Jalander で、製品は1933年に市場に出ました。現在のラインナップには32 gのパスティーユの箱に加えて180 gのキャンディ袋があり、ブランドはトゥルクの Cloetta Suomi Oy が運営しています。',
     },
   },
   'zh-CN': {
@@ -989,8 +949,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd 是位于赫尔辛基的家族公司，拥有并管理 Tove Jansson 笔下姆明角色的权利；这些角色首次出现在 1945 年的《姆明和大洪水》一书中。公司数十年前就不再自行生产商品：以姆明产品名义出售的每一件物品都来自被许可方，这一网络在全球有 800 多家。在礼品方面最易辨认的产品线是 Arabia 的姆明陶瓷马克杯，该系列始于 1990 年，如今已有一百多种设计。',
       'wild-about-lapland':
         'Wild About Lapland 是一家位于罗瓦涅米的活动运营商，办公地点在 Rovakatu 24。每次行程的参与人数上限为八人，项目全年运行：冬季有北极光之旅、雪地摩托探险之旅以及驯鹿和哈士奇拜访，夏季有独木舟和徒步。创始人兼首席向导 Theo Turner 曾是英国皇家海军陆战队突击队员和户外教练，公司持有 Sustainable Travel Finland 标章。',
-      'meritalo':
-        'Meritalo 是一家芬兰家族浆果加工企业，由 Susanna 和 Olavi Lindstedt 于 1995 年创立，两人从赫尔辛基迁到芬兰西南部 Salo 地区的 Ylönkylä。公司表示，其所有产品都在当地自有厂房制作，使用 100% 芬兰浆果和水果，原料购自芬兰种植者并采自芬兰森林。产品线以果酱和果冻、果汁和桦树汁为主，包括一款 310 克沙棘果酱，以及草莓、越橘和苹果产品。',
       'nordqvist':
         'Nordqvist 是一家芬兰茶叶公司，成立于 1979 年，起初是赫尔辛基一家销售调味茶和散叶茶的商店，后来转向进口和批发。其茶叶在公司位于 Nurmijärvi 的自有工厂调味和包装，这座 3000 平方米的工厂于 2018 年启用。产品线包括 Keisarin Morsian 和 Tiikerin Päiväuni 等长期在售的拼配茶，以及以姆明为主题的茶系列，有袋泡、散叶和铁罐装。',
       'puhdistamo':
@@ -1033,8 +991,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy 是一家家族经营的纺织印花和刺绣公司，1994 年创立，位于 Vantaa 的 Petikko。公司自行负责设计、图形执行、生产和物流，并在自有网站上表示生产在芬兰进行。其主要客户是纪念品和礼品零售商，同时也经营面向消费者的网店，产品包括拉普兰、芬兰和姆明主题的 T 恤和连帽衫。',
       'aromageddon':
         'Aromageddon 是 Aromageddon Oy 推出的桑拿香氛系列，该公司在赫尔辛基注册，并把这个想法的起点定在 2024 年夏天的一次桑拿。产品线包括六款 15 毫升香氛，每款 7.90 欧元，另有三款礼盒，主题来自饮品和糖果而非森林或桦树：威士忌、啤酒、冰薄荷、薄荷糖、肉桂和薄荷可可。公司在自有网站上为每款香氛公布 CLP 安全数据表，饮品主题的版本带有该风味但不含酒精。',
-      'leijona':
-        'Leijona 是 Cloetta 旗下的芬兰润喉糖品牌，最为人熟知的是 Leijona Tervalakritsi，一种带焦油风味的糖衣甘草润喉糖。它由药剂师 Yrjö Jalander 研制，他是奥卢糖果公司 Merijal 的创始人，产品于 1933 年上市。除 32 克装润喉糖盒外，当前产品线还包括 180 克袋装糖果，该品牌由位于图尔库的 Cloetta Suomi Oy 运营。',
     },
   },
   ko: {
@@ -1081,8 +1037,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Moomin Characters Oy Ltd는 Tove Jansson의 무민 캐릭터 권리를 소유하고 관리하는 헬싱키의 가족 회사이며, 이 캐릭터들은 1945년 책 『무민 가족과 대홍수』(The Moomins and the Great Flood)에서 처음 등장했습니다. 회사는 수십 년 전에 직접 상품을 만드는 일을 그만두었습니다: 무민 제품으로 판매되는 모든 품목은 라이선시가 만들며, 그 네트워크는 전 세계 800곳이 넘습니다. 선물 쪽에서 가장 잘 알려진 제품군은 Arabia의 무민 도자기 머그로, 1990년에 시작된 이 시리즈는 이제 100가지가 넘는 디자인을 아우릅니다.',
       'wild-about-lapland':
         'Wild About Lapland는 로바니에미에 자리한 액티비티 운영사로, 사무실은 Rovakatu 24에 있습니다. 모든 투어는 참가자 8명으로 제한되며 프로그램은 연중 운영됩니다. 겨울에는 오로라 투어, 스노모빌 사파리, 순록과 허스키 방문이 있고 여름에는 카누와 하이킹이 있습니다. 창업자이자 수석 가이드인 Theo Turner는 영국 왕립 해병대 코만도 출신의 아웃도어 강사이며, 회사는 Sustainable Travel Finland 인증을 보유하고 있습니다.',
-      'meritalo':
-        'Meritalo는 1995년 Susanna Lindstedt와 Olavi Lindstedt가 설립한 핀란드 가족 경영 베리 가공 회사입니다. 두 사람은 헬싱키에서 남서핀란드 살로 지역의 윌뢴퀼레(Ylönkylä)로 이주했습니다. 회사는 모든 제품을 그곳 자사 시설에서 만들며, 핀란드 재배 농가에서 구입하고 핀란드 숲에서 채집한 100% 핀란드산 베리와 과일을 사용한다고 밝히고 있습니다. 제품군은 잼과 젤리, 주스와 자작나무 수액을 중심으로 하며, 딸기와 링곤베리, 사과 제품과 함께 310 g 산자나무 잼이 포함됩니다.',
       'nordqvist':
         'Nordqvist는 1979년에 설립된 핀란드 차 회사로, 헬싱키에서 가향차와 잎차를 파는 상점으로 시작해 나중에 수입과 도매로 옮겨 갔습니다. 차의 가향과 포장은 2018년 문을 연 누르미야르비(Nurmijärvi)의 자사 공장 3,000제곱미터 규모 시설에서 이루어집니다. 제품군은 Keisarin Morsian과 Tiikerin Päiväuni 같은 오래된 블렌드와 함께 티백, 잎차, 틴으로 판매되는 무민 테마 차 라인을 다룹니다.',
       'puhdistamo':
@@ -1125,8 +1079,6 @@ export const BRAND_COPY: Record<Lang, BrandCopy> = {
         'Mikebon Oy는 1994년에 설립되어 반타(Vantaa) 페티코(Petikko)에 자리한 가족 운영 텍스타일 프린팅·자수 회사입니다. 디자인, 그래픽 작업, 생산, 물류를 직접 처리하며, 자사 사이트에서 생산이 핀란드에서 이루어진다고 밝히고 있습니다. 주요 고객은 기념품과 선물 소매점이고, 라플란드와 핀란드, 무민 테마의 셔츠와 후디를 포함한 제품군을 갖춘 소비자용 온라인 상점도 운영합니다.',
       'aromageddon':
         'Aromageddon은 헬싱키에 등록된 회사 Aromageddon Oy의 사우나 향 제품군으로, 회사는 그 아이디어가 2024년 여름의 사우나에서 나왔다고 말합니다. 라인은 각 7.90유로인 15 ml 향 여섯 가지와 기프트 세트 세 가지로 이루어지며, 테마는 숲이나 자작나무가 아니라 음료와 과자에서 왔습니다. 위스키, 맥주, 아이스 민트, 페퍼민트 캔디, 시나몬, 민트 코코아입니다. 회사는 모든 향의 CLP 안전보건자료를 자사 사이트에 공개하며, 음료를 테마로 한 제품은 알코올 없이 그 맛의 향만 담고 있습니다.',
-      'leijona':
-        'Leijona는 Cloetta가 소유한 핀란드 파스틸 브랜드로, 타르로 맛을 낸 설탕 코팅 감초 파스틸 Leijona Tervalakritsi로 가장 잘 알려져 있습니다. 오울루의 제과 회사 Merijal을 세운 약사 Yrjö Jalander가 개발했고 1933년에 시장에 나왔습니다. 32 g 파스틸 상자와 함께 현재 제품군에는 180 g 캔디 봉지가 있으며, 브랜드는 투르쿠에서 Cloetta Suomi Oy가 운영합니다.',
     },
   },
 }

@@ -354,17 +354,16 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Näringsvärde per 100 g', 'Marknadsförs av'],
   },
-  'meritalo-tyrnihillo': {
-    name: 'Meritalo finsk havtornssylt 310 g',
+  'sk-finnish-flavours-lingonberry-jam': {
+    name: 'Finnish Flavours finsk lingonsylt 400 g',
     description:
-      'Havtornssylt med 37 gram bär per 100 gram, kokad på finsk havtorn på familjegården Meritalo i Salo i sydvästra Finland snarare än i Lappland. Havtorn är syrlig snarare än söt, så den räcker längre bredvid ost än på en pannkaka.',
+      'Lingonsylt tillverkad i Finland av bär plockade i finska skogar, och lingonen utgör 45 procent av burkens innehåll. I Finland äter man den till viltgryta, köttbullar och spenatplättar, och den passar i samma present som en påse torkat renkött.',
     specs: [
-      '310 g',
-      'Bären är finska. Tillverkad av ett familjeföretag på hemgården Meritalo i Salo i sydvästra Finland',
-      'Energi 781 kJ / 187 kcal, fett 1,9 g varav mättat 0,3 g, kolhydrat 41 g varav sockerarter 41 g, protein 0,3 g, salt 0,01 g',
-      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+      '400 g',
+      'Tillverkad i Finland av 100 % finska bär',
+      'Energi 633 kJ / 151 kcal, fett 0,2 g varav mättat 0 g, kolhydrat 39 g varav sockerarter 39 g, protein 0,2 g, salt 0,01 g',
     ],
-    specLabels: [undefined, undefined, 'Näringsvärde per 100 g', 'Marknadsförs av'],
+    specLabels: [undefined, undefined, 'Näringsvärde per 100 g'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Torkat renkött Original 200 g',
@@ -463,14 +462,17 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Dosering', 'Näringsvärde per 100 g'],
   },
-  'arctic-warriors-roseroot-elixir': {
-    name: 'Arctic Warriors rosenrotselixir 100 ml',
+  'rj-arctic-warriors-angelica-elixir': {
+    name: 'Arctic Warriors kvannerotselixir 100 ml',
     description:
-      'Rosenrot växer på fuktiga bäckstränder och klippväggar på Lapplands fjäll, och Arctic Warriors extraherar den i vegetabiliskt glycerol tillsammans med nässla. En tesked går i te, gröt eller yoghurt.',
+      'Ett elixir av kvannerot, väinönputki på finska, från det finska företaget Arctic Warriors. Butiken Ruohonjuuri anger att det är tillverkat i Finland, veganskt och glutenfritt, och tillverkarens dos är en tesked om dagen.',
     specs: [
       '100 ml',
-      'Rosenrot och nässla',
+      'Kvannerotselixir (Angelica archangelica)',
+      'Finland, Avainlippu-märket (Nyckelflaggan)',
+      'En tesked om dagen',
     ],
+    specLabels: [undefined, undefined, undefined, 'Dosering'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 havtorns- och olivolja 150 ml',
@@ -518,11 +520,17 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specs: ['Tuulikki Pietilä, 1990-talet', 'Handgjord keramik, säljs i egen ask'],
     specLabels: ['Formgivare', 'Tillverkning'],
   },
-  'fiskars-moominpappa-scissors': {
-    name: 'Fiskars Moominpappa universalsax',
+  'sk-fiskars-snorkmaiden-kids-scissors': {
+    name: 'Fiskars Snorkfröken barnsax 13 cm',
     description:
-      'Fiskars saxar med orange handtag ligger i fler finska köksbord än något annat redskap. Den här är 21 cm i rostfritt stål med Moominpappa på handtaget.',
-    specs: ['21 cm', 'Rostfritt stål'],
+      'Barnsax ur Fiskars Muminserie, 13 cm lång och med rundade spetsar. Snorkfröken sitter i själva handtagsmaterialet i stället för att vara tryckt på ytan. Bladen i rostfritt stål hålls ihop av en skruv som går att dra åt, och saxen tål diskmaskin.',
+    specs: [
+      '13 cm',
+      'Rostfritt stål, hårdhet HRC 57',
+      'Tål diskmaskin',
+      'Rundade, utformade för barn',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Spetsar'],
   },
   'rento-tar-sauna-soap': {
     name: 'Rento tjärbastutvål 150 g',
@@ -641,23 +649,36 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specs: ['36 g', 'Xylitol. Bär finska Tandläkarförbundets märke'],
     specLabels: [undefined, 'Sötningsmedel'],
   },
-  'leijona-tar-liquorice': {
-    name: 'Leijona tjärlakritspastiller 32 g',
+  'sk-sisu-kaamos-salty-liquorice': {
+    name: 'Sisu Kaamos saltlakritspastiller 80 g',
     description:
-      'Lakrits smaksatt med tjära, tillverkad sedan 1933. Tjära är en finsk smak som hamnar i godis, bastutvål och till och med glass, och det här är det billigaste sättet att prova den.',
-    specs: ['32 g'],
+      'Mjuka Sisu-pastiller med kraftig smak av lakrits och salmiak, den salta lakrits som man i Finland smaksätter med ammoniumklorid. Kaamos är det finska ordet för polarnatten, veckorna längst i norr då solen inte stiger över horisonten.',
+    specs: [
+      '80 g',
+      'Energi 1160 kJ / 277 kcal, fett 0,6 g varav mättat 0,2 g, kolhydrat 52 g varav sockerarter 45 g, protein 1,2 g, salt 5,5 g',
+      'Cloetta Suomi Oy, PL 406, 20101 Turku',
+    ],
+    specLabels: [undefined, 'Näringsvärde per 100 g', 'Marknadsförs av'],
   },
-  'fazer-hazelnut-chocolate': {
-    name: 'Karl Fazer mjölkchoklad med hela hasselnötter 200 g',
+  'sk-karl-fazer-hazelnut-crunch-bar': {
+    name: 'Karl Fazer mjölkchoklad med hackade hasselnötter 180 g',
     description:
-      'Den blå kakan med hela hasselnötter i mjölkchoklad. Fazer har använt samma blå omslag sedan 1922, och det är därför den är den finnar tar med sig utomlands.',
-    specs: ['200 g'],
+      'Mjölkchokladen Fazers Blå, som Fazer har gjort sedan 1922, här med hackade hasselnötter genom hela kakan. Mjölkchokladen innehåller minst 30 procent kakao, och Fazer köper sin kakao via programmet Fazer Cocoa Vision.',
+    specs: [
+      '180 g',
+      'Energi 2387 kJ / 566 kcal, fett 38 g varav mättat 19 g, kolhydrat 46 g varav sockerarter 45 g, protein 10 g, salt 0,28 g',
+    ],
+    specLabels: [undefined, 'Näringsvärde per 100 g'],
   },
-  'fazer-light-milk-chocolate': {
-    name: 'Karl Fazer ljus mjölkchoklad 180 g',
+  'sk-karl-fazer-milk-chocolate-bar': {
+    name: 'Karl Fazer mjölkchoklad 180 g, Fazers Blå',
     description:
-      'En ljusare och mildare version av den blå kakan. Om klassikern är för söt för dig är det här den att ta i stället.',
-    specs: ['180 g'],
+      'Kakan som finnarna kallar Fazerin Sininen, Fazers Blå: mjölkchoklad gjord på äkta mjölk sedan 1922, i det blå omslaget med Karl Fazers namnteckning i guld. Fazer köper sin kakao via programmet Fazer Cocoa Vision.',
+    specs: [
+      '180 g',
+      'Energi 2260 kJ / 550 kcal, fett 33 g varav mättat 21 g, kolhydrat 49 g varav sockerarter 48 g, protein 11 g, salt 0,35 g',
+    ],
+    specLabels: [undefined, 'Näringsvärde per 100 g'],
   },
   'fazer-fazerina': {
     name: 'Fazer Fazerina apelsintryffelkaka 99 g',
@@ -973,11 +994,18 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specs: ['100 g', 'Sjud som långsamt bryggt te'],
     specLabels: [undefined, 'Användning'],
   },
-  'puhdistamo-instant-chaga': {
-    name: 'Puhdistamo Instant chagaextraktpulver 28 g',
+  'rj-puhdistamo-chaga-extract': {
+    name: 'Puhdistamo chagaextrakt 50 ml',
     description:
-      'Chaga som löser sig direkt i hett vatten utan sjudning. Burken på 28 gram ryms i vilket bagage som helst och klarar resan bättre än en påse bitar.',
-    specs: ['28 g'],
+      'Ett dubbelextrakt av vild chaga som Puhdistamos utbildade plockare samlar för hand, mest i finska Lappland. Både vatten och etanol används vid extraktionen, och extraktet är sex gånger koncentrerat. Tillverkarens dos är 15 droppar två gånger om dagen, så flaskan räcker till ungefär 65 användningar. Enligt förpackningen får chaga inte användas samtidigt med antibiotika eller blodförtunnande läkemedel.',
+    specs: [
+      '50 ml',
+      'Vild chaga (Inonotus obliquus), handplockad mest i finska Lappland',
+      'Dubbelextraktion med vatten och etanol, 6 gånger koncentrerad',
+      '15 droppar två gånger om dagen, ungefär 65 användningar per flaska',
+      'Får inte användas samtidigt med antibiotika, blodförtunnande läkemedel, penicillin eller intravenös glukos. Rekommenderas inte för personer som är allergiska mot svamp',
+    ],
+    specLabels: [undefined, undefined, 'Extraktion', 'Dosering', 'Varning'],
   },
   'puhdistamo-conifer-extract': {
     name: 'Puhdistamo Barrträdsextrakt 50 ml',
@@ -1156,15 +1184,16 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Håller varmt'],
   },
-  'nb-little-my-neckpillow': {
-    name: 'Lilla My-nackkudde',
+  'nb-moomin-adventure-neckpillow': {
+    name: 'Moomin Adventure nackkudde',
     description:
-      'Memoryskum under ett mjukt överdrag, för nattåget Helsingfors–Rovaniemi eller hemflyget. Så liten att den går att fästa på väskan, vilket är den enda sortens resekudde någon faktiskt behåller.',
+      'En nackkudde med superlent överdrag i petrolblått, med tryck av mumintrollen på campingtur bland sina tält. Den passar på nattåget till Rovaniemi eller på flyget hem.',
     specs: [
-      'Memoryskum, mjukt överdrag',
-      'Officiell Moominprodukt',
+      'Superlent överdrag',
+      'Petrol och flerfärgad',
+      'Officiell Muminprodukt',
     ],
-    specLabels: [undefined, 'Licens'],
+    specLabels: [undefined, undefined, 'Licens'],
   },
   'nb-moomintroll-love-cushion': {
     name: 'Moomintrollet Love-kudde',
@@ -1433,14 +1462,17 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       '60 % bomull, 33 % polyester, 4 % nylon, 2 % elastan, 1 % elastodien',
     ],
   },
-  'nb-hattifatteners-retro-socks': {
-    name: 'Hattifnattar retrostrumpor, dam',
+  'nb-hattifatteners-celebration-socks': {
+    name: 'Hattifnattar Celebration sportstrumpor, dam',
     description:
-      'Strumpor i retrostil med hattifnattarna, EU 36 till 42, 67 procent bomull. Stretchiga nog att en storlek passar de flesta, och det första en Muminläsare plockar upp när strumplådan står öppen.',
+      'Muminstrumpor från Nordicbuddies där hattifnattarna skålar, EU 36 till 42. De är gjorda för att röra sig i: kompression för bättre passform, andningsbart material, tjockare sula och ankelskydd.',
     specs: [
       'EU 36-42',
       '67 % bomull, 25 % polyester, 4 % elastodien, 3 % nylon, 1 % elastan',
+      'Kompression för bättre passform, andningsbart material, tjockare sula, ankelskydd',
+      'Officiell Muminprodukt',
     ],
+    specLabels: [undefined, undefined, 'Egenskaper', 'Licens'],
   },
   'sk-suomi-propeller-cap': {
     name: 'Suomi supporterkeps med propeller',
@@ -1675,16 +1707,17 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       '100 % finskt blåbär, torkat helt med saften',
     ],
   },
-  'rj-poikain-parhaat-blueberry-lemonade': {
-    name: 'Poikain Parhaat blåbärslemonad 0,33 l',
+  'rj-kaino-blackcurrant-leaf-sparkling-075': {
+    name: 'KAINO Drinks svartvinbärsblad ekologisk mousserande dryck 0,75 l',
     description:
-      'Ekologisk blåbärslemonad gjord i Vehmainen, Tammerfors, av riktiga råvaror utan konstgjorda aromer eller färgämnen, flaska på 0,33 liter. Läsken att ställa bredvid salmiaken på ett finskt provsmakningsbord.',
+      'En alkoholfri mousserande dryck som får sin smak från finska ekologiska svartvinbärsblad, i en flaska på 0,75 liter för skålen. KAINO Drinks gör den i Vehmainen i Tammerfors utan konstgjorda smak- och färgämnen.',
     specs: [
-      '0,33 l',
-      'Tillverkad i Vehmainen, Tammerfors',
-      'Ekologisk, inga konstgjorda aromer eller färgämnen',
+      '0,75 l',
+      'Tillverkad i Vehmainen, Tammerfors, Finland',
+      'Ekologisk (EU:s ekologiska logotyp), vegansk, alkoholfri',
+      'I priset ingår 0,10 € i pant',
     ],
-    specLabels: [undefined, undefined, 'Tillsatser'],
+    specLabels: [undefined, undefined, 'Märkning', 'Pant'],
   },
   'rj-nordic-koivu-birch-sap': {
     name: 'Nordic Koivu björksav 500 ml',
@@ -1803,16 +1836,16 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Formgivning'],
   },
-  'sk-moomin-chocolate-chip-biscuit-tin': {
-    name: 'Mumin chokladkakor i plåtburk 200 g',
+  'sk-karl-fazer-blueberry-truffle-chocolates': {
+    name: 'Karl Fazer Blueberry Truffle mjölkchokladpraliner 250 g',
     description:
-      'Små chokladkakor, 200 gram, i en Muminburk som överlever kakorna som förvaringsburk. Chokladbitarna utgör 16 procent av kakan och innehåller minst 40 procent kakaotorrsubstans.',
+      'En ask på 250 gram med inslagna Karl Fazer-praliner i mjölkchoklad, med en mjuk tryffelfyllning som innehåller bitar av torkade blåbär och blåbärsarom. Asken är färdig att ge bort som den är.',
     specs: [
-      '200 g',
-      'Chokladbitar 16 %, i chokladen minst 40 % kakaotorrsubstans',
-      'Samlarburk, kan användas som förvaringsburk',
+      '250 g',
+      'Inslagna mjölkchokladpraliner med blåbärstryffelfyllning',
+      'Energi 2281 kJ / 547 kcal, fett 33 g varav mättat 19 g, kolhydrat 53 g varav sockerarter 52 g, protein 8,2 g, salt 0,23 g',
     ],
-    specLabels: [undefined, undefined, 'Förpackning'],
+    specLabels: [undefined, undefined, 'Näringsvärde per 100 g'],
   },
   'sk-paulig-cafe-new-york-beans': {
     name: 'Paulig Café New York kaffebönor 450 g',
@@ -1979,17 +2012,17 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Strömförsörjning', 'Funktioner', 'Användning', 'Illustration'],
   },
-  'arabia-moomin-plates-winter-night': {
-    name: 'Arabia Mumintallrikar 19 cm, Kontor & Vinternatt, 2 st',
+  'arabia-moomin-friends-forever-mug-plate': {
+    name: 'Arabia Mumin Friends Forever mugg och tallrik, 2 delar',
     description:
-      'Två Mumintallrikar på 19 cm i vitt vitroporslin från Arabia, Kontor och Vinternatt, gjorda för att passa till muggarna som släppts tidigare. Bilden Kontor dök först upp på en Muminmugg från Arabia 1996 och bygger på serier där skrivande, tecknande och målande återkommer. Vinternatt återger bilden från en mugg från 2006, där Mumintrollet sitter på ett broräcke i en scen ur Tove Janssons Trollvinter från 1957.',
+      'En mugg och en tallrik från Moomin Arabia i vitroporslin, båda med Tove Janssons illustrationer på temat vänskap. Tillsammans blir de en frukostservis för en person, eller en present till en vän.',
     specs: [
-      'Diameter 19,4 cm, höjd 2,8 cm',
+      '1 mugg och 1 tallrik',
       'Vitroporslin',
-      '2 tallrikar, Kontor och Vinternatt',
-      'Tål diskmaskin, mikrovågsugn och ugn',
+      'Flerfärgad',
+      '0,83 kg brutto',
       'Tove Jansson',
-      '566802-01, EAN 6411801011432',
+      '700063-01, EAN 6411801028676',
     ],
     specLabels: [undefined, undefined, undefined, undefined, 'Illustration', 'Artikelnummer och EAN'],
   },
@@ -2154,14 +2187,14 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, 'Allergener', 'Näringsvärde per 100 g'],
   },
-  'sk-halva-salmiakki-calendar': {
-    name: 'Halva adventskalender med salmiak 200 g',
+  'sk-halva-vanhat-autot-advent-calendar': {
+    name: 'Halva Vanhat Autot adventskalender 200 g',
     description:
-      'En adventskalender från Halva med 200 g salmiak, finsk saltlakrits, ur Halvas eget sortiment. Bakom luckorna finns Vanhat Autot, salmiakfiskar, salta dödskallar, Pommix, salmiakhjärtan, salmiaksvärd, Salmiakkiruutu-rutor och hård Jauhix-salmiak.',
+      'En adventskalender från den finska godistillverkaren Halva, med 200 g salmiak- och fruktgodis bakom luckorna och Halvas Vanhat Autot (Gamla bilar) som tema.',
     specs: [
       '200 g',
-      'Vanhat Autot-salmiak, salmiakfisk, salt dödskalle, Pommix-salmiak, salmiakhjärta, salmiaksvärd, Salmiakkiruutu, Jauhix-salmiak',
-      'Energi 1406 kJ / 331 kcal, fett 0,5 g varav mättat 0,1 g, kolhydrat 80 g varav sockerarter 59 g, protein 2,7 g, salt 0,03 g',
+      'Salmiak- och fruktgodis',
+      'Energi 1370 kJ / 322 kcal, fett 0,5 g varav mättat 0,2 g, kolhydrat 77 g varav sockerarter 57 g, protein 3 g, salt 0,37 g',
     ],
     specLabels: [undefined, undefined, 'Näringsvärde per 100 g'],
   },
@@ -2243,13 +2276,13 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
   },
   'north-outdoor-polku-neck-tube': {
-    name: 'North Outdoor Polku tubhalsduk i merino, kaffe',
+    name: 'North Outdoor Polku tubhalsduk i merino, mandel',
     description:
-      'En grov tubhalsduk i 100 procent mulesingfri merinoull, stickad i tät 1x1-ribbstickning. Den är tillräckligt hög för att bäras som halsduk, dras upp som huva eller dras över ansiktet. En storlek, i färgen kaffe.',
+      'En grov tubhalsduk i 100 procent mulesingfri merinoull, stickad i tät 1x1-ribbstickning. Den är tillräckligt hög för att bäras som halsduk, dras upp som huva eller dras över ansiktet. En storlek, i färgen mandel.',
     specs: [
       '100 % merinoull, mulesingfri, 1x1-ribbstickning',
       'En storlek',
-      'Kaffe',
+      'Mandel',
       'Halsduk, huva eller ansiktsskydd',
     ],
     specLabels: [undefined, undefined, undefined, 'Användning'],

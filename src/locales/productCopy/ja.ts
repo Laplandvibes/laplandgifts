@@ -354,17 +354,16 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, '100 g あたりの栄養成分', '販売者'],
   },
-  'meritalo-tyrnihillo': {
-    name: 'メリタロ フィンランド産シーバックソーンジャム 310 g',
+  'sk-finnish-flavours-lingonberry-jam': {
+    name: 'Finnish Flavours フィンランド産リンゴンベリージャム 400 g',
     description:
-      '100 グラムあたり 37 グラムの果実を使ったシーバックソーンのジャム。ラップランドではなくフィンランド南西部サロのメリタロ家の農場で、フィンランド産のシーバックソーンから炊いています。甘いというより酸味が立つので、パンケーキよりチーズの横で生きます。',
+      'フィンランドの森で摘んだベリーを使い、フィンランドで作ったリンゴンベリージャムです。瓶の中身の 45 パーセントがリンゴンベリーです。フィンランドではジビエの煮込みやミートボール、ほうれん草のパンケーキに添えるジャムで、トナカイの干し肉一袋と一緒にひとつのギフトにまとめられます。',
     specs: [
-      '310 g',
-      '果実はフィンランド産。フィンランド南西部サロのメリタロの農場で家族経営の会社が製造',
-      'エネルギー 781 kJ / 187 kcal、脂質 1.9 g うち飽和脂肪酸 0.3 g、炭水化物 41 g うち糖類 41 g、たんぱく質 0.3 g、食塩相当量 0.01 g',
-      'Marjajaloste Meritalo Oy, 25610 Ylönkylä',
+      '400 g',
+      'フィンランド産ベリー 100 % を使いフィンランドで製造',
+      'エネルギー 633 kJ / 151 kcal、脂質 0.2 g うち飽和脂肪酸 0 g、炭水化物 39 g うち糖類 39 g、たんぱく質 0.2 g、食塩相当量 0.01 g',
     ],
-    specLabels: [undefined, undefined, '100 g あたりの栄養成分', '販売者'],
+    specLabels: [undefined, undefined, '100 g あたりの栄養成分'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'トナカイ干し肉 オリジナル 200 g',
@@ -463,14 +462,17 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, undefined, '摂取量の目安', '100 g あたりの栄養成分'],
   },
-  'arctic-warriors-roseroot-elixir': {
-    name: 'Arctic Warriors イワベンケイのエリキシル 100 ml',
+  'rj-arctic-warriors-angelica-elixir': {
+    name: 'Arctic Warriors アンジェリカルート エリキシル 100 ml',
     description:
-      'イワベンケイはラップランドの山の湿った沢べりや岩肌に生えます。Arctic Warriors はこれをイラクサとともに植物性グリセリンに抽出しました。小さじ 1 杯を紅茶やポリッジ、ヨーグルトに。',
+      'フィンランド語で väinönputki と呼ばれるアンジェリカの根から作ったエリキシルで、フィンランドの会社 Arctic Warriors の製品です。Ruohonjuuri ではフィンランド製、ヴィーガン、グルテンフリーと表示されていて、メーカーの目安量は 1 日に小さじ 1 杯です。',
     specs: [
       '100 ml',
-      'イワベンケイとイラクサ',
+      'アンジェリカの根のエリキシル（Angelica archangelica）',
+      'フィンランド、Avainlippu（キーフラッグ）マーク',
+      '1 日に小さじ 1 杯',
     ],
+    specLabels: [undefined, undefined, undefined, '摂取量の目安'],
   },
   'omega7-sea-buckthorn-olive-oil': {
     name: 'Omega7 SBA24 シーバックソーンとオリーブのオイル 150 ml',
@@ -518,11 +520,17 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specs: ['トゥーリッキ・ピエティラ、1990 年代', '手作りの陶製、専用の箱入り'],
     specLabels: ['デザイン', '製法'],
   },
-  'fiskars-moominpappa-scissors': {
-    name: 'フィスカース ムーミンパパ 万能はさみ',
+  'sk-fiskars-snorkmaiden-kids-scissors': {
+    name: 'Fiskars スノークのおじょうさん 子ども用はさみ 13 cm',
     description:
-      'オレンジ色の柄のフィスカースのはさみは、他のどんな道具よりも多くのフィンランドの台所の引き出しに入っています。これは 21 cm のステンレス製で、柄にムーミンパパが描かれています。',
-    specs: ['21 cm', 'ステンレス鋼'],
+      'Fiskars のムーミンシリーズの子ども用はさみで、長さ 13 cm、先端は丸くなっています。スノークのおじょうさんの絵は表面に印刷したものではなく、持ち手の素材そのものに埋め込まれています。ステンレスの刃は締め直せるねじで留めてあり、はさみは食洗機で洗えます。',
+    specs: [
+      '13 cm',
+      'ステンレス、硬度 HRC 57',
+      '食洗機対応',
+      '丸型、子ども向けの設計',
+    ],
+    specLabels: [undefined, undefined, undefined, '刃先'],
   },
   'rento-tar-sauna-soap': {
     name: 'Rento タールのサウナソープ 150 g',
@@ -641,23 +649,36 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specs: ['36 g', 'キシリトール。フィンランド歯科医師会のマーク付き'],
     specLabels: [undefined, '甘味料'],
   },
-  'leijona-tar-liquorice': {
-    name: 'レイヨナ タールリコリス 錠菓 32 g',
+  'sk-sisu-kaamos-salty-liquorice': {
+    name: 'Sisu Kaamos 塩味リコリス パスティル 80 g',
     description:
-      '松のタールで香りをつけたリコリス、1933 年から作られています。タールはフィンランドの味で、菓子にもサウナの石けんにもアイスクリームにまで入ります。いちばん安く試せるのがこれです。',
-    specs: ['32 g'],
+      'リコリスとサルミアッキの強い味がする、やわらかな Sisu のパスティルです。サルミアッキはフィンランドの塩味リコリスで、塩化アンモニウムで味をつけています。Kaamos はフィンランド語で極夜のこと。北の果てで太陽が地平線の上に昇らない数週間を指します。',
+    specs: [
+      '80 g',
+      'エネルギー 1160 kJ / 277 kcal、脂質 0.6 g うち飽和脂肪酸 0.2 g、炭水化物 52 g うち糖類 45 g、たんぱく質 1.2 g、食塩相当量 5.5 g',
+      'Cloetta Suomi Oy, PL 406, 20101 Turku',
+    ],
+    specLabels: [undefined, '100 g あたりの栄養成分', '販売者'],
   },
-  'fazer-hazelnut-chocolate': {
-    name: 'カール・ファッツェル ヘーゼルナッツ丸ごとミルクチョコレート 200 g',
+  'sk-karl-fazer-hazelnut-crunch-bar': {
+    name: 'Karl Fazer ヘーゼルナッツクランチ ミルクチョコレート 180 g',
     description:
-      'ミルクチョコレートにヘーゼルナッツを丸ごと入れた青い板チョコ。ファッツェルは 1922 年から同じ青い包み紙を使っており、だからこそフィンランドの人が海外へ持って行くのはこれです。',
-    specs: ['200 g'],
+      '1922 年から作られている Fazer Blue のミルクチョコレートに、刻んだヘーゼルナッツを板全体に混ぜ込みました。ミルクチョコレートのカカオ分は 30 パーセント以上で、Fazer はカカオを Fazer Cocoa Vision プログラムのもとで調達しています。',
+    specs: [
+      '180 g',
+      'エネルギー 2387 kJ / 566 kcal、脂質 38 g うち飽和脂肪酸 19 g、炭水化物 46 g うち糖類 45 g、たんぱく質 10 g、食塩相当量 0.28 g',
+    ],
+    specLabels: [undefined, '100 g あたりの栄養成分'],
   },
-  'fazer-light-milk-chocolate': {
-    name: 'カール・ファッツェル ライトミルクチョコレート 180 g',
+  'sk-karl-fazer-milk-chocolate-bar': {
+    name: 'Karl Fazer ミルクチョコレート 180 g、Fazer Blue',
     description:
-      '青い板チョコを軽くまろやかにした版。定番が甘すぎると感じるなら、こちらを選んでください。',
-    specs: ['180 g'],
+      'フィンランドの人が Fazerin Sininen と呼ぶ板チョコ、Fazer Blue です。1922 年から本物の牛乳で作られているミルクチョコレートで、青い包み紙には Karl Fazer の金色のサインが入っています。Fazer はカカオを Fazer Cocoa Vision プログラムのもとで調達しています。',
+    specs: [
+      '180 g',
+      'エネルギー 2260 kJ / 550 kcal、脂質 33 g うち飽和脂肪酸 21 g、炭水化物 49 g うち糖類 48 g、たんぱく質 11 g、食塩相当量 0.35 g',
+    ],
+    specLabels: [undefined, '100 g あたりの栄養成分'],
   },
   'fazer-fazerina': {
     name: 'ファッツェル ファッツェリーナ オレンジトリュフ 99 g',
@@ -973,11 +994,18 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specs: ['100 g', '弱火でじっくり煮出してお茶に'],
     specLabels: [undefined, '使い方'],
   },
-  'puhdistamo-instant-chaga': {
-    name: 'Puhdistamo インスタントチャーガエキス粉末 28 g',
+  'rj-puhdistamo-chaga-extract': {
+    name: 'Puhdistamo チャーガエキス 50 ml',
     description:
-      '煮出さずにお湯に直接溶けるチャーガ。28 gの瓶はどんな荷物にも収まり、塊の袋より旅に強いです。',
-    specs: ['28 g'],
+      'Puhdistamo の訓練を受けた採取者が主にフィンランドのラップランドで手摘みする野生のチャーガを、ダブル抽出したエキスです。抽出には水とエタノールの両方を使い、6 倍に濃縮しています。メーカーの目安量は 15 滴を 1 日 2 回で、1 本で約 65 回分になります。ラベルには、チャーガを抗生物質や抗凝固薬と一緒に使用してはいけないと書かれています。',
+    specs: [
+      '50 ml',
+      '野生のチャーガ（Inonotus obliquus）、主にフィンランドのラップランドで手摘み',
+      '水とエタノールによるダブル抽出、6 倍濃縮',
+      '15 滴を 1 日 2 回、1 本で約 65 回分',
+      '抗生物質、抗凝固薬、ペニシリン、静脈内投与のブドウ糖と一緒に使用してはいけません。きのこアレルギーのある方にはおすすめしません',
+    ],
+    specLabels: [undefined, undefined, '抽出', '摂取量の目安', '注意'],
   },
   'puhdistamo-conifer-extract': {
     name: 'Puhdistamo 針葉樹エキス 50 ml',
@@ -1156,15 +1184,16 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '保温'],
   },
-  'nb-little-my-neckpillow': {
-    name: 'リトルミイ ネックピロー',
+  'nb-moomin-adventure-neckpillow': {
+    name: 'ムーミン Adventure ネックピロー',
     description:
-      'やわらかいカバーの下は低反発フォーム。ヘルシンキ発ロヴァニエミ行きの夜行列車や、帰りの機内のためのものです。バッグに留められる大きさで、実際に使い続けられる旅行枕はこの手のものだけです。',
+      'ペトロールブルーのとてもやわらかなカバーに、テントのあいだでキャンプをするムーミンたちをプリントしたネックピローです。ロヴァニエミ行きの夜行列車や、帰りの飛行機で使えます。',
     specs: [
-      '低反発フォーム、やわらかいカバー',
+      'とてもやわらかなカバー',
+      'ペトロールとマルチカラー',
       'ムーミン公式製品',
     ],
-    specLabels: [undefined, 'ライセンス'],
+    specLabels: [undefined, undefined, 'ライセンス'],
   },
   'nb-moomintroll-love-cushion': {
     name: 'ムーミン Love クッション',
@@ -1433,14 +1462,17 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'コットン60 %、ポリエステル33 %、ナイロン4 %、ポリウレタン2 %、エラストジエン1 %',
     ],
   },
-  'nb-hattifatteners-retro-socks': {
-    name: 'ニョロニョロ レトロソックス レディース',
+  'nb-hattifatteners-celebration-socks': {
+    name: 'ニョロニョロ Celebration レディース アクティブソックス',
     description:
-      'ニョロニョロのレトロ調ソックス、EU 36から42、コットン67パーセント。ほとんどの人に合う伸縮性があり、靴下の引き出しが開いていればムーミンの読者が最初に手に取る一足です。',
+      'ニョロニョロたちが乾杯している柄の、Nordicbuddies のムーミンソックスです。サイズは EU 36〜42。動くことを考えて作られていて、フィット感を高めるコンプレッション、通気性のある素材、厚めの底、くるぶしガードを備えています。',
     specs: [
       'EU 36-42',
-      'コットン67 %、ポリエステル25 %、エラストジエン4 %、ナイロン3 %、ポリウレタン1 %',
+      '綿 67 %、ポリエステル 25 %、エラストジエン 4 %、ナイロン 3 %、ポリウレタン 1 %',
+      'フィット感を高めるコンプレッション、通気性のある素材、厚めの底、くるぶしガード',
+      'ムーミン公式製品',
     ],
+    specLabels: [undefined, undefined, '仕様', 'ライセンス'],
   },
   'sk-suomi-propeller-cap': {
     name: 'Suomi 応援プロペラキャップ',
@@ -1675,16 +1707,17 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'フィンランド産ブルーベリー100 %、果汁ごとまるごと乾燥',
     ],
   },
-  'rj-poikain-parhaat-blueberry-lemonade': {
-    name: 'Poikain Parhaat ブルーベリーレモネード 0.33 l',
+  'rj-kaino-blackcurrant-leaf-sparkling-075': {
+    name: 'KAINO Drinks カシスの葉 オーガニックスパークリング 0.75 l',
     description:
-      'タンペレのヴェフマイネンで、人工香料や着色料を使わず本物の材料で作ったオーガニックのブルーベリーレモネード、0.33リットル瓶。フィンランドの試食テーブルでサルミアッキの隣に置く飲み物です。',
+      'フィンランド産オーガニックのカシスの葉で風味をつけたノンアルコールのスパークリングドリンクで、乾杯にちょうどいい 0.75 リットル瓶です。KAINO Drinks がタンペレのヴェフマイネンで、人工の香料や着色料を使わずに作っています。',
     specs: [
-      '0.33 l',
-      'タンペレのヴェフマイネン製',
-      'オーガニック、人工香料・着色料不使用',
+      '0.75 l',
+      'フィンランド、タンペレのヴェフマイネン製',
+      'オーガニック（EU オーガニックロゴ）、ヴィーガン、ノンアルコール',
+      '価格にはボトルのデポジット 0.10 ユーロが含まれます',
     ],
-    specLabels: [undefined, undefined, '添加物'],
+    specLabels: [undefined, undefined, '表示', 'ボトルデポジット'],
   },
   'rj-nordic-koivu-birch-sap': {
     name: 'Nordic Koivu 白樺の樹液 500 ml',
@@ -1803,16 +1836,16 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'デザイン'],
   },
-  'sk-moomin-chocolate-chip-biscuit-tin': {
-    name: 'ムーミン チョコチップビスケット 缶入り 200 g',
+  'sk-karl-fazer-blueberry-truffle-chocolates': {
+    name: 'Karl Fazer Blueberry Truffle ミルクチョコレート 250 g',
     description:
-      'ミニチョコチップビスケット200グラムをムーミンの缶に詰めました。缶はビスケットの後も収納缶として残ります。チョコレート片はビスケットの16パーセントで、カカオ固形分は40パーセント以上です。',
+      '個包装の Karl Fazer ミルクチョコレートが 250 グラム入った箱です。やわらかなトリュフのフィリングに、乾燥ブルーベリーのかけらとブルーベリーの香料が入っています。箱のままで贈り物になります。',
     specs: [
-      '200 g',
-      'チョコレート片16 %、チョコレートのカカオ固形分40 %以上',
-      'コレクション缶、収納缶として再利用可',
+      '250 g',
+      'ブルーベリートリュフ入りの個包装ミルクチョコレート',
+      'エネルギー 2281 kJ / 547 kcal、脂質 33 g うち飽和脂肪酸 19 g、炭水化物 53 g うち糖類 52 g、たんぱく質 8.2 g、食塩相当量 0.23 g',
     ],
-    specLabels: [undefined, undefined, 'パッケージ'],
+    specLabels: [undefined, undefined, '100 g あたりの栄養成分'],
   },
   'sk-paulig-cafe-new-york-beans': {
     name: 'Paulig Café New York コーヒー豆 450 g',
@@ -1979,17 +2012,17 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '電源', '機能', '使用場所', '原画'],
   },
-  'arabia-moomin-plates-winter-night': {
-    name: 'Arabia ムーミンプレート オフィス＆ウィンターナイト',
+  'arabia-moomin-friends-forever-mug-plate': {
+    name: 'Arabia ムーミン Friends Forever マグ＆プレート 2 点セット',
     description:
-      'Arabia の白いヴィトロポーセリン製ムーミンプレート 19 cm の二枚組で、絵柄は「オフィス」と「ウィンターナイト」です。どちらも先に発売されたマグとそろえて使えるように作られています。「オフィス」の絵は 1996 年に Arabia のムーミンマグに初めて登場し、書くこと、絵を描くこと、色を塗ることが繰り返し出てくるコミックをもとにしています。「ウィンターナイト」は 2006 年のマグの絵を再び使ったもので、トーベ・ヤンソンが 1957 年に発表した『ムーミン谷の冬』の一場面、橋の欄干に座るムーミントロールが描かれています。',
+      'Moomin Arabia のヴィトロポーセリン製のムーミンマグとプレートで、どちらにも友情をテーマにしたトーベ・ヤンソンの絵が描かれています。二つ合わせれば一人分の朝食セットに、友だちへの贈り物にもなります。',
     specs: [
-      '直径 19.4 cm、高さ 2.8 cm',
+      'マグ 1 個とプレート 1 枚',
       'ヴィトロポーセリン',
-      'プレート 2 枚、オフィスとウィンターナイト',
-      '食器洗い機、電子レンジ、オーブンに対応',
+      'マルチカラー',
+      '総重量 0.83 kg',
       'トーベ・ヤンソン',
-      '566802-01, EAN 6411801011432',
+      '700063-01, EAN 6411801028676',
     ],
     specLabels: [undefined, undefined, undefined, undefined, '原画', '品番と EAN'],
   },
@@ -2154,14 +2187,14 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, undefined, 'アレルゲン', '100 g あたりの栄養成分'],
   },
-  'sk-halva-salmiakki-calendar': {
-    name: 'Halva サルミアッキ アドベントカレンダー 200 g',
+  'sk-halva-vanhat-autot-advent-calendar': {
+    name: 'Halva Vanhat Autot アドベントカレンダー 200 g',
     description:
-      'Halva の自社製品から選んだサルミアッキ（フィンランドの塩味リコリス）が 200 g 入った、Halva のアドベントカレンダーです。扉の奥には、Vanhat Autot、サルミアッキの魚、塩味のどくろ、Pommix、サルミアッキのハート、サルミアッキの剣、四角い Salmiakkiruutu、ハードタイプの Jauhix サルミアッキが入っています。',
+      'フィンランドの菓子メーカー Halva のアドベントカレンダーで、扉の奥にサルミアッキとフルーツキャンディーが合わせて 200 g 入っています。テーマは同社の Vanhat Autot（「古い車」の意味）キャンディーです。',
     specs: [
       '200 g',
-      'Vanhat Autot サルミアッキ、サルミアッキの魚、塩味のどくろ、Pommix サルミアッキ、サルミアッキのハート、サルミアッキの剣、Salmiakkiruutu、Jauhix サルミアッキ',
-      'エネルギー 1406 kJ / 331 kcal、脂質 0.5 g うち飽和脂肪酸 0.1 g、炭水化物 80 g うち糖類 59 g、たんぱく質 2.7 g、食塩相当量 0.03 g',
+      'サルミアッキとフルーツキャンディー',
+      'エネルギー 1370 kJ / 322 kcal、脂質 0.5 g うち飽和脂肪酸 0.2 g、炭水化物 77 g うち糖類 57 g、たんぱく質 3 g、食塩相当量 0.37 g',
     ],
     specLabels: [undefined, undefined, '100 g あたりの栄養成分'],
   },
@@ -2243,13 +2276,13 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
   },
   'north-outdoor-polku-neck-tube': {
-    name: 'ノースアウトドア Polku メリノネックチューブ コーヒー',
+    name: 'ノースアウトドア Polku メリノネックチューブ アーモンド',
     description:
-      'ミュールシングフリーのメリノウール 100 パーセントを、目の詰まった 1x1 のゴム編みにした厚手のネックチューブです。スカーフとして巻くことも、引き上げてフードにすることも、顔を覆うこともできる高さがあります。ワンサイズ、色はコーヒーです。',
+      'ミュールシングフリーのメリノウール 100 パーセントを、目の詰まった 1x1 のゴム編みにした厚手のネックチューブです。スカーフとして巻くことも、引き上げてフードにすることも、顔を覆うこともできる高さがあります。ワンサイズ、色はアーモンドです。',
     specs: [
       'メリノウール 100 %、ミュールシングフリー、1x1 ゴム編み',
       'ワンサイズ',
-      'コーヒー',
+      'アーモンド',
       'スカーフ、フード、フェイスカバー',
     ],
     specLabels: [undefined, undefined, undefined, '使い方'],

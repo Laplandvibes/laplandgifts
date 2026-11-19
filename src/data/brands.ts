@@ -52,7 +52,6 @@ export const BRANDS: Brand[] = [
   { id: 'fazer', name: 'Fazer', founded: '1891', officialUrl: 'https://www.fazer.fi/' },
   { id: 'moomin', name: 'Moomin', founded: '1958', officialUrl: 'https://www.moomin.com/' },
   { id: 'wild-about-lapland', name: 'Wild About Lapland', founded: '', officialUrl: 'https://wildaboutlapland.com/' },
-  { id: 'meritalo', name: 'Meritalo', founded: '1995', officialUrl: 'https://meritalo.com/' },
   { id: 'nordqvist', name: 'Nordqvist', founded: '1979', officialUrl: 'https://nordqvist.fi/' },
   { id: 'puhdistamo', name: 'Puhdistamo', founded: '2009', officialUrl: 'https://www.puhdistamo.fi/' },
   { id: 'emendo', name: 'Emendo', founded: '1986', officialUrl: 'https://emendo.fi' },
@@ -74,7 +73,6 @@ export const BRANDS: Brand[] = [
   { id: 'novita', name: 'Novita', founded: '1928', officialUrl: 'https://novita.com/' },
   { id: 'mikebon', name: 'Mikebon', founded: '1994', officialUrl: 'https://www.mikebon.fi/' },
   { id: 'aromageddon', name: 'Aromageddon', founded: '2024', officialUrl: 'https://aromageddon.fi/' },
-  { id: 'leijona', name: 'Leijona', founded: '1933', officialUrl: 'https://www.cloetta.fi/brandit/leijona/' },
 ]
 
 const BY_ID = new Map(BRANDS.map((b) => [b.id, b]))
