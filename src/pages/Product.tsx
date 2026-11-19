@@ -22,6 +22,7 @@ import { lukupaiva } from '../lib/lukupaiva'
 import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
 import { productName, productDescription, specValue, specLabel } from '../locales/productCopy'
+import { sidoYhdysmerkki } from '../lib/nimiRivitys'
 
 /** Päähakuva: täysleveä kapealla, puoli ruudukkoa lg:stä ylöspäin. */
 const PRODUCT_SIZES = '(min-width: 1024px) 500px, 92vw'
@@ -150,7 +151,7 @@ export default function Product() {
               {/* Tuotenimi leipatekstifontilla: Bebas Neue on pelkkia versaaleja, ja
                   "MARTTIINI LAPINLEUKU 255" on kaupassa huonompi kuin sekakirjaimet.
                   Sama ratkaisu kuin tuotekortissa. */}
-              <h1 className="font-body text-3xl font-semibold leading-tight tracking-normal text-gray md:text-4xl">{name}</h1>
+              <h1 className="font-body text-3xl font-semibold leading-tight tracking-normal text-gray md:text-4xl">{sidoYhdysmerkki(name)}</h1>
               <p className="text-lg leading-relaxed text-gray/90">{description}</p>
 
               <div className="flex flex-wrap items-center gap-3">

@@ -34,6 +34,7 @@ import nordicnestPicks from '../shared/ads/data/nordicnestPicks'
 import nordicbuddiesRail from '../shared/ads/rails/nordicbuddies'
 import nordicbuddiesPicks from '../shared/ads/data/nordicbuddiesPicks'
 import { trackAffiliateClick } from '../lib/analytics'
+import { sidoYhdysmerkki } from '../lib/nimiRivitys'
 
 /**
  * Yksi komponentti palvelee kaikkia seitsemää kategoriaa: kategoria luetaan
@@ -355,7 +356,7 @@ export default function Category() {
                           to={to(`/theme/${shelfTheme}`)}
                           className="mx-auto mt-5 flex w-fit items-center gap-2 rounded-full border border-line bg-card px-5 py-2.5 font-body text-sm text-gray transition-colors hover:border-pink hover:text-pink lg:mx-0"
                         >
-                          {THEME_COPY[lang].seeAll[shelfTheme]}
+                          {sidoYhdysmerkki(THEME_COPY[lang].seeAll[shelfTheme])}
                           <ArrowRight className="h-4 w-4" aria-hidden="true" />
                         </Link>
                       )}

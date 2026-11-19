@@ -6,6 +6,7 @@ import type { ThemeId } from '../../data/themes'
 import { pickHighlights } from '../../data/sortProducts'
 import { useLocalePath, type Lang } from '../../i18n/useLang'
 import { THEME_COPY } from '../../locales/themeCopy'
+import { sidoYhdysmerkki } from '../../lib/nimiRivitys'
 
 /**
  * Kategoriasivun kärkeen nostettu teemapoiminta.
@@ -55,7 +56,7 @@ export default function ThemePicks({
         to={to(`/theme/${themeId}`)}
         className="mx-auto mt-5 flex w-fit items-center gap-2 rounded-full border border-line bg-card px-5 py-2.5 font-body text-sm text-gray transition-colors hover:border-pink hover:text-pink lg:mx-0"
       >
-        {tt.seeAll[themeId]}
+        {sidoYhdysmerkki(tt.seeAll[themeId])}
         <ArrowRight className="h-4 w-4" aria-hidden="true" />
       </Link>
     </section>

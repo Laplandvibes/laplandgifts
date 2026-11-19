@@ -11,6 +11,7 @@ import { imgSrcSet } from '../../lib/img'
 import { SHOP_COPY } from '../../locales/shopCopy'
 import { THEME_COPY } from '../../locales/themeCopy'
 import { productName, productDescription } from '../../locales/productCopy'
+import { sidoYhdysmerkki } from '../../lib/nimiRivitys'
 
 /** Nostokuva on puolet leveydestä työpöydällä, koko leveys kapealla. */
 const SHOT_SIZES = '(min-width: 768px) 380px, 88vw'
@@ -72,7 +73,7 @@ export default function BrandSpotlight({
             to={to(`/product/${product.slug}`)}
             className="font-body text-2xl font-semibold leading-tight text-gray hover:text-pink md:text-3xl"
           >
-            {name}
+            {sidoYhdysmerkki(name)}
           </Link>
           {blurb && <p className="text-sm leading-relaxed text-muted">{blurb}</p>}
           <div className="flex flex-wrap items-center gap-3">

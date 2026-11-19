@@ -12,6 +12,7 @@ import { mergeExcept } from '../../data/shipping'
 import { SHOP_COPY } from '../../locales/shopCopy'
 import ShippingBadge from './ShippingBadge'
 import { productName } from '../../locales/productCopy'
+import { sidoYhdysmerkki } from '../../lib/nimiRivitys'
 
 /**
  * Kuvapaikan leveys layoutin mukaan. Mitattu selaimesta: 2 palstaa < 768 px
@@ -92,7 +93,7 @@ export default function ProductCard({ product, lang }: { product: Product; lang:
             "MARTTIINI LAPINLEUKU 255", josta ei enää erota mikä on brändi ja
             mikä mallinumero. Nimi tulee siis leipätekstifontilla. */}
         <h3 className="font-body text-sm font-semibold leading-snug tracking-normal text-gray sm:text-base lg:text-lg">
-          {name}
+          {sidoYhdysmerkki(name)}
         </h3>
         <div className="mt-auto flex flex-col items-start gap-1.5 pt-1.5">
           {/* priceFrom saa valuutan tuotteelta (osa katalogista hinnoittelee
