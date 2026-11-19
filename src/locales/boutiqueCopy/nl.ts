@@ -37,10 +37,6 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Arctische kunst en design in het culturele centrum Korundi. Unieke geschenken en topproducten.',
     tags: ['Kunst', 'Design'],
   },
-  'shoppi-craft-design': {
-    description: 'Sieraden, accessoires en souvenirs van Finse ambachtslieden aan de voet van de Levi-piste.',
-    tags: ['Sieraden', 'Design'],
-  },
   'siida-shop': {
     description: 'Winkel van het Sami-museum: duodji-ambacht, sieraden en geschenken geïnspireerd op de Laplandse natuur.',
     tags: ['Duodji', 'Geschenken'],

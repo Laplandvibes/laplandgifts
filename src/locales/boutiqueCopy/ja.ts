@@ -37,10 +37,6 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Korundi文化センターで北極のアートとデザインを。世界に一つの贈り物と上質な商品。',
     tags: ['アート', 'デザイン'],
   },
-  'shoppi-craft-design': {
-    description: 'レヴィのゲレンデの麓で、フィンランドの職人による宝飾、アクセサリー、北欧グッズを。',
-    tags: ['ジュエリー', 'デザイン'],
-  },
   'siida-shop': {
     description: 'サーミ博物館のショップ：ドゥオッジの工芸品、ジュエリー、ラップランドの自然をモチーフにしたギフト。',
     tags: ['ドゥオッジ', 'ギフト'],

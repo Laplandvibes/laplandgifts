@@ -37,10 +37,6 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Arktista taidetta ja designia Korundi-kulttuuritalossa. Uniikkeja lahjoja ja korkeatasoisia tuotteita.',
     tags: ['Taide', 'Design'],
   },
-  'shoppi-craft-design': {
-    description: 'Suomalaisten käsityöläisten koruja, asusteita ja matkamuistoja Levin rinteen juurella.',
-    tags: ['Korut', 'Design'],
-  },
   'siida-shop': {
     description: 'Saamelaismuseon myymälä: duodji-käsitöitä, koruja ja Lapin luontoon liittyviä lahjoja.',
     tags: ['Duodji', 'Lahjat'],

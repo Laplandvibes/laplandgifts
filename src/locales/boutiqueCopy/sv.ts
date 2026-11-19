@@ -37,10 +37,6 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Arktisk konst och design i kulturhuset Korundi. Unika presenter och exklusiva produkter.',
     tags: ['Konst', 'Design'],
   },
-  'shoppi-craft-design': {
-    description: 'Smycken, accessoarer och souvenirer av finska hantverkare vid foten av Levibacken.',
-    tags: ['Smycken', 'Design'],
-  },
   'siida-shop': {
     description: 'Samemuseets butik: duodji-hantverk, smycken och presenter inspirerade av Lapplands natur.',
     tags: ['Duodji', 'Presenter'],

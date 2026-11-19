@@ -37,10 +37,6 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Arktische Kunst und Design im Kulturhaus Korundi. Einzigartige Geschenke und hochwertige Produkte.',
     tags: ['Kunst', 'Design'],
   },
-  'shoppi-craft-design': {
-    description: 'Schmuck, Accessoires und Souvenirs finnischer Handwerker am Fuße der Piste in Levi.',
-    tags: ['Schmuck', 'Design'],
-  },
   'siida-shop': {
     description: 'Der Museumsshop des Sámi-Museums: Duodji-Handwerk, Schmuck und Geschenke mit Lappland-Bezug.',
     tags: ['Duodji', 'Geschenke'],

@@ -37,10 +37,6 @@ const copy: Record<string, BoutiqueCopy> = {
     description: '在 Korundi 文化中心欣赏并选购北极艺术与设计。独特礼物与高端商品。',
     tags: ['艺术', '设计'],
   },
-  'shoppi-craft-design': {
-    description: '位于莱维滑雪坡脚下，芬兰工匠制作的饰品、配饰与纪念品。',
-    tags: ['饰品', '设计'],
-  },
   'siida-shop': {
     description: '萨米博物馆商店：杜奥吉(duodji)手工艺品、饰品，以及以拉普兰自然为灵感的礼物。',
     tags: ['杜奥德吉', '礼物'],

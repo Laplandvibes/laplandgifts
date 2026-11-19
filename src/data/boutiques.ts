@@ -128,19 +128,9 @@ export const BOUTIQUES: Boutique[] = [
     url: 'https://korundi.fi/fi/kavijalle/korundi-shop',
     hasOnlineStore: false, hasPhysicalStore: true,
     giftsCategory: 'design', verifiedAt: '2026-08-07' },
-  // Putiikilla ei ole omaa domainia; levi.fi ylläpitää sen sivua. Linkki
-  // osoittaa siihen eikä levi.fi:n juureen, joka ei mainitse SHOPPIa lainkaan.
-  //
-  // 🟡 TARKISTETTAVA TALVIKAUDEN ALUSSA. Kaksi signaalia eri suuntiin (7.8.2026):
-  // levi.fi:n englanninkielinen sivu on pystyssä (200 + oikea title), mutta
-  // suomenkielinen 404:ää, ja haussa nousi Facebook-maininta että liike on
-  // suljettu toistaiseksi. Vesan päätös 7.8.: jätetään, koska Levi on
-  // hiihtokeskus ja kausiliikkeen kesäsulku on normaalia. Jos liike ei avaudu
-  // talvikaudeksi, poista tämä rivi: silloin Levi putoaa myös TownId-tyypistä.
-  { slug: 'shoppi-craft-design', name: 'SHOPPI Craft & Design', town: 'levi',
-    url: 'https://www.levi.fi/en/services/shoppi-craft-and-design-lapland/',
-    hasOnlineStore: false, hasPhysicalStore: true,
-    giftsCategory: 'design', verifiedAt: '2026-08-07' },
+  // SHOPPI Craft & Design (Levi) poistettu 19.11.2026 (Vesa: "Poista SHOPPI"): levi.fi poisti
+  // sen palvelusivun, eikä liikettä löydy Levin kauppaluettelosta talvikauden alussa.
+  // Vanhat /boutique/shoppi-craft-design/-osoitteet ohjataan 301:llä putiikkilistaukseen.
   { slug: 'siida-shop', name: 'Siida Shop', town: 'inari', district: 'Saamelaismuseo Siida',
     url: 'https://siida.fi', hasOnlineStore: false, hasPhysicalStore: true,
     giftsCategory: 'handicrafts', samiAuthorized: true, verifiedAt: '2026-08-07' },

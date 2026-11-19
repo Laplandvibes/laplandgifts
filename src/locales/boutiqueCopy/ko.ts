@@ -37,10 +37,6 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Korundi 문화 센터의 북극 예술과 디자인. 독특한 선물과 고급 상품.',
     tags: ['예술', '디자인'],
   },
-  'shoppi-craft-design': {
-    description: '레비 슬로프 기슭, 핀란드 장인이 만든 장신구, 액세서리, 기념품.',
-    tags: ['장신구', '디자인'],
-  },
   'siida-shop': {
     description: '사미 박물관 매장: 두오지 공예품, 장신구, 라플란드 자연에서 영감을 받은 선물.',
     tags: ['두오지', '선물'],

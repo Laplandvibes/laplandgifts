@@ -8,7 +8,7 @@ import { CONTENT_PATHS } from '../../routes'
 
 describe('putiikkidatan eheys', () => {
   it('putiikkeja on 18 ja verkkokauppoja 9', () => {
-    expect(BOUTIQUES).toHaveLength(18)
+    expect(BOUTIQUES).toHaveLength(17)
     expect(BOUTIQUES.filter((b) => b.hasOnlineStore)).toHaveLength(9)
   })
 
@@ -47,10 +47,10 @@ describe('putiikkidatan eheys', () => {
   })
 
   it('kauppa jolla ei ole omaa domainia linkittää alasivuun eikä juureen', () => {
-    // Korundi Shop asuu kulttuuritalon sivustolla ja SHOPPI levi.fi:llä.
-    // Juurilinkki veisi konserttikalenteriin ja hiihtokeskuksen etusivulle,
-    // jotka eivät mainitse myymälää lainkaan.
-    for (const slug of ['korundi-shop', 'shoppi-craft-design']) {
+    // Korundi Shop asuu kulttuuritalon sivustolla. Juurilinkki veisi
+    // konserttikalenteriin, joka ei mainitse myymälää lainkaan.
+    // (SHOPPI levi.fi:llä poistettiin 19.11.2026.)
+    for (const slug of ['korundi-shop']) {
       const b = boutiqueBySlug(slug)!
       expect(new URL(b.url).pathname, slug).not.toBe('/')
     }
@@ -91,7 +91,7 @@ describe('putiikkidatan eheys', () => {
     expect(boutiquesByTown('rovaniemi')).toHaveLength(7)
     expect(boutiquesByTown('inari')).toHaveLength(3)
     expect(boutiquesByTown('posio')).toHaveLength(1)
-    expect(boutiquesByTown('levi')).toHaveLength(2)
+    expect(boutiquesByTown('levi')).toHaveLength(1)
     expect(boutiquesByTown('sodankyla')).toHaveLength(1)
     expect(boutiquesByTown('yllas')).toHaveLength(1)
     expect(boutiquesByTown('saariselka')).toHaveLength(1)

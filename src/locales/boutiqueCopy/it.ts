@@ -37,10 +37,6 @@ const copy: Record<string, BoutiqueCopy> = {
     description: 'Arte e design artici al centro culturale Korundi. Regali unici e prodotti di alta gamma.',
     tags: ['Arte', 'Design'],
   },
-  'shoppi-craft-design': {
-    description: 'Gioielli, accessori e souvenir di artigiani finlandesi ai piedi della pista di Levi.',
-    tags: ['Gioielli', 'Design'],
-  },
   'siida-shop': {
     description: 'Negozio del Museo Sami: artigianato duodji, gioielli e regali ispirati alla natura della Lapponia.',
     tags: ['Duodji', 'Regali'],
