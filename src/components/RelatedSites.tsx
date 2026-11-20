@@ -15,11 +15,11 @@ function RelatedSites() {
   const t = COPY[useLang()].related
   return (
     <section id="related" className="py-14 md:py-20 bg-white">
-      <div className="max-w-5xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4">
         <div className="mb-8 md:mb-12">
           <div className="flex items-center justify-center gap-2 mb-3 lg:justify-start">
-            <Compass className="w-5 h-5 text-amber" />
-            <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
+            <Compass className="w-5 h-5 text-[#BE185D]" />
+            <span className="text-[#BE185D] font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
           </div>
           <h2 className="font-heading text-3xl md:text-5xl leading-none tracking-wide text-gray mb-3 text-center lg:text-left">{t.h2}</h2>
           <p className="text-muted text-[15px] md:text-base leading-relaxed max-w-xl mx-auto w-fit lg:mx-0 lg:w-auto">{t.sub}</p>
@@ -32,13 +32,13 @@ function RelatedSites() {
               href={item.href}
               target="_blank"
               rel="noopener"
-              className="group flex flex-col p-7 rounded-2xl bg-gradient-to-b from-amber/5 to-transparent border border-gray/10 hover:border-amber/40 transition-colors"
+              className="group flex flex-col p-7 rounded-2xl bg-card border border-line hover:border-gray/25 transition-colors"
             >
               <div className="flex items-start justify-between gap-3 mb-2">
-                <h3 className="font-heading text-2xl tracking-wide text-gray group-hover:text-amber transition-colors md:text-3xl">
+                <h3 className="font-heading text-2xl tracking-wide text-gray group-hover:text-[#BE185D] transition-colors md:text-3xl">
                   {item.label}
                 </h3>
-                <ArrowUpRight className="w-5 h-5 text-amber shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
+                <ArrowUpRight className="w-5 h-5 text-gray/60 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </div>
               <p className="text-gray/60 leading-relaxed">{item.blurb}</p>
             </a>

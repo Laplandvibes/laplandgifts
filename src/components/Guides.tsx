@@ -61,17 +61,17 @@ function Guides() {
 
   return (
     <section id="guides" className="bg-sand py-14 md:py-20">
-      <div className="mx-auto max-w-5xl px-4">
-        <div className="mb-8 md:mb-12">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-3 lg:gap-10">
+        <div className="lg:pt-2">
           <div className="mb-3 flex items-center justify-center gap-2 lg:justify-start">
-            <FileText className="h-5 w-5 text-amber" />
-            <span className="text-sm font-medium uppercase tracking-widest text-amber">{t.kicker}</span>
+            <FileText className="h-5 w-5 text-[#BE185D]" />
+            <span className="text-sm font-medium uppercase tracking-widest text-[#BE185D]">{t.kicker}</span>
           </div>
           <h2 className="mb-3 font-heading text-3xl leading-none tracking-wide text-gray text-center lg:text-left md:text-5xl">{t.h2}</h2>
           <p className="mx-auto w-fit lg:mx-0 lg:w-auto max-w-xl text-[15px] leading-relaxed text-muted md:text-base">{t.sub}</p>
         </div>
 
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-8">
+        <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-6 lg:col-span-2">
           {t.guides.map((guide, i) => (
             <article
               key={guide.title}
@@ -96,13 +96,13 @@ function Guides() {
               </div>
 
               <div className="flex flex-1 flex-col p-5 md:p-7">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-amber">
+                <p className="mb-2 text-xs font-semibold uppercase tracking-widest text-[#BE185D]">
                   {t.pagesPdf(guide.pages)}
                 </p>
                 <h3 className="font-heading text-2xl leading-tight tracking-wide text-gray md:text-3xl">
                   {guide.title}
                 </h3>
-                <p className="mb-3 mt-1 text-sm font-medium text-amber/90">{guide.subtitle}</p>
+                <p className="mb-3 mt-1 text-sm font-medium text-[#BE185D]">{guide.subtitle}</p>
                 <p className="mb-5 line-clamp-3 text-sm leading-relaxed text-gray/75 md:line-clamp-none">{guide.description}</p>
 
                 <div className="mb-6 hidden flex-wrap gap-2 sm:flex">
@@ -121,7 +121,7 @@ function Guides() {
                 <a
                   href="#newsletter"
                   onClick={toNewsletter}
-                  className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-amber px-5 py-3 text-sm font-semibold text-night transition-colors hover:bg-amber/90"
+                  className="mt-auto inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-deep-night px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-[#1E293B]"
                 >
                   {buttonLabel}
                   <ArrowRight className="h-4 w-4" aria-hidden="true" />

@@ -73,21 +73,21 @@ function FAQ() {
   const items = faqItemsFor(lang)
   return (
     <section id="faq" className="py-14 md:py-20 bg-sand">
-      <div className="max-w-3xl mx-auto px-4">
-        <div className="mb-8 md:mb-12">
+      <div className="mx-auto grid max-w-7xl gap-8 px-4 lg:grid-cols-3 lg:gap-10">
+        <div className="lg:pt-2">
           <div className="flex items-center justify-center gap-2 mb-3 lg:justify-start">
-            <HelpCircle className="w-5 h-5 text-amber" />
-            <span className="text-amber font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
+            <HelpCircle className="w-5 h-5 text-[#BE185D]" />
+            <span className="text-[#BE185D] font-medium uppercase tracking-widest text-sm">{t.kicker}</span>
           </div>
           <h2 className="font-heading text-3xl md:text-5xl leading-none tracking-wide text-gray mb-3 text-center lg:text-left">{t.h2}</h2>
           <p className="text-muted text-[15px] md:text-base leading-relaxed max-w-xl mx-auto w-fit lg:mx-0 lg:w-auto">{t.sub}</p>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 lg:col-span-2">
           {items.map((item, index) => (
             <details
               key={item.q}
-              className="group bg-card rounded-2xl border border-line open:border-amber/40 transition-colors"
+              className="group bg-card rounded-2xl border border-line open:border-gray/25 transition-colors"
             >
               <summary className="flex items-center justify-between gap-4 cursor-pointer list-none p-6">
                 {/* FAQ-kysymys on kokonainen kysymyslause, ei osion otsikko.
@@ -97,7 +97,7 @@ function FAQ() {
                 <h3 className="font-body text-lg font-semibold tracking-normal text-gray md:text-xl">
                   {item.q}
                 </h3>
-                <Plus className="w-5 h-5 text-amber shrink-0 transition-transform duration-200 group-open:rotate-45" />
+                <Plus className="w-5 h-5 text-gray/60 shrink-0 transition-transform duration-200 group-open:rotate-45" />
               </summary>
               <div className="px-6 pb-6 -mt-1">
                 <p className="text-gray/75 leading-relaxed">{item.a}</p>
@@ -108,7 +108,7 @@ function FAQ() {
                         key={l.href}
                         href={l.href}
                         {...(l.external ? { rel: 'noopener' } : {})}
-                        className="lv-tap inline-flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider text-amber hover:text-gray transition-colors"
+                        className="lv-tap inline-flex items-center gap-1.5 text-sm font-semibold uppercase tracking-wider text-[#BE185D] hover:text-gray transition-colors"
                       >
                         {l.label(c)} <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                       </a>

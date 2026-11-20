@@ -75,7 +75,7 @@ const HOME_PHOTOS = ['hero-lahjat', ...CATEGORIES.map((c) => c.image), 'hero-ten
 export default function Home() {
   const lang = useLang()
   const meta = HOME_META[lang]
-  const rail = 'mx-auto max-w-5xl px-4 py-6 md:py-8'
+  const rail = 'mx-auto max-w-7xl px-4 py-6 md:py-8'
 
   return (
     <>
@@ -97,7 +97,7 @@ export default function Home() {
 
           {/* Kumppanit: Keloa-kortti (sponsors[0]). Tyhjät kortit ja premium-
               ruudukko eivät renderöidy (jaettu sääntö 4.9.). */}
-          <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" />
+          <HomeAdSlots config={AD_SLOTS} locale={lang} surface="light" wide />
 
           <div className={rail}>
             <ProductRail partner={suomikauppaRail} snapshot={suomikauppaPicks} lang={lang} sid="home_gifts_suomikauppa" variant="light"
@@ -121,7 +121,7 @@ export default function Home() {
 
           <HowItWorks />
 
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-4">
             <AppPromoHero />
           </div>
 
