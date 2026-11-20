@@ -17,6 +17,7 @@ import { countryName } from '../data/countryNames'
 import { useLang } from '../i18n/useLang'
 import { SHOP_COPY } from '../locales/shopCopy'
 import { LUXURY_COPY } from '../locales/luxuryCopy'
+import { hintaTuore } from '../lib/hinnanTuoreus'
 
 /**
  * Luksusvalikoima: kallein pää, elämykset ensin.
@@ -60,6 +61,9 @@ export default function Luxury() {
     .sort((a, b) => rank(a.slug) - rank(b.slug) || b.priceFrom - a.priceFrom)
   // Esineiden järjestys on listan järjestys, ei hinnan.
   const objects = visible.filter((p) => p.category !== 'experiences')
+  // Haarukka tuoreista hinnoista; jos yksikään ei ole tuore (viikkoluku jäänyt väliin), kaikista, jottei lause hajoa.
+  const tuoreet = visible.filter((p) => hintaTuore(p.priceCheckedAt)).map((p) => p.priceFrom)
+  const hinnat = tuoreet.length ? tuoreet : visible.map((p) => p.priceFrom)
   const fmtMoney = (n: number) =>
     new Intl.NumberFormat(lang === 'pt-BR' ? 'pt-BR' : lang, { style: 'currency', currency: visible[0]?.currency ?? 'EUR', maximumFractionDigits: 0 }).format(n)
 
@@ -73,7 +77,7 @@ export default function Luxury() {
         <LuxuryHero
           eyebrow={tl.eyebrow}
           title={tl.title}
-          lead={tl.lead(visible.length, fmtMoney(Math.floor(Math.min(...visible.map((p) => p.priceFrom)))), fmtMoney(Math.ceil(Math.max(...visible.map((p) => p.priceFrom)))))}
+          lead={tl.lead(visible.length, fmtMoney(Math.floor(Math.min(...hinnat))), fmtMoney(Math.ceil(Math.max(...hinnat))))}
           captions={tl.scenes}
           lang={lang}
         />

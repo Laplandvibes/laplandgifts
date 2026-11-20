@@ -8,6 +8,7 @@ import { COPY } from '../locales/copy'
 import { SHOP_COPY } from '../locales/shopCopy'
 import { productName } from '../locales/productCopy'
 import { imgSrcSet } from '../lib/img'
+import { hintaTuore } from '../lib/hinnanTuoreus'
 
 /**
  * Etusivun lahjaopas — lukijalle joka ei tiedä mitä ostaa. FUNKTIO: tilaisuus →
@@ -81,7 +82,8 @@ function GiftGuide() {
             /* Etusivulla neljä ensimmäistä ehdotusta, sivulla kaikki kuusi. */
             const picks = productsForOccasion(i).slice(0, 4)
             if (picks.length === 0) return null
-            const priceList = picks.map((p) => p.priceFrom)
+            // Haarukka ja korttien hinnat vain tuoreista hinnoista (lib/hinnanTuoreus).
+            const priceList = picks.filter((p) => hintaTuore(p.priceCheckedAt)).map((p) => p.priceFrom)
             const cur = picks[0].currency
             return (
               <li key={occasion.name} className="grid grid-cols-1 gap-4 border-t border-line py-7 first:border-t-0 first:pt-0 md:grid-cols-12 md:gap-8 md:py-10">
@@ -97,11 +99,13 @@ function GiftGuide() {
                     {occasion.name}
                     <Icon className="h-4 w-4 text-muted/60 md:h-5 md:w-5" strokeWidth={1.75} aria-hidden="true" />
                   </h3>
-                  <p className="mt-2 text-[14px] text-muted md:mt-3 md:text-[15px]">
-                    {/* "6–140 €", ei "6 €–140 €": valuutta kerran, haarukan lopussa. */}
-                    {/* Haarukka kattaa kaikki tuotteet: ala alas, yläraja ylös kokonaiseen euroon. */}
-                    {prices(String(Math.floor(Math.min(...priceList))), money(Math.ceil(Math.max(...priceList)), cur, lang))}
-                  </p>
+                  {priceList.length > 0 ? (
+                    <p className="mt-2 text-[14px] text-muted md:mt-3 md:text-[15px]">
+                      {/* "6–140 €", ei "6 €–140 €": valuutta kerran, haarukan lopussa. */}
+                      {/* Haarukka kattaa kaikki tuotteet: ala alas, yläraja ylös kokonaiseen euroon. */}
+                      {prices(String(Math.floor(Math.min(...priceList))), money(Math.ceil(Math.max(...priceList)), cur, lang))}
+                    </p>
+                  ) : null}
                 </div>
 
                 {/* Yksi vaakarivi kapealla, neljä rinnakkain md:stä ylöspäin —
@@ -137,7 +141,9 @@ function GiftGuide() {
                         <div className="flex flex-1 flex-col gap-1.5 px-3.5 pb-3.5 pt-1">
                           <span className="text-[10.5px] font-semibold uppercase tracking-[0.14em] text-muted">{p.brand}</span>
                           <span className="line-clamp-2 text-[12.5px] font-semibold leading-snug text-gray">{productName(p, lang)}</span>
-                          <span className="mt-auto text-[14px] font-bold text-gray">{money(p.priceFrom, p.currency, lang)}</span>
+                          {hintaTuore(p.priceCheckedAt) ? (
+                            <span className="mt-auto text-[14px] font-bold text-gray">{money(p.priceFrom, p.currency, lang)}</span>
+                          ) : null}
                         </div>
                       </Link>
                     </li>

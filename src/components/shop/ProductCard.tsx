@@ -13,6 +13,7 @@ import { SHOP_COPY } from '../../locales/shopCopy'
 import ShippingBadge from './ShippingBadge'
 import { productName } from '../../locales/productCopy'
 import { sidoYhdysmerkki } from '../../lib/nimiRivitys'
+import { hintaTuore } from '../../lib/hinnanTuoreus'
 
 /**
  * Kuvapaikan leveys layoutin mukaan. Mitattu selaimesta: 2 palstaa < 768 px
@@ -98,9 +99,12 @@ export default function ProductCard({ product, lang }: { product: Product; lang:
         <div className="mt-auto flex flex-col items-start gap-1.5 pt-1.5">
           {/* priceFrom saa valuutan tuotteelta (osa katalogista hinnoittelee
               punnissa), joten €-merkkiä ei kirjoiteta mihinkään käsin. */}
-          <span className="text-sm font-semibold text-gray sm:text-base">
-            {t.priceFrom(product.priceFrom, product.currency)}
-          </span>
+          {/* Hinta vain tuoreena (lib/hinnanTuoreus): luettu enintään 10 päivää sitten. */}
+          {hintaTuore(product.priceCheckedAt) ? (
+            <span className="text-sm font-semibold text-gray sm:text-base">
+              {t.priceFrom(product.priceFrom, product.currency)}
+            </span>
+          ) : null}
           <ShippingBadge
             zone={partner.shipsTo}
             lang={lang}

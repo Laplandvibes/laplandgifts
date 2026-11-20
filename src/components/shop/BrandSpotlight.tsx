@@ -12,6 +12,7 @@ import { SHOP_COPY } from '../../locales/shopCopy'
 import { THEME_COPY } from '../../locales/themeCopy'
 import { productName, productDescription } from '../../locales/productCopy'
 import { sidoYhdysmerkki } from '../../lib/nimiRivitys'
+import { hintaTuore } from '../../lib/hinnanTuoreus'
 
 /** Nostokuva on puolet leveydestä työpöydällä, koko leveys kapealla. */
 const SHOT_SIZES = '(min-width: 768px) 380px, 88vw'
@@ -77,9 +78,11 @@ export default function BrandSpotlight({
           </Link>
           {blurb && <p className="text-sm leading-relaxed text-muted">{blurb}</p>}
           <div className="flex flex-wrap items-center gap-3">
-            <span className="font-heading text-2xl text-gray">
-              {t.product.priceFrom(product.priceFrom, product.currency)}
-            </span>
+            {hintaTuore(product.priceCheckedAt) ? (
+              <span className="font-heading text-2xl text-gray">
+                {t.product.priceFrom(product.priceFrom, product.currency)}
+              </span>
+            ) : null}
             <ShippingBadge zone={partner.shipsTo} lang={lang} exceptCount={except.length} />
           </div>
           {/* sid erottaa brändisivun myynnin muista pinnoista raportissa. */}

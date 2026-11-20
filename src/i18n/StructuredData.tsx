@@ -5,6 +5,7 @@ import { faqItemsFor } from '../components/FAQ'
 import { productBySlug } from '../data/products'
 import { PARTNERS } from '../data/partners'
 import { productName, productDescription } from '../locales/productCopy'
+import { hintaTuore } from '../lib/hinnanTuoreus'
 
 const BASE = 'https://laplandgifts.com'
 
@@ -93,7 +94,8 @@ export default function StructuredData() {
         // 🔴 Kuvaa ei liitetä: tuotesivun kuva on tunnelmakuva, ei kuva juuri
         // tästä tuotteesta (sivu sanoo sen itse). Product.image lupaisi
         // hakukoneelle tuotekuvan, joten kenttä jätetään pois.
-        offers: {
+        // Hinta hakukoneelle vain tuoreena (lib/hinnanTuoreus); vanha hinta ei saa näkyä hakutuloksessa.
+        ...(hintaTuore(product.priceCheckedAt) ? { offers: {
           '@type': 'Offer',
           price: String(product.priceFrom),
           // Valuutta luetaan tuotteelta: osa katalogista hinnoittelee punnissa.
@@ -104,7 +106,7 @@ export default function StructuredData() {
           // oma osoite eikä affiliate-redirect, joka ei ole tuotesivu.
           url: product.partnerProductUrl,
           seller: { '@type': 'Organization', name: partner.name },
-        },
+        } } : {}),
         // Ei aggregateRatingia: arvosteluja ei ole, eikä niitä keksitä.
       })
     }

@@ -23,6 +23,7 @@ import { SHOP_COPY } from '../locales/shopCopy'
 import NotFound from './NotFound'
 import { productName, productDescription, specValue, specLabel } from '../locales/productCopy'
 import { sidoYhdysmerkki } from '../lib/nimiRivitys'
+import { hintaTuore } from '../lib/hinnanTuoreus'
 
 /** Päähakuva: täysleveä kapealla, puoli ruudukkoa lg:stä ylöspäin. */
 const PRODUCT_SIZES = '(min-width: 1024px) 500px, 92vw'
@@ -157,9 +158,11 @@ export default function Product() {
               <div className="flex flex-wrap items-center gap-3">
                 {/* Hinta on aina kumppanin "alkaen"-hinta omassa valuutassaan,
                     ei meidän hintamme. Lähde ja lukupäivä ovat heti alla. */}
-                <span className="font-heading text-3xl text-gray">
-                  {t.product.priceFrom(product.priceFrom, product.currency)}
-                </span>
+                {hintaTuore(product.priceCheckedAt) ? (
+                  <span className="font-heading text-3xl text-gray">
+                    {t.product.priceFrom(product.priceFrom, product.currency)}
+                  </span>
+                ) : null}
                 <ShippingBadge zone={partner.shipsTo} lang={lang} exceptCount={except.length} />
               </div>
               {except.length > 0 && (
@@ -167,9 +170,11 @@ export default function Product() {
                   {t.shipping.exceptNote(countryNames(except, lang))}
                 </p>
               )}
-              <p className="text-sm text-muted">
-                {t.product.priceNote(lukupaiva(product.priceCheckedAt, lang), partner.name)}
-              </p>
+              {hintaTuore(product.priceCheckedAt) ? (
+                <p className="text-sm text-muted">
+                  {t.product.priceNote(lukupaiva(product.priceCheckedAt, lang), partner.name)}
+                </p>
+              ) : null}
               {/* Auditti 13.8.2026: yksikään sivu ei kertonut sisältyykö alv
                   hintaan tai tuleeko EU:n ulkopuolelle tullia. Teksti on
                   hinnan vieressä eikä vain käyttöehdoissa, koska siellä
