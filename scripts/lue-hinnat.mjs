@@ -9,7 +9,8 @@
  *
  * Mitä tekee:
  *   - lukee jokaisen tuotteen hinnan ja saatavuuden kaupan omasta datasta OIKEALLA SELAIMELLA (Playwright), ei curlilla:
- *       Shopify-kaupat: <tuotesivu>.js (variantit) · Nordic Nest, Partioaitta, Scandinavian Outdoor, Arctic Warriors:
+ *       Shopify-kaupat: <tuotesivu>.js (variantit) · Nordic Nest, Partioaitta, Scandinavian Outdoor, Arctic Warriors
+ *       (+ WooCommercen hintalohkon yliviivattu hinta, kun JSON-LD:ssä sitä ei ole):
  *       tuotesivun JSON-LD · Marttiini: [itemprop=price] · Elämyslahjat: dataLayerin view_item-hinta.
  *   - 10 s välein samaan kauppaan (Shopify antaa 429 nopealle kyselylle), kaupat rinnakkain.
  *   - hinta = NORMAALIHINTA (Vesan päätös 19.11.: "Normaalihinta, julkaise"): alessa olevasta otetaan
@@ -93,9 +94,19 @@ async function lueSivu(page, url, kauppa) {
       } catch {}
     }
     const itemprop = [...document.querySelectorAll('[itemprop="price"]')].map((m) => m.getAttribute('content') || m.textContent).filter(Boolean)
+    // WooCommerce (Arctic Warriors): JSON-LD antaa alennushinnan ilman yliviivattua hintaa (nokkosjauhe 26.11.2026:
+    // Black Friday 26 €, normaali 52 €). Päätuotteen hintalohkon <del> = normaalihinta, <ins> tai muu summa = nykyinen.
+    const wooLohko = document.querySelector('.wp-block-woocommerce-product-price, .summary .price')
+    const summa = (el) => (el ? (el.querySelector('bdi') || el).textContent.replace(/[^\d,.]/g, '') : null)
+    const woo = wooLohko && wooLohko.querySelector('del')
+      ? {
+          normaali: summa(wooLohko.querySelector('del .woocommerce-Price-amount')),
+          nyt: summa(wooLohko.querySelector('ins .woocommerce-Price-amount') || [...wooLohko.querySelectorAll('.woocommerce-Price-amount')].find((a) => !a.closest('del'))),
+        }
+      : null
     let dl = null
     for (const e of window.dataLayer || []) if (e && e.event === 'view_item' && e.ecommerce && e.ecommerce.items && e.ecommerce.items[0]) dl = e.ecommerce.items[0]
-    return { offers, itemprop, dl: dl ? { price: dl.price, discount: dl.discount || 0 } : null }
+    return { offers, itemprop, woo, dl: dl ? { price: dl.price, discount: dl.discount || 0 } : null }
   }, kauppa)
   const num = (x) => (x == null ? NaN : Number(String(x).replace(',', '.')))
   if (kauppa === 'elamyslahjat') {
@@ -119,6 +130,13 @@ async function lueSivu(page, url, kauppa) {
   const perus = specs.find((s) => !/Strikethrough/i.test(String(s.priceType || '')))
   const h = num(yliviivattu?.price ?? perus?.price ?? x.price ?? x.lowPrice)
   if (!Number.isFinite(h)) return { tila: 'ei luettu', syy: 'ei hintaa tarjouksessa' }
+  // Yliviivattu hinta sivulla, kun JSON-LD:ssä sitä ei ole: kelpaa vain, jos lohkon nykyinen summa = JSON-LD:n hinta
+  // (sama tuote, ei viereisen tuotteen lohko) ja yliviivattu on sitä suurempi.
+  if (!yliviivattu && d.woo) {
+    const normaali = num(d.woo.normaali)
+    const nyt = num(d.woo.nyt)
+    if (Number.isFinite(normaali) && Number.isFinite(nyt) && Math.abs(nyt - h) < 0.01 && normaali > h) return { tila: 'ok', hinta: round2(normaali), ale: true }
+  }
   return { tila: 'ok', hinta: round2(h), ale: Boolean(yliviivattu) }
 }
 
@@ -127,6 +145,42 @@ const tuotteet = PRODUCTS.filter((p) => (!vain || vain.includes(p.partnerId)) &&
 const kaupoittain = {}
 for (const p of tuotteet) (kaupoittain[p.partnerId] ||= []).push(p)
 if (raja) for (const k of Object.keys(kaupoittain)) kaupoittain[k] = kaupoittain[k].slice(0, raja)
+
+// Adtractionin tuotesyöte (kaupan virallinen affiliate-data; ladataan Adtractionin palvelimelta, ei kaupasta).
+// Partioaitan sivu antaa koneelle yhden tuotesivun istuntoa kohti: toinen haku samassa selaimessa saa 403:n
+// (reCAPTCHA + Cloudflare, mitattu 26.11.2026). Estoa ei kierretä: syötteessä olevat tuotteet luetaan syötteestä, ja
+// kaupan sivulta haetaan vain syötteestä puuttuvat (26.11. luukuksa syötteessä, isokuksa ei).
+const SYOTTEET = {
+  partioaitta: 'https://adtraction.com/productfeed.htm?type=feed&format=XML&encoding=UTF8&epi=0&zip=0&cdelim=tab&tdelim=singlequote&sd=0&flat=0&apid=1465938053&asid=2086870803&pfid=2195',
+}
+const urlAvain = (u) => String(u).replace(/[?#].*$/, '').replace(/\/$/, '').toLowerCase()
+async function lataaSyote(url) {
+  try {
+    const r = await fetch(url, { signal: AbortSignal.timeout(120_000) })
+    if (!r.ok) return null
+    const xml = await r.text()
+    const kentta = (blokki, nimi) => (blokki.match(new RegExp(`<${nimi}>([^<]*)</${nimi}>`)) || [])[1]
+    const m = new Map()
+    for (const blokki of xml.split('<product>').slice(1)) {
+      const u = kentta(blokki, 'ProductUrl')
+      if (u) m.set(urlAvain(u.replace(/&amp;/g, '&')), { hinta: Number(kentta(blokki, 'Price')), alkup: Number(kentta(blokki, 'OriginalPrice')), varastossa: kentta(blokki, 'Instock') })
+    }
+    return m.size ? m : null
+  } catch {
+    return null
+  }
+}
+function lueSyotteesta(x) {
+  if (!x || !Number.isFinite(x.hinta)) return null
+  if (String(x.varastossa).toLowerCase() !== 'yes') return { tila: 'loppu', lahde: 'syöte' }
+  const normaali = Number.isFinite(x.alkup) && x.alkup > x.hinta ? x.alkup : x.hinta
+  return { tila: 'ok', hinta: round2(normaali), ale: normaali > x.hinta, lahde: 'syöte' }
+}
+const syotteet = {}
+for (const k of Object.keys(SYOTTEET)) if (kaupoittain[k]) syotteet[k] = await lataaSyote(SYOTTEET[k])
+
+// Ohimenevä = 429, 5xx tai heitetty virhe (aikaraja, verkko). 403 on kaupan kieltäytyminen: sitä ei toisteta.
+const ohimeneva = (r) => r.tila === 'ei luettu' && (/HTTP (429|5\d\d)/.test(r.syy || '') || r.heitetty)
 
 const browser = await chromium.launch({ headless: true })
 const ctx = await browser.newContext({
@@ -138,19 +192,27 @@ await Promise.all(
   Object.entries(kaupoittain).map(async ([kauppa, lista]) => {
     const page = await ctx.newPage()
     for (const p of lista) {
-      let r
-      try {
-        r = SHOPIFY.has(kauppa) ? await lueShopify(page, p.partnerProductUrl) : await lueSivu(page, p.partnerProductUrl, kauppa)
-      } catch (e) {
-        r = { tila: 'ei luettu', syy: String(e.message || e).split('\n')[0].slice(0, 120) }
+      let r = lueSyotteesta(syotteet[kauppa]?.get(urlAvain(p.partnerProductUrl)))
+      // Kone yrittää itse ohimenevässä viassa (429, 5xx, aikaraja): kolme yritystä 30 s ja 60 s tauoin.
+      for (let yritys = 1; !r && yritys <= 3; yritys++) {
+        try {
+          r = SHOPIFY.has(kauppa) ? await lueShopify(page, p.partnerProductUrl) : await lueSivu(page, p.partnerProductUrl, kauppa)
+        } catch (e) {
+          r = { tila: 'ei luettu', syy: String(e.message || e).split('\n')[0].slice(0, 120), heitetty: true }
+        }
+        if (ohimeneva(r) && yritys < 3) {
+          r = null
+          await sleep(30_000 * yritys)
+        }
       }
+      delete r.heitetty
       if (r.tila === 'ok') {
         const muutos = Math.abs(r.hinta - p.priceFrom) / p.priceFrom
         if (muutos > 0.6 && !hyvaksy.has(p.slug)) r = { ...r, tila: 'tarkista', syy: `hinta ${p.priceFrom} → ${r.hinta} (yli 60 %)` }
       }
       tulokset[p.slug] = { kauppa, vanha: p.priceFrom, vanhaPaiva: p.priceCheckedAt, ...r }
       process.stdout.write(`${r.tila === 'ok' ? '.' : r.tila[0]}`)
-      await sleep(10_000)
+      if (r.lahde !== 'syöte') await sleep(10_000)
     }
     await page.close()
   }),
