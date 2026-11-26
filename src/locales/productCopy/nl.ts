@@ -352,16 +352,19 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Voedingswaarde per 100 g', 'Op de markt gebracht door'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Finnish Flavours Finse vossenbessenjam 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Poikain Parhaat selectie Finse bessenjams, 4 × 45 g',
     description:
-      'Vossenbessenjam uit Finland, gemaakt van bessen die in Finse bossen zijn geplukt, met 45 procent vossenbes in de pot. Finnen eten hem bij wildstoof, gehaktballetjes en spinaziepannenkoekjes, en hij past in hetzelfde cadeau als een zak gedroogd rendiervlees.',
+      'Vier kleine potjes Finse bessenjam in één doos: kruipbraam, veenbes, zwarte bes en bosbes. De jams zijn handgemaakt, van bessen die met de hand zijn geplukt in Finse bossen en tuinen. Elk potje bestaat voor 75 procent uit bessen, en er zitten geen kunstmatige smaak- of kleurstoffen in. Een potje van 45 g is genoeg om de jam te proeven op brood, op pannenkoeken of in de pap.',
     specs: [
-      '400 g',
-      'Gemaakt in Finland van 100 % Finse bessen',
-      'Energie 633 kJ / 151 kcal, vet 0,2 g, waarvan verzadigd 0 g, koolhydraten 39 g, waarvan suikers 39 g, eiwit 0,2 g, zout 0,01 g',
+      '4 × 45 g',
+      'Kruipbramen-, veenbessen-, zwartebessen- en bosbessenjam',
+      '75 % Finse bessen in elke jam, met de hand geplukt',
+      'Lactosevrij, glutenvrij, veganistisch',
+      'Energie 512 kJ / 122 kcal, vet 0,8 g, waarvan verzadigd 0 g, koolhydraten 24 g, waarvan suikers 19 g, eiwit 1,1 g, zout 0,1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, 'Voedingswaarde per 100 g'],
+    specLabels: [undefined, undefined, undefined, 'Dieet', 'Voedingswaarde per 100 g', 'Op de markt gebracht door'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Gedroogd rendiervlees Original 200 g',
@@ -647,13 +650,13 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     specs: ['36 g', 'Xylitol. Draagt het keurmerk van de Finse tandartsenvereniging'],
     specLabels: [undefined, 'Zoetstof'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: 'Sisu Kaamos zoute droppastilles 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: 'Sisu Kide mentholsalmiakpastilles 80 g',
     description:
-      'Zachte Sisu-pastilles met een sterke smaak van drop en salmiak, de zoute drop die Finnen op smaak brengen met ammoniumchloride. Kaamos is het Finse woord voor de poolnacht, de weken in het hoge noorden waarin de zon niet boven de horizon uitkomt.',
+      'Sisu-pastilles met een suikerlaagje, een sterke smaak van salmiak en drop en een koele toets van menthol. Salmiak, zoute drop op smaak gebracht met ammoniumchloride, is in Finland erg geliefd. Kide is het Finse woord voor kristal, zoals in lumikide, sneeuwkristal.',
     specs: [
       '80 g',
-      'Energie 1160 kJ / 277 kcal, vet 0,6 g, waarvan verzadigd 0,2 g, koolhydraten 52 g, waarvan suikers 45 g, eiwit 1,2 g, zout 5,5 g',
+      'Energie 1269 kJ / 302 kcal, vet 0 g, waarvan verzadigd 0 g, koolhydraten 60 g, waarvan suikers 53 g, eiwit 1,1 g, zout 0,4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, 'Voedingswaarde per 100 g', 'Op de markt gebracht door'],
@@ -1005,11 +1008,18 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Extractie', 'Dosering', 'Waarschuwing'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo naaldboomextract 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo naaldboomextractdrank 1 l',
     description:
-      'Een extract uit Finse naaldbomen, in te nemen als druppels. De bosgeur van een wandeling in Lapland in een flesje voor de jaszak.',
-    specs: ['50 ml'],
+      'Een drank van schors en binnenschors van jonge biologische dennen, grondwater en ongeraffineerd zeezout, gemaakt naar een oud Fins volksrecept. De dennen worden verzameld in de bossen van Österbotten in West-Finland, ver van de industrie. De drank bevat geen additieven, conserveermiddelen of kleurstoffen. Hij wordt geleverd in een glazen fles van één liter en blijft na opening 7 tot 10 dagen goed.',
+    specs: [
+      '1 l, glazen fles',
+      'Schors en binnenschors van jonge biologische dennen, grondwater, ongeraffineerd zeezout',
+      'Dennen verzameld in de bossen van Österbotten, Finland',
+      'Geen additieven, conserveermiddelen of kleurstoffen',
+      'Blijft na opening 7 tot 10 dagen goed',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Additieven', undefined],
   },
   'nb-little-my-beanie': {
     name: 'Kleine Mij grofgebreide muts',
@@ -1204,16 +1214,17 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licentie'],
   },
-  'nb-little-my-poster': {
-    name: 'Kleine Mij poster',
+  'nb-little-my-party-poster': {
+    name: 'Kleine Mij feestposter',
     description:
-      'Ontworpen en gedrukt in Helsinki op zijdepapier van 200 gram, in 30 × 40 of 50 × 70. Een poster rolt in een koker en weegt niets, wat u van de meeste dingen die mensen uit Lapland mee naar huis slepen niet kunt zeggen.',
+      'De poster toont Kleine Mij, die onder een vlaggenlijn feest viert, en is gedrukt op zijdemat papier van 200 g/m². Een officieel Moomin-product van Nordicbuddies, ontworpen en gemaakt in Helsinki en verkrijgbaar in twee formaten, 30 × 40 cm en 50 × 70 cm. De lijst is niet inbegrepen.',
     specs: [
-      'Zijdepapier, 200 g',
+      'Zijdemat papier, 200 g/m²',
       '30 × 40 cm of 50 × 70 cm',
-      'Ontworpen en gedrukt in Helsinki',
+      'Ontworpen en gemaakt in Helsinki',
+      'Niet inbegrepen',
     ],
-    specLabels: [undefined, undefined, 'Productie'],
+    specLabels: [undefined, undefined, undefined, 'Lijst'],
   },
   'nb-moomin-novels-poster': {
     name: 'Poster van de Moomin-romans',
@@ -1510,15 +1521,13 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Vaatwasserbestendig, niet voor de magnetron',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Arabia Moomin kan 1,0 l, Moominhuis',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Arabia Moomin kan 1,0 l, Adventure Move',
     description:
-      'Kan van één liter van Arabia met het Moominhuis, het ronde kachelvormige huis dat Moominpappa zelf bouwde en \'s nachts nooit op slot doet. Met keramisch deksel dat op een zomertafel insecten uit het sap houdt.',
+      'Een Arabia-kan van één liter met het motief Adventure Move. De komeet aan de hemel wordt met de dag groter, en de Moominfamilie besluit samen met de anderen te vluchten en neemt alleen mee wat het belangrijkst is. Een kan voor sap of water op de familietafel.',
     specs: [
       '1,0 l',
-      'Keramisch deksel inbegrepen',
     ],
-    specLabels: [undefined, 'Deksel'],
   },
   'sk-moomin-duvet-set-merella': {
     name: 'Moomin dekbedovertrekset 140 x 200 cm, Merellä',
@@ -1665,16 +1674,18 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
       'Finse kruipbraam 75 %, suiker 20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Lapin Liha gerookte rendiersoep 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Riipinen rendiervleesspread 125 g',
     description:
-      'Romige soep met warm en koud gerookt rendier, 400 gram, gemaakt door Lapin Liha. Verwarmen in een pan; het is de smaak van een Laplandse hutlunch in een pak dat in een koffer past.',
+      'Een spread van rendiervlees in een tube, gemaakt met 30 procent Fins rendiervlees. Knijp hem uit op roggebrood of crackers, serveer hem bij de tapas of meng hem door een gehaktbrood. De rest van het vlees is Fins varkensvlees en spek, en de spread bevat melk en ei.',
     specs: [
-      '400 g',
-      'Warm gerookt rendier 3 % en koud gerookt rendier 3 %',
-      'Verwarmen in een pan',
+      '125 g',
+      'Rendiervlees 30 % (Finland), totaal vleesgehalte 44 %',
+      'Voor tapas, op brood, in gehaktbrood',
+      'Energie 1070 kJ / 260 kcal, vet 23 g, waarvan verzadigd 5,5 g, koolhydraten 1,9 g, waarvan suikers 0,8 g, vezels 0,1 g, eiwit 11 g, zout 1,9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, 'Bereiding'],
+    specLabels: [undefined, undefined, 'Serveertips', 'Voedingswaarde per 100 g', 'Op de markt gebracht door'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Vaasan Ruispalat roggebrood 660 g, 12 stuks',
@@ -2122,18 +2133,18 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Vermeldingen op het etiket', 'Allergenen', 'Voedingswaarde per 100 g'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: 'Karl Fazer adventskalender 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Karl Fazer Collection bonbondoos 160 g',
     description:
-      'Een Karl Fazer-adventskalender met 200 g chocoladebonbons in verschillende smaken achter de deurtjes. Het laatste deurtje is gevuld met Fazer Blue, de Karl Fazer-melkchocolade die Fazer sinds 1922 maakt. Fazer betrekt zijn cacao via het programma Fazer Cocoa Vision.',
+      'Een klein doosje bonbons uit de Karl Fazer Collection: 18 stuks in negen smaken, een mix van Fazer-favorieten, nieuwere vullingen en klassiekers die teruggaan tot 1908. De pure chocolade bevat minstens 47 procent cacao en de melkchocolade minstens 30 procent. Het doosje is klein genoeg voor een koffer of een kerstpakket.',
     specs: [
-      '200 g',
-      'Chocoladebonbons in verschillende smaken, laatste deurtje gevuld met Fazer Blue-melkchocolade',
-      'Melkchocolade met minstens 30 % cacao',
-      'Bevat melk, soja en gerst (gluten). Kan noten, amandelen, tarwe, rogge en haver bevatten',
-      'Energie 2315 kJ / 554 kcal, vet 34 g, waarvan verzadigd 20 g, koolhydraten 53 g, waarvan suikers 51 g, eiwit 9,6 g, zout 0,31 g',
+      '160 g',
+      '18 bonbons in 9 smaken',
+      'Pure chocolade minstens 47 % cacao, melkchocolade minstens 30 % cacao',
+      'Bevat melk, hazelnoten, amandelen, tarwe (gluten) en soja. Kan andere noten, rogge en haver bevatten',
+      'Energie 2178 kJ / 520 kcal, vet 30 g, waarvan verzadigd 17 g, koolhydraten 55 g, waarvan suikers 50 g, eiwit 5,7 g, zout 0,25 g',
     ],
-    specLabels: [undefined, undefined, 'Vermeldingen op het etiket', 'Allergenen', 'Voedingswaarde per 100 g'],
+    specLabels: [undefined, undefined, 'Cacaogehalte', 'Allergenen', 'Voedingswaarde per 100 g'],
   },
   'sk-fazer-christmas-chocolates': {
     name: 'Fazer Joulusuklaa kerstbonbons 295 g',
@@ -2196,18 +2207,17 @@ export const PRODUCT_COPY_NL: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Voedingswaarde per 100 g'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: 'Kuivalihakundi jerky-adventskalender 2026, 24 deurtjes',
+  'kuivalihakundi-jerky-box': {
+    name: 'Kuivalihakundi Lihalaatikko jerkybox, 8 zakjes',
     description:
-      'De adventskalender 2026 van Kuivalihakundi bevat 24 verschillende smaken jerky, achter elk van de 24 deurtjes een zakje van 20 g. Er is rund, kip, vetter en magerder varkensvlees, in basissmaken en in enkele die alleen voor deze kalender gemaakt zijn, allemaal uit de eigen fabriek van het bedrijf in Jokela, Finland. De jerky blijft ook na opening goed op kamertemperatuur, de kalender staat op tafel of hangt aan de muur via de ophanggaten, en het is een beperkte oplage.',
+      'Het hele vaste assortiment van Kuivalihakundi in één doos: vijf soorten rundvlees, twee soorten kip en één soort varkensvlees, in totaal acht hersluitbare zakjes. De smaken lopen van Original en Smoked tot Mild Habanero en Hot Naga, dus de doos past zowel bij wie jerky mild lekker vindt als bij wie het pittig wil. De jerky blijft ongeveer 11 maanden goed en hoeft niet in de koelkast, ook niet na opening.',
     specs: [
-      '24 x 20 g zakjes jerky, achter elk deurtje een andere smaak',
-      'Rund, kip, vetter en magerder varkensvlees',
-      'Gemaakt in de eigen fabriek van Kuivalihakundi in Jokela, Finland',
-      'Blijft goed op kamertemperatuur, ook na opening',
-      'Staat op tafel of hangt aan de muur via de ophanggaten',
+      '8 zakjes: rundvleesjerky Original, Mild Habanero, Hot Naga, Garlic en Smoked (elk 40 g); kipjerky Lemongrass en Sriracha (elk 40 g); Greasy Pork Smoky BBQ (50 g)',
+      'Is een smaak uitverkocht, dan vervangt de winkel die door Beef Jerky Teriyaki 40 g, Butter Chicken 40 g of Greasy Pork Smokey Apple 50 g',
+      'Ongeveer 11 maanden na aankoop, hoeft ook na opening niet in de koelkast',
+      'Hersluitbare zakjes in één doos',
     ],
-    specLabels: [undefined, 'Vleessoorten', undefined, undefined, 'Ophanging'],
+    specLabels: [undefined, 'Vervangende smaken', undefined, 'Verpakking'],
   },
   'halti-crostie-merino-beanie': {
     name: 'Halti Crostie merinomuts',

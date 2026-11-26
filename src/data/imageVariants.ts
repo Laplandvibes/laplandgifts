@@ -815,7 +815,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-kuivalihakundi-advent-calendar": {
+  "prod-kuivalihakundi-beef-jerky-smoked": {
     "full": 800,
     "w": [
       320,
@@ -823,7 +823,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-kuivalihakundi-beef-jerky-smoked": {
+  "prod-kuivalihakundi-jerky-box": {
     "full": 800,
     "w": [
       320,
@@ -1135,7 +1135,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-nb-little-my-poster": {
+  "prod-nb-little-my-party-poster": {
     "full": 800,
     "w": [
       320,
@@ -1415,14 +1415,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-puhdistamo-conifer-extract": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-reindeer-safari-rovaniemi": {
     "full": 800,
     "w": [
@@ -1566,6 +1558,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-rj-puhdistamo-conifer-drink": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-rj-raitaniemi-crowberry-powder": {
     "full": 800,
     "w": [
@@ -1598,8 +1598,8 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-arabia-moomin-pitcher-moominhouse": {
-    "full": 360,
+  "prod-sk-arabia-moomin-pitcher-adventure-move": {
+    "full": 464,
     "w": [
       320
     ]
@@ -1746,14 +1746,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-finnish-flavours-lingonberry-jam": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
   "prod-sk-fiskars-snorkmaiden-kids-scissors": {
     "full": 480,
     "w": [
@@ -1800,7 +1792,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-karl-fazer-advent-calendar": {
+  "prod-sk-karl-fazer-blueberry-truffle-chocolates": {
     "full": 800,
     "w": [
       320,
@@ -1808,7 +1800,7 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-karl-fazer-blueberry-truffle-chocolates": {
+  "prod-sk-karl-fazer-collection-chocolates": {
     "full": 800,
     "w": [
       320,
@@ -1841,14 +1833,6 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
     ]
   },
   "prod-sk-kouvolan-lakritsi-500g": {
-    "full": 800,
-    "w": [
-      320,
-      480,
-      640
-    ]
-  },
-  "prod-sk-lapin-liha-smoked-reindeer-soup": {
     "full": 800,
     "w": [
       320,
@@ -2060,6 +2044,14 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
+  "prod-sk-poikain-parhaat-berry-jams": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
   "prod-sk-poikain-parhaat-freeze-dried-blueberry": {
     "full": 800,
     "w": [
@@ -2100,7 +2092,15 @@ export const IMAGE_VARIANTS: Record<string, ImageVariant> = {
       640
     ]
   },
-  "prod-sk-sisu-kaamos-salty-liquorice": {
+  "prod-sk-riipinen-reindeer-spread": {
+    "full": 800,
+    "w": [
+      320,
+      480,
+      640
+    ]
+  },
+  "prod-sk-sisu-kide-menthol-salmiakki": {
     "full": 600,
     "w": [
       320,

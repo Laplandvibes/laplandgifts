@@ -354,16 +354,19 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, '每 100 g 营养成分', '经销商'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Finnish Flavours 芬兰越橘果酱 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Poikain Parhaat 芬兰浆果果酱组合，4 × 45 g',
     description:
-      '在芬兰制作的越橘果酱，原料是在芬兰森林里采摘的浆果，越橘占整罐的 45%。芬兰人吃野味炖肉、肉丸和菠菜薄饼时会配这种果酱，它也可以和一袋驯鹿肉干装进同一份礼物。',
+      '一盒四小罐芬兰浆果果酱：云莓、蔓越莓、黑加仑和蓝莓。果酱为手工制作，浆果都是在芬兰的森林和园子里用手采摘的。每罐浆果含量 75%，不含人工香料和色素。一罐 45 g，足够抹在面包、薄饼或燕麦粥上尝尝味道。',
     specs: [
-      '400 g',
-      '芬兰制造，原料为 100 % 芬兰浆果',
-      '能量 633 kJ / 151 kcal，脂肪 0.2 g 其中饱和脂肪 0 g，碳水化合物 39 g 其中糖 39 g，蛋白质 0.2 g，盐 0.01 g',
+      '4 × 45 g',
+      '云莓、蔓越莓、黑加仑和蓝莓果酱',
+      '每款果酱含 75 % 手工采摘的芬兰浆果',
+      '无乳糖、无麸质、纯素',
+      '能量 512 kJ / 122 kcal，脂肪 0.8 g 其中饱和脂肪 0 g，碳水化合物 24 g 其中糖 19 g，蛋白质 1.1 g，盐 0.1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, '每 100 g 营养成分'],
+    specLabels: [undefined, undefined, undefined, '饮食', '每 100 g 营养成分', '经销商'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: '驯鹿肉干 原味 200 g',
@@ -649,13 +652,13 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     specs: ['36 g', '木糖醇。带有芬兰牙医协会标志'],
     specLabels: [undefined, '甜味剂'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: 'Sisu Kaamos 咸甘草软糖 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: 'Sisu Kide 薄荷咸甘草含片 80 g',
     description:
-      '柔软的 Sisu 软糖，甘草和咸甘草的味道都很浓。咸甘草（salmiakki）是芬兰人用氯化铵调味的咸味甘草糖。Kaamos 在芬兰语里指极夜，也就是极北地区太阳不升到地平线以上的那几个星期。',
+      '裹着糖衣的 Sisu 含片，咸甘草和甘草的味道浓烈，还带一丝清凉的薄荷。咸甘草糖（salmiakki）是用氯化铵调味的咸味甘草糖，深受芬兰人喜爱。Kide 在芬兰语里是“结晶”的意思，雪晶的芬兰语 lumikide 里就有这个词。',
     specs: [
       '80 g',
-      '能量 1160 kJ / 277 kcal，脂肪 0.6 g 其中饱和脂肪 0.2 g，碳水化合物 52 g 其中糖 45 g，蛋白质 1.2 g，盐 5.5 g',
+      '能量 1269 kJ / 302 kcal，脂肪 0 g 其中饱和脂肪 0 g，碳水化合物 60 g 其中糖 53 g，蛋白质 1.1 g，盐 0.4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, '每 100 g 营养成分', '经销商'],
@@ -1007,11 +1010,18 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '提取', '用量', '警示'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo 针叶树提取液 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo 针叶树提取饮品 1 l',
     description:
-      '从芬兰针叶树中提取的滴剂。拉普兰森林徒步的气息，装进一个能放进大衣口袋的小瓶。',
-    specs: ['50 ml'],
+      '以幼龄有机松树的树皮和内皮、地下水和未精制海盐制成的饮品，配方源自芬兰古老的民间传统。松树采自芬兰西部博滕区的森林，远离工业区。饮品不含添加剂、防腐剂和色素。一升玻璃瓶装，开封后可保存 7 至 10 天。',
+    specs: [
+      '1 l，玻璃瓶',
+      '幼龄有机松树的树皮和内皮、地下水、未精制海盐',
+      '松树采自芬兰博滕区的森林',
+      '不含添加剂、防腐剂和色素',
+      '开封后可保存 7 至 10 天',
+    ],
+    specLabels: [undefined, undefined, undefined, '添加剂', undefined],
   },
   'nb-little-my-beanie': {
     name: '小不点粗针织帽',
@@ -1206,16 +1216,17 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '授权'],
   },
-  'nb-little-my-poster': {
-    name: '小不点海报',
+  'nb-little-my-party-poster': {
+    name: '小不点派对海报',
     description:
-      '在赫尔辛基设计并印制，200 克丝面纸，有 30 × 40 和 50 × 70 两种尺寸。海报卷进纸筒几乎不占重量，而人们从拉普兰扛回家的东西，多数都做不到这一点。',
+      '小不点在一串派对彩旗下庆祝，印在 200 g/m² 的丝面纸上。这是 Nordicbuddies 出品的姆明官方授权产品，在赫尔辛基设计和制作，有 30 × 40 cm 和 50 × 70 cm 两种尺寸。不含画框。',
     specs: [
-      '丝面纸，200 g',
+      '丝面纸，200 g/m²',
       '30 × 40 cm 或 50 × 70 cm',
-      '在赫尔辛基设计并印制',
+      '在赫尔辛基设计和制作',
+      '不含',
     ],
-    specLabels: [undefined, undefined, '生产'],
+    specLabels: [undefined, undefined, undefined, '画框'],
   },
   'nb-moomin-novels-poster': {
     name: '姆明小说海报',
@@ -1512,15 +1523,13 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '可用洗碗机，不可微波',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Arabia 姆明水壶 1.0 l，姆明屋',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Arabia 姆明水壶 1.0 l，Adventure Move',
     description:
-      'Arabia一升水壶，图案是姆明屋：姆明爸爸亲手建造、夜里也从不上锁的圆形炉子状房子。附陶瓷盖，夏日餐桌上能把虫子挡在果汁之外。',
+      'Arabia 一升水壶，图案为 Adventure Move。天上的彗星一天比一天大，姆明一家决定跟大家一起逃难，只带上最重要的东西。这只水壶适合在家庭餐桌上装果汁或水。',
     specs: [
       '1.0 l',
-      '附陶瓷盖',
     ],
-    specLabels: [undefined, '盖子'],
   },
   'sk-moomin-duvet-set-merella': {
     name: '姆明被套套装 140 x 200 cm，Merellä',
@@ -1667,16 +1676,18 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
       '芬兰云莓75 %，糖20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Lapin Liha 烟熏驯鹿汤 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Riipinen 驯鹿肉酱 125 g',
     description:
-      '含热熏和冷熏驯鹿肉的奶油浓汤，400克，由Lapin Liha制作。用锅加热即可；这是拉普兰木屋午餐的味道，装在放得进行李箱的包装里。',
+      '管装驯鹿肉酱，含 30% 芬兰驯鹿肉。可以挤在黑麦面包或咸饼干上，当作开胃小食的抹酱，也可以拌进烘肉卷里。其余的肉是芬兰猪肉和猪膘，肉酱中含有牛奶和鸡蛋。',
     specs: [
-      '400 g',
-      '热熏驯鹿肉3 %和冷熏驯鹿肉3 %',
-      '用锅加热',
+      '125 g',
+      '驯鹿肉 30 %（芬兰），总肉含量 44 %',
+      '做开胃小食、抹面包、加进烘肉卷',
+      '能量 1070 kJ / 260 kcal，脂肪 23 g 其中饱和脂肪 5.5 g，碳水化合物 1.9 g 其中糖 0.8 g，膳食纤维 0.1 g，蛋白质 11 g，盐 1.9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, '烹调'],
+    specLabels: [undefined, undefined, '食用建议', '每 100 g 营养成分', '经销商'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Vaasan Ruispalat 黑麦面包 660 g',
@@ -2124,18 +2135,18 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, '标签说明', '过敏原', '每 100 g 营养成分'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: 'Karl Fazer 圣诞倒数日历 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Karl Fazer Collection 夹心巧克力礼盒 160 g',
     description:
-      'Karl Fazer 圣诞倒数日历，小门后面是多种口味的夹心巧克力，共 200 g。最后一扇门里装满 Fazer Blue，也就是 Fazer 自 1922 年起生产的 Karl Fazer 牛奶巧克力。Fazer 按照 Fazer Cocoa Vision 计划采购可可。',
+      '一小盒 Karl Fazer Collection 夹心巧克力：九种口味共 18 颗，有 Fazer 的人气口味、较新的夹心，也有可追溯到 1908 年的经典款。黑巧克力的可可含量至少 47%，牛奶巧克力至少 30%。盒子小巧，放得进行李箱，也装得进圣诞包裹。',
     specs: [
-      '200 g',
-      '多种口味的夹心巧克力，最后一扇门里是 Fazer Blue 牛奶巧克力',
-      '牛奶巧克力可可含量至少 30 %',
-      '含牛奶、大豆和大麦（麸质）。可能含有坚果、杏仁、小麦、黑麦和燕麦',
-      '能量 2315 kJ / 554 kcal，脂肪 34 g 其中饱和脂肪 20 g，碳水化合物 53 g 其中糖 51 g，蛋白质 9.6 g，盐 0.31 g',
+      '160 g',
+      '18 颗夹心巧克力，9 种口味',
+      '黑巧克力可可含量至少 47 %，牛奶巧克力可可含量至少 30 %',
+      '含牛奶、榛子、杏仁、小麦（麸质）和大豆。可能含有其他坚果、黑麦和燕麦',
+      '能量 2178 kJ / 520 kcal，脂肪 30 g 其中饱和脂肪 17 g，碳水化合物 55 g 其中糖 50 g，蛋白质 5.7 g，盐 0.25 g',
     ],
-    specLabels: [undefined, undefined, '标签说明', '过敏原', '每 100 g 营养成分'],
+    specLabels: [undefined, undefined, '可可含量', '过敏原', '每 100 g 营养成分'],
   },
   'sk-fazer-christmas-chocolates': {
     name: 'Fazer Joulusuklaa 圣诞巧克力 295 g',
@@ -2198,18 +2209,17 @@ export const PRODUCT_COPY_ZH_CN: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '每 100 g 营养成分'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: 'Kuivalihakundi 肉干倒数日历 2026',
+  'kuivalihakundi-jerky-box': {
+    name: 'Kuivalihakundi Lihalaatikko 肉干礼盒，8 袋',
     description:
-      'Kuivalihakundi 2026 年的圣诞倒数日历装有 24 种不同口味的肉干，24 扇小门后各有一袋 20 g。有牛肉、鸡肉、肥猪肉和较瘦的猪肉，既有基本口味，也有专为这款日历做的口味，全部出自该公司在芬兰约克拉的自有工厂。肉干开封后也可以常温保存，日历可以立在桌上，也可以借助挂孔挂在墙上，而且是限量批次。',
+      '把 Kuivalihakundi 的全部常规口味装进一个盒子：五袋牛肉干、两袋鸡肉干和一袋猪肉干，一共八个可重复密封的袋子。口味从 Original、Smoked 到 Mild Habanero 和 Hot Naga，爱吃不辣的人和爱吃辣的人都能找到合口的。肉干可保存约 11 个月，开封后也无需冷藏。',
     specs: [
-      '24 x 20 g 肉干，每扇门后口味不同',
-      '牛肉、鸡肉、肥猪肉和较瘦的猪肉',
-      '产于 Kuivalihakundi 位于芬兰约克拉的自有工厂',
-      '常温保存，开封后亦可',
-      '可立在桌上，或借挂孔挂在墙上',
+      '8 袋：牛肉干 Original、Mild Habanero、Hot Naga、Garlic、Smoked（各 40 g）；鸡肉干 Lemongrass、Sriracha（各 40 g）；Greasy Pork Smoky BBQ（50 g）',
+      '如有口味缺货，店家会换成 Beef Jerky Teriyaki 40 g、Butter Chicken 40 g 或 Greasy Pork Smokey Apple 50 g',
+      '自购买之日起约 11 个月，开封后也无需冷藏',
+      '可重复密封的袋子，装在同一个盒子里',
     ],
-    specLabels: [undefined, '肉类', undefined, undefined, '悬挂'],
+    specLabels: [undefined, '替换口味', undefined, '包装'],
   },
   'halti-crostie-merino-beanie': {
     name: 'Halti Crostie 美利奴毛线帽',

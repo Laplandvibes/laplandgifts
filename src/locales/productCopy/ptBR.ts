@@ -352,16 +352,19 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Informação nutricional por 100 g', 'Comercializado por'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Geleia de lingonberry finlandesa Finnish Flavours 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Seleção de geleias de frutas silvestres finlandesas Poikain Parhaat, 4 × 45 g',
     description:
-      'Geleia de lingonberry feita na Finlândia com frutas colhidas em florestas finlandesas, com 45 por cento de lingonberry no pote. É a geleia que os finlandeses servem com ensopado de caça, almôndegas e panquecas de espinafre, e ela cabe no mesmo presente que um pacote de carne seca de rena.',
+      'Quatro potinhos de geleia finlandesa de frutas silvestres na mesma caixa: amora-ártica, cranberry, groselha-preta e mirtilo. As geleias são feitas artesanalmente, com frutas colhidas à mão em florestas e quintais finlandeses. Cada pote tem 75 por cento de frutas e nenhum aromatizante ou corante artificial. Um pote de 45 g dá para provar no pão, na panqueca ou no mingau.',
     specs: [
-      '400 g',
-      'Feita na Finlândia com frutas 100 % finlandesas',
-      'Energia 633 kJ / 151 kcal, gorduras 0,2 g das quais saturadas 0 g, carboidratos 39 g dos quais açúcares 39 g, proteínas 0,2 g, sal 0,01 g',
+      '4 × 45 g',
+      'Geleia de amora-ártica, cranberry, groselha-preta e mirtilo',
+      '75 % de frutas finlandesas colhidas à mão em cada geleia',
+      'Sem lactose, sem glúten, vegana',
+      'Energia 512 kJ / 122 kcal, gorduras 0,8 g das quais saturadas 0 g, carboidratos 24 g dos quais açúcares 19 g, proteínas 1,1 g, sal 0,1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, 'Informação nutricional por 100 g'],
+    specLabels: [undefined, undefined, undefined, 'Dieta', 'Informação nutricional por 100 g', 'Comercializado por'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Carne seca de rena Original 200 g',
@@ -647,13 +650,13 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     specs: ['36 g', 'Xilitol. Leva o selo da Associação Odontológica Finlandesa'],
     specLabels: [undefined, 'Adoçante'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: 'Pastilhas de alcaçuz salgado Sisu Kaamos 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: 'Pastilhas de salmiakki com mentol Sisu Kide 80 g',
     description:
-      'Pastilhas macias da Sisu com sabor forte de alcaçuz e salmiakki, o alcaçuz salgado que os finlandeses temperam com cloreto de amônio. Kaamos é a palavra finlandesa para a noite polar, as semanas no extremo norte em que o sol não sobe acima do horizonte.',
+      'Pastilhas Sisu cobertas de açúcar, com o sabor forte de salmiakki e alcaçuz e um toque refrescante de mentol. Salmiakki é o alcaçuz salgado temperado com cloreto de amônio, um dos doces preferidos dos finlandeses. Kide é a palavra finlandesa para cristal, como em lumikide, cristal de neve.',
     specs: [
       '80 g',
-      'Energia 1160 kJ / 277 kcal, gorduras 0,6 g das quais saturadas 0,2 g, carboidratos 52 g dos quais açúcares 45 g, proteínas 1,2 g, sal 5,5 g',
+      'Energia 1269 kJ / 302 kcal, gorduras 0 g das quais saturadas 0 g, carboidratos 60 g dos quais açúcares 53 g, proteínas 1,1 g, sal 0,4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, 'Informação nutricional por 100 g', 'Comercializado por'],
@@ -1005,11 +1008,18 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Extração', 'Dose', 'Advertência'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo extrato de coníferas 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo bebida de extrato de coníferas 1 l',
     description:
-      'Um extrato de coníferas finlandesas, tomado em gotas. O cheiro de floresta de uma trilha na Lapônia em um frasco de bolso.',
-    specs: ['50 ml'],
+      'Uma bebida de casca e entrecasca de pinheiro jovem orgânico, água subterrânea e sal marinho não refinado, feita com base numa antiga receita popular finlandesa. O pinheiro é colhido nas florestas da Ostrobótnia, no oeste da Finlândia, longe da indústria. A bebida não tem aditivos, conservantes nem corantes. Vem numa garrafa de vidro de um litro e dura de 7 a 10 dias depois de aberta.',
+    specs: [
+      '1 l, garrafa de vidro',
+      'Casca e entrecasca de pinheiro jovem orgânico, água subterrânea, sal marinho não refinado',
+      'Pinheiro colhido nas florestas da Ostrobótnia, Finlândia',
+      'Sem aditivos, conservantes nem corantes',
+      'Dura de 7 a 10 dias depois de aberta',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Aditivos', undefined],
   },
   'nb-little-my-beanie': {
     name: 'Gorro de tricô grosso da Pequena My',
@@ -1204,16 +1214,17 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licença'],
   },
-  'nb-little-my-poster': {
-    name: 'Pôster Pequena My',
+  'nb-little-my-party-poster': {
+    name: 'Pôster Pequena My em festa',
     description:
-      'Criado e impresso em Helsinque em papel silk de 200 gramas, em 30 × 40 ou 50 × 70. Um pôster enrola num tubo e não pesa nada, o que não se pode dizer da maioria das coisas que as pessoas levam da Lapônia para casa.',
+      'Um pôster da Pequena My comemorando debaixo de um varal de bandeirinhas, impresso em papel couché silk de 200 g/m². É um produto Moomin oficial da Nordicbuddies, criado e produzido em Helsinque e vendido em dois tamanhos, 30 × 40 cm e 50 × 70 cm. A moldura não está incluída.',
     specs: [
-      'Papel silk, 200 g',
+      'Papel couché silk, 200 g/m²',
       '30 × 40 cm ou 50 × 70 cm',
-      'Criado e impresso em Helsinque',
+      'Criado e produzido em Helsinque',
+      'Não incluída',
     ],
-    specLabels: [undefined, undefined, 'Produção'],
+    specLabels: [undefined, undefined, undefined, 'Moldura'],
   },
   'nb-moomin-novels-poster': {
     name: 'Pôster dos romances Moomin',
@@ -1510,15 +1521,13 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Pode ir à lava-louças, não ao micro-ondas',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Jarra Moomin Arabia 1,0 l, Casa dos Moomins',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Jarra Moomin Arabia 1,0 l, Adventure Move',
     description:
-      'Jarra de um litro da Arabia com a Casa dos Moomins, a casa redonda em forma de fogão que o Papai Moomin construiu sozinho e nunca tranca à noite. Vem com tampa de cerâmica que mantém os insetos longe do suco numa mesa de verão.',
+      'Jarra de um litro da Arabia com a estampa Adventure Move. O cometa cresce no céu dia após dia, e a família Moomin decide fugir com os outros, levando só as coisas que mais importam. Uma jarra para suco ou água na mesa da família.',
     specs: [
       '1,0 l',
-      'Tampa de cerâmica incluída',
     ],
-    specLabels: [undefined, 'Tampa'],
   },
   'sk-moomin-duvet-set-merella': {
     name: 'Jogo de capa de edredom Moomin 140 x 200 cm, Merellä',
@@ -1665,16 +1674,18 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
       'Amora-ártica finlandesa 75 %, açúcar 20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Sopa de rena defumada Lapin Liha 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Patê de carne de rena Riipinen 125 g',
     description:
-      'Sopa cremosa com rena defumada a quente e a frio, 400 gramas, feita pela Lapin Liha. Aquecer numa panela; é o sabor de um almoço de cabana na Lapônia, numa embalagem que cabe na mala.',
+      'Patê de carne de rena em bisnaga, feito com 30 por cento de carne de rena finlandesa. Esprema sobre pão de centeio ou biscoito salgado, sirva como petisco ou misture à massa do bolo de carne. O restante da carne é porco e toucinho finlandeses, e o patê leva leite e ovo.',
     specs: [
-      '400 g',
-      'Rena defumada a quente 3 % e rena defumada a frio 3 %',
-      'Aquecer numa panela',
+      '125 g',
+      'Carne de rena 30 % (Finlândia), teor total de carne 44 %',
+      'Para petiscos, no pão, em bolo de carne',
+      'Energia 1070 kJ / 260 kcal, gorduras 23 g das quais saturadas 5,5 g, carboidratos 1,9 g dos quais açúcares 0,8 g, fibra alimentar 0,1 g, proteínas 11 g, sal 1,9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, 'Preparo'],
+    specLabels: [undefined, undefined, 'Sugestões de uso', 'Informação nutricional por 100 g', 'Comercializado por'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Pão de centeio Vaasan Ruispalat 660 g, 12 unidades',
@@ -2122,18 +2133,18 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Informações do rótulo', 'Alergênicos', 'Informação nutricional por 100 g'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: 'Calendário do Advento Karl Fazer 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Caixa de bombons Karl Fazer Collection 160 g',
     description:
-      'Calendário do Advento Karl Fazer com 200 g de bombons de chocolate em vários sabores atrás das portinhas. A última porta vem cheia de Fazer Blue, o chocolate ao leite Karl Fazer que a Fazer produz desde 1922. A Fazer compra o cacau dentro do programa Fazer Cocoa Vision.',
+      'Uma caixinha de bombons Karl Fazer Collection: 18 bombons em nove sabores, entre favoritos da Fazer, recheios mais novos e clássicos que remontam a 1908. O chocolate meio amargo tem pelo menos 47 por cento de cacau, e o chocolate ao leite, pelo menos 30 por cento. A caixa é pequena o bastante para ir na mala ou num pacote de Natal.',
     specs: [
-      '200 g',
-      'Bombons de chocolate em vários sabores, última porta cheia de chocolate ao leite Fazer Blue',
-      'Chocolate ao leite com pelo menos 30 % de cacau',
-      'Contém leite, soja e cevada (glúten). Pode conter castanhas, amêndoas, trigo, centeio e aveia',
-      'Energia 2315 kJ / 554 kcal, gorduras 34 g das quais saturadas 20 g, carboidratos 53 g dos quais açúcares 51 g, proteínas 9,6 g, sal 0,31 g',
+      '160 g',
+      '18 bombons em 9 sabores',
+      'Chocolate meio amargo com pelo menos 47 % de cacau, chocolate ao leite com pelo menos 30 % de cacau',
+      'Contém leite, avelãs, amêndoas, trigo (glúten) e soja. Pode conter outras castanhas, centeio e aveia',
+      'Energia 2178 kJ / 520 kcal, gorduras 30 g das quais saturadas 17 g, carboidratos 55 g dos quais açúcares 50 g, proteínas 5,7 g, sal 0,25 g',
     ],
-    specLabels: [undefined, undefined, 'Informações do rótulo', 'Alergênicos', 'Informação nutricional por 100 g'],
+    specLabels: [undefined, undefined, 'Teor de cacau', 'Alergênicos', 'Informação nutricional por 100 g'],
   },
   'sk-fazer-christmas-chocolates': {
     name: 'Bombons de Natal Fazer Joulusuklaa 295 g',
@@ -2196,18 +2207,17 @@ export const PRODUCT_COPY_PT_BR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Informação nutricional por 100 g'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: 'Calendário do Advento de carne seca Kuivalihakundi 2026',
+  'kuivalihakundi-jerky-box': {
+    name: 'Caixa de carne seca Lihalaatikko da Kuivalihakundi, 8 saquinhos',
     description:
-      'O calendário do Advento 2026 da Kuivalihakundi traz 24 sabores diferentes de carne seca, um saquinho de 20 g atrás de cada uma das 24 portas. Há carne bovina, frango, porco gordo e porco mais magro, em sabores básicos e em alguns feitos só para este calendário, tudo da fábrica da própria empresa em Jokela, na Finlândia. A carne seca se conserva em temperatura ambiente mesmo depois de aberta, o calendário fica em pé sobre a mesa ou pendurado na parede pelos furos para pendurar, e é um lote limitado.',
+      'Toda a linha regular da Kuivalihakundi numa caixa só: oito saquinhos que fecham de novo, com cinco carnes secas bovinas, duas de frango e uma de porco. Os sabores vão do Original e do Smoked ao Mild Habanero e ao Hot Naga, então a caixa agrada tanto a quem gosta de carne seca suave quanto a quem a quer picante. A carne seca dura cerca de 11 meses e não precisa de geladeira, mesmo depois de aberta.',
     specs: [
-      '24 x 20 g de carne seca em saquinhos, um sabor diferente atrás de cada porta',
-      'Carne bovina, frango, porco gordo e porco mais magro',
-      'Fabricado na fábrica da própria Kuivalihakundi em Jokela, Finlândia',
-      'Conserva-se em temperatura ambiente, mesmo depois de aberto',
-      'Fica em pé sobre a mesa ou pendurado na parede pelos furos para pendurar',
+      '8 saquinhos: carne seca bovina Original, Mild Habanero, Hot Naga, Garlic e Smoked (40 g cada); carne seca de frango Lemongrass e Sriracha (40 g cada); Greasy Pork Smoky BBQ (50 g)',
+      'Se algum sabor estiver em falta, a loja o substitui por Beef Jerky Teriyaki 40 g, Butter Chicken 40 g ou Greasy Pork Smokey Apple 50 g',
+      'Cerca de 11 meses a partir da compra; não precisa de geladeira, mesmo depois de aberta',
+      'Saquinhos que fecham de novo, numa caixa só',
     ],
-    specLabels: [undefined, 'Carnes', undefined, undefined, 'Para pendurar'],
+    specLabels: [undefined, 'Substituições', undefined, 'Embalagem'],
   },
   'halti-crostie-merino-beanie': {
     name: 'Gorro de merino Halti Crostie',

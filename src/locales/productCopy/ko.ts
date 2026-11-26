@@ -353,16 +353,19 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, '100 g당 영양성분', '판매원'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Finnish Flavours 핀란드 링곤베리 잼 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Poikain Parhaat 핀란드 베리 잼 세트, 4 × 45 g',
     description:
-      '핀란드 숲에서 딴 베리로 핀란드에서 만든 링곤베리 잼으로, 병 내용물의 45퍼센트가 링곤베리입니다. 핀란드 사람들이 야생 고기 스튜, 미트볼, 시금치 팬케이크에 곁들이는 잼이며, 순록 육포 한 봉지와 함께 한 선물로 묶기 좋습니다.',
+      '핀란드 베리 잼 작은 병 네 개를 한 상자에 담았습니다. 클라우드베리, 크랜베리, 블랙커런트, 블루베리 잼입니다. 핀란드의 숲과 정원에서 손으로 딴 베리로 잼을 손수 만들며, 병마다 베리가 75퍼센트 들어 있고 인공 향료나 색소는 넣지 않았습니다. 45 g 병 하나면 빵이나 팬케이크, 포리지에 곁들여 맛보기에 충분합니다.',
     specs: [
-      '400 g',
-      '핀란드산 베리 100 %로 핀란드에서 제조',
-      '열량 633 kJ / 151 kcal, 지방 0.2 g 그중 포화지방 0 g, 탄수화물 39 g 그중 당류 39 g, 단백질 0.2 g, 소금 0.01 g',
+      '4 × 45 g',
+      '클라우드베리, 크랜베리, 블랙커런트, 블루베리 잼',
+      '잼마다 손으로 딴 핀란드산 베리 75 %',
+      '무유당, 글루텐 프리, 비건',
+      '열량 512 kJ / 122 kcal, 지방 0.8 g 그중 포화지방 0 g, 탄수화물 24 g 그중 당류 19 g, 단백질 1.1 g, 소금 0.1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, '100 g당 영양성분'],
+    specLabels: [undefined, undefined, undefined, '식단', '100 g당 영양성분', '판매원'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: '순록 육포 오리지널 200 g',
@@ -648,13 +651,13 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     specs: ['36 g', '자일리톨. 핀란드 치과의사협회 마크 부착'],
     specLabels: [undefined, '감미료'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: '시수 Kaamos 짠 감초 파스틸 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: '시수 Kide 멘톨 살미아키 파스틸 80 g',
     description:
-      '감초와 살미아키 맛이 진한 부드러운 시수 파스틸입니다. 살미아키는 핀란드 사람들이 염화암모늄으로 맛을 내는 짠 감초입니다. Kaamos는 극야를 뜻하는 핀란드어로, 북쪽 끝에서 해가 지평선 위로 떠오르지 않는 몇 주를 가리킵니다.',
+      '설탕 코팅을 입힌 시수 파스틸로, 살미아키와 감초의 진한 맛에 시원한 멘톨 향이 살짝 더해졌습니다. 살미아키는 염화암모늄으로 맛을 낸 짠 감초로, 핀란드 사람들이 즐겨 먹습니다. Kide는 핀란드어로 결정을 뜻하며, 눈 결정을 뜻하는 lumikide의 그 kide입니다.',
     specs: [
       '80 g',
-      '열량 1160 kJ / 277 kcal, 지방 0.6 g 그중 포화지방 0.2 g, 탄수화물 52 g 그중 당류 45 g, 단백질 1.2 g, 소금 5.5 g',
+      '열량 1269 kJ / 302 kcal, 지방 0 g 그중 포화지방 0 g, 탄수화물 60 g 그중 당류 53 g, 단백질 1.1 g, 소금 0.4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, '100 g당 영양성분', '판매원'],
@@ -1006,11 +1009,18 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '추출', '섭취량', '주의'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo 침엽수 추출액 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo 침엽수 추출 음료 1 l',
     description:
-      '핀란드 침엽수에서 추출해 방울로 먹는 추출액. 라플란드 숲길의 향을 코트 주머니에 들어가는 병에 담았습니다.',
-    specs: ['50 ml'],
+      '어린 유기농 소나무의 껍질과 속껍질, 지하수, 정제하지 않은 바닷소금으로 만든 음료로, 핀란드의 오래된 민간 레시피를 바탕으로 합니다. 소나무는 산업 시설에서 멀리 떨어진 핀란드 서부 포흐얀마의 숲에서 채취합니다. 첨가물, 보존료, 색소는 넣지 않았습니다. 1리터 유리병에 담겨 있으며, 개봉 후 7~10일 동안 보관할 수 있습니다.',
+    specs: [
+      '1 l, 유리병',
+      '어린 유기농 소나무의 껍질과 속껍질, 지하수, 정제하지 않은 바닷소금',
+      '핀란드 포흐얀마의 숲에서 채취한 소나무',
+      '첨가물, 보존료, 색소 무첨가',
+      '개봉 후 7~10일 보관 가능',
+    ],
+    specLabels: [undefined, undefined, undefined, '첨가물', undefined],
   },
   'nb-little-my-beanie': {
     name: '리틀 미이 굵은 니트 비니',
@@ -1205,16 +1215,17 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '라이선스'],
   },
-  'nb-little-my-poster': {
-    name: '리틀 미이 포스터',
+  'nb-little-my-party-poster': {
+    name: '리틀 미이 파티 포스터',
     description:
-      '헬싱키에서 디자인하고 200그램 실크지에 인쇄했으며, 30 × 40과 50 × 70 두 가지 크기가 있습니다. 포스터는 원통에 말면 무게가 없다시피 한데, 사람들이 라플란드에서 들고 오는 물건 대부분은 그렇지 않습니다.',
+      '파티 가랜드 아래에서 축하하는 리틀 미이를 200 g/m² 실크지에 인쇄한 포스터입니다. Nordicbuddies의 무민 공식 제품으로, 헬싱키에서 디자인하고 제작했습니다. 크기는 30 × 40 cm와 50 × 70 cm 두 가지이며, 액자는 포함되지 않습니다.',
     specs: [
-      '실크지, 200 g',
+      '실크지, 200 g/m²',
       '30 × 40 cm 또는 50 × 70 cm',
-      '헬싱키에서 디자인·인쇄',
+      '헬싱키에서 디자인·제작',
+      '포함되지 않음',
     ],
-    specLabels: [undefined, undefined, '제작'],
+    specLabels: [undefined, undefined, undefined, '액자'],
   },
   'nb-moomin-novels-poster': {
     name: '무민 소설 포스터',
@@ -1511,15 +1522,13 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '식기세척기 사용 가능, 전자레인지 불가',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Arabia 무민 피처 1.0 l, 무민하우스',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Arabia 무민 피처 1.0 l, Adventure Move',
     description:
-      '무민파파가 직접 지었고 밤에도 문을 잠그지 않는 둥근 난로 모양의 집, 무민하우스가 그려진 Arabia의 1리터 피처입니다. 여름 식탁에서 주스에 벌레가 들어가지 않게 막아 주는 도자기 뚜껑이 딸려 있습니다.',
+      'Adventure Move 무늬가 들어간 Arabia의 1리터 피처입니다. 하늘의 혜성은 날마다 커지고, 무민 가족은 다른 이들과 함께 피난을 떠나기로 하고 가장 소중한 물건만 챙깁니다. 가족 식탁에서 주스나 물을 담는 피처입니다.',
     specs: [
       '1.0 l',
-      '도자기 뚜껑 포함',
     ],
-    specLabels: [undefined, '뚜껑'],
   },
   'sk-moomin-duvet-set-merella': {
     name: '무민 이불 커버 세트 140 x 200 cm, Merellä',
@@ -1666,16 +1675,18 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
       '핀란드산 클라우드베리 75 %, 설탕 20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Lapin Liha 훈제 순록 수프 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Riipinen 순록 고기 스프레드 125 g',
     description:
-      '온훈과 냉훈 순록 고기가 든 크리미한 수프 400그램으로, Lapin Liha가 만들었습니다. 냄비에 데우기만 하면 됩니다. 여행 가방에 들어가는 포장에 담긴 라플란드 오두막 점심의 맛입니다.',
+      '핀란드산 순록 고기를 30퍼센트 넣은 튜브형 순록 고기 스프레드입니다. 호밀빵이나 크래커에 짜서 올리거나, 타파스용 스프레드로 내거나, 미트로프 반죽에 섞어 쓸 수 있습니다. 나머지 고기는 핀란드산 돼지고기와 돼지비계이며, 우유와 달걀이 들어 있습니다.',
     specs: [
-      '400 g',
-      '온훈 순록 3 %와 냉훈 순록 3 %',
-      '냄비에 데우기',
+      '125 g',
+      '순록 고기 30 %(핀란드산), 총 육함량 44 %',
+      '타파스용, 빵 위에, 미트로프에',
+      '열량 1070 kJ / 260 kcal, 지방 23 g 그중 포화지방 5.5 g, 탄수화물 1.9 g 그중 당류 0.8 g, 식이섬유 0.1 g, 단백질 11 g, 소금 1.9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, '조리'],
+    specLabels: [undefined, undefined, '활용법', '100 g당 영양성분', '판매원'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Vaasan Ruispalat 호밀빵 660 g 12개',
@@ -2123,18 +2134,18 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, '포장 표시 사항', '알레르기 유발 성분', '100 g당 영양성분'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: '칼 파제르 어드벤트 캘린더 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Karl Fazer Collection 초콜릿 박스 160 g',
     description:
-      '문 뒤에 여러 맛의 초콜릿 프랄린 200 g이 들어 있는 칼 파제르 어드벤트 캘린더입니다. 마지막 문에는 파제르가 1922년부터 만들어 온 칼 파제르 밀크 초콜릿, 파제르 블루가 가득 들어 있습니다. 파제르는 Fazer Cocoa Vision 프로그램에 따라 코코아를 조달합니다.',
+      'Karl Fazer Collection 초콜릿이 든 작은 상자입니다. 아홉 가지 맛의 초콜릿 18개가 들어 있으며, 파제르의 인기 맛과 새로운 필링, 1908년부터 이어진 클래식이 섞여 있습니다. 다크 초콜릿은 코코아 함량이 47퍼센트 이상, 밀크 초콜릿은 30퍼센트 이상입니다. 여행 가방이나 크리스마스 소포에도 쏙 들어가는 크기입니다.',
     specs: [
-      '200 g',
-      '여러 맛의 초콜릿 프랄린, 마지막 문에는 파제르 블루 밀크 초콜릿',
-      '코코아 30% 이상 밀크 초콜릿',
-      '우유, 대두, 보리(글루텐) 함유. 견과류, 아몬드, 밀, 호밀, 귀리가 들어 있을 수 있음',
-      '열량 2315 kJ / 554 kcal, 지방 34 g 그중 포화지방 20 g, 탄수화물 53 g 그중 당류 51 g, 단백질 9.6 g, 소금 0.31 g',
+      '160 g',
+      '초콜릿 18개, 9가지 맛',
+      '다크 초콜릿 코코아 47 % 이상, 밀크 초콜릿 코코아 30 % 이상',
+      '우유, 헤이즐넛, 아몬드, 밀(글루텐), 대두 함유. 기타 견과류, 호밀, 귀리가 들어 있을 수 있음',
+      '열량 2178 kJ / 520 kcal, 지방 30 g 그중 포화지방 17 g, 탄수화물 55 g 그중 당류 50 g, 단백질 5.7 g, 소금 0.25 g',
     ],
-    specLabels: [undefined, undefined, '포장 표시 사항', '알레르기 유발 성분', '100 g당 영양성분'],
+    specLabels: [undefined, undefined, '코코아 함량', '알레르기 유발 성분', '100 g당 영양성분'],
   },
   'sk-fazer-christmas-chocolates': {
     name: '파제르 Joulusuklaa 초콜릿 295 g',
@@ -2197,18 +2208,17 @@ export const PRODUCT_COPY_KO: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '100 g당 영양성분'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: '쿠이발리하쿤디 육포 어드벤트 캘린더 2026, 24칸',
+  'kuivalihakundi-jerky-box': {
+    name: '쿠이발리하쿤디 Lihalaatikko 육포 박스, 8봉지',
     description:
-      '쿠이발리하쿤디의 2026년 어드벤트 캘린더로, 24개의 문 뒤마다 20 g 육포 한 봉지가 들어 있으며 24가지 맛이 모두 다릅니다. 소고기, 닭고기, 기름진 돼지고기, 기름기 적은 돼지고기가 기본 맛과 이 캘린더만을 위한 맛으로 들어 있으며, 모두 핀란드 요켈라에 있는 회사 자체 공장에서 만들었습니다. 육포는 개봉 후에도 실온에서 보관할 수 있고, 캘린더는 테이블에 세우거나 걸이 구멍으로 벽에 걸 수 있으며, 한정 수량입니다.',
+      '쿠이발리하쿤디의 기본 라인업을 모두 한 상자에 담았습니다. 소고기 육포 다섯 봉지, 닭고기 두 봉지, 돼지고기 한 봉지로, 다시 밀봉할 수 있는 봉지가 모두 여덟 개입니다. 맛은 Original과 Smoked부터 Mild Habanero와 Hot Naga까지 다양해서 순한 육포를 좋아하는 사람에게도, 매운맛을 찾는 사람에게도 잘 맞습니다. 육포는 약 11개월 보관할 수 있으며, 개봉한 뒤에도 냉장 보관이 필요 없습니다.',
     specs: [
-      '육포 24 x 20 g 봉지, 문마다 다른 맛',
-      '소고기, 닭고기, 기름진 돼지고기, 기름기 적은 돼지고기',
-      '핀란드 요켈라의 쿠이발리하쿤디 자체 공장에서 제조',
-      '개봉 후에도 실온 보관 가능',
-      '테이블에 세우거나 걸이 구멍으로 벽에 걸 수 있음',
+      '8봉지: 소고기 육포 Original, Mild Habanero, Hot Naga, Garlic, Smoked(각 40 g) / 닭고기 육포 Lemongrass, Sriracha(각 40 g) / Greasy Pork Smoky BBQ(50 g)',
+      '품절된 맛이 있으면 상점에서 Beef Jerky Teriyaki 40 g, Butter Chicken 40 g, Greasy Pork Smokey Apple 50 g 중 하나로 대체합니다',
+      '구입일로부터 약 11개월, 개봉 후에도 냉장 보관 불필요',
+      '다시 밀봉할 수 있는 봉지, 한 상자에 담김',
     ],
-    specLabels: [undefined, '육류', undefined, undefined, '걸이'],
+    specLabels: [undefined, '대체 상품', undefined, '포장'],
   },
   'halti-crostie-merino-beanie': {
     name: '할티 Crostie 메리노 비니',

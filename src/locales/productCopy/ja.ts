@@ -354,16 +354,19 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, '100 g あたりの栄養成分', '販売者'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Finnish Flavours フィンランド産リンゴンベリージャム 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Poikain Parhaat フィンランド産ベリージャム 詰め合わせ 4 × 45 g',
     description:
-      'フィンランドの森で摘んだベリーを使い、フィンランドで作ったリンゴンベリージャムです。瓶の中身の 45 パーセントがリンゴンベリーです。フィンランドではジビエの煮込みやミートボール、ほうれん草のパンケーキに添えるジャムで、トナカイの干し肉一袋と一緒にひとつのギフトにまとめられます。',
+      'フィンランドのベリージャムの小瓶 4 つが、ひと箱に入っています。味はクラウドベリー、クランベリー、カシス、ブルーベリーです。ジャムはフィンランドの森や庭で手摘みしたベリーを使い、手作りされています。どの瓶もベリーが 75 パーセントを占め、人工の香料や着色料は使っていません。45 g の瓶ひとつで、パンやパンケーキ、ポリッジにのせて味見するのにちょうどよい量です。',
     specs: [
-      '400 g',
-      'フィンランド産ベリー 100 % を使いフィンランドで製造',
-      'エネルギー 633 kJ / 151 kcal、脂質 0.2 g うち飽和脂肪酸 0 g、炭水化物 39 g うち糖類 39 g、たんぱく質 0.2 g、食塩相当量 0.01 g',
+      '4 × 45 g',
+      'クラウドベリー、クランベリー、カシス、ブルーベリーのジャム',
+      '各ジャムに手摘みのフィンランド産ベリー 75 %',
+      '乳糖不使用、グルテンフリー、ヴィーガン',
+      'エネルギー 512 kJ / 122 kcal、脂質 0.8 g うち飽和脂肪酸 0 g、炭水化物 24 g うち糖類 19 g、たんぱく質 1.1 g、食塩相当量 0.1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, '100 g あたりの栄養成分'],
+    specLabels: [undefined, undefined, undefined, '食事対応', '100 g あたりの栄養成分', '販売者'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'トナカイ干し肉 オリジナル 200 g',
@@ -649,13 +652,13 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     specs: ['36 g', 'キシリトール。フィンランド歯科医師会のマーク付き'],
     specLabels: [undefined, '甘味料'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: 'Sisu Kaamos 塩味リコリス パスティル 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: 'Sisu Kide メンソール サルミアッキ パスティル 80 g',
     description:
-      'リコリスとサルミアッキの強い味がする、やわらかな Sisu のパスティルです。サルミアッキはフィンランドの塩味リコリスで、塩化アンモニウムで味をつけています。Kaamos はフィンランド語で極夜のこと。北の果てで太陽が地平線の上に昇らない数週間を指します。',
+      '砂糖でコーティングした Sisu のパスティルで、サルミアッキとリコリスの強い味に、メンソールのひんやりした風味が加わっています。サルミアッキは塩化アンモニウムで味をつけた塩味のリコリスで、フィンランドで好まれているお菓子です。Kide はフィンランド語で「結晶」のこと。雪の結晶を意味する lumikide の kide です。',
     specs: [
       '80 g',
-      'エネルギー 1160 kJ / 277 kcal、脂質 0.6 g うち飽和脂肪酸 0.2 g、炭水化物 52 g うち糖類 45 g、たんぱく質 1.2 g、食塩相当量 5.5 g',
+      'エネルギー 1269 kJ / 302 kcal、脂質 0 g うち飽和脂肪酸 0 g、炭水化物 60 g うち糖類 53 g、たんぱく質 1.1 g、食塩相当量 0.4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, '100 g あたりの栄養成分', '販売者'],
@@ -1007,11 +1010,18 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '抽出', '摂取量の目安', '注意'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo 針葉樹エキス 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo 針葉樹エキスドリンク 1 l',
     description:
-      'フィンランドの針葉樹から抽出したエキスを滴で。ラップランドの森歩きの香りを、コートのポケットに入る瓶で。',
-    specs: ['50 ml'],
+      '若い有機栽培のマツの樹皮と内皮、地下水、未精製の海塩で作ったドリンクで、フィンランドに古くから伝わる民間のレシピがもとになっています。マツは、工業地帯から遠く離れたフィンランド西部ポフヤンマー地方の森で採取しています。添加物、保存料、着色料は使っていません。1 リットルのガラス瓶入りで、開封後は 7〜10 日もちます。',
+    specs: [
+      '1 l、ガラス瓶',
+      '若い有機栽培のマツの樹皮と内皮、地下水、未精製の海塩',
+      'マツはフィンランドのポフヤンマー地方の森で採取',
+      '添加物、保存料、着色料不使用',
+      '開封後 7〜10 日保存可能',
+    ],
+    specLabels: [undefined, undefined, undefined, '添加物', undefined],
   },
   'nb-little-my-beanie': {
     name: 'リトルミイ ざっくりニット帽',
@@ -1206,16 +1216,17 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'ライセンス'],
   },
-  'nb-little-my-poster': {
-    name: 'リトルミイ ポスター',
+  'nb-little-my-party-poster': {
+    name: 'リトルミイ パーティー ポスター',
     description:
-      'ヘルシンキでデザインし、200 グラムのシルク紙に印刷。サイズは 30 × 40 と 50 × 70 の 2 種類です。ポスターは筒に丸めれば重さがありません。ラップランドから持ち帰るものの大半には、そう言えないのですが。',
+      'パーティーのガーランドの下でお祝いするリトルミイを、200 g/m² のシルク紙に印刷したポスターです。Nordicbuddies によるムーミン公式製品で、ヘルシンキでデザイン・製造されています。サイズは 30 × 40 cm と 50 × 70 cm の 2 種類。額縁は付属しません。',
     specs: [
-      'シルク紙、200 g',
+      'シルク紙、200 g/m²',
       '30 × 40 cm または 50 × 70 cm',
-      'ヘルシンキでデザイン・印刷',
+      'ヘルシンキでデザイン・製造',
+      '付属しません',
     ],
-    specLabels: [undefined, undefined, '製造'],
+    specLabels: [undefined, undefined, undefined, '額縁'],
   },
   'nb-moomin-novels-poster': {
     name: 'ムーミン小説ポスター',
@@ -1512,15 +1523,13 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       '食洗機可、電子レンジ不可',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Arabia ムーミン ピッチャー 1.0 l、ムーミンハウス',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Arabia ムーミン ピッチャー 1.0 l、Adventure Move',
     description:
-      'ムーミンパパが自分で建て、夜も鍵をかけない丸いストーブ形の家、ムーミンハウスを描いたArabiaの1リットルのピッチャー。夏のテーブルでジュースに虫が入らないよう、陶器のふたが付いています。',
+      'Adventure Move 柄の、Arabia の 1 リットルのピッチャーです。空の彗星は日ごとに大きくなり、ムーミン一家はみんなと一緒に逃げることにして、いちばん大切なものだけを荷物に詰めます。家族の食卓でジュースや水を注ぐためのピッチャーです。',
     specs: [
       '1.0 l',
-      '陶器のふた付き',
     ],
-    specLabels: [undefined, 'ふた'],
   },
   'sk-moomin-duvet-set-merella': {
     name: 'ムーミン 布団カバーセット 140 x 200 cm、Merellä',
@@ -1667,16 +1676,18 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
       'フィンランド産クラウドベリー75 %、砂糖20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Lapin Liha スモークトナカイスープ 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Riipinen トナカイ肉スプレッド 125 g',
     description:
-      '温燻と冷燻のトナカイ肉が入ったクリーミーなスープ、400グラム、Lapin Liha製。鍋で温めるだけ。スーツケースに入る袋に詰まった、ラップランドのコテージの昼食の味です。',
+      'チューブ入りのトナカイ肉スプレッドで、フィンランド産トナカイ肉を 30 パーセント使っています。ライ麦パンやクラッカーに絞り出したり、タパスのスプレッドにしたり、ミートローフに混ぜ込んだりできます。残りの肉はフィンランド産の豚肉と豚の脂身で、乳と卵を含みます。',
     specs: [
-      '400 g',
-      '温燻トナカイ3 %と冷燻トナカイ3 %',
-      '鍋で温める',
+      '125 g',
+      'トナカイ肉 30 %（フィンランド産）、肉の含有量は合計 44 %',
+      'タパスに、パンにのせて、ミートローフに',
+      'エネルギー 1070 kJ / 260 kcal、脂質 23 g うち飽和脂肪酸 5.5 g、炭水化物 1.9 g うち糖類 0.8 g、食物繊維 0.1 g、たんぱく質 11 g、食塩相当量 1.9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, '調理'],
+    specLabels: [undefined, undefined, 'おすすめの使い方', '100 g あたりの栄養成分', '販売者'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Vaasan Ruispalat ライ麦パン 660 g',
@@ -2124,18 +2135,18 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, 'ラベルの表示', 'アレルゲン', '100 g あたりの栄養成分'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: 'Karl Fazer アドベントカレンダー 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Karl Fazer Collection ボンボンショコラ 詰め合わせ 160 g',
     description:
-      'Karl Fazer のアドベントカレンダーで、扉の奥にいろいろな味のボンボンショコラが合わせて 200 g 入っています。最後の扉には、Fazer が 1922 年から作っている Karl Fazer のミルクチョコレート、Fazer Blue がたっぷり入っています。Fazer はカカオを Fazer Cocoa Vision プログラムのもとで調達しています。',
+      'Karl Fazer Collection のボンボンショコラの小箱です。9 種類の味が合わせて 18 個入っていて、Fazer の人気の味、新しいフィリング、1908 年から続く定番が揃っています。ダークチョコレートはカカオ分 47 パーセント以上、ミルクチョコレートは 30 パーセント以上です。スーツケースにもクリスマスの小包にも収まる小ささです。',
     specs: [
-      '200 g',
-      'いろいろな味のボンボンショコラ、最後の扉には Fazer Blue ミルクチョコレート',
-      'ミルクチョコレートはカカオ分 30 % 以上',
-      '乳、大豆、大麦（グルテン）を含みます。ナッツ類、アーモンド、小麦、ライ麦、オーツ麦を含む場合があります',
-      'エネルギー 2315 kJ / 554 kcal、脂質 34 g うち飽和脂肪酸 20 g、炭水化物 53 g うち糖類 51 g、たんぱく質 9.6 g、食塩相当量 0.31 g',
+      '160 g',
+      'ボンボンショコラ 18 個、9 種類の味',
+      'ダークチョコレートはカカオ分 47 % 以上、ミルクチョコレートはカカオ分 30 % 以上',
+      '乳、ヘーゼルナッツ、アーモンド、小麦（グルテン）、大豆を含みます。その他のナッツ類、ライ麦、オーツ麦を含む場合があります',
+      'エネルギー 2178 kJ / 520 kcal、脂質 30 g うち飽和脂肪酸 17 g、炭水化物 55 g うち糖類 50 g、たんぱく質 5.7 g、食塩相当量 0.25 g',
     ],
-    specLabels: [undefined, undefined, 'ラベルの表示', 'アレルゲン', '100 g あたりの栄養成分'],
+    specLabels: [undefined, undefined, 'カカオ分', 'アレルゲン', '100 g あたりの栄養成分'],
   },
   'sk-fazer-christmas-chocolates': {
     name: 'Fazer Joulusuklaa ショコラ 295 g',
@@ -2198,18 +2209,17 @@ export const PRODUCT_COPY_JA: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, '100 g あたりの栄養成分'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: 'Kuivalihakundi ジャーキーカレンダー 2026',
+  'kuivalihakundi-jerky-box': {
+    name: 'Kuivalihakundi Lihalaatikko ジャーキーボックス 8 袋',
     description:
-      'Kuivalihakundi の 2026 年のアドベントカレンダーで、24 の扉の奥に 20 g のジャーキーが、すべて違う味で入っています。牛肉、鶏肉、脂の多い豚肉、脂の少ない豚肉があり、定番の味もこのカレンダーのためだけに作った味もあって、24 種類すべてフィンランドのヨケラにある自社工場で作られています。ジャーキーは開封後も常温で保存でき、カレンダーはテーブルに立てても、吊り下げ用の穴で壁に掛けてもよく、数量限定の生産です。',
+      'Kuivalihakundi の定番ラインナップをすべてひと箱に詰めました。ビーフジャーキーが 5 種類、チキンが 2 種類、ポークが 1 種類で、再封できる袋が全部で 8 袋入っています。味は Original や Smoked から Mild Habanero、Hot Naga まで幅があり、マイルド派にも辛いもの好きにも贈れます。ジャーキーは約 11 か月日持ちし、開封後も冷蔵の必要はありません。',
     specs: [
-      'ジャーキー 24 x 20 g、扉ごとに違う味',
-      '牛肉、鶏肉、脂の多い豚肉、脂の少ない豚肉',
-      'フィンランドのヨケラにある Kuivalihakundi の自社工場で製造',
-      '開封後も常温で保存可能',
-      'テーブルに立てるか、吊り下げ用の穴で壁に掛けられます',
+      '8 袋：ビーフジャーキー Original、Mild Habanero、Hot Naga、Garlic、Smoked（各 40 g）／チキンジャーキー Lemongrass、Sriracha（各 40 g）／Greasy Pork Smoky BBQ（50 g）',
+      '在庫切れの味がある場合、ショップが Beef Jerky Teriyaki 40 g、Butter Chicken 40 g、Greasy Pork Smokey Apple 50 g のいずれかに差し替えます',
+      '購入日から約 11 か月、開封後も冷蔵不要',
+      '再封できる袋をひと箱に',
     ],
-    specLabels: [undefined, '肉の種類', undefined, undefined, '吊り下げ'],
+    specLabels: [undefined, '代替品', undefined, 'パッケージ'],
   },
   'halti-crostie-merino-beanie': {
     name: 'Halti Crostie メリノビーニー',

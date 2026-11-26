@@ -375,16 +375,19 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Nährwerte je 100 g', 'Inverkehrbringer'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Finnish Flavours Finnische Preiselbeerkonfitüre 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Poikain Parhaat Auswahl finnischer Beerenkonfitüren, 4 × 45 g',
     description:
-      'Preiselbeerkonfitüre, in Finnland aus Beeren hergestellt, die in finnischen Wäldern gepflückt wurden. Preiselbeeren machen 45 Prozent des Glasinhalts aus. In Finnland isst man sie zu Wildgeschnetzeltem, Fleischbällchen und Spinatpfannkuchen, und sie passt in dasselbe Geschenk wie eine Tüte Rentier-Trockenfleisch.',
+      'Vier kleine Gläser finnische Beerenkonfitüre in einer Schachtel: Moltebeere, Cranberry, Schwarze Johannisbeere und Heidelbeere. Die Konfitüren werden von Hand hergestellt, aus Beeren, die in finnischen Wäldern und Gärten von Hand gepflückt wurden. Jedes Glas besteht zu 75 Prozent aus Beeren, und die Konfitüren enthalten keine künstlichen Aromen oder Farbstoffe. Ein 45-g-Glas reicht zum Probieren auf Brot, Pfannkuchen oder Porridge.',
     specs: [
-      '400 g',
-      'Hergestellt in Finnland aus 100 % finnischen Beeren',
-      'Energie 633 kJ / 151 kcal, Fett 0,2 g, davon gesättigte Fettsäuren 0 g, Kohlenhydrate 39 g, davon Zucker 39 g, Eiweiß 0,2 g, Salz 0,01 g',
+      '4 × 45 g',
+      'Je ein Glas Konfitüre aus Moltebeeren, Cranberrys, Schwarzen Johannisbeeren und Heidelbeeren',
+      '75 % finnische, von Hand gepflückte Beeren in jeder Konfitüre',
+      'Laktosefrei, glutenfrei, vegan',
+      'Energie 512 kJ / 122 kcal, Fett 0,8 g, davon gesättigte Fettsäuren 0 g, Kohlenhydrate 24 g, davon Zucker 19 g, Eiweiß 1,1 g, Salz 0,1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
+    specLabels: [undefined, undefined, undefined, 'Ernährung', 'Nährwerte je 100 g', 'Inverkehrbringer'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Rentier-Trockenfleisch Original 200 g',
@@ -788,13 +791,13 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     specs: ['36 g', 'Xylit. Trägt das Zeichen des finnischen Zahnärzteverbands'],
     specLabels: [undefined, 'Süßungsmittel'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: 'Sisu Kaamos Salzlakritzpastillen 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: 'Sisu Kide Menthol-Salmiakpastillen 80 g',
     description:
-      'Weiche Sisu-Pastillen mit kräftigem Geschmack nach Lakritz und Salmiak, dem salzigen Lakritz, das in Finnland mit Ammoniumchlorid gewürzt wird. Kaamos ist das finnische Wort für die Polarnacht, die Wochen im hohen Norden, in denen die Sonne nicht über den Horizont steigt.',
+      'Zuckerdragierte Sisu-Pastillen mit kräftigem Geschmack nach Salmiak und Lakritz und einem kühlen Hauch Menthol. Salmiak ist ein in Finnland beliebtes salziges Lakritz, das mit Ammoniumchlorid gewürzt wird. Kide ist das finnische Wort für Kristall, wie in lumikide, Schneekristall.',
     specs: [
       '80 g',
-      'Energie 1160 kJ / 277 kcal, Fett 0,6 g, davon gesättigte Fettsäuren 0,2 g, Kohlenhydrate 52 g, davon Zucker 45 g, Eiweiß 1,2 g, Salz 5,5 g',
+      'Energie 1269 kJ / 302 kcal, Fett 0 g, davon gesättigte Fettsäuren 0 g, Kohlenhydrate 60 g, davon Zucker 53 g, Eiweiß 1,1 g, Salz 0,4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, 'Nährwerte je 100 g', 'Inverkehrbringer'],
@@ -1040,11 +1043,18 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Extraktion', 'Dosierung', 'Warnhinweis'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo Nadelbaum-Extrakt 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo Nadelbaum-Extraktgetränk 1 l',
     description:
-      'Ein aus finnischen Nadelbäumen gewonnener Extrakt in Tropfenform. Der Waldgeruch einer Lappland-Wanderung in einer Flasche für die Manteltasche.',
-    specs: ['50 ml'],
+      'Ein Getränk aus Rinde und Innenrinde junger Bio-Kiefern, Grundwasser und unraffiniertem Meersalz, nach einem alten finnischen Volksrezept. Die Kiefern werden in den Wäldern von Österbotten im Westen Finnlands gesammelt, fernab der Industrie. Das Getränk enthält keine Zusatzstoffe, Konservierungsstoffe oder Farbstoffe. Es kommt in einer Ein-Liter-Glasflasche und hält sich nach dem Öffnen 7 bis 10 Tage.',
+    specs: [
+      '1 l, Glasflasche',
+      'Rinde und Innenrinde junger Bio-Kiefern, Grundwasser, unraffiniertes Meersalz',
+      'Kiefern aus den Wäldern von Österbotten, Finnland',
+      'Ohne Zusatzstoffe, Konservierungsstoffe und Farbstoffe',
+      'Nach dem Öffnen 7 bis 10 Tage haltbar',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Zusatzstoffe', undefined],
   },
   'nb-little-my-beanie': {
     name: 'Kleine My Grobstrickmütze',
@@ -1239,16 +1249,17 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Lizenz'],
   },
-  'nb-little-my-poster': {
-    name: 'Kleine My Poster',
+  'nb-little-my-party-poster': {
+    name: 'Kleine My Partyposter',
     description:
-      'In Helsinki gestaltet und auf 200-Gramm-Seidenpapier gedruckt, in 30 × 40 oder 50 × 70. Ein Poster rollt sich in eine Hülse und wiegt nichts, mehr als man von den meisten Dingen sagen kann, die Leute aus Lappland mit nach Hause schleppen.',
+      'Das Poster zeigt die Kleine My beim Feiern unter einer Wimpelkette und ist auf seidenmattem Papier mit 200 g/m² gedruckt. Ein offizielles Mumin-Produkt von Nordicbuddies, in Helsinki gestaltet und hergestellt und in zwei Größen erhältlich, 30 × 40 cm und 50 × 70 cm. Der Rahmen ist nicht im Lieferumfang enthalten.',
     specs: [
-      'Seidenpapier, 200 g',
+      'Seidenmattes Papier, 200 g/m²',
       '30 × 40 cm oder 50 × 70 cm',
-      'In Helsinki gestaltet und gedruckt',
+      'In Helsinki gestaltet und hergestellt',
+      'Nicht enthalten',
     ],
-    specLabels: [undefined, undefined, 'Herstellung'],
+    specLabels: [undefined, undefined, undefined, 'Rahmen'],
   },
   'nb-moomin-novels-poster': {
     name: 'Poster der Moomin-Romane',
@@ -1545,15 +1556,13 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Spülmaschinenfest, nicht für die Mikrowelle',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Arabia Mumin Krug 1,0 l, Muminhaus',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Arabia Mumin Krug 1,0 l, Adventure Move',
     description:
-      'Ein-Liter-Krug von Arabia mit dem Muminhaus, dem runden, ofenförmigen Haus, das Muminpapa selbst gebaut hat und nachts nie abschließt. Mit Keramikdeckel, der auf dem Sommertisch Insekten vom Saft fernhält.',
+      'Ein Ein-Liter-Krug von Arabia mit dem Motiv Adventure Move. Der Komet am Himmel wird von Tag zu Tag größer, und die Muminfamilie beschließt, mit den anderen zu fliehen. Sie packt nur ein, was am meisten zählt. Ein Krug für Saft oder Wasser auf dem Familientisch.',
     specs: [
       '1,0 l',
-      'Keramikdeckel inklusive',
     ],
-    specLabels: [undefined, 'Deckel'],
   },
   'sk-moomin-duvet-set-merella': {
     name: 'Mumin Bettwäsche-Set 140 x 200 cm, Merellä',
@@ -1700,16 +1709,18 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
       'Finnische Moltebeere 75 %, Zucker 20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Lapin Liha Räucherrentiersuppe 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Riipinen Rentierfleisch-Aufstrich 125 g',
     description:
-      'Cremige Suppe mit heiß- und kaltgeräuchertem Rentier, 400 Gramm, hergestellt von Lapin Liha. Im Topf erwärmen; es ist der Geschmack eines lappländischen Hüttenmittagessens in einer Packung, die in den Koffer passt.',
+      'Ein Rentierfleisch-Aufstrich in der Tube, mit 30 Prozent finnischem Rentierfleisch. Drücken Sie ihn auf Roggenbrot oder Cracker, reichen Sie ihn als Tapas-Aufstrich oder mischen Sie ihn unter einen Hackbraten. Das übrige Fleisch ist finnisches Schweinefleisch und Speck, und der Aufstrich enthält Milch und Ei.',
     specs: [
-      '400 g',
-      'Heißgeräuchertes Rentier 3 % und kaltgeräuchertes Rentier 3 %',
-      'Im Topf erwärmen',
+      '125 g',
+      'Rentierfleisch 30 % (Finnland), Fleischanteil insgesamt 44 %',
+      'Für Tapas, aufs Brot, im Hackbraten',
+      'Energie 1070 kJ / 260 kcal, Fett 23 g, davon gesättigte Fettsäuren 5,5 g, Kohlenhydrate 1,9 g, davon Zucker 0,8 g, Ballaststoffe 0,1 g, Eiweiß 11 g, Salz 1,9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, 'Zubereitung'],
+    specLabels: [undefined, undefined, 'Serviervorschläge', 'Nährwerte je 100 g', 'Inverkehrbringer'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Vaasan Ruispalat Roggenbrot 660 g, 12 Stück',
@@ -2157,18 +2168,18 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Hinweise auf dem Etikett', 'Allergene', 'Nährwerte je 100 g'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: 'Karl Fazer Adventskalender 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Karl Fazer Collection Pralinenschachtel 160 g',
     description:
-      'Ein Karl Fazer Adventskalender mit 200 g Pralinen in mehreren Geschmacksrichtungen hinter den Türchen. Das letzte Türchen ist mit Fazer Blue gefüllt, der Karl Fazer Milchschokolade, die Fazer seit 1922 herstellt. Fazer bezieht seinen Kakao im Rahmen des Programms Fazer Cocoa Vision.',
+      'Eine kleine Schachtel Pralinen der Karl Fazer Collection: 18 Stück in neun Sorten, eine Mischung aus Fazer-Lieblingen, neueren Füllungen und Klassikern, die bis ins Jahr 1908 zurückreichen. Die Zartbitterschokolade enthält mindestens 47 Prozent Kakao, die Milchschokolade mindestens 30 Prozent. Die Schachtel ist klein genug für einen Koffer oder ein Weihnachtspaket.',
     specs: [
-      '200 g',
-      'Pralinen in mehreren Geschmacksrichtungen, das letzte Türchen mit Fazer Blue Milchschokolade gefüllt',
-      'Milchschokolade mit mindestens 30 % Kakao',
-      'Enthält Milch, Soja und Gerste (Gluten). Kann Nüsse, Mandeln, Weizen, Roggen und Hafer enthalten',
-      'Energie 2315 kJ / 554 kcal, Fett 34 g, davon gesättigte Fettsäuren 20 g, Kohlenhydrate 53 g, davon Zucker 51 g, Eiweiß 9,6 g, Salz 0,31 g',
+      '160 g',
+      '18 Pralinen in 9 Sorten',
+      'Zartbitterschokolade mindestens 47 % Kakao, Milchschokolade mindestens 30 % Kakao',
+      'Enthält Milch, Haselnüsse, Mandeln, Weizen (Gluten) und Soja. Kann andere Nüsse, Roggen und Hafer enthalten',
+      'Energie 2178 kJ / 520 kcal, Fett 30 g, davon gesättigte Fettsäuren 17 g, Kohlenhydrate 55 g, davon Zucker 50 g, Eiweiß 5,7 g, Salz 0,25 g',
     ],
-    specLabels: [undefined, undefined, 'Hinweise auf dem Etikett', 'Allergene', 'Nährwerte je 100 g'],
+    specLabels: [undefined, undefined, 'Kakaogehalt', 'Allergene', 'Nährwerte je 100 g'],
   },
   'sk-fazer-christmas-chocolates': {
     name: 'Fazer Joulusuklaa Weihnachtspralinen 295 g',
@@ -2231,18 +2242,17 @@ export const PRODUCT_COPY_DE: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Nährwerte je 100 g'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: 'Kuivalihakundi Jerky-Adventskalender 2026, 24 Türchen',
+  'kuivalihakundi-jerky-box': {
+    name: 'Kuivalihakundi Lihalaatikko Jerky-Box, 8 Beutel',
     description:
-      'Der Adventskalender 2026 von Kuivalihakundi enthält 24 verschiedene Jerky-Sorten, hinter jedem der 24 Türchen einen 20-g-Beutel. Es gibt Rind, Huhn, fetteres und magereres Schweinefleisch, in Grundsorten und in einigen, die nur für diesen Kalender gemacht wurden, alle aus der eigenen Fabrik des Unternehmens in Jokela, Finnland. Das Jerky hält sich auch nach dem Öffnen bei Raumtemperatur, der Kalender steht auf dem Tisch oder hängt mit seinen Aufhängelöchern an der Wand, und er ist eine limitierte Auflage.',
+      'Das gesamte Standardsortiment von Kuivalihakundi in einer Box: fünf Sorten vom Rind, zwei vom Hähnchen und eine vom Schwein, insgesamt acht wiederverschließbare Beutel. Die Sorten reichen von Original und Smoked bis Mild Habanero und Hot Naga, sodass die Box Liebhabern von mildem wie von scharfem Trockenfleisch gefällt. Das Trockenfleisch hält sich etwa 11 Monate und braucht keinen Kühlschrank, auch nicht nach dem Öffnen.',
     specs: [
-      '24 x 20 g Beutel Jerky, hinter jedem Türchen eine andere Sorte',
-      'Rind, Huhn, fetteres und magereres Schweinefleisch',
-      'Hergestellt in der eigenen Fabrik von Kuivalihakundi in Jokela, Finnland',
-      'Hält sich bei Raumtemperatur, auch nach dem Öffnen',
-      'Steht auf dem Tisch oder hängt an seinen Aufhängelöchern an der Wand',
+      '8 Beutel: Rinder-Jerky Original, Mild Habanero, Hot Naga, Garlic und Smoked (je 40 g); Hähnchen-Jerky Lemongrass und Sriracha (je 40 g); Greasy Pork Smoky BBQ (50 g)',
+      'Ist eine Sorte ausverkauft, ersetzt der Shop sie durch Beef Jerky Teriyaki 40 g, Butter Chicken 40 g oder Greasy Pork Smokey Apple 50 g',
+      'Etwa 11 Monate ab Kauf, auch nach dem Öffnen ohne Kühlung haltbar',
+      'Wiederverschließbare Beutel in einer Box',
     ],
-    specLabels: [undefined, 'Fleischsorten', undefined, undefined, 'Aufhängung'],
+    specLabels: [undefined, 'Ersatzsorten', undefined, 'Verpackung'],
   },
   'halti-crostie-merino-beanie': {
     name: 'Halti Crostie Merinomütze',

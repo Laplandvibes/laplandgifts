@@ -353,16 +353,19 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Valeurs nutritionnelles pour 100 g', 'Commercialisé par'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Confiture d’airelles finlandaise Finnish Flavours 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Assortiment de confitures de baies finlandaises Poikain Parhaat, 4 × 45 g',
     description:
-      'Une confiture d’airelles fabriquée en Finlande avec des baies cueillies dans les forêts finlandaises. Les airelles représentent 45 pour cent du pot. C’est la confiture que les Finlandais servent avec les ragoûts de gibier, les boulettes de viande et les crêpes aux épinards, et elle trouve sa place dans le même cadeau qu’un sachet de viande de renne séchée.',
+      'Quatre petits pots de confiture de baies finlandaises dans une même boîte : plaquebière, canneberge, cassis et myrtille. Les confitures sont préparées artisanalement, avec des baies cueillies à la main dans les forêts et les jardins finlandais. Les baies représentent 75 pour cent de chaque pot, et les confitures ne contiennent ni arômes ni colorants artificiels. Un pot de 45 g suffit pour goûter la confiture sur du pain, des crêpes ou du porridge.',
     specs: [
-      '400 g',
-      'Fabriquée en Finlande avec 100 % de baies finlandaises',
-      'Énergie 633 kJ / 151 kcal, matières grasses 0,2 g dont acides gras saturés 0 g, glucides 39 g dont sucres 39 g, protéines 0,2 g, sel 0,01 g',
+      '4 × 45 g',
+      'Confitures de plaquebière, de canneberge, de cassis et de myrtille',
+      '75 % de baies finlandaises cueillies à la main dans chaque confiture',
+      'Sans lactose, sans gluten, véganes',
+      'Énergie 512 kJ / 122 kcal, matières grasses 0,8 g dont acides gras saturés 0 g, glucides 24 g dont sucres 19 g, protéines 1,1 g, sel 0,1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, 'Valeurs nutritionnelles pour 100 g'],
+    specLabels: [undefined, undefined, undefined, 'Régime', 'Valeurs nutritionnelles pour 100 g', 'Commercialisé par'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Viande de renne séchée Original 200 g',
@@ -648,13 +651,13 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     specs: ['36 g', 'Xylitol. Porte le label de l’Association dentaire finlandaise'],
     specLabels: [undefined, 'Édulcorant'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: 'Pastilles de réglisse salée Sisu Kaamos 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: 'Pastilles de salmiakki au menthol Sisu Kide 80 g',
     description:
-      'Des pastilles Sisu moelleuses au goût prononcé de réglisse et de salmiakki, la réglisse salée que les Finlandais aromatisent au chlorure d’ammonium. Kaamos est le mot finnois pour la nuit polaire, ces semaines du Grand Nord où le soleil ne monte pas au-dessus de l’horizon.',
+      'Des pastilles Sisu dragéifiées au goût prononcé de salmiakki et de réglisse, avec une touche fraîche de menthol. Le salmiakki est une réglisse salée aromatisée au chlorure d’ammonium, très appréciée en Finlande. Kide est le mot finnois pour cristal, comme dans lumikide, cristal de neige.',
     specs: [
       '80 g',
-      'Énergie 1160 kJ / 277 kcal, matières grasses 0,6 g dont acides gras saturés 0,2 g, glucides 52 g dont sucres 45 g, protéines 1,2 g, sel 5,5 g',
+      'Énergie 1269 kJ / 302 kcal, matières grasses 0 g dont acides gras saturés 0 g, glucides 60 g dont sucres 53 g, protéines 1,1 g, sel 0,4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, 'Valeurs nutritionnelles pour 100 g', 'Commercialisé par'],
@@ -1006,11 +1009,18 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Extraction', 'Posologie', 'Avertissement'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo extrait de conifères 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo boisson à l’extrait de conifères 1 l',
     description:
-      'Un extrait tiré des conifères finlandais, à prendre en gouttes. L\'odeur de forêt d\'une randonnée en Laponie dans un flacon de poche.',
-    specs: ['50 ml'],
+      'Une boisson à base d’écorce et de liber de jeunes pins biologiques, d’eau souterraine et de sel marin non raffiné, préparée selon une ancienne recette de la tradition populaire finlandaise. Les pins sont récoltés dans les forêts d’Ostrobotnie, dans l’ouest de la Finlande, loin de toute industrie. La boisson ne contient ni additifs, ni conservateurs, ni colorants. Elle est vendue en bouteille de verre d’un litre et se conserve 7 à 10 jours après ouverture.',
+    specs: [
+      '1 l, bouteille en verre',
+      'Écorce et liber de jeunes pins biologiques, eau souterraine, sel marin non raffiné',
+      'Pins récoltés dans les forêts d’Ostrobotnie, Finlande',
+      'Sans additifs, conservateurs ni colorants',
+      'Se conserve 7 à 10 jours après ouverture',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Additifs', undefined],
   },
   'nb-little-my-beanie': {
     name: 'Bonnet en grosse maille Petite Mu',
@@ -1205,16 +1215,17 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licence'],
   },
-  'nb-little-my-poster': {
-    name: 'Affiche Petite Mu',
+  'nb-little-my-party-poster': {
+    name: 'Affiche Petite Mu en fête',
     description:
-      'Conçue et imprimée à Helsinki sur papier couché satiné de 200 grammes, en 30 × 40 ou 50 × 70. Une affiche se roule dans un tube et ne pèse rien, ce qu’on ne peut pas dire de la plupart des choses qu’on rapporte de Laponie.',
+      'Une affiche de la Petite Mu qui fait la fête sous une guirlande de fanions, imprimée sur papier couché satiné de 200 g/m². C’est un produit Moomin officiel signé Nordicbuddies, conçu et fabriqué à Helsinki et proposé en deux formats, 30 × 40 cm et 50 × 70 cm. Le cadre n’est pas fourni.',
     specs: [
-      'Papier couché satiné, 200 g',
+      'Papier couché satiné, 200 g/m²',
       '30 × 40 cm ou 50 × 70 cm',
-      'Conçue et imprimée à Helsinki',
+      'Conçue et fabriquée à Helsinki',
+      'Non fourni',
     ],
-    specLabels: [undefined, undefined, 'Fabrication'],
+    specLabels: [undefined, undefined, undefined, 'Cadre'],
   },
   'nb-moomin-novels-poster': {
     name: 'Affiche des romans Moumine',
@@ -1511,15 +1522,13 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Passe au lave-vaisselle, pas au micro-ondes',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Pichet Moomin Arabia 1,0 l, Maison des Moomins',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Pichet Moomin Arabia 1,0 l, Adventure Move',
     description:
-      'Pichet d\'un litre d\'Arabia avec la Maison des Moomins, la maison ronde en forme de poêle que Papa Moomin a construite lui-même et ne ferme jamais à clé la nuit. Livré avec un couvercle en céramique qui garde les insectes hors du jus sur une table d\'été.',
+      'Un pichet Arabia d’un litre au motif Adventure Move. La comète grossit de jour en jour dans le ciel, et la famille Moomin décide de fuir avec les autres en n’emportant que l’essentiel. Un pichet pour le jus ou l’eau sur la table familiale.',
     specs: [
       '1,0 l',
-      'Couvercle en céramique inclus',
     ],
-    specLabels: [undefined, 'Couvercle'],
   },
   'sk-moomin-duvet-set-merella': {
     name: 'Parure de lit Moomin 140 x 200 cm, Merellä',
@@ -1666,16 +1675,18 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
       'Plaquebière finlandaise 75 %, sucre 20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Soupe de renne fumé Lapin Liha 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Tartinade de viande de renne Riipinen 125 g',
     description:
-      'Soupe crémeuse au renne fumé à chaud et à froid, 400 grammes, fabriquée par Lapin Liha. À réchauffer dans une casserole ; c\'est le goût d\'un déjeuner au chalet en Laponie, dans un sachet qui tient dans une valise.',
+      'Une tartinade de viande de renne en tube, préparée avec 30 pour cent de renne finlandais. À presser sur du pain de seigle ou des crackers, à servir avec les tapas ou à incorporer à un pain de viande. Le reste de la viande est du porc finlandais et du lard, et la tartinade contient du lait et de l’œuf.',
     specs: [
-      '400 g',
-      'Renne fumé à chaud 3 % et renne fumé à froid 3 %',
-      'Réchauffer dans une casserole',
+      '125 g',
+      'Viande de renne 30 % (Finlande), teneur totale en viande 44 %',
+      'En tapas, sur du pain, dans un pain de viande',
+      'Énergie 1070 kJ / 260 kcal, matières grasses 23 g dont acides gras saturés 5,5 g, glucides 1,9 g dont sucres 0,8 g, fibres alimentaires 0,1 g, protéines 11 g, sel 1,9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, 'Préparation'],
+    specLabels: [undefined, undefined, 'Idées de dégustation', 'Valeurs nutritionnelles pour 100 g', 'Commercialisé par'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Pain de seigle Vaasan Ruispalat 660 g, 12 pièces',
@@ -2123,18 +2134,18 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Mentions de l’étiquette', 'Allergènes', 'Valeurs nutritionnelles pour 100 g'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: 'Calendrier de l’Avent Karl Fazer 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Boîte de chocolats Karl Fazer Collection 160 g',
     description:
-      'Un calendrier de l’Avent Karl Fazer avec 200 g de chocolats pralinés de plusieurs saveurs derrière ses cases. La dernière case est remplie de Fazer Blue, le chocolat au lait Karl Fazer que Fazer fabrique depuis 1922. Fazer s’approvisionne en cacao dans le cadre de son programme Fazer Cocoa Vision.',
+      'Une petite boîte de chocolats Karl Fazer Collection : 18 pièces en neuf saveurs, entre grands favoris de Fazer, garnitures plus récentes et classiques qui remontent à 1908. Le chocolat noir contient au moins 47 pour cent de cacao et le chocolat au lait au moins 30 pour cent. La boîte est assez petite pour tenir dans une valise ou un colis de Noël.',
     specs: [
-      '200 g',
-      'Chocolats pralinés de plusieurs saveurs, dernière case remplie de chocolat au lait Fazer Blue',
-      'Chocolat au lait contenant au moins 30 % de cacao',
-      'Contient du lait, du soja et de l’orge (gluten). Peut contenir des fruits à coque, des amandes, du blé, du seigle et de l’avoine',
-      'Énergie 2315 kJ / 554 kcal, matières grasses 34 g dont acides gras saturés 20 g, glucides 53 g dont sucres 51 g, protéines 9,6 g, sel 0,31 g',
+      '160 g',
+      '18 chocolats en 9 saveurs',
+      'Chocolat noir au moins 47 % de cacao, chocolat au lait au moins 30 % de cacao',
+      'Contient du lait, des noisettes, des amandes, du blé (gluten) et du soja. Peut contenir d’autres fruits à coque, du seigle et de l’avoine',
+      'Énergie 2178 kJ / 520 kcal, matières grasses 30 g dont acides gras saturés 17 g, glucides 55 g dont sucres 50 g, protéines 5,7 g, sel 0,25 g',
     ],
-    specLabels: [undefined, undefined, 'Mentions de l’étiquette', 'Allergènes', 'Valeurs nutritionnelles pour 100 g'],
+    specLabels: [undefined, undefined, 'Teneur en cacao', 'Allergènes', 'Valeurs nutritionnelles pour 100 g'],
   },
   'sk-fazer-christmas-chocolates': {
     name: 'Chocolats de Noël Fazer Joulusuklaa 295 g',
@@ -2197,18 +2208,17 @@ export const PRODUCT_COPY_FR: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Valeurs nutritionnelles pour 100 g'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: 'Calendrier de l’Avent jerky Kuivalihakundi 2026, 24 cases',
+  'kuivalihakundi-jerky-box': {
+    name: 'Coffret de viande séchée Kuivalihakundi Lihalaatikko, 8 sachets',
     description:
-      'Le calendrier de l’Avent 2026 de Kuivalihakundi contient 24 saveurs différentes de viande séchée, un sachet de 20 g derrière chacune des 24 cases. On y trouve du bœuf, du poulet, du porc gras et du porc plus maigre, en saveurs de base et en saveurs créées uniquement pour ce calendrier, le tout sorti de l’usine de l’entreprise à Jokela, en Finlande. La viande séchée se conserve à température ambiante même après ouverture, le calendrier tient debout sur une table ou s’accroche au mur grâce à ses trous de suspension, et il est produit en série limitée.',
+      'Toute la gamme permanente de Kuivalihakundi dans une seule boîte : cinq viandes séchées de bœuf, deux de poulet et une de porc, soit huit sachets refermables. Les saveurs vont d’Original et Smoked à Mild Habanero et Hot Naga : la boîte plaira autant aux amateurs de viande séchée douce qu’à ceux qui la veulent piquante. La viande se conserve environ 11 mois et n’a pas besoin d’être réfrigérée, même une fois le sachet ouvert.',
     specs: [
-      '24 sachets de 20 g de viande séchée, une saveur différente derrière chaque case',
-      'Bœuf, poulet, porc gras et porc plus maigre',
-      'Fabriqué dans la propre usine de Kuivalihakundi à Jokela, en Finlande',
-      'Se conserve à température ambiante, même après ouverture',
-      'Tient debout sur une table ou s’accroche au mur grâce à ses trous de suspension',
+      '8 sachets : bœuf séché Original, Mild Habanero, Hot Naga, Garlic et Smoked (40 g chacun) ; poulet séché Lemongrass et Sriracha (40 g chacun) ; Greasy Pork Smoky BBQ (50 g)',
+      'Si une saveur est en rupture de stock, la boutique la remplace par Beef Jerky Teriyaki 40 g, Butter Chicken 40 g ou Greasy Pork Smokey Apple 50 g',
+      'Environ 11 mois à partir de l’achat, sans réfrigération même après ouverture',
+      'Sachets refermables dans une même boîte',
     ],
-    specLabels: [undefined, 'Viandes', undefined, undefined, 'Suspension'],
+    specLabels: [undefined, 'Saveurs de remplacement', undefined, 'Emballage'],
   },
   'halti-crostie-merino-beanie': {
     name: 'Bonnet en mérinos Halti Crostie',

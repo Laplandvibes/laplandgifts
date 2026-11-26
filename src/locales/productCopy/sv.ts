@@ -354,16 +354,19 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Näringsvärde per 100 g', 'Marknadsförs av'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Finnish Flavours finsk lingonsylt 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Poikain Parhaat sortiment av finska bärsylter, 4 × 45 g',
     description:
-      'Lingonsylt tillverkad i Finland av bär plockade i finska skogar, och lingonen utgör 45 procent av burkens innehåll. I Finland äter man den till viltgryta, köttbullar och spenatplättar, och den passar i samma present som en påse torkat renkött.',
+      'Fyra små burkar finsk bärsylt i samma ask: hjortron, tranbär, svarta vinbär och blåbär. Sylterna är handgjorda av bär som plockats för hand i finska skogar och trädgårdar. Bären utgör 75 procent av varje burk, och sylterna innehåller inga konstgjorda smak- eller färgämnen. En burk på 45 g räcker för att prova sylten på bröd, plättar eller gröt.',
     specs: [
-      '400 g',
-      'Tillverkad i Finland av 100 % finska bär',
-      'Energi 633 kJ / 151 kcal, fett 0,2 g varav mättat 0 g, kolhydrat 39 g varav sockerarter 39 g, protein 0,2 g, salt 0,01 g',
+      '4 × 45 g',
+      'Hjortron-, tranbärs-, svartvinbärs- och blåbärssylt',
+      '75 % finska bär i varje sylt, plockade för hand',
+      'Laktosfria, glutenfria, veganska',
+      'Energi 512 kJ / 122 kcal, fett 0,8 g varav mättat 0 g, kolhydrat 24 g varav sockerarter 19 g, protein 1,1 g, salt 0,1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, 'Näringsvärde per 100 g'],
+    specLabels: [undefined, undefined, undefined, 'Kost', 'Näringsvärde per 100 g', 'Marknadsförs av'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Torkat renkött Original 200 g',
@@ -649,13 +652,13 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     specs: ['36 g', 'Xylitol. Bär finska Tandläkarförbundets märke'],
     specLabels: [undefined, 'Sötningsmedel'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: 'Sisu Kaamos saltlakritspastiller 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: 'Sisu Kide mentolsalmiakpastiller 80 g',
     description:
-      'Mjuka Sisu-pastiller med kraftig smak av lakrits och salmiak, den salta lakrits som man i Finland smaksätter med ammoniumklorid. Kaamos är det finska ordet för polarnatten, veckorna längst i norr då solen inte stiger över horisonten.',
+      'Sockerdragerade Sisu-pastiller med kraftig smak av salmiak och lakrits och en sval ton av mentol. Salmiak är salt lakrits smaksatt med ammoniumklorid, en finsk favorit. Kide är det finska ordet för kristall, som i lumikide, snökristall.',
     specs: [
       '80 g',
-      'Energi 1160 kJ / 277 kcal, fett 0,6 g varav mättat 0,2 g, kolhydrat 52 g varav sockerarter 45 g, protein 1,2 g, salt 5,5 g',
+      'Energi 1269 kJ / 302 kcal, fett 0 g varav mättat 0 g, kolhydrat 60 g varav sockerarter 53 g, protein 1,1 g, salt 0,4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, 'Näringsvärde per 100 g', 'Marknadsförs av'],
@@ -1007,11 +1010,18 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Extraktion', 'Dosering', 'Varning'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo Barrträdsextrakt 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo dryck med barrträdsextrakt 1 l',
     description:
-      'Ett extrakt ur finska barrträd som tas i droppform. Doften av en vandring i Lappland i en flaska som ryms i rockfickan.',
-    specs: ['50 ml'],
+      'En dryck på bark och innerbark från ung ekologisk tall, grundvatten och oraffinerat havssalt, gjord efter ett gammalt finskt folkrecept. Tallen samlas i skogarna i Österbotten i västra Finland, långt från industrin. Drycken är fri från tillsatser, konserveringsmedel och färgämnen. Den säljs i en glasflaska på en liter och håller sig 7 till 10 dagar efter öppning.',
+    specs: [
+      '1 l, glasflaska',
+      'Bark och innerbark från ung ekologisk tall, grundvatten, oraffinerat havssalt',
+      'Tallen samlas i österbottniska skogar, Finland',
+      'Inga tillsatser, konserveringsmedel eller färgämnen',
+      'Håller sig 7 till 10 dagar efter öppning',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Tillsatser', undefined],
   },
   'nb-little-my-beanie': {
     name: 'Lilla My grovstickad mössa',
@@ -1206,16 +1216,17 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licens'],
   },
-  'nb-little-my-poster': {
-    name: 'Lilla My-affisch',
+  'nb-little-my-party-poster': {
+    name: 'Festaffisch med Lilla My',
     description:
-      'Formgiven och tryckt i Helsingfors på 200 grams silkespapper, i 30 × 40 eller 50 × 70. En affisch rullas ihop i en hylsa och väger ingenting, vilket är mer än man kan säga om det mesta folk släpar hem från Lappland.',
+      'Affischen visar Lilla My som firar under en vimpelgirlang och är tryckt på silkesmatt papper (200 g/m²). En officiell Muminprodukt från Nordicbuddies, formgiven och tillverkad i Helsingfors och såld i två storlekar, 30 × 40 cm och 50 × 70 cm. Ram ingår inte.',
     specs: [
-      'Silkespapper, 200 g',
+      'Silkesmatt papper, 200 g/m²',
       '30 × 40 cm eller 50 × 70 cm',
-      'Formgiven och tryckt i Helsingfors',
+      'Formgiven och tillverkad i Helsingfors',
+      'Ingår inte',
     ],
-    specLabels: [undefined, undefined, 'Tillverkning'],
+    specLabels: [undefined, undefined, undefined, 'Ram'],
   },
   'nb-moomin-novels-poster': {
     name: 'Affisch med muminböckerna',
@@ -1512,15 +1523,13 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Tål maskindisk, inte för mikrovågsugn',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Arabia Mumin kanna 1,0 l, Muminhuset',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Arabia Mumin kanna 1,0 l, Adventure Move',
     description:
-      'Enliters kanna från Arabia med Muminhuset, det runda kakelugnsformade huset som Muminpappan byggde själv och aldrig låser om natten. Med keramiklock som håller insekterna borta från saften på sommarbordet.',
+      'En kanna på en liter från Arabia med mönstret Adventure Move. Kometen på himlen växer för varje dag, och Muminfamiljen bestämmer sig för att fly tillsammans med de andra och packar bara med sig det som betyder mest. En kanna för saft eller vatten på familjens bord.',
     specs: [
       '1,0 l',
-      'Keramiklock ingår',
     ],
-    specLabels: [undefined, 'Lock'],
   },
   'sk-moomin-duvet-set-merella': {
     name: 'Mumin påslakanset 140 x 200 cm, Merellä',
@@ -1667,16 +1676,18 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
       'Finskt hjortron 75 %, socker 20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Lapin Liha rökt rensoppa 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Riipinen bredbart renköttspålägg 125 g',
     description:
-      'Krämig soppa med varm- och kallrökt ren, 400 gram, tillverkad av Lapin Liha. Värm i kastrull; det är smaken av en lappländsk stuglunch i en förpackning som får plats i resväskan.',
+      'Bredbart renköttspålägg på tub, med 30 procent finskt renkött. Kläm ut det på rågbröd eller kex, servera det till tapas eller blanda ner det i en köttfärslimpa. Resten av köttet är finskt fläskkött och späck, och pålägget innehåller mjölk och ägg.',
     specs: [
-      '400 g',
-      'Varmrökt ren 3 % och kallrökt ren 3 %',
-      'Värm i kastrull',
+      '125 g',
+      'Renkött 30 % (Finland), total kötthalt 44 %',
+      'Till tapas, på bröd, i köttfärslimpa',
+      'Energi 1070 kJ / 260 kcal, fett 23 g varav mättat 5,5 g, kolhydrat 1,9 g varav sockerarter 0,8 g, kostfiber 0,1 g, protein 11 g, salt 1,9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, 'Tillagning'],
+    specLabels: [undefined, undefined, 'Serveringsförslag', 'Näringsvärde per 100 g', 'Marknadsförs av'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Vaasan Ruispalat rågbröd 660 g, 12 st',
@@ -2124,18 +2135,18 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Anteckningar på etiketten', 'Allergener', 'Näringsvärde per 100 g'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: 'Karl Fazer adventskalender 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Karl Fazer Collection pralinask 160 g',
     description:
-      'En Karl Fazer-adventskalender med 200 g chokladpraliner i flera smaker bakom luckorna. Den sista luckan är fylld med Fazers Blå, den Karl Fazer-mjölkchoklad som Fazer har gjort sedan 1922. Fazer köper sin kakao via programmet Fazer Cocoa Vision.',
+      'En liten ask praliner ur Karl Fazer Collection: 18 praliner i nio smaker, en blandning av Fazers favoriter, nyare fyllningar och klassiker som går tillbaka till 1908. Den mörka chokladen innehåller minst 47 procent kakao och mjölkchokladen minst 30 procent. Asken är så liten att den ryms i en resväska eller ett julpaket.',
     specs: [
-      '200 g',
-      'Chokladpraliner i flera smaker, sista luckan fylld med Fazers Blå mjölkchoklad',
-      'Mjölkchoklad med minst 30 % kakao',
-      'Innehåller mjölk, soja och korn (gluten). Kan innehålla nötter, mandel, vete, råg och havre',
-      'Energi 2315 kJ / 554 kcal, fett 34 g varav mättat 20 g, kolhydrat 53 g varav sockerarter 51 g, protein 9,6 g, salt 0,31 g',
+      '160 g',
+      '18 praliner i 9 smaker',
+      'Mörk choklad minst 47 % kakao, mjölkchoklad minst 30 % kakao',
+      'Innehåller mjölk, hasselnötter, mandel, vete (gluten) och soja. Kan innehålla andra nötter, råg och havre',
+      'Energi 2178 kJ / 520 kcal, fett 30 g varav mättat 17 g, kolhydrat 55 g varav sockerarter 50 g, protein 5,7 g, salt 0,25 g',
     ],
-    specLabels: [undefined, undefined, 'Anteckningar på etiketten', 'Allergener', 'Näringsvärde per 100 g'],
+    specLabels: [undefined, undefined, 'Kakaohalt', 'Allergener', 'Näringsvärde per 100 g'],
   },
   'sk-fazer-christmas-chocolates': {
     name: 'Fazer Joulusuklaa chokladpraliner 295 g',
@@ -2198,18 +2209,17 @@ export const PRODUCT_COPY_SV: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Näringsvärde per 100 g'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: 'Kuivalihakundi adventskalender med jerky 2026, 24 luckor',
+  'kuivalihakundi-jerky-box': {
+    name: 'Kuivalihakundi Lihalaatikko, jerkylåda med 8 påsar',
     description:
-      'Kuivalihakundis adventskalender för 2026 innehåller 24 olika smaker av torkat kött, en påse på 20 g bakom var och en av de 24 luckorna. Där finns nötkött, kyckling, fett fläskkött och magrare fläskkött, i grundsmaker och i några som gjorts bara för den här kalendern, allt från företagets egen fabrik i Jokela i Finland. Köttet håller sig i rumstemperatur även efter öppning, kalendern står på ett bord eller hängs upp på väggen med hjälp av upphängningshålen, och den tillverkas i en begränsad upplaga.',
+      'Hela Kuivalihakundis ordinarie sortiment i en låda: fem sorter torkat nötkött, två sorter kyckling och en sort fläsk, sammanlagt åtta återförslutningsbara påsar. Smakerna sträcker sig från Original och Smoked till Mild Habanero och Hot Naga, så lådan passar både den som vill ha sitt torkade kött milt och den som vill ha det starkt. Köttet håller sig i ungefär 11 månader och behöver inget kylskåp, inte ens efter öppning.',
     specs: [
-      '24 x 20 g påsar med torkat kött, en annan smak bakom varje lucka',
-      'Nötkött, kyckling, fett fläskkött och magrare fläskkött',
-      'Tillverkad i Kuivalihakundis egen fabrik i Jokela, Finland',
-      'Håller sig i rumstemperatur, även efter öppning',
-      'Står på ett bord eller hängs på väggen i upphängningshålen',
+      '8 påsar: torkat nötkött Original, Mild Habanero, Hot Naga, Garlic och Smoked (40 g var); torkad kyckling Lemongrass och Sriracha (40 g var); Greasy Pork Smoky BBQ (50 g)',
+      'Om en smak är slut ersätter butiken den med Beef Jerky Teriyaki 40 g, Butter Chicken 40 g eller Greasy Pork Smokey Apple 50 g',
+      'Ungefär 11 månader från köpet, behöver inget kylskåp ens efter öppning',
+      'Återförslutningsbara påsar i en låda',
     ],
-    specLabels: [undefined, 'Kött', undefined, undefined, 'Upphängning'],
+    specLabels: [undefined, 'Ersättningssmaker', undefined, 'Förpackning'],
   },
   'halti-crostie-merino-beanie': {
     name: 'Halti Crostie merinomössa',

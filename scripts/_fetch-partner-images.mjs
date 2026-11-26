@@ -353,10 +353,6 @@ const JOBS = [
     'kaavi-chaga-chunks',
     'https://www.ruohonjuuri.fi/cdn/shop/files/KAAVI-6430060220430-2.jpg?v=1726726998&width=1024',
   ],
-  [
-    'puhdistamo-conifer-extract',
-    'https://www.ruohonjuuri.fi/cdn/shop/files/PUHDIS-6430039220645-1.jpg?v=1699374709&width=1024',
-  ],
   // Era 24.8.2026: Nordicbuddiesin Love-retrosukat loppuivat kaupasta. Kaupan
   // oma feed (Daisycon 20538, luettu 24.8.) kertoo kolmesta samannimisesta
   // listauksesta vain YHDEN olevan varastossa: -2 eli vaaleansininen MOOMIN20H,
@@ -377,7 +373,6 @@ const JOBS = [
   ['sk-muurla-moomin-lantern-tahtihetki', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/MuurlaMuumikynttilalyhtyTahtihetki18cm.png?v=1760940434'], // suomikauppa.fi/products/muurla-muumi-kynttilalyhty-tahtihetki-18cm
   ['sk-hukka-soapstone-candle', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/hukkastore-lahjat-jatkankynttila.jpg?v=1686661635'], // suomikauppa.fi/products/hukka-jatkankynttila
   ['sk-muurla-moomin-enamel-mug-lumipyry', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6416114970049.png?v=1737011061'], // suomikauppa.fi/products/muurla-muumi-lumipyry-emalimuki-3-7dl
-  ['sk-arabia-moomin-pitcher-moominhouse', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/36411801005074.jpg?v=1738137941'], // suomikauppa.fi/products/arabia-muumi-kaadin-1-0l-muumitalo
   ['sk-arabia-moomintroll-mini-figurine', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/6411801003338.jpg?v=1635500106'], // suomikauppa.fi/products/arabia-muumi-minifiguriini-muumipeikko
   ['sk-arabia-snorkmaiden-mini-figurine', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/products/6411801003321.jpg?v=1635500106'], // suomikauppa.fi/products/arabia-muumi-niiskuneiti-minifiguuri
   ['sk-lapin-puukko-gift-box', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Lapinpuukkoterasuojalla_lahjapakkaus.jpg?v=1730715987'], // suomikauppa.fi/products/lapin-puukko-terasuojalla-lahjapakkaus
@@ -392,7 +387,6 @@ const JOBS = [
   ['sk-marianne-toffee-rae', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453040557_C1C1.jpg?v=1787155005'], // suomikauppa.fi/products/marianne-toffee-suklaarae-150-g
   ['sk-fasupala-lakritsi', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453077294_C1L1.jpg?v=1787154757'], // suomikauppa.fi/products/fasupala-lakritsi-vohvelikeksi-199-g
   ['sk-finnish-flavours-cloudberry-jam', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Finnish_Flavours_Suomalainen_premium_lakkahillo_250g.png?v=1764266509'], // suomikauppa.fi/products/finnish-flavours-suomalainen-premium-lakkahillo-250g
-  ['sk-lapin-liha-smoked-reindeer-soup', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/07319992294001_A1NA.png?v=1774264740'], // suomikauppa.fi/products/lapin-liha-savuporokeitto-400g
   ['sk-vaasan-ruispalat-5pack', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/4_378585eb-5a41-49d7-86d1-5c835caef54b.png?v=1788338772'], // suomikauppa.fi/products/5-pack-vaasan-ruispalat-330-g-6-kpl-revitty-taysjyvaruisleipa
   ['sk-poikain-parhaat-freeze-dried-blueberry', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/pk_mustikka.png?v=1762782832'], // suomikauppa.fi/products/poikain-parhaat-pakastekuivattu-mustikka-15g
   ['rj-arctic-warriors-blueberry-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/ARTIC-6430055010527-1.jpg?v=1733221029'], // www.ruohonjuuri.fi/products/arctic-warriors-mustikkajauhe-45-g
@@ -421,9 +415,7 @@ const JOBS = [
   ['rj-raitaniemi-crowberry-powder', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/files/dc7478f35effde50e770b9ca83cda190.jpg?v=1729679541'], // www.ruohonjuuri.fi/products/marjatila-raitaniemi-variksenmarjajauhe-100g
   ['sk-poikain-parhaat-puolukka', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/pk_puolukka.png?v=1762782835'], // suomikauppa.fi/products/poikain-parhaat-pakastekuivattu-puolukka-15g (slug lyhyt: Workerin 50 merkin sid-katkaisu)
   // ── 19.11.2026: loppuneiden ja poistettujen 14 tuotteen korvaajat (Vesa: "Hyväksy kaikki") ──
-  ['sk-finnish-flavours-lingonberry-jam', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/Finnish_Flavours_Suomalainen_puolukkahillo_400g.png?v=1764266840'], // suomikauppa.fi/products/finnish-flavours-suomalainen-puolukkahillo-400g
   ['sk-fiskars-snorkmaiden-kids-scissors', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/niiskuneitisakset.jpg?v=1701428757'], // suomikauppa.fi/products/fiskars-niiskuneiti-lasten-sakset
-  ['sk-sisu-kaamos-salty-liquorice', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06420256914304_H1N1.jpg?v=1790749489'], // suomikauppa.fi/products/sisu-kaamos-suolalakritsi-pastilli-80g
   ['sk-karl-fazer-hazelnut-crunch-bar', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453014428_C1C1.jpg?v=1710934094'], // suomikauppa.fi/products/fazer-hasselpahkinarouhe-maitosuklaa-200g
   ['sk-karl-fazer-milk-chocolate-bar', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453095014_C3C1_64f1cce3-0bba-4a48-9f48-111275a764e8.jpg?v=1770183436'], // suomikauppa.fi/products/karl-fazer-maitosuklaa-suklaalevy-180g
   ['sk-karl-fazer-blueberry-truffle-chocolates', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453053144_C1L1.jpg?v=1747385000'], // suomikauppa.fi/products/karl-fazer-mustikkatryffelitaytteisia-maitosuklaakonvehteja-250g
@@ -435,6 +427,15 @@ const JOBS = [
   ['arabia-moomin-friends-forever-mug-plate', 'https://prod.nordicnest.dev/assets/blobs/moomin-arabia-ystavat-ikuisesti-muumi-muki-ja-lautanen-2-osaa/700063-01_01_ProductImageMain-2546bbd79b.png'], // www.nordicnest.fi og:image, variantId 700063-01
   ['nb-moomin-adventure-neckpillow', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/mooin69b_3b0dec9c-7bf5-4291-af51-1d3dd5ca4cd2.jpg?v=1728829283'], // www.nordicbuddies.com/products/moomin-adventure-neckpillow
   ['sk-halva-vanhat-autot-advent-calendar', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06420900015258_C1R1.jpg?v=1781669940'], // suomikauppa.fi/products/halva-vanhat-autot-salmiakki-ja-hedelmakarkki-joulukalenteri-200-g
+  // ── 26.11.2026: loppuneiden ja poistettujen 8 tuotteen korvaajat (viikkoajon raportti 26.11.) ──
+  ['sk-poikain-parhaat-berry-jams', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06430065313168_C1N1_ef7c6dc9-45d8-4479-bfa2-453c3370e151.jpg?v=1792577490'], // suomikauppa.fi/products/poikain-parhaat-suomalaiset-marjahillot-hillolajitelma-4-x-45g
+  ['sk-riipinen-reindeer-spread', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06420616880966_C1C1_fi_96939412-351a-4fd5-b304-2002f51e41af.jpg?v=1736404499'], // suomikauppa.fi/products/riipisen-poronlihalevite-tuubi-125g
+  ['sk-karl-fazer-collection-chocolates', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06416453025127_C1L1.jpg?v=1784877623'], // suomikauppa.fi/products/karl-fazer-collection-160-g-1
+  ['kuivalihakundi-jerky-box', 'https://cdn.shopify.com/s/files/1/1004/1819/1689/files/2022_9-Musta-lihalaatikko-VK.jpg?v=1774433419'], // kuivalihakundi.com/products/lihalaatikko-2
+  ['rj-puhdistamo-conifer-drink', 'https://cdn.shopify.com/s/files/1/0373/5434/0485/products/14f97e26743bdb87c447fca0cd91e134.jpg?v=1614062711'], // ruohonjuuri.fi/products/puhdistamo-havupuu-uutejuoma-lasipullo1-l
+  ['nb-little-my-party-poster', 'https://cdn.shopify.com/s/files/1/0532/9843/0106/files/LMY61B_1.png?v=1784032368'], // nordicbuddies.com/products/little-my-party-poster
+  ['sk-sisu-kide-menthol-salmiakki', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/06420256016848_H1N1.jpg?v=1790749428'], // suomikauppa.fi/products/sisu-kide-menthol-salmiakki-pastilli-80g
+  ['sk-arabia-moomin-pitcher-adventure-move', 'https://cdn.shopify.com/s/files/1/0608/9123/4523/files/6411800188180.jpg?v=1738138502'], // suomikauppa.fi/products/arabia-muumi-kaadin-1-0l-seikkailu-muutto
 ]
 
 const only = new Set(process.argv.slice(2))

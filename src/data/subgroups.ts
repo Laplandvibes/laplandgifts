@@ -448,7 +448,7 @@ const MAP: Record<string, SubgroupId> = {
   'arabia-moomin-mug-friendship': 'tableware',
   'arabia-moomin-figurine-moomintroll': 'objects',
   'sk-fiskars-snorkmaiden-kids-scissors': 'objects',
-  'nb-little-my-poster': 'objects',
+  'nb-little-my-party-poster': 'objects',
   'nb-moomin-novels-poster': 'objects',
 
   // clothing
@@ -531,7 +531,7 @@ const MAP: Record<string, SubgroupId> = {
   'fazer-pantteri-salmiakki': 'salmiakki',
   'halva-salmiakkiruutu': 'salmiakki',
   'sisu-xylitol-salmiakki': 'salmiakki',
-  'sk-sisu-kaamos-salty-liquorice': 'salmiakki',
+  'sk-sisu-kide-menthol-salmiakki': 'salmiakki',
   'fazer-geisha-chocolate-bar': 'chocolate',
   'sk-karl-fazer-hazelnut-crunch-bar': 'chocolate',
   'sk-karl-fazer-milk-chocolate-bar': 'chocolate',
@@ -540,7 +540,7 @@ const MAP: Record<string, SubgroupId> = {
   'kuivalihakundi-poro-jerky': 'savoury',
   'kuivalihakundi-poro-jerky-200g': 'savoury',
   'kuivalihakundi-beef-jerky-smoked': 'savoury',
-  'sk-finnish-flavours-lingonberry-jam': 'savoury',
+  'sk-poikain-parhaat-berry-jams': 'savoury',
   'nordqvist-moomin-forest-berry-tea': 'drinks',
   'nordqvist-cranberry-toffee-tea': 'drinks',
 
@@ -555,7 +555,7 @@ const MAP: Record<string, SubgroupId> = {
   'foodin-chaga-tincture': 'oils',
   'kaavi-chaga-chunks': 'herbal',
   'rj-puhdistamo-chaga-extract': 'herbal',
-  'puhdistamo-conifer-extract': 'oils',
+  'rj-puhdistamo-conifer-drink': 'oils',
 
   // experiences: Elämyslahjat.fi-lahjakortit
   'husky-farm-safari-rovaniemi': 'vouchers',
@@ -587,7 +587,7 @@ const MAP: Record<string, SubgroupId> = {
   'sk-muurla-moomin-lantern-tahtihetki': 'candles',
   'sk-hukka-soapstone-candle': 'candles',
   'sk-muurla-moomin-enamel-mug-lumipyry': 'tableware',
-  'sk-arabia-moomin-pitcher-moominhouse': 'tableware',
+  'sk-arabia-moomin-pitcher-adventure-move': 'tableware',
   'sk-moomin-duvet-set-merella': 'textiles',
   'sk-arabia-moomintroll-mini-figurine': 'ceramics',
   'sk-arabia-snorkmaiden-mini-figurine': 'ceramics',
@@ -603,7 +603,7 @@ const MAP: Record<string, SubgroupId> = {
   'sk-marianne-toffee-rae': 'novelties',
   'sk-fasupala-lakritsi': 'novelties',
   'sk-finnish-flavours-cloudberry-jam': 'specialties',
-  'sk-lapin-liha-smoked-reindeer-soup': 'specialties',
+  'sk-riipinen-reindeer-spread': 'specialties',
   'sk-vaasan-ruispalat-5pack': 'specialties',
   'sk-poikain-parhaat-freeze-dried-blueberry': 'specialties',
   'rj-arctic-warriors-blueberry-powder': 'berry',
@@ -665,13 +665,13 @@ const MAP: Record<string, SubgroupId> = {
   'nb-moomintroll-fleece-mittens': 'brandnordicbuddies',
   'nb-moomintroll-chunky-beanie': 'brandnordicbuddies',
   'sk-fazer-christmas-box': 'christmastreats',
-  'sk-karl-fazer-advent-calendar': 'christmastreats',
+  'sk-karl-fazer-collection-chocolates': 'christmastreats',
   'sk-fazer-christmas-chocolates': 'christmastreats',
   'sk-karl-fazer-gingerbread-bar': 'christmastreats',
   'sk-fazer-glogg-balls': 'christmastreats',
   'sk-halva-christmas-liquorice': 'christmastreats',
   'sk-halva-vanhat-autot-advent-calendar': 'christmastreats',
-  'kuivalihakundi-advent-calendar': 'christmastreats',
+  'kuivalihakundi-jerky-box': 'christmastreats',
   'sk-nordqvist-tea-calendar': 'drinks',
   'sk-nordqvist-moomin-tea-calendar': 'drinks',
   'sk-nordic-glogg-concentrate': 'drinks',
@@ -769,7 +769,7 @@ export function groupProducts(
  */
 const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
   en: {
-    specialties: 'Tastes Finns abroad miss: cloudberry jam, smoked reindeer soup, real rye bread.',
+    specialties: 'Tastes Finns abroad miss: cloudberry jam, forest berries, real rye bread.',
     salmiakki: 'Salty liquorice from soft to hot. Start with Halva\'s Salmiakkikalat, end with Tyrkisk Peber.',
     chocolate: 'Fazer milk chocolate and the bars built on it, from the classic blue to the anniversary Omar.',
     novelties: 'New at Suomikauppa in August 2026: Fazer\'s latest, taken from the shop\'s own new arrivals list.',
@@ -777,7 +777,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Nordqvist teas blended in Nurmijärvi, a Moomin tea among them, and Paulig coffee.',
   },
   fi: {
-    specialties: 'Makuja, joita ulkosuomalaiset kaipaavat: lakkahillo, savuporokeitto, oikea ruisleipä.',
+    specialties: 'Makuja, joita ulkosuomalaiset kaipaavat: lakkahillo, metsämarjat, oikea ruisleipä.',
     salmiakki: 'Salmiakkia pehmeästä tuliseen. Aloita Halvan Salmiakkikaloista, päätä Tyrkisk Peberiin.',
     chocolate: 'Fazerin maitosuklaa ja sen päälle rakennetut levyt, klassisesta sinisestä juhlavuoden Omariin.',
     novelties: 'Suomikaupan elokuun 2026 uutuudet: Fazerin tuoreimmat, poimittu kaupan omasta uutuuslistasta.',
@@ -785,7 +785,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Nordqvistin Nurmijärvellä sekoitetut teet, joukossa Muumi-tee, sekä Pauligin kahvi.',
   },
   sv: {
-    specialties: 'Smaker som utlandsfinländare saknar: hjortronsylt, soppa på rökt renkött, finskt rågbröd.',
+    specialties: 'Smaker som utlandsfinländare saknar: hjortronsylt, skogsbär, finskt rågbröd.',
     salmiakki: 'Salmiak från mild till het. Börja med Halvas Salmiakkikalat och avsluta med Tyrkisk Peber.',
     chocolate: 'Fazers mjölkchoklad och chokladkakorna som bygger på den, från den klassiska blå till jubileumsutgåvan av Omar.',
     novelties: 'Nytt hos Suomikauppa i augusti 2026: Fazers senaste, hämtade från butikens egen nyhetslista.',
@@ -793,7 +793,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Nordqvists teer, blandade i Nurmijärvi, bland dem ett Moomin-te, och kaffe från Paulig.',
   },
   de: {
-    specialties: 'Was Finnen im Ausland vermissen: Moltebeerenmarmelade, Suppe mit geräuchertem Rentierfleisch, finnisches Roggenbrot.',
+    specialties: 'Was Finnen im Ausland vermissen: Moltebeerenkonfitüre, Waldbeeren, finnisches Roggenbrot.',
     salmiakki: 'Salmiak von mild bis scharf. Beginnen Sie mit den Salmiakkikalat von Halva und arbeiten Sie sich bis zu Tyrkisk Peber vor.',
     chocolate: 'Fazer-Milchschokolade und die Tafeln, die darauf aufbauen, von der klassischen blauen bis zur Jubiläumsausgabe von Omar.',
     novelties: 'Neu bei Suomikauppa im August 2026: die neuesten Produkte von Fazer, aus der Neuheitenliste des Shops.',
@@ -801,7 +801,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Tees von Nordqvist, gemischt in Nurmijärvi, darunter ein Moomin-Tee, und Kaffee von Paulig.',
   },
   fr: {
-    specialties: 'Les saveurs qui manquent aux Finlandais à l’étranger : confiture de plaquebière, soupe de renne fumé, pain de seigle finlandais.',
+    specialties: 'Les saveurs qui manquent aux Finlandais à l’étranger : confiture de plaquebière, baies des bois, pain de seigle finlandais.',
     salmiakki: 'Du salmiakki, du plus doux au plus fort. Commencez par les Salmiakkikalat de Halva, terminez par le Tyrkisk Peber.',
     chocolate: 'Le chocolat au lait Fazer et ses déclinaisons en tablettes, de la bleue classique à l’édition anniversaire d’Omar.',
     novelties: 'Nouveautés chez Suomikauppa en août 2026 : les dernières créations de Fazer, tirées de la liste de nouveautés de la boutique.',
@@ -809,7 +809,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Les thés Nordqvist, mélangés à Nurmijärvi, dont un thé Moomin, et le café Paulig.',
   },
   es: {
-    specialties: 'Sabores que los finlandeses extrañan en el extranjero: mermelada de mora ártica, sopa de reno ahumado, pan de centeno finlandés.',
+    specialties: 'Sabores que los finlandeses extrañan en el extranjero: mermelada de mora ártica, bayas del bosque, pan de centeno finlandés.',
     salmiakki: 'Salmiakki de suave a picante. Empiece por los Salmiakkikalat de Halva y termine con Tyrkisk Peber.',
     chocolate: 'El chocolate con leche de Fazer y las tabletas elaboradas a partir de él, desde la clásica azul hasta la edición de aniversario de Omar.',
     novelties: 'Novedades de Suomikauppa en agosto de 2026: lo último de Fazer, tomado de la lista de novedades de la propia tienda.',
@@ -817,7 +817,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Tés de Nordqvist, mezclados en Nurmijärvi, entre ellos un té Moomin, y café Paulig.',
   },
   it: {
-    specialties: 'I sapori che mancano ai finlandesi all’estero: marmellata di mora artica, zuppa di renna affumicata, pane di segale finlandese.',
+    specialties: 'I sapori che mancano ai finlandesi all’estero: confettura di mora artica, frutti di bosco, pane di segale finlandese.',
     salmiakki: 'Salmiakki dal più delicato al più piccante. Cominci dai Salmiakkikalat di Halva e finisca con il Tyrkisk Peber.',
     chocolate: 'Il cioccolato al latte Fazer e le tavolette che ne derivano, dalla classica blu all’edizione per l’anniversario di Omar.',
     novelties: 'Novità da Suomikauppa ad agosto 2026: le ultime uscite di Fazer, prese dall’elenco delle novità del negozio.',
@@ -825,7 +825,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Tè Nordqvist, miscelati a Nurmijärvi, tra cui un tè Moomin, e caffè Paulig.',
   },
   'pt-BR': {
-    specialties: 'Sabores de que os finlandeses sentem falta no exterior: geleia de amora-ártica, sopa de rena defumada, pão de centeio finlandês.',
+    specialties: 'Sabores de que os finlandeses sentem falta no exterior: geleia de amora-ártica, frutas do bosque, pão de centeio finlandês.',
     salmiakki: 'Salmiakki do suave ao picante. Comece pelos Salmiakkikalat da Halva e termine com o Tyrkisk Peber.',
     chocolate: 'O chocolate ao leite da Fazer e as barras feitas a partir dele, da clássica azul à edição de aniversário do Omar.',
     novelties: 'Novidades da Suomikauppa em agosto de 2026: os lançamentos mais recentes da Fazer, tirados da lista de novidades da própria loja.',
@@ -833,7 +833,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Chás da Nordqvist, misturados em Nurmijärvi, entre eles um chá Moomin, e café Paulig.',
   },
   nl: {
-    specialties: 'Smaken die Finnen in het buitenland missen: kruipbramenjam, soep van gerookt rendiervlees, Fins roggebrood.',
+    specialties: 'Smaken die Finnen in het buitenland missen: kruipbramenjam, bosvruchten, Fins roggebrood.',
     salmiakki: 'Salmiak van mild tot pittig. Begin met de Salmiakkikalat van Halva en eindig met Tyrkisk Peber.',
     chocolate: 'Melkchocolade van Fazer en de repen die daarop gebaseerd zijn, van de klassieke blauwe tot de jubileumeditie van Omar.',
     novelties: 'Nieuw bij Suomikauppa in augustus 2026: het nieuwste van Fazer, uit de lijst met nieuwe producten van de winkel zelf.',
@@ -841,7 +841,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'Thee van Nordqvist, gemengd in Nurmijärvi, waaronder een Moomin-thee, en koffie van Paulig.',
   },
   ja: {
-    specialties: '海外に住むフィンランド人が恋しがる味。クラウドベリーのジャム、燻製トナカイ肉のスープ、フィンランドのライ麦パン。',
+    specialties: '海外に住むフィンランド人が恋しがる味。クラウドベリーのジャム、森のベリー、フィンランドのライ麦パン。',
     salmiakki: 'マイルドなものから刺激の強いものまで、サルミアッキを揃えました。Halva の Salmiakkikalat から始めて、Tyrkisk Peber で締めくくるのがおすすめです。',
     chocolate: 'ファッツェルのミルクチョコレートと、それをベースにした板チョコ。定番の青いパッケージから、周年記念版の Omar まで。',
     novelties: 'Suomikauppa の2026年8月の新商品。ショップの新着リストから選んだ、Fazer の最新作です。',
@@ -849,7 +849,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: 'ヌルミヤルヴィでブレンドされるノルドクヴィストのお茶（ムーミンのお茶も）と、Paulig のコーヒー。',
   },
   ko: {
-    specialties: '해외에 사는 핀란드 사람들이 그리워하는 맛: 클라우드베리 잼, 훈제 순록 고기 수프, 핀란드 호밀빵.',
+    specialties: '해외에 사는 핀란드 사람들이 그리워하는 맛: 클라우드베리 잼, 숲 베리, 핀란드 호밀빵.',
     salmiakki: '순한 맛부터 매운 맛까지 살미아키를 모았습니다. Halva의 Salmiakkikalat부터 시작해 Tyrkisk Peber로 마무리해 보세요.',
     chocolate: '파제르 밀크 초콜릿과 이를 바탕으로 만든 판초콜릿. 클래식한 파란 포장부터 기념판 Omar까지.',
     novelties: 'Suomikauppa의 2026년 8월 신상품. 상점이 직접 올린 신상품 목록에서 고른 Fazer의 최신 제품입니다.',
@@ -857,7 +857,7 @@ const NOTES: Record<Lang, Partial<Record<SubgroupId, string>>> = {
     drinks: '누르미야르비에서 블렌딩한 노르드크비스트 차(무민 차 포함)와 Paulig 커피.',
   },
   'zh-CN': {
-    specialties: '旅居海外的芬兰人想念的家乡味：云莓果酱、烟熏驯鹿肉汤、芬兰黑麦面包。',
+    specialties: '旅居海外的芬兰人想念的家乡味：云莓果酱、森林浆果、芬兰黑麦面包。',
     salmiakki: '从温和到辛辣的咸甘草糖。先从 Halva 的 Salmiakkikalat 开始，最后以 Tyrkisk Peber 收尾。',
     chocolate: 'Fazer 牛奶巧克力，以及以此为基础的各款巧克力排：从经典的蓝色包装到 Omar 周年纪念版。',
     novelties: 'Suomikauppa 2026 年 8 月的新品：Fazer 的最新产品，选自该店自己的新品列表。',

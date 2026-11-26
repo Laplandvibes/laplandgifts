@@ -352,16 +352,19 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Información nutricional por 100 g', 'Comercializado por'],
   },
-  'sk-finnish-flavours-lingonberry-jam': {
-    name: 'Mermelada finlandesa de arándanos rojos Finnish Flavours 400 g',
+  'sk-poikain-parhaat-berry-jams': {
+    name: 'Surtido de mermeladas finlandesas de bayas Poikain Parhaat, 4 × 45 g',
     description:
-      'Mermelada de arándanos rojos elaborada en Finlandia con bayas recogidas en los bosques finlandeses. El arándano rojo representa el 45 por ciento del contenido del tarro. Es la mermelada que los finlandeses sirven con guisos de caza, albóndigas y crepes de espinacas, y cabe en el mismo regalo que una bolsa de cecina de reno.',
+      'Cuatro tarritos de mermelada finlandesa de bayas en una misma caja: mora ártica, arándano rojo, grosella negra y arándano silvestre. Las mermeladas se elaboran de forma artesanal con bayas recogidas a mano en bosques y huertos finlandeses. Cada tarro lleva un 75 por ciento de bayas y ningún aroma ni colorante artificial. Un tarro de 45 g basta para probar la mermelada con pan, crepes o gachas.',
     specs: [
-      '400 g',
-      'Elaborada en Finlandia con un 100 % de bayas finlandesas',
-      'Energía 633 kJ / 151 kcal, grasas 0,2 g de las cuales saturadas 0 g, hidratos de carbono 39 g de los cuales azúcares 39 g, proteínas 0,2 g, sal 0,01 g',
+      '4 × 45 g',
+      'Mermelada de mora ártica, arándano rojo, grosella negra y arándano silvestre',
+      '75 % de bayas finlandesas recogidas a mano en cada mermelada',
+      'Sin lactosa, sin gluten, apta para veganos',
+      'Energía 512 kJ / 122 kcal, grasas 0,8 g de las cuales saturadas 0 g, hidratos de carbono 24 g de los cuales azúcares 19 g, proteínas 1,1 g, sal 0,1 g',
+      'Poikain Parhaat Oy Ltd, Rasulankatu 3, 33730 Tampere',
     ],
-    specLabels: [undefined, undefined, 'Información nutricional por 100 g'],
+    specLabels: [undefined, undefined, undefined, 'Dieta', 'Información nutricional por 100 g', 'Comercializado por'],
   },
   'kuivalihakundi-poro-jerky-200g': {
     name: 'Cecina de reno Original 200 g',
@@ -647,13 +650,13 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     specs: ['36 g', 'Xilitol. Lleva el sello de la Asociación Dental Finlandesa'],
     specLabels: [undefined, 'Edulcorante'],
   },
-  'sk-sisu-kaamos-salty-liquorice': {
-    name: 'Pastillas de regaliz salado Sisu Kaamos 80 g',
+  'sk-sisu-kide-menthol-salmiakki': {
+    name: 'Pastillas de salmiakki con mentol Sisu Kide 80 g',
     description:
-      'Pastillas blandas de Sisu con un sabor intenso a regaliz y salmiakki, el regaliz salado que en Finlandia lleva cloruro de amonio. Kaamos es la palabra finlandesa para la noche polar, las semanas del extremo norte en las que el sol no llega a asomar sobre el horizonte.',
+      'Pastillas Sisu recubiertas de azúcar, con el sabor intenso del salmiakki y el regaliz y un toque fresco de mentol. El salmiakki es un regaliz salado aromatizado con cloruro de amonio y uno de los dulces favoritos de los finlandeses. Kide es la palabra finlandesa para cristal, como en lumikide, cristal de nieve.',
     specs: [
       '80 g',
-      'Energía 1160 kJ / 277 kcal, grasas 0,6 g de las cuales saturadas 0,2 g, hidratos de carbono 52 g de los cuales azúcares 45 g, proteínas 1,2 g, sal 5,5 g',
+      'Energía 1269 kJ / 302 kcal, grasas 0 g de las cuales saturadas 0 g, hidratos de carbono 60 g de los cuales azúcares 53 g, proteínas 1,1 g, sal 0,4 g',
       'Cloetta Suomi Oy, PL 406, 20101 Turku',
     ],
     specLabels: [undefined, 'Información nutricional por 100 g', 'Comercializado por'],
@@ -1005,11 +1008,18 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Extracción', 'Dosificación', 'Advertencia'],
   },
-  'puhdistamo-conifer-extract': {
-    name: 'Puhdistamo extracto de coníferas 50 ml',
+  'rj-puhdistamo-conifer-drink': {
+    name: 'Puhdistamo bebida de extracto de coníferas 1 l',
     description:
-      'Un extracto de coníferas finlandesas que se toma en gotas. El olor a bosque de una caminata por Laponia en un frasco de bolsillo.',
-    specs: ['50 ml'],
+      'Una bebida de corteza exterior e interna de pino joven ecológico, agua subterránea y sal marina sin refinar, elaborada según una antigua receta popular finlandesa. El pino se recolecta en los bosques de Ostrobotnia, en el oeste de Finlandia, lejos de la industria. La bebida no lleva aditivos, conservantes ni colorantes. Se vende en una botella de vidrio de un litro y, una vez abierta, se conserva de 7 a 10 días.',
+    specs: [
+      '1 l, botella de vidrio',
+      'Corteza exterior e interna de pino joven ecológico, agua subterránea, sal marina sin refinar',
+      'Pino recolectado en los bosques de Ostrobotnia, Finlandia',
+      'Sin aditivos, conservantes ni colorantes',
+      'Se conserva de 7 a 10 días después de abrirla',
+    ],
+    specLabels: [undefined, undefined, undefined, 'Aditivos', undefined],
   },
   'nb-little-my-beanie': {
     name: 'Gorro de punto grueso de Pequeña My',
@@ -1204,16 +1214,17 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Licencia'],
   },
-  'nb-little-my-poster': {
-    name: 'Póster Pequeña My',
+  'nb-little-my-party-poster': {
+    name: 'Póster Pequeña My de fiesta',
     description:
-      'Diseñado e impreso en Helsinki sobre papel seda de 200 gramos, en 30 × 40 o 50 × 70. Un póster se enrolla en un tubo y no pesa nada, cosa que no puede decirse de casi nada de lo que la gente se lleva a casa desde Laponia.',
+      'Un póster de la Pequeña My celebrando bajo una guirnalda de banderines, impreso en papel estucado seda de 200 g/m². Es un producto Moomin oficial de Nordicbuddies, diseñado y producido en Helsinki, que se vende en dos tamaños: 30 × 40 cm y 50 × 70 cm. El marco no está incluido.',
     specs: [
-      'Papel seda, 200 g',
+      'Papel estucado seda, 200 g/m²',
       '30 × 40 cm o 50 × 70 cm',
-      'Diseñado e impreso en Helsinki',
+      'Diseñado y producido en Helsinki',
+      'No incluido',
     ],
-    specLabels: [undefined, undefined, 'Fabricación'],
+    specLabels: [undefined, undefined, undefined, 'Marco'],
   },
   'nb-moomin-novels-poster': {
     name: 'Póster de las novelas Moomin',
@@ -1510,15 +1521,13 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       'Apta para lavavajillas, no para microondas',
     ],
   },
-  'sk-arabia-moomin-pitcher-moominhouse': {
-    name: 'Jarra Moomin Arabia 1,0 l, Casa Moomin',
+  'sk-arabia-moomin-pitcher-adventure-move': {
+    name: 'Jarra Moomin Arabia 1,0 l, Adventure Move',
     description:
-      'Jarra de un litro de Arabia con la Casa Moomin, la casa redonda con forma de estufa que Papá Moomin construyó él mismo y nunca cierra con llave por la noche. Incluye tapa de cerámica que mantiene los insectos fuera del zumo en una mesa de verano.',
+      'Jarra Arabia de un litro con el motivo Adventure Move. El cometa crece en el cielo día tras día, y la familia Moomin decide huir con los demás y llevarse solo las cosas que más importan. Una jarra para el zumo o el agua de la mesa familiar.',
     specs: [
       '1,0 l',
-      'Tapa de cerámica incluida',
     ],
-    specLabels: [undefined, 'Tapa'],
   },
   'sk-moomin-duvet-set-merella': {
     name: 'Juego de funda nórdica Moomin 140 x 200 cm, Merellä',
@@ -1665,16 +1674,18 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
       'Mora de los pantanos finlandesa 75 %, azúcar 20 %',
     ],
   },
-  'sk-lapin-liha-smoked-reindeer-soup': {
-    name: 'Sopa de reno ahumado Lapin Liha 400 g',
+  'sk-riipinen-reindeer-spread': {
+    name: 'Paté de carne de reno Riipinen 125 g',
     description:
-      'Sopa cremosa con reno ahumado en caliente y en frío, 400 gramos, elaborada por Lapin Liha. Se calienta en una olla; es el sabor de un almuerzo en una cabaña de Laponia, en un envase que cabe en una maleta.',
+      'Paté de carne de reno en tubo, elaborado con un 30 por ciento de carne de reno finlandesa. Exprímelo sobre pan de centeno o galletas saladas, sírvelo como tapa o mézclalo en la masa de un pastel de carne. El resto de la carne es cerdo y tocino finlandeses, y el paté contiene leche y huevo.',
     specs: [
-      '400 g',
-      'Reno ahumado en caliente 3 % y reno ahumado en frío 3 %',
-      'Calentar en una olla',
+      '125 g',
+      'Carne de reno 30 % (Finlandia), contenido total de carne 44 %',
+      'Para tapas, sobre pan, en pastel de carne',
+      'Energía 1070 kJ / 260 kcal, grasas 23 g de las cuales saturadas 5,5 g, hidratos de carbono 1,9 g de los cuales azúcares 0,8 g, fibra alimentaria 0,1 g, proteínas 11 g, sal 1,9 g',
+      'Riipisen Riistaherkut Oy',
     ],
-    specLabels: [undefined, undefined, 'Preparación'],
+    specLabels: [undefined, undefined, 'Sugerencias de uso', 'Información nutricional por 100 g', 'Comercializado por'],
   },
   'sk-vaasan-ruispalat-5pack': {
     name: 'Pan de centeno Vaasan Ruispalat 660 g, 12 piezas',
@@ -2122,18 +2133,18 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, 'Indicaciones de la etiqueta', 'Alérgenos', 'Información nutricional por 100 g'],
   },
-  'sk-karl-fazer-advent-calendar': {
-    name: 'Calendario de Adviento Karl Fazer 200 g',
+  'sk-karl-fazer-collection-chocolates': {
+    name: 'Caja de bombones Karl Fazer Collection 160 g',
     description:
-      'Un calendario de Adviento Karl Fazer con 200 g de bombones de varios sabores detrás de sus ventanitas. La última ventanita está llena de Fazer Blue, el chocolate con leche Karl Fazer que Fazer elabora desde 1922. Fazer obtiene su cacao a través de su programa Fazer Cocoa Vision.',
+      'Una cajita de bombones Karl Fazer Collection: 18 bombones de nueve sabores, entre favoritos de Fazer, rellenos más recientes y clásicos que se remontan a 1908. El chocolate negro tiene como mínimo un 47 por ciento de cacao y el chocolate con leche, como mínimo un 30 por ciento. La caja es lo bastante pequeña como para caber en la maleta o en un paquete de Navidad.',
     specs: [
-      '200 g',
-      'Bombones de varios sabores, la última ventanita llena de chocolate con leche Fazer Blue',
-      'Chocolate con leche con un mínimo de 30 % de cacao',
-      'Contiene leche, soja y cebada (gluten). Puede contener frutos secos, almendras, trigo, centeno y avena',
-      'Energía 2315 kJ / 554 kcal, grasas 34 g de las cuales saturadas 20 g, carbohidratos 53 g de los cuales azúcares 51 g, proteínas 9,6 g, sal 0,31 g',
+      '160 g',
+      '18 bombones de 9 sabores',
+      'Chocolate negro con un mínimo de 47 % de cacao, chocolate con leche con un mínimo de 30 % de cacao',
+      'Contiene leche, avellanas, almendras, trigo (gluten) y soja. Puede contener otros frutos secos, centeno y avena',
+      'Energía 2178 kJ / 520 kcal, grasas 30 g de las cuales saturadas 17 g, hidratos de carbono 55 g de los cuales azúcares 50 g, proteínas 5,7 g, sal 0,25 g',
     ],
-    specLabels: [undefined, undefined, 'Indicaciones de la etiqueta', 'Alérgenos', 'Información nutricional por 100 g'],
+    specLabels: [undefined, undefined, 'Contenido de cacao', 'Alérgenos', 'Información nutricional por 100 g'],
   },
   'sk-fazer-christmas-chocolates': {
     name: 'Bombones navideños Fazer Joulusuklaa 295 g',
@@ -2196,18 +2207,17 @@ export const PRODUCT_COPY_ES: ProductCopyMap = {
     ],
     specLabels: [undefined, undefined, 'Información nutricional por 100 g'],
   },
-  'kuivalihakundi-advent-calendar': {
-    name: 'Calendario de Adviento de cecina Kuivalihakundi 2026',
+  'kuivalihakundi-jerky-box': {
+    name: 'Caja de cecina Lihalaatikko de Kuivalihakundi, 8 bolsas',
     description:
-      'El calendario de Adviento 2026 de Kuivalihakundi trae 24 sabores distintos de cecina, una bolsa de 20 g detrás de cada una de sus 24 ventanas. Hay res, pollo, cerdo graso y cerdo más magro, en sabores básicos y en otros creados solo para este calendario, todo de la fábrica propia de la empresa en Jokela, Finlandia. La cecina se conserva a temperatura ambiente incluso después de abrirla. El calendario se puede poner de pie sobre una mesa o colgar en la pared por sus orificios, y es una edición limitada.',
+      'Toda la gama habitual de Kuivalihakundi en una sola caja: ocho bolsas que se pueden volver a cerrar, con cinco cecinas de vacuno, dos de pollo y una de cerdo. Los sabores van del Original y el Smoked al Mild Habanero y el Hot Naga, así que la caja sirve tanto a quien prefiere la cecina suave como a quien la quiere picante. La cecina se conserva unos 11 meses y no necesita nevera, ni siquiera una vez abierta.',
     specs: [
-      '24 bolsas de cecina de 20 g, un sabor distinto detrás de cada ventana',
-      'Res, pollo, cerdo graso y cerdo más magro',
-      'Elaborada en la fábrica propia de Kuivalihakundi en Jokela, Finlandia',
-      'Se conserva a temperatura ambiente, también después de abrirla',
-      'Se pone de pie sobre una mesa o se cuelga en la pared por sus orificios',
+      '8 bolsas: cecina de vacuno Original, Mild Habanero, Hot Naga, Garlic y Smoked (40 g cada una); cecina de pollo Lemongrass y Sriracha (40 g cada una); Greasy Pork Smoky BBQ (50 g)',
+      'Si un sabor está agotado, la tienda lo sustituye por Beef Jerky Teriyaki 40 g, Butter Chicken 40 g o Greasy Pork Smokey Apple 50 g',
+      'Unos 11 meses desde la compra; no necesita nevera, ni siquiera después de abrirla',
+      'Bolsas que se pueden volver a cerrar, en una misma caja',
     ],
-    specLabels: [undefined, 'Carnes', undefined, undefined, 'Para colgar'],
+    specLabels: [undefined, 'Sustituciones', undefined, 'Envase'],
   },
   'halti-crostie-merino-beanie': {
     name: 'Gorro de merino Halti Crostie',
